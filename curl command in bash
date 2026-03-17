@@ -1,0 +1,17 @@
+FILENAME="news_$(date +%Y-%m-%d_%H-%M-%S).json"
+FROM_DATE=$(date -u -v-37H +"%Y-%m-%dT%H:%M:%S" 2>/dev/null || date -u -d "37 hours ago" +"%Y-%m-%dT%H:%M:%S")
+TO_DATE=$(date -u -v-25H +"%Y-%m-%dT%H:%M:%S" 2>/dev/null || date -u -d "25 hours ago" +"%Y-%m-%dT%H:%M:%S")
+DOMAINS="cnbc.com"
+
+################################################################################
+curl https://newsapi.org/v2/everything -G \
+    -d q=stock \
+    -d from="$FROM_DATE" \
+    -d to="$TO_DATE" \
+    -d language=en \
+    -d domains="$DOMAINS" \
+    -d pageSize=100 \
+    -d sortBy=popularity \
+    -d apiKey=5c3becc0457247aab0e4703c631e2b7d \
+    -o "$FILENAME" && python3 clean_news.py "$FILENAME"
+################################################################################
