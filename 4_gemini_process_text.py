@@ -4,15 +4,14 @@ from google import genai
 
 load_dotenv()
 
-def summarize_with_gemini():
-    if not os.path.exists("article.txt"):
-        print("article.txt not found. Run extract_article.py first.")
+###
+def summarize_with_gemini(article_text):
+    if not article_text:
+        print("No article text provided to summarize.")
         return
 
-    with open("article.txt", "r", encoding="utf-8") as f:
-        article_text = f.read()
-
     api_key = os.getenv("GEMINI_KEY")
+###
     if not api_key:
         raise ValueError("GEMINI_KEY not found in .env file.")
 
@@ -30,5 +29,6 @@ def summarize_with_gemini():
         f.write(summary)
     print("\nSummary saved to summary.txt")
 
-if __name__ == "__main__":
-    summarize_with_gemini()
+# To use this in a single flow, you would call:
+# text = process_article() <-- Make sure process_article returns article_text
+# summarize_with_gemini(text)

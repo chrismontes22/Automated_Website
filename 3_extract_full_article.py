@@ -22,10 +22,16 @@ def process_article():
     print(f"Processing URL: {url}\n" + "-"*30)
 
     downloaded = trafilatura.fetch_url(url)
-    article_text = trafilatura.extract(downloaded)
+    article_text = trafilatura.extract(
+        downloaded, 
+        favor_precision=True, 
+        include_tables=True,
+        include_comments=False
+    )
 
-    if not article_text:
-        print("Could not extract text.")
+    if not article_text or len(article_text) < 1000:
+        content_len = len(article_text) if article_text else 0
+        print(f"Skipping: Content too short or likely paywalled ({content_len} chars).")
         return
 
     chunk_size = 150
