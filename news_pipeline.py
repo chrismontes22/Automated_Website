@@ -44,6 +44,14 @@ logging.basicConfig(
 )
 log = logging.getLogger("news_pipeline")
 
+def log_error(context: str, exc: Exception) -> None:
+    """Emit a consistently formatted ERROR with context and exception type."""
+    log.error("[%s] %s: %s", context, type(exc).__name__, exc)
+
+def log_warning(context: str, reason: str) -> None:
+    """Emit a consistently formatted WARNING."""
+    log.warning("[%s] %s", context, reason)
+
 
 # =============================================================================
 # CONFIGURATION
@@ -115,8 +123,8 @@ def with_retry(attempts: int = 3, backoff: float = 2.0, exceptions: tuple = (Exc
                     if attempt == attempts:
                         raise
                     log.warning(
-                        "%s failed (attempt %d/%d): %s — retrying in %.1fs",
-                        fn.__name__, attempt, attempts, exc, delay,
+                        "[retry] %s attempt %d/%d failed — %s: %s — retrying in %.1fs",
+                        fn.__name__, attempt, attempts, type(exc).__name__, exc, delay,
                     )
                     time.sleep(delay)
                     delay *= 2
@@ -139,7 +147,9 @@ class ArticleFetcher:
 
     def _validate(self) -> None:
         if not self._api_key:
-            raise EnvironmentError("NEWS_API_KEY is not set in your .env file.")
+            raise EnvironmentError(
+                "NEWS_API_KEY is not set. Add it to your .env file and restart."
+            )
 
     def _time_window(self) -> tuple[str, str]:
         now = datetime.utcnow()
@@ -167,7 +177,7 @@ class ArticleFetcher:
         """Fetch every topic and persist each response to its own JSON file."""
         self._validate()
         from_dt, to_dt = self._time_window()
-        log.info("Fetch window: %s  →  %s", from_dt, to_dt)
+        log.info("Fetch window: %s → %s", from_dt, to_dt)
 
         saved: list[Path] = []
         for topic in self.cfg.topics:
@@ -178,10 +188,10 @@ class ArticleFetcher:
                 ts = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
                 path = self.cfg.output_dir / f"news_{topic.replace(' ', '_')}_{ts}.json"
                 path.write_text(json.dumps(data, indent=2), encoding="utf-8")
-                log.info("  ✓ %d articles → %s", count, path.name)
+                log.info("  ✓ %d articles saved → %s", count, path.name)
                 saved.append(path)
             except Exception as exc:
-                log.error("  ✗ Topic '%s' failed: %s", topic, exc)
+                log_error(f"fetch:{topic}", exc)
 
         log.info("Fetch complete: %d/%d topics saved.", len(saved), len(self.cfg.topics))
         return saved
@@ -197,6 +207,7 @@ class MasterBuilder:
 
     Strategy: round-robin across topics so no single topic dominates,
     with a hard cap of `source_limit` articles per publisher.
+    Deduplication covers URL, title, and author to block reposts across sources.
     """
 
     def __init__(self, cfg: PipelineConfig) -> None:
@@ -209,7 +220,9 @@ class MasterBuilder:
             reverse=True,
         )
         if not files:
-            raise FileNotFoundError("No news_*.json files found. Run the fetch step first.")
+            raise FileNotFoundError(
+                "No news_*.json files found. The fetch step may have failed."
+            )
 
         queues = []
         for path in files:
@@ -220,7 +233,7 @@ class MasterBuilder:
                     queues.append(articles)
                     log.debug("  Loaded %d articles from %s", len(articles), path.name)
             except (json.JSONDecodeError, OSError) as exc:
-                log.warning("  Could not read %s: %s", path.name, exc)
+                log_warning(f"build:load:{path.name}", f"Skipping unreadable file — {type(exc).__name__}: {exc}")
 
         return queues
 
@@ -232,6 +245,8 @@ class MasterBuilder:
         queues = self._load_topic_queues()
         master: list[dict] = []
         seen_urls: set[str] = set()
+        seen_titles: set[str] = set()      # CHANGE 1: block duplicate titles across sources
+        seen_authors: set[str] = set()     # CHANGE 1: block duplicate authors across sources
         source_counts: dict[str, int] = {}
         goal = self.cfg.candidate_count
 
@@ -241,16 +256,26 @@ class MasterBuilder:
                 if i >= len(queue) or len(master) >= goal:
                     continue
                 article = queue[i]
-                url = (article.get("url") or "").strip()
+                url    = (article.get("url") or "").strip()
+                title  = (article.get("title") or "").strip()
+                author = (article.get("author") or "").strip()
                 source = self._source_name(article)
 
                 if not url or url in seen_urls:
+                    continue
+                if title and title in seen_titles:          # CHANGE 1: skip duplicate titles
+                    continue
+                if author and author in seen_authors:       # CHANGE 1: skip duplicate authors
                     continue
                 if source_counts.get(source, 0) >= self.cfg.source_limit:
                     continue
 
                 master.append(article)
                 seen_urls.add(url)
+                if title:
+                    seen_titles.add(title)                  # CHANGE 1: register title
+                if author:
+                    seen_authors.add(author)                # CHANGE 1: register author
                 source_counts[source] = source_counts.get(source, 0) + 1
 
             if len(master) >= goal:
@@ -277,7 +302,9 @@ class MasterBuilder:
 
     def load(self) -> dict:
         if not self.cfg.master_file.exists():
-            raise FileNotFoundError(f"{self.cfg.master_file} not found. Run the build step first.")
+            raise FileNotFoundError(
+                f"{self.cfg.master_file} not found. The build step may have failed."
+            )
         return json.loads(self.cfg.master_file.read_text(encoding="utf-8"))
 
 
@@ -304,7 +331,7 @@ class ArticleScraper:
     def _download_and_extract(self, url: str) -> str:
         downloaded = trafilatura.fetch_url(url)
         if not downloaded:
-            raise ValueError("trafilatura returned no content (possible network issue)")
+            raise ValueError("No content returned — possible network issue or bot block")
 
         text = trafilatura.extract(
             downloaded,
@@ -317,7 +344,7 @@ class ArticleScraper:
 
         if len(text) < self.cfg.min_content_length:
             raise ValueError(
-                f"Content too short: {len(text)} chars (min {self.cfg.min_content_length})"
+                f"Content too short ({len(text)} chars, minimum is {self.cfg.min_content_length})"
             )
 
         return self._deduplicate(text)
@@ -334,7 +361,7 @@ class ArticleScraper:
             content = self._download_and_extract(url)
             return True, content, None
         except Exception as exc:
-            return False, None, str(exc)
+            return False, None, f"{type(exc).__name__}: {exc}"
 
 
 # =============================================================================
@@ -364,10 +391,10 @@ class ArticleSummarizer:
         self._client = None
 
         if not GEMINI_AVAILABLE:
-            log.warning("google-genai not installed — summarisation unavailable.")
+            log_warning("summarizer:init", "google-genai is not installed — summarisation unavailable")
             return
         if not self._api_key:
-            log.warning("GEMINI_KEY not set — summarisation unavailable.")
+            log_warning("summarizer:init", "GEMINI_KEY is not set — summarisation unavailable")
             return
 
         self._client = genai.Client(api_key=self._api_key)
@@ -387,7 +414,7 @@ class ArticleSummarizer:
         )
         summary = (response.text or "").strip()
         if len(summary) < 50:
-            raise ValueError(f"Summary suspiciously short ({len(summary)} chars)")
+            raise ValueError(f"Summary suspiciously short ({len(summary)} chars) — possible API issue")
         return summary
 
     def summarize(self, text: str) -> tuple[bool, Optional[str], Optional[str]]:
@@ -395,15 +422,15 @@ class ArticleSummarizer:
         Returns (success, summary_or_None, error_or_None).
         """
         if not self._is_ready():
-            return False, None, "Gemini client not available (check install and GEMINI_KEY)"
+            return False, None, "Gemini client not initialised (check GEMINI_KEY and google-genai install)"
         if not text or len(text) < 100:
-            return False, None, "Text too short to summarise"
+            return False, None, f"Input text too short to summarise ({len(text)} chars)"
 
         try:
             summary = self._call_api(text)
             return True, summary, None
         except Exception as exc:
-            return False, None, str(exc)
+            return False, None, f"{type(exc).__name__}: {exc}"
 
 
 # =============================================================================
@@ -416,6 +443,7 @@ class ArticleResult:
     url: str
     title: str
     source: str
+    author: str                              # CHANGE 2: added author field
     success: bool
     content: Optional[str]   = None
     summary: Optional[str]   = None
@@ -448,12 +476,12 @@ class ProgressTracker:
                 r = ArticleResult.from_dict(d)
                 self.results[r.index] = r
             log.info(
-                "Resumed: %d processed (%d successful)",
+                "Resumed from progress file: %d processed (%d successful)",
                 len(self.results),
                 self.success_count,
             )
         except Exception as exc:
-            log.warning("Could not load progress file: %s — starting fresh.", exc)
+            log_warning("tracker:load", f"Could not load progress file — starting fresh. {type(exc).__name__}: {exc}")
             self.results = {}
 
     def record(self, result: ArticleResult) -> None:
@@ -489,27 +517,53 @@ class ProgressTracker:
 class NewsPipeline:
     """
     Runs the full news pipeline:
-      1. Fetch  — pull articles from NewsAPI per topic
-      2. Build  — merge & curate into a single master list
-      3. Process — scrape + summarise until success_goal is met
+      1. Cleanup — delete all landing files from the previous run
+      2. Fetch   — pull articles from NewsAPI per topic
+      3. Build   — merge & curate into a single master list
+      4. Process — scrape + summarise until success_goal is met
     """
 
+    # Glob patterns for all files produced by the pipeline
+    _LANDING_PATTERNS = ["news_*.json", "master_news.json", "pipeline_progress.json",
+                         "processed_articles.json", "summary_*.txt"]
+
     def __init__(self, cfg: Optional[PipelineConfig] = None) -> None:
-        self.cfg      = cfg or PipelineConfig()
-        self.fetcher  = ArticleFetcher(self.cfg)
-        self.builder  = MasterBuilder(self.cfg)
-        self.scraper  = ArticleScraper(self.cfg)
+        self.cfg        = cfg or PipelineConfig()
+        self.fetcher    = ArticleFetcher(self.cfg)
+        self.builder    = MasterBuilder(self.cfg)
+        self.scraper    = ArticleScraper(self.cfg)
         self.summarizer = ArticleSummarizer(self.cfg)
-        self.tracker  = ProgressTracker(self.cfg)
+        self.tracker    = ProgressTracker(self.cfg)
 
     # ------------------------------------------------------------------
+    def _step_cleanup(self) -> None:
+        """Delete all landing/output files from the previous run."""
+        log.info("━━━━  STEP 0: Cleanup  ━━━━")
+        removed, failed = 0, 0
+        for pattern in self._LANDING_PATTERNS:
+            for path in self.cfg.output_dir.glob(pattern):
+                try:
+                    path.unlink()
+                    removed += 1
+                except OSError as exc:
+                    log_error(f"cleanup:{path.name}", exc)
+                    failed += 1
+
+        if failed:
+            log.warning("  Cleanup: %d files removed, %d could not be deleted (see errors above)", removed, failed)
+        else:
+            log.info("  Cleanup: %d files removed.", removed)
+
+        # Reset the in-memory tracker so it starts fresh
+        self.tracker.results = {}
+
     def _step_fetch(self) -> bool:
         log.info("━━━━  STEP 1: Fetch  ━━━━")
         try:
             saved = self.fetcher.fetch_all()
             return bool(saved)
         except Exception as exc:
-            log.error("Fetch step failed: %s", exc)
+            log_error("step:fetch", exc)
             return False
 
     def _step_build(self) -> bool:
@@ -518,12 +572,12 @@ class NewsPipeline:
             self.builder.build()
             return True
         except Exception as exc:
-            log.error("Build step failed: %s", exc)
+            log_error("step:build", exc)
             return False
 
     def _step_process(self) -> bool:
         log.info(
-            "━━━━  STEPS 3–5: Scrape & Summarise  (goal: %d)  ━━━━",
+            "━━━━  STEPS 3–4: Scrape & Summarise  (goal: %d)  ━━━━",
             self.cfg.success_goal,
         )
         master = self.builder.load()
@@ -531,15 +585,10 @@ class NewsPipeline:
         total = len(articles)
 
         if not total:
-            log.error("No articles in master list.")
+            log.error("[step:process] Master list is empty — nothing to process.")
             return False
 
         log.info("Loaded %d candidates from master list.", total)
-        if self.tracker.success_count:
-            log.info(
-                "Resuming — %d successes already recorded.",
-                self.tracker.success_count,
-            )
 
         for idx, article in enumerate(articles):
             if idx in self.tracker.processed_indices:
@@ -551,14 +600,15 @@ class NewsPipeline:
             url    = (article.get("url") or "").strip()
             title  = article.get("title") or "Unknown"
             source = article.get("source", {}).get("name") or "Unknown"
+            author = article.get("author") or "Unknown"          # CHANGE 2: extract author
             log.info("[%d/%d] %s", idx + 1, total, title[:70])
 
             # --- Scrape ---
             ok, content, err = self.scraper.scrape(article)
             if not ok:
-                log.warning("  ✗ Scrape: %s", err)
+                log_warning(f"scrape:{idx}", err)
                 self.tracker.record(ArticleResult(
-                    index=idx, url=url, title=title, source=source,
+                    index=idx, url=url, title=title, source=source, author=author,
                     success=False, scrape_error=err,
                 ))
                 time.sleep(self.cfg.inter_request_delay)
@@ -569,19 +619,21 @@ class NewsPipeline:
             # --- Summarise ---
             ok, summary, err = self.summarizer.summarize(content)
             if not ok:
-                log.warning("  ✗ Summarise: %s", err)
+                log_warning(f"summarize:{idx}", err)
                 self.tracker.record(ArticleResult(
-                    index=idx, url=url, title=title, source=source,
+                    index=idx, url=url, title=title, source=source, author=author,
                     success=False, content=content, summary_error=err,
                 ))
                 time.sleep(self.cfg.inter_request_delay)
                 continue
 
-            log.info("  ✓ Summarised %d chars  [%d/%d successes]",
-                     len(summary), self.tracker.success_count + 1, self.cfg.success_goal)
+            log.info(
+                "  ✓ Summarised %d chars  [%d/%d successes]",
+                len(summary), self.tracker.success_count + 1, self.cfg.success_goal,
+            )
 
             self.tracker.record(ArticleResult(
-                index=idx, url=url, title=title, source=source,
+                index=idx, url=url, title=title, source=source, author=author,
                 success=True, content=content, summary=summary,
             ))
             time.sleep(self.cfg.inter_request_delay)
@@ -606,17 +658,18 @@ class NewsPipeline:
         self.cfg.results_file.write_text(json.dumps(output, indent=2), encoding="utf-8")
         log.info("Results written to %s", self.cfg.results_file)
 
-        # One .txt file per successful article
         for i, result in enumerate(successes, start=1):
-            safe = result.title[:50].replace("/", "_").replace(":", "_")
-            txt_path = self.cfg.output_dir / f"summary_{i:02d}_{safe}.txt"
+            txt_path = self.cfg.output_dir / f"summary_{i:02d}.txt"
             lines = [
-                f"Title:  {result.title}",
-                f"Source: {result.source}",
-                f"URL:    {result.url}",
+                result.title,                                # CHANGE 2: title only at top
                 "=" * 60,
                 "",
                 result.summary or "",
+                "",
+                "=" * 60,
+                f"Author: {result.author}",                 # CHANGE 2: author/source/url at bottom
+                f"Source: {result.source}",
+                f"URL:    {result.url}",
             ]
             txt_path.write_text("\n".join(lines), encoding="utf-8")
 
@@ -629,6 +682,8 @@ class NewsPipeline:
             self.cfg.candidate_count,
             ", ".join(self.cfg.topics),
         )
+
+        self._step_cleanup()
 
         if not self._step_fetch():
             log.error("Pipeline halted at Step 1 (Fetch).")
