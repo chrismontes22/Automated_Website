@@ -1,5 +1,17 @@
-- Make Logs clearer for any error
+-make logs clearer for any error
 
-- Safeguards for mid-run crash
+-safeguards for mid-run crash
 
-- Maybe set gemini output to markdown or even CSS styling
+-maybe set gemini output to markdown or even CSS styling
+
+-fix repeating the sasme article from different runs
+
+-add a search bar 
+
+-fix yaml
+
+-seperate articles by date
+
+-maybe make site a little brighter
+
+-repeat article check happens at the final steps, may need to happen before success
