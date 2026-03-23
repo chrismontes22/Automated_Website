@@ -937,10 +937,10 @@ class NewsPipeline:
                 result.summary or "",
                 "",
                 "=" * 60,
-                f"Category: {result.category or 'Unknown'}",
                 f"Author:   {result.author}",
                 f"Source:   {result.source}",
                 f"URL:      {result.url}",
+                f"Category: {result.category or 'Unknown'}",
             ]
             txt_path.write_text("\n".join(lines), encoding="utf-8")
 
