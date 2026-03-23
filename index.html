@@ -12,23 +12,39 @@
   <style>
     /* ── TOKENS ─────────────────────────────────────────────────────── */
     :root {
-      --bg:          #0d0f14;
-      --surface:     #13161e;
-      --surface-2:   #1a1e29;
-      --border:      #252836;
-      --text:        #e8e4dc;
-      --muted:       #7a7d8a;
-      --accent:      #e8a020;
-      --accent-dim:  #c4851a;
-      --ai:          #4f9cf9;
-      --market:      #34c98e;
+      --bg:          #1c1a15;
+      --surface:     #242018;
+      --surface-2:   #2c2820;
+      --surface-3:   #333028;
+      --border:      #3a3628;
+      --border-soft: #302c24;
+      --text:        #ede8df;
+      --text-body:   #c8c2b4;
+      --muted:       #7a7568;
+      --accent:      #d4641a;
+      --accent-dim:  #b85515;
+      --accent-bg:   rgba(212,100,26,0.10);
+      --accent-glow: rgba(212,100,26,0.20);
+      --ai:          #5b9cf6;
+      --ai-bg:       rgba(91,156,246,0.10);
+      --ai-border:   rgba(91,156,246,0.22);
+      --market:      #3abf8a;
+      --market-bg:   rgba(58,191,138,0.10);
+      --market-border: rgba(58,191,138,0.22);
       --cyber:       #e05a5a;
+      --cyber-bg:    rgba(224,90,90,0.10);
+      --cyber-border: rgba(224,90,90,0.22);
       --devices:     #a78bfa;
+      --devices-bg:  rgba(167,139,250,0.10);
+      --devices-border: rgba(167,139,250,0.22);
       --font-serif:  "Playfair Display", Georgia, serif;
       --font-sans:   "IBM Plex Sans", system-ui, sans-serif;
       --font-mono:   "IBM Plex Mono", monospace;
-      --radius:      6px;
-      --transition:  0.18s ease;
+      --radius:      7px;
+      --transition:  0.16s ease;
+      --shadow-sm:   0 1px 4px rgba(0,0,0,0.25);
+      --shadow-md:   0 4px 18px rgba(0,0,0,0.35);
+      --shadow-lg:   0 12px 44px rgba(0,0,0,0.50);
     }
 
     /* ── RESET ──────────────────────────────────────────────────────── */
@@ -43,15 +59,14 @@
       min-height: 100vh;
       -webkit-font-smoothing: antialiased;
     }
-
     a { color: inherit; text-decoration: none; }
 
-    /* ── NOISE OVERLAY ──────────────────────────────────────────────── */
+    /* ── GRAIN OVERLAY ──────────────────────────────────────────────── */
     body::before {
       content: "";
       position: fixed;
       inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
       pointer-events: none;
       z-index: 0;
     }
@@ -61,34 +76,33 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(13, 15, 20, 0.92);
-      backdrop-filter: blur(14px);
+      background: rgba(28,26,21,0.93);
+      backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--border);
     }
 
     .header-inner {
-      max-width: 1200px;
+      max-width: 1280px;
       margin: 0 auto;
       padding: 0 24px;
       display: flex;
       align-items: center;
-      gap: 40px;
-      height: 64px;
+      gap: 32px;
+      height: 62px;
     }
 
     .logo {
       font-family: var(--font-serif);
-      font-size: 22px;
+      font-size: 21px;
       font-weight: 900;
       letter-spacing: -0.02em;
       color: var(--text);
       white-space: nowrap;
       flex-shrink: 0;
     }
-
     .logo span { color: var(--accent); }
 
-    /* ── NAV TABS ───────────────────────────────────────────────────── */
+    /* ── NAV ────────────────────────────────────────────────────────── */
     nav {
       display: flex;
       gap: 2px;
@@ -105,284 +119,458 @@
       font-family: var(--font-mono);
       font-size: 11px;
       font-weight: 500;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
       color: var(--muted);
-      padding: 8px 14px;
+      padding: 7px 13px;
       border-radius: var(--radius);
       transition: color var(--transition), background var(--transition);
       white-space: nowrap;
       position: relative;
     }
-
-    nav button:hover { color: var(--text); background: var(--surface); }
-
-    nav button.active {
-      color: var(--text);
-      background: var(--surface-2);
-    }
-
+    nav button:hover { color: var(--text); background: var(--surface-2); }
+    nav button.active { color: var(--accent); background: var(--accent-bg); }
     nav button.active::after {
       content: "";
       position: absolute;
       bottom: -1px;
-      left: 14px;
-      right: 14px;
+      left: 13px;
+      right: 13px;
       height: 2px;
       background: var(--accent);
       border-radius: 2px 2px 0 0;
     }
 
-    /* ── LIVE INDICATOR ─────────────────────────────────────────────── */
-    .live-badge {
-      margin-left: auto;
+    /* ── HEADER RIGHT ───────────────────────────────────────────────── */
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
       flex-shrink: 0;
+      margin-left: auto;
+    }
+
+    .search-trigger {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 6px 12px;
+      cursor: pointer;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+      transition: border-color var(--transition), color var(--transition);
+    }
+    .search-trigger:hover { border-color: var(--accent); color: var(--text); }
+
+    .live-badge {
       display: flex;
       align-items: center;
       gap: 6px;
       font-family: var(--font-mono);
       font-size: 10px;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.07em;
       color: var(--muted);
     }
     .live-dot {
       width: 6px; height: 6px;
       border-radius: 50%;
       background: #4ade80;
-      animation: pulse 2s infinite;
+      animation: pulse 2.2s infinite;
     }
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50%       { opacity: 0.3; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+    /* ── SEARCH OVERLAY ─────────────────────────────────────────────── */
+    #search-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      background: rgba(10,9,7,0.55);
+      backdrop-filter: blur(5px);
+    }
+    #search-overlay.visible {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding-top: 70px;
+      animation: fadeIn 0.14s ease;
+    }
+    @keyframes fadeIn { from{opacity:0} to{opacity:1} }
+
+    .search-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      box-shadow: var(--shadow-lg);
+      width: min(660px, calc(100vw - 32px));
+      overflow: hidden;
+      animation: slideDown 0.17s ease;
+    }
+    @keyframes slideDown { from{opacity:0;transform:translateY(-10px)} to{opacity:1;transform:translateY(0)} }
+
+    .search-input-row {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 15px 18px;
+      border-bottom: 1px solid var(--border-soft);
+    }
+    .search-input-row svg { color: var(--muted); flex-shrink: 0; }
+
+    #search-input {
+      flex: 1;
+      background: none;
+      border: none;
+      outline: none;
+      font-family: var(--font-sans);
+      font-size: 15px;
+      font-weight: 400;
+      color: var(--text);
+    }
+    #search-input::placeholder { color: var(--muted); }
+
+    .search-close {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: var(--muted);
+      padding: 4px 8px;
+      letter-spacing: 0.04em;
+      transition: color var(--transition), border-color var(--transition);
+      flex-shrink: 0;
+    }
+    .search-close:hover { color: var(--text); border-color: var(--muted); }
+
+    /* ── SEARCH FILTER CHIPS ────────────────────────────────────────── */
+    .search-filters {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      padding: 10px 18px;
+      border-bottom: 1px solid var(--border-soft);
+      align-items: center;
     }
 
-    /* ── MAIN LAYOUT ────────────────────────────────────────────────── */
+    .filter-label {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-right: 4px;
+      flex-shrink: 0;
+    }
+
+    .filter-chip {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.04em;
+      padding: 3px 10px;
+      border-radius: 99px;
+      border: 1px solid var(--border);
+      background: var(--surface-2);
+      color: var(--muted);
+      cursor: pointer;
+      transition: color var(--transition), border-color var(--transition), background var(--transition);
+      white-space: nowrap;
+    }
+    .filter-chip:hover { color: var(--text); border-color: var(--muted); }
+    .filter-chip.active {
+      background: var(--accent-bg);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* ── SEARCH RESULTS ─────────────────────────────────────────────── */
+    #search-results {
+      max-height: 400px;
+      overflow-y: auto;
+    }
+    #search-results::-webkit-scrollbar { width: 4px; }
+    #search-results::-webkit-scrollbar-track { background: transparent; }
+    #search-results::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
+
+    .search-result-item {
+      padding: 12px 18px;
+      cursor: pointer;
+      transition: background var(--transition);
+      border-bottom: 1px solid var(--border-soft);
+    }
+    .search-result-item:last-child { border-bottom: none; }
+    .search-result-item:hover { background: var(--surface-2); }
+
+    .sri-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 4px;
+    }
+    .sri-category {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: 99px;
+      border: 1px solid transparent;
+    }
+    .sri-date {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      color: var(--muted);
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+    }
+    .sri-title {
+      font-family: var(--font-serif);
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.3;
+      margin-bottom: 3px;
+    }
+    .sri-meta {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: var(--muted);
+    }
+    .sri-meta .sep { margin: 0 5px; color: var(--border); }
+
+    .search-empty {
+      padding: 36px 18px;
+      text-align: center;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .search-hint {
+      padding: 20px 18px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--muted);
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
+
+    mark {
+      background: rgba(212,100,26,0.18);
+      color: var(--accent);
+      border-radius: 2px;
+      padding: 0 1px;
+    }
+
+    /* ── MAIN ───────────────────────────────────────────────────────── */
     main {
       position: relative;
       z-index: 1;
-      max-width: 1200px;
+      max-width: 1280px;
       margin: 0 auto;
-      padding: 48px 24px 80px;
+      padding: 44px 24px 80px;
     }
 
-    /* ── PAGE TITLE ─────────────────────────────────────────────────── */
-    .page-header {
-      margin-bottom: 36px;
-      animation: fadeUp 0.4s ease both;
-    }
-
+    .page-header { margin-bottom: 36px; animation: fadeUp 0.35s ease both; }
     .page-title {
       font-family: var(--font-serif);
-      font-size: clamp(28px, 5vw, 42px);
+      font-size: clamp(26px, 4.5vw, 38px);
       font-weight: 900;
       letter-spacing: -0.03em;
       line-height: 1.1;
-      color: var(--text);
     }
-
     .page-subtitle {
-      margin-top: 8px;
-      font-size: 13px;
+      margin-top: 6px;
+      font-size: 12px;
       color: var(--muted);
       font-family: var(--font-mono);
       letter-spacing: 0.04em;
     }
 
-    /* ── ARTICLE GRID ───────────────────────────────────────────────── */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 20px;
+    /* ── DATE GROUP ─────────────────────────────────────────────────── */
+    .date-group { margin-bottom: 44px; animation: fadeUp 0.35s ease both; }
+
+    .date-label {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .date-label-text {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .date-label-line { flex: 1; height: 1px; background: var(--border); }
+    .date-label-count {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: var(--border);
+      white-space: nowrap;
     }
 
-    /* ── ARTICLE CARD ───────────────────────────────────────────────── */
+    /* ── GRID & CARDS ───────────────────────────────────────────────── */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 16px;
+    }
+
     .card {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 10px;
-      padding: 24px;
+      padding: 22px;
       cursor: pointer;
       transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      animation: fadeUp 0.4s ease both;
+      gap: 11px;
+      animation: fadeUp 0.35s ease both;
     }
-
     .card:hover {
-      transform: translateY(-3px);
+      transform: translateY(-2px);
       border-color: var(--accent-dim);
-      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+      box-shadow: var(--shadow-md);
     }
 
     .card-category {
       font-family: var(--font-mono);
-      font-size: 10px;
+      font-size: 9px;
       font-weight: 500;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       padding: 3px 9px;
       border-radius: 99px;
       align-self: flex-start;
+      border: 1px solid transparent;
     }
-
-    .cat-ai      { background: rgba(79,156,249,0.12); color: var(--ai);      border: 1px solid rgba(79,156,249,0.25); }
-    .cat-market  { background: rgba(52,201,142,0.12); color: var(--market);  border: 1px solid rgba(52,201,142,0.25); }
-    .cat-cyber   { background: rgba(224,90,90,0.12);  color: var(--cyber);   border: 1px solid rgba(224,90,90,0.25); }
-    .cat-devices { background: rgba(167,139,250,0.12);color: var(--devices); border: 1px solid rgba(167,139,250,0.25); }
+    .cat-ai      { background: var(--ai-bg);      color: var(--ai);      border-color: var(--ai-border); }
+    .cat-market  { background: var(--market-bg);  color: var(--market);  border-color: var(--market-border); }
+    .cat-cyber   { background: var(--cyber-bg);   color: var(--cyber);   border-color: var(--cyber-border); }
+    .cat-devices { background: var(--devices-bg); color: var(--devices); border-color: var(--devices-border); }
 
     .card-title {
       font-family: var(--font-serif);
-      font-size: 17px;
+      font-size: 16px;
       font-weight: 700;
-      line-height: 1.3;
+      line-height: 1.35;
       letter-spacing: -0.01em;
       color: var(--text);
       transition: color var(--transition);
     }
-
     .card:hover .card-title { color: var(--accent); }
 
     .card-meta {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 7px;
       font-family: var(--font-mono);
-      font-size: 11px;
+      font-size: 10px;
       color: var(--muted);
       margin-top: auto;
     }
-
     .card-meta .sep { color: var(--border); }
 
-    /* ── EMPTY STATE ────────────────────────────────────────────────── */
     .empty {
       grid-column: 1 / -1;
       text-align: center;
-      padding: 80px 24px;
+      padding: 60px 24px;
       color: var(--muted);
       font-family: var(--font-mono);
       font-size: 13px;
     }
 
-    /* ── ARTICLE DETAIL VIEW ────────────────────────────────────────── */
-    #article-view {
-      display: none;
-      animation: fadeUp 0.3s ease both;
-    }
-
+    /* ── ARTICLE DETAIL ─────────────────────────────────────────────── */
+    #article-view { display: none; animation: fadeUp 0.3s ease both; }
     #article-view.visible { display: block; }
 
     .back-btn {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 7px;
       font-family: var(--font-mono);
       font-size: 11px;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.05em;
       color: var(--muted);
       cursor: pointer;
-      background: none;
+      background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding: 8px 14px;
-      margin-bottom: 36px;
+      padding: 7px 14px;
+      margin-bottom: 32px;
       transition: color var(--transition), border-color var(--transition);
     }
-
     .back-btn:hover { color: var(--text); border-color: var(--muted); }
 
     .article-header {
-      margin-bottom: 36px;
-      padding-bottom: 28px;
+      margin-bottom: 32px;
+      padding-bottom: 24px;
       border-bottom: 1px solid var(--border);
     }
-
     .article-category-badge {
       font-family: var(--font-mono);
-      font-size: 10px;
+      font-size: 9px;
       font-weight: 500;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      padding: 4px 12px;
+      padding: 4px 11px;
       border-radius: 99px;
       display: inline-block;
       margin-bottom: 16px;
+      border: 1px solid transparent;
     }
-
     .article-title {
       font-family: var(--font-serif);
-      font-size: clamp(26px, 4vw, 40px);
+      font-size: clamp(24px, 3.5vw, 38px);
       font-weight: 900;
       letter-spacing: -0.03em;
       line-height: 1.15;
       color: var(--text);
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
-
     .article-byline {
       display: flex;
       flex-wrap: wrap;
       gap: 6px 20px;
       font-family: var(--font-mono);
-      font-size: 12px;
+      font-size: 11px;
       color: var(--muted);
     }
-
     .article-byline span { display: flex; align-items: center; gap: 6px; }
     .byline-label { color: var(--border); font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; }
 
-    /* ── SUMMARY BODY (markdown rendered) ──────────────────────────── */
-    .article-body {
-      max-width: 720px;
-      font-size: 16px;
-      line-height: 1.75;
-    }
-
-    .article-body strong {
-      font-weight: 500;
-      color: var(--text);
-    }
-
-    .article-body em {
-      color: var(--muted);
-      font-style: normal;
-    }
-
-    .article-body p {
-      margin-bottom: 16px;
-      color: #c5c1b8;
-    }
-
-    .article-body ul, .article-body ol {
-      padding-left: 20px;
-      margin-bottom: 16px;
-      color: #c5c1b8;
-    }
-
-    .article-body li {
-      margin-bottom: 8px;
-      padding-left: 4px;
-    }
-
-    .article-body li::marker {
-      color: var(--accent);
-    }
-
+    .article-body { max-width: 680px; font-size: 16px; line-height: 1.8; }
+    .article-body p { margin-bottom: 15px; color: var(--text-body); }
+    .article-body strong { font-weight: 500; color: var(--text); }
+    .article-body ul, .article-body ol { padding-left: 20px; margin-bottom: 15px; color: var(--text-body); }
+    .article-body li { margin-bottom: 7px; padding-left: 4px; }
+    .article-body li::marker { color: var(--accent); }
     .article-body h2, .article-body h3 {
       font-family: var(--font-sans);
       font-weight: 500;
-      font-size: 15px;
-      letter-spacing: 0.02em;
+      font-size: 13px;
+      letter-spacing: 0.06em;
       color: var(--muted);
       text-transform: uppercase;
-      margin: 28px 0 12px;
+      margin: 28px 0 11px;
     }
 
-    /* ── SOURCE LINK BOX ────────────────────────────────────────────── */
     .source-box {
       margin-top: 40px;
-      padding: 20px 24px;
+      padding: 18px 22px;
       background: var(--surface);
       border: 1px solid var(--border);
       border-left: 3px solid var(--accent);
@@ -393,36 +581,147 @@
       justify-content: space-between;
       gap: 12px;
     }
-
     .source-box-meta {
       font-family: var(--font-mono);
-      font-size: 12px;
+      font-size: 11px;
       color: var(--muted);
       display: flex;
       flex-direction: column;
       gap: 4px;
     }
-
     .source-box-meta strong { color: var(--text); font-weight: 500; }
-
     .read-original {
       display: inline-flex;
       align-items: center;
       gap: 8px;
       font-family: var(--font-mono);
       font-size: 11px;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.05em;
       color: var(--accent);
-      border: 1px solid var(--accent-dim);
+      border: 1px solid rgba(212,100,26,0.3);
       border-radius: var(--radius);
       padding: 9px 16px;
-      transition: background var(--transition), color var(--transition);
+      background: var(--accent-bg);
+      transition: background var(--transition);
       white-space: nowrap;
     }
+    .read-original:hover { background: var(--accent-glow); }
 
-    .read-original:hover {
-      background: rgba(232,160,32,0.1);
+    /* ── ABOUT ──────────────────────────────────────────────────────── */
+    #about-view { display: none; animation: fadeUp 0.3s ease both; }
+    #about-view.visible { display: block; }
+
+    .about-wrap { max-width: 780px; }
+
+    .about-kicker {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 18px;
     }
+
+    .about-hero-title {
+      font-family: var(--font-serif);
+      font-size: clamp(32px, 6vw, 58px);
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      line-height: 1.05;
+      color: var(--text);
+      margin-bottom: 32px;
+    }
+    .about-hero-title em {
+      font-style: normal;
+      color: var(--accent);
+    }
+
+    .about-lead {
+      font-size: 17px;
+      line-height: 1.72;
+      color: var(--text-body);
+      margin-bottom: 28px;
+      border-left: 3px solid var(--accent);
+      padding-left: 22px;
+    }
+
+    .about-body {
+      font-size: 15px;
+      line-height: 1.78;
+      color: var(--text-body);
+    }
+    .about-body p { margin-bottom: 18px; }
+
+    .about-divider {
+      height: 1px;
+      background: var(--border);
+      margin: 40px 0;
+    }
+
+    /* ── STATS GRID ─────────────────────────────────────────────────── */
+    .about-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 14px;
+      margin: 32px 0;
+    }
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 22px 20px;
+      position: relative;
+      overflow: hidden;
+      transition: border-color var(--transition), transform var(--transition);
+    }
+    .stat-card:hover { border-color: var(--accent-dim); transform: translateY(-1px); }
+    .stat-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, var(--accent-bg) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .stat-number {
+      font-family: var(--font-serif);
+      font-size: 36px;
+      font-weight: 900;
+      color: var(--accent);
+      letter-spacing: -0.03em;
+      line-height: 1;
+      margin-bottom: 7px;
+      position: relative;
+    }
+    .stat-label {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      position: relative;
+    }
+    .stat-joke {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      color: var(--border);
+      margin-top: 4px;
+      letter-spacing: 0.04em;
+      position: relative;
+    }
+
+    /* ── DISCLAIMER ─────────────────────────────────────────────────── */
+    .about-disclaimer {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--muted);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+    .about-disclaimer strong { color: var(--text-body); font-weight: 500; }
 
     /* ── LOADING / ERROR ────────────────────────────────────────────── */
     #loading, #error-msg {
@@ -432,16 +731,14 @@
       font-size: 13px;
       color: var(--muted);
     }
-
     #loading .spinner {
-      width: 32px; height: 32px;
+      width: 30px; height: 30px;
       border: 2px solid var(--border);
       border-top-color: var(--accent);
       border-radius: 50%;
-      animation: spin 0.8s linear infinite;
-      margin: 0 auto 20px;
+      animation: spin 0.75s linear infinite;
+      margin: 0 auto 18px;
     }
-
     @keyframes spin { to { transform: rotate(360deg); } }
 
     /* ── FOOTER ─────────────────────────────────────────────────────── */
@@ -449,7 +746,7 @@
       position: relative;
       z-index: 1;
       border-top: 1px solid var(--border);
-      padding: 24px;
+      padding: 22px 24px;
       text-align: center;
       font-family: var(--font-mono);
       font-size: 11px;
@@ -459,26 +756,17 @@
 
     /* ── ANIMATIONS ─────────────────────────────────────────────────── */
     @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(14px); }
+      from { opacity: 0; transform: translateY(12px); }
       to   { opacity: 1; transform: translateY(0); }
     }
 
-    .card:nth-child(1)  { animation-delay: 0.03s; }
-    .card:nth-child(2)  { animation-delay: 0.06s; }
-    .card:nth-child(3)  { animation-delay: 0.09s; }
-    .card:nth-child(4)  { animation-delay: 0.12s; }
-    .card:nth-child(5)  { animation-delay: 0.15s; }
-    .card:nth-child(6)  { animation-delay: 0.18s; }
-    .card:nth-child(7)  { animation-delay: 0.21s; }
-    .card:nth-child(8)  { animation-delay: 0.24s; }
-    .card:nth-child(9)  { animation-delay: 0.27s; }
-    .card:nth-child(10) { animation-delay: 0.30s; }
-
     /* ── RESPONSIVE ─────────────────────────────────────────────────── */
-    @media (max-width: 600px) {
-      .header-inner { gap: 16px; }
-      .live-badge   { display: none; }
-      main          { padding: 32px 16px 60px; }
+    @media (max-width: 640px) {
+      .header-inner { gap: 10px; }
+      .live-badge { display: none; }
+      .search-trigger span { display: none; }
+      main { padding: 28px 16px 60px; }
+      .about-stats { grid-template-columns: 1fr 1fr; }
     }
   </style>
 </head>
@@ -494,38 +782,59 @@
       <button data-tab="market">Tech Business</button>
       <button data-tab="cyber">Cybersecurity</button>
       <button data-tab="devices">Laptops &amp; Phones</button>
+      <button data-tab="about">About</button>
     </nav>
-    <div class="live-badge">
-      <div class="live-dot"></div>
-      <span>AUTO-UPDATED</span>
+    <div class="header-right">
+      <button class="search-trigger" id="search-trigger" aria-label="Search articles">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <span>Search</span>
+      </button>
+      <div class="live-badge">
+        <div class="live-dot"></div>
+        <span>AUTO-UPDATED</span>
+      </div>
     </div>
   </div>
 </header>
 
+<!-- ── SEARCH OVERLAY ──────────────────────────────────────────────── -->
+<div id="search-overlay" role="dialog" aria-label="Search">
+  <div class="search-box">
+    <div class="search-input-row">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input id="search-input" type="text" placeholder="Search articles, sources, authors…" autocomplete="off" spellcheck="false" />
+      <button class="search-close" id="search-close">ESC</button>
+    </div>
+    <div class="search-filters" id="search-filters">
+      <span class="filter-label">Filter:</span>
+      <button class="filter-chip active" data-filter="all">All fields</button>
+      <button class="filter-chip" data-filter="title">Title</button>
+      <button class="filter-chip" data-filter="author">Author</button>
+      <button class="filter-chip" data-filter="source">Source</button>
+      <button class="filter-chip" data-filter="date">Date</button>
+    </div>
+    <div id="search-results">
+      <div class="search-hint">Type to search across all articles</div>
+    </div>
+  </div>
+</div>
+
 <!-- ── MAIN ────────────────────────────────────────────────────────── -->
 <main id="main">
 
-  <!-- Loading state -->
-  <div id="loading">
-    <div class="spinner"></div>
-    Fetching articles…
-  </div>
-
-  <!-- Error state -->
-  <div id="error-msg" style="display:none;">
-    Could not load articles.json — make sure the pipeline has run at least once.
-  </div>
+  <div id="loading"><div class="spinner"></div>Fetching articles…</div>
+  <div id="error-msg" style="display:none;">Could not load articles.json — make sure the pipeline has run at least once.</div>
 
   <!-- List view -->
   <div id="list-view" style="display:none;">
     <div class="page-header">
-      <h1 class="page-title" id="page-title">Latest</h1>
+      <h1 class="page-title" id="page-title">Latest News</h1>
       <p class="page-subtitle" id="page-subtitle"></p>
     </div>
-    <div class="grid" id="grid"></div>
+    <div id="groups-container"></div>
   </div>
 
-  <!-- Article detail view -->
+  <!-- Article detail -->
   <div id="article-view">
     <button class="back-btn" id="back-btn">← Back</button>
     <div class="article-header">
@@ -534,11 +843,61 @@
       <div class="article-byline" id="art-byline"></div>
     </div>
     <div class="article-body" id="art-body"></div>
-    <div class="source-box" id="art-source-box">
+    <div class="source-box">
       <div class="source-box-meta" id="art-source-meta"></div>
-      <a class="read-original" id="art-link" target="_blank" rel="noopener">
-        Read original ↗
-      </a>
+      <a class="read-original" id="art-link" target="_blank" rel="noopener">Read original ↗</a>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div id="about-view">
+    <div class="about-wrap">
+      <p class="about-kicker">About TechPulse</p>
+      <h1 class="about-hero-title">The tech news feed<br>that never <em>sleeps.</em></h1>
+
+      <p class="about-lead">
+        TechPulse is a fully automated, AI-run tech news blog. It scours the web for the latest technology stories, then summarizes them into clear, jargon-free briefings — so you get the signal without the noise.
+      </p>
+
+      <div class="about-body">
+        <p>
+          While you're sleeping, TechPulse is reading. Hundreds of articles from across the internet, distilled into the ones that actually matter — no filler, no sponsored fluff, no doomscrolling required.
+        </p>
+        <p>
+          Four categories. Thousands of articles. One place. Whether you're tracking the AI arms race, keeping tabs on Big Tech, watching for the next data breach, or just figuring out which laptop to buy — TechPulse has your back, automatically, every single day.
+        </p>
+        <p>
+          This isn't a newsletter you forgot to unsubscribe from. It's a living, breathing feed of what's happening right now in tech — curated by AI so a human doesn't have to.
+        </p>
+      </div>
+
+      <div class="about-divider"></div>
+
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-number" id="stat-total">—</div>
+          <div class="stat-label">Articles Summarized</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="stat-authors">—</div>
+          <div class="stat-label">Authors Covered</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="stat-sources">—</div>
+          <div class="stat-label">Unique Sources</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">0</div>
+          <div class="stat-label">Coffees Drank</div>
+          <div class="stat-joke">i am a bot</div>
+        </div>
+      </div>
+
+      <div class="about-divider"></div>
+
+      <div class="about-disclaimer">
+        <strong>A note on accuracy:</strong> All summaries are generated by AI and may contain errors or omissions. TechPulse is a reading aid, not a primary news source. Always follow the "Read original" link to verify important claims before acting on them. Summaries are not editorial opinions.
+      </div>
     </div>
   </div>
 
@@ -546,18 +905,19 @@
 
 <!-- ── FOOTER ──────────────────────────────────────────────────────── -->
 <footer>
-  TechPulse — Summaries generated by AI · Updated every 12 hours
+  TechPulse — Summaries generated by AI &nbsp;·&nbsp; Updated every 12 hours &nbsp;·&nbsp; <span id="footer-count"></span>
 </footer>
 
-<!-- ── APP ─────────────────────────────────────────────────────────── -->
+<!-- ── SCRIPT ──────────────────────────────────────────────────────── -->
 <script>
-  // ── Category config ──────────────────────────────────────────────
+  /* ─── Constants ────────────────────────────────────────────────── */
   const TABS = {
     all:     { label: "Latest News",             filter: null },
     ai:      { label: "Artificial Intelligence", filter: "Artificial Intelligence" },
     market:  { label: "Tech Business & Markets", filter: "Tech Business & Markets" },
     cyber:   { label: "Cybersecurity",           filter: "Cybersecurity" },
     devices: { label: "Laptops & Cell Phones",   filter: "Laptops & Cell Phones" },
+    about:   { label: "About",                   filter: null },
   };
 
   const CAT_CLASS = {
@@ -567,28 +927,35 @@
     "Laptops & Cell Phones":   "cat-devices",
   };
 
-  // ── State ────────────────────────────────────────────────────────
+  /* ─── State ────────────────────────────────────────────────────── */
   let allArticles = [];
   let currentTab  = "all";
+  let activeFilter = "all"; // search filter chip
 
-  // ── Elements ─────────────────────────────────────────────────────
-  const $loading     = document.getElementById("loading");
-  const $error       = document.getElementById("error-msg");
-  const $listView    = document.getElementById("list-view");
-  const $articleView = document.getElementById("article-view");
-  const $grid        = document.getElementById("grid");
-  const $pageTitle   = document.getElementById("page-title");
-  const $pageSub     = document.getElementById("page-subtitle");
-  const $navBtns     = document.querySelectorAll("nav button");
-  const $backBtn     = document.getElementById("back-btn");
+  /* ─── DOM refs ─────────────────────────────────────────────────── */
+  const $loading       = document.getElementById("loading");
+  const $error         = document.getElementById("error-msg");
+  const $listView      = document.getElementById("list-view");
+  const $articleView   = document.getElementById("article-view");
+  const $aboutView     = document.getElementById("about-view");
+  const $groups        = document.getElementById("groups-container");
+  const $pageTitle     = document.getElementById("page-title");
+  const $pageSub       = document.getElementById("page-subtitle");
+  const $navBtns       = document.querySelectorAll("nav button");
+  const $backBtn       = document.getElementById("back-btn");
+  const $searchOverlay = document.getElementById("search-overlay");
+  const $searchInput   = document.getElementById("search-input");
+  const $searchResults = document.getElementById("search-results");
+  const $filterChips   = document.querySelectorAll(".filter-chip");
 
-  // ── Fetch data ───────────────────────────────────────────────────
+  /* ─── Boot ──────────────────────────────────────────────────────── */
   async function init() {
     try {
       const res = await fetch("articles.json");
       if (!res.ok) throw new Error(res.status);
       allArticles = await res.json();
       $loading.style.display = "none";
+      populateAboutStats();
       renderTab(currentTab);
     } catch (e) {
       $loading.style.display = "none";
@@ -597,12 +964,22 @@
     }
   }
 
-  // ── Nav ──────────────────────────────────────────────────────────
+  /* ─── About stats ───────────────────────────────────────────────── */
+  function populateAboutStats() {
+    document.getElementById("stat-total").textContent   = allArticles.length;
+    const authors = new Set(allArticles.map(a => a.author).filter(Boolean));
+    const sources  = new Set(allArticles.map(a => a.source).filter(Boolean));
+    document.getElementById("stat-authors").textContent = authors.size;
+    document.getElementById("stat-sources").textContent  = sources.size;
+    const fc = document.getElementById("footer-count");
+    if (fc) fc.textContent = `${allArticles.length} articles indexed`;
+  }
+
+  /* ─── Nav ───────────────────────────────────────────────────────── */
   $navBtns.forEach(btn => {
     btn.addEventListener("click", () => {
       currentTab = btn.dataset.tab;
       $navBtns.forEach(b => b.classList.toggle("active", b === btn));
-      showListView();
       renderTab(currentTab);
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
@@ -613,100 +990,255 @@
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
-  // ── Views ────────────────────────────────────────────────────────
+  /* ─── View switchers ────────────────────────────────────────────── */
   function showListView() {
     $listView.style.display    = "block";
-    $articleView.classList.remove("visible");
     $articleView.style.display = "none";
+    $articleView.classList.remove("visible");
+    $aboutView.style.display   = "none";
+    $aboutView.classList.remove("visible");
   }
 
   function showArticleView() {
     $listView.style.display    = "none";
     $articleView.style.display = "block";
-    // Trigger animation
+    $aboutView.style.display   = "none";
+    $aboutView.classList.remove("visible");
     void $articleView.offsetWidth;
     $articleView.classList.add("visible");
   }
 
-  // ── Render tab ───────────────────────────────────────────────────
+  function showAboutView() {
+    $listView.style.display    = "none";
+    $articleView.style.display = "none";
+    $articleView.classList.remove("visible");
+    $aboutView.style.display   = "block";
+    void $aboutView.offsetWidth;
+    $aboutView.classList.add("visible");
+  }
+
+  /* ─── Render tab ────────────────────────────────────────────────── */
   function renderTab(tab) {
+    if (tab === "about") { showAboutView(); return; }
+
+    showListView();
     const cfg    = TABS[tab];
     const filter = cfg.filter;
     const arts   = filter ? allArticles.filter(a => a.category === filter) : allArticles;
 
     $pageTitle.textContent = cfg.label;
     $pageSub.textContent   = `${arts.length} article${arts.length !== 1 ? "s" : ""}`;
-
-    $grid.innerHTML = "";
+    $groups.innerHTML = "";
 
     if (!arts.length) {
-      $grid.innerHTML = '<div class="empty">No articles in this category yet.</div>';
+      $groups.innerHTML = '<div class="empty">No articles in this category yet.</div>';
       return;
     }
 
-    arts.forEach((article, idx) => {
-      const card = document.createElement("div");
-      card.className = "card";
-      card.style.animationDelay = `${Math.min(idx, 9) * 30}ms`;
+    const grouped = groupByDate(arts);
+    let cardDelay = 0;
 
-      const catClass = CAT_CLASS[article.category] || "cat-ai";
-      const author   = article.author || "Unknown";
-      const source   = article.source || "Unknown";
+    grouped.forEach((articles, dateKey) => {
+      const groupEl = document.createElement("div");
+      groupEl.className = "date-group";
+      const label = formatDateLabel(articles[0].processed_at);
 
-      card.innerHTML = `
-        <span class="card-category ${catClass}">${esc(article.category || "News")}</span>
-        <div class="card-title">${esc(article.title || "Untitled")}</div>
-        <div class="card-meta">
-          <span>${esc(author)}</span>
-          <span class="sep">·</span>
-          <span>${esc(source)}</span>
+      groupEl.innerHTML = `
+        <div class="date-label">
+          <span class="date-label-text">${esc(label)}</span>
+          <span class="date-label-line"></span>
+          <span class="date-label-count">${articles.length} article${articles.length !== 1 ? "s" : ""}</span>
         </div>
+        <div class="grid" id="grid-${esc(dateKey)}"></div>
       `;
+      $groups.appendChild(groupEl);
 
-      card.addEventListener("click", () => openArticle(article));
-      $grid.appendChild(card);
+      const grid = document.getElementById(`grid-${dateKey}`);
+      articles.forEach(article => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.style.animationDelay = `${Math.min(cardDelay++, 12) * 26}ms`;
+        const catClass = CAT_CLASS[article.category] || "cat-ai";
+        card.innerHTML = `
+          <span class="card-category ${catClass}">${esc(article.category || "News")}</span>
+          <div class="card-title">${esc(article.title || "Untitled")}</div>
+          <div class="card-meta">
+            <span>${esc(article.author || "Unknown")}</span>
+            <span class="sep">·</span>
+            <span>${esc(article.source || "Unknown")}</span>
+          </div>
+        `;
+        card.addEventListener("click", () => openArticle(article));
+        grid.appendChild(card);
+      });
     });
   }
 
-  // ── Open article ─────────────────────────────────────────────────
+  /* ─── Open article ──────────────────────────────────────────────── */
   function openArticle(article) {
     const catClass = CAT_CLASS[article.category] || "cat-ai";
-
-    // Badge
     const badge = document.getElementById("art-badge");
     badge.textContent = article.category || "News";
     badge.className = `article-category-badge ${catClass}`;
 
-    // Title
     document.getElementById("art-title").textContent = article.title || "Untitled";
-
-    // Byline
-    const byline = document.getElementById("art-byline");
-    byline.innerHTML = `
+    document.getElementById("art-byline").innerHTML = `
       <span><span class="byline-label">By</span> ${esc(article.author || "Unknown")}</span>
       <span><span class="byline-label">Source</span> ${esc(article.source || "Unknown")}</span>
     `;
-
-    // Summary body — render markdown
-    const body = document.getElementById("art-body");
-    const rawSummary = article.summary || "_No summary available._";
-    body.innerHTML = marked.parse(rawSummary);
-
-    // Source box
-    const sourceMeta = document.getElementById("art-source-meta");
-    sourceMeta.innerHTML = `
+    document.getElementById("art-body").innerHTML = marked.parse(article.summary || "_No summary available._");
+    document.getElementById("art-source-meta").innerHTML = `
       <span><strong>${esc(article.source || "Unknown")}</strong></span>
       <span>Published by ${esc(article.author || "Unknown")}</span>
     `;
-
-    const link = document.getElementById("art-link");
-    link.href = article.url || "#";
+    document.getElementById("art-link").href = article.url || "#";
 
     showArticleView();
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
-  // ── Util ─────────────────────────────────────────────────────────
+  /* ─── Date helpers ──────────────────────────────────────────────── */
+  function getDateKey(iso) {
+    if (!iso) return "unknown";
+    const d = new Date(iso);
+    if (isNaN(d)) return "unknown";
+    return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+  }
+
+  function formatDateLabel(iso) {
+    if (!iso) return "Unknown Date";
+    const d = new Date(iso);
+    if (isNaN(d)) return "Unknown Date";
+    const today = new Date();
+    const yesterday = new Date(today);
+    yesterday.setDate(today.getDate() - 1);
+    const same = (a, b) => a.getFullYear()===b.getFullYear() && a.getMonth()===b.getMonth() && a.getDate()===b.getDate();
+    if (same(d, today))     return "Today";
+    if (same(d, yesterday)) return "Yesterday";
+    return d.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric" });
+  }
+
+  function shortDate(iso) {
+    if (!iso) return "";
+    const d = new Date(iso);
+    if (isNaN(d)) return "";
+    return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+  }
+
+  function groupByDate(arts) {
+    const map = new Map();
+    for (const a of arts) {
+      const k = getDateKey(a.processed_at);
+      if (!map.has(k)) map.set(k, []);
+      map.get(k).push(a);
+    }
+    return new Map([...map.entries()].sort((a, b) => b[0].localeCompare(a[0])));
+  }
+
+  /* ─── Search ────────────────────────────────────────────────────── */
+  document.getElementById("search-trigger").addEventListener("click", openSearch);
+  document.getElementById("search-close").addEventListener("click", closeSearch);
+  $searchOverlay.addEventListener("click", e => { if (e.target === $searchOverlay) closeSearch(); });
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape" && $searchOverlay.classList.contains("visible")) { closeSearch(); return; }
+    if (e.key === "k" && (e.metaKey || e.ctrlKey)) { e.preventDefault(); openSearch(); }
+  });
+
+  function openSearch() {
+    $searchOverlay.classList.add("visible");
+    setTimeout(() => $searchInput.focus(), 60);
+  }
+  function closeSearch() {
+    $searchOverlay.classList.remove("visible");
+    $searchInput.value = "";
+    $searchResults.innerHTML = '<div class="search-hint">Type to search across all articles</div>';
+  }
+
+  /* ─── Filter chips ──────────────────────────────────────────────── */
+  $filterChips.forEach(chip => {
+    chip.addEventListener("click", () => {
+      activeFilter = chip.dataset.filter;
+      $filterChips.forEach(c => c.classList.toggle("active", c === chip));
+      runSearch($searchInput.value.trim());
+    });
+  });
+
+  /* ─── Search logic ──────────────────────────────────────────────── */
+  $searchInput.addEventListener("input", () => runSearch($searchInput.value.trim()));
+
+  function matchesFilter(article, q, filter) {
+    const ql = q.toLowerCase();
+    if (filter === "title")  return (article.title  || "").toLowerCase().includes(ql);
+    if (filter === "author") return (article.author || "").toLowerCase().includes(ql);
+    if (filter === "source") return (article.source || "").toLowerCase().includes(ql);
+    if (filter === "date") {
+      // match against formatted date string, e.g. "Mar 22, 2025"
+      const dateStr = shortDate(article.processed_at).toLowerCase();
+      const keyStr  = getDateKey(article.processed_at); // "2025-03-22"
+      return dateStr.includes(ql) || keyStr.includes(ql);
+    }
+    // "all" — search everything
+    return (
+      (article.title    || "").toLowerCase().includes(ql) ||
+      (article.author   || "").toLowerCase().includes(ql) ||
+      (article.source   || "").toLowerCase().includes(ql) ||
+      (article.category || "").toLowerCase().includes(ql) ||
+      (article.summary  || "").toLowerCase().includes(ql) ||
+      shortDate(article.processed_at).toLowerCase().includes(ql)
+    );
+  }
+
+  function runSearch(q) {
+    $searchResults.innerHTML = "";
+    if (!q) {
+      $searchResults.innerHTML = '<div class="search-hint">Type to search across all articles</div>';
+      return;
+    }
+
+    const matches = allArticles.filter(a => matchesFilter(a, q, activeFilter)).slice(0, 14);
+
+    if (!matches.length) {
+      $searchResults.innerHTML = `<div class="search-empty">No results for <strong>"${esc(q)}"</strong></div>`;
+      return;
+    }
+
+    matches.forEach(article => {
+      const item = document.createElement("div");
+      item.className = "search-result-item";
+      const catClass = CAT_CLASS[article.category] || "cat-ai";
+      const fieldToHighlight = activeFilter === "all" || activeFilter === "title" ? article.title || "Untitled" : article.title || "Untitled";
+
+      item.innerHTML = `
+        <div class="sri-top">
+          <span class="sri-category ${catClass}">${esc(article.category || "News")}</span>
+          <span class="sri-date">${esc(shortDate(article.processed_at))}</span>
+        </div>
+        <div class="sri-title">${highlight(article.title || "Untitled", activeFilter === "title" || activeFilter === "all" ? q : "")}</div>
+        <div class="sri-meta">
+          ${highlight(article.author || "Unknown", activeFilter === "author" ? q : "")}
+          <span class="sep">·</span>
+          ${highlight(article.source || "Unknown", activeFilter === "source" ? q : "")}
+        </div>
+      `;
+      item.addEventListener("click", () => {
+        closeSearch();
+        const tabKey = Object.keys(TABS).find(k => TABS[k].filter === article.category) || "all";
+        currentTab = tabKey;
+        $navBtns.forEach(b => b.classList.toggle("active", b.dataset.tab === tabKey));
+        openArticle(article);
+      });
+      $searchResults.appendChild(item);
+    });
+  }
+
+  /* ─── Helpers ───────────────────────────────────────────────────── */
+  function highlight(str, q) {
+    const safe = esc(str);
+    if (!q) return safe;
+    const safeQ = esc(q).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    return safe.replace(new RegExp(`(${safeQ})`, "gi"), "<mark>$1</mark>");
+  }
+
   function esc(str) {
     return String(str)
       .replace(/&/g, "&amp;")
@@ -715,7 +1247,6 @@
       .replace(/"/g, "&quot;");
   }
 
-  // ── Boot ─────────────────────────────────────────────────────────
   init();
 </script>
 </body>
