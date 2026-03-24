@@ -1,0 +1,55 @@
+# ── NewsAPI Fetch ──
+news_api:
+  topics:                        # each entry is a search query sent to NewsAPI
+    - "Technology"
+    - "Artificial intelligence"
+    - "Laptops"
+    - "Cybersecurity"
+    - "Technology Market"
+  domains: ""                    # empty = all domains; comma-separated to restrict
+  page_size: 100
+  sort_by: "popularity"          # "popularity" | "publishedAt" | "relevance"
+  hours_back_from: 37
+  hours_back_to: 25
+
+# ── Curation ──
+curation:
+  candidate_count: 50
+  source_limit: 1                # max articles per publisher in the master list
+
+# ── Scraping ──
+scraping:
+  min_content_length: 1000
+  chunk_size: 150
+  scrape_timeout: 30
+
+# ── Categories ──
+# The classifier assigns each article to one of these labels, or "Other" (rejected).
+# You can freely add, remove, or rename categories — the pipeline and website adapt automatically.
+categories:
+  - "Artificial Intelligence"
+  - "Tech Business & Markets"
+  - "Cybersecurity"
+
+
+# ── AI Models ──
+ai:
+  summarizer_model: "gemini-3.1-flash-lite-preview"
+  classifier_model: "gemini-3.1-flash-lite-preview"
+  max_output_tokens: 2000
+  temperature: 0
+  classifier_delay: 4.0          # seconds between classify calls (RPM guard)
+
+# ── Pipeline Control ──
+pipeline:
+  success_goal: 20
+  retry_attempts: 3              # attempts per retryable API/scrape call
+  retry_backoff: 2.0             # base back-off in seconds (doubles each retry)
+  inter_request_delay: 1.0       # polite pause between article scrapes
+
+# ── Paths ──
+# output_dir is used for ALL pipeline files AND articles.json.
+# Keep it as "." (repo root) so index.html can fetch articles.json at the same level.
+# If you change this, move index.html to the same directory.
+paths:
+  output_dir: "other"

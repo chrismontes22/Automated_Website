@@ -1,13 +1,16 @@
 """
 News Pipeline
 =============
-Fetches, curates, scrapes, and summarizes financial news articles.
-Designed for resilience: retries failed steps, saves progress after each
-article, and resumes cleanly from a previous interrupted run.
+Fetches, curates, scrapes, and summarises technology and financial news articles.
+Configuration is loaded exclusively from config.yaml — no built-in defaults exist,
+so the file must be present before the pipeline can run.
 
-After each successful summary a second Gemini call classifies the article
-into one of four valid categories.  Articles landing in "Other" or returning
-an unexpected string do NOT count toward the success goal.
+Designed for resilience: retries failed steps, saves progress after each article,
+and resumes cleanly from a previous interrupted run.
+
+After each successful summary a second Gemini call classifies the article into one
+of the categories defined in config.yaml.  Articles labelled "Other" (or returning
+any unrecognised string) do NOT count toward the success goal.
 
 Persistent logs (never deleted):
   category_log.json  – machine-readable record of every run
@@ -16,7 +19,6 @@ Persistent logs (never deleted):
 
 from __future__ import annotations
 
-import glob
 import json
 import logging
 import os
@@ -26,10 +28,10 @@ from datetime import datetime, timedelta
 from functools import wraps
 from pathlib import Path
 from typing import Optional
-from urllib.parse import urlparse
 
 import requests
 import trafilatura
+import yaml
 from dotenv import load_dotenv
 
 try:
@@ -52,9 +54,11 @@ logging.basicConfig(
 )
 log = logging.getLogger("news_pipeline")
 
+
 def log_error(context: str, exc: Exception) -> None:
     """Emit a consistently formatted ERROR with context and exception type."""
     log.error("[%s] %s: %s", context, type(exc).__name__, exc)
+
 
 def log_warning(context: str, reason: str) -> None:
     """Emit a consistently formatted WARNING."""
@@ -65,81 +69,8 @@ def log_warning(context: str, reason: str) -> None:
 # CLASSIFICATION CONSTANTS
 # =============================================================================
 
-# Exact strings the classifier must return to pass.
-VALID_CATEGORIES: list[str] = [
-    "Artificial Intelligence",
-    "Tech Business & Markets",
-    "Cybersecurity",
-    "Laptops & Cell Phones",
-]
-
-# The fifth option — articles labelled this way (or anything unrecognised) fail.
+# The fallback label — articles receiving this (or any unrecognised string) are rejected.
 CATEGORY_OTHER = "Other"
-
-# All recognised strings (used for prompt injection).
-ALL_CATEGORIES: list[str] = VALID_CATEGORIES + [CATEGORY_OTHER]
-
-
-# =============================================================================
-# CONFIGURATION
-# =============================================================================
-
-@dataclass
-class PipelineConfig:
-    # NewsAPI
-    topics: list[str]           = field(default_factory=lambda: ["stocks", "economy", "prices", "money", "finance"])
-    domains: str                = ""
-    page_size: int              = 100
-    sort_by: str                = "popularity"
-    hours_back_from: int        = 37
-    hours_back_to: int          = 25
-
-    # Curation
-    candidate_count: int        = 50
-    source_limit: int           = 1
-
-    # Scraping
-    min_content_length: int     = 1_000
-    chunk_size: int             = 150
-    scrape_timeout: int         = 30
-
-    # Summarisation
-    gemini_model: str           = "gemini-3-flash-preview"
-    max_output_tokens: int      = 2_000
-    temperature: float          = 0
-
-    # Classification
-    classifier_model: str       = "gemini-3.1-flash-lite-preview"
-    classifier_delay: float     = 4.0   # seconds to wait before each classify call (RPM guard)
-
-    # Pipeline
-    success_goal: int           = 20
-    retry_attempts: int         = 3
-    retry_backoff: float        = 2.0   # seconds; doubles on each retry
-    inter_request_delay: float  = 1.0   # polite pause between scrapes
-
-    # Paths
-    output_dir: Path            = Path(".")
-
-    @property
-    def master_file(self) -> Path:
-        return self.output_dir / "master_news.json"
-
-    @property
-    def progress_file(self) -> Path:
-        return self.output_dir / "pipeline_progress.json"
-
-    @property
-    def results_file(self) -> Path:
-        return self.output_dir / "processed_articles.json"
-
-    @property
-    def category_log_json(self) -> Path:
-        return self.output_dir / "category_log.json"
-
-    @property
-    def category_log_txt(self) -> Path:
-        return self.output_dir / "category_log.txt"
 
 
 # =============================================================================
@@ -148,8 +79,8 @@ class PipelineConfig:
 
 def with_retry(attempts: int = 3, backoff: float = 2.0, exceptions: tuple = (Exception,)):
     """
-    Decorator: re-runs the wrapped function up to `attempts` times on failure,
-    waiting backoff * 2^n seconds between tries.
+    Decorator factory: re-runs the wrapped function up to `attempts` times on
+    failure, waiting backoff * 2^n seconds between tries.
     """
     def decorator(fn):
         @wraps(fn)
@@ -172,17 +103,191 @@ def with_retry(attempts: int = 3, backoff: float = 2.0, exceptions: tuple = (Exc
 
 
 # =============================================================================
+# CONFIGURATION
+# =============================================================================
+
+@dataclass
+class PipelineConfig:
+    """
+    All pipeline settings.  Every field is required — there are no built-in
+    defaults.  Always construct via PipelineConfig.from_yaml().
+    """
+    # NewsAPI
+    topics: list[str]
+    domains: str
+    page_size: int
+    sort_by: str
+    hours_back_from: int
+    hours_back_to: int
+
+    # Curation
+    candidate_count: int
+    source_limit: int
+
+    # Scraping
+    min_content_length: int
+    chunk_size: int
+    scrape_timeout: int
+
+    # AI / Summarisation
+    gemini_model: str
+    max_output_tokens: int
+    temperature: float
+
+    # AI / Classification
+    classifier_model: str
+    classifier_delay: float
+
+    # Categories (loaded from config; determines what the classifier accepts)
+    valid_categories: list[str]
+
+    # Pipeline control
+    success_goal: int
+    retry_attempts: int
+    retry_backoff: float
+    inter_request_delay: float
+
+    # Paths
+    output_dir: Path
+
+    # ------------------------------------------------------------------
+    @classmethod
+    def from_yaml(cls, path: str | Path = "config.yaml") -> "PipelineConfig":
+        """
+        Load and validate config.yaml.  Raises FileNotFoundError if the file
+        is absent, and KeyError if a required section is missing.
+        """
+        p = Path(path)
+        if not p.exists():
+            raise FileNotFoundError(
+                f"Configuration file not found: {p.resolve()}\n"
+                "Create config.yaml (see the project README) before running the pipeline."
+            )
+
+        with p.open(encoding="utf-8") as f:
+            raw = yaml.safe_load(f)
+
+        # Fail fast with a clear message for each missing top-level section.
+        required_sections = ("news_api", "curation", "scraping", "ai", "pipeline", "categories", "paths")
+        for section in required_sections:
+            if section not in raw:
+                raise KeyError(
+                    f"config.yaml is missing required section '{section}'. "
+                    "Check your config.yaml against the template."
+                )
+
+        na    = raw["news_api"]
+        cur   = raw["curation"]
+        scr   = raw["scraping"]
+        ai    = raw["ai"]
+        pip   = raw["pipeline"]
+        cats  = raw["categories"]
+        paths = raw["paths"]
+
+        if not cats:
+            raise ValueError("config.yaml 'categories' list must not be empty.")
+
+        return cls(
+            topics              = list(na["topics"]),
+            domains             = str(na.get("domains", "")),
+            page_size           = int(na["page_size"]),
+            sort_by             = str(na["sort_by"]),
+            hours_back_from     = int(na["hours_back_from"]),
+            hours_back_to       = int(na["hours_back_to"]),
+            candidate_count     = int(cur["candidate_count"]),
+            source_limit        = int(cur["source_limit"]),
+            min_content_length  = int(scr["min_content_length"]),
+            chunk_size          = int(scr["chunk_size"]),
+            scrape_timeout      = int(scr["scrape_timeout"]),
+            gemini_model        = str(ai["summarizer_model"]),
+            max_output_tokens   = int(ai["max_output_tokens"]),
+            temperature         = float(ai["temperature"]),
+            classifier_model    = str(ai["classifier_model"]),
+            classifier_delay    = float(ai["classifier_delay"]),
+            valid_categories    = list(cats),
+            success_goal        = int(pip["success_goal"]),
+            retry_attempts      = int(pip["retry_attempts"]),
+            retry_backoff       = float(pip["retry_backoff"]),
+            inter_request_delay = float(pip["inter_request_delay"]),
+            output_dir          = Path(paths["output_dir"]),
+        )
+
+    # ------------------------------------------------------------------
+    # Derived paths — all respect output_dir
+    @property
+    def master_file(self) -> Path:
+        return self.output_dir / "master_news.json"
+
+    @property
+    def progress_file(self) -> Path:
+        return self.output_dir / "pipeline_progress.json"
+
+    @property
+    def results_file(self) -> Path:
+        return self.output_dir / "processed_articles.json"
+
+    @property
+    def category_log_json(self) -> Path:
+        return self.output_dir / "category_log.json"
+
+    @property
+    def category_log_txt(self) -> Path:
+        return self.output_dir / "category_log.txt"
+
+
+# =============================================================================
+# PROMPTS
+# =============================================================================
+
+SUMMARY_PROMPT = """\
+You are a news analyst. Summarise the article below for a general audience.
+Be concise and plain-English. Structure your response as:
+
+**One-sentence headline summary**
+
+**Key points** (3–6 bullet points)
+
+**Why it matters** (1–2 sentences)
+
+Article:
+{text}
+"""
+
+
+def build_classifier_prompt(title: str, summary: str, valid_categories: list[str]) -> str:
+    """Build the classifier prompt dynamically from the configured category list."""
+    all_cats = valid_categories + [CATEGORY_OTHER]
+    cats_block = "\n".join(f"  {c}" for c in all_cats)
+    return (
+        "You are a news classification agent. Your only job is to read the article "
+        "information below and output exactly one of these category labels — nothing "
+        "else, no explanation, no punctuation, no extra words:\n\n"
+        + cats_block
+        + f'\n\nUse "{CATEGORY_OTHER}" only if the article does not clearly fit any of '
+        "the specific categories above.\n\n"
+        f"Article title: {title}\n\n"
+        f"Article summary:\n{summary}"
+    )
+
+
+# =============================================================================
 # ARTICLE FETCHER
 # =============================================================================
 
 class ArticleFetcher:
-    """Fetches raw news articles from NewsAPI for each configured topic."""
+    """Fetches raw news articles from NewsAPI for each configured topic (search query)."""
 
     BASE_URL = "https://newsapi.org/v2/everything"
 
     def __init__(self, cfg: PipelineConfig) -> None:
         self.cfg = cfg
         self._api_key = os.getenv("NEWS_API_KEY")
+        # Wrap the implementation with retry using config values.
+        self._fetch_one = with_retry(
+            attempts=cfg.retry_attempts,
+            backoff=cfg.retry_backoff,
+            exceptions=(requests.RequestException,),
+        )(self._fetch_one_impl)
 
     def _validate(self) -> None:
         if not self._api_key:
@@ -196,8 +301,7 @@ class ArticleFetcher:
         to_dt   = (now - timedelta(hours=self.cfg.hours_back_to)).isoformat()
         return from_dt, to_dt
 
-    @with_retry(attempts=3, backoff=2.0, exceptions=(requests.RequestException,))
-    def _fetch_one(self, topic: str, from_dt: str, to_dt: str) -> dict:
+    def _fetch_one_impl(self, topic: str, from_dt: str, to_dt: str) -> dict:
         params = {
             "q":        topic,
             "from":     from_dt,
@@ -213,7 +317,7 @@ class ArticleFetcher:
         return resp.json()
 
     def fetch_all(self) -> list[Path]:
-        """Fetch every topic and persist each response to its own JSON file."""
+        """Fetch every topic query and persist each response to its own JSON file."""
         self._validate()
         from_dt, to_dt = self._time_window()
         log.info("Fetch window: %s → %s", from_dt, to_dt)
@@ -244,9 +348,9 @@ class MasterBuilder:
     """
     Merges per-topic JSON files into one curated, deduplicated master list.
 
-    Strategy: round-robin across topics so no single topic dominates,
-    with a hard cap of `source_limit` articles per publisher.
-    Deduplication covers URL, title, and author to block reposts across sources.
+    Strategy: round-robin across topics so no single topic dominates, with a
+    hard cap of `source_limit` articles per publisher.  Deduplication covers
+    URL, title, and author to block reposts across sources.
     """
 
     def __init__(self, cfg: PipelineConfig) -> None:
@@ -272,7 +376,10 @@ class MasterBuilder:
                     queues.append(articles)
                     log.debug("  Loaded %d articles from %s", len(articles), path.name)
             except (json.JSONDecodeError, OSError) as exc:
-                log_warning(f"build:load:{path.name}", f"Skipping unreadable file — {type(exc).__name__}: {exc}")
+                log_warning(
+                    f"build:load:{path.name}",
+                    f"Skipping unreadable file — {type(exc).__name__}: {exc}",
+                )
 
         return queues
 
@@ -333,8 +440,7 @@ class MasterBuilder:
         self.cfg.master_file.write_text(json.dumps(output, indent=2), encoding="utf-8")
 
         log.info("Master list: %d unique articles (goal: %d)", len(master), goal)
-        dist_lines = [f"  {s}: {c}" for s, c in
-                      sorted(source_counts.items(), key=lambda x: -x[1])]
+        dist_lines = [f"  {s}: {c}" for s, c in sorted(source_counts.items(), key=lambda x: -x[1])]
         log.info("Source distribution:\n%s", "\n".join(dist_lines))
 
         return output
@@ -356,6 +462,11 @@ class ArticleScraper:
 
     def __init__(self, cfg: PipelineConfig) -> None:
         self.cfg = cfg
+        self._download_and_extract = with_retry(
+            attempts=cfg.retry_attempts,
+            backoff=cfg.retry_backoff,
+            exceptions=(Exception,),
+        )(self._download_and_extract_impl)
 
     def _deduplicate(self, text: str) -> str:
         """Remove repeated content blocks (common with scrapers)."""
@@ -366,8 +477,7 @@ class ArticleScraper:
         dup_idx = text.find(first_chunk, cs)
         return text[:dup_idx].strip() if dup_idx != -1 else text
 
-    @with_retry(attempts=2, backoff=3.0, exceptions=(Exception,))
-    def _download_and_extract(self, url: str) -> str:
+    def _download_and_extract_impl(self, url: str) -> str:
         downloaded = trafilatura.fetch_url(url)
         if not downloaded:
             raise ValueError("No content returned — possible network issue or bot block")
@@ -405,20 +515,6 @@ class ArticleScraper:
 # ARTICLE SUMMARISER
 # =============================================================================
 
-SUMMARY_PROMPT = """\
-You are a financial news analyst. Summarise the article below for a general
-audience. Be concise and plain-English. Structure your response as:
-
-**One-sentence headline summary**
-
-**Key points** (3–6 bullet points)
-
-**Why it matters** (1–2 sentences)
-
-Article:
-{text}
-"""
-
 class ArticleSummarizer:
     """Summarises article text using Google Gemini."""
 
@@ -426,6 +522,7 @@ class ArticleSummarizer:
         self.cfg = cfg
         self._api_key = os.getenv("GEMINI_KEY")
         self._client = None
+        self._call_api = None
 
         if not GEMINI_AVAILABLE:
             log_warning("summarizer:init", "google-genai is not installed — summarisation unavailable")
@@ -435,12 +532,16 @@ class ArticleSummarizer:
             return
 
         self._client = genai.Client(api_key=self._api_key)
+        self._call_api = with_retry(
+            attempts=cfg.retry_attempts,
+            backoff=cfg.retry_backoff,
+            exceptions=(Exception,),
+        )(self._call_api_impl)
 
     def _is_ready(self) -> bool:
-        return self._client is not None
+        return self._client is not None and self._call_api is not None
 
-    @with_retry(attempts=3, backoff=5.0, exceptions=(Exception,))
-    def _call_api(self, text: str) -> str:
+    def _call_api_impl(self, text: str) -> str:
         response = self._client.models.generate_content(
             model=self.cfg.gemini_model,
             contents=SUMMARY_PROMPT.format(text=text),
@@ -472,43 +573,25 @@ class ArticleSummarizer:
 # ARTICLE CLASSIFIER
 # =============================================================================
 
-CLASSIFIER_PROMPT = """\
-You are a news classification agent. Your only job is to read the article \
-information below and output exactly one of these category labels — nothing \
-else, no explanation, no punctuation, no extra words:
-
-  Artificial Intelligence
-  Tech Business & Markets
-  Cybersecurity
-  Laptops & Cell Phones
-  Other
-
-Use "Other" only if the article does not clearly fit any of the four \
-specific categories above.
-
-Article title: {title}
-
-Article summary:
-{summary}
-"""
-
-
 class ArticleClassifier:
     """
-    Classifies a summarised article into one of VALID_CATEGORIES using Gemini.
+    Classifies a summarised article into one of cfg.valid_categories using Gemini.
 
     Rules:
       • Temperature is always 0.
       • A configurable delay is inserted before each API call to stay within
         the model's requests-per-minute quota.
-      • Returns the raw label string; validation against VALID_CATEGORIES is
-        done by the caller.
+      • The accepted category list is driven entirely by config.yaml — changing
+        categories there is all that is needed.
+      • Returns the raw label string; validation against valid_categories is
+        done by the pipeline orchestrator.
     """
 
     def __init__(self, cfg: PipelineConfig) -> None:
         self.cfg = cfg
         self._api_key = os.getenv("GEMINI_KEY")
         self._client = None
+        self._call_api = None
 
         if not GEMINI_AVAILABLE:
             log_warning("classifier:init", "google-genai is not installed — classification unavailable")
@@ -518,23 +601,26 @@ class ArticleClassifier:
             return
 
         self._client = genai.Client(api_key=self._api_key)
+        self._call_api = with_retry(
+            attempts=cfg.retry_attempts,
+            backoff=cfg.retry_backoff,
+            exceptions=(Exception,),
+        )(self._call_api_impl)
 
     def _is_ready(self) -> bool:
-        return self._client is not None
+        return self._client is not None and self._call_api is not None
 
-    @with_retry(attempts=3, backoff=6.0, exceptions=(Exception,))
-    def _call_api(self, title: str, summary: str) -> str:
-        prompt = CLASSIFIER_PROMPT.format(title=title, summary=summary)
+    def _call_api_impl(self, title: str, summary: str) -> str:
+        prompt = build_classifier_prompt(title, summary, self.cfg.valid_categories)
         response = self._client.models.generate_content(
             model=self.cfg.classifier_model,
             contents=prompt,
             config={
-                "max_output_tokens": 20,   # category label only — very short
-                "temperature": 0,          # always deterministic
+                "max_output_tokens": 20,
+                "temperature": 0,   # always deterministic for classification
             },
         )
-        label = (response.text or "").strip()
-        return label
+        return (response.text or "").strip()
 
     def classify(
         self, title: str, summary: str
@@ -542,8 +628,8 @@ class ArticleClassifier:
         """
         Returns (api_ok, label_or_None, error_or_None).
 
-        api_ok is True even when the label is "Other" or unrecognised —
-        it only reflects whether the API call itself succeeded.
+        api_ok is True even when the label is "Other" or unrecognised — it
+        only reflects whether the API call itself succeeded.
         """
         if not self._is_ready():
             return False, None, "Gemini classifier not initialised (check GEMINI_KEY and google-genai install)"
@@ -572,19 +658,19 @@ class ArticleResult:
     source: str
     author: str
     success: bool
-    category: Optional[str]      = None   # set only on full success
-    content: Optional[str]       = None
-    summary: Optional[str]       = None
-    scrape_error: Optional[str]  = None
-    summary_error: Optional[str] = None
+    category: Optional[str]       = None
+    content: Optional[str]        = None
+    summary: Optional[str]        = None
+    scrape_error: Optional[str]   = None
+    summary_error: Optional[str]  = None
     classify_error: Optional[str] = None
-    processed_at: str            = field(default_factory=lambda: datetime.now().isoformat())
+    processed_at: str             = field(default_factory=lambda: datetime.now().isoformat())
 
     def to_dict(self) -> dict:
         return self.__dict__.copy()
 
     @classmethod
-    def from_dict(cls, d: dict) -> ArticleResult:
+    def from_dict(cls, d: dict) -> "ArticleResult":
         return cls(**{k: v for k, v in d.items() if k in cls.__dataclass_fields__})
 
 
@@ -610,7 +696,10 @@ class ProgressTracker:
                 self.success_count,
             )
         except Exception as exc:
-            log_warning("tracker:load", f"Could not load progress file — starting fresh. {type(exc).__name__}: {exc}")
+            log_warning(
+                "tracker:load",
+                f"Could not load progress file — starting fresh. {type(exc).__name__}: {exc}",
+            )
             self.results = {}
 
     def record(self, result: ArticleResult) -> None:
@@ -648,16 +737,13 @@ class CategoryLogWriter:
     Maintains a persistent log of per-run and cumulative category counts.
 
     category_log.json  — machine-readable; never deleted
-    category_log.txt   — human-readable; never deleted; rewritten each run
-                         with cumulative totals at the top
+    category_log.txt   — human-readable; never deleted; cumulative totals at top
     """
 
     def __init__(self, cfg: PipelineConfig) -> None:
         self.cfg = cfg
 
-    # ------------------------------------------------------------------
     def _load_history(self) -> list[dict]:
-        """Load existing run records from the JSON log, or return empty list."""
         if not self.cfg.category_log_json.exists():
             return []
         try:
@@ -666,11 +752,9 @@ class CategoryLogWriter:
             log_warning("category_log:load", f"Could not read log JSON — starting fresh. {exc}")
             return []
 
-    # ------------------------------------------------------------------
     def record_run(self, successes: list[ArticleResult]) -> None:
         """Append this run's category counts and rewrite both log files."""
-        # Build per-category counts for this run
-        counts: dict[str, int] = {cat: 0 for cat in VALID_CATEGORIES}
+        counts: dict[str, int] = {cat: 0 for cat in self.cfg.valid_categories}
         for r in successes:
             if r.category in counts:
                 counts[r.category] += 1
@@ -678,30 +762,31 @@ class CategoryLogWriter:
         run_entry = {
             "run_at": datetime.now().isoformat(),
             "total_successes": len(successes),
+            "categories": self.cfg.valid_categories,   # stored so txt can handle config changes
             "category_counts": counts,
         }
 
         history = self._load_history()
         history.append(run_entry)
 
-        # Persist JSON
-        self.cfg.category_log_json.write_text(
-            json.dumps(history, indent=2), encoding="utf-8"
-        )
-
-        # Rewrite human-readable txt
+        self.cfg.category_log_json.write_text(json.dumps(history, indent=2), encoding="utf-8")
         self._write_txt(history)
 
-        log.info(
-            "Category log updated: %d total runs on record.",
-            len(history),
-        )
+        log.info("Category log updated: %d total runs on record.", len(history))
 
-    # ------------------------------------------------------------------
     def _write_txt(self, history: list[dict]) -> None:
-        """Write the complete txt log: cumulative totals first, then per-run."""
-        # --- Cumulative totals ---
-        cumulative: dict[str, int] = {cat: 0 for cat in VALID_CATEGORIES}
+        """Write the complete txt log: cumulative totals first, then per-run (newest first)."""
+        # Collect all unique categories across all runs (preserving first-seen order).
+        seen: set[str] = set()
+        all_cats: list[str] = []
+        for run in history:
+            for cat in run.get("categories", list(run.get("category_counts", {}).keys())):
+                if cat not in seen:
+                    all_cats.append(cat)
+                    seen.add(cat)
+
+        # Cumulative totals across all runs.
+        cumulative: dict[str, int] = {cat: 0 for cat in all_cats}
         for run in history:
             for cat, n in run.get("category_counts", {}).items():
                 if cat in cumulative:
@@ -718,26 +803,26 @@ class CategoryLogWriter:
             "  CUMULATIVE CATEGORY TOTALS  (all runs)",
             divider_thick,
         ]
-        for cat in VALID_CATEGORIES:
-            lines.append(f"  {cat:<28}  {cumulative[cat]:>4}")
+        for cat in all_cats:
+            lines.append(f"  {cat:<32}  {cumulative[cat]:>4}")
         lines += [
             divider_thin,
-            f"  {'TOTAL (valid categories)':<28}  {cum_total:>4}",
+            f"  {'TOTAL (valid categories)':<32}  {cum_total:>4}",
             divider_thick,
             "",
         ]
 
-        # --- Per-run entries (newest first) ---
         for run in reversed(history):
             run_counts = run.get("category_counts", {})
+            run_cats   = run.get("categories", list(run_counts.keys()))
             run_total  = run.get("total_successes", 0)
             run_at     = run.get("run_at", "unknown")
             lines += [
                 f"Run  {run_at}   ({run_total} successes)",
                 divider_thin,
             ]
-            for cat in VALID_CATEGORIES:
-                lines.append(f"  {cat:<28}  {run_counts.get(cat, 0):>4}")
+            for cat in run_cats:
+                lines.append(f"  {cat:<32}  {run_counts.get(cat, 0):>4}")
             lines.append("")
 
         self.cfg.category_log_txt.write_text("\n".join(lines), encoding="utf-8")
@@ -750,16 +835,15 @@ class CategoryLogWriter:
 class NewsPipeline:
     """
     Runs the full news pipeline:
-      0. Cleanup  — delete all landing files from the previous run
-      1. Fetch    — pull articles from NewsAPI per topic
-      2. Build    — merge & curate into a single master list
-      3. Scrape   — download full article text
+      0. Cleanup   — delete all landing files from the previous run
+      1. Fetch     — pull articles from NewsAPI per topic search query
+      2. Build     — merge & curate into a single master list
+      3. Scrape    — download full article text
       4. Summarise — Gemini summary
       5. Classify  — second Gemini call; article only counts if it lands in
-                      one of the four valid categories
+                     one of the valid categories defined in config.yaml
     """
 
-    # Glob patterns for files produced by the pipeline (NOT the persistent logs)
     _LANDING_PATTERNS = [
         "news_*.json",
         "master_news.json",
@@ -768,15 +852,18 @@ class NewsPipeline:
         "summary_*.txt",
     ]
 
-    def __init__(self, cfg: Optional[PipelineConfig] = None) -> None:
-        self.cfg        = cfg or PipelineConfig()
-        self.fetcher    = ArticleFetcher(self.cfg)
-        self.builder    = MasterBuilder(self.cfg)
-        self.scraper    = ArticleScraper(self.cfg)
-        self.summarizer = ArticleSummarizer(self.cfg)
-        self.classifier = ArticleClassifier(self.cfg)
-        self.tracker    = ProgressTracker(self.cfg)
-        self.log_writer = CategoryLogWriter(self.cfg)
+    def __init__(self, cfg: PipelineConfig) -> None:
+        self.cfg        = cfg
+        # Ensure output directory exists.
+        self.cfg.output_dir.mkdir(parents=True, exist_ok=True)
+
+        self.fetcher    = ArticleFetcher(cfg)
+        self.builder    = MasterBuilder(cfg)
+        self.scraper    = ArticleScraper(cfg)
+        self.summarizer = ArticleSummarizer(cfg)
+        self.classifier = ArticleClassifier(cfg)
+        self.tracker    = ProgressTracker(cfg)
+        self.log_writer = CategoryLogWriter(cfg)
 
     # ------------------------------------------------------------------
     def _step_cleanup(self) -> None:
@@ -830,6 +917,7 @@ class NewsPipeline:
             return False
 
         log.info("Loaded %d candidates from master list.", total)
+        log.info("Active categories: %s", ", ".join(self.cfg.valid_categories))
 
         for idx, article in enumerate(articles):
             if idx in self.tracker.processed_indices:
@@ -876,23 +964,21 @@ class NewsPipeline:
                 log_warning(f"classify:{idx}", err)
                 self.tracker.record(ArticleResult(
                     index=idx, url=url, title=title, source=source, author=author,
-                    success=False, content=content, summary=summary,
-                    classify_error=err,
+                    success=False, content=content, summary=summary, classify_error=err,
                 ))
                 time.sleep(self.cfg.inter_request_delay)
                 continue
 
-            # Validate label — must exactly match one of the four valid categories
-            if label not in VALID_CATEGORIES:
+            # Validate label — must exactly match one of the configured categories.
+            if label not in self.cfg.valid_categories:
                 reason = (
                     f"Classified as '{label}' — not a valid category "
-                    f"(must be one of: {', '.join(VALID_CATEGORIES)})"
+                    f"(must be one of: {', '.join(self.cfg.valid_categories)})"
                 )
                 log_warning(f"classify:{idx}", reason)
                 self.tracker.record(ArticleResult(
                     index=idx, url=url, title=title, source=source, author=author,
-                    success=False, content=content, summary=summary,
-                    classify_error=reason,
+                    success=False, content=content, summary=summary, classify_error=reason,
                 ))
                 time.sleep(self.cfg.inter_request_delay)
                 continue
@@ -901,7 +987,6 @@ class NewsPipeline:
                 "  ✓ Category: %s  [%d/%d successes]",
                 label, self.tracker.success_count + 1, self.cfg.success_goal,
             )
-
             self.tracker.record(ArticleResult(
                 index=idx, url=url, title=title, source=source, author=author,
                 success=True, content=content, summary=summary, category=label,
@@ -944,18 +1029,19 @@ class NewsPipeline:
             ]
             txt_path.write_text("\n".join(lines), encoding="utf-8")
 
-        # Update the persistent category log
         self.log_writer.record_run(successes)
 
     # ------------------------------------------------------------------
     def run(self) -> bool:
         log.info("══════  NEWS PIPELINE START  ══════")
         log.info(
-            "Goal: %d successes from %d candidates | Topics: %s",
+            "Goal: %d successes from %d candidates",
             self.cfg.success_goal,
             self.cfg.candidate_count,
-            ", ".join(self.cfg.topics),
         )
+        log.info("Topics:     %s", ", ".join(self.cfg.topics))
+        log.info("Categories: %s", ", ".join(self.cfg.valid_categories))
+        log.info("Output dir: %s", self.cfg.output_dir.resolve())
 
         self._step_cleanup()
 
@@ -978,17 +1064,7 @@ class NewsPipeline:
 # =============================================================================
 
 if __name__ == "__main__":
-    cfg = PipelineConfig(
-        topics          = ["Technology", "Artificial intelligence", "Laptops", "Cybersecurity", "Technology Market"],
-        candidate_count = 50,
-        success_goal    = 20,
-        source_limit    = 1,
-        gemini_model    = "gemini-3.1-flash-lite-preview",
-        classifier_model = "gemini-3.1-flash-lite-preview",
-        classifier_delay = 4.0,   # seconds between classify calls — tune to your RPM quota
-        output_dir      = Path("."),
-    )
-
+    cfg = PipelineConfig.from_yaml("config.yaml")
     pipeline = NewsPipeline(cfg)
     ok = pipeline.run()
     raise SystemExit(0 if ok else 1)

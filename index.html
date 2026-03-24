@@ -25,18 +25,6 @@
       --accent-dim:  #b85515;
       --accent-bg:   rgba(212,100,26,0.10);
       --accent-glow: rgba(212,100,26,0.20);
-      --ai:          #5b9cf6;
-      --ai-bg:       rgba(91,156,246,0.10);
-      --ai-border:   rgba(91,156,246,0.22);
-      --market:      #3abf8a;
-      --market-bg:   rgba(58,191,138,0.10);
-      --market-border: rgba(58,191,138,0.22);
-      --cyber:       #e05a5a;
-      --cyber-bg:    rgba(224,90,90,0.10);
-      --cyber-border: rgba(224,90,90,0.22);
-      --devices:     #a78bfa;
-      --devices-bg:  rgba(167,139,250,0.10);
-      --devices-border: rgba(167,139,250,0.22);
       --font-serif:  "Playfair Display", Georgia, serif;
       --font-sans:   "IBM Plex Sans", system-ui, sans-serif;
       --font-mono:   "IBM Plex Mono", monospace;
@@ -446,6 +434,7 @@
       box-shadow: var(--shadow-md);
     }
 
+    /* Category badge — base styles only; colours injected by JS */
     .card-category {
       font-family: var(--font-mono);
       font-size: 9px;
@@ -457,10 +446,6 @@
       align-self: flex-start;
       border: 1px solid transparent;
     }
-    .cat-ai      { background: var(--ai-bg);      color: var(--ai);      border-color: var(--ai-border); }
-    .cat-market  { background: var(--market-bg);  color: var(--market);  border-color: var(--market-border); }
-    .cat-cyber   { background: var(--cyber-bg);   color: var(--cyber);   border-color: var(--cyber-border); }
-    .cat-devices { background: var(--devices-bg); color: var(--devices); border-color: var(--devices-border); }
 
     .card-title {
       font-family: var(--font-serif);
@@ -632,10 +617,7 @@
       color: var(--text);
       margin-bottom: 32px;
     }
-    .about-hero-title em {
-      font-style: normal;
-      color: var(--accent);
-    }
+    .about-hero-title em { font-style: normal; color: var(--accent); }
 
     .about-lead {
       font-size: 17px;
@@ -646,18 +628,10 @@
       padding-left: 22px;
     }
 
-    .about-body {
-      font-size: 15px;
-      line-height: 1.78;
-      color: var(--text-body);
-    }
+    .about-body { font-size: 15px; line-height: 1.78; color: var(--text-body); }
     .about-body p { margin-bottom: 18px; }
 
-    .about-divider {
-      height: 1px;
-      background: var(--border);
-      margin: 40px 0;
-    }
+    .about-divider { height: 1px; background: var(--border); margin: 40px 0; }
 
     /* ── STATS GRID ─────────────────────────────────────────────────── */
     .about-stats {
@@ -776,14 +750,8 @@
 <header>
   <div class="header-inner">
     <div class="logo">Tech<span>Pulse</span></div>
-    <nav id="nav">
-      <button class="active" data-tab="all">All</button>
-      <button data-tab="ai">Artificial Intelligence</button>
-      <button data-tab="market">Tech Business</button>
-      <button data-tab="cyber">Cybersecurity</button>
-      <button data-tab="devices">Laptops &amp; Phones</button>
-      <button data-tab="about">About</button>
-    </nav>
+    <!-- Nav buttons are built dynamically from categories in articles.json -->
+    <nav id="nav"></nav>
     <div class="header-right">
       <button class="search-trigger" id="search-trigger" aria-label="Search articles">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
@@ -864,10 +832,10 @@
           While you're sleeping, TechPulse is reading. Hundreds of articles from across the internet, distilled into the ones that actually matter — no filler, no sponsored fluff, no doomscrolling required.
         </p>
         <p>
-          Four categories. Thousands of articles. One place. Whether you're tracking the AI arms race, keeping tabs on Big Tech, watching for the next data breach, or just figuring out which laptop to buy — TechPulse has your back, automatically, every single day.
+          This isn't a newsletter you forgot to unsubscribe from. It's a living, breathing feed of what's happening right now in tech — curated by AI so a human doesn't have to.
         </p>
         <p>
-          This isn't a newsletter you forgot to unsubscribe from. It's a living, breathing feed of what's happening right now in tech — curated by AI so a human doesn't have to.
+          Categories, sources, and topics are all driven by a single config file — so the feed evolves without touching a line of HTML.
         </p>
       </div>
 
@@ -879,8 +847,8 @@
           <div class="stat-label">Articles Summarized</div>
         </div>
         <div class="stat-card">
-          <div class="stat-number" id="stat-authors">—</div>
-          <div class="stat-label">Authors Covered</div>
+          <div class="stat-number" id="stat-categories">—</div>
+          <div class="stat-label">Categories Tracked</div>
         </div>
         <div class="stat-card">
           <div class="stat-number" id="stat-sources">—</div>
@@ -910,125 +878,178 @@
 
 <!-- ── SCRIPT ──────────────────────────────────────────────────────── -->
 <script>
-  /* ─── Constants ────────────────────────────────────────────────── */
-  const TABS = {
-    all:     { label: "Latest News",             filter: null },
-    ai:      { label: "Artificial Intelligence", filter: "Artificial Intelligence" },
-    market:  { label: "Tech Business & Markets", filter: "Tech Business & Markets" },
-    cyber:   { label: "Cybersecurity",           filter: "Cybersecurity" },
-    devices: { label: "Laptops & Cell Phones",   filter: "Laptops & Cell Phones" },
-    about:   { label: "About",                   filter: null },
-  };
-
-  const CAT_CLASS = {
-    "Artificial Intelligence": "cat-ai",
-    "Tech Business & Markets": "cat-market",
-    "Cybersecurity":           "cat-cyber",
-    "Laptops & Cell Phones":   "cat-devices",
-  };
+  /* ─── Category colour palette ───────────────────────────────────── */
+  // Colours are assigned to categories in alphabetical order and cycle
+  // if there are more categories than palette entries.
+  const PALETTE = [
+    { fg: '#5b9cf6', bg: 'rgba(91,156,246,0.10)',  bd: 'rgba(91,156,246,0.22)' },
+    { fg: '#3abf8a', bg: 'rgba(58,191,138,0.10)',  bd: 'rgba(58,191,138,0.22)' },
+    { fg: '#e05a5a', bg: 'rgba(224,90,90,0.10)',   bd: 'rgba(224,90,90,0.22)'  },
+    { fg: '#a78bfa', bg: 'rgba(167,139,250,0.10)', bd: 'rgba(167,139,250,0.22)' },
+    { fg: '#f59e0b', bg: 'rgba(245,158,11,0.10)',  bd: 'rgba(245,158,11,0.22)'  },
+    { fg: '#06b6d4', bg: 'rgba(6,182,212,0.10)',   bd: 'rgba(6,182,212,0.22)'  },
+    { fg: '#f472b6', bg: 'rgba(244,114,182,0.10)', bd: 'rgba(244,114,182,0.22)' },
+    { fg: '#84cc16', bg: 'rgba(132,204,22,0.10)',  bd: 'rgba(132,204,22,0.22)'  },
+  ];
 
   /* ─── State ────────────────────────────────────────────────────── */
-  let allArticles = [];
-  let currentTab  = "all";
-  let activeFilter = "all"; // search filter chip
+  let allArticles  = [];
+  let currentTab   = 'all';
+  let activeFilter = 'all';
+
+  // Map from category name → { cssClass, palette }
+  // Populated in buildCategorySystem() after articles load.
+  let categoryMap  = {};
 
   /* ─── DOM refs ─────────────────────────────────────────────────── */
-  const $loading       = document.getElementById("loading");
-  const $error         = document.getElementById("error-msg");
-  const $listView      = document.getElementById("list-view");
-  const $articleView   = document.getElementById("article-view");
-  const $aboutView     = document.getElementById("about-view");
-  const $groups        = document.getElementById("groups-container");
-  const $pageTitle     = document.getElementById("page-title");
-  const $pageSub       = document.getElementById("page-subtitle");
-  const $navBtns       = document.querySelectorAll("nav button");
-  const $backBtn       = document.getElementById("back-btn");
-  const $searchOverlay = document.getElementById("search-overlay");
-  const $searchInput   = document.getElementById("search-input");
-  const $searchResults = document.getElementById("search-results");
-  const $filterChips   = document.querySelectorAll(".filter-chip");
+  const $loading       = document.getElementById('loading');
+  const $error         = document.getElementById('error-msg');
+  const $listView      = document.getElementById('list-view');
+  const $articleView   = document.getElementById('article-view');
+  const $aboutView     = document.getElementById('about-view');
+  const $groups        = document.getElementById('groups-container');
+  const $pageTitle     = document.getElementById('page-title');
+  const $pageSub       = document.getElementById('page-subtitle');
+  const $nav           = document.getElementById('nav');
+  const $backBtn       = document.getElementById('back-btn');
+  const $searchOverlay = document.getElementById('search-overlay');
+  const $searchInput   = document.getElementById('search-input');
+  const $searchResults = document.getElementById('search-results');
+  const $filterChips   = document.querySelectorAll('.filter-chip');
 
   /* ─── Boot ──────────────────────────────────────────────────────── */
   async function init() {
     try {
-      const res = await fetch("articles.json");
+      const res = await fetch('articles.json');
       if (!res.ok) throw new Error(res.status);
       allArticles = await res.json();
-      $loading.style.display = "none";
+      $loading.style.display = 'none';
+
+      buildCategorySystem(allArticles);
+      buildNav();
       populateAboutStats();
       renderTab(currentTab);
     } catch (e) {
-      $loading.style.display = "none";
-      $error.style.display   = "block";
-      console.error("Failed to load articles.json", e);
+      $loading.style.display = 'none';
+      $error.style.display   = 'block';
+      console.error('Failed to load articles.json', e);
     }
   }
 
-  /* ─── About stats ───────────────────────────────────────────────── */
-  function populateAboutStats() {
-    document.getElementById("stat-total").textContent   = allArticles.length;
-    const authors = new Set(allArticles.map(a => a.author).filter(Boolean));
-    const sources  = new Set(allArticles.map(a => a.source).filter(Boolean));
-    document.getElementById("stat-authors").textContent = authors.size;
-    document.getElementById("stat-sources").textContent  = sources.size;
-    const fc = document.getElementById("footer-count");
-    if (fc) fc.textContent = `${allArticles.length} articles indexed`;
+  /* ─── Category system ───────────────────────────────────────────── */
+  /**
+   * Derives unique categories from the articles, sorts them alphabetically,
+   * assigns a palette colour to each, and injects the corresponding CSS
+   * class rules into the document head.  Populates categoryMap.
+   */
+  function buildCategorySystem(articles) {
+    const cats = [...new Set(articles.map(a => a.category).filter(Boolean))].sort();
+
+    const styleEl = document.createElement('style');
+    let css = '';
+
+    cats.forEach((cat, i) => {
+      const p   = PALETTE[i % PALETTE.length];
+      const cls = `cat-${i}`;
+      categoryMap[cat] = { cssClass: cls, palette: p };
+      css += `.${cls}{background:${p.bg};color:${p.fg};border-color:${p.bd}}\n`;
+    });
+
+    styleEl.textContent = css;
+    document.head.appendChild(styleEl);
+  }
+
+  /** Returns the CSS class for a given category name, falling back to cat-0. */
+  function catClass(category) {
+    return (categoryMap[category] || categoryMap[Object.keys(categoryMap)[0]] || { cssClass: 'cat-0' }).cssClass;
   }
 
   /* ─── Nav ───────────────────────────────────────────────────────── */
-  $navBtns.forEach(btn => {
-    btn.addEventListener("click", () => {
-      currentTab = btn.dataset.tab;
-      $navBtns.forEach(b => b.classList.toggle("active", b === btn));
-      renderTab(currentTab);
-      window.scrollTo({ top: 0, behavior: "smooth" });
+  /** Builds nav buttons: All · [one per category, alphabetical] · About */
+  function buildNav() {
+    $nav.innerHTML = '';
+
+    appendNavBtn('All', 'all', true);
+
+    Object.keys(categoryMap).sort().forEach(cat => {
+      appendNavBtn(cat, cat, false);
     });
+
+    appendNavBtn('About', 'about', false);
+  }
+
+  function appendNavBtn(label, tab, active) {
+    const btn = document.createElement('button');
+    btn.dataset.tab = tab;
+    btn.textContent = label;
+    if (active) btn.classList.add('active');
+    $nav.appendChild(btn);
+  }
+
+  // Event delegation on the nav element — works even after nav is rebuilt.
+  $nav.addEventListener('click', e => {
+    const btn = e.target.closest('button[data-tab]');
+    if (!btn) return;
+    currentTab = btn.dataset.tab;
+    $nav.querySelectorAll('button').forEach(b => b.classList.toggle('active', b === btn));
+    renderTab(currentTab);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  $backBtn.addEventListener("click", () => {
+  $backBtn.addEventListener('click', () => {
     showListView();
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
   /* ─── View switchers ────────────────────────────────────────────── */
   function showListView() {
-    $listView.style.display    = "block";
-    $articleView.style.display = "none";
-    $articleView.classList.remove("visible");
-    $aboutView.style.display   = "none";
-    $aboutView.classList.remove("visible");
+    $listView.style.display    = 'block';
+    $articleView.style.display = 'none';
+    $articleView.classList.remove('visible');
+    $aboutView.style.display   = 'none';
+    $aboutView.classList.remove('visible');
   }
 
   function showArticleView() {
-    $listView.style.display    = "none";
-    $articleView.style.display = "block";
-    $aboutView.style.display   = "none";
-    $aboutView.classList.remove("visible");
+    $listView.style.display    = 'none';
+    $articleView.style.display = 'block';
+    $aboutView.style.display   = 'none';
+    $aboutView.classList.remove('visible');
     void $articleView.offsetWidth;
-    $articleView.classList.add("visible");
+    $articleView.classList.add('visible');
   }
 
   function showAboutView() {
-    $listView.style.display    = "none";
-    $articleView.style.display = "none";
-    $articleView.classList.remove("visible");
-    $aboutView.style.display   = "block";
+    $listView.style.display    = 'none';
+    $articleView.style.display = 'none';
+    $articleView.classList.remove('visible');
+    $aboutView.style.display   = 'block';
     void $aboutView.offsetWidth;
-    $aboutView.classList.add("visible");
+    $aboutView.classList.add('visible');
+  }
+
+  /* ─── About stats ───────────────────────────────────────────────── */
+  function populateAboutStats() {
+    document.getElementById('stat-total').textContent      = allArticles.length;
+    document.getElementById('stat-categories').textContent = Object.keys(categoryMap).length;
+    const sources = new Set(allArticles.map(a => a.source).filter(Boolean));
+    document.getElementById('stat-sources').textContent    = sources.size;
+    const fc = document.getElementById('footer-count');
+    if (fc) fc.textContent = `${allArticles.length} articles indexed`;
   }
 
   /* ─── Render tab ────────────────────────────────────────────────── */
   function renderTab(tab) {
-    if (tab === "about") { showAboutView(); return; }
+    if (tab === 'about') { showAboutView(); return; }
 
     showListView();
-    const cfg    = TABS[tab];
-    const filter = cfg.filter;
-    const arts   = filter ? allArticles.filter(a => a.category === filter) : allArticles;
+    const isAll  = tab === 'all';
+    const arts   = isAll ? allArticles : allArticles.filter(a => a.category === tab);
+    const label  = isAll ? 'Latest News' : tab;
 
-    $pageTitle.textContent = cfg.label;
-    $pageSub.textContent   = `${arts.length} article${arts.length !== 1 ? "s" : ""}`;
-    $groups.innerHTML = "";
+    $pageTitle.textContent = label;
+    $pageSub.textContent   = `${arts.length} article${arts.length !== 1 ? 's' : ''}`;
+    $groups.innerHTML = '';
 
     if (!arts.length) {
       $groups.innerHTML = '<div class="empty">No articles in this category yet.</div>';
@@ -1039,36 +1060,37 @@
     let cardDelay = 0;
 
     grouped.forEach((articles, dateKey) => {
-      const groupEl = document.createElement("div");
-      groupEl.className = "date-group";
-      const label = formatDateLabel(articles[0].processed_at);
+      const groupEl  = document.createElement('div');
+      groupEl.className = 'date-group';
+      const dateLabel   = formatDateLabel(articles[0].processed_at);
+      const safeKey     = esc(dateKey);
 
       groupEl.innerHTML = `
         <div class="date-label">
-          <span class="date-label-text">${esc(label)}</span>
+          <span class="date-label-text">${esc(dateLabel)}</span>
           <span class="date-label-line"></span>
-          <span class="date-label-count">${articles.length} article${articles.length !== 1 ? "s" : ""}</span>
+          <span class="date-label-count">${articles.length} article${articles.length !== 1 ? 's' : ''}</span>
         </div>
-        <div class="grid" id="grid-${esc(dateKey)}"></div>
+        <div class="grid" id="grid-${safeKey}"></div>
       `;
       $groups.appendChild(groupEl);
 
-      const grid = document.getElementById(`grid-${dateKey}`);
+      const grid = document.getElementById(`grid-${safeKey}`);
       articles.forEach(article => {
-        const card = document.createElement("div");
-        card.className = "card";
+        const card = document.createElement('div');
+        card.className = 'card';
         card.style.animationDelay = `${Math.min(cardDelay++, 12) * 26}ms`;
-        const catClass = CAT_CLASS[article.category] || "cat-ai";
+
         card.innerHTML = `
-          <span class="card-category ${catClass}">${esc(article.category || "News")}</span>
-          <div class="card-title">${esc(article.title || "Untitled")}</div>
+          <span class="card-category ${catClass(article.category)}">${esc(article.category || 'News')}</span>
+          <div class="card-title">${esc(article.title || 'Untitled')}</div>
           <div class="card-meta">
-            <span>${esc(article.author || "Unknown")}</span>
+            <span>${esc(article.author || 'Unknown')}</span>
             <span class="sep">·</span>
-            <span>${esc(article.source || "Unknown")}</span>
+            <span>${esc(article.source || 'Unknown')}</span>
           </div>
         `;
-        card.addEventListener("click", () => openArticle(article));
+        card.addEventListener('click', () => openArticle(article));
         grid.appendChild(card);
       });
     });
@@ -1076,53 +1098,56 @@
 
   /* ─── Open article ──────────────────────────────────────────────── */
   function openArticle(article) {
-    const catClass = CAT_CLASS[article.category] || "cat-ai";
-    const badge = document.getElementById("art-badge");
-    badge.textContent = article.category || "News";
-    badge.className = `article-category-badge ${catClass}`;
+    const cls   = catClass(article.category);
+    const badge = document.getElementById('art-badge');
+    badge.textContent = article.category || 'News';
+    badge.className   = `article-category-badge ${cls}`;
 
-    document.getElementById("art-title").textContent = article.title || "Untitled";
-    document.getElementById("art-byline").innerHTML = `
-      <span><span class="byline-label">By</span> ${esc(article.author || "Unknown")}</span>
-      <span><span class="byline-label">Source</span> ${esc(article.source || "Unknown")}</span>
+    document.getElementById('art-title').textContent = article.title || 'Untitled';
+    document.getElementById('art-byline').innerHTML  = `
+      <span><span class="byline-label">By</span> ${esc(article.author || 'Unknown')}</span>
+      <span><span class="byline-label">Source</span> ${esc(article.source || 'Unknown')}</span>
     `;
-    document.getElementById("art-body").innerHTML = marked.parse(article.summary || "_No summary available._");
-    document.getElementById("art-source-meta").innerHTML = `
-      <span><strong>${esc(article.source || "Unknown")}</strong></span>
-      <span>Published by ${esc(article.author || "Unknown")}</span>
+    document.getElementById('art-body').innerHTML = marked.parse(article.summary || '_No summary available._');
+    document.getElementById('art-source-meta').innerHTML = `
+      <span><strong>${esc(article.source || 'Unknown')}</strong></span>
+      <span>Published by ${esc(article.author || 'Unknown')}</span>
     `;
-    document.getElementById("art-link").href = article.url || "#";
+    document.getElementById('art-link').href = article.url || '#';
 
     showArticleView();
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   /* ─── Date helpers ──────────────────────────────────────────────── */
   function getDateKey(iso) {
-    if (!iso) return "unknown";
+    if (!iso) return 'unknown';
     const d = new Date(iso);
-    if (isNaN(d)) return "unknown";
-    return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+    if (isNaN(d)) return 'unknown';
+    return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
   }
 
   function formatDateLabel(iso) {
-    if (!iso) return "Unknown Date";
+    if (!iso) return 'Unknown Date';
     const d = new Date(iso);
-    if (isNaN(d)) return "Unknown Date";
-    const today = new Date();
+    if (isNaN(d)) return 'Unknown Date';
+    const today     = new Date();
     const yesterday = new Date(today);
     yesterday.setDate(today.getDate() - 1);
-    const same = (a, b) => a.getFullYear()===b.getFullYear() && a.getMonth()===b.getMonth() && a.getDate()===b.getDate();
-    if (same(d, today))     return "Today";
-    if (same(d, yesterday)) return "Yesterday";
-    return d.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric" });
+    const same = (a, b) =>
+      a.getFullYear() === b.getFullYear() &&
+      a.getMonth()    === b.getMonth()    &&
+      a.getDate()     === b.getDate();
+    if (same(d, today))     return 'Today';
+    if (same(d, yesterday)) return 'Yesterday';
+    return d.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
   }
 
   function shortDate(iso) {
-    if (!iso) return "";
+    if (!iso) return '';
     const d = new Date(iso);
-    if (isNaN(d)) return "";
-    return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    if (isNaN(d)) return '';
+    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
   }
 
   function groupByDate(arts) {
@@ -1136,60 +1161,57 @@
   }
 
   /* ─── Search ────────────────────────────────────────────────────── */
-  document.getElementById("search-trigger").addEventListener("click", openSearch);
-  document.getElementById("search-close").addEventListener("click", closeSearch);
-  $searchOverlay.addEventListener("click", e => { if (e.target === $searchOverlay) closeSearch(); });
-  document.addEventListener("keydown", e => {
-    if (e.key === "Escape" && $searchOverlay.classList.contains("visible")) { closeSearch(); return; }
-    if (e.key === "k" && (e.metaKey || e.ctrlKey)) { e.preventDefault(); openSearch(); }
+  document.getElementById('search-trigger').addEventListener('click', openSearch);
+  document.getElementById('search-close').addEventListener('click', closeSearch);
+  $searchOverlay.addEventListener('click', e => { if (e.target === $searchOverlay) closeSearch(); });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && $searchOverlay.classList.contains('visible')) { closeSearch(); return; }
+    if (e.key === 'k' && (e.metaKey || e.ctrlKey)) { e.preventDefault(); openSearch(); }
   });
 
   function openSearch() {
-    $searchOverlay.classList.add("visible");
+    $searchOverlay.classList.add('visible');
     setTimeout(() => $searchInput.focus(), 60);
   }
   function closeSearch() {
-    $searchOverlay.classList.remove("visible");
-    $searchInput.value = "";
+    $searchOverlay.classList.remove('visible');
+    $searchInput.value = '';
     $searchResults.innerHTML = '<div class="search-hint">Type to search across all articles</div>';
   }
 
   /* ─── Filter chips ──────────────────────────────────────────────── */
   $filterChips.forEach(chip => {
-    chip.addEventListener("click", () => {
+    chip.addEventListener('click', () => {
       activeFilter = chip.dataset.filter;
-      $filterChips.forEach(c => c.classList.toggle("active", c === chip));
+      $filterChips.forEach(c => c.classList.toggle('active', c === chip));
       runSearch($searchInput.value.trim());
     });
   });
 
   /* ─── Search logic ──────────────────────────────────────────────── */
-  $searchInput.addEventListener("input", () => runSearch($searchInput.value.trim()));
+  $searchInput.addEventListener('input', () => runSearch($searchInput.value.trim()));
 
   function matchesFilter(article, q, filter) {
     const ql = q.toLowerCase();
-    if (filter === "title")  return (article.title  || "").toLowerCase().includes(ql);
-    if (filter === "author") return (article.author || "").toLowerCase().includes(ql);
-    if (filter === "source") return (article.source || "").toLowerCase().includes(ql);
-    if (filter === "date") {
-      // match against formatted date string, e.g. "Mar 22, 2025"
-      const dateStr = shortDate(article.processed_at).toLowerCase();
-      const keyStr  = getDateKey(article.processed_at); // "2025-03-22"
-      return dateStr.includes(ql) || keyStr.includes(ql);
+    if (filter === 'title')  return (article.title  || '').toLowerCase().includes(ql);
+    if (filter === 'author') return (article.author || '').toLowerCase().includes(ql);
+    if (filter === 'source') return (article.source || '').toLowerCase().includes(ql);
+    if (filter === 'date') {
+      return shortDate(article.processed_at).toLowerCase().includes(ql) ||
+             getDateKey(article.processed_at).includes(ql);
     }
-    // "all" — search everything
     return (
-      (article.title    || "").toLowerCase().includes(ql) ||
-      (article.author   || "").toLowerCase().includes(ql) ||
-      (article.source   || "").toLowerCase().includes(ql) ||
-      (article.category || "").toLowerCase().includes(ql) ||
-      (article.summary  || "").toLowerCase().includes(ql) ||
+      (article.title    || '').toLowerCase().includes(ql) ||
+      (article.author   || '').toLowerCase().includes(ql) ||
+      (article.source   || '').toLowerCase().includes(ql) ||
+      (article.category || '').toLowerCase().includes(ql) ||
+      (article.summary  || '').toLowerCase().includes(ql) ||
       shortDate(article.processed_at).toLowerCase().includes(ql)
     );
   }
 
   function runSearch(q) {
-    $searchResults.innerHTML = "";
+    $searchResults.innerHTML = '';
     if (!q) {
       $searchResults.innerHTML = '<div class="search-hint">Type to search across all articles</div>';
       return;
@@ -1203,28 +1225,30 @@
     }
 
     matches.forEach(article => {
-      const item = document.createElement("div");
-      item.className = "search-result-item";
-      const catClass = CAT_CLASS[article.category] || "cat-ai";
-      const fieldToHighlight = activeFilter === "all" || activeFilter === "title" ? article.title || "Untitled" : article.title || "Untitled";
+      const item = document.createElement('div');
+      item.className = 'search-result-item';
+      const cls = catClass(article.category);
 
       item.innerHTML = `
         <div class="sri-top">
-          <span class="sri-category ${catClass}">${esc(article.category || "News")}</span>
+          <span class="sri-category ${cls}">${esc(article.category || 'News')}</span>
           <span class="sri-date">${esc(shortDate(article.processed_at))}</span>
         </div>
-        <div class="sri-title">${highlight(article.title || "Untitled", activeFilter === "title" || activeFilter === "all" ? q : "")}</div>
+        <div class="sri-title">${highlight(article.title || 'Untitled', activeFilter === 'title' || activeFilter === 'all' ? q : '')}</div>
         <div class="sri-meta">
-          ${highlight(article.author || "Unknown", activeFilter === "author" ? q : "")}
+          ${highlight(article.author || 'Unknown', activeFilter === 'author' ? q : '')}
           <span class="sep">·</span>
-          ${highlight(article.source || "Unknown", activeFilter === "source" ? q : "")}
+          ${highlight(article.source || 'Unknown', activeFilter === 'source' ? q : '')}
         </div>
       `;
-      item.addEventListener("click", () => {
+      item.addEventListener('click', () => {
         closeSearch();
-        const tabKey = Object.keys(TABS).find(k => TABS[k].filter === article.category) || "all";
+        // Activate the matching category tab (or 'all' if not found).
+        const tabKey = article.category && categoryMap[article.category] ? article.category : 'all';
         currentTab = tabKey;
-        $navBtns.forEach(b => b.classList.toggle("active", b.dataset.tab === tabKey));
+        $nav.querySelectorAll('button').forEach(b =>
+          b.classList.toggle('active', b.dataset.tab === tabKey)
+        );
         openArticle(article);
       });
       $searchResults.appendChild(item);
@@ -1235,16 +1259,16 @@
   function highlight(str, q) {
     const safe = esc(str);
     if (!q) return safe;
-    const safeQ = esc(q).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    return safe.replace(new RegExp(`(${safeQ})`, "gi"), "<mark>$1</mark>");
+    const safeQ = esc(q).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return safe.replace(new RegExp(`(${safeQ})`, 'gi'), '<mark>$1</mark>');
   }
 
   function esc(str) {
     return String(str)
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
   }
 
   init();

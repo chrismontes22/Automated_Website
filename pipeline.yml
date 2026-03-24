@@ -3,12 +3,11 @@ name: News Pipeline
 on:
   schedule:
     - cron: "0 */12 * * *"   # every 12 hours (00:00 and 12:00 UTC)
-  workflow_dispatch:           # lets you trigger a run manually from GitHub UI
+  workflow_dispatch:           # lets you trigger a run manually from the GitHub UI
 
 jobs:
   run-pipeline:
     runs-on: ubuntu-latest
-
     permissions:
       contents: write           # needed to commit articles.json back to the repo
 
@@ -39,12 +38,31 @@ jobs:
       - name: Update site data
         run: python build_site_data.py
 
-      # ── 6. Commit and push articles.json ──────────────────────────────────
+      # ── 6. Resolve the articles.json path from config ─────────────────────
+      #    Reads output_dir from config.yaml so git add works regardless of
+      #    where the file was written.  Falls back to "articles.json" if the
+      #    config can't be read.
+      - name: Resolve articles.json path
+        id: paths
+        run: |
+          ARTICLES_PATH=$(python -c "
+          import pathlib, sys
+          try:
+              import yaml
+              cfg = yaml.safe_load(open('config.yaml'))
+              p = pathlib.Path(cfg['paths']['output_dir']) / 'articles.json'
+              print(p)
+          except Exception as e:
+              print('articles.json')
+          ")
+          echo "articles_path=$ARTICLES_PATH" >> "$GITHUB_OUTPUT"
+
+      # ── 7. Commit and push articles.json ──────────────────────────────────
       #    Only commits if articles.json actually changed (new articles arrived).
       - name: Commit updated articles.json
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add articles.json
+          git add "${{ steps.paths.outputs.articles_path }}"
           git diff --cached --quiet || git commit -m "chore: update articles $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
