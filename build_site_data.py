@@ -5,22 +5,23 @@ Run this AFTER news_pipeline.py.  Reads processed_articles.json (the pipeline's
 per-run output) and appends any new articles to articles.json (the permanent
 site data file that the website reads).
 
-Default file paths are derived from output_dir in config.yaml.  They can be
-overridden with CLI flags for non-standard setups.
+articles.json is ALWAYS saved to the current directory (.) so index.html can
+fetch it directly. processed_articles.json path comes from config.yaml.
 
-Deduplication is by URL — running it multiple times is safe.
+Deduplication is by URL *and* normalized title — running it multiple times is safe.
+Articles with matching URL OR matching title (case-insensitive, stripped) are skipped.
 
 Usage:
     python build_site_data.py
     python build_site_data.py --config path/to/config.yaml
     python build_site_data.py --pipeline-output path/to/processed_articles.json
-    python build_site_data.py --site-data path/to/articles.json
 """
 from __future__ import annotations
 
 import argparse
 import json
 import logging
+import re
 from pathlib import Path
 
 import yaml
@@ -42,17 +43,16 @@ KEEP_FIELDS = {"title", "summary", "author", "source", "url", "category", "proce
 
 def get_output_dir(config_path: str) -> Path:
     """
-    Read output_dir from config.yaml.  Returns Path(".") if the file is absent
-    or the key is missing, so the script still works without a config when paths
-    are supplied explicitly via CLI flags.
+    Read output_dir from config.yaml. Returns Path("other") if the file is absent
+    or the key is missing. This controls where processed_articles.json is read from.
     """
     p = Path(config_path)
     if not p.exists():
         log.warning(
-            "config.yaml not found at %s — using current directory for default paths.",
+            "config.yaml not found at %s — using 'other/' for pipeline output.",
             p.resolve(),
         )
-        return Path(".")
+        return Path("other")
     try:
         with p.open(encoding="utf-8") as f:
             raw = yaml.safe_load(f)
@@ -61,10 +61,40 @@ def get_output_dir(config_path: str) -> Path:
         return output_dir
     except Exception as exc:
         log.warning(
-            "Could not read output_dir from config (%s) — using current directory.",
+            "Could not read output_dir from config (%s) — using 'other/'.",
             exc,
         )
-        return Path(".")
+        return Path("other")
+
+
+# =============================================================================
+# DEDUPLICATION HELPERS
+# =============================================================================
+
+def normalize_title(title: str | None) -> str:
+    """
+    Normalize a title for comparison: lowercase, strip whitespace,
+    collapse multiple spaces, remove extra punctuation spacing.
+    """
+    if not title:
+        return ""
+    # Lowercase and strip
+    t = title.lower().strip()
+    # Collapse multiple whitespace
+    t = re.sub(r"\s+", " ", t)
+    # Optional: remove trailing punctuation that varies between sites
+    t = re.sub(r"\s*[-–—|:]\s*$", "", t)
+    return t
+
+
+def make_dedup_key(article: dict) -> tuple[str, str]:
+    """
+    Create a deduplication key: (normalized_url, normalized_title).
+    Both are stripped and normalized for reliable matching.
+    """
+    url = (article.get("url") or "").strip().lower()
+    title = normalize_title(article.get("title"))
+    return (url, title)
 
 
 # =============================================================================
@@ -103,12 +133,40 @@ def slim(article: dict) -> dict:
 def merge(existing: list[dict], new_articles: list[dict]) -> tuple[list[dict], int]:
     """
     Prepend new articles to the front (newest first).
+    Deduplicates by URL *or* normalized title.
     Returns (merged_list, count_added).
     """
-    existing_urls = {a.get("url", "").strip() for a in existing}
-    to_add = [slim(a) for a in new_articles if a.get("url", "").strip() not in existing_urls]
+    # Build set of existing dedup keys: (url, title)
+    existing_keys = {make_dedup_key(a) for a in existing}
+    
+    to_add = []
+    skipped_by_url = 0
+    skipped_by_title = 0
+    
+    for article in new_articles:
+        key = make_dedup_key(article)
+        url, title = key
+        
+        # Skip if URL matches
+        if any(url == ek[0] for ek in existing_keys):
+            skipped_by_url += 1
+            continue
+        # Skip if normalized title matches (but URL is different)
+        if title and any(title == ek[1] for ek in existing_keys):
+            skipped_by_title += 1
+            continue
+            
+        to_add.append(slim(article))
+    
     merged = to_add + existing
-    return merged, len(to_add)
+    added = len(to_add)
+    
+    log.debug(
+        "Dedup stats: %d skipped by URL, %d skipped by title, %d added",
+        skipped_by_url, skipped_by_title, added
+    )
+    
+    return merged, added
 
 
 def save_site_data(path: Path, articles: list[dict]) -> None:
@@ -141,10 +199,11 @@ def main() -> None:
         default=str(output_dir / "processed_articles.json"),
         help="Path to the pipeline's per-run output (default: <output_dir>/processed_articles.json)",
     )
+    # articles.json is ALWAYS in current directory (.) for index.html to fetch
     parser.add_argument(
         "--site-data",
-        default=str(output_dir / "articles.json"),
-        help="Path to the persistent site data file (default: <output_dir>/articles.json)",
+        default="articles.json",
+        help="Path to the persistent site data file (default: ./articles.json)",
     )
     args = parser.parse_args()
 
