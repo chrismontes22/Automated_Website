@@ -87,6 +87,7 @@
       color: var(--text);
       white-space: nowrap;
       flex-shrink: 0;
+      cursor: pointer;
     }
     .logo span { color: var(--accent); }
 
@@ -434,7 +435,6 @@
       box-shadow: var(--shadow-md);
     }
 
-    /* Category badge — base styles only; colours injected by JS */
     .card-category {
       font-family: var(--font-mono);
       font-size: 9px;
@@ -749,8 +749,7 @@
 <!-- ── HEADER ──────────────────────────────────────────────────────── -->
 <header>
   <div class="header-inner">
-    <div class="logo">Tech<span>Pulse</span></div>
-    <!-- Nav buttons are built dynamically from categories in articles.json -->
+    <div class="logo" id="logo">Tech<span>Pulse</span></div>
     <nav id="nav"></nav>
     <div class="header-right">
       <button class="search-trigger" id="search-trigger" aria-label="Search articles">
@@ -879,8 +878,6 @@
 <!-- ── SCRIPT ──────────────────────────────────────────────────────── -->
 <script>
   /* ─── Category colour palette ───────────────────────────────────── */
-  // Colours are assigned to categories in alphabetical order and cycle
-  // if there are more categories than palette entries.
   const PALETTE = [
     { fg: '#5b9cf6', bg: 'rgba(91,156,246,0.10)',  bd: 'rgba(91,156,246,0.22)' },
     { fg: '#3abf8a', bg: 'rgba(58,191,138,0.10)',  bd: 'rgba(58,191,138,0.22)' },
@@ -896,10 +893,10 @@
   let allArticles  = [];
   let currentTab   = 'all';
   let activeFilter = 'all';
-
-  // Map from category name → { cssClass, palette }
-  // Populated in buildCategorySystem() after articles load.
   let categoryMap  = {};
+
+  // Track the current article URL so we can restore it on popstate
+  let currentArticleUrl = null;
 
   /* ─── DOM refs ─────────────────────────────────────────────────── */
   const $loading       = document.getElementById('loading');
@@ -928,7 +925,9 @@
       buildCategorySystem(allArticles);
       buildNav();
       populateAboutStats();
-      renderTab(currentTab);
+
+      // Restore state from the URL on first load, or default to 'all'
+      restoreFromHistory(history.state);
     } catch (e) {
       $loading.style.display = 'none';
       $error.style.display   = 'block';
@@ -936,12 +935,60 @@
     }
   }
 
-  /* ─── Category system ───────────────────────────────────────────── */
+  /* ─── History helpers ───────────────────────────────────────────── */
+
   /**
-   * Derives unique categories from the articles, sorts them alphabetically,
-   * assigns a palette colour to each, and injects the corresponding CSS
-   * class rules into the document head.  Populates categoryMap.
+   * Restores the correct view from a history state object.
+   * Called on initial load (with history.state) and on popstate events.
+   *
+   * State shape:
+   *   { view: 'list',    tab: 'all' | <category> }
+   *   { view: 'article', tab: <category>,  articleUrl: <url> }
+   *   { view: 'about' }
    */
+  function restoreFromHistory(state) {
+    if (!state) {
+      // No state yet — fresh page load, default to 'all' tab.
+      currentTab = 'all';
+      setNavActive('all');
+      renderTab('all', /* pushState */ false);
+      // Replace (not push) so the initial state is recorded.
+      history.replaceState({ view: 'list', tab: 'all' }, '');
+      return;
+    }
+
+    if (state.view === 'about') {
+      currentTab = 'about';
+      setNavActive('about');
+      showAboutView();
+      return;
+    }
+
+    if (state.view === 'article' && state.articleUrl) {
+      const article = allArticles.find(a => a.url === state.articleUrl);
+      if (article) {
+        currentTab = state.tab || 'all';
+        setNavActive(currentTab);
+        // Render the list silently (needed so Back works properly), then show article.
+        renderTab(currentTab, /* pushState */ false);
+        openArticle(article, /* pushState */ false);
+        return;
+      }
+    }
+
+    // Default: list view for the given tab.
+    currentTab = state.tab || 'all';
+    setNavActive(currentTab);
+    renderTab(currentTab, /* pushState */ false);
+  }
+
+  /** Listen for browser Back / Forward button presses. */
+  window.addEventListener('popstate', e => {
+    restoreFromHistory(e.state);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  /* ─── Category system ───────────────────────────────────────────── */
   function buildCategorySystem(articles) {
     const cats = [...new Set(articles.map(a => a.category).filter(Boolean))].sort();
 
@@ -959,22 +1006,15 @@
     document.head.appendChild(styleEl);
   }
 
-  /** Returns the CSS class for a given category name, falling back to cat-0. */
   function catClass(category) {
     return (categoryMap[category] || categoryMap[Object.keys(categoryMap)[0]] || { cssClass: 'cat-0' }).cssClass;
   }
 
   /* ─── Nav ───────────────────────────────────────────────────────── */
-  /** Builds nav buttons: All · [one per category, alphabetical] · About */
   function buildNav() {
     $nav.innerHTML = '';
-
     appendNavBtn('All', 'all', true);
-
-    Object.keys(categoryMap).sort().forEach(cat => {
-      appendNavBtn(cat, cat, false);
-    });
-
+    Object.keys(categoryMap).sort().forEach(cat => appendNavBtn(cat, cat, false));
     appendNavBtn('About', 'about', false);
   }
 
@@ -986,19 +1026,36 @@
     $nav.appendChild(btn);
   }
 
-  // Event delegation on the nav element — works even after nav is rebuilt.
-  $nav.addEventListener('click', e => {
-    const btn = e.target.closest('button[data-tab]');
-    if (!btn) return;
-    currentTab = btn.dataset.tab;
-    $nav.querySelectorAll('button').forEach(b => b.classList.toggle('active', b === btn));
-    renderTab(currentTab);
+  function setNavActive(tab) {
+    $nav.querySelectorAll('button').forEach(b =>
+      b.classList.toggle('active', b.dataset.tab === tab)
+    );
+  }
+
+  // Logo click → go home
+  document.getElementById('logo').addEventListener('click', () => {
+    currentTab = 'all';
+    setNavActive('all');
+    renderTab('all', /* pushState */ true);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  $backBtn.addEventListener('click', () => {
-    showListView();
+  // Nav click delegation
+  $nav.addEventListener('click', e => {
+    const btn = e.target.closest('button[data-tab]');
+    if (!btn) return;
+    const tab = btn.dataset.tab;
+    if (tab === currentTab && $listView.style.display !== 'none') return; // already here
+    currentTab = tab;
+    setNavActive(tab);
+    renderTab(tab, /* pushState */ true);
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // In-page Back button
+  $backBtn.addEventListener('click', () => {
+    // Go back in browser history — popstate will handle the view switch.
+    history.back();
   });
 
   /* ─── View switchers ────────────────────────────────────────────── */
@@ -1008,6 +1065,7 @@
     $articleView.classList.remove('visible');
     $aboutView.style.display   = 'none';
     $aboutView.classList.remove('visible');
+    currentArticleUrl = null;
   }
 
   function showArticleView() {
@@ -1026,6 +1084,7 @@
     $aboutView.style.display   = 'block';
     void $aboutView.offsetWidth;
     $aboutView.classList.add('visible');
+    currentArticleUrl = null;
   }
 
   /* ─── About stats ───────────────────────────────────────────────── */
@@ -1039,10 +1098,20 @@
   }
 
   /* ─── Render tab ────────────────────────────────────────────────── */
-  function renderTab(tab) {
-    if (tab === 'about') { showAboutView(); return; }
+  /**
+   * @param {string}  tab        - 'all' | category name | 'about'
+   * @param {boolean} pushState  - whether to push a new history entry
+   */
+  function renderTab(tab, pushState = true) {
+    if (tab === 'about') {
+      showAboutView();
+      if (pushState) history.pushState({ view: 'about' }, '');
+      return;
+    }
 
     showListView();
+    if (pushState) history.pushState({ view: 'list', tab }, '');
+
     const isAll  = tab === 'all';
     const arts   = isAll ? allArticles : allArticles.filter(a => a.category === tab);
     const label  = isAll ? 'Latest News' : tab;
@@ -1090,14 +1159,18 @@
             <span>${esc(article.source || 'Unknown')}</span>
           </div>
         `;
-        card.addEventListener('click', () => openArticle(article));
+        card.addEventListener('click', () => openArticle(article, /* pushState */ true));
         grid.appendChild(card);
       });
     });
   }
 
   /* ─── Open article ──────────────────────────────────────────────── */
-  function openArticle(article) {
+  /**
+   * @param {object}  article    - article data object
+   * @param {boolean} pushState  - whether to push a new history entry
+   */
+  function openArticle(article, pushState = true) {
     const cls   = catClass(article.category);
     const badge = document.getElementById('art-badge');
     badge.textContent = article.category || 'News';
@@ -1114,6 +1187,15 @@
       <span>Published by ${esc(article.author || 'Unknown')}</span>
     `;
     document.getElementById('art-link').href = article.url || '#';
+
+    currentArticleUrl = article.url || null;
+
+    if (pushState) {
+      history.pushState(
+        { view: 'article', tab: currentTab, articleUrl: article.url },
+        ''
+      );
+    }
 
     showArticleView();
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -1243,13 +1325,14 @@
       `;
       item.addEventListener('click', () => {
         closeSearch();
-        // Activate the matching category tab (or 'all' if not found).
         const tabKey = article.category && categoryMap[article.category] ? article.category : 'all';
-        currentTab = tabKey;
-        $nav.querySelectorAll('button').forEach(b =>
-          b.classList.toggle('active', b.dataset.tab === tabKey)
-        );
-        openArticle(article);
+        // Only re-render list if we're switching to a different tab
+        if (tabKey !== currentTab) {
+          currentTab = tabKey;
+          setNavActive(tabKey);
+          renderTab(tabKey, /* pushState */ true);
+        }
+        openArticle(article, /* pushState */ true);
       });
       $searchResults.appendChild(item);
     });
