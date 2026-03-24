@@ -3,9 +3,19 @@ news_api:
   topics:                        # each entry is a search query sent to NewsAPI
     - "Technology"
     - "Artificial intelligence"
-    - "Laptops"
+    - "Generative AI"
+    - "AI agents"
     - "Cybersecurity"
-    - "Technology Market"
+    - "Tech company"
+    - "Data security"
+    - "Data breach"
+    - "Android"
+    - "iPhone"
+    - "Laptops"
+    - "Smart home"
+    - "Technology market"
+    - "NASDAQ"
+    - "Tech companies"
   domains: ""                    # empty = all domains; comma-separated to restrict
   page_size: 100
   sort_by: "popularity"          # "popularity" | "publishedAt" | "relevance"
@@ -31,7 +41,6 @@ categories:
   - "Tech Business & Markets"
   - "Cybersecurity"
   - "Phones, Laptops, and Gadgets"
-  - "Hot dogs"
 
 
 # ── AI Models ──
@@ -44,7 +53,7 @@ ai:
 
 # ── Pipeline Control ──
 pipeline:
-  success_goal: 20
+  success_goal: 15
   retry_attempts: 3              # attempts per retryable API/scrape call
   retry_backoff: 2.0             # base back-off in seconds (doubles each retry)
   inter_request_delay: 1.0       # polite pause between article scrapes

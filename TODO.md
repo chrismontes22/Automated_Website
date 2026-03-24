@@ -24,5 +24,9 @@ It\u2019s 2026, and I still can\u2019t believe Apple won\u2019t change the most 
 
 -vendor locked to gemini
 
--FIRST THING TOMORROW: Fix articles.json directory so that it saves in root
--source must always hyperlink on top
+FIRST THING:
+
+-remove categories tracked
+-automated colour scheme
+
+
