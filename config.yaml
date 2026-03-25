@@ -49,11 +49,11 @@ ai:
   classifier_model: "gemini-3.1-flash-lite-preview"
   max_output_tokens: 2000
   temperature: 0
-  classifier_delay: 4.0          # seconds between classify calls (RPM guard)
+  classifier_delay: 5.0          # seconds between classify calls (RPM guard)
 
 # ── Pipeline Control ──
 pipeline:
-  success_goal: 15
+  success_goal: 20
   retry_attempts: 3              # attempts per retryable API/scrape call
   retry_backoff: 2.0             # base back-off in seconds (doubles each retry)
   inter_request_delay: 1.0       # polite pause between article scrapes
