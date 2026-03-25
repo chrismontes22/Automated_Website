@@ -8,6 +8,8 @@ on:
 jobs:
   run-pipeline:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     permissions:
       contents: write           # needed to commit articles.json back to the repo
 
@@ -38,31 +40,12 @@ jobs:
       - name: Update site data
         run: python build_site_data.py
 
-      # ── 6. Resolve the articles.json path from config ─────────────────────
-      #    Reads output_dir from config.yaml so git add works regardless of
-      #    where the file was written.  Falls back to "articles.json" if the
-      #    config can't be read.
-      - name: Resolve articles.json path
-        id: paths
-        run: |
-          ARTICLES_PATH=$(python -c "
-          import pathlib, sys
-          try:
-              import yaml
-              cfg = yaml.safe_load(open('config.yaml'))
-              p = pathlib.Path(cfg['paths']['output_dir']) / 'articles.json'
-              print(p)
-          except Exception as e:
-              print('articles.json')
-          ")
-          echo "articles_path=$ARTICLES_PATH" >> "$GITHUB_OUTPUT"
-
-      # ── 7. Commit and push articles.json ──────────────────────────────────
+      # ── 6. Commit and push articles.json ──────────────────────────────────
       #    Only commits if articles.json actually changed (new articles arrived).
       - name: Commit updated articles.json
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add "${{ steps.paths.outputs.articles_path }}"
+          git add articles.json
           git diff --cached --quiet || git commit -m "chore: update articles $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
