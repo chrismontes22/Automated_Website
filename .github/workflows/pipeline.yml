@@ -47,5 +47,6 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add articles.json
+          git add working_files/
           git diff --cached --quiet || git commit -m "chore: update articles $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
