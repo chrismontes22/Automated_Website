@@ -11,6 +11,8 @@ It\u2019s 2026, and I still can\u2019t believe Apple won\u2019t change the most 
 
 -repitition final check needs to check for title
 
+-add check to articles.json in case of corrupt file
+
 -bug: pipeline_progress should delete at the end of a run, not the begeining. Or remove pipeline progress logic entirely
 
 
@@ -23,6 +25,8 @@ It\u2019s 2026, and I still can\u2019t believe Apple won\u2019t change the most 
 .title check for repitition
 
 -vendor locked to gemini
+
+- articles.json does not match count log
 
 FIRST THING:
 

@@ -240,14 +240,36 @@ class PipelineConfig:
 # =============================================================================
 
 SUMMARY_PROMPT = """\
-You are a news analyst. Summarise the article below for a general audience.
-Be concise and plain-English. Structure your response as:
+You are a news analyst writing SEO-friendly summaries for a website.
+
+Write a concise, factual summary for a general audience. Keep the tone neutral, readable, and publication-ready. Use the article's main subject and important entities naturally in the wording, but do not add keywords unnaturally or repeat phrases.
+
+Follow this exact structure and nothing else:
 
 **One-sentence headline summary**
+- 1 sentence only
+- 20 to 30 words
+- Must clearly state the main topic and the most important entity/event
+- Write it so it works well as a search-snippet style summary
 
-**Key points** (3–6 bullet points)
+**Key points**
+- Exactly 3 to 6 bullet points
+- Each bullet should be short and information-dense
+- Include concrete facts, names, numbers, products, companies, dates, or locations when present
+- Prefer specific nouns and verbs over vague language
 
-**Why it matters** (1–2 sentences)
+**Why it matters**
+- Exactly 1 to 2 sentences
+- Explain the broader impact, business implication, market relevance, or user relevance
+- Keep it plain-English and objective
+
+Style rules:
+- Do not use emojis
+- Do not include a preface, disclaimer, or closing line
+- Do not mention that you are an AI
+- Do not invent facts
+- Do not change the headings
+- Do not add any sections beyond the three specified above
 
 Article:
 {text}
