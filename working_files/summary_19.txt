@@ -1,21 +1,21 @@
-Jen Easterly, cybersecurity's 'relentless optimist,' hopes feds come back to RSAC next year
+Mikael Barbero: Don't become the next Trivy: how to make your releases, tags, and automation resistant to compromise
 ============================================================
 
 **One-sentence headline summary**
-Former CISA director and current RSAC CEO Jen Easterly advocates for the return of federal officials to the RSA Conference while dismissing panic surrounding AI-driven cyber threats.
+Following the Trivy supply-chain compromise, maintainers are urged to adopt immutable releases, short-lived credentials, and signed provenance to secure software artifacts against unauthorized modifications and credential-based attacks.
 
 **Key points**
-- Jen Easterly, former head of the Cybersecurity and Infrastructure Security Agency (CISA), is leading her first RSA Conference as CEO with 43,000 attendees in San Francisco.
-- Easterly argues that AI does not introduce novel cyber risks but instead offers tools to improve software quality and reduce reliance on constant patching.
-- The current conference faces a notable absence of federal speakers from agencies like the FBI, NSA, and CISA following recent leadership changes.
-- Easterly maintains that the cybersecurity industry must prioritize software quality to transform ransomware from a multi-trillion-dollar business into a rare anomaly.
-- The CEO emphasized that private sector collaboration remains essential, as private companies own and operate the majority of global critical infrastructure.
+* Enable GitHub’s immutable releases to prevent attackers from force-pushing, moving, or deleting version tags and release assets.
+* Replace long-lived personal access tokens with GitHub App installation tokens or scoped `GITHUB_TOKEN` permissions to minimize the blast radius of compromised credentials.
+* Implement GitHub rulesets to restrict tag creation, updates, and deletions, providing an immediate layer of security beyond release settings.
+* Use the `actions/attest` tool to generate cryptographically verifiable provenance, linking artifacts to specific commits and workflows.
+* Establish a pre-written, rehearsed incident response playbook to ensure rapid revocation of credentials and recovery in the event of a CI/CD breach.
 
 **Why it matters**
-Easterly’s push to reintegrate federal agencies into the RSA Conference highlights the ongoing tension between government security mandates and private industry collaboration. Her optimistic outlook on AI suggests a potential shift in how the cybersecurity sector approaches long-term software resilience and risk management.
+The Trivy incident demonstrated that attackers rely on mutable release tags and persistent credentials to distribute malicious code to downstream users. Implementing these security controls transforms release infrastructure into a hardened barrier, significantly increasing the difficulty for attackers to compromise software supply chains.
 
 ============================================================
-Author:   Jessica Lyons
-Source:   Theregister.com
-URL:      https://www.theregister.com/2026/03/25/jen_easterly_interview/
+Author:   mikael.barbero@eclipse-foundation.org (Mikaël Barbero)
+Source:   Barbero.tech
+URL:      https://mikael.barbero.tech/blog/post/2026-03-26-dont-become-the-next-trivy/
 Category: Cybersecurity

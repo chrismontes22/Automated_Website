@@ -1,21 +1,21 @@
-AI-Generated Indie Game Rushed Out Before The Original As ‘Revenge’
+Security Bite: What stands out in the iOS 26.4 security release notes
 ============================================================
 
 **One-sentence headline summary**
-An AI-generated clone of the indie game Typing Room has sparked outrage among Japanese developers, raising significant concerns regarding intellectual property theft and the risks of sharing early-stage projects.
+Apple has released iOS 26.4, addressing over 35 security vulnerabilities, including a critical bypass of Stolen Device Protection and flaws affecting Keychain access, Mail privacy, and WebKit sandboxing.
 
 **Key points**
-* Developer Kamaboko began sharing development progress for the original game Typing Room on YouTube on February 26.
-* A user named “Kamaboko Kōsatsu Kōsatsu” uploaded an AI-generated clone of the game to the Unityroom platform on March 4.
-* The plagiarist admitted to using Kamaboko’s videos and manuals as AI prompts, completing the copycat version in just two days.
-* The creator of the clone justified the theft as retaliation for Kamaboko’s previous use of Palworld and Pokémon assets in a separate project.
-* Japanese indie developers are calling for stricter platform policies on Unityroom to prevent the proliferation of AI-generated stolen content.
+- Apple patched CVE-2026-28895, which allowed unauthorized access to biometrically protected apps by bypassing Stolen Device Protection using only a device passcode.
+- A vulnerability in the Keychain (CVE-2026-28864) permitted local attackers to potentially access sensitive stored passwords and encryption keys.
+- Mail privacy settings, specifically "Hide IP Address" and "Block All Remote Content," were failing to apply correctly to all content under CVE-2026-20692.
+- A sandbox escape flaw in the Printing framework (CVE-2026-20688) could allow malicious apps to break out of their restricted environments.
+- WebKit received multiple security updates, including fixes for Same Origin Policy and Content Security Policy bypasses that could expose users to malicious web content.
 
 **Why it matters**
-This incident highlights the growing vulnerability of indie developers who share work-in-progress footage, as generative AI tools make it increasingly easy to misappropriate and monetize unfinished creative work. The controversy underscores a critical need for platforms to implement better safeguards against AI-driven plagiarism to protect intellectual property rights.
+These patches address significant security gaps that could compromise user privacy and device integrity, even for those utilizing Apple's advanced protection features. Users are strongly encouraged to update their devices immediately to mitigate these risks, as none of the vulnerabilities are currently reported as actively exploited.
 
 ============================================================
-Author:   Lewis Parker
-Source:   Kotaku
-URL:      https://kotaku.com/typing-room-indie-game-ai-ripoff-pokemon-palworld-2000681795
-Category: Artificial Intelligence
+Author:   Arin Waichulis
+Source:   9to5Mac
+URL:      https://9to5mac.com/2026/03/25/security-bite-what-stands-out-in-the-ios-26-4-security-release-notes/
+Category: Cybersecurity
