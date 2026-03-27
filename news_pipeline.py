@@ -246,7 +246,7 @@ Write a concise, factual summary for a general audience. Keep the tone neutral, 
 
 Follow this exact structure and nothing else:
 
-**One-sentence headline summary**
+**One-sentence headline summary (Don't write 'One-sentence headline summary', just write the sentence itself)**
 - 1 sentence only
 - 20 to 30 words
 - Must clearly state the main topic and the most important entity/event
@@ -258,7 +258,7 @@ Follow this exact structure and nothing else:
 - Include concrete facts, names, numbers, products, companies, dates, or locations when present
 - Prefer specific nouns and verbs over vague language
 
-**Why it matters**
+**Why it matters: **
 - Exactly 1 to 2 sentences
 - Explain the broader impact, business implication, market relevance, or user relevance
 - Keep it plain-English and objective

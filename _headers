@@ -1,3 +1,39 @@
+# Cloudflare Pages _headers
+# Place this file in your repo root — build.js copies it into dist/ automatically.
+
+# ── articles.json: always fetch fresh (your original rule) ──────────────────
 /articles.json
   Cache-Control: no-cache, must-revalidate
   X-Content-Type-Options: nosniff
+
+# ── HTML pages: short cache, revalidate (so new builds show up quickly) ─────
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# ── Root (index) ─────────────────────────────────────────────────────────────
+/
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# ── Sitemap and RSS feed: cache for 1 hour ───────────────────────────────────
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+  Content-Type: application/xml; charset=utf-8
+
+/feed.xml
+  Cache-Control: public, max-age=3600
+  Content-Type: application/rss+xml; charset=utf-8
+
+# ── robots.txt: cache for 1 day ──────────────────────────────────────────────
+/robots.txt
+  Cache-Control: public, max-age=86400
+  Content-Type: text/plain; charset=utf-8
+
+# ── Static assets (fonts, images, JS, CSS): cache for 1 year ────────────────
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
