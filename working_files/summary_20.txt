@@ -1,22 +1,19 @@
-WebRTC Skimmer Bypasses CSP to Steal Payment Data from E-Commerce Sites
+Right now is a terrible time to buy a Microsoft Surface — here's why
 ============================================================
 
-**One-sentence headline summary**
-Cybersecurity researchers have identified a sophisticated payment skimmer exploiting the PolyShell vulnerability in Adobe Commerce and Magento to exfiltrate sensitive data via encrypted WebRTC data channels.
+Microsoft advises consumers to delay purchasing new Surface hardware until the company announces its upcoming spring lineup, which is expected to feature new Qualcomm and Intel-powered PC models.
 
 **Key points**
-* The PolyShell vulnerability allows unauthenticated attackers to upload arbitrary executables through the REST API of Magento Open Source and Adobe Commerce.
-* Attackers are using WebRTC data channels to bypass Content Security Policy (CSP) directives and evade traditional HTTP-based network monitoring tools.
-* Mass exploitation of the vulnerability began on March 19, 2026, with Sansec reporting that 56.7% of vulnerable e-commerce stores have been compromised.
-* The exploit relies on a flaw in the `ImageProcessor::processImageContent()` function, which fails to validate file extensions against MIME types.
-* Adobe released a fix in version 2.4.9-beta1 on March 10, 2026, though production versions remain vulnerable until patched.
-* Site owners are advised to restrict access to the `pub/media/custom_options/` directory and verify server configurations to prevent unauthorized file execution.
+- Microsoft plans to unveil new Surface PC hardware this spring, potentially featuring Snapdragon X2 and Intel Core Ultra 3 processors.
+- Current-generation Surface devices, including the Surface Pro 11 and Surface Laptop 7, have seen recent price discounts expire at major retailers.
+- The $599 Apple MacBook Neo has increased market pressure, offering a lower-cost alternative that currently challenges the value proposition of existing Windows laptops.
+- Waiting for the spring announcement may lead to deeper price cuts on older Surface models as retailers clear inventory for new releases.
 
-**Why it matters**
-This attack represents a significant evolution in digital skimming by utilizing encrypted UDP traffic that standard security tools cannot inspect. Businesses using Adobe Commerce or Magento must prioritize server configuration audits and patching to prevent data theft that bypasses traditional web security controls.
+**Why it matters: **
+Delaying a purchase allows consumers to access the latest hardware specifications or secure better discounts on outgoing models once the new generation launches. This strategy helps buyers avoid overpaying for aging technology while the market adjusts to new competitive pricing from rivals like Apple.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/03/webrtc-skimmer-bypasses-csp-to-steal.html
-Category: Cybersecurity
+Author:   sean.endicott@futurenet.com (Sean Endicott) , Sean Endicott
+Source:   Windows Central
+URL:      https://www.windowscentral.com/hardware/surface/right-now-is-a-terrible-time-to-buy-a-microsoft-surface-heres-why
+Category: Phones, Laptops, and Gadgets

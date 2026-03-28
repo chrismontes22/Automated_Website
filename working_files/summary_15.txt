@@ -1,21 +1,20 @@
-"At this rate, why make game art at all?": Nvidia DLSS 5 demands a sale damaging and stock tanking fightback, argues New Blood boss
+Web Shells: Types, Mitigation & Removal
 ============================================================
 
-**One-sentence headline summary**
-New Blood Interactive CEO Dave Oshry and developer David Szymanski are calling for a boycott of Nvidia’s upcoming DLSS 5 technology, citing concerns over generative AI integration in gaming.
+Web shells are malicious scripts that provide attackers with persistent remote access to compromised web servers, enabling unauthorized command execution, data theft, and further system-wide security breaches.
 
 **Key points**
-* New Blood Interactive CEO Dave Oshry and developer David Szymanski argue that DLSS 5 misrepresents generative AI as traditional Deep Learning Super Sampling.
-* The developers claim the technology negatively impacts artistic intent and visual realism by relying on AI-generated lighting and contrast.
-* Oshry advocates for a consumer and developer boycott to pressure Nvidia to change its current technological trajectory.
-* The critics contend that features marketed as "optional" often become mandatory requirements for modern AAA game performance and development.
-* DLSS 5 is scheduled for release later this year, following initial support from major publishers including Bethesda and Capcom.
+- Web shells exploit vulnerabilities like SQL injection, cross-site scripting (XSS), and insecure file uploads to gain unauthorized server control.
+- Attackers use these scripts to manipulate files, harvest credentials, deface websites, or launch secondary attacks like DDoS and malware distribution.
+- Security researchers identified publicly accessible web shell interfaces on 16,978 occasions throughout 2024.
+- Common web shell types include simple command-line interfaces, complex GUI-based tools like WSO or c99, and persistent scripts designed to survive cleanup attempts.
+- Effective mitigation requires isolating infected environments, patching underlying vulnerabilities, and implementing robust monitoring to detect anomalous server behavior.
 
-**Why it matters**
-This pushback highlights a growing divide between hardware manufacturers and independent developers regarding the role of generative AI in creative media. The outcome could influence how major studios adopt future graphical technologies and whether consumers accept AI-driven rendering as a standard in gaming.
+**Why it matters: **
+Web shells represent a critical security risk because they act as a persistent backdoor, allowing attackers to maintain long-term control even after initial vulnerabilities are patched. Failing to identify and fully remove these scripts can lead to ongoing data exfiltration, severe reputational damage, and significant financial losses for website owners.
 
 ============================================================
-Author:   Mark Warren
-Source:   Rock Paper Shotgun
-URL:      https://www.rockpapershotgun.com/at-this-rate-why-make-game-art-at-all-nvidia-dlss-5-demands-a-sale-damaging-and-stock-tanking-fightback-argues-new-blood-boss
-Category: Artificial Intelligence
+Author:   Cesar Anjos
+Source:   Sucuri.net
+URL:      https://blog.sucuri.net/2026/03/web-shells.html
+Category: Cybersecurity

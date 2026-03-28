@@ -1,21 +1,20 @@
-Mikael Barbero: Don't become the next Trivy: how to make your releases, tags, and automation resistant to compromise
+Targus Thunderbolt 5 Triple Video dock review: Beware the catch
 ============================================================
 
-**One-sentence headline summary**
-Following the Trivy supply-chain compromise, maintainers are urged to adopt immutable releases, short-lived credentials, and signed provenance to secure software artifacts against unauthorized modifications and credential-based attacks.
+The Targus Thunderbolt 5 Triple Video Docking Station offers advanced connectivity features, but its full triple-display functionality is restricted exclusively to laptops equipped with Thunderbolt 5 ports.
 
 **Key points**
-* Enable GitHub’s immutable releases to prevent attackers from force-pushing, moving, or deleting version tags and release assets.
-* Replace long-lived personal access tokens with GitHub App installation tokens or scoped `GITHUB_TOKEN` permissions to minimize the blast radius of compromised credentials.
-* Implement GitHub rulesets to restrict tag creation, updates, and deletions, providing an immediate layer of security beyond release settings.
-* Use the `actions/attest` tool to generate cryptographically verifiable provenance, linking artifacts to specific commits and workflows.
-* Establish a pre-written, rehearsed incident response playbook to ensure rapid revocation of credentials and recovery in the event of a CI/CD breach.
+- The dock retails for $399.99 and includes two 2-meter Thunderbolt-to-HDMI adapter cables.
+- Full support for three simultaneous displays requires a host laptop with a Thunderbolt 5 interface.
+- The device features 140W power delivery, 10Gbps USB-A ports, and a 2.5Gbps Ethernet connection.
+- It supports Thunderbolt Share technology, allowing data transfer and control between two connected laptops.
+- Performance testing showed stable data throughput, though the dock lacks active cooling fans.
 
-**Why it matters**
-The Trivy incident demonstrated that attackers rely on mutable release tags and persistent credentials to distribute malicious code to downstream users. Implementing these security controls transforms release infrastructure into a hardened barrier, significantly increasing the difficulty for attackers to compromise software supply chains.
+**Why it matters: **
+While the dock provides future-proof technology for high-end workstations, its high price and limited compatibility with current Windows laptops make it a questionable investment for most users. It is primarily recommended for those who already own Thunderbolt 5-enabled hardware or require specific niche features like Thunderbolt Share.
 
 ============================================================
-Author:   mikael.barbero@eclipse-foundation.org (Mikaël Barbero)
-Source:   Barbero.tech
-URL:      https://mikael.barbero.tech/blog/post/2026-03-26-dont-become-the-next-trivy/
-Category: Cybersecurity
+Author:   Author: Mark Hachman
+Source:   PCWorld
+URL:      https://www.pcworld.com/article/3075783/targus-thunderbolt-5-triple-video-dock-review.html
+Category: Phones, Laptops, and Gadgets

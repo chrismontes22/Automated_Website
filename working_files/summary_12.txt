@@ -1,21 +1,20 @@
-Security Bite: What stands out in the iOS 26.4 security release notes
+The Sora Embarrassment is a Reflection of OpenAI’s Juvenile Culture
 ============================================================
 
-**One-sentence headline summary**
-Apple has released iOS 26.4, addressing over 35 security vulnerabilities, including a critical bypass of Stolen Device Protection and flaws affecting Keychain access, Mail privacy, and WebKit sandboxing.
+**OpenAI has officially shuttered its AI video application Sora after the platform experienced a 75 percent decline in downloads and failed to achieve financial sustainability for the company.**
 
 **Key points**
-- Apple patched CVE-2026-28895, which allowed unauthorized access to biometrically protected apps by bypassing Stolen Device Protection using only a device passcode.
-- A vulnerability in the Keychain (CVE-2026-28864) permitted local attackers to potentially access sensitive stored passwords and encryption keys.
-- Mail privacy settings, specifically "Hide IP Address" and "Block All Remote Content," were failing to apply correctly to all content under CVE-2026-20692.
-- A sandbox escape flaw in the Printing framework (CVE-2026-20688) could allow malicious apps to break out of their restricted environments.
-- WebKit received multiple security updates, including fixes for Same Origin Policy and Content Security Policy bypasses that could expose users to malicious web content.
+- OpenAI spent approximately $15 million daily to operate Sora while generating only $1.4 million in total revenue.
+- Downloads for the AI video tool dropped by 75 percent since its initial launch in October.
+- Google continues to develop its competing AI video generator, Veo, targeting professional video editors rather than casual social media users.
+- ByteDance’s Seedance 2.0 has emerged as a competitor in the AI video space, currently utilized by viral social media creators.
+- OpenAI is facing additional challenges, including the loss of customers to Anthropic’s Claude Code and Walmart’s recent decision to discontinue its ChatGPT integration.
 
-**Why it matters**
-These patches address significant security gaps that could compromise user privacy and device integrity, even for those utilizing Apple's advanced protection features. Users are strongly encouraged to update their devices immediately to mitigate these risks, as none of the vulnerabilities are currently reported as actively exploited.
+**Why it matters: **
+The failure of Sora highlights the significant financial risks and lack of clear commercial use cases currently facing high-cost generative AI video models. This trend raises questions about the long-term economic viability of the broader AI industry as major tech firms struggle to monetize these expensive services.
 
 ============================================================
-Author:   Arin Waichulis
-Source:   9to5Mac
-URL:      https://9to5mac.com/2026/03/25/security-bite-what-stands-out-in-the-ios-26-4-security-release-notes/
-Category: Cybersecurity
+Author:   Matt Growcoot
+Source:   PetaPixel
+URL:      https://petapixel.com/2026/03/26/the-sora-embarrassment-is-a-reflection-of-openais-juvenile-culture/
+Category: Artificial Intelligence
