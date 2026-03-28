@@ -1,20 +1,20 @@
-Generative UI Notes
+Prevent agentic identity theft
 ============================================================
 
-**Generative User Interface (GenUI) technology is emerging as a transformative design approach that uses artificial intelligence to create personalized, real-time web experiences tailored to individual user needs and contexts.**
+**1Password CTO Nancy Wang discusses the critical security risks posed by local AI agents and the urgent need for robust identity management and sandboxing in software development.**
 
 **Key points**
-- GenUI shifts web design from static, predictive layouts to dynamic interfaces that generate custom components, images, and interactive elements based on user prompts.
-- Major industry players including Figma, WordPress, Vercel, Squarespace, and Wix are actively exploring or integrating generative AI tools into their development platforms.
-- Google Research has introduced a GenUI SDK for Flutter, enabling developers to integrate large language models to render adaptive interfaces in real-time.
-- Accessibility remains a significant concern, as early implementations like Figma Sites have faced criticism for failing to meet inclusive design standards for users with impairments.
-- The technology is distinct from predictive AI, as it focuses on creating new content and functional interfaces rather than forecasting future outcomes from existing datasets.
+- Local AI agents, such as Open Claude, present significant security risks by accessing sensitive local files, terminals, and browser data.
+- 1Password is developing agent security platforms that utilize runtime signals and user behavior to broker access rather than granting long-lived credentials.
+- The company emphasizes a zero-knowledge architecture and confidential computing enclaves to protect credentials from unauthorized agent access.
+- Security experts recommend isolating agent runtime environments and restricting access to specific file paths to minimize the potential blast radius of malicious skills.
+- The industry is shifting toward verifiable digital credentials and workload identity protocols to maintain accountability for ephemeral AI agents.
 
 **Why it matters: **
-The shift toward GenUI could fundamentally change how websites are built and experienced by replacing standardized layouts with highly personalized, adaptive interfaces. However, the industry must address critical accessibility and reliability challenges before this technology can be considered a viable replacement for traditional human-centered design practices.
+As AI agents gain the ability to autonomously execute tasks on local devices, they create new vulnerabilities that traditional security tools are not yet equipped to handle. Establishing secure identity and access controls is essential for enterprises to adopt these productivity-boosting tools without compromising sensitive data.
 
 ============================================================
-Author:   Geoff Graham
-Source:   Css-tricks.com
-URL:      https://css-tricks.com/generative-ui-notes/
-Category: Artificial Intelligence
+Author:   Phoebe Sajor
+Source:   Stackoverflow.blog
+URL:      https://stackoverflow.blog/2026/03/27/prevent-agentic-identity-theft/
+Category: Cybersecurity

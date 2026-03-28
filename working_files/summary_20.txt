@@ -1,19 +1,20 @@
-Right now is a terrible time to buy a Microsoft Surface — here's why
+U.S. CISA adds an Aquasecurity Trivy flaw to its Known Exploited Vulnerabilities catalog
 ============================================================
 
-Microsoft advises consumers to delay purchasing new Surface hardware until the company announces its upcoming spring lineup, which is expected to feature new Qualcomm and Intel-powered PC models.
+The U.S. Cybersecurity and Infrastructure Security Agency has added a critical Aquasecurity Trivy vulnerability to its Known Exploited Vulnerabilities catalog following a targeted supply chain attack.
 
 **Key points**
-- Microsoft plans to unveil new Surface PC hardware this spring, potentially featuring Snapdragon X2 and Intel Core Ultra 3 processors.
-- Current-generation Surface devices, including the Surface Pro 11 and Surface Laptop 7, have seen recent price discounts expire at major retailers.
-- The $599 Apple MacBook Neo has increased market pressure, offering a lower-cost alternative that currently challenges the value proposition of existing Windows laptops.
-- Waiting for the spring announcement may lead to deeper price cuts on older Surface models as retailers clear inventory for new releases.
+- CISA added CVE-2026-33634, which carries a critical CVSS score of 9.3, to its Known Exploited Vulnerabilities catalog.
+- Attackers compromised Trivy version 0.69.4 and associated GitHub Actions on March 19, 2026, to facilitate sensitive data theft.
+- The breach originated from a supply chain attack that began in late February, allowing unauthorized access through improperly rotated credentials.
+- Federal agencies must remediate the vulnerability by the April 9, 2026, deadline mandated by Binding Operational Directive 22-01.
+- Security teams are advised to rotate all secrets, audit logs from March 19–20, and pin GitHub Actions to immutable commit hashes.
 
 **Why it matters: **
-Delaying a purchase allows consumers to access the latest hardware specifications or secure better discounts on outgoing models once the new generation launches. This strategy helps buyers avoid overpaying for aging technology while the market adjusts to new competitive pricing from rivals like Apple.
+This incident highlights the significant risks posed by supply chain attacks on widely used security tools and the necessity of rigorous credential management. Organizations must act quickly to secure their infrastructure, as compromised binaries and actions can provide attackers with persistent access to sensitive environments.
 
 ============================================================
-Author:   sean.endicott@futurenet.com (Sean Endicott) , Sean Endicott
-Source:   Windows Central
-URL:      https://www.windowscentral.com/hardware/surface/right-now-is-a-terrible-time-to-buy-a-microsoft-surface-heres-why
-Category: Phones, Laptops, and Gadgets
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/190044/security/u-s-cisa-adds-an-aquasecurity-trivy-flaw-to-its-known-exploited-vulnerabilities-catalog.html
+Category: Cybersecurity
