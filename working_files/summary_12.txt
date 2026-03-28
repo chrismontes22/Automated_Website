@@ -1,21 +1,20 @@
-Security Bite: What stands out in the iOS 26.4 security release notes
+Ajax data breach exposed season tickets, supporter bans open to tampering
 ============================================================
 
-**One-sentence headline summary**
-Apple has released iOS 26.4, addressing over 35 security vulnerabilities, including a critical bypass of Stolen Device Protection and flaws affecting Keychain access, Mail privacy, and WebKit sandboxing.
+AFC Ajax has launched an investigation after a security breach exposed sensitive fan data and revealed critical vulnerabilities allowing unauthorized access to season tickets and stadium ban records.
 
 **Key points**
-- Apple patched CVE-2026-28895, which allowed unauthorized access to biometrically protected apps by bypassing Stolen Device Protection using only a device passcode.
-- A vulnerability in the Keychain (CVE-2026-28864) permitted local attackers to potentially access sensitive stored passwords and encryption keys.
-- Mail privacy settings, specifically "Hide IP Address" and "Block All Remote Content," were failing to apply correctly to all content under CVE-2026-20692.
-- A sandbox escape flaw in the Printing framework (CVE-2026-20688) could allow malicious apps to break out of their restricted environments.
-- WebKit received multiple security updates, including fixes for Same Origin Policy and Content Security Policy bypasses that could expose users to malicious web content.
+- Hackers exploited exposed APIs and shared access keys within the AFC Ajax website and mobile application.
+- The breach compromised personal data for over 300,000 registered fans and exposed records of 538 individuals currently under stadium bans.
+- Unauthorized users could potentially steal or disable more than 42,000 season tickets by manipulating account access.
+- AFC Ajax has patched the identified vulnerabilities, filed a police report, and notified the Dutch Data Protection Authority.
+- The club is advising all supporters to remain vigilant against potential phishing attempts and suspicious emails following the incident.
 
-**Why it matters**
-These patches address significant security gaps that could compromise user privacy and device integrity, even for those utilizing Apple's advanced protection features. Users are strongly encouraged to update their devices immediately to mitigate these risks, as none of the vulnerabilities are currently reported as actively exploited.
+**Why it matters: **
+This incident highlights significant cybersecurity risks for sports organizations managing large databases of personal fan information and digital ticketing systems. The vulnerability underscores the critical need for robust API security to prevent unauthorized account manipulation and protect sensitive user data.
 
 ============================================================
-Author:   Arin Waichulis
-Source:   9to5Mac
-URL:      https://9to5mac.com/2026/03/25/security-bite-what-stands-out-in-the-ios-26-4-security-release-notes/
+Author:   Sinisa Markovic
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/03/27/afc-ajax-data-breach-supporter-bans/
 Category: Cybersecurity

@@ -1,22 +1,20 @@
-WebRTC Skimmer Bypasses CSP to Steal Payment Data from E-Commerce Sites
+U.S. CISA adds an Aquasecurity Trivy flaw to its Known Exploited Vulnerabilities catalog
 ============================================================
 
-**One-sentence headline summary**
-Cybersecurity researchers have identified a sophisticated payment skimmer exploiting the PolyShell vulnerability in Adobe Commerce and Magento to exfiltrate sensitive data via encrypted WebRTC data channels.
+The U.S. Cybersecurity and Infrastructure Security Agency has added a critical Aquasecurity Trivy vulnerability to its Known Exploited Vulnerabilities catalog following a targeted supply chain attack.
 
 **Key points**
-* The PolyShell vulnerability allows unauthenticated attackers to upload arbitrary executables through the REST API of Magento Open Source and Adobe Commerce.
-* Attackers are using WebRTC data channels to bypass Content Security Policy (CSP) directives and evade traditional HTTP-based network monitoring tools.
-* Mass exploitation of the vulnerability began on March 19, 2026, with Sansec reporting that 56.7% of vulnerable e-commerce stores have been compromised.
-* The exploit relies on a flaw in the `ImageProcessor::processImageContent()` function, which fails to validate file extensions against MIME types.
-* Adobe released a fix in version 2.4.9-beta1 on March 10, 2026, though production versions remain vulnerable until patched.
-* Site owners are advised to restrict access to the `pub/media/custom_options/` directory and verify server configurations to prevent unauthorized file execution.
+- CISA added CVE-2026-33634, which carries a critical CVSS score of 9.3, to its Known Exploited Vulnerabilities catalog.
+- Attackers compromised Trivy version 0.69.4 and associated GitHub Actions on March 19, 2026, to facilitate sensitive data theft.
+- The breach originated from a supply chain attack that began in late February, allowing unauthorized access through improperly rotated credentials.
+- Federal agencies must remediate the vulnerability by the April 9, 2026, deadline mandated by Binding Operational Directive 22-01.
+- Security teams are advised to rotate all secrets, audit logs from March 19–20, and pin GitHub Actions to immutable commit hashes.
 
-**Why it matters**
-This attack represents a significant evolution in digital skimming by utilizing encrypted UDP traffic that standard security tools cannot inspect. Businesses using Adobe Commerce or Magento must prioritize server configuration audits and patching to prevent data theft that bypasses traditional web security controls.
+**Why it matters: **
+This incident highlights the significant risks posed by supply chain attacks on widely used security tools and the necessity of rigorous credential management. Organizations must act quickly to secure their infrastructure, as compromised binaries and actions can provide attackers with persistent access to sensitive environments.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/03/webrtc-skimmer-bypasses-csp-to-steal.html
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/190044/security/u-s-cisa-adds-an-aquasecurity-trivy-flaw-to-its-known-exploited-vulnerabilities-catalog.html
 Category: Cybersecurity
