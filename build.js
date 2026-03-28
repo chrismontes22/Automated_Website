@@ -68,7 +68,6 @@ function extractAssetsFromIndex() {
   }
 
   // Extract JS from the main <script> tag (not CDN scripts)
-  // We look for the script tag that contains our app code (has SITE_URL or init())
   const scriptMatches = indexContent.match(/<script>([\s\S]*?)<\/script>/gi);
   if (scriptMatches) {
     for (const script of scriptMatches) {
@@ -630,7 +629,7 @@ function buildRssFeed(articles) {
     <language>en-us</language>
     <lastBuildDate>${rfcDate()}</lastBuildDate>
     <atom:link href="${SITE_URL}/feed.xml" rel="self" type="application/rss+xml" />
-    <image>
+    <tr>
       <url>${SITE_URL}/logo.png</url>
       <title>${xmlEsc(SITE_NAME)}</title>
       <link>${SITE_URL}</link>
@@ -672,6 +671,10 @@ async function build() {
 
   const articles = JSON.parse(fs.readFileSync(ARTICLES_FILE, 'utf8'));
   console.log(`   Found ${articles.length} articles\n`);
+
+  // Copy articles.json to dist so the SPA can load it
+  fs.copyFileSync(ARTICLES_FILE, path.join(OUT_DIR, 'articles.json'));
+  console.log('  ✓ articles.json');
 
   const categories = [...new Set(articles.map(a => a.category).filter(Boolean))].sort();
 
