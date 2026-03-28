@@ -13,6 +13,7 @@
  *   dist/sitemap.xml                   — full sitemap
  *   dist/feed.xml                      — RSS 2.0 feed
  *   dist/robots.txt                    — crawl rules
+ *   dist/articles.json                 — copied so Cloudflare can serve it
  *
  * Usage:
  *   node build.js
@@ -34,21 +35,18 @@ const getArg = (flag, fallback) => {
   return i !== -1 && args[i + 1] ? args[i + 1] : fallback;
 };
 
-const SITE_URL       = getArg('--site',     'https://techpulse.example.com');
-const ARTICLES_FILE  = getArg('--articles', path.join(__dirname, 'articles.json'));
-const OUT_DIR        = getArg('--out',      path.join(__dirname, 'dist'));
-const INDEX_HTML_FILE = getArg('--index',   path.join(__dirname, 'index.html'));
-const SITE_NAME      = 'TechPulse';
-const DEFAULT_DESC   = 'AI-curated tech news summaries updated every 12 hours. Clear, jargon-free briefings on AI, software, hardware, and more.';
-const DEFAULT_IMG    = `${SITE_URL}/og-image.png`;
-const TWITTER_HANDLE = '@TechPulseAI';
+const SITE_URL        = getArg('--site',     'https://techpulse.example.com');
+const ARTICLES_FILE   = getArg('--articles', path.join(__dirname, 'articles.json'));
+const OUT_DIR         = getArg('--out',      path.join(__dirname, 'dist'));
+const INDEX_HTML_FILE = getArg('--index',    path.join(__dirname, 'index.html'));
+const SITE_NAME       = 'TechPulse';
+const DEFAULT_DESC    = 'AI-curated tech news summaries updated every 12 hours. Clear, jargon-free briefings on AI, software, hardware, and more.';
+const DEFAULT_IMG     = `${SITE_URL}/og-image.png`;
+const TWITTER_HANDLE  = '@TechPulseAI';
 
 // ── EXTRACT CSS & JS FROM INDEX.HTML ─────────────────────────────────────────
-// This reads the index.html template and extracts the inlined CSS/JS
-// so we don't need a separate assets folder.
-
 let INLINE_CSS = '';
-let INLINE_JS = '';
+let INLINE_JS  = '';
 
 function extractAssetsFromIndex() {
   if (!fs.existsSync(INDEX_HTML_FILE)) {
@@ -58,7 +56,6 @@ function extractAssetsFromIndex() {
 
   const indexContent = fs.readFileSync(INDEX_HTML_FILE, 'utf8');
 
-  // Extract CSS from <style> tag
   const styleMatch = indexContent.match(/<style[^>]*>([\s\S]*?)<\/style>/i);
   if (styleMatch) {
     INLINE_CSS = styleMatch[1].trim();
@@ -67,14 +64,12 @@ function extractAssetsFromIndex() {
     console.warn('   ⚠ No <style> tag found in index.html');
   }
 
-  // Extract JS from the main <script> tag (not CDN scripts)
   const scriptMatches = indexContent.match(/<script>([\s\S]*?)<\/script>/gi);
   if (scriptMatches) {
     for (const script of scriptMatches) {
       const contentMatch = script.match(/<script[^>]*>([\s\S]*?)<\/script>/i);
       if (contentMatch) {
         const content = contentMatch[1].trim();
-        // Identify our main app script by looking for key identifiers
         if (content.includes('SITE_URL') || content.includes('function init()') || content.includes('allArticles')) {
           INLINE_JS = content;
           console.log(`   ✓ Extracted ${INLINE_JS.length.toLocaleString()} bytes of JS from index.html`);
@@ -162,9 +157,6 @@ function write(filePath, content) {
 }
 
 // ── SHARED PAGE TEMPLATE ──────────────────────────────────────────────────────
-// This is inlined into every page so crawlers see fully-rendered HTML.
-// The JS SPA hydrates on top of it for client-side navigation.
-
 function pageShell({ title, description, canonicalPath, ogType = 'website', ogImage = DEFAULT_IMG, articleSchema = '', breadcrumbSchema = '', bodyContent, preRenderedContent = '' }) {
   const canonical = `${SITE_URL}${canonicalPath}`;
   return `<!DOCTYPE html>
@@ -199,7 +191,7 @@ function pageShell({ title, description, canonicalPath, ogType = 'website', ogIm
   <!-- FEEDS & DISCOVERY -->
   <link rel="alternate" type="application/rss+xml" title="${esc(SITE_NAME)} — Latest Articles" href="/feed.xml" />
 
-  <!-- STRUCTURED DATA: always-present org + website -->
+  <!-- STRUCTURED DATA -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -292,12 +284,12 @@ function pageShell({ title, description, canonicalPath, ogType = 'website', ogIm
 </div>
 
 <main id="main">
-  <!-- PRE-RENDERED CONTENT (visible to crawlers immediately) -->
+  <!-- PRE-RENDERED CONTENT (visible to crawlers; hidden once JS hydrates) -->
   <div id="prerendered-content">
     ${preRenderedContent}
   </div>
 
-  <!-- SPA VIEWS (hidden until JS hydrates) -->
+  <!-- SPA ROOT (hidden until JS loads articles.json successfully) -->
   <div id="spa-root" style="display:none;">
     <div id="loading"><div class="spinner" aria-hidden="true"></div>Loading…</div>
     <div id="error-msg" style="display:none;" role="alert">Could not load articles.json.</div>
@@ -405,7 +397,6 @@ function buildArticlePrerender(article, allArticles) {
       </div>
     </section>` : '';
 
-  // Render markdown to HTML (basic, no external deps needed at build time)
   const bodyHtml = basicMarkdownToHtml(article.summary || '');
 
   return `
@@ -444,7 +435,6 @@ function buildArticlePrerender(article, allArticles) {
 }
 
 function buildListPrerender(articles, label, categorySlug = null) {
-  // Group by date
   const groups = new Map();
   for (const a of articles) {
     const key = isoDate(a.processed_at).slice(0, 10);
@@ -506,13 +496,12 @@ function formatDateLabel(isoKey) {
   return d.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
 }
 
-// Basic markdown → HTML (no external deps needed at build time)
 function basicMarkdownToHtml(md) {
   return md
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
     .replace(/^### (.+)$/gm, '<h3>$1</h3>')
     .replace(/^## (.+)$/gm, '<h2>$1</h2>')
-    .replace(/^# (.+)$/gm, '<h2>$1</h2>')   // remap h1 → h2 (article title is h1)
+    .replace(/^# (.+)$/gm, '<h2>$1</h2>')
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
     .replace(/\*(.+?)\*/g, '<em>$1</em>')
     .replace(/`(.+?)`/g, '<code>$1</code>')
@@ -607,7 +596,7 @@ ${allUrls.map(u => `  <url>
 // ── RSS FEED ──────────────────────────────────────────────────────────────────
 
 function buildRssFeed(articles) {
-  const recent = articles.slice(0, 50); // latest 50
+  const recent = articles.slice(0, 50);
 
   const items = recent.map(a => `  <item>
     <title>${xmlEsc(a.title || 'Untitled')}</title>
@@ -629,7 +618,7 @@ function buildRssFeed(articles) {
     <language>en-us</language>
     <lastBuildDate>${rfcDate()}</lastBuildDate>
     <atom:link href="${SITE_URL}/feed.xml" rel="self" type="application/rss+xml" />
-    <tr>
+    <image>
       <url>${SITE_URL}/logo.png</url>
       <title>${xmlEsc(SITE_NAME)}</title>
       <link>${SITE_URL}</link>
@@ -646,9 +635,6 @@ function buildRobotsTxt() {
 User-agent: *
 Allow: /
 
-# Disallow any admin or private areas (add paths below if needed)
-# Disallow: /admin/
-
 Sitemap: ${SITE_URL}/sitemap.xml
 `;
 }
@@ -658,7 +644,10 @@ Sitemap: ${SITE_URL}/sitemap.xml
 async function build() {
   console.log(`\n🔨 TechPulse Build\n   articles: ${ARTICLES_FILE}\n   output:   ${OUT_DIR}\n`);
 
-  // Extract CSS/JS from index.html first
+  // Create dist/ first so copyFileSync never fails on a missing destination dir
+  fs.mkdirSync(OUT_DIR, { recursive: true });
+
+  // Extract CSS/JS from index.html
   console.log('📦 Assets:');
   extractAssetsFromIndex();
 
@@ -672,14 +661,15 @@ async function build() {
   const articles = JSON.parse(fs.readFileSync(ARTICLES_FILE, 'utf8'));
   console.log(`   Found ${articles.length} articles\n`);
 
-  // Copy articles.json to dist so the SPA can load it
-  fs.copyFileSync(ARTICLES_FILE, path.join(OUT_DIR, 'articles.json'));
-  console.log('  ✓ articles.json');
-
   const categories = [...new Set(articles.map(a => a.category).filter(Boolean))].sort();
 
+  // ── Copy articles.json into dist/ so the SPA can fetch it ───────────────────
+  // This MUST happen before any page is served — it's the data source for the JS.
+  fs.copyFileSync(ARTICLES_FILE, path.join(OUT_DIR, 'articles.json'));
+  console.log('  ✓ articles.json (copied to dist/)');
+
   // ── Homepage ────────────────────────────────────────────────────────────────
-  console.log('📄 Pages:');
+  console.log('\n📄 Pages:');
   write(
     path.join(OUT_DIR, 'index.html'),
     pageShell({
@@ -699,7 +689,7 @@ async function build() {
       description: `Learn about TechPulse, the fully automated AI-curated tech news feed summarizing the latest technology stories every 12 hours.`,
       canonicalPath: '/about',
       breadcrumbSchema: breadcrumbSchema([{ name: SITE_NAME, url: '/' }, { name: 'About' }]),
-      preRenderedContent: '' // about content is inline
+      preRenderedContent: ''
     })
   );
 
@@ -753,11 +743,11 @@ async function build() {
     write(
       path.join(OUT_DIR, 'article', `${slug}.html`),
       pageShell({
-        title:           `${article.title || 'Untitled'} — ${SITE_NAME}`,
-        description:     desc,
-        canonicalPath:   artPath,
-        ogType:          'article',
-        articleSchema:   articleSchema(article),
+        title:            `${article.title || 'Untitled'} — ${SITE_NAME}`,
+        description:      desc,
+        canonicalPath:    artPath,
+        ogType:           'article',
+        articleSchema:    articleSchema(article),
         breadcrumbSchema: breadcrumbSchema([
           { name: SITE_NAME, url: '/' },
           { name: article.category || 'News', url: `/category/${catSlug}` },
@@ -784,7 +774,7 @@ async function build() {
   const redirectsSrc = path.join(__dirname, '_redirects');
   if (fs.existsSync(redirectsSrc)) {
     fs.copyFileSync(redirectsSrc, path.join(OUT_DIR, '_redirects'));
-    console.log('  ✓ _redirects');
+    console.log('  ✓ _redirects (copied from root)');
   } else {
     write(
       path.join(OUT_DIR, '_redirects'),
@@ -799,26 +789,27 @@ async function build() {
   const headersSrc = path.join(__dirname, '_headers');
   if (fs.existsSync(headersSrc)) {
     fs.copyFileSync(headersSrc, path.join(OUT_DIR, '_headers'));
-    console.log('  ✓ _headers');
+    console.log('  ✓ _headers (copied from root)');
   }
 
-  //── Summary ─────────────────────────────────────────────────────────────────
+  // ── Summary ──────────────────────────────────────────────────────────────────
   console.log(`
 ✅ Build complete
    ${articles.length} article pages
    ${categories.length} category pages
-   sitemap.xml  — ${articles.length + categories.length + 2} URLs
-   feed.xml     — ${Math.min(articles.length, 50)} items
+   articles.json — copied to dist/ for client-side fetch
+   sitemap.xml   — ${articles.length + categories.length + 2} URLs
+   feed.xml      — ${Math.min(articles.length, 50)} items
    robots.txt
-   _redirects   — Cloudflare Pages routing rules
-   CSS/JS       — Inlined from index.html (no assets folder needed)
+   _redirects    — Cloudflare Pages routing rules
 
 📋 Deploy checklist:
-   1. Set Cloudflare Pages build output directory to: dist
-   2. Set build command to: node build.js
-   3. Add GitHub secrets: CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID
-   4. After first deploy, submit /sitemap.xml to Google Search Console
-   5. Validate an article: https://search.google.com/test/rich-results
+   1. Cloudflare Pages build output directory: dist
+   2. Build command: node build.js
+   3. GitHub secrets: CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID
+   4. Make sure pipeline.yaml commits articles.json back to the repo
+      before Cloudflare triggers its build
+   5. After first deploy, submit /sitemap.xml to Google Search Console
 `);
 }
 

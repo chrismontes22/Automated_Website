@@ -341,7 +341,7 @@
     article.card::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--border), transparent); opacity: 0.5; }
     article.card:hover { transform: translateY(-4px); border-color: var(--accent-dim); box-shadow: var(--card-hover-shadow), var(--glow-soft); }
     article.card:hover .card-category { transform: scale(1.05); }
-    article.card > a { display: contents; } /* make the <a> wrap fill the card when present in static HTML */
+    article.card > a { display: contents; }
 
     .card-category { font-family: var(--font-mono); font-size: 9px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 11px; border-radius: 99px; align-self: flex-start; border: 1px solid transparent; transition: transform var(--transition); }
     .card-title { font-family: var(--font-serif); font-size: 17px; font-weight: 700; line-height: 1.38; letter-spacing: -0.01em; color: var(--text); transition: color var(--transition); margin: 0; }
@@ -494,70 +494,77 @@
 </div>
 
 <main id="main">
-  <div id="loading"><div class="spinner" aria-hidden="true"></div>Fetching articles…</div>
-  <div id="error-msg" style="display:none;" role="alert">Could not load articles.json — make sure the pipeline has run at least once.</div>
+  <!-- PRE-RENDERED CONTENT: visible immediately for crawlers and no-JS users.
+       Hidden once the SPA successfully loads articles.json. -->
+  <div id="prerendered-content"></div>
 
-  <div id="list-view" style="display:none;">
-    <nav class="breadcrumb" id="list-breadcrumb" aria-label="Breadcrumb"></nav>
-    <div class="page-header">
-      <h1 class="page-title" id="page-title">Latest News</h1>
-      <p class="page-subtitle" id="page-subtitle"></p>
-    </div>
-    <div id="groups-container"></div>
-  </div>
+  <!-- SPA ROOT: hidden until JS hydrates successfully -->
+  <div id="spa-root" style="display:none;">
+    <div id="loading"><div class="spinner" aria-hidden="true"></div>Fetching articles…</div>
+    <div id="error-msg" style="display:none;" role="alert">Could not load articles.json — make sure the pipeline has run at least once.</div>
 
-  <div id="article-view">
-    <nav class="breadcrumb" id="article-breadcrumb" aria-label="Breadcrumb"></nav>
-    <div class="article-header">
-      <div class="article-category-badge" id="art-badge"></div>
-      <h1 class="article-title" id="art-title"></h1>
-      <address class="article-byline" id="art-byline"></address>
-    </div>
-    <div class="article-body" id="art-body"></div>
-    <div class="source-box">
-      <div class="source-box-meta" id="art-source-meta"></div>
-      <a class="read-original" id="art-link" target="_blank" rel="noopener noreferrer">
-        Read original
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-      </a>
-    </div>
-    <section class="related-section" id="related-section" aria-label="Related articles">
-      <h2>Related Articles</h2>
-      <div class="related-list" id="related-list"></div>
-    </section>
-  </div>
-
-  <div id="about-view">
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="/">TechPulse</a><span class="sep" aria-hidden="true">›</span>
-      <span class="current" aria-current="page">About</span>
-    </nav>
-    <div class="about-wrap">
-      <p class="about-kicker">About TechPulse</p>
-      <h1 class="about-hero-title">The tech news feed<br>that never <em>sleeps.</em></h1>
-      <p class="about-lead">TechPulse is a fully automated, AI-run tech news blog. It scours the web for the latest technology stories, then summarizes them into clear, jargon-free briefings — so you get the signal without the noise.</p>
-      <div class="about-body">
-        <p>While you're sleeping, TechPulse is reading. Hundreds of articles from across the internet, distilled into the ones that actually matter — no filler, no sponsored fluff, no doomscrolling required.</p>
-        <p>This isn't a newsletter you forgot to unsubscribe from. It's a living, breathing feed of what's happening right now in tech — curated by AI so a human doesn't have to.</p>
-        <p>Categories, sources, and topics are all driven by a single config file — so the feed evolves without touching a line of HTML.</p>
+    <div id="list-view" style="display:none;">
+      <nav class="breadcrumb" id="list-breadcrumb" aria-label="Breadcrumb"></nav>
+      <div class="page-header">
+        <h1 class="page-title" id="page-title">Latest News</h1>
+        <p class="page-subtitle" id="page-subtitle"></p>
       </div>
-      <div class="about-divider"></div>
-      <div class="about-stats">
-        <div class="stat-card"><div class="stat-number" id="stat-total">—</div><div class="stat-label">Articles Summarized</div></div>
-        <div class="stat-card"><div class="stat-number" id="stat-categories">—</div><div class="stat-label">Categories Tracked</div></div>
-        <div class="stat-card"><div class="stat-number" id="stat-sources">—</div><div class="stat-label">Unique Sources</div></div>
-        <div class="stat-card"><div class="stat-number">0</div><div class="stat-label">Coffees Drank</div><div class="stat-joke">i am a bot</div></div>
-      </div>
-      <div class="about-divider"></div>
-      <div class="about-disclaimer"><strong>A note on accuracy:</strong> All summaries are generated by AI and may contain errors or omissions. TechPulse is a reading aid, not a primary news source. Always follow the "Read original" link to verify important claims.</div>
+      <div id="groups-container"></div>
     </div>
-  </div>
 
-  <div id="notfound-view">
-    <div class="notfound-code" aria-hidden="true">404</div>
-    <h1 class="notfound-title">Page not found</h1>
-    <p class="notfound-body">The article or page you're looking for doesn't exist or may have been removed.</p>
-    <button class="notfound-home" id="notfound-home">← Back to latest news</button>
+    <div id="article-view">
+      <nav class="breadcrumb" id="article-breadcrumb" aria-label="Breadcrumb"></nav>
+      <div class="article-header">
+        <div class="article-category-badge" id="art-badge"></div>
+        <h1 class="article-title" id="art-title"></h1>
+        <address class="article-byline" id="art-byline"></address>
+      </div>
+      <div class="article-body" id="art-body"></div>
+      <div class="source-box">
+        <div class="source-box-meta" id="art-source-meta"></div>
+        <a class="read-original" id="art-link" target="_blank" rel="noopener noreferrer">
+          Read original
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+      </div>
+      <section class="related-section" id="related-section" aria-label="Related articles">
+        <h2>Related Articles</h2>
+        <div class="related-list" id="related-list"></div>
+      </section>
+    </div>
+
+    <div id="about-view">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">TechPulse</a><span class="sep" aria-hidden="true">›</span>
+        <span class="current" aria-current="page">About</span>
+      </nav>
+      <div class="about-wrap">
+        <p class="about-kicker">About TechPulse</p>
+        <h1 class="about-hero-title">The tech news feed<br>that never <em>sleeps.</em></h1>
+        <p class="about-lead">TechPulse is a fully automated, AI-run tech news blog. It scours the web for the latest technology stories, then summarizes them into clear, jargon-free briefings — so you get the signal without the noise.</p>
+        <div class="about-body">
+          <p>While you're sleeping, TechPulse is reading. Hundreds of articles from across the internet, distilled into the ones that actually matter — no filler, no sponsored fluff, no doomscrolling required.</p>
+          <p>This isn't a newsletter you forgot to unsubscribe from. It's a living, breathing feed of what's happening right now in tech — curated by AI so a human doesn't have to.</p>
+          <p>Categories, sources, and topics are all driven by a single config file — so the feed evolves without touching a line of HTML.</p>
+        </div>
+        <div class="about-divider"></div>
+        <div class="about-stats">
+          <div class="stat-card"><div class="stat-number" id="stat-total">—</div><div class="stat-label">Articles Summarized</div></div>
+          <div class="stat-card"><div class="stat-number" id="stat-categories">—</div><div class="stat-label">Categories Tracked</div></div>
+          <div class="stat-card"><div class="stat-number" id="stat-sources">—</div><div class="stat-label">Unique Sources</div></div>
+          <div class="stat-card"><div class="stat-number">0</div><div class="stat-label">Coffees Drank</div><div class="stat-joke">i am a bot</div></div>
+        </div>
+        <div class="about-divider"></div>
+        <div class="about-disclaimer"><strong>A note on accuracy:</strong> All summaries are generated by AI and may contain errors or omissions. TechPulse is a reading aid, not a primary news source. Always follow the "Read original" link to verify important claims.</div>
+      </div>
+    </div>
+
+    <div id="notfound-view">
+      <div class="notfound-code" aria-hidden="true">404</div>
+      <h1 class="notfound-title">Page not found</h1>
+      <p class="notfound-body">The article or page you're looking for doesn't exist or may have been removed.</p>
+      <button class="notfound-home" id="notfound-home">← Back to latest news</button>
+    </div>
   </div>
 </main>
 
@@ -604,6 +611,8 @@
   const $searchInput   = document.getElementById('search-input');
   const $searchResults = document.getElementById('search-results');
   const $filterChips   = document.querySelectorAll('.filter-chip');
+  const $spaRoot       = document.getElementById('spa-root');
+  const $prerendered   = document.getElementById('prerendered-content');
 
   // ── SEO: META HELPERS ──────────────────────────────────────────────
   function setMeta(name, content, isProp = false) {
@@ -718,9 +727,15 @@
   // ── BOOT ──────────────────────────────────────────────────────────
   async function init() {
     try {
-      const res = await fetch('articles.json');
+      // FIX 1: Use absolute path so fetch works on /article/* and /category/* pages too
+      const res = await fetch('/articles.json');
       if (!res.ok) throw new Error(res.status);
       allArticles = await res.json();
+
+      // FIX 2: Show the SPA shell and hide the static pre-rendered snapshot
+      $prerendered.style.display = 'none';
+      $spaRoot.style.display = 'block';
+
       $loading.style.display = 'none';
       buildCategorySystem(allArticles);
       buildNav();
@@ -730,13 +745,54 @@
       $nav.addEventListener('scroll', updateNavScrollIndicators);
       window.addEventListener('resize', updateNavScrollIndicators);
     } catch (e) {
+      // On error, leave prerendered content visible so the page isn't blank
+      $spaRoot.style.display = 'block';
       $loading.style.display = 'none';
       $error.style.display = 'block';
     }
   }
 
+  // FIX 3: Route based on current URL when history.state is null (fresh page load / direct URL)
   function restoreFromHistory(state) {
-    if (!state) { goHome(false); history.replaceState({ view:'list', tab:'all' }, ''); return; }
+    if (!state) {
+      const p = window.location.pathname;
+
+      if (p.startsWith('/article/')) {
+        const slug = p.replace('/article/', '').replace(/\/$/, '');
+        const article = allArticles.find(a => slugify(a.title) === slug);
+        if (article) {
+          currentTab = 'all'; setNavActive('all');
+          history.replaceState({ view:'article', tab:'all', articleUrl:article.url }, '');
+          openArticle(article, false);
+          return;
+        }
+        showNotFoundView(false);
+        return;
+      }
+
+      if (p.startsWith('/category/')) {
+        const catSlug = p.replace('/category/', '').replace(/\/$/, '');
+        const cat = Object.keys(categoryMap).find(c => slugify(c) === catSlug);
+        if (cat) {
+          currentTab = cat; setNavActive(cat);
+          history.replaceState({ view:'list', tab:cat }, '');
+          renderTab(cat, false);
+          return;
+        }
+      }
+
+      if (p === '/about') {
+        currentTab = 'about'; setNavActive('about');
+        history.replaceState({ view:'about' }, '');
+        showAboutView();
+        return;
+      }
+
+      goHome(false);
+      history.replaceState({ view:'list', tab:'all' }, '');
+      return;
+    }
+
     if (state.view === 'about')  { currentTab='about';  setNavActive('about');  showAboutView(); return; }
     if (state.view === 'notfound') { showNotFoundView(false); return; }
     if (state.view === 'article' && state.articleUrl) {
@@ -960,11 +1016,9 @@
       { name:article.title||'Article', url:artPath }
     ]);
 
-    // Related
     renderRelated(article);
-
-    // Schema + Meta
     injectArticleSchema(article);
+
     const desc = (article.summary||'').replace(/[#*_`]/g,'').replace(/\n+/g,' ').trim().slice(0,155);
     updatePageMeta({
       title:       `${article.title||'Article'} — ${SITE_NAME}`,
