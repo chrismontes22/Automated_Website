@@ -1,0 +1,22 @@
+WebRTC Skimmer Bypasses CSP to Steal Payment Data from E-Commerce Sites
+============================================================
+
+**One-sentence headline summary**
+Cybersecurity researchers have identified a sophisticated payment skimmer exploiting the PolyShell vulnerability in Adobe Commerce and Magento to exfiltrate sensitive data via encrypted WebRTC data channels.
+
+**Key points**
+* The PolyShell vulnerability allows unauthenticated attackers to upload arbitrary executables through the REST API of Magento Open Source and Adobe Commerce.
+* Attackers are using WebRTC data channels to bypass Content Security Policy (CSP) directives and evade traditional HTTP-based network monitoring tools.
+* Mass exploitation of the vulnerability began on March 19, 2026, with Sansec reporting that 56.7% of vulnerable e-commerce stores have been compromised.
+* The exploit relies on a flaw in the `ImageProcessor::processImageContent()` function, which fails to validate file extensions against MIME types.
+* Adobe released a fix in version 2.4.9-beta1 on March 10, 2026, though production versions remain vulnerable until patched.
+* Site owners are advised to restrict access to the `pub/media/custom_options/` directory and verify server configurations to prevent unauthorized file execution.
+
+**Why it matters**
+This attack represents a significant evolution in digital skimming by utilizing encrypted UDP traffic that standard security tools cannot inspect. Businesses using Adobe Commerce or Magento must prioritize server configuration audits and patching to prevent data theft that bypasses traditional web security controls.
+
+============================================================
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/03/webrtc-skimmer-bypasses-csp-to-steal.html
+Category: Cybersecurity

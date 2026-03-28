@@ -1,0 +1,21 @@
+Mikael Barbero: Don't become the next Trivy: how to make your releases, tags, and automation resistant to compromise
+============================================================
+
+**One-sentence headline summary**
+Following the Trivy supply-chain compromise, maintainers are urged to adopt immutable releases, short-lived credentials, and signed provenance to secure software artifacts against unauthorized modifications and credential-based attacks.
+
+**Key points**
+* Enable GitHub’s immutable releases to prevent attackers from force-pushing, moving, or deleting version tags and release assets.
+* Replace long-lived personal access tokens with GitHub App installation tokens or scoped `GITHUB_TOKEN` permissions to minimize the blast radius of compromised credentials.
+* Implement GitHub rulesets to restrict tag creation, updates, and deletions, providing an immediate layer of security beyond release settings.
+* Use the `actions/attest` tool to generate cryptographically verifiable provenance, linking artifacts to specific commits and workflows.
+* Establish a pre-written, rehearsed incident response playbook to ensure rapid revocation of credentials and recovery in the event of a CI/CD breach.
+
+**Why it matters**
+The Trivy incident demonstrated that attackers rely on mutable release tags and persistent credentials to distribute malicious code to downstream users. Implementing these security controls transforms release infrastructure into a hardened barrier, significantly increasing the difficulty for attackers to compromise software supply chains.
+
+============================================================
+Author:   mikael.barbero@eclipse-foundation.org (Mikaël Barbero)
+Source:   Barbero.tech
+URL:      https://mikael.barbero.tech/blog/post/2026-03-26-dont-become-the-next-trivy/
+Category: Cybersecurity

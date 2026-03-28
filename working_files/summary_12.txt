@@ -1,21 +1,21 @@
-Find any file on your Windows PC in seconds with this free app
+Security Bite: What stands out in the iOS 26.4 security release notes
 ============================================================
 
-**A lightweight app called "Everything" offers a much faster alternative to the built-in Windows search tool.**
+**One-sentence headline summary**
+Apple has released iOS 26.4, addressing over 35 security vulnerabilities, including a critical bypass of Stolen Device Protection and flaws affecting Keychain access, Mail privacy, and WebKit sandboxing.
 
 **Key points**
-
-*   **Instant results:** Unlike the standard Windows search, which can be slow and sluggish, "Everything" displays files and folders the moment you start typing.
-*   **Efficient indexing:** The app works by indexing file names upon launch, allowing it to scan your entire drive in a fraction of a second.
-*   **Minimal impact:** It is a lightweight program that uses very few system resources and runs quietly in the background.
-*   **Simple yet powerful:** While the interface is basic, it supports advanced features like wildcards and custom filters for more precise searching.
-*   **Customizable:** You can use it as a standalone app or replace the default Windows search bar with it for a more seamless experience.
+- Apple patched CVE-2026-28895, which allowed unauthorized access to biometrically protected apps by bypassing Stolen Device Protection using only a device passcode.
+- A vulnerability in the Keychain (CVE-2026-28864) permitted local attackers to potentially access sensitive stored passwords and encryption keys.
+- Mail privacy settings, specifically "Hide IP Address" and "Block All Remote Content," were failing to apply correctly to all content under CVE-2026-20692.
+- A sandbox escape flaw in the Printing framework (CVE-2026-20688) could allow malicious apps to break out of their restricted environments.
+- WebKit received multiple security updates, including fixes for Same Origin Policy and Content Security Policy bypasses that could expose users to malicious web content.
 
 **Why it matters**
-This tool solves the common frustration of waiting for Windows to locate files, significantly improving daily productivity for anyone who frequently manages documents or folders on their PC.
+These patches address significant security gaps that could compromise user privacy and device integrity, even for those utilizing Apple's advanced protection features. Users are strongly encouraged to update their devices immediately to mitigate these risks, as none of the vulnerabilities are currently reported as actively exploited.
 
 ============================================================
-Author:   Sam Singleton
-Source:   PCWorld
-URL:      https://www.pcworld.com/article/3090523/find-any-file-on-your-windows-pc-in-seconds-with-this-free-app.html
-Category: Phones, Laptops, and Gadgets
+Author:   Arin Waichulis
+Source:   9to5Mac
+URL:      https://9to5mac.com/2026/03/25/security-bite-what-stands-out-in-the-ios-26-4-security-release-notes/
+Category: Cybersecurity

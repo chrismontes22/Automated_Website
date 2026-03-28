@@ -1,0 +1,21 @@
+Show HN: Robust LLM Extractor for Websites in TypeScript
+============================================================
+
+**One-sentence headline summary**
+The Lightfeed Extractor is a TypeScript library that leverages LLMs and Playwright to automate robust, structured web data extraction for production-grade data pipelines and retail intelligence.
+
+**Key points**
+* Integrates with Playwright to support local, serverless, and remote browser environments with built-in anti-bot and proxy configurations.
+* Uses Zod schemas to enforce structured data output, featuring a "JSON recovery" utility to sanitize and repair failed or malformed LLM responses.
+* Converts complex HTML into LLM-ready markdown, with options to clean URLs, remove tracking parameters, and isolate main content.
+* Pairs with the @lightfeed/browser-agent to enable AI-driven navigation, allowing for complex interactions like searching and pagination.
+* Compatible with major LLM providers via LangChain, including OpenAI, Google Gemini, Anthropic, and local models via Ollama.
+
+**Why it matters**
+This library simplifies the development of reliable web scraping pipelines by combining AI-driven data parsing with resilient browser automation. It provides developers with a production-ready toolkit to handle common extraction challenges like dynamic content, schema validation, and anti-bot detection.
+
+============================================================
+Author:   lightfeed
+Source:   Github.com
+URL:      https://github.com/lightfeed/extractor
+Category: Artificial Intelligence
