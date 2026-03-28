@@ -745,7 +745,7 @@ async function build() {
     console.log('  \u2713 _headers');
   }
 
-── Summary ─────────────────────────────────────────────────────────────────
+//── Summary ─────────────────────────────────────────────────────────────────
   console.log(`
 \u2705 Build complete
    ${articles.length} article pages
