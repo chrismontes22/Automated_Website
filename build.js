@@ -34,13 +34,61 @@ const getArg = (flag, fallback) => {
   return i !== -1 && args[i + 1] ? args[i + 1] : fallback;
 };
 
-const SITE_URL      = getArg('--site',     'https://techpulse.example.com');
-const ARTICLES_FILE = getArg('--articles', path.join(__dirname, 'articles.json'));
-const OUT_DIR       = getArg('--out',      path.join(__dirname, 'dist'));
-const SITE_NAME     = 'TechPulse';
-const DEFAULT_DESC  = 'AI-curated tech news summaries updated every 12 hours. Clear, jargon-free briefings on AI, software, hardware, and more.';
-const DEFAULT_IMG   = `${SITE_URL}/og-image.png`;
+const SITE_URL       = getArg('--site',     'https://techpulse.example.com');
+const ARTICLES_FILE  = getArg('--articles', path.join(__dirname, 'articles.json'));
+const OUT_DIR        = getArg('--out',      path.join(__dirname, 'dist'));
+const INDEX_HTML_FILE = getArg('--index',   path.join(__dirname, 'index.html'));
+const SITE_NAME      = 'TechPulse';
+const DEFAULT_DESC   = 'AI-curated tech news summaries updated every 12 hours. Clear, jargon-free briefings on AI, software, hardware, and more.';
+const DEFAULT_IMG    = `${SITE_URL}/og-image.png`;
 const TWITTER_HANDLE = '@TechPulseAI';
+
+// ── EXTRACT CSS & JS FROM INDEX.HTML ─────────────────────────────────────────
+// This reads the index.html template and extracts the inlined CSS/JS
+// so we don't need a separate assets folder.
+
+let INLINE_CSS = '';
+let INLINE_JS = '';
+
+function extractAssetsFromIndex() {
+  if (!fs.existsSync(INDEX_HTML_FILE)) {
+    console.error(`❌ index.html not found at: ${INDEX_HTML_FILE}`);
+    process.exit(1);
+  }
+
+  const indexContent = fs.readFileSync(INDEX_HTML_FILE, 'utf8');
+
+  // Extract CSS from <style> tag
+  const styleMatch = indexContent.match(/<style[^>]*>([\s\S]*?)<\/style>/i);
+  if (styleMatch) {
+    INLINE_CSS = styleMatch[1].trim();
+    console.log(`   ✓ Extracted ${INLINE_CSS.length.toLocaleString()} bytes of CSS from index.html`);
+  } else {
+    console.warn('   ⚠ No <style> tag found in index.html');
+  }
+
+  // Extract JS from the main <script> tag (not CDN scripts)
+  // We look for the script tag that contains our app code (has SITE_URL or init())
+  const scriptMatches = indexContent.match(/<script>([\s\S]*?)<\/script>/gi);
+  if (scriptMatches) {
+    for (const script of scriptMatches) {
+      const contentMatch = script.match(/<script[^>]*>([\s\S]*?)<\/script>/i);
+      if (contentMatch) {
+        const content = contentMatch[1].trim();
+        // Identify our main app script by looking for key identifiers
+        if (content.includes('SITE_URL') || content.includes('function init()') || content.includes('allArticles')) {
+          INLINE_JS = content;
+          console.log(`   ✓ Extracted ${INLINE_JS.length.toLocaleString()} bytes of JS from index.html`);
+          break;
+        }
+      }
+    }
+  }
+
+  if (!INLINE_JS) {
+    console.warn('   ⚠ No main app script found in index.html');
+  }
+}
 
 // ── HELPERS ───────────────────────────────────────────────────────────────────
 function esc(str) {
@@ -190,7 +238,8 @@ function pageShell({ title, description, canonicalPath, ogType = 'website', ogIm
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
 
-  <link rel="stylesheet" href="/assets/main.css" />
+  <!-- INLINED CSS (extracted from index.html) -->
+  <style>${INLINE_CSS}</style>
 </head>
 <body>
 
@@ -325,7 +374,8 @@ function pageShell({ title, description, canonicalPath, ogType = 'website', ogIm
   </p>
 </footer>
 
-<script src="/assets/main.js"></script>
+<!-- INLINED JS (extracted from index.html) -->
+<script>${INLINE_JS}</script>
 ${bodyContent || ''}
 </body>
 </html>`;
@@ -609,6 +659,10 @@ Sitemap: ${SITE_URL}/sitemap.xml
 async function build() {
   console.log(`\n🔨 TechPulse Build\n   articles: ${ARTICLES_FILE}\n   output:   ${OUT_DIR}\n`);
 
+  // Extract CSS/JS from index.html first
+  console.log('📦 Assets:');
+  extractAssetsFromIndex();
+
   // Load articles
   if (!fs.existsSync(ARTICLES_FILE)) {
     console.error(`❌ articles.json not found at: ${ARTICLES_FILE}`);
@@ -727,7 +781,7 @@ async function build() {
   const redirectsSrc = path.join(__dirname, '_redirects');
   if (fs.existsSync(redirectsSrc)) {
     fs.copyFileSync(redirectsSrc, path.join(OUT_DIR, '_redirects'));
-    console.log('  \u2713 _redirects');
+    console.log('  ✓ _redirects');
   } else {
     write(
       path.join(OUT_DIR, '_redirects'),
@@ -742,20 +796,21 @@ async function build() {
   const headersSrc = path.join(__dirname, '_headers');
   if (fs.existsSync(headersSrc)) {
     fs.copyFileSync(headersSrc, path.join(OUT_DIR, '_headers'));
-    console.log('  \u2713 _headers');
+    console.log('  ✓ _headers');
   }
 
-//── Summary ─────────────────────────────────────────────────────────────────
+  //── Summary ─────────────────────────────────────────────────────────────────
   console.log(`
-\u2705 Build complete
+✅ Build complete
    ${articles.length} article pages
    ${categories.length} category pages
-   sitemap.xml  \u2014 ${articles.length + categories.length + 2} URLs
-   feed.xml     \u2014 ${Math.min(articles.length, 50)} items
+   sitemap.xml  — ${articles.length + categories.length + 2} URLs
+   feed.xml     — ${Math.min(articles.length, 50)} items
    robots.txt
-   _redirects   \u2014 Cloudflare Pages routing rules
+   _redirects   — Cloudflare Pages routing rules
+   CSS/JS       — Inlined from index.html (no assets folder needed)
 
-\u{1F4CB} Deploy checklist:
+📋 Deploy checklist:
    1. Set Cloudflare Pages build output directory to: dist
    2. Set build command to: node build.js
    3. Add GitHub secrets: CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID
