@@ -1,20 +1,20 @@
-Prevent agentic identity theft
+Claude's popularity is forcing it to hit the brakes on users
 ============================================================
 
-**1Password CTO Nancy Wang discusses the critical security risks posed by local AI agents and the urgent need for robust identity management and sandboxing in software development.**
+**Anthropic has implemented stricter usage caps for Claude subscribers during peak hours to manage high demand and compute strain following a surge in mainstream interest for its models.**
 
 **Key points**
-- Local AI agents, such as Open Claude, present significant security risks by accessing sensitive local files, terminals, and browser data.
-- 1Password is developing agent security platforms that utilize runtime signals and user behavior to broker access rather than granting long-lived credentials.
-- The company emphasizes a zero-knowledge architecture and confidential computing enclaves to protect credentials from unauthorized agent access.
-- Security experts recommend isolating agent runtime environments and restricting access to specific file paths to minimize the potential blast radius of malicious skills.
-- The industry is shifting toward verifiable digital credentials and workload identity protocols to maintain accountability for ephemeral AI agents.
+- Anthropic adjusted five-hour session limits for free, Pro, and Max subscribers during peak hours of 5 a.m. to 11 a.m. PT.
+- Approximately 7% of users, particularly those on Pro tiers, are expected to hit their session limits more frequently under the new policy.
+- Weekly usage limits remain unchanged, though the company recommends shifting token-intensive background tasks to off-peak hours.
+- The adjustments follow increased public interest in Anthropic after CEO Dario Amodei restricted the Pentagon’s access to the company’s AI models.
+- The company is currently balancing compute resources as the rise of automated AI agents leads to higher token consumption across the industry.
 
 **Why it matters: **
-As AI agents gain the ability to autonomously execute tasks on local devices, they create new vulnerabilities that traditional security tools are not yet equipped to handle. Establishing secure identity and access controls is essential for enterprises to adopt these productivity-boosting tools without compromising sensitive data.
+These usage adjustments highlight the ongoing struggle AI companies face in balancing massive consumer demand with limited compute infrastructure. The move underscores the broader industry challenge of scaling high-performance models while maintaining service reliability for enterprise and individual users.
 
 ============================================================
-Author:   Phoebe Sajor
-Source:   Stackoverflow.blog
-URL:      https://stackoverflow.blog/2026/03/27/prevent-agentic-identity-theft/
-Category: Cybersecurity
+Author:   Brent D. Griffiths
+Source:   Business Insider
+URL:      https://www.businessinsider.com/claude-usage-caps-changes-popularity-anthropic-2026-3
+Category: Artificial Intelligence

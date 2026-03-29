@@ -1,19 +1,20 @@
-Momentus Clock Aims To Find Meaning
+Open VSX Bug Let Malicious VS Code Extensions Bypass Pre-Publish Security Checks
 ============================================================
 
-Developer Andy Isaacson has launched Momentous, a digital clock application that displays unique mathematical facts or trivia for every individual minute of the day from 00:00 to 23:59.
+Cybersecurity researchers discovered a vulnerability in the Open VSX registry that allowed malicious Visual Studio Code extensions to bypass security scans by triggering database connection failures during publication.
 
 **Key points**
-- Momentous is built using TypeScript, React Native, and the Expo framework.
-- The application features a pre-computed algorithm that identifies mathematical properties like prime numbers, palindromes, and sequences within irrational numbers for each minute.
-- Users can access the clock through a standard web browser or install the dedicated application on an iPhone.
-- The project aims to transform standard timekeeping into an educational and entertaining experience for math enthusiasts.
+- The "Open Sesame" vulnerability allowed malicious extensions to bypass mandatory pre-publish security checks by overloading the registry's scanning pipeline.
+- A flaw in the Java-based service caused the system to misinterpret scanner job failures as a "no scanners configured" state, effectively failing open.
+- Attackers could exploit this by flooding the publish endpoint to exhaust database connection pools, preventing scan jobs from enqueuing.
+- The Eclipse Foundation addressed the issue in Open VSX version 0.32.0 following a responsible disclosure on February 8, 2026.
+- Open VSX serves as the primary extension marketplace for several development environments, including VS Code, Cursor, and Windsurf.
 
 **Why it matters: **
-Momentous demonstrates how developers can use creative algorithms to gamify mundane daily utilities. This project highlights the growing trend of niche, interactive web applications designed to provide micro-learning opportunities throughout the day.
+This vulnerability highlights the risks of "fail-open" error handling in automated security pipelines, which can inadvertently allow malicious code into widely used developer ecosystems. Ensuring robust, explicit failure states is critical for maintaining the integrity of software supply chains used by millions of developers.
 
 ============================================================
-Author:   Lewin Day
-Source:   Hackaday
-URL:      https://hackaday.com/2026/03/26/momentus-clock-aims-to-find-meaning/
-Category: Phones, Laptops, and Gadgets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/03/open-vsx-bug-let-malicious-vs-code.html
+Category: Cybersecurity
