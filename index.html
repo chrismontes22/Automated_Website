@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
 
   <!-- ══ SEO: PRIMARY META (updated dynamically on navigation) ══ -->
   <title>TechPulse — AI & Technology News</title>
@@ -30,11 +31,16 @@
   <!-- ══ SEO: FEED DISCOVERY ══ -->
   <link rel="alternate" type="application/rss+xml" title="TechPulse — Latest Articles" href="/feed.xml" />
 
+  <!-- ══ THEME COLOR (browser chrome on mobile) ══ -->
+  <meta name="theme-color" content="#e07838" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#d4641a" media="(prefers-color-scheme: light)" />
+
   <!-- ══ SEO: JSON-LD — static schemas always present ══ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://techpulse.example.com/#organization",
     "name": "TechPulse",
     "url": "https://techpulse.example.com",
     "logo": { "@type": "ImageObject", "url": "https://techpulse.example.com/logo.png" },
@@ -45,8 +51,10 @@
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": "https://techpulse.example.com/#website",
     "name": "TechPulse",
     "url": "https://techpulse.example.com",
+    "publisher": { "@id": "https://techpulse.example.com/#organization" },
     "potentialAction": {
       "@type": "SearchAction",
       "target": "https://techpulse.example.com/?q={search_term_string}",
@@ -62,7 +70,7 @@
   <!-- ══ PERFORMANCE ══ -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
 
@@ -95,6 +103,14 @@
       --scrollbar-thumb-hover: var(--accent);
       --glow-soft: 0 0 40px rgba(224,120,56,0.08);
       --nav-scroll-indicator: linear-gradient(90deg, var(--bg) 0%, transparent 10%, transparent 90%, var(--bg) 100%);
+      /* ── FIXED: these must live inside :root to be inherited ── */
+      --font-serif: "Playfair Display", Georgia, serif;
+      --font-sans:  "IBM Plex Sans", system-ui, sans-serif;
+      --font-mono:  "IBM Plex Mono", monospace;
+      --radius:     10px;
+      --radius-lg:  16px;
+      --radius-xl:  24px;
+      --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     }
     [data-theme="light"] {
       --bg:          #faf9f6;
@@ -123,14 +139,6 @@
       --scrollbar-thumb-hover: var(--accent);
       --glow-soft: 0 0 40px rgba(212,100,26,0.06);
     }
-
-    --font-serif: "Playfair Display", Georgia, serif;
-    --font-sans:  "IBM Plex Sans", system-ui, sans-serif;
-    --font-mono:  "IBM Plex Mono", monospace;
-    --radius:     10px;
-    --radius-lg:  16px;
-    --radius-xl:  24px;
-    --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
@@ -621,46 +629,89 @@
     if (!el) { el = document.createElement('meta'); el.setAttribute(attr, name); document.head.appendChild(el); }
     el.setAttribute('content', content);
   }
+  function removeMeta(name, isProp = false) {
+    const attr = isProp ? 'property' : 'name';
+    document.querySelectorAll(`meta[${attr}="${name}"]`).forEach(el => el.remove());
+  }
   function setCanonical(path) {
     let el = document.querySelector('link[rel="canonical"]');
     if (!el) { el = document.createElement('link'); el.rel = 'canonical'; document.head.appendChild(el); }
     el.href = `${SITE_URL}${path}`;
   }
-  function updatePageMeta({ title, description, url, image, type = 'website' }) {
+
+  /**
+   * Update all page-level meta for SPA navigation.
+   * For article pages, also pass: author, publishedTime, section, tags[]
+   */
+  function updatePageMeta({ title, description, url, image, type = 'website',
+                            author, publishedTime, section, tags = [] }) {
     document.title = title;
     setMeta('description', description);
     setCanonical(url);
-    setMeta('og:title',       title,                     true);
-    setMeta('og:description', description,               true);
-    setMeta('og:url',         `${SITE_URL}${url}`,       true);
-    setMeta('og:image',       image || DEFAULT_IMG,      true);
-    setMeta('og:type',        type,                      true);
+    setMeta('og:title',       title,                true);
+    setMeta('og:description', description,          true);
+    setMeta('og:url',         `${SITE_URL}${url}`,  true);
+    setMeta('og:image',       image || DEFAULT_IMG, true);
+    setMeta('og:type',        type,                 true);
     setMeta('twitter:title',       title);
     setMeta('twitter:description', description);
     setMeta('twitter:image',       image || DEFAULT_IMG);
+
+    // Author meta (used by some crawlers and Google Discover)
+    if (author) { setMeta('author', author); } else { removeMeta('author'); }
+
+    // Article-specific Open Graph properties
+    const articleProps = ['article:published_time','article:modified_time','article:author','article:section'];
+    articleProps.forEach(p => removeMeta(p, true));
+    // Remove all article:tag metas before re-adding
+    document.querySelectorAll('meta[property="article:tag"]').forEach(el => el.remove());
+
+    if (type === 'article') {
+      if (publishedTime) { setMeta('article:published_time', publishedTime, true); }
+      setMeta('article:modified_time', publishedTime || new Date().toISOString(), true);
+      if (author)  { setMeta('article:author',  author,  true); }
+      if (section) { setMeta('article:section', section, true); }
+      tags.slice(0, 5).forEach(tag => {
+        const el = document.createElement('meta');
+        el.setAttribute('property', 'article:tag');
+        el.setAttribute('content', tag);
+        document.head.appendChild(el);
+      });
+    }
   }
 
   // ── SEO: JSON-LD ──────────────────────────────────────────────────
   function injectArticleSchema(article) {
+    const wordCount = (article.summary || '').split(/\s+/).filter(Boolean).length;
+    const slug      = slugify(article.title);
     document.getElementById('jsonld-article').textContent = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "NewsArticle",
+      "@id": `${SITE_URL}/article/${slug}`,
       "headline": article.title || 'Untitled',
       "description": (article.summary || '').replace(/[#*_`]/g, '').slice(0, 200),
       "datePublished": article.processed_at || new Date().toISOString(),
       "dateModified":  article.processed_at || new Date().toISOString(),
+      "wordCount": wordCount,
+      "articleSection": article.category || 'Technology',
+      "keywords": [article.category, article.source].filter(Boolean).join(', '),
+      "isAccessibleForFree": true,
       "author": { "@type": "Person", "name": article.author || 'Unknown' },
       "publisher": {
-        "@type": "Organization", "name": SITE_NAME,
+        "@type": "Organization",
+        "@id": `${SITE_URL}/#organization`,
+        "name": SITE_NAME,
         "logo": { "@type": "ImageObject", "url": `${SITE_URL}/logo.png` }
       },
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": `${SITE_URL}/article/${slugify(article.title)}`
+      "mainEntityOfPage": { "@type": "WebPage", "@id": `${SITE_URL}/article/${slug}` },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".article-title", ".article-body p:first-of-type"]
       },
       "url": article.url || ''
     });
   }
+
   function injectBreadcrumbSchema(items) {
     let el = document.getElementById('jsonld-breadcrumb');
     if (!el) { el = document.createElement('script'); el.type = 'application/ld+json'; el.id = 'jsonld-breadcrumb'; document.head.appendChild(el); }
@@ -675,10 +726,15 @@
       }))
     });
   }
+
   function clearSchemas() {
     document.getElementById('jsonld-article').textContent = '';
     const bc = document.getElementById('jsonld-breadcrumb');
     if (bc) bc.textContent = '';
+    // Also clean article-specific meta so they don't linger on non-article pages
+    ['article:published_time','article:modified_time','article:author','article:section'].forEach(p => removeMeta(p, true));
+    document.querySelectorAll('meta[property="article:tag"]').forEach(el => el.remove());
+    removeMeta('author');
   }
 
   // ── HELPERS ───────────────────────────────────────────────────────
@@ -727,16 +783,14 @@
   // ── BOOT ──────────────────────────────────────────────────────────
   async function init() {
     try {
-      // FIX 1: Use absolute path so fetch works on /article/* and /category/* pages too
       const res = await fetch('/articles.json');
       if (!res.ok) throw new Error(res.status);
       allArticles = await res.json();
 
-      // FIX 2: Show the SPA shell and hide the static pre-rendered snapshot
       $prerendered.style.display = 'none';
       $spaRoot.style.display = 'block';
-
       $loading.style.display = 'none';
+
       buildCategorySystem(allArticles);
       buildNav();
       populateAboutStats();
@@ -745,14 +799,12 @@
       $nav.addEventListener('scroll', updateNavScrollIndicators);
       window.addEventListener('resize', updateNavScrollIndicators);
     } catch (e) {
-      // On error, leave prerendered content visible so the page isn't blank
       $spaRoot.style.display = 'block';
       $loading.style.display = 'none';
       $error.style.display = 'block';
     }
   }
 
-  // FIX 3: Route based on current URL when history.state is null (fresh page load / direct URL)
   function restoreFromHistory(state) {
     if (!state) {
       const p = window.location.pathname;
@@ -1021,10 +1073,14 @@
 
     const desc = (article.summary||'').replace(/[#*_`]/g,'').replace(/\n+/g,' ').trim().slice(0,155);
     updatePageMeta({
-      title:       `${article.title||'Article'} — ${SITE_NAME}`,
-      description: desc || `Read this ${article.category||'tech'} article summary on TechPulse.`,
-      url:         artPath,
-      type:        'article'
+      title:         `${article.title||'Article'} — ${SITE_NAME}`,
+      description:   desc || `Read this ${article.category||'tech'} article summary on TechPulse.`,
+      url:           artPath,
+      type:          'article',
+      author:        article.author  || undefined,
+      publishedTime: article.processed_at || undefined,
+      section:       article.category || undefined,
+      tags:          [article.category, article.source].filter(Boolean)
     });
 
     currentArticleUrl = article.url || null;

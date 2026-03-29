@@ -11,7 +11,8 @@
  *   dist/about.html                    — about page
  *   dist/404.html                      — 404 page
  *   dist/sitemap.xml                   — full sitemap
- *   dist/feed.xml                      — RSS 2.0 feed
+ *   dist/news-sitemap.xml              — Google News sitemap (articles < 2 days old)
+ *   dist/feed.xml                      — RSS 2.0 feed (with content:encoded)
  *   dist/robots.txt                    — crawl rules
  *   dist/articles.json                 — copied so Cloudflare can serve it
  *
@@ -156,14 +157,88 @@ function write(filePath, content) {
   console.log(`  ✓ ${path.relative(OUT_DIR, filePath)}`);
 }
 
+// ── MARKDOWN → HTML (used for RSS content:encoded and pre-rendered bodies) ───
+function basicMarkdownToHtml(md) {
+  if (!md) return '';
+
+  // Escape HTML entities first so raw content is safe
+  let html = md
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+
+  // Headings
+  html = html.replace(/^### (.+)$/gm, '<h3>$1</h3>');
+  html = html.replace(/^## (.+)$/gm,  '<h2>$1</h2>');
+  html = html.replace(/^# (.+)$/gm,   '<h2>$1</h2>');
+
+  // Inline formatting
+  html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  html = html.replace(/\*(.+?)\*/g,     '<em>$1</em>');
+  html = html.replace(/`(.+?)`/g,       '<code>$1</code>');
+
+  // Unordered list items → wrap consecutive runs in <ul>
+  html = html.replace(/^[ \t]*[-*]\s+(.+)$/gm, '<li>$1</li>');
+  html = html.replace(/((?:<li>[^\n]*<\/li>\n?)+)/g, '<ul>$1</ul>');
+
+  // Split on blank lines and wrap non-block-level lines in <p>
+  const BLOCK = /^<(h[1-6]|ul|ol|li|blockquote|pre|div)/;
+  const paragraphs = html.split(/\n{2,}/).map(block => {
+    block = block.trim();
+    if (!block) return '';
+    if (BLOCK.test(block)) return block;
+    return `<p>${block.replace(/\n/g, ' ')}</p>`;
+  }).filter(Boolean);
+
+  return paragraphs.join('\n');
+}
+
 // ── SHARED PAGE TEMPLATE ──────────────────────────────────────────────────────
-function pageShell({ title, description, canonicalPath, ogType = 'website', ogImage = DEFAULT_IMG, articleSchema = '', breadcrumbSchema = '', bodyContent, preRenderedContent = '' }) {
+/**
+ * @param {Object} opts
+ * @param {string} opts.title
+ * @param {string} opts.description
+ * @param {string} opts.canonicalPath
+ * @param {string} [opts.ogType]
+ * @param {string} [opts.ogImage]
+ * @param {string} [opts.articleSchema]
+ * @param {string} [opts.breadcrumbSchema]
+ * @param {string} [opts.collectionSchema]
+ * @param {string} [opts.bodyContent]
+ * @param {string} [opts.preRenderedContent]
+ * @param {Object} [opts.articleMeta]   — only on article pages
+ * @param {string}   opts.articleMeta.author
+ * @param {string}   opts.articleMeta.publishedTime  — ISO 8601
+ * @param {string}   opts.articleMeta.modifiedTime   — ISO 8601
+ * @param {string}   opts.articleMeta.section
+ * @param {string}   opts.articleMeta.newsKeywords   — comma-separated
+ * @param {string[]} opts.articleMeta.tags
+ */
+function pageShell({
+  title, description, canonicalPath,
+  ogType = 'website', ogImage = DEFAULT_IMG,
+  articleSchema = '', breadcrumbSchema = '', collectionSchema = '',
+  bodyContent, preRenderedContent = '',
+  articleMeta = null
+}) {
   const canonical = `${SITE_URL}${canonicalPath}`;
+
+  // Build article-specific <meta> tags (only emitted on article pages)
+  const articleMetaHtml = articleMeta ? `
+  <meta name="author" content="${esc(articleMeta.author)}" />
+  <meta name="news_keywords" content="${esc(articleMeta.newsKeywords)}" />
+  <meta property="article:published_time" content="${esc(articleMeta.publishedTime)}" />
+  <meta property="article:modified_time"  content="${esc(articleMeta.modifiedTime)}" />
+  <meta property="article:author"  content="${esc(articleMeta.author)}" />
+  <meta property="article:section" content="${esc(articleMeta.section)}" />
+  ${(articleMeta.tags || []).map(t => `<meta property="article:tag" content="${esc(t)}" />`).join('\n  ')}` : '';
+
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
 
   <!-- PRIMARY META -->
   <title>${esc(title)}</title>
@@ -187,15 +262,20 @@ function pageShell({ title, description, canonicalPath, ogType = 'website', ogIm
   <meta name="twitter:title"       content="${esc(title)}" />
   <meta name="twitter:description" content="${esc(description)}" />
   <meta name="twitter:image"       content="${esc(ogImage)}" />
+  ${articleMetaHtml}
+  <!-- THEME COLOR -->
+  <meta name="theme-color" content="#e07838" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#d4641a" media="(prefers-color-scheme: light)" />
 
   <!-- FEEDS & DISCOVERY -->
   <link rel="alternate" type="application/rss+xml" title="${esc(SITE_NAME)} — Latest Articles" href="/feed.xml" />
 
-  <!-- STRUCTURED DATA -->
+  <!-- STRUCTURED DATA: always-present site-level schemas -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "${SITE_URL}/#organization",
     "name": "${SITE_NAME}",
     "url": "${SITE_URL}",
     "logo": { "@type": "ImageObject", "url": "${SITE_URL}/logo.png" },
@@ -206,8 +286,10 @@ function pageShell({ title, description, canonicalPath, ogType = 'website', ogIm
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": "${SITE_URL}/#website",
     "name": "${SITE_NAME}",
     "url": "${SITE_URL}",
+    "publisher": { "@id": "${SITE_URL}/#organization" },
     "potentialAction": {
       "@type": "SearchAction",
       "target": "${SITE_URL}/?q={search_term_string}",
@@ -215,17 +297,18 @@ function pageShell({ title, description, canonicalPath, ogType = 'website', ogIm
     }
   }
   </script>
-  ${articleSchema ? `<script type="application/ld+json">\n  ${articleSchema}\n  </script>` : ''}
+  ${articleSchema    ? `<script type="application/ld+json">\n  ${articleSchema}\n  </script>` : ''}
   ${breadcrumbSchema ? `<script type="application/ld+json">\n  ${breadcrumbSchema}\n  </script>` : ''}
+  ${collectionSchema ? `<script type="application/ld+json">\n  ${collectionSchema}\n  </script>` : ''}
 
-  <!-- DYNAMIC JSON-LD SLOTS (updated by JS on SPA navigation) -->
+  <!-- DYNAMIC JSON-LD SLOTS (updated by SPA JS on client-side navigation) -->
   <script type="application/ld+json" id="jsonld-article"></script>
   <script type="application/ld+json" id="jsonld-breadcrumb"></script>
 
   <!-- PERFORMANCE -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
 
@@ -407,19 +490,28 @@ function buildArticlePrerender(article, allArticles) {
       <span class="sep" aria-hidden="true">›</span>
       <span class="current" aria-current="page">${esc((article.title || 'Article').slice(0, 50))}…</span>
     </nav>
-    <article>
+    <article itemscope itemtype="https://schema.org/NewsArticle">
       <div class="article-header">
-        <div class="article-category-badge">${esc(article.category || 'News')}</div>
-        <h1 class="article-title">${esc(article.title || 'Untitled')}</h1>
+        <div class="article-category-badge"
+             itemprop="articleSection">${esc(article.category || 'News')}</div>
+        <h1 class="article-title" itemprop="headline">${esc(article.title || 'Untitled')}</h1>
         <address class="article-byline">
-          <span><span class="byline-label">By</span> ${esc(article.author || 'Unknown')}</span>
+          <span>
+            <span class="byline-label">By</span>
+            <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <span itemprop="name">${esc(article.author || 'Unknown')}</span>
+            </span>
+          </span>
           <span><span class="byline-label">Source</span> ${esc(article.source || 'Unknown')}</span>
-          <span><span class="byline-label">Published</span>
-            <time datetime="${esc(isoDate(article.processed_at))}">${esc(shortDate(article.processed_at))}</time>
+          <span>
+            <span class="byline-label">Published</span>
+            <time itemprop="datePublished" datetime="${esc(isoDate(article.processed_at))}">
+              ${esc(shortDate(article.processed_at))}
+            </time>
           </span>
         </address>
       </div>
-      <div class="article-body">${bodyHtml}</div>
+      <div class="article-body" itemprop="articleBody">${bodyHtml}</div>
       <div class="source-box">
         <div class="source-box-meta">
           <span><strong>${esc(article.source || 'Unknown')}</strong></span>
@@ -496,47 +588,37 @@ function formatDateLabel(isoKey) {
   return d.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
 }
 
-function basicMarkdownToHtml(md) {
-  return md
-    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-    .replace(/^### (.+)$/gm, '<h3>$1</h3>')
-    .replace(/^## (.+)$/gm, '<h2>$1</h2>')
-    .replace(/^# (.+)$/gm, '<h2>$1</h2>')
-    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-    .replace(/\*(.+?)\*/g, '<em>$1</em>')
-    .replace(/`(.+?)`/g, '<code>$1</code>')
-    .replace(/^\s*[-*]\s+(.+)$/gm, '<li>$1</li>')
-    .replace(/(<li>.*<\/li>\n?)+/g, m => `<ul>${m}</ul>`)
-    .replace(/\n\n+/g, '</p><p>')
-    .replace(/^(?!<[hup])/gm, '')
-    .replace(/^(.+)$/gm, (line) => {
-      if (/^<[hul]/.test(line)) return line;
-      return `<p>${line}</p>`;
-    })
-    .replace(/<p><\/p>/g, '')
-    .replace(/<p>(<[hul])/g, '$1')
-    .replace(/(<\/[hul][^>]*>)<\/p>/g, '$1');
-}
-
 // ── JSON-LD BUILDERS ──────────────────────────────────────────────────────────
 
 function articleSchema(article) {
+  const wordCount = (article.summary || '').split(/\s+/).filter(Boolean).length;
+  const slug      = articleSlug(article);
   return JSON.stringify({
     "@context": "https://schema.org",
     "@type": "NewsArticle",
+    "@id": `${SITE_URL}/article/${slug}`,
     "headline": article.title || 'Untitled',
     "description": excerpt(article),
     "datePublished": isoDate(article.processed_at),
     "dateModified":  isoDate(article.processed_at),
+    "wordCount": wordCount,
+    "articleSection": article.category || 'Technology',
+    "keywords": [article.category, article.source].filter(Boolean).join(', '),
+    "isAccessibleForFree": true,
     "author": { "@type": "Person", "name": article.author || 'Unknown' },
     "publisher": {
       "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
       "name": SITE_NAME,
       "logo": { "@type": "ImageObject", "url": `${SITE_URL}/logo.png` }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `${SITE_URL}/article/${articleSlug(article)}`
+      "@id": `${SITE_URL}/article/${slug}`
+    },
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".article-title", ".article-body p:first-of-type"]
     },
     "url": article.url || ''
   }, null, 2);
@@ -551,6 +633,28 @@ function breadcrumbSchema(items) {
       "position": i + 1,
       "name": item.name,
       ...(item.url ? { "item": `${SITE_URL}${item.url}` } : {})
+    }))
+  }, null, 2);
+}
+
+/**
+ * CollectionPage schema for homepage and category pages — helps Google understand
+ * these are curated lists, and surfaces the articles contained within them.
+ */
+function collectionPageSchema(label, urlPath, articles) {
+  return JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": `${SITE_URL}${urlPath}`,
+    "name": label,
+    "url": `${SITE_URL}${urlPath}`,
+    "description": `${label} — tech news summaries curated by AI, updated every 12 hours.`,
+    "publisher": { "@id": `${SITE_URL}/#organization` },
+    "hasPart": articles.slice(0, 10).map(a => ({
+      "@type": "NewsArticle",
+      "@id": `${SITE_URL}/article/${articleSlug(a)}`,
+      "headline": a.title || 'Untitled',
+      "url": `${SITE_URL}/article/${articleSlug(a)}`
     }))
   }, null, 2);
 }
@@ -593,6 +697,45 @@ ${allUrls.map(u => `  <url>
 </urlset>`;
 }
 
+// ── GOOGLE NEWS SITEMAP ───────────────────────────────────────────────────────
+/**
+ * Google News Sitemap — only includes articles published within the last 2 days.
+ * Submit to Google Search Console alongside your main sitemap.
+ * Docs: https://developers.google.com/search/docs/crawling-indexing/sitemaps/news-sitemap
+ */
+function buildNewsSitemap(articles) {
+  const twoDaysAgo = Date.now() - 2 * 24 * 60 * 60 * 1000;
+  const recent = articles.filter(a => {
+    const d = new Date(a.processed_at);
+    return !isNaN(d) && d.getTime() >= twoDaysAgo;
+  });
+
+  if (!recent.length) {
+    // Return a valid but empty sitemap when no recent articles exist
+    return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+</urlset>`;
+  }
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+${recent.map(a => `  <url>
+    <loc>${xmlEsc(SITE_URL)}/article/${xmlEsc(articleSlug(a))}</loc>
+    <news:news>
+      <news:publication>
+        <news:name>${xmlEsc(SITE_NAME)}</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>${isoDate(a.processed_at)}</news:publication_date>
+      <news:title>${xmlEsc(a.title || 'Untitled')}</news:title>
+      <news:keywords>${xmlEsc([a.category, a.source].filter(Boolean).join(', '))}</news:keywords>
+    </news:news>
+  </url>`).join('\n')}
+</urlset>`;
+}
+
 // ── RSS FEED ──────────────────────────────────────────────────────────────────
 
 function buildRssFeed(articles) {
@@ -603,14 +746,18 @@ function buildRssFeed(articles) {
     <link>${xmlEsc(SITE_URL)}/article/${xmlEsc(articleSlug(a))}</link>
     <guid isPermaLink="true">${xmlEsc(SITE_URL)}/article/${xmlEsc(articleSlug(a))}</guid>
     <pubDate>${rfcDate(a.processed_at)}</pubDate>
-    <author>${xmlEsc(a.author || 'TechPulse')}</author>
+    <dc:creator>${xmlEsc(a.author || 'TechPulse')}</dc:creator>
     <category>${xmlEsc(a.category || 'Technology')}</category>
     <description><![CDATA[${stripMarkdown(a.summary || '').slice(0, 500)}]]></description>
-    <source url="${xmlEsc(a.url || '')}">${xmlEsc(a.source || 'Unknown')}</source>
+    <content:encoded><![CDATA[${basicMarkdownToHtml(a.summary || '')}
+<p><a href="${xmlEsc(SITE_URL)}/article/${xmlEsc(articleSlug(a))}">Read on TechPulse</a> · <a href="${xmlEsc(a.url || '#')}">Original source: ${xmlEsc(a.source || 'Unknown')}</a></p>]]></content:encoded>
   </item>`).join('\n');
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>${xmlEsc(SITE_NAME)}</title>
     <link>${SITE_URL}</link>
@@ -636,6 +783,7 @@ User-agent: *
 Allow: /
 
 Sitemap: ${SITE_URL}/sitemap.xml
+Sitemap: ${SITE_URL}/news-sitemap.xml
 `;
 }
 
@@ -644,14 +792,11 @@ Sitemap: ${SITE_URL}/sitemap.xml
 async function build() {
   console.log(`\n🔨 TechPulse Build\n   articles: ${ARTICLES_FILE}\n   output:   ${OUT_DIR}\n`);
 
-  // Create dist/ first so copyFileSync never fails on a missing destination dir
   fs.mkdirSync(OUT_DIR, { recursive: true });
 
-  // Extract CSS/JS from index.html
   console.log('📦 Assets:');
   extractAssetsFromIndex();
 
-  // Load articles
   if (!fs.existsSync(ARTICLES_FILE)) {
     console.error(`❌ articles.json not found at: ${ARTICLES_FILE}`);
     console.error('   Run your article pipeline first, then re-run build.js');
@@ -663,8 +808,7 @@ async function build() {
 
   const categories = [...new Set(articles.map(a => a.category).filter(Boolean))].sort();
 
-  // ── Copy articles.json into dist/ so the SPA can fetch it ───────────────────
-  // This MUST happen before any page is served — it's the data source for the JS.
+  // Copy articles.json into dist/ so the SPA can fetch it
   fs.copyFileSync(ARTICLES_FILE, path.join(OUT_DIR, 'articles.json'));
   console.log('  ✓ articles.json (copied to dist/)');
 
@@ -673,10 +817,11 @@ async function build() {
   write(
     path.join(OUT_DIR, 'index.html'),
     pageShell({
-      title:       `${SITE_NAME} — AI & Technology News`,
-      description: DEFAULT_DESC,
-      canonicalPath: '/',
+      title:            `${SITE_NAME} — AI & Technology News`,
+      description:      DEFAULT_DESC,
+      canonicalPath:    '/',
       breadcrumbSchema: breadcrumbSchema([{ name: SITE_NAME, url: '/' }]),
+      collectionSchema: collectionPageSchema('Latest News', '/', articles),
       preRenderedContent: buildListPrerender(articles, 'Latest News')
     })
   );
@@ -685,9 +830,9 @@ async function build() {
   write(
     path.join(OUT_DIR, 'about.html'),
     pageShell({
-      title:       `About — ${SITE_NAME}`,
-      description: `Learn about TechPulse, the fully automated AI-curated tech news feed summarizing the latest technology stories every 12 hours.`,
-      canonicalPath: '/about',
+      title:            `About — ${SITE_NAME}`,
+      description:      `Learn about TechPulse, the fully automated AI-curated tech news feed summarizing the latest technology stories every 12 hours.`,
+      canonicalPath:    '/about',
       breadcrumbSchema: breadcrumbSchema([{ name: SITE_NAME, url: '/' }, { name: 'About' }]),
       preRenderedContent: ''
     })
@@ -697,9 +842,9 @@ async function build() {
   write(
     path.join(OUT_DIR, '404.html'),
     pageShell({
-      title:       `Page Not Found — ${SITE_NAME}`,
-      description: 'The page or article you were looking for could not be found.',
-      canonicalPath: '/404',
+      title:            `Page Not Found — ${SITE_NAME}`,
+      description:      'The page or article you were looking for could not be found.',
+      canonicalPath:    '/404',
       preRenderedContent: `
         <div style="text-align:center;padding:80px 24px;">
           <div style="font-size:96px;font-weight:900;opacity:0.3;font-family:Georgia,serif">404</div>
@@ -714,18 +859,20 @@ async function build() {
   console.log(`\n📂 Categories (${categories.length}):`);
   for (const cat of categories) {
     const catArticles = articles.filter(a => a.category === cat);
-    const catSlug = slugify(cat);
-    const desc = `${cat} news and summaries from TechPulse — ${catArticles.length} article${catArticles.length !== 1 ? 's' : ''} curated by AI.`;
+    const catSlug     = slugify(cat);
+    const catPath     = `/category/${catSlug}`;
+    const desc        = `${cat} news and summaries from TechPulse — ${catArticles.length} article${catArticles.length !== 1 ? 's' : ''} curated by AI.`;
     write(
       path.join(OUT_DIR, 'category', `${catSlug}.html`),
       pageShell({
-        title:       `${cat} — ${SITE_NAME}`,
-        description: desc,
-        canonicalPath: `/category/${catSlug}`,
+        title:            `${cat} — ${SITE_NAME}`,
+        description:      desc,
+        canonicalPath:    catPath,
         breadcrumbSchema: breadcrumbSchema([
           { name: SITE_NAME, url: '/' },
-          { name: cat, url: `/category/${catSlug}` }
+          { name: cat, url: catPath }
         ]),
+        collectionSchema: collectionPageSchema(cat, catPath, catArticles),
         preRenderedContent: buildListPrerender(catArticles, cat, catSlug)
       })
     );
@@ -737,8 +884,9 @@ async function build() {
   for (const article of articles) {
     const slug    = articleSlug(article);
     const artPath = `/article/${slug}`;
-    const desc    = excerpt(article);
     const catSlug = slugify(article.category || 'news');
+    const desc    = excerpt(article);
+    const pubTime = isoDate(article.processed_at);
 
     write(
       path.join(OUT_DIR, 'article', `${slug}.html`),
@@ -753,22 +901,28 @@ async function build() {
           { name: article.category || 'News', url: `/category/${catSlug}` },
           { name: article.title || 'Article', url: artPath }
         ]),
+        articleMeta: {
+          author:       article.author   || 'Unknown',
+          publishedTime: pubTime,
+          modifiedTime:  pubTime,
+          section:      article.category || 'Technology',
+          newsKeywords: [article.category, article.source].filter(Boolean).join(', '),
+          tags:         [article.category, article.source].filter(Boolean)
+        },
         preRenderedContent: buildArticlePrerender(article, articles)
       })
     );
+
     written++;
     if (written % 25 === 0) console.log(`     … ${written} / ${articles.length}`);
   }
 
   // ── Sitemap ─────────────────────────────────────────────────────────────────
   console.log('\n🗺️  Infrastructure:');
-  write(path.join(OUT_DIR, 'sitemap.xml'), buildSitemap(articles));
-
-  // ── RSS Feed ─────────────────────────────────────────────────────────────────
-  write(path.join(OUT_DIR, 'feed.xml'), buildRssFeed(articles));
-
-  // ── robots.txt ───────────────────────────────────────────────────────────────
-  write(path.join(OUT_DIR, 'robots.txt'), buildRobotsTxt());
+  write(path.join(OUT_DIR, 'sitemap.xml'),      buildSitemap(articles));
+  write(path.join(OUT_DIR, 'news-sitemap.xml'), buildNewsSitemap(articles));
+  write(path.join(OUT_DIR, 'feed.xml'),         buildRssFeed(articles));
+  write(path.join(OUT_DIR, 'robots.txt'),       buildRobotsTxt());
 
   // ── _redirects (Cloudflare Pages SPA fallback + pretty URLs) ────────────────
   const redirectsSrc = path.join(__dirname, '_redirects');
@@ -793,15 +947,21 @@ async function build() {
   }
 
   // ── Summary ──────────────────────────────────────────────────────────────────
+  const recentCount = articles.filter(a => {
+    const d = new Date(a.processed_at);
+    return !isNaN(d) && Date.now() - d.getTime() < 2 * 24 * 60 * 60 * 1000;
+  }).length;
+
   console.log(`
 ✅ Build complete
    ${articles.length} article pages
    ${categories.length} category pages
-   articles.json — copied to dist/ for client-side fetch
-   sitemap.xml   — ${articles.length + categories.length + 2} URLs
-   feed.xml      — ${Math.min(articles.length, 50)} items
-   robots.txt
-   _redirects    — Cloudflare Pages routing rules
+   articles.json    — copied to dist/ for client-side fetch
+   sitemap.xml      — ${articles.length + categories.length + 2} URLs
+   news-sitemap.xml — ${recentCount} recent article${recentCount !== 1 ? 's' : ''} (< 2 days old)
+   feed.xml         — ${Math.min(articles.length, 50)} items (with content:encoded)
+   robots.txt       — references both sitemaps
+   _redirects       — Cloudflare Pages routing rules
 
 📋 Deploy checklist:
    1. Cloudflare Pages build output directory: dist
@@ -809,7 +969,9 @@ async function build() {
    3. GitHub secrets: CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID
    4. Make sure pipeline.yaml commits articles.json back to the repo
       before Cloudflare triggers its build
-   5. After first deploy, submit /sitemap.xml to Google Search Console
+   5. After first deploy, submit BOTH sitemaps to Google Search Console:
+      • https://techpulse.example.com/sitemap.xml
+      • https://techpulse.example.com/news-sitemap.xml
 `);
 }
 
