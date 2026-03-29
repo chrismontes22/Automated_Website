@@ -1,19 +1,20 @@
-'This is a final warning': Hackers say they'll leak "several terabytes" of ZenBusiness data
+TA446 Deploys Leaked DarkSword iOS Exploit Kit in Targeted Spear-Phishing Campaign
 ============================================================
 
-The cybercriminal group ShinyHunters has issued a ransom demand to ZenBusiness, threatening to leak stolen internal company data if payment is not received by March 25.
+Russian state-sponsored threat group TA446 is now utilizing the leaked DarkSword exploit kit to target iOS devices through sophisticated spear-phishing campaigns aimed at government and financial entities.
 
 **Key points**
-- ShinyHunters set a March 25 deadline for ZenBusiness to pay a ransom or face the public release of stolen internal files.
-- The threat actors reportedly gained access to company systems by using vishing techniques to trick employees into granting remote device access.
-- ZenBusiness, a US-based platform supporting small business formation, joins a list of recent victims including Infinite Campus, Telus, and Crunchyroll.
-- Security researchers warn that the breach could expose sensitive customer and employee personally identifiable information (PII).
+- Cybersecurity firm Proofpoint identified TA446, also known as Star Blizzard, using the DarkSword exploit kit to target iPhone users.
+- The campaign involves spoofed Atlantic Council emails delivering GHOSTBLADE malware and MAYBEROBOT backdoors to high-profile targets like Leonid Volkov.
+- Attackers use server-side filtering to ensure only iOS browsers are redirected to the exploit kit, which includes remote code execution and PAC bypass capabilities.
+- Apple has issued urgent Lock Screen notifications to users on older iOS versions, warning of web-based attacks and urging immediate software updates.
+- The public availability of the DarkSword kit on GitHub has raised concerns that advanced nation-state-level mobile exploits are becoming accessible to less skilled threat actors.
 
 **Why it matters: **
-This incident highlights the growing success of vishing attacks in compromising corporate platforms and underscores the significant data security risks facing small business service providers. A potential leak could damage the company's competitive standing and compromise the private information of its extensive user base.
+The integration of the DarkSword exploit into broader phishing campaigns signals a significant shift in the mobile threat landscape, moving advanced espionage tools toward commodity-style malware. This development challenges the perception of iPhone immunity and forces both Apple and its users to adopt more aggressive security postures against web-based attacks.
 
 ============================================================
-Author:   Sead Fadilpašić
-Source:   TechRadar
-URL:      https://www.techradar.com/pro/security/this-is-a-final-warning-hackers-say-theyll-leak-several-terabytes-of-zenbusiness-data
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/03/ta446-deploys-leaked-darksword-ios.html
 Category: Cybersecurity
