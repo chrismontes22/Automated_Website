@@ -259,7 +259,8 @@ Follow this exact structure and nothing else:
 - Prefer specific nouns and verbs over vague language
 
 **Why it matters: **
-- Exactly 1 to 2 sentences
+- Exactly 2 to 3 sentences
+- Written underneath "Why it matters:"
 - Explain the broader impact, business implication, market relevance, or user relevance
 - Keep it plain-English and objective
 
@@ -953,6 +954,15 @@ class NewsPipeline:
             source = article.get("source", {}).get("name") or "Unknown"
             author = article.get("author") or "Unknown"
             log.info("[%d/%d] %s", idx + 1, total, title[:70])
+
+            if author == "Unknown":
+                log_warning(f"author:{idx}", "No author — skipping")
+                self.tracker.record(ArticleResult(
+                    index=idx, url=url, title=title, source=source, author=author,
+                    success=False, scrape_error="No author",
+                ))
+                time.sleep(self.cfg.inter_request_delay)
+                continue
 
             # ── Step 3: Scrape ──────────────────────────────────────────
             ok, content, err = self.scraper.scrape(article)
