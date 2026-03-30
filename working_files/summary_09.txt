@@ -1,17 +1,17 @@
 Week in review: NIST updates DNS security guidance, compromised LiteLLM PyPI packages
 ============================================================
 
-NIST has released updated DNS security guidance for the first time in over a decade, addressing critical infrastructure protection alongside a surge in supply chain and AI-related vulnerabilities.
+NIST has released updated DNS security guidance for the first time in over a decade, while critical vulnerabilities and supply chain attacks continue to threaten enterprise infrastructure.
 
-Key points
-- NIST published SP 800-81r3, the Secure Domain Name System Deployment Guide, replacing the 2013 version.
-- TeamPCP compromised LiteLLM packages on PyPI, while CISA warned of active exploitation in Langflow and Aqua Security’s Trivy.
-- The FCC banned the import and sale of new foreign-made routers due to national security concerns.
-- NVIDIA donated its Dynamic Resource Allocation (DRA) Driver for GPUs to the Cloud Native Computing Foundation.
-- Mandiant’s M-Trends 2026 report found that attackers now hand off access in as little as 22 seconds.
+**Key points**
+- NIST published SP 800-81r3, replacing 2013-era guidance to address modern DNS security, protocol protection, and infrastructure resilience.
+- CISA warned of active exploitation targeting a critical remote code execution vulnerability (CVE-2025-53521) in F5’s BIG-IP Access Policy Manager.
+- TeamPCP compromised LiteLLM packages on PyPI, injecting credential stealers and malware into the popular open-source library.
+- NVIDIA donated its Dynamic Resource Allocation (DRA) Driver for GPUs to the Cloud Native Computing Foundation to standardize AI workload management.
+- The FCC implemented a ban on the import and sale of new foreign-manufactured routers, citing national security risks.
 
-Why it matters: 
-These developments highlight a critical shift in the threat landscape where legacy infrastructure, such as DNS, is being modernized alongside the rapid, often insecure, integration of AI agents. Organizations must balance the adoption of new automation tools with the reality that attackers are weaponizing vulnerabilities faster than ever, necessitating more rigorous supply chain and identity management.
+**Why it matters: **
+These developments highlight a growing tension between rapid AI-driven innovation and the persistent fragility of foundational network and supply chain security. As organizations struggle to manage fragmented identity systems and AI agent access, the shift toward more rigorous federal standards and open-source security tools reflects an urgent need for better infrastructure visibility.
 
 ============================================================
 Author:   Help Net Security

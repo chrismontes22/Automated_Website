@@ -1,19 +1,20 @@
-Android isn’t ready for desktop PCs if it doesn’t support this basic mouse feature
+Lat.md: Agent Lattice: a knowledge graph for your codebase, written in Markdown
 ============================================================
 
-**Google’s ongoing efforts to transform Android into a desktop-ready operating system face a significant hurdle due to the lack of native, reliable "Back" gesture support for standard computer mice.**
+**The new Lat tool introduces a markdown-based knowledge graph system that helps developers and AI agents maintain codebase documentation, design decisions, and test specifications through interconnected files.**
 
-Key points
-- Android’s "Back" function is a foundational navigation tool that currently lacks consistent, native support for standard mouse clicks or gestures.
-- Users attempting to use a mouse with the Pixel Tablet report that existing workarounds, such as three-button navigation or third-party mapping apps, are cumbersome and inefficient.
-- Current mouse settings in Android 16 QPR3 do not allow users to assign "Back" functionality to hot corners or specific mouse button combinations.
-- While trackpads and keyboards offer some navigation alternatives, Google has yet to provide a seamless, OS-level solution for basic mouse peripherals.
+**Key points**
+- Lat organizes project documentation into a `lat.md/` directory using wiki-style links to connect markdown files and specific source code symbols.
+- The CLI tool includes `lat check` to enforce referential consistency between documentation and code, preventing information drift as projects evolve.
+- Developers can annotate source code with `@lat` comments to create bidirectional links between implementation logic and architectural concepts.
+- The system supports semantic search via OpenAI or Vercel AI Gateway, allowing agents to retrieve context faster than traditional grep-based methods.
+- Test specifications can be enforced by requiring code mentions, ensuring that documentation and test coverage remain synchronized.
 
-Why it matters: 
-The inability to navigate backward efficiently undermines the usability of Android’s emerging desktop mode, which relies on fluid window management. If Google intends for Android to compete as a viable desktop operating system, it must prioritize intuitive mouse integration to ensure a seamless experience for professional and casual users alike.
+**Why it matters: **
+This tool addresses the common problem of "documentation rot" where codebase context is lost or becomes outdated as projects scale. By integrating documentation directly into the development workflow, it enables AI agents to operate with higher accuracy and helps human teams maintain a clear record of architectural decisions.
 
 ============================================================
-Author:   Rita El Khoury
-Source:   Android Authority
-URL:      https://www.androidauthority.com/android-not-ready-for-desktop-pcs-without-basic-mouse-feature-3651487/
-Category: Phones, Laptops, and Gadgets
+Author:   1st1
+Source:   Github.com
+URL:      https://github.com/1st1/lat.md
+Category: Artificial Intelligence
