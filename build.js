@@ -167,7 +167,12 @@ function basicMarkdownToHtml(md) {
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;');
 
-  // Headings
+  // ── FIX: Ensure blank line after bold standalone headers ──
+  // This separates headers like "**Why it matters**" from following paragraphs
+  html = html.replace(/^\*\*(.+?)\*\*\s*$/gm, '**$1**\n\n');
+  // ──────────────────────────────────────────────────────────
+
+  // Headings (# style)
   html = html.replace(/^### (.+)$/gm, '<h3>$1</h3>');
   html = html.replace(/^## (.+)$/gm,  '<h2>$1</h2>');
   html = html.replace(/^# (.+)$/gm,   '<h2>$1</h2>');

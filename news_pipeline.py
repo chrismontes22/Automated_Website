@@ -270,7 +270,6 @@ Style rules:
 - Do not invent facts
 - Do not change the headings
 - Do not add any sections beyond the three specified above
-- "Key Points" and "Why it Matters" are section headers. They should not have have * or "
 
 Article:
 {text}
