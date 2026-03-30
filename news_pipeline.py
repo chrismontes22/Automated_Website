@@ -258,7 +258,7 @@ Follow this exact structure and nothing else:
 - Include concrete facts, names, numbers, products, companies, dates, or locations when present
 - Prefer specific nouns and verbs over vague language
 
-**Why it matters: **
+**Why it matters**
 - Exactly 2 to 3 sentences
 - Explain the broader impact, business implication, market relevance, or user relevance
 - Keep it plain-English and objective
