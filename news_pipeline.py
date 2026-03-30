@@ -36,7 +36,6 @@ from dotenv import load_dotenv
 
 try:
     from google import genai
-    from google.genai import types as genai_types
     GEMINI_AVAILABLE = True
 except ImportError:
     GEMINI_AVAILABLE = False
@@ -139,9 +138,6 @@ class PipelineConfig:
     classifier_model: str
     classifier_delay: float
 
-    # AI / Timeout
-    gemini_timeout: int
-
     # Categories (loaded from config; determines what the classifier accepts)
     valid_categories: list[str]
 
@@ -208,7 +204,6 @@ class PipelineConfig:
             temperature         = float(ai["temperature"]),
             classifier_model    = str(ai["classifier_model"]),
             classifier_delay    = float(ai["classifier_delay"]),
-            gemini_timeout      = int(ai.get("gemini_timeout", 60)),
             valid_categories    = list(cats),
             success_goal        = int(pip["success_goal"]),
             retry_attempts      = int(pip["retry_attempts"]),
@@ -263,7 +258,7 @@ Follow this exact structure and nothing else:
 - Include concrete facts, names, numbers, products, companies, dates, or locations when present
 - Prefer specific nouns and verbs over vague language
 
-**Why It Matters**
+**Why it matters: **
 - Exactly 2 to 3 sentences
 - Explain the broader impact, business implication, market relevance, or user relevance
 - Keep it plain-English and objective
@@ -577,18 +572,6 @@ class ArticleSummarizer:
                 "max_output_tokens": self.cfg.max_output_tokens,
                 "temperature": self.cfg.temperature,
             },
-            # ----------------------------------------------------------------
-            # Timeout guard: prevents a stalled TCP connection from hanging the
-            # entire pipeline indefinitely.  Without this, a hung API call
-            # never raises an exception, so with_retry never fires and the
-            # process blocks forever (visible in logs as the last line being
-            # "AFC is enabled with max remote calls: 10." with nothing after).
-            # When the timeout fires the library raises an exception, which
-            # with_retry catches and retries up to cfg.retry_attempts times.
-            # ----------------------------------------------------------------
-            request_options=genai_types.RequestOptions(
-                timeout=self.cfg.gemini_timeout,
-            ),
         )
         summary = (response.text or "").strip()
         if len(summary) < 50:
@@ -659,14 +642,6 @@ class ArticleClassifier:
                 "max_output_tokens": 20,
                 "temperature": 0,   # always deterministic for classification
             },
-            # ----------------------------------------------------------------
-            # Same timeout guard as the summarizer — see comment there for the
-            # full explanation.  Classification calls are cheaper/faster, but
-            # they are just as susceptible to a hung connection.
-            # ----------------------------------------------------------------
-            request_options=genai_types.RequestOptions(
-                timeout=self.cfg.gemini_timeout,
-            ),
         )
         return (response.text or "").strip()
 

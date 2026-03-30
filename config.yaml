@@ -53,8 +53,8 @@ ai:
 # ── Pipeline Control ──
 pipeline:
   success_goal: 20
-  retry_attempts: 3              # attempts per retryable API/scrape call
-  retry_backoff: 2.0             # base back-off in seconds (doubles each retry)
+  retry_attempts: 6              # attempts per retryable API/scrape call
+  retry_backoff: 8.0             # base back-off in seconds (doubles each retry)
   inter_request_delay: 1.0       # polite pause between article scrapes
 
 # ── Paths ──
