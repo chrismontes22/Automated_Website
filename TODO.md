@@ -28,9 +28,13 @@ It\u2019s 2026, and I still can\u2019t believe Apple won\u2019t change the most 
 
 - articles.json does not match count log
 
+-rate limit on a 503 api 
+
 FIRST THING:
 
 -remove categories tracked
 -automated colour scheme
 
 
+-categorizer prompt for author check
+-summarizer prompt for Why it matters
