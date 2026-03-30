@@ -1,20 +1,20 @@
-New report claims Kingdom Come: Deliverance 2 studio fired translator to replace them with AI and "save finances"
+Lat.md: Agent Lattice: a knowledge graph for your codebase, written in Markdown
 ============================================================
 
-A former translator at Warhorse Studios claims he was terminated on March 27 after the company decided to replace his role with artificial intelligence to reduce operational costs.
+**The new Lat tool creates a structured knowledge graph for codebases using interconnected markdown files, enabling AI agents and developers to maintain context and documentation more efficiently.**
 
-**Key points**
-- Max H., a translator with over three and a half years of tenure, was informed his position was obsolete.
-- Warhorse Studios management cited the need to improve company effectiveness and save finances as reasons for the staffing change.
-- The developer publicly disclosed the termination to highlight the growing impact of AI integration on job security within the gaming industry.
-- Max H. explicitly requested that fans refrain from harassing studio employees or review-bombing Warhorse Studios titles on Steam.
-- The incident follows recent industry controversies regarding AI usage, including Pearl Abyss’s undisclosed use of generative tools for visual assets.
+Key points
+- Lat organizes project documentation into a lat.md/ directory, using wiki-style links to connect markdown files, business logic, and specific source code symbols.
+- The system includes a CLI that enforces referential consistency, ensuring that documentation and code do not drift apart as projects evolve.
+- Developers can use the lat check command to validate links and ensure test specifications are properly referenced within the codebase.
+- The tool supports semantic search via OpenAI or Vercel AI Gateway, allowing agents to retrieve design decisions and constraints without performing manual grep searches.
+- Lat requires Node.js 22+ and pnpm, providing hooks for CI tasks, pre-commit checks, and GitHub bot integration to automate knowledge maintenance.
 
-**Why it matters: **
-This incident highlights the increasing tension between game developers and management as studios adopt AI tools to streamline production and reduce labor costs. It serves as a prominent example of how automation is actively displacing specialized roles, fueling broader industry debates regarding the ethical implementation of generative technology.
+Why it matters: 
+As codebases grow, traditional documentation often becomes outdated or lost, leading to AI hallucinations and developer inefficiency. By embedding a persistent knowledge graph directly into the repository, Lat ensures that both human developers and AI agents maintain a shared, accurate understanding of system architecture and design intent.
 
 ============================================================
-Author:   Vikki Blake
-Source:   Eurogamer.net
-URL:      https://www.eurogamer.net/new-report-claims-kingdom-come-deliverance-2-studio-fired-translator-to-replace-them-with-ai-and-save-finances
+Author:   1st1
+Source:   Github.com
+URL:      https://github.com/1st1/lat.md
 Category: Artificial Intelligence
