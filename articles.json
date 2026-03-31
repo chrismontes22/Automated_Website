@@ -1,5 +1,131 @@
 [
   {
+    "source": "Forbes",
+    "title": "FBI Issues Dangerous Streaming Hack Warning For Hundreds Of Millions",
+    "author": "Davey Winder, Senior Contributor",
+    "category": "Cybersecurity",
+    "summary": "**The FBI has issued a critical security advisory warning that hackers are compromising streaming devices and routers to route illicit internet traffic through residential proxy networks.**\n\n**Key points**\n- The FBI advisory I-031226-PSA warns that cybercriminals use compromised home devices to mask their identities and locations.\n- Attackers leverage residential proxies to facilitate account takeovers, phishing campaigns, and large-scale brute force attacks.\n- Compromised devices, including streaming boxes and routers, allow hackers to bypass geolocation-based security alerts and rate-limiting mechanisms.\n- The FBI advises users to avoid \"free\" streaming services, use only trusted app stores, and keep all device firmware updated.\n- Users should exercise caution with free VPN applications and avoid downloading pirated software that may contain malicious payloads.\n\n**Why it matters**\nThis advisory highlights a significant shift in how cybercriminals exploit everyday consumer hardware to conduct sophisticated, large-scale attacks. By turning home devices into unwitting proxies, hackers can effectively frame innocent users for illegal activity while successfully bypassing standard banking and network security protocols.",
+    "processed_at": "2026-03-31T02:12:00.568145",
+    "url": "https://www.forbes.com/sites/daveywinder/2026/03/29/fbi-issues-critical-streaming-hack-warning/"
+  },
+  {
+    "source": "Buchodi.com",
+    "title": "ChatGPT Won't Let You Type Until Cloudflare Reads Your React State",
+    "author": "Buchodi",
+    "category": "Cybersecurity",
+    "summary": "**Cloudflare Turnstile uses advanced application-layer fingerprinting to verify ChatGPT users by confirming their browser has fully executed the site's specific React framework and internal state.**\n\n**Key points**\n- The system collects 55 distinct properties across browser hardware, network headers, and React application internals.\n- Detection requires the browser to fully render and hydrate the ChatGPT React application, blocking headless bots that only load raw HTML.\n- Turnstile bytecode is encrypted via XOR, but the decryption key is embedded directly within the payload sent to the browser.\n- Additional security layers include a behavioral biometric monitor tracking mouse and keyboard patterns, plus a Proof of Work challenge.\n- Data is persisted locally in the browser's storage to maintain fingerprint consistency across page loads.\n\n**Why it matters**\nThis analysis reveals that modern bot detection has shifted from simple browser checks to verifying the execution of complex application-layer frameworks. By requiring a fully rendered React environment, platforms like OpenAI can effectively distinguish between human users and automated scripts that attempt to bypass standard security measures.",
+    "processed_at": "2026-03-31T02:12:09.986527",
+    "url": "https://www.buchodi.com/chatgpt-wont-let-you-type-until-cloudflare-reads-your-react-state-i-decrypted-the-program-that-does-it/"
+  },
+  {
+    "source": "Yanko Design",
+    "title": "Tati Ferrucio’s Onda Clog Is the Most Geologically Correct Shoe Ever Made",
+    "author": "Sarang Sheth",
+    "category": "Artificial Intelligence",
+    "summary": "Designer Tati Ferrucio has unveiled the Onda, an innovative, geologically inspired foam clog concept developed through an AI-assisted design workflow using the platform Vizcom.\n\n**Key points**\n- The Onda features a seamless, monolithic design inspired by natural textures like sandstone, tree bark, and wave patterns.\n- Designer Tati Ferrucio utilized Vizcom to iterate on sketches, maintaining creative control to achieve a layered, sediment-like aesthetic.\n- Functional cutouts are integrated into the ribbed structure to allow for water and sand drainage during outdoor use.\n- The concept is currently available in three colorways: grey-blue, sand beige, and sage green.\n- The project serves as a demonstration of how AI tools can enhance industrial design while preserving the designer's original intent.\n\n**Why it matters**\nThe Onda highlights the growing potential for AI-assisted platforms to push the formal boundaries of footwear design beyond traditional athletic aesthetics. By demonstrating how designers can maintain creative authority while using generative tools, the project suggests a new path for rapid, high-quality product development in the fashion industry.",
+    "processed_at": "2026-03-31T02:17:39.438146",
+    "url": "https://www.yankodesign.com/2026/03/29/tati-ferrucios-onda-clog-is-the-most-geologically-correct-shoe-ever-made/"
+  },
+  {
+    "source": "MakeUseOf",
+    "title": "One app was tanking my PC performance, and I had no idea until I checked this",
+    "author": "Kanika Gogia",
+    "category": "Phones, Laptops, and Gadgets",
+    "summary": "**Windows users experiencing sluggish system performance can often resolve issues by using Task Manager to identify and disable resource-heavy background applications instead of purchasing expensive hardware upgrades.**\n\n**Key points**\n- Windows Task Manager allows users to monitor real-time CPU and memory usage to identify specific processes causing system lag.\n- Common performance bottlenecks include excessive startup apps, idle background software, and poorly optimized browser extensions or tabs.\n- Users should verify the identity of unknown processes online before ending tasks to avoid disrupting critical system functions.\n- Disabling unnecessary startup programs can significantly improve boot times and overall responsiveness without requiring new hardware.\n\n**Why it matters**\nMany users mistakenly attribute slow computer performance to aging hardware, leading to unnecessary spending on RAM or new devices. Utilizing built-in diagnostic tools like Task Manager empowers users to troubleshoot software-based inefficiencies and maintain system health effectively.",
+    "processed_at": "2026-03-31T02:17:50.087859",
+    "url": "https://www.makeuseof.com/one-app-tanking-pc-performance-had-no-idea-until-checked-this/"
+  },
+  {
+    "source": "Fortune",
+    "title": "Big tech was embracing clean energy and turning a corner on climate change. Then AI data centers arrived",
+    "author": "Tammy Webber, The Associated Press",
+    "category": "Artificial Intelligence",
+    "summary": "**The rapid expansion of artificial intelligence is forcing major tech companies to rely on fossil fuels, complicating their long-term commitments to achieve carbon neutrality by 2030.**\n\n**Key points**\n- Google, Microsoft, Amazon, and Meta have seen their total greenhouse gas emissions rise by 23% to 60% over the last five years.\n- Data centers currently consume 4.6% of U.S. electricity, a figure projected to nearly triple by 2028 due to AI infrastructure demands.\n- Natural gas accounted for over 40% of the electricity powering U.S. data centers in 2024, despite corporate pledges to transition to clean energy.\n- Federal policy shifts, including the cancellation of renewable energy grants and tax credits, are hindering the development of wind and solar projects.\n- Tech firms are increasingly investing in new natural gas plants to meet immediate power needs while attempting to offset emissions through renewable energy credits.\n\n**Why it matters**\nThe surge in energy demand from AI data centers is creating a significant conflict between the tech industry's rapid growth and its environmental sustainability targets. This reliance on fossil fuels threatens to stall global progress on climate change and may force major corporations to officially revise or extend their long-term carbon-reduction timelines.",
+    "processed_at": "2026-03-31T02:18:24.177951",
+    "url": "https://fortune.com/2026/03/29/big-tech-climate-change-goals-data-centers-ai-fossil-fuels/"
+  },
+  {
+    "source": "Theregister.com",
+    "title": "DXC staff to strike in Australia after some go without pay rise for five years",
+    "author": "Simon Sharwood",
+    "category": "Tech Business & Markets",
+    "summary": "**DXC Technology employees in Australia are initiating strike action following 14 months of failed pay negotiations, as broader economic pressures threaten IT spending across the Asia-Pacific region.**\n\n**Key points**\n- DXC staff are striking after some employees reportedly went five years without a pay increase despite a 24 percent rise in Australian living costs.\n- Analyst firm Forrester warns that regional IT spending growth may slow to 9.3 percent in 2026 due to potential economic fallout from the war in Iran.\n- IDC predicts a 13.7 percent decline in Asia-Pacific PC shipments this year, driven by component shortages and memory-maker prioritization of datacenter hardware.\n- Toshiba, Mitsubishi, and ROHM have entered preliminary discussions to potentially merge their semiconductor businesses to improve global competitiveness.\n- NEC is shifting its datacenter strategy toward a \"best-mix model,\" spinning off two Japanese facilities into a joint venture with DigitalBridge and JEXI.\n- NTT has developed high-speed network technology capable of sub-100 microsecond communication to help stabilize plasma within experimental fusion reactors.\n\n**Why it matters**\nThe industrial action at DXC highlights growing labor tensions in the IT services sector, which could disrupt critical infrastructure for Australian banks and government agencies. Simultaneously, the combination of geopolitical instability and hardware shortages suggests a challenging period ahead for regional technology budgets and supply chain stability.",
+    "processed_at": "2026-03-31T02:18:34.534241",
+    "url": "https://www.theregister.com/2026/03/30/asia_tech_news_roundup/"
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "FBI confirms hack of Director Patel's personal email inbox",
+    "author": "Ionut Ilascu",
+    "category": "Cybersecurity",
+    "summary": "**Handala hackers linked to Iran have compromised the personal Gmail account of FBI Director Kash Patel, leaking private photos and documents in retaliation for recent U.S. government sanctions.**\n\n**Key points**\n- The Iran-affiliated hacktivist group Handala claimed responsibility for breaching Director Kash Patel’s personal email account.\n- The FBI confirmed the incident, stating the stolen data is historical and does not include classified government information.\n- Hackers published watermarked personal photos and correspondence to retaliate against U.S. domain seizures and a $10 million bounty.\n- The U.S. Department of State continues to offer a $10 million reward for information identifying members of the Handala group.\n- Handala, also known as Hatef or Hamsa, is linked to Iran’s Ministry of Intelligence and Security and previously targeted the medical firm Stryker.\n\n**Why it matters**\nThis breach highlights the ongoing vulnerability of high-ranking government officials when using personal email accounts for sensitive communications. It underscores the persistent threat posed by state-sponsored hacktivist groups targeting U.S. leadership in response to geopolitical tensions and federal law enforcement actions.",
+    "processed_at": "2026-03-31T02:18:54.186950",
+    "url": "https://www.bleepingcomputer.com/news/security/fbi-confirms-hack-of-director-patels-personal-email-inbox/"
+  },
+  {
+    "source": "The Times of India",
+    "title": "Iran and US have been fighting a silent war without bombs or bullets for over a decade",
+    "author": "Trending Desk",
+    "category": "Cybersecurity",
+    "summary": "**One-sentence headline summary**\nIran-linked hacking groups continue to target critical infrastructure and government officials, marking a shift from simple service disruption to sophisticated, long-term strategic cyber campaigns against Western interests.\n\n**Key points**\n- Operation Ababil utilized coordinated DDoS attacks to disrupt major United States financial institutions and online banking services.\n- Operation Cleaver expanded Iranian cyber efforts to probe vulnerabilities within energy, aviation, and transportation networks.\n- A pro-Iranian hacking group recently claimed to infiltrate the personal account of FBI Director Kash Patel, leaking dated documents.\n- Former CIA Director John Brennan has publicly characterized Iran’s evolving cyber capabilities as highly sophisticated and capable of widespread disruption.\n- Tehran’s strategy focuses on asymmetric, low-cost, and deniable operations rather than achieving traditional military dominance.\n\n**Why it matters**\nThese persistent cyber operations demonstrate how nations use low-cost digital tactics to exert geopolitical pressure and psychological influence without triggering conventional military conflict. As these capabilities mature, they pose a continuous risk to the stability of critical infrastructure and the security of high-level government officials.",
+    "processed_at": "2026-03-31T02:23:35.890661",
+    "url": "https://economictimes.indiatimes.com/news/new-updates/iran-and-us-have-been-fighting-a-silent-war-without-bombs-or-bullets-for-over-a-decade/articleshow/129882536.cms"
+  },
+  {
+    "source": "TechRadar",
+    "title": "Save up to $300 on this RTX 5070Ti-powered gaming PC with 32GB RAM and a free copy of Resident Evil Requiem",
+    "author": "Jessica Reyes",
+    "category": "Phones, Laptops, and Gadgets",
+    "summary": "iBuyPower has discounted its RDY Element Pro R08 gaming PC to $2,399.99, offering a $300 total savings when using the promotional code CLEARANCE during the current clearance sale.\n\n**Key points**\n- The iBuyPower RDY Element Pro R08 features an AMD Ryzen 7 9800X3D processor, an NVIDIA GeForce RTX 5070 Ti graphics card, and 32GB of RAM.\n- Customers can reduce the original $2,699.99 price by $300 by applying the code CLEARANCE at checkout.\n- The bundle includes an RGB mechanical keyboard, an RGB gaming mouse, and a complimentary copy of the game Resident Evil Requiem.\n- The system is positioned as a high-performance, future-proof desktop capable of handling modern gaming titles at 1080p resolution and higher.\n\n**Why it matters**\nThis deal provides a significant price reduction on a high-end pre-built system during a period of market volatility regarding RAM and storage component pricing. For consumers, the inclusion of essential peripherals and software adds immediate value to a hardware investment intended for long-term use.",
+    "processed_at": "2026-03-31T02:32:04.877164",
+    "url": "https://www.techradar.com/computing/gaming-pcs/save-up-to-usd300-on-this-rtx-5070ti-powered-gaming-pc-with-32gb-ram-and-a-free-copy-of-resident-evil-requiem"
+  },
+  {
+    "source": "R-bloggers.com",
+    "title": "rOpenSci News Digest, March 2026",
+    "author": "rOpenSci",
+    "category": "Artificial Intelligence",
+    "summary": "rOpenSci has updated its software peer review process to include generative AI disclosures, released a trilingual development guide, and announced new mentorship cohorts for its Champions program.\n\n**Key points**\n- Authors submitting software for peer review must now disclose the use of generative AI tools via a mandatory submission template.\n- The rOpenSci Dev Guide 1.0.0 is now available in English, Spanish, and Portuguese to support a broader developer community.\n- The ropensci-review-bot now automatically identifies similar packages from CRAN and rOpenSci to assist in the review process.\n- R-Universe now allows users to download artifacts and log files without requiring a GitHub login.\n- The organization added the \"suwo\" package to its suite and announced that Heather Turner has joined the R Core Team.\n\n**Why it matters**\nThese updates reflect the growing integration of generative AI in software development and the organization's commitment to maintaining rigorous, transparent peer-review standards. By expanding language support and automating package matching, rOpenSci continues to lower barriers for global contributors while ensuring the quality of the R ecosystem.",
+    "processed_at": "2026-03-31T02:32:14.937770",
+    "url": "https://www.r-bloggers.com/2026/03/ropensci-news-digest-march-2026/"
+  },
+  {
+    "source": "Digital Journal",
+    "title": "The latest Instagram and Facebook scams to watch out for",
+    "author": "Dr. Tim Sandle",
+    "category": "Cybersecurity",
+    "summary": "**AdMove AI CEO Daniel Damien warns social media users about rising 2026 fraud trends on Facebook and Instagram, offering essential security strategies to protect personal and financial information.**\n\n**Key points**\n- Common Facebook threats include phishing links, romance scams, fake charity pleas, and deceptive quizzes designed to harvest security question answers.\n- Instagram users face risks from bogus brand collaborations, fake investment schemes, and fraudulent giveaways that target financial data.\n- Experts recommend setting profiles to private to restrict access to personal information and unsolicited direct messages.\n- Enabling two-factor authentication and using strong, unique passwords prevents unauthorized account access from unrecognized devices.\n- Users should verify brand authenticity via blue checkmarks and regularly audit connected third-party applications for suspicious activity.\n\n**Why it matters**\nAs cybercriminals increasingly exploit the massive user bases of Facebook and Instagram, understanding these evolving tactics is critical for maintaining digital security. Implementing these proactive defense measures helps users safeguard their personal identities and financial assets against sophisticated online fraud.",
+    "processed_at": "2026-03-31T02:32:24.047763",
+    "url": "https://www.digitaljournal.com/social-media/the-latest-instagram-and-facebook-scams-to-watch-out-for/article"
+  },
+  {
+    "source": "GlobeNewswire",
+    "title": "Former CIA Advisor: The Race to Build AI May Be Creating the Conditions for Its Own Collapse",
+    "author": "Ex-CIA Jim Rickards",
+    "category": "Tech Business & Markets",
+    "summary": "**Economist Jim Rickards warns that the rapid, competitive expansion of artificial intelligence infrastructure may be creating unsustainable financial risks that could trigger a broader market disruption.**\n\n**Key points**\n- Economist Jim Rickards argues that massive capital investment in AI data centers and computing power is driven by competitive pressure rather than steady economic demand.\n- The current AI buildout involves complex, interconnected financial partnerships that could distribute systemic risk across the technology sector if one major player faces distress.\n- Rickards draws parallels between the current AI investment surge and the late 1990s internet boom, citing historical patterns of overspending followed by market resets.\n- The analysis suggests that a downturn in AI spending could negatively impact diverse industries, including energy, manufacturing, and finance, due to deep economic integration.\n\n**Why it matters**\nThis perspective highlights potential structural vulnerabilities in the global economy as AI infrastructure becomes a central pillar of modern business operations. Understanding these risks is essential for investors and policymakers who must weigh the benefits of rapid technological innovation against the dangers of a potential market correction.",
+    "processed_at": "2026-03-31T02:32:44.184167",
+    "url": "https://www.globenewswire.com/news-release/2026/03/29/3264256/0/en/Former-CIA-Advisor-The-Race-to-Build-AI-May-Be-Creating-the-Conditions-for-Its-Own-Collapse.html"
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Bittensor ecosystem tokens' value hit $1.5 billion as Jensen Huang endorsement supports TAO rally",
+    "author": "Shaurya Malwa",
+    "category": "Artificial Intelligence",
+    "summary": "**One-sentence headline summary**\nThe Bittensor ecosystem reached a $1.5 billion market valuation as the TAO token surged 90% following high-profile endorsements from Nvidia CEO Jensen Huang and successful decentralized AI model training.\n\n**Key points**\n- Bittensor’s native TAO token rose from $180 to over $332 in March, driving significant gains across its 128 specialized subnets.\n- Subnet 3’s Covenant-72B model achieved a 67.1 MMLU score, demonstrating that decentralized networks can produce AI models competitive with industry-standard proprietary systems.\n- Subnet tokens function as leveraged assets because their value is tied to TAO reserves, leading to monthly gains of 200% to 444% for top-performing projects.\n- Nvidia CEO Jensen Huang and investor Chamath Palihapitiya publicly endorsed Bittensor’s decentralized approach, significantly boosting market confidence in the protocol.\n- The network plans to expand to 256 subnets later this year, with potential institutional interest growing around a possible future TAO spot ETF.\n\n**Why it matters**\nThe rapid growth of Bittensor highlights a shift toward decentralized infrastructure for training large language models, challenging the dominance of centralized AI labs. Investors are increasingly viewing these subnet tokens as high-beta plays on the broader adoption of decentralized artificial intelligence and blockchain-based compute resources.",
+    "processed_at": "2026-03-31T02:33:14.846445",
+    "url": "https://www.coindesk.com/tech/2026/03/25/bittensor-ecosystem-tokens-value-hit-usd1-5-billion-as-jensen-huang-endorsement-supports-tao-rally"
+  },
+  {
+    "source": "Twit.tv",
+    "title": "This Week in Tech 1077: I Would Download a Car",
+    "author": "TWiT",
+    "category": "Tech Business & Markets",
+    "summary": "**Meta and Google face mounting legal challenges as courts rule on platform addictiveness, signaling a potential shift in how tech companies are held accountable for user engagement practices.**\n\n**Key points**\n- Courts found Meta and Google liable for social media addictiveness, potentially triggering a wave of future litigation.\n- Anthropic secured a preliminary injunction against the Department of Defense regarding alleged First Amendment retaliation in AI contracting.\n- The Supreme Court ruled in favor of Cox, establishing that internet service providers are not liable for user-led copyright piracy.\n- Walmart announced plans to implement digital shelf pricing across all U.S. locations by the end of 2026.\n- A supply chain attack involving LiteLLM malware compromised approximately 47,000 AI developers.\n- GrapheneOS is actively resisting new age verification laws, citing concerns over user privacy and operating system compliance.\n\n**Why it matters**\nThese legal developments suggest a tightening regulatory environment that could fundamentally alter the business models of major technology platforms. As courts weigh the liability of digital services, companies must navigate increasing scrutiny regarding user safety, data privacy, and the ethical deployment of artificial intelligence.",
+    "processed_at": "2026-03-31T02:37:35.441039",
+    "url": "https://twit.tv/shows/this-week-in-tech/episodes/1077"
+  },
+  {
     "source": "Slashdot.org",
     "processed_at": "2026-03-30T19:45:35.564841",
     "url": "https://tech.slashdot.org/story/26/03/29/1832200/blueskys-newest-product-an-ai-tool-that-gives-you-custom-feeds",
