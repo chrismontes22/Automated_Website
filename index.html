@@ -5,37 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
 
-  <!-- ══ SEO: PRIMARY META (updated dynamically on navigation) ══ -->
-  <title>TechPulse — AI & Technology News</title>
+  <title>TechPulse — AI &amp; Technology News</title>
   <meta name="description" content="TechPulse is a fully automated AI-curated tech news feed. Get clear, jargon-free summaries of the latest technology stories updated every 12 hours." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://techpulse.example.com/" />
 
-  <!-- ══ SEO: OPEN GRAPH ══ -->
   <meta property="og:type"         content="website" />
   <meta property="og:site_name"    content="TechPulse" />
-  <meta property="og:title"        content="TechPulse — AI & Technology News" />
+  <meta property="og:title"        content="TechPulse — AI &amp; Technology News" />
   <meta property="og:description"  content="AI-curated tech news summaries updated every 12 hours. Clear, jargon-free briefings on AI, software, hardware, and more." />
   <meta property="og:url"          content="https://techpulse.example.com/" />
   <meta property="og:image"        content="https://techpulse.example.com/og-image.png" />
   <meta property="og:image:width"  content="1200" />
   <meta property="og:image:height" content="630" />
 
-  <!-- ══ SEO: TWITTER CARD ══ -->
   <meta name="twitter:card"        content="summary_large_image" />
   <meta name="twitter:site"        content="@TechPulseAI" />
-  <meta name="twitter:title"       content="TechPulse — AI & Technology News" />
+  <meta name="twitter:title"       content="TechPulse — AI &amp; Technology News" />
   <meta name="twitter:description" content="AI-curated tech news summaries updated every 12 hours." />
   <meta name="twitter:image"       content="https://techpulse.example.com/og-image.png" />
 
-  <!-- ══ SEO: FEED DISCOVERY ══ -->
   <link rel="alternate" type="application/rss+xml" title="TechPulse — Latest Articles" href="/feed.xml" />
 
-  <!-- ══ THEME COLOR (browser chrome on mobile) ══ -->
   <meta name="theme-color" content="#e07838" media="(prefers-color-scheme: dark)" />
   <meta name="theme-color" content="#d4641a" media="(prefers-color-scheme: light)" />
 
-  <!-- ══ SEO: JSON-LD — static schemas always present ══ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -63,11 +57,9 @@
   }
   </script>
 
-  <!-- ══ SEO: DYNAMIC JSON-LD SLOTS (JS updates these on navigation) ══ -->
   <script type="application/ld+json" id="jsonld-article"></script>
   <script type="application/ld+json" id="jsonld-breadcrumb"></script>
 
-  <!-- ══ PERFORMANCE ══ -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
@@ -94,7 +86,8 @@
       --shadow-md:   0 4px 16px rgba(0,0,0,0.30);
       --shadow-lg:   0 12px 40px rgba(0,0,0,0.45);
       --shadow-xl:   0 20px 60px rgba(0,0,0,0.50);
-      --header-bg:   rgba(30,27,24,0.88);
+      --header-bg:   rgba(30,27,24,0.92);
+      --footer-bg:   rgba(30,27,24,0.92);
       --search-overlay-bg: rgba(15,13,11,0.72);
       --card-hover-shadow: var(--shadow-md);
       --stat-gradient: linear-gradient(135deg, var(--accent-bg) 0%, transparent 60%);
@@ -103,7 +96,8 @@
       --scrollbar-thumb-hover: var(--accent);
       --glow-soft: 0 0 40px rgba(224,120,56,0.08);
       --nav-scroll-indicator: linear-gradient(90deg, var(--bg) 0%, transparent 10%, transparent 90%, var(--bg) 100%);
-      /* ── FIXED: these must live inside :root to be inherited ── */
+      --header-height: 108px;
+      --footer-height: 60px;
       --font-serif: "Playfair Display", Georgia, serif;
       --font-sans:  "IBM Plex Sans", system-ui, sans-serif;
       --font-mono:  "IBM Plex Mono", monospace;
@@ -130,7 +124,8 @@
       --shadow-md:   0 4px 16px rgba(45,42,38,0.08);
       --shadow-lg:   0 12px 40px rgba(45,42,38,0.12);
       --shadow-xl:   0 20px 60px rgba(45,42,38,0.16);
-      --header-bg:   rgba(250,249,246,0.88);
+      --header-bg:   rgba(250,249,246,0.92);
+      --footer-bg:   rgba(250,249,246,0.92);
       --search-overlay-bg: rgba(30,28,25,0.50);
       --card-hover-shadow: 0 6px 24px rgba(45,42,38,0.10);
       --stat-gradient: linear-gradient(135deg, rgba(212,100,26,0.06) 0%, transparent 60%);
@@ -151,12 +146,14 @@
       min-height: 100vh;
       -webkit-font-smoothing: antialiased;
       transition: background var(--transition), color var(--transition);
+      padding-top: var(--header-height);
+      padding-bottom: var(--footer-height);
     }
     a { color: inherit; text-decoration: none; }
 
-    /* ── HEADER ────────────────────────────────────────────────────── */
+    /* ── HEADER (FIXED) ─────────────────────────────────────────────── */
     header {
-      position: sticky; top: 0; z-index: 100;
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       background: var(--header-bg);
       backdrop-filter: blur(20px) saturate(180%);
       border-bottom: 1px solid var(--border);
@@ -177,7 +174,7 @@
     }
     .logo:hover { transform: scale(1.02); }
     .logo span { color: var(--accent); }
-    .header-right { display: flex; align-items: center; gap: 14px; flex-shrink: 0; margin-left: auto; }
+    .header-right { display: flex; align-items: center; gap: 10px; flex-shrink: 0; margin-left: auto; }
     .header-categories { max-width: 1280px; margin: 0 auto; padding: 0 28px; height: 44px; display: flex; align-items: center; }
 
     nav[aria-label="Main navigation"] {
@@ -243,6 +240,29 @@
     .theme-toggle .moon-icon { display: block; }
     [data-theme="light"] .theme-toggle .sun-icon { display: block; }
     [data-theme="light"] .theme-toggle .moon-icon { display: none; }
+
+    /* ── LAYOUT TOGGLE ──────────────────────────────────────────────── */
+    .layout-toggle {
+      display: inline-flex; align-items: center;
+      background: var(--surface); border: 1px solid var(--border-soft);
+      border-radius: var(--radius); padding: 3px;
+      gap: 2px; flex-shrink: 0;
+      box-shadow: var(--shadow-sm);
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+    .layout-toggle:hover { border-color: var(--accent); box-shadow: var(--shadow-md), var(--glow-soft); }
+    .layout-btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 24px; height: 24px; border-radius: 6px;
+      border: none; background: none; cursor: pointer;
+      color: var(--muted); transition: all var(--transition);
+    }
+    .layout-btn:hover { color: var(--text); background: var(--surface-2); }
+    .layout-btn.active {
+      background: var(--accent-bg); color: var(--accent);
+      box-shadow: 0 1px 4px rgba(224,120,56,0.2);
+    }
+    .layout-btn svg { width: 13px; height: 13px; pointer-events: none; }
 
     /* ── SEARCH ─────────────────────────────────────────────────────── */
     .search-trigger {
@@ -318,7 +338,11 @@
     mark { background: linear-gradient(180deg, rgba(224,120,56,0.3) 0%, rgba(224,120,56,0.15) 100%); color: var(--accent); border-radius: 3px; padding: 0 3px; font-weight: 600; }
 
     /* ── MAIN ──────────────────────────────────────────────────────── */
-    main { position: relative; z-index: 1; max-width: 1280px; margin: 0 auto; padding: 52px 28px 100px; }
+    main {
+      position: relative; z-index: 1;
+      max-width: 1280px; margin: 0 auto;
+      padding: 52px 28px 100px;
+    }
 
     /* ── BREADCRUMB ─────────────────────────────────────────────────── */
     .breadcrumb { display: flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 10px; color: var(--muted); letter-spacing: 0.04em; margin-bottom: 28px; flex-wrap: wrap; }
@@ -337,7 +361,16 @@
     .date-label-line { flex: 1; height: 1px; background: linear-gradient(90deg, var(--border) 0%, transparent 100%); }
     .date-label-count { font-family: var(--font-mono); font-size: 10px; color: var(--muted); white-space: nowrap; background: var(--surface-2); padding: 4px 10px; border-radius: 99px; border: 1px solid var(--border-soft); }
 
-    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); gap: 18px; }
+    /* ── GRID: default single-column, multi-column when body has data-layout="grid" ── */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      transition: grid-template-columns 0.25s ease;
+    }
+    body[data-layout="grid"] .grid {
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    }
 
     article.card {
       background: linear-gradient(145deg, var(--surface) 0%, var(--surface-2) 100%);
@@ -345,6 +378,7 @@
       padding: 24px; cursor: pointer; transition: all var(--transition);
       display: flex; flex-direction: column; gap: 12px;
       animation: fadeUp 0.4s ease both; position: relative; overflow: hidden;
+      max-width: 100%;
     }
     article.card::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--border), transparent); opacity: 0.5; }
     article.card:hover { transform: translateY(-4px); border-color: var(--accent-dim); box-shadow: var(--card-hover-shadow), var(--glow-soft); }
@@ -352,7 +386,11 @@
     article.card > a { display: contents; }
 
     .card-category { font-family: var(--font-mono); font-size: 9px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 11px; border-radius: 99px; align-self: flex-start; border: 1px solid transparent; transition: transform var(--transition); }
-    .card-title { font-family: var(--font-serif); font-size: 17px; font-weight: 700; line-height: 1.38; letter-spacing: -0.01em; color: var(--text); transition: color var(--transition); margin: 0; }
+    .card-title { font-family: var(--font-serif); font-size: 18px; font-weight: 700; line-height: 1.38; letter-spacing: -0.01em; color: var(--text); transition: color var(--transition); margin: 0; }
+
+    /* Slightly smaller title in grid mode since columns are narrower */
+    body[data-layout="grid"] .card-title { font-size: 17px; }
+
     article.card:hover .card-title { color: var(--accent); }
     .card-meta { display: flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 10px; color: var(--muted); margin-top: auto; padding-top: 12px; border-top: 1px solid var(--border-soft); }
     .card-meta .sep { color: var(--border); }
@@ -430,8 +468,20 @@
     #loading .spinner { width: 36px; height: 36px; border: 2.5px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 22px; box-shadow: 0 0 20px rgba(224,120,56,0.2); }
     @keyframes spin { to { transform: rotate(360deg); } }
 
-    /* ── FOOTER ─────────────────────────────────────────────────────── */
-    footer { position: relative; z-index: 1; border-top: 1px solid var(--border); padding: 28px; text-align: center; font-family: var(--font-mono); font-size: 11px; color: var(--muted); letter-spacing: 0.05em; background: var(--surface-2); }
+    /* ── FOOTER (FIXED) ─────────────────────────────────────────────── */
+    footer {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 100;
+      border-top: 1px solid var(--border);
+      padding: 18px 28px;
+      text-align: center;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 0.05em;
+      background: var(--footer-bg);
+      backdrop-filter: blur(20px) saturate(180%);
+      transition: background var(--transition), border-color var(--transition);
+    }
     footer a { color: var(--muted); transition: color var(--transition); }
     footer a:hover { color: var(--accent); }
 
@@ -445,9 +495,11 @@
       .search-trigger { padding: 9px 12px; }
       main { padding: 32px 18px 70px; }
       .about-stats { grid-template-columns: 1fr 1fr; }
-      .grid { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: 1fr !important; }
       .search-box { width: calc(100vw - 24px); }
       .breadcrumb { display: none; }
+      body { padding-top: 106px; padding-bottom: 56px; }
+      :root { --header-height: 106px; --footer-height: 56px; }
     }
   </style>
 </head>
@@ -461,6 +513,29 @@
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         <span>Search</span>
       </button>
+
+      <!-- ── LAYOUT TOGGLE ── -->
+      <div class="layout-toggle" role="group" aria-label="Toggle card layout">
+        <button class="layout-btn active" id="layout-list-btn" aria-label="List layout" aria-pressed="true" title="List view">
+          <!-- List icon: stacked horizontal bars -->
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+            <line x1="1" y1="4"  x2="15" y2="4"/>
+            <line x1="1" y1="8"  x2="15" y2="8"/>
+            <line x1="1" y1="12" x2="15" y2="12"/>
+          </svg>
+        </button>
+        <button class="layout-btn" id="layout-grid-btn" aria-label="Grid layout" aria-pressed="false" title="Grid view">
+          <!-- Grid icon: 2×2 squares -->
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1"  y="1"  width="6" height="6" rx="1.5"/>
+            <rect x="9"  y="1"  width="6" height="6" rx="1.5"/>
+            <rect x="1"  y="9"  width="6" height="6" rx="1.5"/>
+            <rect x="9"  y="9"  width="6" height="6" rx="1.5"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- ── THEME TOGGLE ── -->
       <label class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme">
         <input type="checkbox" id="theme-checkbox" hidden />
         <span class="toggle-track"><span class="toggle-thumb">
@@ -468,6 +543,7 @@
           <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         </span></span>
       </label>
+
       <div class="live-badge" aria-label="Auto-updated every 12 hours">
         <div class="live-dot" aria-hidden="true"></div>
         <span>AUTO-UPDATED</span>
@@ -502,11 +578,8 @@
 </div>
 
 <main id="main">
-  <!-- PRE-RENDERED CONTENT: visible immediately for crawlers and no-JS users.
-       Hidden once the SPA successfully loads articles.json. -->
   <div id="prerendered-content"></div>
 
-  <!-- SPA ROOT: hidden until JS hydrates successfully -->
   <div id="spa-root" style="display:none;">
     <div id="loading"><div class="spinner" aria-hidden="true"></div>Fetching articles…</div>
     <div id="error-msg" style="display:none;" role="alert">Could not load articles.json — make sure the pipeline has run at least once.</div>
@@ -621,6 +694,34 @@
   const $filterChips   = document.querySelectorAll('.filter-chip');
   const $spaRoot       = document.getElementById('spa-root');
   const $prerendered   = document.getElementById('prerendered-content');
+  const $layoutListBtn = document.getElementById('layout-list-btn');
+  const $layoutGridBtn = document.getElementById('layout-grid-btn');
+
+  // ── LAYOUT TOGGLE ─────────────────────────────────────────────────
+  (function initLayout() {
+    const stored = localStorage.getItem('techpulse-layout') || 'list';
+    applyLayout(stored, false);
+  })();
+
+  function applyLayout(layout, save = true) {
+    if (layout === 'grid') {
+      document.body.setAttribute('data-layout', 'grid');
+      $layoutGridBtn.classList.add('active');
+      $layoutGridBtn.setAttribute('aria-pressed', 'true');
+      $layoutListBtn.classList.remove('active');
+      $layoutListBtn.setAttribute('aria-pressed', 'false');
+    } else {
+      document.body.removeAttribute('data-layout');
+      $layoutListBtn.classList.add('active');
+      $layoutListBtn.setAttribute('aria-pressed', 'true');
+      $layoutGridBtn.classList.remove('active');
+      $layoutGridBtn.setAttribute('aria-pressed', 'false');
+    }
+    if (save) localStorage.setItem('techpulse-layout', layout);
+  }
+
+  $layoutListBtn.addEventListener('click', () => applyLayout('list'));
+  $layoutGridBtn.addEventListener('click', () => applyLayout('grid'));
 
   // ── SEO: META HELPERS ──────────────────────────────────────────────
   function setMeta(name, content, isProp = false) {
@@ -639,10 +740,6 @@
     el.href = `${SITE_URL}${path}`;
   }
 
-  /**
-   * Update all page-level meta for SPA navigation.
-   * For article pages, also pass: author, publishedTime, section, tags[]
-   */
   function updatePageMeta({ title, description, url, image, type = 'website',
                             author, publishedTime, section, tags = [] }) {
     document.title = title;
@@ -657,13 +754,10 @@
     setMeta('twitter:description', description);
     setMeta('twitter:image',       image || DEFAULT_IMG);
 
-    // Author meta (used by some crawlers and Google Discover)
     if (author) { setMeta('author', author); } else { removeMeta('author'); }
 
-    // Article-specific Open Graph properties
     const articleProps = ['article:published_time','article:modified_time','article:author','article:section'];
     articleProps.forEach(p => removeMeta(p, true));
-    // Remove all article:tag metas before re-adding
     document.querySelectorAll('meta[property="article:tag"]').forEach(el => el.remove());
 
     if (type === 'article') {
@@ -731,7 +825,6 @@
     document.getElementById('jsonld-article').textContent = '';
     const bc = document.getElementById('jsonld-breadcrumb');
     if (bc) bc.textContent = '';
-    // Also clean article-specific meta so they don't linger on non-article pages
     ['article:published_time','article:modified_time','article:author','article:section'].forEach(p => removeMeta(p, true));
     document.querySelectorAll('meta[property="article:tag"]').forEach(el => el.remove());
     removeMeta('author');
@@ -1054,7 +1147,6 @@
       <span>Published by ${esc(article.author||'Unknown')}</span>`;
     document.getElementById('art-link').href = article.url || '#';
 
-    // Breadcrumb
     const $bc = document.getElementById('article-breadcrumb');
     $bc.innerHTML = `
       <button onclick="goHome()">TechPulse</button>

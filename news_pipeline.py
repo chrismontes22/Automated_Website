@@ -259,6 +259,7 @@ Follow this exact structure and nothing else:
 - Prefer specific nouns and verbs over vague language
 
 **Why it matters**
+- One bullet point only
 - Exactly 2 to 3 sentences
 - Explain the broader impact, business implication, market relevance, or user relevance
 - Keep it plain-English and objective
