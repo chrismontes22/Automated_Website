@@ -1,15 +1,2 @@
-# Cloudflare Pages _redirects
-# Place this file in your dist/ output directory (build.js will copy it automatically).
-#
-# How it works:
-#   - Cloudflare Pages serves pre-rendered .html files with "Pretty URLs" enabled,
-#     so /article/my-slug serves /article/my-slug.html automatically.
-#   - The wildcard fallback below catches any URL that has no matching file
-#     and sends it to the SPA shell, which shows the 404 view.
-
-/article/*   /article/:splat.html  200
-/category/*  /category/:splat.html 200
-/about       /about.html           200
-
 # SPA fallback — any unmatched route gets the shell
 /*           /index.html           200

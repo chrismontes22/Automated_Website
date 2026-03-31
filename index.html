@@ -517,7 +517,6 @@
       <!-- ── LAYOUT TOGGLE ── -->
       <div class="layout-toggle" role="group" aria-label="Toggle card layout">
         <button class="layout-btn active" id="layout-list-btn" aria-label="List layout" aria-pressed="true" title="List view">
-          <!-- List icon: stacked horizontal bars -->
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
             <line x1="1" y1="4"  x2="15" y2="4"/>
             <line x1="1" y1="8"  x2="15" y2="8"/>
@@ -525,7 +524,6 @@
           </svg>
         </button>
         <button class="layout-btn" id="layout-grid-btn" aria-label="Grid layout" aria-pressed="false" title="Grid view">
-          <!-- Grid icon: 2×2 squares -->
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <rect x="1"  y="1"  width="6" height="6" rx="1.5"/>
             <rect x="9"  y="1"  width="6" height="6" rx="1.5"/>
@@ -887,7 +885,12 @@
       buildCategorySystem(allArticles);
       buildNav();
       populateAboutStats();
-      restoreFromHistory(history.state);
+
+      // ── FIX: always route by URL path first, use history.state only
+      // for supplementary context (e.g. which tab was previously active).
+      // This makes refresh work correctly on every page.
+      routeByPath(window.location.pathname, history.state);
+
       updateNavScrollIndicators();
       $nav.addEventListener('scroll', updateNavScrollIndicators);
       window.addEventListener('resize', updateNavScrollIndicators);
@@ -898,59 +901,69 @@
     }
   }
 
-  function restoreFromHistory(state) {
-    if (!state) {
-      const p = window.location.pathname;
-
-      if (p.startsWith('/article/')) {
-        const slug = p.replace('/article/', '').replace(/\/$/, '');
-        const article = allArticles.find(a => slugify(a.title) === slug);
-        if (article) {
-          currentTab = 'all'; setNavActive('all');
-          history.replaceState({ view:'article', tab:'all', articleUrl:article.url }, '');
-          openArticle(article, false);
-          return;
-        }
-        showNotFoundView(false);
+  // ── PRIMARY ROUTER — always driven by window.location.pathname ────
+  // `state` is optional supplementary data (e.g. last active tab).
+  // Called on first load, refresh, and popstate.
+  function routeByPath(pathname, state) {
+    // ── /article/<slug> ──────────────────────────────────────────────
+    if (pathname.startsWith('/article/')) {
+      const slug    = pathname.replace('/article/', '').replace(/\/$/, '');
+      const article = allArticles.find(a => slugify(a.title) === slug);
+      if (article) {
+        // Restore the tab the user was on when they opened this article,
+        // falling back to the article's own category, then 'all'.
+        const tab = (state && state.tab && (state.tab === 'all' || categoryMap[state.tab]))
+          ? state.tab
+          : (article.category && categoryMap[article.category] ? article.category : 'all');
+        currentTab = tab;
+        setNavActive(tab);
+        // Silently seed the list view so back-navigation works.
+        renderTab(tab, false);
+        openArticle(article, false);
+        // Stamp clean state so future refreshes land here again.
+        history.replaceState({ view: 'article', tab, articleUrl: article.url }, '', pathname);
         return;
       }
-
-      if (p.startsWith('/category/')) {
-        const catSlug = p.replace('/category/', '').replace(/\/$/, '');
-        const cat = Object.keys(categoryMap).find(c => slugify(c) === catSlug);
-        if (cat) {
-          currentTab = cat; setNavActive(cat);
-          history.replaceState({ view:'list', tab:cat }, '');
-          renderTab(cat, false);
-          return;
-        }
-      }
-
-      if (p === '/about') {
-        currentTab = 'about'; setNavActive('about');
-        history.replaceState({ view:'about' }, '');
-        showAboutView();
-        return;
-      }
-
-      goHome(false);
-      history.replaceState({ view:'list', tab:'all' }, '');
+      // Slug not found in data — show 404.
+      showNotFoundView(false);
+      history.replaceState({ view: 'notfound' }, '', pathname);
       return;
     }
 
-    if (state.view === 'about')  { currentTab='about';  setNavActive('about');  showAboutView(); return; }
-    if (state.view === 'notfound') { showNotFoundView(false); return; }
-    if (state.view === 'article' && state.articleUrl) {
-      const a = allArticles.find(x => x.url === state.articleUrl);
-      if (a) { currentTab = state.tab||'all'; setNavActive(currentTab); renderTab(currentTab, false); openArticle(a, false); return; }
-      showNotFoundView(false); return;
+    // ── /category/<slug> ─────────────────────────────────────────────
+    if (pathname.startsWith('/category/')) {
+      const catSlug = pathname.replace('/category/', '').replace(/\/$/, '');
+      const cat     = Object.keys(categoryMap).find(c => slugify(c) === catSlug);
+      if (cat) {
+        currentTab = cat;
+        setNavActive(cat);
+        renderTab(cat, false);
+        history.replaceState({ view: 'list', tab: cat }, '', pathname);
+        return;
+      }
+      // Unknown category — fall through to home.
     }
-    currentTab = state.tab || 'all';
-    setNavActive(currentTab);
-    renderTab(currentTab, false);
+
+    // ── /about ───────────────────────────────────────────────────────
+    if (pathname === '/about') {
+      currentTab = 'about';
+      setNavActive('about');
+      showAboutView();
+      history.replaceState({ view: 'about' }, '', '/about');
+      return;
+    }
+
+    // ── / (home) or anything else ────────────────────────────────────
+    goHome(false);
+    history.replaceState({ view: 'list', tab: 'all' }, '', '/');
   }
 
-  window.addEventListener('popstate', e => { restoreFromHistory(e.state); window.scrollTo({ top:0, behavior:'smooth' }); });
+  // ── POPSTATE (back / forward buttons) ────────────────────────────
+  window.addEventListener('popstate', () => {
+    // Re-route by the URL the browser just navigated to.
+    routeByPath(window.location.pathname, history.state);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 
   // ── CATEGORIES ────────────────────────────────────────────────────
   function buildCategorySystem(articles) {
