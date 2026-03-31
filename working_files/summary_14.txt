@@ -1,20 +1,20 @@
-The State of Secrets Sprawl 2026: 9 Takeaways for CISOs
+Android developer verification: Rolling out to all developers on Play Console and Android Developer Console
 ============================================================
 
-**GitGuardian’s 2026 report reveals a record 29 million hardcoded secrets were exposed in 2025, marking a 34% annual increase driven largely by rapid AI adoption and developer tool usage.**
+Google is introducing mandatory developer verification for Android apps to combat malware, requiring developers to register their software before user-facing security changes begin rolling out later this year.
 
 **Key points**
-- Leaked secrets grew by 152% since 2021, significantly outpacing the 98% growth of the public developer population.
-- AI-related service leaks surged 81% year-over-year, with LLM infrastructure tools like Supabase and Firecrawl seeing massive increases in credential exposure.
-- Internal repositories are 6x more likely to contain hardcoded secrets than public ones, with 32.2% of internal systems harboring at least one credential.
-- Approximately 28% of security incidents now originate outside of source code, occurring instead in collaboration platforms like Slack, Jira, and Confluence.
-- Remediation remains a critical failure point, as 64% of secrets identified as valid in 2022 remain exploitable today due to a lack of automated rotation.
+- Google reports that sideloaded apps contain over 90 times more malware than those distributed through the official Google Play Store.
+- Developers must now register their apps via the Android Developer Console or Play Console to verify their identity.
+- User-facing security protections will launch in Brazil, Indonesia, Singapore, and Thailand this September before a global expansion in 2027.
+- The new Android Developer Verifier system will launch in April to check if installed apps are linked to a verified developer.
+- Power users can still install unregistered apps using advanced flows or ADB, maintaining platform flexibility for experienced individuals.
 
 **Why it matters**
-The acceleration of secrets sprawl indicates that traditional detection methods are failing to keep pace with the complexity of modern AI-driven development and distributed infrastructure. Organizations must shift from simple scanning to comprehensive non-human identity governance to prevent attackers from exploiting durable, long-lived credentials.
+This initiative represents a significant shift in Google’s strategy to balance Android’s open-source nature with increased protection against malicious software. By mandating developer accountability, the company aims to reduce security risks for average users while preserving advanced installation options for technical power users.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/03/the-state-of-secrets-sprawl-2026-9.html
+Author:   Android Developers
+Source:   Googleblog.com
+URL:      https://android-developers.googleblog.com/2026/03/android-developer-verification-rolling-out-to-all-developers.html
 Category: Cybersecurity
