@@ -1,20 +1,20 @@
-How physicists proved that quantum weirdness is a feature, not a bug
+Zero Budget, Full Stack: Building with Only Free LLMs
 ============================================================
 
-A. M. Turing Award winners Charles H. Bennett and Gilles Brassard are warning that quantum computing advancements threaten global financial security by potentially breaking current internet and banking encryption.
+Developers can now build and deploy production-ready AI applications, such as a meeting summarizer, using a completely free technology stack consisting of open-source models and generous cloud tiers.
 
-**Key points**
-- Charles H. Bennett and Gilles Brassard received the A. M. Turing Award for their foundational work in quantum information theory.
-- The duo developed the "BB84" protocol, which uses quantum mechanics to create uncrackable encryption keys.
-- Their research demonstrated that quantum phenomena like entanglement and superposition can be used as resources rather than obstacles.
-- Experts warn that future quantum computers could render current classical cryptography obsolete, putting sensitive financial and personal data at risk.
-- To mitigate these risks, researchers recommend adopting post-quantum cryptography and quantum-secure communication methods.
+### Key Points
+- The application utilizes OpenAI’s Whisper for speech-to-text transcription and either GLM-4.7-Flash or Liquid AI’s LFM2-2.6B for summarization.
+- The backend is powered by FastAPI, while the frontend is built with React, utilizing SQLite for local data storage.
+- Development is accelerated using free AI coding assistants like Codeium, which provide real-time support within the IDE.
+- Deployment is achieved at no cost by leveraging the free tiers offered by platforms like Vercel for the frontend and Render for the backend.
+- The architecture supports both cloud-based API usage and local, privacy-focused execution on personal hardware.
 
-**Why it matters**
-The transition to quantum computing represents a significant shift in cybersecurity that could compromise the integrity of global financial systems and private data. By highlighting these vulnerabilities, researchers are urging immediate action to develop and implement new encryption standards before existing security measures become obsolete.
+### Why it Matters
+This shift toward free, high-performance AI tools democratizes software development by removing the financial barriers previously associated with cloud credits and proprietary API keys. It allows students and independent developers to prototype and scale sophisticated applications without ongoing infrastructure costs.
 
 ============================================================
-Author:   Joseph Howlett
-Source:   Scientific American
-URL:      https://www.scientificamerican.com/article/how-physicists-proved-that-quantum-weirdness-is-a-feature-not-a-bug/
-Category: Cybersecurity
+Author:   Shittu Olumide
+Source:   Kdnuggets.com
+URL:      https://www.kdnuggets.com/zero-budget-full-stack-building-with-only-free-llms
+Category: Artificial Intelligence

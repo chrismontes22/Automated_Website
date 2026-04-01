@@ -1,19 +1,20 @@
-The first Pixel 11 leak looks great, but it doesn’t tell us the most important thing
+TrueConf Zero-Day Exploited in Attacks on Southeast Asian Government Networks
 ============================================================
 
-**New CAD renders of the Google Pixel 11 reveal a thinner design and slimmer bezels, but industry analysts warn that rising component costs could lead to significant price hikes.**
+A high-severity zero-day vulnerability in TrueConf video conferencing software is being exploited by a Chinese-nexus threat actor to deploy malware across government networks in Southeast Asia.
 
-**Key points**
-- Leaked CAD renders indicate the baseline Pixel 11 will feature a refined camera bar, thinner chassis, and reduced display bezels.
-- The device is expected to utilize the new Tensor G6 chipset, which is reportedly manufactured using an expensive 2nm process from TSMC.
-- Rising global costs for RAM and hardware components have recently forced competitors like Samsung and Sony to increase prices on flagship devices.
-- Analysts suggest the Pixel 11 could see a price increase above the $799 starting point established by the previous Pixel 10 model.
+### Key Points
+- The vulnerability, tracked as CVE-2026-3502 with a CVSS score of 7.8, allows attackers to execute arbitrary code by bypassing update integrity checks.
+- Attackers gain control of on-premises TrueConf servers to distribute malicious updates to all connected client endpoints.
+- The "TrueChaos" campaign utilizes the Havoc command-and-control framework and DLL side-loading to maintain persistence and conduct reconnaissance.
+- Check Point researchers identified the campaign, which has targeted government and law enforcement agencies since early 2026.
+- TrueConf has released a security patch for the Windows client in version 8.5.3 to address the update validation flaw.
 
-**Why it matters**
-The potential price increase for the Pixel 11 could significantly alter its market positioning and consumer appeal compared to the more affordable Pixel 10a. If the base model becomes too expensive, it risks losing its competitive edge against higher-tier Pro models or alternative flagship smartphones.
+### Why it Matters
+This exploit highlights the significant risks posed by supply chain attacks that weaponize trusted software update mechanisms to bypass individual endpoint security. By compromising a central server, attackers can efficiently infiltrate entire government networks, underscoring the critical need for rigorous code validation and prompt patching in enterprise communication tools.
 
 ============================================================
-Author:   Joe Maring
-Source:   Android Authority
-URL:      https://www.androidauthority.com/first-pixel-11-leak-doesnt-reveal-most-important-thing-price-3653177/
-Category: Phones, Laptops, and Gadgets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/03/trueconf-zero-day-exploited-in-attacks.html
+Category: Cybersecurity

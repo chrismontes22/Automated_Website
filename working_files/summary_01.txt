@@ -1,20 +1,20 @@
-Supply chain blast: Top npm package backdoored to drop dirty RAT on dev machines
+The FCC Just Banned All New Foreign-Made Routers. Everything You Need to Know to Keep Your Network Safe
 ============================================================
 
-**Attackers compromised the widely used Axios npm library by hijacking a maintainer's account to distribute a remote-access trojan, marking a significant supply chain security breach for developers.**
+The Federal Communications Commission has announced a ban on new foreign-made Wi-Fi routers to address national security risks, potentially impacting firmware update support for many consumer devices.
 
-**Key points**
-- Attackers hijacked the npm account of Axios maintainer "jasonsaayman" to publish malicious versions 1.14.1 and 0.30.4.
-- The compromised releases included a malicious dependency, "plain-crypto-js@4.2.1," which installed platform-specific backdoors on Windows, macOS, and Linux.
-- Google’s Threat Intelligence Group attributed the sophisticated attack to the suspected North Korean threat actor UNC1069.
-- The breach bypassed standard GitHub Actions CI/CD pipelines by manually pushing packages directly through the npm CLI.
-- Developers who installed the affected versions are advised to rotate credentials and consider rebuilding compromised systems from scratch.
+### Key Points
+- The FCC ban applies to any new router model where major manufacturing, assembly, or design stages occur outside the United States.
+- Existing routers already authorized by the FCC remain legal to use, but they may lose critical firmware and security update support after March 1, 2027.
+- Major manufacturers including TP-Link, Asus, Netgear, and Eero are currently subject to the ban, as most of their production occurs abroad.
+- Starlink is currently the only major manufacturer exempt from the order, as its newer routers are produced in Texas.
+- Cybersecurity experts advise consumers to delay new router purchases until the regulatory landscape and exemption processes become clearer.
 
-**Why it matters**
-This incident highlights the severe risks inherent in software supply chains, where a single compromised account can expose millions of users to sophisticated malware. Because Axios is a foundational tool for web development, this breach demonstrates how attackers are increasingly targeting developer infrastructure to gain persistent access to enterprise environments.
+### Why it Matters
+This policy shift creates significant uncertainty for the consumer networking market, as nearly all widely available routers rely on international supply chains. If manufacturers fail to secure exemptions, millions of home networks could become vulnerable to cyberattacks due to the eventual cessation of essential security patches.
 
 ============================================================
-Author:   Carly Page
-Source:   Theregister.com
-URL:      https://www.theregister.com/2026/03/31/axios_npm_backdoor_rat/
+Author:   Joe Supan
+Source:   CNET
+URL:      https://www.cnet.com/home/internet/fcc-just-banned-all-new-foreign-made-routers-everything-you-need-to-know-to-keep-your-network-safe/
 Category: Cybersecurity

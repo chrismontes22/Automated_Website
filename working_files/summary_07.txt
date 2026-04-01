@@ -1,20 +1,21 @@
-Android Auto bug is making the signal icon vanish for some users
+Don't open that WhatsApp message, Microsoft warns
 ============================================================
 
-**Android Auto users are reporting a persistent software bug that causes the cellular signal icon to disappear from vehicle displays following the recent version 16.5 update.**
+Microsoft has issued a warning regarding a sophisticated social engineering campaign on WhatsApp that uses malicious scripts and legitimate Windows tools to gain unauthorized remote access to computers.
 
-**Key points**
-- Users report the cellular signal icon vanishes from the Android Auto interface while connected to vehicle head units.
-- Despite the missing icon, mobile data, navigation, and phone call functionality remain fully operational.
-- The issue is primarily linked to Android Auto version 16.5, according to reports from the Reddit community.
-- Some users have successfully restored the icon by manually downgrading their application to version 16.3.
-- Google has not yet issued an official statement or a permanent software patch for the display error.
+### Key Points
+- Attackers distribute malicious Visual Basic Script files via WhatsApp, often appearing to originate from a victim's existing contacts.
+- The malware utilizes "living off the land" techniques by renaming legitimate Windows utilities like curl.exe and bitsadmin.exe to evade detection.
+- Secondary payloads are downloaded from trusted cloud services, including AWS, Tencent Cloud, and Backblaze B2, to blend in with normal network traffic.
+- Final malicious Microsoft Installer (MSI) packages, such as AnyDesk.msi, grant attackers full remote control to steal data or deploy ransomware.
+- Microsoft recommends that users and organizations prioritize employee training to recognize suspicious attachments and unexpected messages on messaging platforms.
+- WhatsApp users can enable "Strict Account Settings" in the app's privacy menu to automatically block attachments and calls from unknown users.
 
-**Why it matters**
-While the bug does not disrupt actual network connectivity, the loss of visual signal indicators creates uncertainty for drivers navigating areas with unreliable cellular coverage. This issue highlights the ongoing challenges Google faces in maintaining interface stability across diverse automotive hardware configurations.
+### Why it Matters
+This campaign highlights the growing risk of attackers exploiting trusted communication platforms to bypass traditional security measures by using legitimate software for malicious purposes. Businesses and individuals must remain vigilant, as these attacks can lead to total system compromise, data theft, and the deployment of further ransomware threats.
 
 ============================================================
-Author:   sanujb6@gmail.com (Sanuj Bhatia) , Sanuj Bhatia
-Source:   Android Central
-URL:      https://www.androidcentral.com/apps-software/android-auto/android-auto-bug-makes-signal-icon-vanish
-Category: Phones, Laptops, and Gadgets
+Author:   Jessica Lyons
+Source:   Theregister.com
+URL:      https://www.theregister.com/2026/03/31/whatsapp_message_bad_msi_packages/
+Category: Cybersecurity

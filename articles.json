@@ -1,5 +1,140 @@
 [
   {
+    "source": "CNET",
+    "url": "https://www.cnet.com/home/internet/fcc-just-banned-all-new-foreign-made-routers-everything-you-need-to-know-to-keep-your-network-safe/",
+    "summary": "The Federal Communications Commission has announced a ban on new foreign-made Wi-Fi routers to address national security risks, potentially impacting firmware update support for many consumer devices.\n\n### Key Points\n- The FCC ban applies to any new router model where major manufacturing, assembly, or design stages occur outside the United States.\n- Existing routers already authorized by the FCC remain legal to use, but they may lose critical firmware and security update support after March 1, 2027.\n- Major manufacturers including TP-Link, Asus, Netgear, and Eero are currently subject to the ban, as most of their production occurs abroad.\n- Starlink is currently the only major manufacturer exempt from the order, as its newer routers are produced in Texas.\n- Cybersecurity experts advise consumers to delay new router purchases until the regulatory landscape and exemption processes become clearer.\n\n### Why it Matters\nThis policy shift creates significant uncertainty for the consumer networking market, as nearly all widely available routers rely on international supply chains. If manufacturers fail to secure exemptions, millions of home networks could become vulnerable to cyberattacks due to the eventual cessation of essential security patches.",
+    "category": "Cybersecurity",
+    "author": "Joe Supan",
+    "processed_at": "2026-04-01T23:45:57.120878",
+    "title": "The FCC Just Banned All New Foreign-Made Routers. Everything You Need to Know to Keep Your Network Safe"
+  },
+  {
+    "source": "Business Insider",
+    "url": "https://www.businessinsider.com/byds-gas-prices-ev-demand-2026-3",
+    "summary": "Chinese automaker BYD expects to sell 1.5 million vehicles internationally this year as rising global oil prices and advanced battery technology accelerate its expansion into foreign markets.\n\n### Key Points\n- BYD aims to sell 1.5 million vehicles outside China, with executives projecting that foreign markets could eventually account for half of the company's total sales.\n- Brent crude oil prices have climbed above $100 per barrel, driving increased consumer interest in electric vehicles as fuel costs rise globally.\n- The company’s new Blade 2.0 battery offers a 620-mile range and can charge from 10% to 70% in just five minutes.\n- BYD is currently expanding its retail presence across Europe, Australia, and South and Central America, with plans to enter the Canadian market.\n- Legacy automakers, including Ford and Toyota, have publicly acknowledged that Chinese EV technology and pricing models currently pose a significant competitive threat to their survival.\n\n### Why it Matters\nBYD’s rapid global growth highlights a shifting landscape where Chinese manufacturers are challenging established legacy automakers through superior battery technology and aggressive pricing. This trend forces traditional industry leaders to reconsider their production strategies as high fuel costs and technological advancements accelerate the global transition toward electric vehicles.",
+    "category": "Tech Business & Markets",
+    "author": "Ben Shimkus",
+    "processed_at": "2026-04-01T23:46:38.501818",
+    "title": "BYD's global push is accelerating just as expensive gas jolts EV demand"
+  },
+  {
+    "source": "The Verge",
+    "url": "https://www.theverge.com/gadgets/904242/amazon-big-spring-sale-2026-baseus-anker-chargers-power-banks-batteries-deals",
+    "summary": "Amazon is offering discounts of up to 50 percent on various charging accessories and power banks from brands like Anker, Twelve South, and Ugreen during its Big Spring Sale.\n\n### Key Points\n- Amazon’s Big Spring Sale features significant price reductions on charging gear, including high-capacity power banks, magnetic charging stands, and smart power strips.\n- Featured brands include Anker, Twelve South, Baseus, Ugreen, Kasa, Jackery, EcoFlow, and Belkin.\n- Notable deals include Anker’s 25,000mAh power bank, Twelve South’s 3-in-1 MagSafe stand, and the EcoFlow Delta 2 portable power station.\n- Most promotional pricing is scheduled to expire at 11:59 PM PT on the final day of the event.\n- Many discounted items support modern standards like Qi2, 100W USB-C passthrough, and fast-charging capabilities for smartphones, tablets, and laptops.\n\n### Why it Matters\nThese discounts provide a cost-effective opportunity for consumers to upgrade their mobile power infrastructure and cable management setups. As hardware demands increase for modern devices, securing high-wattage chargers and reliable battery banks at reduced prices offers significant long-term value for tech users.",
+    "category": "Phones, Laptops, and Gadgets",
+    "author": "Brandon Widder",
+    "processed_at": "2026-04-01T23:46:51.230559",
+    "title": "Amazon is offering up to 50 percent off chargers from Anker and others for its Big Spring Sale"
+  },
+  {
+    "source": "Android Central",
+    "url": "https://www.androidcentral.com/phones/google-pixel/pixel-11-pro-renders-show-off-a-missing-sensor-you-might-actually-like",
+    "summary": "Leaked CAD renders of the upcoming Google Pixel 11 Pro reveal a streamlined camera bar design and the potential removal of the infrared temperature sensor found in previous models.\n\n### Key Points\n- Leaked renders indicate the Pixel 11 Pro will feature a simplified, single-tone camera bar design.\n- The infrared temperature sensor, introduced in the Pixel 10 Pro, appears to be absent from the new model.\n- The device maintains a compact form factor with a 6.3-inch LTPO AMOLED display and dimensions of 152.7 x 71.8 x 8.4mm.\n- Internal hardware is expected to include the new Tensor G6 chip, with potential adjustments to RAM capacity and base storage options.\n- The Pixel 11 series is currently projected to follow Google's standard release schedule with an official launch in August.\n\n### Why it Matters\nThe removal of the temperature sensor suggests Google is prioritizing a cleaner aesthetic over niche hardware features that differentiate its flagship lineup. These design and potential memory adjustments reflect broader industry trends as manufacturers balance component costs with the demand for premium, compact smartphone hardware.",
+    "category": "Phones, Laptops, and Gadgets",
+    "author": "techkritiko@gmail.com (Jay Bonggolto) , Jay Bonggolto",
+    "processed_at": "2026-04-01T23:47:00.174407",
+    "title": "Pixel 11 Pro renders show off a missing sensor you might actually like"
+  },
+  {
+    "source": "Zernie.com",
+    "url": "https://zernie.com/blog/feedback-loop-is-all-you-need/",
+    "summary": "To safely integrate AI coding agents like Claude Code into professional workflows, developers must shift from manual reviews to building deterministic, self-tightening feedback loops using automated guardrails.\n\n### Key Points\n- AI-generated code often suffers from \"silent drift,\" where it technically functions but violates architectural standards or mixes legacy design systems.\n- Relying solely on prompt instructions like CLAUDE.md is insufficient; developers must enforce rules through strict linters, TypeScript constraints, and complexity limits.\n- Automated testing, including Playwright for visual regressions and property-based testing, is essential to catch behavioral bugs that static analysis misses.\n- Research indicates AI-generated code can contain 1.7x more bugs and 2.74x more security vulnerabilities than human-written code, necessitating robust CI pipelines.\n- Successful teams treat their infrastructure as an \"organism\" where every failure automatically generates a new lint rule or test to prevent future recurrence.\n\n### Why it Matters\nAs AI agents become capable of autonomous tasks like CRON-scheduled coding, the bottleneck shifts from code creation to quality assurance and architectural consistency. By investing in automated guardrails, engineering teams can transform AI from a risky liability into a scalable, high-leverage tool that maintains software integrity without constant human oversight.",
+    "category": "Artificial Intelligence",
+    "author": "Ernie",
+    "processed_at": "2026-04-01T23:47:09.353839",
+    "title": "The Feedback Loop Is All You Need"
+  },
+  {
+    "source": "Theregister.com",
+    "url": "https://www.theregister.com/2026/03/31/whatsapp_message_bad_msi_packages/",
+    "summary": "Microsoft has issued a warning regarding a sophisticated social engineering campaign on WhatsApp that uses malicious scripts and legitimate Windows tools to gain unauthorized remote access to computers.\n\n### Key Points\n- Attackers distribute malicious Visual Basic Script files via WhatsApp, often appearing to originate from a victim's existing contacts.\n- The malware utilizes \"living off the land\" techniques by renaming legitimate Windows utilities like curl.exe and bitsadmin.exe to evade detection.\n- Secondary payloads are downloaded from trusted cloud services, including AWS, Tencent Cloud, and Backblaze B2, to blend in with normal network traffic.\n- Final malicious Microsoft Installer (MSI) packages, such as AnyDesk.msi, grant attackers full remote control to steal data or deploy ransomware.\n- Microsoft recommends that users and organizations prioritize employee training to recognize suspicious attachments and unexpected messages on messaging platforms.\n- WhatsApp users can enable \"Strict Account Settings\" in the app's privacy menu to automatically block attachments and calls from unknown users.\n\n### Why it Matters\nThis campaign highlights the growing risk of attackers exploiting trusted communication platforms to bypass traditional security measures by using legitimate software for malicious purposes. Businesses and individuals must remain vigilant, as these attacks can lead to total system compromise, data theft, and the deployment of further ransomware threats.",
+    "category": "Cybersecurity",
+    "author": "Jessica Lyons",
+    "processed_at": "2026-04-01T23:47:18.931582",
+    "title": "Don't open that WhatsApp message, Microsoft warns"
+  },
+  {
+    "source": "9to5Mac",
+    "url": "https://9to5mac.com/2026/03/31/watch-tim-cook-ring-the-nasdaq-opening-bell-as-part-of-apples-50th-anniversary-celebrations/",
+    "summary": "Apple CEO Tim Cook remotely rang the Nasdaq Opening Bell from Apple Park today to commemorate the technology company’s 50th anniversary and celebrate its long-term impact on innovation.\n\n### Key Points\n- Apple celebrated its 50th anniversary with a remote Nasdaq Opening Bell ceremony hosted at the company's headquarters in Cupertino, California.\n- Nasdaq Chair and CEO Adina Friedman recognized Apple’s contributions to design, silicon, and software development over the past five decades.\n- Tim Cook delivered a speech highlighting the company's origins in Steve Jobs' garage and its ongoing mission to empower users through technology.\n- The event featured Apple’s executive leadership team, including John Ternus, Deirdre O’Brien, Greg Joswiak, Sabih Khan, and Eddy Cue.\n- Cook received a commemorative plaque and trophy from Nasdaq officials to mark the milestone anniversary.\n\n### Why it Matters\n- This event underscores Apple's enduring influence on the global technology market and its transition from a garage startup to a dominant industry leader. By highlighting its 50-year history, the company reinforces its brand identity and commitment to future innovation for shareholders and consumers alike.",
+    "category": "Tech Business & Markets",
+    "author": "Marcus Mendes",
+    "processed_at": "2026-04-01T23:47:48.479024",
+    "title": "Watch Tim Cook ring the Nasdaq Opening Bell as part of Apple’s 50th anniversary celebrations"
+  },
+  {
+    "source": "Gizmodo.com",
+    "url": "https://gizmodo.com/best-gadgets-march-2026-2000740331",
+    "summary": "Apple’s March product lineup, headlined by the $600 MacBook Neo, leads a busy month of tech releases alongside new hardware from Sonos, Nothing, Ikea, and Nintendo.\n\n### Key Points\n- The $600 MacBook Neo features an A18 Pro chip and unibody aluminum construction, positioning it as a high-value alternative to standard Chromebooks and Windows laptops.\n- Apple updated its premium hardware with the M5 Max MacBook Pro, M5 MacBook Air, M4 iPad Air, and second-generation AirPods Max headphones.\n- Nothing launched the midrange Phone 4a and Phone 4a Pro, featuring a signature transparent aesthetic and a redesigned Glyph Matrix notification system.\n- Sonos introduced the portable Play wireless speaker, while Ikea released a smart, color-changing version of its popular Varmblixt donut lamp.\n- Gaming-focused hardware included the Asus ROG Cetra Open Wireless Earbuds and the 32-inch ROG Swift OLED PG32UCDM monitor.\n- Nintendo released a $35 Talking Flower desk accessory, while the iPhone 17e arrived with upgraded storage, an A19 chip, and new MagSafe support.\n\n### Why it Matters\nThe influx of new hardware highlights a competitive shift toward high-performance, lower-cost devices as manufacturers attempt to balance consumer demand with rising production costs. While companies like Sony are raising prices, Apple’s aggressive pricing on the MacBook Neo suggests a strategic effort to capture the entry-level market despite broader industry concerns regarding component inflation.",
+    "category": "Phones, Laptops, and Gadgets",
+    "author": "Raymond Wong",
+    "processed_at": "2026-04-01T23:47:58.097458",
+    "title": "The Best Gadgets of March 2026"
+  },
+  {
+    "source": "TechRadar",
+    "url": "https://www.techradar.com/computing/internet/delta-is-finally-joining-the-faster-satellite-wi-fi-craze-with-amazon-but-if-you-want-in-flight-satellite-now-youll-still-want-to-book-united",
+    "summary": "Delta Air Lines has announced a partnership with Amazon’s LEO satellite network to provide high-speed, low-latency in-flight Wi-Fi for passengers, with installations beginning on 500 aircraft in 2028.\n\n### Key Points\n- Delta will equip 500 aircraft with phased array antennas to access Amazon’s LEO satellite network.\n- The new service will support speeds of up to 1 Gbps down and 400 Mbps up for SkyMiles members.\n- Installations are scheduled to begin in 2028, trailing United Airlines’ current Starlink rollout, which concludes in 2027.\n- Amazon’s LEO network currently operates approximately 200 satellites, with over 20 additional launch missions planned for the coming year.\n- Delta will continue utilizing existing connectivity providers, including Viasat and Hughes, alongside the new Amazon infrastructure.\n\n### Why it Matters\nThis partnership intensifies the competitive landscape for in-flight connectivity as major airlines race to offer high-speed, gate-to-gate internet access. By integrating Amazon's satellite technology, Delta aims to improve the passenger experience, though the 2028 start date leaves a significant gap compared to rivals already deploying similar services.",
+    "category": "Tech Business & Markets",
+    "author": "jacob.krol@futurenet.com (Jacob Krol) , Jacob Krol",
+    "processed_at": "2026-04-01T23:52:35.678208",
+    "title": "Delta is finally joining the faster satellite Wi-Fi craze with Amazon — but if you want in-flight satellite now, you’ll still want to book United"
+  },
+  {
+    "source": "Kdnuggets.com",
+    "url": "https://www.kdnuggets.com/zero-budget-full-stack-building-with-only-free-llms",
+    "summary": "Developers can now build and deploy production-ready AI applications, such as a meeting summarizer, using a completely free technology stack consisting of open-source models and generous cloud tiers.\n\n### Key Points\n- The application utilizes OpenAI’s Whisper for speech-to-text transcription and either GLM-4.7-Flash or Liquid AI’s LFM2-2.6B for summarization.\n- The backend is powered by FastAPI, while the frontend is built with React, utilizing SQLite for local data storage.\n- Development is accelerated using free AI coding assistants like Codeium, which provide real-time support within the IDE.\n- Deployment is achieved at no cost by leveraging the free tiers offered by platforms like Vercel for the frontend and Render for the backend.\n- The architecture supports both cloud-based API usage and local, privacy-focused execution on personal hardware.\n\n### Why it Matters\nThis shift toward free, high-performance AI tools democratizes software development by removing the financial barriers previously associated with cloud credits and proprietary API keys. It allows students and independent developers to prototype and scale sophisticated applications without ongoing infrastructure costs.",
+    "category": "Artificial Intelligence",
+    "author": "Shittu Olumide",
+    "processed_at": "2026-04-01T23:53:11.277896",
+    "title": "Zero Budget, Full Stack: Building with Only Free LLMs"
+  },
+  {
+    "source": "CoinDesk",
+    "url": "https://www.coindesk.com/tech/2026/03/31/coinbase-s-base-to-focus-on-tokenized-markets-stablecoins-developers-this-year",
+    "summary": "Coinbase’s layer-2 network Base has announced a 2026 strategic roadmap prioritizing the expansion of tokenized asset markets, stablecoin payment infrastructure, and the growth of its developer ecosystem.\n\n### Key Points\n- Base is transitioning from the Optimism OP Stack to proprietary in-house infrastructure to achieve greater operational independence and network scale.\n- The network plans to support tokenized real-world assets, including equities and commodities, alongside crypto-native markets like perpetuals and prediction platforms.\n- Payment upgrades will focus on stablecoin integration, including new privacy features, stablecoin-denominated transaction fees, and expanded multi-currency liquidity.\n- Developer initiatives will include new incentive systems and tooling designed to support AI-driven applications interacting with onchain financial markets.\n- Since its public launch in August 2023, Base has become one of the most active layer-2 networks within the Ethereum ecosystem.\n\n### Why it Matters\nThis strategic shift signals Coinbase's intent to capture institutional demand for onchain finance by controlling its own technical stack and infrastructure. By prioritizing stablecoins and tokenized assets, the company aims to position Base as a primary venue for global financial activity rather than just a scaling solution for Ethereum.",
+    "category": "Tech Business & Markets",
+    "author": "Margaux Nijkerk",
+    "processed_at": "2026-04-01T23:53:30.029072",
+    "title": "Coinbase’s Base to focus on tokenized markets, stablecoins, developers this year"
+  },
+  {
+    "source": "Kotaku",
+    "url": "https://kotaku.com/ram-ai-stock-prices-bubble-openai-nvidia-chatgpt-2000683539",
+    "summary": "Major RAM manufacturers are seeing significant stock declines as investors question the viability of OpenAI’s massive, non-binding infrastructure commitments and the broader stability of the artificial intelligence sector.\n\n### Key Points\n- Samsung Electronics, Micron Technology, and SK Hynix stocks dropped between 14% and 21% this month amid concerns over unfulfilled supply agreements.\n- OpenAI previously signed non-binding letters of intent to purchase 40% of global DRAM output for its Stargate Project, which has faced significant scaling setbacks.\n- Microsoft is currently developing a new AI factory in Abilene, Texas, on land previously associated with OpenAI’s stalled data center expansion plans.\n- Nvidia’s planned $100 billion investment in OpenAI has effectively collapsed, with CEO Jensen Huang signaling no further consequential investments in the company.\n- Morgan Stanley analyst Joseph Moore maintains that memory shortages remain a critical gating factor for AI, suggesting current market volatility is not indicative of long-term demand destruction.\n\n### Why it Matters\nThe recent market volatility highlights the precarious financial position of OpenAI and the potential for a broader correction in the AI industry. While investors fear a bubble, the underlying demand for high-performance memory remains robust, suggesting that even if individual firms fail, the infrastructure assets will likely be absorbed by larger, more stable technology companies.",
+    "category": "Tech Business & Markets",
+    "author": "Lewis Parker",
+    "processed_at": "2026-04-01T23:53:39.508418",
+    "title": "Is The RAM AI-pocalypse Finally Over? Probably Not"
+  },
+  {
+    "source": "Schneier.com",
+    "url": "https://www.schneier.com/blog/archives/2026/04/is-hackback-official-us-cybersecurity-strategy.html",
+    "summary": "The 2026 US Cyber Strategy for America introduces an aggressive policy shift that may authorize private companies to conduct offensive cyber operations against suspected adversary networks.\n\n### Key Points\n- The 2026 strategy document explicitly encourages the private sector to identify and disrupt foreign adversary networks.\n- Critics interpret the language as a potential endorsement of \"hackback\" operations, allowing corporations to launch counterattacks.\n- Cybersecurity experts warn that private entities lack the legal framework to ensure due process or accurate attribution of attacks.\n- Offensive actions risk misidentifying targets, as attackers often use compromised \"zombie\" computers to mask their true origins.\n- The policy marks a departure from traditional government-led defense by delegating offensive capabilities to non-state actors.\n\n### Why it Matters\nThis policy shift could fundamentally alter the landscape of international digital conflict by blurring the lines between corporate security and state-sanctioned warfare. If private companies are empowered to launch retaliatory strikes, it may lead to increased collateral damage and unpredictable escalations in global cyberspace.",
+    "category": "Cybersecurity",
+    "author": "Bruce Schneier",
+    "processed_at": "2026-04-01T23:53:48.319779",
+    "title": "Is “Hackback” Official US Cybersecurity Strategy?"
+  },
+  {
+    "source": "Fstoppers",
+    "url": "https://fstoppers.com/news/biggest-photography-stories-march-2026-901312",
+    "summary": "March 2026 marked a transformative period for the photography industry, defined by severe memory card shortages, shifting legal landscapes for AI, and a notable pivot toward analog-inspired hardware.\n\n### Key Points\n- Sony Japan suspended orders for most CFexpress and SD memory cards due to a global semiconductor shortage driven by AI datacenter demand.\n- The U.S. Supreme Court declined to hear an appeal in the Thaler v. Perlmutter case, maintaining that AI-generated works without human authorship are ineligible for copyright.\n- Eastman Kodak introduced new Ektacolor Pro and Ektapan film lines, effectively consolidating its film distribution and branding under the Eastman Kodak name.\n- CP+ 2026 saw record attendance but a lack of major camera announcements, highlighting a broader industry trend toward market stagnation for flagship bodies.\n- Canon showcased an Analog Concept Camera, reflecting a growing consumer preference for tactile, simplified photography experiences over high-spec digital devices.\n- Apple officially discontinued the Mac Pro, signaling a permanent shift toward integrated Apple Silicon systems for professional creative workflows.\n\n### Why it Matters\nThe photography industry is currently navigating a difficult transition where AI infrastructure is physically limiting hardware availability and forcing a reevaluation of creative ownership. These developments suggest that photographers must adapt to higher equipment costs and evolving legal standards while manufacturers increasingly prioritize niche, experience-driven products over traditional technical upgrades.",
+    "category": "Phones, Laptops, and Gadgets",
+    "author": "Alex Cooke",
+    "processed_at": "2026-04-01T23:53:59.377772",
+    "title": "The Biggest Photography Stories of March 2026"
+  },
+  {
+    "source": "CBS News",
+    "url": "https://www.cbsnews.com/news/jamie-dimon-artificial-intelligence-work-week/",
+    "summary": "JPMorgan Chase CEO Jamie Dimon predicts that artificial intelligence will significantly improve human longevity and productivity while potentially reducing the standard work week to three and a half days.\n\n### Key Points\n- Jamie Dimon expects AI to facilitate medical breakthroughs, including potential cures for cancer and increased life expectancy.\n- The banking executive anticipates that AI-driven productivity gains could shorten the average work week to 3.5 days within 30 years.\n- Dimon warned that rapid technological adoption poses risks to the labor market by potentially displacing millions of workers.\n- He advocated for public-private partnerships to scale worker retraining programs and transition employees into new sectors.\n- Dimon suggested that redeploying labor into critical industries like advanced manufacturing could help address current workforce shortages.\n\n### Why it Matters\nThis perspective from a major financial leader highlights the tension between long-term economic prosperity and short-term labor market instability caused by automation. It underscores the growing necessity for coordinated policy and corporate strategies to manage the societal transition as AI becomes deeply embedded in the global economy.",
+    "category": "Artificial Intelligence",
+    "author": "Mary  Cunningham",
+    "processed_at": "2026-04-01T23:54:26.345834",
+    "title": "Jamie Dimon says AI could help shorten work week, cure cancer"
+  },
+  {
     "url": "https://www.theregister.com/2026/03/31/axios_npm_backdoor_rat/",
     "category": "Cybersecurity",
     "author": "Carly Page",
