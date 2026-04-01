@@ -252,13 +252,13 @@ Follow this exact structure and nothing else:
 - Must clearly state the main topic and the most important entity/event
 - Write it so it works well as a search-snippet style summary
 
-**Key points**
+###Key Points
 - Exactly 3 to 6 bullet points
 - Each bullet should be short and information-dense
 - Include concrete facts, names, numbers, products, companies, dates, or locations when present
 - Prefer specific nouns and verbs over vague language
 
-**Why it matters**
+###Why it Matters
 - One bullet point only
 - Exactly 2 to 3 sentences
 - Explain the broader impact, business implication, market relevance, or user relevance
