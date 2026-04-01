@@ -7,7 +7,7 @@ on:
 
 jobs:
   run-pipeline:
-    timeout-minutes: 30
+    timeout-minutes: 61
     runs-on: ubuntu-latest
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -30,19 +30,23 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      # ── 4. Run the news pipeline ──────────────────────────────────────────
+      # ── 4. Run the news pipeline (With 1 Retry) ───────────────────────────
       - name: Run news pipeline
+        uses: nick-fields/retry@v3
         env:
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
           GEMINI_KEY:   ${{ secrets.GEMINI_KEY }}
-        run: python news_pipeline.py
+        with:
+          timeout_minutes: 30
+          max_attempts: 2
+          command: python news_pipeline.py
 
       # ── 5. Merge new articles into articles.json ──────────────────────────
       - name: Update site data
         run: python build_site_data.py
 
       # ── 6. Commit and push articles.json ──────────────────────────────────
-      #    Only commits if articles.json actually changed (new articles arrived).
+      #     Only commits if articles.json actually changed (new articles arrived).
       - name: Commit updated articles.json
         run: |
           git config user.name  "github-actions[bot]"
