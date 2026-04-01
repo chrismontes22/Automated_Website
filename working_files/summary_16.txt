@@ -1,20 +1,19 @@
-Axios Supply Chain Attack Pushes Cross-Platform RAT via Compromised npm Account
+Hashdex’s diversified crypto ETF adds options for hedging, income generation
 ============================================================
 
-The popular JavaScript HTTP client Axios was compromised via a supply chain attack that injected a malicious dependency, deploying cross-platform remote access trojans to infected developer systems.
+**Hashdex has launched options trading for its Nasdaq CME Crypto Index ETF (NCIQ) on Nasdaq, providing institutional investors with new tools for hedging, income generation, and risk management.**
 
 **Key points**
-- Attackers compromised the Axios maintainer's npm account to publish malicious versions 1.14.1 and 0.30.4.
-- The versions injected a fake dependency, "plain-crypto-js," which executed a postinstall script to drop platform-specific malware.
-- The trojan targeted Windows, macOS, and Linux, using a shared command-and-control server at "sfrclak.com."
-- Security researchers identified additional malicious packages, including "@shadanai/openclaw" and "@qqbrowser/openclaw-qbot," distributing the same payload.
-- Users are urged to downgrade to Axios versions 1.14.0 or 0.30.3 and immediately rotate all system credentials.
+- The NCIQ ETF tracks a market-cap-weighted basket of digital assets, including bitcoin, ether, XRP, and solana.
+- New options contracts allow investors to implement yield-generating strategies and downside protection without liquidating their underlying ETF positions.
+- The launch addresses institutional requirements for defined-outcome structures and risk-management frameworks previously unavailable for diversified crypto holdings.
+- This development enables the creation of sophisticated structured products, such as capital-protected notes and defined-outcome ETFs.
 
 **Why it matters**
-This incident highlights the severe risks of supply chain attacks where malicious code is hidden within transitive dependencies rather than the primary software package. Because Axios is used in over 83 million weekly downloads, this breach potentially exposes a vast range of enterprise applications and development environments to unauthorized remote access.
+The availability of options for a diversified crypto ETF removes a significant barrier for institutional capital that requires hedging capabilities before entering the market. By aligning crypto investment products with standard TradFi risk-management tools, this move facilitates larger-scale allocations and more complex financial strategies.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/03/axios-supply-chain-attack-pushes-cross.html
-Category: Cybersecurity
+Author:   Omkar Godbole
+Source:   CoinDesk
+URL:      https://www.coindesk.com/markets/2026/03/31/hashdex-s-diversified-crypto-etf-adds-options-for-hedging-income-generation
+Category: Tech Business & Markets

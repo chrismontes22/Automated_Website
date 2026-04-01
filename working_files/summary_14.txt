@@ -1,21 +1,20 @@
-Incident March 30th, 2026 – Accidental CDN Caching
+How physicists proved that quantum weirdness is a feature, not a bug
 ============================================================
 
-**Railway configuration error leads to accidental data exposure for users**
-A configuration update at Railway on March 30, 2026, caused authenticated application data to be incorrectly cached and served to unauthorized users for a 52-minute period.
+A. M. Turing Award winners Charles H. Bennett and Gilles Brassard are warning that quantum computing advancements threaten global financial security by potentially breaking current internet and banking encryption.
 
 **Key points**
-- The incident occurred between 10:42 UTC and 11:34 UTC on March 30, 2026, affecting approximately 0.05% of domains.
-- A deployment error accidentally enabled CDN caching for domains where the feature was explicitly disabled by users.
-- Cached HTTP GET responses were served to unintended users, potentially exposing private or authenticated information.
-- Railway fully reverted the configuration change and purged all global edge caches by 11:34 UTC.
-- The company is implementing additional pre-production testing and slower, phased rollout procedures to prevent future configuration errors.
+- Charles H. Bennett and Gilles Brassard received the A. M. Turing Award for their foundational work in quantum information theory.
+- The duo developed the "BB84" protocol, which uses quantum mechanics to create uncrackable encryption keys.
+- Their research demonstrated that quantum phenomena like entanglement and superposition can be used as resources rather than obstacles.
+- Experts warn that future quantum computers could render current classical cryptography obsolete, putting sensitive financial and personal data at risk.
+- To mitigate these risks, researchers recommend adopting post-quantum cryptography and quantum-secure communication methods.
 
 **Why it matters**
-This incident highlights the significant security risks associated with automated infrastructure updates and the potential for data privacy breaches in cloud hosting environments. Railway is now prioritizing safety and security protocols over new feature development to restore user trust and prevent similar unauthorized data exposure.
+The transition to quantum computing represents a significant shift in cybersecurity that could compromise the integrity of global financial systems and private data. By highlighting these vulnerabilities, researchers are urging immediate action to develop and implement new encryption standards before existing security measures become obsolete.
 
 ============================================================
-Author:   Jacob Cooper
-Source:   Railway.com
-URL:      https://blog.railway.com/p/incident-report-march-30-2026-accidental-cdn-caching
+Author:   Joseph Howlett
+Source:   Scientific American
+URL:      https://www.scientificamerican.com/article/how-physicists-proved-that-quantum-weirdness-is-a-feature-not-a-bug/
 Category: Cybersecurity

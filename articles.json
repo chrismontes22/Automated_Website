@@ -1,5 +1,185 @@
 [
   {
+    "url": "https://www.theregister.com/2026/03/31/axios_npm_backdoor_rat/",
+    "category": "Cybersecurity",
+    "author": "Carly Page",
+    "summary": "**Attackers compromised the widely used Axios npm library by hijacking a maintainer's account to distribute a remote-access trojan, marking a significant supply chain security breach for developers.**\n\n**Key points**\n- Attackers hijacked the npm account of Axios maintainer \"jasonsaayman\" to publish malicious versions 1.14.1 and 0.30.4.\n- The compromised releases included a malicious dependency, \"plain-crypto-js@4.2.1,\" which installed platform-specific backdoors on Windows, macOS, and Linux.\n- Google’s Threat Intelligence Group attributed the sophisticated attack to the suspected North Korean threat actor UNC1069.\n- The breach bypassed standard GitHub Actions CI/CD pipelines by manually pushing packages directly through the npm CLI.\n- Developers who installed the affected versions are advised to rotate credentials and consider rebuilding compromised systems from scratch.\n\n**Why it matters**\nThis incident highlights the severe risks inherent in software supply chains, where a single compromised account can expose millions of users to sophisticated malware. Because Axios is a foundational tool for web development, this breach demonstrates how attackers are increasingly targeting developer infrastructure to gain persistent access to enterprise environments.",
+    "processed_at": "2026-04-01T19:54:11.824875",
+    "source": "Theregister.com",
+    "title": "Supply chain blast: Top npm package backdoored to drop dirty RAT on dev machines"
+  },
+  {
+    "url": "https://www.wired.com/story/the-us-militarys-gps-software-is-an-8-billion-mess/",
+    "category": "Tech Business & Markets",
+    "author": "Stephen Clark, Ars Technica",
+    "summary": "**The US Space Force is considering canceling the $8 billion GPS Next-Generation Operational Control System program after RTX Corporation failed to resolve persistent technical issues following years of delays.**\n\n**Key points**\n- The GPS Next-Generation Operational Control System (OCX) has seen its costs balloon from an initial $3.7 billion estimate in 2010 to approximately $8 billion today.\n- Despite the Space Force accepting delivery of the system last July, extensive testing revealed unresolved software defects and systemic issues across all subsystems.\n- The program was intended to manage advanced GPS III satellites and jam-resistant \"M-code\" signals, which are critical for modern military navigation and defense against spoofing.\n- The Pentagon is now evaluating whether to abandon the OCX program entirely and continue upgrading the military's aging legacy ground control system instead.\n- Government Accountability Office reports previously cited poor acquisition decisions, inadequate software expertise, and persistent engineering failures as primary drivers of the program's decline.\n\n**Why it matters**\nThe potential cancellation of OCX highlights significant vulnerabilities in the military's ability to modernize critical infrastructure against increasing global threats like GPS jamming and spoofing. If the program is scrapped, the military must rely on legacy systems, which could limit the effectiveness of advanced weapons platforms that depend on next-generation navigation signals.",
+    "processed_at": "2026-04-01T19:54:21.997815",
+    "source": "Wired",
+    "title": "The US Military’s GPS Software Is an $8 Billion Mess"
+  },
+  {
+    "url": "https://www.businessinsider.com/sneaky-truth-ai-layoffs-switcheroo-meta-microsoft-2026-3",
+    "category": "Tech Business & Markets",
+    "author": "Amanda Hoover",
+    "summary": "Tech companies are increasingly using artificial intelligence as a justification for workforce restructuring, often replacing full-time staff with contract workers to reduce costs and prioritize AI investment.\n\n**Key points**\n- Tech firms including Meta, Oracle, Atlassian, and Block have implemented significant layoffs, with AI cited as a rationale for roughly 92,000 job cuts since 2023.\n- Research from Robert Half indicates that 29% of hiring managers have reopened previously eliminated positions, often shifting toward contract or temporary labor models.\n- A 2025 report from Revelio Labs found that 40% of white-collar workers who changed jobs accepted pay cuts of 10% or more, marking a decade-high trend.\n- Despite corporate narratives, MIT research suggests 95% of AI pilot programs have not yet delivered the promised productivity gains or cost savings.\n- Industry experts note that the shift toward contract labor allows companies to minimize long-term financial obligations like benefits, stock options, and retirement contributions.\n\n**Why it matters**\nThis trend signals a fundamental erosion of the traditional employer-employee social contract, as tech giants prioritize short-term financial flexibility over workforce stability. By replacing full-time roles with gig-based or contract positions, companies are effectively offloading the risks of the AI transition onto workers while reducing their own long-term overhead.",
+    "processed_at": "2026-04-01T19:54:31.639915",
+    "source": "Business Insider",
+    "title": "The sneaky truth about the wave of AI layoffs"
+  },
+  {
+    "url": "https://www.theverge.com/tech/904361/matter-spec-update1-5-1-camera-video-streaming-heic-doorbell-chimes",
+    "category": "Phones, Laptops, and Gadgets",
+    "author": "Andrew Liszewski",
+    "summary": "**The Connectivity Standards Alliance has released Matter 1.5.1, introducing performance enhancements for smart home cameras, including optimized multi-stream delivery and expanded support for modern media streaming formats.**\n\n**Key points**\n- Matter 1.5.1 enables cameras to simultaneously deliver multiple video streams tailored to specific device requirements, such as high-resolution archival and low-resolution mobile viewing.\n- The update adds support for HEIC image files, which provide superior quality and smaller file sizes compared to traditional JPEG formats.\n- New compatibility features include support for HLS and DASH streaming protocols to better integrate with modern cloud and media platforms.\n- Pan-tilt-zoom camera controls have been improved, and smart doorbells now support custom chime sounds and automated triggers.\n\n**Why it matters**\nThese technical refinements reduce bandwidth consumption and improve interoperability across diverse smart home ecosystems. By standardizing how cameras handle multi-stream data, the update helps manufacturers deliver more reliable and responsive security experiences for end users.",
+    "processed_at": "2026-04-01T19:54:42.912232",
+    "source": "The Verge",
+    "title": "The latest Matter update improves camera streaming"
+  },
+  {
+    "url": "https://www.cnet.com/tech/cnets-editors-sound-off-about-our-favorite-apple-events-devices-and-flops/",
+    "category": "Phones, Laptops, and Gadgets",
+    "author": "Dashia Milden",
+    "summary": "As Apple celebrates its 50th anniversary since its 1976 founding, industry experts reflect on the company's evolution from the Apple-1 computer to its current dominant global tech ecosystem.\n\n**Key points**\n- Apple was founded on April 1, 1976, by Steve Jobs, Steve Wozniak, and Ronald Wayne to sell the Apple-1 computer.\n- The company’s current ecosystem includes diverse hardware like the iPhone, MacBook, Apple Watch, and the $3,500 Vision Pro headset.\n- Essential features like the Find My app, AirPods hearing tests, and cellular-connected Apple Watches are frequently cited as life-saving or highly practical tools.\n- Critics and staff identify the iPod as an underrated classic, while the Vision Pro and Apple Watch are often debated as being overpriced or over-engineered.\n- Recent product additions to the lineup include the MacBook Neo, iPhone 17E, and AirPods Max 2.\n\n**Why it matters**\nApple’s half-century journey highlights the significant influence of its \"think different\" philosophy on modern consumer electronics and daily digital habits. By balancing iconic hardware successes with controversial product choices, the company continues to shape market expectations and set industry standards for integrated technology ecosystems.",
+    "processed_at": "2026-04-01T19:55:03.243636",
+    "source": "CNET",
+    "title": "CNET's Editors Sound Off About Our Favorite Apple Events, Devices and Flops"
+  },
+  {
+    "url": "https://gizmodo.com/apple-removes-iphone-vibe-coding-app-from-app-store-2000740084",
+    "category": "Tech Business & Markets",
+    "author": "Mike Pearl",
+    "summary": "**Apple has removed the \"vibe coding\" app Anything from its App Store, citing violations of platform guidelines regarding the execution of unauthorized code and app functionality changes.**\n\n**Key points**\n- Apple removed the app Anything last Thursday, following similar enforcement actions against other vibe coding tools like Replit and Vibecode.\n- The removals reportedly stem from violations of Apple App Store Guideline 2.5.2, which prohibits apps from downloading or executing code that alters core functionality.\n- Vibe coding apps allow users to generate and debug software directly on iPhones using large language models like Anthropic’s Claude and OpenAI’s Codex.\n- Anything CEO Dhruv Amin stated that Apple rejected attempts to move debugging processes into a browser window before ultimately removing the application.\n- Apple recently integrated its own autonomous coding features into Xcode, allowing developers to use AI agents to review and edit code within the official environment.\n\n**Why it matters**\nThis enforcement highlights a growing tension between Apple’s strict security protocols and the rise of generative AI tools that enable non-technical users to build software. By restricting these apps, Apple maintains control over its ecosystem's security while simultaneously positioning its own Xcode tools as the authorized standard for AI-assisted development.",
+    "processed_at": "2026-04-01T19:55:15.230711",
+    "source": "Gizmodo.com",
+    "title": "Apple Removes iPhone Vibe Coding App from App Store"
+  },
+  {
+    "url": "https://www.androidcentral.com/apps-software/android-auto/android-auto-bug-makes-signal-icon-vanish",
+    "category": "Phones, Laptops, and Gadgets",
+    "author": "sanujb6@gmail.com (Sanuj Bhatia) , Sanuj Bhatia",
+    "summary": "**Android Auto users are reporting a persistent software bug that causes the cellular signal icon to disappear from vehicle displays following the recent version 16.5 update.**\n\n**Key points**\n- Users report the cellular signal icon vanishes from the Android Auto interface while connected to vehicle head units.\n- Despite the missing icon, mobile data, navigation, and phone call functionality remain fully operational.\n- The issue is primarily linked to Android Auto version 16.5, according to reports from the Reddit community.\n- Some users have successfully restored the icon by manually downgrading their application to version 16.3.\n- Google has not yet issued an official statement or a permanent software patch for the display error.\n\n**Why it matters**\nWhile the bug does not disrupt actual network connectivity, the loss of visual signal indicators creates uncertainty for drivers navigating areas with unreliable cellular coverage. This issue highlights the ongoing challenges Google faces in maintaining interface stability across diverse automotive hardware configurations.",
+    "processed_at": "2026-04-01T19:55:26.974471",
+    "source": "Android Central",
+    "title": "Android Auto bug is making the signal icon vanish for some users"
+  },
+  {
+    "url": "https://thehackernews.com/2026/03/trueconf-zero-day-exploited-in-attacks.html",
+    "category": "Cybersecurity",
+    "author": "info@thehackernews.com (The Hacker News)",
+    "summary": "A high-severity zero-day vulnerability in TrueConf video conferencing software, tracked as CVE-2026-3502, is being exploited by Chinese-nexus threat actors to compromise government networks across Southeast Asia.\n\n**Key points**\n- The vulnerability, CVE-2026-3502, allows attackers to distribute malicious updates by bypassing integrity checks in the TrueConf Windows client.\n- Security researchers at Check Point identified the \"TrueChaos\" campaign, which uses the flaw to deploy the Havoc command-and-control framework.\n- Attackers gain control of on-premises TrueConf servers to push rogue installers that execute DLL side-loading attacks on connected endpoints.\n- TrueConf released a patch for the flaw in version 8.5.3, which users are urged to install immediately to prevent unauthorized code execution.\n- Attribution links the campaign to Chinese-nexus actors based on infrastructure usage and tactical similarities to previous operations like Amaranth-Dragon.\n\n**Why it matters**\nThis exploit demonstrates the significant risk posed by supply chain attacks that weaponize trusted software update mechanisms to bypass individual endpoint security. By compromising a central server, attackers can efficiently infiltrate entire government networks without needing to target each device separately.",
+    "processed_at": "2026-04-01T19:55:36.815081",
+    "source": "Internet",
+    "title": "TrueConf Zero-Day Exploited in Attacks on Southeast Asian Government Networks"
+  },
+  {
+    "url": "https://www.searchenginejournal.com/the-science-of-what-ai-actually-rewards/570849/",
+    "category": "Artificial Intelligence",
+    "author": "Kevin Indig",
+    "summary": "**New research analyzing 1.2 million ChatGPT responses reveals that AI citation patterns are highly vertical-specific, debunking universal SEO writing formulas and highlighting the dominance of corporate content.**\n\n**Key points**\n- Declarative, direct opening statements provide a 14% aggregate lift in citation rates across all seven analyzed industries.\n- Including specific dates and numerical data consistently improves citation likelihood, while pricing-focused intros generally suppress it.\n- Corporate and editorial content accounts for 94.7% of all AI citations, significantly outperforming user-generated content like Reddit or forums.\n- Heading structure is binary; pages with three to four headings perform worse than those with zero, while optimal depth varies by vertical.\n- Niche, specific entities outperform well-known, Knowledge Graph-verified entities, which often correlate with generic content that AI avoids.\n\n**Why it matters**\nThese findings suggest that businesses should abandon \"one-size-fits-all\" AI optimization strategies in favor of vertical-specific content architecture. By prioritizing authoritative corporate data and precise, niche entity usage over generic SEO tactics, brands can better align their content with the specific citation behaviors of LLMs.",
+    "processed_at": "2026-04-01T19:55:46.278653",
+    "source": "Search Engine Journal",
+    "title": "The Science Of What AI Actually Rewards via @sejournal, @Kevin_Indig"
+  },
+  {
+    "url": "https://www.androidauthority.com/first-pixel-11-leak-doesnt-reveal-most-important-thing-price-3653177/",
+    "category": "Phones, Laptops, and Gadgets",
+    "author": "Joe Maring",
+    "summary": "**New CAD renders of the Google Pixel 11 reveal a thinner design and slimmer bezels, but industry analysts warn that rising component costs could lead to significant price hikes.**\n\n**Key points**\n- Leaked CAD renders indicate the baseline Pixel 11 will feature a refined camera bar, thinner chassis, and reduced display bezels.\n- The device is expected to utilize the new Tensor G6 chipset, which is reportedly manufactured using an expensive 2nm process from TSMC.\n- Rising global costs for RAM and hardware components have recently forced competitors like Samsung and Sony to increase prices on flagship devices.\n- Analysts suggest the Pixel 11 could see a price increase above the $799 starting point established by the previous Pixel 10 model.\n\n**Why it matters**\nThe potential price increase for the Pixel 11 could significantly alter its market positioning and consumer appeal compared to the more affordable Pixel 10a. If the base model becomes too expensive, it risks losing its competitive edge against higher-tier Pro models or alternative flagship smartphones.",
+    "processed_at": "2026-04-01T19:55:55.774153",
+    "source": "Android Authority",
+    "title": "The first Pixel 11 leak looks great, but it doesn’t tell us the most important thing"
+  },
+  {
+    "url": "https://www.techradar.com/pro/security/healthcare-tech-firm-carecloud-admits-data-breach-says-hackers-accessed-patient-info-heres-what-we-know",
+    "category": "Cybersecurity",
+    "author": "Sead Fadilpašić",
+    "summary": "**CareCloud confirms a cyberattack on its CareCloud Health division that caused an eight-hour network disruption and potential unauthorized access to sensitive patient data on March 16, 2026.**\n\n**Key points**\n- CareCloud reported a temporary network disruption affecting one of its six electronic health record (EHR) environments.\n- The incident lasted approximately eight hours before the company restored full functionality to the affected system.\n- A forensic analysis is currently underway, led by a Big Four accounting firm’s cyber response advisory team.\n- The company is investigating whether patient information or other sensitive data was exfiltrated during the breach.\n- No hacking group has claimed responsibility for the attack, and the company reports no material impact on operations at this time.\n\n**Why it matters**\nThis incident highlights the ongoing vulnerability of healthcare technology providers to cyber threats that can compromise sensitive patient records. While the immediate operational impact was limited, the potential for regulatory scrutiny and reputational damage remains a significant concern for the company and its 40,000 healthcare providers.",
+    "processed_at": "2026-04-01T19:56:04.662444",
+    "source": "TechRadar",
+    "title": "Healthcare tech firm CareCloud admits data breach, says hackers accessed patient info — here's what we know"
+  },
+  {
+    "url": "https://www.macrumors.com/2026/03/31/ollama-now-runs-faster-apple-silicon-macs/",
+    "category": "Artificial Intelligence",
+    "author": "Tim Hardwick",
+    "summary": "**Ollama has released a performance-focused update for macOS that leverages Apple’s MLX framework to significantly increase processing speeds for local AI models on Apple silicon hardware.**\n\n**Key points**\n- Ollama version 0.19 delivers a 1.6x increase in prompt prefill speeds and nearly doubles response generation rates.\n- The update utilizes Apple’s GPU Neural Accelerators, providing the most substantial performance gains for Macs equipped with M5-series chips.\n- Improved memory management enhances responsiveness for AI-powered coding agents and personal assistants during extended sessions.\n- The current preview release requires a Mac with at least 32GB of unified memory to function.\n- Initial support is limited to Alibaba’s Qwen3.5 model, with plans to expand compatibility to additional AI models in future updates.\n\n**Why it matters**\nThis update lowers the barrier for developers and power users to run sophisticated AI models locally on high-end Apple hardware without relying on cloud-based services. By optimizing performance for local silicon, Ollama is making private, high-speed AI tools more practical for resource-intensive tasks like coding and data analysis.",
+    "processed_at": "2026-04-01T19:56:14.140916",
+    "source": "MacRumors",
+    "title": "Ollama Now Runs Faster on Macs Thanks to Apple's MLX Framework"
+  },
+  {
+    "url": "https://torrentfreak.com/game-pirates-beat-denuvo-with-hypervisor-bypasses-irdeto-promises-countermeasure/",
+    "category": "Cybersecurity",
+    "author": "Ernesto Van der Sar",
+    "summary": "**New hypervisor-based bypass methods are enabling day-zero piracy of major video games, effectively circumventing Denuvo’s anti-tamper protection and forcing Irdeto to develop urgent security countermeasures.**\n\n**Key points**\n- New hypervisor bypasses operate at the \"Ring -1\" security level, allowing pirates to intercept CPU instructions and feed false data to Denuvo software.\n- Major titles including *Resident Evil Requiem*, *Crimson Desert*, and *Assassin’s Creed Shadows* have been compromised shortly after their official release dates.\n- Using these bypasses requires users to disable critical Windows security features like Virtualization-Based Security (VBS), creating significant system vulnerabilities.\n- Irdeto, the owner of Denuvo, is currently developing updates to counter these methods without moving their software into the kernel level.\n- Popular repacker FitGirl has begun distributing these cracks under strict community guidelines, despite ongoing concerns regarding system stability and potential malware risks.\n\n**Why it matters**\nThe emergence of hypervisor-based cracking marks a significant shift in the digital rights management landscape, as it drastically reduces the time games remain protected from piracy. This development threatens the early-release sales window that publishers rely on, forcing companies to balance more aggressive security measures against the performance and safety concerns of legitimate customers.",
+    "processed_at": "2026-04-01T19:56:23.513914",
+    "source": "Torrentfreak.com",
+    "title": "Game Pirates Beat Denuvo with Hypervisor Bypasses — Irdeto Promises Countermeasure"
+  },
+  {
+    "url": "https://www.scientificamerican.com/article/how-physicists-proved-that-quantum-weirdness-is-a-feature-not-a-bug/",
+    "category": "Cybersecurity",
+    "author": "Joseph Howlett",
+    "summary": "A. M. Turing Award winners Charles H. Bennett and Gilles Brassard are warning that quantum computing advancements threaten global financial security by potentially breaking current internet and banking encryption.\n\n**Key points**\n- Charles H. Bennett and Gilles Brassard received the A. M. Turing Award for their foundational work in quantum information theory.\n- The duo developed the \"BB84\" protocol, which uses quantum mechanics to create uncrackable encryption keys.\n- Their research demonstrated that quantum phenomena like entanglement and superposition can be used as resources rather than obstacles.\n- Experts warn that future quantum computers could render current classical cryptography obsolete, putting sensitive financial and personal data at risk.\n- To mitigate these risks, researchers recommend adopting post-quantum cryptography and quantum-secure communication methods.\n\n**Why it matters**\nThe transition to quantum computing represents a significant shift in cybersecurity that could compromise the integrity of global financial systems and private data. By highlighting these vulnerabilities, researchers are urging immediate action to develop and implement new encryption standards before existing security measures become obsolete.",
+    "processed_at": "2026-04-01T19:56:32.815203",
+    "source": "Scientific American",
+    "title": "How physicists proved that quantum weirdness is a feature, not a bug"
+  },
+  {
+    "url": "https://the-gadgeteer.com/2026/03/31/8-iconic-apple-products-we-will-never-forget/",
+    "category": "Phones, Laptops, and Gadgets",
+    "author": "Rei Padla",
+    "summary": "As Apple celebrates its 50th anniversary on April 1, 2026, the company reflects on five decades of innovation that transformed personal computing, mobile technology, and global consumer habits.\n\n**Key points**\n- Apple was founded on April 1, 1976, by Steve Jobs, Steve Wozniak, and Ronald Wayne in a Los Altos garage.\n- Iconic products like the Macintosh, iMac G3, iPod, and iPhone redefined their respective industries through intuitive design and hardware integration.\n- The company transitioned from a hobbyist computer manufacturer to a global technology leader headquartered at a $5 billion campus in Cupertino.\n- Anniversary celebrations include global events featuring artists like Alicia Keys and a private employee concert at Apple Park.\n- CEO Tim Cook marked the milestone with an open letter emphasizing the company's core value of making technology personal and accessible.\n\n**Why it matters**\nApple’s evolution from a small partnership to a trillion-dollar entity has fundamentally altered how the world interacts with digital tools and media. Its history of prioritizing design and user experience continues to set the standard for the consumer electronics industry and influences market expectations for hardware and software integration.",
+    "processed_at": "2026-04-01T19:57:00.789904",
+    "source": "The Gadgeteer",
+    "title": "8 Iconic Apple Products We Will Never Forget"
+  },
+  {
+    "url": "https://www.coindesk.com/markets/2026/03/31/hashdex-s-diversified-crypto-etf-adds-options-for-hedging-income-generation",
+    "category": "Tech Business & Markets",
+    "author": "Omkar Godbole",
+    "summary": "**Hashdex has launched options trading for its Nasdaq CME Crypto Index ETF (NCIQ) on Nasdaq, providing institutional investors with new tools for hedging, income generation, and risk management.**\n\n**Key points**\n- The NCIQ ETF tracks a market-cap-weighted basket of digital assets, including bitcoin, ether, XRP, and solana.\n- New options contracts allow investors to implement yield-generating strategies and downside protection without liquidating their underlying ETF positions.\n- The launch addresses institutional requirements for defined-outcome structures and risk-management frameworks previously unavailable for diversified crypto holdings.\n- This development enables the creation of sophisticated structured products, such as capital-protected notes and defined-outcome ETFs.\n\n**Why it matters**\nThe availability of options for a diversified crypto ETF removes a significant barrier for institutional capital that requires hedging capabilities before entering the market. By aligning crypto investment products with standard TradFi risk-management tools, this move facilitates larger-scale allocations and more complex financial strategies.",
+    "processed_at": "2026-04-01T19:57:11.476099",
+    "source": "CoinDesk",
+    "title": "Hashdex’s diversified crypto ETF adds options for hedging, income generation"
+  },
+  {
+    "url": "https://www.windowscentral.com/hardware/surface/the-surface-pro-x-was-ahead-of-its-time-now-its-time-for-a-2026-comeback",
+    "category": "Phones, Laptops, and Gadgets",
+    "author": "sean.endicott@futurenet.com (Sean Endicott) , Sean Endicott",
+    "summary": "**Microsoft is reportedly preparing to launch new Surface PCs this spring, prompting calls for the company to revive the ultra-thin, fanless Surface Pro X design with modern processors.**\n\n**Key points**\n- Microsoft is expected to release new Surface hardware this spring, according to reports from senior editor Zac Bowden.\n- Industry analysts suggest reviving the Surface Pro X, which was discontinued in 2023, to offer a dedicated ultra-thin, fanless device.\n- Modern Snapdragon X and upcoming Snapdragon X2 processors provide significantly higher performance than the original Microsoft SQ1 chip used in the Pro X.\n- Windows 11 on Arm has matured with improved native app support and better emulation through Prism, making Arm-based hardware more viable for consumers.\n- The current market shows strong demand for thin, fanless computing, as evidenced by the popularity of competing devices like the MacBook Neo.\n\n**Why it matters**\nReviving the Surface Pro X would allow Microsoft to better compete with modern ultra-thin laptops and tablets by offering a distinct, high-performance, fanless form factor. This move could help the Surface brand regain its reputation for innovative design while fully leveraging the recent advancements in Windows on Arm architecture.",
+    "processed_at": "2026-04-01T19:57:20.877148",
+    "source": "Windows Central",
+    "title": "The Surface Pro X was ahead of its time — Now it’s time for a 2026 comeback"
+  },
+  {
+    "url": "https://www.infosecurity-magazine.com/news/employee-data-breaches-surge/",
+    "category": "Cybersecurity",
+    "author": "Phil Muncaster",
+    "summary": "**Employee data breaches reported to the UK’s Information Commissioner’s Office reached a seven-year high of 3,872 incidents in 2025, driven largely by a significant rise in non-cyber security failures.**\n\n**Key points**\n- Reported data breaches increased by 5% over the past year, marking a 29% rise since 2019.\n- Non-cyber incidents, such as lost devices or mishandled paperwork, jumped 15% to 2,304 cases.\n- Cyber-related breaches declined by 6% to 1,568, suggesting improved digital defenses but persistent physical vulnerabilities.\n- Law firm Nockolds attributes the trend to hybrid working, which complicates the secure handling of sensitive HR, payroll, and medical documents.\n- Organizations face potential legal liability for accidental breaches if internal policies and staff training fail to address modern remote work risks.\n\n**Why it matters**\nThe shift toward hybrid work environments has created significant security gaps that traditional IT defenses cannot address alone. Companies must now integrate HR and security protocols to protect sensitive employee data and mitigate the rising risk of legal claims stemming from human error.",
+    "processed_at": "2026-04-01T19:57:30.018786",
+    "source": "Infosecurity Magazine",
+    "title": "Employee Data Breaches Surge to Seven-Year High"
+  },
+  {
+    "url": "https://www.greptile.com/blog/ai-slopware-future",
+    "category": "Artificial Intelligence",
+    "author": "Soohoon Choi",
+    "summary": "**One-sentence headline summary**\nEconomic incentives will likely force AI models to prioritize high-quality, maintainable code over \"slop\" as businesses seek to reduce the long-term costs of software development and maintenance.\n\n**Key points**\n- Greptile’s 2025 State of AI Coding report shows lines of code per developer increased from 4,450 to 7,839 as AI tools became standard.\n- Median pull request sizes grew by 33% between March and November 2025, contributing to concerns regarding software brittleness and increased system outages.\n- Industry experts like Andrej Karpathy and Node.js creator Ryan Dahl have noted that AI agents often produce bloated, messy, or repetitive code.\n- High-quality code is defined by simplicity and ease of modification, which reduces the token usage and compute power required for AI-driven development.\n- Market competition among AI model labs will eventually favor tools that produce efficient, scalable code to minimize operational expenses for companies.\n\n**Why it matters**\nThe current surge in AI-generated \"slop\" threatens to increase technical debt and software instability across the industry. However, as AI adoption matures, the economic necessity of reducing compute costs will likely shift development standards toward cleaner, more efficient code generation.",
+    "processed_at": "2026-04-01T19:57:40.738974",
+    "source": "Greptile.com",
+    "title": "Good Code Will Still Win"
+  },
+  {
+    "url": "https://www.makeuseof.com/i-used-my-pixel-as-a-windows-webcam-and-immediately-stopped-using-the-built-in-one/",
+    "category": "Phones, Laptops, and Gadgets",
+    "author": "Rob LeFebvre",
+    "summary": "**Google Pixel users can significantly improve their video conferencing quality by using their smartphone as a high-resolution webcam instead of relying on standard built-in laptop cameras.**\n\n**Key points**\n- Android users can connect their phones to Windows 11 PCs via USB-C or the wireless Phone Link feature to serve as a high-quality webcam.\n- Manual configuration through Android settings is often required, as the device may not automatically trigger the \"Webcam\" mode upon connection.\n- The Pixel 9 camera offers superior color reproduction and lighting handling compared to standard integrated laptop webcams and dedicated hardware like the Logitech C920.\n- Windows 11 users can manage wireless camera integration through the \"Mobile devices\" section in system settings.\n- Third-party applications like DroidCam remain a viable alternative for users seeking additional functionality or compatibility outside of native OS features.\n\n**Why it matters**\nUsing a smartphone as a webcam provides a cost-effective way to achieve professional-grade video quality for remote meetings without purchasing additional hardware. This functionality leverages the advanced sensors already present in modern mobile devices to overcome the limitations of standard, low-resolution laptop cameras.",
+    "processed_at": "2026-04-01T20:02:00.794652",
+    "source": "MakeUseOf",
+    "title": "I used my Pixel as a Windows webcam and immediately stopped using the built-in one"
+  },
+  {
     "summary": "Apple has released the iOS 26.5 developer beta, introducing new advertising infrastructure for Maps, end-to-end encryption for cross-platform RCS messaging, and expanded interoperability features for third-party wearables in Europe.\n\n**Key points**\n- Apple is preparing to launch ads in the Maps app this summer, appearing in search results and a new \"Suggested Places\" feature.\n- The update enables default end-to-end encryption for RCS messages sent between iPhone and Android devices.\n- New EU-specific features allow third-party wearables to support proximity pairing, notification syncing, and Live Activities to comply with the Digital Markets Act.\n- Connecting a Magic Keyboard via USB-C now automatically establishes a Bluetooth connection with the iPhone.\n- Users switching to Android can now select specific timeframes for transferring message attachments, ranging from 30 days to all history.\n\n**Why it matters**\nThese updates signal a significant shift in Apple’s advertising strategy and its approach to cross-platform compatibility. By integrating RCS encryption and opening wearable features in the EU, Apple is balancing regulatory compliance with efforts to improve the interoperability of its ecosystem.",
     "title": "Everything New in iOS 26.5 Beta 1",
     "processed_at": "2026-04-01T08:11:58.830178",
