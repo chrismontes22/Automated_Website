@@ -1,20 +1,20 @@
-How Does Offline Bitcoin Signing Work Step by Step
+Android developer verification: Rolling out to all developers on Play Console and Android Developer Console
 ============================================================
 
-**Offline Bitcoin signing enhances security by isolating private keys on non-networked devices, using Partially Signed Bitcoin Transaction (PSBT) files to facilitate secure, air-gapped transaction authorization and broadcasting.**
+Google is introducing mandatory developer verification for Android apps to combat malware, requiring developers to register their software before user-facing security changes begin rolling out later this year.
 
 **Key points**
-- Offline signing separates transaction construction on networked computers from the signing process on isolated hardware.
-- Data moves across an "air gap" using physical media like microSD cards, QR codes, or NFC to prevent network exposure.
-- The PSBT format, standardized under BIP-174, allows devices to verify transaction details without internet connectivity.
-- Hardware wallets like Coldcard are designed for air-gapped use, while others like Ledger or Trezor require specific configurations.
-- The 2024 "Dark Skippy" research highlights risks where compromised firmware can leak keys through transaction signatures, necessitating anti-exfiltration protocols.
+- Google reports that sideloaded apps contain over 90 times more malware than those distributed through the official Google Play Store.
+- Developers must now register their apps via the Android Developer Console or Play Console to verify their identity.
+- User-facing security protections will launch in Brazil, Indonesia, Singapore, and Thailand this September before a global expansion in 2027.
+- The new Android Developer Verifier system will launch in April to check if installed apps are linked to a verified developer.
+- Power users can still install unregistered apps using advanced flows or ADB, maintaining platform flexibility for experienced individuals.
 
 **Why it matters**
-Offline signing significantly reduces the attack surface for Bitcoin holders by ensuring private keys are never exposed to internet-based malware or remote exploits. This practice is essential for institutional funds and long-term investors who prioritize maximum security for large digital asset holdings.
+This initiative represents a significant shift in Google’s strategy to balance Android’s open-source nature with increased protection against malicious software. By mandating developer accountability, the company aims to reduce security risks for average users while preserving advanced installation options for technical power users.
 
 ============================================================
-Author:   Frozen Security
-Source:   Frozensecurity.com
-URL:      https://frozensecurity.com/blog/how-offline-bitcoin-signing-works
+Author:   Android Developers
+Source:   Googleblog.com
+URL:      https://android-developers.googleblog.com/2026/03/android-developer-verification-rolling-out-to-all-developers.html
 Category: Cybersecurity

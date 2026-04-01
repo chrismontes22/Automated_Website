@@ -1,20 +1,21 @@
-Android developer verification: Rolling out to all developers on Play Console and Android Developer Console
+Incident March 30th, 2026 – Accidental CDN Caching
 ============================================================
 
-Google is introducing mandatory developer verification for Android apps to combat malware, requiring developers to register their software before user-facing security changes begin rolling out later this year.
+**Railway configuration error leads to accidental data exposure for users**
+A configuration update at Railway on March 30, 2026, caused authenticated application data to be incorrectly cached and served to unauthorized users for a 52-minute period.
 
 **Key points**
-- Google reports that sideloaded apps contain over 90 times more malware than those distributed through the official Google Play Store.
-- Developers must now register their apps via the Android Developer Console or Play Console to verify their identity.
-- User-facing security protections will launch in Brazil, Indonesia, Singapore, and Thailand this September before a global expansion in 2027.
-- The new Android Developer Verifier system will launch in April to check if installed apps are linked to a verified developer.
-- Power users can still install unregistered apps using advanced flows or ADB, maintaining platform flexibility for experienced individuals.
+- The incident occurred between 10:42 UTC and 11:34 UTC on March 30, 2026, affecting approximately 0.05% of domains.
+- A deployment error accidentally enabled CDN caching for domains where the feature was explicitly disabled by users.
+- Cached HTTP GET responses were served to unintended users, potentially exposing private or authenticated information.
+- Railway fully reverted the configuration change and purged all global edge caches by 11:34 UTC.
+- The company is implementing additional pre-production testing and slower, phased rollout procedures to prevent future configuration errors.
 
 **Why it matters**
-This initiative represents a significant shift in Google’s strategy to balance Android’s open-source nature with increased protection against malicious software. By mandating developer accountability, the company aims to reduce security risks for average users while preserving advanced installation options for technical power users.
+This incident highlights the significant security risks associated with automated infrastructure updates and the potential for data privacy breaches in cloud hosting environments. Railway is now prioritizing safety and security protocols over new feature development to restore user trust and prevent similar unauthorized data exposure.
 
 ============================================================
-Author:   Android Developers
-Source:   Googleblog.com
-URL:      https://android-developers.googleblog.com/2026/03/android-developer-verification-rolling-out-to-all-developers.html
+Author:   Jacob Cooper
+Source:   Railway.com
+URL:      https://blog.railway.com/p/incident-report-march-30-2026-accidental-cdn-caching
 Category: Cybersecurity

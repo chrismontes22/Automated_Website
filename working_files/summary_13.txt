@@ -1,20 +1,19 @@
-Nintendo’s Leak Problem Is Bigger Than Ever: ‘I Can Promise You That Nintendo Is Absolutely Furious’
+OpenAI patches ChatGPT flaw that smuggled data over DNS
 ============================================================
 
-**Nintendo faces significant internal security challenges as prominent leaker NateTheHate reveals detailed release plans for upcoming Switch 2 software, including a new Star Fox title and Zelda remake.**
+OpenAI patched a critical vulnerability in ChatGPT that allowed malicious prompts to exfiltrate sensitive user data through a DNS side channel, bypassing existing outbound network security controls.
 
 **Key points**
-- Podcaster NateTheHate leaked a roadmap for Nintendo’s upcoming software, including a Star Fox game and an Ocarina of Time remake.
-- The leaks suggest a new 3D Mario title is not expected to launch until 2027.
-- Reports indicate a potential Zelda-themed special edition Switch 2 console may arrive later this year.
-- Former Nintendo of America marketer Kit Ellis stated that the company is frustrated by the inability to contain these high-level leaks.
-- Nintendo is reportedly investigating its internal chain of custody and third-party partners to identify the source of the unauthorized information.
+- Researchers at Check Point discovered that ChatGPT’s code execution environment could transmit data via DNS requests despite restrictions on direct outbound traffic.
+- The vulnerability allowed attackers to smuggle sensitive information, such as personal health records, to external servers without user authorization.
+- Check Point demonstrated the flaw using a custom GPT app that appeared to store data securely while simultaneously leaking it to a remote server.
+- OpenAI implemented a fix for the data exfiltration vulnerability on February 20, 2026.
 
 **Why it matters**
-Nintendo relies heavily on the element of surprise to drive marketing and consumer excitement for its hardware and software releases. These persistent leaks undermine the company's strategic control and could potentially impact market expectations for the upcoming Switch 2 console.
+This security flaw highlights the risks of relying on AI tools for processing sensitive information in regulated sectors like healthcare and finance. If left unaddressed, such vulnerabilities could lead to significant data breaches and non-compliance with privacy frameworks like GDPR or HIPAA.
 
 ============================================================
-Author:   Ethan Gach
-Source:   Kotaku
-URL:      https://kotaku.com/switch-2-leaks-natethehate-nintendo-zelda-mario-2000683173
-Category: Tech Business & Markets
+Author:   Thomas Claburn
+Source:   Theregister.com
+URL:      https://www.theregister.com/2026/03/30/openai_chatgpt_dns_data_snuggling_flaw/
+Category: Cybersecurity
