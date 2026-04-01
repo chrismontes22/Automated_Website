@@ -1,19 +1,20 @@
-Our favorite Android gaming controller just crashed to $68 during Amazon's Big Spring Sale - but you're running out of time
+Ollama Now Runs Faster on Macs Thanks to Apple's MLX Framework
 ============================================================
 
-Amazon is offering a 15% discount on the GameSir G8 Plus Bluetooth controller during its Big Spring Sale, reducing the price of the popular mobile gaming accessory to $67.99.
+**Ollama has released a performance-focused update for macOS that leverages Apple’s MLX framework to significantly increase processing speeds for local AI models on Apple silicon hardware.**
 
 **Key points**
-- The GameSir G8 Plus is currently available for $67.99, down from its standard retail price of $79.99.
-- Key features include Bluetooth connectivity, hall effect thumb-sticks, customizable back paddles, and full-size triggers.
-- The controller is compatible with a wide range of devices, including Android phones, iOS devices, and the Nintendo Switch.
-- Notable omissions include a dedicated headphone jack, and users with large camera islands on their phones may experience physical clearance issues.
+- Ollama version 0.19 delivers a 1.6x increase in prompt prefill speeds and nearly doubles response generation rates.
+- The update utilizes Apple’s GPU Neural Accelerators, providing the most substantial performance gains for Macs equipped with M5-series chips.
+- Improved memory management enhances responsiveness for AI-powered coding agents and personal assistants during extended sessions.
+- The current preview release requires a Mac with at least 32GB of unified memory to function.
+- Initial support is limited to Alibaba’s Qwen3.5 model, with plans to expand compatibility to additional AI models in future updates.
 
 **Why it matters**
-This discount provides a more accessible entry point for mobile gamers looking to upgrade their hardware with a highly-rated, ergonomic controller. As mobile gaming continues to grow, high-quality peripherals like the G8 Plus are becoming essential for users seeking console-like precision on portable devices.
+This update lowers the barrier for developers and power users to run sophisticated AI models locally on high-end Apple hardware without relying on cloud-based services. By optimizing performance for local silicon, Ollama is making private, high-speed AI tools more practical for resource-intensive tasks like coding and data analysis.
 
 ============================================================
-Author:   Zachary David
-Source:   Android Central
-URL:      https://www.androidcentral.com/gaming/gaming-accessories/our-favorite-android-gaming-controller-just-crashed-to-usd68-during-amazons-big-spring-sale-but-youre-running-out-of-time
-Category: Phones, Laptops, and Gadgets
+Author:   Tim Hardwick
+Source:   MacRumors
+URL:      https://www.macrumors.com/2026/03/31/ollama-now-runs-faster-apple-silicon-macs/
+Category: Artificial Intelligence

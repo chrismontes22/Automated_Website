@@ -1,19 +1,20 @@
-OpenAI patches ChatGPT flaw that smuggled data over DNS
+Game Pirates Beat Denuvo with Hypervisor Bypasses — Irdeto Promises Countermeasure
 ============================================================
 
-OpenAI patched a critical vulnerability in ChatGPT that allowed malicious prompts to exfiltrate sensitive user data through a DNS side channel, bypassing existing outbound network security controls.
+**New hypervisor-based bypass methods are enabling day-zero piracy of major video games, effectively circumventing Denuvo’s anti-tamper protection and forcing Irdeto to develop urgent security countermeasures.**
 
 **Key points**
-- Researchers at Check Point discovered that ChatGPT’s code execution environment could transmit data via DNS requests despite restrictions on direct outbound traffic.
-- The vulnerability allowed attackers to smuggle sensitive information, such as personal health records, to external servers without user authorization.
-- Check Point demonstrated the flaw using a custom GPT app that appeared to store data securely while simultaneously leaking it to a remote server.
-- OpenAI implemented a fix for the data exfiltration vulnerability on February 20, 2026.
+- New hypervisor bypasses operate at the "Ring -1" security level, allowing pirates to intercept CPU instructions and feed false data to Denuvo software.
+- Major titles including *Resident Evil Requiem*, *Crimson Desert*, and *Assassin’s Creed Shadows* have been compromised shortly after their official release dates.
+- Using these bypasses requires users to disable critical Windows security features like Virtualization-Based Security (VBS), creating significant system vulnerabilities.
+- Irdeto, the owner of Denuvo, is currently developing updates to counter these methods without moving their software into the kernel level.
+- Popular repacker FitGirl has begun distributing these cracks under strict community guidelines, despite ongoing concerns regarding system stability and potential malware risks.
 
 **Why it matters**
-This security flaw highlights the risks of relying on AI tools for processing sensitive information in regulated sectors like healthcare and finance. If left unaddressed, such vulnerabilities could lead to significant data breaches and non-compliance with privacy frameworks like GDPR or HIPAA.
+The emergence of hypervisor-based cracking marks a significant shift in the digital rights management landscape, as it drastically reduces the time games remain protected from piracy. This development threatens the early-release sales window that publishers rely on, forcing companies to balance more aggressive security measures against the performance and safety concerns of legitimate customers.
 
 ============================================================
-Author:   Thomas Claburn
-Source:   Theregister.com
-URL:      https://www.theregister.com/2026/03/30/openai_chatgpt_dns_data_snuggling_flaw/
+Author:   Ernesto Van der Sar
+Source:   Torrentfreak.com
+URL:      https://torrentfreak.com/game-pirates-beat-denuvo-with-hypervisor-bypasses-irdeto-promises-countermeasure/
 Category: Cybersecurity

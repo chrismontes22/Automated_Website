@@ -1,20 +1,20 @@
-Everything New in iOS 26.5 Beta 1
+Supply chain blast: Top npm package backdoored to drop dirty RAT on dev machines
 ============================================================
 
-Apple has released the iOS 26.5 developer beta, introducing new advertising infrastructure for Maps, end-to-end encryption for cross-platform RCS messaging, and expanded interoperability features for third-party wearables in Europe.
+**Attackers compromised the widely used Axios npm library by hijacking a maintainer's account to distribute a remote-access trojan, marking a significant supply chain security breach for developers.**
 
 **Key points**
-- Apple is preparing to launch ads in the Maps app this summer, appearing in search results and a new "Suggested Places" feature.
-- The update enables default end-to-end encryption for RCS messages sent between iPhone and Android devices.
-- New EU-specific features allow third-party wearables to support proximity pairing, notification syncing, and Live Activities to comply with the Digital Markets Act.
-- Connecting a Magic Keyboard via USB-C now automatically establishes a Bluetooth connection with the iPhone.
-- Users switching to Android can now select specific timeframes for transferring message attachments, ranging from 30 days to all history.
+- Attackers hijacked the npm account of Axios maintainer "jasonsaayman" to publish malicious versions 1.14.1 and 0.30.4.
+- The compromised releases included a malicious dependency, "plain-crypto-js@4.2.1," which installed platform-specific backdoors on Windows, macOS, and Linux.
+- Google’s Threat Intelligence Group attributed the sophisticated attack to the suspected North Korean threat actor UNC1069.
+- The breach bypassed standard GitHub Actions CI/CD pipelines by manually pushing packages directly through the npm CLI.
+- Developers who installed the affected versions are advised to rotate credentials and consider rebuilding compromised systems from scratch.
 
 **Why it matters**
-These updates signal a significant shift in Apple’s advertising strategy and its approach to cross-platform compatibility. By integrating RCS encryption and opening wearable features in the EU, Apple is balancing regulatory compliance with efforts to improve the interoperability of its ecosystem.
+This incident highlights the severe risks inherent in software supply chains, where a single compromised account can expose millions of users to sophisticated malware. Because Axios is a foundational tool for web development, this breach demonstrates how attackers are increasingly targeting developer infrastructure to gain persistent access to enterprise environments.
 
 ============================================================
-Author:   Juli Clover
-Source:   MacRumors
-URL:      https://www.macrumors.com/2026/03/30/everything-new-in-ios-26-5-beta-1/
-Category: Phones, Laptops, and Gadgets
+Author:   Carly Page
+Source:   Theregister.com
+URL:      https://www.theregister.com/2026/03/31/axios_npm_backdoor_rat/
+Category: Cybersecurity
