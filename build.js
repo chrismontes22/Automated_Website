@@ -157,34 +157,25 @@ function write(filePath, content) {
   console.log(`  ✓ ${path.relative(OUT_DIR, filePath)}`);
 }
 
-// ── MARKDOWN → HTML (used for RSS content:encoded and pre-rendered bodies) ───
+// ── MARKDOWN → HTML ───────────────────────────────────────────────────────────
 function basicMarkdownToHtml(md) {
   if (!md) return '';
 
-  // Escape HTML entities first so raw content is safe
   let html = md
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;');
 
-  // ── FIX: Ensure blank line after bold standalone headers ──
   html = html.replace(/^\*\*(.+?)\*\*\s*$/gm, '**$1**\n\n');
-
-  // Headings (# style)
   html = html.replace(/^### (.+)$/gm, '<h3>$1</h3>');
   html = html.replace(/^## (.+)$/gm,  '<h2>$1</h2>');
   html = html.replace(/^# (.+)$/gm,   '<h2>$1</h2>');
-
-  // Inline formatting
   html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
   html = html.replace(/\*(.+?)\*/g,     '<em>$1</em>');
   html = html.replace(/`(.+?)`/g,       '<code>$1</code>');
-
-  // Unordered list items → wrap consecutive runs in <ul>
   html = html.replace(/^[ \t]*[-*]\s+(.+)$/gm, '<li>$1</li>');
   html = html.replace(/((?:<li>[^\n]*<\/li>\n?)+)/g, '<ul>$1</ul>');
 
-  // Split on blank lines and wrap non-block-level lines in <p>
   const BLOCK = /^<(h[1-6]|ul|ol|li|blockquote|pre|div)/;
   const paragraphs = html.split(/\n{2,}/).map(block => {
     block = block.trim();
@@ -197,26 +188,6 @@ function basicMarkdownToHtml(md) {
 }
 
 // ── SHARED PAGE TEMPLATE ──────────────────────────────────────────────────────
-/**
- * @param {Object} opts
- * @param {string} opts.title
- * @param {string} opts.description
- * @param {string} opts.canonicalPath
- * @param {string} [opts.ogType]
- * @param {string} [opts.ogImage]
- * @param {string} [opts.articleSchema]
- * @param {string} [opts.breadcrumbSchema]
- * @param {string} [opts.collectionSchema]
- * @param {string} [opts.bodyContent]
- * @param {string} [opts.preRenderedContent]
- * @param {Object} [opts.articleMeta]   — only on article pages
- * @param {string}   opts.articleMeta.author
- * @param {string}   opts.articleMeta.publishedTime  — ISO 8601
- * @param {string}   opts.articleMeta.modifiedTime   — ISO 8601
- * @param {string}   opts.articleMeta.section
- * @param {string}   opts.articleMeta.newsKeywords   — comma-separated
- * @param {string[]} opts.articleMeta.tags
- */
 function pageShell({
   title, description, canonicalPath,
   ogType = 'website', ogImage = DEFAULT_IMG,
@@ -226,7 +197,6 @@ function pageShell({
 }) {
   const canonical = `${SITE_URL}${canonicalPath}`;
 
-  // Build article-specific <meta> tags (only emitted on article pages)
   const articleMetaHtml = articleMeta ? `
   <meta name="author" content="${esc(articleMeta.author)}" />
   <meta name="news_keywords" content="${esc(articleMeta.newsKeywords)}" />
@@ -329,26 +299,26 @@ function pageShell({
         <span>Search</span>
       </button>
 
-      <!-- ── LAYOUT TOGGLE ── -->
-      <div class="layout-toggle" role="group" aria-label="Toggle card layout">
-        <button class="layout-btn active" id="layout-list-btn" aria-label="List layout" aria-pressed="true" title="List view">
-          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
-            <line x1="1" y1="4"  x2="15" y2="4"/>
-            <line x1="1" y1="8"  x2="15" y2="8"/>
-            <line x1="1" y1="12" x2="15" y2="12"/>
-          </svg>
-        </button>
-        <button class="layout-btn" id="layout-grid-btn" aria-label="Grid layout" aria-pressed="false" title="Grid view">
-          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="1"  y="1"  width="6" height="6" rx="1.5"/>
-            <rect x="9"  y="1"  width="6" height="6" rx="1.5"/>
-            <rect x="1"  y="9"  width="6" height="6" rx="1.5"/>
-            <rect x="9"  y="9"  width="6" height="6" rx="1.5"/>
-          </svg>
-        </button>
-      </div>
+      <!-- LAYOUT TOGGLE: slide toggle matching the theme toggle -->
+      <label class="layout-toggle" id="layout-toggle" aria-label="Toggle card layout: list or grid" title="Toggle list / grid layout">
+        <span class="toggle-track">
+          <span class="toggle-thumb">
+            <svg class="list-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <line x1="2" y1="4"  x2="14" y2="4"/>
+              <line x1="2" y1="8"  x2="14" y2="8"/>
+              <line x1="2" y1="12" x2="14" y2="12"/>
+            </svg>
+            <svg class="grid-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="1.5" y="1.5" width="5" height="5" rx="1"/>
+              <rect x="9.5" y="1.5" width="5" height="5" rx="1"/>
+              <rect x="1.5" y="9.5" width="5" height="5" rx="1"/>
+              <rect x="9.5" y="9.5" width="5" height="5" rx="1"/>
+            </svg>
+          </span>
+        </span>
+      </label>
 
-      <!-- ── THEME TOGGLE ── -->
+      <!-- THEME TOGGLE -->
       <label class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme">
         <input type="checkbox" id="theme-checkbox" hidden />
         <span class="toggle-track"><span class="toggle-thumb">
@@ -446,7 +416,8 @@ function pageShell({
         <div class="about-divider"></div>
         <div class="about-stats">
           <div class="stat-card"><div class="stat-number" id="stat-total">—</div><div class="stat-label">Articles Summarized</div></div>
-          <div class="stat-card"><div class="stat-number" id="stat-categories">—</div><div class="stat-label">Categories Tracked</div></div>
+          <!-- AUTHORS TRACKED (was Categories Tracked) -->
+          <div class="stat-card"><div class="stat-number" id="stat-authors">—</div><div class="stat-label">Authors Tracked</div></div>
           <div class="stat-card"><div class="stat-number" id="stat-sources">—</div><div class="stat-label">Unique Sources</div></div>
           <div class="stat-card"><div class="stat-number">0</div><div class="stat-label">Coffees Drank</div><div class="stat-joke">i am a bot</div></div>
         </div>
@@ -662,9 +633,6 @@ function breadcrumbSchema(items) {
   }, null, 2);
 }
 
-/**
- * CollectionPage schema for homepage and category pages.
- */
 function collectionPageSchema(label, urlPath, articles) {
   return JSON.stringify({
     "@context": "https://schema.org",
@@ -827,7 +795,6 @@ async function build() {
 
   const categories = [...new Set(articles.map(a => a.category).filter(Boolean))].sort();
 
-  // Copy articles.json into dist/ so the SPA can fetch it
   fs.copyFileSync(ARTICLES_FILE, path.join(OUT_DIR, 'articles.json'));
   console.log('  ✓ articles.json (copied to dist/)');
 
@@ -943,7 +910,7 @@ async function build() {
   write(path.join(OUT_DIR, 'feed.xml'),         buildRssFeed(articles));
   write(path.join(OUT_DIR, 'robots.txt'),       buildRobotsTxt());
 
-  // ── _redirects (Cloudflare Pages SPA fallback + pretty URLs) ────────────────
+  // ── _redirects ───────────────────────────────────────────────────────────────
   const redirectsSrc = path.join(__dirname, '_redirects');
   if (fs.existsSync(redirectsSrc)) {
     fs.copyFileSync(redirectsSrc, path.join(OUT_DIR, '_redirects'));
@@ -958,7 +925,7 @@ async function build() {
     );
   }
 
-  // ── _headers (Cloudflare Pages response headers) ─────────────────────────────
+  // ── _headers ─────────────────────────────────────────────────────────────────
   const headersSrc = path.join(__dirname, '_headers');
   if (fs.existsSync(headersSrc)) {
     fs.copyFileSync(headersSrc, path.join(OUT_DIR, '_headers'));
