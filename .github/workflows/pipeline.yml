@@ -2,7 +2,7 @@ name: News Pipeline
 
 on:
   schedule:
-    - cron: "0 */12 * * *"   # every 12 hours (00:00 and 12:00 UTC)
+    - cron: "0 7/12 * * *"   # every 12 hours
   workflow_dispatch:           # lets you trigger a run manually from the GitHub UI
 
 jobs:
