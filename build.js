@@ -168,9 +168,7 @@ function basicMarkdownToHtml(md) {
     .replace(/>/g, '&gt;');
 
   // ── FIX: Ensure blank line after bold standalone headers ──
-  // This separates headers like "**Why it matters**" from following paragraphs
   html = html.replace(/^\*\*(.+?)\*\*\s*$/gm, '**$1**\n\n');
-  // ──────────────────────────────────────────────────────────
 
   // Headings (# style)
   html = html.replace(/^### (.+)$/gm, '<h3>$1</h3>');
@@ -330,6 +328,27 @@ function pageShell({
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         <span>Search</span>
       </button>
+
+      <!-- ── LAYOUT TOGGLE ── -->
+      <div class="layout-toggle" role="group" aria-label="Toggle card layout">
+        <button class="layout-btn active" id="layout-list-btn" aria-label="List layout" aria-pressed="true" title="List view">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+            <line x1="1" y1="4"  x2="15" y2="4"/>
+            <line x1="1" y1="8"  x2="15" y2="8"/>
+            <line x1="1" y1="12" x2="15" y2="12"/>
+          </svg>
+        </button>
+        <button class="layout-btn" id="layout-grid-btn" aria-label="Grid layout" aria-pressed="false" title="Grid view">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1"  y="1"  width="6" height="6" rx="1.5"/>
+            <rect x="9"  y="1"  width="6" height="6" rx="1.5"/>
+            <rect x="1"  y="9"  width="6" height="6" rx="1.5"/>
+            <rect x="9"  y="9"  width="6" height="6" rx="1.5"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- ── THEME TOGGLE ── -->
       <label class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme">
         <input type="checkbox" id="theme-checkbox" hidden />
         <span class="toggle-track"><span class="toggle-thumb">
@@ -337,6 +356,7 @@ function pageShell({
           <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         </span></span>
       </label>
+
       <div class="live-badge" aria-label="Auto-updated every 12 hours">
         <div class="live-dot" aria-hidden="true"></div>
         <span>AUTO-UPDATED</span>
@@ -643,8 +663,7 @@ function breadcrumbSchema(items) {
 }
 
 /**
- * CollectionPage schema for homepage and category pages — helps Google understand
- * these are curated lists, and surfaces the articles contained within them.
+ * CollectionPage schema for homepage and category pages.
  */
 function collectionPageSchema(label, urlPath, articles) {
   return JSON.stringify({
@@ -703,11 +722,7 @@ ${allUrls.map(u => `  <url>
 }
 
 // ── GOOGLE NEWS SITEMAP ───────────────────────────────────────────────────────
-/**
- * Google News Sitemap — only includes articles published within the last 2 days.
- * Submit to Google Search Console alongside your main sitemap.
- * Docs: https://developers.google.com/search/docs/crawling-indexing/sitemaps/news-sitemap
- */
+
 function buildNewsSitemap(articles) {
   const twoDaysAgo = Date.now() - 2 * 24 * 60 * 60 * 1000;
   const recent = articles.filter(a => {
@@ -716,7 +731,6 @@ function buildNewsSitemap(articles) {
   });
 
   if (!recent.length) {
-    // Return a valid but empty sitemap when no recent articles exist
     return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
@@ -977,6 +991,11 @@ async function build() {
    5. After first deploy, submit BOTH sitemaps to Google Search Console:
       • https://techpulse.example.com/sitemap.xml
       • https://techpulse.example.com/news-sitemap.xml
+
+💡 Local testing tip:
+   Python's http.server doesn't support clean URL rewriting.
+   For accurate local testing, use: npx serve dist
+   (This respects the _redirects file via serve's SPA mode)
 `);
 }
 
