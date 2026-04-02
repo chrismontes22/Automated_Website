@@ -1,20 +1,20 @@
-Malware detectors trained on one dataset often stumble on another
+Stop Your iPhone Suppressing Background Audio in Videos
 ============================================================
 
-Researchers from the Polytechnic of Porto found that machine learning-based malware detectors often fail when tested against real-world threats that differ from their original training datasets.
+Apple has introduced a new toggle in the iOS 26.4 update that allows iPhone users to manually enable or disable the Audio Zoom feature during video recording.
 
 ### Key Points
-- The study evaluated static malware detection models using six public Windows PE datasets, including EMBER, BODMAS, and the obfuscation-focused ERMDS.
-- Models performed with high accuracy on internal test data but showed significant performance declines when evaluated against external datasets like SOREL-20M.
-- Training models specifically to recognize obfuscated malware improved detection for those samples but simultaneously reduced the model's effectiveness against broader, diverse threat profiles.
-- Researchers identified that obfuscation techniques narrow the feature separation between benign and malicious files, creating new blind spots for static detectors.
-- The findings highlight that current benchmark metrics may overestimate the reliability of endpoint security tools when deployed in dynamic, real-world enterprise environments.
+- The iOS 26.4 update provides users with manual control over Audio Zoom, which previously functioned automatically.
+- Audio Zoom isolates sound from a specific subject when the camera zooms in, but it can reduce ambient background noise.
+- Users can access the new setting by navigating to Settings, selecting Camera, and tapping the Record Sound menu.
+- The feature is only compatible with Spatial Audio or Stereo recording formats and remains unavailable when using Mono.
+- Apple recommends keeping the feature enabled for focused audio capture or disabling it to preserve the full soundscape of a scene.
 
 ### Why it Matters
-This research demonstrates that static malware detectors often provide a false sense of security because their performance is highly dependent on the specific data used during training. Organizations must recognize that optimizing for one type of threat can inadvertently create vulnerabilities, necessitating more rigorous, cross-dataset validation for cybersecurity procurement.
+This update provides creators with greater flexibility to balance subject isolation against the need for immersive ambient audio in their video projects. By allowing users to toggle this feature, Apple addresses common complaints regarding unnatural sound flattening during zoomed-in recordings.
 
 ============================================================
-Author:   Anamarija Pogorelec
-Source:   Help Net Security
-URL:      https://www.helpnetsecurity.com/2026/04/01/cross-dataset-malware-detection-research/
-Category: Cybersecurity
+Author:   Tim Hardwick
+Source:   MacRumors
+URL:      https://www.macrumors.com/how-to/clearer-audio-zoomed-iphone-videos/
+Category: Phones, Laptops, and Gadgets
