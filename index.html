@@ -77,10 +77,9 @@
       --border:      #4a453d;
       --border-soft: #3e3a32;
 
-      /* FIX 1 — READABILITY: brighter body text for dark mode */
-      --text:        #ffffff;        /* was #f5f1e8 — slightly crisper */
-      --text-body:   #ffffff;        /* was #d9d4c9 — meaningfully brighter */
-      --muted:       #b0a898;        /* was #a8a094 — more legible */
+      --text:        #ffffff;
+      --text-body:   #ffffff;
+      --muted:       #b0a898;
 
       --accent:      #e07838;
       --accent-dim:  #c46830;
@@ -120,10 +119,9 @@
       --text-lg:     19px;
       --text-xl:     22px;
 
-      /* FIX 1 — READABILITY: slightly more breathing room */
       --line-height-tight:   1.5;
-      --line-height-base:    1.8;    /* was 1.75 */
-      --line-height-relaxed: 1.95;   /* was 1.9 — easier on long reads */
+      --line-height-base:    1.8;
+      --line-height-relaxed: 1.95;
 
       --radius:     10px;
       --radius-lg:  16px;
@@ -139,10 +137,9 @@
       --border:      #d4cfc4;
       --border-soft: #e0dbd0;
 
-      /* FIX 1 — READABILITY: darker body text for light mode */
-      --text:        #000000;        /* was #1a1815 — higher contrast */
-      --text-body:   #000000;        /* was #3a3630 — richer, easier to read */
-      --muted:       #5e5850;        /* was #6a645a */
+      --text:        #000000;
+      --text-body:   #000000;
+      --muted:       #5e5850;
 
       --accent:      #d4641a;
       --accent-dim:  #b85515;
@@ -300,7 +297,7 @@
     [data-theme="light"] .theme-toggle .sun-icon { display: block; }
     [data-theme="light"] .theme-toggle .moon-icon { display: none; }
 
-    /* ── FIX 2 — LAYOUT TOGGLE: now a slide toggle like theme toggle ── */
+    /* ── LAYOUT TOGGLE ──────────────────────────────────────────────── */
     .layout-toggle {
       position: relative; display: inline-flex; align-items: center;
       width: 56px; height: 30px;
@@ -321,11 +318,9 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
     .layout-toggle .toggle-thumb svg { width: 11px; height: 11px; color: var(--muted); transition: color var(--transition); }
-    /* Grid state — thumb slides right + accent tint */
     body[data-layout="grid"] .layout-toggle .toggle-track { background: linear-gradient(135deg, var(--accent-bg) 0%, var(--surface-2) 100%); }
     body[data-layout="grid"] .layout-toggle .toggle-thumb { transform: translateX(26px); border-color: var(--accent); box-shadow: 0 2px 8px rgba(224,120,56,0.3); }
     body[data-layout="grid"] .layout-toggle .toggle-thumb svg { color: var(--accent); }
-    /* Icon visibility: show list icon in list mode, grid icon in grid mode */
     .layout-toggle .list-icon { display: block; }
     .layout-toggle .grid-icon { display: none; }
     body[data-layout="grid"] .layout-toggle .list-icon { display: none; }
@@ -454,7 +449,6 @@
 
     .card-category { font-family: var(--font-mono); font-size: var(--text-xs); font-weight: var(--font-weight-bold); letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 11px; border-radius: 99px; align-self: flex-start; border: 1px solid transparent; transition: transform var(--transition); }
 
-    /* FIX 1 — READABILITY: slightly larger card titles */
     .card-title { font-family: var(--font-serif); font-size: 19px; font-weight: var(--font-weight-heading); line-height: var(--line-height-tight); letter-spacing: -0.015em; color: var(--text); transition: color var(--transition); margin: 0; }
     body[data-layout="grid"] .card-title { font-size: 17px; }
 
@@ -474,16 +468,15 @@
     .article-byline span { display: flex; align-items: center; gap: 7px; }
     .byline-label { color: var(--border); font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; font-weight: var(--font-weight-bold); }
 
-    /* FIX 1 — READABILITY: improved article body typography */
     .article-body {
       font-weight: 500;
       max-width: 660px;
-      font-size: 18.5px;        /* was 18px — small bump for comfort */
+      font-size: 18.5px;
       line-height: var(--line-height-relaxed);
       color: var(--text-body);
-      letter-spacing: 0.01em;   /* slight tracking for body text */
+      letter-spacing: 0.01em;
     }
-    .article-body p { margin-bottom: 26px; }   /* was 24px */
+    .article-body p { margin-bottom: 26px; }
     .article-body strong { font-weight: var(--font-weight-medium); color: var(--text); }
     .article-body ul, .article-body ol { padding-left: 24px; margin-bottom: 18px; }
     .article-body li { margin-bottom: 10px; padding-left: 4px; }
@@ -640,17 +633,14 @@
         <span>Search</span>
       </button>
 
-      <!-- FIX 2 — LAYOUT TOGGLE: slide toggle matching the theme toggle -->
       <label class="layout-toggle" id="layout-toggle" aria-label="Toggle card layout: list or grid" title="Toggle list / grid layout">
         <span class="toggle-track">
           <span class="toggle-thumb">
-            <!-- List icon (shown in list mode) -->
             <svg class="list-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
               <line x1="2" y1="4"  x2="14" y2="4"/>
               <line x1="2" y1="8"  x2="14" y2="8"/>
               <line x1="2" y1="12" x2="14" y2="12"/>
             </svg>
-            <!-- Grid icon (shown in grid mode) -->
             <svg class="grid-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <rect x="1.5" y="1.5" width="5" height="5" rx="1"/>
               <rect x="9.5" y="1.5" width="5" height="5" rx="1"/>
@@ -661,7 +651,6 @@
         </span>
       </label>
 
-      <!-- ── THEME TOGGLE ── -->
       <label class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme">
         <input type="checkbox" id="theme-checkbox" hidden />
         <span class="toggle-track"><span class="toggle-thumb">
@@ -757,7 +746,6 @@
         <div class="about-divider"></div>
         <div class="about-stats">
           <div class="stat-card"><div class="stat-number" id="stat-total">—</div><div class="stat-label">Articles Summarized</div></div>
-          <!-- FIX 3 — AUTHORS TRACKED instead of categories -->
           <div class="stat-card"><div class="stat-number" id="stat-authors">—</div><div class="stat-label">Authors Tracked</div></div>
           <div class="stat-card"><div class="stat-number" id="stat-sources">—</div><div class="stat-label">Unique Sources</div></div>
           <div class="stat-card"><div class="stat-number">0</div><div class="stat-label">Coffees Drank</div><div class="stat-joke">i am a bot</div></div>
@@ -822,7 +810,14 @@
   const $spaRoot       = document.getElementById('spa-root');
   const $prerendered   = document.getElementById('prerendered-content');
 
-  // ── FIX 2 — LAYOUT TOGGLE (slide) ────────────────────────────────
+  // ── SCROLL HELPER ─────────────────────────────────────────────────
+  // Uses `behavior: 'instant'` to bypass the CSS `scroll-behavior: smooth`
+  // that was preventing programmatic scroll-to-top from working correctly.
+  function scrollToTop() {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  }
+
+  // ── LAYOUT TOGGLE ─────────────────────────────────────────────────
   (function initLayout() {
     const stored = localStorage.getItem('techpulse-layout') || 'list';
     applyLayout(stored, false);
@@ -1067,8 +1062,7 @@
   // ── POPSTATE ─────────────────────────────────────────────────────
   window.addEventListener('popstate', () => {
     routeByPath(window.location.pathname, history.state);
-    // FIX 4 — always scroll to top on back/forward navigation
-    window.scrollTo(0, 0);
+    scrollToTop();
   });
 
   // ── CATEGORIES ────────────────────────────────────────────────────
@@ -1115,22 +1109,19 @@
     const tab = btn.dataset.tab;
     if (tab === currentTab && $listView.style.display !== 'none') return;
     currentTab = tab; setNavActive(tab); renderTab(tab, true);
-    // FIX 4 — scroll to top on tab change
-    window.scrollTo(0, 0);
+    scrollToTop();
   });
 
   function goHome(push = true) {
     currentTab = 'all'; setNavActive('all'); renderTab('all', push);
-    // FIX 4 — scroll to top
-    window.scrollTo(0, 0);
+    scrollToTop();
   }
   window.goHome = goHome;
 
   // ── VIEWS ─────────────────────────────────────────────────────────
   function hideAll() {
-    // FIX 4 — scroll to top IMMEDIATELY before any DOM changes
-    // This prevents the browser from remembering/restoring the old scroll position.
-    window.scrollTo(0, 0);
+    // Instantly scroll to top before any DOM changes, bypassing CSS smooth-scroll.
+    scrollToTop();
 
     [$listView, $articleView, $aboutView, $notfoundView].forEach(el => {
       el.style.display = 'none'; el.classList.remove('visible');
@@ -1155,10 +1146,9 @@
 
   document.getElementById('notfound-home').addEventListener('click', () => goHome(true));
 
-  // ── FIX 3 — ABOUT STATS: Authors Tracked instead of Categories ────
+  // ── ABOUT STATS ───────────────────────────────────────────────────
   function populateAboutStats() {
     document.getElementById('stat-total').textContent   = allArticles.length;
-    // Count unique non-empty authors
     document.getElementById('stat-authors').textContent = new Set(
       allArticles.map(a => (a.author || '').trim()).filter(Boolean)
     ).size;
@@ -1245,8 +1235,8 @@
 
   // ── OPEN ARTICLE ──────────────────────────────────────────────────
   function openArticle(article, push = true) {
-    // FIX 4 — hideAll() now calls window.scrollTo(0,0) first,
-    // so the page is always reset to the top before new content renders.
+    // hideAll() calls scrollToTop() first, so the page is always reset
+    // to the top before new content renders.
     hideAll();
     $articleView.style.display = 'block';
     void $articleView.offsetWidth; $articleView.classList.add('visible');
@@ -1314,8 +1304,7 @@
   window.navToCategory = function(cat) {
     const tab = cat && categoryMap[cat] ? cat : 'all';
     currentTab = tab; setNavActive(tab); renderTab(tab, true);
-    // FIX 4 — scroll to top on category navigation
-    window.scrollTo(0, 0);
+    scrollToTop();
   };
 
   // ── RELATED ARTICLES ──────────────────────────────────────────────
@@ -1344,8 +1333,6 @@
       item.addEventListener('click', e => {
         e.preventDefault();
         openArticle(a, true);
-        // FIX 4 — explicit scroll to top when clicking related articles
-        window.scrollTo(0, 0);
       });
       $rel.appendChild(item);
     });
