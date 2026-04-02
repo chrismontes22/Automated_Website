@@ -1,20 +1,20 @@
-Jamie Dimon says AI could help shorten work week, cure cancer
+Malware detectors trained on one dataset often stumble on another
 ============================================================
 
-JPMorgan Chase CEO Jamie Dimon predicts that artificial intelligence will significantly improve human longevity and productivity while potentially reducing the standard work week to three and a half days.
+Researchers from the Polytechnic of Porto found that machine learning-based malware detectors often fail when tested against real-world threats that differ from their original training datasets.
 
 ### Key Points
-- Jamie Dimon expects AI to facilitate medical breakthroughs, including potential cures for cancer and increased life expectancy.
-- The banking executive anticipates that AI-driven productivity gains could shorten the average work week to 3.5 days within 30 years.
-- Dimon warned that rapid technological adoption poses risks to the labor market by potentially displacing millions of workers.
-- He advocated for public-private partnerships to scale worker retraining programs and transition employees into new sectors.
-- Dimon suggested that redeploying labor into critical industries like advanced manufacturing could help address current workforce shortages.
+- The study evaluated static malware detection models using six public Windows PE datasets, including EMBER, BODMAS, and the obfuscation-focused ERMDS.
+- Models performed with high accuracy on internal test data but showed significant performance declines when evaluated against external datasets like SOREL-20M.
+- Training models specifically to recognize obfuscated malware improved detection for those samples but simultaneously reduced the model's effectiveness against broader, diverse threat profiles.
+- Researchers identified that obfuscation techniques narrow the feature separation between benign and malicious files, creating new blind spots for static detectors.
+- The findings highlight that current benchmark metrics may overestimate the reliability of endpoint security tools when deployed in dynamic, real-world enterprise environments.
 
 ### Why it Matters
-This perspective from a major financial leader highlights the tension between long-term economic prosperity and short-term labor market instability caused by automation. It underscores the growing necessity for coordinated policy and corporate strategies to manage the societal transition as AI becomes deeply embedded in the global economy.
+This research demonstrates that static malware detectors often provide a false sense of security because their performance is highly dependent on the specific data used during training. Organizations must recognize that optimizing for one type of threat can inadvertently create vulnerabilities, necessitating more rigorous, cross-dataset validation for cybersecurity procurement.
 
 ============================================================
-Author:   Mary  Cunningham
-Source:   CBS News
-URL:      https://www.cbsnews.com/news/jamie-dimon-artificial-intelligence-work-week/
-Category: Artificial Intelligence
+Author:   Anamarija Pogorelec
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/04/01/cross-dataset-malware-detection-research/
+Category: Cybersecurity

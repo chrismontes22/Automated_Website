@@ -1,20 +1,21 @@
-TrueConf Zero-Day Exploited in Attacks on Southeast Asian Government Networks
+Don't open that WhatsApp message, Microsoft warns
 ============================================================
 
-A high-severity zero-day vulnerability in TrueConf video conferencing software is being exploited by a Chinese-nexus threat actor to deploy malware across government networks in Southeast Asia.
+Microsoft has issued a warning regarding a sophisticated social engineering campaign on WhatsApp that uses malicious scripts and legitimate Windows tools to gain unauthorized remote access to computers.
 
 ### Key Points
-- The vulnerability, tracked as CVE-2026-3502 with a CVSS score of 7.8, allows attackers to execute arbitrary code by bypassing update integrity checks.
-- Attackers gain control of on-premises TrueConf servers to distribute malicious updates to all connected client endpoints.
-- The "TrueChaos" campaign utilizes the Havoc command-and-control framework and DLL side-loading to maintain persistence and conduct reconnaissance.
-- Check Point researchers identified the campaign, which has targeted government and law enforcement agencies since early 2026.
-- TrueConf has released a security patch for the Windows client in version 8.5.3 to address the update validation flaw.
+- Attackers distribute malicious Visual Basic Script files via WhatsApp, often appearing to originate from a victim's existing contacts.
+- The malware utilizes "living off the land" techniques by renaming legitimate Windows utilities like curl.exe and bitsadmin.exe to evade detection.
+- Secondary payloads are downloaded from trusted cloud services, including AWS, Tencent Cloud, and Backblaze B2, to blend in with normal network traffic.
+- Final malicious Microsoft Installer (MSI) packages, such as AnyDesk.msi, grant attackers full remote control to steal data or deploy ransomware.
+- Microsoft recommends that users and organizations prioritize employee training to recognize suspicious attachments and unexpected messages on messaging platforms.
+- WhatsApp users can enable "Strict Account Settings" in the app's privacy menu to automatically block attachments and calls from unknown users.
 
 ### Why it Matters
-This exploit highlights the significant risks posed by supply chain attacks that weaponize trusted software update mechanisms to bypass individual endpoint security. By compromising a central server, attackers can efficiently infiltrate entire government networks, underscoring the critical need for rigorous code validation and prompt patching in enterprise communication tools.
+This campaign highlights the growing risk of attackers exploiting trusted communication platforms to bypass traditional security measures by using legitimate software for malicious purposes. Businesses and individuals must remain vigilant, as these attacks can lead to total system compromise, data theft, and the deployment of further ransomware threats.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/03/trueconf-zero-day-exploited-in-attacks.html
+Author:   Jessica Lyons
+Source:   Theregister.com
+URL:      https://www.theregister.com/2026/03/31/whatsapp_message_bad_msi_packages/
 Category: Cybersecurity
