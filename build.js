@@ -1,13 +1,14 @@
 #!/usr/bin/env node
 /**
- * TechPulse — Static Build Script
- * ================================
+ * TechPulse — Static Build Script (SEO-Enhanced)
+ * ===============================================
  * Run after your article pipeline has updated articles.json.
  *
  * Generates:
  *   dist/index.html                    — pre-rendered homepage
  *   dist/article/{slug}.html           — one HTML file per article
  *   dist/category/{slug}.html          — one HTML file per category
+ *   dist/search/{query}.html           — strategic pre-rendered search pages
  *   dist/about.html                    — about page
  *   dist/404.html                      — 404 page
  *   dist/sitemap.xml                   — full sitemap
@@ -44,6 +45,22 @@ const SITE_NAME       = 'TechPulse';
 const DEFAULT_DESC    = 'AI-curated tech news summaries updated every 12 hours. Clear, jargon-free briefings on AI, software, hardware, and more.';
 const DEFAULT_IMG     = `${SITE_URL}/og-image.png`;
 const TWITTER_HANDLE  = '@TechPulseAI';
+
+// ── STRATEGIC SEARCH QUERIES (SEO-FOCUSED) ───────────────────────────────────
+// Only pre-generate pages for queries users actually search for on Google.
+// Start small (5-10), monitor Search Console, then expand.
+const STRATEGIC_SEARCH_QUERIES = [
+  'ai',
+  'artificial-intelligence',
+  'machine-learning',
+  'openai',
+  'llm',
+  'generative-ai',
+  'cybersecurity',
+  'cloud-computing',
+  'python',
+  'web-development'
+];
 
 // ── EXTRACT CSS & JS FROM INDEX.HTML ─────────────────────────────────────────
 let INLINE_CSS = '';
@@ -193,7 +210,8 @@ function pageShell({
   ogType = 'website', ogImage = DEFAULT_IMG,
   articleSchema = '', breadcrumbSchema = '', collectionSchema = '',
   bodyContent, preRenderedContent = '',
-  articleMeta = null
+  articleMeta = null,
+  extraHead = ''  // ← NEW: for injecting noindex, custom meta, etc.
 }) {
   const canonical = `${SITE_URL}${canonicalPath}`;
 
@@ -287,6 +305,9 @@ function pageShell({
 
   <!-- INLINED CSS (extracted from index.html) -->
   <style>${INLINE_CSS}</style>
+  
+  <!-- EXTRA HEAD CONTENT (e.g., noindex for thin pages) -->
+  ${extraHead}
 </head>
 <body>
 
@@ -575,6 +596,26 @@ function buildListPrerender(articles, label, categorySlug = null) {
     ${groupsHtml}`;
 }
 
+// ── NEW: SEARCH RESULTS PRERENDER ────────────────────────────────────────────
+function buildSearchResultsPrerender(articles, query, label = `Search: "${query}"`) {
+  if (!articles.length) {
+    return `
+      <div class="page-header">
+        <h1 class="page-title">${esc(label)}</h1>
+        <p class="page-subtitle">No results found</p>
+      </div>
+      <div class="empty" role="status">
+        No articles match "<strong>${esc(query)}</strong>". 
+        <button onclick="goHome()" style="background:none;border:none;color:var(--accent);cursor:pointer;margin-top:8px;font-family:var(--font-mono);font-size:var(--text-sm)">
+          ← Browse latest news
+        </button>
+      </div>`;
+  }
+
+  // Reuse your existing grid rendering logic — DRY!
+  return buildListPrerender(articles, label);
+}
+
 function formatDateLabel(isoKey) {
   const d = new Date(isoKey + 'T12:00:00Z');
   const now = new Date();
@@ -590,6 +631,12 @@ function formatDateLabel(isoKey) {
 function articleSchema(article) {
   const wordCount = (article.summary || '').split(/\s+/).filter(Boolean).length;
   const slug      = articleSlug(article);
+  
+  // ← ENHANCEMENT: Add image property if available (helps Google News/Images)
+  const imageObj = article.image 
+    ? { "@type": "ImageObject", "url": article.image, "width": 1200, "height": 630 }
+    : { "@type": "ImageObject", "url": DEFAULT_IMG, "width": 1200, "height": 630 };
+  
   return JSON.stringify({
     "@context": "https://schema.org",
     "@type": "NewsArticle",
@@ -613,6 +660,7 @@ function articleSchema(article) {
       "@type": "WebPage",
       "@id": `${SITE_URL}/article/${slug}`
     },
+    "image": imageObj,  // ← NEW
     "speakable": {
       "@type": "SpeakableSpecification",
       "cssSelector": [".article-title", ".article-body p:first-of-type"]
@@ -656,11 +704,13 @@ function collectionPageSchema(label, urlPath, articles) {
 
 function buildSitemap(articles) {
   const categories = [...new Set(articles.map(a => a.category).filter(Boolean))];
+  const searchPages = STRATEGIC_SEARCH_QUERIES.map(q => `/search/${slugify(q)}`);
   const now = new Date().toISOString().slice(0, 10);
 
   const staticUrls = [
     { loc: '/',       lastmod: now, priority: '1.0', changefreq: 'hourly'  },
     { loc: '/about',  lastmod: now, priority: '0.3', changefreq: 'monthly' },
+    ...searchPages.map(loc => ({ loc, lastmod: now, priority: '0.6', changefreq: 'daily' }))
   ];
 
   const categoryUrls = categories.map(cat => ({
@@ -770,6 +820,10 @@ function buildRobotsTxt() {
 User-agent: *
 Allow: /
 
+# Internal search results are pre-rendered for strategic queries only.
+# Non-strategic ?q= params are client-side only and not intended for indexing.
+Disallow: /?q=
+
 Sitemap: ${SITE_URL}/sitemap.xml
 Sitemap: ${SITE_URL}/news-sitemap.xml
 `;
@@ -778,7 +832,7 @@ Sitemap: ${SITE_URL}/news-sitemap.xml
 // ── MAIN BUILD ────────────────────────────────────────────────────────────────
 
 async function build() {
-  console.log(`\n🔨 TechPulse Build\n   articles: ${ARTICLES_FILE}\n   output:   ${OUT_DIR}\n`);
+  console.log(`\n🔨 TechPulse Build (SEO-Enhanced)\n   articles: ${ARTICLES_FILE}\n   output:   ${OUT_DIR}\n`);
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
 
@@ -904,6 +958,41 @@ async function build() {
     if (written % 25 === 0) console.log(`     … ${written} / ${articles.length}`);
   }
 
+  // ── ★ STRATEGIC SEARCH PAGES (NEW) ─────────────────────────────────────────
+  console.log(`\n🔍 Strategic Search Pages (${STRATEGIC_SEARCH_QUERIES.length}):`);
+  for (const query of STRATEGIC_SEARCH_QUERIES) {
+    const ql = query.toLowerCase();
+    // Simple but effective matching: search title + summary + category + source + author
+    const results = articles.filter(a => 
+      [a.title, a.summary, a.category, a.source, a.author]
+        .filter(Boolean)
+        .some(field => field.toLowerCase().includes(ql))
+    );
+    
+    const slug = slugify(query);
+    const searchPath = `/search/${slug}`;
+    const label = `Search: "${query}"`;
+    const desc = results.length 
+      ? `${results.length} AI-curated tech articles about "${query}". Updated every 12 hours.`
+      : `No results for "${query}" on TechPulse. Browse our latest tech news summaries.`;
+    
+    write(
+      path.join(OUT_DIR, 'search', `${slug}.html`),
+      pageShell({
+        title:            `${query} — Search Results | ${SITE_NAME}`,
+        description:      desc,
+        canonicalPath:    searchPath,
+        breadcrumbSchema: breadcrumbSchema([
+          { name: SITE_NAME, url: '/' },
+          { name: label, url: searchPath }
+        ]),
+        // ← CRITICAL: noindex empty results to avoid thin-content penalties
+        extraHead:        !results.length ? '<meta name="robots" content="noindex, follow" />' : '',
+        preRenderedContent: buildSearchResultsPrerender(results, query, label)
+      })
+    );
+  }
+
   // ── Sitemap ─────────────────────────────────────────────────────────────────
   console.log('\n🗺️  Infrastructure:');
   write(path.join(OUT_DIR, 'sitemap.xml'),      buildSitemap(articles));
@@ -921,6 +1010,7 @@ async function build() {
       path.join(OUT_DIR, '_redirects'),
       `/article/*   /article/:splat.html  200\n` +
       `/category/*  /category/:splat.html 200\n` +
+      `/search/*    /search/:splat.html   200\n` +  // ← NEW: search page routing
       `/about       /about.html           200\n` +
       `/*           /index.html           200\n`
     );
@@ -938,17 +1028,20 @@ async function build() {
     const d = new Date(a.processed_at);
     return !isNaN(d) && Date.now() - d.getTime() < 2 * 24 * 60 * 60 * 1000;
   }).length;
+  
+  const searchPageCount = STRATEGIC_SEARCH_QUERIES.length;
 
   console.log(`
-✅ Build complete
+✅ Build complete (SEO-Enhanced)
    ${articles.length} article pages
    ${categories.length} category pages
+   ${searchPageCount} strategic search pages (crawlable)
    articles.json    — copied to dist/ for client-side fetch
-   sitemap.xml      — ${articles.length + categories.length + 2} URLs
+   sitemap.xml      — ${articles.length + categories.length + searchPageCount + 2} URLs
    news-sitemap.xml — ${recentCount} recent article${recentCount !== 1 ? 's' : ''} (< 2 days old)
    feed.xml         — ${Math.min(articles.length, 50)} items (with content:encoded)
-   robots.txt       — references both sitemaps
-   _redirects       — Cloudflare Pages routing rules
+   robots.txt       — references both sitemaps + blocks non-strategic ?q= params
+   _redirects       — Cloudflare Pages routing rules (includes /search/*)
 
 📋 Deploy checklist:
    1. Cloudflare Pages build output directory: dist
@@ -959,6 +1052,24 @@ async function build() {
    5. After first deploy, submit BOTH sitemaps to Google Search Console:
       • https://techpulse.example.com/sitemap.xml
       • https://techpulse.example.com/news-sitemap.xml
+   6. ★ Optional but recommended: Add search route handling to your SPA JS
+      (see instructions below)
+
+💡 SPA JS Enhancement (for better UX on /search/* URLs):
+   Add this snippet to your routeByPath() function in index.html:
+   
+   // Handle pre-rendered search pages
+   if (pathname.startsWith('/search/')) {
+     const query = pathname.replace('/search/', '').replace(/\\/-/g, ' ');
+     setTimeout(() => {
+       const input = document.getElementById('search-input');
+       if (input) {
+         input.value = decodeURIComponent(query);
+         runSearch(input.value); // enhance pre-rendered content
+       }
+     }, 100);
+     return; // let pre-rendered content show; JS enhances it
+   }
 
 💡 Local testing tip:
    Python's http.server doesn't support clean URL rewriting.
