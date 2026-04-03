@@ -1,20 +1,19 @@
-AI recruiting biz Mercor says it was 'one of thousands' hit in LiteLLM supply-chain attack
+The company's biggest security hole lived in the breakroom
 ============================================================
 
-AI recruiting startup Mercor confirmed it is among thousands of companies impacted by a supply-chain attack involving the LiteLLM library, which resulted in the theft of internal source code.
+A corporate data breach was traced back to an internet-connected coffee machine that lacked basic security features, allowing threat actors to bypass the company's internal network defenses.
 
 ### Key Points
-- Mercor confirmed a security breach following the compromise of the LiteLLM open-source library, which was targeted by the threat group TeamPCP.
-- Extortion group Lapsus$ reportedly stole 4 TB of data, including 939 GB of Mercor source code, and is attempting to sell the information.
-- TeamPCP initiated the campaign by compromising the Trivy vulnerability scanner in February, subsequently injecting malware into KICS, LiteLLM, and Telnyx packages.
-- Security researchers estimate the campaign has impacted over 1,000 SaaS environments and potentially compromised credentials on 500,000 individual machines.
-- Other major organizations, including Cisco, are currently investigating potential exposure related to the widespread Trivy supply-chain incident.
+- Digital forensics investigators discovered that a coffee machine with a default password and no firewall served as the entry point for a major data breach.
+- The compromised device sent data packets to malicious actors outside the country every time it was used to brew a beverage.
+- Forrester Research notes that connected devices are increasingly targeted because they often lack security monitoring and are incorrectly assumed to be benign.
+- A similar 2017 incident involved hackers exfiltrating 10 GB of data from a North American casino by exploiting a connected fish tank.
 
 ### Why it Matters
-This incident highlights the escalating risk of supply-chain attacks where malicious code injected into popular open-source tools provides attackers with broad access to downstream corporate environments. As threat actors collaborate to exploit these vulnerabilities, companies face increasing threats of data exfiltration and extortion that can compromise proprietary source code and sensitive customer information.
+This incident highlights the significant security risks posed by the proliferation of internet-connected appliances within corporate environments. Organizations must prioritize network segmentation and password management for all connected devices to prevent kitchen hardware from becoming a gateway for cyberattacks.
 
 ============================================================
-Author:   Jessica Lyons
+Author:   Avram Piltch
 Source:   Theregister.com
-URL:      https://www.theregister.com/2026/04/02/mercor_supply_chain_attack/
+URL:      https://www.theregister.com/2026/04/02/pwned/
 Category: Cybersecurity
