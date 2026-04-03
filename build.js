@@ -355,8 +355,9 @@ function pageShell({
       <button class="filter-chip" data-filter="source" aria-pressed="false">Source</button>
       <button class="filter-chip" data-filter="date" aria-pressed="false">Date</button>
     </div>
+    <!-- CHANGE 1: hint div is empty — no misleading placeholder text -->
     <div id="search-results" role="listbox" aria-label="Search results">
-      <div class="search-hint">Type to search across all articles</div>
+      <div class="search-hint"></div>
     </div>
   </div>
 </div>
