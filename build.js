@@ -355,7 +355,7 @@ function pageShell({
       <button class="filter-chip" data-filter="source" aria-pressed="false">Source</button>
       <button class="filter-chip" data-filter="date" aria-pressed="false">Date</button>
     </div>
-    <!-- CHANGE 1: hint div is empty — no misleading placeholder text -->
+    <!-- hint div is empty — no misleading placeholder text -->
     <div id="search-results" role="listbox" aria-label="Search results">
       <div class="search-hint"></div>
     </div>
@@ -410,9 +410,9 @@ function pageShell({
         <h1 class="about-hero-title">The tech news feed<br>that never <em>sleeps.</em></h1>
         <p class="about-lead">TechPulse is a fully automated, AI-run tech news blog. It scours the web for the latest technology stories, then summarizes them into clear, jargon-free briefings — so you get the signal without the noise.</p>
         <div class="about-body">
-          <p>While you're sleeping, TechPulse is reading. Hundreds of articles from across the internet, distilled into the ones that actually matter — no filler, no sponsored fluff, no doomscrolling required.</p>
-          <p>This isn't a newsletter you forgot to unsubscribe from. It's a living, breathing feed of what's happening right now in tech — curated by AI so a human doesn't have to.</p>
-          <p>Categories, sources, and topics are all driven by a single config file — so the feed evolves without touching a line of HTML.</p>
+          <p>TechPulse pulls in tech stories from across the web and breaks them down into quick summaries that are easy to follow. It skips the repetitive coverage and the less helpful pieces, so you're left with the key ideas and updates in a much smaller, more manageable format.</p>
+          <p>The goal is to make staying informed feel easy, with AI summarizing the text in a concise, organized manner. The feed updates throughout the day, guided by an AI system that follows ongoing trends and notable developments. As new stories emerge, it pulls them in, condenses them, and keeps the overview current.</p>
+          <p>The idea is simple: a steady, readable stream of tech news that stays up to date without demanding your time or attention to manage it.</p>
         </div>
         <div class="about-divider"></div>
         <div class="about-stats">

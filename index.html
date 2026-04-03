@@ -396,7 +396,6 @@
     .sri-meta { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--text-body); }
     .sri-meta .sep { margin: 0 6px; color: var(--border); }
     .search-empty { padding: 48px 22px; text-align: center; font-family: var(--font-mono); font-size: var(--text-sm); color: var(--text-body); }
-    /* CHANGE 1: search-hint is now empty/invisible by default */
     .search-hint { padding: 0; }
     mark { background: linear-gradient(180deg, rgba(224,120,56,0.35) 0%, rgba(224,120,56,0.20) 100%); color: var(--text); border-radius: 3px; padding: 0 3px; font-weight: var(--font-weight-bold); }
 
@@ -562,19 +561,26 @@
       .header-top { gap: 12px; padding: 0 18px; height: 62px; }
       .header-categories { padding: 0 18px; }
       .live-badge { display: none; }
+      /* Hide layout toggle — not useful on single-column mobile */
+      .layout-toggle { display: none; }
       .search-trigger span { display: none; }
       .search-trigger { padding: 9px 12px; }
-      main { padding: 32px 18px 70px; }
+      /* Tighter main padding — reduced bottom to match smaller footer */
+      main { padding: 32px 18px 56px; }
+      /* Prevent any accidental horizontal overflow */
+      body { overflow-x: hidden; }
       .about-stats { grid-template-columns: 1fr 1fr; }
       .grid { grid-template-columns: 1fr !important; }
       .search-box { width: calc(100vw - 24px); }
       .breadcrumb { display: none; }
-      body { padding-top: 106px; padding-bottom: 56px; }
-      :root { --header-height: 106px; --footer-height: 56px; }
+      body { padding-top: 106px; padding-bottom: 40px; }
+      :root { --header-height: 106px; --footer-height: 40px; }
+      /* Compact footer — single line, minimal height */
+      footer { padding: 10px 16px; }
       .article-body { font-size: 17px; }
 
-      /* CHANGE 2: larger, easier-to-read cards on mobile */
-      article.card { padding: 20px 18px; gap: 10px; }
+      /* Larger, easier-to-read cards on mobile */
+      article.card { padding: 20px 18px; gap: 10px; width: 100%; box-sizing: border-box; }
       .card-title { font-size: 20px !important; line-height: 1.45; }
       .card-category { font-size: 13px; padding: 5px 13px; }
       .card-meta { font-size: 13px; }
@@ -692,7 +698,6 @@
       <button class="filter-chip" data-filter="source" aria-pressed="false">Source</button>
       <button class="filter-chip" data-filter="date"   aria-pressed="false">Date</button>
     </div>
-    <!-- CHANGE 1: hint div is empty — no misleading placeholder text -->
     <div id="search-results" role="listbox" aria-label="Search results">
       <div class="search-hint"></div>
     </div>
@@ -746,9 +751,9 @@
         <h1 class="about-hero-title">The tech news feed<br>that never <em>sleeps.</em></h1>
         <p class="about-lead">TechPulse is a fully automated, AI-run tech news blog. It scours the web for the latest technology stories, then summarizes them into clear, jargon-free briefings — so you get the signal without the noise.</p>
         <div class="about-body">
-          <p>While you're sleeping, TechPulse is reading. Hundreds of articles from across the internet, distilled into the ones that actually matter — no filler, no sponsored fluff, no doomscrolling required.</p>
-          <p>This isn't a newsletter you forgot to unsubscribe from. It's a living, breathing feed of what's happening right now in tech — curated by AI so a human doesn't have to.</p>
-          <p>Categories, sources, and topics are all driven by a single config file — so the feed evolves without touching a line of HTML.</p>
+          <p>TechPulse pulls in tech stories from across the web and breaks them down into quick summaries that are easy to follow. It skips the repetitive coverage and the less helpful pieces, so you're left with the key ideas and updates in a much smaller, more manageable format.</p>
+          <p>The goal is to make staying informed feel easy, with AI summarizing the text in a concise, organized manner. The feed updates throughout the day, guided by an AI system that follows ongoing trends and notable developments. As new stories emerge, it pulls them in, condenses them, and keeps the overview current.</p>
+          <p>The idea is simple: a steady, readable stream of tech news that stays up to date without demanding your time or attention to manage it.</p>
         </div>
         <div class="about-divider"></div>
         <div class="about-stats">
@@ -1382,7 +1387,6 @@
     $searchOverlay.classList.add('visible'); $searchOverlay.setAttribute('aria-hidden','false');
     setTimeout(() => $searchInput.focus(), 60);
   }
-  // CHANGE 3a: closeSearch no longer injects the hint text
   function closeSearch() {
     $searchOverlay.classList.remove('visible'); $searchOverlay.setAttribute('aria-hidden','true');
     $searchInput.value = '';
@@ -1397,7 +1401,6 @@
   });
   $searchInput.addEventListener('input', () => runSearch($searchInput.value.trim()));
 
-  // CHANGE 4: smarter date matching — full month names, ISO/dash/slash, bracket notation
   function matchesFilter(article, q, filter) {
     const ql = q.toLowerCase().trim();
 
@@ -1405,12 +1408,9 @@
       const short  = shortDate(a.processed_at).toLowerCase();
       const isoStr = (a.processed_at || '').toLowerCase();
 
-      // Direct match against "Mar 15, 2025" style
       if (short.includes(ql)) return true;
-      // Direct match against ISO string e.g. "2025-03-15"
       if (isoStr.includes(ql)) return true;
 
-      // Normalise full month names → 3-letter abbreviation
       const MONTHS = {
         january:'jan', february:'feb', march:'mar', april:'apr',
         may:'may',     june:'jun',     july:'jul',  august:'aug',
@@ -1423,7 +1423,6 @@
         }
       }
 
-      // Strip brackets, dashes, slashes so "[2025-03]" → "2025 03"
       const stripped = ql.replace(/[\[\]()\-\/]/g, ' ').replace(/\s+/g, ' ').trim();
       if (stripped && short.includes(stripped))  return true;
       if (stripped && isoStr.includes(stripped)) return true;
@@ -1435,12 +1434,10 @@
     if (filter === 'author') return (article.author || '').toLowerCase().includes(ql);
     if (filter === 'source') return (article.source || '').toLowerCase().includes(ql);
     if (filter === 'date')   return matchesDate(article);
-    // "all" — search every field including the flexible date matcher
     return ['title','author','source','category','summary'].some(k => (article[k]||'').toLowerCase().includes(ql))
         || matchesDate(article);
   }
 
-  // CHANGE 3b: runSearch no longer injects the hint text when query is empty
   function runSearch(q) {
     $searchResults.innerHTML = '';
     if (!q) { return; }
