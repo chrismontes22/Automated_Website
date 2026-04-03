@@ -1,20 +1,19 @@
-Code Breaker: Meet the Man Who Cracked the C8 Corvette's Encrypted Brain
+Obfuscation is not security – AI can deobfuscate any minified JavaScript code
 ============================================================
 
-Vince Geglia II, founder of Trifecta Performance, successfully bypassed General Motors' complex C8 Corvette encryption to provide aftermarket tuning solutions while maintaining strict emissions compliance standards.
+AfterPack has launched a new Rust-based JavaScript obfuscation tool designed to secure web applications by protecting source code from scrapers and intellectual property theft without compromising build performance.
 
 ### Key Points
-- Vince Geglia II founded Trifecta Performance in 2005 after identifying a market gap for tuning the Chevrolet Cobalt’s L61 engine.
-- Trifecta developed a proprietary software solution to bypass GM’s Global B electronic architecture encryption on the C8 Corvette.
-- The company collaborates with major aftermarket brands like ProCharger and Lingenfelter to enhance vehicle performance.
-- Trifecta maintains a strict policy of refusing to alter emissions equipment, ensuring all performance upgrades remain legally compliant.
-- The firm operates out of Snohomish, Washington, and serves as a technical resource for other tuners struggling with modern vehicle security.
+- AfterPack utilizes Rust to provide high-speed code obfuscation that maintains smaller bundle sizes compared to competitors like Obfuscator.io and JScrambler.
+- The tool integrates into existing CI/CD pipelines with a single command, supporting frameworks such as Next.js, Vite, and React Native.
+- It offers a free, MIT-licensed tier for production-ready protection, alongside Pro and Enterprise tiers for advanced features like cross-module obfuscation and browser API locking.
+- The platform aims to prevent unauthorized access to source maps and exposed secrets by transforming readable code into unreadable, protected artifacts.
 
 ### Why it Matters
-As automotive manufacturers increasingly encrypt vehicle computers to enhance cybersecurity and data privacy, independent aftermarket tuning faces significant technical and legal barriers. Geglia’s ability to navigate these firewalls demonstrates a viable path for the industry to remain relevant by prioritizing emissions compliance and collaborative engineering over unauthorized modifications.
+By prioritizing performance and ease of integration, AfterPack addresses the common trade-off between robust security and application speed in modern web development. This tool allows developers to protect their intellectual property and sensitive logic without the significant build bloat or complex configurations associated with traditional obfuscation solutions.
 
 ============================================================
-Author:   Alex Kierstein
-Source:   RoadandTrack.com
-URL:      https://www.roadandtrack.com/car-culture/a70481300/code-breaker-man-who-cracked-c8-corvette-encryption/
+Author:   Nikita Savchenko
+Source:   Afterpack.dev
+URL:      https://afterpack.dev
 Category: Cybersecurity

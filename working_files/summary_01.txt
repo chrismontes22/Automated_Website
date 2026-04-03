@@ -1,20 +1,20 @@
-3 Reasons Attackers Are Using Your Trusted Tools Against You (And Why You Don’t See It Coming)
+AI recruiting biz Mercor says it was 'one of thousands' hit in LiteLLM supply-chain attack
 ============================================================
 
-Cybersecurity threats are shifting toward "Living off the Land" tactics, where attackers abuse legitimate system tools to evade detection and compromise organizations without using traditional malware.
+AI recruiting startup Mercor confirmed it is among thousands of companies impacted by a supply-chain attack involving the LiteLLM library, which resulted in the theft of internal source code.
 
 ### Key Points
-- Approximately 84% of high-severity security incidents now involve the abuse of legitimate tools rather than traditional malware payloads.
-- Attackers frequently exploit native binaries and utilities like PowerShell, WMIC, and Certutil to move laterally and escalate privileges within networks.
-- Research indicates that up to 95% of access to risky, built-in system tools is unnecessary for standard business operations.
-- Modern "Living off the Land" (LOTL) attacks are difficult to detect because they blend into normal administrative activity and bypass traditional EDR and XDR solutions.
-- Bitdefender is offering a complimentary Internal Attack Surface Assessment to help organizations identify and mitigate risks posed by unmanaged, trusted system tools.
+- Mercor confirmed a security breach following the compromise of the LiteLLM open-source library, which was targeted by the threat group TeamPCP.
+- Extortion group Lapsus$ reportedly stole 4 TB of data, including 939 GB of Mercor source code, and is attempting to sell the information.
+- TeamPCP initiated the campaign by compromising the Trivy vulnerability scanner in February, subsequently injecting malware into KICS, LiteLLM, and Telnyx packages.
+- Security researchers estimate the campaign has impacted over 1,000 SaaS environments and potentially compromised credentials on 500,000 individual machines.
+- Other major organizations, including Cisco, are currently investigating potential exposure related to the widespread Trivy supply-chain incident.
 
 ### Why it Matters
-This shift in attack methodology forces security teams to move beyond simple malware detection toward behavioral analysis and proactive surface management. Organizations that fail to restrict unnecessary access to native system tools remain highly vulnerable to stealthy, persistent threats that operate within their own trusted environments.
+This incident highlights the escalating risk of supply-chain attacks where malicious code injected into popular open-source tools provides attackers with broad access to downstream corporate environments. As threat actors collaborate to exploit these vulnerabilities, companies face increasing threats of data exfiltration and extortion that can compromise proprietary source code and sensitive customer information.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/04/3-reasons-attackers-are-using-your.html
+Author:   Jessica Lyons
+Source:   Theregister.com
+URL:      https://www.theregister.com/2026/04/02/mercor_supply_chain_attack/
 Category: Cybersecurity

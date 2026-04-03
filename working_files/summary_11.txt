@@ -1,20 +1,20 @@
-I found a hidden Pixel feature that explains what's wrong with Bluetooth (and Android Auto)
+Securing the open source supply chain across GitHub
 ============================================================
 
-Google has introduced a new Bluetooth diagnostics tool within the Pixel Troubleshooting app to help users identify and resolve persistent connectivity issues on their Pixel smartphones.
+GitHub is enhancing its security measures for GitHub Actions and the npm ecosystem to combat rising supply chain attacks aimed at exfiltrating secrets and distributing malicious software packages.
 
 ### Key Points
-- The new Bluetooth diagnostics tool is available via an update to the Pixel Troubleshooting app, version 1.0.885948717.
-- Users can access the feature by navigating to Settings, selecting Connected devices, and tapping Bluetooth diagnostics.
-- The tool performs automated tests to detect connection failures and provides specific troubleshooting steps for accessories, wearables, and Android Auto.
-- Similar diagnostic features are available on other devices, including Samsung Galaxy phones, which offer phone diagnostics through the Support menu.
-- Pixel devices also include built-in tools for troubleshooting battery, touch, and overheating issues via the My Pixel app.
+- GitHub recommends enabling CodeQL to scan workflows for security vulnerabilities and pinning third-party actions to full-length commit SHAs.
+- Developers are encouraged to replace static secrets with OpenID Connect tokens to authorize activities via trusted publishing.
+- Trusted publishing is now supported across major package repositories, including npm, PyPI, NuGet, RubyGems, and Crates.
+- GitHub actively scans over 30,000 npm packages daily for malware, utilizing human review to confirm detections and minimize false positives.
+- The company is accelerating its security roadmap for GitHub Actions in response to recent supply chain threats and evolving malware campaigns.
 
 ### Why it Matters
-These diagnostic tools empower users to resolve common hardware and software connectivity problems independently without needing immediate professional support. By standardizing self-repair features, manufacturers can reduce user frustration and improve the overall reliability of the Android ecosystem.
+These security enhancements are critical for protecting the global open-source supply chain from automated attacks that leverage compromised credentials to propagate malicious code. By moving toward identity-based authentication and automated scanning, GitHub aims to reduce the industry's reliance on vulnerable secrets and improve the overall integrity of software distribution.
 
 ============================================================
-Author:   sanujb6@gmail.com (Sanuj Bhatia) , Sanuj Bhatia
-Source:   Android Central
-URL:      https://www.androidcentral.com/phones/google-pixel/hidden-pixel-bluetooth-diagnostics-tool
-Category: Phones, Laptops, and Gadgets
+Author:   Zachary Steindler
+Source:   Github.blog
+URL:      https://github.blog/security/supply-chain-security/securing-the-open-source-supply-chain-across-github/
+Category: Cybersecurity

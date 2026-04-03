@@ -1,6 +1,186 @@
 [
   {
     "category": "Cybersecurity",
+    "source": "Theregister.com",
+    "url": "https://www.theregister.com/2026/04/02/mercor_supply_chain_attack/",
+    "author": "Jessica Lyons",
+    "summary": "AI recruiting startup Mercor confirmed it is among thousands of companies impacted by a supply-chain attack involving the LiteLLM library, which resulted in the theft of internal source code.\n\n### Key Points\n- Mercor confirmed a security breach following the compromise of the LiteLLM open-source library, which was targeted by the threat group TeamPCP.\n- Extortion group Lapsus$ reportedly stole 4 TB of data, including 939 GB of Mercor source code, and is attempting to sell the information.\n- TeamPCP initiated the campaign by compromising the Trivy vulnerability scanner in February, subsequently injecting malware into KICS, LiteLLM, and Telnyx packages.\n- Security researchers estimate the campaign has impacted over 1,000 SaaS environments and potentially compromised credentials on 500,000 individual machines.\n- Other major organizations, including Cisco, are currently investigating potential exposure related to the widespread Trivy supply-chain incident.\n\n### Why it Matters\nThis incident highlights the escalating risk of supply-chain attacks where malicious code injected into popular open-source tools provides attackers with broad access to downstream corporate environments. As threat actors collaborate to exploit these vulnerabilities, companies face increasing threats of data exfiltration and extortion that can compromise proprietary source code and sensitive customer information.",
+    "processed_at": "2026-04-03T07:57:55.866851",
+    "title": "AI recruiting biz Mercor says it was 'one of thousands' hit in LiteLLM supply-chain attack"
+  },
+  {
+    "category": "Cybersecurity",
+    "source": "Afterpack.dev",
+    "url": "https://afterpack.dev",
+    "author": "Nikita Savchenko",
+    "summary": "AfterPack has launched a new Rust-based JavaScript obfuscation tool designed to secure web applications by protecting source code from scrapers and intellectual property theft without compromising build performance.\n\n### Key Points\n- AfterPack utilizes Rust to provide high-speed code obfuscation that maintains smaller bundle sizes compared to competitors like Obfuscator.io and JScrambler.\n- The tool integrates into existing CI/CD pipelines with a single command, supporting frameworks such as Next.js, Vite, and React Native.\n- It offers a free, MIT-licensed tier for production-ready protection, alongside Pro and Enterprise tiers for advanced features like cross-module obfuscation and browser API locking.\n- The platform aims to prevent unauthorized access to source maps and exposed secrets by transforming readable code into unreadable, protected artifacts.\n\n### Why it Matters\nBy prioritizing performance and ease of integration, AfterPack addresses the common trade-off between robust security and application speed in modern web development. This tool allows developers to protect their intellectual property and sensitive logic without the significant build bloat or complex configurations associated with traditional obfuscation solutions.",
+    "processed_at": "2026-04-03T07:58:07.880672",
+    "title": "Obfuscation is not security – AI can deobfuscate any minified JavaScript code"
+  },
+  {
+    "category": "Tech Business & Markets",
+    "source": "Yahoo Entertainment",
+    "url": "https://finance.yahoo.com/sectors/technology/articles/chipmakers-scramble-helium-crunch-threatens-200000482.html",
+    "author": "Irina Slav",
+    "summary": "Ongoing conflict in the Middle East is disrupting global supply chains for energy and critical minerals, creating significant production challenges for the international information technology and semiconductor industries.\n\n### Key Points\n- Middle East energy export disruptions have triggered a global shortage of affordable energy, impacting tech sector growth plans.\n- Supply chains for essential semiconductor materials, specifically helium and aluminum, are facing significant delays due to regional instability.\n- Qatar, the world’s second-largest helium producer, has experienced severe production disruptions that threaten global chip manufacturing.\n- Helium is a critical, non-replaceable cooling agent and protective gas required for the production of semiconductors and fiber optics.\n- Analysts warn that the prolonged conflict could significantly slow the development of artificial intelligence by limiting access to necessary raw materials.\n\n### Why it Matters\nThe scarcity of helium and energy threatens to stall the rapid expansion of the global artificial intelligence sector, which relies heavily on these specific inputs. As supply chains tighten, tech companies may face increased production costs and delays that could impact the broader digital economy.",
+    "processed_at": "2026-04-03T07:58:17.704690",
+    "title": "Chipmakers Scramble as Helium Crunch Threatens AI Expansion"
+  },
+  {
+    "category": "Tech Business & Markets",
+    "source": "Next Big Future",
+    "url": "https://www.nextbigfuture.com/2026/04/beating-the-financial-consensus-with-prediction-markets.html",
+    "author": "Brian Wang",
+    "summary": "Kalshi’s CFTC-regulated prediction markets are emerging as professional financial instruments, offering high-frequency, accurate data that allows institutions to hedge against complex macroeconomic, policy, and industry-specific event risks.\n\n### Key Points\n- A February 2026 Federal Reserve study confirms that Kalshi’s macro markets match or outperform traditional consensus forecasts for CPI, unemployment, and Federal Reserve interest rate decisions.\n- The platform operates as a CFTC-regulated Designated Contract Market, providing a legal framework for trading binary Yes/No contracts on real-world outcomes.\n- Institutional liquidity providers, including Citadel, Susquehanna, and Two Sigma, are actively participating to drive market depth and professional-grade infrastructure.\n- These event contracts serve as synthetic insurance, allowing corporations and investors to hedge against risks like regulatory shifts, weather extremes, and macroeconomic surprises.\n- Integration with retail brokerages like Robinhood and Webull, combined with zero-fee structures, is accelerating the transition from retail speculation to institutional risk management.\n\n### Why it Matters\nThese markets represent a significant evolution in financial infrastructure by turning previously unhedgeable real-world events into tradable assets. As liquidity and regulatory legitimacy grow, they provide businesses and policymakers with a powerful new tool for probabilistic risk pricing and sophisticated scenario analysis.",
+    "processed_at": "2026-04-03T07:58:27.382996",
+    "title": "Beating the Financial Consensus With Prediction Markets"
+  },
+  {
+    "category": "Tech Business & Markets",
+    "source": "Gizmodo.com",
+    "url": "https://gizmodo.com/amazon-facilities-in-bahrain-hit-again-as-iran-follows-through-on-threat-report-says-2000741089",
+    "author": "Ece Yildirim",
+    "summary": "Amazon’s cloud infrastructure in Bahrain sustained damage following an Iranian strike, marking the fourth attack on the company’s regional data centers during the ongoing military conflict.\n\n### Key Points\n- Amazon Web Services (AWS) facilities in Bahrain have been targeted by Iranian strikes at least three times in recent weeks.\n- Bahrain’s Ministry of Interior confirmed that civil defense forces responded to a fire at a company facility caused by Iranian aggression on Wednesday.\n- Iran previously threatened to target major American technology companies, including Apple, Google, and Microsoft, for alleged support of U.S.-Israeli operations.\n- The ongoing conflict, which began on February 28, has resulted in 1,937 Iranian deaths and increasingly involves strikes on civilian infrastructure.\n- The British embassy in Saudi Arabia has issued a warning advising nationals to avoid U.S.-linked businesses and facilities due to rising regional tensions.\n\n### Why it Matters\nThese attacks represent the first time a major American technology firm's data centers have been directly targeted in military action, creating significant operational risks for cloud infrastructure in the Middle East. The escalation threatens the stability of critical digital services and forces multinational corporations to reassess the security of their regional assets amid broader geopolitical instability.",
+    "processed_at": "2026-04-03T07:58:36.730783",
+    "title": "Amazon Facilities in Bahrain Hit Again as Iran Follows Through on Threat, Report Says"
+  },
+  {
+    "category": "Tech Business & Markets",
+    "source": "Kotaku",
+    "url": "https://kotaku.com/mario-galaxy-movie-miyamoto-switch-2-2000683993",
+    "author": "Ethan Gach",
+    "summary": "Nintendo creator Shigeru Miyamoto is shifting the company’s strategy to expand its iconic character franchises beyond gaming consoles and into broader digital media, streaming, and film projects.\n\n### Key Points\n- Shigeru Miyamoto aims to reach audiences beyond Nintendo’s hardware limitations by leveraging the global reach of digital streaming and film.\n- The company is actively diversifying its portfolio with projects like The Super Mario Bros. Movie and an upcoming live-action Zelda film.\n- Nintendo is increasingly utilizing animated shorts for franchises like Pikmin to maintain character relevance across various media platforms.\n- This strategic pivot addresses the stagnation of the traditional console market, where hardware sales have reached a plateau.\n- Nintendo intends to transition from being viewed strictly as a game developer to a broader entertainment company that builds immersive worlds.\n\n### Why it Matters\nThis shift represents a fundamental change in Nintendo’s business model as it seeks to sustain growth despite a saturated console market. By establishing its intellectual property across film and streaming, the company can maintain brand relevance and revenue even when hardware sales reach their natural ceiling.",
+    "processed_at": "2026-04-03T07:58:56.902597",
+    "title": "Nintendo Pushed Mario Into Movies Because Console Growth Is Tapped Out"
+  },
+  {
+    "category": "Artificial Intelligence",
+    "source": "Android Central",
+    "url": "https://www.androidcentral.com/apps-software/gmail/gmail-ai-inbox-beta-for-ai-ultra-subscribers",
+    "author": "sanujb6@gmail.com (Sanuj Bhatia) , Sanuj Bhatia",
+    "summary": "Google has officially launched its AI Inbox feature for Gmail, integrating Gemini technology to help U.S.-based AI Ultra subscribers prioritize essential emails, appointments, and messages from key contacts.\n\n### Key Points\n- The AI Inbox feature automatically identifies and highlights critical information like upcoming bills and scheduled appointments.\n- Access is currently restricted to Google AI Ultra subscribers in the United States.\n- The AI Ultra subscription costs $250 per month and includes 30TB of cloud storage, YouTube Premium, and Google Home Premium Advanced.\n- Gemini integration provides a personalized briefing space to help users manage high-volume email traffic more efficiently.\n- Google plans to potentially expand this feature to AI Pro users and free accounts in the future.\n\n### Why it Matters\nThis rollout signals Google's strategy to monetize advanced generative AI features by bundling them into high-tier subscription plans for power users. While the current price point is significant, the integration of Gemini into core productivity tools could eventually reshape how general users manage digital communication and information overload.",
+    "processed_at": "2026-04-03T07:59:06.509881",
+    "title": "Gmail's new AI Inbox is here, but it'll cost you $250 a month"
+  },
+  {
+    "category": "Phones, Laptops, and Gadgets",
+    "source": "MacRumors",
+    "url": "https://www.macrumors.com/2026/04/01/apple-product-red-era-is-over-for-now/",
+    "author": "Joe Rossignol",
+    "summary": "Apple has officially discontinued its (PRODUCT)RED lineup after the final remaining accessory, the iPhone 14 Silicone Case, sold out on the company's online store last month.\n\n### Key Points\n- Apple’s partnership with the (RED) brand began in 2006 to support The Global Fund’s fight against HIV/AIDS, tuberculosis, and malaria.\n- The company previously offered various devices in the signature red finish, including the iPhone SE 3, iPhone 14, and Apple Watch Series 9.\n- Apple continues to support The Global Fund through its annual Apple Pay donation program, which generated $3 million in contributions last year.\n- Reports suggest a \"deep red\" or burgundy finish may appear on future iPhone 18 Pro models, though branding remains unconfirmed.\n\n### Why it Matters\nThe end of the (PRODUCT)RED hardware line marks a significant shift in Apple’s long-standing philanthropic branding strategy. While the company maintains its financial commitment to The Global Fund, the removal of these iconic products signals a potential pivot in how Apple integrates charitable initiatives into its consumer hardware lineup.",
+    "processed_at": "2026-04-03T07:59:16.081705",
+    "title": "Apple's (PRODUCT)RED Era is Over, But What About the iPhone 18 Pro?"
+  },
+  {
+    "category": "Cybersecurity",
+    "source": "Business Insider",
+    "url": "https://www.businessinsider.com/meta-lawsuit-dismissal-whatsapp-security-chief-not-done-fighting-2026-4",
+    "author": "Charles Rollet",
+    "summary": "A US District Court judge dismissed a whistleblower lawsuit filed by former WhatsApp security head Attaullah Baig against Meta, citing a lack of sufficient facts to support his claims.\n\n### Key Points\n- Judge Laurel Beeler dismissed the case on March 19, ruling the complaint failed to adequately connect Baig's firing to specific SEC whistleblower protection violations.\n- Baig alleged that Meta ignored critical security vulnerabilities, including daily takeovers of 100,000 accounts and excessive employee access to sensitive user data.\n- The lawsuit claimed Baig was fired in retaliation for raising concerns directly to CEO Mark Zuckerberg and other leadership regarding internal security risks.\n- Meta spokesperson Andy Stone stated the company maintains the claims are meritless and emphasized their commitment to user privacy and security.\n- Legal representatives from Psst.org, the organization supporting Baig, confirmed plans to refile the lawsuit to address the court's technical pleading requirements.\n\n### Why it Matters\nThis case highlights the ongoing tension between internal corporate security protocols and whistleblower protections within major technology firms. The outcome of a refiled suit could set a significant precedent for how courts evaluate claims of retaliation when employees report systemic cybersecurity risks to federal regulators.",
+    "processed_at": "2026-04-03T07:59:26.225447",
+    "title": "WhatsApp's former security chief is 'not done fighting' after his lawsuit got dismissed"
+  },
+  {
+    "category": "Cybersecurity",
+    "source": "CNET",
+    "url": "https://www.cnet.com/tech/us-tech-companies-are-being-targeted-by-irans-revolutionary-guard/",
+    "author": "Omar Gallaga",
+    "summary": "Iran’s Islamic Revolutionary Guards Corps has designated several major U.S. technology companies as legitimate military targets, following a recent drone strike on Amazon’s cloud infrastructure in Bahrain.\n\n### Key Points\n- The IRGC identified Apple, Google, Intel, Tesla, IBM, Boeing, and Palantir as targets, advising employees to evacuate facilities across the Middle East.\n- Amazon Web Services confirmed damage to its Bahrain-based cloud operations, marking the second such attack on the company since March.\n- The U.S. government stated it is prepared to defend the threatened corporations and curtail further Iranian military actions.\n- Cybersecurity experts warn that these threats may focus on data theft, system shutdowns, and device wiping rather than physical destruction.\n- Security analysts noted that 40% of popular open-source software projects contain vulnerabilities that could be exploited by state-sponsored actors.\n\n### Why it Matters\nThese threats represent a significant escalation in geopolitical risk for global technology firms operating critical infrastructure in the Middle East. The potential for coordinated cyberattacks alongside supply chain vulnerabilities could force companies to fundamentally overhaul how they verify software builds and secure their international operations.",
+    "processed_at": "2026-04-03T07:59:35.382393",
+    "title": "Iran Threatens to Strike US Tech Companies in the Middle East"
+  },
+  {
+    "category": "Cybersecurity",
+    "source": "Github.blog",
+    "url": "https://github.blog/security/supply-chain-security/securing-the-open-source-supply-chain-across-github/",
+    "author": "Zachary Steindler",
+    "summary": "GitHub is enhancing its security measures for GitHub Actions and the npm ecosystem to combat rising supply chain attacks aimed at exfiltrating secrets and distributing malicious software packages.\n\n### Key Points\n- GitHub recommends enabling CodeQL to scan workflows for security vulnerabilities and pinning third-party actions to full-length commit SHAs.\n- Developers are encouraged to replace static secrets with OpenID Connect tokens to authorize activities via trusted publishing.\n- Trusted publishing is now supported across major package repositories, including npm, PyPI, NuGet, RubyGems, and Crates.\n- GitHub actively scans over 30,000 npm packages daily for malware, utilizing human review to confirm detections and minimize false positives.\n- The company is accelerating its security roadmap for GitHub Actions in response to recent supply chain threats and evolving malware campaigns.\n\n### Why it Matters\nThese security enhancements are critical for protecting the global open-source supply chain from automated attacks that leverage compromised credentials to propagate malicious code. By moving toward identity-based authentication and automated scanning, GitHub aims to reduce the industry's reliance on vulnerable secrets and improve the overall integrity of software distribution.",
+    "processed_at": "2026-04-03T08:00:04.354441",
+    "title": "Securing the open source supply chain across GitHub"
+  },
+  {
+    "category": "Artificial Intelligence",
+    "source": "Naturalnews.com",
+    "url": "https://www.naturalnews.com/2026-04-02-the-agi-awakening-artificial-intelligence-accelerated-evolution.html",
+    "author": "Kevin Hughes",
+    "summary": "The book \"The AGI Awakening\" examines the rapid evolution of artificial general intelligence, warning of centralized corporate control while advocating for decentralized, open-source alternatives to protect human sovereignty.\n\n### Key Points\n- The book highlights the double-exponential growth of AI models like GPT-4o and Claude 3.5 Sonnet, which now demonstrate advanced reasoning and multimodal capabilities.\n- Authors warn that tech giants and governments are monopolizing AI, potentially leading to mass surveillance and digital serfdom.\n- Decentralized platforms such as Bittensor, SingularityNET, and Ocean Protocol are presented as solutions to democratize AI through peer-to-peer networks.\n- AI-driven automation is projected to disrupt 40% of jobs across white-collar sectors, including law, medicine, and finance, within the next decade.\n- Training large-scale models like GPT-4 requires massive energy resources, with the authors noting a consumption of 50 gigawatt-hours per training cycle.\n\n### Why it Matters\nThe rapid development of superintelligence poses significant risks to individual privacy, economic stability, and global power structures. By advocating for decentralized technology, the authors argue that society can prevent the concentration of AI power and ensure that future advancements support human freedom rather than state or corporate control.",
+    "processed_at": "2026-04-03T08:04:26.087740",
+    "title": "The AGI Awakening: AI’s accelerated evolution and the dawn of a new era"
+  },
+  {
+    "category": "Tech Business & Markets",
+    "source": "TmoNews",
+    "url": "https://www.tmonews.com/2026/04/t-mobile-expected-to-announce-changes-to-device-promotion-program-on-april-2/",
+    "author": "Jordan",
+    "summary": "T-Mobile is reportedly planning to overhaul its device promotion program on April 2, potentially reducing the number of free devices offered and altering installment terms for wearable products.\n\n### Key Points\n- T-Mobile will reportedly limit free device promotions from four units down to two per cycle starting April 2.\n- The carrier is expected to discontinue the 36-month installment plan currently available for Galaxy Watch promotions.\n- Retail staff have expressed concerns that these reduced incentives could hinder their ability to attract customers from competitors like Verizon and AT&T.\n- The company has not issued an official statement, though internal communications suggest staff should prioritize sales before the policy shift takes effect.\n- T-Mobile shares fell 2.75 percent ahead of the anticipated announcement, though market analysts reported no unusual trading activity.\n\n### Why it Matters\nThese changes represent a significant shift in T-Mobile’s competitive strategy, potentially weakening its ability to lure subscribers away from rival carriers through aggressive hardware incentives. If implemented, the reduced promotional structure could impact both retail sales performance and the company's overall market share in the telecommunications sector.",
+    "processed_at": "2026-04-03T08:04:45.946661",
+    "title": "T-Mobile Expected to Announce Changes to Device Promotion Program on April 2"
+  },
+  {
+    "category": "Tech Business & Markets",
+    "source": "Elizabethspiers.com",
+    "url": "https://www.elizabethspiers.com/the-anti-intellectualism-of-silicon-valley-elites/",
+    "author": "Elizabeth Spiers",
+    "summary": "Silicon Valley tech leaders are increasingly embracing a culture of anti-intellectualism that prioritizes profit-driven automation while actively disparaging the deep critical thinking essential to a functioning democracy.\n\n### Key Points\n- Tech executives, including Suno CEO Mikey Shulman, have publicly dismissed the value of creative intellectual labor, such as the process of composing music.\n- Prominent figures like Peter Thiel and Marc Andreessen actively discourage traditional higher education and introspection in favor of technocratic, profit-focused worldviews.\n- Research from MIT suggests that reliance on large language models can lead to cognitive decline, yet tech leaders continue to promote these tools as replacements for human reasoning.\n- Neoreactionary thinkers like Curtis Yarvin advocate for replacing democratic governance with authoritarian, corporate-style leadership led by tech CEOs.\n- The tech elite’s disdain for the humanities and critical inquiry serves to protect their class interests and consolidate power against potential labor organization.\n\n### Why it Matters\nThis trend represents a significant shift in the influence of the American knowledge elite, as tech oligarchs increasingly use their wealth to bypass democratic norms and social accountability. By devaluing rigorous intellectual work, these leaders risk eroding the cognitive and civic foundations necessary for a healthy, self-governing society.",
+    "processed_at": "2026-04-03T08:05:03.525056",
+    "title": "The Anti-Intellectualism of Silicon Valley Elites"
+  },
+  {
+    "category": "Phones, Laptops, and Gadgets",
+    "source": "9to5Mac",
+    "url": "https://9to5mac.com/2026/04/01/ios-26-4-makes-apples-best-new-reminders-feature-easier-to-use/",
+    "author": "Ryan Christoffel",
+    "summary": "Apple’s iOS 26.4 update introduces a dedicated Smart List and new shortcut options to streamline the management of time-sensitive tasks within the Reminders application for iPhone users.\n\n### Key Points\n- A new \"Urgent\" Smart List now appears at the top of the Reminders home screen to aggregate all time-sensitive tasks.\n- Users can mark tasks as urgent by long-pressing an item or using the calendar icon within the Quick Toolbar.\n- The update simplifies the previous process, which required navigating to the full task details view to enable urgent status.\n- The urgent feature triggers an alarm with a snooze option when a task reaches its designated due time.\n\n### Why it Matters\nThese updates improve task management efficiency by reducing the number of steps required to prioritize daily responsibilities. By integrating these shortcuts, Apple is enhancing the utility of its native productivity tools to better compete with third-party task management applications.",
+    "processed_at": "2026-04-03T08:05:26.332454",
+    "title": "iOS 26.4 makes Apple’s best new Reminders feature easier to use"
+  },
+  {
+    "category": "Phones, Laptops, and Gadgets",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/tech/905652/samsung-announces-2026-frame-and-oled-tvs",
+    "author": "John.Higgins",
+    "summary": "Samsung has unveiled its 2026 lineup of Frame and OLED televisions, featuring reduced pricing for the Frame Pro series and the introduction of art-focused designs for flagship models.\n\n### Key Points\n- The 2026 Frame Pro series features price cuts, with the 65-inch model starting at $1,999.99, the 75-inch at $2,799.99, and the 85-inch at $3,999.99.\n- Standard Frame TVs will now feature integrated cable connections and \"back stopper\" legs for easier access while mounted, replacing the external One Connect Box.\n- Samsung’s flagship S95H QD-OLED TV now includes a metal bezel and support for the Art Store, with prices ranging from $2,499.99 to $6,499.99.\n- The S90H and S85H OLED series offer more affordable options, with starting prices of $1,399.99 and $1,199.99 respectively.\n- All new models incorporate updated glare-free screen technology and AI-enhanced features like AI Soccer Mode.\n\n### Why it Matters\nThese updates signal a strategic shift in Samsung's premium television strategy by blending high-end OLED performance with the aesthetic appeal of the Art Store. By lowering entry costs for the Frame Pro and expanding art-display capabilities to flagship OLEDs, the company is positioning its hardware as both a functional display and a piece of home decor.",
+    "processed_at": "2026-04-03T08:09:55.189613",
+    "title": "Samsung announces 2026 Frame TVs and the Pro cost less than last year’s"
+  },
+  {
+    "category": "Cybersecurity",
+    "source": "TechRadar",
+    "url": "https://www.techradar.com/phones/this-ios-18-patch-could-protect-your-device-from-a-vicious-malware-strain-heres-why-you-need-it-now",
+    "author": "alexblake.techradar@gmail.com (Alex Blake) , Alex Blake",
+    "summary": "Apple has released a critical security patch for iOS 18 users to address the DarkSword malware, ensuring protection for devices that have not yet upgraded to iOS 26.\n\n### Key Points\n- Apple backported a security fix to iOS 18 to protect users who have not upgraded to the latest iOS 26 software.\n- The update specifically targets the DarkSword malware, a sophisticated toolkit capable of accessing files, photos, messages, and hardware sensors.\n- Users can install the patch by navigating to Settings, selecting General, and choosing Software Update.\n- The vulnerability has been linked to various malicious activities, including digital espionage and cryptocurrency-related scams.\n- Apple previously faced criticism for delaying the release of this security fix to the broader iOS 18 user base.\n\n### Why it Matters\nThis update is essential for maintaining user privacy and device security against a highly intrusive malware strain that grants attackers full control over personal data. By extending the patch to older software versions, Apple mitigates the risk for a wider range of users who may be unable or unwilling to upgrade to the latest operating system.",
+    "processed_at": "2026-04-03T08:10:05.445371",
+    "title": "This iOS 18 patch could protect your device from a vicious malware strain — here’s why you need it now"
+  },
+  {
+    "category": "Cybersecurity",
+    "source": "Techdirt",
+    "url": "https://www.techdirt.com/2026/04/01/federal-cyber-experts-thought-microsofts-cloud-was-a-pile-of-shit-they-approved-it-anyway/",
+    "author": "Renee Dudley",
+    "summary": "Federal cybersecurity evaluators authorized Microsoft’s Government Community Cloud High despite internal reports citing a lack of security documentation and significant, unaddressed risks to sensitive government data.\n\n### Key Points\n- Internal FedRAMP reports described Microsoft’s security documentation as a \"pile of shit,\" noting a fundamental inability to verify encryption practices.\n- The authorization process for GCC High spanned five years, during which the product was already widely deployed across federal agencies.\n- FedRAMP reviewers concluded they lacked confidence in the system's security posture but authorized it anyway to avoid disrupting existing government operations.\n- Microsoft faced scrutiny for failing to disclose that China-based engineers maintained sensitive government cloud systems, violating federal requirements.\n- The FedRAMP program currently operates with a minimal budget and staff, leading critics to characterize the authorization process as \"security theater.\"\n\n### Why it Matters\nThe authorization of GCC High highlights a systemic breakdown in federal oversight where the pressure to adopt cloud technology often overrides rigorous security verification. This reliance on industry-provided claims over independent validation leaves critical government infrastructure vulnerable to potential exploitation by foreign adversaries.",
+    "processed_at": "2026-04-03T08:10:14.941194",
+    "title": "Federal Cyber Experts Thought Microsoft’s Cloud Was “A Pile Of Shit.” They Approved It Anyway."
+  },
+  {
+    "category": "Artificial Intelligence",
+    "source": "SiliconANGLE News",
+    "url": "https://siliconangle.com/2026/04/01/ai-memory-optimization-new-kingmaker-inference-nvidiagtcai/",
+    "author": "Kelly Knight",
+    "summary": "Weka and Firmus Technologies demonstrated a proof of concept that increases AI token output by 6.5 times by optimizing memory usage and reducing redundant GPU data reprocessing.\n\n### Key Points\n- Weka and Firmus Technologies achieved a 550% increase in token output using existing GPU infrastructure and power budgets.\n- The collaboration utilized Weka’s Augmented Memory Grid on NeuralMesh to extend memory and preserve context for AI agents.\n- The technology eliminates the \"recompute tax\" caused by GPUs repeatedly processing data when memory windows are limited.\n- This approach allows organizations to extend the lifespan of existing hardware investments by engineering out system obsolescence.\n- The results were presented at the Nvidia GTC AI Conference & Expo to highlight solutions for current data center memory bottlenecks.\n\n### Why it Matters\nOptimizing AI memory allows companies to scale agentic workloads significantly without the massive capital expenditure required for new hardware or additional data centers. By maximizing the efficiency of existing infrastructure, businesses can accelerate complex tasks like drug discovery and financial trading while maintaining current energy consumption levels.",
+    "processed_at": "2026-04-03T08:10:25.070952",
+    "title": "Weka and Firmus target AI’s memory bottleneck with 6.5x token gains in POC"
+  },
+  {
+    "category": "Phones, Laptops, and Gadgets",
+    "source": "Windows Central",
+    "url": "https://www.windowscentral.com/hardware/laptops/our-favorite-mid-range-gaming-laptop-with-rtx-5060-graphics-intel-core-ultra-9-275hx-processor-and-32gb-of-ram-is-now-22-percent-off-for-dells-spring-sale",
+    "author": "Alexander Cope",
+    "summary": "Dell has launched a Spring Sales event featuring significant discounts on high-performance hardware, including a 22% price reduction on the Alienware 16X gaming laptop to $1,949.99.\n\n### Key Points\n- Dell's Spring Sale offers discounts of up to $700 on various desktops and laptops.\n- The discounted Alienware 16X features an Intel Core Ultra 9 275HX processor, NVIDIA GeForce 5060 GPU, 32GB of RAM, and a 2TB SSD.\n- The laptop includes a 16-inch WQXGA display with a 240Hz refresh rate and G-SYNC technology.\n- Users can expand the system's memory up to 64GB of RAM and add storage via a second M.2 SSD slot.\n- The device is capable of running AAA games at high settings, though it has a limited battery life of one to two hours during gaming.\n\n### Why it Matters\nThis sale provides a notable price reduction on a premium mid-range gaming machine, making high-end hardware more accessible to consumers. The promotion highlights Dell's strategy to move inventory by targeting gamers looking for performance upgrades ahead of upcoming PC title releases.",
+    "processed_at": "2026-04-03T08:11:02.107552",
+    "title": "Our favorite mid-range gaming laptop with RTX 5060 graphics, Intel Core Ultra 9 275HX processor, and 32GB of RAM is now 22% off for Dell's Spring Sale"
+  },
+  {
+    "category": "Cybersecurity",
     "source": "Internet",
     "summary": "Cybersecurity threats are shifting toward \"Living off the Land\" tactics, where attackers abuse legitimate system tools to evade detection and compromise organizations without using traditional malware.\n\n### Key Points\n- Approximately 84% of high-severity security incidents now involve the abuse of legitimate tools rather than traditional malware payloads.\n- Attackers frequently exploit native binaries and utilities like PowerShell, WMIC, and Certutil to move laterally and escalate privileges within networks.\n- Research indicates that up to 95% of access to risky, built-in system tools is unnecessary for standard business operations.\n- Modern \"Living off the Land\" (LOTL) attacks are difficult to detect because they blend into normal administrative activity and bypass traditional EDR and XDR solutions.\n- Bitdefender is offering a complimentary Internal Attack Surface Assessment to help organizations identify and mitigate risks posed by unmanaged, trusted system tools.\n\n### Why it Matters\nThis shift in attack methodology forces security teams to move beyond simple malware detection toward behavioral analysis and proactive surface management. Organizations that fail to restrict unnecessary access to native system tools remain highly vulnerable to stealthy, persistent threats that operate within their own trusted environments.",
     "url": "https://thehackernews.com/2026/04/3-reasons-attackers-are-using-your.html",
