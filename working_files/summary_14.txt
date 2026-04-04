@@ -1,20 +1,21 @@
-WSJ Digital Subscriptions Grow 30% in 3 Years Under Editor-in-Chief Emma Tucker
+Getting Claude to QA its own work
 ============================================================
 
-The Wall Street Journal has achieved a 30% increase in digital-only subscriptions since editor-in-chief Emma Tucker implemented a new editorial strategy and newsroom restructuring in February 2023.
+Skyvern has released a new open-source tool that integrates browser automation with Claude Code to perform autonomous quality assurance testing on frontend changes and pull requests.
 
 ### Key Points
-- Total subscriptions for The Wall Street Journal have reached nearly 4.7 million, marking a 20% increase since Tucker’s appointment.
-- The editorial strategy prioritizes investigative journalism, revamped live blog features, and data-driven insights into subscriber engagement.
-- Tucker oversaw significant staff restructurings and layoffs across the Washington, tech, and health sections to facilitate a broader cultural shift.
-- Parent company Dow Jones reported an 8% revenue increase in its second-quarter earnings, supported by consistent growth in digital readership.
-- The publication maintains its core focus on business, finance, economics, and geopolitics while utilizing internal dashboards to reduce subscriber churn.
+- Skyvern introduced an MCP server featuring 33 browser tools for navigation, form filling, and data extraction.
+- The integration allows coding agents to self-test by rendering pages, interacting with UI elements, and verifying functionality.
+- Internal testing showed a 70% one-shot success rate for pull requests, up from 30%, while cutting QA loops in half.
+- New `/qa` and `/smoke-test` commands analyze git diffs to generate and execute targeted test cases automatically.
+- The system posts detailed pass/fail reports and visual evidence directly to GitHub pull requests.
+- The tool aims to prevent flaky end-to-end test suites by focusing only on flows impacted by specific code changes.
 
 ### Why it Matters
-This growth demonstrates the effectiveness of aligning editorial output with real-time subscriber engagement data to improve retention in a competitive digital media landscape. The successful turnaround highlights how targeted newsroom restructuring and a focus on distinctive reporting can drive significant financial gains for legacy publications.
+This development represents a shift toward agent-driven software testing that catches UI regressions often missed by traditional automated suites. By automating the QA loop, developers can reduce manual verification time and improve the reliability of frontend deployments.
 
 ============================================================
-Author:   Corbin Bolies
-Source:   TheWrap
-URL:      https://www.thewrap.com/industry-news/business/wall-street-journal-grows-subscribers-30-percent-emma-tucker/
-Category: Tech Business & Markets
+Author:   Suchintan Singh
+Source:   Skyvern.com
+URL:      https://www.skyvern.com/blog/getting-claude-to-qa-its-own-work/
+Category: Artificial Intelligence

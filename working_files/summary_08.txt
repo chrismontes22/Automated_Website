@@ -1,20 +1,20 @@
-You can buy a custom iPhone that has a fragment of Steve Jobs’ iconic turtleneck
+This Week in Security: The Supply Chain Has Problems
 ============================================================
 
-Customization studio Caviar has unveiled a limited-edition iPhone 17 Pro series featuring a fragment of a Steve Jobs turtleneck embedded within the device's titanium and black panel design.
+The popular Axios HTTP library for Node.js was recently compromised after attackers gained access to its NPM repository, potentially exposing millions of developers to malicious remote access tools.
 
 ### Key Points
-- Caviar is producing only nine units of the custom iPhone 17 Pro and Pro Max models.
-- The design incorporates a piece of a turtleneck worn by Steve Jobs, authenticated by a certificate.
-- Each device features a silver titanium body with a PVD coating and a reproduction of Jobs' signature.
-- The phones are priced at $9,630, with the company reporting that only two units remain available for purchase.
-- The collection serves as an homage to the original iPhone, utilizing custom wallpapers and deluxe packaging.
+- Attackers used a phishing collaboration request to compromise the Axios lead developer's credentials.
+- Malware was injected via a new dependency, plain-crypto-js, which executes platform-specific payloads on Windows, macOS, and Linux.
+- The malicious package functioned as a remote access tool (RAT) capable of stealing credentials and downloading arbitrary binaries.
+- Although the compromised packages were available for only a few hours, the library's 100 million weekly downloads suggest a significant potential impact.
+- GitHub is responding to this and other supply chain attacks by accelerating security features like immutable releases and OIDC authentication.
 
 ### Why it Matters
-This release highlights the growing luxury market for high-end, memorabilia-infused consumer electronics that target affluent collectors. By blending modern smartphone technology with historical artifacts, Caviar creates artificial scarcity that significantly inflates the retail value of standard Apple hardware.
+Supply chain attacks represent a critical risk because they can silently compromise developer systems, CI/CD pipelines, and final software products simultaneously. This incident highlights the urgent need for stricter dependency management and automated security auditing to prevent malicious code from infiltrating widely used open-source infrastructure.
 
 ============================================================
-Author:   Marcus Mendes
-Source:   9to5Mac
-URL:      https://9to5mac.com/2026/04/02/you-can-buy-a-custom-iphone-that-has-a-fragment-of-steve-jobs-iconic-turtleneck/
-Category: Phones, Laptops, and Gadgets
+Author:   Mike Kershaw
+Source:   Hackaday
+URL:      https://hackaday.com/2026/04/03/this-week-in-security-the-supply-chain-has-problems/
+Category: Cybersecurity
