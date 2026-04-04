@@ -1,5 +1,185 @@
 [
   {
+    "summary": "Two malicious versions of the popular Axios library were briefly published to the npm registry on March 31, 2026, following a targeted social engineering attack on a maintainer.\n\n### Key Points\n- Malicious versions 1.14.1 and 0.30.4 were live on npm for approximately three hours before removal.\n- The compromised packages injected a remote access trojan via the dependency plain-crypto-js@4.2.1.\n- Affected users are advised to rotate all credentials and secrets on any machine where the malicious versions were installed.\n- The attacker gained access to the maintainer's npm account after a two-week social engineering campaign.\n- Future security measures include adopting OIDC publishing flows and implementing immutable release setups to prevent unauthorized access.\n\n### Why it Matters\nThis incident highlights the ongoing vulnerability of the software supply chain when high-impact open-source projects rely on individual maintainer accounts. It serves as a critical reminder for organizations to audit their dependencies and maintain strict security protocols for CI/CD environments.",
+    "url": "https://github.com/axios/axios/issues/10636",
+    "category": "Cybersecurity",
+    "processed_at": "2026-04-04T07:44:00.877887",
+    "author": "axios",
+    "source": "Github.com",
+    "title": "Post Mortem: axios NPM supply chain compromise"
+  },
+  {
+    "summary": "The Lexar JumpDrive 512GB USB-A flash drive is currently available for $38, representing a 62% discount and the lowest price recorded for the storage device this year.\n\n### Key Points\n- The Lexar JumpDrive offers 512GB of storage capacity for a discounted price of $38.\n- The device features transfer speeds reaching up to 150MB/s via a USB-A connection.\n- Security features include 256-bit AES encryption to protect stored data.\n- The hardware includes a built-in protective cover for the USB connector to enhance durability.\n- This promotion marks a 62% price reduction, reaching the lowest retail point for the product in 2024.\n\n### Why it Matters\nAs rising costs for high-performance SSDs impact consumer budgets, this deal provides a cost-effective alternative for users requiring basic, portable data storage. The significant price drop offers a practical solution for individuals prioritizing capacity and affordability over high-speed data transfer capabilities.",
+    "url": "https://www.xda-developers.com/need-storage-on-the-cheap-grab-this-512gb-drive-for-just-38/",
+    "category": "Phones, Laptops, and Gadgets",
+    "processed_at": "2026-04-04T07:44:11.481753",
+    "author": "Timi Cantisano",
+    "source": "XDA Developers",
+    "title": "Need storage on the cheap? Grab this 512GB USB drive for just $38"
+  },
+  {
+    "summary": "OpenAI has acquired the tech talk show TBPN, a strategic move that industry experts suggest aims to bolster the company's marketing efforts and influence within the creator economy.\n\n### Key Points\n- OpenAI purchased the tech-focused livestream show TBPN, hosted by cofounders Jordi Hays and John Coogan.\n- Industry analysts view the acquisition as a marketing play to improve OpenAI's public image and reach younger developers.\n- Critics, including journalist Kara Swisher and analyst Neil Cybart, questioned the necessity of the deal given the show's relatively niche audience size.\n- The acquisition allows the TBPN founders to exit the challenging media startup landscape while maintaining editorial independence, according to the company.\n- Experts suggest the move signals a broader trend of major technology firms acquiring media properties to control their own narratives and distribution channels.\n\n### Why it Matters\nThis acquisition highlights a growing trend where major technology companies bypass traditional media to own their own distribution platforms and influence public perception. By integrating a creator-led media property, OpenAI is attempting to secure a direct line to key demographics while navigating the complexities of corporate communications and brand management.",
+    "url": "https://www.businessinsider.com/openai-tbpn-deal-what-people-are-saying-silicon-valley-altman-2026-4",
+    "category": "Artificial Intelligence",
+    "processed_at": "2026-04-04T07:48:58.071319",
+    "author": "James Faris",
+    "source": "Business Insider",
+    "title": "Here's what smart people are saying about OpenAI's head-turning TBPN acquisition"
+  },
+  {
+    "summary": "Major US tech companies face escalating security threats from Iran, while the Trump administration pursues controversial election reforms and prediction markets struggle with high-profile public events.\n\n### Key Points\n- Iran’s Islamic Revolutionary Guard Corps threatened to target 18 major US firms, including Apple, Microsoft, Google, Meta, and Tesla, starting April 1.\n- Amazon Web Services data centers have already sustained damage from two confirmed attacks in the region.\n- The Trump administration is pushing the SAVE Act, which would require birth certificates or passports for voting, alongside executive orders targeting mail-in ballots.\n- Polymarket’s recent Washington, D.C. pop-up bar experienced significant technical failures and logistical issues during its launch.\n- Prediction market platforms like Polymarket and Kalshi are rapidly expanding their influence through partnerships with firms like Palantir and increased institutional involvement.\n\n### Why it Matters\nThese developments highlight the growing intersection of geopolitical conflict, domestic election integrity, and the volatile rise of speculative prediction markets. As tech giants and financial platforms become central to both international warfare and political discourse, their ability to navigate these pressures will significantly impact global market stability and public trust.",
+    "url": "https://www.wired.com/story/uncanny-valley-podcast-iran-targets-us-tech-polymarket-pop-up-trump-midterms/",
+    "category": "Cybersecurity",
+    "processed_at": "2026-04-04T07:49:07.721127",
+    "author": "Brian Barrett, Zoë Schiffer, Leah Feiger, Makena Kelly, Kate Knibbs",
+    "source": "Wired",
+    "title": "‘Uncanny Valley’: Iran’s Threats on US Tech, Trump’s Plans for Midterms, and Polymarket’s Pop-up Flop"
+  },
+  {
+    "summary": "British tech company Nothing is reportedly developing smart glasses for a potential 2027 launch, aiming to challenge Meta’s dominance with a focus on stylish design and audio integration.\n\n### Key Points\n- Nothing is considering entering the smart glasses market with a planned release window in the first half of 2027.\n- The proposed wearable device will reportedly feature integrated cameras, microphones, speakers, and off-device AI processing capabilities.\n- The smart glasses segment experienced 139% year-over-year growth during the second half of 2025, according to Counterpoint Research.\n- Nothing may leverage its signature transparent design language and \"glyph\" interface to differentiate the product from existing competitors.\n- The company is exploring potential collaborations with independent British designers to emphasize fashion-forward aesthetics over traditional corporate styling.\n- Nothing intends to utilize its existing expertise in audio technology to prioritize music culture and sound quality as key product differentiators.\n\n### Why it Matters\nThe entry of a design-focused brand like Nothing could disrupt the current smart glasses market, which is largely dominated by Meta and traditional eyewear partnerships. By prioritizing fashion and audio quality, the company aims to transition wearable tech from a niche utility into a mainstream tool for personal self-expression.",
+    "url": "https://www.cnet.com/tech/mobile/nothing-reportedly-making-smart-glasses-2027-launch-commentary/",
+    "category": "Phones, Laptops, and Gadgets",
+    "processed_at": "2026-04-04T07:49:32.438325",
+    "author": "Katie Collins",
+    "source": "CNET",
+    "title": "Want Fashion-Forward Smart Glasses? This Company Could Easily Make It So"
+  },
+  {
+    "summary": "Google is rolling out support for Workspace accounts in the Google Home app, allowing users to manage Nest devices and share home access without switching between personal accounts.\n\n### Key Points\n- Workspace users can now set up new hardware, including the 4th-gen Nest Learning Thermostat and 3rd-gen Nest Doorbell.\n- The update enables Workspace accounts to invite others to their home or accept invitations to join existing smart home setups.\n- Users can now migrate legacy Nest accounts created in 2019 or earlier to their preferred Workspace account.\n- Workspace accounts remain excluded from the \"Gemini for Home\" early access program and certain personal Google Assistant features.\n- Recent Google Home updates have improved Gemini’s response times by 30% to 40% and enhanced the AI's ability to understand natural language commands.\n\n### Why it Matters\nThis update removes a significant friction point for professional users who previously had to toggle between accounts to manage their smart home devices. By integrating Workspace support, Google is streamlining its ecosystem for power users while simultaneously refining the performance of its Gemini AI integration.",
+    "url": "https://www.androidcentral.com/accessories/smart-home/workspace-account-no-problem-google-home-rolls-out-support-for-you-too",
+    "category": "Phones, Laptops, and Gadgets",
+    "processed_at": "2026-04-04T07:49:41.635026",
+    "author": "nickodiaz@sbcglobal.net (Nickolas Diaz) , Nickolas Diaz",
+    "source": "Android Central",
+    "title": "Workspace account? No problem; Google Home rolls out support for you, too"
+  },
+  {
+    "summary": "Nvidia has introduced Dynamic Multi Frame Generation as part of its DLSS 4.5 suite, aiming to boost PC gaming frame rates through AI-driven interpolation and new shader optimization tools.\n\n### Key Points\n- Dynamic Multi Frame Generation inserts multiple AI-generated frames between rendered frames to match a monitor's specific refresh rate.\n- The feature requires manual configuration through the Nvidia app’s global settings, as it is not yet natively integrated into games.\n- Users can select between \"Model A\" and \"Model B\" presets, with the latter designed to improve the clarity of in-game user interfaces.\n- Testing reveals that while the technology improves smoothness, it can introduce graphical artifacts, ghosting, and input latency in demanding titles.\n- A new \"Auto Shader Compilation\" mode, currently in beta, aims to reduce wait times during game loading sequences.\n- Nvidia claims the technology is compatible with over 200 games and applications, though support varies significantly by title.\n\n### Why it Matters\nThis technology highlights the ongoing trade-off between AI-assisted performance gains and the visual fidelity or responsiveness expected by high-end PC gamers. As Nvidia pushes these features, the complexity of the setup process may alienate mainstream users who prefer plug-and-play performance over manual software tuning.",
+    "url": "https://gizmodo.com/nvidia-needs-to-remind-itself-what-pc-gamers-actually-want-2000741684",
+    "category": "Artificial Intelligence",
+    "processed_at": "2026-04-04T07:49:51.178094",
+    "author": "Kyle Barr",
+    "source": "Gizmodo.com",
+    "title": "Nvidia Needs to Remind Itself What PC Gamers Actually Want"
+  },
+  {
+    "summary": "Customization studio Caviar has unveiled a limited-edition iPhone 17 Pro series featuring a fragment of a Steve Jobs turtleneck embedded within the device's titanium and black panel design.\n\n### Key Points\n- Caviar is producing only nine units of the custom iPhone 17 Pro and Pro Max models.\n- The design incorporates a piece of a turtleneck worn by Steve Jobs, authenticated by a certificate.\n- Each device features a silver titanium body with a PVD coating and a reproduction of Jobs' signature.\n- The phones are priced at $9,630, with the company reporting that only two units remain available for purchase.\n- The collection serves as an homage to the original iPhone, utilizing custom wallpapers and deluxe packaging.\n\n### Why it Matters\nThis release highlights the growing luxury market for high-end, memorabilia-infused consumer electronics that target affluent collectors. By blending modern smartphone technology with historical artifacts, Caviar creates artificial scarcity that significantly inflates the retail value of standard Apple hardware.",
+    "url": "https://9to5mac.com/2026/04/02/you-can-buy-a-custom-iphone-that-has-a-fragment-of-steve-jobs-iconic-turtleneck/",
+    "category": "Phones, Laptops, and Gadgets",
+    "processed_at": "2026-04-04T07:50:00.195702",
+    "author": "Marcus Mendes",
+    "source": "9to5Mac",
+    "title": "You can buy a custom iPhone that has a fragment of Steve Jobs’ iconic turtleneck"
+  },
+  {
+    "summary": "Allen Sports has launched the Smart Suction Go, a $299 bike rack that uses Bluetooth-connected sensors to monitor suction pressure and alert drivers to potential mounting failures.\n\n### Key Points\n- The Smart Suction Go monitors the front three suction cups and sends real-time alerts to a smartphone app, Apple CarPlay, or Android Auto.\n- Each unit is powered by four AA batteries, providing approximately 6 to 8 hours of active usage.\n- The system is rated for bikes weighing 35 pounds or less and is designed to operate in temperatures ranging from -15C to 60C.\n- Allen Sports claims the rubber suction cups have a lifespan of 7 to 10 years and are fully replaceable if damaged.\n- The company also introduced a $70 Bluetooth-monitored suction mount specifically designed for securing cameras to vehicles.\n\n### Why it Matters\nThis product represents a shift toward integrating smart technology into traditional mechanical accessories to address consumer safety concerns regarding suction-based mounts. By providing real-time digital monitoring, Allen Sports aims to increase user confidence in a mounting method that has historically been viewed with skepticism.",
+    "url": "https://www.theverge.com/gadgets/906076/allen-smart-suction-go-bike-rack",
+    "category": "Phones, Laptops, and Gadgets",
+    "processed_at": "2026-04-04T07:50:09.371354",
+    "author": "Sean Hollister",
+    "source": "The Verge",
+    "title": "This bike rack pioneer is selling Bluetooth suction cups to stick bikes to your car"
+  },
+  {
+    "summary": "The European Commission confirmed a major data breach involving 340 GB of stolen information after attackers exploited a supply chain vulnerability in the AquaSec Trivy security scanner.\n\n### Key Points\n- The breach occurred on March 19, 2026, after attackers gained unauthorized access to AWS credentials via a compromised version of the Trivy scanner.\n- Threat actors ShinyHunters and TeamPCP are linked to the incident, which resulted in the leak of names, usernames, and email addresses.\n- Stolen data includes approximately 51,992 files related to outbound email communications, including potentially sensitive bounce-back notifications.\n- The European Commission’s Security Operations Center detected the intrusion on March 24 and subsequently revoked all compromised AWS access keys.\n- Investigators found no evidence of lateral movement into other European Commission AWS accounts, and the main europa.eu web platform remains operational.\n\n### Why it Matters\nThis incident highlights the significant risks posed by supply chain attacks targeting widely used security software and cloud infrastructure management tools. It serves as a critical reminder for organizations to rigorously audit third-party dependencies and implement strict credential management to prevent unauthorized access to sensitive cloud environments.",
+    "url": "https://www.helpnetsecurity.com/2026/04/03/european-commission-cloud-breach/",
+    "category": "Cybersecurity",
+    "processed_at": "2026-04-04T07:50:19.756944",
+    "author": "Zeljka Zorz",
+    "source": "Help Net Security",
+    "title": "Trivy supply chain attack enabled European Commission cloud breach"
+  },
+  {
+    "summary": "Take-Two Interactive has laid off its head of AI, Luke Dicken, and several team members, despite the company’s stated commitment to integrating generative technology into game development workflows.\n\n### Key Points\n- Luke Dicken, who led Take-Two’s AI initiatives since early 2025, announced his departure and the dissolution of his team on LinkedIn.\n- The affected staff primarily originated from the applied AI department at Zynga, which Take-Two acquired for $12.7 billion in 2022.\n- CEO Strauss Zelnick recently confirmed the company is running hundreds of AI pilots to improve efficiency and reduce costs across its studios.\n- Take-Two leadership has publicly downplayed concerns that generative AI tools like Google’s Genie could replace traditional game engines or development teams.\n\n### Why it Matters\nThese layoffs highlight the ongoing tension between corporate investment in generative AI and the practical challenges of implementing these tools within large-scale game production. The move suggests a potential shift in strategy as Take-Two balances its pursuit of operational efficiency against broader industry skepticism regarding AI-driven content.",
+    "url": "https://kotaku.com/take-two-ai-zynga-layoffs-gta-2000684344",
+    "category": "Artificial Intelligence",
+    "processed_at": "2026-04-04T07:50:39.857849",
+    "author": "Ethan Gach",
+    "source": "Kotaku",
+    "title": "Take-Two Reshuffles Its AI Team"
+  },
+  {
+    "summary": "Cybersecurity researchers at Kaspersky have identified CrystalX RAT, a new malware-as-a-service platform targeting users with advanced data theft capabilities, remote system control, and disruptive prankware features.\n\n### Key Points\n- CrystalX RAT is a subscription-based malware platform offering keylogging, clipboard jacking, and theft of browser or application data from platforms like Discord and Steam.\n- The malware includes surveillance tools for real-time audio and video capture, alongside remote system control features like file management and forced shutdowns.\n- Attackers use \"prankware\" features, such as remapping mice or hiding taskbars, to harass victims and distinguish the service in the competitive dark web market.\n- The software is actively promoted to novice hackers through organized marketing campaigns on Telegram and YouTube.\n- Kaspersky reports that the malware currently targets victims primarily in Russia, with dozens of confirmed infections and potential for rapid geographic expansion.\n\n### Why it Matters\nThe emergence of CrystalX RAT highlights a growing trend of malware-as-a-service platforms lowering the barrier to entry for cybercriminals by combining professional-grade espionage tools with accessible, user-friendly interfaces. This shift increases the risk of widespread data breaches and blackmail, as even inexperienced attackers can now execute sophisticated, multi-layered compromises against unsuspecting individuals.",
+    "url": "https://www.techradar.com/pro/security/this-new-laughing-rat-malware-will-steal-your-data-and-hack-your-systems-and-then-laugh-at-you-while-doing-it",
+    "category": "Cybersecurity",
+    "processed_at": "2026-04-04T07:50:49.484965",
+    "author": "Sead Fadilpašić",
+    "source": "TechRadar",
+    "title": "This new 'laughing rat' malware will steal your data and hack your systems — and then laugh at you while doing it"
+  },
+  {
+    "summary": "The Trump administration is aggressively restructuring the Nuclear Regulatory Commission to accelerate nuclear energy production, prioritizing rapid deployment for artificial intelligence data centers over traditional safety oversight.\n\n### Key Points\n- The Department of Government Efficiency (DOGE) has installed political appointees, including Seth Cohen, to overhaul nuclear policy and bypass long-standing safety regulations.\n- Over 400 staff members have left the Nuclear Regulatory Commission (NRC) since the start of the administration, with hiring for replacements significantly slowed.\n- The administration is pushing to relax radiation exposure limits and abandon the \"As Low As Reasonably Achievable\" (ALARA) safety principle to reduce costs for private reactor companies.\n- Silicon Valley-backed firms, such as Valar Atomics and Oklo, have gained unprecedented access to draft executive orders and regulatory discussions.\n- The Department of Energy has begun using military assets to transport experimental reactor components, citing national security interests to bypass standard bureaucratic hurdles.\n\n### Why it Matters\nThis shift represents a fundamental change in the U.S. approach to nuclear safety, moving from a cautious, independent regulatory model to one driven by industry-aligned political objectives. By prioritizing speed for AI-related energy demands, the administration risks undermining public trust and the global safety standards that have historically prevented major nuclear incidents.",
+    "url": "https://www.techdirt.com/2026/04/02/doge-goes-nuclear-how-trump-invited-silicon-valley-into-americas-nuclear-power-regulator/",
+    "category": "Artificial Intelligence",
+    "processed_at": "2026-04-04T07:50:59.085109",
+    "author": "Avi Asher-Schapiro",
+    "source": "Techdirt",
+    "title": "DOGE Goes Nuclear: How Trump Invited Silicon Valley Into America’s Nuclear Power Regulator"
+  },
+  {
+    "summary": "The Wall Street Journal has achieved a 30% increase in digital-only subscriptions since editor-in-chief Emma Tucker implemented a new editorial strategy and newsroom restructuring in February 2023.\n\n### Key Points\n- Total subscriptions for The Wall Street Journal have reached nearly 4.7 million, marking a 20% increase since Tucker’s appointment.\n- The editorial strategy prioritizes investigative journalism, revamped live blog features, and data-driven insights into subscriber engagement.\n- Tucker oversaw significant staff restructurings and layoffs across the Washington, tech, and health sections to facilitate a broader cultural shift.\n- Parent company Dow Jones reported an 8% revenue increase in its second-quarter earnings, supported by consistent growth in digital readership.\n- The publication maintains its core focus on business, finance, economics, and geopolitics while utilizing internal dashboards to reduce subscriber churn.\n\n### Why it Matters\nThis growth demonstrates the effectiveness of aligning editorial output with real-time subscriber engagement data to improve retention in a competitive digital media landscape. The successful turnaround highlights how targeted newsroom restructuring and a focus on distinctive reporting can drive significant financial gains for legacy publications.",
+    "url": "https://www.thewrap.com/industry-news/business/wall-street-journal-grows-subscribers-30-percent-emma-tucker/",
+    "category": "Tech Business & Markets",
+    "processed_at": "2026-04-04T07:51:09.372644",
+    "author": "Corbin Bolies",
+    "source": "TheWrap",
+    "title": "WSJ Digital Subscriptions Grow 30% in 3 Years Under Editor-in-Chief Emma Tucker"
+  },
+  {
+    "summary": "U.S. stock markets experienced significant volatility and oil prices surged following President Donald Trump’s speech regarding the ongoing military conflict with Iran on its 33rd day.\n\n### Key Points\n- The Dow Jones Industrial Average dropped 1.4% initially before recovering most losses later in the trading session.\n- Brent crude futures rose 7.78% and West Texas Intermediate futures increased 11.41% following the president's address.\n- Markets stabilized after Iranian state media reported potential cooperation with Oman to monitor shipping through the Strait of Hormuz.\n- President Trump stated the U.S. intends to dismantle Iran's military capabilities, including its navy, air force, and missile programs.\n- Treasury Secretary Scott Bessent characterized current elevated fuel prices as a temporary sacrifice necessary to prevent Iran from acquiring nuclear weapons.\n\n### Why it Matters\nThe market fluctuations highlight investor sensitivity to geopolitical instability and the critical role of the Strait of Hormuz in global energy supply chains. These developments underscore the broader economic tension between short-term consumer costs and long-term national security objectives regarding nuclear non-proliferation.",
+    "url": "https://dailycaller.com/2026/04/02/markets-trump-speech-iran-war/",
+    "category": "Tech Business & Markets",
+    "processed_at": "2026-04-04T07:51:28.606259",
+    "author": "Anthony Iafrate",
+    "source": "The Daily Caller",
+    "title": "Markets Take America On Rollercoaster Ride After Trump’s Nothingburger Speech"
+  },
+  {
+    "summary": "IBM and Arm have announced a strategic partnership to enable Arm-based software to run on IBM Z mainframes, aiming to bridge the gap between cloud efficiency and enterprise computing.\n\n### Key Points\n- The collaboration focuses on developing virtualization tools, ensuring security compliance, and creating common technology layers for IBM Z and LinuxONE environments.\n- IBM aims to provide mainframe customers with the price-performance benefits of Arm architecture, which currently powers significant compute capacity at major hyperscalers.\n- The initiative specifically targets regulated industries and air-gapped environments that require high security and cannot easily migrate workloads to public cloud platforms.\n- Technical implementation details, such as whether the integration will utilize hypervisors, PR/SM partitioning, or container technology, remain currently undisclosed by IBM.\n\n### Why it Matters\nThis partnership allows enterprises to modernize their mainframe environments by integrating the power-efficient Arm architecture directly into their existing systems of record. By bringing cloud-native capabilities to highly regulated sectors, IBM is positioning its hardware to remain competitive against the rapid growth of Arm-based silicon in the broader cloud market.",
+    "url": "https://slashdot.org/story/26/04/02/1749205/ibm-teams-up-with-arm-to-run-arm-workloads-on-ibm-z-mainframes",
+    "category": "Tech Business & Markets",
+    "processed_at": "2026-04-04T07:51:39.494453",
+    "author": "BeauHD",
+    "source": "Slashdot.org",
+    "title": "IBM Teams Up With Arm To Run Arm Workloads On IBM Z Mainframes"
+  },
+  {
+    "summary": "Developers at HD Research successfully rewrote the Git version control system in the Zig programming language by orchestrating a swarm of autonomous AI coding agents within virtual machines.\n\n### Key Points\n- The project utilized the Vers CLI to manage infrastructure, injecting environment variables into VMs to enable autonomous agent orchestration.\n- Agents operated in infinite loops, performing sync, build, and push operations while utilizing a \"succinct mode\" to reduce token consumption.\n- The resulting \"ziggit\" software achieved significant performance gains, including up to 100x speedups in specific Git operations compared to the original C-based implementation.\n- The Zig-based implementation produced a WebAssembly binary 5.4x smaller than the existing wasm-git project.\n- The development process consumed approximately 13 billion tokens over one week, effectively automating months of manual developer labor.\n\n### Why it Matters\nThis project demonstrates that autonomous agent swarms can handle complex, large-scale engineering tasks when managed by a human-steered \"top-level\" agent. By providing clear architectural goals and iterative oversight, developers can leverage AI to perform significant refactoring and performance optimization that would be prohibitively time-consuming for human teams.",
+    "url": "https://vers.sh/blog/git-zig-bun-100x",
+    "category": "Artificial Intelligence",
+    "processed_at": "2026-04-04T07:51:49.634588",
+    "author": "Vers Team",
+    "source": "Vers.sh",
+    "title": "We sped up bun by 100x"
+  },
+  {
+    "summary": "The European Union’s cybersecurity agency, CERT-EU, has attributed a significant cloud data breach at the European Commission to the threat group TeamPCP, impacting at least 29 Union entities.\n\n### Key Points\n- The breach originated on March 10 when TeamPCP used a stolen Amazon Web Services API key obtained via a Trivy supply-chain attack.\n- Attackers utilized the TruffleHog tool to scan for additional credentials and evade detection within the European Commission’s cloud environment.\n- The data extortion group ShinyHunters published a 90GB archive of stolen documents on the dark web on March 28.\n- Compromised data includes personal information, usernames, email addresses, and over 51,000 files related to outbound email communications.\n- The incident affected 42 internal European Commission clients and 29 other Union entities hosted on the europa.eu service.\n- CERT-EU confirmed that no websites were tampered with and no lateral movement occurred beyond the initial cloud environment.\n\n### Why it Matters\nThis incident highlights the severe risks posed by supply-chain attacks and the potential for stolen API keys to bypass standard cloud security monitoring. The exposure of sensitive personal data across multiple European Union entities underscores the critical need for robust credential management and proactive threat detection in government cloud infrastructure.",
+    "url": "https://www.bleepingcomputer.com/news/security/cert-eu-european-commission-hack-exposes-data-of-30-eu-entities/",
+    "category": "Cybersecurity",
+    "processed_at": "2026-04-04T07:51:59.477607",
+    "author": "Sergiu Gatlan",
+    "source": "BleepingComputer",
+    "title": "CERT-EU: European Commission hack exposes data of 30 EU entities"
+  },
+  {
+    "summary": "Horizon Media is developing a centralized \"Horizon OS\" platform designed to orchestrate ad tech and optimize media buying in real-time through automated, data-driven decision-making across various marketplaces.\n\n### Key Points\n- Horizon OS acts as an intelligence layer that integrates demand-side platforms, supply-side platforms, and data partners into a single command center.\n- The system aims to update campaign allocations in real-time based on live performance signals rather than relying on static, pre-set media plans.\n- Horizon intends to monetize the decision-making process and proprietary bidding logic rather than marking up inventory costs.\n- The agency has already vetted over 200 potential partners, moving a selected cohort into a green-lit integration phase.\n- The model emphasizes transparency by passing through platform and data fees to clients at cost, aiming to differentiate itself from traditional agency trading desks.\n\n### Why it Matters\nThis shift represents a broader industry move toward monetizing intelligence and performance outcomes rather than hidden inventory margins. By prioritizing transparency and real-time optimization, agencies are attempting to modernize their business models to remain relevant as AI makes traditional, opaque supply chain practices increasingly unsustainable.",
+    "url": "http://digiday.com/media-buying/future-of-marketing-briefing-horizon-media-is-building-a-platform-to-orchestrate-ad-tech-from-a-single-command-center/",
+    "category": "Tech Business & Markets",
+    "processed_at": "2026-04-04T07:52:25.625685",
+    "author": "Seb Joseph",
+    "source": "Digiday",
+    "title": "Future of Marketing Briefing: Horizon Media is building a platform to orchestrate ad tech from a single command center"
+  },
+  {
+    "summary": "The ongoing conflict between Iran and the United States is threatening the Gulf region's status as a burgeoning artificial intelligence hub for major American technology corporations.\n\n### Key Points\n- Iran has identified 17 U.S. companies, including Nvidia, Microsoft, and Amazon, as potential targets for retaliation due to their regional infrastructure investments.\n- Gulf nations like Saudi Arabia and the UAE have invested billions to attract Western tech firms, aiming to diversify their economies through AI and data centers.\n- Despite security risks, Gulf sovereign wealth funds continue to finalize new investments in U.S. tech companies, including recent deals with Ayar Labs and Whoop.\n- Analysts warn that persistent regional instability could hinder the ability of Gulf states to attract the specialized talent required to maintain advanced AI systems.\n- Chinese firms like Huawei and Tencent remain positioned to capture market share if U.S. companies reduce their regional footprint due to security concerns.\n\n### Why it Matters\nThe conflict challenges the Gulf's long-term strategy of using oil wealth to build a secure, high-tech economic future anchored by American partnerships. If the region is perceived as too volatile for critical infrastructure, it may force a shift in global tech investment strategies or accelerate the Gulf's reliance on alternative international partners.",
+    "url": "http://foreignpolicy.com/2026/04/02/iran-war-gulf-data-centers-ai-technology/",
+    "category": "Artificial Intelligence",
+    "processed_at": "2026-04-04T07:52:38.100949",
+    "author": "Rishi Iyengar",
+    "source": "Foreign Policy",
+    "title": "Will the Iran War Evaporate the Gulf’s AI Oasis?"
+  },
+  {
     "source": "Wired",
     "url": "https://www.wired.com/story/a-new-google-funded-data-center-will-be-powered-by-a-massive-gas-plant/",
     "category": "Tech Business & Markets",

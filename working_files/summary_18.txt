@@ -1,21 +1,21 @@
-Polymarket fee expansion boosts revenue amid regulatory pressure
+CERT-EU: European Commission hack exposes data of 30 EU entities
 ============================================================
 
-Polymarket experienced a significant surge in daily revenue, exceeding $900,000, following the implementation of a broader fee structure across various trading categories on the prediction market platform.
+The European Union’s cybersecurity agency, CERT-EU, has attributed a significant cloud data breach at the European Commission to the threat group TeamPCP, impacting at least 29 Union entities.
 
 ### Key Points
-- Daily platform fees climbed from $363,000 on Monday to over $1 million by Wednesday and Thursday.
-- The new fee model applies to finance, politics, economics, culture, weather, and tech categories.
-- Geopolitical and world event markets remain exempt from the updated taker fees.
-- Polymarket faces regulatory restrictions in 33 countries, including recent bans in Argentina, Hungary, and Portugal.
-- At least 11 U.S. states have initiated legal actions or issued cease-and-desist orders against prediction platforms.
-- The platform recently introduced trading restrictions to mitigate concerns regarding insider trading and market integrity.
+- The breach originated on March 10 when TeamPCP used a stolen Amazon Web Services API key obtained via a Trivy supply-chain attack.
+- Attackers utilized the TruffleHog tool to scan for additional credentials and evade detection within the European Commission’s cloud environment.
+- The data extortion group ShinyHunters published a 90GB archive of stolen documents on the dark web on March 28.
+- Compromised data includes personal information, usernames, email addresses, and over 51,000 files related to outbound email communications.
+- The incident affected 42 internal European Commission clients and 29 other Union entities hosted on the europa.eu service.
+- CERT-EU confirmed that no websites were tampered with and no lateral movement occurred beyond the initial cloud environment.
 
 ### Why it Matters
-The sharp increase in revenue highlights the platform's aggressive monetization strategy as it navigates complex regulatory environments and legal challenges globally. This financial growth occurs alongside significant institutional interest, including a recent $600 million investment from the Intercontinental Exchange.
+This incident highlights the severe risks posed by supply-chain attacks and the potential for stolen API keys to bypass standard cloud security monitoring. The exposure of sensitive personal data across multiple European Union entities underscores the critical need for robust credential management and proactive threat detection in government cloud infrastructure.
 
 ============================================================
-Author:   Cointelegraph by Ezra Reguerra
-Source:   Cointelegraph
-URL:      https://cointelegraph.com/news/polymarket-fees-revenue-surge-after-pricing-overhaul
-Category: Tech Business & Markets
+Author:   Sergiu Gatlan
+Source:   BleepingComputer
+URL:      https://www.bleepingcomputer.com/news/security/cert-eu-european-commission-hack-exposes-data-of-30-eu-entities/
+Category: Cybersecurity
