@@ -1,20 +1,20 @@
-Google might say no more to Android rollbacks on the Pixel 10 with a patch
+Trivy supply chain attack enabled European Commission cloud breach
 ============================================================
 
-Google is reportedly developing a bootloader update for the upcoming Pixel 10 series that will restrict users from downgrading their devices to older versions of the Android operating system.
+The European Commission confirmed a major data breach involving 340 GB of stolen information after attackers exploited a supply chain vulnerability in the AquaSec Trivy security scanner.
 
 ### Key Points
-- Tipster Mystic Leaks claims the update will increment the anti-rollback version for the bootloader, making software downgrades nearly impossible for standard users.
-- The measure is intended to prevent users from reverting to older Android versions that may contain critical security vulnerabilities or unpatched exploits.
-- While similar anti-rollback features were previously implemented on the Pixel 6, this new patch could force users to sideload OTA images to avoid bricking their devices.
-- Google has historically faced backlash from developers for restricting software freedom, leading the company to provide specific developer-only builds in the past.
-- Similar restrictive measures were recently discussed by OnePlus, though the company later walked back its plans following significant negative feedback from the user community.
+- The breach occurred on March 19, 2026, after attackers gained unauthorized access to AWS credentials via a compromised version of the Trivy scanner.
+- Threat actors ShinyHunters and TeamPCP are linked to the incident, which resulted in the leak of names, usernames, and email addresses.
+- Stolen data includes approximately 51,992 files related to outbound email communications, including potentially sensitive bounce-back notifications.
+- The European Commission’s Security Operations Center detected the intrusion on March 24 and subsequently revoked all compromised AWS access keys.
+- Investigators found no evidence of lateral movement into other European Commission AWS accounts, and the main europa.eu web platform remains operational.
 
 ### Why it Matters
-This change represents a significant shift in how Google manages device security versus user control over software. By limiting the ability to roll back updates, the company prioritizes system integrity and vulnerability protection, though it may frustrate power users who rely on downgrading to resolve bugs or performance issues.
+This incident highlights the significant risks posed by supply chain attacks targeting widely used security software and cloud infrastructure management tools. It serves as a critical reminder for organizations to rigorously audit third-party dependencies and implement strict credential management to prevent unauthorized access to sensitive cloud environments.
 
 ============================================================
-Author:   nickodiaz@sbcglobal.net (Nickolas Diaz) , Nickolas Diaz
-Source:   Android Central
-URL:      https://www.androidcentral.com/phones/google-pixel/google-might-say-no-more-to-android-rollbacks-on-the-pixel-10-with-a-patch
-Category: Phones, Laptops, and Gadgets
+Author:   Zeljka Zorz
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/04/03/european-commission-cloud-breach/
+Category: Cybersecurity

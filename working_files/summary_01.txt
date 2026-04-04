@@ -1,19 +1,20 @@
-The company's biggest security hole lived in the breakroom
+Post Mortem: axios NPM supply chain compromise
 ============================================================
 
-A corporate data breach was traced back to an internet-connected coffee machine that lacked basic security features, allowing threat actors to bypass the company's internal network defenses.
+Two malicious versions of the popular Axios library were briefly published to the npm registry on March 31, 2026, following a targeted social engineering attack on a maintainer.
 
 ### Key Points
-- Digital forensics investigators discovered that a coffee machine with a default password and no firewall served as the entry point for a major data breach.
-- The compromised device sent data packets to malicious actors outside the country every time it was used to brew a beverage.
-- Forrester Research notes that connected devices are increasingly targeted because they often lack security monitoring and are incorrectly assumed to be benign.
-- A similar 2017 incident involved hackers exfiltrating 10 GB of data from a North American casino by exploiting a connected fish tank.
+- Malicious versions 1.14.1 and 0.30.4 were live on npm for approximately three hours before removal.
+- The compromised packages injected a remote access trojan via the dependency plain-crypto-js@4.2.1.
+- Affected users are advised to rotate all credentials and secrets on any machine where the malicious versions were installed.
+- The attacker gained access to the maintainer's npm account after a two-week social engineering campaign.
+- Future security measures include adopting OIDC publishing flows and implementing immutable release setups to prevent unauthorized access.
 
 ### Why it Matters
-This incident highlights the significant security risks posed by the proliferation of internet-connected appliances within corporate environments. Organizations must prioritize network segmentation and password management for all connected devices to prevent kitchen hardware from becoming a gateway for cyberattacks.
+This incident highlights the ongoing vulnerability of the software supply chain when high-impact open-source projects rely on individual maintainer accounts. It serves as a critical reminder for organizations to audit their dependencies and maintain strict security protocols for CI/CD environments.
 
 ============================================================
-Author:   Avram Piltch
-Source:   Theregister.com
-URL:      https://www.theregister.com/2026/04/02/pwned/
+Author:   axios
+Source:   Github.com
+URL:      https://github.com/axios/axios/issues/10636
 Category: Cybersecurity
