@@ -1,19 +1,20 @@
-Hey Siri, give us weather reports that work outside California
+I ran Nvidia's NemoClaw to see if OpenClaw is finally safe, but it still has the same problems
 ============================================================
 
-Apple users in regions like London are calling for Siri to include precipitation forecasts in default weather reports, as the current system often omits vital rain information.
+Nvidia’s new NemoClaw security stack attempts to mitigate risks in the popular OpenClaw AI platform, but early testing reveals significant usability bugs and persistent architectural security vulnerabilities.
 
 ### Key Points
-- Siri currently provides temperature highs and lows but fails to mention rain probability in its initial weather summary.
-- Users in rainy climates like London and Seattle must issue follow-up voice commands to determine if they need umbrellas or raincoats.
-- Critics argue that Apple’s software design often prioritizes California-centric weather patterns over the needs of international users.
-- Previous complaints regarding Apple’s Weather app, such as the inability to distinguish between London boroughs, were eventually addressed through user feedback.
+- NemoClaw provides a sandbox environment with deny-by-default network policies and kernel-level filesystem isolation to contain OpenClaw agents.
+- Users report frequent technical issues, including permission errors, dashboard connectivity failures, and complex setup requirements for local inference backends like Ollama.
+- The platform fails to address semantic-level threats, such as prompt injection, which can bypass sandboxing by manipulating agents through trusted service integrations.
+- Despite the security layer, the underlying architecture of OpenClaw remains flawed because it merges control and data planes, leaving users vulnerable to credential theft.
+- The software is currently in an early preview stage, with many features requiring manual workarounds to function as intended.
 
 ### Why it Matters
-The limitation highlights a persistent gap in localized user experience for Apple’s voice assistant in international markets. Improving Siri’s predictive capabilities could significantly enhance the utility of HomePod devices for daily planning in regions where weather conditions change rapidly.
+While NemoClaw offers a necessary improvement over running AI agents on bare systems, it does not solve the fundamental trust issues inherent in giving autonomous models access to personal data. Users must recognize that sandboxing cannot prevent malicious instructions from exploiting legitimate service connections, meaning the platform is not yet ready for secure, reliable daily use.
 
 ============================================================
-Author:   Ben Lovejoy
-Source:   9to5Mac
-URL:      https://9to5mac.com/2026/04/03/hey-siri-give-us-weather-reports-that-work-outside-california/
-Category: Phones, Laptops, and Gadgets
+Author:   Adam Conway
+Source:   XDA Developers
+URL:      https://www.xda-developers.com/ran-nvidia-nemoclaw-openclaw-finally-safe-same-problems/
+Category: Cybersecurity

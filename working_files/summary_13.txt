@@ -1,20 +1,20 @@
-Why I Use Additional Antivirus Protection on Top of Microsoft Defender
+Claude Code Found a Linux Vulnerability Hidden for 23 Years
 ============================================================
 
-Microsoft Defender provides robust, built-in security for most Windows users, though individuals with high-risk browsing habits may benefit from supplementing it with additional specialized third-party protection tools.
+Anthropic research scientist Nicholas Carlini used the Claude Code AI tool to identify multiple remotely exploitable security vulnerabilities in the Linux kernel, including one dating back to 2003.
 
 ### Key Points
-- Microsoft Defender offers real-time malware scanning, cloud-based threat intelligence, and ransomware protection integrated directly into the Windows operating system.
-- Automatic updates through Windows Update ensure that Defender remains current against emerging threats without requiring manual user intervention.
-- Users who frequently download experimental software, visit unregulated websites, or handle sensitive financial data may require additional security layers.
-- Third-party solutions like Bitdefender can provide supplementary features such as advanced phishing defenses, parental controls, and vulnerability assessments.
-- Running multiple real-time antivirus engines simultaneously can cause system conflicts, so secondary tools should be chosen to complement rather than duplicate existing features.
+- Nicholas Carlini utilized Claude Code to scan the Linux kernel source code, successfully identifying a heap buffer overflow in the NFS driver.
+- The discovered NFS vulnerability had remained hidden in the Linux kernel for 23 years, originating in a 2003 code update.
+- Carlini reported that Claude Code identified hundreds of potential security flaws, creating a backlog that requires manual validation before submission to maintainers.
+- The research demonstrated that newer models, specifically Claude Opus 4.6, significantly outperform older AI versions in complex vulnerability detection.
+- Carlini has already confirmed or reported five specific Linux kernel vulnerabilities, including issues in `io_uring`, `futex`, and `ksmbd`.
 
 ### Why it Matters
-While Microsoft Defender is sufficient for the average user, layering security tools can provide a critical safety net for those with higher exposure to online threats. Balancing automated software protections with proactive digital habits remains the most effective strategy for maintaining long-term system integrity and data security.
+The ability of AI models to autonomously identify deep-seated security flaws in critical infrastructure like the Linux kernel marks a significant shift in cybersecurity research. This development suggests that both security professionals and malicious actors will soon have access to powerful tools capable of uncovering long-standing vulnerabilities at an unprecedented scale.
 
 ============================================================
-Author:   Marshall Gunnell
-Source:   CNET
-URL:      https://www.cnet.com/tech/services-and-software/why-use-additional-antivirus-with-microsoft-defender/
+Author:   Michael Lynch
+Source:   Mtlynch.io
+URL:      https://mtlynch.io/claude-code-found-linux-vulnerability/
 Category: Cybersecurity
