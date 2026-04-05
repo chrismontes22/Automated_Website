@@ -1,20 +1,20 @@
-Supply Chain Attacks Surge in March 2026
+Strava runs are continuing to leak sensitive military information, with over 500 UK soldiers the latest to be exposed
 ============================================================
 
-Security researchers identified a surge in software supply chain attacks during March 2026, specifically targeting popular NPM and PyPI packages like Axios and LiteLLM to distribute malicious payloads.
+An investigation by The i Paper reveals that over 500 British military personnel are inadvertently exposing sensitive location data by sharing public exercise routes on the Strava app.
 
 ### Key Points
-- The Axios NPM package was compromised via account takeover, injecting a cross-platform Remote Access Trojan (RAT) into versions 1.14.1 and 0.30.4.
-- The threat group TeamPCP targeted the LiteLLM library on PyPI, embedding malicious code in versions 1.82.7 and 1.82.8 to harvest sensitive cloud and infrastructure credentials.
-- TeamPCP has been linked to multiple recent supply chain incidents, including attacks on the Trivy vulnerability scanner, KICS static analysis tool, and the Telnyx communication library.
-- Malicious Axios releases utilized a hidden dependency to execute postinstall scripts, while compromised LiteLLM versions used obfuscated payloads to facilitate lateral movement.
-- Security teams are advised to rotate all potentially exposed API keys, SSH tokens, and cloud credentials, and to enforce strict dependency auditing and MFA for maintainer accounts.
+- Public Strava activity logs have identified military personnel and their families near sensitive sites, including the HMNB Clyde nuclear submarine base.
+- The data exposure includes routes and photos posted from locations such as Northwood, Faslane, and North Yorkshire.
+- Security experts warn that foreign states can aggregate these public exercise patterns to track individual movements and military operations.
+- Military officials have criticized the practice, noting that even personnel at high levels are failing to secure their personal accounts.
+- Users can mitigate these risks by adjusting privacy settings within the Strava app to restrict the visibility of their exercise data.
 
 ### Why it Matters
-These incidents demonstrate the inherent fragility of the global software supply chain, where attackers exploit trusted developer accounts to inject malware into widely used open-source libraries. By compromising CI/CD pipelines and developer workstations, these attacks can lead to widespread data exfiltration and long-term persistence within enterprise production environments.
+This incident highlights the significant national security risks posed by the intersection of personal fitness tracking and military operational security. It serves as a critical reminder for both government employees and private citizens to audit their digital footprints to prevent the aggregation of sensitive personal information.
 
 ============================================================
-Author:   ThreatLabz (Zscaler)
-Source:   Zscaler.com
-URL:      https://www.zscaler.com/blogs/security-research/supply-chain-attacks-surge-march-2026
+Author:   David Nield
+Source:   TechRadar
+URL:      https://www.techradar.com/health-fitness/fitness-apps/strava-runs-are-continuing-to-leak-sensitive-military-information-with-over-500-uk-soldiers-the-latest-to-be-exposed
 Category: Cybersecurity

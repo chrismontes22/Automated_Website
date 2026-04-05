@@ -1,20 +1,20 @@
-I ran Nvidia's NemoClaw to see if OpenClaw is finally safe, but it still has the same problems
+Humans can still beat AI at video games
 ============================================================
 
-Nvidia’s new NemoClaw security stack attempts to mitigate risks in the popular OpenClaw AI platform, but early testing reveals significant usability bugs and persistent architectural security vulnerabilities.
+New research from New York University highlights that while artificial intelligence excels at specific, rule-based games, it still struggles to learn new, open-ended titles as quickly as humans.
 
 ### Key Points
-- NemoClaw provides a sandbox environment with deny-by-default network policies and kernel-level filesystem isolation to contain OpenClaw agents.
-- Users report frequent technical issues, including permission errors, dashboard connectivity failures, and complex setup requirements for local inference backends like Ollama.
-- The platform fails to address semantic-level threats, such as prompt injection, which can bypass sandboxing by manipulating agents through trusted service integrations.
-- Despite the security layer, the underlying architecture of OpenClaw remains flawed because it merges control and data planes, leaving users vulnerable to credential theft.
-- The software is currently in an early preview stage, with many features requiring manual workarounds to function as intended.
+- AI models like Deep Blue and AlphaGo have historically mastered structured games through reinforcement learning and millions of simulated trial-and-error iterations.
+- NYU professor Julian Togelius argues that current AI models lack the ability to generalize, often failing when faced with unfamiliar or abstract game mechanics.
+- Humans possess a significant advantage in learning new games due to years of lived experience and an intuitive understanding of physical objects and concepts.
+- While Google DeepMind’s SIMA 2 model shows progress in 3D environments, it remains far from the researchers' proposed benchmark of mastering 100 new games rapidly.
+- The study suggests that true human-level intelligence requires abstract thinking and creativity, which current AI architectures have yet to achieve.
 
 ### Why it Matters
-While NemoClaw offers a necessary improvement over running AI agents on bare systems, it does not solve the fundamental trust issues inherent in giving autonomous models access to personal data. Users must recognize that sandboxing cannot prevent malicious instructions from exploiting legitimate service connections, meaning the platform is not yet ready for secure, reliable daily use.
+The inability of AI to adapt to new, open-ended environments suggests that current models are optimized for narrow tasks rather than general intelligence. Mastering this challenge would require breakthroughs in reasoning and planning, which are essential for developing more versatile and capable artificial intelligence systems.
 
 ============================================================
-Author:   Adam Conway
-Source:   XDA Developers
-URL:      https://www.xda-developers.com/ran-nvidia-nemoclaw-openclaw-finally-safe-same-problems/
-Category: Cybersecurity
+Author:   Mack DeGeurin
+Source:   Popular Science
+URL:      http://www.popsci.com/technology/humans-beat-ai-at-video-games/
+Category: Artificial Intelligence

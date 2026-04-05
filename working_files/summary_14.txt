@@ -1,20 +1,20 @@
-Show HN: Mtproto.zig – High-performance Telegram proxy with DPI evasion
+Windows 11’s April update packs 8 (mostly) meaningful improvements you won’t want to skip. Here's what you'll be getting.
 ============================================================
 
-The mtproto.zig project provides a high-performance, lightweight Telegram proxy written in Zig that disguises traffic as TLS 1.3 HTTPS to effectively bypass network censorship and deep packet inspection.
+Microsoft is scheduled to release the April 2026 Security Update for Windows 11 on April 14, introducing enhanced security controls, improved accessibility features, and refined system settings.
 
 ### Key Points
-- The proxy features a 177 KB binary size, requires only 256 KB of RAM, and boots in under 10 milliseconds.
-- It utilizes advanced evasion techniques, including TCPMSS fragmentation, IPv6 hopping, and application-level Split-TLS to defeat active and passive DPI probes.
-- The software is built entirely on the Zig standard library with zero external dependencies, ensuring high thread safety and minimal resource overhead.
-- It supports multi-user authentication and is compatible with Telegram’s MiddleProxy transport for improved media relay performance.
-- Deployment is streamlined via Docker, systemd integration, and automated scripts that handle configuration and Cloudflare API-based IPv6 rotation.
+- Smart App Control now allows users to toggle the feature on or off without requiring a full operating system reinstallation.
+- Windows Narrator expands AI-powered image descriptions to non-AI devices by utilizing cloud-based Copilot processing.
+- File Explorer gains Voice Typing support for file renaming and fixes for visual bugs, including a white flash during tab launches.
+- Display support is updated to recognize refresh rates of 1000Hz or higher and improves power management for USB4 monitors.
+- The Settings app receives refinements to the Home and About pages, including better hardware specification visibility and improved loading performance.
 
 ### Why it Matters
-This tool offers a highly efficient alternative to existing C, Rust, and Go-based proxies, significantly reducing the hardware requirements needed to host censorship-resistant infrastructure. By mimicking standard browser traffic, it provides a robust solution for users in regions with strict internet filtering to maintain reliable access to Telegram.
+This update represents a shift toward incremental stability and usability improvements that address long-standing user frustrations with Windows 11. By refining core components like security management and accessibility, Microsoft is prioritizing a more predictable and polished experience for its global user base.
 
 ============================================================
-Author:   sleep3r
-Source:   Github.com
-URL:      https://github.com/sleep3r/mtproto.zig
-Category: Cybersecurity
+Author:   mhuck@live.com (Mauro Huculak) , Mauro Huculak
+Source:   Windows Central
+URL:      https://www.windowscentral.com/microsoft/windows-11/8-features-coming-with-the-april-2026-security-update-for-windows-11
+Category: Phones, Laptops, and Gadgets

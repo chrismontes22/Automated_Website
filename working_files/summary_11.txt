@@ -1,20 +1,20 @@
-HomeKit Weekly: The Onvis Smart Button is the perfect way to share Apple Home access with guests
+Show HN: Running local OpenClaw together with remote agents in an open network
 ============================================================
 
-The Onvis Smart Button offers a reliable, Thread-enabled physical remote solution for controlling Apple Home accessories, providing a simple alternative to app-based or voice-activated smart home management.
+Hybro Hub is a new lightweight daemon that enables users to integrate local AI agents with cloud-based models through a unified portal while maintaining strict data privacy.
 
 ### Key Points
-- The Onvis Smart Button features five programmable buttons that support single, double, and long-press triggers for up to 15 distinct HomeKit functions.
-- The device utilizes Thread networking technology to ensure instant, local communication with smart home hardware without requiring cloud connectivity.
-- It is powered by a standard coin battery and includes a wall mount for convenient placement throughout the home.
-- Users can configure button actions directly within the Apple Home app to control lights, blinds, plugs, and custom scenes.
-- The remote is available for purchase through Amazon and the official Onvis website.
+- Hybro Hub acts as a background daemon that connects local runtimes like Ollama, OpenClaw, and n8n to the hybro.ai web interface.
+- The architecture uses an outbound-only relay, ensuring that local data processing remains on the user's machine without requiring inbound firewall changes.
+- Users can manage both local and cloud-based agents side-by-side in a single UI, with clear visual indicators showing where data is processed.
+- The system supports the Agent-to-Agent (A2A) protocol, allowing for automatic discovery of local agents and seamless integration with custom workflows.
+- Built-in privacy features include PII detection and configurable keyword scanning to monitor outbound messages for sensitive information.
 
 ### Why it Matters
-This device simplifies smart home accessibility for guests and residents by removing the need for complex app navigation or voice commands. By keeping all automation local, it enhances privacy and reliability for users invested in the Apple Home ecosystem.
+This tool addresses the growing tension between the high performance of cloud AI and the security requirements of local data processing. By providing a unified interface, it allows developers and power users to leverage specialized cloud agents without compromising the privacy of their local environments.
 
 ============================================================
-Author:   Bradley C
-Source:   9to5Mac
-URL:      https://9to5mac.com/2026/04/03/onvis-smart-button/
-Category: Phones, Laptops, and Gadgets
+Author:   hybroai
+Source:   Github.com
+URL:      https://github.com/hybroai/hybro-hub
+Category: Artificial Intelligence
