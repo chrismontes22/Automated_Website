@@ -431,9 +431,9 @@ function pageShell({
         <h1 class="about-hero-title">The tech news feed<br>that never <em>sleeps.</em></h1>
         <p class="about-lead">TechPulse is a fully automated, AI-run tech news blog. It scours the web for the latest technology stories, then summarizes them into clear, jargon-free briefings — so you get the signal without the noise.</p>
         <div class="about-body">
-          <p>TechPulse pulls in tech stories from across the web and breaks them down into quick summaries that are easy to follow. It skips the repetitive coverage and the less helpful pieces, so you're left with the key ideas and updates in a much smaller, more manageable format.</p>
-          <p>The goal is to make staying informed feel easy, with AI summarizing the text in a concise, organized manner. The feed updates throughout the day, guided by an AI system that follows ongoing trends and notable developments. As new stories emerge, it pulls them in, condenses them, and keeps the overview current.</p>
-          <p>The idea is simple: a steady, readable stream of tech news that stays up to date without demanding your time or attention to manage it.</p>
+          <p>TechPulse curates the most impactful tech stories from across the web, distilling them into clear, high-level summaries. By highlighting key developments and emerging trends in real-time, we provide a streamlined entry point into the day’s most important news without the noise.</p>
+          <p>Our goal is to celebrate original reporting, not replace it. We aim to connect readers with great journalism by providing concise overviews that encourage deeper exploration. Every summary is built to respect the work of the original authors and help drive engaged traffic back to their full articles and primary sources.</p>
+          <p>The concept is simple: a steady, readable stream of tech news that keeps you informed at a glance while championing the voices that break the stories.</p>
         </div>
         <div class="about-divider"></div>
         <div class="about-stats">
