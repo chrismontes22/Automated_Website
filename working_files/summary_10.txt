@@ -1,20 +1,20 @@
-Exposing a Radiation-Hardened 2.4 GHz Wi-Fi Receiver to 500 Kilograys
+Stop letting Windows Update decide when to restart your PC
 ============================================================
 
-Researchers at the Tokyo Institute of Science have developed a radiation-hardened Wi-Fi chip capable of maintaining functionality while exposed to extreme gamma ray levels found in nuclear environments.
+Windows 11 users can regain control over intrusive automatic reboots and updates by manually reconfiguring the system's UpdateOrchestrator tasks within the Windows Task Scheduler utility.
 
 ### Key Points
-- The chip successfully withstood a cumulative radiation dose of 500 kilograys during laboratory testing.
-- Engineers minimized radiation sensitivity by reducing transistor counts and replacing them with more resilient inductors.
-- The design utilizes enlarged NMOS transistors, which demonstrate higher radiation resistance compared to standard PMOS components.
-- Performance degradation remained minimal, showing only a 1.5 to 1.6 dB change after exposure to high-intensity radiation blasts.
-- Future development aims to create a radiation-hardened Wi-Fi transmitter, a process that may require integrating materials like diamond.
+- Windows 11's default "Active Hours" and "Pause updates" features often fail to prevent forced reboots during critical tasks or idle periods.
+- The UpdateOrchestrator folder in Task Scheduler manages the background processes that trigger automatic system scans and installations.
+- Users can disable default update-triggering tasks and create a custom schedule using the UsoClient.exe executable to dictate exactly when updates occur.
+- This method requires administrator privileges and should be periodically verified, as major Windows feature updates may attempt to reset these configurations.
+- Disabling default triggers does not permanently stop updates, ensuring the system remains protected against security vulnerabilities and zero-day exploits.
 
 ### Why it Matters
-This breakthrough enables reliable wireless communication in high-radiation zones like the Fukushima Daiichi nuclear reactor or deep space environments where traditional electronics fail. By overcoming current hardware limitations, this technology could significantly improve remote monitoring and robotic operations in hazardous areas previously inaccessible to standard semiconductor devices.
+Taking manual control of the update process prevents unexpected system restarts that can interrupt long-running professional workflows or media consumption. This approach restores the user's authority over their hardware, ensuring that essential security maintenance occurs only during designated, non-disruptive time windows.
 
 ============================================================
-Author:   Maya Posch
-Source:   Hackaday
-URL:      https://hackaday.com/2026/04/04/exposing-a-radiation-hardened-2-4-ghz-wi-fi-receiver-to-500-kilograys/
+Author:   Chandraveer Mathur
+Source:   XDA Developers
+URL:      https://www.xda-developers.com/stop-windows-update-automatic-restart-your-pc-with-task-scheduler/
 Category: Phones, Laptops, and Gadgets

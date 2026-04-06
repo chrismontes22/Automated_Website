@@ -1,19 +1,20 @@
-iOS 26 Feels Faster Than iOS 18
+Eight years of wanting, three months of building with AI
 ============================================================
 
-Apple has expanded the availability of the iOS 18.7.7 security update to all compatible devices, providing critical protection for users who have not yet upgraded to iOS 26.
+A software engineer successfully developed and launched syntaqlite, a comprehensive set of SQLite developer tools, by utilizing AI coding agents to accelerate implementation while navigating significant architectural challenges.
 
 ### Key Points
-- Apple released iOS 18.7.7 on April 1 to address severe security vulnerabilities identified as DarkSword and Coruna.
-- The update is now available for all iPhones capable of running iOS 18, including those that support the newer iOS 26.
-- Users with auto-update enabled can now receive these security patches without being forced to perform a full operating system upgrade.
-- The update addresses previous concerns regarding Apple withholding security patches from users who choose to remain on older software versions.
+- The project required approximately 250 hours of development over three months, transitioning from an initial C-based prototype to a final Rust implementation.
+- The developer used AI tools including Aider, Roo Code, and Claude Code to generate parsers, formatters, and editor extensions.
+- A "vibe-coding" phase resulted in a fragile, unmaintainable codebase, forcing a complete rewrite to establish a stable architecture.
+- The final release includes a web playground, language server support, and over 500 tests to ensure compatibility with SQLite and PerfettoSQL.
+- AI proved highly effective for repetitive tasks and learning new domains, but struggled with high-level design, API usability, and maintaining long-term project context.
 
 ### Why it Matters
-This change ensures that users who prefer to delay major OS upgrades can still maintain device security against critical exploits. It highlights a shift in Apple's update policy, aligning iPhone security support more closely with the long-term maintenance standards typically seen in the macOS ecosystem.
+This project highlights that while AI agents can drastically reduce development time for complex software, they remain poor substitutes for human architectural oversight and design intuition. Relying on AI for high-level decision-making can lead to technical debt and "spaghetti code," suggesting that developers must maintain strict control over project structure to ensure long-term viability.
 
 ============================================================
-Author:   John Gruber
-Source:   Daringfireball.net
-URL:      https://daringfireball.net/linked/2026/04/03/ios-18-update-for-holdouts
-Category: Phones, Laptops, and Gadgets
+Author:   Lalit Maganti
+Source:   Lalitm.com
+URL:      https://lalitm.com/post/building-syntaqlite-ai/
+Category: Artificial Intelligence

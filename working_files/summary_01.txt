@@ -1,20 +1,20 @@
-36 Malicious npm Packages Exploited Redis, PostgreSQL to Deploy Persistent Implants
+Researchers didn’t want to glamorize cybercrims. So they roasted them
 ============================================================
 
-Cybersecurity researchers identified 36 malicious npm packages disguised as Strapi CMS plugins that execute automated payloads to harvest credentials, deploy reverse shells, and facilitate unauthorized database exploitation.
+Cybersecurity researchers at Trellix are countering the glamorization of cybercriminals by publishing "Dark Web Roasts" that use mockery and memes to undermine the perceived status of threat actors.
 
 ### Key Points
-- The 36 malicious packages were uploaded by four sock puppet accounts over a 13-hour period to mimic legitimate Strapi v3 community plugins.
-- Malicious code is embedded in the postinstall script, which executes automatically during installation with the privileges of the user or CI/CD environment.
-- Payloads include Redis and PostgreSQL exploitation, Docker container escapes, and the exfiltration of environment variables, cryptographic keys, and cryptocurrency wallet files.
-- Researchers suspect the campaign specifically targeted cryptocurrency platforms, as evidenced by the focus on digital assets and hard-coded database credentials.
-- Affected users are advised to assume their systems are compromised and immediately rotate all credentials and secrets.
+- Trellix VP John Fokker launched the initiative to demystify cybercriminals, arguing they are ordinary individuals rather than invincible, mythical entities.
+- The "Dark Web Roast" blog series uses humor and satire to highlight criminal incompetence, such as ransomware gangs inflating stats or hackers undervaluing stolen data.
+- Law enforcement agencies, including the UK's National Crime Agency, have adopted similar tactics by trolling groups like LockBit to fracture trust within criminal networks.
+- Intelligence gathered during operations like the Rhadamanthys infostealer takedown is used to expose internal corruption, such as administrators stealing from their own criminal partners.
+- These efforts aim to disrupt the cybercrime business model by creating paranoia and distrust among affiliates, developers, and initial access brokers.
 
 ### Why it Matters
-This campaign highlights the growing risk of supply chain attacks where malicious actors infiltrate open-source repositories to turn development pipelines into distribution channels for malware. Because these packages execute automatically upon installation, they can grant attackers deep access to sensitive infrastructure, including cloud environments and production databases.
+By shifting the narrative from fear to ridicule, security firms and law enforcement hope to destabilize the collaborative nature of the cybercriminal underground. This psychological approach aims to break the trust necessary for these groups to function, ultimately making it harder for them to operate effectively.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/04/36-malicious-npm-packages-exploited.html
+Author:   Jessica Lyons
+Source:   Theregister.com
+URL:      https://www.theregister.com/2026/04/05/trellix_john_fokker_roasting_crims/
 Category: Cybersecurity

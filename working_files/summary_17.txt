@@ -1,20 +1,20 @@
-Axios npm hack used fake Teams error fix to hijack maintainer account
+Microsoft Hasn't Had a Coherent GUI Strategy Since Petzold
 ============================================================
 
-North Korean hackers compromised the popular Axios HTTP client by using sophisticated social engineering to trick a maintainer into installing malware, leading to a malicious npm package update.
+Microsoft’s decades-long struggle to provide a coherent Windows desktop development framework has resulted in a fragmented ecosystem of competing technologies, leaving developers without a clear, authoritative strategy.
 
 ### Key Points
-- North Korean threat actor UNC1069 targeted Axios lead maintainer Jason Saayman via a fake Slack workspace and a fraudulent Microsoft Teams update.
-- The attackers injected a malicious dependency, plain-crypto-js, into Axios versions 1.14.1 and 0.30.4, which installed a remote access trojan.
-- Malicious versions were available on the npm registry for approximately three hours before being removed by maintainers.
-- Google Threat Intelligence Group linked the campaign to UNC1069, noting the use of the WAVESHAPER.V2 malware and infrastructure overlaps.
-- Multiple maintainers of high-impact Node.js projects have reported similar social engineering attempts, indicating a coordinated, large-scale campaign against the open-source ecosystem.
+- Microsoft has cycled through numerous GUI frameworks since 1985, including Win32, MFC, WinForms, WPF, Silverlight, UWP, and the current Windows App SDK.
+- Internal institutional conflict between the Windows and .NET teams frequently led to competing, incompatible development roadmaps.
+- The company’s tendency to prioritize conference keynote announcements over long-term support has caused multiple platform resets and orphaned developer investments.
+- Today, developers must choose from seventeen different approaches, including Microsoft-native tools, web-hybrid solutions like Electron, and various third-party frameworks.
+- The lack of a unified vision has driven many developers toward cross-platform alternatives like Flutter, Qt, and Avalonia.
 
 ### Why it Matters
-This incident highlights the growing vulnerability of the software supply chain as threat actors increasingly target high-trust open-source maintainers to distribute malware. Because the attackers gained access to authenticated sessions, they effectively bypassed multi-factor authentication, forcing developers to rotate all credentials and keys to ensure system security.
+The absence of a stable, long-term development strategy creates significant technical debt and uncertainty for businesses building enterprise-grade Windows applications. When a platform fails to provide a clear path for UI development, it erodes developer trust and forces companies to rely on third-party solutions rather than Microsoft’s own ecosystem.
 
 ============================================================
-Author:   Lawrence Abrams
-Source:   BleepingComputer
-URL:      https://www.bleepingcomputer.com/news/security/axios-npm-hack-used-fake-teams-error-fix-to-hijack-maintainer-account/
-Category: Cybersecurity
+Author:   jsnover
+Source:   Jsnover.com
+URL:      https://www.jsnover.com/blog/2026/03/13/microsoft-hasnt-had-a-coherent-gui-strategy-since-petzold/
+Category: Tech Business & Markets

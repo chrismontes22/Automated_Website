@@ -1,20 +1,20 @@
-ESP32-S3 gets post-quantum encryption with Aethyr Edge Node open-source firmware
+I stopped using Event Viewer to check failed logins after discovering this PowerShell trick
 ============================================================
 
-Aethyr Research has released open-source, post-quantum encrypted firmware for ESP32-S3 IoT devices, enabling quantum-resistant communication through the ML-KEM-768 standard with a rapid 35ms handshake performance.
+Windows users can monitor unauthorized access attempts by using PowerShell commands or Event Viewer to track failed sign-in logs and improve overall system security through modern authentication methods.
 
 ### Key Points
-- The firmware utilizes NIST FIPS 203 standard ML-KEM-768 for key exchange, alongside BLAKE3 and XChaCha20-Poly1305 for data integrity and encryption.
-- Benchmarks on an ESP32-S3-WROOM-1 module show a 2.1-second boot time and efficient cryptographic operations suitable for resource-constrained edge nodes.
-- The software underwent rigorous testing, including 410,000 fuzz iterations and 100,000 single-bit-flip tests, to ensure stability and security.
-- Aethyr designed the firmware as a component for a distributed AI agent mesh, allowing autonomous nodes to operate without cloud dependency.
-- While the ESP32-S3 firmware is available on GitHub, the corresponding server-side software for host devices like the NVIDIA Jetson remains currently unavailable.
+- Windows logs all failed sign-in attempts under the Security category within the built-in Event Viewer tool.
+- Users can execute the `Get-WinEvent` command in PowerShell with ID 4625 to quickly retrieve a list of failed login attempts.
+- Changing the command ID to 4624 allows users to view successful sign-in history on their local machine.
+- Windows Hello provides enhanced security by replacing traditional passwords with biometric authentication like face or fingerprint recognition.
+- Physical security keys or USB-based tools like USB Raptor can be used to lock and unlock PCs, preventing unauthorized access even if passwords are compromised.
 
 ### Why it Matters
-This development addresses the growing urgency to secure IoT infrastructure against future quantum computing threats, which could compromise current RSA and ECC encryption standards. By providing a verified, low-latency implementation of post-quantum cryptography, Aethyr offers a practical pathway for developers to begin migrating embedded systems toward NIST-mandated security requirements.
+Monitoring sign-in logs helps users identify potential security breaches or unauthorized access attempts on their personal or work computers. Implementing biometric or hardware-based authentication significantly reduces the risk of account compromise compared to relying solely on traditional passwords.
 
 ============================================================
-Author:   Jean-Luc Aufranc (CNXSoft)
-Source:   CNX Software
-URL:      https://www.cnx-software.com/2026/04/05/esp32-s3-gets-post-quantum-encryption-with-aethyr-edge-node-open-source-firmware/
+Author:   Pankil Shah
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/see-failed-sign-in-attempt-with-windows-powershell/
 Category: Cybersecurity
