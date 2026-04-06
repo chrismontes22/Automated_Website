@@ -1,20 +1,19 @@
-Android’s controversial sideloading changes pushed me to build my own app installer
+Why did Anthropic block Claude OpenClaw use? #tech
 ============================================================
 
-New Android sideloading restrictions have prompted a developer to create a custom, lightweight Go-based installer that simplifies the APK installation process for power users via terminal commands.
+Anthropic has restricted Claude Pro and Max subscription coverage for third-party agent tools like OpenClaw, requiring users to pay additional fees for these specific external integrations starting this April.
 
 ### Key Points
-- The developer built "Tiny APK Installer" to bypass complex Android Debug Bridge (ADB) command-line requirements and Google’s new 24-hour sideloading wait times.
-- The tool is a 7MB cross-platform executable that supports wireless debugging, file browsing, and the installation of APK, APKM, XAPK, and APKS bundles.
-- Development was completed in three days using "vibe coding," a collaborative approach pairing human planning with AI models like MiniMax M2.7 and GLM 5.
-- The project utilized the Go programming language and the Bubble Tea terminal user interface framework to ensure a compact, efficient design.
-- The source code and releases are publicly available on the Tiny APK Installer GitHub repository for community testing and feedback.
+- Anthropic updated its subscription policy to exclude third-party agent frameworks from flat-rate pricing models.
+- OpenClaw is the first major integration impacted by the company's new capacity and cost-management strategy.
+- Users must now pay extra beyond their standard monthly subscription to maintain access to these external agent tools.
+- The company cited the need to manage operational loads and compute costs as the primary driver for this policy shift.
 
 ### Why it Matters
-This project highlights how AI-assisted development can significantly accelerate the creation of niche utility software for power users navigating restrictive platform changes. However, it also underscores the security risks of "vibe coding," as developers must remain vigilant to identify vulnerabilities like zip slip errors in AI-generated code.
+This change signals that AI companies are increasingly unwilling to absorb the high compute costs associated with autonomous agent workflows under standard subscription tiers. For businesses, this shift increases the total cost of ownership and creates uncertainty for developers relying on flexible, third-party tool integrations.
 
 ============================================================
-Author:   Robert Triggs
-Source:   Android Authority
-URL:      https://www.androidauthority.com/tiny-apk-installer-app-3651857/
-Category: Phones, Laptops, and Gadgets
+Author:   AllToc
+Source:   Alltoc.com
+URL:      https://alltoc.com/tech/why-did-anthropic-block-claude-openclaw-use
+Category: Artificial Intelligence

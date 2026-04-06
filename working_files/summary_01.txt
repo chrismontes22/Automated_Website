@@ -1,20 +1,20 @@
-Your Android TV is hiding hundreds of apps the Play Store won't show you — here's how it get them
+36 Malicious npm Packages Exploited Redis, PostgreSQL to Deploy Persistent Implants
 ============================================================
 
-Android TV users can expand their device's functionality by sideloading third-party applications, allowing access to niche software and regional content not available through the official Google Play Store.
+Cybersecurity researchers identified 36 malicious npm packages disguised as Strapi CMS plugins that execute automated payloads to harvest credentials, deploy reverse shells, and facilitate unauthorized database exploitation.
 
 ### Key Points
-- Sideloading involves manually installing APK files, which requires enabling Developer Options on devices like the Chromecast with Google TV.
-- Users can transfer APK files to their TV using file manager apps like File Commander or FX File Explorer, or via transfer tools like LocalSend.
-- Popular sideloaded apps include SmartTube for ad-free YouTube viewing, Aptoide TV for alternative app discovery, and AdGuard for system-wide ad blocking.
-- Sideloaded applications do not update automatically, requiring users to manually download and install newer versions of the software to maintain functionality.
-- Security risks exist when downloading from unknown sources, making it essential to use only trusted websites for APK files.
+- The 36 malicious packages were uploaded by four sock puppet accounts over a 13-hour period to mimic legitimate Strapi v3 community plugins.
+- Malicious code is embedded in the postinstall script, which executes automatically during installation with the privileges of the user or CI/CD environment.
+- Payloads include Redis and PostgreSQL exploitation, Docker container escapes, and the exfiltration of environment variables, cryptographic keys, and cryptocurrency wallet files.
+- Researchers suspect the campaign specifically targeted cryptocurrency platforms, as evidenced by the focus on digital assets and hard-coded database credentials.
+- Affected users are advised to assume their systems are compromised and immediately rotate all credentials and secrets.
 
 ### Why it Matters
-Sideloading provides users with greater control over their hardware by bypassing the limitations and regional restrictions imposed by the official Google Play Store. This practice enables access to specialized tools and ad-free alternatives, though it shifts the responsibility for security and software maintenance directly to the user.
+This campaign highlights the growing risk of supply chain attacks where malicious actors infiltrate open-source repositories to turn development pipelines into distribution channels for malware. Because these packages execute automatically upon installation, they can grant attackers deep access to sensitive infrastructure, including cloud environments and production databases.
 
 ============================================================
-Author:   Pankil Shah
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/sideloading-apps-on-android-google-tv/
-Category: Phones, Laptops, and Gadgets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/04/36-malicious-npm-packages-exploited.html
+Category: Cybersecurity

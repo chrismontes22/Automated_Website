@@ -1,5 +1,185 @@
 [
   {
+    "title": "36 Malicious npm Packages Exploited Redis, PostgreSQL to Deploy Persistent Implants",
+    "summary": "Cybersecurity researchers identified 36 malicious npm packages disguised as Strapi CMS plugins that execute automated payloads to harvest credentials, deploy reverse shells, and facilitate unauthorized database exploitation.\n\n### Key Points\n- The 36 malicious packages were uploaded by four sock puppet accounts over a 13-hour period to mimic legitimate Strapi v3 community plugins.\n- Malicious code is embedded in the postinstall script, which executes automatically during installation with the privileges of the user or CI/CD environment.\n- Payloads include Redis and PostgreSQL exploitation, Docker container escapes, and the exfiltration of environment variables, cryptographic keys, and cryptocurrency wallet files.\n- Researchers suspect the campaign specifically targeted cryptocurrency platforms, as evidenced by the focus on digital assets and hard-coded database credentials.\n- Affected users are advised to assume their systems are compromised and immediately rotate all credentials and secrets.\n\n### Why it Matters\nThis campaign highlights the growing risk of supply chain attacks where malicious actors infiltrate open-source repositories to turn development pipelines into distribution channels for malware. Because these packages execute automatically upon installation, they can grant attackers deep access to sensitive infrastructure, including cloud environments and production databases.",
+    "author": "info@thehackernews.com (The Hacker News)",
+    "url": "https://thehackernews.com/2026/04/36-malicious-npm-packages-exploited.html",
+    "category": "Cybersecurity",
+    "processed_at": "2026-04-06T08:19:29.059756",
+    "source": "Internet"
+  },
+  {
+    "title": "Why did Anthropic block Claude OpenClaw use? #tech",
+    "summary": "Anthropic has restricted Claude Pro and Max subscription coverage for third-party agent tools like OpenClaw, requiring users to pay additional fees for these specific external integrations starting this April.\n\n### Key Points\n- Anthropic updated its subscription policy to exclude third-party agent frameworks from flat-rate pricing models.\n- OpenClaw is the first major integration impacted by the company's new capacity and cost-management strategy.\n- Users must now pay extra beyond their standard monthly subscription to maintain access to these external agent tools.\n- The company cited the need to manage operational loads and compute costs as the primary driver for this policy shift.\n\n### Why it Matters\nThis change signals that AI companies are increasingly unwilling to absorb the high compute costs associated with autonomous agent workflows under standard subscription tiers. For businesses, this shift increases the total cost of ownership and creates uncertainty for developers relying on flexible, third-party tool integrations.",
+    "author": "AllToc",
+    "url": "https://alltoc.com/tech/why-did-anthropic-block-claude-openclaw-use",
+    "category": "Artificial Intelligence",
+    "processed_at": "2026-04-06T08:23:52.824668",
+    "source": "Alltoc.com"
+  },
+  {
+    "title": "Simon Willison says the 'dark factory' is the next big thing in AI",
+    "summary": "Django co-creator Simon Willison warns that rapid advancements in artificial intelligence could lead to a \"dark factory\" era where software development occurs entirely without human intervention or oversight.\n\n### Key Points\n- Simon Willison, co-creator of the Django web framework, suggests AI may soon automate the entire software development lifecycle.\n- The \"dark factory\" concept describes fully automated systems that operate without human presence, mirroring trends in industrial manufacturing.\n- Willison reports that AI currently generates approximately 95% of his own code, shifting the human role toward oversight rather than manual typing.\n- Major corporations including IBM, Klarna, Block, and Oracle have already cited AI integration as a contributing factor in recent workforce layoffs.\n- While AI lowers the barrier to building software, Willison emphasizes that original, creative ideas remain essential for successful product development.\n\n### Why it Matters\nThis shift toward autonomous coding environments signals a fundamental change in the software engineering labor market and corporate operational strategies. As companies increasingly rely on AI to replace manual programming tasks, the industry faces significant questions regarding long-term job security and the future necessity of human developers.",
+    "author": "Lauren Edmonds",
+    "url": "https://www.businessinsider.com/simon-willison-dark-factory-ai-2026-4",
+    "category": "Artificial Intelligence",
+    "processed_at": "2026-04-06T08:24:12.131395",
+    "source": "Business Insider"
+  },
+  {
+    "title": "Army Reaches Conditional Agreement with Private Industry for Hyperscaled Data Centers",
+    "summary": "The U.S. Army has selected Carlyle and CyrusOne to develop large-scale commercial data centers at Fort Bliss and Dugway Proving Ground through a public-private partnership model.\n\n### Key Points\n- Carlyle will develop a data center on 1,384 acres at Fort Bliss, Texas, with operations expected by fiscal year 2027.\n- CyrusOne, backed by KKR and BlackRock, will build on 1,201 acres at Dugway Proving Ground, Utah, targeting a 2029 launch.\n- The projects utilize the Army’s Enhanced Use Lease program, requiring no upfront taxpayer funding for construction or maintenance.\n- The U.S. Army Corps of Engineers will manage lease negotiations and provide technical oversight, including environmental reviews.\n- These facilities aim to bolster national security by providing the computational infrastructure necessary to support advanced artificial intelligence capabilities.\n\n### Why it Matters\nThese partnerships establish a new model for military infrastructure development that leverages private capital to accelerate the deployment of critical technology. By integrating commercial data centers onto military installations, the Army aims to secure a competitive advantage in AI while fostering economic growth and modernization.",
+    "author": "Eric G",
+    "url": "https://soldiersystems.net/2026/04/05/army-reaches-conditional-agreement-with-private-industry-for-hyperscaled-data-centers/",
+    "category": "Tech Business & Markets",
+    "processed_at": "2026-04-06T08:24:23.095913",
+    "source": "Soldiersystems.net"
+  },
+  {
+    "title": "Unverified: What Practitioners Post About OCR, Agents, and Tables",
+    "summary": "Practitioners are increasingly abandoning off-the-shelf document processing platforms in favor of custom hybrid pipelines that combine specialized layout models with language models to achieve reliable production-grade results.\n\n### Key Points\n- Production deployments frequently fail to match demo performance, with accuracy often dropping significantly after the first page of complex documents.\n- A two-stage architecture—using dedicated OCR or layout models to create structured markdown before applying language models—is the current industry standard.\n- Table extraction remains the most significant technical hurdle, with many off-the-shelf tools struggling to process merged cells and multi-page layouts.\n- Developers are successfully replacing expensive cloud-based API services with local, open-source stacks running on consumer-grade hardware.\n- Human-in-the-loop review remains essential, with successful teams routing 15% to 30% of documents for manual verification to ensure data integrity.\n- Agentic workflows often face reliability issues in production, leading many practitioners to prefer deterministic scripts for consistent, repetitive document formats.\n\n### Why it Matters\nThe shift toward custom, hybrid architectures suggests that enterprise document processing is moving away from monolithic vendor platforms toward modular, open-source-driven workflows. For businesses, this highlights that success depends less on model capability and more on building robust infrastructure for human review, metadata management, and data validation.",
+    "author": "Christopher Helm",
+    "url": "https://idp-software.com/news/idp-accuracy-reckoning-2026/",
+    "category": "Artificial Intelligence",
+    "processed_at": "2026-04-06T08:24:34.345424",
+    "source": "Idp-software.com"
+  },
+  {
+    "title": "Google Messages still can't do the one thing that makes iMessage actually useful",
+    "summary": "Apple’s iMessage maintains a significant advantage over Google Messages because it allows users to send and receive communications using an Apple Account without requiring an active SIM card.\n\n### Key Points\n- Apple’s iMessage enables messaging via iCloud and email addresses, ensuring continuity even when a device lacks an active cellular SIM or eSIM.\n- Google Messages relies on SMS, MMS, and the RCS protocol, which currently requires an active SIM card to function on Android devices.\n- While Google Messages supports features like profile sharing and device pairing, these tools remain dependent on the primary phone maintaining an active SIM.\n- Apple developed iMessage as a proprietary, in-house service, whereas Google Messages is built upon the industry-standard RCS framework managed by the GSMA.\n- Google has previously implemented account-based messaging in platforms like Google Chat and Meet, but has yet to integrate similar functionality into Google Messages.\n\n### Why it Matters\nThe reliance on SIM-based authentication limits the flexibility of Android messaging compared to the seamless, account-based ecosystem provided by Apple. By failing to decouple messaging from phone numbers, Google leaves a functional gap that continues to influence consumer preference for iPhones in North America.",
+    "author": "Brady Snyder",
+    "url": "https://www.makeuseof.com/google-messages-missing-imessage-feature/",
+    "category": "Phones, Laptops, and Gadgets",
+    "processed_at": "2026-04-06T08:24:55.331126",
+    "source": "MakeUseOf"
+  },
+  {
+    "title": "iOS 26 Feels Faster Than iOS 18",
+    "summary": "Apple has expanded the availability of the iOS 18.7.7 security update to all compatible devices, providing critical protection for users who have not yet upgraded to iOS 26.\n\n### Key Points\n- Apple released iOS 18.7.7 on April 1 to address severe security vulnerabilities identified as DarkSword and Coruna.\n- The update is now available for all iPhones capable of running iOS 18, including those that support the newer iOS 26.\n- Users with auto-update enabled can now receive these security patches without being forced to perform a full operating system upgrade.\n- The update addresses previous concerns regarding Apple withholding security patches from users who choose to remain on older software versions.\n\n### Why it Matters\nThis change ensures that users who prefer to delay major OS upgrades can still maintain device security against critical exploits. It highlights a shift in Apple's update policy, aligning iPhone security support more closely with the long-term maintenance standards typically seen in the macOS ecosystem.",
+    "author": "John Gruber",
+    "url": "https://daringfireball.net/linked/2026/04/03/ios-18-update-for-holdouts",
+    "category": "Phones, Laptops, and Gadgets",
+    "processed_at": "2026-04-06T08:25:07.710442",
+    "source": "Daringfireball.net"
+  },
+  {
+    "title": "Anthropic Announces Claude Subscribers Must Now Pay Extra to Use OpenClaw",
+    "summary": "Anthropic will restrict Claude subscription limits to its own tools starting April 4, forcing users of third-party agents like OpenClaw to switch to expensive, pay-as-you-go API billing.\n\n### Key Points\n- Starting April 4 at 3 PM ET, Claude subscription limits will no longer apply to third-party harnesses like OpenClaw.\n- Users must transition to a separate pay-as-you-go billing model or use Anthropic’s API to continue using external agentic tools.\n- Anthropic claims the change is necessary because third-party tools bypass \"prompt cache\" efficiencies, leading to unsustainable compute costs.\n- Critics, including OpenClaw creator Peter Steinberger, argue the move is an attempt to lock users into Anthropic’s proprietary ecosystem.\n- Industry analysts estimate that running autonomous agents via API could cost users thousands of dollars per day, potentially driving them toward competitors like OpenAI.\n\n### Why it Matters\nThis shift signals the end of subsidized, unlimited compute for third-party AI automation as companies prioritize profit margins over open-ecosystem growth. By forcing power users into proprietary tools, Anthropic risks alienating the developer community while creating a significant customer acquisition opportunity for rival AI providers.",
+    "author": "EditorDavid",
+    "url": "https://slashdot.org/story/26/04/04/1919236/anthropic-announces-claude-subscribers-must-now-pay-extra-to-use-openclaw",
+    "category": "Artificial Intelligence",
+    "processed_at": "2026-04-06T08:25:20.854055",
+    "source": "Slashdot.org"
+  },
+  {
+    "title": "What if the browser built the UI for you?",
+    "summary": "A new proposal for an adaptive browser suggests shifting frontend development from hand-crafted interfaces to AI-generated UIs based on semantic API manifests and individual user accessibility preferences.\n\n### Key Points\n- The concept replaces static, developer-built interfaces with browser-generated UIs that adapt to specific user needs like high contrast or screen reader optimization.\n- Services would publish semantic manifests describing data capabilities and actions, rather than shipping pre-built frontend code.\n- This approach aims to eliminate inconsistent UI patterns across different SaaS products by centralizing interface rendering within the browser.\n- The shift increases the importance of robust, well-documented API design and semantic data contracts between services.\n- A proof-of-concept model currently uses the Claude LLM to generate GitHub interfaces based on YAML-defined user preferences.\n\n### Why it Matters\nThis shift would fundamentally change the software industry by making APIs, rather than visual interfaces, the primary product surface. By decoupling the UI from the service, users gain a consistent, personalized experience while developers can focus on data architecture instead of repetitive frontend maintenance.",
+    "author": "John Gregoriadis",
+    "url": "https://jonno.nz/posts/what-if-your-browser-built-the-ui-for-you/",
+    "category": "Artificial Intelligence",
+    "processed_at": "2026-04-06T08:25:31.983891",
+    "source": "Jonno.nz"
+  },
+  {
+    "title": "Exposing a Radiation-Hardened 2.4 GHz Wi-Fi Receiver to 500 Kilograys",
+    "summary": "Researchers at the Tokyo Institute of Science have developed a radiation-hardened Wi-Fi chip capable of maintaining functionality while exposed to extreme gamma ray levels found in nuclear environments.\n\n### Key Points\n- The chip successfully withstood a cumulative radiation dose of 500 kilograys during laboratory testing.\n- Engineers minimized radiation sensitivity by reducing transistor counts and replacing them with more resilient inductors.\n- The design utilizes enlarged NMOS transistors, which demonstrate higher radiation resistance compared to standard PMOS components.\n- Performance degradation remained minimal, showing only a 1.5 to 1.6 dB change after exposure to high-intensity radiation blasts.\n- Future development aims to create a radiation-hardened Wi-Fi transmitter, a process that may require integrating materials like diamond.\n\n### Why it Matters\nThis breakthrough enables reliable wireless communication in high-radiation zones like the Fukushima Daiichi nuclear reactor or deep space environments where traditional electronics fail. By overcoming current hardware limitations, this technology could significantly improve remote monitoring and robotic operations in hazardous areas previously inaccessible to standard semiconductor devices.",
+    "author": "Maya Posch",
+    "url": "https://hackaday.com/2026/04/04/exposing-a-radiation-hardened-2-4-ghz-wi-fi-receiver-to-500-kilograys/",
+    "category": "Phones, Laptops, and Gadgets",
+    "processed_at": "2026-04-06T08:25:42.202491",
+    "source": "Hackaday"
+  },
+  {
+    "title": "Drift Protocol $280M exploit took 'months of deliberate preparation'",
+    "summary": "Decentralized exchange Drift Protocol reports that a sophisticated six-month social engineering campaign by malicious actors resulted in a $280 million exploit targeting the platform's contributors and infrastructure.\n\n### Key Points\n- Drift Protocol investigators identified a coordinated operation that began in October 2025 when attackers posed as a quantitative trading firm at a major industry conference.\n- The attackers spent six months building trust with contributors before using malicious links and tools to compromise devices and execute the exploit.\n- Drift officials stated the perpetrators were technically fluent and maintained verifiable professional backgrounds to bypass internal security protocols.\n- The exchange identified a medium-high probability that the same actors were responsible for the October 2024 Radiant Capital hack.\n- Drift is currently collaborating with law enforcement agencies to investigate the April 1 attack and trace the individuals involved.\n\n### Why it Matters\nThis incident highlights a growing trend of sophisticated, long-term social engineering attacks targeting high-profile crypto projects through in-person industry events. It underscores the critical need for enhanced operational security and rigorous vetting processes for all external partnerships, even when interactions appear professional and legitimate.",
+    "author": "Cointelegraph by Ciaran Lyons",
+    "url": "https://cointelegraph.com/news/drift-protocol-exploit-preparation-preliminary-findings",
+    "category": "Cybersecurity",
+    "processed_at": "2026-04-06T08:25:51.700284",
+    "source": "Cointelegraph"
+  },
+  {
+    "title": "ESP32-S3 gets post-quantum encryption with Aethyr Edge Node open-source firmware",
+    "summary": "Aethyr Research has released open-source, post-quantum encrypted firmware for ESP32-S3 IoT devices, enabling quantum-resistant communication through the ML-KEM-768 standard with a rapid 35ms handshake performance.\n\n### Key Points\n- The firmware utilizes NIST FIPS 203 standard ML-KEM-768 for key exchange, alongside BLAKE3 and XChaCha20-Poly1305 for data integrity and encryption.\n- Benchmarks on an ESP32-S3-WROOM-1 module show a 2.1-second boot time and efficient cryptographic operations suitable for resource-constrained edge nodes.\n- The software underwent rigorous testing, including 410,000 fuzz iterations and 100,000 single-bit-flip tests, to ensure stability and security.\n- Aethyr designed the firmware as a component for a distributed AI agent mesh, allowing autonomous nodes to operate without cloud dependency.\n- While the ESP32-S3 firmware is available on GitHub, the corresponding server-side software for host devices like the NVIDIA Jetson remains currently unavailable.\n\n### Why it Matters\nThis development addresses the growing urgency to secure IoT infrastructure against future quantum computing threats, which could compromise current RSA and ECC encryption standards. By providing a verified, low-latency implementation of post-quantum cryptography, Aethyr offers a practical pathway for developers to begin migrating embedded systems toward NIST-mandated security requirements.",
+    "author": "Jean-Luc Aufranc (CNXSoft)",
+    "url": "https://www.cnx-software.com/2026/04/05/esp32-s3-gets-post-quantum-encryption-with-aethyr-edge-node-open-source-firmware/",
+    "category": "Cybersecurity",
+    "processed_at": "2026-04-06T08:26:03.047052",
+    "source": "CNX Software"
+  },
+  {
+    "title": "Bitcoin's $1.3 trillion security race: Key initiatives aimed at quantum-proofing the world's largest blockchain",
+    "summary": "Bitcoin developers are actively exploring cryptographic upgrades to protect the blockchain against potential quantum computing threats that could compromise network security and expose billions in digital assets.\n\n### Key Points\n- Google researchers estimate a powerful quantum computer could break Bitcoin’s current elliptic curve cryptography in under nine minutes by 2029.\n- BIP 360 proposes the Pay-to-Merkle-Root (P2MR) format to remove public keys from the blockchain, eliminating the primary target for quantum-based reverse engineering.\n- The SPHINCS+ signature scheme, standardized by NIST as FIPS 205, offers a quantum-resistant alternative, though its large file size poses challenges for transaction efficiency.\n- Tadge Dryja’s commit/reveal scheme aims to secure mempool transactions by requiring a pre-registered fingerprint before broadcasting sensitive data to the network.\n- The Hourglass V2 proposal seeks to mitigate risks for 1.7 million exposed legacy bitcoins by limiting the speed at which those specific funds can be moved.\n\n### Why it Matters\nThese initiatives represent a proactive effort to preserve the long-term integrity and trust of the Bitcoin network against emerging technological threats. Successfully implementing these upgrades is critical for maintaining the asset's status as a secure store of value, though the decentralized nature of Bitcoin governance makes the adoption of such complex changes a slow and debated process.",
+    "author": "Omkar Godbole, AI Boost",
+    "url": "https://www.coindesk.com/tech/2026/04/04/bitcoin-s-usd1-3-trillion-security-race-key-initiatives-aimed-at-quantum-proofing-the-world-s-largest-blockchain",
+    "category": "Cybersecurity",
+    "processed_at": "2026-04-06T08:26:12.696445",
+    "source": "CoinDesk"
+  },
+  {
+    "title": "HUBG Investor News: If You Have Suffered Losses in Hub Group, Inc. (NASDAQ: HUBG), You Are Encouraged to Contact The Rosen Law Firm About Your Rights",
+    "summary": "Rosen Law Firm is investigating potential securities claims against Hub Group, Inc. following the company's announcement that it must restate financial results due to accounting errors.\n\n### Key Points\n- Hub Group disclosed an error understating purchased transportation costs and accounts payable during the first nine months of 2025.\n- The company plans to restate its financial statements for the first, second, and third quarters of 2025.\n- Following the February 5, 2026, announcement, Hub Group stock fell 18.3% to close at $41.96 per share.\n- Rosen Law Firm is seeking investors to join a prospective class action lawsuit to recover potential financial losses.\n\n### Why it Matters\nAccounting restatements often signal internal control weaknesses that can lead to significant stock price volatility and loss of investor confidence. This investigation highlights the legal risks companies face when financial reporting inaccuracies impact public market valuations.",
+    "author": "The Rosen Law Firm PA",
+    "url": "https://www.globenewswire.com/news-release/2026/04/05/3268225/673/en/HUBG-Investor-News-If-You-Have-Suffered-Losses-in-Hub-Group-Inc-NASDAQ-HUBG-You-Are-Encouraged-to-Contact-The-Rosen-Law-Firm-About-Your-Rights.html",
+    "category": "Tech Business & Markets",
+    "processed_at": "2026-04-06T08:26:31.933972",
+    "source": "GlobeNewswire"
+  },
+  {
+    "title": "I stopped buying smart home gadgets and started building them for a fraction of the price",
+    "summary": "Frustrated by the planned obsolescence of commercial smart home hubs, many users are turning to DIY alternatives using ESP32 microcontrollers and Home Assistant to ensure local, long-term control.\n\n### Key Points\n- Users are replacing cloud-dependent smart home hubs with local platforms like Home Assistant running on mini PCs.\n- DIY enthusiasts use ESP32 boards and affordable sensors to build custom devices for a fraction of the cost of commercial products.\n- ESPHome and community-shared firmware simplify the technical process, allowing non-developers to flash and maintain custom hardware.\n- DIY builds offer increased privacy and reliability by functioning without an active internet connection or recurring subscription fees.\n- Safety-critical devices, such as smoke detectors and water shutoff valves, should still be purchased as certified commercial products to meet insurance and safety standards.\n\n### Why it Matters\nBuilding custom smart home hardware allows users to bypass the risks of planned obsolescence and sudden service shutdowns common with proprietary ecosystems. This shift toward local, open-source control provides greater long-term stability and financial savings for those willing to invest time in learning basic assembly and software configuration.",
+    "author": "Samir Makwana",
+    "url": "https://www.xda-developers.com/stopped-buying-smart-home-gadgets-started-building-them/",
+    "category": "Phones, Laptops, and Gadgets",
+    "processed_at": "2026-04-06T08:26:42.290042",
+    "source": "XDA Developers"
+  },
+  {
+    "title": "IBM, watch out! Fujitsu uses AI to understand COBOL and automatically generate design documents \"without expert knowledge\" in minutes rather than hours",
+    "summary": "Fujitsu has launched a generative AI service that automates the analysis of legacy COBOL code, reducing the time required to generate technical design documentation by approximately 97 percent.\n\n### Key Points\n- The new service, Fujitsu Application Transform, uses the company's proprietary Kozuchi AI to analyze legacy source code automatically.\n- A Knowledge Graph retrieval system improves documentation completeness by 95% and readability by 60% while preventing AI hallucinations.\n- The tool eliminates the need for deep programming expertise, allowing teams to understand complex systems without relying on specialized human developers.\n- Fujitsu plans to introduce additional features later this year to support the automated rebuilding and maintenance of legacy source code.\n\n### Why it Matters\nThis technology addresses the critical global reliance on COBOL, a 65-year-old programming language that still powers essential banking, insurance, and government transaction systems. By automating the modernization process, Fujitsu provides a scalable solution to the growing shortage of legacy system programmers and helps organizations reduce the risks associated with aging infrastructure.",
+    "author": "Efosa Udinmwen",
+    "url": "https://www.techradar.com/pro/ibm-watch-out-fujitsu-uses-ai-to-understand-cobol-and-automatically-generate-design-documents-without-expert-knowledge-in-minutes-rather-than-hours",
+    "category": "Artificial Intelligence",
+    "processed_at": "2026-04-06T08:31:14.254591",
+    "source": "TechRadar"
+  },
+  {
+    "title": "Axios npm hack used fake Teams error fix to hijack maintainer account",
+    "summary": "North Korean hackers compromised the popular Axios HTTP client by using sophisticated social engineering to trick a maintainer into installing malware, leading to a malicious npm package update.\n\n### Key Points\n- North Korean threat actor UNC1069 targeted Axios lead maintainer Jason Saayman via a fake Slack workspace and a fraudulent Microsoft Teams update.\n- The attackers injected a malicious dependency, plain-crypto-js, into Axios versions 1.14.1 and 0.30.4, which installed a remote access trojan.\n- Malicious versions were available on the npm registry for approximately three hours before being removed by maintainers.\n- Google Threat Intelligence Group linked the campaign to UNC1069, noting the use of the WAVESHAPER.V2 malware and infrastructure overlaps.\n- Multiple maintainers of high-impact Node.js projects have reported similar social engineering attempts, indicating a coordinated, large-scale campaign against the open-source ecosystem.\n\n### Why it Matters\nThis incident highlights the growing vulnerability of the software supply chain as threat actors increasingly target high-trust open-source maintainers to distribute malware. Because the attackers gained access to authenticated sessions, they effectively bypassed multi-factor authentication, forcing developers to rotate all credentials and keys to ensure system security.",
+    "author": "Lawrence Abrams",
+    "url": "https://www.bleepingcomputer.com/news/security/axios-npm-hack-used-fake-teams-error-fix-to-hijack-maintainer-account/",
+    "category": "Cybersecurity",
+    "processed_at": "2026-04-06T08:31:23.828664",
+    "source": "BleepingComputer"
+  },
+  {
+    "title": "Bitcoin And Ethereum Adoption Gets A Boost From Schwab Launch",
+    "summary": "Charles Schwab is preparing to launch direct trading for Bitcoin and Ethereum, marking a significant integration of digital assets into the traditional financial services ecosystem for retail investors.\n\n### Key Points\n- Charles Schwab, which manages $12 trillion in client assets, is expanding its platform to include direct Bitcoin and Ethereum trading.\n- The move aims to reduce investment friction by allowing users to trade cryptocurrencies through the same interface used for stocks and ETFs.\n- New blockchain projects are emerging to address potential future vulnerabilities posed by advancements in quantum computing.\n- Industry analysts compare the development of quantum-resistant blockchain technology to the early growth stages of artificial intelligence.\n- The evolution of blockchain continues as platforms like Cardano build upon the foundational principles of Bitcoin and Ethereum to improve scalability and governance.\n\n### Why it Matters\nThis integration signals a major shift as traditional financial institutions increasingly bridge the gap between legacy brokerage systems and the digital asset market. By simplifying access for everyday investors, Schwab’s entry could significantly increase liquidity and mainstream adoption for Bitcoin and Ethereum.",
+    "author": "Godspower Owie",
+    "url": "http://www.newsbtc.com/news/bitcoin-eth-adoption-boosts/",
+    "category": "Tech Business & Markets",
+    "processed_at": "2026-04-06T08:31:33.451883",
+    "source": "newsBTC"
+  },
+  {
+    "title": "How the White House's $100,000 H-1B visa fee is impacting America's ability to attract global talent",
+    "summary": "The Trump administration has introduced a $100,000 fee for new H-1B visa applications, significantly impacting skilled foreign workers in technology hubs like Hyderabad, India, who seek U.S. employment.\n\n### Key Points\n- The new policy mandates a $100,000 fee for H-1B visa applications, a sharp increase from the previous range of $1,700 to $4,500.\n- Hyderabad, often referred to as \"Cyberabad,\" serves as a major global tech center hosting offices for companies like Google, Facebook, and Amazon.\n- Many skilled professionals in India view H-1B visas as a primary pathway to secure long-term employment opportunities within the United States.\n- The White House stated the fee increase is intended to prioritize the protection of American jobs and reduce reliance on foreign labor.\n\n### Why it Matters\nThis policy shift creates a substantial financial barrier for international tech workers and complicates recruitment strategies for U.S. companies operating globally. It reflects a broader trend of protectionist immigration policies aimed at prioritizing domestic labor markets over international talent pipelines.",
+    "author": "CBS",
+    "url": "https://freerepublic.com/focus/f-news/4373662/posts",
+    "category": "Tech Business & Markets",
+    "processed_at": "2026-04-06T08:31:42.814466",
+    "source": "Freerepublic.com"
+  },
+  {
+    "title": "Company Management Made Their IT Employee Work Extra And Refused To Pay Her More, So She Decided To Finally Quit Her Job",
+    "summary": "A former tech support employee resigned after management pressured staff to prioritize sales quotas and threatened to revoke commission eligibility following constructive feedback regarding the company's tracking system.\n\n### Key Points\n- A website hosting company mandated that technical support staff perform sales upselling, despite initial assurances that the role would remain focused on technical assistance.\n- Management implemented an eight-hour commission window, which employees argued was insufficient for email-based support interactions where customer response times are often delayed.\n- The company required a minimum of $500 in sales before employees qualified for any commission payments.\n- An assistant manager threatened to eliminate an employee's commission eligibility entirely after she provided requested feedback on the difficulties of meeting sales targets.\n- The employee ultimately quit her position due to the hostile management response and the increasing pressure to prioritize sales over technical support duties.\n\n### Why it Matters\nThis situation highlights the friction that occurs when corporate entities force sales-driven metrics onto specialized technical support roles. Such policies can degrade customer service quality and lead to high employee turnover as staff feel their primary job functions are being undermined by unrealistic performance expectations.",
+    "author": "Sarrah Murtaza",
+    "url": "http://twistedsifter.com/2026/04/company-management-made-their-it-employee-work-extra-and-refused-to-pay-her-more-so-she-decided-to-finally-quit-her-job/",
+    "category": "Tech Business & Markets",
+    "processed_at": "2026-04-06T08:31:52.586710",
+    "source": "Twistedsifter.com"
+  },
+  {
     "source": "MakeUseOf",
     "author": "Pankil Shah",
     "title": "Your Android TV is hiding hundreds of apps the Play Store won't show you — here's how it get them",

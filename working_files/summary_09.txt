@@ -1,20 +1,20 @@
-Strava runs are continuing to leak sensitive military information, with over 500 UK soldiers the latest to be exposed
+What if the browser built the UI for you?
 ============================================================
 
-An investigation by The i Paper reveals that over 500 British military personnel are inadvertently exposing sensitive location data by sharing public exercise routes on the Strava app.
+A new proposal for an adaptive browser suggests shifting frontend development from hand-crafted interfaces to AI-generated UIs based on semantic API manifests and individual user accessibility preferences.
 
 ### Key Points
-- Public Strava activity logs have identified military personnel and their families near sensitive sites, including the HMNB Clyde nuclear submarine base.
-- The data exposure includes routes and photos posted from locations such as Northwood, Faslane, and North Yorkshire.
-- Security experts warn that foreign states can aggregate these public exercise patterns to track individual movements and military operations.
-- Military officials have criticized the practice, noting that even personnel at high levels are failing to secure their personal accounts.
-- Users can mitigate these risks by adjusting privacy settings within the Strava app to restrict the visibility of their exercise data.
+- The concept replaces static, developer-built interfaces with browser-generated UIs that adapt to specific user needs like high contrast or screen reader optimization.
+- Services would publish semantic manifests describing data capabilities and actions, rather than shipping pre-built frontend code.
+- This approach aims to eliminate inconsistent UI patterns across different SaaS products by centralizing interface rendering within the browser.
+- The shift increases the importance of robust, well-documented API design and semantic data contracts between services.
+- A proof-of-concept model currently uses the Claude LLM to generate GitHub interfaces based on YAML-defined user preferences.
 
 ### Why it Matters
-This incident highlights the significant national security risks posed by the intersection of personal fitness tracking and military operational security. It serves as a critical reminder for both government employees and private citizens to audit their digital footprints to prevent the aggregation of sensitive personal information.
+This shift would fundamentally change the software industry by making APIs, rather than visual interfaces, the primary product surface. By decoupling the UI from the service, users gain a consistent, personalized experience while developers can focus on data architecture instead of repetitive frontend maintenance.
 
 ============================================================
-Author:   David Nield
-Source:   TechRadar
-URL:      https://www.techradar.com/health-fitness/fitness-apps/strava-runs-are-continuing-to-leak-sensitive-military-information-with-over-500-uk-soldiers-the-latest-to-be-exposed
-Category: Cybersecurity
+Author:   John Gregoriadis
+Source:   Jonno.nz
+URL:      https://jonno.nz/posts/what-if-your-browser-built-the-ui-for-you/
+Category: Artificial Intelligence

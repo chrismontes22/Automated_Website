@@ -1,21 +1,20 @@
-AI is rewiring Bollywood, the world's most prolific film industry
+ESP32-S3 gets post-quantum encryption with Aethyr Edge Node open-source firmware
 ============================================================
 
-Bollywood studios are aggressively adopting artificial intelligence to slash production costs and timelines, creating full-length films and re-releasing classic titles with AI-generated content to combat declining theater attendance.
+Aethyr Research has released open-source, post-quantum encrypted firmware for ESP32-S3 IoT devices, enabling quantum-resistant communication through the ML-KEM-768 standard with a rapid 35ms handshake performance.
 
 ### Key Points
-- Indian production houses are using AI to reduce filmmaking costs to one-fifth and production time to one-quarter of traditional methods.
-- JioStar’s AI-generated adaptation of the epic "Mahabharat" has reached over 26.5 million views since its October release.
-- Studios like Eros Media World are using AI to alter endings of older films, such as the 2013 hit "Raanjhanaa," to drive renewed ticket sales.
-- Startups like NeuralGarage are deploying AI to synchronize lip movements for multi-language dubbing, addressing a major hurdle in India’s diverse linguistic market.
-- Major tech companies including Google, Microsoft, and Nvidia are partnering with Indian filmmakers to provide the computing power and tools necessary for AI-driven production.
-- Unlike Hollywood, where union contracts restrict AI use, Indian studios face fewer regulatory barriers, allowing for rapid experimentation with the technology.
+- The firmware utilizes NIST FIPS 203 standard ML-KEM-768 for key exchange, alongside BLAKE3 and XChaCha20-Poly1305 for data integrity and encryption.
+- Benchmarks on an ESP32-S3-WROOM-1 module show a 2.1-second boot time and efficient cryptographic operations suitable for resource-constrained edge nodes.
+- The software underwent rigorous testing, including 410,000 fuzz iterations and 100,000 single-bit-flip tests, to ensure stability and security.
+- Aethyr designed the firmware as a component for a distributed AI agent mesh, allowing autonomous nodes to operate without cloud dependency.
+- While the ESP32-S3 firmware is available on GitHub, the corresponding server-side software for host devices like the NVIDIA Jetson remains currently unavailable.
 
 ### Why it Matters
-The rapid integration of AI into Bollywood represents a significant shift in global media economics, prioritizing cost-efficiency and content volume over traditional production methods. While this strategy offers a potential lifeline for studios facing shrinking box-office revenue, it also sparks intense debate regarding the artistic integrity of cinema and the future of creative labor.
+This development addresses the growing urgency to secure IoT infrastructure against future quantum computing threats, which could compromise current RSA and ECC encryption standards. By providing a verified, low-latency implementation of post-quantum cryptography, Aethyr offers a practical pathway for developers to begin migrating embedded systems toward NIST-mandated security requirements.
 
 ============================================================
-Author:   Reuters
-Source:   BusinessLine
-URL:      https://www.thehindubusinessline.com/info-tech/ai-is-rewiring-bollywood-the-worlds-most-prolific-film-industry/article70822585.ece
-Category: Artificial Intelligence
+Author:   Jean-Luc Aufranc (CNXSoft)
+Source:   CNX Software
+URL:      https://www.cnx-software.com/2026/04/05/esp32-s3-gets-post-quantum-encryption-with-aethyr-edge-node-open-source-firmware/
+Category: Cybersecurity

@@ -1,20 +1,21 @@
-Traders are the big winners as 24/7 stocks will finally end the after-hours price 'manipulation'
+Unverified: What Practitioners Post About OCR, Agents, and Tables
 ============================================================
 
-Major U.S. stock exchanges are moving toward 24/7 trading to eliminate after-hours price manipulation and reduce the influence of intermediaries who currently exploit thin liquidity during market closures.
+Practitioners are increasingly abandoning off-the-shelf document processing platforms in favor of custom hybrid pipelines that combine specialized layout models with language models to achieve reliable production-grade results.
 
 ### Key Points
-- The NYSE, Nasdaq, CME, and Cboe are actively pursuing or expanding round-the-clock trading capabilities to modernize market access.
-- Critics argue that current after-hours sessions allow brokers to manipulate prices and trigger client stop-losses due to low liquidity and wider spreads.
-- Academic research and regulatory bodies, including the SEC and FINRA, have identified risks of spoofing and layering in thinly traded, off-hours markets.
-- Retail investors are currently sidelined during market closures, leaving them unable to react to breaking news until the next opening bell.
-- Decentralized platforms like Hyperliquid are already seeing high volume in 24/7 derivatives, signaling strong demand for continuous trading of traditional assets.
+- Production deployments frequently fail to match demo performance, with accuracy often dropping significantly after the first page of complex documents.
+- A two-stage architecture—using dedicated OCR or layout models to create structured markdown before applying language models—is the current industry standard.
+- Table extraction remains the most significant technical hurdle, with many off-the-shelf tools struggling to process merged cells and multi-page layouts.
+- Developers are successfully replacing expensive cloud-based API services with local, open-source stacks running on consumer-grade hardware.
+- Human-in-the-loop review remains essential, with successful teams routing 15% to 30% of documents for manual verification to ensure data integrity.
+- Agentic workflows often face reliability issues in production, leading many practitioners to prefer deterministic scripts for consistent, repetitive document formats.
 
 ### Why it Matters
-The transition to 24/7 markets represents a fundamental shift in power from traditional brokerage intermediaries to individual traders by removing the "weekend vacuum" where price discovery is often distorted. This evolution aims to increase market efficiency and transparency, potentially forcing a restructuring of the business models that have historically relied on restricted trading hours.
+The shift toward custom, hybrid architectures suggests that enterprise document processing is moving away from monolithic vendor platforms toward modular, open-source-driven workflows. For businesses, this highlights that success depends less on model capability and more on building robust infrastructure for human review, metadata management, and data validation.
 
 ============================================================
-Author:   Olivier Acuna
-Source:   CoinDesk
-URL:      https://www.coindesk.com/markets/2026/04/04/traders-are-the-big-winners-as-24-7-stocks-will-finally-end-the-after-hours-price-manipulation
-Category: Tech Business & Markets
+Author:   Christopher Helm
+Source:   Idp-software.com
+URL:      https://idp-software.com/news/idp-accuracy-reckoning-2026/
+Category: Artificial Intelligence

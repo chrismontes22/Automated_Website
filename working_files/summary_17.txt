@@ -1,20 +1,20 @@
-Humans can still beat AI at video games
+Axios npm hack used fake Teams error fix to hijack maintainer account
 ============================================================
 
-New research from New York University highlights that while artificial intelligence excels at specific, rule-based games, it still struggles to learn new, open-ended titles as quickly as humans.
+North Korean hackers compromised the popular Axios HTTP client by using sophisticated social engineering to trick a maintainer into installing malware, leading to a malicious npm package update.
 
 ### Key Points
-- AI models like Deep Blue and AlphaGo have historically mastered structured games through reinforcement learning and millions of simulated trial-and-error iterations.
-- NYU professor Julian Togelius argues that current AI models lack the ability to generalize, often failing when faced with unfamiliar or abstract game mechanics.
-- Humans possess a significant advantage in learning new games due to years of lived experience and an intuitive understanding of physical objects and concepts.
-- While Google DeepMind’s SIMA 2 model shows progress in 3D environments, it remains far from the researchers' proposed benchmark of mastering 100 new games rapidly.
-- The study suggests that true human-level intelligence requires abstract thinking and creativity, which current AI architectures have yet to achieve.
+- North Korean threat actor UNC1069 targeted Axios lead maintainer Jason Saayman via a fake Slack workspace and a fraudulent Microsoft Teams update.
+- The attackers injected a malicious dependency, plain-crypto-js, into Axios versions 1.14.1 and 0.30.4, which installed a remote access trojan.
+- Malicious versions were available on the npm registry for approximately three hours before being removed by maintainers.
+- Google Threat Intelligence Group linked the campaign to UNC1069, noting the use of the WAVESHAPER.V2 malware and infrastructure overlaps.
+- Multiple maintainers of high-impact Node.js projects have reported similar social engineering attempts, indicating a coordinated, large-scale campaign against the open-source ecosystem.
 
 ### Why it Matters
-The inability of AI to adapt to new, open-ended environments suggests that current models are optimized for narrow tasks rather than general intelligence. Mastering this challenge would require breakthroughs in reasoning and planning, which are essential for developing more versatile and capable artificial intelligence systems.
+This incident highlights the growing vulnerability of the software supply chain as threat actors increasingly target high-trust open-source maintainers to distribute malware. Because the attackers gained access to authenticated sessions, they effectively bypassed multi-factor authentication, forcing developers to rotate all credentials and keys to ensure system security.
 
 ============================================================
-Author:   Mack DeGeurin
-Source:   Popular Science
-URL:      http://www.popsci.com/technology/humans-beat-ai-at-video-games/
-Category: Artificial Intelligence
+Author:   Lawrence Abrams
+Source:   BleepingComputer
+URL:      https://www.bleepingcomputer.com/news/security/axios-npm-hack-used-fake-teams-error-fix-to-hijack-maintainer-account/
+Category: Cybersecurity
