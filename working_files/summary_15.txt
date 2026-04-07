@@ -1,21 +1,20 @@
-How AI Is Changing Lead Generation: 3 Key Things SEO & PPC Teams Need To Do Now via @sejournal, @CallRail
+Attackers exploited this critical FortiClient EMS bug as a 0-day
 ============================================================
 
-AI search tools like ChatGPT, Gemini, and Perplexity are reshaping the marketing funnel by pre-vetting leads and driving high-intent traffic that requires faster business response times for conversion.
+Fortinet has released an emergency patch for a critical vulnerability in its FortiClient Enterprise Management Server that is currently being exploited by attackers in the wild.
 
 ### Key Points
-- ChatGPT currently dominates the AI-referred lead market with a 90.1% share, particularly in the healthcare and automotive sectors.
-- Perplexity accounts for 6.3% of AI leads, showing significant influence in high-consideration industries like manufacturing and travel.
-- Google’s Gemini holds 2.4% of the market, with growing adoption in business services due to its integration with Google Workspace.
-- Claude captures 1.2% of leads, finding a specific niche in real estate and marketing agency services.
-- Businesses can improve visibility by creating authoritative, structured content that directly answers the specific queries consumers pose to AI platforms.
-- Implementing unified lead tracking and AI-powered voice agents can increase answered calls by up to 44% by capturing leads during after-hours or overflow periods.
+- The vulnerability, tracked as CVE-2026-35616, carries a critical 9.1 CVSS score and allows unauthenticated remote code execution.
+- Fortinet confirmed active exploitation of the flaw, which was first detected by security researchers on March 31.
+- CISA added the bug to its Known Exploited Vulnerabilities catalog, mandating that federal agencies apply the patch by Thursday.
+- Users are urged to update to FortiClient EMS versions 7.4.5 or 7.4.6 to mitigate the security risk.
+- While the internet-facing footprint of the software is relatively small, researchers warn that exploitation has shifted from targeted to opportunistic.
 
 ### Why it Matters
-The collapse of the traditional research funnel means that businesses must now prioritize real-time responsiveness and granular attribution to capture high-intent leads. Failing to track which AI platforms drive revenue leaves companies unable to optimize their marketing spend in an increasingly automated search landscape.
+This vulnerability poses a significant risk to enterprise security because it allows attackers to gain unauthorized control over centralized management systems. Organizations must prioritize patching immediately to prevent potential data breaches or further network compromise by malicious actors.
 
 ============================================================
-Author:   CallRail
-Source:   Search Engine Journal
-URL:      https://www.searchenginejournal.com/lead-gen-seo-ppc-callrail-spcs/570572/
-Category: Artificial Intelligence
+Author:   Jessica Lyons
+Source:   Theregister.com
+URL:      https://www.theregister.com/2026/04/06/forticlient_ems_bug_exploited/
+Category: Cybersecurity
