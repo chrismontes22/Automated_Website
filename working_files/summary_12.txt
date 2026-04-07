@@ -1,20 +1,19 @@
-I stopped using Event Viewer to check failed logins after discovering this PowerShell trick
+Anthropic's head of growth says the company culture is so open that people 'just argue with Dario' on Slack
 ============================================================
 
-Windows users can monitor unauthorized access attempts by using PowerShell commands or Event Viewer to track failed sign-in logs and improve overall system security through modern authentication methods.
+Anthropic fosters a transparent corporate culture by encouraging employees to openly challenge CEO Dario Amodei and leadership decisions through public discussions on internal Slack notebook channels.
 
 ### Key Points
-- Windows logs all failed sign-in attempts under the Security category within the built-in Event Viewer tool.
-- Users can execute the `Get-WinEvent` command in PowerShell with ID 4625 to quickly retrieve a list of failed login attempts.
-- Changing the command ID to 4624 allows users to view successful sign-in history on their local machine.
-- Windows Hello provides enhanced security by replacing traditional passwords with biometric authentication like face or fingerprint recognition.
-- Physical security keys or USB-based tools like USB Raptor can be used to lock and unlock PCs, preventing unauthorized access even if passwords are compromised.
+- Anthropic employees maintain personal Slack channels that function as open notebooks for sharing work updates and internal thoughts.
+- Head of growth Amol Avasare confirmed that staff are encouraged to publicly debate and disagree with CEO Dario Amodei.
+- The company aims to build organizational trust by bypassing traditional corporate hierarchies and promoting direct communication.
+- This management style mirrors practices at other major tech firms, including Tesla, Airbnb, and Netflix.
 
 ### Why it Matters
-Monitoring sign-in logs helps users identify potential security breaches or unauthorized access attempts on their personal or work computers. Implementing biometric or hardware-based authentication significantly reduces the risk of account compromise compared to relying solely on traditional passwords.
+This flat organizational structure reflects a growing trend among high-growth tech companies to prioritize rapid feedback loops over traditional chains of command. By normalizing public dissent, Anthropic aims to foster accountability and innovation as it scales its operations within the competitive artificial intelligence sector.
 
 ============================================================
-Author:   Pankil Shah
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/see-failed-sign-in-attempt-with-windows-powershell/
-Category: Cybersecurity
+Author:   Shubhangi Goel
+Source:   Business Insider
+URL:      https://www.businessinsider.com/anthropic-open-culture-employees-argue-ceo-dario-amodei-slack-2026-4
+Category: Artificial Intelligence

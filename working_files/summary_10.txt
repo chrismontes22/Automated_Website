@@ -1,20 +1,21 @@
-Stop letting Windows Update decide when to restart your PC
+Product showcase: Proton Authenticator is an end-to-end encrypted, open source 2FA app
 ============================================================
 
-Windows 11 users can regain control over intrusive automatic reboots and updates by manually reconfiguring the system's UpdateOrchestrator tasks within the Windows Task Scheduler utility.
+Proton has launched a free, open-source two-factor authentication app that provides end-to-end encrypted code generation and cross-platform synchronization for users across Windows, macOS, Linux, iOS, and Android devices.
 
 ### Key Points
-- Windows 11's default "Active Hours" and "Pause updates" features often fail to prevent forced reboots during critical tasks or idle periods.
-- The UpdateOrchestrator folder in Task Scheduler manages the background processes that trigger automatic system scans and installations.
-- Users can disable default update-triggering tasks and create a custom schedule using the UsoClient.exe executable to dictate exactly when updates occur.
-- This method requires administrator privileges and should be periodically verified, as major Windows feature updates may attempt to reset these configurations.
-- Disabling default triggers does not permanently stop updates, ensuring the system remains protected against security vulnerabilities and zero-day exploits.
+- The app generates time-based one-time passwords (TOTP) that refresh every 30 seconds for secure account verification.
+- Users can import existing tokens from services like Google Authenticator, Aegis, and Bitwarden to simplify the migration process.
+- Data synchronization is protected by end-to-end encryption, ensuring that only the user can access their stored authentication tokens.
+- The software functions offline, allowing users to generate codes without an active internet connection.
+- Security features include optional biometric authentication or PIN protection to prevent unauthorized access to the app.
+- The open-source codebase allows for public security audits and provides transparency regarding how the application handles sensitive user data.
 
 ### Why it Matters
-Taking manual control of the update process prevents unexpected system restarts that can interrupt long-running professional workflows or media consumption. This approach restores the user's authority over their hardware, ensuring that essential security maintenance occurs only during designated, non-disruptive time windows.
+This release provides a privacy-focused alternative to mainstream authentication tools by emphasizing user control and transparent, open-source security standards. By offering seamless cross-platform syncing and data portability, Proton aims to reduce the friction associated with managing multi-factor security across various digital services.
 
 ============================================================
-Author:   Chandraveer Mathur
-Source:   XDA Developers
-URL:      https://www.xda-developers.com/stop-windows-update-automatic-restart-your-pc-with-task-scheduler/
-Category: Phones, Laptops, and Gadgets
+Author:   Anamarija Pogorelec
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/04/06/product-showcase-proton-authenticator-encrypted-open-source-2fa-app/
+Category: Cybersecurity
