@@ -1,20 +1,21 @@
-Iran-Linked Password-Spraying Campaign Targets 300+ Israeli Microsoft 365 Organizations
+Show HN: Hippo, biologically inspired memory for AI agents
 ============================================================
 
-An Iran-linked threat actor is conducting a widespread password-spraying campaign against over 325 organizations in Israel and the U.A.E. to infiltrate Microsoft 365 cloud environments and exfiltrate data.
+Hippo is a new open-source memory management tool for AI agents that uses biological principles like decay and consolidation to ensure context remains relevant and portable across platforms.
 
 ### Key Points
-- Check Point identified three attack waves occurring on March 3, March 13, and March 23, 2026.
-- The campaign targeted government, technology, energy, and transportation sectors across Israel, the U.A.E., and several Western nations.
-- Attackers utilized Tor exit nodes and commercial VPNs to execute password-spraying, a technique often associated with Iranian groups like Gray Sandstorm.
-- The Iranian ransomware group Pay2Key recently resurfaced, targeting a U.S. healthcare organization with upgraded anti-forensics and evasion capabilities.
-- Pro-Iranian operators are increasingly adopting new tools like the BQTLock ransomware to conduct politically motivated sabotage against regional adversaries.
+- Hippo functions as a shared memory layer for tools including Claude Code, Cursor, Codex, and OpenClaw.
+- The system uses a SQLite backbone to store memories, supporting automatic decay, retrieval-based strengthening, and reward-proportional learning.
+- It features zero runtime dependencies and integrates via simple CLI commands like `hippo init` and `hippo recall`.
+- Users can import existing data from ChatGPT, Cursor rules, and markdown files to eliminate vendor lock-in.
+- The tool includes advanced features like conflict detection, session handoffs, and automated learning from Git commit history.
+- Performance is validated through benchmarks, showing a significant reduction in agent error rates over sequential tasks.
 
 ### Why it Matters
-These campaigns demonstrate a growing trend of state-sponsored actors blending criminal ransomware tactics with traditional espionage to disrupt critical infrastructure. Organizations must prioritize multi-factor authentication and strict geographic access controls to defend against these evolving, high-frequency credential attacks.
+By treating memory as a dynamic system that requires maintenance rather than a static filing cabinet, Hippo solves the common problem of AI agents repeating mistakes or losing context between sessions. This approach improves developer productivity by creating a portable, self-organizing knowledge base that evolves alongside project requirements.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/04/iran-linked-password-spraying-campaign.html
-Category: Cybersecurity
+Author:   kitfunso
+Source:   Github.com
+URL:      https://github.com/kitfunso/hippo-memory
+Category: Artificial Intelligence

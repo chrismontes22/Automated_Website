@@ -1,20 +1,20 @@
-Bernie Sanders’s New, Necessary, Bold Act: Taking on the AI Oligarchs
+Phishing LNK files and GitHub C2 power new DPRK cyber attacks
 ============================================================
 
-Senator Bernie Sanders is leading a legislative and public campaign to regulate artificial intelligence, warning that the technology threatens to exacerbate wealth inequality and cause mass unemployment.
+North Korea-linked threat actors are targeting South Korean organizations by using GitHub as a command-and-control server to distribute malicious LNK files and execute stealthy PowerShell-based cyberattacks.
 
 ### Key Points
-- Senator Sanders and Representative Alexandria Ocasio-Cortez introduced a bill proposing a moratorium on the construction of new AI data centers.
-- The senator argues that AI development risks concentrating wealth among billionaires like Jeff Bezos, Elon Musk, and Mark Zuckerberg.
-- Sanders is building a cross-partisan coalition, citing concerns from tech experts like Geoffrey Hinton and data from polls showing 55% of Americans fear AI harm.
-- AI companies are spending millions on political lobbying, creating significant hurdles for lawmakers attempting to implement stricter industry regulations.
-- Local opposition to data centers is growing, with Maine lawmakers currently considering the first statewide ban on such construction.
+- Attackers use phishing emails containing obfuscated LNK files that drop decoy PDF documents and malicious PowerShell scripts.
+- The campaign leverages GitHub repositories, including the primary "motoralis" account, to host payloads and exfiltrate stolen system data.
+- Malicious scripts employ anti-analysis checks to detect security tools and establish persistence through scheduled Windows tasks.
+- Threat actors utilize multiple active and dormant GitHub accounts to maintain operational redundancy and evade detection by corporate security filters.
+- The malware uses a "keep-alive" script to upload network configuration logs to GitHub, enabling real-time monitoring of compromised environments.
 
 ### Why it Matters
-Sanders’s advocacy highlights a growing political tension between rapid technological innovation and the potential for widespread economic displacement. By framing AI as a central issue of corporate power, he is forcing a national conversation that could influence future labor policies and the regulatory landscape for Big Tech.
+This campaign demonstrates how sophisticated threat actors exploit trusted platforms like GitHub to bypass traditional network security filters and blend malicious traffic with legitimate activity. By relying on built-in Windows tools rather than custom malware, these attackers significantly reduce their digital footprint and complicate detection efforts for corporate security teams.
 
 ============================================================
-Author:   Perry Bacon
-Source:   The New Republic
-URL:      https://newrepublic.com/article/208635/bernie-sanders-ai-oligarchs
-Category: Artificial Intelligence
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/190413/uncategorized/phishing-lnk-files-and-github-c2-power-new-dprk-cyber-attacks.html
+Category: Cybersecurity
