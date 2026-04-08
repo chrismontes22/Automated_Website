@@ -1,19 +1,20 @@
-Apple pulls Jack Dorsey’s messaging app from the Chinese App Store
+Russia Hacked Routers to Steal Microsoft Office Tokens
 ============================================================
 
-Apple has removed the decentralized messaging app Bitchat from its Chinese App Store following a formal request from the Cyberspace Administration of China regarding local security regulations.
+Russian military intelligence hackers, known as Forest Blizzard, are exploiting vulnerabilities in older home and office routers to steal Microsoft Office authentication tokens from over 18,000 global networks.
 
 ### Key Points
-- Bitchat, developed by Block CEO Jack Dorsey, utilizes Bluetooth-based peer-to-peer mesh networking to enable communication without internet-connected servers.
-- The Cyberspace Administration of China (CAC) cited a breach of regulations concerning apps capable of social mobilization or influencing public opinion.
-- The app gained popularity in regions experiencing internet shutdowns and government-imposed social media restrictions, including Iran, Uganda, and Nepal.
-- Apple confirmed the removal, noting that the app failed to undergo mandatory security assessments required for platforms with public mobilization capabilities.
+- The hacking group, also known as APT28 or Fancy Bear, targeted over 200 organizations and 5,000 consumer devices.
+- Attackers used DNS hijacking on unsupported Mikrotik and TP-Link routers to intercept OAuth tokens without deploying traditional malware.
+- The campaign primarily targeted government agencies, law enforcement, and third-party email providers to gain unauthorized access to accounts.
+- By bypassing multi-factor authentication through token theft, the group successfully conducted adversary-in-the-middle attacks on Microsoft Outlook web traffic.
+- The U.S. Federal Communications Commission recently announced a policy to stop certifying foreign-made routers due to these escalating national security risks.
 
 ### Why it Matters
-This removal highlights the ongoing tension between decentralized, privacy-focused communication tools and strict national internet regulations. It underscores the challenges developers face when operating in markets that mandate government oversight of platforms capable of facilitating large-scale user coordination.
+This campaign highlights a significant shift toward exploiting low-security edge devices to bypass sophisticated multi-factor authentication protocols. By targeting infrastructure rather than individual endpoints, state-backed actors can maintain persistent, stealthy access to sensitive government and corporate communications.
 
 ============================================================
-Author:   Marcus Mendes
-Source:   9to5Mac
-URL:      https://9to5mac.com/2026/04/06/apple-pulls-jack-dorseys-messaging-app-from-the-chinese-app-store/
-Category: Tech Business & Markets
+Author:   BrianKrebs
+Source:   Krebs on Security
+URL:      https://krebsonsecurity.com/2026/04/russia-hacked-routers-to-steal-microsoft-office-tokens/
+Category: Cybersecurity

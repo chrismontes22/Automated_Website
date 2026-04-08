@@ -1,21 +1,21 @@
-Show HN: Hippo, biologically inspired memory for AI agents
+Breaking the console: a brief history of video game security
 ============================================================
 
-Hippo is a new open-source memory management tool for AI agents that uses biological principles like decay and consolidation to ensure context remains relevant and portable across platforms.
+The evolution of video game console security demonstrates a persistent cycle where manufacturers implement increasingly complex hardware and cryptographic defenses, only for researchers to discover bypasses and exploits.
 
 ### Key Points
-- Hippo functions as a shared memory layer for tools including Claude Code, Cursor, Codex, and OpenClaw.
-- The system uses a SQLite backbone to store memories, supporting automatic decay, retrieval-based strengthening, and reward-proportional learning.
-- It features zero runtime dependencies and integrates via simple CLI commands like `hippo init` and `hippo recall`.
-- Users can import existing data from ChatGPT, Cursor rules, and markdown files to eliminate vendor lock-in.
-- The tool includes advanced features like conflict detection, session handoffs, and automated learning from Git commit history.
-- Performance is validated through benchmarks, showing a significant reduction in agent error rates over sequential tasks.
+- Early consoles like the Atari 2600 lacked security, while the NES introduced the 10NES lockout chip, which was eventually bypassed via reverse engineering and fault injection.
+- The PlayStation era shifted focus to optical media protection, leading to the rise of modchips and the "swap trick" to bypass disc-based authentication.
+- The original Xbox pioneered cryptographic code signing, though researchers like Andrew "bunnie" Huang later compromised the system by sniffing the HyperTransport bus.
+- Cryptographic failures, such as the PlayStation 3’s reused ECDSA nonce, allowed for the public recovery of private signing keys and total system compromise.
+- Modern consoles like the Nintendo Switch remain vulnerable to hardware-level flaws, such as the unpatchable fusée gelée bootROM exploit found in the Tegra X1 chip.
+- Manufacturers now combine technical defenses like secure boot and hypervisors with service-based lock-in, such as banning jailbroken consoles from online networks.
 
 ### Why it Matters
-By treating memory as a dynamic system that requires maintenance rather than a static filing cabinet, Hippo solves the common problem of AI agents repeating mistakes or losing context between sessions. This approach improves developer productivity by creating a portable, self-organizing knowledge base that evolves alongside project requirements.
+The history of console security highlights that no system is impenetrable, as even the most sophisticated cryptographic architectures can fail due to implementation errors or hardware-level vulnerabilities. These lessons in defense-in-depth and threat modeling are critical for engineers designing secure systems across all industries, from medical devices to industrial infrastructure.
 
 ============================================================
-Author:   kitfunso
-Source:   Github.com
-URL:      https://github.com/kitfunso/hippo-memory
-Category: Artificial Intelligence
+Author:   Sergio Prado
+Source:   Sergioprado.blog
+URL:      https://sergioprado.blog/breaking-the-console-a-brief-history-of-video-game-security/
+Category: Cybersecurity

@@ -1,20 +1,20 @@
-Samsung's 100-inch smart TV is now actually affordable at $3,000 off
+Over 1,000 Exposed ComfyUI Instances Targeted in Cryptomining Botnet Campaign
 ============================================================
 
-Samsung has discounted its 100-inch QN80F 4K QLED smart TV by $3,000, effectively halving the original retail price to make the premium home theater display more accessible to consumers.
+Threat actors are actively exploiting misconfigured, internet-exposed ComfyUI instances to install malicious nodes, enabling remote code execution for cryptocurrency mining and the creation of proxy botnets.
 
 ### Key Points
-- The Samsung QN80F features a 100-inch 4K QLED display with a 144Hz refresh rate.
-- Gaming performance is enhanced through integrated support for AMD FreeSync Premium Pro technology.
-- The television operates on the Tizen platform, providing access to major streaming services and AI-driven features.
-- Samsung’s Vision AI enables real-time live translations and automatic optimization of audio and video settings.
-- The unit includes built-in 30W speakers to support its large-scale cinematic visual experience.
+- Attackers use automated Python scanners to identify over 1,000 publicly accessible ComfyUI instances across cloud infrastructure.
+- The campaign exploits custom nodes that accept raw Python code, allowing attackers to gain unauthorized remote access.
+- Compromised hosts are enlisted into a botnet to mine Monero and Conflux, or to serve as proxies via Hysteria V2.
+- Malware achieves persistence by clearing logs, using cron-like re-execution, and locking binaries with the "chattr +i" command.
+- The operation is managed through a centralized Flask-based dashboard and actively sabotages competing mining botnets like "Hisana."
 
 ### Why it Matters
-This significant price reduction makes high-end, ultra-large display technology more competitive for home theater enthusiasts who previously found the MSRP prohibitive. By integrating advanced AI features and gaming-focused hardware, Samsung is positioning this model as a versatile hub for both entertainment and interactive smart home management.
+This campaign highlights the growing security risks associated with AI-focused development tools that lack robust authentication for remote access. Organizations using ComfyUI must secure their instances to prevent their computing resources from being hijacked for illicit financial gain or large-scale botnet operations.
 
 ============================================================
-Author:   Timi Cantisano
-Source:   XDA Developers
-URL:      https://www.xda-developers.com/take-3000-off-this-100-inch-samsung-tv/
-Category: Phones, Laptops, and Gadgets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/04/over-1000-exposed-comfyui-instances.html
+Category: Cybersecurity
