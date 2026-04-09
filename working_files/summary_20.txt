@@ -1,20 +1,20 @@
-Inside Spotify’s 2025 Wrapped Archive: AI Narratives at Scale and the Privacy Trade‑Off
+Snowflake customers suffer data theft attacks after third-party issue, company confirms 'unusual activity'
 ============================================================
 
-Spotify generated 1.4 billion personalized "Wrapped Archive" reports for 350 million users by utilizing heuristics and fine-tuned language models to transform raw listening data into narrative-driven annual recaps.
+The extortion group ShinyHunters breached the analytics platform Anodot to steal authentication tokens, subsequently compromising the Snowflake accounts of more than a dozen corporate customers in a supply-chain attack.
 
 ### Key Points
-- Spotify’s engineering team processed data for 350 million users to create personalized year-end summaries.
-- The system uses heuristics to identify five "remarkable days" based on listening habits, genre shifts, and nostalgic trends.
-- A fine-tuned language model generates short, descriptive narratives to frame consumption patterns as personal life moments.
-- Similar narrative recap features are currently utilized by platforms including OpenAI, Strava, and Steam.
-- Spotify employs pseudonymization, encryption, and data retention policies to address growing user privacy concerns regarding tracking.
+- The ShinyHunters group gained unauthorized access to Anodot’s infrastructure to harvest authentication tokens.
+- Hackers used the stolen tokens to infiltrate the Snowflake environments of over a dozen organizations.
+- Snowflake confirmed the breach was linked to a third-party integration and stated its own core systems remained secure.
+- The attackers attempted to breach Salesforce accounts but were detected and blocked before gaining access.
+- This incident follows a broader 2024 campaign where ShinyHunters targeted Snowflake customers to extort major companies like AT&T and Ticketmaster.
 
 ### Why it Matters
-The shift toward narrative-driven data recaps transforms raw usage metrics into personalized storytelling, deepening user engagement across digital platforms. However, this trend intensifies the debate over data surveillance, forcing companies to balance the appeal of reflective insights against the privacy implications of continuous behavioral tracking.
+This breach highlights the significant security risks posed by third-party integrations in cloud-based supply chains. Organizations must prioritize rigorous access management and monitoring for all connected services to prevent attackers from leveraging one platform to compromise sensitive data across multiple enterprise environments.
 
 ============================================================
-Author:   Matt Foster
-Source:   InfoQ.com
-URL:      https://www.infoq.com/news/2026/04/spotify-wrapped-privacy/
-Category: Artificial Intelligence
+Author:   Sead Fadilpašić
+Source:   TechRadar
+URL:      https://www.techradar.com/pro/security/snowflake-customers-suffer-data-theft-attacks-after-third-party-issue-company-confirms-unusual-activity
+Category: Cybersecurity
