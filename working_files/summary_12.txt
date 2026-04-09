@@ -1,19 +1,20 @@
-One company just teased the E Ink phone of my dreams, and it's fully powered by Android
+'Stolen session cookies render MFA irrelevant': How $900-per-month turnkey malware is putting enterprise-grade account hijacking in the hands of rookie hackers
 ============================================================
 
-Bigme has announced the upcoming HiBreak Dual, a unique smartphone featuring both a color E Ink display and an LCD panel, aiming to combine eye-friendly reading with modern performance.
+The new Storm infostealer malware bypasses passwords and multi-factor authentication by hijacking active session cookies, allowing attackers to access corporate and cryptocurrency accounts without triggering standard security alerts.
 
 ### Key Points
-- The Bigme HiBreak Dual is marketed as the world's first smartphone to integrate both color E Ink and LCD screen technologies.
-- Bigme devices typically run on the Android operating system and provide full access to the Google Play Store for standard app usage.
-- The company previously released the HiBreak Pro Color, which features a 42Hz refresh rate, currently the fastest E Ink display available on the market.
-- While specific hardware specifications remain unconfirmed, Bigme is expected to provide full details regarding the device's capabilities in the coming days.
+- Storm malware exfiltrates encrypted browser data to remote servers for processing, effectively evading local endpoint security detection.
+- The malware supports both Chromium- and Gecko-based browsers, including Firefox, Waterfox, and Pale Moon.
+- Attackers use stolen session tokens combined with proxy servers to mimic victim locations and avoid suspicious login flags.
+- The software is sold as a subscription service with pricing ranging from a $300 weekly demo to $1,800 monthly team licenses.
+- Varonis Threat Labs identified active campaigns targeting major platforms like Google, Facebook, Coinbase, and Binance across multiple global regions.
 
 ### Why it Matters
-This dual-screen approach could bridge the gap between the superior battery life and readability of E Ink and the high-speed performance of traditional LCD or OLED displays. If successful, the device may offer a viable alternative for users seeking a more eye-friendly smartphone experience without sacrificing the functionality of modern Android applications.
+This shift toward session hijacking highlights a critical vulnerability in relying solely on traditional password and multi-factor authentication protocols. Organizations must now prioritize behavioral analytics and network monitoring to detect the anomalous traffic patterns generated when attackers restore stolen sessions.
 
 ============================================================
-Author:   Nicholas Sutrich
-Source:   Android Central
-URL:      https://www.androidcentral.com/phones/bigme-hibreak-dual-teaser
-Category: Phones, Laptops, and Gadgets
+Author:   Efosa Udinmwen
+Source:   TechRadar
+URL:      https://www.techradar.com/pro/security/stolen-session-cookies-render-mfa-irrelevant-how-usd900-per-month-turnkey-malware-is-putting-enterprise-grade-account-hijacking-in-the-hands-of-rookie-hackers
+Category: Cybersecurity

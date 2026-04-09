@@ -1,21 +1,20 @@
-Breaking the console: a brief history of video game security
+Iran-Linked Hackers Are Sabotaging US Energy and Water Infrastructure
 ============================================================
 
-The evolution of video game console security demonstrates a persistent cycle where manufacturers implement increasingly complex hardware and cryptographic defenses, only for researchers to discover bypasses and exploits.
+US government agencies have issued a joint advisory warning that Iranian-linked hackers are actively targeting and sabotaging critical industrial control systems across American energy and water utility sectors.
 
 ### Key Points
-- Early consoles like the Atari 2600 lacked security, while the NES introduced the 10NES lockout chip, which was eventually bypassed via reverse engineering and fault injection.
-- The PlayStation era shifted focus to optical media protection, leading to the rise of modchips and the "swap trick" to bypass disc-based authentication.
-- The original Xbox pioneered cryptographic code signing, though researchers like Andrew "bunnie" Huang later compromised the system by sniffing the HyperTransport bus.
-- Cryptographic failures, such as the PlayStation 3’s reused ECDSA nonce, allowed for the public recovery of private signing keys and total system compromise.
-- Modern consoles like the Nintendo Switch remain vulnerable to hardware-level flaws, such as the unpatchable fusée gelée bootROM exploit found in the Tegra X1 chip.
-- Manufacturers now combine technical defenses like secure boot and hypervisors with service-based lock-in, such as banning jailbroken consoles from online networks.
+- The FBI, NSA, CISA, and Department of Energy identified attacks targeting programmable logic controllers (PLCs), including those manufactured by Rockwell Automation.
+- Hackers are compromising industrial devices to manipulate system displays, causing operational downtime and financial losses at critical infrastructure sites.
+- Security experts link the activity to groups like CyberAv3ngers, which previously targeted Unitronics devices in water utilities across the US, Israel, and Ireland.
+- The campaign utilizes asymmetric warfare tactics to disrupt physical machinery, marking an escalation in cyber hostilities amid ongoing regional military tensions.
+- Recent threats from the Iranian-affiliated group Handala suggest a coordinated effort to combine cyber operations with physical military actions against US targets.
 
 ### Why it Matters
-The history of console security highlights that no system is impenetrable, as even the most sophisticated cryptographic architectures can fail due to implementation errors or hardware-level vulnerabilities. These lessons in defense-in-depth and threat modeling are critical for engineers designing secure systems across all industries, from medical devices to industrial infrastructure.
+These attacks represent a significant shift toward persistent, high-stakes sabotage of essential public services rather than mere digital vandalism. The targeting of industrial control systems poses a direct risk to physical safety and operational stability, forcing utility providers to rapidly harden their digital defenses against state-sponsored threats.
 
 ============================================================
-Author:   Sergio Prado
-Source:   Sergioprado.blog
-URL:      https://sergioprado.blog/breaking-the-console-a-brief-history-of-video-game-security/
+Author:   Andy Greenberg
+Source:   Wired
+URL:      https://www.wired.com/story/iran-linked-hackers-are-sabotaging-us-energy-and-water-infrastructure/
 Category: Cybersecurity
