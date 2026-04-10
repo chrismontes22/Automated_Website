@@ -1,21 +1,20 @@
-Crypto Scams and Senior Fraud Drive $21 Billion in 2025 Cyber Theft, FBI Reports
+Mac users beware — experts say this attack 'stood out immediately' by making a major change to try spread malware
 ============================================================
 
-The FBI’s latest Internet Crime Report reveals that online scams surpassed $20 billion in total losses, driven by the increasing use of artificial intelligence and cryptocurrency-based fraud schemes.
+Cybersecurity researchers at Jamf Threat Labs have identified a new ClickFix campaign targeting macOS users by exploiting the Script Editor application to deploy the Atomic Stealer malware.
 
 ### Key Points
-- Reported losses from internet crimes exceeded $20 billion, with over 1 million complaints filed through the FBI’s Internet Crime Complaint Center.
-- Phishing and spoofing remained the most frequent crime types, accounting for 191,561 individual complaints.
-- Investment scams involving cryptocurrency caused the highest financial impact, totaling more than $11 billion in losses for U.S. citizens.
-- Fraud targeting individuals over age 60 rose by 37%, resulting in $7.75 billion in losses and an average cost of $38,500 per victim.
-- AI-related scams, including voice cloning and fake profiles, generated 22,364 complaints and resulted in $893 million in financial damages.
-- The FBI’s Recovery Asset Team successfully froze $679 million in stolen assets, achieving a 58% recovery rate for reported incidents.
+- Attackers are bypassing macOS security protections by using a custom URL scheme to trigger the built-in Script Editor application.
+- The malicious campaign lures victims with a fake website promising to reclaim disk space on their Mac devices.
+- Once triggered, the Script Editor runs a pre-filled script that installs Atomic Stealer without requiring manual Terminal commands.
+- Atomic Stealer is designed to exfiltrate sensitive data, including browser information, cryptocurrency wallets, and saved passwords.
+- This method replaces previous attack vectors that were blocked by security updates in macOS 14.4.
 
 ### Why it Matters
-The surge in sophisticated AI-driven fraud and organized criminal operations in Southeast Asia highlights a growing threat to both individual financial security and national stability. As criminals leverage advanced technology to bypass traditional detection methods, the rising success rate of these scams underscores an urgent need for improved public awareness and more robust international law enforcement cooperation.
+This evolution in ClickFix tactics demonstrates how threat actors adapt to macOS security updates by shifting from Terminal-based commands to native application exploitation. Users should remain cautious of prompts to execute scripts from unknown websites, as these attacks can lead to the total compromise of personal and financial data.
 
 ============================================================
-Author:   Jeff Carlson
-Source:   CNET
-URL:      https://www.cnet.com/tech/services-and-software/crypto-scams-dominate-21-billion-cyber-thefts-in-2025-according-to-new-fbi-report/
+Author:   Sead Fadilpašić
+Source:   TechRadar
+URL:      https://www.techradar.com/pro/security/mac-users-beware-experts-say-this-attack-stood-out-immediately-by-making-a-major-change-to-try-spread-malware
 Category: Cybersecurity
