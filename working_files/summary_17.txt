@@ -1,20 +1,20 @@
-Anthropic Says Its New AI Model Is So Good at Finding Security Risks, You Can't Use It
+James Bennett: Let’s talk about LLMs
 ============================================================
 
-Anthropic has restricted the public release of its new Claude Mythos AI model, citing its advanced ability to identify and exploit severe cybersecurity vulnerabilities in major software systems.
+Large language models (LLMs) are unlikely to provide a revolutionary "silver bullet" for software development, as current evidence suggests they primarily address accidental rather than essential programming complexities.
 
 ### Key Points
-- Anthropic’s Claude Mythos model has identified thousands of critical security flaws across major operating systems and web browsers.
-- The company launched Project Glasswing, a consortium of over 40 organizations including Microsoft, Google, Apple, and Nvidia, to address these risks.
-- Anthropic is committing $100 million in usage credits and $4 million in donations to support open-source security efforts through the consortium.
-- Participating companies are using the model to proactively patch vulnerabilities and strengthen infrastructure before the technology can be misused.
-- CEO Dario Amodei stated the initiative aims to leverage AI capabilities to create a more secure internet rather than allowing the model to pose a public threat.
+- Fred Brooks’ "No Silver Bullet" theory posits that software development is inherently difficult due to conceptual design, not just the labor of writing code.
+- Industry reports from DORA and CircleCI indicate that while LLMs can increase code generation speed, they often lead to "delivery instability" and increased debugging time.
+- Data from the METR study suggests a significant gap between developers' perceived productivity gains from AI and their actual performance.
+- Successful software delivery remains dependent on foundational practices like version control, comprehensive testing, and iterative development rather than raw coding speed.
+- Claims that LLMs will democratize programming for non-technical users are likely overstated, as effective prompting still requires rigorous logical and architectural thinking.
 
 ### Why it Matters
-This development highlights a critical turning point where AI capabilities have surpassed human efficiency in discovering software vulnerabilities, necessitating new collaborative security frameworks. By restricting access to the model, Anthropic is attempting to balance the potential for rapid defensive patching against the significant risk of malicious exploitation by bad actors.
+Relying on LLMs to bypass fundamental software engineering processes risks creating technical debt and operational chaos rather than genuine productivity gains. Organizations that prioritize established development disciplines over the hype of automated code generation are better positioned to maintain long-term stability and quality.
 
 ============================================================
-Author:   Omar Gallaga
-Source:   CNET
-URL:      https://www.cnet.com/tech/services-and-software/anthropic-project-glasswing-claude-mythos-preview/
+Author:   James Bennett
+Source:   B-list.org
+URL:      https://www.b-list.org/weblog/2026/apr/09/llms/
 Category: Artificial Intelligence
