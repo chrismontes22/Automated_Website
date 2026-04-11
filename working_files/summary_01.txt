@@ -1,20 +1,20 @@
-This new app may free Galaxy Watch owners from Samsung’s phone-locked features
+Marimo RCE Flaw CVE-2026-39987 Exploited Within 10 Hours of Disclosure
 ============================================================
 
-The new GeminiMan Wellness Companion app allows Galaxy Watch users to record ECG data and manage health metrics independently of Samsung’s restrictive regional and smartphone-locked software ecosystem.
+A critical remote code execution vulnerability in the open-source Marimo Python notebook was exploited by attackers less than ten hours after the security flaw was publicly disclosed.
 
 ### Key Points
-- Developer Dante63 released the GeminiMan Wellness Companion to bypass Samsung Health Monitor limitations.
-- The app currently supports ECG recordings, AI-assisted analysis, and custom symptom note-taking.
-- Users can create multiple profiles and export health data as encrypted CSV or PDF files.
-- Future development phases aim to add blood pressure monitoring and comprehensive wellness tracking for metrics like sleep and skin temperature.
-- Data is stored locally on the device to prioritize user privacy and security.
+- The vulnerability, tracked as CVE-2026-39987, carries a high CVSS score of 9.3 and affects all Marimo versions up to 0.20.4.
+- Attackers exploited a missing authentication check in the /terminal/ws WebSocket endpoint to gain full PTY shell access and execute arbitrary system commands.
+- Security firm Sysdig observed an unknown threat actor manually harvesting sensitive data, including .env files and SSH keys, from a honeypot system.
+- Marimo maintainers have released version 0.23.0 to address the security flaw and urge all users to update their instances immediately.
+- The rapid exploitation occurred despite the absence of a public proof-of-concept, highlighting the speed at which attackers weaponize technical advisories.
 
 ### Why it Matters
-This third-party tool challenges Samsung's hardware-software integration strategy by offering users greater control over their own health data. It provides a viable alternative for those restricted by regional feature locks, potentially forcing manufacturers to reconsider how they gatekeep health-tracking capabilities.
+This incident demonstrates that threat actors are actively monitoring security disclosures to target even niche, internet-facing applications before administrators can apply patches. The shrinking window between disclosure and exploitation forces organizations to prioritize rapid vulnerability management to prevent unauthorized access to sensitive system credentials.
 
 ============================================================
-Author:   Megan Ellis
-Source:   Android Authority
-URL:      https://www.androidauthority.com/ecg-app-galaxy-watch-3656194/
-Category: Phones, Laptops, and Gadgets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/04/marimo-rce-flaw-cve-2026-39987.html
+Category: Cybersecurity

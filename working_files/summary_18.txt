@@ -1,21 +1,21 @@
-Backdoored Smart Slider 3 Pro Update Distributed via Compromised Nextend Servers
+What’s new in security for Ubuntu 26.04 LTS?
 ============================================================
 
-Unknown threat actors compromised the Nextend update infrastructure to distribute a malicious version of the Smart Slider 3 Pro plugin, exposing WordPress sites to remote code execution backdoors.
+Ubuntu 26.04 LTS introduces a hardened security architecture featuring post-quantum cryptographic defaults, hardware-backed encryption, and memory-safe Rust implementations to establish a robust foundation for enterprise and cloud deployments.
 
 ### Key Points
-- The malicious update, version 3.5.1.35, was distributed through official channels for approximately six hours on April 7, 2026.
-- The backdoor allows attackers to create hidden administrator accounts, execute arbitrary PHP code, and run system commands remotely.
-- Malware persistence is maintained through multiple redundant files, including a fake caching component and modifications to theme functions.
-- Compromised sites automatically exfiltrated sensitive database and credential information to the command-and-control domain wpjs1.com.
-- Nextend has removed the malicious build and released version 3.5.1.36 to remediate the vulnerability for affected users.
-- Security firm Patchstack advises users to perform a comprehensive site cleanup, including password resets and the removal of unauthorized administrator accounts.
+- Implements TPM-backed Full Disk Encryption as a production-ready, enterprise-grade feature.
+- Integrates full-stack support for AMD SEV-SNP and Intel TDX to enable secure confidential computing.
+- Transitions core utilities to memory-safe Rust implementations, including rust-coreutils and sudo-rs.
+- Updates cryptographic standards by removing DSA support and enabling hybrid post-quantum key exchange by default.
+- Introduces the Security Center as a centralized control plane for managing disk encryption, Secure Boot, and recovery mechanisms.
+- Reduces system attack surfaces by running identity services like SSSD and OpenLDAP with restricted, non-root privileges.
 
 ### Why it Matters
-This supply chain attack demonstrates how threat actors can bypass traditional security measures by subverting trusted software update mechanisms. It highlights the critical risk that third-party plugins pose to website integrity and underscores the necessity for rigorous incident response when official distribution channels are compromised.
+This release shifts security from a one-time installation task to a continuous lifecycle responsibility, significantly reducing the risk profile for long-term enterprise and cloud infrastructure. By standardizing these advanced protections, Canonical provides a more resilient platform for organizations managing sensitive data and regulated workloads.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/04/backdoored-smart-slider-3-pro-update.html
+Author:   ijlal-loutfi (ijlal-loutfi)
+Source:   Ubuntu.com
+URL:      https://ubuntu.com/blog/ubuntu-26-04-lts-security-updates
 Category: Cybersecurity

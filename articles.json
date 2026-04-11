@@ -1,5 +1,185 @@
 [
   {
+    "source": "Internet",
+    "url": "https://thehackernews.com/2026/04/marimo-rce-flaw-cve-2026-39987.html",
+    "summary": "A critical remote code execution vulnerability in the open-source Marimo Python notebook was exploited by attackers less than ten hours after the security flaw was publicly disclosed.\n\n### Key Points\n- The vulnerability, tracked as CVE-2026-39987, carries a high CVSS score of 9.3 and affects all Marimo versions up to 0.20.4.\n- Attackers exploited a missing authentication check in the /terminal/ws WebSocket endpoint to gain full PTY shell access and execute arbitrary system commands.\n- Security firm Sysdig observed an unknown threat actor manually harvesting sensitive data, including .env files and SSH keys, from a honeypot system.\n- Marimo maintainers have released version 0.23.0 to address the security flaw and urge all users to update their instances immediately.\n- The rapid exploitation occurred despite the absence of a public proof-of-concept, highlighting the speed at which attackers weaponize technical advisories.\n\n### Why it Matters\nThis incident demonstrates that threat actors are actively monitoring security disclosures to target even niche, internet-facing applications before administrators can apply patches. The shrinking window between disclosure and exploitation forces organizations to prioritize rapid vulnerability management to prevent unauthorized access to sensitive system credentials.",
+    "title": "Marimo RCE Flaw CVE-2026-39987 Exploited Within 10 Hours of Disclosure",
+    "processed_at": "2026-04-11T19:34:20.586411",
+    "author": "info@thehackernews.com (The Hacker News)",
+    "category": "Cybersecurity"
+  },
+  {
+    "source": "Yahoo Entertainment",
+    "url": "https://finance.yahoo.com/economy/policy/articles/jamie-dimon-says-exodus-firms-094000887.html",
+    "summary": "JPMorgan Chase CEO Jamie Dimon argues that corporate relocations to states like Texas are driven by competitive tax environments rather than a lack of loyalty to home states.\n\n### Key Points\n- JPMorgan Chase shifted 6,000 employees from New York to Texas over the last decade, bringing its Texas workforce to 32,000.\n- Texas attracts businesses with no state corporate or personal income tax, while New York considers raising corporate tax rates to as high as 10.8%.\n- Real estate firm CBRE reports that over 100 companies have relocated to the Dallas-Fort Worth and Austin areas since 2018.\n- Major corporations including Tesla, SpaceX, ExxonMobil, Chevron, and Wells Fargo have established significant operations or headquarters in Texas.\n- Florida is also gaining corporate interest, with firms like Citadel Securities and Palantir Technologies moving to the state to utilize its 5.5% corporate tax rate.\n\n### Why it Matters\nThe migration of major financial and technology firms to low-tax states signals a significant shift in the American corporate landscape that could erode the tax bases of traditional hubs like New York. This trend forces policymakers in high-tax regions to balance revenue needs against the risk of losing major employers and their associated economic contributions.",
+    "title": "Jamie Dimon says exodus of firms to Texas is not a ‘moral or loyalty issue.' What's behind the moves and who gains?",
+    "processed_at": "2026-04-11T19:34:32.051979",
+    "author": "Mike Crisolago",
+    "category": "Tech Business & Markets"
+  },
+  {
+    "source": "The Verge",
+    "url": "https://www.theverge.com/column/909736/optimizer-whoop-oura-wearable-hype-cycle",
+    "summary": "Wearable technology leaders Whoop and Oura are facing scrutiny as their integration of AI coaching and wellness trends increasingly blurs the line between fitness tracking and medical advice.\n\n### Key Points\n- Whoop recently reached a $10.1 billion valuation after raising $575 million in funding from investors including the Mayo Clinic and LeBron James.\n- The company is currently preparing for an IPO while simultaneously pursuing a lawsuit against startup Bevel over alleged app design theft.\n- Both Whoop and Oura have shifted from basic activity tracking to advanced metrics like cardiovascular age, blood analysis, and AI-driven health coaching.\n- Regulatory tensions are rising, evidenced by a recent FDA warning issued to Whoop regarding its blood pressure monitoring feature.\n- Industry critics argue that AI-generated health recommendations, such as unsolicited advice on testosterone levels, may encourage users to pursue unnecessary or potentially harmful wellness trends.\n\n### Why it Matters\nThe rapid expansion of wearable features into medical territory creates a cycle where companies prioritize engagement through wellness trends over clinical accuracy. This shift risks eroding public trust in traditional healthcare while potentially influencing users to adopt unverified health interventions based on algorithmic data.",
+    "title": "Why your Whoop might tell you to up your testosterone",
+    "processed_at": "2026-04-11T19:34:41.409837",
+    "author": "Victoria Song",
+    "category": "Tech Business & Markets"
+  },
+  {
+    "source": "Boredpanda.com",
+    "url": "https://www.boredpanda.com/berkshire-hathaway-has-been-making-quiet-move-that-has-investors-worried/",
+    "summary": "Warren Buffett’s Berkshire Hathaway has shifted into a defensive strategy, accumulating a massive cash reserve while selling more stocks than it buys amid concerns over market valuations.\n\n### Key Points\n- Berkshire Hathaway has maintained a significant cash position for 22 months, opting to hold funds in short-term U.S. Treasury bills rather than equities.\n- Warren Buffett has explicitly stated he is waiting for a major market decline, dismissing recent minor index fluctuations as insufficient for new large-scale investments.\n- The conglomerate has transitioned from external stock purchases to prioritizing share buybacks under CEO Greg Abel to increase shareholder value.\n- Berkshire’s recent divestment activity, including the sale of DaVita shares, has historically triggered notable price drops in the affected stocks.\n- The company’s cautious approach reflects broader concerns regarding geopolitical tensions and warnings from financial leaders about persistent inflation and elevated interest rates.\n\n### Why it Matters\nBerkshire Hathaway’s defensive posture serves as a bellwether for market sentiment, signaling that one of the world’s most successful investors views current stock prices as potentially overvalued. This strategy highlights a growing tension between market optimism and the risks posed by global instability and macroeconomic uncertainty.",
+    "title": "Warren Buffett’s Berkshire Hathaway Has Been Making Quiet Move That Has Investors Worried",
+    "processed_at": "2026-04-11T19:34:51.698801",
+    "author": "Rocio Corsi",
+    "category": "Tech Business & Markets"
+  },
+  {
+    "source": "Gizmodo.com",
+    "url": "https://gizmodo.com/microsoft-says-you-should-take-copilot-seriously-but-not-literally-2000745054",
+    "summary": "Microsoft is updating its terms of service to remove \"entertainment purposes only\" language, signaling a shift in how the company positions its Copilot AI assistant for professional use.\n\n### Key Points\n- Microsoft confirmed the \"entertainment purposes\" phrasing is legacy text from the original Bing search companion launch.\n- The company plans to remove the disclaimer in an upcoming update to better reflect Copilot's current utility.\n- Current terms, updated October 24, 2025, still explicitly warn users not to rely on the tool for important advice.\n- CEO Satya Nadella has publicly stated that Copilot is integrated into his daily workflow for managing the corporation.\n- The disclaimer has appeared in various forms since the service's initial release in February 2023.\n\n### Why it Matters\nThis shift highlights the tension between corporate legal protection and the push to integrate generative AI into essential business workflows. As Microsoft embeds Copilot across its software suite, clarifying the tool's intended purpose is critical for maintaining user trust and professional adoption.",
+    "title": "Microsoft Says You Should Take Copilot Seriously but Not Literally",
+    "processed_at": "2026-04-11T19:35:00.660643",
+    "author": "AJ Dellinger",
+    "category": "Artificial Intelligence"
+  },
+  {
+    "source": "Wired",
+    "url": "https://www.wired.com/story/motorola-razr-ultra-deal-426/",
+    "summary": "Motorola has discounted the 2025 Razr Ultra folding smartphone to $700 on Amazon, offering a significant $600 price reduction for the high-performance model with 512 GB of storage.\n\n### Key Points\n- The 2025 Motorola Razr Ultra features the Qualcomm Snapdragon 8 Elite processor and 16 GB of RAM.\n- The device includes a 4,700-mAh battery supporting 68-watt wired and 30-watt wireless charging.\n- Hardware upgrades include a titanium-reinforced hinge and ceramic glass coating for improved durability.\n- Both the internal AMOLED and external pOLED displays support refresh rates up to 165 Hz.\n- The $700 promotional price applies to the Pantone Scarab color, while other color options cost $800.\n\n### Why it Matters\nThis aggressive discount positions the premium foldable device as a highly competitive option against other flagship Android smartphones currently on the market. By significantly lowering the entry price, Motorola is making advanced folding technology more accessible to mainstream consumers while clearing inventory for its latest hardware.",
+    "title": "Motorola's Souped Up Folding Phone Is Almost Half Off",
+    "processed_at": "2026-04-11T19:35:09.266584",
+    "author": "Brad Bourque",
+    "category": "Phones, Laptops, and Gadgets"
+  },
+  {
+    "source": "XDA Developers",
+    "url": "https://www.xda-developers.com/fcc-says-foreign-routers-security-risk-allows-firmware-updates/",
+    "summary": "The FCC has banned new foreign-made consumer routers from receiving equipment authorization, though existing devices remain legal to use and retailers may continue selling current inventory.\n\n### Key Points\n- The FCC's March 23 ruling targets all foreign-produced routers, regardless of the manufacturer's country of origin, to address national security concerns.\n- Previously authorized routers are grandfathered in, meaning current models on store shelves and in homes remain legal to sell, purchase, and operate.\n- Manufacturers may continue providing security patches and firmware updates for existing devices until at least March 1, 2027.\n- The policy requires companies to establish or expand domestic manufacturing in the United States to qualify for conditional authorization exemptions.\n- Recent cybersecurity incidents, including the Volt Typhoon and Salt Typhoon campaigns, involved state-sponsored actors exploiting vulnerabilities in aging, unpatched networking hardware.\n\n### Why it Matters\nThis policy shift signals a long-term transition toward domestic hardware production that could eventually reduce consumer choice and increase prices for home networking equipment. While the ban aims to mitigate state-sponsored cyber threats, it currently functions more as an industrial policy than a technical security standard, leaving the most vulnerable, legacy devices in use while restricting newer, more secure models.",
+    "title": "The FCC says foreign routers are a security risk, but still allows firmware updates to the ones you already own",
+    "processed_at": "2026-04-11T19:35:19.947185",
+    "author": "Adam Conway",
+    "category": "Cybersecurity"
+  },
+  {
+    "source": "Windows Central",
+    "url": "https://www.windowscentral.com/microsoft/windows/microsoft-terminates-developer-accounts-veracrypt-wireguard-windscribe",
+    "summary": "Microsoft recently suspended several prominent open-source developer accounts, including VeraCrypt and WireGuard, due to a mandatory identity verification process that left many users without critical software security updates.\n\n### Key Points\n- Microsoft suspended developer accounts for VeraCrypt, WireGuard, and Windscribe, preventing them from signing drivers and shipping essential software updates.\n- The suspensions resulted from a new mandatory identity verification requirement for the Windows Hardware Program, which took effect on October 16, 2025.\n- Affected developers reported difficulty reaching human support, receiving only automated responses while attempting to resolve the account access issues.\n- Microsoft EVP Pavan Davuluri and VP Scott Hanselman intervened following public backlash, promising to reinstate the suspended accounts.\n- Microsoft clarified that the enforcement was not intentional but rather a result of partners failing to complete identity verification using government-issued IDs.\n\n### Why it Matters\nThis incident highlights the friction between automated corporate security protocols and the operational needs of the open-source community. It underscores the importance of clear communication channels between major platform holders and independent developers to prevent critical software supply chain disruptions.",
+    "title": "\"Not every 'WTF micro$oft' moment is a slam dunk\": Microsoft terminated developer accounts for VeraCrypt, WireGuard, and Windscribe — What really happened?",
+    "processed_at": "2026-04-11T19:35:29.364361",
+    "author": "kevinokemwa@outlook.com (Kevin Okemwa) , Kevin Okemwa",
+    "category": "Cybersecurity"
+  },
+  {
+    "source": "Business Insider",
+    "url": "https://www.businessinsider.com/walmart-h1b-filings-down-sharply-q1-2025-2026-4",
+    "summary": "Walmart submitted 312 certified H-1B visa applications during the final quarter of 2025, marking a significant decline as the retail giant adjusts to new federal immigration policy costs.\n\n### Key Points\n- Walmart’s H-1B application volume dropped by more than 50% compared to the same period in 2024.\n- The decline follows new federal regulations, including a $100,000 fee per new application and stricter scrutiny for foreign workers.\n- Major tech firms like Amazon, Google, and Meta have similarly reduced their reliance on the H-1B program amid rising costs and hiring shifts.\n- Despite the reduction, the median base salary for Walmart’s H-1B applicants rose to $150,000, up from $144,000 in previous years.\n- The Department of Labor data indicates that Walmart maintains a significantly higher volume of visa applications compared to other major retailers like Target and Home Depot.\n\n### Why it Matters\nThe sharp reduction in visa applications reflects a broader corporate trend of scaling back international hiring in response to increased regulatory costs and economic uncertainty. This shift suggests that major employers are prioritizing leaner, more specialized teams while navigating a more expensive and complex federal immigration landscape.",
+    "title": "Walmart's H-1B filings fell by more than half in the wake of Trump's visa shake-up",
+    "processed_at": "2026-04-11T19:36:12.890629",
+    "author": "Dominick Reuter",
+    "category": "Tech Business & Markets"
+  },
+  {
+    "source": "CoinDesk",
+    "url": "https://www.coindesk.com/markets/2026/04/10/david-bailey-s-nakamoto-is-trying-to-stay-on-nasdaq-and-it-s-turning-to-a-reverse-stock-split",
+    "summary": "Nakamoto, a bitcoin treasury firm led by David Bailey, is proposing a reverse stock split between 1-for-20 and 1-for-50 to maintain its Nasdaq listing after shares plummeted.\n\n### Key Points\n- Nakamoto shares have fallen approximately 99% from their May 2025 peak, currently trading at roughly $0.22.\n- The proposed reverse stock split aims to boost the share price above Nasdaq’s $1 minimum bid requirement to avoid delisting.\n- The company recently sold 5% of its bitcoin holdings, leaving a remaining balance of 5,058 BTC.\n- A new filing registers over 400 million shares for potential resale, while the firm maintains a shelf registration for up to $7 billion in future securities.\n\n### Why it Matters\nThis move highlights the ongoing volatility and liquidity challenges facing bitcoin treasury firms as they navigate significant declines in asset values. The company's attempt to regain compliance reflects broader market pressure on firms that tied their valuations heavily to the performance of cryptocurrency holdings.",
+    "title": "David Bailey’s bitcoin holder Nakamoto is trying to stay on Nasdaq with a reverse stock split",
+    "processed_at": "2026-04-11T19:36:24.906058",
+    "author": "James Van Straten",
+    "category": "Tech Business & Markets"
+  },
+  {
+    "source": "Android Central",
+    "url": "https://www.androidcentral.com/apps-software/meta/metas-new-llm-muse-spark-wants-to-take-its-ai-into-a-people-first-era",
+    "summary": "Meta has introduced Muse Spark, a new multimodal large language model designed to enhance Meta AI with faster reasoning, multi-agent task management, and improved personal assistance for U.S. users.\n\n### Key Points\n- Meta’s new Muse Spark model is designed to be small, fast, and capable of reasoning through complex user queries.\n- The model features multi-agent capabilities, allowing it to handle tasks like trip planning and city comparisons simultaneously.\n- Meta collaborated with over 1,000 physicians to curate training data for health-related inquiries.\n- New features include a Shopping mode that analyzes trending styles and a visual tool for troubleshooting home appliances.\n- Muse Spark is currently rolling out to the Meta AI app and meta.ai in the U.S. with Instant and Thinking modes.\n- Integration for Instagram, Facebook, WhatsApp, Messenger, and Meta’s AI glasses is scheduled for the coming weeks.\n\n### Why it Matters\nThis update signals Meta's strategic shift toward a more personalized, agentic AI experience that leverages its vast ecosystem of social content. By prioritizing speed and multi-agent tasking, the company aims to compete more effectively with other major AI assistants in the consumer market.",
+    "title": "Meta's new LLM, Muse Spark, wants to take its AI into a 'people first' era",
+    "processed_at": "2026-04-11T19:36:34.322061",
+    "author": "nickodiaz@sbcglobal.net (Nickolas Diaz) , Nickolas Diaz",
+    "category": "Artificial Intelligence"
+  },
+  {
+    "source": "CNET",
+    "url": "https://www.cnet.com/tech/computing/acer-swift-16-ai-2026-review-i-love-the-giant-oled-display-but-am-less-enamored-with-the-oversize-touchpad/",
+    "summary": "The Acer Swift 16 AI features a vibrant 16-inch OLED display and powerful Intel Panther Lake performance, though its high price point faces stiff competition from dedicated graphics-equipped laptops.\n\n### Key Points\n- The laptop is powered by an Intel Core Ultra X7 358H processor with 32GB of RAM and integrated Intel Arc B390 graphics.\n- It features a 16-inch 2880x1800 120Hz OLED touchscreen and weighs 3.3 pounds, making it exceptionally portable for its size.\n- A massive 6.9-inch haptic touchpad includes stylus support, though its borderless design can lead to accidental inputs during use.\n- The device lacks user-expandable memory or storage, and the webcam has been downgraded to 1080p compared to the previous 1440p model.\n- Pricing starts at $1,600 for the 16GB model and reaches $1,800 for the 32GB configuration reviewed.\n\n### Why it Matters\nThe Swift 16 AI serves as a capable productivity machine for creators, but its premium pricing puts it in direct competition with laptops offering superior dedicated Nvidia RTX graphics. Consumers must weigh the benefits of its thin, lightweight design against the lack of hardware expandability and underwhelming audio performance.",
+    "title": "Acer Swift 16 AI (2026) Review: I Love the Giant OLED Display, but Am Less Enamored With the Oversize Touchpad",
+    "processed_at": "2026-04-11T19:36:42.834559",
+    "author": "Matt Elliott",
+    "category": "Phones, Laptops, and Gadgets"
+  },
+  {
+    "source": "MacRumors",
+    "url": "https://www.macrumors.com/2026/04/10/the-macrumors-show-foldable-iphone-ultra/",
+    "summary": "Apple is reportedly developing the \"iPhone Ultra,\" a book-style foldable smartphone featuring a 7.8-inch inner display and a record-breaking 4.5mm thin chassis, expected to launch later this year.\n\n### Key Points\n- The device features a 7.8-inch inner OLED panel and a 5.5-inch outer display, with a titanium and aluminum frame.\n- Priced at over $2,000, the phone will be powered by an A20 chip with 12GB of RAM and a 5,400mAh to 5,800mAh battery.\n- To achieve its 4.5mm thickness, the design omits the Face ID TrueDepth sensor and a triple-lens camera, relying instead on side-mounted Touch ID.\n- Manufacturing challenges and high costs may limit initial availability, with potential supply shortages expected to persist through 2026.\n- The device supports iPad-style multitasking and will be available in 256GB, 512GB, and 1TB storage configurations.\n\n### Why it Matters\nThis device represents Apple's most significant hardware overhaul to date, signaling a strategic entry into the premium foldable smartphone market. Its success will test whether consumers are willing to pay a high price for a thinner, experimental form factor that requires sacrificing standard features like Face ID.",
+    "title": "The MacRumors Show: Apple's Foldable iPhone 'Ultra'",
+    "processed_at": "2026-04-11T19:36:52.164599",
+    "author": "Hartley Charlton",
+    "category": "Phones, Laptops, and Gadgets"
+  },
+  {
+    "source": "TechRadar",
+    "url": "https://www.techradar.com/pro/security/its-a-potential-national-security-threat-proton-study-finds-over-3-500-us-legislators-official-emails-leaked-and-exposed-on-the-dark-web",
+    "summary": "Thousands of government officials worldwide have had their official email addresses and plaintext passwords exposed on the dark web, creating significant security vulnerabilities for national and local governments.\n\n### Key Points\n- Researchers at Proton discovered thousands of leaked government email credentials, including plaintext passwords, circulating on the dark web.\n- The UK’s House of Commons recorded the highest exposure rate, with 68% of official email addresses appearing in data breaches.\n- In the United States, 67% of state legislators had their emails exposed, with Arizona and Oklahoma reporting a 100% exposure rate among their representatives.\n- Massachusetts saw the highest volume of exposed credentials in the U.S., while New Hampshire had the most compromised passwords for state officials.\n- Spain’s parliament reported the lowest number of leaks, with only 39 out of 615 official email addresses appearing in breach datasets.\n\n### Why it Matters\nThese widespread credential leaks expose sensitive government communications to potential blackmail, phishing attacks, and unauthorized access to critical infrastructure. The findings highlight an urgent need for governments to mandate multi-factor authentication to prevent attackers from exploiting reused passwords and compromised accounts.",
+    "title": "‘It’s a potential national security threat’: Proton study finds over 3,500 US legislators’ official emails leaked and exposed on the dark web",
+    "processed_at": "2026-04-11T19:37:00.866507",
+    "author": "benedict.collins@futurenet.com (Benedict Collins) , Benedict Collins",
+    "category": "Cybersecurity"
+  },
+  {
+    "source": "Android Authority",
+    "url": "https://www.androidauthority.com/silly-tech-problems-ive-fixed-3655154/",
+    "summary": "A long-time tech support enthusiast shares a collection of humorous and unusual troubleshooting experiences involving common user errors, software glitches, and misunderstood hardware limitations encountered over three decades.\n\n### Key Points\n- A grandmother mistook an active screensaver for a computer glitch, while an aunt accidentally deleted critical Windows system files by moving them to the Recycle Bin.\n- A Motorola phone’s performance issues were traced to over 150 unexplained apps, and a printer connectivity problem stemmed from a model that lacked wireless capabilities entirely.\n- A school network’s aggressive content filter inadvertently blocked a banking app login by censoring specific letters within a user's password.\n- An internet connectivity issue was resolved by correcting a user’s habit of typing four \"w\"s instead of three when entering website addresses.\n\n### Why it Matters\nThese anecdotes highlight how common user errors and unexpected software interactions often masquerade as complex technical failures. Understanding these simple pitfalls can save significant time for both professional IT staff and family members acting as informal tech support.",
+    "title": "Here are some of the most ridiculous tech ‘problems’ I’ve ever been asked to fix",
+    "processed_at": "2026-04-11T19:37:09.945636",
+    "author": "Andrew Grush",
+    "category": "Phones, Laptops, and Gadgets"
+  },
+  {
+    "source": "Futurism",
+    "url": "http://futurism.com/future-society/economist-ai-job-forecast",
+    "summary": "A new study from the Federal Reserve Bank of Chicago and the Forecasting Research Institute reveals that experts are increasingly concerned about AI-driven labor market disruption by 2030.\n\n### Key Points\n- Researchers surveyed 159 experts, including economists, AI specialists, and superforecasters, regarding the future impact of artificial intelligence on employment.\n- Experts assigned a 14 percent probability to a \"rapid progress\" scenario where AI systems achieve CEO-level agency and complete complex research tasks.\n- Under a rapid progress model, the U.S. labor force participation rate could drop to 59.3 percent by 2030, falling below 60 percent for the first time in five decades.\n- The study suggests that rapid AI adoption could lead to significantly higher wealth inequality, mirroring economic conditions seen in the era preceding World War II.\n\n### Why it Matters\n- These findings indicate a notable shift in expert consensus, moving from skepticism toward a serious acknowledgment of potential large-scale workforce displacement. This research highlights an urgent need for policymakers to develop strategies that address potential shifts in employment structures and rising economic inequality over the next decade.",
+    "title": "Economists Starting to Admit They May Have Been Wrong About AI Never Replacing Human Jobs",
+    "processed_at": "2026-04-11T19:37:19.583973",
+    "author": "Joe Wilkins",
+    "category": "Artificial Intelligence"
+  },
+  {
+    "source": "24/7 Wall St.",
+    "url": "https://247wallst.com/investing/2026/04/10/palantir-is-down-17-in-three-days-inside-the-selloff-that-has-the-ai-platform-king-reeling/",
+    "summary": "Palantir Technologies shares have fallen 17% over four days following a viral social media post by investor Michael Burry questioning the company's competitive position against Anthropic’s AI agents.\n\n### Key Points\n- Palantir stock dropped to approximately $124, marking a 30% decline year-to-date from its 2026 opening price of $177.75.\n- Short seller Michael Burry triggered the selloff by suggesting Anthropic’s new Managed Agents product threatens Palantir’s enterprise software market share.\n- The market downturn extended to other AI software firms, including Salesforce, ServiceNow, Snowflake, and Cloudflare.\n- Despite the price drop, Palantir reported strong Q4 2025 financial results, including 70% year-over-year revenue growth to $1.406 billion.\n- Palantir currently trades at a high P/E ratio of approximately 260x, with recent data showing 69 net-negative insider transactions.\n\n### Why it Matters\nThis selloff reflects a broader market reassessment of the enterprise AI middleware sector as investors weigh the influence of foundation model providers against traditional software platforms. The volatility highlights how high valuations in the AI space remain sensitive to shifts in investor sentiment and competitive narratives.",
+    "title": "Palantir Is Down 17% in Three Days: Inside the Selloff That Has the AI Platform King Reeling",
+    "processed_at": "2026-04-11T19:44:47.164419",
+    "author": "David Moadel",
+    "category": "Tech Business & Markets"
+  },
+  {
+    "source": "Ubuntu.com",
+    "url": "https://ubuntu.com/blog/ubuntu-26-04-lts-security-updates",
+    "summary": "Ubuntu 26.04 LTS introduces a hardened security architecture featuring post-quantum cryptographic defaults, hardware-backed encryption, and memory-safe Rust implementations to establish a robust foundation for enterprise and cloud deployments.\n\n### Key Points\n- Implements TPM-backed Full Disk Encryption as a production-ready, enterprise-grade feature.\n- Integrates full-stack support for AMD SEV-SNP and Intel TDX to enable secure confidential computing.\n- Transitions core utilities to memory-safe Rust implementations, including rust-coreutils and sudo-rs.\n- Updates cryptographic standards by removing DSA support and enabling hybrid post-quantum key exchange by default.\n- Introduces the Security Center as a centralized control plane for managing disk encryption, Secure Boot, and recovery mechanisms.\n- Reduces system attack surfaces by running identity services like SSSD and OpenLDAP with restricted, non-root privileges.\n\n### Why it Matters\nThis release shifts security from a one-time installation task to a continuous lifecycle responsibility, significantly reducing the risk profile for long-term enterprise and cloud infrastructure. By standardizing these advanced protections, Canonical provides a more resilient platform for organizations managing sensitive data and regulated workloads.",
+    "title": "What’s new in security for Ubuntu 26.04 LTS?",
+    "processed_at": "2026-04-11T19:44:55.972680",
+    "author": "ijlal-loutfi (ijlal-loutfi)",
+    "category": "Cybersecurity"
+  },
+  {
+    "source": "Theregister.com",
+    "url": "https://www.theregister.com/2026/04/10/signal_jammer_consultation/",
+    "summary": "The UK government has launched a four-week public consultation to gather evidence on signal-jamming devices, aiming to inform new legislation that will ban the technology to prevent crime.\n\n### Key Points\n- The Department for Science, Innovation and Technology is investigating how jammers threaten home security, mobile networks, and critical public infrastructure.\n- Officials warn that signal interference could disrupt navigation and timing systems, potentially causing an estimated £7.62 billion in economic damage.\n- Current laws under the Wireless Telegraphy Act 2006 make it difficult for authorities to prove the illegal use of jamming equipment in court.\n- Approximately 40 percent of all car thefts in the UK are currently facilitated by electronic devices that bypass keyless entry systems.\n- The government intends to use findings from this consultation to strengthen future legislation beyond the upcoming Crime and Policing Bill.\n\n### Why it Matters\nSignal jammers pose a significant risk to both personal property and essential national infrastructure, necessitating a more robust legal framework for enforcement. By addressing these vulnerabilities, the government aims to protect the economy from potential multi-billion pound disruptions caused by the illicit use of radiofrequency technology.",
+    "title": "Britain seeks views before it drops the hammer on signal jammers",
+    "processed_at": "2026-04-11T19:45:05.064086",
+    "author": "Connor Jones",
+    "category": "Cybersecurity"
+  },
+  {
+    "source": "The Atlantic",
+    "url": "https://www.theatlantic.com/podcasts/2026/04/how-fake-people-became-real-influencers/686755/",
+    "summary": "The rise of AI-generated influencers is flooding social media with synthetic avatars that mimic human behavior to promote products, raising significant concerns about digital authenticity and consumer deception.\n\n### Key Points\n- AI influencers like \"Melanskia\" use sophisticated generative technology to build large followings and promote wellness products without disclosing their synthetic nature.\n- Venture capital firms and content marketers are increasingly investing in \"bulk content creation\" tools to automate social media presence at inhuman speeds.\n- Research from the SEO firm Graphite indicates that AI-generated content on the web surpassed human-written material in late 2024.\n- New York passed legislation requiring the disclosure of \"synthetic performers\" in advertisements, though enforcement remains difficult due to the anonymous, global nature of creators.\n- Consumers are showing signs of \"epistemic exhaustion,\" where the emotional impact of content often outweighs concerns about whether the influencer is real or fake.\n\n### Why it Matters\nThe proliferation of AI influencers threatens to erode public trust and complicates the ability of users to distinguish between genuine human connection and automated marketing. As these synthetic figures become more indistinguishable from real people, they create a \"liar's dividend\" that makes it easier for bad actors to spread disinformation and sell dubious products to vulnerable audiences.",
+    "title": "How Fake People Became Real Influencers",
+    "processed_at": "2026-04-11T19:45:14.079838",
+    "author": "Charlie Warzel",
+    "category": "Artificial Intelligence"
+  },
+  {
     "url": "https://www.androidauthority.com/ecg-app-galaxy-watch-3656194/",
     "category": "Phones, Laptops, and Gadgets",
     "summary": "The new GeminiMan Wellness Companion app allows Galaxy Watch users to record ECG data and manage health metrics independently of Samsung’s restrictive regional and smartphone-locked software ecosystem.\n\n### Key Points\n- Developer Dante63 released the GeminiMan Wellness Companion to bypass Samsung Health Monitor limitations.\n- The app currently supports ECG recordings, AI-assisted analysis, and custom symptom note-taking.\n- Users can create multiple profiles and export health data as encrypted CSV or PDF files.\n- Future development phases aim to add blood pressure monitoring and comprehensive wellness tracking for metrics like sleep and skin temperature.\n- Data is stored locally on the device to prioritize user privacy and security.\n\n### Why it Matters\nThis third-party tool challenges Samsung's hardware-software integration strategy by offering users greater control over their own health data. It provides a viable alternative for those restricted by regional feature locks, potentially forcing manufacturers to reconsider how they gatekeep health-tracking capabilities.",
