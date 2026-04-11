@@ -1,20 +1,21 @@
-Sam Altman Is Giving OpenAI a Makeover to Woo Democrats
+PicoZ80 – Drop-In Z80 Replacement
 ============================================================
 
-OpenAI has released an industrial policy blueprint proposing government-backed initiatives to manage the transition toward superintelligence, framing the technology as an economic necessity despite widespread skepticism regarding its claims.
+The picoZ80 is a drop-in CPU replacement board for retro-computers that uses a Raspberry Pi RP2350 microcontroller to provide modern features like WiFi, Bluetooth, and SD-card storage.
 
 ### Key Points
-- The proposal advocates for progressive policies including a four-day workweek, expanded social safety nets, and a public wealth fund to mitigate AI-driven labor displacement.
-- OpenAI calls for new public-private partnerships to finance energy infrastructure, specifically supporting the company's $500 billion Stargate project.
-- The document positions AI as a foundational economic requirement, suggesting that broad access to foundational models is essential for future participation in the modern economy.
-- Anthropic recently restricted access to its new "Mythos" model, citing dangerous capabilities, and limited distribution to select partners like Google, Microsoft, and JPMorgan Chase.
-- Critics argue the blueprint serves as a strategic lobbying tool to influence Democratic policymakers and secure federal support amid growing backlash against data center expansion.
+- Designed as a DIP-40 socket replacement for Z80-based industrial and vintage computers.
+- Utilizes a dual-core RP2350B processor running at up to 300MHz for cycle-accurate bus emulation.
+- Includes an ESP32 co-processor for web-based management, file handling, and wireless connectivity.
+- Features 8MB of PSRAM and 16MB of SPI Flash for extensive memory banking and ROM storage.
+- Supports virtual device emulation and machine-specific "personas" via a JSON-based configuration system.
+- Allows firmware updates and configuration changes through a browser-based interface without requiring recompilation.
 
 ### Why it Matters
-This policy shift highlights how leading AI firms are increasingly leveraging existential risk narratives to secure government subsidies and favorable regulatory frameworks. By framing their products as both a civilizational threat and an economic imperative, these companies are attempting to institutionalize their role as essential partners in national infrastructure development.
+This project enables owners of legacy hardware to modernize their systems with high-speed storage and network capabilities while maintaining original bus timing. By virtualizing peripherals and memory, it provides a flexible platform for hobbyists to preserve and extend the functionality of classic computing architectures.
 
 ============================================================
-Author:   Kate Aronoff
-Source:   The New Republic
-URL:      https://newrepublic.com/article/208786/sam-altman-giving-openai-makeover-woo-democrats
-Category: Artificial Intelligence
+Author:   Philip Smart
+Source:   Eaw.app
+URL:      https://eaw.app/picoz80/
+Category: Phones, Laptops, and Gadgets

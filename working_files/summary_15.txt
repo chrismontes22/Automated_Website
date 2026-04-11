@@ -1,20 +1,20 @@
-Mac users beware — experts say this attack 'stood out immediately' by making a major change to try spread malware
+Healthcare IT solutions provider ChipSoft hit by ransomware attack
 ============================================================
 
-Cybersecurity researchers at Jamf Threat Labs have identified a new ClickFix campaign targeting macOS users by exploiting the Script Editor application to deploy the Atomic Stealer malware.
+Dutch healthcare software provider ChipSoft has taken its digital services offline following a ransomware attack that disrupted Electronic Health Record systems across the Netherlands and Belgium.
 
 ### Key Points
-- Attackers are bypassing macOS security protections by using a custom URL scheme to trigger the built-in Script Editor application.
-- The malicious campaign lures victims with a fake website promising to reclaim disk space on their Mac devices.
-- Once triggered, the Script Editor runs a pre-filled script that installs Atomic Stealer without requiring manual Terminal commands.
-- Atomic Stealer is designed to exfiltrate sensitive data, including browser information, cryptocurrency wallets, and saved passwords.
-- This method replaces previous attack vectors that were blocked by security updates in macOS 14.4.
+- ChipSoft disabled its Zorgportaal, HiX Mobile, and Zorgplatform services to contain the unauthorized access.
+- The Dutch cybersecurity agency Z-CERT is assisting the company and affected healthcare institutions with recovery efforts.
+- Multiple hospitals, including Sint Jans Gasthuis and Flevo Hospital, reported system outages following the incident.
+- The breach has extended beyond the Netherlands, impacting several healthcare facilities located in Belgium.
+- ChipSoft is a major provider of the HiX platform, which serves as a central hub for patient data in numerous hospitals.
 
 ### Why it Matters
-This evolution in ClickFix tactics demonstrates how threat actors adapt to macOS security updates by shifting from Terminal-based commands to native application exploitation. Users should remain cautious of prompts to execute scripts from unknown websites, as these attacks can lead to the total compromise of personal and financial data.
+This incident highlights the systemic risks posed by cyberattacks on centralized healthcare IT providers that manage sensitive data for multiple institutions. Such disruptions can severely impact hospital operations and patient care, underscoring the critical need for robust security measures in the medical software supply chain.
 
 ============================================================
-Author:   Sead Fadilpašić
-Source:   TechRadar
-URL:      https://www.techradar.com/pro/security/mac-users-beware-experts-say-this-attack-stood-out-immediately-by-making-a-major-change-to-try-spread-malware
+Author:   Bill Toulas
+Source:   BleepingComputer
+URL:      https://www.bleepingcomputer.com/news/security/healthcare-it-solutions-provider-chipsoft-hit-by-ransomware-attack/
 Category: Cybersecurity

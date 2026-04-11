@@ -1,21 +1,21 @@
-7 Ways to Boost the Privacy of Your Home and Gadgets
+Backdoored Smart Slider 3 Pro Update Distributed via Compromised Nextend Servers
 ============================================================
 
-**Homeowners can enhance their digital privacy by adjusting smart device settings, utilizing local storage for security footage, and removing sensitive property information from public real estate and mapping platforms.**
+Unknown threat actors compromised the Nextend update infrastructure to distribute a malicious version of the Smart Slider 3 Pro plugin, exposing WordPress sites to remote code execution backdoors.
 
 ### Key Points
-- Use physical shutters or power-off switches on smart cameras and microphones to prevent unauthorized remote access.
-- Disable unnecessary data-sharing, voice history, and cloud storage features within device settings to minimize personal information collection.
-- Opt for local storage solutions, such as microSD cards or hubs from brands like Eufy or Wyze, to keep video data off company servers.
-- Remove outdated property photos and floor plans from real estate websites like Zillow and Trulia to prevent unauthorized home exposure.
-- Request that Google Maps and Apple Maps blur your home address in their street-view imagery to increase physical and digital security.
-- Consider privacy-focused, open-source platforms like Home Assistant or Homey to reduce reliance on data-collecting smart home ecosystems.
+- The malicious update, version 3.5.1.35, was distributed through official channels for approximately six hours on April 7, 2026.
+- The backdoor allows attackers to create hidden administrator accounts, execute arbitrary PHP code, and run system commands remotely.
+- Malware persistence is maintained through multiple redundant files, including a fake caching component and modifications to theme functions.
+- Compromised sites automatically exfiltrated sensitive database and credential information to the command-and-control domain wpjs1.com.
+- Nextend has removed the malicious build and released version 3.5.1.36 to remediate the vulnerability for affected users.
+- Security firm Patchstack advises users to perform a comprehensive site cleanup, including password resets and the removal of unauthorized administrator accounts.
 
 ### Why it Matters
-Treating smart home devices as connected computers rather than simple appliances is essential for maintaining personal security in an increasingly digitized living space. Proactively managing these settings helps users mitigate risks associated with data breaches, unauthorized surveillance, and the exposure of private home details.
+This supply chain attack demonstrates how threat actors can bypass traditional security measures by subverting trusted software update mechanisms. It highlights the critical risk that third-party plugins pose to website integrity and underscores the necessity for rigorous incident response when official distribution channels are compromised.
 
 ============================================================
-Author:   Tyler Lacoma
-Source:   CNET
-URL:      https://www.cnet.com/home/security/traits-of-a-privacy-first-home/
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/04/backdoored-smart-slider-3-pro-update.html
 Category: Cybersecurity

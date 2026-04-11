@@ -1,20 +1,21 @@
-An Interview with New York Times CEO Meredith Kopit Levien About Betting on Humans With Expertise
+Moving from WordPress to Jekyll (and static site generators in general)
 ============================================================
 
-New York Times CEO Meredith Kopit Levien discusses the company’s strategy of prioritizing high-quality, human-led journalism and lifestyle products to maintain a direct relationship with its global subscriber base.
+DemandSphere migrated its website from WordPress to Jekyll, leveraging AI-assisted development to improve site speed, simplify content management, and implement custom SEO-focused developer tools.
 
 ### Key Points
-- The New York Times maintains a "subscription-first" business model, focusing on a bundle that includes news, Games, The Athletic, Cooking, and Wirecutter.
-- CEO Meredith Kopit Levien emphasizes that human expertise and rigorous editorial standards serve as the company's primary "moat" against AI-generated content.
-- The company is currently engaged in litigation against OpenAI and Microsoft, citing copyright infringement and the need for fair value exchange for its journalistic work.
-- The organization is expanding its digital presence through vertical video and interactive features to engage younger audiences and drive platform-agnostic growth.
-- Despite the rise of algorithmic aggregators, the company remains committed to being a "destination site" that users seek out directly by name.
+- The migration involved moving 288 blog posts and pages from WordPress to a static site generator (SSG) architecture.
+- DemandSphere utilized Claude Code to automate content filtering, migration tasks, and the development of nine custom repository-based dev tools.
+- Custom tools include auditors for Lighthouse performance, schema data, AEO, and semantic content similarity using local embeddings.
+- The new site architecture features a client-side search function that requires no external dependencies or server-side APIs.
+- Deployment is managed via Cloudflare Pages, utilizing environment-aware build scripts to separate production and staging configurations.
+- Automated SEO features include dynamic JSON-LD schema generation and environment-specific robots.txt management.
 
 ### Why it Matters
-By resisting the industry-wide trend of relying solely on third-party social media algorithms, The New York Times is attempting to prove that premium, human-verified content can sustain a profitable, independent business model. This strategy serves as a critical case study for the future of digital media, highlighting the tension between platform-driven distribution and the necessity of building direct, brand-loyal consumer relationships.
+This transition highlights a growing trend among technical teams to move away from traditional CMS platforms toward static site generators to gain performance and development agility. By integrating AI coding agents, companies can now execute complex infrastructure migrations and build custom internal tooling that was previously too resource-intensive to maintain.
 
 ============================================================
-Author:   Ben Thompson
-Source:   Stratechery.com
-URL:      https://stratechery.com/2026/an-interview-with-new-york-times-ceo-meredith-kopit-levien-about-betting-on-humans-with-expertise/
-Category: Tech Business & Markets
+Author:   Ray Grieselhuber
+Source:   Demandsphere.com
+URL:      https://www.demandsphere.com/blog/rebuilding-demandsphere-with-jekyll-and-claude-code/
+Category: Artificial Intelligence
