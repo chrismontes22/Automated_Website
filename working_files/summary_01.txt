@@ -1,21 +1,20 @@
-Installing Every* Firefox Extension
+How AI is getting better at finding security holes
 ============================================================
 
-A researcher successfully scraped and installed all 84,194 available Firefox extensions to test browser performance, revealing significant stability issues and widespread security risks within the add-on ecosystem.
+Anthropic has introduced a powerful AI model called Mythos Preview, designed to identify critical software vulnerabilities while raising concerns about potential weaponization by malicious actors and nation-state hackers.
 
 ### Key Points
-- The project involved scraping the public Firefox add-ons API to download every available extension, totaling approximately 50 gigabytes of data.
-- Analysis identified numerous malicious extensions, including phishing tools designed to steal cryptocurrency seed phrases and Potentially Unwanted Applications (PUAs).
-- The largest extension, dmitlichess, measured 196.3 MB, while the most prolific developer published 84 separate extensions.
-- Attempting to run all extensions simultaneously caused Firefox to consume up to 37 GB of RAM and rendered the browser effectively unusable.
-- The researcher documented that 34.3% of all extensions have zero daily users, while 76.7% are open-source.
-- The full dataset of extensions has been uploaded to Hugging Face for further community analysis.
+- Anthropic is limiting access to Mythos Preview to 50 select organizations under a collaborative initiative titled Project Glasswing.
+- The model has successfully identified high-severity vulnerabilities in major operating systems and web browsers, surpassing previous human-level bug-finding capabilities.
+- Open-source maintainers, including those working on the Linux kernel and cURL, report that AI is significantly increasing the volume and accuracy of legitimate security vulnerability reports.
+- Security experts warn that while AI aids defense, the future release of open-weight models could allow bad actors to generate exploit code without safety guardrails.
+- The Pentagon has labeled Anthropic a "supply chain risk" due to the company's refusal to support autonomous weapons, a designation Anthropic is currently challenging in court.
 
 ### Why it Matters
-This experiment highlights the extreme performance limitations of modern browsers when managing massive extension libraries and exposes the prevalence of low-quality or malicious software in public repositories. It serves as a cautionary tale for users regarding the security risks of installing obscure add-ons and the potential for browser-based data exploitation.
+The rapid advancement of AI in cybersecurity creates a dual-use dilemma where the same tools used to patch critical internet infrastructure can be weaponized to disrupt global systems. As AI models increasingly outperform human researchers in finding bugs, the industry must balance the need for automated defense against the risk of powerful, unrestricted models falling into the hands of malicious actors.
 
 ============================================================
-Author:   Jack.cab
-Source:   Jack.cab
-URL:      https://jack.cab/blog/every-firefox-extension/
+Author:   Huo Jingnan
+Source:   NPR
+URL:      https://www.npr.org/2026/04/11/nx-s1-5778508/anthropic-project-glasswing-ai-cybersecurity-mythos-preview
 Category: Cybersecurity

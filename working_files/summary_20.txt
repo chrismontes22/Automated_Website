@@ -1,20 +1,21 @@
-Report: Cisco could acquire AI agent security startup Astrix Security for $250M+
+Adobe Reader Zero-Day Exploit Uses Fake PDF Files To Steal User Data
 ============================================================
 
-Cisco Systems is reportedly in advanced negotiations to acquire Tel Aviv-based AI security startup Astrix Security in a deal potentially valued between $250 million and $350 million.
+Cybercriminals are actively exploiting an unpatched security vulnerability in Adobe Reader through sophisticated phishing campaigns that use malicious PDF attachments to gain unauthorized access to user systems.
 
 ### Key Points
-- Astrix Security specializes in identifying and securing AI agents, non-human identities, and MCP servers within corporate networks.
-- The platform provides automated risk mitigation, including just-in-time access controls and the ability to revoke permissions for malicious agents.
-- Astrix has previously secured funding from investors including Workday Inc. and the Anthology Fund, which is backed by Anthropic PBC.
-- This potential acquisition follows Cisco’s recent agreement to purchase Galileo Technologies, a startup focused on AI hallucination firewalls.
-- The proposed deal valuation represents approximately triple the total funding Astrix has raised since its inception.
+- Attackers use social engineering to distribute malicious PDFs disguised as invoices or corporate reports via email.
+- The exploit leverages hidden JavaScript code to bypass system security and exfiltrate sensitive data to remote servers.
+- Researcher Haifei Li of EXPMON first identified the malicious files on VirusTotal in late November.
+- The campaign currently shows a geographic focus on Russian-language communications, though the vulnerability impacts global users.
+- Adobe has not yet released an official security patch to address the flaw, leaving all software versions at risk.
+- Experts recommend avoiding suspicious attachments and potentially uninstalling Adobe Reader until a permanent fix is issued.
 
 ### Why it Matters
-This acquisition highlights Cisco's aggressive strategy to integrate specialized security layers into its enterprise portfolio as businesses increasingly adopt autonomous AI agents. By securing these non-human identities, Cisco aims to address critical vulnerabilities that traditional cybersecurity tools are not yet equipped to manage.
+This vulnerability poses a significant risk to global users because it allows attackers to compromise systems without an available security patch. The targeted nature of the campaign suggests that attackers are carefully selecting victims, potentially leading to more severe data breaches or long-term system infiltration.
 
 ============================================================
-Author:   Maria Deutscher
-Source:   SiliconANGLE News
-URL:      https://siliconangle.com/2026/04/10/report-cisco-acquire-ai-agent-security-startup-astrix-security-250m/
-Category: Tech Business & Markets
+Author:   Paulo Montenegro
+Source:   Ubergizmo
+URL:      https://www.ubergizmo.com/2026/04/adobe-reader-zero-day-exploit/
+Category: Cybersecurity

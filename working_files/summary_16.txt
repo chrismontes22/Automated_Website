@@ -1,20 +1,20 @@
-Tech bills of the week: Boosting export controls; AI-focused workforce development; and more
+Two different attackers poisoned popular open source tools - and showed us the future of supply chain compromise
 ============================================================
 
-Bipartisan lawmakers have introduced a series of legislative proposals targeting semiconductor export controls, AI workforce development, data center energy costs, and quantum research infrastructure to bolster national security.
+Recent supply chain attacks on open-source tools Trivy and Axios have compromised over 10,000 organizations, highlighting a growing trend of sophisticated social engineering and developer-focused malware campaigns.
 
 ### Key Points
-- The MATCH Act aims to harmonize semiconductor export controls with U.S. allies to prevent adversarial nations from acquiring critical manufacturing technology.
-- The Stronger Workforce for America Act of 2026 proposes updating the 2014 Workforce Innovation and Opportunity Act to better prepare workers for the AI era.
-- A new House measure seeks to double the statute of limitations for export control violations from five years to 10 years for enforcement actions.
-- The Power for the People Act would require data centers to cover the costs of local electrical grid upgrades rather than passing expenses to residents.
-- The Quantum Instrumentation for Science and Engineering Act directs the National Science Foundation to fund shared research facilities and specialized equipment for quantum technology.
+- The vulnerability scanner Trivy was compromised by the group TeamPCP, leading to the theft of CI/CD secrets and cloud credentials from thousands of organizations.
+- North Korean-linked actors (UNC1069) hijacked the Axios JavaScript library by using AI-generated personas to trick a maintainer into installing a remote-access trojan.
+- TeamPCP utilized stolen credentials to inject malicious code into other open-source tools, including KICS, LiteLLM, and Telnyx.
+- Security experts warn that attackers are increasingly using AI to create hyper-personalized social engineering lures to target software developers.
+- Recommended defenses include implementing Software Bill of Materials (SBOMs), enforcing 24-hour delays on new software updates, and using physical verification methods for identity.
 
 ### Why it Matters
-These legislative efforts reflect a growing bipartisan consensus to secure critical supply chains and infrastructure against global competition and rapid technological shifts. By addressing the financial and regulatory burdens of emerging technologies, these bills aim to protect domestic consumers while maintaining U.S. leadership in semiconductors, AI, and quantum science.
+These incidents demonstrate that open-source maintainers are now primary targets for attackers seeking to bypass traditional corporate security perimeters. By compromising widely used libraries, threat actors can gain massive, automated access to downstream enterprise environments, making comprehensive software inventory and identity verification essential for modern cybersecurity.
 
 ============================================================
-Author:   Alexandra Kelley and Edward Graham
-Source:   Nextgov
-URL:      https://www.nextgov.com/policy/2026/04/tech-bills-week-boosting-export-controls-ai-focused-workforce-development-and-more/412779/
-Category: Tech Business & Markets
+Author:   Jessica Lyons
+Source:   Theregister.com
+URL:      https://www.theregister.com/2026/04/11/trivy_axios_supply_chain_attacks/
+Category: Cybersecurity
