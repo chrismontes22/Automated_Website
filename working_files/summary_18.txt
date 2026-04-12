@@ -1,21 +1,20 @@
-What’s new in security for Ubuntu 26.04 LTS?
+Red Hat RHELocates its Chinese engineering team to India
 ============================================================
 
-Ubuntu 26.04 LTS introduces a hardened security architecture featuring post-quantum cryptographic defaults, hardware-backed encryption, and memory-safe Rust implementations to establish a robust foundation for enterprise and cloud deployments.
+Red Hat is closing its engineering operations in China and relocating the majority of those roles to India as part of a strategic shift in its global workforce.
 
 ### Key Points
-- Implements TPM-backed Full Disk Encryption as a production-ready, enterprise-grade feature.
-- Integrates full-stack support for AMD SEV-SNP and Intel TDX to enable secure confidential computing.
-- Transitions core utilities to memory-safe Rust implementations, including rust-coreutils and sudo-rs.
-- Updates cryptographic standards by removing DSA support and enabling hybrid post-quantum key exchange by default.
-- Introduces the Security Center as a centralized control plane for managing disk encryption, Secure Boot, and recovery mechanisms.
-- Reduces system attack surfaces by running identity services like SSSD and OpenLDAP with restricted, non-root privileges.
+- Red Hat is reportedly laying off between 300 and 500 employees as it shutters its engineering presence in China.
+- A memo from CTO Chris Wright confirms the company is shifting its workforce investment toward other Asia-Pacific hubs, specifically India.
+- The decision follows a broader trend of Western technology firms reducing their footprint in China due to geopolitical tensions and national security concerns.
+- Red Hat maintains significant contracts with the U.S. Department of Defense, including an $848 million deal awarded in 2024.
+- Parent company IBM currently employs more staff in India than in the United States, totaling approximately 264,000 employees globally.
 
 ### Why it Matters
-This release shifts security from a one-time installation task to a continuous lifecycle responsibility, significantly reducing the risk profile for long-term enterprise and cloud infrastructure. By standardizing these advanced protections, Canonical provides a more resilient platform for organizations managing sensitive data and regulated workloads.
+This move highlights the increasing pressure on U.S. technology companies to decouple their operations from China to mitigate regulatory risks and potential national security scrutiny. By consolidating engineering in India, Red Hat aligns itself with a more favorable geopolitical environment while maintaining its capacity to support critical government and enterprise contracts.
 
 ============================================================
-Author:   ijlal-loutfi (ijlal-loutfi)
-Source:   Ubuntu.com
-URL:      https://ubuntu.com/blog/ubuntu-26-04-lts-security-updates
-Category: Cybersecurity
+Author:   Simon Sharwood
+Source:   Theregister.com
+URL:      https://www.theregister.com/2026/04/10/red_hat_ends_china_engineering/
+Category: Tech Business & Markets

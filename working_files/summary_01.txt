@@ -1,20 +1,21 @@
-Marimo RCE Flaw CVE-2026-39987 Exploited Within 10 Hours of Disclosure
+Installing Every* Firefox Extension
 ============================================================
 
-A critical remote code execution vulnerability in the open-source Marimo Python notebook was exploited by attackers less than ten hours after the security flaw was publicly disclosed.
+A researcher successfully scraped and installed all 84,194 available Firefox extensions to test browser performance, revealing significant stability issues and widespread security risks within the add-on ecosystem.
 
 ### Key Points
-- The vulnerability, tracked as CVE-2026-39987, carries a high CVSS score of 9.3 and affects all Marimo versions up to 0.20.4.
-- Attackers exploited a missing authentication check in the /terminal/ws WebSocket endpoint to gain full PTY shell access and execute arbitrary system commands.
-- Security firm Sysdig observed an unknown threat actor manually harvesting sensitive data, including .env files and SSH keys, from a honeypot system.
-- Marimo maintainers have released version 0.23.0 to address the security flaw and urge all users to update their instances immediately.
-- The rapid exploitation occurred despite the absence of a public proof-of-concept, highlighting the speed at which attackers weaponize technical advisories.
+- The project involved scraping the public Firefox add-ons API to download every available extension, totaling approximately 50 gigabytes of data.
+- Analysis identified numerous malicious extensions, including phishing tools designed to steal cryptocurrency seed phrases and Potentially Unwanted Applications (PUAs).
+- The largest extension, dmitlichess, measured 196.3 MB, while the most prolific developer published 84 separate extensions.
+- Attempting to run all extensions simultaneously caused Firefox to consume up to 37 GB of RAM and rendered the browser effectively unusable.
+- The researcher documented that 34.3% of all extensions have zero daily users, while 76.7% are open-source.
+- The full dataset of extensions has been uploaded to Hugging Face for further community analysis.
 
 ### Why it Matters
-This incident demonstrates that threat actors are actively monitoring security disclosures to target even niche, internet-facing applications before administrators can apply patches. The shrinking window between disclosure and exploitation forces organizations to prioritize rapid vulnerability management to prevent unauthorized access to sensitive system credentials.
+This experiment highlights the extreme performance limitations of modern browsers when managing massive extension libraries and exposes the prevalence of low-quality or malicious software in public repositories. It serves as a cautionary tale for users regarding the security risks of installing obscure add-ons and the potential for browser-based data exploitation.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/04/marimo-rce-flaw-cve-2026-39987.html
+Author:   Jack.cab
+Source:   Jack.cab
+URL:      https://jack.cab/blog/every-firefox-extension/
 Category: Cybersecurity
