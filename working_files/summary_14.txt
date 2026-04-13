@@ -1,19 +1,20 @@
-Authenticate SSH with Your TPM
+CPU-Z and HWMonitor official download links hijacked, malware included
 ============================================================
 
-Security researcher Remy demonstrates how users can store SSH private keys directly on a computer's Trusted Platform Module to prevent unauthorized access and protect against malware-based credential theft.
+The official website for CPUID was hijacked between April 9 and April 10, 2026, causing users to download malware-infected versions of the popular HWMonitor and CPU-Z software tools.
 
 ### Key Points
-- The Trusted Platform Module (TPM) acts as a hardware-based vault that prevents private keys from being exported or stored in vulnerable system memory.
-- Storing keys on a TPM provides a higher security baseline than keeping them on a standard hard drive, though it remains tied to the physical motherboard.
-- BIOS updates on some computer models may wipe TPM data, requiring users to implement specific workarounds to maintain key persistence.
-- The process is incompatible with the Windows Subsystem for Linux but offers a straightforward alternative for standard Windows environments.
+- Attackers exploited a vulnerability in the CPUID API to redirect official download links to malicious installers.
+- The infected files contained a fake CRYPTBASE.DLL component designed to steal browser-stored passwords, particularly from Google Chrome.
+- The malware utilized fileless techniques, such as PowerShell commands in RAM, to evade traditional security detection methods.
+- CPUID resolved the security breach within six hours of the initial site hijacking.
+- Users who installed or updated these programs during the two-day window are advised to perform an immediate antivirus scan.
 
 ### Why it Matters
-Moving SSH keys to a TPM significantly reduces the risk of credential theft by ensuring sensitive data never touches the file system. This practice provides a practical security upgrade for standard PCs without requiring the purchase of external hardware security tokens.
+This incident highlights that even trusted developer websites can be compromised, rendering traditional safety advice insufficient against sophisticated supply chain attacks. It serves as a critical reminder for users to heed antivirus warnings, as ignoring these alerts was the primary factor that allowed the malware to successfully execute on victim machines.
 
 ============================================================
-Author:   Al Williams
-Source:   Hackaday
-URL:      https://hackaday.com/2026/04/11/authenticate-ssh-with-your-tpm/
+Author:   Petteri Pyyny
+Source:   Afterdawn.com
+URL:      https://www.afterdawn.com/news/article.cfm/2026/04/12/cpu-z-and-hwmonitor-official-download-links-hijacked-malware
 Category: Cybersecurity

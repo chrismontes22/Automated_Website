@@ -1,21 +1,20 @@
-Adobe Reader Zero-Day Exploit Uses Fake PDF Files To Steal User Data
+Uncovering Webloc: An Analysis of Penlink’s Ad-based Geolocation Surveillance Tech - The Citizen Lab
 ============================================================
 
-Cybercriminals are actively exploiting an unpatched security vulnerability in Adobe Reader through sophisticated phishing campaigns that use malicious PDF attachments to gain unauthorized access to user systems.
+Webloc, a geolocation surveillance system developed by Cobwebs Technologies and sold by Penlink, tracks hundreds of millions of people globally using data harvested from consumer mobile applications.
 
 ### Key Points
-- Attackers use social engineering to distribute malicious PDFs disguised as invoices or corporate reports via email.
-- The exploit leverages hidden JavaScript code to bypass system security and exfiltrate sensitive data to remote servers.
-- Researcher Haifei Li of EXPMON first identified the malicious files on VirusTotal in late November.
-- The campaign currently shows a geographic focus on Russian-language communications, though the vulnerability impacts global users.
-- Adobe has not yet released an official security patch to address the flaw, leaving all software versions at risk.
-- Experts recommend avoiding suspicious attachments and potentially uninstalling Adobe Reader until a permanent fix is issued.
+- Webloc aggregates location data from up to 500 million mobile devices, allowing users to monitor historical movements and personal characteristics of entire populations.
+- Confirmed customers include domestic intelligence agencies in Hungary, the National Civil Police in El Salvador, and various U.S. entities like ICE, the military, and local police departments.
+- Technical analysis reveals that Webloc is often sold as an add-on to the Tangles web intelligence platform, with server infrastructure spanning at least 21 countries.
+- The system is linked to "Trapdoor," a social engineering platform capable of creating fake websites and phishing links to extract device information or facilitate malware deployment.
+- Research indicates that government agencies in Europe and the U.K. remain highly nontransparent regarding their potential use of these ad-based surveillance technologies.
 
 ### Why it Matters
-This vulnerability poses a significant risk to global users because it allows attackers to compromise systems without an available security patch. The targeted nature of the campaign suggests that attackers are carefully selecting victims, potentially leading to more severe data breaches or long-term system infiltration.
+The use of commercial advertising data for warrantless government surveillance raises significant concerns regarding civil liberties, privacy, and the potential for mission creep in law enforcement. This practice bypasses traditional legal safeguards, creating a global infrastructure for mass monitoring that lacks adequate democratic oversight or regulatory transparency.
 
 ============================================================
-Author:   Paulo Montenegro
-Source:   Ubergizmo
-URL:      https://www.ubergizmo.com/2026/04/adobe-reader-zero-day-exploit/
+Author:   jk
+Source:   Citizenlab.ca
+URL:      https://citizenlab.ca/research/analysis-of-penlinks-ad-based-geolocation-surveillance-tech/
 Category: Cybersecurity

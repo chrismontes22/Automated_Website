@@ -1,19 +1,20 @@
-Here are 4 things I do to make a cheap phone feel more premium
+CPUID Breach Distributes STX RAT via Trojanized CPU-Z and HWMonitor Downloads
 ============================================================
 
-Smartphone users can improve the performance and feel of budget Android devices by performing simple software optimizations and replacing low-quality accessories included in the original product packaging.
+Unknown threat actors compromised the CPUID website for nearly 20 hours, replacing legitimate hardware monitoring software installers with malicious files designed to deploy the STX remote access trojan.
 
 ### Key Points
-- Remove pre-installed bloatware apps and unused Google services to declutter the home screen and improve system responsiveness.
-- Register the same fingerprint multiple times in the security settings to increase the speed and reliability of budget-tier biometric scanners.
-- Disable "RAM Boost" or "Virtual RAM" features in settings, as these often slow down device performance rather than improving it.
-- Discard low-quality, oily-feeling in-box cases in favor of third-party alternatives that offer better ergonomics, protection, and a more premium aesthetic.
+- The breach occurred between April 9 and April 10, affecting popular tools including CPU-Z, HWMonitor, HWMonitor Pro, and PerfMonitor.
+- Attackers utilized DLL side-loading by bundling legitimate signed executables with a malicious "CRYPTBASE.dll" file.
+- The STX RAT malware provides attackers with remote control, desktop interaction, and broad data-stealing capabilities.
+- Kaspersky identified over 150 victims across sectors including manufacturing, retail, and telecommunications, with high infection rates in Brazil, Russia, and China.
+- CPUID confirmed the incident resulted from a compromised secondary API, though the company's original signed software files remained untampered.
 
 ### Why it Matters
-These adjustments allow consumers to bridge the performance gap between affordable handsets and expensive flagship models without requiring technical expertise. By optimizing software and hardware choices, users can significantly enhance the daily usability and longevity of their budget-friendly devices.
+This incident highlights the ongoing risk of supply chain attacks where trusted software distribution channels are leveraged to deliver malware. Users who downloaded hardware monitoring tools during this window should scan their systems for unauthorized remote access tools and potential data exfiltration.
 
 ============================================================
-Author:   Tom Bedford
-Source:   Android Police
-URL:      https://www.androidpolice.com/make-cheap-phone-feel-more-premium/
-Category: Phones, Laptops, and Gadgets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/04/cpuid-breach-distributes-stx-rat-via.html
+Category: Cybersecurity
