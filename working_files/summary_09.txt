@@ -1,20 +1,21 @@
-I grew up in a family of entrepreneurs. Here’s what I had to unlearn to build a $1 billion business
+Audit Finds Google, Microsoft, and Meta Still Tracking Users After Opt-Out
 ============================================================
 
-Scandit CEO Samuel Mueller explains how transitioning from a traditional family-business mindset to a global growth strategy requires leaders to unlearn habits that limit organizational scale and ambition.
+A new privacy audit by webXray reveals that Google, Meta, and Microsoft frequently ignore user opt-out requests, potentially violating the California Consumer Privacy Act across thousands of websites.
 
 ### Key Points
-- Scandit has expanded to seven global offices and serves over 2,100 customers, including seven of the world's top 10 retailers.
-- The company secured $273 million in total funding through Series B, C, and D investment rounds to fuel international expansion.
-- Scaling requires shifting from personal problem-solving to building autonomous teams and systems that function without the founder's direct intervention.
-- Leaders must transition from a cash-flow-focused model to investing capital proactively ahead of revenue to capture future market share.
-- Institutionalizing trust and communication is necessary to replace the personal, local relationships typical of smaller, family-run enterprises.
+- The webXray audit analyzed web traffic from over 7,000 popular websites in California during March.
+- Researchers found that 55 percent of tested sites set advertising cookies despite users opting out of tracking.
+- Google failed to honor Global Privacy Control (GPC) opt-out signals in 87 percent of observed instances.
+- Meta’s tracking code reportedly lacks any mechanism to detect or respect GPC signals, loading unconditionally on websites.
+- Microsoft recorded a 50 percent failure rate in honoring user privacy preferences during the audit period.
+- All three companies have disputed the findings, with Google claiming the report misinterprets its technical operations.
 
 ### Why it Matters
-Transitioning from a small-business mentality to a global enterprise model is a critical hurdle for founders aiming to leverage venture-style economics. By identifying and shedding outdated instincts, leaders can prevent their past successes from becoming barriers to future growth and organizational efficiency.
+This audit highlights a significant gap between consumer privacy expectations and the actual enforcement of the California Consumer Privacy Act. If these findings are validated by regulators, the companies could face substantial financial penalties for failing to respect standardized opt-out signals.
 
 ============================================================
-Author:   Samuel Mueller
-Source:   Fortune
-URL:      https://fortune.com/2026/04/12/entrepreneur-what-i-had-to-unlearn-from-my-family/
-Category: Tech Business & Markets
+Author:   BeauHD
+Source:   Slashdot.org
+URL:      https://tech.slashdot.org/story/26/04/14/1955224/audit-finds-google-microsoft-and-meta-still-tracking-users-after-opt-out
+Category: Cybersecurity

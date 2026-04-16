@@ -1,21 +1,20 @@
-Your router is probably dying and you don't even know it
+You can finally control serial devices from Firefox
 ============================================================
 
-Homeowners should consider replacing their Wi-Fi routers every five years to ensure optimal internet speeds, reliable connectivity, and protection against evolving cybersecurity threats and outdated hardware standards.
+Mozilla has introduced the Web Serial API to its Firefox Nightly browser, enabling direct communication with hardware devices like 3D printers and microcontrollers after years of security-related development delays.
 
 ### Key Points
-- Replace routers older than five years to ensure compatibility with modern standards like Wi-Fi 6E and 7.
-- Frequent manual reboots, overheating, or intermittent signal drops are primary indicators of hardware failure.
-- Aging routers often act as data bottlenecks, failing to efficiently manage band steering between 2.4GHz and 5GHz frequencies.
-- Diminishing signal range and the inability to connect to newer smart home devices signal that equipment is obsolete.
-- Routers that no longer receive manufacturer firmware updates pose significant security risks and should be replaced immediately.
-- Renters using ISP-provided equipment may be eligible for free hardware upgrades if their current model is no longer supported.
+- The Web Serial API allows browser-based interaction with serial-port devices, including Arduino, ESP32, and ESPHome smart home dashboards.
+- Support for the feature appeared in Firefox Nightly 151.0a1 around mid-April, following an initial code commit in January.
+- Mozilla previously opposed the API due to security concerns regarding unauthenticated device access, but shifted its stance following internal discussions.
+- Google Chrome has supported Web Serial since 2021, with other Chromium-based browsers like Edge, Opera, and Vivaldi following suit.
+- Mozilla continues to maintain its opposition to WebUSB and WebHID, citing ongoing privacy and fingerprinting risks.
 
 ### Why it Matters
-Using an outdated router prevents users from fully utilizing the high-speed internet plans they pay for, resulting in wasted monthly expenses. Furthermore, maintaining obsolete networking hardware leaves home networks vulnerable to security breaches due to a lack of critical firmware updates.
+Integrating Web Serial support helps Firefox remain competitive with Chromium-based browsers by allowing users to manage hardware directly through the web interface. This shift reflects a broader industry trend where browser developers are balancing strict security protocols against the growing demand for advanced web-based device connectivity.
 
 ============================================================
-Author:   Chris Hachey
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/6-signs-your-router-is-due-for-an-upgrade/
+Author:   Thomas Claburn
+Source:   Theregister.com
+URL:      https://www.theregister.com/2026/04/14/firefox_nightly_web_serial/
 Category: Phones, Laptops, and Gadgets
