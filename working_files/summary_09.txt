@@ -1,21 +1,20 @@
-Audit Finds Google, Microsoft, and Meta Still Tracking Users After Opt-Out
+Microsoft's latest Windows update now confirms if your PC is Secure Boot-protected - how it works
 ============================================================
 
-A new privacy audit by webXray reveals that Google, Meta, and Microsoft frequently ignore user opt-out requests, potentially violating the California Consumer Privacy Act across thousands of websites.
+Microsoft has introduced a new Secure Boot status indicator in its latest Windows 10 and 11 updates to help users verify their PC's protection against bootkit malware.
 
 ### Key Points
-- The webXray audit analyzed web traffic from over 7,000 popular websites in California during March.
-- Researchers found that 55 percent of tested sites set advertising cookies despite users opting out of tracking.
-- Google failed to honor Global Privacy Control (GPC) opt-out signals in 87 percent of observed instances.
-- Meta’s tracking code reportedly lacks any mechanism to detect or respect GPC signals, loading unconditionally on websites.
-- Microsoft recorded a 50 percent failure rate in honoring user privacy preferences during the audit period.
-- All three companies have disputed the findings, with Google claiming the report misinterprets its technical operations.
+- The April Patch Tuesday update adds a color-coded status indicator to the Device Security settings menu.
+- Green, yellow, and red icons notify users if their Secure Boot certificates are current or require attention.
+- Users must install the latest Windows updates to ensure their boot trust configuration remains valid before older certificates expire in June.
+- The April release addresses 164 total vulnerabilities, including eight critical flaws and two zero-day exploits.
+- Security experts recommend prioritizing these updates due to the unusually high volume of patches included in this month's release.
 
 ### Why it Matters
-This audit highlights a significant gap between consumer privacy expectations and the actual enforcement of the California Consumer Privacy Act. If these findings are validated by regulators, the companies could face substantial financial penalties for failing to respect standardized opt-out signals.
+This update provides essential transparency for users to ensure their hardware remains protected against sophisticated boot-level threats. With older security certificates set to expire in June, these tools are critical for maintaining system integrity and preventing potential malware infections.
 
 ============================================================
-Author:   BeauHD
-Source:   Slashdot.org
-URL:      https://tech.slashdot.org/story/26/04/14/1955224/audit-finds-google-microsoft-and-meta-still-tracking-users-after-opt-out
+Author:   Lance Whitney
+Source:   ZDNet
+URL:      https://www.zdnet.com/article/secure-boot-microsoft-april-windows-update
 Category: Cybersecurity

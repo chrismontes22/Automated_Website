@@ -1,20 +1,20 @@
-How to refresh your phone without upgrading it
+Over 100 Malicious Chrome Extensions Steal Google Tokens, Hijack Telegram Sessions, and Inject Ads
 ============================================================
 
-Smartphone users can extend the lifespan of their aging devices and improve overall performance by managing background applications, clearing storage space, and performing a complete factory reset.
+Security researchers at Socket have identified over 100 malicious Chrome extensions actively stealing user data, hijacking session tokens, and performing ad fraud through a coordinated malware-as-a-service campaign.
 
 ### Key Points
-- Uninstall unused applications to reduce system clutter and improve device responsiveness on both Android and iOS platforms.
-- Disable background app refresh settings to prevent inactive software from consuming system resources and battery life.
-- Use built-in tools like the Android Files app or iPhone Storage settings to identify and delete large, unnecessary files.
-- Samsung Galaxy users can reclaim storage space by disabling the RAM Plus feature within the Device care settings menu.
-- Perform a factory reset to restore the device to its original state, ensuring all personal data is backed up to cloud services first.
+- Researchers discovered 100+ malicious extensions in the Chrome Web Store linked to a Russian malware-as-a-service operation.
+- The extensions steal Google OAuth2 Bearer tokens, Telegram session data, and personal account information.
+- Attackers use a central backend hosted on Contabo VPS to execute commands and inject unauthorized HTML into browser interfaces.
+- Affected software includes various categories such as Telegram clients, browser utilities, translation tools, and online games.
+- Users are advised to check their installed extensions against the Socket report and immediately remove any identified malicious software.
 
 ### Why it Matters
-Extending the life of a smartphone helps consumers avoid the significant financial cost of purchasing a new device prematurely. These maintenance steps also ensure that older hardware remains functional and secure for a longer period, reducing electronic waste.
+This campaign highlights significant vulnerabilities in the Chrome Web Store's vetting process, potentially exposing millions of users to account takeovers and identity theft. The ability for extensions to silently hijack OAuth2 tokens poses a severe risk to both personal privacy and enterprise security environments.
 
 ============================================================
-Author:   David Nield
-Source:   Popular Science
-URL:      http://www.popsci.com/diy/how-to-refresh-your-phone-without-upgrading-it/
-Category: Phones, Laptops, and Gadgets
+Author:   Arthur Kay
+Source:   Ghacks Technology News
+URL:      https://www.ghacks.net/2026/04/15/over-100-malicious-chrome-extensions-steal-google-tokens-hijack-telegram-sessions-and-inject-ads/
+Category: Cybersecurity
