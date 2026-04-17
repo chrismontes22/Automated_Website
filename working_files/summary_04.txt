@@ -1,20 +1,21 @@
-Some Locals Are Using AI to Protest Against Data Centers
+UAC-0247 Targets Ukrainian Clinics and Government in Data-Theft Malware Campaign
 ============================================================
 
-Rural residents in Ohio and across the United States are increasingly using artificial intelligence tools to organize opposition against the rapid construction of large-scale data centers in their communities.
+The Ukrainian Computer Emergencies Response Team has identified a sophisticated malware campaign by threat actor UAC-0247 targeting government and healthcare institutions to steal sensitive browser and messaging data.
 
 ### Key Points
-- Ohio residents are utilizing generative AI tools like ChatGPT to conduct legal research and draft public records requests to challenge local data center developments.
-- Studies indicate that data centers can create localized heat islands, increase utility costs, and contribute to air pollution in surrounding rural areas.
-- Data center project cancellations due to local community pushback quadrupled in the United States during the previous year.
-- Maine recently passed legislation to implement a statewide moratorium on large data center projects, effective until October 2027, pending gubernatorial approval.
-- Violent incidents targeting politicians and industry figures have occurred in Indiana and California, highlighting the intensity of the growing national debate.
+- Threat actor UAC-0247 targeted Ukrainian government and healthcare entities between March and April 2026 using humanitarian-themed phishing emails.
+- The attack chain utilizes LNK files and the mshta.exe utility to deploy malicious payloads, including the AGINGFLY remote control tool and RAVENSHELL.
+- Attackers employ specialized tools like ChromElevator and ZAPiXDESK to bypass encryption and extract credentials from Chromium browsers and WhatsApp.
+- The campaign uses AI-generated websites and compromised legitimate sites to redirect victims toward malicious downloads.
+- Evidence suggests the group also targeted Ukrainian Defense Forces via Signal by distributing ZIP archives that utilize DLL side-loading techniques.
+- CERT-UA recommends restricting the execution of LNK, HTA, and PowerShell files to mitigate the risk of system compromise and data exfiltration.
 
 ### Why it Matters
-The rapid expansion of data centers to support AI infrastructure is creating significant friction between tech companies and rural communities concerned about environmental and economic impacts. This conflict underscores the urgent need for regulatory guardrails to balance technological advancement with the health and stability of local populations.
+This campaign highlights a significant escalation in targeted cyber espionage against critical infrastructure and defense personnel using advanced, multi-stage malware. By focusing on credential theft from widely used browsers and messaging platforms, the attackers pose a severe risk to both operational security and the privacy of sensitive government communications.
 
 ============================================================
-Author:   Ece Yildirim
-Source:   Gizmodo.com
-URL:      https://gizmodo.com/some-locals-are-using-ai-to-protest-against-data-centers-2000744027
-Category: Artificial Intelligence
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/04/uac-0247-targets-ukrainian-clinics-and.html
+Category: Cybersecurity
