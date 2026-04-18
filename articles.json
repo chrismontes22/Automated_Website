@@ -1,5 +1,185 @@
 [
   {
+    "summary": "Security researchers from Ox report that a design flaw in Anthropic’s Model Context Protocol potentially exposes 200,000 servers to remote code execution, though Anthropic maintains the behavior is expected.\n\n### Key Points\n- The Model Context Protocol (MCP) vulnerability allows unauthenticated attackers to execute arbitrary OS commands on servers running AI applications.\n- Researchers identified four distinct attack vectors, including command injection, hardening bypasses, and zero-click prompt injection affecting various AI development environments.\n- Affected software includes popular frameworks and tools such as LangFlow, Flowise, Upsonic, and GPT Researcher, with multiple CVEs issued to date.\n- Ox researchers successfully demonstrated the risk by poisoning nine out of 11 MCP marketplaces with proof-of-concept code.\n- Anthropic has declined to modify the protocol's architecture, instead updating security guidance to advise developers to use STDIO-based MCP adapters with caution.\n\n### Why it Matters\nThis dispute highlights a significant tension between AI vendors and the security community regarding the responsibility for securing foundational protocols. If left unpatched, these architectural flaws could facilitate widespread system compromises across the rapidly growing ecosystem of AI-integrated development tools and agents.",
+    "source": "Theregister.com",
+    "author": "Jessica Lyons",
+    "url": "https://www.theregister.com/2026/04/16/anthropic_mcp_design_flaw/",
+    "category": "Cybersecurity",
+    "title": "Anthropic won't own MCP 'design flaw' putting 200K servers at risk, researcher says",
+    "processed_at": "2026-04-18T07:55:46.830988"
+  },
+  {
+    "summary": "Apollo Global Management President Jim Zelter warns that while artificial intelligence will transform the global economy, the massive capital expenditure required may not guarantee returns for equity investors.\n\n### Key Points\n- Apollo President Jim Zelter estimates that US data centers could require $5 trillion to $6 trillion in investment over the next five years.\n- The current AI spending boom is shifting the technology sector from an asset-light business model to a more capital-intensive, asset-heavy structure.\n- Zelter cautioned that investors should not conflate high-risk equity bets with safe, fixed-income exposure when evaluating AI-related opportunities.\n- A recent KPMG survey revealed that 75% of large-company CEOs believe generative AI has been overhyped, despite 80% planning to increase capital allocation to the technology.\n- Industry leaders, including Oaktree Capital cofounder Howard Marks, have expressed concerns regarding a \"lottery-ticket mentality\" among investors currently funding AI development.\n\n### Why it Matters\nThe transition toward massive capital spending on AI infrastructure creates significant financial risk for shareholders if projected productivity gains fail to materialize. Investors must balance the undeniable utility of new technology against the potential for diminished returns in an increasingly expensive and competitive market.",
+    "source": "Business Insider",
+    "author": "Huileng Tan",
+    "url": "https://www.businessinsider.com/apollo-jim-zelter-ai-investment-spending-boom-investor-return-warning-2026-4",
+    "category": "Tech Business & Markets",
+    "title": "Apollo's president warns the AI spending boom may not pay off for investors",
+    "processed_at": "2026-04-18T08:00:05.234121"
+  },
+  {
+    "summary": "Venture capitalist Tim Draper predicts that Bitcoin will reach a valuation of $250,000 within the next 18 months, citing ongoing inflationary pressures on the U.S. dollar as a catalyst.\n\n### Key Points\n- Tim Draper expects Bitcoin to hit $250,000, basing his forecast on historical halving cycles and the declining purchasing power of the dollar.\n- Draper previously gained industry recognition for accurately predicting in 2014 that Bitcoin would reach $10,000 within three years.\n- The investor famously purchased nearly 30,000 BTC for $19 million during a 2014 U.S. Marshals auction of assets seized from the Silk Road marketplace.\n- Draper argues that Bitcoin offers superior security compared to traditional banking, claiming blockchain technology is more resilient against quantum computing threats.\n\n### Why it Matters\n- This forecast highlights the ongoing debate regarding Bitcoin's role as a hedge against fiat currency inflation and traditional financial instability. Investors continue to monitor such high-profile predictions to gauge market sentiment and long-term institutional confidence in digital assets.",
+    "source": "Yahoo Entertainment",
+    "author": "Aniket Verma",
+    "url": "https://finance.yahoo.com/markets/crypto/articles/tim-draper-accurately-predicted-bitcoin-193102134.html",
+    "category": "Tech Business & Markets",
+    "title": "Tim Draper Accurately Predicted Bitcoin At $10,000 — Now He Has 'Reason To Believe' It Will Go To $250,000 In 18 Months",
+    "processed_at": "2026-04-18T08:00:14.817464"
+  },
+  {
+    "summary": "Google is partnering with luxury fashion house Gucci to develop AI-powered smart glasses, with the parent company Kering reportedly targeting a product launch for the wearable devices in 2027.\n\n### Key Points\n- Google aims to improve the aesthetic appeal of its smart glasses by collaborating with high-profile luxury brands like Gucci.\n- The project follows Google’s upcoming release of \"Project Aura,\" its first pair of Android XR glasses featuring a traditional frame design.\n- Previous smart glass partnerships include collaborations with eyewear retailers Warby Parker and Gentle Monster.\n- The initiative represents Google's second major attempt to enter the smart eyewear market following the commercial failure of Google Glass.\n- Industry analysts suggest that luxury branding is a strategic move to compete directly with the popular Meta Ray-Ban smart glasses lineup.\n\n### Why it Matters\nThis partnership highlights a shift in the wearable technology sector where aesthetic design is becoming as critical as technical functionality for consumer adoption. By leveraging established fashion brands, tech companies hope to overcome the social stigma associated with early smart eyewear and increase mainstream market penetration.",
+    "source": "The Verge",
+    "author": "Stevie Bonifield",
+    "url": "https://www.theverge.com/gadgets/913523/google-gucci-ai-smart-glasses-2027",
+    "category": "Phones, Laptops, and Gadgets",
+    "title": "Gucci-branded Google smart glasses are coming next year",
+    "processed_at": "2026-04-18T08:00:24.014833"
+  },
+  {
+    "summary": "Anker has discounted its Smart Display Charger to a record-low price of $28, offering a compact 45W USB-C power solution featuring a real-time performance monitoring screen.\n\n### Key Points\n- The Anker Smart Display Charger is currently available for $28, representing a 30% discount from its standard $40 retail price.\n- The device features a single USB-C port capable of delivering up to 45W of power to laptops, tablets, and smartphones.\n- An integrated display provides users with real-time data regarding charging speeds and the capacity of connected devices.\n- The charger includes a 180-degree rotating plug designed to improve orientation and fit within tight or awkward wall spaces.\n- The product is available in three color options: black, white, and blue.\n\n### Why it Matters\nThis discount makes a high-performance, data-capable charger more accessible for users seeking reliable power for expensive mobile hardware. By combining a compact form factor with real-time diagnostic feedback, Anker provides a practical tool for monitoring charging efficiency in a crowded peripheral market.",
+    "source": "Android Police",
+    "author": "Timi Cantisano",
+    "url": "https://www.androidpolice.com/anker-compact-45w-charger-with-screen-drops-to-its-best-price-ever/",
+    "category": "Phones, Laptops, and Gadgets",
+    "title": "Anker's ultra-compact 45W charger with a screen drops to its best price ever",
+    "processed_at": "2026-04-18T08:00:53.086998"
+  },
+  {
+    "summary": "Top case manufacturers have released a diverse range of protective designs for the iPhone 17 series, featuring updated touch-sensitive covers for the device's unique camera control button.\n\n### Key Points\n- Major brands including Otterbox, Zagg, Mous, and Torras offer specialized cases with drop protection ratings ranging from 10 to 25 feet.\n- New designs for 2026 prioritize the touch-sensitive camera control button, with most premium models integrating capacitive covers rather than simple cutouts.\n- Material options are extensive, spanning sustainable cactus leather, aramid fiber, military-grade TPU, and traditional Horween leather.\n- Many cases now feature built-in, multi-angle kickstands or magnetic systems like Rokform’s RokLok for enhanced utility and mounting.\n- Budget-friendly alternatives from companies like Supfine and Spigen provide MagSafe compatibility and slim profiles for under $20.\n- iPhone 16 cases are not compatible with the iPhone 17 series due to significant changes in camera modules and overall device dimensions.\n\n### Why it Matters\nSelecting the right case is essential for protecting the iPhone 17’s specific hardware, particularly the touch-sensitive camera control button that requires precise engineering. These accessories also serve as a primary ecosystem for MagSafe functionality, allowing users to integrate wallets, mounts, and stands that significantly expand the phone's daily utility.",
+    "source": "CNET",
+    "author": "David Carnoy",
+    "url": "https://www.cnet.com/tech/mobile/best-iphone-17-cases-for-2026/",
+    "category": "Phones, Laptops, and Gadgets",
+    "title": "The Best iPhone 17 Cases for 2026",
+    "processed_at": "2026-04-18T08:01:06.312239"
+  },
+  {
+    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency has added a high-severity code injection vulnerability in Apache ActiveMQ Classic to its catalog following reports of active exploitation in the wild.\n\n### Key Points\n- The vulnerability, tracked as CVE-2026-34197, carries a CVSS score of 8.8 and allows attackers to execute arbitrary code via the Jolokia API.\n- Federal Civilian Executive Branch agencies must apply necessary security patches by the April 30, 2026, deadline set by CISA.\n- Impacted software includes Apache ActiveMQ Broker and ActiveMQ versions prior to 5.19.4 and 6.2.3.\n- Exploitation is facilitated by default credentials or, in specific versions, by the unauthenticated exposure of the Jolokia API.\n- Fortinet FortiGuard Labs reported a surge in exploitation attempts peaking on April 14, 2026.\n\n### Why it Matters\nThis flaw poses a significant risk to enterprise data pipelines and messaging systems that rely on Apache ActiveMQ. Because attackers are rapidly weaponizing these vulnerabilities, organizations must immediately audit their deployments to restrict access to management endpoints and apply the latest security updates.",
+    "source": "Internet",
+    "author": "info@thehackernews.com (The Hacker News)",
+    "url": "https://thehackernews.com/2026/04/apache-activemq-cve-2026-34197-added-to.html",
+    "category": "Cybersecurity",
+    "title": "Apache ActiveMQ CVE-2026-34197 Added to CISA KEV Amid Active Exploitation",
+    "processed_at": "2026-04-18T08:01:15.291234"
+  },
+  {
+    "summary": "Verizon is offering a free Samsung Galaxy S26 Ultra and a $100 gift card to new customers who add a line on the carrier's Unlimited Ultimate mobile plan.\n\n### Key Points\n- Customers receive $1,300 in credits over 36 months to cover the full cost of the Samsung Galaxy S26 Ultra.\n- The promotion requires no trade-in device to qualify for the full promotional value.\n- An additional $100 gift card is provided for orders placed exclusively through Verizon's online store.\n- The offer is tied to the Unlimited Ultimate plan, which is Verizon's premium tier starting at $90 per month for a single line.\n- The Galaxy S26 Ultra features a 6.9-inch AMOLED display, Snapdragon 8 Gen 5 Elite processor, and seven years of guaranteed software support.\n\n### Why it Matters\nThis promotion significantly lowers the barrier to entry for consumers looking to acquire a premium flagship smartphone without an upfront cost or trade-in requirement. By bundling high-end hardware with its most expensive service plan, Verizon aims to secure long-term subscribers while incentivizing digital sales through added gift card incentives.",
+    "source": "Android Central",
+    "author": "patrick.farmer@futurenet.com (Patrick Farmer) , Patrick Farmer",
+    "url": "https://www.androidcentral.com/phones/samsung-galaxy/verizon-wants-to-give-you-a-free-galaxy-s26-ultra-and-a-usd100-gift-card-just-for-kicks-heres-the-deal",
+    "category": "Phones, Laptops, and Gadgets",
+    "title": "Verizon wants to give you a free Galaxy S26 Ultra AND a $100 gift card, just for kicks — here's the deal",
+    "processed_at": "2026-04-18T08:01:23.696566"
+  },
+  {
+    "summary": "Perplexity has officially launched Personal Computer, a new Mac-integrated tool for Max subscribers that automates local workflows and manages files using advanced AI agents and native application access.\n\n### Key Points\n- Personal Computer is now available to Perplexity Max subscribers, priced at $200 per month, with priority given to existing waitlist members.\n- The software requires macOS 14 Sonoma or later and integrates directly with local file systems and native Mac applications.\n- Users activate the tool by pressing both Command keys, allowing the AI to execute tasks via text or voice commands.\n- The system utilizes teams of agents across more than 20 frontier models to perform complex workflows like file organization and data comparison.\n- Security features include a sandboxed environment, an auditable action log, and a manual kill switch for user oversight.\n- Perplexity recommends running the software on a Mac mini to support 24/7 operations and persistent local access.\n\n### Why it Matters\nThis release marks a significant shift toward autonomous local computing by allowing AI to interact directly with a user's private files and desktop applications. By enabling persistent, cross-app automation, Perplexity is positioning its high-tier subscription as a comprehensive digital workforce for power users and businesses.",
+    "source": "MacRumors",
+    "author": "Juli Clover",
+    "url": "https://www.macrumors.com/2026/04/16/perplexity-personal-computer-for-mac/",
+    "category": "Artificial Intelligence",
+    "title": "Perplexity Launches Personal Computer for Mac, Turning a Mac mini Into an Always-On AI Agent",
+    "processed_at": "2026-04-18T08:01:54.223028"
+  },
+  {
+    "summary": "The 2025 OWASP Top 10 provides a critical, community-driven framework for identifying and mitigating the most significant web application security risks facing modern software developers today.\n\n### Key Points\n- The 2025 list prioritizes risks by impact and exploitability, with Broken Access Control remaining the most critical category.\n- Software Supply Chain Failures have been expanded to include CI/CD pipelines, developer workstations, and the integrity of third-party packages.\n- A new category, Mishandling of Exceptional Conditions, addresses dangerous patterns like silent failures and improper error handling.\n- Security Misconfiguration remains a top threat, often exacerbated by default settings and exposed debug modes in production environments.\n- The project includes three honorable mentions: \"vibe coding\" (AI-generated code without review), memory safety, and application resilience.\n- Developers are encouraged to use OWASP Cheat Sheets and structured AI prompting to ensure security is baked into the design phase.\n\n### Why it Matters\nThe 2025 update reflects a fundamental shift in the threat landscape, where the supply chain now encompasses the entire development lifecycle and AI-generated code introduces new, unreviewed vulnerabilities. By adopting these standards, organizations can move away from reactive patching and toward a \"pit of success\" model that makes secure coding the default path.",
+    "source": "Talkpython.fm",
+    "author": "Michael Kennedy",
+    "url": "https://talkpython.fm/episodes/show/545/owasp-top-10-2025-list-for-python-devs",
+    "category": "Cybersecurity",
+    "title": "Talk Python to Me: #545: OWASP Top 10 (2025 List) for Python Devs",
+    "processed_at": "2026-04-18T08:07:53.631050"
+  },
+  {
+    "summary": "Struggling footwear company Allbirds is rebranding as NewBird AI and pivoting to GPU leasing, a high-risk strategy that triggered a 600 percent stock surge before shares later declined.\n\n### Key Points\n- Allbirds is transitioning from sustainable footwear to a tech-focused business model under the new name NewBird AI.\n- The company secured $50 million from an unnamed investor to purchase and lease specialized graphics processing units (GPUs).\n- Following the announcement, the company's stock value initially jumped over 600 percent before falling by approximately 25 percent the following day.\n- CEO Joe Vernachio leads the pivot despite having no professional background in the artificial intelligence or semiconductor industries.\n- The company recently sold most of its holdings and closed retail locations after sales flagged for several years.\n\n### Why it Matters\nThis pivot highlights the extreme market pressure on struggling companies to capitalize on the current artificial intelligence investment boom. It serves as a cautionary example of how speculative rebrands can create short-term volatility while raising significant questions about long-term corporate viability and market stability.",
+    "source": "The Atlantic",
+    "author": "Will Gottsegen",
+    "url": "https://www.theatlantic.com/newsletters/2026/04/allbirds-ai-stocks-sneakers/686835/",
+    "category": "Tech Business & Markets",
+    "title": "The Allbirds Pivot Is a Terrible Idea … Right?",
+    "processed_at": "2026-04-18T08:08:03.847178"
+  },
+  {
+    "summary": "Actor and economics graduate Ben McKenzie explores the risks of the cryptocurrency industry in his new documentary, arguing that the market functions primarily as a tool for manipulation.\n\n### Key Points\n- Ben McKenzie’s documentary, *Everyone Is Lying to You for Money*, premieres in New York and Los Angeles this Friday.\n- The film characterizes the cryptocurrency market as a vehicle for gambling and crime, citing practices like wash trading and insider manipulation.\n- McKenzie previously co-authored the 2023 book *Easy Money* with Jacob Silverman to detail his investigation into crypto fraud.\n- The documentary critiques celebrity endorsements from figures like Matt Damon and Tom Brady, while highlighting the collapse of Sam Bankman-Fried’s FTX exchange.\n- The film addresses the political shift of President Trump, who has embraced crypto ventures despite previously labeling the industry a scam.\n\n### Why it Matters\nThis documentary highlights the growing tension between the burgeoning cryptocurrency industry and consumer protection advocates who warn of systemic financial risks. By framing the debate through a mix of humor and investigative journalism, McKenzie challenges the legitimacy of digital assets and the influence of high-profile political and celebrity endorsements.",
+    "source": "Deadline",
+    "author": "Matthew Carey",
+    "url": "http://deadline.com/2026/04/ben-mckenzie-interview-everyone-is-lying-to-you-for-money-1236863673/",
+    "category": "Tech Business & Markets",
+    "title": "Ben McKenzie On Exposing “Scam” Of Cryptocurrency In His New Documentary And Trump Family Cashing In On Coins – Miami Film Festival",
+    "processed_at": "2026-04-18T08:08:14.156982"
+  },
+  {
+    "summary": "Bluetti has launched the FridgePower, an ultra-slim, plug-and-play battery backup system specifically designed to keep refrigerators running during power outages while maintaining a quiet, space-saving kitchen aesthetic.\n\n### Key Points\n- The FridgePower unit features a 2,016Wh capacity and 1,800W output, with surge support up to 3,600W.\n- Users can expand the system capacity to 8,064Wh by connecting up to three BlueCell 200 expansion batteries.\n- The device utilizes LiFePO₄ battery cells, which are engineered for a 10-year lifespan and operate at a quiet 30dB.\n- It includes a built-in smart UPS with a 10-millisecond response time for seamless power transitions during outages.\n- The product is currently available via a Kickstarter campaign with early supporter pricing running through May 31.\n\n### Why it Matters\nThis product addresses the specific need for food and medication preservation in smaller living spaces where traditional, bulky home backup systems are impractical. By offering a specialized, easy-to-install solution, Bluetti is targeting a niche market segment that prioritizes convenience and reliability over whole-home power coverage.",
+    "source": "9to5Mac",
+    "author": "Sponsored Post",
+    "url": "https://9to5mac.com/2026/04/16/bluettis-fridgepower-provides-key-protection-against-power-outages-sponsored/",
+    "category": "Phones, Laptops, and Gadgets",
+    "title": "Bluetti’s FridgePower provides key protection against power outages [Sponsored]",
+    "processed_at": "2026-04-18T08:08:25.889839"
+  },
+  {
+    "summary": "Google is developing a new \"Pixel Glow\" hardware feature for upcoming Pixel smartphones and laptops that uses subtle light animations to provide visual feedback for notifications and Gemini interactions.\n\n### Key Points\n- Android 17 Beta 4 code reveals \"Pixel Glow,\" a feature designed to display light patterns on the back of devices when the screen is face down.\n- The feature provides visual alerts for incoming calls from favorite contacts and offers hands-free feedback during interactions with the Gemini AI assistant.\n- System settings allow users to toggle these light animations individually and include warnings for those with light sensitivity.\n- References in the Android Canary and Beta releases confirm the feature is being developed for both mobile devices and a new, unannounced Pixel laptop.\n- Potential hardware integration points include the iconic Pixel camera bar or the rear 'G' logo, though specific design details remain unconfirmed.\n\n### Why it Matters\nThis development signals Google's renewed interest in the laptop market and a push to unify the Pixel hardware ecosystem through shared ambient computing features. By integrating visual feedback directly into device chassis, Google aims to help users manage digital notifications while maintaining focus during hands-free AI interactions.",
+    "source": "9to5google.com",
+    "author": "Abner Li",
+    "url": "http://9to5google.com/2026/04/16/pixel-glow-laptop/",
+    "category": "Phones, Laptops, and Gadgets",
+    "title": "Google working on Pixel ‘laptop’ and ‘Pixel Glow’ lights that are also coming to phones",
+    "processed_at": "2026-04-18T08:09:06.535805"
+  },
+  {
+    "summary": "Rockstar Games has dismissed threats from the hacking group ShinyHunters, confirming that a recent third-party data breach involving Anodot resulted in no impact on players or game development.\n\n### Key Points\n- The hacking group ShinyHunters gained unauthorized access to Rockstar Games' data through a compromised third-party analytics tool, Anodot.\n- Rockstar Games confirmed the breach involved limited, non-material company information and stated that no player credentials or unreleased game assets were exposed.\n- The leaked data consists primarily of automated CSV exports, internal monitoring metrics, and operational reports related to cheat detection and customer support.\n- Rockstar Games has refused to pay the ransom demanded by the hackers, opting for a public dismissal of the threat rather than pursuing legal or DMCA-based takedowns.\n\n### Why it Matters\nThis incident highlights the growing security risks associated with third-party integrations and supply chain vulnerabilities in cloud-based data platforms like Snowflake. By choosing transparency over aggressive litigation, Rockstar Games is setting a new precedent for how major studios can manage public perception during cybersecurity incidents.",
+    "source": "Techdirt",
+    "author": "Timothy Geigner",
+    "url": "https://www.techdirt.com/2026/04/16/rockstar-on-latest-potential-hack-information-leak-meh-we-dont-care/",
+    "category": "Cybersecurity",
+    "title": "Rockstar On Latest Potential Hack & Information Leak: Meh, We Don’t Care",
+    "processed_at": "2026-04-18T08:09:17.005690"
+  },
+  {
+    "summary": "Netflix will launch a redesigned mobile application in late April 2026, featuring a new vertical video discovery feed designed to improve user engagement with its expanding entertainment library.\n\n### Key Points\n- The updated mobile interface will officially roll out to all subscribers by the end of April 2026.\n- The new vertical feed allows users to swipe through clips from movies and shows to watch, save, or share content.\n- Netflix announced the redesign in its Q1 2026 shareholder letter to better align with evolving mobile viewing habits.\n- The company is prioritizing mobile engagement as its video podcast offerings continue to see high daytime viewership on smartphones.\n- This update follows successful internal testing of vertical video discovery and generative AI search tools conducted throughout the previous year.\n\n### Why it Matters\nThis redesign signals a strategic shift as Netflix adapts its platform to compete with the short-form, vertical video formats popularized by social media competitors. By integrating these discovery tools, the company aims to increase time spent on the app and better showcase its diverse content catalog to mobile users.",
+    "source": "Android Authority",
+    "author": "Matt Horne",
+    "url": "https://www.androidauthority.com/netflix-mobile-app-vertical-video-3658431/",
+    "category": "Tech Business & Markets",
+    "title": "Netflix is prepping a mobile revamp with a TikTok-style vertical video feed and all",
+    "processed_at": "2026-04-18T08:09:48.017661"
+  },
+  {
+    "summary": "Axonius, Broadcom, Siemens, and Sitehop have released new cybersecurity and infrastructure products this week, focusing on AI integration, industrial automation, and quantum-resistant encryption for enterprise and government networks.\n\n### Key Points\n- Axonius updated its Asset Cloud with AI-powered remediation, IoT support, and a new data trust standard for verified assets.\n- Siemens introduced an AI-ready Industrial Automation DataCenter featuring pre-configured virtualization and industrial demilitarized zones for secure OT environments.\n- Broadcom launched VMware Tanzu Platform agent foundations to provide a secure, governed runtime for scaling autonomous AI applications.\n- Sitehop released SAFEcore Edge, a hardware-based encryption device offering quantum-resistant security with significantly lower latency than software alternatives.\n\n### Why it Matters\nThese product updates reflect a growing industry shift toward integrating AI governance and quantum-ready security directly into core enterprise and industrial infrastructure. By automating remediation and hardening network edges, these companies are helping organizations manage the increasing complexity of securing both IT and operational technology environments.",
+    "source": "Help Net Security",
+    "author": "Anamarija Pogorelec",
+    "url": "https://www.helpnetsecurity.com/2026/04/17/new-infosec-products-of-the-week-april-17-2026/",
+    "category": "Cybersecurity",
+    "title": "New infosec products of the week: April 17, 2026",
+    "processed_at": "2026-04-18T08:09:59.065464"
+  },
+  {
+    "summary": "LinkedIn reports that AI engineer is the fastest-growing job title for young workers in the United States, as companies aggressively recruit talent to integrate artificial intelligence into workflows.\n\n### Key Points\n- LinkedIn data shows 75,000 AI engineer job postings were added in the U.S. between 2023 and 2025.\n- AI engineers are primarily responsible for building, running, and evaluating Large Language Models and AI agents.\n- The technology and financial services sectors are currently the leading employers for entry-level AI engineering roles.\n- Despite high demand for AI skills, overall hiring for entry-level positions in the U.S. declined by 6% between late 2025 and early 2026.\n- Young workers face a 6.4% unemployment rate, significantly higher than the national average of 4.3%.\n\n### Why it Matters\nDeveloping AI literacy is becoming a critical requirement for young professionals attempting to break into a competitive and tightening labor market. As businesses prioritize automation to improve efficiency, workers who can build and scale AI models are gaining a distinct advantage over those in roles involving repetitive tasks.",
+    "source": "CBS News",
+    "author": "Mary  Cunningham",
+    "url": "https://www.cbsnews.com/news/artificial-intelligence-entry-level-role-linkedin-study/",
+    "category": "Artificial Intelligence",
+    "title": "This is the fastest-growing job for young workers, LinkedIn says",
+    "processed_at": "2026-04-18T08:10:07.323184"
+  },
+  {
+    "summary": "NaturalNews editor Mike Adams argues that a technocratic elite is orchestrating a global transition toward AI-driven labor displacement, digital financial control, and the erosion of individual human autonomy.\n\n### Key Points\n- Mike Adams claims that automation and AI will render approximately 4 billion people economically obsolete within the next decade.\n- The article characterizes Central Bank Digital Currencies (CBDCs) and Universal Basic Income (UBI) as tools for state-enforced social and financial surveillance.\n- Adams asserts that public health and financial institutions are being consolidated to prioritize elite control over individual freedom and prosperity.\n- The author advocates for building decentralized, self-reliant communities to resist what he describes as a high-tech return to feudalism.\n- Recommended survival strategies include local food production, the use of physical assets like gold and silver, and the adoption of private communication platforms.\n\n### Why it Matters\nThis perspective highlights growing concerns regarding the societal implications of rapid AI integration and the centralization of digital financial systems. It reflects a broader movement that prioritizes local self-reliance and decentralized infrastructure as a defense against perceived systemic overreach by global institutions.",
+    "source": "Naturalnews.com",
+    "author": "Mike Adams",
+    "url": "https://www.naturalnews.com/2026-04-17-the-engineered-collapse-of-work-and-freedom.html",
+    "category": "Artificial Intelligence",
+    "title": "The Engineered Collapse of Work and Freedom: My Case Against the Coming AI Dystopia and UBI Financial Enslavement",
+    "processed_at": "2026-04-18T08:10:17.956012"
+  },
+  {
+    "summary": "Most smart TVs feature built-in Ethernet ports capped at 100 Mbps, meaning users often achieve faster, more reliable streaming performance by utilizing Wi-Fi or a high-speed USB-to-Ethernet adapter.\n\n### Key Points\n- Most smart TV manufacturers install 10/100 Mbps Ethernet ports to reduce production costs, as standard 4K streaming typically requires less than 100 Mbps.\n- Modern Wi-Fi 5 and Wi-Fi 6 hardware in smart TVs often exceeds the speed of built-in wired ports, provided the signal strength is sufficient.\n- Users can bypass the 100 Mbps hardware limit by connecting a USB 3.0-to-Ethernet adapter, which can support speeds up to 1 Gbps.\n- A USB 3.0 adapter provides a more stable, interference-free connection than wireless for cloud gaming or high-bandwidth applications.\n- To ensure maximum performance, users should pair adapters with Cat5e or Cat6 cables rather than older Cat5 standards.\n\n### Why it Matters\nMany consumers pay for high-speed internet plans exceeding 300 Mbps but fail to realize their television hardware creates a significant bottleneck. Upgrading to a USB-based adapter allows users to fully utilize their bandwidth for improved stability and faster content loading.",
+    "source": "MakeUseOf",
+    "author": "Pankil Shah",
+    "url": "https://www.makeuseof.com/bypass-smart-tv-ethernet-speed-limit-with-usb-adapter/",
+    "category": "Phones, Laptops, and Gadgets",
+    "title": "The USB trick that bypasses your smart TV's 100Mbps Ethernet limit",
+    "processed_at": "2026-04-18T08:11:02.826311"
+  },
+  {
     "processed_at": "2026-04-17T19:53:59.640426",
     "source": "The Verge",
     "summary": "A growing industry of deepfake detection startups, including Reality Defender and Pindrop, is utilizing advanced machine learning to combat the rising threat of AI-generated audio and video fraud.\n\n### Key Points\n- The deepfake detection market reached an estimated valuation of $5.5 billion by 2023.\n- Startups use \"student/teacher\" AI models to identify manipulated media by training systems on both authentic and synthetic data.\n- Corporate fraud is a primary target, with businesses reporting losses averaging $450,000 per deepfake incident.\n- Scammers are increasingly using AI to impersonate executives, conduct fake hiring schemes, and execute sophisticated ransom scams.\n- Current detection tools are primarily deployed by large institutions, as consumer-grade protection remains largely unavailable to the general public.\n\n### Why it Matters\nThe rapid advancement of generative AI has effectively dismantled the long-standing human reliance on sight and sound as reliable indicators of truth. As these technologies become more accessible, businesses are being forced to implement complex security layers to protect against industrial-scale fraud and identity theft.",

@@ -1,21 +1,20 @@
-OpenAI Codex Update Adds Computer Use, Image Generation, and Memory on Mac
+Apache ActiveMQ CVE-2026-34197 Added to CISA KEV Amid Active Exploitation
 ============================================================
 
-OpenAI has introduced significant updates to its Codex coding agent, enabling the tool to autonomously control desktop Mac applications, manage complex workflows, and utilize new image generation capabilities.
+The U.S. Cybersecurity and Infrastructure Security Agency has added a high-severity code injection vulnerability in Apache ActiveMQ Classic to its catalog following reports of active exploitation in the wild.
 
 ### Key Points
-- Codex can now interact with Mac desktop applications by moving the cursor, clicking, and typing to complete tasks independently.
-- The agent supports parallel task execution, allowing it to work on projects without interrupting the user's active workflow.
-- New memory features enable Codex to recall user preferences, tech stacks, and recurring workflows across multiple days or weeks.
-- Integration of gpt-image-1.5 allows for the generation of product mockups and visuals directly within the application.
-- Over 90 new plugins have been added to enhance context gathering, app integrations, and support for multiple terminal tabs.
-- The update is rolling out to ChatGPT desktop users, though specific features remain restricted in the EU, UK, and enterprise environments.
+- The vulnerability, tracked as CVE-2026-34197, carries a CVSS score of 8.8 and allows attackers to execute arbitrary code via the Jolokia API.
+- Federal Civilian Executive Branch agencies must apply necessary security patches by the April 30, 2026, deadline set by CISA.
+- Impacted software includes Apache ActiveMQ Broker and ActiveMQ versions prior to 5.19.4 and 6.2.3.
+- Exploitation is facilitated by default credentials or, in specific versions, by the unauthenticated exposure of the Jolokia API.
+- Fortinet FortiGuard Labs reported a surge in exploitation attempts peaking on April 14, 2026.
 
 ### Why it Matters
-These updates represent a shift toward autonomous AI agents capable of performing complex, multi-step tasks across a user's entire desktop environment. By automating repetitive development workflows and cross-application interactions, this technology could significantly increase productivity for software developers and technical professionals.
+This flaw poses a significant risk to enterprise data pipelines and messaging systems that rely on Apache ActiveMQ. Because attackers are rapidly weaponizing these vulnerabilities, organizations must immediately audit their deployments to restrict access to management endpoints and apply the latest security updates.
 
 ============================================================
-Author:   Juli Clover
-Source:   MacRumors
-URL:      https://www.macrumors.com/2026/04/16/openai-codex-mac-update/
-Category: Artificial Intelligence
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/04/apache-activemq-cve-2026-34197-added-to.html
+Category: Cybersecurity
