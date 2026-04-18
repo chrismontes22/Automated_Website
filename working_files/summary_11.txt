@@ -1,20 +1,20 @@
-The Allbirds Pivot Is a Terrible Idea … Right?
+NIST gives up enriching most CVEs
 ============================================================
 
-Struggling footwear company Allbirds is rebranding as NewBird AI and pivoting to GPU leasing, a high-risk strategy that triggered a 600 percent stock surge before shares later declined.
+The US National Institute of Standards and Technology has officially limited its National Vulnerability Database enrichment to critical software and actively exploited bugs due to ongoing budget constraints.
 
 ### Key Points
-- Allbirds is transitioning from sustainable footwear to a tech-focused business model under the new name NewBird AI.
-- The company secured $50 million from an unnamed investor to purchase and lease specialized graphics processing units (GPUs).
-- Following the announcement, the company's stock value initially jumped over 600 percent before falling by approximately 25 percent the following day.
-- CEO Joe Vernachio leads the pivot despite having no professional background in the artificial intelligence or semiconductor industries.
-- The company recently sold most of its holdings and closed retail locations after sales flagged for several years.
+- NIST will now only provide enriched metadata for vulnerabilities listed in the CISA KEV catalog, software used by federal agencies, and designated "critical software."
+- The agency will stop assigning its own CVSS severity scores, instead adopting the scores provided by the original vulnerability reporting organizations.
+- The backlog of unenriched CVE entries grew from approximately 2,100 in early 2024 to nearly 30,000 by the end of the year.
+- This policy shift, effective April 15, 2026, acknowledges that the agency can no longer keep pace with the rising volume of vulnerability disclosures.
+- Industry experts anticipate the number of reported vulnerabilities will continue to surge as AI-powered cybersecurity agents become more widely adopted.
 
 ### Why it Matters
-This pivot highlights the extreme market pressure on struggling companies to capitalize on the current artificial intelligence investment boom. It serves as a cautionary example of how speculative rebrands can create short-term volatility while raising significant questions about long-term corporate viability and market stability.
+This decision marks the end of the National Vulnerability Database serving as a comprehensive, single source of truth for the global cybersecurity industry. Security teams and tool vendors must now diversify their data sources and improve their own internal triage processes to maintain visibility into emerging threats.
 
 ============================================================
-Author:   Will Gottsegen
-Source:   The Atlantic
-URL:      https://www.theatlantic.com/newsletters/2026/04/allbirds-ai-stocks-sneakers/686835/
-Category: Tech Business & Markets
+Author:   Catalin Cimpanu
+Source:   Risky.biz
+URL:      https://risky.biz/risky-bulletin-nist-gives-up-enriching-most-cves/
+Category: Cybersecurity

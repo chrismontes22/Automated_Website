@@ -1,20 +1,21 @@
-Anthropic won't own MCP 'design flaw' putting 200K servers at risk, researcher says
+This Week in Security: Docker Auth, Windows Tools, and a Very Full Patch Tuesday
 ============================================================
 
-Security researchers from Ox report that a design flaw in Anthropic’s Model Context Protocol potentially exposes 200,000 servers to remote code execution, though Anthropic maintains the behavior is expected.
+A wide range of critical security updates were released this week, including patches for Docker, the Linux kernel, Microsoft Windows, and the launch of OpenSSL version 4.0.
 
 ### Key Points
-- The Model Context Protocol (MCP) vulnerability allows unauthenticated attackers to execute arbitrary OS commands on servers running AI applications.
-- Researchers identified four distinct attack vectors, including command injection, hardening bypasses, and zero-click prompt injection affecting various AI development environments.
-- Affected software includes popular frameworks and tools such as LangFlow, Flowise, Upsonic, and GPT Researcher, with multiple CVEs issued to date.
-- Ox researchers successfully demonstrated the risk by poisoning nine out of 11 MCP marketplaces with proof-of-concept code.
-- Anthropic has declined to modify the protocol's architecture, instead updating security guidance to advise developers to use STDIO-based MCP adapters with caution.
+- Docker vulnerability CVE-2026-34040 allows attackers to bypass authentication plugins by submitting empty request bodies.
+- Microsoft’s latest Patch Tuesday addresses over 160 security flaws, including the Bluehammer exploit for Windows Defender.
+- OpenSSL 4.0 introduced support for Encrypted Client Hello (ECH) to enhance user privacy during TLS handshakes.
+- Linux Kernel 7.0 and several LTS versions received a fix for an out-of-bounds memory access bug in the keyring API.
+- NIST announced it will stop enriching most CVE entries, limiting its analysis to critical software and government-related vulnerabilities.
+- Rockstar Games confirmed a data breach originating from a third-party service provider, though player data remains unaffected.
 
 ### Why it Matters
-This dispute highlights a significant tension between AI vendors and the security community regarding the responsibility for securing foundational protocols. If left unpatched, these architectural flaws could facilitate widespread system compromises across the rapidly growing ecosystem of AI-integrated development tools and agents.
+These developments highlight a significant increase in the volume and complexity of software vulnerabilities requiring immediate attention from IT administrators and security teams. The reduction in NIST’s vulnerability analysis, combined with the rapid exploitation of known bugs, necessitates a more proactive approach to patch management and internal security monitoring.
 
 ============================================================
-Author:   Jessica Lyons
-Source:   Theregister.com
-URL:      https://www.theregister.com/2026/04/16/anthropic_mcp_design_flaw/
+Author:   Mike Kershaw
+Source:   Hackaday
+URL:      https://hackaday.com/2026/04/17/this-week-in-security-docker-auth-windows-tools-and-a-very-full-patch-tuesday/
 Category: Cybersecurity

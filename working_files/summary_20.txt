@@ -1,20 +1,20 @@
-The USB trick that bypasses your smart TV's 100Mbps Ethernet limit
+Inside ZionSiphon: politically driven malware aims at Israeli water systems
 ============================================================
 
-Most smart TVs feature built-in Ethernet ports capped at 100 Mbps, meaning users often achieve faster, more reliable streaming performance by utilizing Wi-Fi or a high-speed USB-to-Ethernet adapter.
+Cybersecurity firm Darktrace has identified ZionSiphon, a new, politically motivated malware strain designed to sabotage Israeli water treatment and desalination infrastructure by manipulating critical operational technology systems.
 
 ### Key Points
-- Most smart TV manufacturers install 10/100 Mbps Ethernet ports to reduce production costs, as standard 4K streaming typically requires less than 100 Mbps.
-- Modern Wi-Fi 5 and Wi-Fi 6 hardware in smart TVs often exceeds the speed of built-in wired ports, provided the signal strength is sufficient.
-- Users can bypass the 100 Mbps hardware limit by connecting a USB 3.0-to-Ethernet adapter, which can support speeds up to 1 Gbps.
-- A USB 3.0 adapter provides a more stable, interference-free connection than wireless for cloud gaming or high-bandwidth applications.
-- To ensure maximum performance, users should pair adapters with Cat5e or Cat6 cables rather than older Cat5 standards.
+- ZionSiphon targets Israeli water facilities by scanning for specific IP ranges and operational technology protocols like Modbus, DNP3, and S7.
+- The malware aims to disrupt operations by altering hydraulic pressure and increasing chlorine levels to unsafe thresholds.
+- It employs stealth techniques, including privilege escalation via PowerShell, registry persistence, and propagation through removable USB drives.
+- The code contains explicit political messaging targeting cities such as Tel Aviv and Haifa, indicating ideological motives behind the development.
+- Current samples are functionally incomplete, as a flawed targeting check causes the malware to self-destruct before executing its primary sabotage payload.
 
 ### Why it Matters
-Many consumers pay for high-speed internet plans exceeding 300 Mbps but fail to realize their television hardware creates a significant bottleneck. Upgrading to a USB-based adapter allows users to fully utilize their bandwidth for improved stability and faster content loading.
+This discovery highlights a concerning trend of threat actors actively developing specialized malware to target critical infrastructure and industrial control systems. While the current version is non-functional, it serves as a warning that early-stage cyber threats require proactive monitoring and robust security integration between IT and operational environments.
 
 ============================================================
-Author:   Pankil Shah
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/bypass-smart-tv-ethernet-speed-limit-with-usb-adapter/
-Category: Phones, Laptops, and Gadgets
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/190922/malware/inside-zionsiphon-politically-driven-malware-aims-at-israeli-water-systems.html
+Category: Cybersecurity
