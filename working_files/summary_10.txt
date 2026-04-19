@@ -1,20 +1,20 @@
-The 4TB SanDisk Extreme is one of the best rugged portable SSDs we've ever tested — and it’s over $300 off right now
+'Update immediately': 60,000 WordPress websites at risk after experts discover flaw that allows hackers to create hidden admin accounts
 ============================================================
 
-Best Buy is currently offering the 4TB SanDisk Extreme portable SSD for $500, marking a significant discount from its original retail price of $805 for a limited time.
+A critical security vulnerability in the User Registration & Membership WordPress plugin allows unauthenticated attackers to bypass authentication and gain full administrative control over affected websites.
 
 ### Key Points
-- The 4TB SanDisk Extreme portable SSD is discounted to $499.99 at Best Buy.
-- The drive features read speeds up to 1050 MB/s and write speeds of 1,000 MB/s.
-- It carries an IP65 rating for dust and water resistance and includes drop protection up to three meters.
-- The device supports USB 3.1 Gen2 connectivity and is compatible with Windows, macOS, and iPhone 15 Pro.
-- Security features include built-in password protection with 256-bit AES hardware encryption.
+- The flaw, tracked as CVE-2026-1492, affects all versions of the User Registration & Membership plugin up to and including version 5.1.2.
+- Attackers exploit exposed nonce values and insufficient server-side validation to execute unauthorized requests via the /wp-admin/admin-ajax.php endpoint.
+- Successful exploitation grants full administrative privileges, enabling attackers to install malicious plugins, steal sensitive user data, and inject arbitrary code.
+- The vulnerability carries a critical CVSS v4.0 score of 9.8, with reports indicating active interest and discussion of exploitation techniques in underground forums.
+- Administrators must update the plugin to version 5.1.3 immediately and audit existing user accounts for any unauthorized administrative access.
 
 ### Why it Matters
-This deal provides a substantial price reduction on a high-capacity, durable storage solution suitable for professional photographers and videographers. The drive's combination of rugged portability and high-speed performance makes it a versatile tool for users who frequently manage large data transfers in various environments.
+This vulnerability poses a severe risk to website integrity because it allows attackers to compromise entire WordPress environments without requiring any legitimate credentials. Given the ease of exploitation and the potential for ransomware or data theft, immediate patching is essential to prevent unauthorized persistent access.
 
 ============================================================
-Author:   waynewilliams@onmail.com (Wayne Williams) , Wayne Williams
+Author:   Efosa Udinmwen
 Source:   TechRadar
-URL:      https://www.techradar.com/pro/the-4tb-sandisk-extreme-is-one-of-the-best-rugged-portable-ssds-weve-ever-tested-and-its-over-usd300-off-right-now
-Category: Phones, Laptops, and Gadgets
+URL:      https://www.techradar.com/pro/security/update-immediately-60-000-wordpress-websites-at-risk-after-experts-discover-flaw-that-allows-hackers-to-create-hidden-admin-accounts
+Category: Cybersecurity

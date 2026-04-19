@@ -1,20 +1,20 @@
-We Reproduced Anthropic's Mythos Findings with Public Models
+Techie buys fake Ledger Nano S+ hardware crypto wallet and almost falls for phishing — a convincing clone would have caught newbies unaware
 ============================================================
 
-Publicly available AI models can replicate many of the advanced software vulnerability findings previously attributed exclusively to Anthropic’s specialized Mythos and Project Glasswing research tools.
+Cybersecurity professional Joje Mendes discovered a sophisticated counterfeit Ledger Nano S+ hardware wallet that uses malicious software and command-and-control servers to steal cryptocurrency seed phrases and credentials.
 
 ### Key Points
-- Researchers used open-source coding agent opencode with GPT-5.4 and Claude Opus 4.6 to test vulnerability discovery across various software projects.
-- The study successfully reproduced critical security flaws in FreeBSD, Botan, and OpenBSD using widely accessible models.
-- Results were mixed for FFmpeg and wolfSSL, where models provided partial signals but failed to achieve full, exact vulnerability reproduction.
-- The testing workflow utilized a standardized, two-step agentic process involving automated planning and file-level detection rather than manual intervention.
-- Each file scan was completed at a cost of less than $30, demonstrating that high-level security research is no longer gated by proprietary lab access.
+- The counterfeit device features an ESP32-S3 system-on-a-chip with scraped markings to hide its true origin.
+- Malicious firmware monitors account balances and exfiltrates sensitive data via a fake, cloned version of the official Ledger website.
+- Users are prompted to download tainted Android, Windows, or macOS applications that track location and harvest private keys.
+- The device was purchased from a major Chinese marketplace at a price point identical to a legitimate Ledger unit.
+- Ledger’s official software successfully identified the hardware as non-genuine, preventing the theft of the user's assets.
 
 ### Why it Matters
-The ability of public models to perform complex vulnerability research indicates that the competitive advantage in cybersecurity is shifting from model access to the operational ability to validate and prioritize findings. Organizations must now focus on integrating these AI capabilities into their existing software development lifecycles to manage the increased volume of potential security discoveries.
+This incident highlights the significant risks associated with purchasing security-critical hardware from unauthorized third-party marketplaces. It serves as a critical reminder that consumers should only buy cryptocurrency wallets directly from manufacturers or verified official resellers to ensure device integrity.
 
 ============================================================
-Author:   Dawid Moczadło, Klaudia Kloc, Marek Lewandowski, Amadeusz Lisiecki, Jakub Sienkiewicz, Mikołaj Palkiewicz
-Source:   Vidocsecurity.com
-URL:      https://blog.vidocsecurity.com/blog/we-reproduced-anthropics-mythos-findings-with-public-models
+Author:   editors@tomshardware.com (Bruno Ferreira) , Bruno Ferreira
+Source:   Tom's Hardware UK
+URL:      https://www.tomshardware.com/tech-industry/cyber-security/techie-buys-fake-ledger-nano-s-hardware-crypto-wallet-and-almost-falls-for-phishing-a-convincing-clone-would-have-caught-newbies-unaware
 Category: Cybersecurity

@@ -1,21 +1,20 @@
-This Week in Security: Docker Auth, Windows Tools, and a Very Full Patch Tuesday
+Security Bite: ClickFix malware authors already bypassing Apple’s new Terminal paste warning
 ============================================================
 
-A wide range of critical security updates were released this week, including patches for Docker, the Linux kernel, Microsoft Windows, and the launch of OpenSSL version 4.0.
+Malware authors are bypassing new macOS security protections by using a modified ClickFix technique that leverages Apple’s Script Editor to execute malicious code instead of the Terminal app.
 
 ### Key Points
-- Docker vulnerability CVE-2026-34040 allows attackers to bypass authentication plugins by submitting empty request bodies.
-- Microsoft’s latest Patch Tuesday addresses over 160 security flaws, including the Bluehammer exploit for Windows Defender.
-- OpenSSL 4.0 introduced support for Encrypted Client Hello (ECH) to enhance user privacy during TLS handshakes.
-- Linux Kernel 7.0 and several LTS versions received a fix for an out-of-bounds memory access bug in the keyring API.
-- NIST announced it will stop enriching most CVE entries, limiting its analysis to critical software and government-related vulnerabilities.
-- Rockstar Games confirmed a data breach originating from a third-party service provider, though player data remains unaffected.
+- Apple recently introduced a Terminal warning prompt in macOS Tahoe 26.4 to block malicious commands pasted by users.
+- Jamf Threat Labs discovered a new ClickFix variant that uses fake webpages to trigger an applescript:// URL scheme.
+- This method forces the Script Editor to open with pre-filled malicious code, effectively circumventing the Terminal-based security warning.
+- Once executed, the script downloads obfuscated payloads, such as the Atomic Stealer, onto the victim's Mac.
+- ClickFix has become a popular delivery mechanism for malware because it relies on social engineering rather than requiring signed or notarized software.
 
 ### Why it Matters
-These developments highlight a significant increase in the volume and complexity of software vulnerabilities requiring immediate attention from IT administrators and security teams. The reduction in NIST’s vulnerability analysis, combined with the rapid exploitation of known bugs, necessitates a more proactive approach to patch management and internal security monitoring.
+This evolution in delivery tactics highlights the ongoing cat-and-mouse game between Apple and cybercriminals as security features become more robust. Organizations must remain vigilant, as attackers are increasingly shifting their focus toward social engineering and native application vulnerabilities to bypass system-level defenses.
 
 ============================================================
-Author:   Mike Kershaw
-Source:   Hackaday
-URL:      https://hackaday.com/2026/04/17/this-week-in-security-docker-auth-windows-tools-and-a-very-full-patch-tuesday/
+Author:   Arin Waichulis
+Source:   9to5Mac
+URL:      https://9to5mac.com/2026/04/18/security-bite-clickfix-malware-authors-already-bypassing-apples-new-terminal-paste-warnings/
 Category: Cybersecurity

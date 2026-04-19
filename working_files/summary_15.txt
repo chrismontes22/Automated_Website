@@ -1,20 +1,20 @@
-It’s not just Apple: Android users are more loyal than ever
+Cross‑tenant helpdesk impersonation to data exfiltration: A human-operated intrusion playbook
 ============================================================
 
-A new SellCell survey reveals that Android user loyalty has reached 86.4 percent, with Samsung and Google showing significant retention gains compared to data collected in 2021.
+Threat actors are impersonating IT support personnel on Microsoft Teams to trick users into granting remote access, enabling lateral movement, credential theft, and sensitive data exfiltration.
 
 ### Key Points
-- Apple maintains the highest industry loyalty at 96.4 percent among surveyed US smartphone users.
-- Samsung leads the Android market with a 90.1 percent loyalty rate, followed by Google at 86.8 percent.
-- Android loyalty has increased significantly since 2021, when Samsung and Google recorded rates of 74.0 percent and 65.2 percent, respectively.
-- Price and perceived value remain the primary drivers for users considering a switch between smartphone brands.
-- Approximately 26.8 percent of Android users who consider switching report that they would move to an iPhone.
+- Attackers initiate contact from external tenants, bypassing traditional email-based phishing filters by leveraging legitimate Microsoft Teams collaboration workflows.
+- Victims are socially engineered into launching remote support tools like Quick Assist, granting attackers interactive control over their workstations.
+- Once inside, threat actors use DLL side-loading with trusted, vendor-signed applications to execute malicious code while avoiding detection.
+- Attackers perform lateral movement toward high-value assets, such as domain controllers, using native Windows Remote Management (WinRM) protocols.
+- Staged data is exfiltrated to external cloud storage using common utilities like Rclone to blend into standard enterprise network traffic.
 
 ### Why it Matters
-Rising retention rates across major smartphone manufacturers suggest that the hardware market is becoming increasingly stable as the feature gap between competing devices narrows. This trend indicates that consumers are finding less incentive to switch brands, which may force companies to focus more on ecosystem integration and value propositions to capture new market share.
+This attack vector exploits human trust in IT support workflows rather than technical vulnerabilities, making it difficult to detect through traditional security perimeters. By abusing legitimate administrative tools, adversaries can maintain persistent access and compromise sensitive infrastructure while appearing to perform routine maintenance.
 
 ============================================================
-Author:   Matt Horne
-Source:   Android Authority
-URL:      https://www.androidauthority.com/smartphone-survey-more-brand-loyalty-3658621/
-Category: Phones, Laptops, and Gadgets
+Author:   Microsoft Defender Security Research Team
+Source:   Microsoft.com
+URL:      https://www.microsoft.com/en-us/security/blog/2026/04/18/crosstenant-helpdesk-impersonation-data-exfiltration-human-operated-intrusion-playbook/
+Category: Cybersecurity
