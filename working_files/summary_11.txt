@@ -1,20 +1,21 @@
-Android 15's hidden Linux Terminal is a real Debian VM – and it runs Claude Code
+14 defaults I think are worth changing: Windows 11 feels modern, but many out‑of‑box settings push services, tracking, and clutter.
 ============================================================
 
-The "Codefone" project enables users to transform a refurbished Google Pixel 8 into a portable, Linux-based AI coding rig by leveraging the native Android Virtualization Framework.
+Windows 11 features several default configurations that prioritize Microsoft service integration and telemetry, often at the expense of user privacy, system performance, and a clutter-free desktop experience.
 
 ### Key Points
-- The setup utilizes the Linux Terminal app on stock Android 15 or 16 to run a full Debian VM without requiring root access or custom ROMs.
-- Users can install the official Claude Code CLI directly within the Debian environment to perform software development tasks on the go.
-- The device connects to external hardware via USB-C, allowing the AI agent to interact with routers, diagnostic tools, and industrial equipment.
-- The project requires a Pixel 8 or newer, as other Android manufacturers have not yet exposed the necessary virtualization features.
-- The configuration remains secure and stable, maintaining OTA update compatibility and allowing for a full factory reset if needed.
+- The Start menu defaults to blending local search results with Bing web suggestions, which can decrease search accuracy and speed.
+- Diagnostic data collection and "Find my device" location tracking are enabled by default, requiring users to manually opt out to limit data sharing.
+- The Taskbar includes pre-pinned features like Widgets and Copilot, while File Explorer hides file extensions by default, potentially obscuring security risks.
+- Microsoft Edge utilizes "Startup boost" to run background processes immediately upon boot, consuming system resources even if the browser is not in use.
+- Post-setup prompts frequently interrupt workflows to encourage adoption of services like Microsoft 365, OneDrive, and Xbox Game Pass.
+- Users can mitigate these issues by adjusting settings in the Privacy & security, Personalization, and System menus to regain control over their environment.
 
 ### Why it Matters
-This approach significantly lowers the barrier to entry for mobile computing by turning a $100 smartphone into a powerful, specialized diagnostic and development workstation. By utilizing native virtualization, it offers a professional-grade alternative to expensive laptops for field technicians and developers who require portable, hardware-integrated AI tools.
+These default settings reflect a strategic shift toward cloud-connected services that may not align with the preferences of users seeking a lean, private, and high-performance operating system. By proactively adjusting these configurations, users can significantly improve system responsiveness and reduce unnecessary background activity.
 
 ============================================================
-Author:   JoJa84
-Source:   Github.com
-URL:      https://github.com/JoJa84/Codefone
-Category: Artificial Intelligence
+Author:   mhuck@live.com (Mauro Huculak) , Mauro Huculak
+Source:   Windows Central
+URL:      https://www.windowscentral.com/microsoft/windows-11/14-worst-default-configurations-on-windows-11
+Category: Phones, Laptops, and Gadgets
