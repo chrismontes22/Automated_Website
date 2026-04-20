@@ -1,20 +1,20 @@
-Techie buys fake Ledger Nano S+ hardware crypto wallet and almost falls for phishing — a convincing clone would have caught newbies unaware
+Kelp restaking platform exploited, $293M drained in attack
 ============================================================
 
-Cybersecurity professional Joje Mendes discovered a sophisticated counterfeit Ledger Nano S+ hardware wallet that uses malicious software and command-and-control servers to steal cryptocurrency seed phrases and credentials.
+Liquid restaking protocol Kelp paused its rsETH smart contracts after a cyber attack exploited an adapter bridge, resulting in the theft of approximately $293 million in digital assets.
 
 ### Key Points
-- The counterfeit device features an ESP32-S3 system-on-a-chip with scraped markings to hide its true origin.
-- Malicious firmware monitors account balances and exfiltrates sensitive data via a fake, cloned version of the official Ledger website.
-- Users are prompted to download tainted Android, Windows, or macOS applications that track location and harvest private keys.
-- The device was purchased from a major Chinese marketplace at a price point identical to a legitimate Ledger unit.
-- Ledger’s official software successfully identified the hardware as non-genuine, preventing the theft of the user's assets.
+- Blockchain security firm Cyvers reported that the attacker drained $293 million from the rsETH adapter bridge contract.
+- Approximately $250 million of the stolen funds have already been converted into Ether using a Tornado Cash-funded address.
+- Kelp suspended rsETH contracts across the Ethereum mainnet and multiple Layer-2 networks to investigate the breach.
+- Aave and at least eight other decentralized finance protocols froze rsETH markets to prevent further exposure to the compromised token.
+- This incident follows a similar $280 million exploit of the Drift Protocol, which was attributed to suspected North Korean state-affiliated hackers.
 
 ### Why it Matters
-This incident highlights the significant risks associated with purchasing security-critical hardware from unauthorized third-party marketplaces. It serves as a critical reminder that consumers should only buy cryptocurrency wallets directly from manufacturers or verified official resellers to ensure device integrity.
+The attack underscores the significant security risks associated with the composability of decentralized finance protocols, where a single vulnerability can trigger cascading failures across multiple platforms. This event highlights the ongoing challenges regarding asset protection and systemic stability within the broader cryptocurrency ecosystem.
 
 ============================================================
-Author:   editors@tomshardware.com (Bruno Ferreira) , Bruno Ferreira
-Source:   Tom's Hardware UK
-URL:      https://www.tomshardware.com/tech-industry/cyber-security/techie-buys-fake-ledger-nano-s-hardware-crypto-wallet-and-almost-falls-for-phishing-a-convincing-clone-would-have-caught-newbies-unaware
+Author:   Cointelegraph by Vince Quill
+Source:   Cointelegraph
+URL:      https://cointelegraph.com/news/restaking-platform-kelp-exploited-293-million
 Category: Cybersecurity

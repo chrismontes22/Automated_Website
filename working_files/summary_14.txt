@@ -1,21 +1,20 @@
-Apple Has Released These 12 New Products This Year
+Shutting Down SlackBITS After Impersonation-Based Malware Attack
 ============================================================
 
-Apple has significantly expanded its 2026 hardware lineup by launching over 12 new products, including the MacBook Neo, M5-powered laptops, the iPhone 17e, and updated iPad Air models.
+A security-conscious IT administrator fell victim to a sophisticated social engineering attack on Slack, leading to the permanent shutdown of the TidBITS community’s public Slack group.
 
 ### Key Points
-- Apple introduced the $599 MacBook Neo featuring the A18 Pro chip and a 13-inch display.
-- The MacBook Air and MacBook Pro lines received M5, M5 Pro, and M5 Max chip upgrades alongside Wi-Fi 7 support.
-- The iPhone 17e launched with the A19 chip, MagSafe, and a 256GB base storage capacity.
-- New iPad Air models now feature the M4 chip, 12GB of RAM, and Wi-Fi 7 connectivity.
-- The Studio Display XDR was unveiled with a 120Hz mini-LED display and Thunderbolt 5 support.
-- AirPods Max 2 received the H2 chip, enabling features like Adaptive Audio and Live Translation.
+- An attacker impersonated author Glenn Fleishman on Slack to trick a user into installing the OSX.Odyssey infostealer malware.
+- The malware compromised the victim's system, exposing passwords, SSH keys, and API credentials before the device was remotely wiped.
+- Slack’s transition from unique usernames to non-unique display names allowed the attacker to easily mimic a trusted profile.
+- TidBITS is permanently closing its SlackBITS group due to the platform's lack of robust security controls for public, unvetted communities.
+- The organization is migrating its real-time communication to Discourse, which offers granular trust levels and superior administrative logging.
 
 ### Why it Matters
-These product releases represent a major refresh of Apple's core computing and mobile hardware, signaling a strategic push toward higher base storage and advanced connectivity standards like Wi-Fi 7. By introducing the budget-friendly MacBook Neo, the company is also aggressively targeting the education market while maintaining its premium positioning across the professional laptop and display segments.
+This incident highlights the inherent security risks of using platforms designed for internal corporate collaboration as public-facing community forums. It serves as a reminder that even experienced IT professionals can be compromised by targeted impersonation, emphasizing the need for platforms with strict user verification and administrative oversight.
 
 ============================================================
-Author:   Joe Rossignol
-Source:   MacRumors
-URL:      https://www.macrumors.com/2026/04/18/apple-released-12-new-products-this-year/
-Category: Phones, Laptops, and Gadgets
+Author:   Adam Engst
+Source:   TidBITS
+URL:      https://tidbits.com/2026/04/18/shutting-down-slackbits-after-impersonation-based-malware-attack/
+Category: Cybersecurity
