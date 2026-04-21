@@ -1,20 +1,21 @@
-Airline worker arrested after sharing photos of bomb damage in WhatsApp group
+Anthropic installs spyware when you install Claude Desktop
 ============================================================
 
-Dubai police arrested an airline employee after using electronic surveillance to monitor a private WhatsApp group where he shared images of bomb damage from regional conflict.
+Anthropic’s Claude Desktop application silently installs undocumented browser integration files on macOS, creating potential security vulnerabilities by pre-authorizing unauthorized access to user browser sessions and data.
 
 ### Key Points
-- Authorities identified the employee through electronic monitoring operations conducted by the Electronic and Cybercrime Department.
-- The worker faces charges of publishing information harmful to state interests, which carries a maximum sentence of two years.
-- UAE security services utilize state-owned telecom networks and advanced spyware like Pegasus to access encrypted communications on platforms such as WhatsApp.
-- Advocacy group Detained in Dubai reports that residents and visitors are increasingly being detained for private digital exchanges.
-- The suspect remains in detention following his arrest at a meeting lured by police under the guise of a professional appointment.
+- Claude Desktop automatically installs "Native Messaging" manifests into Chromium-based browsers, including Brave, Chrome, Edge, and others, without user consent.
+- These manifests allow browser extensions to bypass standard sandboxing and execute code at the user's privilege level.
+- The integration is pre-installed even for browsers not currently present on the user's machine, creating a dormant "back door" for future use.
+- Claude Desktop logs confirm the software repeatedly rewrites these configuration files, ensuring they persist even if a user manually deletes them.
+- The installed bridge enables capabilities such as reading browser DOM state, extracting data, and automating form filling, which could expose sensitive authenticated sessions.
+- Anthropic’s documentation claims the integration is limited to Chrome and Edge, contradicting the software's behavior of installing across seven different browser paths.
 
 ### Why it Matters
-This case highlights significant concerns regarding digital privacy and the extent of state surveillance capabilities within the United Arab Emirates. It raises urgent questions for global users about the security of encrypted messaging apps when operating under jurisdictions with deep integration between telecommunications infrastructure and state security apparatuses.
+This practice raises significant privacy and security concerns by establishing a persistent, out-of-sandbox bridge between a desktop application and a user's web browser without explicit opt-in. By bypassing standard consent models, Anthropic risks violating data protection regulations and undermining the security posture of browsers that users specifically choose for their privacy features.
 
 ============================================================
-Author:   Issy Clarke
-Source:   LBC
-URL:      https://www.lbc.co.uk/article/dubai-police-spied-private-whatsapp-5HjdXwr_2/
+Author:   Alexander Hanff
+Source:   Thatprivacyguy.com
+URL:      https://www.thatprivacyguy.com/blog/anthropic-spyware
 Category: Cybersecurity

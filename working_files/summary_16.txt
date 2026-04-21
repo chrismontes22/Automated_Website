@@ -1,20 +1,20 @@
-Mozilla’s Thunderbolt Is an Open-Source AI Client, but What Exactly Is It?
+SmokedMeat: Open-source tool shows what attackers do inside CI/CD pipelines
 ============================================================
 
-Mozilla-backed MZLA Technologies is developing Thunderbolt, an open-source, self-hosted enterprise AI client designed to give organizations full control over their data, model integrations, and internal workflow automation.
+Boost Security has released SmokedMeat, an open-source framework that simulates live attack chains within CI/CD pipelines to help engineering teams visualize and remediate critical infrastructure vulnerabilities.
 
 ### Key Points
-- Thunderbolt functions as an orchestration layer rather than a standalone AI model or chatbot.
-- The platform supports connections to commercial, open-source, and on-premise AI models to prevent vendor lock-in.
-- Organizations can host the software on their own infrastructure to maintain privacy and compliance over sensitive internal data.
-- The client is designed for cross-platform use, including web, Windows, macOS, Linux, iOS, and Android.
-- Development is currently in the early stages, with ongoing security audits required before the software is ready for enterprise production.
+- SmokedMeat executes automated attack simulations, including credential harvesting, payload deployment, and cloud environment pivoting.
+- The tool aims to bridge the gap between static vulnerability scanning and the practical exploitation of build pipelines.
+- It was developed by Boost Security to address the prioritization backlog often associated with unpatched CI/CD security flaws.
+- The framework is available for free on GitHub to help teams map the potential blast radius of pipeline compromises.
+- The release follows the March 2026 TeamPCP campaign, which targeted major platforms like Trivy and Checkmarx through supply chain vulnerabilities.
 
 ### Why it Matters
-Thunderbolt addresses growing corporate concerns regarding data privacy and the risks of outsourcing core business workflows to closed, third-party AI platforms. By providing an open-source control layer, Mozilla enables companies to integrate AI into their existing systems while maintaining ownership of their infrastructure and security protocols.
+This tool shifts the focus from theoretical vulnerability reporting to concrete demonstration, helping organizations prioritize security patches more effectively. By visualizing the full scope of a potential breach, engineering teams can better understand the risks posed to their cloud environments and proprietary codebases.
 
 ============================================================
-Author:   Hongkiat.com
-Source:   Hongkiat.com
-URL:      https://www.hongkiat.com/blog/mozilla-thunderbolt-open-source-ai-client/
-Category: Artificial Intelligence
+Author:   Mirko Zorz
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/04/20/smokedmeat-ci-cd-pipeline-attacks/
+Category: Cybersecurity
