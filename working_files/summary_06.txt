@@ -1,21 +1,20 @@
-From page views to propensity: How the Daily Mail is retooling for a zero-click world
+⚡ Weekly Recap: Vercel Hack, Push Fraud, QEMU Abused, New Android RATs Emerge & More
 ============================================================
 
-The Daily Mail is shifting its digital strategy from high-volume page views to a loyalty-based model, prioritizing repeat engagement and subscription growth to counter declining referral traffic.
+Web infrastructure provider Vercel recently disclosed a security breach involving unauthorized access to internal systems, which originated from a compromised third-party artificial intelligence tool used by an employee.
 
 ### Key Points
-- The publisher is replacing page-view metrics with a "golden metric" that tracks time spent, repeat visits, and active user engagement.
-- A new AI-powered dynamic paywall is being tested on 50% of the audience to optimize subscription conversions based on user behavior and content topics.
-- The Mail aims to grow its Mail+ subscription base from 400,000 to one million subscribers by 2028.
-- To foster daily habits, the company is integrating games and niche content hubs, such as a new Crime Desk, directly into its app navigation.
-- The publisher is migrating from a .co.uk to a .com domain to better support its global operations and advertising strategy.
-- Internal AI tools, including a platform called Mail IQ, are being used to automate administrative tasks and accelerate product prototyping.
+- The breach occurred after an attacker compromised a Context.ai account, allowing them to hijack an employee's Vercel Google Workspace credentials.
+- Unauthorized actors gained access to non-sensitive environment variables and internal Vercel systems following the initial account takeover.
+- Context.ai previously reported a separate March 2026 incident involving unauthorized access to its AWS environment and the potential compromise of consumer OAuth tokens.
+- Security researchers at Hudson Rock linked the escalation to a February 2026 infection of a Context.ai employee by the Lumma Stealer malware.
+- The threat actor persona "ShinyHunters" has claimed responsibility for the Vercel incident, though official confirmation of the perpetrator remains pending.
 
 ### Why it Matters
-This strategic pivot reflects a broader industry trend where publishers are moving away from reliance on search-driven traffic toward owned, direct-audience relationships. By prioritizing habit-forming products and subscription revenue, the Daily Mail is attempting to insulate its business model from the volatility of AI-driven search and declining referral traffic.
+This incident highlights the growing risk of supply-chain attacks where third-party AI tools serve as a gateway into secure corporate environments. It underscores the necessity for organizations to strictly manage third-party integrations and enforce robust identity verification to prevent lateral movement from compromised external accounts.
 
 ============================================================
-Author:   Jessica Davies
-Source:   Digiday
-URL:      http://digiday.com/media/from-page-views-to-propensity-how-the-daily-mail-is-retooling-for-a-zero-click-world/
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/04/weekly-recap-vercel-hack-push-fraud.html
+Category: Cybersecurity

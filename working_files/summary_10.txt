@@ -1,21 +1,20 @@
-Anthropic installs spyware when you install Claude Desktop
+Claude is better than Gemini for Python, but it's unusable until Anthropic fixes this one problem
 ============================================================
 
-Anthropic’s Claude Desktop application silently installs undocumented browser integration files on macOS, creating potential security vulnerabilities by pre-authorizing unauthorized access to user browser sessions and data.
+Users are increasingly shifting from Anthropic’s Claude Sonnet 4.6 to Google Gemini due to restrictive usage caps and peak-hour throttling that disrupt consistent programming and development workflows.
 
 ### Key Points
-- Claude Desktop automatically installs "Native Messaging" manifests into Chromium-based browsers, including Brave, Chrome, Edge, and others, without user consent.
-- These manifests allow browser extensions to bypass standard sandboxing and execute code at the user's privilege level.
-- The integration is pre-installed even for browsers not currently present on the user's machine, creating a dormant "back door" for future use.
-- Claude Desktop logs confirm the software repeatedly rewrites these configuration files, ensuring they persist even if a user manually deletes them.
-- The installed bridge enables capabilities such as reading browser DOM state, extracting data, and automating form filling, which could expose sensitive authenticated sessions.
-- Anthropic’s documentation claims the integration is limited to Chrome and Edge, contradicting the software's behavior of installing across seven different browser paths.
+- Claude Sonnet 4.6 is widely considered the top-performing model for complex code generation and logic.
+- Anthropic’s recent implementation of peak-hour throttling frequently locks users out during active development sessions.
+- Google Gemini 3.1 Pro offers a 1-million-token context window, significantly larger than Claude’s 200,000-token limit for paid users.
+- Gemini is approximately 2.5 times cheaper on input costs and half the output cost compared to Claude Opus 4.6.
+- Users report that high-utility features, such as interactive visuals, consume usage limits too rapidly to be practical for daily tasks.
 
 ### Why it Matters
-This practice raises significant privacy and security concerns by establishing a persistent, out-of-sandbox bridge between a desktop application and a user's web browser without explicit opt-in. By bypassing standard consent models, Anthropic risks violating data protection regulations and undermining the security posture of browsers that users specifically choose for their privacy features.
+Reliable access and consistent uptime are becoming as critical to developer productivity as the raw intelligence of an AI model. When platforms impose strict usage bottlenecks, users prioritize the stability and larger context windows of competitors like Gemini to maintain uninterrupted project momentum.
 
 ============================================================
-Author:   Alexander Hanff
-Source:   Thatprivacyguy.com
-URL:      https://www.thatprivacyguy.com/blog/anthropic-spyware
-Category: Cybersecurity
+Author:   Abhinav Raj
+Source:   XDA Developers
+URL:      https://www.xda-developers.com/i-use-gemini-for-python-programming-over-claude-due-to-this-one-serious-problem/
+Category: Artificial Intelligence
