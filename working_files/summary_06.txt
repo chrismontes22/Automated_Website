@@ -1,20 +1,20 @@
-⚡ Weekly Recap: Vercel Hack, Push Fraud, QEMU Abused, New Android RATs Emerge & More
+Claude Desktop changes app access settings for browsers you don't even have installed yet
 ============================================================
 
-Web infrastructure provider Vercel recently disclosed a security breach involving unauthorized access to internal systems, which originated from a compromised third-party artificial intelligence tool used by an employee.
+Anthropic’s Claude Desktop for macOS is facing criticism for silently installing configuration files that pre-authorize browser extensions and modify third-party applications without obtaining explicit user consent or disclosure.
 
 ### Key Points
-- The breach occurred after an attacker compromised a Context.ai account, allowing them to hijack an employee's Vercel Google Workspace credentials.
-- Unauthorized actors gained access to non-sensitive environment variables and internal Vercel systems following the initial account takeover.
-- Context.ai previously reported a separate March 2026 incident involving unauthorized access to its AWS environment and the potential compromise of consumer OAuth tokens.
-- Security researchers at Hudson Rock linked the escalation to a February 2026 infection of a Context.ai employee by the Lumma Stealer malware.
-- The threat actor persona "ShinyHunters" has claimed responsibility for the Vercel incident, though official confirmation of the perpetrator remains pending.
+- Privacy consultant Alexander Hanff identified that Claude Desktop installs Native Messaging manifest files that pre-configure browser integrations for software not yet installed on the user's device.
+- The application creates a bridge between Chromium-based browsers and a local executable that runs outside the browser's security sandbox at the user privilege level.
+- Critics argue this behavior violates Article 5(3) of the EU’s ePrivacy Directive, which requires clear disclosure and consent for storing information on a user's device.
+- Security experts warn that this pre-authorized bridge expands the attack surface, potentially allowing prompt injection vulnerabilities to reach local system files.
+- Anthropic has not responded to public concerns regarding the lack of opt-in controls or the difficulty of removing these persistent system modifications.
 
 ### Why it Matters
-This incident highlights the growing risk of supply-chain attacks where third-party AI tools serve as a gateway into secure corporate environments. It underscores the necessity for organizations to strictly manage third-party integrations and enforce robust identity verification to prevent lateral movement from compromised external accounts.
+This practice challenges the expected trust boundaries between desktop applications and web browsers, raising significant concerns about user autonomy and data security. If regulators determine these silent installations are not "strictly necessary," Anthropic could face legal scrutiny under European privacy laws and suffer long-term reputational damage regarding its commitment to AI safety.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/04/weekly-recap-vercel-hack-push-fraud.html
+Author:   Thomas Claburn
+Source:   Theregister.com
+URL:      https://www.theregister.com/2026/04/20/anthropic_claude_desktop_spyware_allegation/
 Category: Cybersecurity
