@@ -1,5 +1,185 @@
 [
   {
+    "source": "Theregister.com",
+    "summary": "A sophisticated ClickFix social engineering campaign is targeting macOS users by tricking them into executing malicious AppleScript commands that steal credentials, session cookies, and cryptocurrency wallet data.\n\n### Key Points\n- Attackers use fake CAPTCHA prompts to trick users into pasting malicious curl commands into the macOS Spotlight search feature.\n- The malware harvests data from 14 browsers, 16 standalone cryptocurrency wallets, and over 200 browser extensions.\n- Stolen information includes Keychain passwords, session tokens, credit card numbers, and credentials for password managers like 1Password and LastPass.\n- The script creates a temporary directory at /tmp/xdivcmp/ to stage stolen data before exfiltrating it to an attacker-controlled server.\n- Newer versions of macOS, including Sequoia, now include security features designed to alert users when pasting potentially malicious commands into the system.\n\n### Why it Matters\nThis campaign highlights the persistent danger of social engineering tactics that bypass traditional software defenses by manipulating user behavior. Organizations and individuals should prioritize updating to the latest macOS versions to utilize built-in protections against these credential-harvesting scripts.",
+    "category": "Cybersecurity",
+    "author": "Jessica Lyons",
+    "processed_at": "2026-04-22T20:01:54.705537",
+    "title": "macOS ClickFix attacks deliver AppleScript stealers to snarf credentials, wallets",
+    "url": "https://www.theregister.com/2026/04/21/macos_clickfix_attacks_deliver_applescript/"
+  },
+  {
+    "source": "MacRumors",
+    "summary": "Meta is currently testing a new paid subscription tier called WhatsApp Plus, which offers premium personalization features and expanded chat management tools to select Android beta users globally.\n\n### Key Points\n- The subscription includes custom app icons, unique accent colors, and premium sticker packs with fullscreen animations.\n- Subscribers can pin up to 20 chats, compared to the standard limit of three, and access 10 exclusive ringtones.\n- Early testing indicates pricing of €2.49 per month in Europe and $29 per year in Mexico.\n- Core messaging, voice calls, and end-to-end encryption remain free for all users regardless of subscription status.\n- The feature is currently limited to Android beta testers, with iOS support and a wider rollout expected soon.\n\n### Why it Matters\nThis move signals Meta's broader strategy to diversify revenue streams by introducing optional paid tiers across its major social platforms. By focusing on personalization rather than restricting core functionality, the company aims to monetize power users without alienating its massive global base.",
+    "category": "Tech Business & Markets",
+    "author": "Tim Hardwick",
+    "processed_at": "2026-04-22T20:02:25.182463",
+    "title": "WhatsApp Testing Paid 'Plus' Subscription Tier – Here's What's Included",
+    "url": "https://www.macrumors.com/2026/04/21/whatsapp-tests-paid-plus-sub-tier/"
+  },
+  {
+    "source": "Business Insider",
+    "summary": "Alinea, a fintech platform founded by Eve Halimi and Anam Lakhani, is capturing a growing Gen Z market by offering accessible investment tools and AI-driven financial guidance.\n\n### Key Points\n- Founders Eve Halimi and Anam Lakhani launched the investment platform Alinea in 2021 to address financial literacy gaps for young, first-time investors.\n- The company has secured over $10 million in funding and received $22.5 million in user-acquisition capital from PvX Partners in February.\n- Alinea utilizes social media storytelling and TikTok marketing to engage a user base that has grown to over 2.5 million people.\n- The platform features an AI-powered copilot named Allie and curated \"Investment Playlists\" to help beginners manage stocks, ETFs, and cryptocurrencies.\n- Subscription services are priced at $10 per month or $120 annually, targeting users who are beginning their investment journeys earlier than previous generations.\n\n### Why it Matters\nAlinea represents a shift in the financial sector where agile, digital-native startups are successfully challenging legacy institutions by prioritizing accessibility and relatable branding. This trend highlights the increasing influence of Gen Z investors and the growing necessity for fintech companies to integrate AI tools to capture a younger, tech-savvy demographic.",
+    "category": "Tech Business & Markets",
+    "author": "ledmonds@businessinsider.com (Lauren Edmonds)",
+    "processed_at": "2026-04-22T20:02:46.011186",
+    "title": "Here's what Wall Street doesn't get about young investors, according to a Gen Z founder",
+    "url": "https://www.businessinsider.com/personal-finance/gen-zalinea-founder-explains-how-to-connect-with-investors-2026-4"
+  },
+  {
+    "source": "The Verge",
+    "summary": "Rising public anxiety over artificial intelligence and data center development is fueling political tension, though the issue has yet to become a primary driver for most American voters.\n\n### Key Points\n- Over 60 percent of Americans support government regulation of AI to ensure economic stability and public safety.\n- Opposition to data center projects has stalled approximately $64 billion in development across the United States.\n- Super PACs like Leading the Future and Public First Action have raised millions to influence political candidates on AI policy.\n- The Alliance for Secure AI reports over 110,000 US job losses attributed to AI, with significant cuts occurring at companies like Oracle.\n- Political resistance to AI is bipartisan, with Data Center Watch noting that 55 percent of project opponents are Republicans and 45 percent are Democrats.\n\n### Why it Matters\nWhile AI is not yet a top-tier issue for the average voter, the rapid influx of lobbying money and localized protests suggest it is becoming a significant political flashpoint. As concerns over job displacement and infrastructure growth intensify, candidates may increasingly use AI regulation as a platform to capture public sentiment and differentiate themselves in future elections.",
+    "category": "Artificial Intelligence",
+    "author": "Lauren Feiner",
+    "processed_at": "2026-04-22T20:04:08.803226",
+    "title": "AI backlash is coming for elections",
+    "url": "https://www.theverge.com/policy/916210/ai-midterm-elections-data-centers-jobs"
+  },
+  {
+    "source": "Wired",
+    "summary": "As Tim Cook prepares to step down as Apple CEO on September 1, incoming leader John Ternus faces the challenge of evolving the company’s massive services business into the AI era.\n\n### Key Points\n- Apple’s services division, including iCloud and the App Store, generated a record $109 billion in fiscal year 2025, marking a 14 percent increase over 2024.\n- Incoming CEO John Ternus, currently the senior vice president of hardware engineering, previously led Apple’s successful transition from Intel processors to proprietary Apple Silicon chips.\n- The company’s AI strategy has faced recent leadership turnover, including the 2025 departures of AI head John Giannandrea and senior executive Robby Walker.\n- Apple is currently pursuing a hybrid AI strategy that combines internal development, such as \"Apple Intelligence,\" with external partnerships like its deal to integrate Google Gemini.\n\n### Why it Matters\nThe transition to John Ternus marks a pivotal shift for Apple as it attempts to pivot from a hardware-focused company to a platform-driven leader in generative AI. Success will depend on whether Ternus can effectively integrate advanced AI into Apple’s lucrative services ecosystem to maintain the company's long-term financial growth.",
+    "category": "Tech Business & Markets",
+    "author": "Lauren Goode",
+    "processed_at": "2026-04-22T20:08:30.776589",
+    "title": "Tim Cook's Legacy Is Turning Apple Into a Subscription",
+    "url": "https://www.wired.com/story/apple-tim-cook-subscription-business/"
+  },
+  {
+    "source": "Android Central",
+    "summary": "Google has introduced new AI-powered touch-up tools to the Google Photos app on Android, allowing users to make subtle, natural-looking refinements to facial features in their portrait photos.\n\n### Key Points\n- New editing tools include Heal, Smooth, Under eyes, Irises, Teeth, Eyebrows, and Lips for targeted facial adjustments.\n- The features utilize machine learning to automatically analyze lighting, texture, and skin tone for realistic results.\n- Users can adjust the intensity of edits using a simple slider interface integrated directly into the existing photo editor.\n- The update requires an Android device running version 9.0 or higher with a minimum of 4GB of RAM.\n- Google is rolling out these enhancements gradually to global users as part of its ongoing investment in AI-driven image processing.\n\n### Why it Matters\nThese tools represent a shift toward automated, subtle image enhancement that prioritizes ease of use over complex manual editing. While this provides a convenient way for users to polish social media content, it also highlights the increasing role of AI in defining digital perceptions of natural appearance.",
+    "category": "Artificial Intelligence",
+    "author": "techkritiko@gmail.com (Jay Bonggolto) , Jay Bonggolto",
+    "processed_at": "2026-04-22T20:08:50.278401",
+    "title": "Google Photos wants to fix your face in one tap, but I’m not sure people want the help",
+    "url": "https://www.androidcentral.com/apps-software/google-photos-wants-to-fix-your-face-in-one-tap-but-im-not-sure-i-want-the-help"
+  },
+  {
+    "source": "CNET",
+    "summary": "Mozilla has integrated a new, limited-use VPN directly into the Firefox browser, providing users with free, privacy-focused protection for web traffic without requiring a separate subscription or app.\n\n### Key Points\n- The new Firefox VPN feature is built into the browser and includes a 50GB monthly data limit for users.\n- Mozilla’s VPN technology utilizes the WireGuard protocol and has undergone independent security audits by Cure53.\n- Unlike standalone VPN services, this tool only secures traffic within the Firefox browser rather than protecting entire system processes or external applications.\n- Cybersecurity experts warn that the feature is intended for casual browsing and should not be used for sensitive data or large-scale operations.\n\n### Why it Matters\nThis update represents a significant shift in how privacy tools are delivered by making essential protection accessible to casual users without additional costs. While it offers a convenient layer of security, users must understand that its limited scope does not provide the comprehensive protection of a full-system VPN.",
+    "category": "Cybersecurity",
+    "author": "Omar Gallaga",
+    "processed_at": "2026-04-22T20:09:11.267036",
+    "title": "Stop Paying for a VPN: Firefox Just Built One Right Into Your Browser",
+    "url": "https://www.cnet.com/tech/services-and-software/stop-paying-for-a-vpn-firefox-just-built-one-right-into-your-browser/"
+  },
+  {
+    "source": "Internet",
+    "summary": "Security operations centers can significantly reduce mean time to respond (MTTR) by integrating behavioral threat intelligence directly into their daily workflows to eliminate manual, fragmented investigative processes.\n\n### Key Points\n- ANY.RUN provides threat intelligence feeds, lookup tools, and reports to embed real-time behavioral data into security workflows.\n- The platform leverages data from over 15,000 organizations and 600,000 analysts who detonate malware and phishing samples daily.\n- Integrating intelligence into SIEM and SOAR platforms enables automated containment of threats, reducing the time between detection and response to seconds.\n- AI-powered search features allow analysts to query complex threat data using natural language, lowering the barrier for less experienced team members.\n- Proactive threat hunting using updated intelligence feeds helps organizations identify emerging campaigns and adapt defenses before incidents occur.\n\n### Why it Matters\nReducing MTTR is a critical business lever that minimizes the window for data exfiltration and operational disruption during a cyberattack. By streamlining workflows, organizations can improve their security posture and maximize the return on existing investments without the need for additional headcount.",
+    "category": "Cybersecurity",
+    "author": "info@thehackernews.com (The Hacker News)",
+    "processed_at": "2026-04-22T20:09:35.246398",
+    "title": "5 Places where Mature SOCs Keep MTTR Fast and Others Waste Time",
+    "url": "https://thehackernews.com/2026/04/5-places-where-mature-socs-keep-mttr.html"
+  },
+  {
+    "source": "GamesIndustry.biz",
+    "summary": "The video game industry faces an existential crisis as rising development costs and stagnant playtime force companies to adopt artificial intelligence to restore profitability and operational efficiency.\n\n### Key Points\n- Operating profits in the games industry have declined by an average of 7% annually since 2021 despite overall revenue growth.\n- Video game development costs have surged 90% since 2017, while players increasingly spend time on titles released more than six years ago.\n- Google Cloud is promoting AI tools like Gemini and Vertex to help studios reduce development cycles, marketing costs, and iteration times.\n- Small studios, such as Series Entertainment, have reportedly reduced development timelines by 90% by integrating AI into their production pipelines.\n- Industry leaders argue that AI can help \"right-size\" business models, potentially mitigating the impact of widespread layoffs and unsustainable project budgets.\n\n### Why it Matters\nThe current economic model of the gaming industry is increasingly viewed as unsustainable due to ballooning budgets and long production timelines. By integrating AI, companies hope to lower financial barriers to entry, allowing smaller studios to compete more effectively and potentially stabilizing the market against further job losses.",
+    "category": "Artificial Intelligence",
+    "author": "Alex Forbes-Calvin",
+    "processed_at": "2026-04-22T20:14:21.595904",
+    "title": "\"This is not a sustainable business model\" – Why Google Cloud's Jack Buser thinks AI can save the games industry",
+    "url": "https://www.gamesindustry.biz/this-is-not-a-sustainable-business-model-why-google-clouds-jack-buser-thinks-ai-can-save-the-games-industry"
+  },
+  {
+    "source": "PCWorld",
+    "summary": "Cybercriminals are increasingly compromising legitimate software, including Notepad++ and Steam games, to distribute malware through trusted update channels, rendering traditional cautious browsing habits insufficient for complete system protection.\n\n### Key Points\n- Hackers gain access to software by stealing developer credentials, purchasing access to applications, or compromising third-party development tools.\n- The use of AI technology has significantly accelerated the frequency and scale of these supply-chain cyberattacks.\n- Recent incidents include malicious updates pushed through Notepad++ and infected games distributed via the Steam platform.\n- Security experts emphasize that modern antivirus software is essential for detecting and blocking threats that bypass standard user precautions.\n\n### Why it Matters\nThis shift in tactics highlights a growing vulnerability in the software supply chain that affects even the most cautious computer users. As attackers leverage automated tools to exploit trusted update mechanisms, robust antivirus protection has become a critical necessity rather than an optional performance trade-off.",
+    "category": "Cybersecurity",
+    "author": "Alaina Yee",
+    "processed_at": "2026-04-22T20:15:14.403307",
+    "title": "Even trusted apps can infect your PC with malware now",
+    "url": "https://www.pcworld.com/article/3118728/even-trusted-apps-can-infect-your-pc-with-malware-now.html"
+  },
+  {
+    "source": "Forbes",
+    "summary": "Gpixel Changchun Microelectronics, a Chinese developer of CMOS image sensors for robotics and industrial applications, saw its shares surge 144% following a successful $332.4 million Hong Kong IPO.\n\n### Key Points\n- Founder and chairman Wang Xinyang reached billionaire status with a net worth of $1.3 billion following the company's market debut.\n- The IPO raised HK$2.6 billion, with 76% of proceeds earmarked for R&D, including a new facility in Hangzhou.\n- Gpixel is the world’s third-largest supplier of industrial image sensors, holding a 15.2% market share as of 2024.\n- The company reported a 49% year-over-year increase in 2025 net profit, reaching 293 million yuan on 856.5 million yuan in revenue.\n- Major institutional investors include Hillhouse Investment, Boyu Capital, and funds backed by Semiconductor Manufacturing International Corp.\n\n### Why it Matters\nThe successful listing highlights the growing investor appetite for Chinese companies specializing in critical components for robotics and industrial automation. This trend underscores the strategic importance of the CMOS sensor supply chain as global demand for advanced machine vision and manufacturing technology continues to rise.",
+    "category": "Tech Business & Markets",
+    "author": "Zinnia Lee, Forbes Staff, \n Zinnia Lee, Forbes Staff\n https://www.forbes.com/sites/zinnialee/",
+    "processed_at": "2026-04-22T20:16:38.655167",
+    "title": "China’s Newest Tech Billionaire Made His Fortune From Developing Image Sensor Chips For Robotics",
+    "url": "https://www.forbes.com/sites/zinnialee/2026/04/21/chinas-newest-tech-billionaire-made-his-fortune-from-developing-image-sensor-chips-for-robotics/"
+  },
+  {
+    "source": "MakeUseOf",
+    "summary": "Vaultwarden offers a lightweight, self-hosted alternative to the official Bitwarden server, allowing individual users to maintain full control over their password data on low-resource hardware like Linux.\n\n### Key Points\n- Vaultwarden is a community-built Rust implementation that remains fully compatible with official Bitwarden client applications and browser extensions.\n- The software is highly efficient, requiring only about 100MB of RAM, making it suitable for modest hardware or devices like a Raspberry Pi.\n- Users can access premium Bitwarden features, such as TOTP-based two-factor authentication and encrypted file attachments, at no additional cost.\n- Deployment is managed via Docker and Docker Compose, with Caddy often used as a reverse proxy to handle HTTPS and TLS certificate management.\n- Self-hosting eliminates reliance on third-party cloud infrastructure, ensuring that password vaults remain accessible even during external service outages.\n\n### Why it Matters\nSelf-hosting a password manager provides users with complete data sovereignty and protection against third-party security breaches or service downtime. This approach is increasingly popular among privacy-conscious individuals who want enterprise-grade security features without the recurring costs or risks associated with centralized cloud storage.",
+    "category": "Cybersecurity",
+    "author": "Afam Onyimadu",
+    "processed_at": "2026-04-22T20:16:52.992320",
+    "title": "I set up Bitwarden on my own server for free and my passwords are now completely under my control",
+    "url": "https://www.makeuseof.com/i-set-up-bitwarden-on-my-own-server-for-free-and-my-passwords-are-now-completely-under-my-control/"
+  },
+  {
+    "source": "Slashdot.org",
+    "summary": "Meta is collecting internal data on employee mouse movements, keystrokes, and screen activity to train artificial intelligence agents capable of performing complex computer tasks for future workplace applications.\n\n### Key Points\n- Meta’s Model Capability Initiative will record employee interactions, including clicks and navigation, to improve AI agent performance.\n- CTO Andrew Bosworth confirmed the initiative, now rebranded as the Agent Transformation Accelerator, aims to automate routine workplace workflows.\n- The company stated that collected data will be used exclusively for model training rather than employee performance evaluations.\n- Spokesperson Andy Stone noted that real-world examples of human computer usage are necessary to teach AI how to navigate software interfaces effectively.\n\n### Why it Matters\nThis initiative signals a shift toward developing autonomous AI agents that can observe and replicate human workflows to increase corporate productivity. By leveraging internal data, Meta aims to create systems that transition from simple chatbots to active participants capable of managing complex digital tasks.",
+    "category": "Artificial Intelligence",
+    "author": "BeauHD",
+    "processed_at": "2026-04-22T20:17:48.098596",
+    "title": "Meta To Start Capturing Employee Mouse Movements, Keystrokes For AI Training Data",
+    "url": "https://tech.slashdot.org/story/26/04/21/1849217/meta-to-start-capturing-employee-mouse-movements-keystrokes-for-ai-training-data"
+  },
+  {
+    "source": "SiliconANGLE News",
+    "summary": "SUSE is advocating for open-source architectures to combat the limitations of proprietary technology stacks, offering enterprises greater flexibility and operational resilience across complex hybrid and multicloud computing environments.\n\n### Key Points\n- SUSE emphasizes open-source interoperability to help enterprises avoid vendor lock-in within hybrid and multicloud infrastructures.\n- The SUSE Rancher Prime platform provides a unified control plane to manage operations across data centers, cloud, and edge environments.\n- SUSE Virtualization allows organizations to run traditional virtual machines and container-based workloads simultaneously under a single management system.\n- The company is positioning its open-source strategy as a viable alternative for enterprises navigating shifts in the virtualization market following Broadcom’s acquisition of VMware.\n- Peter Smails, general manager of cloud-native at SUSE, highlighted these strategies during the SUSECON 2026 event.\n\n### Why it Matters\nAs enterprises move away from rigid, proprietary infrastructure, the demand for interoperable and standards-driven solutions has become a critical factor for operational sovereignty. By enabling consistent management across diverse environments, these open architectures allow businesses to modernize their IT stacks without the disruption of a complete system replacement.",
+    "category": "Tech Business & Markets",
+    "author": "Kelly Knight",
+    "processed_at": "2026-04-22T20:18:36.098131",
+    "title": "Proprietary stacks are failing enterprises when they need flexibility the most",
+    "url": "https://siliconangle.com/2026/04/21/open-architectures-dictate-survival-hybrid-cloud-susecon/"
+  },
+  {
+    "source": "Krebs on Security",
+    "summary": "Tyler Robert Buchanan, a senior member of the cybercrime group Scattered Spider, has pleaded guilty to wire fraud and identity theft charges involving millions in cryptocurrency heists.\n\n### Key Points\n- Tyler Robert Buchanan admitted to orchestrating SMS-based phishing attacks in 2022 that targeted major technology firms including Twilio, LastPass, DoorDash, and Mailchimp.\n- The cybercrime group used stolen credentials to perform SIM-swapping attacks, resulting in the theft of at least $8 million in virtual currency from U.S. investors.\n- Buchanan, a 24-year-old Scottish national, was arrested in Spain in 2024 and faces a maximum sentence of 22 years in federal prison.\n- The Scattered Spider group is part of a broader online criminal community known as \"The Com,\" which specializes in social engineering and corporate network infiltration.\n- Buchanan is the second member of the group to plead guilty, following the 10-year prison sentence handed to co-conspirator Noah Michael Urban last year.\n\n### Why it Matters\nThis case highlights the significant threat posed by social engineering tactics that bypass traditional security measures by targeting human vulnerabilities rather than software flaws. The successful prosecution of Scattered Spider members underscores the growing international cooperation between law enforcement agencies to dismantle sophisticated cybercriminal networks that exploit digital infrastructure for financial gain.",
+    "category": "Cybersecurity",
+    "author": "BrianKrebs",
+    "processed_at": "2026-04-22T20:19:07.772445",
+    "title": "‘Scattered Spider’ Member ‘Tylerb’ Pleads Guilty",
+    "url": "https://krebsonsecurity.com/2026/04/scattered-spider-member-tylerb-pleads-guilty/"
+  },
+  {
+    "source": "TechRadar",
+    "summary": "A new BlackBerry survey reveals that 98% of government and infrastructure security leaders rely on foreign-hosted consumer messaging apps, creating significant risks due to widespread encryption misconceptions.\n\n### Key Points\n- BlackBerry surveyed 700 security decision-makers across the US, UK, Canada, and Singapore for its State of Secure Communications 2026 report.\n- Approximately 83% of respondents use WhatsApp for sensitive organizational discussions despite the platform not being designed for high-security environments.\n- About 88% of security leaders incorrectly believe their current messaging setups are secure, highlighting a critical gap in encryption literacy.\n- Over half of respondents mistakenly believe encryption protects metadata, while 41% wrongly assume communications remain secure if a device is compromised.\n- Only 55% of surveyed leaders currently prioritize sovereign control over their communications infrastructure.\n\n### Why it Matters\nThe reliance on consumer-grade messaging platforms creates a major security blind spot that exposes sensitive government and infrastructure data to potential interception and impersonation. Organizations must now address these gaps by transitioning to sovereign, trusted communication tools to ensure data integrity and national security.",
+    "category": "Cybersecurity",
+    "author": "Sead Fadilpašić",
+    "processed_at": "2026-04-22T20:24:27.802631",
+    "title": "'88% Confident 90% Misled': Government & critical infrastructure leaders fundamentally misunderstand the security of the apps they use",
+    "url": "https://www.techradar.com/pro/security/88-percent-confident-90-percent-misled-government-and-critical-infrastructure-leaders-fundamentally-misunderstand-the-security-of-the-apps-they-use"
+  },
+  {
+    "source": "Yahoo Entertainment",
+    "summary": "Greek maritime risk management firm MARISKS has issued an urgent warning regarding fraudulent messages demanding cryptocurrency payments from stranded shipping companies for safe passage through the Strait of Hormuz.\n\n### Key Points\n- Unknown actors are impersonating Iranian authorities to solicit Bitcoin or Tether payments from vessel operators.\n- The Strait of Hormuz remains a critical chokepoint for global energy supplies, with hundreds of ships currently stranded in the region.\n- MARISKS confirmed these solicitation messages are scams and are not authorized by the Iranian government.\n- At least one vessel that attempted to exit the strait on April 19 was reportedly targeted by gunfire after encountering transit complications.\n- Approximately 20,000 seafarers are currently affected by the ongoing blockade and regional instability.\n\n### Why it Matters\nThis scam exploits the extreme vulnerability of shipping companies facing significant financial losses due to the ongoing blockade of a vital global energy route. The incident highlights the heightened security risks and potential for digital exploitation during geopolitical conflicts that disrupt international maritime trade.",
+    "category": "Cybersecurity",
+    "author": "Reuters",
+    "processed_at": "2026-04-22T20:25:29.865653",
+    "title": "SCAMMERS IN STRAIT",
+    "url": "https://www.yahoo.com/news/articles/scam-messages-offering-ships-safe-061030773.html"
+  },
+  {
+    "source": "CoinDesk",
+    "summary": "Bitcoin prices retreated toward $75,000 on Tuesday as markets reacted to Federal Reserve chair nominee Kevin Warsh’s confirmation hearing and reports of stalled peace negotiations between Iran and the U.S.\n\n### Key Points\n- Bitcoin fell to approximately $75,700, marking a 0.9% decline over 24 hours as broader markets including the S&P 500 and Nasdaq also retreated.\n- During his Senate confirmation hearing, Kevin Warsh emphasized the Federal Reserve's independence from political pressure regarding interest rate decisions.\n- Crypto-related stocks saw significant losses, with Coinbase dropping 6%, Robinhood falling 4.5%, and Circle declining 8.3%.\n- The U.S. government imposed new sanctions on 14 entities and individuals linked to the procurement of weapons for the Iranian regime.\n- Uncertainty surrounding a Wednesday ceasefire deadline and the cancellation of Vice President JD Vance’s trip to Pakistan contributed to market volatility.\n\n### Why it Matters\nThe combination of potential shifts in monetary policy and geopolitical instability creates a cautious environment for risk assets like digital currencies. Investors are closely monitoring how a new Federal Reserve leadership might balance economic growth with the central bank's traditional independence from executive political pressure.",
+    "category": "Tech Business & Markets",
+    "author": "Krisztian Sandor",
+    "processed_at": "2026-04-22T20:26:20.755303",
+    "title": "Bitcoin slides toward $75,000 as Warsh says Trump didn't demand he cut rates",
+    "url": "https://www.coindesk.com/markets/2026/04/21/bitcoin-slides-toward-usd75-000-as-warsh-says-trump-didn-t-demand-he-cut-rates"
+  },
+  {
+    "source": "Windows Central",
+    "summary": "Best Buy is currently offering the Microsoft Surface Pro 11 at a significant discount, allowing customers to save up to $650 off the original retail price for various configurations.\n\n### Key Points\n- The Microsoft Surface Pro 11 is powered by the Qualcomm Snapdragon X Elite processor and features an NPU capable of 45 TOPS for AI tasks.\n- Best Buy has discounted the base model to $1,149.99, down from its original MSRP of $1,799.99.\n- The device includes a 13-inch OLED display with a 2880x1920 resolution and a 120Hz refresh rate.\n- Hardware specifications include 16GB of RAM, 512GB of storage, and a battery life rated for over 17 hours.\n- While the SSD is user-replaceable via an M.2 2230 slot, the RAM is soldered to the motherboard and cannot be upgraded after purchase.\n\n### Why it Matters\n- This promotion provides a rare opportunity for consumers to acquire high-end Copilot+ PC hardware despite recent industry-wide price hikes caused by component shortages. By offering significant savings on premium Windows hardware, retailers are helping maintain market accessibility for advanced AI-capable laptops.",
+    "category": "Phones, Laptops, and Gadgets",
+    "author": "Alexander Cope",
+    "processed_at": "2026-04-22T20:26:44.755707",
+    "title": "\"Blows every past Surface Pro away and competes with the best Windows laptops\": Our favorite Snapdragon X Elite PC says 'No' to rising prices",
+    "url": "https://www.windowscentral.com/hardware/laptops/our-favorite-snapdragon-x-elite-pc-says-no-to-rising-prices"
+  },
+  {
+    "source": "Rock Paper Shotgun",
+    "summary": "Unionized employees at game developer Build a Rocket Boy are pursuing legal action over the unauthorized installation of surveillance software on their work devices to monitor staff activity.\n\n### Key Points\n- The IWGB Game Workers Union alleges that the studio installed Teramind software to track keystrokes, record screen activity, and capture microphone audio without employee consent.\n- Forty employees filed a collective grievance in March, leading the company to remove the surveillance software from work devices.\n- Staff claim the studio failed to provide transparency regarding how collected data was stored or why the monitoring program was initially implemented.\n- This legal challenge is separate from ongoing litigation regarding the studio's handling of staff redundancies that occurred last year.\n- Build a Rocket Boy executives Mark Gerhard and Leslie Benzies previously confirmed in a leaked meeting that the software was installed without prior worker knowledge.\n\n### Why it Matters\nThis dispute highlights growing tensions regarding workplace privacy and the ethical boundaries of employee monitoring within the video game industry. The outcome could set a significant legal precedent for how studios balance corporate security and anti-espionage measures with the data protection rights of their remote and office-based staff.",
+    "category": "Cybersecurity",
+    "author": "Mark Warren",
+    "processed_at": "2026-04-22T20:27:14.334276",
+    "title": "Unionised Build a Rocket Boy staff take legal action against MindsEye studio, accusing management of breaking the law with \"invasive\" surveillance software",
+    "url": "https://www.rockpapershotgun.com/mindseye-studio-build-a-rocket-boy-sued-by-unionised-staff-who-accuse-management-of-breaking-the-law-with-invasive-surveillance-software"
+  },
+  {
     "source": "XDA Developers",
     "summary": "Modern motherboards now include advanced networking features like Wi-Fi 7, AI traffic shaping, and multi-gig Ethernet ports that can significantly reduce latency and improve overall connection stability for users.\n\n### Key Points\n- Wi-Fi 7 and Multi-Link Operation allow devices to aggregate 2.4GHz, 5GHz, and 6GHz bands to achieve sub-2ms wireless latency.\n- AI networking tools, such as ASUS AI Networking 2 and MSI LAN Manager, automatically prioritize gaming packets over background downloads to prevent ping spikes.\n- Modern motherboards often feature dual LAN ports, including 2.5GbE, 5GbE, or 10GbE options, which require compatible cables to avoid hardware bottlenecks.\n- Integrated hardware features like dedicated VPN encryption chips and network isolation protocols provide enhanced security without sacrificing internet speeds.\n- Manufacturer-specific software, such as the ASUS direction finder, helps users optimize antenna placement for the strongest possible signal.\n\n### Why it Matters\nMany users unknowingly bottleneck their high-speed internet by failing to configure the advanced networking capabilities already built into their modern motherboards. Properly utilizing these integrated tools can eliminate the need for expensive hardware upgrades by optimizing traffic flow and stabilizing connections at the system level.",
     "category": "Phones, Laptops, and Gadgets",

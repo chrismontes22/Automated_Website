@@ -1,20 +1,20 @@
-Your motherboard has a hidden networking suite that could kill your lag spikes
+macOS ClickFix attacks deliver AppleScript stealers to snarf credentials, wallets
 ============================================================
 
-Modern motherboards now include advanced networking features like Wi-Fi 7, AI traffic shaping, and multi-gig Ethernet ports that can significantly reduce latency and improve overall connection stability for users.
+A sophisticated ClickFix social engineering campaign is targeting macOS users by tricking them into executing malicious AppleScript commands that steal credentials, session cookies, and cryptocurrency wallet data.
 
 ### Key Points
-- Wi-Fi 7 and Multi-Link Operation allow devices to aggregate 2.4GHz, 5GHz, and 6GHz bands to achieve sub-2ms wireless latency.
-- AI networking tools, such as ASUS AI Networking 2 and MSI LAN Manager, automatically prioritize gaming packets over background downloads to prevent ping spikes.
-- Modern motherboards often feature dual LAN ports, including 2.5GbE, 5GbE, or 10GbE options, which require compatible cables to avoid hardware bottlenecks.
-- Integrated hardware features like dedicated VPN encryption chips and network isolation protocols provide enhanced security without sacrificing internet speeds.
-- Manufacturer-specific software, such as the ASUS direction finder, helps users optimize antenna placement for the strongest possible signal.
+- Attackers use fake CAPTCHA prompts to trick users into pasting malicious curl commands into the macOS Spotlight search feature.
+- The malware harvests data from 14 browsers, 16 standalone cryptocurrency wallets, and over 200 browser extensions.
+- Stolen information includes Keychain passwords, session tokens, credit card numbers, and credentials for password managers like 1Password and LastPass.
+- The script creates a temporary directory at /tmp/xdivcmp/ to stage stolen data before exfiltrating it to an attacker-controlled server.
+- Newer versions of macOS, including Sequoia, now include security features designed to alert users when pasting potentially malicious commands into the system.
 
 ### Why it Matters
-Many users unknowingly bottleneck their high-speed internet by failing to configure the advanced networking capabilities already built into their modern motherboards. Properly utilizing these integrated tools can eliminate the need for expensive hardware upgrades by optimizing traffic flow and stabilizing connections at the system level.
+This campaign highlights the persistent danger of social engineering tactics that bypass traditional software defenses by manipulating user behavior. Organizations and individuals should prioritize updating to the latest macOS versions to utilize built-in protections against these credential-harvesting scripts.
 
 ============================================================
-Author:   Jasmine Mannan
-Source:   XDA Developers
-URL:      https://www.xda-developers.com/motherboard-came-with-powerful-networking-features-youre-ignoring/
-Category: Phones, Laptops, and Gadgets
+Author:   Jessica Lyons
+Source:   Theregister.com
+URL:      https://www.theregister.com/2026/04/21/macos_clickfix_attacks_deliver_applescript/
+Category: Cybersecurity
