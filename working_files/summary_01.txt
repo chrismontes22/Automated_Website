@@ -1,20 +1,20 @@
-macOS ClickFix attacks deliver AppleScript stealers to snarf credentials, wallets
+Mosyle identifies two new macOS threats invisible to antivirus engines
 ============================================================
 
-A sophisticated ClickFix social engineering campaign is targeting macOS users by tricking them into executing malicious AppleScript commands that steal credentials, session cookies, and cryptocurrency wallet data.
+The Mosyle Security Research Team has identified two sophisticated, previously undetected macOS threats, Phoenix Worm and ShadeStager, which currently bypass all major antivirus engines to compromise user systems.
 
 ### Key Points
-- Attackers use fake CAPTCHA prompts to trick users into pasting malicious curl commands into the macOS Spotlight search feature.
-- The malware harvests data from 14 browsers, 16 standalone cryptocurrency wallets, and over 200 browser extensions.
-- Stolen information includes Keychain passwords, session tokens, credit card numbers, and credentials for password managers like 1Password and LastPass.
-- The script creates a temporary directory at /tmp/xdivcmp/ to stage stolen data before exfiltrating it to an attacker-controlled server.
-- Newer versions of macOS, including Sequoia, now include security features designed to alert users when pasting potentially malicious commands into the system.
+- Phoenix Worm is a Golang-based stager designed to establish persistent footholds and facilitate the delivery of secondary malicious payloads.
+- ShadeStager is a modular post-exploitation tool specifically engineered to steal SSH keys, cloud credentials, and authentication data from developer environments.
+- Both malware samples were invisible to all major antivirus engines at the time of their discovery by researchers.
+- ShadeStager targets high-value data from platforms including AWS, Azure, GCP, Kubernetes, and various web browsers.
+- Mosyle provided specific SHA256 hashes for both threats to assist system administrators in updating their security detection tools.
 
 ### Why it Matters
-This campaign highlights the persistent danger of social engineering tactics that bypass traditional software defenses by manipulating user behavior. Organizations and individuals should prioritize updating to the latest macOS versions to utilize built-in protections against these credential-harvesting scripts.
+These findings highlight a growing trend of modular, cross-platform malware that prioritizes stealth and persistence over traditional, noisy attack methods. As attackers increasingly bypass signature-based antivirus, organizations must adopt behavioral detection and real-time monitoring to effectively secure macOS environments against evolving threats.
 
 ============================================================
-Author:   Jessica Lyons
-Source:   Theregister.com
-URL:      https://www.theregister.com/2026/04/21/macos_clickfix_attacks_deliver_applescript/
+Author:   Arin Waichulis
+Source:   9to5Mac
+URL:      https://9to5mac.com/2026/04/22/mosyle-identifies-two-new-macos-threats-invisible-to-antivirus-engines/
 Category: Cybersecurity

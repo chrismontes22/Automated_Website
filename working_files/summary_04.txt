@@ -1,20 +1,20 @@
-AI backlash is coming for elections
+Self-Propagating Supply Chain Worm Hijacks npm Packages to Steal Developer Tokens
 ============================================================
 
-Rising public anxiety over artificial intelligence and data center development is fueling political tension, though the issue has yet to become a primary driver for most American voters.
+Cybersecurity researchers have identified a self-propagating supply chain worm, dubbed CanisterSprawl, that steals developer npm tokens to compromise packages and exfiltrate sensitive credentials from infected software development environments.
 
 ### Key Points
-- Over 60 percent of Americans support government regulation of AI to ensure economic stability and public safety.
-- Opposition to data center projects has stalled approximately $64 billion in development across the United States.
-- Super PACs like Leading the Future and Public First Action have raised millions to influence political candidates on AI policy.
-- The Alliance for Secure AI reports over 110,000 US job losses attributed to AI, with significant cuts occurring at companies like Oracle.
-- Political resistance to AI is bipartisan, with Data Center Watch noting that 55 percent of project opponents are Republicans and 45 percent are Democrats.
+- The CanisterSprawl worm targets npm packages, including @automagik/genie and pgserve, using postinstall hooks to execute malicious code.
+- Stolen data includes SSH keys, cloud credentials for AWS and Azure, Kubernetes configurations, and cryptocurrency wallet information.
+- The malware uses Internet Computer Protocol (ICP) canisters to exfiltrate data, making the malicious infrastructure highly resilient to takedowns.
+- The campaign features cross-language propagation, generating Python payloads to infect PyPI repositories alongside npm packages.
+- Researchers also identified separate, ongoing supply chain attacks targeting GitHub Actions workflows and legitimate Python packages like xinference.
 
 ### Why it Matters
-While AI is not yet a top-tier issue for the average voter, the rapid influx of lobbying money and localized protests suggest it is becoming a significant political flashpoint. As concerns over job displacement and infrastructure growth intensify, candidates may increasingly use AI regulation as a platform to capture public sentiment and differentiate themselves in future elections.
+These attacks highlight a growing trend of automated, self-replicating threats that turn individual developer machines into distribution points for further malware. By compromising CI/CD pipelines and package registries, attackers can bypass traditional security perimeters to gain persistent access to sensitive cloud and infrastructure credentials.
 
 ============================================================
-Author:   Lauren Feiner
-Source:   The Verge
-URL:      https://www.theverge.com/policy/916210/ai-midterm-elections-data-centers-jobs
-Category: Artificial Intelligence
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/04/self-propagating-supply-chain-worm.html
+Category: Cybersecurity

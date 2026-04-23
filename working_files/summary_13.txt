@@ -1,19 +1,20 @@
-Meta To Start Capturing Employee Mouse Movements, Keystrokes For AI Training Data
+Default BitLocker configuration isn’t enough: Defending endpoints against physical attacks
 ============================================================
 
-Meta is collecting internal data on employee mouse movements, keystrokes, and screen activity to train artificial intelligence agents capable of performing complex computer tasks for future workplace applications.
+Modern hybrid work environments have increased the risk of physical laptop theft, exposing vulnerabilities in standard BitLocker encryption that can be bypassed through hardware-based TPM bus snooping attacks.
 
 ### Key Points
-- Meta’s Model Capability Initiative will record employee interactions, including clicks and navigation, to improve AI agent performance.
-- CTO Andrew Bosworth confirmed the initiative, now rebranded as the Agent Transformation Accelerator, aims to automate routine workplace workflows.
-- The company stated that collected data will be used exclusively for model training rather than employee performance evaluations.
-- Spokesperson Andy Stone noted that real-world examples of human computer usage are necessary to teach AI how to navigate software interfaces effectively.
+- BitLocker’s default configuration is vulnerable to "TPM bus snooping," where attackers intercept encryption keys between the Trusted Platform Module and the CPU during startup.
+- Physical access to a device allows attackers to bypass software-based security in under a minute using hardware tools costing as little as $20.
+- These hardware-level vulnerabilities cannot be resolved through standard software patches, as they stem from the physical communication path between components.
+- Modern laptops are increasingly targeted because they store sensitive data locally, including cached credentials and corporate information, to support AI tools and remote work.
+- Industry experts are shifting toward hardware-rooted security architectures that use encrypted communication channels between the TPM and CPU to prevent interception.
 
 ### Why it Matters
-This initiative signals a shift toward developing autonomous AI agents that can observe and replicate human workflows to increase corporate productivity. By leveraging internal data, Meta aims to create systems that transition from simple chatbots to active participants capable of managing complex digital tasks.
+As remote and hybrid work models become permanent, organizations can no longer rely solely on software-based security to protect sensitive corporate data on mobile devices. This shift necessitates a hardware-first security strategy to mitigate the growing risk of physical theft and unauthorized data access.
 
 ============================================================
-Author:   BeauHD
-Source:   Slashdot.org
-URL:      https://tech.slashdot.org/story/26/04/21/1849217/meta-to-start-capturing-employee-mouse-movements-keystrokes-for-ai-training-data
-Category: Artificial Intelligence
+Author:   Ian Pratt
+Source:   TechRadar
+URL:      https://www.techradar.com/pro/default-bitlocker-configuration-isnt-enough-defending-endpoints-against-physical-attacks
+Category: Cybersecurity

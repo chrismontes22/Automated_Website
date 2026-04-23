@@ -1,5 +1,185 @@
 [
   {
+    "summary": "The Mosyle Security Research Team has identified two sophisticated, previously undetected macOS threats, Phoenix Worm and ShadeStager, which currently bypass all major antivirus engines to compromise user systems.\n\n### Key Points\n- Phoenix Worm is a Golang-based stager designed to establish persistent footholds and facilitate the delivery of secondary malicious payloads.\n- ShadeStager is a modular post-exploitation tool specifically engineered to steal SSH keys, cloud credentials, and authentication data from developer environments.\n- Both malware samples were invisible to all major antivirus engines at the time of their discovery by researchers.\n- ShadeStager targets high-value data from platforms including AWS, Azure, GCP, Kubernetes, and various web browsers.\n- Mosyle provided specific SHA256 hashes for both threats to assist system administrators in updating their security detection tools.\n\n### Why it Matters\nThese findings highlight a growing trend of modular, cross-platform malware that prioritizes stealth and persistence over traditional, noisy attack methods. As attackers increasingly bypass signature-based antivirus, organizations must adopt behavioral detection and real-time monitoring to effectively secure macOS environments against evolving threats.",
+    "source": "9to5Mac",
+    "processed_at": "2026-04-23T20:03:23.724731",
+    "author": "Arin Waichulis",
+    "category": "Cybersecurity",
+    "url": "https://9to5mac.com/2026/04/22/mosyle-identifies-two-new-macos-threats-invisible-to-antivirus-engines/",
+    "title": "Mosyle identifies two new macOS threats invisible to antivirus engines"
+  },
+  {
+    "summary": "Maker Dennis has developed a custom, battery-powered wireless button using the nRF52 microcontroller, providing a detailed open-source blueprint for those seeking to build private, offline home automation hardware.\n\n### Key Points\n- The project utilizes the nRF52 microcontroller to prioritize low power consumption for battery-operated devices.\n- Dennis implemented custom wireless communication protocols, including data packet handshakes and encryption for secure signal transmission.\n- The hardware design features custom PCBs with expansion I/O ports to support additional sensors and peripherals.\n- All project schematics and source code are publicly available on GitHub, with 3D-printable enclosure files hosted on Printables.\n\n### Why it Matters\nThis project offers a practical, privacy-focused alternative for users looking to move away from cloud-dependent smart home ecosystems. By providing open-source hardware designs, it lowers the barrier to entry for individuals interested in building custom, offline-capable automation devices.",
+    "source": "Hackaday",
+    "processed_at": "2026-04-23T20:03:51.073383",
+    "author": "Bryan Cockfield",
+    "category": "Phones, Laptops, and Gadgets",
+    "url": "https://hackaday.com/2026/04/22/diy-smart-button-gets-surprisingly-complicated/",
+    "title": "DIY Smart Button Gets Surprisingly Complicated"
+  },
+  {
+    "summary": "The new AI-powered tool Malus aims to bypass open-source license obligations by using clean-room design techniques to recreate software functionality without retaining original attribution or copyleft requirements.\n\n### Key Points\n- Malus uses proprietary AI to independently recreate open-source projects from scratch to produce legally distinct code.\n- The tool seeks to eliminate copyleft obligations and attribution requirements, offering corporate-friendly licensing for the generated software.\n- The project utilizes the \"clean room\" design methodology, a legal strategy established in 1982 by Columbia Data Products to clone IBM BIOS.\n- Creators Mike Nolan and his partner intend the tool to challenge the political economy of open-source software and current copyright norms.\n- Legal experts remain divided on whether AI-generated code is truly original or inherently derivative due to the training data used by large language models.\n\n### Why it Matters\n- This development highlights a growing tension between generative AI capabilities and traditional intellectual property protections for open-source developers. If successful, such tools could fundamentally disrupt the software industry by allowing companies to bypass restrictive licensing agreements through automated code replication.",
+    "source": "Slashdot.org",
+    "processed_at": "2026-04-23T20:04:36.750881",
+    "author": "BeauHD",
+    "category": "Artificial Intelligence",
+    "url": "https://news.slashdot.org/story/26/04/22/1631212/ai-tool-rips-off-open-source-software-without-violating-copyright",
+    "title": "AI Tool Rips Off Open Source Software Without Violating Copyright"
+  },
+  {
+    "summary": "Cybersecurity researchers have identified a self-propagating supply chain worm, dubbed CanisterSprawl, that steals developer npm tokens to compromise packages and exfiltrate sensitive credentials from infected software development environments.\n\n### Key Points\n- The CanisterSprawl worm targets npm packages, including @automagik/genie and pgserve, using postinstall hooks to execute malicious code.\n- Stolen data includes SSH keys, cloud credentials for AWS and Azure, Kubernetes configurations, and cryptocurrency wallet information.\n- The malware uses Internet Computer Protocol (ICP) canisters to exfiltrate data, making the malicious infrastructure highly resilient to takedowns.\n- The campaign features cross-language propagation, generating Python payloads to infect PyPI repositories alongside npm packages.\n- Researchers also identified separate, ongoing supply chain attacks targeting GitHub Actions workflows and legitimate Python packages like xinference.\n\n### Why it Matters\nThese attacks highlight a growing trend of automated, self-replicating threats that turn individual developer machines into distribution points for further malware. By compromising CI/CD pipelines and package registries, attackers can bypass traditional security perimeters to gain persistent access to sensitive cloud and infrastructure credentials.",
+    "source": "Internet",
+    "processed_at": "2026-04-23T20:05:21.675626",
+    "author": "info@thehackernews.com (The Hacker News)",
+    "category": "Cybersecurity",
+    "url": "https://thehackernews.com/2026/04/self-propagating-supply-chain-worm.html",
+    "title": "Self-Propagating Supply Chain Worm Hijacks npm Packages to Steal Developer Tokens"
+  },
+  {
+    "summary": "Elon Musk and OpenAI CEO Sam Altman are set to face off in a high-stakes trial beginning April 27 to determine if the company abandoned its founding mission.\n\n### Key Points\n- The legal battle, Musk v. Altman, centers on whether OpenAI has prioritized profit over its original commitment to ensure artificial general intelligence benefits humanity.\n- A judge and jury will preside over the proceedings, which could fundamentally alter how OpenAI develops and distributes its future AI technologies.\n- WIRED will host a subscriber-only livestream on May 8 at noon ET to analyze the trial's developments and implications.\n- The panel features WIRED experts Zoë Schiffer, Maxwell Zeff, and Paresh Dave, who cover Silicon Valley business and the inner workings of Big Tech.\n\n### Why it Matters\nThis trial represents a critical legal challenge to the governance structure and ethical direction of one of the world's most influential artificial intelligence developers. The court's decision could set a significant precedent for how AI companies balance commercial interests with their stated public-interest mandates.",
+    "source": "Wired",
+    "processed_at": "2026-04-23T20:05:43.745316",
+    "author": "WIRED",
+    "category": "Artificial Intelligence",
+    "url": "https://www.wired.com/story/livestream-musk-v-altman-trial/",
+    "title": "Join Our Livestream: Musk v. Altman and the Future of OpenAI"
+  },
+  {
+    "summary": "Crypto trading firm GSR has launched the Nasdaq-listed GSR Crypto Core3 ETF, providing investors with actively managed exposure to bitcoin, ether, and solana through a single regulated product.\n\n### Key Points\n- The GSR Crypto Core3 ETF trades on Nasdaq under the ticker symbol BESO.\n- The fund charges a 1% management fee and rebalances its holdings weekly based on research-driven signals.\n- Investors gain exposure to bitcoin, ether, and solana while potentially earning staking yields on eligible assets.\n- Framework Digital Advisors serves as the investment adviser for the new fund.\n- This launch marks GSR’s strategic expansion from market making and liquidity services into the asset management sector.\n\n### Why it Matters\nThis product represents a shift toward diversified, actively managed crypto investment vehicles that offer traditional brokerage access to multiple digital assets. By incorporating staking rewards, the fund provides a unique yield-generating mechanism that distinguishes it from standard single-asset crypto ETFs currently available to institutional and retail investors.",
+    "source": "CoinDesk",
+    "processed_at": "2026-04-23T20:06:09.193444",
+    "author": "Helene Braun",
+    "category": "Tech Business & Markets",
+    "url": "https://www.coindesk.com/markets/2026/04/21/crypto-giant-gsr-launches-its-first-etf-to-give-investors-an-easy-way-to-bet-on-the-big-3-tokens",
+    "title": "Crypto giant GSR launches its first ETF to give investors an easy way to bet on the big 3 tokens"
+  },
+  {
+    "summary": "Samsung is reportedly developing new \"Galaxy Buds Able\" featuring an open-ear clip design and bone conduction technology, marking a potential shift in the company's wearable audio product strategy.\n\n### Key Points\n- Samsung's alleged \"Galaxy Buds Able\" (model SM-U600) were discovered in recent One UI software files.\n- The earbuds reportedly utilize bone conduction to transmit sound via cheekbone vibrations rather than traditional air-pushing drivers.\n- The design features an open-ear clip mechanism, which may offer a more secure fit for high-activity users compared to standard in-ear models.\n- Early reports suggest the device may lack the deep bass and audio richness found in the popular Galaxy Buds 4 Pro.\n- The \"U\" in the model number deviates from Samsung's traditional naming conventions for U.S.-market mobile devices.\n\n### Why it Matters\nThis potential product launch signals Samsung's intent to compete in the growing open-ear audio market, which prioritizes situational awareness and stability during physical activity. By diversifying its lineup beyond the high-fidelity Galaxy Buds 4 series, Samsung aims to capture a broader consumer base that values comfort and secure fit over traditional sound isolation.",
+    "source": "Android Central",
+    "processed_at": "2026-04-23T20:06:35.266113",
+    "author": "nickodiaz@sbcglobal.net (Nickolas Diaz) , Nickolas Diaz",
+    "category": "Phones, Laptops, and Gadgets",
+    "url": "https://www.androidcentral.com/accessories/earbuds/rumored-open-ear-galaxy-buds-able-may-use-your-bones-to-make-sound",
+    "title": "Rumored open-ear Galaxy Buds 'Able' may use your bones to make sound"
+  },
+  {
+    "summary": "Apple is reportedly preparing a major expansion into smart home hardware under John Ternus, aiming to challenge competitors with new displays, security cameras, and robotic home devices.\n\n### Key Points\n- Apple is developing a 7-inch touchscreen smart display, internally referred to as \"HomePad,\" featuring facial recognition and MagSafe mounting capabilities.\n- The company is planning a suite of home security products, including cameras and sensors, designed to integrate with a revamped, AI-powered Siri.\n- Engineering resources previously allocated to the canceled Apple Car project have been redirected to accelerate the development of new smart home hardware.\n- Apple is reportedly working on a tabletop robotic device featuring a display mounted on a robotic arm to provide both utility and companionship.\n- A new \"homeOS\" platform, potentially merging tvOS and HomePod software, is expected to serve as the foundation for future AI-driven smart home experiences.\n- Apple has historically lagged behind Amazon and Google, which have launched over 40 smart home devices combined compared to Apple’s three over the last decade.\n\n### Why it Matters\nThis strategic pivot signals a shift for Apple as it attempts to transform its smart home platform from a secondary project into a core business priority. By leveraging its privacy-focused ecosystem and new AI capabilities, Apple aims to capture market share in a category currently dominated by established competitors.",
+    "source": "The Verge",
+    "processed_at": "2026-04-23T20:07:00.469235",
+    "author": "Jennifer Pattison Tuohy",
+    "category": "Phones, Laptops, and Gadgets",
+    "url": "https://www.theverge.com/tech/916698/apple-home-ternus-hardware-homepad-rumors",
+    "title": "Will a new CEO realize Apple’s smart home potential?"
+  },
+  {
+    "summary": "Microsoft confirms that the built-in Microsoft Defender antivirus provides sufficient security for most Windows 11 users, advising against the unnecessary installation of additional third-party security software.\n\n### Key Points\n- Microsoft Defender offers real-time protection against malware, phishing, and ransomware as a native Windows 11 application.\n- The company warns that running multiple antivirus programs simultaneously can cause system conflicts and excessive resource consumption.\n- Microsoft recommends keeping Windows 11 updated and exercising caution with software downloads to maintain optimal security.\n- Community feedback on platforms like Reddit suggests that many users consider the built-in protection adequate for daily computing needs.\n\n### Why it Matters\nRelying on built-in security tools reduces system overhead and simplifies device management for the average user. This guidance helps consumers avoid unnecessary software costs and potential performance issues caused by redundant security applications.",
+    "source": "Windows Central",
+    "processed_at": "2026-04-23T20:11:33.530045",
+    "author": "kevinokemwa@outlook.com (Kevin Okemwa) , Kevin Okemwa",
+    "category": "Cybersecurity",
+    "url": "https://www.windowscentral.com/microsoft/windows-11/microsoft-says-windows-11s-built-in-defender-antivirus-is-usually-sufficient-for-most-pc-users",
+    "title": "Microsoft says Windows 11’s built-in 'Defender' antivirus is \"usually sufficient\" for most PC users: \"I haven't used a 3rd party antivirus since XP\""
+  },
+  {
+    "summary": "Mozilla has released Firefox 150 and Thunderbird 150, introducing refined split-view features, enhanced PDF management tools, and improved local data security for both browser and email users.\n\n### Key Points\n- Firefox 150 adds a right-click option to open links in a new split-view pane and allows users to swap pane positions via the tab menu.\n- The built-in PDF viewer now supports page manipulation, including reordering, removing, and exporting specific pages from documents.\n- Thunderbird 150 introduces the ability to search within encrypted message bodies and includes a simplified Account Hub for easier configuration.\n- Security updates include stricter network access restrictions for local devices and improved emoji support for macOS and Linux users.\n- Both applications continue to offer Extended Support Releases (ESR), currently at version 140, for users requiring a more stable update cycle.\n\n### Why it Matters\nThese updates reinforce the importance of maintaining local, open-source alternatives to proprietary software for data sovereignty and reliability. By providing robust offline tools for email and web browsing, Mozilla offers a critical contingency for users who may face service outages or restricted cloud access.",
+    "source": "Theregister.com",
+    "processed_at": "2026-04-23T20:12:06.016259",
+    "author": "Liam Proven",
+    "category": "Phones, Laptops, and Gadgets",
+    "url": "https://www.theregister.com/2026/04/22/ffox_and_tbird_150/",
+    "title": "Thunderbird in hand worth 2 Outlooks as fresh FOSS fave and Firefox arrive"
+  },
+  {
+    "summary": "Crypto entrepreneur Justin Sun has filed a federal lawsuit against World Liberty Financial, alleging the Trump-affiliated venture illegally froze his $320 million stake in WLFI digital tokens.\n\n### Key Points\n- Justin Sun claims World Liberty Financial secretly installed tools to block the sale of his 4 billion WLFI tokens.\n- The lawsuit alleges the company threatened to permanently delete or \"burn\" Sun's holdings from his digital wallet.\n- Sun invested $45 million in WLFI tokens in 2024 and was previously identified as an adviser to the venture.\n- World Liberty Financial denies that Sun holds an operational role or advisory status within the company.\n- The venture has faced ongoing investor criticism regarding its centralized governance and lack of transparency.\n- A proposed company measure seeks to restrict early investors from trading tokens until 2030.\n\n### Why it Matters\nThis legal battle highlights significant governance risks and transparency concerns surrounding high-profile crypto ventures linked to political figures. The outcome could set a precedent for how decentralized finance platforms manage investor rights and the unilateral power to restrict digital asset liquidity.",
+    "source": "Al Jazeera English",
+    "processed_at": "2026-04-23T20:13:14.880625",
+    "author": "Al Jazeera",
+    "category": "Tech Business & Markets",
+    "url": "https://www.aljazeera.com/economy/2026/4/22/blockchain-billionaire-sun-takes-trump-familys-crypto-firm-to-court",
+    "title": "Blockchain billionaire Sun takes Trump family’s crypto firm to court"
+  },
+  {
+    "summary": "Google Cloud announced a major shift toward agentic AI at its Cloud Next conference, introducing new enterprise platforms and advanced hardware to automate complex business workflows autonomously.\n\n### Key Points\n- Google launched the Gemini enterprise agent platform, allowing businesses to design, schedule, and manage autonomous AI bots across various applications.\n- CEO Thomas Kurian emphasized that the company is prioritizing security and system integration to help enterprises scale AI-driven business processes.\n- The company unveiled two eighth-generation TPUs, the 8T and 8I, specifically engineered to accelerate AI training and inference workloads.\n- The 8T chip offers three times the processing power of the previous seventh-generation Ironwood hardware, while the 8I features significant memory improvements.\n\n### Why it Matters\nThis strategic pivot toward agentic AI signals a transition from simple generative tools to autonomous systems capable of executing complex, multi-step business tasks with minimal human oversight. By providing both the software infrastructure and specialized hardware, Google aims to capture a larger share of the enterprise market as companies seek to improve operational efficiency and reduce costs.",
+    "source": "CNET",
+    "processed_at": "2026-04-23T20:14:37.948377",
+    "author": "Katelyn Chedraoui",
+    "category": "Artificial Intelligence",
+    "url": "https://www.cnet.com/tech/services-and-software/google-cloud-next-2026-ai-agents-computing-chips-news/",
+    "title": "Google Cloud Pushes Hard on AI Agents and Hardcore Computing"
+  },
+  {
+    "summary": "Modern hybrid work environments have increased the risk of physical laptop theft, exposing vulnerabilities in standard BitLocker encryption that can be bypassed through hardware-based TPM bus snooping attacks.\n\n### Key Points\n- BitLocker’s default configuration is vulnerable to \"TPM bus snooping,\" where attackers intercept encryption keys between the Trusted Platform Module and the CPU during startup.\n- Physical access to a device allows attackers to bypass software-based security in under a minute using hardware tools costing as little as $20.\n- These hardware-level vulnerabilities cannot be resolved through standard software patches, as they stem from the physical communication path between components.\n- Modern laptops are increasingly targeted because they store sensitive data locally, including cached credentials and corporate information, to support AI tools and remote work.\n- Industry experts are shifting toward hardware-rooted security architectures that use encrypted communication channels between the TPM and CPU to prevent interception.\n\n### Why it Matters\nAs remote and hybrid work models become permanent, organizations can no longer rely solely on software-based security to protect sensitive corporate data on mobile devices. This shift necessitates a hardware-first security strategy to mitigate the growing risk of physical theft and unauthorized data access.",
+    "source": "TechRadar",
+    "processed_at": "2026-04-23T20:14:59.611086",
+    "author": "Ian Pratt",
+    "category": "Cybersecurity",
+    "url": "https://www.techradar.com/pro/default-bitlocker-configuration-isnt-enough-defending-endpoints-against-physical-attacks",
+    "title": "Default BitLocker configuration isn’t enough: Defending endpoints against physical attacks"
+  },
+  {
+    "summary": "Apple CEO Tim Cook, Adobe CEO Shantanu Narayen, and Netflix co-founder Reed Hastings are stepping down as major technology and entertainment firms navigate a transformative shift toward artificial intelligence.\n\n### Key Points\n- Tim Cook will transition to executive chairman at Apple, with John Ternus named as his successor.\n- Adobe CEO Shantanu Narayen announced his departure after 18 years, citing the industry's rapid transition into the era of AI.\n- Netflix co-founder Reed Hastings is leaving the board of directors as the company integrates AI into production and marketing.\n- Disney recently transitioned leadership to Josh D’Amaro, who is prioritizing the company's physical experiences division over traditional studio operations.\n- Netflix acquired the AI production company InterPositive for $600 million to bolster its technological capabilities.\n- Adobe continues to expand its Firefly AI model to maintain competitiveness against rivals like Blackmagic Design.\n\n### Why it Matters\nThe simultaneous departure of long-tenured leaders across major tech and entertainment companies signals a fundamental restructuring of corporate strategy in response to the rise of artificial intelligence. These leadership changes reflect a broader market pivot where firms are prioritizing AI-driven efficiency and new revenue models over the traditional operational frameworks that defined the last two decades.",
+    "source": "Forbes",
+    "processed_at": "2026-04-23T20:15:30.879628",
+    "author": "David Bloom, Senior Contributor, \n David Bloom, Senior Contributor\n https://www.forbes.com/sites/dbloom/",
+    "category": "Tech Business & Markets",
+    "url": "https://www.forbes.com/sites/dbloom/2026/04/22/a-sudden-changing-of-the-guard-at-apple-adobe-netflix-and-disney/",
+    "title": "A Sudden Changing Of The Guard, At Apple, Adobe, Netflix And Disney"
+  },
+  {
+    "summary": "The Enforcement Directorate is investigating the sons of Congress MLA N A Haris and the grandson of Rahman Khan for alleged money laundering linked to a 2017 cryptocurrency hack.\n\n### Key Points\n- The Enforcement Directorate searched properties linked to Mohammed Haris Nalapad, Omar Haris, and Aquib Khan regarding the 2017 Unocoin exchange hack.\n- Hacker Srikrishna Ramesh, known as Sriki, allegedly stole Rs 1.14 crore in cryptocurrency, with the trio identified as primary beneficiaries of the proceeds.\n- Investigators are scrutinizing a suspicious Rs 57 lakh Porsche Macan transaction involving the suspects and the hacker’s accountant, Robin Khandelwal.\n- The Karnataka Police’s Special Investigation Team is currently finalizing a chargesheet despite internal reports of political pressure regarding the involvement of high-profile political kin.\n- The suspects were previously questioned by both the Enforcement Directorate and the state SIT throughout 2024 and 2025 regarding their financial ties to the hacker.\n\n### Why it Matters\nThis investigation highlights the intersection of high-stakes cybercrime and political influence within Karnataka's governance. The case underscores the challenges law enforcement faces when probing financial crimes that allegedly involve the relatives of prominent political figures.",
+    "source": "The Indian Express",
+    "processed_at": "2026-04-23T20:15:59.442369",
+    "author": "Express News Service",
+    "category": "Cybersecurity",
+    "url": "https://indianexpress.com/article/cities/bangalore/ed-crypto-probe-bengaluru-haris-sons-unocoin-case-10650302/",
+    "title": "ED searches on sons of Karnataka Congress MLA casts spotlight on 2017 Unocoin crypto exchange hacking probe"
+  },
+  {
+    "summary": "OpenAI CEO Sam Altman has criticized Anthropic for using fear-based marketing tactics regarding its Claude Mythos model, which is currently restricted to a select group of corporate partners.\n\n### Key Points\n- Sam Altman accused Anthropic of leveraging safety concerns to justify keeping powerful AI technology within a small, controlled group of organizations.\n- Anthropic withheld the public release of Claude Mythos, citing the model's advanced ability to identify cybersecurity vulnerabilities.\n- Access to the model is currently limited to 11 organizations, including Google, Microsoft, Amazon Web Services, Nvidia, and JPMorgan Chase, under \"Project Glasswing.\"\n- Altman contrasted Anthropic’s approach with OpenAI’s strategy, which prioritizes broader public releases and collective technological advancement.\n- The public disagreement highlights an intensifying rivalry between OpenAI and Anthropic, which was founded by former OpenAI employees.\n\n### Why it Matters\nThis dispute underscores a fundamental divide in the artificial intelligence industry regarding the balance between safety-driven restricted access and the democratization of powerful tools. The tension between these leading labs reflects broader concerns about how AI development should be governed and who should ultimately control access to the most advanced models.",
+    "source": "Business Insider",
+    "processed_at": "2026-04-23T20:16:25.354506",
+    "author": "Brent D. Griffiths",
+    "category": "Artificial Intelligence",
+    "url": "https://www.businessinsider.com/sam-altman-anthropic-claude-mythos-bomb-shelter-2026-4",
+    "title": "Sam Altman compares Anthropic's Mythos to dropping a bomb while selling a $100 billion bomb shelter"
+  },
+  {
+    "summary": "Crypto entrepreneur Justin Sun has filed a lawsuit against World Liberty Financial, alleging the Trump-affiliated venture froze his $75 million investment and attempted to engage in criminal extortion.\n\n### Key Points\n- Justin Sun claims World Liberty Financial blocked his access to tokens and threatened to burn his holdings after he refused to promote their USD1 stablecoin.\n- The lawsuit alleges the project is on the brink of collapse and accuses the team of retaliatory actions against his TRON blockchain network.\n- Sun previously faced SEC charges in 2023 for market manipulation and unregistered securities, which were dismissed following the recent change in presidential administration.\n- World Liberty Financial has not yet issued a formal response to the allegations or the ongoing litigation.\n\n### Why it Matters\nThis legal dispute highlights the volatile intersection of high-profile political figures and the largely unregulated cryptocurrency sector. The conflict underscores the significant financial and reputational risks inherent in speculative crypto ventures, even those backed by prominent political brands.",
+    "source": "The New Republic",
+    "processed_at": "2026-04-23T20:20:55.601059",
+    "author": "Malcolm Ferguson",
+    "category": "Tech Business & Markets",
+    "url": "https://newrepublic.com/post/209365/billionaire-investor-justin-sun-sues-trump-crypto-firm-world-liberty",
+    "title": "Billionaire Investor Sues Trump’s Crypto Firm Over Shady Tactics"
+  },
+  {
+    "summary": "Reports indicate that Apple plans to implement manufacturing and component downgrades for the standard iPhone 18 model to maintain current price points without increasing costs for consumers.\n\n### Key Points\n- Leaker \"Fixed Focus Digital\" claims the iPhone 18 will feature reduced display specifications and lower-tier chip performance.\n- Potential hardware changes include a reduction from five to four GPU cores in the A-series processor.\n- Apple reportedly intends to align the standard iPhone 18 specifications more closely with the budget-friendly iPhone 18e model.\n- Engineering Validation Testing for the new iPhone 18 lineup is scheduled to begin in June.\n- The standard iPhone 18 is expected to launch in the spring of 2027, following a separate fall release for Pro models.\n\n### Why it Matters\nThis strategy suggests Apple is prioritizing stable pricing over hardware innovation to navigate rising manufacturing costs. By narrowing the performance gap between standard and budget models, the company may shift its market positioning for future iPhone generations.",
+    "source": "MacRumors",
+    "processed_at": "2026-04-23T20:21:20.916316",
+    "author": "Hartley Charlton",
+    "category": "Phones, Laptops, and Gadgets",
+    "url": "https://www.macrumors.com/2026/04/22/leaker-apple-downgrade-iphone-18-two-ways/",
+    "title": "Leaker: Apple to Downgrade iPhone 18 in Two Ways"
+  },
+  {
+    "summary": "The bipartisan Parents Decide Act, introduced by Reps. Josh Gottheimer and Elise Stefanik, proposes mandatory age verification for all users accessing operating systems on computers and mobile devices.\n\n### Key Points\n- The bill requires operating system providers to collect dates of birth from all users to set up or access devices.\n- Parents or legal guardians would be required to verify the age of any user under 18 years old.\n- Operating systems would be mandated to share user verification data with third-party app developers.\n- The legislation delegates the creation of specific verification methods and enforcement protocols to the Federal Trade Commission.\n- The proposal follows a trend of legislative efforts to implement age-gating across social media platforms and app stores.\n\n### Why it Matters\nThis legislation represents a significant shift toward mandatory digital identification for general-purpose computing, potentially ending online anonymity for all users. By delegating implementation details to the Federal Trade Commission, the bill concentrates regulatory power and raises concerns regarding user privacy and the future of open internet access.",
+    "source": "Reason",
+    "processed_at": "2026-04-23T20:25:51.644660",
+    "author": "Elizabeth Nolan Brown",
+    "category": "Phones, Laptops, and Gadgets",
+    "url": "https://reason.com/2026/04/22/a-new-age-verification-bill-could-make-you-show-id-to-use-a-computer-or-smartphone/",
+    "title": "A New Age-Verification Bill Could Make You Show ID To Use a Computer or Smartphone"
+  },
+  {
+    "summary": "Former Spotify executive Dawn Ostroff has joined the board of directors at Moloco, an AI-native advertising firm, to help guide the company's global expansion and digital strategy.\n\n### Key Points\n- Dawn Ostroff previously served as Chief Content & Advertising Business Officer at Spotify and president of Condé Nast Entertainment.\n- Moloco operates an AI-driven advertising platform that supports mobile apps, connected-TV platforms, and retail media businesses.\n- The company maintains a global presence, operating in more than 200 countries and territories with offices in the U.S. and UK.\n- Ostroff currently holds board positions at Mattel and Sweetgreen and previously advised on the acquisition of Activision Blizzard by Microsoft.\n\n### Why it Matters\nOstroff’s appointment signals Moloco’s intent to scale its influence within the competitive digital advertising sector as AI-driven data systems become increasingly central to the internet economy. Her extensive background in media transformation will likely assist the company in navigating complex shifts in how businesses monetize content and reach global audiences.",
+    "source": "Deadline",
+    "processed_at": "2026-04-23T20:26:14.041848",
+    "author": "Dade Hayes",
+    "category": "Artificial Intelligence",
+    "url": "http://deadline.com/2026/04/dawn-ostroff-joins-board-of-ai-advertising-firm-moloco-spotify-cw-1236867935/",
+    "title": "Media And Tech Veteran Dawn Ostroff Joins Board Of AI Advertising Firm Moloco"
+  },
+  {
     "source": "Theregister.com",
     "summary": "A sophisticated ClickFix social engineering campaign is targeting macOS users by tricking them into executing malicious AppleScript commands that steal credentials, session cookies, and cryptocurrency wallet data.\n\n### Key Points\n- Attackers use fake CAPTCHA prompts to trick users into pasting malicious curl commands into the macOS Spotlight search feature.\n- The malware harvests data from 14 browsers, 16 standalone cryptocurrency wallets, and over 200 browser extensions.\n- Stolen information includes Keychain passwords, session tokens, credit card numbers, and credentials for password managers like 1Password and LastPass.\n- The script creates a temporary directory at /tmp/xdivcmp/ to stage stolen data before exfiltrating it to an attacker-controlled server.\n- Newer versions of macOS, including Sequoia, now include security features designed to alert users when pasting potentially malicious commands into the system.\n\n### Why it Matters\nThis campaign highlights the persistent danger of social engineering tactics that bypass traditional software defenses by manipulating user behavior. Organizations and individuals should prioritize updating to the latest macOS versions to utilize built-in protections against these credential-harvesting scripts.",
     "category": "Cybersecurity",
