@@ -1,19 +1,20 @@
-Billionaire Investor Sues Trump’s Crypto Firm Over Shady Tactics
+Vercel identifies more accounts 'with evidence of prior compromise' exposed during security incident
 ============================================================
 
-Crypto entrepreneur Justin Sun has filed a lawsuit against World Liberty Financial, alleging the Trump-affiliated venture froze his $75 million investment and attempted to engage in criminal extortion.
+Cloud development platform Vercel has expanded its breach investigation after discovering that more customer accounts were compromised than initially reported following a security incident involving third-party AI tools.
 
 ### Key Points
-- Justin Sun claims World Liberty Financial blocked his access to tokens and threatened to burn his holdings after he refused to promote their USD1 stablecoin.
-- The lawsuit alleges the project is on the brink of collapse and accuses the team of retaliatory actions against his TRON blockchain network.
-- Sun previously faced SEC charges in 2023 for market manipulation and unregistered securities, which were dismissed following the recent change in presidential administration.
-- World Liberty Financial has not yet issued a formal response to the allegations or the ongoing litigation.
+- Vercel confirmed that attackers gained unauthorized access to internal environments and non-sensitive environment variables through a compromised employee Google Workspace account.
+- Security researchers at Hudson Rock linked the initial entry point to a Context.ai account infected with Lumma Stealer malware in February 2026.
+- The company identified additional compromised accounts, some of which were linked to separate social engineering or malware incidents predating the primary breach.
+- A dark web actor attempted to sell stolen Vercel data while falsely claiming affiliation with the hacking group ShinyHunters.
+- CEO Guillermo Rauch stated that threat actors are actively distributing malware to harvest authentication tokens and access keys for various cloud service providers.
 
 ### Why it Matters
-This legal dispute highlights the volatile intersection of high-profile political figures and the largely unregulated cryptocurrency sector. The conflict underscores the significant financial and reputational risks inherent in speculative crypto ventures, even those backed by prominent political brands.
+This incident highlights the significant security risks posed by employees using third-party AI tools that can serve as vectors for credential theft. It underscores the necessity for businesses to implement stricter access controls and monitor for malware that targets session tokens and environment variables.
 
 ============================================================
-Author:   Malcolm Ferguson
-Source:   The New Republic
-URL:      https://newrepublic.com/post/209365/billionaire-investor-justin-sun-sues-trump-crypto-firm-world-liberty
-Category: Tech Business & Markets
+Author:   Sead Fadilpašić
+Source:   TechRadar
+URL:      https://www.techradar.com/pro/security/vercel-identifies-more-accounts-with-evidence-of-prior-compromise-exposed-during-security-incident
+Category: Cybersecurity

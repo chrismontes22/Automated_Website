@@ -1,20 +1,20 @@
-Mosyle identifies two new macOS threats invisible to antivirus engines
+If malware via monitor cables is a matter of national security, this might be the gadget for you
 ============================================================
 
-The Mosyle Security Research Team has identified two sophisticated, previously undetected macOS threats, Phoenix Worm and ShadeStager, which currently bypass all major antivirus engines to compromise user systems.
+**The UK’s National Cyber Security Centre has launched SilentGlass, a hardware device designed to block malicious traffic and prevent cyberattacks targeting HDMI and DisplayPort monitor connections.**
 
 ### Key Points
-- Phoenix Worm is a Golang-based stager designed to establish persistent footholds and facilitate the delivery of secondary malicious payloads.
-- ShadeStager is a modular post-exploitation tool specifically engineered to steal SSH keys, cloud credentials, and authentication data from developer environments.
-- Both malware samples were invisible to all major antivirus engines at the time of their discovery by researchers.
-- ShadeStager targets high-value data from platforms including AWS, Azure, GCP, Kubernetes, and various web browsers.
-- Mosyle provided specific SHA256 hashes for both threats to assist system administrators in updating their security detection tools.
+- SilentGlass is the first commercial hardware product engineered by the UK's National Cyber Security Centre (NCSC).
+- The device is manufactured and sold by UK-based Goldilock Labs in partnership with Sony UK.
+- It functions by identifying and blocking malicious data traffic between computers and displays via HDMI or DisplayPort cables.
+- The technology was previously deployed within UK government estates to protect high-threat environments from potential espionage.
+- The product is now available for purchase by private businesses and consumers to secure critical infrastructure.
 
 ### Why it Matters
-These findings highlight a growing trend of modular, cross-platform malware that prioritizes stealth and persistence over traditional, noisy attack methods. As attackers increasingly bypass signature-based antivirus, organizations must adopt behavioral detection and real-time monitoring to effectively secure macOS environments against evolving threats.
+This release signals a shift toward treating physical hardware interfaces as critical security boundaries rather than trusted connections. While such attacks remain rare, the device provides a specialized defense for organizations handling sensitive data against sophisticated, state-sponsored espionage threats.
 
 ============================================================
-Author:   Arin Waichulis
-Source:   9to5Mac
-URL:      https://9to5mac.com/2026/04/22/mosyle-identifies-two-new-macos-threats-invisible-to-antivirus-engines/
+Author:   Connor Jones
+Source:   Theregister.com
+URL:      https://www.theregister.com/2026/04/23/ncscs_first_foray_into_commercial/
 Category: Cybersecurity

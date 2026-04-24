@@ -1,20 +1,20 @@
-Thunderbird in hand worth 2 Outlooks as fresh FOSS fave and Firefox arrive
+I built a local LLM server I can access from anywhere, and it uses a Raspberry Pi
 ============================================================
 
-Mozilla has released Firefox 150 and Thunderbird 150, introducing refined split-view features, enhanced PDF management tools, and improved local data security for both browser and email users.
+A tech enthusiast successfully configured a Raspberry Pi 5 to host small-scale large language models using llama.cpp, Open WebUI, and Tailscale for remote access to local AI tools.
 
 ### Key Points
-- Firefox 150 adds a right-click option to open links in a new split-view pane and allows users to swap pane positions via the tab menu.
-- The built-in PDF viewer now supports page manipulation, including reordering, removing, and exporting specific pages from documents.
-- Thunderbird 150 introduces the ability to search within encrypted message bodies and includes a simplified Account Hub for easier configuration.
-- Security updates include stricter network access restrictions for local devices and improved emoji support for macOS and Linux users.
-- Both applications continue to offer Extended Support Releases (ESR), currently at version 140, for users requiring a more stable update cycle.
+- The project utilized a Raspberry Pi 5 (8GB) running Raspberry Pi OS Lite to minimize system resource overhead.
+- Llama.cpp was selected over Ollama for its superior performance and efficiency on single-board computer hardware.
+- The setup successfully ran the Qwen3.5-0.8B model and achieved 5.6 tokens per second with the Llama-3.2-3B model.
+- Open WebUI was deployed via Docker to provide a user-friendly interface for interacting with the hosted models.
+- Tailscale was implemented to enable secure, remote access to the LLM workstation without exposing router ports to the internet.
 
 ### Why it Matters
-These updates reinforce the importance of maintaining local, open-source alternatives to proprietary software for data sovereignty and reliability. By providing robust offline tools for email and web browsing, Mozilla offers a critical contingency for users who may face service outages or restricted cloud access.
+This experiment demonstrates the feasibility of running lightweight AI models on edge hardware for niche, low-power computing tasks. While not a replacement for high-end GPU-based systems, it provides a practical blueprint for developers looking to build portable or standalone AI-powered appliances.
 
 ============================================================
-Author:   Liam Proven
-Source:   Theregister.com
-URL:      https://www.theregister.com/2026/04/22/ffox_and_tbird_150/
-Category: Phones, Laptops, and Gadgets
+Author:   Ayush Pande
+Source:   XDA Developers
+URL:      https://www.xda-developers.com/i-built-a-local-llm-server-i-can-access-from-anywhere/
+Category: Artificial Intelligence
