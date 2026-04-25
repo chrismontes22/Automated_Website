@@ -1,20 +1,21 @@
-I built a local LLM server I can access from anywhere, and it uses a Raspberry Pi
+This Week in Security: Annoyed Researchers, Dangling DNS, and Hacks that Could Have Been Worse
 ============================================================
 
-A tech enthusiast successfully configured a Raspberry Pi 5 to host small-scale large language models using llama.cpp, Open WebUI, and Tailscale for remote access to local AI tools.
+A new Windows Defender zero-day exploit called RedSun has been released by a security researcher, while other major cybersecurity incidents impact Bitwarden, Anthropic, and various educational institutions.
 
 ### Key Points
-- The project utilized a Raspberry Pi 5 (8GB) running Raspberry Pi OS Lite to minimize system resource overhead.
-- Llama.cpp was selected over Ollama for its superior performance and efficiency on single-board computer hardware.
-- The setup successfully ran the Qwen3.5-0.8B model and achieved 5.6 tokens per second with the Llama-3.2-3B model.
-- Open WebUI was deployed via Docker to provide a user-friendly interface for interacting with the hosted models.
-- Tailscale was implemented to enable secure, remote access to the LLM workstation without exposing router ports to the internet.
+- The RedSun exploit targets a logic and timing error in Windows Defender, allowing attackers to bypass quarantine and install malicious files.
+- A group known as "Hazy Hawk" hijacked dangling DNS CNAME records at over 30 educational and government institutions to facilitate ad click spam.
+- A trojanized version of the Bitwarden command-line interface was discovered stealing SSH keys, authentication tokens, and modifying GitHub Actions.
+- Anthropic confirmed unauthorized access to its Mythos AI model following a social engineering attack against a third-party contractor.
+- Nextcloud has terminated its bug bounty program, citing an overwhelming volume of low-quality, AI-generated vulnerability reports.
+- Apple released iOS 26.4.2 to address a notification database flaw that allowed investigators to recover deleted Signal message content.
 
 ### Why it Matters
-This experiment demonstrates the feasibility of running lightweight AI models on edge hardware for niche, low-power computing tasks. While not a replacement for high-end GPU-based systems, it provides a practical blueprint for developers looking to build portable or standalone AI-powered appliances.
+These incidents highlight a growing trend of supply chain vulnerabilities and the exploitation of legacy infrastructure, such as abandoned DNS records. As AI tools increase the volume of both automated attacks and low-quality security reports, organizations face mounting pressure to secure their development pipelines and administrative configurations.
 
 ============================================================
-Author:   Ayush Pande
-Source:   XDA Developers
-URL:      https://www.xda-developers.com/i-built-a-local-llm-server-i-can-access-from-anywhere/
-Category: Artificial Intelligence
+Author:   Mike Kershaw
+Source:   Hackaday
+URL:      https://hackaday.com/2026/04/24/this-week-in-security-annoyed-researchers-dangling-dns-and-hacks-that-could-have-been-worse/
+Category: Cybersecurity

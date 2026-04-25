@@ -1,20 +1,20 @@
-Vercel identifies more accounts 'with evidence of prior compromise' exposed during security incident
+Google wants to protect me from myself, but I'm not sure I want it to
 ============================================================
 
-Cloud development platform Vercel has expanded its breach investigation after discovering that more customer accounts were compromised than initially reported following a security incident involving third-party AI tools.
+Google has introduced a new device-level Advanced Protection feature in Android 16 that significantly tightens security settings, though it restricts user flexibility by blocking third-party app sideloading and installations.
 
 ### Key Points
-- Vercel confirmed that attackers gained unauthorized access to internal environments and non-sensitive environment variables through a compromised employee Google Workspace account.
-- Security researchers at Hudson Rock linked the initial entry point to a Context.ai account infected with Lumma Stealer malware in February 2026.
-- The company identified additional compromised accounts, some of which were linked to separate social engineering or malware incidents predating the primary breach.
-- A dark web actor attempted to sell stolen Vercel data while falsely claiming affiliation with the hacking group ShinyHunters.
-- CEO Guillermo Rauch stated that threat actors are actively distributing malware to harvest authentication tokens and access keys for various cloud service providers.
+- Android 16’s Advanced Protection feature acts as an internal lock, automatically enabling and enforcing strict security settings across the entire device.
+- Enabling the feature prevents users from disabling Play Protect, which effectively blocks the installation of third-party APK and OBB files.
+- The system includes an Inactivity Reboot function that automatically restarts the phone if it remains locked for 72 hours.
+- Disabling the feature can trigger a 24-hour waiting period, though clearing the Play Store cache can force the system to update security configurations immediately.
+- The tool is designed to prevent phishing and unauthorized account access but limits the customization options typically associated with the Android ecosystem.
 
 ### Why it Matters
-This incident highlights the significant security risks posed by employees using third-party AI tools that can serve as vectors for credential theft. It underscores the necessity for businesses to implement stricter access controls and monitor for malware that targets session tokens and environment variables.
+This feature signals a shift toward a more restrictive, "walled garden" security model for Android, prioritizing device integrity over user customization. While it offers robust protection against malware and account takeovers, it may frustrate power users who rely on sideloading apps outside of the official Google Play Store.
 
 ============================================================
-Author:   Sead Fadilpašić
-Source:   TechRadar
-URL:      https://www.techradar.com/pro/security/vercel-identifies-more-accounts-with-evidence-of-prior-compromise-exposed-during-security-incident
+Author:   Irene Okpanachi
+Source:   Android Police
+URL:      https://www.androidpolice.com/android-16-advanced-protection/
 Category: Cybersecurity
