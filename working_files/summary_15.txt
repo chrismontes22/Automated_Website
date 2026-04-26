@@ -1,20 +1,19 @@
-This Highly Rated 18-In-1 USB-C Hub Is $30 Off On Amazon Right Now
+CISA Adds 4 Exploited Flaws to KEV, Sets May 2026 Federal Deadline
 ============================================================
 
-TobenONE’s 18-in-1 Laptop Docking Station is currently available on Amazon for $100, marking a record-low price of $30 off for the highly-rated peripheral designed to expand modern laptop connectivity.
+The U.S. Cybersecurity and Infrastructure Security Agency has added four critical vulnerabilities affecting SimpleHelp, Samsung MagicINFO 9 Server, and D-Link routers to its Known Exploited Vulnerabilities catalog.
 
 ### Key Points
-- The hub features 18 total ports, including six USB-A, three HDMI, four USB-C, Gigabit Ethernet, a headphone jack, and dual SD card slots.
-- It supports 100W Power Delivery charging and allows Windows or Chrome OS users to connect up to three 4K monitors simultaneously.
-- The device is currently discounted from $130 to $100, which represents the lowest price recorded on Amazon to date.
-- It holds a 4.2-star average rating from 102 reviews, with 72 percent of customers awarding the product a perfect five-star score.
-- Weighing 0.68 pounds and measuring 4.9 inches long, the compact unit is designed for portability and professional workstation setups.
+- CISA added CVE-2024-57726 and CVE-2024-57728, two SimpleHelp flaws linked to ransomware campaigns, to the KEV catalog.
+- Samsung MagicINFO 9 Server is impacted by CVE-2024-7399, a path traversal vulnerability previously exploited to deploy the Mirai botnet.
+- D-Link DIR-823X series routers face a command injection threat via CVE-2025-29635, which is currently being used to deliver Mirai variants.
+- Federal agencies must apply necessary patches or discontinue use of the affected D-Link hardware by the May 8, 2026, deadline.
 
 ### Why it Matters
-As laptop manufacturers continue to remove legacy ports in favor of slim USB-C designs, versatile docking stations have become essential tools for maintaining peripheral compatibility. This discount offers a cost-effective solution for users needing to bridge the gap between modern hardware and older monitors, storage drives, and wired internet connections.
+These vulnerabilities represent significant security risks because they are actively exploited by threat actors to facilitate ransomware attacks and botnet recruitment. Organizations using these specific software and hardware products must prioritize updates to prevent unauthorized system access and potential data compromise.
 
 ============================================================
-Author:   staff@bgr.com (Alvin Wanjala)
-Source:   BGR
-URL:      https://www.bgr.com/2156172/tobenone-usb-c-hub-amazon-deal-40-dollars-off/
-Category: Phones, Laptops, and Gadgets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/04/cisa-adds-4-exploited-flaws-to-kev-sets.html
+Category: Cybersecurity

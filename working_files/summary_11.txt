@@ -1,20 +1,20 @@
-'Why we must fight Palantir' — NymVPN CEO shares his anti-Palantir manifesto
+CISA reports persistent FIRESTARTER backdoor on Cisco ASA device in federal network
 ============================================================
 
-NymVPN CEO Harry Halpin has published an "Anti-Palantir Manifesto" challenging Palantir’s vision of nationalistic software development and advocating for global internet privacy through decentralized, anonymous technology.
+CISA and the UK NCSC have identified the FIRESTARTER backdoor, a persistent malware strain targeting Cisco ASA and Firepower devices that survives standard firmware updates and security patches.
 
 ### Key Points
-- Harry Halpin released a 22-point manifesto on April 22, 2026, directly countering Palantir’s recent vision for a "Technological Republic."
-- Palantir’s original manifesto, posted on April 18, argued that engineers have a moral obligation to support national defense and military power.
-- Halpin characterizes Palantir’s approach as a form of "technofascism" that merges state violence with corporate efficiency.
-- Nym clarified that the manifesto reflects Halpin’s personal philosophical views rather than official corporate policy for NymVPN.
-- The response promotes the use of decentralized "mixnet" technology and post-quantum encryption to protect users from mass surveillance.
+- FIRESTARTER exploits vulnerabilities CVE-2025-20333 and CVE-2025-20362 to gain initial remote access and control over Cisco network appliances.
+- The malware functions as a Linux ELF implant that hooks into the LINA network processing engine to execute arbitrary shellcode.
+- Attackers use the LINE VIPER post-exploitation tool alongside FIRESTARTER to maintain long-term persistence within compromised federal and enterprise systems.
+- The backdoor remains active after patching, requiring organizations to reimage affected devices or perform specific process terminations to fully remove the threat.
+- CISA issued Emergency Directive 25-03, urging agencies to use provided YARA rules to scan disk images and core dumps for signs of infection.
 
 ### Why it Matters
-This clash highlights a growing ideological divide in the tech industry between companies prioritizing national security interests and those advocating for universal digital anonymity. The debate underscores the increasing importance of privacy tools as users navigate a landscape where data tracking and state-aligned surveillance continue to expand.
+This discovery highlights a critical security gap where traditional patching fails to remediate advanced persistent threats that embed themselves deep within network infrastructure. Organizations must move beyond simple updates and implement rigorous forensic auditing to ensure that sophisticated backdoors are not maintaining unauthorized access to their edge devices.
 
 ============================================================
-Author:   Rene Millman
-Source:   TechRadar
-URL:      https://www.techradar.com/vpn/vpn-privacy-security/why-we-must-fight-palantir-nymvpn-ceo-shares-his-anti-palantir-manifesto
-Category: Tech Business & Markets
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/191241/hacking/cisa-reports-persistent-firestarter-backdoor-on-cisco-asa-device-in-federal-network.html
+Category: Cybersecurity

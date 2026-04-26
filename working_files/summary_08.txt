@@ -1,20 +1,20 @@
-New grads' harsh reality check after years of relying on ChatGPT
+A Smart Thermostat For 120V Fan Coil Systems
 ============================================================
 
-Recent college graduates entering the workforce face scrutiny over their reliance on AI tools like ChatGPT, raising concerns about whether automation has hindered their critical thinking and professional development.
+DIY enthusiast mackswan has developed a custom smart thermostat using an ESP32 microcontroller to provide modern climate control for residential HVAC systems that utilize 120-volt fan coil units.
 
 ### Key Points
-- Many students utilized generative AI throughout their four-year degree programs to complete coursework and optimize academic performance.
-- Business leaders worry that junior employees may lack foundational skills if they rely too heavily on AI to automate essential tasks.
-- AI companies, including Anthropic and OpenAI, are testing new pricing models and facing computing power constraints that may limit future tool access.
-- Industry experts suggest that human-led critical thinking remains superior to AI for complex problem-solving and high-level communication.
-- New workers may face a professional disadvantage if they cannot replicate AI-generated results without the assistance of automated software.
+- The device utilizes an ESP32 board running ESPHome firmware to manage heating and cooling functions.
+- Hardware includes a 2.42-inch OLED display with automatic brightness and a rotary encoder for user input.
+- An SHTC3 sensor provides precise monitoring of ambient temperature and humidity levels within the home.
+- A relay mechanism allows the unit to safely switch high-voltage fan coil systems on and off.
+- The project offers a functional alternative for apartment and condo residents unable to use standard 24V smart thermostats.
 
 ### Why it Matters
-The integration of AI into higher education is forcing employers to reevaluate how they train and mentor the next generation of workers. Balancing the efficiency of AI with the development of human expertise is now a critical challenge for companies managing a workforce that is increasingly dependent on automated tools.
+This project addresses a significant compatibility gap for residents in older buildings or high-density housing that rely on non-standard 120-volt HVAC infrastructure. By leveraging accessible open-source hardware, it provides a scalable blueprint for users seeking to modernize climate control systems that are typically ignored by major smart home manufacturers.
 
 ============================================================
-Author:   Dan DeFrancesco
-Source:   Business Insider
-URL:      https://www.businessinsider.com/college-graduates-ai-chatgpt-2026-4
-Category: Artificial Intelligence
+Author:   Zoe Skyforest
+Source:   Hackaday
+URL:      https://hackaday.com/2026/04/24/a-smart-thermostat-for-120v-fan-coil-systems/
+Category: Phones, Laptops, and Gadgets

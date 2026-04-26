@@ -1,20 +1,20 @@
-Bitcoin stalls below at $77,500 as volatility cools, traders unwind leverage
+Cloudflare Optimizes Edge Stack for High-Core CPUs Instead of Large Cache
 ============================================================
 
-Bitcoin price momentum has cooled as the cryptocurrency stalls below $77,500, prompting traders to unwind leveraged positions while open interest in futures contracts declines by over 6%.
+Cloudflare has launched its Gen 13 server architecture, utilizing 192-core AMD EPYC Turin processors and a redesigned Rust-based software stack to double traffic capacity while improving energy efficiency.
 
 ### Key Points
-- Bitcoin futures open interest dropped to 744,300 BTC within 24 hours as prices failed to sustain a breakout above $80,000.
-- Annualized perpetual funding rates turned slightly negative, reflecting a shift toward bearish short positioning in the derivatives market.
-- Zcash (ZEC) bucked the broader market trend with a 7.5% increase in open interest and an 80% surge in trading volume following its Robinhood listing.
-- Bitcoin’s 30-day implied volatility index fell to 42%, marking its lowest level since January 31.
-- DeFi tokens, including Lido and Morpho, faced downward pressure following the recent $290 million KelpDAO exploit.
+- The Gen 13 servers feature 192-core AMD EPYC Turin 9965 processors, 768 GB of DDR5 memory, and 24 TB of PCIe 5.0 NVMe storage.
+- Cloudflare transitioned from cache-heavy hardware to a parallel-processing model, rewriting its FL2 software stack to optimize memory access patterns.
+- The new hardware delivers approximately 60% more capacity per rack without increasing total power consumption compared to the previous Gen 12 generation.
+- New features include integrated PCIe encryption hardware support and enhanced thermal management for high-performance PCIe accelerators.
+- The transition allows the company to maintain low latency targets despite using processors with significantly smaller L3 caches than previous models.
 
 ### Why it Matters
-The current consolidation suggests a period of market stabilization as traders reduce leverage and hedge against potential downside risks. This cooling momentum provides a clearer view of investor sentiment as the broader crypto market navigates regulatory developments and sector-specific security concerns.
+This architectural shift demonstrates a move toward software-defined hardware optimization, allowing infrastructure to scale through parallelism rather than relying on expensive, cache-heavy processors. By improving performance-per-watt, Cloudflare can increase its global edge capacity while managing the rising energy demands of modern internet traffic.
 
 ============================================================
-Author:   Oliver Knight, Omkar Godbole
-Source:   CoinDesk
-URL:      https://www.coindesk.com/markets/2026/04/24/bitcoin-stalls-below-at-usd77-500-as-volatility-cools-traders-unwind-leverage
+Author:   Renato Losio
+Source:   InfoQ.com
+URL:      https://www.infoq.com/news/2026/04/cache-parallelism-cloudflare/
 Category: Tech Business & Markets
