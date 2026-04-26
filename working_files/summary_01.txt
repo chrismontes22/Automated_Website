@@ -1,20 +1,20 @@
-My Website Is Hosting a Phishing Page – Now What?
+Crime crew impersonates help desk, abuses Microsoft Teams to steal your data
 ============================================================
 
-When a legitimate website is compromised and used to host phishing pages, owners must act quickly to remove malicious content, secure access points, and restore their domain's reputation.
+A new threat group identified as UNC6692 is exploiting Microsoft Teams and fake helpdesk impersonation to deploy custom Snow malware and steal sensitive corporate credentials from targeted organizations.
 
 ### Key Points
-- Attackers exploit trusted domains to host fake login pages for brands like Apple, PayPal, and Chase to bypass security filters.
-- Common entry points include outdated CMS plugins, stolen administrative credentials, compromised FTP accounts, and unmaintained staging environments.
-- Immediate containment requires taking the site offline, rotating all passwords, and revoking unauthorized access sessions before performing a full cleanup.
-- Owners should use Google Search Console and Microsoft Security Intelligence to request removal from browser blocklists after verifying the site is clean.
-- Long-term prevention relies on multi-factor authentication, regular software updates, file integrity monitoring, and the use of a web application firewall (WAF).
+- The UNC6692 group initiates attacks by flooding target organizations with email traffic before posing as IT support via Microsoft Teams to offer assistance.
+- Victims are directed to a fraudulent "Mailbox Repair Utility" page that uses a double-entry password trick to capture credentials and ensure accuracy.
+- The attack deploys a modular malware ecosystem consisting of SnowBelt, a browser-based backdoor; SnowGlaze, a Python tunneler; and SnowBasin, a remote bindshell.
+- Malicious activity is disguised as legitimate web traffic by wrapping data in JSON objects and Base64 encoding it for transfer through WebSocket tunnels.
+- Google Threat Intelligence Group reports that the campaign, observed in late December 2025, successfully establishes persistent footholds on victim endpoints.
 
 ### Why it Matters
-Having a website hijacked for phishing can severely damage a brand's reputation and lead to long-term blacklisting by search engines and email providers. Taking proactive security measures is essential to prevent attackers from leveraging your domain's established trust to deceive your users.
+This campaign highlights the growing sophistication of social engineering tactics that leverage trusted communication platforms like Microsoft Teams to bypass traditional security perimeters. By combining human manipulation with modular, stealthy malware, attackers can gain deep, persistent access to corporate networks while appearing as legitimate internal support staff.
 
 ============================================================
-Author:   Sucuri
-Source:   Sucuri.net
-URL:      https://blog.sucuri.net/2026/04/my-website-is-hosting-a-phishing-page-now-what.html
+Author:   Jessica Lyons
+Source:   Theregister.com
+URL:      https://www.theregister.com/2026/04/25/new_crime_crew_impersonates_help_desks/
 Category: Cybersecurity
