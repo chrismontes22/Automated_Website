@@ -1,0 +1,59 @@
+name: Retry Watcher
+
+# This workflow's only job is to check whether the main News Pipeline
+# asked for a delayed retry (by leaving a retry.flag file in the repo).
+# If the flag is found, it deletes it and re-triggers the News Pipeline.
+
+on:
+  schedule:
+    - cron: "30 */2 * * *"   # Wakes up every 2 hours (offset so it doesn't
+                               # clash with the main pipeline's own schedule)
+  workflow_dispatch:           # Can also be triggered manually if needed
+
+jobs:
+  check-and-retry:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write           # Needed to delete the flag file and commit
+      actions: write            # Needed to trigger the other workflow
+
+    steps:
+
+      # ── 1. CHECK OUT THE REPO ──────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ── 2. CHECK WHETHER A RETRY HAS BEEN REQUESTED ───────────────────────
+      # We look for the retry.flag file that the News Pipeline writes when it fails
+      - name: Check for retry flag
+        id: check
+        run: |
+          if [ -f retry.flag ]; then
+            echo "Retry flag found. Will re-trigger the News Pipeline."
+            echo "needed=true" >> $GITHUB_OUTPUT
+          else
+            echo "No retry flag found. Nothing to do."
+            echo "needed=false" >> $GITHUB_OUTPUT
+          fi
+
+      # ── 3. CLEAN UP THE FLAG AND RE-TRIGGER THE PIPELINE ──────────────────
+      # We delete the flag BEFORE triggering the pipeline. This means if the
+      # pipeline fails again, it will write a fresh flag with an incremented
+      # count, and this watcher will pick it up in another 2 hours.
+      - name: Remove flag and re-trigger News Pipeline
+        if: steps.check.outputs.needed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Remove the flag file and commit the deletion
+          rm retry.flag
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add retry.flag
+          git commit -m "chore: retry flag consumed, re-triggering News Pipeline"
+          git push
+
+          # Trigger the News Pipeline workflow
+          # Make sure this filename exactly matches your workflow file's name
+          gh workflow run news-pipeline.yml

@@ -2,51 +2,57 @@ name: News Pipeline
 
 on:
   schedule:
-    - cron: "0 7/12 * * *"   # every 12 hours
-  workflow_dispatch:           # lets you trigger a run manually from the GitHub UI
+    - cron: "0 7/12 * * *"   # Runs every 12 hours, starting at 07:00 UTC
+  workflow_dispatch:           # Also allows manual triggering from the GitHub UI
 
 jobs:
   run-pipeline:
-    timeout-minutes: 61
     runs-on: ubuntu-latest
+    timeout-minutes: 61
+
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
     permissions:
-      contents: write           # needed to commit articles.json back to the repo
+      contents: write           # Needed so we can commit files back to the repo
 
     steps:
-      # ── 1. Check out the repo ──────────────────────────────────────────────
+
+      # ── 1. CHECK OUT THE REPO ──────────────────────────────────────────────
+      # Downloads the repo onto the runner so we can work with its files
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # ── 2. Set up Python ──────────────────────────────────────────────────
+      # ── 2. SET UP PYTHON ───────────────────────────────────────────────────
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-          cache: pip
+          cache: pip            # Caches pip packages to speed up future runs
 
-      # ── 3. Install dependencies ───────────────────────────────────────────
+      # ── 3. INSTALL DEPENDENCIES ────────────────────────────────────────────
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      # ── 4. Run the news pipeline (With 1 Retry) ───────────────────────────
+      # ── 4. RUN THE NEWS PIPELINE ───────────────────────────────────────────
+      # Will automatically retry once immediately if it fails (2 attempts total)
       - name: Run news pipeline
+        id: pipeline              # We give this an ID so we can check if it failed later
         uses: nick-fields/retry@v3
         env:
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
           GEMINI_KEY:   ${{ secrets.GEMINI_KEY }}
         with:
           timeout_minutes: 30
-          max_attempts: 2
+          max_attempts: 2       # Attempt 1, then 1 immediate retry if it fails
           command: python news_pipeline.py
 
-      # ── 5. Merge new articles into articles.json ──────────────────────────
+      # ── 5. MERGE NEW ARTICLES INTO articles.json ──────────────────────────
       - name: Update site data
         run: python build_site_data.py
 
-      # ── 6. Commit and push articles.json ──────────────────────────────────
-      #     Only commits if articles.json actually changed (new articles arrived).
+      # ── 6. COMMIT AND PUSH CHANGES ────────────────────────────────────────
+      # Only creates a commit if articles.json or working_files/ actually changed
       - name: Commit updated articles.json
         run: |
           git config user.name  "github-actions[bot]"
@@ -55,3 +61,31 @@ jobs:
           git add working_files/
           git diff --cached --quiet || git commit -m "chore: update articles $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
+
+      # ── 7. SCHEDULE A DELAYED RETRY IF THE PIPELINE FAILED ────────────────
+      # Both immediate attempts above failed, so we write a flag file to the
+      # repo. The separate "Retry Watcher" workflow will spot this file and
+      # re-trigger this whole workflow a couple of hours later.
+      # We allow a maximum of 2 delayed retries (tracked inside the flag file).
+      - name: Schedule delayed retry on failure
+        if: failure()           # Only runs if any previous step failed
+        run: |
+          # Read the current delayed-retry count (0 if the flag doesn't exist yet)
+          COUNT=0
+          if [ -f retry.flag ]; then COUNT=$(cat retry.flag); fi
+
+          # Only schedule a delayed retry if we haven't already done 2
+          if [ "$COUNT" -lt 2 ]; then
+            NEW_COUNT=$((COUNT + 1))
+            echo $NEW_COUNT > retry.flag
+
+            git config user.name  "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add retry.flag
+            git commit -m "chore: scheduling delayed retry #${NEW_COUNT} of 2"
+            git push
+
+            echo "Delayed retry #${NEW_COUNT} scheduled. Retry Watcher will re-trigger this pipeline in ~2 hours."
+          else
+            echo "Already attempted 2 delayed retries. Giving up."
+          fi
