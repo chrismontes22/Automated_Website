@@ -1,20 +1,20 @@
-Android’s controversial sideloading changes pushed me to build my own app installer
+Lessons from building multiplayer browsers
 ============================================================
 
-New Android sideloading restrictions have prompted a developer to create a custom, lightweight Go-based installer that simplifies the APK installation process for power users via terminal commands.
+A former founding engineer reflects on the challenges of building collaborative browser startups Sail and Muddy, detailing the lessons learned from failed product-market fit and complex positioning.
 
 ### Key Points
-- The developer built "Tiny APK Installer" to bypass complex Android Debug Bridge (ADB) command-line requirements and Google’s new 24-hour sideloading wait times.
-- The tool is a 7MB cross-platform executable that supports wireless debugging, file browsing, and the installation of APK, APKM, XAPK, and APKS bundles.
-- Development was completed in three days using "vibe coding," a collaborative approach pairing human planning with AI models like MiniMax M2.7 and GLM 5.
-- The project utilized the Go programming language and the Bubble Tea terminal user interface framework to ensure a compact, efficient design.
-- The source code and releases are publicly available on the Tiny APK Installer GitHub repository for community testing and feedback.
+- The team raised $5.5 million from investors including General Catalyst and YC to build a "multiplayer browser" based on Chromium.
+- Products Sail and Muddy attempted to integrate infinite canvases, chat, and real-time collaboration into a unified work environment.
+- Development relied on a sophisticated sync engine using GraphQL, WebSockets, and React to stream DOM mutations between users.
+- The company struggled to differentiate from established tools like Slack and Notion, ultimately failing to gain broad user adoption.
+- The author emphasizes the importance of "reps"—the iterative process of building, testing, and failing—to sharpen product intuition.
 
 ### Why it Matters
-This project highlights how AI-assisted development can significantly accelerate the creation of niche utility software for power users navigating restrictive platform changes. However, it also underscores the security risks of "vibe coding," as developers must remain vigilant to identify vulnerabilities like zip slip errors in AI-generated code.
+This retrospective highlights the "novelty tax" and the difficulty of disrupting mature productivity categories where existing tools are already considered "good enough." It serves as a cautionary tale for founders about the dangers of prioritizing grand technical visions over clear, legible user workflows.
 
 ============================================================
-Author:   Robert Triggs
-Source:   Android Authority
-URL:      https://www.androidauthority.com/tiny-apk-installer-app-3651857/
-Category: Phones, Laptops, and Gadgets
+Author:   Alejandro García Salas
+Source:   Alejandro.pe
+URL:      https://www.alejandro.pe/writing/sail-muddy-lessons
+Category: Tech Business & Markets

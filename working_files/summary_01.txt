@@ -1,20 +1,20 @@
-Your Android TV is hiding hundreds of apps the Play Store won't show you — here's how it get them
+Your ISP has been watching your browsing this whole time — here's the Windows 11 fix
 ============================================================
 
-Android TV users can expand their device's functionality by sideloading third-party applications, allowing access to niche software and regional content not available through the official Google Play Store.
+Windows 11 users can significantly improve their online privacy by enabling the built-in DNS over HTTPS feature, which encrypts domain name requests to prevent ISP tracking and network hijacking.
 
 ### Key Points
-- Sideloading involves manually installing APK files, which requires enabling Developer Options on devices like the Chromecast with Google TV.
-- Users can transfer APK files to their TV using file manager apps like File Commander or FX File Explorer, or via transfer tools like LocalSend.
-- Popular sideloaded apps include SmartTube for ad-free YouTube viewing, Aptoide TV for alternative app discovery, and AdGuard for system-wide ad blocking.
-- Sideloaded applications do not update automatically, requiring users to manually download and install newer versions of the software to maintain functionality.
-- Security risks exist when downloading from unknown sources, making it essential to use only trusted websites for APK files.
+- DNS over HTTPS (DoH) encrypts domain lookups, preventing internet service providers and third parties from monitoring your browsing destinations.
+- Users can enable DoH in Windows 11 via Settings under Network & Internet by configuring manual DNS servers like Cloudflare, Google, or Quad9.
+- Enabling system-level DoH secures all network traffic from every application on the PC, rather than just browser-specific requests.
+- Disabling the "Fallback to plaintext" toggle is essential to ensure the system does not revert to unencrypted queries if a secure connection fails.
+- Configuring both IPv4 and IPv6 settings is necessary to prevent DNS leaks that could expose traffic on modern network connections.
 
 ### Why it Matters
-Sideloading provides users with greater control over their hardware by bypassing the limitations and regional restrictions imposed by the official Google Play Store. This practice enables access to specialized tools and ad-free alternatives, though it shifts the responsibility for security and software maintenance directly to the user.
+Enabling system-wide encryption closes a fundamental privacy gap that allows ISPs to log user activity even when visiting secure websites. By securing DNS requests at the operating system level, users protect their data across all installed applications without needing third-party software or individual browser configurations.
 
 ============================================================
-Author:   Pankil Shah
+Author:   Oluwademilade Afolabi
 Source:   MakeUseOf
-URL:      https://www.makeuseof.com/sideloading-apps-on-android-google-tv/
-Category: Phones, Laptops, and Gadgets
+URL:      https://www.makeuseof.com/your-isp-watching-your-browsing-whole-time-heres-windows-11-fix/
+Category: Cybersecurity
