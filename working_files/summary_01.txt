@@ -1,20 +1,20 @@
-Crime crew impersonates help desk, abuses Microsoft Teams to steal your data
+Your ISP has been watching your browsing this whole time — here's the Windows 11 fix
 ============================================================
 
-A new threat group identified as UNC6692 is exploiting Microsoft Teams and fake helpdesk impersonation to deploy custom Snow malware and steal sensitive corporate credentials from targeted organizations.
+Windows 11 users can significantly improve their online privacy by enabling the built-in DNS over HTTPS feature, which encrypts domain name requests to prevent ISP tracking and network hijacking.
 
 ### Key Points
-- The UNC6692 group initiates attacks by flooding target organizations with email traffic before posing as IT support via Microsoft Teams to offer assistance.
-- Victims are directed to a fraudulent "Mailbox Repair Utility" page that uses a double-entry password trick to capture credentials and ensure accuracy.
-- The attack deploys a modular malware ecosystem consisting of SnowBelt, a browser-based backdoor; SnowGlaze, a Python tunneler; and SnowBasin, a remote bindshell.
-- Malicious activity is disguised as legitimate web traffic by wrapping data in JSON objects and Base64 encoding it for transfer through WebSocket tunnels.
-- Google Threat Intelligence Group reports that the campaign, observed in late December 2025, successfully establishes persistent footholds on victim endpoints.
+- DNS over HTTPS (DoH) encrypts domain lookups, preventing internet service providers and third parties from monitoring your browsing destinations.
+- Users can enable DoH in Windows 11 via Settings under Network & Internet by configuring manual DNS servers like Cloudflare, Google, or Quad9.
+- Enabling system-level DoH secures all network traffic from every application on the PC, rather than just browser-specific requests.
+- Disabling the "Fallback to plaintext" toggle is essential to ensure the system does not revert to unencrypted queries if a secure connection fails.
+- Configuring both IPv4 and IPv6 settings is necessary to prevent DNS leaks that could expose traffic on modern network connections.
 
 ### Why it Matters
-This campaign highlights the growing sophistication of social engineering tactics that leverage trusted communication platforms like Microsoft Teams to bypass traditional security perimeters. By combining human manipulation with modular, stealthy malware, attackers can gain deep, persistent access to corporate networks while appearing as legitimate internal support staff.
+Enabling system-wide encryption closes a fundamental privacy gap that allows ISPs to log user activity even when visiting secure websites. By securing DNS requests at the operating system level, users protect their data across all installed applications without needing third-party software or individual browser configurations.
 
 ============================================================
-Author:   Jessica Lyons
-Source:   Theregister.com
-URL:      https://www.theregister.com/2026/04/25/new_crime_crew_impersonates_help_desks/
+Author:   Oluwademilade Afolabi
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/your-isp-watching-your-browsing-whole-time-heres-windows-11-fix/
 Category: Cybersecurity

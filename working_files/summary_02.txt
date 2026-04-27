@@ -1,20 +1,20 @@
-Amazon can delete your entire Kindle library, and there's only one thing you can do about it
+Lessons from building multiplayer browsers
 ============================================================
 
-Amazon Kindle users technically purchase digital licenses rather than permanent ownership, meaning the company retains the authority to remove purchased eBooks from user libraries due to rights issues.
+A former founding engineer reflects on the challenges of building collaborative browser startups Sail and Muddy, detailing the lessons learned from failed product-market fit and complex positioning.
 
 ### Key Points
-- Amazon utilizes Digital Rights Management (DRM) encryption to restrict eBook access, preventing users from sharing or moving files between devices.
-- Kindle files, including AZW3, KFX, and KCR formats, can be managed or converted using the free, open-source software Calibre.
-- Users can bypass restrictive DRM by utilizing the "Download & Transfer via USB" option on Amazon and applying the DeDRM plugin within Calibre.
-- Some publishers now offer DRM-free titles in EPUB or PDF formats, which can be identified in the "Product Details" section of an Amazon listing.
-- Removing DRM for personal archival purposes is technically a breach of Amazon’s license agreement and may risk account termination if terms are violated.
+- The team raised $5.5 million from investors including General Catalyst and YC to build a "multiplayer browser" based on Chromium.
+- Products Sail and Muddy attempted to integrate infinite canvases, chat, and real-time collaboration into a unified work environment.
+- Development relied on a sophisticated sync engine using GraphQL, WebSockets, and React to stream DOM mutations between users.
+- The company struggled to differentiate from established tools like Slack and Notion, ultimately failing to gain broad user adoption.
+- The author emphasizes the importance of "reps"—the iterative process of building, testing, and failing—to sharpen product intuition.
 
 ### Why it Matters
-This situation highlights the distinction between owning physical media and licensing digital content, which can leave consumers vulnerable to losing their entire library if a platform changes its policies. Understanding how to manage digital files ensures that users maintain long-term access to their purchases regardless of future storefront restrictions or account status.
+This retrospective highlights the "novelty tax" and the difficulty of disrupting mature productivity categories where existing tools are already considered "good enough." It serves as a cautionary tale for founders about the dangers of prioritizing grand technical visions over clear, legible user workflows.
 
 ============================================================
-Author:   Shaun Cichacki
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/stripping-drm-with-calibre-for-kindle-library/
-Category: Phones, Laptops, and Gadgets
+Author:   Alejandro García Salas
+Source:   Alejandro.pe
+URL:      https://www.alejandro.pe/writing/sail-muddy-lessons
+Category: Tech Business & Markets
