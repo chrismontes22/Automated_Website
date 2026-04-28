@@ -1,20 +1,20 @@
-Fast16: The Cyberweapon That Predates Stuxnet by Five Years
+Elon Musk’s XChat App Is More Like Facebook’s Messenger Than Signal
 ============================================================
 
-Researchers have identified fast16, a sophisticated cyberweapon from 2005 that predates Stuxnet by five years and secretly corrupted engineering simulations to sabotage nuclear and structural development projects.
+Elon Musk has launched XChat, a standalone encrypted messaging app for X users, amid criticism from security experts regarding its data privacy practices and overall platform integration.
 
 ### Key Points
-- Fast16 is a kernel-level driver that intercepted floating-point calculations to provide false, yet mathematically plausible, results to simulation software.
-- The malware targeted specific applications, including the LS-DYNA explosion modeling suite and the PKPM structural engineering software used for nuclear reactor analysis.
-- SentinelOne researchers discovered the malware after linking it to a "do-not-touch" entry in the 2017 ShadowBrokers leak, which is associated with the NSA’s Equation Group.
-- The tool utilized a "cluster munition" architecture, allowing it to spread across networks and deploy different payloads via an embedded Lua scripting engine.
-- Despite being uploaded to VirusTotal in 2016, the malware remained largely undetected by antivirus engines for nearly a decade.
+- XChat requires users to link an existing X account, raising concerns about data tracking and user privacy.
+- Security experts, including those from the Electronic Frontier Foundation, have questioned the app's cryptographic key storage and lack of independent auditing.
+- The app's launch was marked by multiple delays and confusion, with some users initially unable to access the service in certain regions like the UK.
+- Privacy labels on the App Store appear to contradict the company's "no tracking" claims by listing collected identifiers and usage data.
+- The app functions as an extension of the X platform, sharing help centers and terms of service rather than operating as a standalone secure messenger.
 
 ### Why it Matters
-This discovery challenges the historical timeline of cyber-warfare, proving that highly precise, state-sponsored industrial sabotage existed years before Stuxnet became the industry benchmark. It highlights a significant vulnerability in critical infrastructure, where corrupted data can lead to catastrophic real-world failures without triggering traditional security alerts.
+The launch of XChat highlights the challenges of competing in a crowded messaging market dominated by established, trusted platforms like Signal and WhatsApp. For users, the app's reliance on X account integration and its questionable privacy policies may limit its appeal beyond the platform's existing power-user base.
 
 ============================================================
-Author:   Bulls Eye
-Source:   Hackingpassion.com
-URL:      https://hackingpassion.com/fast16-pre-stuxnet-cyber-sabotage/
+Author:   Reece Rogers
+Source:   Wired
+URL:      https://www.wired.com/story/elon-musk-xchat-app-is-more-like-facebook-messenger-than-signal/
 Category: Cybersecurity
