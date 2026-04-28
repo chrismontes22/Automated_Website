@@ -1,20 +1,20 @@
-Your ISP has been watching your browsing this whole time — here's the Windows 11 fix
+Fast16: The Cyberweapon That Predates Stuxnet by Five Years
 ============================================================
 
-Windows 11 users can significantly improve their online privacy by enabling the built-in DNS over HTTPS feature, which encrypts domain name requests to prevent ISP tracking and network hijacking.
+Researchers have identified fast16, a sophisticated cyberweapon from 2005 that predates Stuxnet by five years and secretly corrupted engineering simulations to sabotage nuclear and structural development projects.
 
 ### Key Points
-- DNS over HTTPS (DoH) encrypts domain lookups, preventing internet service providers and third parties from monitoring your browsing destinations.
-- Users can enable DoH in Windows 11 via Settings under Network & Internet by configuring manual DNS servers like Cloudflare, Google, or Quad9.
-- Enabling system-level DoH secures all network traffic from every application on the PC, rather than just browser-specific requests.
-- Disabling the "Fallback to plaintext" toggle is essential to ensure the system does not revert to unencrypted queries if a secure connection fails.
-- Configuring both IPv4 and IPv6 settings is necessary to prevent DNS leaks that could expose traffic on modern network connections.
+- Fast16 is a kernel-level driver that intercepted floating-point calculations to provide false, yet mathematically plausible, results to simulation software.
+- The malware targeted specific applications, including the LS-DYNA explosion modeling suite and the PKPM structural engineering software used for nuclear reactor analysis.
+- SentinelOne researchers discovered the malware after linking it to a "do-not-touch" entry in the 2017 ShadowBrokers leak, which is associated with the NSA’s Equation Group.
+- The tool utilized a "cluster munition" architecture, allowing it to spread across networks and deploy different payloads via an embedded Lua scripting engine.
+- Despite being uploaded to VirusTotal in 2016, the malware remained largely undetected by antivirus engines for nearly a decade.
 
 ### Why it Matters
-Enabling system-wide encryption closes a fundamental privacy gap that allows ISPs to log user activity even when visiting secure websites. By securing DNS requests at the operating system level, users protect their data across all installed applications without needing third-party software or individual browser configurations.
+This discovery challenges the historical timeline of cyber-warfare, proving that highly precise, state-sponsored industrial sabotage existed years before Stuxnet became the industry benchmark. It highlights a significant vulnerability in critical infrastructure, where corrupted data can lead to catastrophic real-world failures without triggering traditional security alerts.
 
 ============================================================
-Author:   Oluwademilade Afolabi
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/your-isp-watching-your-browsing-whole-time-heres-windows-11-fix/
+Author:   Bulls Eye
+Source:   Hackingpassion.com
+URL:      https://hackingpassion.com/fast16-pre-stuxnet-cyber-sabotage/
 Category: Cybersecurity

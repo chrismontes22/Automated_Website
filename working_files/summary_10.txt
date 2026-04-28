@@ -1,20 +1,20 @@
-The new iPhones have a problem turning back on after the battery runs out
+Show HN: AI memory with biological decay (52% recall)
 ============================================================
 
-iPhone 17 and iPhone Air users are reporting that their devices may fail to restart after the battery fully depletes, often requiring a MagSafe charger to restore power.
+YourMemory is a new persistent memory layer for AI agents that uses biological decay models to help assistants retain user preferences and context across multiple sessions.
 
 ### Key Points
-- Users report that iPhone 17, 17 Pro, and Air models may remain unresponsive with a black screen after the battery reaches zero percent.
-- Standard wired USB-C charging often fails to revive the device immediately, leading to concerns that the phone has been permanently bricked.
-- Online community consensus and Apple Store technicians suggest using a MagSafe wireless charger to successfully reboot the device.
-- The issue appears to stem from battery software requiring a specific voltage threshold before the phone can initiate a restart sequence.
-- A hardware reset, involving the volume and side buttons, does not resolve the issue when the battery is below the necessary power level.
+- YourMemory functions as a Model Context Protocol (MCP) server, integrating with tools like Claude Desktop, Cline, Cursor, and Windsurf.
+- The system utilizes a hybrid architecture combining DuckDB for vector storage, NetworkX for graph-based relationships, and spaCy for natural language processing.
+- It features an automated memory decay system based on the Ebbinghaus forgetting curve, where memory strength fades over time unless reinforced by recall.
+- Benchmarks show the system achieves 59% recall, reportedly outperforming Zep Cloud by a factor of two on the LoCoMo dataset.
+- The software requires no external infrastructure or Docker, supporting local execution with optional PostgreSQL and Neo4j backends for larger datasets.
 
 ### Why it Matters
-This power management issue highlights a potential reliability flaw for users who rely on their smartphones for critical daily tasks like navigation or communication. Understanding this specific charging workaround can prevent unnecessary panic and avoid premature warranty repair requests for devices that are not actually broken.
+By enabling AI agents to maintain long-term context, YourMemory reduces the need for users to repeatedly provide instructions or preferences at the start of every session. This persistent memory layer significantly improves the utility of local AI assistants by allowing them to learn from past interactions and evolve alongside the user's specific workflows.
 
 ============================================================
-Author:   Benjamin Mayo
-Source:   9to5Mac
-URL:      https://9to5mac.com/2026/04/26/iphone-turned-off-dead-how-to-turn-back-on/
-Category: Phones, Laptops, and Gadgets
+Author:   sachitrafa
+Source:   Github.com
+URL:      https://github.com/sachitrafa/YourMemory
+Category: Artificial Intelligence
