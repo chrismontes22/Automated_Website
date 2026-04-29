@@ -1,20 +1,20 @@
-Who Asked For This?
+Ongoing supply-chain attack 'explicitly targeting' security, dev tools
 ============================================================
 
-Elizabeth Lopatto’s recent analysis in The Verge argues that Silicon Valley tech companies are prioritizing investor-driven trends over creating practical, consumer-focused products that solve real-world human problems.
+Security firm Checkmarx is investigating a data breach after the Lapsus$ extortion group claimed to have leaked sensitive source code and credentials stolen from the company's GitHub repositories.
 
 ### Key Points
-- Tech companies are increasingly pursuing speculative trends like NFTs, the metaverse, and large language models rather than addressing consumer needs.
-- Current AI marketing often prioritizes industry benchmarks over demonstrating tangible, daily benefits for the average user.
-- Public discourse surrounding AI frequently oscillates between extreme hype and existential dread, causing unnecessary consumer fatigue.
-- Recent data contradicts claims that AI is destroying entry-level job markets, as hiring for college graduates is currently projected to rise.
-- Some companies are now using AI to expand service offerings, which is actively creating new employment opportunities for recent graduates.
+- Checkmarx confirmed that attackers accessed its GitHub repositories following a supply chain compromise that originated on March 23, 2026.
+- The Lapsus$ extortion group claims to have obtained source code, API keys, and database credentials, which they have posted on their leak site.
+- The incident stems from a broader campaign by the group TeamPCP, which previously injected malware into open source tools like Trivy, LiteLLM, and KICS.
+- Compromised assets include Checkmarx GitHub Actions, Open VSX plugins, and the Bitwarden CLI, potentially impacting over 50,000 businesses.
+- Checkmarx has locked down affected repositories and is currently working to determine if any customer-specific information was exposed.
 
 ### Why it Matters
-This disconnect between tech industry priorities and consumer utility risks alienating the public and undermining the long-term adoption of new technologies. Companies must shift their focus toward developing genuinely useful products if they hope to sustain market growth and maintain public trust.
+This attack highlights a dangerous shift toward targeting high-privilege developer tools that organizations inherently trust to secure their infrastructure. By compromising these essential utilities, attackers gain a force-multiplier effect that allows them to infiltrate thousands of downstream corporate environments simultaneously.
 
 ============================================================
-Author:   Study Hacks
-Source:   Calnewport.com
-URL:      https://calnewport.com/who-asked-for-this/
-Category: Tech Business & Markets
+Author:   Jessica Lyons
+Source:   Theregister.com
+URL:      https://www.theregister.com/2026/04/27/supply_chain_campaign_targets_security/
+Category: Cybersecurity
