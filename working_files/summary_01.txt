@@ -1,20 +1,20 @@
-Your ISP has been watching your browsing this whole time — here's the Windows 11 fix
+mssPortable 1.449.334 (Microsoft Safety Scanner antivirus launcher) Released
 ============================================================
 
-Windows 11 users can significantly improve their online privacy by enabling the built-in DNS over HTTPS feature, which encrypts domain name requests to prevent ISP tracking and network hijacking.
+The latest version of mssPortable has been released, allowing users to run the Microsoft Safety Scanner as a portable application for malware detection without requiring a full Windows installation.
 
 ### Key Points
-- DNS over HTTPS (DoH) encrypts domain lookups, preventing internet service providers and third parties from monitoring your browsing destinations.
-- Users can enable DoH in Windows 11 via Settings under Network & Internet by configuring manual DNS servers like Cloudflare, Google, or Quad9.
-- Enabling system-level DoH secures all network traffic from every application on the PC, rather than just browser-specific requests.
-- Disabling the "Fallback to plaintext" toggle is essential to ensure the system does not revert to unencrypted queries if a secure connection fails.
-- Configuring both IPv4 and IPv6 settings is necessary to prevent DNS leaks that could expose traffic on modern network connections.
+- The tool enables portable execution of the Microsoft Safety Scanner to identify and remove malware from Windows systems.
+- It is packaged in the PortableApps.com Format for seamless integration with the PortableApps.com Platform, Menu, and Backup Utility.
+- Users can perform automatic updates or install the software directly through the PortableApps.com store.
+- The application is free for personal use but requires a fresh download every 10 days to remain functional.
+- Upgrades preserve existing user settings by installing directly over previous versions of the software.
 
 ### Why it Matters
-Enabling system-wide encryption closes a fundamental privacy gap that allows ISPs to log user activity even when visiting secure websites. By securing DNS requests at the operating system level, users protect their data across all installed applications without needing third-party software or individual browser configurations.
+This release provides a convenient, non-intrusive way for users to perform on-demand security scans without modifying their host operating system. It serves as a useful supplementary tool for quick malware remediation, though it is not intended to replace permanent, real-time anti-malware software.
 
 ============================================================
-Author:   Oluwademilade Afolabi
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/your-isp-watching-your-browsing-whole-time-heres-windows-11-fix/
+Author:   John T. Haller
+Source:   Portableapps.com
+URL:      https://portableapps.com/news/2026-04-27--mssportable-1.449.334-released
 Category: Cybersecurity

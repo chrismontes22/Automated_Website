@@ -1,20 +1,20 @@
-Chernobyl virus turned 27 today, and it could brick your PC in ways modern malware can't by overwriting BIOS firmware
+Ongoing supply-chain attack 'explicitly targeting' security, dev tools
 ============================================================
 
-The CIH virus, also known as Chernobyl, caused widespread global damage on April 26, 1999, by destroying data and motherboard BIOS chips on approximately 60 million Windows 9x computers.
+Security firm Checkmarx is investigating a data breach after the Lapsus$ extortion group claimed to have leaked sensitive source code and credentials stolen from the company's GitHub repositories.
 
 ### Key Points
-- Created by student Chen Ing-hau in 1998, the 1 KB virus infected Windows 95, 98, and ME systems through pirated software and commercial distribution channels.
-- The virus utilized a sophisticated "space filler" technique to hide within unused gaps in executable files, successfully evading contemporary antivirus software.
-- Upon activation, the payload overwrote boot drive partition tables and attempted to corrupt motherboard BIOS chips, rendering many affected machines completely inoperable.
-- The incident resulted in an estimated $40 million in commercial damages and prompted the Taiwanese government to enact new computer crime legislation.
-- Notable distribution incidents included pre-infected IBM Aptiva PCs and compromised firmware updates for Yamaha CD-R400 drives.
+- Checkmarx confirmed that attackers accessed its GitHub repositories following a supply chain compromise that originated on March 23, 2026.
+- The Lapsus$ extortion group claims to have obtained source code, API keys, and database credentials, which they have posted on their leak site.
+- The incident stems from a broader campaign by the group TeamPCP, which previously injected malware into open source tools like Trivy, LiteLLM, and KICS.
+- Compromised assets include Checkmarx GitHub Actions, Open VSX plugins, and the Bitwarden CLI, potentially impacting over 50,000 businesses.
+- Checkmarx has locked down affected repositories and is currently working to determine if any customer-specific information was exposed.
 
 ### Why it Matters
-The CIH outbreak remains a landmark event in cybersecurity history for demonstrating how a compact, kernel-level exploit could cause catastrophic physical and digital damage on a global scale. It forced the industry to move beyond simple file-size detection methods and highlighted the critical need for robust, hardware-level security protections in personal computing.
+This attack highlights a dangerous shift toward targeting high-privilege developer tools that organizations inherently trust to secure their infrastructure. By compromising these essential utilities, attackers gain a force-multiplier effect that allows them to infiltrate thousands of downstream corporate environments simultaneously.
 
 ============================================================
-Author:   Luke James
-Source:   Tom's Hardware UK
-URL:      https://www.tomshardware.com/tech-industry/cyber-security/the-chernobyl-virus-turned-27-today-and-it-could-brick-your-pc-in-ways-modern-malware-cant
+Author:   Jessica Lyons
+Source:   Theregister.com
+URL:      https://www.theregister.com/2026/04/27/supply_chain_campaign_targets_security/
 Category: Cybersecurity
