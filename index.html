@@ -1385,7 +1385,8 @@
   function getDateKey(iso) {
     if (!iso) return 'unknown';
     const d = new Date(iso);
-    return isNaN(d) ? 'unknown' : d.toISOString().slice(0, 10);
+    if (isNaN(d)) return 'unknown';
+    return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
   }
   function formatDateLabel(iso) {
     if (!iso) return 'Unknown Date';

@@ -547,7 +547,11 @@ function buildArticlePrerender(article, allArticles) {
 function buildListPrerender(articles, label, categorySlug = null) {
   const groups = new Map();
   for (const a of articles) {
-    const key = isoDate(a.processed_at).slice(0, 10);
+    const key = (() => {
+      const d = new Date(a.processed_at);
+      if (isNaN(d)) return 'unknown';
+      return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+    })();
     if (!groups.has(key)) groups.set(key, []);
     groups.get(key).push(a);
   }
