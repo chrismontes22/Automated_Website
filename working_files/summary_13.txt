@@ -1,20 +1,20 @@
-Smashing Security podcast #465: This developer wanted to cheat at Roblox. It cost millions
+Anti-DDoS Firm Heaped Attacks on Brazilian ISPs
 ============================================================
 
-A security breach at cloud software company Vercel occurred after an employee’s malware-infected device exposed corporate credentials, highlighting the risks of overprivileged access and third-party software integrations.
+**Brazilian DDoS protection firm Huge Networks is under scrutiny after leaked files linked its infrastructure and CEO’s credentials to a botnet targeting regional internet service providers across Brazil.**
 
 ### Key Points
-- A Vercel employee downloaded a malicious Roblox auto-farming script, which contained the Lumma info-stealer malware.
-- The malware harvested OAuth tokens, granting attackers unauthorized access to the employee's corporate Google Workspace and Vercel’s internal systems.
-- Attackers gained access to sensitive API keys and database credentials, which were subsequently listed for sale on a dark web forum.
-- The incident underscores the danger of "configuration drift" and the lack of native rollback features for tenant-level settings in Microsoft 365 environments.
-- Security experts emphasize that overprivileged administrative accounts remain a primary target for nation-state actors and cybercriminals.
+- An exposed archive revealed Python scripts and private SSH keys belonging to Huge Networks CEO Erick Nascimento used to orchestrate massive DDoS attacks.
+- The botnet exploited the CVE-2023-1389 vulnerability in TP-Link Archer AX21 routers to enlist devices into a Mirai-based malware network.
+- Attackers utilized DNS reflection techniques to amplify traffic, specifically targeting Brazilian IP address ranges with short, high-intensity bursts of malicious data.
+- CEO Erick Nascimento claims the activity resulted from a January 2026 security breach involving a compromised jump server and a legacy personal droplet.
+- Huge Networks has hired a third-party forensics firm to investigate the intrusion, while Nascimento alleges a competitor orchestrated the breach to damage his company's reputation.
 
 ### Why it Matters
-This incident demonstrates how a single user's poor security hygiene can cascade into a massive corporate data breach through interconnected cloud services. It serves as a critical reminder for organizations to implement the principle of least privilege and maintain strict visibility over third-party application permissions.
+This incident highlights the significant security risks posed when infrastructure providers suffer internal compromises, potentially turning defensive tools into offensive weapons. It also underscores the ongoing threat of Mirai-based botnets, which continue to leverage unpatched IoT vulnerabilities to disrupt critical regional internet services.
 
 ============================================================
-Author:   Graham Cluley
-Source:   Graham Cluley Security News
-URL:      https://grahamcluley.com/smashing-security-podcast-465/
+Author:   BrianKrebs
+Source:   Krebs on Security
+URL:      https://krebsonsecurity.com/2026/04/anti-ddos-firm-heaped-attacks-on-brazilian-isps/
 Category: Cybersecurity

@@ -1,20 +1,20 @@
-We’ve tested the April 2026 Windows 11 update, and its 11 improvements genuinely make the OS feel better
+Exposed Data Illustrates the Nightmare Scenario for a Stalkerware Victim
 ============================================================
 
-Microsoft has introduced significant Windows 11 updates through its Insider Program in April 2026, featuring enhanced update controls, a new Point-in-time Restore tool, and improved NPU monitoring.
+A security researcher discovered a publicly accessible cloud repository containing nearly 90,000 screenshots of a European celebrity’s private data, likely harvested through the notorious stalkerware tool Cocospy.
 
 ### Key Points
-- Users can now pause Windows updates indefinitely using a new calendar control and consolidate reboots for drivers and firmware into a single monthly cycle.
-- The new Point-in-time Restore feature, enabled by default on systems with 200GB of storage, allows users to roll back the entire OS state to recover from errors.
-- An "Xbox mode" has been introduced to provide a console-like, full-screen experience for the Xbox app, optimized for game controller navigation.
-- Task Manager now includes dedicated columns for NPU and NPU Engine activity to help users monitor AI-related resource consumption.
-- Enterprise and Education editions received expanded "debloat" policies, allowing administrators to dynamically uninstall additional MSIX and APPX applications.
+- Security researcher Jeremiah Fowler discovered an unsecured cloud database containing 86,859 screenshots of a celebrity’s private messages, photos, and financial documents.
+- The exposed data, spanning from mid-2024 to mid-2025, was stored in a repository explicitly labeled "Cocospy," a known commercial spyware application.
+- Stalkerware like Cocospy operates in "stealth mode" to silently capture and upload a target's real-time activity, including social media chats and location data, to remote servers.
+- The breach compromised not only the primary target but also the private communications and sensitive contact information of the celebrity's associates and influencers.
+- While the specific cloud host was not named, the data was secured after the researcher notified the service provider to contact the repository owner.
 
 ### Why it Matters
-These updates prioritize user control and system stability, addressing long-standing frustrations regarding intrusive update schedules and difficult recovery processes. By integrating advanced NPU monitoring and refined management tools, Microsoft is positioning Windows 11 to better handle modern AI workloads while offering more predictable performance for both casual and professional users.
+This incident highlights the dual-threat nature of stalkerware, which violates individual privacy while creating massive, insecure data troves vulnerable to public exposure. Such breaches demonstrate how technology-facilitated abuse can escalate into broader security disasters, potentially exposing victims to identity theft, harassment, and further exploitation by third-party cybercriminals.
 
 ============================================================
-Author:   mhuck@live.com (Mauro Huculak) , Mauro Huculak
-Source:   Windows Central
-URL:      https://www.windowscentral.com/microsoft/windows-11/11-big-windows-11-changes-in-april-2026-you-need-to-know-right-now
-Category: Phones, Laptops, and Gadgets
+Author:   Matt Burgess, Lily Hay Newman
+Source:   Wired
+URL:      https://www.wired.com/story/exposed-data-illustrates-the-nightmare-scenario-for-a-stalkerware-victim/
+Category: Cybersecurity

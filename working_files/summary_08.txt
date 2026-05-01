@@ -1,20 +1,20 @@
-Ukrainian Police Arrest Three Hackers Who Compromised 610,000 Roblox Accounts and Sold Them for $225,000
+PyTorch Lightning Compromised in PyPI Supply Chain Attack to Steal Credentials
 ============================================================
 
-Ukrainian authorities in Lviv arrested three individuals for orchestrating a massive cybercrime operation that compromised over 610,000 Roblox accounts and generated approximately $225,000 in illicit profits since 2025.
+Threat actors linked to the TeamPCP group compromised the Python package Lightning to distribute malicious versions 2.6.2 and 2.6.3, which execute credential-stealing payloads upon installation.
 
 ### Key Points
-- The suspects, aged 19 to 22, used infostealer malware disguised as game-enhancement tools to harvest user login credentials.
-- Law enforcement seized $35,000 in cash and 64 electronic devices, including computers and mobile phones, during ten targeted searches.
-- Stolen accounts were categorized by the rarity of in-game items and Robux balances before being sold on Russian-language platforms.
-- The group identified at least 357 high-value accounts among the 610,000 compromised profiles.
-- The suspects face charges of theft and unauthorized interference with IT systems, carrying potential prison sentences of up to 15 years.
+- Malicious versions 2.6.2 and 2.6.3 of the Lightning Python package were published to PyPI on April 30, 2026.
+- The malware uses the Bun JavaScript runtime to execute an obfuscated payload designed to harvest GitHub tokens and developer credentials.
+- Compromised tokens are used to inject worm-like payloads into GitHub repositories and propagate the malware through local npm packages.
+- The campaign is part of the broader "Mini Shai-Hulud" operation, which has also targeted Intercom packages on npm and Packagist.
+- PyPI administrators quarantined the affected versions, and users are advised to downgrade to version 2.6.1 and rotate all exposed credentials.
 
 ### Why it Matters
-This case highlights the growing financial risks associated with virtual economies where in-game assets and rare digital items hold significant real-world monetary value. As platforms like Roblox become increasingly lucrative targets for cybercriminals, users must remain vigilant against malware disguised as legitimate third-party gaming tools.
+This incident highlights the severe risks of software supply chain attacks where a single compromised dependency can facilitate widespread credential theft across multiple development ecosystems. By automating the injection of malicious code into downstream repositories, attackers can turn a single developer's environment into a vector for further large-scale distribution.
 
 ============================================================
-Author:   Arthur Kay
-Source:   Ghacks Technology News
-URL:      https://www.ghacks.net/2026/04/30/ukrainian-police-arrest-three-hackers-who-compromised-610000-roblox-accounts-and-sold-them-for-225000/
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html
 Category: Cybersecurity

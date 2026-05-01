@@ -1,20 +1,20 @@
-'Chaining vulnerabilities is the hallmark of a sophisticated attack': 750,000 websites must be patched as Microsoft's popular open source Dotnetnuke CMS hit by an XSS flaw that allows attackers to hijack admin sessions and take over entire web servers
+China dominates the world’s lithium supply. The U.S. just found 328 years’ worth in its own backyard
 ============================================================
 
-A critical cross-site scripting vulnerability in the DotNetNuke content management system allows attackers to gain full server control by tricking administrators into clicking malicious SVG image files.
+A new United States Geological Survey report identifies 2.3 million metric tons of lithium in Appalachia, potentially securing domestic supply for over three centuries amid rising global demand.
 
 ### Key Points
-- The vulnerability, tracked as CVE-2026-40321, affects the DotNetNuke open-source platform used by over 750,000 websites globally.
-- Attackers upload SVG files containing JavaScript payloads that execute within an authenticated user's browser session upon being clicked.
-- Exploitation allows attackers to access the /API/personaBar/ConfigConsole/UpdateConfigFile endpoint to write an ASPX web shell directly to the server.
-- Successful execution grants attackers the ability to steal data, disable security tools, or run malware on the underlying Windows server.
-- Administrators are urged to apply the official patch and disable unnecessary user file upload permissions to mitigate the risk.
+- The USGS estimates 2.3 million metric tons of lithium oxide are located within Appalachian pegmatites across the Carolinas, Maine, and New Hampshire.
+- This discovery could theoretically support the production of batteries for 130 million electric vehicles or 500 billion cell phones.
+- Global lithium production capacity is projected to double by 2029 as industries shift toward lithium-ion technology for electronics and data centers.
+- The United States currently relies heavily on imports from Chile, Argentina, and finished battery products from China to meet domestic needs.
+- Lithium-ion batteries are increasingly vital for AI infrastructure, serving as essential backup power sources for large-scale data centers.
 
 ### Why it Matters
-This flaw is particularly dangerous because it bypasses traditional security defenses like firewalls and antivirus software by utilizing legitimate HTTP traffic and native browser features. Organizations must prioritize patching and restrict upload privileges to prevent attackers from gaining unauthorized administrative control over their web infrastructure.
+This discovery offers a significant opportunity for the United States to reduce its dependence on foreign lithium imports and strengthen its domestic mineral security. By tapping into these Appalachian reserves, the U.S. could stabilize its supply chain for the rapidly expanding electric vehicle and artificial intelligence sectors.
 
 ============================================================
-Author:   Efosa Udinmwen
-Source:   TechRadar
-URL:      https://www.techradar.com/pro/security/chaining-vulnerabilities-is-the-hallmark-of-a-sophisticated-attack-750-000-websites-must-be-patched-as-microsofts-popular-open-source-dotnetnuke-cms-hit-by-an-xss-flaw-that-allows-attackers-to-hijack-admin-sessions-and-take-over-entire-web-servers
-Category: Cybersecurity
+Author:   Jake Angelo
+Source:   Yahoo Entertainment
+URL:      https://finance.yahoo.com/sectors/energy/articles/china-dominates-world-lithium-supply-182419477.html
+Category: Tech Business & Markets
