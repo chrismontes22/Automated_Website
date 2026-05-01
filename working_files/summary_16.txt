@@ -1,20 +1,20 @@
-What Anthropic’s Mythos Means for the Future of Cybersecurity
+Silver Fox uses the new ABCDoor backdoor to target organizations in Russia and India
 ============================================================
 
-Anthropic has introduced its Claude Mythos Preview model, an AI capable of autonomously identifying and weaponizing software vulnerabilities, prompting restricted access to prevent potential widespread cybersecurity threats.
+The Silver Fox threat group is actively targeting industrial and retail organizations across multiple countries using sophisticated phishing campaigns to deploy the ValleyRAT backdoor and the new ABCDoor malware.
 
 ### Key Points
-- Anthropic’s Claude Mythos Preview can autonomously detect and exploit vulnerabilities in critical software, including operating systems and internet infrastructure.
-- Due to significant security risks, Anthropic is limiting access to the model to a select group of companies rather than releasing it publicly.
-- The model’s ability to find vulnerabilities highlights a shift in AI capabilities, though experts note this is an incremental progression in automated security.
-- Effective defense strategies include isolating unpatchable legacy hardware behind firewalls and implementing "VulnOps" to continuously test and patch software stacks.
-- Future security will rely on distinguishing between easily patchable systems and complex, distributed environments that are difficult to verify.
+- Silver Fox launched over 1,600 malicious emails between December 2025 and February 2026, masquerading as official tax authority correspondence.
+- The campaign utilizes a customized Rust-based loader, "Silver Fox RustSL," which features advanced sandbox detection and geolocation-based geofencing.
+- Attackers deploy the ValleyRAT backdoor alongside a previously undocumented Python-based backdoor named ABCDoor, which has been in development since late 2024.
+- ABCDoor uses legitimate tools like ffmpeg for screen capturing and mimics the directory structure of the Tailscale VPN service to evade detection.
+- Targeted countries include India, Russia, Indonesia, South Africa, and Japan, with the malware specifically configured to verify the victim's location before execution.
 
 ### Why it Matters
-The emergence of autonomous vulnerability-finding AI forces a shift in how organizations prioritize software maintenance and network architecture. While this technology poses immediate risks to legacy systems, it also accelerates the adoption of rigorous, automated defensive practices that could eventually strengthen overall digital infrastructure.
+This campaign demonstrates a significant evolution in the Silver Fox group's tactics, specifically through the use of multi-stage infection chains and the integration of custom Python-based backdoors. By mimicking legitimate software and exploiting trust in government communications, these attackers pose a persistent threat to global enterprise security and data integrity.
 
 ============================================================
-Author:   Bruce Schneier
-Source:   Schneier.com
-URL:      https://www.schneier.com/blog/archives/2026/04/what-anthropics-mythos-means-for-the-future-of-cybersecurity.html
+Author:   Anton Kargin, Vladimir Gursky, Victoria Vlasova, Anna Lazaricheva
+Source:   Securelist.com
+URL:      https://securelist.com/silver-fox-tax-notification-campaign/119575/
 Category: Cybersecurity

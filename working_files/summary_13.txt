@@ -1,21 +1,20 @@
-Amazon Pulls The Mag 7 Higher
+Smashing Security podcast #465: This developer wanted to cheat at Roblox. It cost millions
 ============================================================
 
-Amazon stock has outperformed its Magnificent Seven peers this year, driven by its dominant AWS cloud infrastructure, massive investments in AI hardware, and strategic partnerships with Anthropic and OpenAI.
+A security breach at cloud software company Vercel occurred after an employee’s malware-infected device exposed corporate credentials, highlighting the risks of overprivileged access and third-party software integrations.
 
 ### Key Points
-- Amazon shares have risen over 13% this year, marking the strongest performance among the Magnificent Seven technology companies.
-- The company plans to invest $200 billion in data center infrastructure to support its enterprise AI expansion.
-- Amazon is committing $33 billion to Anthropic and $50 billion to OpenAI to bolster its AI software offerings.
-- AWS holds a leading 28% share of the global cloud infrastructure market, providing a primary distribution channel for AI tools.
-- Amazon is reducing reliance on Nvidia by developing its own Graviton chips, which are already being utilized by Meta.
-- The company’s core e-commerce business generated $587 billion in revenue last year, providing a stable financial foundation for its AI initiatives.
+- A Vercel employee downloaded a malicious Roblox auto-farming script, which contained the Lumma info-stealer malware.
+- The malware harvested OAuth tokens, granting attackers unauthorized access to the employee's corporate Google Workspace and Vercel’s internal systems.
+- Attackers gained access to sensitive API keys and database credentials, which were subsequently listed for sale on a dark web forum.
+- The incident underscores the danger of "configuration drift" and the lack of native rollback features for tenant-level settings in Microsoft 365 environments.
+- Security experts emphasize that overprivileged administrative accounts remain a primary target for nation-state actors and cybercriminals.
 
 ### Why it Matters
-Amazon’s ability to leverage its massive cloud market share and retail revenue allows it to aggressively fund AI infrastructure while diversifying its hardware supply chain. This multi-faceted strategy positions the company to potentially outperform its tech rivals by integrating AI services directly into the world's largest cloud computing network.
+This incident demonstrates how a single user's poor security hygiene can cascade into a massive corporate data breach through interconnected cloud services. It serves as a critical reminder for organizations to implement the principle of least privilege and maintain strict visibility over third-party application permissions.
 
 ============================================================
-Author:   Douglas A. McIntyre
-Source:   24/7 Wall St.
-URL:      https://247wallst.com/investing/2026/04/28/amazon-pulls-the-mag-7-higher/
-Category: Tech Business & Markets
+Author:   Graham Cluley
+Source:   Graham Cluley Security News
+URL:      https://grahamcluley.com/smashing-security-podcast-465/
+Category: Cybersecurity

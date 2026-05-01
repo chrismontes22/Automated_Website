@@ -1,20 +1,20 @@
-After Mythos: New Playbooks For a Zero-Window Era
+'Chaining vulnerabilities is the hallmark of a sophisticated attack': 750,000 websites must be patched as Microsoft's popular open source Dotnetnuke CMS hit by an XSS flaw that allows attackers to hijack admin sessions and take over entire web servers
 ============================================================
 
-Anthropic’s Claude Mythos AI model has reduced software vulnerability exploit windows to near-zero, forcing organizations to adopt assume-breach security models to detect and contain threats in real time.
+A critical cross-site scripting vulnerability in the DotNetNuke content management system allows attackers to gain full server control by tricking administrators into clicking malicious SVG image files.
 
 ### Key Points
-- Anthropic’s Claude Mythos and Project Glasswing can identify exploitable software vulnerabilities in minutes, a task that previously required weeks of human expert analysis.
-- Treasury Secretary Scott Bessent and Federal Reserve Chair Jerome Powell recently met with major financial CEOs to address the systemic risks posed by advanced AI capabilities.
-- The assume-breach security model prioritizes reducing mean-time-to-contain (MTTC) by utilizing automated network detection and response (NDR) to limit the blast radius of cyberattacks.
-- Modern NDR platforms, such as Corelight’s Open NDR, monitor for living-off-the-land techniques and lateral movement to identify malicious activity hidden within legitimate network traffic.
-- Organizations are encouraged to automate asset inventories and attack chain reconstruction to maintain visibility against rapidly evolving, AI-assisted threats.
+- The vulnerability, tracked as CVE-2026-40321, affects the DotNetNuke open-source platform used by over 750,000 websites globally.
+- Attackers upload SVG files containing JavaScript payloads that execute within an authenticated user's browser session upon being clicked.
+- Exploitation allows attackers to access the /API/personaBar/ConfigConsole/UpdateConfigFile endpoint to write an ASPX web shell directly to the server.
+- Successful execution grants attackers the ability to steal data, disable security tools, or run malware on the underlying Windows server.
+- Administrators are urged to apply the official patch and disable unnecessary user file upload permissions to mitigate the risk.
 
 ### Why it Matters
-The emergence of AI-driven vulnerability discovery has rendered traditional patch-based security strategies insufficient, as attackers can now exploit software flaws almost immediately after they are identified. This shift necessitates a fundamental change in corporate cybersecurity, moving from reactive patching to proactive, automated network containment to ensure institutional stability.
+This flaw is particularly dangerous because it bypasses traditional security defenses like firewalls and antivirus software by utilizing legitimate HTTP traffic and native browser features. Organizations must prioritize patching and restrict upload privileges to prevent attackers from gaining unauthorized administrative control over their web infrastructure.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/04/after-mythos-new-playbooks-for-zero.html
+Author:   Efosa Udinmwen
+Source:   TechRadar
+URL:      https://www.techradar.com/pro/security/chaining-vulnerabilities-is-the-hallmark-of-a-sophisticated-attack-750-000-websites-must-be-patched-as-microsofts-popular-open-source-dotnetnuke-cms-hit-by-an-xss-flaw-that-allows-attackers-to-hijack-admin-sessions-and-take-over-entire-web-servers
 Category: Cybersecurity
