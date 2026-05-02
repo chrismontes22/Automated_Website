@@ -1,20 +1,21 @@
-French prosecutors link 15-year-old to mega-breach at state’s secure document agency
+Show HN: Winpodx – run Windows apps on Linux as native windows
 ============================================================
 
-French prosecutors have detained a 15-year-old suspect accused of stealing up to 18 million records from France Titres, the government agency responsible for managing secure national identity documents.
+winpodx is a new open-source tool that enables Linux users to run Windows applications as native, pinnable windows by leveraging containerized Windows instances and FreeRDP RemoteApp technology.
 
 ### Key Points
-- French authorities detained the minor on April 25 following a cyberattack on the France Titres (ANTS) agency.
-- The suspect, operating under the alias "breach3d," allegedly offered between 12 million and 18 million lines of personal data for sale online.
-- Stolen information includes names, email addresses, dates of birth, postal addresses, and telephone numbers of French citizens.
-- The Paris Prosecutor's Office opened a formal judicial investigation on April 29 regarding unauthorized access to state data systems.
-- Potential penalties for the alleged computer crimes include up to seven years in prison and fines reaching €300,000.
+- Runs Windows applications in a background Podman container without requiring manual VM configuration or registry editing.
+- Integrates Windows apps directly into the Linux desktop environment with real icons, file associations, and Alt-Tab support.
+- Features a zero-config setup that automatically discovers installed Windows software via Registry, Start Menu, and package managers.
+- Includes a Qt6-based GUI and CLI for managing sessions, password rotation, and system health monitoring.
+- Supports multi-session RDP, allowing multiple Windows applications to run independently without stealing focus from one another.
+- Compatible with major Linux distributions including Fedora, Ubuntu, Debian, openSUSE, and Arch Linux.
 
 ### Why it Matters
-This breach potentially exposes the personal information of nearly one-third of the French population, raising significant concerns regarding the security of state-run identity databases. The incident highlights the ongoing vulnerability of government infrastructure to cyberattacks and underscores the challenges authorities face in managing digital security threats involving minors.
+By running a full Windows kernel in a container, winpodx provides high compatibility for enterprise software, DRM-protected tools, and legacy applications that Wine cannot reliably execute. This approach offers a seamless bridge for users who require specific Windows-only software while maintaining a primary Linux workflow.
 
 ============================================================
-Author:   Connor Jones
-Source:   Theregister.com
-URL:      https://www.theregister.com/2026/04/30/french_gov_mega_breach_suspect/
-Category: Cybersecurity
+Author:   kernalix7
+Source:   Github.com
+URL:      https://github.com/kernalix7/winpodx
+Category: Phones, Laptops, and Gadgets

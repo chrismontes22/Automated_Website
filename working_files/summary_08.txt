@@ -1,20 +1,21 @@
-PyTorch Lightning Compromised in PyPI Supply Chain Attack to Steal Credentials
+Apple Reports Record-Breaking 2Q 2026 Results: $29.6B Profit on $111.2B Revenue
 ============================================================
 
-Threat actors linked to the TeamPCP group compromised the Python package Lightning to distribute malicious versions 2.6.2 and 2.6.3, which execute credential-stealing payloads upon installation.
+Apple reported record-breaking financial results for the second fiscal quarter of 2026, achieving $111.2 billion in revenue and $29.6 billion in profit behind strong demand for the iPhone 17.
 
 ### Key Points
-- Malicious versions 2.6.2 and 2.6.3 of the Lightning Python package were published to PyPI on April 30, 2026.
-- The malware uses the Bun JavaScript runtime to execute an obfuscated payload designed to harvest GitHub tokens and developer credentials.
-- Compromised tokens are used to inject worm-like payloads into GitHub repositories and propagate the malware through local npm packages.
-- The campaign is part of the broader "Mini Shai-Hulud" operation, which has also targeted Intercom packages on npm and Packagist.
-- PyPI administrators quarantined the affected versions, and users are advised to downgrade to version 2.6.1 and rotate all exposed credentials.
+- Apple achieved record March quarter revenue of $111.2 billion and earnings per share of $2.01.
+- iPhone revenue grew 21.7% year-over-year, while Services reached an all-time revenue high of $31 billion.
+- The board authorized an additional $100 billion for share repurchases and increased the quarterly dividend to $0.27 per share.
+- CEO Tim Cook confirmed he will transition to Executive Chairman on September 1, with John Ternus set to become the new CEO.
+- Apple is facing supply constraints for Mac models, including the Mac mini, Mac Studio, and MacBook Neo, due to higher-than-expected demand.
+- The company plans to expand U.S. manufacturing, including new Mac mini production facilities in Houston.
 
 ### Why it Matters
-This incident highlights the severe risks of software supply chain attacks where a single compromised dependency can facilitate widespread credential theft across multiple development ecosystems. By automating the injection of malicious code into downstream repositories, attackers can turn a single developer's environment into a vector for further large-scale distribution.
+These record-breaking results demonstrate Apple's continued ability to drive growth through its hardware ecosystem and high-margin services despite global supply chain challenges. The upcoming leadership transition from Tim Cook to John Ternus marks a significant turning point for the company as it pivots toward deeper integration of AI across its product roadmap.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html
-Category: Cybersecurity
+Author:   Jordan Golson
+Source:   MacRumors
+URL:      https://www.macrumors.com/2026/04/30/apple-2q-2026-earnings/
+Category: Tech Business & Markets

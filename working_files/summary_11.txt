@@ -1,20 +1,20 @@
-Nearly Half of US Adults Have Considered Secondhand Tech, CNET Finds. Here's What's Motivating Them
+The never-ending supply chain attacks worm into SAP npm packages, other dev tools
 ============================================================
 
-Rising costs and a global RAM shortage are driving more US consumers to purchase refurbished electronics as a cost-effective alternative to buying expensive new tech devices.
+The cybercrime group TeamPCP has launched a widespread supply chain attack, injecting credential-stealing malware into popular SAP, Intercom, and Lightning software packages used by developers and cloud environments.
 
 ### Key Points
-- A CNET survey of 2,638 US adults found that 48% have considered purchasing refurbished technology within the past year.
-- Younger generations show higher interest, with 57% of millennials and 56% of Gen Zers considering secondhand devices compared to 34% of Boomers.
-- The primary motivations for choosing refurbished goods include lower prices, the high cost of new models, and environmental concerns regarding electronic waste.
-- A global RAM shortage, referred to as "RAMageddon," is currently driving up retail prices for both new and existing tech inventory.
-- Experts recommend purchasing from certified retailers like Back Market, Apple, or Best Buy to ensure devices include warranties and return policies.
+- The "Mini Shai-Hulud" campaign targets npm and PyPI packages to steal sensitive credentials, including AWS, Azure, GCP, and Kubernetes tokens.
+- Compromised SAP packages include mbt, @cap-js/db-service, @cap-js/postgres, and @cap-js/sqlite, which collectively see over 572,000 weekly downloads.
+- The attack also affected the Intercom SDK (intercom-client) and the deep learning framework Lightning (versions 2.6.2 and 2.6.3).
+- Malicious code executes automatically upon installation or import, exfiltrating stolen data through encrypted payloads posted to public GitHub repositories.
+- Security firms Wiz and Socket attribute the campaign to TeamPCP, a group previously linked to attacks on Checkmarx, Bitwarden, and Aqua Security.
 
 ### Why it Matters
-The shift toward refurbished electronics reflects a broader consumer response to inflation and the rising price of premium hardware. By opting for secondhand devices, shoppers can mitigate the financial impact of supply chain shortages while simultaneously reducing their personal environmental footprint.
+These attacks demonstrate a significant escalation in supply chain threats by targeting the foundational tools used in CI/CD pipelines and cloud development. By compromising widely used SDKs and frameworks, attackers can gain unauthorized access to enterprise-level cloud secrets and developer environments on a massive scale.
 
 ============================================================
-Author:   Dashia Milden
-Source:   CNET
-URL:      https://www.cnet.com/tech/refurbished-tech-survey-2026/
-Category: Phones, Laptops, and Gadgets
+Author:   Jessica Lyons
+Source:   Theregister.com
+URL:      https://www.theregister.com/2026/04/30/supply_chain_attacks_sap_npm_packages/
+Category: Cybersecurity
