@@ -1,21 +1,20 @@
-Show HN: Winpodx – run Windows apps on Linux as native windows
+Actively exploited cPanel bug exposes millions of websites to takeover
 ============================================================
 
-winpodx is a new open-source tool that enables Linux users to run Windows applications as native, pinnable windows by leveraging containerized Windows instances and FreeRDP RemoteApp technology.
+Security researchers and CISA have issued an urgent warning regarding a critical authentication-bypass vulnerability in cPanel and WebHost Manager that allows attackers to gain unauthorized administrative server access.
 
 ### Key Points
-- Runs Windows applications in a background Podman container without requiring manual VM configuration or registry editing.
-- Integrates Windows apps directly into the Linux desktop environment with real icons, file associations, and Alt-Tab support.
-- Features a zero-config setup that automatically discovers installed Windows software via Registry, Start Menu, and package managers.
-- Includes a Qt6-based GUI and CLI for managing sessions, password rotation, and system health monitoring.
-- Supports multi-session RDP, allowing multiple Windows applications to run independently without stealing focus from one another.
-- Compatible with major Linux distributions including Fedora, Ubuntu, Debian, openSUSE, and Arch Linux.
+- The vulnerability, tracked as CVE-2026-41940, enables attackers to bypass credentials and take full control of servers and hosted websites.
+- CISA added the flaw to its Known Exploited Vulnerabilities catalog following evidence of active, real-world exploitation since late February 2026.
+- cPanel released security patches on April 28, 2026, for all supported versions after 11.40, including DNSOnly and WP Squared.
+- Major hosting providers, including Namecheap, HostGator, and KnownHost, temporarily restricted interface access to implement emergency security updates.
+- The bug affects over one million websites globally, including those belonging to financial institutions and healthcare organizations.
 
 ### Why it Matters
-By running a full Windows kernel in a container, winpodx provides high compatibility for enterprise software, DRM-protected tools, and legacy applications that Wine cannot reliably execute. This approach offers a seamless bridge for users who require specific Windows-only software while maintaining a primary Linux workflow.
+This vulnerability poses a significant threat to global web infrastructure because it grants attackers administrative control over a vast number of hosted sites simultaneously. Organizations and individual users must ensure their hosting providers have applied the latest patches to prevent potential data theft and unauthorized server manipulation.
 
 ============================================================
-Author:   kernalix7
-Source:   Github.com
-URL:      https://github.com/kernalix7/winpodx
-Category: Phones, Laptops, and Gadgets
+Author:   Pieter Arntz
+Source:   Malwarebytes.com
+URL:      https://www.malwarebytes.com/blog/news/2026/05/actively-exploited-cpanel-bug-exposes-millions-of-websites-to-takeover
+Category: Cybersecurity

@@ -1,20 +1,21 @@
-The Tim Ferriss Show Transcripts: Elad Gil, Consigliere to Empire Builders — How to Spot Billion-Dollar Companies Before Everyone Else, The Misty AI Frontier, How Coke Beat Pepsi, When Consensus Pays, and Much More (#863)
+This Week in Security: State Malware, State Hardware Bans, and Stuxnet before Stuxnet was Cool
 ============================================================
 
-**Tech investor Elad Gil discusses the current AI landscape, the "personal IPO" phenomenon among top researchers, and the critical compute constraints shaping the industry's near-term future.**
+This week in cybersecurity, critical vulnerabilities emerged in the Linux kernel and CPanel, while researchers uncovered historical state-sponsored malware and new risks regarding AI prompt injection.
 
 ### Key Points
-- Meta’s aggressive hiring and competitive compensation packages have effectively triggered a "personal IPO" for hundreds of top AI researchers.
-- The AI industry is currently facing a significant supply chain bottleneck specifically related to high-bandwidth memory, which is expected to persist for approximately two years.
-- Compute constraints are creating an artificial ceiling on model scaling, preventing any single lab from pulling significantly ahead of competitors in the short term.
-- AI companies are reaching $30 billion revenue run rates in record time, with the sector now contributing a measurable percentage of U.S. GDP.
-- Gil advises founders of AI startups to evaluate their "value-maximizing moment" for an exit within the next 12 to 18 months, given the high historical failure rate of tech companies.
+- The "CopyFail" Linux kernel vulnerability allows local privilege escalation by manipulating cryptographic functions in IPSec, affecting most distributions since 2017.
+- CPanel patched CVE-2026-41940, a critical authentication bypass vulnerability that was already under active exploitation and impacts millions of servers.
+- Researchers identified "Fast16," a sophisticated state-sponsored malware from 2005 that sabotaged nuclear weapons modeling software years before the discovery of Stuxnet.
+- Google security researchers are tracking AI prompt injection attacks, where malicious inputs trick automated agents into executing unauthorized commands or wiping data.
+- The U.S. government expanded its import ban on networking hardware to include "prosumer" routers, travel devices, and ISP-provided residential gateways.
+- GitHub Enterprise Server addressed a critical arbitrary code execution vulnerability, CVE-2026-3854, which was patched by the company within six hours of discovery.
 
 ### Why it Matters
-The current AI boom is characterized by unprecedented capital concentration and rapid market shifts that mirror previous technology cycles. Understanding these bottlenecks and the "oligopoly" structure of the AI lab market is essential for investors and founders navigating the next two years of development.
+These developments highlight the persistent danger of data sanitization failures, which remain a primary vector for both modern web-based exploits and emerging AI-driven attacks. Organizations must prioritize rapid patching cycles and robust input validation to prevent attackers from gaining administrative control over critical infrastructure and development environments.
 
 ============================================================
-Author:   Tim Ferriss
-Source:   Tim.blog
-URL:      https://tim.blog/2026/04/30/elad-gil-transcript/
-Category: Artificial Intelligence
+Author:   Mike Kershaw
+Source:   Hackaday
+URL:      https://hackaday.com/2026/05/01/this-week-in-security-state-malware-state-hardware-bans-and-stuxnet-before-stuxnet-was-cool/
+Category: Cybersecurity
