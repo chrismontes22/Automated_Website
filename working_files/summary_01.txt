@@ -1,21 +1,20 @@
-This Week in Security: State Malware, State Hardware Bans, and Stuxnet before Stuxnet was Cool
+'Beyond the financial risk, there are real public safety implications': Hackers crawled Canadian streets with SMS blasters, attacking every target in sight — causing 13 million network disruptions and hacking thousands of devices
 ============================================================
 
-This week in cybersecurity, critical vulnerabilities emerged in the Linux kernel and CPanel, while researchers uncovered historical state-sponsored malware and new risks regarding AI prompt injection.
+Toronto police have dismantled a sophisticated mobile cyber operation involving custom SMS blasters that impersonated cell towers to cause 13 million network disruptions and facilitate widespread smishing attacks.
 
 ### Key Points
-- The "CopyFail" Linux kernel vulnerability allows local privilege escalation by manipulating cryptographic functions in IPSec, affecting most distributions since 2017.
-- CPanel patched CVE-2026-41940, a critical authentication bypass vulnerability that was already under active exploitation and impacts millions of servers.
-- Researchers identified "Fast16," a sophisticated state-sponsored malware from 2005 that sabotaged nuclear weapons modeling software years before the discovery of Stuxnet.
-- Google security researchers are tracking AI prompt injection attacks, where malicious inputs trick automated agents into executing unauthorized commands or wiping data.
-- The U.S. government expanded its import ban on networking hardware to include "prosumer" routers, travel devices, and ISP-provided residential gateways.
-- GitHub Enterprise Server addressed a critical arbitrary code execution vulnerability, CVE-2026-3854, which was patched by the company within six hours of discovery.
+- Three suspects in Toronto used vehicle-mounted devices to mimic legitimate cell towers and intercept mobile connections.
+- The operation caused 13 million network disruptions and targeted thousands of devices simultaneously to deliver fraudulent messages.
+- Attackers bypassed standard telecom safeguards, rendering carrier-level filtering and traditional antivirus software ineffective against the signal-level redirection.
+- Authorities warned that the forced disconnection from legitimate networks prevents users from accessing emergency services like police or ambulance support.
+- Similar rogue network operations have been documented internationally, including recent arrests in London and the Philippines.
 
 ### Why it Matters
-These developments highlight the persistent danger of data sanitization failures, which remain a primary vector for both modern web-based exploits and emerging AI-driven attacks. Organizations must prioritize rapid patching cycles and robust input validation to prevent attackers from gaining administrative control over critical infrastructure and development environments.
+This incident highlights a critical vulnerability in cellular infrastructure where devices can be hijacked at the signal level regardless of user-side security software. The ability to bypass telecom safeguards poses significant risks to both individual financial security and public safety by potentially blocking access to emergency communications.
 
 ============================================================
-Author:   Mike Kershaw
-Source:   Hackaday
-URL:      https://hackaday.com/2026/05/01/this-week-in-security-state-malware-state-hardware-bans-and-stuxnet-before-stuxnet-was-cool/
+Author:   Efosa Udinmwen
+Source:   TechRadar
+URL:      https://www.techradar.com/pro/security/beyond-the-financial-risk-there-are-real-public-safety-implications-hackers-crawled-canadian-streets-with-sms-blasters-attacking-every-target-in-sight-causing-13-million-network-disruptions-and-hacking-thousands-of-devices
 Category: Cybersecurity
