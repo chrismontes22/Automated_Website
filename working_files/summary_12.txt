@@ -1,20 +1,21 @@
-Intel's upcoming Nova Lake CPUs are about to go where no Intel chip has gone before
+New Deep#Door RAT uses stealth and persistence to target Windows
 ============================================================
 
-Intel is developing its upcoming Nova Lake CPU architecture, featuring up to 52 cores and a new cache design, to challenge AMD’s market dominance and improve desktop performance.
+Security researchers at Securonix have identified Deep#Door, a sophisticated malware campaign using self-extracting Python scripts and public tunneling services to maintain stealthy, persistent access on compromised Windows systems.
 
 ### Key Points
-- The flagship Nova Lake CPU is expected to feature 52 cores, including 16 Performance-cores, 32 E-cores, and 4 low-power E-cores.
-- Intel plans to introduce a "bLLC" die with 288MB of cache to compete directly with AMD’s gaming-focused 3D V-Cache technology.
-- The processors will utilize TSMC’s 2nm N2 node, incorporating GAAFET and Backside Power Delivery technologies for improved efficiency.
-- Intel has committed to socket longevity, with the new LGA 1954 socket expected to support both Nova Lake and its successor, Razor Lake.
-- The Nova Lake series is currently projected to launch between late 2026 and early 2027.
+- The malware uses a self-referential batch file, install_obf.bat, to extract a hidden Python payload directly into the %LOCALAPPDATA%\SystemServices\ directory.
+- Deep#Door disables Windows Defender, suppresses firewall logging, and patches security tools to blind the host system before activation.
+- Attackers utilize the legitimate TCP tunneling service bore.pub for command-and-control, making network-based detection and attribution significantly more difficult.
+- The malware ensures persistence by simultaneously modifying registry keys, scheduled tasks, and WMI event subscriptions, monitored by a background watchdog thread.
+- Advanced evasion techniques include sandbox detection, ntdll unhooking, and timestamp stomping to bypass automated security analysis tools.
+- Once active, the implant can capture keystrokes, harvest credentials, access webcams, and potentially overwrite the Master Boot Record for destructive purposes.
 
 ### Why it Matters
-These advancements represent a significant strategic pivot for Intel as it attempts to recover from recent stability controversies and performance stagnation. By adopting long-term socket support and competitive cache architectures, Intel aims to regain consumer trust and restore a balanced, competitive landscape in the high-end desktop processor market.
+This campaign demonstrates a shift toward fileless, script-driven attacks that leverage native system components and legitimate public infrastructure to evade traditional signature-based detection. Organizations must prioritize behavioral monitoring of system settings and outbound traffic to identify these resilient, multi-stage threats.
 
 ============================================================
-Author:   Tanveer Singh
-Source:   XDA Developers
-URL:      https://www.xda-developers.com/nova-lake-doing-what-no-intel-cpu-has-ever-done/
-Category: Phones, Laptops, and Gadgets
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/191567/malware/new-deepdoor-rat-uses-stealth-and-persistence-to-target-windows.html
+Category: Cybersecurity

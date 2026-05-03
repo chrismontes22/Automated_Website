@@ -1,20 +1,20 @@
-Why You Might Want to Wait to Buy a MacBook Pro
+Show HN: Hollow is an open-sourced self-modifying agentic system
 ============================================================
 
-Apple is reportedly developing a redesigned MacBook Pro for late 2026 or early 2027, featuring a new OLED touchscreen display, 2nm M6-series chips, and a potential Dynamic Island interface.
+The Hollow AgentOS project provides a local, autonomous multi-agent framework using Qwen 3.5:9B models that manage their own goals, tool synthesis, and psychological states without cloud dependencies.
 
 ### Key Points
-- The upcoming MacBook Pro will be the first to feature an OLED display, offering improved color accuracy, deeper blacks, and better power efficiency than current mini-LED models.
-- Apple is expected to introduce touchscreen capabilities to the Mac for the first time, allowing for input alongside traditional keyboard and trackpad controls.
-- The new models will likely debut Apple’s 2nm M6-series chips, which utilize GAA nanosheet transistor technology for increased performance and higher transistor density.
-- A design refresh may replace the current display notch with an interactive Dynamic Island and potentially result in a thinner chassis.
-- Due to high production costs and potential chip shortages, these advanced features may be reserved for high-end "Ultra" branded models launching in early 2027.
+- The system runs locally via Docker and Ollama, featuring 91 available tools and 128+ natural language-installable capabilities.
+- Agents experience "suffering" states based on six stressor types, requiring measurable behavioral changes to resolve rather than simple text-based responses.
+- Core infrastructure includes an audit kernel, VRAM-aware scheduling, atomic multi-agent transactions, and semantic memory using vector embeddings.
+- Agents can synthesize new Python tools at runtime and request core system modifications through a formal specification queue for human approval.
+- The framework supports persistent agent identity, checkpointing, and replayability to ensure state survival across system restarts.
 
 ### Why it Matters
-This transition represents a significant shift in Apple's hardware strategy by merging traditional Mac functionality with iPad-like touch interfaces and advanced display technology. For consumers, this creates a difficult choice between the stable, proven M5-series hardware available now and the high-performance, first-generation technology expected in the upcoming refresh.
+This project shifts the paradigm of AI development from building static applications to observing autonomous, self-governing agent ecosystems. By integrating psychological stressors and formal audit kernels, it provides a unique environment for studying long-term agent behavior and complex, multi-agent coordination in a controlled, local setting.
 
 ============================================================
-Author:   Juli Clover
-Source:   MacRumors
-URL:      https://www.macrumors.com/2026/05/01/macbook-ultra-rumor-recap/
-Category: Phones, Laptops, and Gadgets
+Author:   ninjahawk
+Source:   Github.com
+URL:      https://github.com/ninjahawk/hollow-agentOS
+Category: Artificial Intelligence

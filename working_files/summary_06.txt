@@ -1,20 +1,20 @@
-Tim Cook’s top Apple acquisitions mix hardware, software, and services
+Your Windows PC's security foundation could expire in 8 weeks — Here's how to check if you're eligible for a new Secure Boot certificate
 ============================================================
 
-As Tim Cook prepares to step down as Apple CEO on September 1, a review of his tenure highlights how strategic acquisitions have shaped the company's modern product ecosystem.
+Microsoft is preparing for the June 2026 expiration of original Secure Boot certificates, requiring many Windows users to update their system firmware to maintain essential device security protections.
 
 ### Key Points
-- Apple acquired AuthenTec in 2012 and PrimeSense in 2013, providing the foundational technology for Touch ID and Face ID features.
-- The 2014 purchase of Beats Electronics for $3 billion served as the primary catalyst for the launch and development of Apple Music.
-- Apple bought Intel’s smartphone modem business for $1 billion in 2019, enabling the transition to proprietary C1 and C1X cellular modems.
-- Software acquisitions like Workflow, Texture, and Dark Sky were integrated into core services including Shortcuts, Apple News+, and Apple Weather.
-- Recent investments include Q.ai to bolster Apple Intelligence and MotionVFX to enhance the Apple Creator Studio suite.
+- Original Secure Boot certificates issued in 2011 are scheduled to expire across Windows devices in June 2026.
+- Most Windows 11 PCs will receive updated UEFI CA 2023 certificates automatically through standard Windows Update channels.
+- Older systems or unsupported Windows 10 devices may require manual firmware updates from OEMs to remain secure.
+- Windows 10 users must be enrolled in the Extended Security Update (ESU) program to receive the necessary certificate patches.
+- Users can verify their current certificate status by running a specific PowerShell command to check for the "Windows UEFI CA 2023" string.
 
 ### Why it Matters
-These acquisitions demonstrate Apple's strategy of purchasing specialized firms to vertically integrate hardware and software components directly into its consumer devices. This approach has allowed the company to maintain tight control over user experience while rapidly scaling new services and features across its global ecosystem.
+The expiration of these certificates poses a significant security risk, as outdated systems may face boot-phase vulnerabilities and potential software or driver compatibility failures. While PCs will not stop functioning immediately, failing to update could leave millions of older devices permanently exposed to security threats.
 
 ============================================================
-Author:   Zac Hall
-Source:   9to5Mac
-URL:      https://9to5mac.com/2026/05/01/tim-cooks-top-apple-acquisitions-mix-hardware-software-and-services/
-Category: Tech Business & Markets
+Author:   c.cale.hunt@gmail.com (Cale Hunt) , Cale Hunt
+Source:   Windows Central
+URL:      https://www.windowscentral.com/microsoft/windows/secure-boot-certificates-expire-how-to-check
+Category: Cybersecurity

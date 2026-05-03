@@ -1,20 +1,19 @@
-Windows Vs macOS: Which Is Better For You?
+IR Device Control That Lives Off The Cloud
 ============================================================
 
-Choosing between Windows and macOS depends on your specific needs, as Windows excels in gaming and software compatibility while macOS offers superior battery efficiency and a streamlined user experience.
+The new IR2MQTT project provides a cloudless, open-source solution for integrating legacy infrared appliances into Home Assistant setups using ESP32 or ESP8266 hardware and automated code databases.
 
 ### Key Points
-- Windows remains the industry standard for gaming due to its extensive library and broad support from developers compared to the more limited macOS ecosystem.
-- Apple’s M-series chips and macOS optimization provide consistent performance and longer battery life, even when laptops are disconnected from a power source.
-- Windows File Explorer offers detailed storage and path information by default, whereas macOS Finder prioritizes intuitive tools like Quick Look and background removal.
-- macOS automates driver updates, eliminating the manual maintenance often required by Windows users when installing or managing hardware components.
-- Windows allows for more flexible window management and easier third-party software installation via .exe files compared to the disk image process used by Apple.
+- IR2MQTT allows users to control older televisions and air conditioners without relying on proprietary, cloud-based smart home platforms.
+- The system utilizes ESP32 or ESP8266 microcontrollers running ESPHome firmware to transmit infrared signals to household devices.
+- A built-in web interface eliminates the need for manual IR code capture or complex YAML configuration files.
+- The software integrates with extensive public databases, enabling quick setup for a wide range of common consumer electronics.
 
 ### Why it Matters
-Selecting an operating system impacts long-term productivity, hardware longevity, and the ease of managing daily digital tasks. Understanding these fundamental differences helps consumers align their hardware purchases with their specific professional or recreational requirements.
+This tool offers a privacy-focused alternative for smart home enthusiasts who want to automate legacy hardware without external server dependencies. By simplifying the integration process, it lowers the technical barrier for users looking to consolidate disparate devices into a unified, local control ecosystem.
 
 ============================================================
-Author:   staff@bgr.com (Asad Kashif)
-Source:   BGR
-URL:      https://www.bgr.com/2156890/windows-vs-macos-which-is-better-for-you/
+Author:   Zoe Skyforest
+Source:   Hackaday
+URL:      https://hackaday.com/2026/05/02/ir-device-control-that-lives-off-the-cloud/
 Category: Phones, Laptops, and Gadgets
