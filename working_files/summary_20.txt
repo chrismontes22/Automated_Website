@@ -1,21 +1,21 @@
-8 Smart Gadget Gifts for Teacher Appreciation Week 2026
+U.S. CISA adds a flaw in WebPros cPanel to its Known Exploited Vulnerabilities catalog
 ============================================================
 
-As Teacher Appreciation Week approaches from May 4 to May 8, this curated list highlights eight practical gadgets designed to simplify daily classroom management and improve educator well-being.
+The U.S. Cybersecurity and Infrastructure Security Agency has added a critical authentication bypass vulnerability in cPanel and WHM to its Known Exploited Vulnerabilities catalog, mandating immediate federal remediation.
 
 ### Key Points
-- Apple’s 2nd Generation AirTag 4-pack ($99) helps teachers track essential items like classroom badges and keys using the Find My network.
-- The 30oz Stanley Quencher H2.0 ($34) provides a durable, cup-holder-compatible hydration solution for busy school days.
-- The 12th-gen Kindle Paperwhite ($134) offers an IPX8 waterproof design and adjustable warm light for reading recovery.
-- Anker’s MagGo 5K Slim Power Bank ($39.99) delivers 15W wireless charging for iPhones without the need for extra cables.
-- The Brother P-touch Cube Label Maker ($99.98) uses Bluetooth connectivity to help educators organize classroom supplies with custom labels.
-- Soundcore Sleep A20 Earbuds ($129.99) feature a 14-hour battery life and noise-masking technology to assist teachers with evening relaxation.
+- CISA added CVE-2026-41940, which carries a high CVSS score of 9.3, to its Known Exploited Vulnerabilities (KEV) catalog.
+- The flaw allows remote attackers to bypass authentication in cPanel and WHM versions 11.40 and later, potentially granting full server control.
+- Security firm watchTowr disclosed the vulnerability and released a detection tool to help administrators identify compromised or exposed instances.
+- The Shadowserver Foundation estimates that thousands of cPanel instances remain exposed to potential exploitation.
+- Federal Civilian Executive Branch agencies are required to patch the vulnerability by the May 3, 2026, deadline.
+- Hosting providers like Namecheap have implemented temporary access restrictions to mitigate risks while users apply necessary security updates.
 
 ### Why it Matters
-Selecting functional gifts that integrate into an educator's daily routine offers more long-term value than traditional decorative items. These tools address specific pain points like organization, device battery life, and stress management, directly supporting the demanding nature of the teaching profession.
+This vulnerability poses a significant threat to web hosting infrastructure because it allows unauthorized actors to gain administrative control over servers and sensitive data. Organizations must prioritize patching to prevent widespread exploitation, as the flaw is already being actively targeted in the wild.
 
 ============================================================
-Author:   Rei Padla
-Source:   The Gadgeteer
-URL:      https://the-gadgeteer.com/2026/05/03/teacher-appreciation-week-2026-gadget-gifts/
-Category: Phones, Laptops, and Gadgets
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/191613/hacking/u-s-cisa-adds-a-flaw-in-webpros-cpanel-to-its-known-exploited-vulnerabilities-catalog.html
+Category: Cybersecurity

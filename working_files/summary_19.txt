@@ -1,20 +1,21 @@
-Is the AI boom eating its own tail? The strange economics of billion-dollar deals
+Thoth – open-source Local-first AI Assistant
 ============================================================
 
-Alphabet is reportedly planning a $40 billion investment in AI startup Anthropic, deepening a trend of circular capital where tech giants fund competitors to secure cloud and hardware revenue.
+Thoth is a new open-source, local-first desktop AI assistant that provides users with personal data sovereignty, a structured knowledge graph, and autonomous agent capabilities without requiring cloud accounts.
 
 ### Key Points
-- Alphabet is negotiating a deal to invest up to $40 billion in Anthropic, the developer of the Claude AI model.
-- Anthropic currently receives significant financial backing and cloud infrastructure support from Amazon, Google, Microsoft, and Nvidia.
-- The investment structure creates a loop where capital provided to AI startups is returned to investors as payment for cloud computing and specialized hardware.
-- The IMF has warned that this circular financing model could inflate valuations and create systemic risks by masking the distinction between genuine demand and financial engineering.
-- Microsoft’s early lead in the AI sector is facing increased competition as OpenAI seeks independence and internal development efforts at major firms continue to evolve.
+- Runs locally via Ollama with 39 curated models or connects to external providers like OpenAI, Anthropic, and Google.
+- Features a persistent knowledge graph that stores entities and relationships, exportable as an Obsidian-compatible wiki vault.
+- Includes a Designer Studio for creating documents, decks, and media, plus 30 core tools for web browsing, shell access, and file management.
+- Supports five messaging channels including Telegram, WhatsApp, and Slack, with approval-gated autonomous workflows.
+- Offers one-click installers for Windows and macOS, with a one-line installer available for Linux systems.
+- Operates without telemetry, account systems, or central servers, storing all API keys in the user's OS credential store.
 
 ### Why it Matters
-This trend of circular capitalism suggests that the current AI boom is heavily reliant on a closed-loop ecosystem where major tech firms effectively subsidize their own cloud revenue growth. While this structure accelerates infrastructure development, it raises concerns about whether these valuations reflect sustainable market demand or an opaque cycle of financial interdependence.
+Thoth offers a privacy-focused alternative to cloud-based AI assistants by keeping sensitive data and knowledge graphs entirely on the user's machine. This approach provides developers and power users with a highly customizable, autonomous toolset that maintains strict control over information flow and system access.
 
 ============================================================
-Author:   Jaspreet Bindra
-Source:   The Times of India
-URL:      https://economictimes.indiatimes.com/news/international/business/is-the-ai-boom-eating-its-own-tail-the-strange-economics-of-billion-dollar-deals/articleshow/130726861.cms
-Category: Tech Business & Markets
+Author:   siddsachar
+Source:   Github.com
+URL:      https://github.com/siddsachar/Thoth
+Category: Artificial Intelligence
