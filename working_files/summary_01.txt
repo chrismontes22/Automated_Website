@@ -1,20 +1,20 @@
-Meta’s historic loss in court could cost a lot more than $375 million
+Week in review: High-severity LPE vulnerability in the Linux kernel, cPanel 0-day exploited for months
 ============================================================
 
-New Mexico Attorney General Raúl Torrez is pursuing a landmark public nuisance trial against Meta, seeking court-ordered operational changes to protect minors on Facebook, Instagram, and WhatsApp platforms.
+Recent cybersecurity developments include a critical Linux kernel privilege escalation vulnerability, widespread exploitation of a cPanel zero-day, and a significant surge in U.S. state-level privacy fines.
 
 ### Key Points
-- The three-week trial in Santa Fe will determine if Meta must implement age verification, limit usage to 90 hours monthly, and restrict engagement features for minors.
-- New Mexico is demanding that Meta achieve a 99 percent detection rate for new child sexual abuse material (CSAM) on its platforms.
-- Proposed remedies include prohibiting end-to-end encryption for users under 18, a move critics argue could drive users to less secure, unregulated platforms.
-- Meta contends that the state’s mandates infringe on parental rights, stifle free expression, and are technically impossible to verify or implement effectively.
-- Judge Bryan Biedscheid will evaluate the feasibility of these remedies following a previous jury verdict that held Meta liable for $375 million in damages.
+- A high-severity Linux kernel vulnerability (CVE-2026-31431), dubbed "Copy Fail," affects major distributions and has a public proof-of-concept exploit.
+- Attackers exploited a critical cPanel authentication bypass (CVE-2026-41940) for months before a patch was released.
+- U.S. state privacy regulators issued $3.425 billion in fines during 2025, nearly doubling the previous year's total.
+- Threat group UNC6692 is actively impersonating IT helpdesk staff on Microsoft Teams to distribute malware via a fake "Mailbox Repair Utility."
+- Researchers identified that 88% of arXiv submissions contain sensitive, non-public material within LaTeX source files.
 
 ### Why it Matters
-This case sets a significant legal precedent for how courts may force structural business changes on major tech companies beyond mere financial penalties. The outcome could influence future settlement negotiations and regulatory strategies for thousands of other pending lawsuits against social media platforms.
+These incidents highlight the persistent risks posed by unpatched software and the increasing sophistication of social engineering campaigns targeting corporate environments. As regulatory fines escalate and AI-driven threats evolve, organizations must prioritize robust identity management and proactive vulnerability patching to protect sensitive data.
 
 ============================================================
-Author:   Lauren Feiner
-Source:   The Verge
-URL:      https://www.theverge.com/policy/922380/new-mexico-meta-public-nuisance-trial-kids-safety
-Category: Tech Business & Markets
+Author:   Help Net Security
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/05/03/week-in-review-high-severity-lpe-vulnerability-in-the-linux-kernel-cpanel-0-day-exploited-for-months/
+Category: Cybersecurity

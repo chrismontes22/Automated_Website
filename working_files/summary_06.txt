@@ -1,20 +1,20 @@
-Your Windows PC's security foundation could expire in 8 weeks — Here's how to check if you're eligible for a new Secure Boot certificate
+A Couple Million Lines of Haskell: Production Engineering at Mercury
 ============================================================
 
-Microsoft is preparing for the June 2026 expiration of original Secure Boot certificates, requiring many Windows users to update their system firmware to maintain essential device security protections.
+Fintech company Mercury maintains a massive two-million-line Haskell codebase, demonstrating how functional programming can provide operational stability and institutional knowledge retention for rapidly scaling financial systems.
 
 ### Key Points
-- Original Secure Boot certificates issued in 2011 are scheduled to expire across Windows devices in June 2026.
-- Most Windows 11 PCs will receive updated UEFI CA 2023 certificates automatically through standard Windows Update channels.
-- Older systems or unsupported Windows 10 devices may require manual firmware updates from OEMs to remain secure.
-- Windows 10 users must be enrolled in the Extended Security Update (ESU) program to receive the necessary certificate patches.
-- Users can verify their current certificate status by running a specific PowerShell command to check for the "Windows UEFI CA 2023" string.
+- Mercury processes billions in transactions annually using a codebase maintained by a team of 1,500 employees, many of whom learn Haskell on the job.
+- The engineering team utilizes Haskell’s type system to encode operational invariants, effectively turning institutional knowledge into compiler-enforced rules.
+- Mercury adopted the Temporal framework for durable execution, replacing fragile, hand-rolled state machines with reliable, deterministic workflows.
+- The company emphasizes "adaptive capacity" over simple failure prevention, focusing on building systems that degrade gracefully and remain understandable during high-growth periods.
+- To maintain observability, the team favors "records of functions" over concrete modules, allowing for easier instrumentation and fault injection without modifying library source code.
 
 ### Why it Matters
-The expiration of these certificates poses a significant security risk, as outdated systems may face boot-phase vulnerabilities and potential software or driver compatibility failures. While PCs will not stop functioning immediately, failing to update could leave millions of older devices permanently exposed to security threats.
+By treating the type system as an operational tool rather than just a correctness proof, Mercury successfully manages complex financial infrastructure with a rotating, generalist workforce. This approach proves that functional programming can scale effectively in high-stakes environments when organizations prioritize pragmatic boundaries and maintainable abstractions over academic purity.
 
 ============================================================
-Author:   c.cale.hunt@gmail.com (Cale Hunt) , Cale Hunt
-Source:   Windows Central
-URL:      https://www.windowscentral.com/microsoft/windows/secure-boot-certificates-expire-how-to-check
-Category: Cybersecurity
+Author:   Haskell.org
+Source:   Haskell.org
+URL:      https://blog.haskell.org/a-couple-million-lines-of-haskell/
+Category: Tech Business & Markets
