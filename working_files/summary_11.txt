@@ -1,20 +1,21 @@
-Why Apple cannot unlock your deceased relative’s iPhone
+What is New in SQL Server 2025
 ============================================================
 
-Apple cannot unlock iPhones for grieving families because the company does not store user passcodes or encryption keys, prioritizing device security and privacy over potential data recovery requests.
+SQL Server 2025 introduces advanced AI-driven features, including native vector search, GitHub Copilot integration for natural language querying, and a dedicated JSON data type for improved database management.
 
 ### Key Points
-- Apple uses device-based encryption that renders data unreadable without the specific user-created passcode.
-- The company refuses to create software backdoors, citing risks that such access could be exploited by hackers or governments.
-- Apple can provide access to some iCloud data, such as photos or contacts, if the deceased did not enable Advanced Data Protection.
-- Users can designate a Legacy Contact to ensure loved ones gain access to their device data after death.
-- Enabling Advanced Data Protection for iCloud encrypts data with a key only the user possesses, making it permanently inaccessible to Apple.
+- GitHub Copilot integration in SSMS allows users to generate indexes, check database size, and retrieve information using natural language.
+- New semantic search capabilities utilize vector representations to identify contextual similarities beyond simple keyword matching.
+- A native JSON data type is now available for storing and managing JSON documents directly within database tables.
+- External model support enables connectivity to Azure OpenAI, OpenAI, and Ollama for data classification and summarization tasks.
+- New fuzzy string matching functions, such as EDIT_DISTANCE, allow for advanced text comparison and similarity scoring.
+- The Model Context Protocol (MCP) facilitates secure interaction between AI agents and SQL Server data via REST or GraphQL APIs.
 
 ### Why it Matters
-This policy highlights the trade-off between absolute digital privacy and the practical needs of families managing a deceased relative's estate. Understanding these security limitations encourages users to proactively manage their digital legacy to prevent the permanent loss of personal photos and documents.
+These updates signal a major shift toward AI-augmented database administration, reducing the need for manual T-SQL coding for routine tasks. By integrating native vector support and external AI models, SQL Server 2025 positions itself as a central hub for modern, intelligent data applications.
 
 ============================================================
-Author:   Ed Hardy
-Source:   Cult of Mac
-URL:      https://www.cultofmac.com/news/iphone-unlock-encrypted-deceased-relative
-Category: Cybersecurity
+Author:   Daniel Calbimonte
+Source:   Sqlservercentral.com
+URL:      https://www.sqlservercentral.com/articles/what-is-new-in-sql-server-2025
+Category: Artificial Intelligence
