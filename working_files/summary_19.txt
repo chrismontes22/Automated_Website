@@ -1,20 +1,19 @@
-EU slammed over multi-billion AI infrastructure splurge plan
+Singapore boffins get diverse SIEMs singing in harmony with agentic rule translation
 ============================================================
 
-The European Commission faces significant criticism over its €20 billion plan to build AI gigafactories, as lawmakers and experts question the project's business viability and actual market demand.
+Researchers from the National University of Singapore and Fudan University have developed ARuleCon, an agentic framework that translates security rules between diverse SIEM platforms to streamline threat detection.
 
 ### Key Points
-- The European Commission plans to fund four to five large-scale AI data centers to bolster regional computing sovereignty.
-- European Commission President Ursula von der Leyen introduced the initiative in February 2025 to compete with major U.S. computing projects.
-- Critics, including German MEP Sergey Lagodinsky, argue the proposal lacks a clear business case or identified user base.
-- Research suggests French startup Mistral is currently the only European firm with the capacity to utilize such large-scale infrastructure.
-- Global tech giants including Alphabet, Amazon, Meta, and Microsoft are projected to spend $725 billion on AI infrastructure this year.
+- ARuleCon uses an agentic RAG pipeline and Python-based consistency checks to translate proprietary security rules across different vendor schemas.
+- The tool supports major SIEM platforms including Splunk, Microsoft Sentinel, IBM QRadar, Google Chronicle, and RSA NetWitness.
+- The framework outperforms generic large language models by utilizing official vendor documentation to ensure high accuracy and semantic correctness.
+- The technology aims to reduce the manual workload for security operations centers currently struggling with fragmented, multi-vendor security environments.
 
 ### Why it Matters
-The debate highlights growing concerns regarding potential capital misallocation and the sustainability of massive investments in AI infrastructure. If these facilities fail to attract sufficient demand, the project could exacerbate regional economic strain while failing to provide a competitive advantage against established global tech leaders.
+- This technology simplifies the complex process of migrating or consolidating security information and event management systems by automating rule compatibility. By reducing technical friction, organizations can more effectively unify their threat detection capabilities and improve overall security posture.
 
 ============================================================
-Author:   RT
-Source:   RT
-URL:      https://www.rt.com/news/639431-eu-ai-gigafactory-plan/
-Category: Tech Business & Markets
+Author:   Simon Sharwood
+Source:   Theregister.com
+URL:      https://www.theregister.com/2026/05/05/arulecon_siem_rule_conversion/
+Category: Cybersecurity
