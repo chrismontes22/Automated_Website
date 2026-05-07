@@ -1,20 +1,20 @@
-Eliminate pop-ups, autoplay ads, and tracking on the web for just $30
+Microsoft Edge will load all your passwords into memory in plaintext, but Microsoft says it's not a security concern
 ============================================================
 
-AdGuard DNS Personal is offering a five-year subscription for $29.99, providing users with advanced ad-blocking, parental controls, and enhanced security features across up to 20 different personal devices.
+Microsoft Edge stores all saved user passwords in plaintext within system memory upon startup, creating a potential security vulnerability that distinguishes it from other Chromium-based web browsers.
 
 ### Key Points
-- The five-year subscription is available for a one-time payment of $29.99, a significant discount from the $719.64 MSRP.
-- Users can protect up to 20 mobile or desktop devices under a single personal plan.
-- Integrated features include ad-blocking, malware protection, phishing prevention, and real-time traffic statistics.
-- Parental control tools allow users to filter adult content and schedule site-blocking to manage screen time.
-- The service provides customizable filters that enable users to block, unblock, or redirect specific domains on individual devices.
+- Security researcher @L1v1ng0ffTh3L4N discovered that Edge decrypts and loads all stored credentials into process memory immediately after the browser launches.
+- Unlike Chrome, which only decrypts passwords when specifically requested for autofill or management, Edge maintains these credentials in plaintext regardless of active site usage.
+- Attackers with administrative access to a terminal server can potentially scrape these plaintext passwords directly from the memory of logged-on user processes.
+- Microsoft confirmed the behavior is an intentional design choice intended to improve browser performance and user authentication speed.
+- The company advises users to maintain updated security software and operating system patches to mitigate the risk of malware exploiting this memory-based design.
 
 ### Why it Matters
-This offer provides a cost-effective solution for users looking to improve browsing speeds and privacy by filtering intrusive ads and malicious web traffic. By centralizing DNS management, individuals can secure multiple devices against online threats while gaining granular control over their internet experience.
+This design choice creates a significant security risk for users on shared or compromised systems where malware could harvest credentials from memory. While Microsoft maintains that this approach balances performance with usability, it highlights a divergence in security standards between Edge and other Chromium-based browsers.
 
 ============================================================
-Author:   Boing Boing's Shop
-Source:   Boing Boing
-URL:      https://boingboing.net/2026/05/05/eliminate-pop-ups-autoplay-ads-and-tracking-on-the-web-for-just-30.html
+Author:   zac.bowden@futurenet.com (Zac Bowden) , Zac Bowden
+Source:   Windows Central
+URL:      https://www.windowscentral.com/microsoft/microsoft-edge-will-load-all-your-passwords-into-memory-in-plaintext-but-microsoft-says-its-not-a-security-concern
 Category: Cybersecurity

@@ -1,5 +1,185 @@
 [
   {
+    "author": "zac.bowden@futurenet.com (Zac Bowden) , Zac Bowden",
+    "processed_at": "2026-05-07T09:33:46.304130",
+    "source": "Windows Central",
+    "url": "https://www.windowscentral.com/microsoft/microsoft-edge-will-load-all-your-passwords-into-memory-in-plaintext-but-microsoft-says-its-not-a-security-concern",
+    "summary": "Microsoft Edge stores all saved user passwords in plaintext within system memory upon startup, creating a potential security vulnerability that distinguishes it from other Chromium-based web browsers.\n\n### Key Points\n- Security researcher @L1v1ng0ffTh3L4N discovered that Edge decrypts and loads all stored credentials into process memory immediately after the browser launches.\n- Unlike Chrome, which only decrypts passwords when specifically requested for autofill or management, Edge maintains these credentials in plaintext regardless of active site usage.\n- Attackers with administrative access to a terminal server can potentially scrape these plaintext passwords directly from the memory of logged-on user processes.\n- Microsoft confirmed the behavior is an intentional design choice intended to improve browser performance and user authentication speed.\n- The company advises users to maintain updated security software and operating system patches to mitigate the risk of malware exploiting this memory-based design.\n\n### Why it Matters\nThis design choice creates a significant security risk for users on shared or compromised systems where malware could harvest credentials from memory. While Microsoft maintains that this approach balances performance with usability, it highlights a divergence in security standards between Edge and other Chromium-based browsers.",
+    "title": "Microsoft Edge will load all your passwords into memory in plaintext, but Microsoft says it's not a security concern",
+    "category": "Cybersecurity"
+  },
+  {
+    "author": "Ellsworth Toohey",
+    "processed_at": "2026-05-07T09:34:36.119384",
+    "source": "Boing Boing",
+    "url": "https://boingboing.net/2026/05/05/after-friday-meta-can-read-your-instagram-dms-again.html",
+    "summary": "Meta will discontinue the optional end-to-end encryption feature for Instagram direct messages this Friday, May 8, citing low user adoption rates as the primary reason for the service change.\n\n### Key Points\n- Meta is removing the opt-in end-to-end encryption feature for Instagram DMs effective May 8.\n- The company stated that the decision stems from low user engagement with the privacy tool.\n- Users are encouraged to transition to WhatsApp if they require end-to-end encrypted messaging services.\n- Meta will gain the technical ability to access message content for advertising and AI training purposes.\n- The change follows years of pressure from law enforcement and child-safety advocates regarding platform oversight.\n\n### Why it Matters\nThis shift marks a significant reversal of Meta’s previous commitment to expanding encryption across its messaging ecosystem. By removing this layer of privacy, the company gains greater access to user data, which could influence future advertising strategies and the development of its generative AI models.",
+    "title": "After Friday, Meta can read your Instagram DMs again",
+    "category": "Cybersecurity"
+  },
+  {
+    "author": "Seth Godin",
+    "processed_at": "2026-05-07T09:35:16.844531",
+    "source": "Seths.blog",
+    "url": "https://seths.blog/2026/05/ai-together/",
+    "summary": "**Purple.space is testing a collaborative AI model that integrates multiple AI voices into group conversations to foster deeper peer interaction and move beyond isolated, one-on-one user experiences.**\n\n### Key Points\n- The platform incorporates AI voices into discussion categories to prevent stalled conversations and ensure all participants are heard.\n- Collaborative AI environments aim to reduce user isolation and gullibility by maintaining context and encouraging patient, nuanced dialogue.\n- Successful AI startups should prioritize value creation and network effects over simple cost-reduction models, which are prone to competitive price wars.\n- Business-focused AI tools should target \"forcing functions\"—existing crises or urgent needs—to ensure adoption within organizations.\n- Sustainable AI projects should build proprietary, trusted data stacks that provide specific utility rather than relying solely on third-party LLM gateways.\n\n### Why it Matters\nMoving away from solo, transactional AI interactions toward network-based models allows startups to build defensible, high-value platforms that solve complex organizational problems. By focusing on creating economic or social tension that necessitates adoption, developers can build sustainable businesses that prioritize long-term utility over fleeting cost-saving advantages.",
+    "title": "AI together",
+    "category": "Artificial Intelligence"
+  },
+  {
+    "author": "Mia Sato",
+    "processed_at": "2026-05-07T09:38:15.067549",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/report/920005/social-media-clipping-podcasts-clavicular-marketing-mrbeast",
+    "summary": "Brands and influencers are increasingly using \"clipping\" services to pay social media accounts to distribute short, viral segments of their content to artificially inflate reach across major platforms.\n\n### Key Points\n- Clipping services like Clipping.net and Vyro recruit thousands of anonymous users to slice long-form podcasts or videos into short, algorithm-friendly clips.\n- Campaigns often pay creators based on view counts, with rates ranging from $150 per 100,000 views to $1.20 per 1,000 views.\n- High-profile figures and entities, including Dan Bongino, Perplexity, and political campaigns, have utilized these networks to boost visibility.\n- Platforms like Meta are beginning to penalize \"unoriginal\" content, such as videos featuring added borders or captions, which are hallmarks of clip farms.\n- The practice prioritizes viral reach over meaningful engagement, often resulting in high view counts with minimal likes, comments, or actual audience retention.\n\n### Why it Matters\nThe rise of the clip economy suggests that long-form content is increasingly becoming a secondary asset used primarily to generate bite-sized, algorithm-optimized fragments. This shift challenges the value of original, complete works and raises concerns about transparency, as many paid promotional clips lack required disclosures.",
+    "title": "The clippening",
+    "category": "Tech Business & Markets"
+  },
+  {
+    "author": "htan@insider.com (Huileng Tan)",
+    "processed_at": "2026-05-07T09:39:20.949385",
+    "source": "Business Insider",
+    "url": "https://www.businessinsider.com/south-korea-stock-market-samsung-1-trillion-club-ai-boom-2026-5",
+    "summary": "Samsung Electronics reached a $1 trillion market valuation following a 14.4% stock surge, fueled by intense global investor demand for semiconductor chips amid the ongoing artificial intelligence boom.\n\n### Key Points\n- Samsung Electronics became the second Asian company to reach a $1 trillion valuation, joining industry leader TSMC.\n- South Korea’s Kospi index rose 6.5% to surpass the 7,000 level, marking a 75% gain for the year.\n- Rival chipmaker SK Hynix saw its shares jump 10.6%, contributing to the broader market rally.\n- Samsung reported a record-breaking 750% increase in first-quarter operating profit driven by AI infrastructure demand.\n- The rally marks a significant reversal of the long-standing \"Korea discount\" following government-led corporate governance reforms.\n\n### Why it Matters\nThis milestone highlights the dominant role of South Korean semiconductor exporters in the global artificial intelligence supply chain. The rapid market growth signals a major shift in investor sentiment toward Asian tech giants as they capitalize on critical chip shortages and infrastructure spending.",
+    "title": "The world's hottest stock market just minted a trillion-dollar tech giant",
+    "category": "Tech Business & Markets"
+  },
+  {
+    "author": "Sarang Sheth",
+    "processed_at": "2026-05-07T09:40:43.967910",
+    "source": "Yanko Design",
+    "url": "https://www.yankodesign.com/2026/05/05/this-214-modular-backpack-system-zips-apart-into-3-separate-bags-youll-actually-want-to-use/",
+    "summary": "Onli Travel has launched the Modevo Modular Travel Pack, a versatile three-bag system designed to function as high-quality individual components while offering up to 73 liters of combined capacity.\n\n### Key Points\n- The system includes the 28-liter Core Pack, the 18-liter Link briefcase, and the expandable 12-to-27-liter Go Daypack.\n- Bags connect via perimeter YKK zippers, allowing for a full Trio configuration or a smaller Duo setup.\n- The Core Pack features a professional suspension system with load lifters, a removable hip belt, and a 17-inch laptop sleeve.\n- Materials include water-resistant, Bluesign and OEKO-TEX certified fabrics to meet environmental and safety standards.\n- Pre-order pricing starts at $174 for the Duo and $224 for the Trio, with estimated delivery scheduled for June 2026.\n\n### Why it Matters\nThis modular design addresses the common travel dilemma of choosing between a single oversized bag and multiple low-quality luggage pieces. By prioritizing the functionality of each individual component, the system offers travelers greater flexibility and utility throughout various stages of a trip.",
+    "title": "This $214 Modular Backpack System Zips Apart Into 3 Separate Bags You’ll Actually Want to Use",
+    "category": "Phones, Laptops, and Gadgets"
+  },
+  {
+    "author": "kathryn.palmer@insidehighered.com",
+    "processed_at": "2026-05-07T09:41:16.535911",
+    "source": "Inside Higher Ed",
+    "url": "https://www.insidehighered.com/news/tech-innovation/administrative-tech/2026/05/05/pay-or-leak-hackers-target-big-higher-ed-vendor",
+    "summary": "The cybercriminal group ShinyHunters has breached Instructure, the company behind the Canvas learning management system, potentially compromising the personal data of 275 million users across 9,000 global institutions.\n\n### Key Points\n- The breach affects 41 percent of North American higher education institutions that utilize the Canvas platform for course delivery.\n- Stolen data includes names, email addresses, student ID numbers, and private messages between students and teachers.\n- Instructure reports no evidence that passwords, financial information, or government identifiers were accessed during the incident.\n- The extortion group ShinyHunters issued a \"pay or leak\" ransom demand, threatening to release billions of private messages.\n- Instructure has contained the attack by revoking compromised credentials, deploying security patches, and rotating system access keys.\n\n### Why it Matters\nThis incident highlights a growing trend where hackers target third-party vendors to gain access to thousands of institutions simultaneously rather than attacking individual schools. The breach underscores the systemic risk within the education sector's data supply chain and the potential for highly targeted phishing attacks using stolen, context-specific communications.",
+    "title": "‘PAY OR LEAK’: Hackers Target Big Higher Ed Vendor",
+    "category": "Cybersecurity"
+  },
+  {
+    "author": "Simon Sharwood",
+    "processed_at": "2026-05-07T09:41:57.990531",
+    "source": "Theregister.com",
+    "url": "https://www.theregister.com/2026/05/06/india_seb_mythos_infosec_advice/",
+    "summary": "The UK Home Office is actively recruiting three new Chief Technology Officers to oversee critical national infrastructure, including border control systems and passport services, with salaries reaching £105,000.\n\n### Key Points\n- The Home Office is seeking three CTOs to manage core IT operations for borders, visas, and asylum applications.\n- Compensation for these high-level public sector roles is set at up to £105,000 per position.\n- Responsibilities include maintaining eGates, passport issuance systems, and broader enterprise service delivery.\n- These appointments aim to modernize and secure essential government digital infrastructure against evolving operational demands.\n\n### Why it Matters\nThese strategic hires are essential for maintaining the stability and security of the United Kingdom's critical border and immigration technology platforms. By filling these leadership roles, the government aims to ensure the long-term reliability of systems that process millions of sensitive citizen and traveler records annually.",
+    "title": "India orders infosec red alert in case Mythos sparks crime spree",
+    "category": "Cybersecurity"
+  },
+  {
+    "author": "BeauHD",
+    "processed_at": "2026-05-07T09:42:50.638823",
+    "source": "Slashdot.org",
+    "url": "https://slashdot.org/story/26/05/05/1823200/coinbase-lays-off-nearly-700-workers-in-ai-native-restructuring",
+    "summary": "Coinbase is laying off approximately 700 employees, representing 14% of its workforce, as CEO Brian Armstrong pivots the company toward an AI-native operational model to increase efficiency and speed.\n\n### Key Points\n- Coinbase is cutting 700 jobs to streamline operations and reduce management layers within the organization.\n- CEO Brian Armstrong aims to transition the company into an AI-native business that utilizes automated workflows and smaller, multi-functional teams.\n- The restructuring is designed to prepare the company for the next crypto market cycle while maintaining a leaner, more agile corporate structure.\n- Employees are being encouraged to manage fleets of AI agents to increase productivity and consolidate roles across engineering and design departments.\n\n### Why it Matters\nThis shift signals a broader trend of major technology firms leveraging artificial intelligence to justify significant workforce reductions and operational restructuring. By prioritizing AI-native talent, Coinbase is attempting to redefine traditional corporate roles and improve long-term profitability in a volatile cryptocurrency market.",
+    "title": "Coinbase Lays Off Nearly 700 Workers In 'AI-Native' Restructuring",
+    "category": "Tech Business & Markets"
+  },
+  {
+    "author": "Seth Kurkowski",
+    "processed_at": "2026-05-07T09:47:24.728906",
+    "source": "9to5Mac",
+    "url": "https://9to5mac.com/2026/05/05/daily-may-5-2026/",
+    "summary": "Apple is reportedly exploring chip manufacturing partnerships with Intel and Samsung while preparing new iOS features, including Wallet updates and enhancements for upcoming iPhone software releases.\n\n### Key Points\n- Apple is evaluating Intel and Samsung as potential chip manufacturing partners to reduce its current reliance on TSMC.\n- The upcoming iOS 16.5 update will introduce three specific enhancements for iPhone users.\n- Reports indicate that iOS 17 will feature a new \"Create a Pass\" tool within the Apple Wallet application.\n- 9to5Mac Daily provides daily news recaps covering Apple product developments and software updates.\n\n### Why it Matters\nDiversifying chip production could help Apple mitigate supply chain risks and reduce its heavy dependence on a single manufacturer. These software updates reflect Apple's ongoing efforts to expand the functionality of its core ecosystem and digital wallet services.",
+    "title": "9to5Mac Daily: May 5, 2026 – iOS 26.5 RC, Apple chip partners",
+    "category": "Phones, Laptops, and Gadgets"
+  },
+  {
+    "author": "David Dayen",
+    "processed_at": "2026-05-07T09:47:47.870689",
+    "source": "The American Prospect",
+    "url": "http://prospect.org/2026/05/05/complacent-class-2026-milken-institute-global-conference/",
+    "summary": "The Milken Global Conference in Beverly Hills highlighted a disconnect between elite financial leaders focused on AI investment opportunities and the mounting risks of global economic instability.\n\n### Key Points\n- BlackRock CEO Larry Fink and Brookfield CEO Bruce Flatt prioritized shifting retirement assets into AI-focused investments during the event.\n- Citadel CEO Ken Griffin acknowledged that while the U.S. is energy-independent, global energy shocks could trigger a significant worldwide recession.\n- Industry experts, including BMO Capital Markets CEO Alan Tannenbaum, expressed skepticism regarding the ability to pick long-term winners among current AI companies.\n- The conference featured discussions on geopolitical tensions, including the blockage of the Strait of Hormuz, despite a prevailing market optimism among attendees.\n- Notable speakers included U.S. Senator Tim Scott, Virginia Governor Glenn Youngkin, and Rahm Emanuel, who debated the intersection of economic policy and politics.\n\n### Why it Matters\nThe event underscored a growing divide between the speculative enthusiasm of financial elites for AI and the tangible threats posed by global conflict and energy volatility. This disconnect suggests that major institutional investors may be underestimating how geopolitical instability could undermine their long-term growth projections.",
+    "title": "The Complacent Class",
+    "category": "Tech Business & Markets"
+  },
+  {
+    "author": "Sharon Goldman",
+    "processed_at": "2026-05-07T09:52:31.579448",
+    "source": "Yahoo Entertainment",
+    "url": "https://finance.yahoo.com/economy/policy/articles/michigan-farm-town-voted-down-070000429.html",
+    "summary": "A $16 billion AI data center project for OpenAI and Oracle is moving forward in Saline Township, Michigan, despite initial rejection by local officials and widespread community opposition.\n\n### Key Points\n- The 21-million-square-foot facility is part of the Stargate AI infrastructure initiative and will require 1.4 gigawatts of electricity.\n- Saline Township officials initially voted to deny the project, but a lawsuit from developer Related Digital forced a settlement that allowed construction to begin.\n- The settlement provides the township with $14 million in community benefits, including funding for farmland preservation and local infrastructure.\n- Michigan Governor Gretchen Whitmer actively courted the project to boost the state's AI competitiveness and create 2,500 union construction jobs.\n- Residents have launched legal challenges and recall efforts, citing concerns over environmental impact, water usage, and the loss of rural character.\n\n### Why it Matters\nThe Saline Township case highlights the limited power local governments have to block massive AI infrastructure projects once developers leverage state zoning laws and legal resources. As Big Tech firms invest hundreds of billions into physical data centers, rural communities are increasingly forced to navigate the complex trade-offs between economic development and local environmental preservation.",
+    "title": "A Michigan farm town voted down plans for a giant OpenAI-Oracle data center. Weeks later, construction began",
+    "category": "Artificial Intelligence"
+  },
+  {
+    "author": "David Lumb",
+    "processed_at": "2026-05-07T09:53:12.962288",
+    "source": "CNET",
+    "url": "https://www.cnet.com/tech/mobile/apple-will-pay-250m-to-settle-claims-it-misled-iphone-buyers-about-ai/",
+    "summary": "Apple has agreed to a $250 million settlement to resolve a class-action lawsuit alleging the company misled consumers regarding the availability of promised artificial intelligence features on newer iPhones.\n\n### Key Points\n- Apple will pay $250 million to U.S. customers who purchased iPhone 16 models, the iPhone 16E, or iPhone 15 Pro variants between June 2024 and March 2025.\n- Eligible claimants can receive between $25 and $95 per device, depending on the total number of valid claims submitted.\n- The lawsuit alleged that Apple’s marketing deceptively promoted Apple Intelligence and enhanced Siri capabilities that were not available at the time of purchase.\n- Apple denied any wrongdoing in the settlement, citing the successful rollout of other tools like Visual Intelligence, Writing Tools, and Genmoji.\n- The company plans to integrate Google’s Gemini AI models to support future Siri upgrades, with full implementation expected by the end of 2026.\n\n### Why it Matters\nThis settlement highlights the growing legal risks tech companies face when marketing generative AI features that are still in development. It underscores the tension between aggressive product promotion and the technical reality of delivering complex software updates to consumers.",
+    "title": "Apple Will Pay $250M to Settle Allegations It Misled iPhone Buyers About AI",
+    "category": "Artificial Intelligence"
+  },
+  {
+    "author": "Aamir Siddiqui",
+    "processed_at": "2026-05-07T09:53:45.071553",
+    "source": "Android Authority",
+    "url": "https://www.androidauthority.com/samsung-galaxy-s25-one-ui-8-5-stable-rollout-3661337/",
+    "summary": "Samsung has officially released the stable One UI 8.5 update for the Galaxy S25 series, bringing advanced Galaxy AI features and performance enhancements to users worldwide.\n\n### Key Points\n- The update introduces Galaxy S26-exclusive features, including Agentic AI, Creative Studio, and real-time Log video previews.\n- New security tools include enhanced theft protection, privacy alerts, and Knox Matrix device status monitoring.\n- Connectivity upgrades allow Quick Share compatibility with Apple devices and improved family device sharing options.\n- The rollout began in South Korea with the April 2026 security patch, with a global release expected to follow shortly.\n- Additional features include automated Lock screen layouts, improved Bixby device control, and advanced document scanning capabilities.\n\n### Why it Matters\nThis update significantly extends the lifecycle of the Galaxy S25 by providing access to high-end AI tools previously reserved for the newer Galaxy S26 series. By standardizing these features across its flagship lineup, Samsung strengthens its ecosystem and ensures that existing users benefit from the latest software innovations.",
+    "title": "One UI 8.5 is here: Galaxy S25 owners finally get to enjoy some of Galaxy S26’s best features",
+    "category": "Phones, Laptops, and Gadgets"
+  },
+  {
+    "author": "Jake Roach",
+    "processed_at": "2026-05-07T09:54:27.373963",
+    "source": "Tom's Hardware UK",
+    "url": "https://www.tomshardware.com/tech-industry/amd-expects-20-percent-decline-in-gaming-revenue-from-higher-memory-and-component-costs-in-the-second-half-of-the-year-ceo-lisa-su-warns-of-further-memory-crunch",
+    "summary": "AMD reported record data center revenue for the first quarter of 2026 while warning of a significant decline in gaming segment earnings due to rising component and memory costs.\n\n### Key Points\n- AMD projects a gaming revenue decline of more than 20% in the second half of 2026 compared to the first half.\n- The company expects data center CPU revenue to grow 70% year-over-year in the second quarter, driven by high AI demand.\n- Executives Lisa Su and Jean Hu cited increased memory and component pricing as primary headwinds for the consumer and gaming sectors.\n- Gaming revenue impacts follow recent console price hikes implemented by Sony for the PlayStation 5 and Microsoft for the Xbox Series.\n\n### Why it Matters\nThe shift highlights a growing divergence between the high-growth enterprise AI market and the cooling consumer electronics sector. While data center gains bolster AMD's overall financial health, the cooling gaming market suggests that rising hardware costs may continue to dampen consumer demand for high-end gaming components.",
+    "title": "AMD expects 20% decline in gaming revenue from 'higher memory and component costs' in the second half of the year — CEO Lisa Su warns of further memory crunch",
+    "category": "Tech Business & Markets"
+  },
+  {
+    "author": "Lawrence Abrams",
+    "processed_at": "2026-05-07T09:54:46.685975",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/instructure-hacker-claims-data-theft-from-8-800-schools-universities/",
+    "summary": "The education technology company Instructure is investigating a massive data breach after the ShinyHunters hacking group claimed to have stolen 280 million records from thousands of global academic institutions.\n\n### Key Points\n- The ShinyHunters extortion gang claims to have compromised 280 million records across 8,809 colleges, school districts, and online platforms.\n- Stolen data reportedly includes names, email addresses, and private messages harvested from the Canvas learning management system.\n- Attackers allegedly utilized legitimate Canvas data export features, including provisioning reports, user APIs, and DAP queries, to exfiltrate the information.\n- Universities including the University of Colorado Boulder, Rutgers, and Tilburg University have issued public statements regarding the potential impact on their systems.\n- Instructure has confirmed an ongoing investigation into the cyberattack but has not yet provided specific details regarding the scope of the data exposure.\n\n### Why it Matters\nThis breach highlights significant security risks associated with centralized cloud-based platforms that manage sensitive data for millions of students and faculty members worldwide. The incident underscores the critical need for educational institutions to rigorously monitor third-party software integrations and data access permissions to prevent large-scale unauthorized information harvesting.",
+    "title": "Instructure hacker claims data theft from 8,800 schools, universities",
+    "category": "Cybersecurity"
+  },
+  {
+    "author": "Olivier Acuna",
+    "processed_at": "2026-05-07T09:55:48.094520",
+    "source": "CoinDesk",
+    "url": "https://www.coindesk.com/policy/2026/05/05/trust-in-crypto-remains-biggest-barrier-to-adoption-say-consensus-miami-2026-panelists",
+    "summary": "Panelists at Consensus 2026 in Miami identified persistent complexity, industry jargon, and a lack of transparency as the primary barriers preventing mainstream users from adopting cryptocurrency and digital assets.\n\n### Key Points\n- Industry experts from Circle, U.S. Bank, ChangeNOW, and the National Cryptocurrency Association identified trust as the critical factor for mass adoption.\n- Speakers emphasized that technical features are less important to new users than clear communication, simplified product design, and accessible educational resources.\n- Reliable customer support and visible human interaction were highlighted as essential components for building credibility within Web3 projects.\n- Panelists argued that trust must be integrated into regulatory frameworks and product development rather than treated as an optional marketing feature.\n\n### Why it Matters\nThe industry's focus on simplifying user experiences reflects a strategic shift toward prioritizing consumer protection and accessibility to attract non-crypto holders. By addressing these fundamental trust gaps, firms aim to bridge the divide between complex blockchain technology and traditional financial services.",
+    "title": "Trust in crypto remains biggest barrier to adoption, say Consensus Miami 2026 panelists",
+    "category": "Tech Business & Markets"
+  },
+  {
+    "author": "staff@bgr.com (Michael Bizzaco)",
+    "processed_at": "2026-05-07T09:56:06.435507",
+    "source": "BGR",
+    "url": "https://www.bgr.com/2149537/before-you-buy-soundbar-check-for-this-hdmi-feature-first/",
+    "summary": "Consumers looking to upgrade their home theater audio should prioritize soundbars featuring HDMI eARC ports to ensure compatibility with high-quality surround sound formats like Dolby Atmos and DTS:X.\n\n### Key Points\n- HDMI eARC (Enhanced Audio Return Channel) supports higher bandwidth and more advanced audio codecs than standard ARC or digital optical connections.\n- Both the television and the soundbar must feature eARC-compatible ports to enable full-quality, lossless audio transmission.\n- High-speed or Ultra High-Speed HDMI cables, specifically those certified for HDMI 2.1, are required to handle the necessary data transfer speeds of up to 48Gbps.\n- Digital optical cables remain a fallback option but lack the bandwidth required to support immersive, three-dimensional audio formats like Dolby Atmos.\n- Soundbars with built-in HDMI switching often provide eARC passthrough, allowing users to connect multiple AV components directly to the audio system.\n\n### Why it Matters\nSelecting hardware with eARC support is essential for users who want to experience modern, high-fidelity surround sound without technical bottlenecks. Ensuring this compatibility at the time of purchase prevents future limitations when streaming or playing high-resolution media from 4K Blu-ray players.",
+    "title": "Before You Buy A New Soundbar, Check For This HDMI Feature First",
+    "category": "Phones, Laptops, and Gadgets"
+  },
+  {
+    "author": "Brad Linder",
+    "processed_at": "2026-05-07T09:56:24.439822",
+    "source": "Liliputing",
+    "url": "https://liliputing.com/lilbits-openai-phone-steam-machine-and-the-death-of-copilot-for-xbox/",
+    "summary": "Valve is reportedly importing large shipments of hardware into the country, signaling a potential release for the long-delayed Steam Machine, Steam Frame, or restocked Steam Deck handheld devices.\n\n### Key Points\n- Valve has faced significant product delays and stock shortages for the Steam Deck due to rising global memory and storage costs.\n- Shipping manifests indicate that Valve has recently imported large quantities of hardware, suggesting a new product launch is imminent.\n- The company has not yet confirmed pricing or specific release dates for the Steam Machine console or the Steam Frame VR headset.\n- Other industry players, including Apple, are also adjusting product configurations and RAM options to navigate the ongoing memory supply shortage.\n\n### Why it Matters\nThese shipping activities suggest that Valve is finally overcoming supply chain constraints that have hindered its hardware roadmap for months. A successful launch of new gaming hardware could significantly impact the competitive landscape for handheld and living-room gaming devices.",
+    "title": "Lilbits: OpenAI phone, Steam Machine, and the death of Copilot for Xbox",
+    "category": "Phones, Laptops, and Gadgets"
+  },
+  {
+    "author": "sanujb6@gmail.com (Sanuj Bhatia) , Sanuj Bhatia",
+    "processed_at": "2026-05-07T09:56:42.354566",
+    "source": "Android Central",
+    "url": "https://www.androidcentral.com/phones/samsung-galaxy/samsung-galaxy-unpacked-summer-2026-how-to-watch-and-what-to-expect",
+    "summary": "Samsung is expected to host a Galaxy Unpacked event on July 22, 2026, in London to unveil its latest foldable smartphone lineup, including a rumored new Wide Fold model.\n\n### Key Points\n- Samsung may introduce up to four foldable devices, including the Galaxy Z Fold 8, Z Flip 8, and a budget-friendly Z Flip 8 FE.\n- The rumored \"Wide Fold\" device is expected to feature a 7.6-inch inner display and a 4:3 aspect ratio to compete with upcoming foldable iPhone models.\n- Hardware upgrades for the Z Fold 8 likely include a 5,000mAh battery, 45W fast charging, and the Snapdragon 8 Elite Gen 5 chipset.\n- The event is expected to showcase improved hinge technology designed to minimize the visible display crease across the new foldable range.\n- Samsung may also debut the Galaxy Watch 9 alongside its new mobile hardware during the summer presentation.\n\n### Why it Matters\nThis event represents a strategic shift for Samsung as it expands its foldable portfolio to defend its market share against anticipated competition from Apple. By introducing a wider form factor and a budget-friendly model, the company aims to solidify its dominance in the premium foldable smartphone segment.",
+    "title": "Samsung Galaxy Unpacked Summer 2026: How to watch and what to expect",
+    "category": "Phones, Laptops, and Gadgets"
+  },
+  {
     "url": "https://boingboing.net/2026/05/05/eliminate-pop-ups-autoplay-ads-and-tracking-on-the-web-for-just-30.html",
     "title": "Eliminate pop-ups, autoplay ads, and tracking on the web for just $30",
     "summary": "AdGuard DNS Personal is offering a five-year subscription for $29.99, providing users with advanced ad-blocking, parental controls, and enhanced security features across up to 20 different personal devices.\n\n### Key Points\n- The five-year subscription is available for a one-time payment of $29.99, a significant discount from the $719.64 MSRP.\n- Users can protect up to 20 mobile or desktop devices under a single personal plan.\n- Integrated features include ad-blocking, malware protection, phishing prevention, and real-time traffic statistics.\n- Parental control tools allow users to filter adult content and schedule site-blocking to manage screen time.\n- The service provides customizable filters that enable users to block, unblock, or redirect specific domains on individual devices.\n\n### Why it Matters\nThis offer provides a cost-effective solution for users looking to improve browsing speeds and privacy by filtering intrusive ads and malicious web traffic. By centralizing DNS management, individuals can secure multiple devices against online threats while gaining granular control over their internet experience.",
