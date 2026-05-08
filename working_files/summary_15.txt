@@ -1,19 +1,20 @@
-AMD expects 20% decline in gaming revenue from 'higher memory and component costs' in the second half of the year — CEO Lisa Su warns of further memory crunch
+Mirai-Based xlabs_v1 Botnet Exploits ADB to Hijack IoT Devices for DDoS Attacks
 ============================================================
 
-AMD reported record data center revenue for the first quarter of 2026 while warning of a significant decline in gaming segment earnings due to rising component and memory costs.
+Cybersecurity researchers at Hunt.io have identified a new Mirai-derived botnet called xlabs_v1 that exploits exposed Android Debug Bridge services to launch DDoS attacks against gaming servers and infrastructure.
 
 ### Key Points
-- AMD projects a gaming revenue decline of more than 20% in the second half of 2026 compared to the first half.
-- The company expects data center CPU revenue to grow 70% year-over-year in the second quarter, driven by high AI demand.
-- Executives Lisa Su and Jean Hu cited increased memory and component pricing as primary headwinds for the consumer and gaming sectors.
-- Gaming revenue impacts follow recent console price hikes implemented by Sony for the PlayStation 5 and Microsoft for the Xbox Series.
+- The xlabs_v1 botnet targets Android TV boxes, smart TVs, and IoT devices with exposed ADB services on TCP port 5555.
+- Malware operators use a "DDoS-for-hire" model, offering 21 different flood variants capable of bypassing standard consumer-grade protection.
+- The botnet includes a bandwidth-profiling routine that measures device speed to assign compromised hardware into specific pricing tiers for customers.
+- The malware lacks persistence mechanisms, requiring operators to re-infect devices through the ADB channel to maintain control or update fleet data.
+- Researchers discovered the infrastructure, linked to an actor using the moniker "Tadashi," hosted on servers in the Netherlands.
 
 ### Why it Matters
-The shift highlights a growing divergence between the high-growth enterprise AI market and the cooling consumer electronics sector. While data center gains bolster AMD's overall financial health, the cooling gaming market suggests that rising hardware costs may continue to dampen consumer demand for high-end gaming components.
+This botnet highlights the ongoing security risks posed by internet-exposed consumer hardware that ships with default administrative tools enabled. By commoditizing DDoS attacks against the gaming industry, these operators create a scalable threat that forces server administrators to implement more robust traffic mitigation strategies.
 
 ============================================================
-Author:   Jake Roach
-Source:   Tom's Hardware UK
-URL:      https://www.tomshardware.com/tech-industry/amd-expects-20-percent-decline-in-gaming-revenue-from-higher-memory-and-component-costs-in-the-second-half-of-the-year-ceo-lisa-su-warns-of-further-memory-crunch
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/05/mirai-based-xlabsv1-botnet-exploits-adb.html
+Category: Cybersecurity

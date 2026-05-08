@@ -1,20 +1,20 @@
-The world's hottest stock market just minted a trillion-dollar tech giant
+Google Chrome Might Have Installed an AI Model Onto Your Device Without You Knowing
 ============================================================
 
-Samsung Electronics reached a $1 trillion market valuation following a 14.4% stock surge, fueled by intense global investor demand for semiconductor chips amid the ongoing artificial intelligence boom.
+Google is automatically installing its 4GB Gemini Nano AI model onto user devices via the Chrome browser without explicit notification, raising concerns regarding transparency and local hardware resource usage.
 
 ### Key Points
-- Samsung Electronics became the second Asian company to reach a $1 trillion valuation, joining industry leader TSMC.
-- South Korea’s Kospi index rose 6.5% to surpass the 7,000 level, marking a 75% gain for the year.
-- Rival chipmaker SK Hynix saw its shares jump 10.6%, contributing to the broader market rally.
-- Samsung reported a record-breaking 750% increase in first-quarter operating profit driven by AI infrastructure demand.
-- The rally marks a significant reversal of the long-standing "Korea discount" following government-led corporate governance reforms.
+- Google is silently deploying the Gemini Nano AI model to Chrome browsers on devices that meet specific hardware requirements.
+- The model performs on-device tasks like text assistance and scam detection, distinct from cloud-based AI queries.
+- Users can verify the installation by searching for the "OptGuideOnDeviceModel" folder and the "weights.bin" file in their system directory.
+- The feature can be disabled by navigating to "chrome://flags" and turning off the "Enables optimization guide on device" setting.
+- Google stated that the model automatically uninstalls if a device lacks sufficient RAM, storage, or processing power.
 
 ### Why it Matters
-This milestone highlights the dominant role of South Korean semiconductor exporters in the global artificial intelligence supply chain. The rapid market growth signals a major shift in investor sentiment toward Asian tech giants as they capitalize on critical chip shortages and infrastructure spending.
+This silent deployment allows Google to shift AI processing costs from its own servers to individual user hardware, potentially impacting device performance and storage. Critics argue the lack of transparency may violate European data protection regulations and raises significant concerns regarding user consent and corporate accountability.
 
 ============================================================
-Author:   htan@insider.com (Huileng Tan)
-Source:   Business Insider
-URL:      https://www.businessinsider.com/south-korea-stock-market-samsung-1-trillion-club-ai-boom-2026-5
-Category: Tech Business & Markets
+Author:   Alex Valdes
+Source:   CNET
+URL:      https://www.cnet.com/tech/services-and-software/chrome-installing-4gb-ai-model-gemini-nano/
+Category: Artificial Intelligence
