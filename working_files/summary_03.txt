@@ -1,20 +1,21 @@
-Digiday+ Research: Marketers’ AI use rises, but tech skills stall
+PCPJack Credential Stealer Exploits 5 CVEs to Spread Worm-Like Across Cloud Systems
 ============================================================
 
-**Marketing organizations are rapidly increasing their adoption of artificial intelligence, yet many firms struggle to effectively upskill employees and maximize the return on their technology investments.**
+Cybersecurity researchers at SentinelOne have identified PCPJack, a sophisticated credential theft framework targeting cloud infrastructure that actively removes competing malware artifacts associated with the threat actor TeamPCP.
 
 ### Key Points
-- AI adoption among brand and agency professionals rose from 44% in 2022 to 86% in 2025.
-- Major companies including General Motors, Mastercard, and Horizon Media have recently appointed chief AI officers to oversee strategy.
-- Approximately 85% of surveyed marketers rely on out-of-the-box AI tools rather than building proprietary models due to high costs and complexity.
-- Experts warn that a significant gap exists between basic tool usage and the full potential of AI-driven workflows.
-- Rising infrastructure costs for GPUs and TPUs are forcing brands to re-evaluate the financial viability of their AI deployments.
+- PCPJack targets cloud services including Docker, Kubernetes, Redis, MongoDB, and RayML to harvest credentials and exfiltrate data.
+- The malware uses a modular Python-based framework to conduct lateral movement, reconnaissance, and automated port scanning.
+- Attackers utilize Telegram for command-and-control communications and pull target IP ranges from public Common Crawl datasets.
+- The framework specifically identifies and deletes TeamPCP-related processes, suggesting a potential conflict or transition between threat actors.
+- Exploited vulnerabilities include CVE-2025-55182, CVE-2025-29927, CVE-2026-1357, CVE-2025-9501, and CVE-2025-48703.
+- Stolen data includes API keys and secrets for major platforms like OpenAI, Google, Anthropic, and HashiCorp Vault.
 
 ### Why it Matters
-The rapid shift toward AI integration creates a competitive divide between companies that successfully operationalize these tools and those that merely implement them. Organizations must now pivot from simple adoption to strategic upskilling and cost-efficient infrastructure management to ensure their AI investments deliver measurable business value.
+This campaign highlights an evolving threat landscape where attackers prioritize the systematic displacement of rival malware to secure exclusive access to compromised cloud environments. By targeting high-value developer and financial service credentials, PCPJack poses a significant risk to organizations relying on cloud-native infrastructure and automated service integrations.
 
 ============================================================
-Author:   Catherine Wolf
-Source:   Digiday
-URL:      http://digiday.com/marketing/digiday-research-marketers-ai-use-rises-but-tech-skills-stall/
-Category: Artificial Intelligence
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/05/pcpjack-credential-stealer-exploits-5.html
+Category: Cybersecurity

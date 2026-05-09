@@ -1,21 +1,20 @@
-What Is Encryption? How It Protects Your Data
+'What started as someone potentially trying to remove the background from a selfie ended with a custom .NET stealer rifling through their browser passwords': Experts warn that free image editor tool could actually be dangerous malware
 ============================================================
 
-Encryption is the fundamental digital process of scrambling data into unreadable ciphertext, ensuring that only authorized users with the correct cryptographic keys can access sensitive online information.
+A malicious website posing as an online photo background removal tool is using SEO poisoning and ClickFix tactics to infect user devices with sophisticated infostealing malware.
 
 ### Key Points
-- Encryption transforms plaintext into ciphertext using mathematical algorithms and keys, making data effectively impossible to decrypt without the proper credentials.
-- Symmetric encryption uses a single key for both processes, while asymmetric encryption utilizes a public and private key pair to solve secure key distribution.
-- HTTPS secures web traffic by verifying SSL/TLS certificates and establishing encrypted sessions, protecting user passwords and financial data from interception.
-- End-to-end encryption (E2EE) ensures that only the sender and recipient can read messages, preventing service providers like WhatsApp or Signal from accessing content.
-- Password hashing provides a one-way, irreversible mathematical representation of credentials, ensuring companies cannot recover original passwords during a data breach.
-- Modern AES-256 encryption is considered computationally secure, as brute-forcing the key would take longer than the current age of the universe.
+- Cybersecurity firm Huntress identified a fake photo editing site that ranks highly in search results to lure unsuspecting users.
+- The site uses ClickFix social engineering to trick victims into executing a malicious command via the Windows Run dialog.
+- Initial infection occurs through CastleLoader, which subsequently deploys the NetSupport RAT and a custom .NET tool called CastleStealer.
+- The malware targets sensitive data, including browser credentials, cryptocurrency wallet information, Discord tokens, and Telegram session files.
+- Experts recommend disabling the Windows Run shortcut and educating users to avoid executing commands provided by unknown websites.
 
 ### Why it Matters
-Encryption serves as the essential infrastructure for modern digital life, enabling secure banking, private communication, and global commercial transactions. Without these protocols, sensitive personal and corporate data would remain constantly vulnerable to interception, theft, and unauthorized surveillance.
+This campaign demonstrates how attackers leverage search engine optimization to compromise systems by exploiting common user tasks. It highlights the growing risk of credential theft and remote access attacks that bypass traditional security by manipulating users into performing the malicious installation themselves.
 
 ============================================================
-Author:   An Jay
-Source:   Smashingapps.com
-URL:      https://www.smashingapps.com/what-is-encryption/
+Author:   Sead Fadilpašić
+Source:   TechRadar
+URL:      https://www.techradar.com/pro/security/what-started-as-someone-potentially-trying-to-remove-the-background-from-a-selfie-ended-with-a-custom-net-stealer-rifling-through-their-browser-passwords-experts-warn-that-free-image-editor-tool-could-actually-be-dangerous-malware
 Category: Cybersecurity

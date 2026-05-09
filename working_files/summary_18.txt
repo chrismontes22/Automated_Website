@@ -1,19 +1,20 @@
-Google’s Prompt API
+Your laptop's USB port is probably slower than advertised — here's how to verify it
 ============================================================
 
-Google Chrome has begun automatically downloading a 4GB Gemini Nano AI model to user devices without explicit consent, raising significant concerns regarding browser autonomy and web standard practices.
+Modern laptop users often face significant performance bottlenecks because identical-looking USB-C ports frequently support vastly different data transfer speeds, ranging from basic charging to high-speed Thunderbolt 5 capabilities.
 
 ### Key Points
-- Google Chrome now automatically installs the 4GB Gemini Nano AI model on user devices without requiring prior permission.
-- The browser re-downloads the model automatically if a user attempts to manually delete the file from their local storage.
-- Developers utilizing the associated prompt API must agree to Google’s Generative AI Prohibited Uses Policy, which restricts specific content types.
-- Critics argue that bundling standalone AI products with browser updates sets a concerning precedent for the future of web standards and user control.
+- USB standards are notoriously confusing, with naming conventions like USB 3.2 Gen 2 and USB4 often masking the actual performance capabilities of a port.
+- Theoretical speeds vary drastically, from 480Mbps on older USB 2.0 connections to 80Gbps or higher on advanced USB4 Version 2.0 and Thunderbolt 5 ports.
+- Physical appearance is unreliable, as USB-C connectors can support different protocols, and cables themselves often lack the necessary wiring for high-speed data transfer.
+- Users can verify port capabilities using Windows Device Manager, macOS System Report, or the `lsusb -t` command in Linux terminal environments.
+- Certified cables, often identified by USB-IF logos or lightning bolt icons for Thunderbolt, are essential to ensure hardware does not throttle data transfer speeds.
 
 ### Why it Matters
-This development highlights growing tensions between browser vendors and users regarding the integration of proprietary AI models into core web software. It raises critical questions about transparency, storage usage, and the potential for browser-specific policies to influence how the open web functions.
+Using the wrong port or an incompatible cable can reduce data transfer speeds by a factor of ten or more, severely impacting productivity for tasks like external storage backups. Understanding these hardware limitations ensures users can maximize their device performance and avoid unnecessary frustration with slow file transfers.
 
 ============================================================
-Author:   Geoff Graham
-Source:   Css-tricks.com
-URL:      https://css-tricks.com/googles-prompt-api/
-Category: Artificial Intelligence
+Author:   Gavin Phillips
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/your-laptops-usb-port-is-probably-slower-than-advertised-heres-how-to-verify-it/
+Category: Phones, Laptops, and Gadgets

@@ -1,20 +1,20 @@
-Mirai-Based xlabs_v1 Botnet Exploits ADB to Hijack IoT Devices for DDoS Attacks
+Apple Sued for Pulling Co-Viewing App Rave From the App Store
 ============================================================
 
-Cybersecurity researchers at Hunt.io have identified a new Mirai-derived botnet called xlabs_v1 that exploits exposed Android Debug Bridge services to launch DDoS attacks against gaming servers and infrastructure.
+The cross-platform co-viewing service Rave has filed international antitrust lawsuits against Apple, alleging the company removed its app from the App Store to eliminate competition with SharePlay.
 
 ### Key Points
-- The xlabs_v1 botnet targets Android TV boxes, smart TVs, and IoT devices with exposed ADB services on TCP port 5555.
-- Malware operators use a "DDoS-for-hire" model, offering 21 different flood variants capable of bypassing standard consumer-grade protection.
-- The botnet includes a bandwidth-profiling routine that measures device speed to assign compromised hardware into specific pricing tiers for customers.
-- The malware lacks persistence mechanisms, requiring operators to re-infect devices through the ADB channel to maintain control or update fleet data.
-- Researchers discovered the infrastructure, linked to an actor using the moniker "Tadashi," hosted on servers in the Netherlands.
+- Rave filed lawsuits in the U.S., Canada, Brazil, the Netherlands, and Russia seeking reinstatement on iOS and macOS.
+- Apple removed the app in August 2025, citing concerns over fraud, content moderation, and potential malware.
+- Security firms including Kaspersky and BitDefender previously flagged the Rave application as malware across multiple platforms.
+- Rave claims it has implemented new content moderation and age verification tools to address Apple's safety concerns.
+- The service remains available on Android and Windows, while Apple’s competing SharePlay feature is restricted to its own ecosystem.
 
 ### Why it Matters
-This botnet highlights the ongoing security risks posed by internet-exposed consumer hardware that ships with default administrative tools enabled. By commoditizing DDoS attacks against the gaming industry, these operators create a scalable threat that forces server administrators to implement more robust traffic mitigation strategies.
+This legal battle highlights the ongoing tension between Apple’s platform security standards and its role as a gatekeeper for third-party developers. The outcome could influence how regulators view Apple's ability to remove competing services from its ecosystem under the guise of user safety.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/05/mirai-based-xlabsv1-botnet-exploits-adb.html
-Category: Cybersecurity
+Author:   Juli Clover
+Source:   MacRumors
+URL:      https://www.macrumors.com/2026/05/07/apple-rave-app-store-lawsuit/
+Category: Tech Business & Markets
