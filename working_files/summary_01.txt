@@ -1,20 +1,21 @@
-Avoid These 5 Mistakes When Setting Up A New Phone
+This Week in Security: Another Linux Exploit, Ubuntu Knocked Offline, Finals Interrupted, and Backdoored Tools
 ============================================================
 
-Properly configuring a new smartphone by avoiding common setup mistakes can significantly improve device security, battery performance, and overall storage efficiency for both Android and iOS users.
+The Linux kernel faces a new DirtyFrag vulnerability following the recent CopyFail exploit, while major security breaches impact Infrastructure, CPanel, and the DaemonTools software update distribution channel.
 
 ### Key Points
-- Enable built-in security features like biometric locks, Google Play Protect, and "Find My" services to protect sensitive personal data.
-- Install only essential applications rather than cloning your old device to preserve storage space and avoid redundant software.
-- Review app permissions and notification settings individually to prevent unnecessary battery drain and protect your digital privacy.
-- Install all pending software updates immediately to ensure the device has the latest security patches and performance improvements.
-- Retain your old phone and original packaging for at least two weeks to ensure a smooth data transition and potential return process.
+- DirtyFrag chains a new RPC vulnerability with the CopyFail exploit to manipulate the Linux page cache and gain root access.
+- CISA added CopyFail to its Known Exploited Vulnerabilities (KEV) list as active exploitation continues across various distributions.
+- The educational software company Infrastructure suffered a breach by ShinyHunters, potentially exposing data for 275 million students and 9,000 schools.
+- Microsoft Edge stores its entire decrypted password database in RAM, creating a significant security risk for users vulnerable to memory-dumping malware.
+- DaemonTools was compromised via official update channels to deliver targeted malware to government, science, and manufacturing systems.
+- Oracle is shifting from quarterly to monthly security updates to address the accelerating pace of vulnerability discovery and exploitation.
 
 ### Why it Matters
-Taking the time to manually configure a new device prevents the accumulation of digital clutter and security vulnerabilities that often carry over from older phones. These proactive steps ensure that users maximize their hardware's performance and protect their personal information from the moment they begin using the device.
+These incidents highlight a critical trend where attackers are increasingly targeting supply chains and core infrastructure to achieve widespread system compromise. Organizations must prioritize rapid patching and robust monitoring, as even standard utility software and default browser configurations are now being leveraged as primary vectors for persistent unauthorized access.
 
 ============================================================
-Author:   staff@bgr.com (Kazim Alvi)
-Source:   BGR
-URL:      https://www.bgr.com/2152386/common-mistakes-avoid-setting-up-new-phone/
-Category: Phones, Laptops, and Gadgets
+Author:   Mike Kershaw
+Source:   Hackaday
+URL:      https://hackaday.com/2026/05/08/this-week-in-security-another-linux-exploit-ubuntu-knocked-offline-finals-interrupted-and-backdoored-tools/
+Category: Cybersecurity

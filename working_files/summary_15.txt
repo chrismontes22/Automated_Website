@@ -1,20 +1,20 @@
-When Honoring A Brand’s Past Means Changing Its Future
+TCLBANKER Banking Trojan Targets Financial Platforms via WhatsApp and Outlook Worms
 ============================================================
 
-The Blake Project has officially repositioned its brand identity to focus on mid-market value creation, shifting its strategic messaging from heritage-based branding to measurable financial and boardroom performance.
+Security researchers have identified TCLBANKER, a sophisticated new Brazilian banking trojan that exploits legitimate software to target 59 financial platforms and propagate through hijacked WhatsApp and Outlook accounts.
 
 ### Key Points
-- The Blake Project is pivoting its consulting services to target mid-market companies, private equity-backed firms, and growth-stage businesses.
-- The firm introduced the Value Acceleration Studio to integrate AI-enabled execution with brand strategy for faster, growth-oriented results.
-- The repositioning emphasizes brand as a financial asset that directly impacts EBITDA, pricing power, and enterprise value.
-- The firm maintains its core philosophy that brand is a source of meaning and trust, while adopting a more assertive, performance-oriented identity.
-- The decision follows over 20 years of experience serving global category leaders across six continents.
+- Elastic Security Labs is tracking the malware, identified as REF3076, which is an evolution of the Maverick trojan family linked to the Water Saci threat cluster.
+- The trojan uses DLL side-loading to abuse a signed Logitech program, "Logi AI Prompt Builder," to bypass security detection and execute malicious payloads.
+- TCLBANKER employs advanced anti-analysis techniques, including environment-gated decryption and the removal of endpoint security hooks, to ensure it only runs on targeted Brazilian systems.
+- The malware features a worming module that hijacks active WhatsApp Web sessions and Microsoft Outlook accounts to distribute malicious installers to thousands of contacts.
+- Once active, the trojan uses a WebSocket connection to enable remote control, keylogging, and the deployment of fake credential-stealing overlays on major web browsers.
 
 ### Why it Matters
-This transition reflects a broader trend where professional service firms must align their visual identity with specific, high-stakes business outcomes to remain relevant to modern executives. By prioritizing financial metrics over traditional branding aesthetics, the firm aims to reduce market friction and better serve leaders who view brand performance as a critical boardroom priority.
+This campaign demonstrates a significant maturation in commodity crimeware by leveraging trusted communication channels to bypass traditional email and network security defenses. By hijacking legitimate user accounts to distribute malware, attackers effectively weaponize personal trust, making it increasingly difficult for standard reputation-based security tools to detect and block malicious activity.
 
 ============================================================
-Author:   Dr. Derrick Daye
-Source:   Brandingstrategyinsider.com
-URL:      https://brandingstrategyinsider.com/when-honoring-a-brands-past-means-changing-its-future/
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/05/tclbanker-banking-trojan-targets.html
+Category: Cybersecurity
