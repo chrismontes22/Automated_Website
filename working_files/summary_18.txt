@@ -1,20 +1,20 @@
-Your laptop's USB port is probably slower than advertised — here's how to verify it
+Nation-state actors exploit Palo Alto PAN-OS zero-day for weeks
 ============================================================
 
-Modern laptop users often face significant performance bottlenecks because identical-looking USB-C ports frequently support vastly different data transfer speeds, ranging from basic charging to high-speed Thunderbolt 5 capabilities.
+Palo Alto Networks has issued a warning regarding active exploitation of a critical zero-day vulnerability, CVE-2026-0300, affecting the User-ID Authentication Portal on various PA-Series and VM-Series firewalls.
 
 ### Key Points
-- USB standards are notoriously confusing, with naming conventions like USB 3.2 Gen 2 and USB4 often masking the actual performance capabilities of a port.
-- Theoretical speeds vary drastically, from 480Mbps on older USB 2.0 connections to 80Gbps or higher on advanced USB4 Version 2.0 and Thunderbolt 5 ports.
-- Physical appearance is unreliable, as USB-C connectors can support different protocols, and cables themselves often lack the necessary wiring for high-speed data transfer.
-- Users can verify port capabilities using Windows Device Manager, macOS System Report, or the `lsusb -t` command in Linux terminal environments.
-- Certified cables, often identified by USB-IF logos or lightning bolt icons for Thunderbolt, are essential to ensure hardware does not throttle data transfer speeds.
+- The vulnerability is a buffer overflow flaw allowing unauthenticated remote code execution with root privileges.
+- Threat actor group CL-STA-1132 is actively exploiting the flaw to deploy tunneling tools like EarthWorm and ReverseSocks5.
+- Attackers are using stolen credentials to enumerate Active Directory and systematically deleting logs to evade detection.
+- Impacted products include specific versions of PAN-OS 10.2, 11.1, 11.2, and 12.1, with patches scheduled for release throughout May 2026.
+- Risk is significantly mitigated by restricting access to the User-ID Authentication Portal to trusted internal IP addresses only.
 
 ### Why it Matters
-Using the wrong port or an incompatible cable can reduce data transfer speeds by a factor of ten or more, severely impacting productivity for tasks like external storage backups. Understanding these hardware limitations ensures users can maximize their device performance and avoid unnecessary frustration with slow file transfers.
+This exploit highlights the ongoing risk to edge infrastructure when critical management portals are exposed directly to the public internet. Organizations must prioritize network segmentation and access restrictions to prevent state-sponsored actors from establishing long-term, stealthy persistence within their internal environments.
 
 ============================================================
-Author:   Gavin Phillips
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/your-laptops-usb-port-is-probably-slower-than-advertised-heres-how-to-verify-it/
-Category: Phones, Laptops, and Gadgets
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/191831/security/nation-state-actors-exploit-palo-alto-pan-os-zero-day-for-weeks.html
+Category: Cybersecurity
