@@ -1,20 +1,20 @@
-With Denuvo Completely Defeated, 2K Turns To Annoying Online Check In Requirement
+Fake OpenAI repository on Hugging Face pushes infostealer malware
 ============================================================
 
-2K Games has implemented mandatory 14-day online check-ins for several PC titles following the widespread bypass of Denuvo’s anti-piracy software by the gaming community.
+A malicious repository impersonating OpenAI’s Privacy Filter reached the top of Hugging Face’s trending list, exposing 244,000 downloads to a sophisticated Rust-based infostealer targeting sensitive user credentials and data.
 
 ### Key Points
-- Denuvo’s DRM technology is now considered effectively defeated, with hackers successfully bypassing protection for all non-online-only PC games as of April 27.
-- The bypass, developed by the MKDev collective and modder DenuvOwO, utilizes a kernel-level driver to circumvent Denuvo’s security checks.
-- 2K Games has introduced a 14-day offline authorization token requirement for titles including NBA 2K25, NBA 2K26, and Marvel’s Midnight Suns.
-- Players must connect to the internet every two weeks to refresh their authorization tokens, or the games will become unplayable.
-- Critics report that these new requirements were not clearly disclosed on Steam store pages or within the original end-user license agreements.
+- Security firm HiddenLayer discovered the malicious repository, Open-OSS/privacy-filter, on May 7.
+- The malware used a Python loader to execute PowerShell commands that disabled security features and installed the "sefirah" infostealer.
+- Stolen data includes browser passwords, cryptocurrency wallet keys, Discord tokens, and VPN configuration files.
+- The malware employs anti-analysis techniques to detect virtual machines and debuggers, complicating security investigations.
+- Researchers identified links between this campaign and previous npm typosquatting attacks distributing the WinOS 4.0 implant.
 
 ### Why it Matters
-The shift toward mandatory online check-ins highlights the ongoing tension between publishers attempting to curb piracy and the consumer demand for offline accessibility. This strategy risks alienating legitimate customers by retroactively altering game functionality, potentially fueling further conflict between developers and the gaming community.
+This incident highlights the growing risk of supply chain attacks targeting AI development platforms as malicious actors increasingly exploit trusted repositories to distribute malware. Users who interacted with the repository must assume their credentials and digital assets are compromised and should take immediate steps to secure their systems.
 
 ============================================================
-Author:   Timothy Geigner
-Source:   Techdirt
-URL:      https://www.techdirt.com/2026/05/08/with-denuvo-completely-defeated-2k-turns-to-annoying-online-check-in-requirement/
+Author:   Bill Toulas
+Source:   BleepingComputer
+URL:      https://www.bleepingcomputer.com/news/security/fake-openai-repository-on-hugging-face-pushes-infostealer-malware/
 Category: Cybersecurity

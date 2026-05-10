@@ -1,20 +1,19 @@
-Universities Suspend Final Exams After Canvas Hack
+Getting a Proprietary-Bus GPU onto PCIe Enables Cheaper Local LLMs, For Now
 ============================================================
 
-Colleges and universities across North America postponed final exams and assignments after a cyberattack on the Canvas learning management system forced the platform to go offline temporarily.
+Hardware Haven demonstrates how to run generative AI locally by repurposing an affordable 16 GB Nvidia V100 enterprise GPU using a specialized adapter board for consumer motherboards.
 
 ### Key Points
-- The extortion group ShinyHunters claimed to have compromised personal data for 275 million individuals across 9,000 educational institutions.
-- Instructure, the parent company of Canvas, took the platform offline Thursday to contain unauthorized access and investigate security vulnerabilities.
-- Major institutions, including the University of Illinois, Baylor University, and the University of California system, rescheduled exams and restricted platform access.
-- Instructure permanently shut down its "Free-For-Teacher" accounts, which were identified as the primary exploit used by the unauthorized actor.
-- The breach highlights the systemic risk of relying on centralized digital platforms, as attackers increasingly target large vendors to disrupt thousands of organizations simultaneously.
+- The Nvidia V100 GPU, originally released in 2017, can be purchased for approximately $100 on the secondary market.
+- Users must purchase an additional SXM2-to-PCIe adapter board to connect the server-grade hardware to a standard consumer motherboard.
+- The setup requires custom cooling solutions, such as a 3D-printed fan shroud, to prevent the enterprise card from overheating during operation.
+- Benchmarks show the V100 outperforms an RTX 3060 12 GB in token generation speed while maintaining higher power efficiency during active workloads.
 
 ### Why it Matters
-This incident demonstrates the extreme vulnerability of the education sector to large-scale cyberattacks targeting centralized service providers. As institutions become increasingly dependent on digital infrastructure, a single breach can paralyze academic operations and expose sensitive personal data for millions of students and staff.
+This project highlights a cost-effective pathway for enthusiasts to access high-memory hardware typically reserved for enterprise data centers. By bypassing expensive consumer-grade alternatives, users can run larger open-source AI models on a budget, though the limited availability of these server components may cause prices to fluctuate.
 
 ============================================================
-Author:   Ryan Quinn
-Source:   Inside Higher Ed
-URL:      https://www.insidehighered.com/news/tech-innovation/teaching-learning/2026/05/08/universities-suspend-final-exams-after-canvas
-Category: Cybersecurity
+Author:   Tyler August
+Source:   Hackaday
+URL:      https://hackaday.com/2026/05/09/getting-a-proprietary-bus-gpu-onto-pcie-enables-cheaper-local-llms-for-now/
+Category: Artificial Intelligence

@@ -1,20 +1,20 @@
-Does Fidelity's Reorganization Signal the Beginning of the End for 'Small-Team Agile'?
+Quasar Linux RAT (QLNX): A Fileless Linux Implant Built for Stealth and Persistence
 ============================================================
 
-Fidelity Investments is undergoing a major corporate reorganization, cutting 1,000 jobs while simultaneously planning to hire 5,300 new employees to shift toward larger, more efficient project-based engineering teams.
+Security researchers at Trend Micro have identified Quasar Linux RAT (QLNX), a sophisticated, memory-resident malware designed to compromise developer environments through advanced credential theft and stealthy persistence mechanisms.
 
 ### Key Points
-- Fidelity is eliminating 1,000 positions as part of a strategic move away from small, siloed "agile" squads.
-- The company plans to hire 5,300 new workers, with half of those roles focused on technology and product development.
-- Approximately 2,000 of the new hires will be early-career professionals intended to increase hands-on capacity.
-- Managed assets grew 19% to $7.1 trillion, while annual revenue increased 15% to $37.7 billion under CEO Abigail Johnson.
-- Leadership stated that the organizational shift is driven by a need for faster project execution rather than artificial intelligence adoption.
+- QLNX operates entirely in memory using `memfd_create` to avoid leaving traces on the disk.
+- The malware employs eBPF and LD_PRELOAD rootkits to hide processes, files, and network activity from system administrators.
+- It features a PAM backdoor that intercepts plaintext credentials and supports seven distinct persistence methods, including systemd services and cron jobs.
+- The implant targets software development workflows to steal SSH keys, browser profiles, cloud tokens, and clipboard data.
+- A built-in peer-to-peer mesh network allows infected hosts to relay commands, increasing resilience against command-and-control infrastructure disruption.
 
 ### Why it Matters
-This restructuring signals a significant shift in corporate strategy for one of the world's largest financial services firms as it prioritizes scale over traditional agile methodologies. By aggressively hiring early-career talent, Fidelity aims to modernize its digital infrastructure and maintain its competitive growth trajectory in a complex financial market.
+This malware poses a significant supply chain risk by specifically targeting the high-privilege systems used in software development and DevOps environments. Its ability to chain multiple evasion techniques makes it exceptionally difficult to detect and remove, potentially leading to widespread unauthorized access to sensitive source code and cloud infrastructure.
 
 ============================================================
-Author:   BeauHD
-Source:   Slashdot.org
-URL:      https://news.slashdot.org/story/26/05/08/1928254/does-fidelitys-reorganization-signal-the-beginning-of-the-end-for-small-team-agile
-Category: Tech Business & Markets
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/191898/malware/quasar-linux-rat-qlnx-a-fileless-linux-implant-built-for-stealth-and-persistence.html
+Category: Cybersecurity
