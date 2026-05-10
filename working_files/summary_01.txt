@@ -1,21 +1,20 @@
-This Week in Security: Another Linux Exploit, Ubuntu Knocked Offline, Finals Interrupted, and Backdoored Tools
+Fake macOS Troubleshooting Sites Used to Steal iCloud Data in ClickFix Scam
 ============================================================
 
-The Linux kernel faces a new DirtyFrag vulnerability following the recent CopyFail exploit, while major security breaches impact Infrastructure, CPanel, and the DaemonTools software update distribution channel.
+Microsoft security researchers have identified a sophisticated social engineering campaign using the "ClickFix" technique to trick macOS users into executing malicious terminal commands that compromise sensitive personal data.
 
 ### Key Points
-- DirtyFrag chains a new RPC vulnerability with the CopyFail exploit to manipulate the Linux page cache and gain root access.
-- CISA added CopyFail to its Known Exploited Vulnerabilities (KEV) list as active exploitation continues across various distributions.
-- The educational software company Infrastructure suffered a breach by ShinyHunters, potentially exposing data for 275 million students and 9,000 schools.
-- Microsoft Edge stores its entire decrypted password database in RAM, creating a significant security risk for users vulnerable to memory-dumping malware.
-- DaemonTools was compromised via official update channels to deliver targeted malware to government, science, and manufacturing systems.
-- Oracle is shifting from quarterly to monthly security updates to address the accelerating pace of vulnerability discovery and exploitation.
+- Attackers host fake troubleshooting guides on platforms like Medium and Squarespace to lure users into copying malicious terminal commands.
+- Executing these commands bypasses Apple’s Gatekeeper security, allowing malware like Atomic macOS Stealer to infect the system.
+- The malware targets iCloud data, Telegram messages, browser passwords, and private cryptocurrency keys from wallets like Ledger and Trezor.
+- Attackers utilize fileless methods, including curl and osascript, to run malicious code directly in memory, complicating traditional antivirus detection.
+- Apple introduced a security update in macOS 26.4 that blocks suspicious terminal commands and displays a "Possible malware" warning to users.
 
 ### Why it Matters
-These incidents highlight a critical trend where attackers are increasingly targeting supply chains and core infrastructure to achieve widespread system compromise. Organizations must prioritize rapid patching and robust monitoring, as even standard utility software and default browser configurations are now being leveraged as primary vectors for persistent unauthorized access.
+This campaign highlights a growing trend of attackers exploiting user trust to bypass built-in operating system defenses. By tricking individuals into manually executing code, hackers can exfiltrate high-value financial and personal data while remaining undetected by standard security software.
 
 ============================================================
-Author:   Mike Kershaw
-Source:   Hackaday
-URL:      https://hackaday.com/2026/05/08/this-week-in-security-another-linux-exploit-ubuntu-knocked-offline-finals-interrupted-and-backdoored-tools/
+Author:   Deeba Ahmed
+Source:   HackRead
+URL:      https://hackread.com/fake-macos-troubleshooting-sites-steal-icloud-clickfix/
 Category: Cybersecurity

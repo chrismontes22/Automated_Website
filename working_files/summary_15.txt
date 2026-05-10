@@ -1,20 +1,20 @@
-TCLBANKER Banking Trojan Targets Financial Platforms via WhatsApp and Outlook Worms
+Web Review, Week 2026-19
 ============================================================
 
-Security researchers have identified TCLBANKER, a sophisticated new Brazilian banking trojan that exploits legitimate software to target 59 financial platforms and propagate through hijacked WhatsApp and Outlook accounts.
+The latest weekly web review explores shifting trends in internet culture, the sustainability of AI-driven business models, and the growing movement toward decentralized tools and self-hosted infrastructure.
 
 ### Key Points
-- Elastic Security Labs is tracking the malware, identified as REF3076, which is an evolution of the Maverick trojan family linked to the Water Saci threat cluster.
-- The trojan uses DLL side-loading to abuse a signed Logitech program, "Logi AI Prompt Builder," to bypass security detection and execute malicious payloads.
-- TCLBANKER employs advanced anti-analysis techniques, including environment-gated decryption and the removal of endpoint security hooks, to ensure it only runs on targeted Brazilian systems.
-- The malware features a worming module that hijacks active WhatsApp Web sessions and Microsoft Outlook accounts to distribute malicious installers to thousands of contacts.
-- Once active, the trojan uses a WebSocket connection to enable remote control, keylogging, and the deployment of fake credential-stealing overlays on major web browsers.
+- The review highlights a critical need for FOSS projects to prioritize long-term contributor mentorship over maximizing raw contribution metrics.
+- Concerns are raised regarding the lack of a sustainable path for AI-focused industries, suggesting a potential reliance on hidden financial risks.
+- The author advocates for moving away from centralized platforms like GitHub in favor of self-hosted alternatives like Forgejo or Codeberg.
+- Technical insights include the security benefits of Podman containers, the maturity of microVM ecosystems, and the memory-safety advantages of Rust in system rewrites.
+- The analysis critiques the current industry obsession with AI-driven productivity tools, noting that individual speed does not always equate to improved team performance.
 
 ### Why it Matters
-This campaign demonstrates a significant maturation in commodity crimeware by leveraging trusted communication channels to bypass traditional email and network security defenses. By hijacking legitimate user accounts to distribute malware, attackers effectively weaponize personal trust, making it increasingly difficult for standard reputation-based security tools to detect and block malicious activity.
+This review reflects a broader industry pushback against the commercialization of the web and the limitations of current AI hype. By emphasizing decentralized protocols and sustainable engineering practices, it provides a roadmap for developers seeking to reclaim digital autonomy and long-term project resilience.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/05/tclbanker-banking-trojan-targets.html
-Category: Cybersecurity
+Author:   Kevin Ottens
+Source:   Ipsquad.net
+URL:      https://ervin.ipsquad.net/blog/2026/05/08/web-review-week-2026-19/
+Category: Tech Business & Markets
