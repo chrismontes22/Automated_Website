@@ -1,20 +1,20 @@
-HP stuffed a PC into a keyboard. We took it for a spin
+Windows 11 Pro has a disposable PC hidden inside it, and I wish I’d used it sooner
 ============================================================
 
-The HP EliteBoard G1a is a unique, business-focused computer integrated into a full-size keyboard, designed to save desk space for employees who frequently transition between home and office workstations.
+Windows Sandbox provides Windows 11 Pro users with a secure, isolated virtual environment to test suspicious files and software without risking the integrity of their primary operating system.
 
 ### Key Points
-- The device features AMD Ryzen AI Pro processors, up to 64GB of RAM, and 2TB of SSD storage.
-- It functions as a Copilot+ PC, including an NPU for local AI tasks and preinstalled HP Wolf Security.
-- Pricing ranges from $1,499 to over $3,400, depending on the configuration and regional market.
-- The unit weighs 1.49 pounds and connects to monitors via a USB4 port for power, video, and data.
-- Internal components, including RAM and SSD, are user-accessible and replaceable for easier IT maintenance.
+- Windows Sandbox utilizes hardware virtualization to create a disposable, temporary desktop environment that resets completely upon closure.
+- The feature allows users to safely execute unknown EXE files, run scripts, and test registry tweaks without affecting the host system.
+- Unlike traditional virtual machines, Sandbox does not require a separate operating system installation and shares core files with the host.
+- Users can enable the tool by navigating to the "Turn Windows features on or off" menu and restarting their computer.
+- The environment supports standard Windows tools, including Microsoft Edge, File Explorer, and PowerShell, for comprehensive testing.
 
 ### Why it Matters
-The EliteBoard G1a attempts to create a new hardware category for "dual-deskers" who want a portable, powerful system without the bulk of a traditional laptop. However, its high price point and the potential need for additional monitor investments make it a niche alternative to standard enterprise laptops and thin clients.
+This feature significantly lowers the barrier for users to safely experiment with software or system configurations that might otherwise pose security risks. By providing a zero-consequence testing ground, it helps protect personal data from malware while reducing the need for complex virtual machine management.
 
 ============================================================
-Author:   Avram Piltch
-Source:   Theregister.com
-URL:      https://www.theregister.com/personal-tech/2026/05/10/hp-eliteboard-g1a-puts-a-pc-inside-a-keyboard/5235258
-Category: Phones, Laptops, and Gadgets
+Author:   Pankil Shah
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/use-windows-11-pro-sandbox-feature/
+Category: Cybersecurity
