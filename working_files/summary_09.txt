@@ -1,20 +1,20 @@
-Ollama Out-of-Bounds Read Vulnerability Allows Remote Process Memory Leak
+New Fitbit Air details how it compares to Whoop — and how it actually works
 ============================================================
 
-Cybersecurity researchers have identified critical vulnerabilities in the Ollama framework, including a high-severity memory leak flaw and persistent code execution risks affecting over 300,000 servers globally.
+Google has officially unveiled the Fitbit Air, a slim, screenless fitness tracker priced at $99 that features a week-long battery life and competes directly with the Whoop wearable.
 
 ### Key Points
-- The "Bleeding Llama" vulnerability (CVE-2026-7482) allows remote attackers to leak sensitive process memory, including API keys and conversation data, via a heap out-of-bounds read.
-- Ollama versions prior to 0.17.1 are susceptible to the memory leak, which is triggered by uploading a specially crafted GGUF model file.
-- Two additional unpatched flaws in the Ollama Windows client (CVE-2026-42248 and CVE-2026-42249) enable persistent code execution through path traversal and missing signature verification.
-- The Windows vulnerabilities affect versions 0.12.10 through 0.22.0 and allow attackers to execute arbitrary code at every user login.
-- Security experts recommend isolating Ollama instances behind firewalls, deploying authentication proxies, and disabling automatic updates on Windows systems to mitigate these risks.
+- The Fitbit Air weighs 12 grams and features a significantly slimmer profile than the Whoop fitness tracker.
+- Users can check battery status or dismiss alarms using double-tap gestures and integrated LED light patterns.
+- Pre-orders are open for $99, with a $35 Google Store credit available for orders placed before May 25.
+- The device is scheduled for wider availability and shipping beginning May 26, 2026.
+- Demo units are currently available for public viewing at select Google Store locations.
 
 ### Why it Matters
-These vulnerabilities expose organizations to significant data breaches and unauthorized system access, as Ollama is widely used to run large language models locally. Because the framework lacks native authentication, these flaws provide a direct pathway for attackers to exfiltrate proprietary code, credentials, and sensitive user data from enterprise environments.
+This launch signals Google's aggressive expansion into the screenless wearable market, directly challenging established competitors like Whoop with a more compact and affordable hardware design. By offering a lower price point and integration with the Google ecosystem, the company aims to capture health-conscious consumers seeking lightweight, long-lasting fitness tracking solutions.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/05/ollama-out-of-bounds-read-vulnerability.html
-Category: Cybersecurity
+Author:   sanujb6@gmail.com (Sanuj Bhatia) , Sanuj Bhatia
+Source:   Android Central
+URL:      https://www.androidcentral.com/wearables/fitbit/fitbit-air-gestures-whoop-size-comparison
+Category: Phones, Laptops, and Gadgets

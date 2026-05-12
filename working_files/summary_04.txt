@@ -1,19 +1,20 @@
-Managers are quickly becoming an endangered species in tech — for better or for worse
+Obsidian plugin was abused to deploy a remote access trojan
 ============================================================
 
-Middle managers are increasingly tasked with enforcing AI adoption across their teams, even as companies like Coinbase and Meta flatten organizational structures and reduce traditional management roles.
+Security researchers have identified a sophisticated social engineering campaign targeting financial professionals that uses malicious Obsidian note-taking application plugins to deploy the resilient PHANTOMPULSE Remote Access Trojan.
 
 ### Key Points
-- Companies including Coinbase, Block, Meta, and Snap are restructuring or eliminating traditional middle management roles to improve organizational efficiency.
-- Managers at firms like Disney, JPMorgan, and KPMG are now responsible for monitoring employee AI usage and incentivizing the adoption of new software tools.
-- The evolving role requires managers to oversee both human direct reports and automated AI agents simultaneously.
-- Organizations are increasingly using AI-driven dashboards to track performance and identify employees who are lagging in technology integration.
+- Attackers use LinkedIn and Telegram to lure victims into opening malicious shared Obsidian vaults.
+- The campaign exploits the "community plugins" feature to execute unauthorized code on Windows and macOS systems.
+- PHANTOMPULSE uses the Ethereum blockchain to dynamically resolve its command-and-control server address, complicating takedown efforts.
+- Once installed, the malware can capture keystrokes, take screenshots, and exfiltrate sensitive cryptocurrency credentials or corporate data.
+- Security teams are advised to monitor Obsidian for anomalous child processes like PowerShell or AppleScript.
 
 ### Why it Matters
-This shift forces managers into the difficult position of promoting technology that may ultimately render their own roles obsolete. The long-term impact of these organizational changes remains uncertain as companies struggle to balance efficiency gains with the need for effective human leadership.
+This campaign highlights a growing trend of attackers weaponizing legitimate productivity software to bypass traditional security perimeters. The use of blockchain-based infrastructure makes this malware particularly difficult to disrupt, posing a significant risk to high-value targets in the financial and cryptocurrency sectors.
 
 ============================================================
-Author:   Steve Russolillo
-Source:   Business Insider
-URL:      https://www.businessinsider.com/bi-today-sunday-newsletter-pure-managers-in-danger-2026-5
-Category: Tech Business & Markets
+Author:   CyberNetSec.io
+Source:   Netsecops.io
+URL:      https://cyber.netsecops.io/articles/obsidian-plugin-abused-in-campaign-to-deploy-phantom-pulse-rat/
+Category: Cybersecurity
