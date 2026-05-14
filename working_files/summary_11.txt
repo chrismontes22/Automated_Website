@@ -1,20 +1,20 @@
-The Bastl Kalimba is a wild synth that thinks it’s a thumb piano
+New Exim BDAT Vulnerability Exposes GnuTLS Builds to Potential Code Execution
 ============================================================
 
-Bastl Instruments has launched a Kickstarter campaign for the Kalimba, a versatile synthesizer that utilizes touch-sensitive tines and physical modeling to emulate and expand upon traditional thumb piano sounds.
+Exim has released version 4.99.3 to address a critical use-after-free vulnerability, tracked as CVE-2026-45185, which could allow remote attackers to execute arbitrary code on affected mail servers.
 
 ### Key Points
-- The Bastl Kalimba features a synth engine combining physical modeling and FM synthesis with an internal microphone for acoustic blending.
-- Integrated effects include delay, reverb, distortion, bit crushing, and tape emulation alongside a multi-mode filter and arpeggiator.
-- The device incorporates an accelerometer and touchpads for real-time timbral manipulation, note glides, and parameter control.
-- A built-in looper offers time-stretching and reverse capabilities for destructive audio processing.
-- Bastl Instruments spent over three years developing the hardware before launching the current crowdfunding initiative.
+- The vulnerability, nicknamed Dead.Letter, affects Exim versions 4.97 through 4.99.2 specifically when configured with the GnuTLS library.
+- Attackers can trigger memory corruption by sending a TLS close_notify alert during a BDAT message body transfer followed by cleartext data.
+- Security researcher Federico Kirschbaum of XBOW discovered the flaw, noting that it allows attackers to overwrite allocator metadata to gain further control.
+- There are no available workarounds for this issue, making an immediate upgrade to version 4.99.3 the only way to secure vulnerable systems.
+- Builds of Exim that utilize OpenSSL instead of GnuTLS are not susceptible to this specific security exploit.
 
 ### Why it Matters
-This product represents a unique intersection of traditional acoustic form factors and advanced digital synthesis, offering musicians a highly expressive performance tool. By leveraging a proven track record in niche music gear, Bastl is testing market demand for complex, experimental instruments through a controlled crowdfunding release.
+This vulnerability poses a significant risk to email infrastructure because it allows unauthenticated remote attackers to potentially seize control of mail servers. Organizations relying on Exim must prioritize patching to prevent exploitation of this high-caliber bug, which requires minimal server-side configuration to trigger.
 
 ============================================================
-Author:   Terrence O’Brien
-Source:   The Verge
-URL:      https://www.theverge.com/tech/927638/the-bastl-kalimba-is-a-wild-synth-that-thinks-its-a-thumb-piano
-Category: Phones, Laptops, and Gadgets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/05/new-exim-bdat-vulnerability-exposes.html
+Category: Cybersecurity
