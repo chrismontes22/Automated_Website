@@ -1,19 +1,20 @@
-9to5Mac Daily: May 12, 2026 – iOS 26.5 now available, more
+GemStuffer Abuses 150+ RubyGems to Exfiltrate Scraped U.K. Council Portal Data
 ============================================================
 
-Apple has officially released iOS 26.5 and macOS 26.5, introducing significant updates including end-to-end encryption for RCS messaging and a new power button setting for the Mac mini.
+Cybersecurity researchers have identified a malicious campaign called GemStuffer that exploits the RubyGems repository to store and distribute data scraped from various United Kingdom local government web portals.
 
 ### Key Points
-- iOS 26.5 introduces new iPhone wallpapers and implements end-to-end encryption for RCS messaging.
-- macOS 26.5 includes a new system setting designed to address user complaints regarding the Mac mini power button placement.
-- Reports indicate that the upcoming visionOS 27 update will feature significant performance and functional upgrades for the Apple Vision Pro headset.
-- The 9to5Mac Daily podcast provides daily recaps of these software releases and broader Apple ecosystem news.
+- The GemStuffer campaign has uploaded over 150 malicious packages to the RubyGems repository to serve as a data exfiltration channel.
+- Attackers are scraping public committee meeting data, contact information, and documents from ModernGov portals used by councils like Lambeth, Wandsworth, and Southwark.
+- Malicious gems use hardcoded API keys to automatically publish scraped content back to the registry via the command-line interface or direct HTTP POST requests.
+- RubyGems recently disabled new account registrations following a separate major attack, though the connection to GemStuffer remains under investigation.
+- The campaign demonstrates a novel abuse of package registries as a storage layer for bulk data collection rather than traditional malware distribution.
 
 ### Why it Matters
-These software updates address critical user feedback regarding hardware usability and enhance security protocols for cross-platform messaging. By refining core features in iOS and macOS, Apple continues to prioritize system stability and privacy for its global user base.
+This campaign highlights a significant security vulnerability where public package registries are being repurposed as unauthorized hosting platforms for scraped data. The ability to bypass standard credential requirements suggests a need for stricter registry oversight to prevent infrastructure abuse and potential pivots into government systems.
 
 ============================================================
-Author:   Seth Kurkowski
-Source:   9to5Mac
-URL:      https://9to5mac.com/2026/05/12/daily-may-12-2026/
-Category: Phones, Laptops, and Gadgets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/05/gemstuffer-abuses-150-rubygems-to.html
+Category: Cybersecurity

@@ -1,20 +1,19 @@
-New Exim BDAT Vulnerability Exposes GnuTLS Builds to Potential Code Execution
+ZTE and MediaTek unveil Tri-band Wi-Fi 7, targeting a relatively unexplored premium niche in Brazil
 ============================================================
 
-Exim has released version 4.99.3 to address a critical use-after-free vulnerability, tracked as CVE-2026-45185, which could allow remote attackers to execute arbitrary code on affected mail servers.
+Police departments are increasingly integrating real-time AI systems into emergency contact centers to monitor call handlers and perform automated database searches during active emergency response situations.
 
 ### Key Points
-- The vulnerability, nicknamed Dead.Letter, affects Exim versions 4.97 through 4.99.2 specifically when configured with the GnuTLS library.
-- Attackers can trigger memory corruption by sending a TLS close_notify alert during a BDAT message body transfer followed by cleartext data.
-- Security researcher Federico Kirschbaum of XBOW discovered the flaw, noting that it allows attackers to overwrite allocator metadata to gain further control.
-- There are no available workarounds for this issue, making an immediate upgrade to version 4.99.3 the only way to secure vulnerable systems.
-- Builds of Exim that utilize OpenSSL instead of GnuTLS are not susceptible to this specific security exploit.
+- Police agencies are deploying AI tools to listen to emergency calls in real time.
+- The technology assists call handlers by conducting live database searches during active incidents.
+- This integration aims to streamline emergency response workflows and improve information retrieval for dispatchers.
+- The move reflects a broader trend of public sector organizations adopting generative AI to manage high-volume communication systems.
 
 ### Why it Matters
-This vulnerability poses a significant risk to email infrastructure because it allows unauthenticated remote attackers to potentially seize control of mail servers. Organizations relying on Exim must prioritize patching to prevent exploitation of this high-caliber bug, which requires minimal server-side configuration to trigger.
+The adoption of AI in emergency services highlights the growing reliance on automated tools for critical public safety decision-making. While these systems offer potential efficiency gains, they also raise significant questions regarding data privacy, algorithmic accuracy, and the human oversight required in high-stakes law enforcement environments.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/05/new-exim-bdat-vulnerability-exposes.html
-Category: Cybersecurity
+Author:   ZTE null
+Source:   Theregister.com
+URL:      https://www.theregister.com/networks/2026/05/13/zte-and-mediatek-unveil-tri-band-wi-fi-7-targeting-a-relatively-unexplored-premium-niche-in-brazil/5239381
+Category: Artificial Intelligence

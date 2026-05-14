@@ -1,19 +1,20 @@
-Bitcoin Climbs Steadily Higher With No Major Signs Of Distribution
+Downloaded Cemu for Linux recently? You may have malware
 ============================================================
 
-Bitcoin maintains a bullish trajectory as the cryptocurrency holds key support levels and consolidates above the 200-day exponential moving average, signaling potential for a breakout toward $85,000.
+The Cemu Wii U emulator team confirmed that Linux versions of the 2.6 release hosted on GitHub were compromised with malware between May 6 and May 12, 2026.
 
 ### Key Points
-- Bitcoin has remained above the Bull market support band for ten consecutive days, indicating a strengthening primary trend.
-- Analyst Sykodelic reports that the asset successfully secured a daily close above the 200-day EMA, avoiding typical resistance rejections.
-- Market analyst Minga identifies $82,100 as a critical resistance level and $80,600 as the primary local support zone for short-term trading.
-- The broader financial landscape has shifted into a risk-on environment, providing additional momentum for crypto assets.
+- Compromised files include the Linux AppImage and Ubuntu ZIP assets hosted on the official Cemu GitHub repository.
+- The breach occurred after a contributor’s GitHub token was stolen via a malicious Python package, allowing attackers to replace legitimate binaries.
+- The malware is designed to harvest credentials and includes a destructive payload that wipes filesystems if it detects an Israeli user location.
+- Cemu Flatpak versions and installers for other operating systems remain unaffected by this specific supply chain attack.
+- Users who executed the compromised files are advised to reinstall their operating systems and reset all critical passwords, SSH keys, and service tokens.
 
 ### Why it Matters
-The sustained stability of Bitcoin above major technical indicators suggests a shift in market sentiment that could trigger a significant price expansion. Investors are closely monitoring these support levels to determine if the asset can maintain its upward momentum or if short-term volatility will force a consolidation phase.
+This incident highlights the growing vulnerability of open-source software supply chains to targeted credential theft and malicious code injection. It serves as a critical reminder for users to verify file hashes and exercise caution when executing binaries downloaded from third-party or community-managed repositories.
 
 ============================================================
-Author:   Godspower Owie
-Source:   newsBTC
-URL:      http://www.newsbtc.com/news/bitcoin/bitcoin-climbs-steadily-higher/
-Category: Tech Business & Markets
+Author:   Joey Sneddon
+Source:   Omgubuntu.co.uk
+URL:      https://www.omgubuntu.co.uk/2026/05/cemu-linux-malware
+Category: Cybersecurity
