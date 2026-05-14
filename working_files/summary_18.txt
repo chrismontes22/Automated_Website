@@ -1,20 +1,20 @@
-Is your internet provider quietly slowing down your Netflix streams? Here’s how to check (and stop it)
+VLAN isolation sounds great until you forget the firewall rules that actually make it work
 ============================================================
 
-Internet Service Providers often use Deep Packet Inspection to identify and throttle high-bandwidth traffic, but users can bypass these artificial speed limits by utilizing encrypted VPN connections.
+Implementing virtual LANs (VLANs) allows home network users to segment devices into isolated groups, significantly improving security by preventing unauthorized access between smart home products and sensitive personal data.
 
 ### Key Points
-- ISPs use Deep Packet Inspection (DPI) to monitor data packets and intentionally slow down streaming, gaming, or file-sharing activities.
-- Users can detect throttling by comparing baseline speeds from Ookla’s Speedtest against results from Netflix’s Fast.com.
-- VPNs create an encrypted tunnel that hides traffic metadata, preventing ISPs from identifying and restricting specific data types.
-- Modern VPN protocols like WireGuard or Lightway help minimize encryption overhead, ensuring high-speed performance for 4K streaming.
-- NordVPN, Surfshark, and Proton VPN are currently recommended for their ability to maintain high speeds while bypassing network bottlenecks.
+- VLANs divide a single physical network into multiple virtual segments without requiring additional hardware purchases.
+- Common segmentation strategies include creating separate VLANs for trusted devices, IoT products, security cameras, home labs, and guest access.
+- Effective network isolation requires configuring specific firewall rules to manage traffic flow between segments.
+- Improperly configured firewall rules can cause connectivity issues for services relying on specific ports or discovery protocols like mDNS.
+- Many consumer-grade smart devices are designed for flat networks, which may require manual configuration to function correctly within a segmented environment.
 
 ### Why it Matters
-Bandwidth throttling allows providers to manage network congestion and prioritize their own services, often at the expense of the speeds consumers pay for. Using a VPN restores control to the user by ensuring their connection remains neutral and capable of handling high-bandwidth tasks.
+Segmenting a home network is a critical security practice as the number of internet-connected appliances and smart devices continues to grow. By isolating potentially vulnerable IoT hardware from sensitive servers and personal computers, users can mitigate the risk of malware spreading across their entire digital infrastructure.
 
 ============================================================
-Author:   Rene Millman
-Source:   TechRadar
-URL:      https://www.techradar.com/vpn/is-your-internet-provider-quietly-slowing-down-your-netflix-streams-heres-how-to-check-and-stop-it
+Author:   Rich Edmonds
+Source:   XDA Developers
+URL:      https://www.xda-developers.com/learned-the-hard-way-vlan-isolation-without-firewall-rules-breaks-smart-home/
 Category: Cybersecurity
