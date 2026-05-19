@@ -6,7 +6,7 @@ name: Retry Watcher
 
 on:
   schedule:
-    - cron: "30 */2 * * *"   # Wakes up every 2 hours (offset so it doesn't
+    - cron: "30 */6 * * *"   # Wakes up every 2 hours (offset so it doesn't
                                # clash with the main pipeline's own schedule)
   workflow_dispatch:           # Can also be triggered manually if needed
 
