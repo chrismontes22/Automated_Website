@@ -1,20 +1,20 @@
-At The Money: Is SpaceX IPO Breaking Capitalism?
+Grafana says hackers hit its GitHub environment, demand ransom to prevent codebase release — but it's refusing to pay
 ============================================================
 
-The upcoming IPO of SpaceX is challenging traditional market norms as index providers like Nasdaq adjust rules to accelerate the inclusion of massive, low-float companies into major portfolios.
+Grafana Labs confirmed that unauthorized actors accessed its GitHub environment using a stolen token, resulting in the exfiltration of the company's proprietary codebase and an attempted extortion demand.
 
 ### Key Points
-- Nasdaq has updated its rules to allow companies like SpaceX to enter the Nasdaq-100 index just 15 days after an IPO, down from the previous six-month requirement.
-- SpaceX plans to float only 5% of its stock, prompting index providers to implement a multiplier effect that artificially inflates the company's weight in the index.
-- Experts warn that these accelerated inclusion rules create predictable, large-scale buying events that may distort price discovery and negatively impact long-term index performance.
-- The shift reflects a broader trend where modern IPOs prioritize liquidity for private equity insiders over the traditional goal of raising growth capital for the company.
-- Investors can no longer assume that passive index funds are uniform, as different index providers now adopt varying strategies regarding IPO timing and float adjustments.
+- Grafana Labs reported that an unauthorized third party gained access to its GitHub environment via a compromised credential token.
+- The company confirmed that no customer data, personal information, or production systems were impacted by the security breach.
+- A threat actor group known as CoinbaseCartel claimed responsibility for the incident and attempted to extort the company.
+- Grafana Labs has rotated all affected credentials and implemented additional security measures following a forensic investigation.
+- CoinbaseCartel, which allegedly emerged in September 2025, is reportedly linked to members of the ShinyHunters, Scattered Spider, and Lapsus$ groups.
 
 ### Why it Matters
-These structural changes transform passive index funds into vehicles that execute active, high-stakes trading bets on volatile new listings. Investors must now scrutinize the specific rulebooks of their index funds, as the inclusion of mega-cap IPOs like SpaceX can significantly alter the risk profile and performance of previously stable portfolios.
+This incident highlights the ongoing vulnerability of software supply chains to credential-based attacks, even for major platforms serving over 35 million users. By refusing to engage with extortionists, Grafana Labs is following standard cybersecurity guidance to prevent further exploitation and maintain the integrity of its open-source observability tools.
 
 ============================================================
-Author:   Barry Ritholtz
-Source:   Ritholtz.com
-URL:      https://ritholtz.com/2026/05/atm-spacex-ipo/
-Category: Tech Business & Markets
+Author:   Sead Fadilpašić
+Source:   TechRadar
+URL:      https://www.techradar.com/pro/security/grafana-says-hackers-hit-its-github-environment-demand-ransom-to-prevent-codebase-release-but-its-refusing-to-pay
+Category: Cybersecurity

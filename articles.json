@@ -1,5 +1,185 @@
 [
   {
+    "category": "Cybersecurity",
+    "processed_at": "2026-05-19T20:45:32.134975",
+    "title": "This Week in Security: Android Exposes ADB, ShinyHunters Get Paid, Robot Dogs, and More",
+    "author": "Mike Kershaw",
+    "url": "https://hackaday.com/2026/05/18/this-week-in-security-android-exposes-adb-shinyhunters-get-paid-robot-dogs-and-more/",
+    "source": "Hackaday",
+    "summary": "Recent security disclosures highlight critical vulnerabilities across major platforms, including an Android ADB bypass, a high-severity Exim email server flaw, and ongoing supply chain attacks targeting developer ecosystems.\n\n### Key Points\n- Google patched an Android Debug Bridge (ADB) bug that allowed unauthorized network connections by misinterpreting certificate error codes.\n- A critical \"use after free\" vulnerability in the Exim message transport agent (CVE-2026-45185) enables unauthenticated arbitrary code execution on 2.5 million global installations.\n- The \"Fragnesia\" vulnerability in the Linux kernel affects IPSec ESP encryption, requiring new patches for systems previously mitigated against similar exploits.\n- The \"Mini Shai Halud\" supply chain worm is actively compromising NPM and PyPi packages to steal service tokens and sabotage developer environments.\n- Researchers identified wormable vulnerabilities in Unitree robotics platforms that allow attackers to override safety protocols and gain root access via Bluetooth.\n\n### Why it Matters\nThese vulnerabilities demonstrate the persistent risk posed by both legacy code flaws and modern supply chain attacks that target critical infrastructure and developer tools. Organizations must prioritize rapid patching to prevent unauthorized system access, data theft, and the potential for widespread automated exploitation."
+  },
+  {
+    "category": "Tech Business & Markets",
+    "processed_at": "2026-05-19T20:45:47.950983",
+    "title": "Exclusive: Jonah Peretti explains why he sold BuzzFeed",
+    "author": "Nilay Patel",
+    "url": "https://www.theverge.com/podcast/932154/peretti-allen-buzzfeed-ai-slop-social-media",
+    "source": "The Verge",
+    "summary": "BuzzFeed co-founder Jonah Peretti is stepping down as CEO as part of a $120 million deal that grants media mogul Byron Allen a 52 percent controlling stake in the company.\n\n### Key Points\n- Byron Allen, owner of The Weather Channel, will become BuzzFeed’s new CEO, while Peretti transitions to the role of president of BuzzFeed AI.\n- The deal involves issuing 40 million new shares, with $20 million provided at closing and $100 million due over five years.\n- BuzzFeed faced significant financial pressure, including a \"going concern\" warning regarding its ability to cover expenses, prior to securing this capital.\n- Peretti plans to focus on integrating AI into BuzzFeed’s operations and developing new apps like BF Island and Conjure to drive direct audience engagement.\n- The company aims to leverage AI to compete in the video streaming market and reduce its historical dependency on third-party social media platforms.\n\n### Why it Matters\nThis leadership transition marks the end of an era for BuzzFeed, which rose to prominence by mastering viral distribution on social media platforms like Facebook. By pivoting toward AI-driven products and direct-to-consumer traffic, the company is attempting to survive a shifting digital landscape where organic social media reach has significantly declined."
+  },
+  {
+    "category": "Tech Business & Markets",
+    "processed_at": "2026-05-19T20:46:10.495152",
+    "title": "Why catching insider trading is so tricky nowadays, and just how helpful is it for kids to sleep in?",
+    "author": "Cooper Katz McKim",
+    "url": "https://www.npr.org/2026/05/18/g-s1-122515/why-catching-insider-trading-is-so-tricky-nowadays-and-just-how-helpful-is-it-for-kids-to-sleep-in",
+    "source": "NPR",
+    "summary": "Regulators and lawmakers are struggling to curb insider trading on prediction markets like Polymarket, where anonymous crypto-based transactions complicate oversight of high-stakes bets on sensitive geopolitical events.\n\n### Key Points\n- Prediction markets like Polymarket face scrutiny for allowing anonymous, crypto-based betting on sensitive events like military actions or political captures.\n- An American soldier allegedly leveraged classified information to turn a $33,000 investment into over $400,000 using prediction platforms.\n- Senator Richard Blumenthal has introduced legislation to force prediction markets to adopt stricter regulations similar to those governing sportsbooks like FanDuel and DraftKings.\n- While blockchain technology provides permanent transaction records, the decentralized nature of these platforms makes identifying individual bettors difficult for authorities.\n\n### Why it Matters\nThe rise of anonymous prediction markets creates a significant regulatory loophole that allows individuals to profit from non-public, sensitive information. If left unchecked, these platforms could undermine market integrity and necessitate a broader federal crackdown on how crypto-based betting services operate within the United States."
+  },
+  {
+    "category": "Tech Business & Markets",
+    "processed_at": "2026-05-19T20:46:18.941367",
+    "title": "SpaceX Could Face ‘Musk Effect’ With Major Risks After IPO, Analyst Warns",
+    "author": "Ty Roush, Forbes Staff, \n Ty Roush, Forbes Staff\n https://www.forbes.com/sites/tylerroush/",
+    "url": "https://www.forbes.com/sites/tylerroush/2026/05/18/spacex-could-face-musk-effect-with-major-risks-after-ipo-analyst-warns/",
+    "source": "Forbes",
+    "summary": "SpaceX is expected to release its confidential IPO registration paperwork this week, signaling a June 12 Nasdaq debut that could value the aerospace firm at approximately $1.75 trillion.\n\n### Key Points\n- SpaceX filed confidential registration documents with the SEC in April and plans to raise $75 billion in the upcoming public offering.\n- The company’s valuation is projected to reach $1.75 trillion, potentially making it the largest IPO in history, surpassing Saudi Aramco’s 2019 record.\n- Analysts warn that the stock may experience significant volatility due to the \"Elon Musk effect\" and the CEO's concentrated voting power.\n- The IPO will include xAI, which was acquired by SpaceX in February, as part of a combined entity valued at roughly $1.25 trillion.\n- Proceeds from the offering are expected to fund Musk’s ambitious projects, including Mars exploration and the development of data centers in space.\n\n### Why it Matters\nThe public listing of SpaceX is poised to make Elon Musk the world’s first trillionaire while providing investors access to a dominant player in the aerospace and satellite sectors. However, the company's unique governance structure and focus on long-term, capital-intensive goals like Mars colonization may create significant risks for retail shareholders."
+  },
+  {
+    "category": "Artificial Intelligence",
+    "processed_at": "2026-05-19T20:46:27.551800",
+    "title": "How to Watch Google I/O",
+    "author": "Boone Ashworth",
+    "url": "https://www.wired.com/story/how-to-watch-google-io/",
+    "source": "Wired",
+    "summary": "Google will host its annual I/O developer conference on May 19 in Mountain View, where CEO Sundar Pichai is expected to showcase new AI advancements and hardware integrations.\n\n### Key Points\n- The keynote begins at 10 am PT on May 19 at the Shoreline Amphitheatre and will be livestreamed via Google’s website and YouTube.\n- Google plans to detail new AI-infused features for Android 17, including enhanced voice-to-text, smart autofill, and updated Android Auto interfaces.\n- The company will provide more information on \"Googlebook,\" a new line of premium AI-first laptops produced by partners including Acer, HP, Lenovo, and Dell.\n- Presentations will likely include updates to the Gemini AI model, potential video generation tools, and a progress report on the Gemini-powered Google Home speaker.\n- Google will offer a sneak peek at its Android XR smart glasses platform, developed in collaboration with brands like Samsung, Xreal, and Warby Parker.\n\n### Why it Matters\nThese announcements signal Google's aggressive strategy to integrate generative AI directly into the core of its mobile, laptop, and wearable hardware ecosystems. By expanding its partnerships with major PC manufacturers and eyewear brands, the company aims to maintain its competitive edge against rivals in the rapidly evolving AI-driven consumer market."
+  },
+  {
+    "category": "Cybersecurity",
+    "processed_at": "2026-05-19T20:50:45.368919",
+    "title": "Grafana says hackers hit its GitHub environment, demand ransom to prevent codebase release — but it's refusing to pay",
+    "author": "Sead Fadilpašić",
+    "url": "https://www.techradar.com/pro/security/grafana-says-hackers-hit-its-github-environment-demand-ransom-to-prevent-codebase-release-but-its-refusing-to-pay",
+    "source": "TechRadar",
+    "summary": "Grafana Labs confirmed that unauthorized actors accessed its GitHub environment using a stolen token, resulting in the exfiltration of the company's proprietary codebase and an attempted extortion demand.\n\n### Key Points\n- Grafana Labs reported that an unauthorized third party gained access to its GitHub environment via a compromised credential token.\n- The company confirmed that no customer data, personal information, or production systems were impacted by the security breach.\n- A threat actor group known as CoinbaseCartel claimed responsibility for the incident and attempted to extort the company.\n- Grafana Labs has rotated all affected credentials and implemented additional security measures following a forensic investigation.\n- CoinbaseCartel, which allegedly emerged in September 2025, is reportedly linked to members of the ShinyHunters, Scattered Spider, and Lapsus$ groups.\n\n### Why it Matters\nThis incident highlights the ongoing vulnerability of software supply chains to credential-based attacks, even for major platforms serving over 35 million users. By refusing to engage with extortionists, Grafana Labs is following standard cybersecurity guidance to prevent further exploitation and maintain the integrity of its open-source observability tools."
+  },
+  {
+    "category": "Artificial Intelligence",
+    "processed_at": "2026-05-19T20:50:55.110113",
+    "title": "I was laid off from eBay. Now I run a business with 27 AI agents — these are the human parts I still handle myself.",
+    "author": "Agnes Applegate",
+    "url": "https://www.businessinsider.com/laid-off-founded-a-business-with-27-ai-agent-employees-2026-5",
+    "source": "Business Insider",
+    "summary": "After being laid off from eBay in 2024, Linara Bozieva founded a marketing agency that utilizes a sophisticated three-layer workflow powered by 27 custom AI agents to manage operations.\n\n### Key Points\n- Linara Bozieva, a former eBay employee, launched her San Jose-based agency, Ravenopous, following her 2024 layoff.\n- The automated system features 27 custom AI agents organized into three layers: directives, orchestration, and execution.\n- The workflow manages full-cycle marketing, including ad creation, performance analysis, and reporting, for a monthly subscription cost under $1,000.\n- Bozieva utilizes various AI tools, including Claude Code, ChatGPT, HeyGen, and ElevenLabs, to power her agency's infrastructure.\n- The system has been trained on 14 client profiles, allowing Bozieva to oversee multiple accounts with only two hours of work per client each week.\n\n### Why it Matters\nThis model demonstrates how individual entrepreneurs can leverage autonomous AI agents to scale complex business operations without a large traditional staff. It highlights a shift toward \"human-in-the-loop\" management, where domain expertise and interpersonal skills remain essential for overseeing AI-driven workflows."
+  },
+  {
+    "category": "Artificial Intelligence",
+    "processed_at": "2026-05-19T20:51:06.541659",
+    "title": "9to5Mac Daily: May 18, 2026 – Apple Card promo, Siri rumors",
+    "author": "Seth Kurkowski",
+    "url": "https://9to5mac.com/2026/05/18/daily-may-18-2026/",
+    "source": "9to5Mac",
+    "summary": "The latest 9to5Mac Daily podcast episode highlights reports of a standalone Siri application, upcoming Genmoji upgrades for iOS 18, and a new promotional offer for Apple Card users.\n\n### Key Points\n- A standalone Siri app is reportedly in development featuring auto-deleting chat history and a beta label.\n- Apple plans to enhance Genmoji in iOS 18 with new automatic suggestion capabilities for users.\n- A forthcoming Apple Card promotion is expected to offer customers free AirPods Pro 3.\n- 9to5Mac Daily releases new episodes every weekday covering the latest Apple news and product updates.\n\n### Why it Matters\nThese updates signal Apple's ongoing commitment to integrating advanced artificial intelligence features directly into its core software ecosystem. The potential hardware promotions and software enhancements reflect a broader strategy to increase user engagement and incentivize adoption of Apple’s financial and mobile services."
+  },
+  {
+    "category": "Tech Business & Markets",
+    "processed_at": "2026-05-19T20:51:15.832281",
+    "title": "Apple reveals WWDC 26 in the shadow of Google I/O",
+    "author": "nickodiaz@sbcglobal.net (Nickolas Diaz) , Nickolas Diaz",
+    "url": "https://www.androidcentral.com/phones/apple-iphone/apple-reveals-wwdc-26-in-the-shadow-of-google-i-o",
+    "source": "Android Central",
+    "summary": "Apple has officially scheduled its annual Worldwide Developers Conference (WWDC) for June 8-12, 2026, while industry attention remains focused on Google’s upcoming I/O event occurring this week.\n\n### Key Points\n- Apple’s WWDC 2026 will take place from June 8 to June 12, featuring a keynote presentation on June 8 at 10 am PT.\n- The conference will include the Platforms State of the Union, video sessions, developer labs, and the annual Apple Design Awards.\n- Google is scheduled to host its I/O 2026 event on May 19 at 1 pm ET.\n- Expected announcements at Google I/O include updates to Gemini Intelligence, Android 17, and the debut of the Android XR platform.\n- Samsung may potentially showcase its first pair of smart glasses during the Google I/O presentation.\n\n### Why it Matters\nThese back-to-back developer conferences highlight the intensifying competition between Apple and Google as both companies race to integrate advanced artificial intelligence and extended reality into their mobile ecosystems. The announcements will set the trajectory for consumer software and hardware standards for the remainder of the year."
+  },
+  {
+    "category": "Tech Business & Markets",
+    "processed_at": "2026-05-19T20:51:37.375012",
+    "title": "Jury throws out Elon Musk's lawsuit against OpenAI after less than two hours of deliberation — Unanimous vote that Musk filed the lawsuit too late",
+    "author": "Luke James",
+    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/jury-throws-out-elon-musks-lawsuit-against-openai-after-less-than-two-hours-of-deliberation",
+    "source": "Tom's Hardware UK",
+    "summary": "A federal jury in Oakland unanimously rejected Elon Musk’s lawsuit against OpenAI, Sam Altman, and Microsoft, ruling that all claims were barred by the statute of limitations.\n\n### Key Points\n- The nine-member jury reached a verdict in less than two hours, finding Musk filed his claims well past the legal deadline.\n- Musk sought $130 billion in damages and the dismantling of OpenAI’s for-profit structure, alleging a breach of the company's original nonprofit mission.\n- Judge Yvonne Gonzalez Rogers accepted the verdict, noting that the statute of limitations issue was a factual determination that makes an appeal difficult.\n- OpenAI recently closed a $122 billion funding round at an $852 billion valuation, with major investments from Nvidia, Amazon, and SoftBank.\n- The trial involved testimony from six tech billionaires and the public release of extensive internal communications regarding OpenAI’s corporate transition.\n\n### Why it Matters\nThis verdict removes the most significant legal obstacle currently facing OpenAI as it prepares for a potential public offering. By clearing Microsoft and OpenAI leadership of wrongdoing, the court has effectively solidified the company's current for-profit business model and its ongoing restructuring efforts."
+  },
+  {
+    "category": "Artificial Intelligence",
+    "processed_at": "2026-05-19T20:51:46.179580",
+    "title": "'Suggested Genmoji' Are Coming to an iPhone Near You",
+    "author": "Tim Hardwick",
+    "url": "https://www.macrumors.com/2026/05/18/suggested-genmoji-ios-27-apple/",
+    "source": "MacRumors",
+    "summary": "Apple is refining its Genmoji feature for the upcoming iOS 27 update to improve performance, reduce device overheating, and introduce automated suggestions based on user photos and text history.\n\n### Key Points\n- Apple is addressing performance issues in Genmoji that previously caused iPhone overheating and rapid battery drainage.\n- The new \"Suggested Genmoji\" feature will automatically generate custom emoji ideas using a user's personal media and typing history.\n- Users can manage the new functionality through an optional toggle located within the Keyboard settings menu.\n- Apple plans to preview the iOS 27 software update at the Worldwide Developers Conference (WWDC) next month.\n- A public release for the updated operating system is scheduled for this fall.\n\n### Why it Matters\nThese updates reflect Apple's ongoing efforts to optimize on-device artificial intelligence while balancing complex processing demands with hardware limitations. By automating content creation, the company aims to increase user engagement with its generative tools while maintaining the performance standards expected of its mobile ecosystem."
+  },
+  {
+    "category": "Cybersecurity",
+    "processed_at": "2026-05-19T20:51:54.634219",
+    "title": "TanStack weighs invitation-only pull requests after supply chain attack",
+    "author": "Tim Anderson",
+    "url": "https://www.theregister.com/security/2026/05/18/tanstack-weighs-invitation-only-pull-requests-after-supply-chain-attack/5241899",
+    "source": "Theregister.com",
+    "summary": "The technology sector faces significant challenges as unauthorized AI usage surges, critical security vulnerabilities emerge in software like Drupal, and enterprises navigate complex shifts in hardware and cloud infrastructure.\n\n### Key Points\n- Unauthorized \"Shadow AI\" usage in workplaces has increased fourfold over the past year, raising concerns about proprietary data exposure.\n- Drupal released a critically urgent security patch affecting versions as far back as the 8.9 branch.\n- Airbus secured a five-year HPC-as-a-service contract with Bull to support the development of new aircraft.\n- Microsoft launched its latest Surface for Business lineup, featuring AI-focused Intel processors starting at $1,499.\n- A supply chain attack on npm compromised 314 JavaScript packages, including popular modules like size-sensor and echarts-for-react.\n\n### Why it Matters\nThese developments highlight the growing tension between rapid AI adoption and the necessity for robust enterprise security and governance. Organizations must balance the benefits of new technologies against the risks of shadow IT, supply chain vulnerabilities, and unpredictable operational costs."
+  },
+  {
+    "category": "Tech Business & Markets",
+    "processed_at": "2026-05-19T21:00:29.823849",
+    "title": "Rising bond yields and oil prices weigh on markets as Samsung gains on government intervention: Dow Jones, S&P, Nasdaq, Wall Street Futures",
+    "author": "Fiona Craig",
+    "url": "https://investorshub.advfn.com/market-news/article/28505/rising-bond-yields-and-oil-prices-weigh-on-markets-as-samsung-gains-on-government-intervention-dow-jones-sp-nasdaq-wall-street-futures",
+    "source": "Advfn.com",
+    "summary": "U.S. stock futures declined on Monday as rising global bond yields and elevated oil prices fueled inflation concerns amid ongoing geopolitical tensions involving Iran and the Strait of Hormuz.\n\n### Key Points\n- Dow Jones futures fell 0.7%, while S&P 500 and Nasdaq 100 futures dropped 0.4% and 0.3% respectively.\n- Brent crude prices climbed to $110.32 per barrel as the conflict with Iran entered its 80th day.\n- The U.S. 10-year Treasury yield reached a 15-month high, increasing borrowing costs and pressuring equity valuations.\n- Samsung Electronics shares rose following South Korean government intervention to prevent a potential strike at its semiconductor division.\n- China’s April industrial production grew by only 4.1%, missing expectations and signaling weak domestic demand.\n\n### Why it Matters\nRising energy costs and bond yields create significant headwinds for global markets by increasing inflation risks and tightening monetary policy expectations. Investors are closely monitoring these macroeconomic pressures alongside upcoming earnings from major tech firms like NVIDIA to gauge the resilience of the broader equity market."
+  },
+  {
+    "category": "Artificial Intelligence",
+    "processed_at": "2026-05-19T21:00:48.224551",
+    "title": "Final Fantasy Creator Calls Viral AI-Generated Final Fantasy 6 Remake Video ‘Amazing’",
+    "author": "Ethan Gach",
+    "url": "https://kotaku.com/final-fantasy-creator-says-viral-ai-generated-final-fantasy-6-remake-video-looks-awesome-2000697042",
+    "source": "Kotaku",
+    "summary": "A viral AI-generated video reimagining the classic SNES RPG Final Fantasy VI in a modern 3D style has garnered praise from franchise creator Hironobu Sakaguchi.\n\n### Key Points\n- X user desusanJP released a two-minute AI-generated sizzle reel on May 16 depicting a modern, third-person remake of Final Fantasy VI.\n- The footage features iconic scenes, including the character Terra and Sabin suplexing a haunted train, set to the original game's musical score.\n- Franchise creator Hironobu Sakaguchi publicly praised the video on social media, expressing surprise and admiration for the fan-made concept.\n- Square Enix producer Yoshinori Kitase has previously noted that a full-scale remake of the title would be a massive undertaking, potentially requiring 20 years to complete.\n- The video sparked debate among fans regarding the use of generative AI and whether a potential remake should prioritize hyper-realistic graphics or stylized art.\n\n### Why it Matters\nThis viral project highlights the growing capability of generative AI to visualize long-requested fan projects and influence public discourse around classic game remakes. It also underscores the significant logistical challenges Square Enix faces in modernizing beloved legacy titles that fans continue to demand."
+  },
+  {
+    "category": "Cybersecurity",
+    "processed_at": "2026-05-19T21:01:01.876749",
+    "title": "After fixing a family friend’s phone, I realized Google Play Protect is not doing enough",
+    "author": "Megan Ellis",
+    "url": "https://www.androidauthority.com/google-play-protect-not-doing-enough-3665470/",
+    "source": "Android Authority",
+    "summary": "Google Play Protect is facing criticism for failing to identify malicious adware that disguises itself as legitimate utility apps to hijack Android device interfaces and display excessive advertisements.\n\n### Key Points\n- Malicious apps often pose as essential tools like messaging services or QR scanners to trick users into granting excessive system permissions.\n- These apps can replace a phone's native launcher, allowing developers to inject ads into the home screen, app drawer, and system widgets.\n- Google Play Protect failed to flag a specific \"Messages\" app as adware, despite its intrusive behavior and unauthorized launcher functionality.\n- Users can identify hidden malicious software by checking \"Default apps\" settings or reviewing the \"Manage apps\" list within the Google Play Store.\n- Many of these deceptive applications remain available on the Play Store, often targeting non-tech-savvy users with misleading promises of utility.\n\n### Why it Matters\nThe inability of Google Play Protect to consistently detect deceptive apps highlights a significant security gap for less experienced Android users. This vulnerability allows bad actors to compromise device functionality and user privacy, suggesting that current automated vetting processes are insufficient to prevent the distribution of intrusive adware."
+  },
+  {
+    "category": "Cybersecurity",
+    "processed_at": "2026-05-19T21:01:14.909563",
+    "title": "Microsoft backtracks on Edge storing your passwords in plaintext RAM",
+    "author": "Laura Pippig",
+    "url": "https://www.pcworld.com/article/3131805/microsoft-backtracks-on-edge-storing-your-passwords-in-plaintext-ram.html",
+    "source": "PCWorld",
+    "summary": "Microsoft has released a security update for the Edge browser to address a critical vulnerability that previously stored user passwords in unencrypted plaintext within computer memory.\n\n### Key Points\n- Security researcher Tom Jøran Sønstebyseter Rønning discovered that Microsoft Edge kept saved credentials in plaintext, allowing local attackers to easily extract them from RAM.\n- Microsoft initially defended the practice as a deliberate design decision before reversing its position following public scrutiny.\n- The vulnerability has been resolved in Edge version 148, which prevents passwords from remaining loaded in an unencrypted state.\n- Experts recommend that users migrate sensitive credentials to dedicated, third-party password managers for enhanced security and encryption.\n\n### Why it Matters\nThis vulnerability highlights the significant risks associated with relying on browser-based credential storage, which may lack the robust security protocols found in dedicated password management software. Users should update their software immediately and consider migrating to specialized tools to ensure their sensitive data remains protected against unauthorized local access."
+  },
+  {
+    "category": "Tech Business & Markets",
+    "processed_at": "2026-05-19T21:01:23.568792",
+    "title": "Ad Tech Briefing: The downstream implications of Publicis Groupe’s $2.2 billion bet on LiveRamp",
+    "author": "Ronan Shields",
+    "url": "http://digiday.com/media-buying/ad-tech-briefing-the-downstream-implications-of-publicis-groupes-2-2-billion-bet-on-liveramp/",
+    "source": "Digiday",
+    "summary": "Publicis Groupe has announced the acquisition of data-collaboration platform LiveRamp for $2.1767 billion, a strategic move designed to bolster its internal identity, measurement, and addressability capabilities for clients.\n\n### Key Points\n- Publicis Groupe is acquiring LiveRamp for $38.50 per share, representing a 29.8% premium over the company's last closing stock price.\n- The acquisition aims to integrate LiveRamp’s identity graph and clean room technology into Publicis’ existing data-driven operating models, such as Epsilon.\n- Rival holding companies, including Omnicom and WPP, may now seek alternative identity partners to mitigate risks associated with relying on a competitor-owned infrastructure.\n- Publicis has committed to maintaining LiveRamp as a neutral, interoperable platform to address concerns regarding data governance and competitive firewalls.\n- The deal follows failed acquisition talks between LiveRamp and Experian in 2023 and a previous partnership announcement between Publicis and LiveRamp at CES.\n\n### Why it Matters\nThis acquisition signals a major shift toward vertical integration in the advertising industry as agencies move to control the underlying data infrastructure required for modern media buying. By internalizing these critical tools, Publicis gains a significant competitive advantage in measurement and audience activation while forcing rival firms to reevaluate their own reliance on third-party ad tech providers."
+  },
+  {
+    "category": "Tech Business & Markets",
+    "processed_at": "2026-05-19T21:01:32.019470",
+    "title": "Data center power demand is likely to drive up energy bills",
+    "author": "NC State",
+    "url": "https://www.futurity.org/data-center-power-demand-energy-costs-1600/",
+    "source": "Futurity: Research News",
+    "summary": "Rising electricity demand from data centers and cryptocurrency mining could increase national power costs by up to 29% and CO2 emissions by 28% by 2030, according to new research.\n\n### Key Points\n- North Carolina State University researchers project electricity costs could spike by as much as 57% in specific regions by 2030.\n- High-impact areas include Virginia, Ohio, Pennsylvania, Maryland, New York, and parts of Texas due to concentrated data center expansion.\n- Increased power demand is expected to reverse two decades of progress in reducing carbon emissions within the U.S. power sector.\n- The study utilized energy system optimization models to analyze hourly supply and demand across 26 regional power grids.\n- Findings published in *Environmental Research Letters* suggest that distributing data centers more broadly could help mitigate localized price surges.\n\n### Why it Matters\nThe rapid growth of data centers threatens to strain existing power infrastructure and inflate utility bills for consumers across the United States. Policymakers must now balance the economic benefits of digital infrastructure expansion against the urgent need to manage rising energy costs and environmental impacts."
+  },
+  {
+    "category": "Tech Business & Markets",
+    "processed_at": "2026-05-19T21:01:53.791619",
+    "title": "Galaxy Digital Wins Major Money Transmitter License in New York",
+    "author": "Lockridge Okoth",
+    "url": "https://beincrypto.com/galaxy-digital-new-york-license-institutional-crypto-access/",
+    "source": "BeInCrypto",
+    "summary": "Galaxy Digital has secured a BitLicense and Money Transmitter License from the New York State Department of Financial Services, enabling direct service to institutional clients throughout the state.\n\n### Key Points\n- The New York State Department of Financial Services granted the licenses to GalaxyOne Prime NY on May 18.\n- Galaxy Digital can now provide regulated trading and custody services to hedge funds, family offices, and registered investment advisors.\n- The firm manages approximately $9 billion in client assets and holds over 50 global licenses.\n- Fewer than 40 companies currently hold an active BitLicense, which requires rigorous cybersecurity, capital reserve, and anti-money laundering standards.\n- The licensing process typically takes 18 to 24 months and can cost applicants seven figures in legal and compliance fees.\n\n### Why it Matters\nThis approval allows Galaxy Digital to capture the largest concentration of institutional capital in the United States by providing a compliant, direct gateway for professional investors. While the high barrier to entry favors established firms, it also signals a shift toward increased institutional adoption of digital assets within a strictly regulated framework."
+  },
+  {
+    "category": "Cybersecurity",
+    "processed_at": "2026-05-19T21:02:03.311197",
+    "title": "How to better protect your growing business in an AI-powered world",
+    "author": "Alym Rayani",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/05/18/how-to-better-protect-your-growing-business-in-an-ai-powered-world/",
+    "source": "Microsoft.com",
+    "summary": "Growing businesses face heightened security risks as cybercriminals leverage AI to increase the efficacy of phishing attacks by 4.5 times, necessitating integrated, automated defenses to ensure operational stability.\n\n### Key Points\n- Microsoft’s 2025 Digital Defense Report reveals the company processes over 100 trillion security signals and blocks 4.5 million new malware files daily.\n- AI-driven cyberattacks are becoming more frequent and sophisticated, specifically targeting user identities and access points within cloud-based environments.\n- Small and medium-sized businesses are disproportionately affected by cyber threats due to limited dedicated security staff and round-the-clock monitoring resources.\n- Microsoft 365 Business Premium integrates productivity tools with automated security features to help smaller organizations manage risks without added complexity.\n- Cybersecurity is now a core business risk that directly impacts long-term growth, customer trust, and the ability to maintain daily operations.\n\n### Why it Matters\nCybersecurity has evolved from a technical IT concern into a fundamental business risk that can cause significant financial loss and reputational damage. By prioritizing integrated security solutions, growing companies can protect their operations and maintain customer trust while scaling in an increasingly hostile digital landscape."
+  },
+  {
     "summary": "The late 1990s and early 2000s marked a formative era for cybersecurity, defined by the rise of remote administration tools, IRC-based command-and-control, and evolving digital underground communities.\n\n### Key Points\n- Iconic remote administration tools like Back Orifice, NetBus, and Sub7 pioneered silent machine control and modular plugin architectures.\n- Essential security utilities developed during this period, including Nmap, Netcat, and John the Ripper, remain foundational tools for modern penetration testers.\n- IRC networks like EFnet and DALnet served as the primary command-and-control infrastructure, masking malicious traffic within legitimate chat communications.\n- The 1994 \"Italian Crackdown\" saw authorities raid 119 Bulletin Board System nodes, significantly impacting early digital communities and shaping future perspectives on cyber law.\n\n### Why it Matters\nThe architectural strategies developed by early hackers, such as blending malicious traffic into legitimate services, remain the blueprint for modern threat actors. Understanding this history provides critical context for how today’s cybersecurity professionals approach infrastructure security and operational defense.",
     "category": "Cybersecurity",
     "processed_at": "2026-05-14T22:15:57.570973",

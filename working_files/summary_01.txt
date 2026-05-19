@@ -1,19 +1,20 @@
-A sentimental tour of late 1990s and early 2000s hacking tools
+This Week in Security: Android Exposes ADB, ShinyHunters Get Paid, Robot Dogs, and More
 ============================================================
 
-The late 1990s and early 2000s marked a formative era for cybersecurity, defined by the rise of remote administration tools, IRC-based command-and-control, and evolving digital underground communities.
+Recent security disclosures highlight critical vulnerabilities across major platforms, including an Android ADB bypass, a high-severity Exim email server flaw, and ongoing supply chain attacks targeting developer ecosystems.
 
 ### Key Points
-- Iconic remote administration tools like Back Orifice, NetBus, and Sub7 pioneered silent machine control and modular plugin architectures.
-- Essential security utilities developed during this period, including Nmap, Netcat, and John the Ripper, remain foundational tools for modern penetration testers.
-- IRC networks like EFnet and DALnet served as the primary command-and-control infrastructure, masking malicious traffic within legitimate chat communications.
-- The 1994 "Italian Crackdown" saw authorities raid 119 Bulletin Board System nodes, significantly impacting early digital communities and shaping future perspectives on cyber law.
+- Google patched an Android Debug Bridge (ADB) bug that allowed unauthorized network connections by misinterpreting certificate error codes.
+- A critical "use after free" vulnerability in the Exim message transport agent (CVE-2026-45185) enables unauthenticated arbitrary code execution on 2.5 million global installations.
+- The "Fragnesia" vulnerability in the Linux kernel affects IPSec ESP encryption, requiring new patches for systems previously mitigated against similar exploits.
+- The "Mini Shai Halud" supply chain worm is actively compromising NPM and PyPi packages to steal service tokens and sabotage developer environments.
+- Researchers identified wormable vulnerabilities in Unitree robotics platforms that allow attackers to override safety protocols and gain root access via Bluetooth.
 
 ### Why it Matters
-The architectural strategies developed by early hackers, such as blending malicious traffic into legitimate services, remain the blueprint for modern threat actors. Understanding this history provides critical context for how today’s cybersecurity professionals approach infrastructure security and operational defense.
+These vulnerabilities demonstrate the persistent risk posed by both legacy code flaws and modern supply chain attacks that target critical infrastructure and developer tools. Organizations must prioritize rapid patching to prevent unauthorized system access, data theft, and the potential for widespread automated exploitation.
 
 ============================================================
-Author:   Andrea Fortuna
-Source:   Andreafortuna.org
-URL:      https://andreafortuna.org/2026/05/13/amarcord/
+Author:   Mike Kershaw
+Source:   Hackaday
+URL:      https://hackaday.com/2026/05/18/this-week-in-security-android-exposes-adb-shinyhunters-get-paid-robot-dogs-and-more/
 Category: Cybersecurity

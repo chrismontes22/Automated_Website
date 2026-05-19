@@ -1,20 +1,20 @@
-VLAN isolation sounds great until you forget the firewall rules that actually make it work
+Data center power demand is likely to drive up energy bills
 ============================================================
 
-Implementing virtual LANs (VLANs) allows home network users to segment devices into isolated groups, significantly improving security by preventing unauthorized access between smart home products and sensitive personal data.
+Rising electricity demand from data centers and cryptocurrency mining could increase national power costs by up to 29% and CO2 emissions by 28% by 2030, according to new research.
 
 ### Key Points
-- VLANs divide a single physical network into multiple virtual segments without requiring additional hardware purchases.
-- Common segmentation strategies include creating separate VLANs for trusted devices, IoT products, security cameras, home labs, and guest access.
-- Effective network isolation requires configuring specific firewall rules to manage traffic flow between segments.
-- Improperly configured firewall rules can cause connectivity issues for services relying on specific ports or discovery protocols like mDNS.
-- Many consumer-grade smart devices are designed for flat networks, which may require manual configuration to function correctly within a segmented environment.
+- North Carolina State University researchers project electricity costs could spike by as much as 57% in specific regions by 2030.
+- High-impact areas include Virginia, Ohio, Pennsylvania, Maryland, New York, and parts of Texas due to concentrated data center expansion.
+- Increased power demand is expected to reverse two decades of progress in reducing carbon emissions within the U.S. power sector.
+- The study utilized energy system optimization models to analyze hourly supply and demand across 26 regional power grids.
+- Findings published in *Environmental Research Letters* suggest that distributing data centers more broadly could help mitigate localized price surges.
 
 ### Why it Matters
-Segmenting a home network is a critical security practice as the number of internet-connected appliances and smart devices continues to grow. By isolating potentially vulnerable IoT hardware from sensitive servers and personal computers, users can mitigate the risk of malware spreading across their entire digital infrastructure.
+The rapid growth of data centers threatens to strain existing power infrastructure and inflate utility bills for consumers across the United States. Policymakers must now balance the economic benefits of digital infrastructure expansion against the urgent need to manage rising energy costs and environmental impacts.
 
 ============================================================
-Author:   Rich Edmonds
-Source:   XDA Developers
-URL:      https://www.xda-developers.com/learned-the-hard-way-vlan-isolation-without-firewall-rules-breaks-smart-home/
-Category: Cybersecurity
+Author:   NC State
+Source:   Futurity: Research News
+URL:      https://www.futurity.org/data-center-power-demand-energy-costs-1600/
+Category: Tech Business & Markets

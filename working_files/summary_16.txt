@@ -1,19 +1,19 @@
-Linux gains more critical Windows apps: 3D Movie Maker and Space Cadet Pinball
+Microsoft backtracks on Edge storing your passwords in plaintext RAM
 ============================================================
 
-The German Sovereign Tech Fund has awarded the KDE desktop project €1.3 million to bolster European digital sovereignty and provide a viable alternative to dominant proprietary operating systems.
+Microsoft has released a security update for the Edge browser to address a critical vulnerability that previously stored user passwords in unencrypted plaintext within computer memory.
 
 ### Key Points
-- The Sovereign Tech Fund provided €1.3 million in funding to support the KDE desktop environment.
-- This investment reflects a growing European initiative to reduce reliance on non-European software providers.
-- Public sector organizations in Europe are increasingly seeking homegrown, open-source alternatives for their IT infrastructure.
-- The funding aims to strengthen the development and security of the KDE project as a sustainable desktop platform.
+- Security researcher Tom Jøran Sønstebyseter Rønning discovered that Microsoft Edge kept saved credentials in plaintext, allowing local attackers to easily extract them from RAM.
+- Microsoft initially defended the practice as a deliberate design decision before reversing its position following public scrutiny.
+- The vulnerability has been resolved in Edge version 148, which prevents passwords from remaining loaded in an unencrypted state.
+- Experts recommend that users migrate sensitive credentials to dedicated, third-party password managers for enhanced security and encryption.
 
 ### Why it Matters
-This investment highlights a strategic shift in Europe toward digital independence by prioritizing open-source software over foreign-owned commercial platforms. By backing established projects like KDE, the German government aims to foster a more resilient and transparent technological ecosystem for public and private users.
+This vulnerability highlights the significant risks associated with relying on browser-based credential storage, which may lack the robust security protocols found in dedicated password management software. Users should update their software immediately and consider migrating to specialized tools to ensure their sensitive data remains protected against unauthorized local access.
 
 ============================================================
-Author:   Liam Proven
-Source:   Theregister.com
-URL:      https://www.theregister.com/oses/2026/05/13/linux-gains-more-critical-windows-apps-3d-movie-maker-and-space-cadet-pinball/5239455
-Category: Tech Business & Markets
+Author:   Laura Pippig
+Source:   PCWorld
+URL:      https://www.pcworld.com/article/3131805/microsoft-backtracks-on-edge-storing-your-passwords-in-plaintext-ram.html
+Category: Cybersecurity
