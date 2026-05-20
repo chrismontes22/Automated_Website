@@ -1,20 +1,20 @@
-Data center power demand is likely to drive up energy bills
+Mini Shai-Hulud Pushes Malicious AntV npm Packages via Compromised Maintainer Account
 ============================================================
 
-Rising electricity demand from data centers and cryptocurrency mining could increase national power costs by up to 29% and CO2 emissions by 28% by 2030, according to new research.
+Cybersecurity researchers have identified a massive software supply chain attack involving the Mini Shai-Hulud campaign, which compromised hundreds of npm packages to steal credentials from developer environments.
 
 ### Key Points
-- North Carolina State University researchers project electricity costs could spike by as much as 57% in specific regions by 2030.
-- High-impact areas include Virginia, Ohio, Pennsylvania, Maryland, New York, and parts of Texas due to concentrated data center expansion.
-- Increased power demand is expected to reverse two decades of progress in reducing carbon emissions within the U.S. power sector.
-- The study utilized energy system optimization models to analyze hourly supply and demand across 26 regional power grids.
-- Findings published in *Environmental Research Letters* suggest that distributing data centers more broadly could help mitigate localized price surges.
+- The attack compromised 323 npm packages, including widely used @antv data visualization tools and the echarts-for-react wrapper.
+- Threat actors published 639 malicious versions in a 22-minute burst, embedding credential-stealing payloads that harvest data from AWS, Azure, GitHub, and Kubernetes.
+- The malware uses stolen tokens to automate self-propagation, creating over 2,500 malicious GitHub repositories and injecting preinstall hooks into legitimate software.
+- Attackers are utilizing advanced techniques, including Sigstore attestation forgery, to make malicious packages appear as legitimate, verified releases.
+- The campaign is linked to the group TeamPCP, which recently open-sourced the framework, leading to copycat attacks by other threat actors.
 
 ### Why it Matters
-The rapid growth of data centers threatens to strain existing power infrastructure and inflate utility bills for consumers across the United States. Policymakers must now balance the economic benefits of digital infrastructure expansion against the urgent need to manage rising energy costs and environmental impacts.
+This incident highlights a critical vulnerability in modern software development where automated CI/CD pipelines can be weaponized to distribute malware at scale. Because the attack targets trusted dependencies, organizations face significant downstream risks, including the potential for widespread credential theft and unauthorized access to cloud infrastructure.
 
 ============================================================
-Author:   NC State
-Source:   Futurity: Research News
-URL:      https://www.futurity.org/data-center-power-demand-energy-costs-1600/
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/05/mini-shai-hulud-pushes-malicious-antv.html
+Category: Cybersecurity

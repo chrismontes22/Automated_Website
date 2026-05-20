@@ -1,20 +1,21 @@
-I was laid off from eBay. Now I run a business with 27 AI agents — these are the human parts I still handle myself.
+Canonical launches Ubuntu Core 26
 ============================================================
 
-After being laid off from eBay in 2024, Linara Bozieva founded a marketing agency that utilizes a sophisticated three-layer workflow powered by 27 custom AI agents to manage operations.
+Canonical has officially released Ubuntu Core 26, a minimal, immutable Linux operating system designed to enhance security, update efficiency, and hardware-backed trust for mission-critical and edge AI deployments.
 
 ### Key Points
-- Linara Bozieva, a former eBay employee, launched her San Jose-based agency, Ravenopous, following her 2024 layoff.
-- The automated system features 27 custom AI agents organized into three layers: directives, orchestration, and execution.
-- The workflow manages full-cycle marketing, including ad creation, performance analysis, and reporting, for a monthly subscription cost under $1,000.
-- Bozieva utilizes various AI tools, including Claude Code, ChatGPT, HeyGen, and ElevenLabs, to power her agency's infrastructure.
-- The system has been trained on 14 client profiles, allowing Bozieva to oversee multiple accounts with only two hours of work per client each week.
+- Provides up to 15 years of security maintenance to support long-term infrastructure requirements.
+- Reduces over-the-air update sizes by 50% to 90% using an improved snap-delta format.
+- Introduces a Chisel-based build system for precise, traceable software composition and smaller image footprints.
+- Expands Livepatch support to ARM64, enabling rebootless kernel patching for zero-downtime security updates.
+- Enhances hardware security with TPM-sealed keys and native OP-TEE integration for ARM TrustZone protection.
+- Aligns with the EU Cyber Resilience Act (CRA) and IEC 62443-4-1 standards for secure-by-default device management.
 
 ### Why it Matters
-This model demonstrates how individual entrepreneurs can leverage autonomous AI agents to scale complex business operations without a large traditional staff. It highlights a shift toward "human-in-the-loop" management, where domain expertise and interpersonal skills remain essential for overseeing AI-driven workflows.
+This release provides a standardized, highly secure foundation for critical infrastructure and edge AI, helping organizations meet stringent new European cybersecurity regulations. By streamlining updates and improving hardware-rooted trust, it enables companies to manage large-scale device fleets more efficiently while minimizing operational downtime.
 
 ============================================================
-Author:   Agnes Applegate
-Source:   Business Insider
-URL:      https://www.businessinsider.com/laid-off-founded-a-business-with-27-ai-agent-employees-2026-5
-Category: Artificial Intelligence
+Author:   Canonical (Canonical)
+Source:   Canonical.com
+URL:      https://canonical.com/blog/canonical-launches-ubuntu-core-26
+Category: Cybersecurity
