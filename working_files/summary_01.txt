@@ -1,20 +1,21 @@
-Mexican government breached by solo user with Claude, 150 GB exfiltrated
+Your Windows laptop is probably wasting performance on startup — here's where to look
 ============================================================
 
-Artificial intelligence is lowering the barrier to cyberattacks by replacing the need for specialized technical expertise with affordable monthly subscriptions, enabling amateur operators to execute sophisticated data breaches.
+Windows users can improve slow boot times by addressing firmware delays, hidden startup processes, and system settings that Task Manager often fails to identify or report accurately.
 
 ### Key Points
-- AI tools like Claude and ChatGPT have been used by solo operators to exfiltrate millions of records from Mexican government agencies and conduct extortion campaigns against healthcare organizations.
-- Research indicates that AI models can now identify and exploit vulnerabilities in smart contracts with high success rates, significantly reducing the labor costs previously required for such attacks.
-- The cost of executing cyberattacks is dropping by approximately 22% every two months as model generations improve, shifting the primary barrier to entry from skill to a simple subscription fee.
-- Crypto platforms serve as a critical "wind tunnel" for observing these trends due to their transparent, public ledgers that allow for the precise tracking of exploit attempts and attacker behavior.
-- While defensive AI systems exist, they often struggle with high false-positive rates and require expert human triage, creating an imbalance where offensive tools remain easier to deploy than defensive ones.
+- Check "Last BIOS time" in Task Manager to determine if hardware initialization delays are occurring before Windows loads.
+- Use the Microsoft Sysinternals tool "Autoruns" to view and manage hidden startup entries that Task Manager does not display.
+- Run the PowerShell command `Get-CimInstance Win32_StartupCommand` to generate a quick list of startup applications and their file locations.
+- Analyze Event ID 101 in the Windows Event Viewer under "Diagnostics-Performance" to identify specific executables causing boot delays.
+- Disable "Fast Startup" in Power Options to prevent memory leaks and driver issues caused by the hybrid shutdown-hibernation process.
+- Adjust Windows 11 visual effects and background app permissions to improve system responsiveness immediately after reaching the desktop.
 
 ### Why it Matters
-The shift from expert-led hacking to subscription-based automation fundamentally changes the threat landscape for governments and private enterprises alike. Because AI-enabled attacks are becoming cheaper and more accessible, organizations must prepare for a surge in incidents that were previously considered too complex for non-specialists to execute.
+Understanding the root cause of slow boot times prevents users from wasting time on ineffective tweaks that do not address hidden background processes or firmware configurations. By utilizing diagnostic logs and advanced management tools, users can significantly improve system performance and ensure their hardware is not being throttled by unnecessary software.
 
 ============================================================
-Author:   Konstantin Tkachuk
-Source:   Konstantintkachuk.com
-URL:      https://konstantintkachuk.com/writing/the-floor-doesnt-exist/
-Category: Cybersecurity
+Author:   Tashreef Shareef
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/reduce-windows-startup-apps-performance/
+Category: Phones, Laptops, and Gadgets
