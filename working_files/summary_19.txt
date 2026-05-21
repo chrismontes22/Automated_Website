@@ -1,19 +1,20 @@
-Buying an Android phone is no longer enough — Google wants you to subscribe too
+Webworm Deploys EchoCreep and GraphWorm Backdoors Using Discord and MS Graph API
 ============================================================
 
-Google is shifting its Android strategy by locking advanced generative AI features behind monthly subscription tiers, effectively turning the smartphone into a gateway for recurring cloud-based revenue.
+**Cybersecurity researchers have identified new 2025 activity from the China-aligned threat actor Webworm, which is deploying sophisticated backdoors that leverage Discord and Microsoft Graph API for stealthy communications.**
 
 ### Key Points
-- Google’s new AI features, including Gemini Spark and Daily Brief, require subscriptions ranging from $7.99 to $200 per month.
-- Subscription tiers like Plus and Pro bundle AI access with additional perks such as 200GB to 5TB of cloud storage and YouTube Premium Lite.
-- High-end on-device AI features require specific hardware, such as 12GB of RAM and Gemini Nano V3 support, excluding many existing flagship devices.
-- The company is moving away from providing free software innovations, treating advanced AI as a monetizable cloud service rather than an ecosystem incentive.
+- Webworm is utilizing two new custom backdoors, EchoCreep and GraphWorm, to facilitate command-and-control operations.
+- The group targets government agencies and critical infrastructure sectors, including aerospace and electric power, across Asia and Europe.
+- Attackers are increasingly shifting toward stealthy proxy tools like WormFrp and SoftEther VPN to evade detection within compromised networks.
+- Malicious activity has been observed using a GitHub repository impersonating a WordPress fork to stage malware and various hacking utilities.
+- Researchers noted that EchoCreep has sent over 400 commands to more than 50 unique targets since March 2024.
 
 ### Why it Matters
-This shift signals a fundamental change in the smartphone business model, moving from one-time hardware purchases to a recurring revenue structure driven by expensive-to-run AI systems. Consumers must now weigh the ongoing cost of these subscriptions against the value of integrated software features that were previously provided for free.
+The shift toward using legitimate cloud services like Discord and Microsoft OneDrive for command-and-control makes it significantly harder for security teams to distinguish malicious traffic from normal business operations. This evolution in tradecraft highlights a growing trend of state-aligned actors adopting stealthy, semi-legitimate tools to maintain long-term persistence within sensitive government and enterprise environments.
 
 ============================================================
-Author:   Robert Triggs
-Source:   Android Authority
-URL:      https://www.androidauthority.com/buying-android-phone-not-enough-google-ai-subscriptions-3668565/
-Category: Artificial Intelligence
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/05/webworm-deploys-echocreep-and-graphworm.html
+Category: Cybersecurity

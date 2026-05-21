@@ -1,20 +1,19 @@
-GitHub Investigating TeamPCP Claimed Breach of ~4,000 Internal Repositories
+Between-Device Sharing Still Sucks
 ============================================================
 
-GitHub is investigating a security breach after the threat actor TeamPCP compromised an employee device via a malicious Visual Studio Code extension to exfiltrate internal platform repositories.
+Despite advancements in connectivity, transferring files between modern devices remains unnecessarily difficult due to complex security protocols, proprietary software ecosystems, and a lack of universal cross-platform sharing standards.
 
 ### Key Points
-- Threat actor TeamPCP and the LAPSUS$ group are attempting to sell approximately 4,000 stolen GitHub internal repositories for $95,000.
-- The breach originated from a compromised employee device infected by a poisoned Microsoft Visual Studio Code extension.
-- GitHub has rotated critical credentials and confirmed the exfiltration was limited to internal repositories, with no evidence of customer data impact.
-- TeamPCP is simultaneously conducting a supply chain attack by injecting malicious code into the "durabletask" Python package on PyPI.
-- The malware, known as Mini Shai-Hulud, functions as an infostealer that targets cloud credentials, password managers, and SSH keys on Linux systems.
+- Modern file sharing is hindered by layers of authentication, permissions, and user account requirements that were less prevalent in the Windows 9x and XP eras.
+- Proprietary solutions like Apple’s AirDrop and Samsung’s Quick Share create "walled gardens" that prevent seamless data movement between different brands of hardware.
+- Security concerns, including the risk of malware and unauthorized access to sensitive personal data, necessitate strict access controls that complicate local network sharing.
+- The absence of a unified, industry-wide protocol for cross-platform file transfers forces users to rely on inefficient workarounds like cloud syncing or email.
 
 ### Why it Matters
-This incident highlights the severe risks posed by software supply chain attacks, where compromised developer tools and packages can lead to large-scale internal data breaches. The ability of the malware to propagate through cloud environments like AWS and Kubernetes underscores the critical need for robust credential management and rigorous security vetting of third-party extensions.
+The current friction in file management highlights a significant trade-off between user convenience and digital security in an increasingly connected world. As personal devices store more sensitive information, the industry prioritizes restrictive, siloed security models over the open, accessible networking standards of the past.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/05/github-investigating-teampcp-claimed.html
-Category: Cybersecurity
+Author:   Zoe Skyforest
+Source:   Hackaday
+URL:      https://hackaday.com/2026/05/20/between-device-sharing-still-sucks/
+Category: Phones, Laptops, and Gadgets

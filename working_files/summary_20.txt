@@ -1,20 +1,20 @@
-How an image could compromise your Mac: understanding an ExifTool vulnerability (CVE-2026-3102)
+Testing distributed systems with AI agents
 ============================================================
 
-ExifTool version 13.49 and earlier contains a critical command injection vulnerability, CVE-2026-3102, which allows attackers to execute arbitrary shell commands on macOS systems through malicious image file metadata.
+New open-source AI coding skills enable automated, claim-driven testing for distributed and stateful systems by generating structured test plans and detailed findings reports for various AI agents.
 
 ### Key Points
-- The vulnerability exists in the `SetMacOSTags` function, where unsanitized user input is passed to a system command sink.
-- Attackers can trigger the flaw by using the `-tagsFromFile` feature to copy metadata into the `FileCreateDate` tag.
-- Exploitation requires the `-n` flag to bypass standard date-time formatting filters, allowing for the injection of malicious shell commands.
-- Developers patched the issue in ExifTool version 13.50 by replacing dangerous string concatenation with secure, list-based system calls.
-- Users are advised to update to version 13.50 or later to prevent potential system compromise and unauthorized code execution.
+- The framework provides two primary skills: one for designing test plans based on product claims and another for executing those tests.
+- It supports major AI coding agents including Claude Code, Cursor, Copilot CLI, Gemini, and Codex.
+- Outputs include a structured Markdown test plan and a findings report featuring a 9-state verdict taxonomy and blame classification.
+- The system enforces rigorous testing standards, such as linearizability checking, fault injection, and coverage adequacy arguments.
+- It includes a comprehensive technique catalog distilled from industry-standard research on distributed system failures and testing methodologies.
 
 ### Why it Matters
-This vulnerability poses a significant risk to organizations that process images on macOS, as a seemingly benign file can be used to gain unauthorized control over a system. By moving to list-based API calls, the patch demonstrates a critical security best practice for preventing command injection in software that interacts with underlying operating system utilities.
+This framework shifts distributed system testing from informal integration checks to a structured, evidence-based workflow that significantly improves production reliability. By automating the design and execution of complex fault-injection scenarios, it allows developers to identify critical bugs—such as non-deterministic concurrency and crash-recovery issues—that traditional testing often misses.
 
 ============================================================
-Author:   Lucas Tay
-Source:   Securelist.com
-URL:      https://securelist.com/exiftool-compromise-mac/119866/
-Category: Cybersecurity
+Author:   shenli
+Source:   Github.com
+URL:      https://github.com/shenli/distributed-system-testing
+Category: Artificial Intelligence
