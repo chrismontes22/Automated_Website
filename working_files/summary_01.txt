@@ -1,21 +1,20 @@
-Your Windows laptop is probably wasting performance on startup — here's where to look
+GitHub Investigating TeamPCP Claimed Breach of ~4,000 Internal Repositories
 ============================================================
 
-Windows users can improve slow boot times by addressing firmware delays, hidden startup processes, and system settings that Task Manager often fails to identify or report accurately.
+GitHub is investigating a security breach after the threat actor TeamPCP compromised an employee device via a malicious Visual Studio Code extension to exfiltrate internal platform repositories.
 
 ### Key Points
-- Check "Last BIOS time" in Task Manager to determine if hardware initialization delays are occurring before Windows loads.
-- Use the Microsoft Sysinternals tool "Autoruns" to view and manage hidden startup entries that Task Manager does not display.
-- Run the PowerShell command `Get-CimInstance Win32_StartupCommand` to generate a quick list of startup applications and their file locations.
-- Analyze Event ID 101 in the Windows Event Viewer under "Diagnostics-Performance" to identify specific executables causing boot delays.
-- Disable "Fast Startup" in Power Options to prevent memory leaks and driver issues caused by the hybrid shutdown-hibernation process.
-- Adjust Windows 11 visual effects and background app permissions to improve system responsiveness immediately after reaching the desktop.
+- Threat actor TeamPCP and the LAPSUS$ group are attempting to sell approximately 4,000 stolen GitHub internal repositories for $95,000.
+- The breach originated from a compromised employee device infected by a poisoned Microsoft Visual Studio Code extension.
+- GitHub has rotated critical credentials and confirmed the exfiltration was limited to internal repositories, with no evidence of customer data impact.
+- TeamPCP is simultaneously conducting a supply chain attack by injecting malicious code into the "durabletask" Python package on PyPI.
+- The malware, known as Mini Shai-Hulud, functions as an infostealer that targets cloud credentials, password managers, and SSH keys on Linux systems.
 
 ### Why it Matters
-Understanding the root cause of slow boot times prevents users from wasting time on ineffective tweaks that do not address hidden background processes or firmware configurations. By utilizing diagnostic logs and advanced management tools, users can significantly improve system performance and ensure their hardware is not being throttled by unnecessary software.
+This incident highlights the severe risks posed by software supply chain attacks, where compromised developer tools and packages can lead to large-scale internal data breaches. The ability of the malware to propagate through cloud environments like AWS and Kubernetes underscores the critical need for robust credential management and rigorous security vetting of third-party extensions.
 
 ============================================================
-Author:   Tashreef Shareef
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/reduce-windows-startup-apps-performance/
-Category: Phones, Laptops, and Gadgets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/05/github-investigating-teampcp-claimed.html
+Category: Cybersecurity

@@ -1,20 +1,19 @@
-AI Is Too Expensive
+Discord's voice and video calls just got much more secure, but it's still leaving text messages exposed
 ============================================================
 
-The massive capital expenditure on artificial intelligence by hyperscalers like Microsoft, Google, and Amazon faces a potential bubble collapse due to unsustainable costs and unproven revenue models.
+Discord has implemented end-to-end encryption for all audio and video calls, though the platform confirmed it has no current plans to extend this security feature to text messages.
 
 ### Key Points
-- Hyperscalers have invested over $800 billion in AI infrastructure since 2022, with plans for trillions more in capital expenditures through 2027.
-- Microsoft has allocated approximately $87 billion—roughly 30% of its recent capital spending—specifically toward building infrastructure for its OpenAI partnership.
-- AI labs like OpenAI and Anthropic are currently burning billions of dollars annually, with no clear path to profitability or sustainable inference margins.
-- Enterprise customers, including Zillow and ServiceNow, are struggling with unpredictable token-based billing costs that often lack transparency and measurable return on investment.
-- Current AI revenue growth is largely driven by internal compute commitments between hyperscalers and their partner labs rather than broad, organic market demand.
+- Discord now provides end-to-end encryption for all user audio and video calls by default.
+- The encryption update excludes "Stages" due to the public nature of those specific broadcast channels.
+- Discord stated that text messages will remain unencrypted because many platform features rely on server-side access to text data.
+- Rebuilding the platform's text-based infrastructure for encryption presents a significant engineering challenge for the company.
 
 ### Why it Matters
-The current AI boom relies on a cycle of massive capital investment that lacks a corresponding explosion in profitable, real-world revenue. If enterprise adoption fails to scale or if companies begin cutting experimental token budgets, the resulting financial shortfall could trigger a significant market correction for the tech giants and AI labs involved.
+This update significantly enhances privacy for private voice and video communications on Discord, aligning the platform with industry standards for secure calling. However, the exclusion of text messages leaves the majority of user interactions vulnerable to potential surveillance, highlighting a persistent trade-off between platform functionality and user data privacy.
 
 ============================================================
-Author:   Ed Zitron
-Source:   Wheresyoured.at
-URL:      https://www.wheresyoured.at/ai-is-too-expensive/
-Category: Tech Business & Markets
+Author:   Simon Batt
+Source:   XDA Developers
+URL:      https://www.xda-developers.com/discords-voice-and-video-calls-e2ee/
+Category: Cybersecurity

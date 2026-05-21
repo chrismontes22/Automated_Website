@@ -1,20 +1,20 @@
-Andrej Karpathy Joins Anthropic
+How an image could compromise your Mac: understanding an ExifTool vulnerability (CVE-2026-3102)
 ============================================================
 
-**Renowned AI researcher Andrej Karpathy has joined Anthropic to lead a team focused on using Claude to accelerate pre-training research, marking a significant shift in the competitive AI landscape.**
+ExifTool version 13.49 and earlier contains a critical command injection vulnerability, CVE-2026-3102, which allows attackers to execute arbitrary shell commands on macOS systems through malicious image file metadata.
 
 ### Key Points
-- Andrej Karpathy, a founding member of OpenAI and former Tesla AI director, joined Anthropic on May 19, 2026.
-- Karpathy’s new team will focus on recursive self-improvement, using Claude to optimize the pre-training phase of future model development.
-- Anthropic has recently attracted numerous high-level executives, including former CTOs from companies like Workday, Instagram, and You.com, into individual contributor research roles.
-- Anthropic reached $30 billion in annual recurring revenue (ARR) in early 2026, surpassing OpenAI in growth velocity.
-- The company is leveraging a partnership with SpaceX to utilize xAI’s Colossus 1 data center for increased compute capacity.
+- The vulnerability exists in the `SetMacOSTags` function, where unsanitized user input is passed to a system command sink.
+- Attackers can trigger the flaw by using the `-tagsFromFile` feature to copy metadata into the `FileCreateDate` tag.
+- Exploitation requires the `-n` flag to bypass standard date-time formatting filters, allowing for the injection of malicious shell commands.
+- Developers patched the issue in ExifTool version 13.50 by replacing dangerous string concatenation with secure, list-based system calls.
+- Users are advised to update to version 13.50 or later to prevent potential system compromise and unauthorized code execution.
 
 ### Why it Matters
-The migration of top-tier technical talent to Anthropic serves as a strong market signal that the industry's most influential researchers view the company's infrastructure and research trajectory as the current frontier. This trend suggests that the next phase of AI advancement will be driven by recursive research capabilities, potentially widening the performance gap between Anthropic and its competitors.
+This vulnerability poses a significant risk to organizations that process images on macOS, as a seemingly benign file can be used to gain unauthorized control over a system. By moving to list-based API calls, the patch demonstrates a critical security best practice for preventing command injection in software that interacts with underlying operating system utilities.
 
 ============================================================
-Author:   Ruben Dominguez
-Source:   Thevccorner.com
-URL:      https://www.thevccorner.com/p/breaking-andrej-karpathy-joins-anthropic
-Category: Artificial Intelligence
+Author:   Lucas Tay
+Source:   Securelist.com
+URL:      https://securelist.com/exiftool-compromise-mac/119866/
+Category: Cybersecurity
