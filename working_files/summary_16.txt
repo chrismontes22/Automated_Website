@@ -1,20 +1,20 @@
-Nasdaq Futures Climb as Bond Yields Fall, Nvidia Earnings in Focus
+Grafana Labs Says Code Breach Stemmed from TanStack Attack
 ============================================================
 
-Nasdaq 100 futures rose as Treasury yields retreated, while investors shifted their focus toward Nvidia’s highly anticipated quarterly earnings report and ongoing geopolitical tensions in the Middle East.
+Grafana Labs confirmed that a supply chain attack involving compromised TanStack npm packages allowed threat actors to access the company's GitHub repositories and exfiltrate internal operational data.
 
 ### Key Points
-- Nasdaq 100 E-Mini futures climbed 0.69% as the 10-year Treasury yield fell three basis points to 4.64%.
-- Nvidia is expected to report record quarterly revenue and provide strong guidance driven by demand for Blackwell Ultra and Rubin GPUs.
-- WTI crude prices dropped over 1% following reports of supertankers transiting the Strait of Hormuz amid U.S.-Iran military tensions.
-- Major retailers including Target, Lowe’s, and TJX Companies are scheduled to release quarterly financial results today.
-- Asian markets closed lower, with Japan’s Nikkei 225 hitting a three-week low as investors took profits on recent AI-related stock gains.
+- Grafana Labs discovered unauthorized access to its GitHub environment on May 11 following the consumption of malicious TanStack packages.
+- The TeamPCP threat group executed the Mini Shai-Hulud campaign, which compromised 84 versions across 42 TanStack packages to steal CI/CD credentials.
+- Attackers successfully exfiltrated internal business contact information and the company's codebase after bypassing security filters via cryptographically signed malicious updates.
+- Grafana Labs responded by rotating GitHub workflow tokens, auditing commits, and hardening security protocols across its development infrastructure.
+- The broader Mini Shai-Hulud campaign also targeted other software projects, including OpenSearch, mistralai, and guardrails-ai, to harvest cloud and registry tokens.
 
 ### Why it Matters
-Market sentiment remains highly sensitive to the intersection of corporate AI performance and geopolitical instability in the Middle East. Investors are looking for clarity on whether high-growth tech valuations can be sustained through strong earnings, even as broader economic concerns regarding inflation and interest rate policy persist.
+This incident highlights the severe risks posed by supply chain attacks that compromise trusted CI/CD pipelines to distribute malicious, signed software updates. It serves as a critical reminder for organizations to implement rigorous monitoring and token management to protect development environments from automated credential theft.
 
 ============================================================
-Author:   Oleksandr Pylypenko
-Source:   Barchart.com
-URL:      https://www.barchart.com/story/news/2034062/nasdaq-futures-climb-as-bond-yields-fall-nvidia-earnings-in-focus
-Category: Tech Business & Markets
+Author:   Phil Muncaster
+Source:   Infosecurity Magazine
+URL:      https://www.infosecurity-magazine.com/news/grafana-labs-code-breach-tanstack/
+Category: Cybersecurity
