@@ -1,20 +1,19 @@
-SpaceX’s IPO filing isn’t just about rockets: the prospectus points to an AI infrastructure pivot that could reshape how investors value the company
+GitHub confirms breach — thousands of internal repositories hit after employee installs malicious VS Code extension
 ============================================================
 
-SpaceX has filed for an initial public offering seeking an $80 billion raise at a $2 trillion valuation, repositioning itself as an artificial intelligence platform rather than a rocket manufacturer.
+GitHub confirmed that a compromised employee device led to the exfiltration of approximately 4,000 internal repositories after the staff member inadvertently installed a malicious Visual Studio Code extension.
 
 ### Key Points
-- SpaceX reported $18.7 billion in 2025 revenue, with Starlink contributing $11.4 billion and the launch business adding $4.1 billion.
-- The company plans to deploy orbital data centers by 2028 and is developing specialized AI silicon through a joint project with Tesla called Terafab.
-- Capital expenditures reached $20.7 billion in 2025, with $12.7 billion specifically allocated to AI infrastructure development.
-- Elon Musk retains 85.1% of voting power, with compensation tied to performance milestones including a 100-terawatt data center capacity and Mars colonization.
-- The company explicitly excludes China from its addressable market, citing the nation as a competitive threat to its satellite and orbital operations.
+- Threat actors known as TeamPCP are currently attempting to sell the stolen repository archive on the dark web for $50,000.
+- GitHub has rotated critical security secrets and isolated the affected endpoint to prevent further unauthorized access to its internal systems.
+- The investigation confirmed that the breach was limited to internal repositories and did not impact the broader public GitHub platform.
+- TeamPCP is also responsible for recent supply-chain attacks on the npm registry, where they injected malware into over 300 legitimate packages.
 
 ### Why it Matters
-This IPO represents a significant shift in market expectations by valuing SpaceX primarily as an AI and cloud-computing infrastructure provider rather than a traditional aerospace firm. A successful debut could validate the concept of orbital computing and set a new precedent for how public markets price capital-intensive, visionary technology ventures.
+This incident highlights the significant risks posed by malicious extensions within developer environments and the ongoing threat to software supply-chain integrity. Organizations must prioritize endpoint security and rigorous vetting of third-party tools to prevent attackers from gaining access to sensitive proprietary source code.
 
 ============================================================
-Author:   Space Daily Editorial Team
-Source:   Space Daily
-URL:      https://spacedaily.com/sd-spacexs-2-trillion-ipo-filing-isnt-really-about-rockets-buried-in-the-s-1-is-a-quiet-pivot-that-reframes-the-entire-company-as-an-ai-infrastructure-bet/
-Category: Tech Business & Markets
+Author:   Sead Fadilpašić
+Source:   TechRadar
+URL:      https://www.techradar.com/pro/security/github-confirms-breach-thousands-of-internal-repositories-hit-after-employee-installs-malicious-vs-code-extension
+Category: Cybersecurity

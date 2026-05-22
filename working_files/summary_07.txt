@@ -1,20 +1,20 @@
-Android 17 catches up to Apple with a long-overdue cross-device upgrade
+Microsoft Warns of Two Actively Exploited Defender Vulnerabilities
 ============================================================
 
-Google is introducing the "Continue On" feature in Android 17, enabling users to seamlessly transfer active app sessions from their smartphones to tablets for improved cross-device productivity.
+Microsoft has confirmed that two vulnerabilities in its Defender security software are currently being exploited in the wild, prompting urgent security updates for all affected Windows systems.
 
 ### Key Points
-- The "Continue On" feature launches with Android 17, utilizing API Level 37 to sync app states between devices.
-- Initial functionality supports phone-to-tablet transitions, with future updates planned for bidirectional handoff.
-- Supported activities include resuming emails, notes, documents, and specific webpages directly on a secondary device.
-- A web fallback system allows users to continue sessions in a browser if the specific app is not installed on the receiving device.
-- Testing begins with the Android 17 RC1 release, with a stable rollout expected later this year alongside new flagship hardware.
+- Microsoft Defender is currently facing active exploitation of a privilege escalation flaw (CVE-2026-41091) and a denial-of-service bug (CVE-2026-45498).
+- The privilege escalation vulnerability allows attackers to gain SYSTEM-level access, while a separate heap-based buffer overflow (CVE-2026-45584) poses a remote code execution risk.
+- Patches are included in Microsoft Defender Antimalware Platform versions 1.1.26040.8 and 4.18.26040.7, which deploy automatically to most systems.
+- The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added the two exploited flaws to its Known Exploited Vulnerabilities catalog, mandating fixes by June 3, 2026.
+- Users can verify their protection status by checking the Antimalware Client Version number within the Windows Security program settings.
 
 ### Why it Matters
-This update marks a significant step in Google's strategy to create a more cohesive, interconnected ecosystem for Android users. By reducing friction between mobile and large-screen devices, Google aims to improve multitasking efficiency and better compete with established cross-device features found in rival platforms.
+These vulnerabilities represent a significant security risk because they allow attackers to bypass standard protections and gain elevated control over compromised Windows machines. By adding these flaws to its mandatory catalog, CISA underscores the urgency for organizations to ensure their automated update mechanisms are functioning correctly to prevent potential system-wide breaches.
 
 ============================================================
-Author:   techkritiko@gmail.com (Jay Bonggolto) , Jay Bonggolto
-Source:   Android Central
-URL:      https://www.androidcentral.com/apps-software/android-os/android-17-catches-up-to-apple-with-a-long-overdue-cross-device-upgrade
-Category: Phones, Laptops, and Gadgets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/05/microsoft-warns-of-two-actively.html
+Category: Cybersecurity
