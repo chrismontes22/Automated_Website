@@ -1,21 +1,21 @@
-Downtime has become a $600 billion business problem
+This Week in Security: AI Generated Reports, More AI Generated Reports, GitHub Chaos, and More Linux Vulnerabilities
 ============================================================
 
-Unplanned downtime now costs Global 2000 companies an average of $300 million annually, representing a 50% increase in total financial impact over the past two years according to Splunk.
+Google’s Project Zero discovered a zero-click exploit in Pixel 10 phones, while recent security disclosures highlight critical vulnerabilities across Linux kernels, NGINX servers, and major government infrastructure.
 
 ### Key Points
-- Global 2000 companies face an average of 60 downtime or service degradation incidents annually.
-- Total annual costs for downtime have reached $600 billion, with lost revenue per company averaging $95 million.
-- Third-party service dependencies, including SaaS and cloud providers, caused 63% of outages in 2026, up from 24% in 2024.
-- Regulatory fines and ransomware payments have surged to $51 million and $40 million per company, respectively.
-- Organizations are investing a median of $24.5 million annually in AI tools to improve incident triage and root cause analysis.
-- Downtime events trigger an average stock price decline of 3.4% and can take months to restore brand reputation.
+- Project Zero identified a memory access vulnerability in the Pixel 10 Tensor G5 chip, allowing remote-to-kernel escalation.
+- GitHub suffered an internal repository breach after a developer’s credentials were stolen via a compromised VSCode extension.
+- A CISA contractor accidentally exposed sensitive AWS GovCloud credentials and internal passwords in a public GitHub repository.
+- The Linux kernel is removing complex zero-copy code from AF_ALG to mitigate recurring memory corruption exploits like CopyFail.
+- A Chromium vulnerability, prematurely disclosed by Google, allows malicious JavaScript to maintain persistent background botnet activity in browsers.
+- The NGINX "nginx-poolslip" vulnerability currently lacks an official patch, leaving millions of web servers potentially exposed to remote code execution.
 
 ### Why it Matters
-Rising downtime costs reflect a growing vulnerability to complex digital supply chains and stricter global regulatory environments. As investors increasingly link operational resilience to overall risk management, companies must shift focus from reactive incident response to proactive infrastructure visibility.
+These incidents underscore the growing risks associated with supply chain dependencies and the increasing difficulty of managing security at scale. As organizations and developers rely more on automated tools and third-party integrations, the potential for widespread system compromise through single points of failure continues to rise.
 
 ============================================================
-Author:   Anamarija Pogorelec
-Source:   Help Net Security
-URL:      https://www.helpnetsecurity.com/2026/05/22/splunk-average-downtime-cost-report/
-Category: Tech Business & Markets
+Author:   Mike Kershaw
+Source:   Hackaday
+URL:      https://hackaday.com/2026/05/22/this-week-in-security-ai-generated-reports-more-ai-generated-reports-github-chaos-and-more-linux-vulnerabilities/
+Category: Cybersecurity

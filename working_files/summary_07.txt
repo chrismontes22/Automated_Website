@@ -1,20 +1,20 @@
-Cisco used AI to write security incident reports, with mixed results
+These 5 Android permissions are basically a backdoor — never grant them to apps you don't trust
 ============================================================
 
-Recent reports highlight a surge in sophisticated cyber threats, including AI-assisted exploits, large-scale GitHub repository poisonings, and the emergence of jailbroken LLMs used to facilitate financial crimes.
+Android users should regularly audit app permissions to prevent malicious software from exploiting sensitive device access, such as accessibility services, location tracking, and SMS interception, to compromise personal data.
 
 ### Key Points
-- Researchers identified over 5,500 GitHub repositories compromised by the "Megalodon" poisoning campaign.
-- A jailbroken Google Gemini model was reportedly used by a Russian-speaking actor to target and drain cryptocurrency wallets.
-- Security experts warn that minor, targeted edits to AI agent instructions can cause them to bypass safety protocols and act maliciously.
-- Emerging technologies are enabling the recovery of sensitive audio from decades-old cockpit recordings, raising new privacy and data security concerns.
-- Open-source software registries continue to struggle with funding gaps that prevent the implementation of essential security infrastructure.
+- Accessibility Services can be exploited by banking trojans like SpyNote to simulate user taps, intercept two-factor authentication codes, and bypass security prompts.
+- The "Draw Over Other Apps" permission allows malicious software to overlay fake login screens on legitimate banking or password manager applications to steal credentials.
+- Granting SMS permissions enables attackers to intercept one-time passwords and subscribe users to premium-rate services without their knowledge.
+- Camera and microphone access can be abused by stalkerware or malicious updates to record ambient audio and video covertly, even when the app is not in use.
+- Precise location access provides GPS-level tracking that can be used by ad networks or stalkerware to monitor a user's real-time movements and habits.
 
 ### Why it Matters
-These incidents demonstrate that the rapid integration of AI into software development and daily operations is creating significant new attack surfaces for malicious actors. Organizations must prioritize robust security frameworks to defend against both automated exploits and the manipulation of increasingly autonomous AI agents.
+Managing these permissions is essential for maintaining device security and protecting sensitive financial and personal information from sophisticated mobile threats. By auditing access in the Android Privacy Dashboard, users can significantly reduce the risk of identity theft, unauthorized financial transactions, and covert surveillance.
 
 ============================================================
-Author:   Simon Sharwood
-Source:   Theregister.com
-URL:      https://www.theregister.com/security/2026/05/22/cisco-used-ai-to-write-security-incident-reports-with-mixed-results/5244692
+Author:   Rob LeFebvre
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/these-5-android-permissions-are-basically-a-backdoor-never-grant-them-to-apps-you-dont-trust/
 Category: Cybersecurity

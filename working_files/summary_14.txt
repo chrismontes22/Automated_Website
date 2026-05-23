@@ -1,20 +1,20 @@
-Climate Denier Group Pushes States to Embrace Coal Power for Data Centers
+Lawmakers Demand Answers as CISA Tries to Contain Data Leak
 ============================================================
 
-The Heartland Institute is actively lobbying state lawmakers through the American Legislative Exchange Council to revive coal power, citing the massive electricity demands of artificial intelligence and data centers.
+Congressional lawmakers are demanding answers from CISA after a contractor exposed sensitive agency credentials and internal secrets on a public GitHub repository, prompting urgent security remediation efforts.
 
 ### Key Points
-- The Heartland Institute is pressuring big tech companies to abandon green energy commitments in favor of coal to power AI-driven data centers.
-- ALEC has adopted model policies designed to prevent the closure of coal and natural gas plants and to streamline energy facility approvals.
-- Legislative efforts in states including Arkansas, Missouri, Indiana, Louisiana, and Ohio have successfully introduced or passed bills favoring fossil fuel grid reliability.
-- The International Energy Agency reported a 10% rise in U.S. coal consumption in 2025, reversing years of decline and contributing to record global carbon emissions.
-- The Trump administration has intervened to keep aging coal plants operational, despite warnings from utilities regarding the high costs and inefficiency of these assets.
+- A CISA contractor created a public GitHub profile named "Private-CISA" that contained plaintext credentials for numerous internal agency systems.
+- The repository, active since November 2025, included an RSA private key that granted broad access to CISA’s enterprise GitHub organization and CI/CD pipelines.
+- Sen. Maggie Hassan and Rep. Bennie Thompson have launched formal inquiries into the agency's internal security culture and contractor management practices.
+- Security researchers at Truffle Security identified that the repository was used to synchronize work files, with sensitive data additions occurring as recently as April 2026.
+- CISA is currently working to invalidate and rotate the exposed credentials, though some security experts warn that other leaked keys may remain active.
 
 ### Why it Matters
-This push to revive coal threatens to undermine long-term climate goals and corporate sustainability pledges by prioritizing short-term energy capacity for the AI boom. By influencing state-level legislation, these groups are creating a regulatory environment that could lock the U.S. into using outdated, high-emission energy infrastructure for decades.
+This incident highlights significant vulnerabilities in federal cybersecurity oversight, particularly as the agency responsible for protecting national infrastructure faces internal staffing instability. The breach underscores the difficulty of preventing human error and unauthorized data handling by contractors, raising concerns that foreign adversaries may have accessed the exposed credentials.
 
 ============================================================
-Author:   Yves Smith
-Source:   Nakedcapitalism.com
-URL:      https://www.nakedcapitalism.com/2026/05/climate-denier-group-pushes-states-to-embrace-coal-power-for-data-centers.html
-Category: Tech Business & Markets
+Author:   BrianKrebs
+Source:   Krebs on Security
+URL:      https://krebsonsecurity.com/2026/05/lawmakers-demand-answers-as-cisa-tries-to-contain-data-leak/
+Category: Cybersecurity

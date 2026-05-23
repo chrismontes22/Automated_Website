@@ -1,20 +1,20 @@
-One Telecom Provider Hosted Most of the Middle East ’s Active C2 Infrastructure
+WordPress 7.0 Faces Security Concerns Over AI API Keys via @sejournal, @martinibuster
 ============================================================
 
-A new Hunt.io report reveals that malicious command-and-control infrastructure in the Middle East is highly concentrated, with a few providers hosting the vast majority of regional attacker activity.
+A newly discovered security vulnerability in WordPress 7.0 has raised concerns among experts regarding the potential for hackers to steal valuable AI API keys from integrated websites.
 
 ### Key Points
-- Researchers identified over 1,350 command-and-control (C2) servers across 98 providers in 14 countries during a three-month analysis.
-- Saudi Telecom Company (STC) hosts 72.4% of all detected regional C2 infrastructure, primarily through compromised customer systems.
-- Türk Telekom exhibited the highest malware diversity, while Iraq-based Regxa was identified as a primary hub for "bulletproof" hosting services.
-- Observed malicious activity includes espionage campaigns like Eagle Werewolf, DYNOWIPER attacks on energy sectors, and various botnets such as Mirai and Hajime.
-- Attackers frequently leverage legitimate commercial networks and VPS providers rather than isolated, dark infrastructure to blend in with normal traffic.
+- Patchstack founder Oliver Sild warned that WordPress 7.0 vulnerabilities could lead to a surge in cyberattacks aimed at stealing paid AI API credentials.
+- A specific security bug in the WordPress 7.0 AI integration form exposes API keys in plain text via browser autocomplete and autofill suggestions.
+- Stolen AI API keys can be used by attackers to power bot networks, conduct large-scale phishing campaigns, or generate malware.
+- WordPress co-founder Matt Mullenweg maintains that the majority of WordPress sites remain secure, though developers are debating the need for improved architectural security.
+- Experts suggest that the current WordPress plugin trust model may require a more granular permissions system to better protect sensitive credentials from unauthorized access.
 
 ### Why it Matters
-This research highlights a strategic shift in threat hunting, moving away from tracking short-lived malware indicators toward monitoring stable infrastructure patterns. By focusing on provider-level telemetry, security teams can better prioritize defenses against persistent attacker habits that remain consistent even when payloads and domains rotate.
+The integration of AI services into WordPress has transformed websites into high-value targets for attackers seeking to exploit monetizable API credentials. This shift necessitates a reevaluation of how platforms handle sensitive secrets, as traditional security measures may no longer be sufficient to protect users from significant financial and data-related risks.
 
 ============================================================
-Author:   Pierluigi Paganini
-Source:   Securityaffairs.com
-URL:      https://securityaffairs.com/192518/hacking/one-telecom-provider-hosted-most-of-the-middle-east-s-active-c2-infrastructure.html
+Author:   Roger Montti
+Source:   Search Engine Journal
+URL:      https://www.searchenginejournal.com/wordpress-7-0-faces-security-concerns-over-ai-api-keys/575679/
 Category: Cybersecurity

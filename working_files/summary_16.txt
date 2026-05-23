@@ -1,20 +1,20 @@
-Stocks Rebound as Crude Oil Falls on Hopes for a US-Iran Deal
+Megalodon GitHub Attack Targets 5,561 Repos with Malicious CI/CD Workflows
 ============================================================
 
-US stock indexes closed higher on Thursday as investors reacted to positive economic data and renewed diplomatic optimism regarding the ongoing conflict between the United States and Iran.
+Cybersecurity researchers have identified the Megalodon campaign, which utilized automated scripts to inject malicious code into over 5,500 GitHub repositories to harvest sensitive cloud and development credentials.
 
 ### Key Points
-- The Dow Jones Industrial Average reached a 3.25-month high, supported by a 12% surge in IBM shares following news of a $1 billion government quantum-computing grant.
-- Crude oil prices retreated from early highs after reports suggested progress in diplomatic negotiations to reopen the Strait of Hormuz.
-- US manufacturing activity unexpectedly expanded to a four-year high, while weekly initial unemployment claims remained stable at 209,000.
-- AI-infrastructure stocks, including ARM Holdings and Rigetti Computing, saw significant gains, while Intuit and Walmart shares declined following disappointing earnings forecasts.
-- Approximately 83% of S&P 500 companies that have reported first-quarter earnings have exceeded analyst expectations.
+- The Megalodon campaign pushed 5,718 malicious commits to 5,561 GitHub repositories on May 18, 2026.
+- Attackers used forged identities and throwaway accounts to inject base64-encoded bash payloads into GitHub Actions workflows.
+- Stolen data includes AWS, Google Cloud, and Azure credentials, SSH keys, API tokens, and environment variables.
+- Two primary payload variants, SysDiag and Optimize-Build, were deployed to execute malicious code within CI/CD pipelines.
+- The campaign targeted specific projects like @tiledesk/tiledesk-server to gain unauthorized access to build environments.
 
 ### Why it Matters
-Market sentiment remains heavily influenced by the volatility of crude oil prices and the potential for energy supply disruptions stemming from the US-Iran conflict. Investors are balancing these geopolitical risks against strong corporate earnings and resilient domestic economic indicators, which continue to provide a floor for equity valuations.
+This large-scale supply chain attack highlights the increasing vulnerability of automated CI/CD pipelines to credential theft and unauthorized code injection. By compromising widely used repositories, attackers can gain persistent access to sensitive infrastructure, forcing organizations to re-evaluate their reliance on automated tokens and third-party integrations.
 
 ============================================================
-Author:   Rich Asplund
-Source:   Barchart.com
-URL:      https://www.barchart.com/story/news/2073121/stocks-rebound-as-crude-oil-falls-on-hopes-for-a-us-iran-deal
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/05/megalodon-github-attack-targets-5561.html
+Category: Cybersecurity
