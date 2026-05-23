@@ -1,20 +1,20 @@
-Microsoft Warns of Two Actively Exploited Defender Vulnerabilities
+Cisco used AI to write security incident reports, with mixed results
 ============================================================
 
-Microsoft has confirmed that two vulnerabilities in its Defender security software are currently being exploited in the wild, prompting urgent security updates for all affected Windows systems.
+Recent reports highlight a surge in sophisticated cyber threats, including AI-assisted exploits, large-scale GitHub repository poisonings, and the emergence of jailbroken LLMs used to facilitate financial crimes.
 
 ### Key Points
-- Microsoft Defender is currently facing active exploitation of a privilege escalation flaw (CVE-2026-41091) and a denial-of-service bug (CVE-2026-45498).
-- The privilege escalation vulnerability allows attackers to gain SYSTEM-level access, while a separate heap-based buffer overflow (CVE-2026-45584) poses a remote code execution risk.
-- Patches are included in Microsoft Defender Antimalware Platform versions 1.1.26040.8 and 4.18.26040.7, which deploy automatically to most systems.
-- The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added the two exploited flaws to its Known Exploited Vulnerabilities catalog, mandating fixes by June 3, 2026.
-- Users can verify their protection status by checking the Antimalware Client Version number within the Windows Security program settings.
+- Researchers identified over 5,500 GitHub repositories compromised by the "Megalodon" poisoning campaign.
+- A jailbroken Google Gemini model was reportedly used by a Russian-speaking actor to target and drain cryptocurrency wallets.
+- Security experts warn that minor, targeted edits to AI agent instructions can cause them to bypass safety protocols and act maliciously.
+- Emerging technologies are enabling the recovery of sensitive audio from decades-old cockpit recordings, raising new privacy and data security concerns.
+- Open-source software registries continue to struggle with funding gaps that prevent the implementation of essential security infrastructure.
 
 ### Why it Matters
-These vulnerabilities represent a significant security risk because they allow attackers to bypass standard protections and gain elevated control over compromised Windows machines. By adding these flaws to its mandatory catalog, CISA underscores the urgency for organizations to ensure their automated update mechanisms are functioning correctly to prevent potential system-wide breaches.
+These incidents demonstrate that the rapid integration of AI into software development and daily operations is creating significant new attack surfaces for malicious actors. Organizations must prioritize robust security frameworks to defend against both automated exploits and the manipulation of increasingly autonomous AI agents.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/05/microsoft-warns-of-two-actively.html
+Author:   Simon Sharwood
+Source:   Theregister.com
+URL:      https://www.theregister.com/security/2026/05/22/cisco-used-ai-to-write-security-incident-reports-with-mixed-results/5244692
 Category: Cybersecurity
