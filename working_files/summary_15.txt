@@ -1,20 +1,21 @@
-Your next "Raspberry Pi project" doesn't actually need a Raspberry Pi
+5 Easy Ways To Make Your Router More Secure
 ============================================================
 
-The evolving landscape of DIY computing now offers more cost-effective alternatives to Raspberry Pi single-board computers, including specialized microcontrollers for IoT projects and powerful x86 mini-PCs for demanding tasks.
+Securing your home router is essential to prevent cyberattacks, as 75% of IoT-targeted malware specifically exploits vulnerabilities in networking hardware like those manufactured by Netgear.
 
 ### Key Points
-- Microcontrollers like the ESP32 and Raspberry Pi Pico provide low-cost, energy-efficient solutions for sensor-based automation and IoT projects.
-- ESP32 boards are preferred for smart home integrations, while the Raspberry Pi Pico excels in MicroPython and PIO-heavy experiments.
-- Used x86 thin clients and mini-PCs offer superior processing power and software compatibility compared to mainline Raspberry Pi models.
-- Modern x86 hardware, such as the N100, provides a performance-per-dollar advantage for users running complex applications or virtualization.
-- The Raspberry Pi Zero remains a viable, budget-friendly option for projects that require more capability than a microcontroller but less power than a full PC.
+- Enable automatic firmware updates to ensure your router receives the latest security patches against known exploits.
+- Change default SSIDs and admin passwords to prevent hackers from identifying your device model and using factory-set credentials.
+- Implement MAC address filtering to restrict network access to only authorized devices via a whitelist or blacklist.
+- Create a separate guest Wi-Fi network to isolate visitors and prevent potential malware from spreading to your primary devices.
+- Disable Universal Plug and Play (UPnP) to close unnecessary ports that could allow unauthorized devices to communicate with your network.
+- Use the WPA3 security protocol for stronger encryption and better protection against brute-force password attacks.
 
 ### Why it Matters
-The shift toward specialized hardware allows hobbyists to optimize their projects for either extreme power efficiency or high-performance computing. By moving away from a one-size-fits-all approach, users can significantly reduce costs while gaining access to broader software ecosystems and better hardware reliability.
+Routers serve as the primary gateway for your digital life, making them a high-value target for hackers seeking to steal data or recruit devices into botnets. Proactively hardening these settings significantly reduces the risk of unauthorized access and protects your personal information from sophisticated cyber threats.
 
 ============================================================
-Author:   Ayush Pande
-Source:   XDA Developers
-URL:      https://www.xda-developers.com/your-next-raspberry-pi-project-doesnt-actually-need-a-raspberry-pi/
-Category: Phones, Laptops, and Gadgets
+Author:   staff@bgr.com (Chifundo Kasiya)
+Source:   BGR
+URL:      https://www.bgr.com/2175525/how-to-make-home-router-secure/
+Category: Cybersecurity

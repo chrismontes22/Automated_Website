@@ -1,19 +1,20 @@
-Drupal Core SQL Injection Bug Actively Exploited, Added to CISA KEV
+Claude Mythos AI Finds 10,000 High-Severity Flaws in Widely Used Software
 ============================================================
 
-The U.S. Cybersecurity and Infrastructure Security Agency has added a critical SQL injection vulnerability in Drupal Core to its Known Exploited Vulnerabilities catalog following reports of active exploitation.
+Anthropic’s Project Glasswing initiative has identified over 10,000 software vulnerabilities using the Claude Mythos Preview AI model, leading to 97 upstream patches and 88 security advisories issued globally.
 
 ### Key Points
-- The vulnerability, tracked as CVE-2026-9082, carries a CVSS score of 6.5 and allows for potential privilege escalation and remote code execution.
-- Security firm Imperva reported over 15,000 attack attempts targeting nearly 6,000 websites across 65 countries, primarily in the gaming and financial sectors.
-- Drupal released patches for versions 11, 10, 9.5, and 8.9 to address the flaw within the database abstraction API.
-- Federal Civilian Executive Branch agencies are required to apply the necessary security updates by the May 27, 2026, deadline.
+- Project Glasswing provides 50 partners with early access to the Claude Mythos Preview model to autonomously detect critical software flaws.
+- The initiative has confirmed 1,726 valid vulnerabilities, with 1,094 classified as high- or critical-severity across more than 1,000 open-source projects.
+- A critical flaw in WolfSSL, identified as CVE-2026-5194 with a 9.1 CVSS score, was among the vulnerabilities discovered and addressed.
+- The AI model successfully prevented a $1.5 million fraudulent wire transfer for a partner bank by detecting unauthorized account activity.
+- Anthropic launched a Cyber Verification Program to allow security professionals to conduct red teaming and vulnerability research without standard AI guardrails.
 
 ### Why it Matters
-This vulnerability poses a significant risk because it enables attackers to gain unauthorized access or control over websites running vulnerable PostgreSQL-backed configurations. Organizations using Drupal must prioritize patching immediately to prevent potential data breaches or full system compromise as exploitation attempts continue to rise.
+The rapid discovery of vulnerabilities by AI models creates an urgent need for software vendors to accelerate their patch cycles and strengthen network defenses. As these advanced tools become more prevalent, organizations must prioritize faster remediation to stay ahead of potential exploitation by malicious actors.
 
 ============================================================
 Author:   info@thehackernews.com (The Hacker News)
 Source:   Internet
-URL:      https://thehackernews.com/2026/05/drupal-core-sql-injection-bug-actively.html
+URL:      https://thehackernews.com/2026/05/claude-mythos-ai-finds-10000-high.html
 Category: Cybersecurity

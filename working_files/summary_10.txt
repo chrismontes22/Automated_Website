@@ -1,20 +1,20 @@
-Save on your favorite tech over the 2026 Memorial Day weekend — grab deals on GPUs, gaming laptops, OLED monitors, and more
+It's time to talk about my writerdeck
 ============================================================
 
-The 2026 Memorial Day sales event is currently underway, offering significant discounts on gaming laptops, high-end PC components, monitors, and peripherals through Monday, May 25.
+A Linux user converted an aging System76 laptop into a distraction-free "writerdeck" by installing a minimal Debian environment to focus exclusively on writing without modern internet interruptions.
 
 ### Key Points
-- Major retailers including Newegg, Amazon, Best Buy, Dell, Lenovo, HP, and Walmart are participating with discounts reaching up to 59%.
-- Gaming hardware deals feature high-performance components like Nvidia RTX 50-series GPUs, Intel Core Ultra processors, and AMD Ryzen 7 7800X3D CPUs.
-- Monitor sales include QHD and OLED panels with refresh rates up to 240Hz from brands like Predator.
-- Peripheral discounts cover popular gaming headsets and mechanical keyboards, such as the Arctis Nova Pro and Logitech G413 SE.
-- Many deals require specific promotional codes, such as "PCGLOWUP25" for HP Omen configurations or "absgamer5" for ABS gaming PCs.
+- The setup utilizes a console-only Debian Trixie installation, removing all graphical desktop environments to eliminate software distractions.
+- Essential tools include Neovim for text editing, Tmux for terminal multiplexing, and Vimwiki for organized note-taking.
+- The system uses kmscon for scalable console rendering and Syncthing to securely sync writing files across devices.
+- Custom configurations allow for hardware-specific features like battery monitoring via acpi and screen brightness control using the light package.
+- Automatic login and boot-time scripts ensure the device launches directly into a writing session upon opening the laptop.
 
 ### Why it Matters
-Memorial Day has evolved from a traditional holiday for home goods into a significant mid-year retail event for the technology and gaming sectors. These sales provide a strategic opportunity for consumers to upgrade hardware ahead of the larger Prime Day event later in the summer.
+Creating a dedicated, single-purpose device helps users reclaim focus by removing the constant notifications and browser-based distractions inherent in modern computing. This approach demonstrates how repurposing older hardware with lightweight, open-source software can provide a highly intentional and productive environment for creative work.
 
 ============================================================
-Author:   Stewart Bendle
-Source:   Tom's Hardware UK
-URL:      https://www.tomshardware.com/gift-guides-seasonal-sales/save-on-your-favorite-tech-over-the-2026-memorial-day-weekend-grab-deals-on-gpus-gaming-laptops-oled-monitors-and-more
+Author:   vkc
+Source:   Veronicaexplains.net
+URL:      https://veronicaexplains.net/my-first-writerdeck/
 Category: Phones, Laptops, and Gadgets
