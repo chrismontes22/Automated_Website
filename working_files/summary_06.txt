@@ -1,20 +1,20 @@
-Check AI or just Google it? Google makes a big change to a little search box
+The sandworm malware strikes: How a hacker group stole 4,000 GitHub repositories and exposed the rot at the core of modern software security
 ============================================================
 
-Google is redesigning its iconic search box to integrate artificial intelligence, allowing users to perform multimodal searches and receive automated summaries alongside traditional web-based search results and links.
+The hacker group TeamPCP has compromised 4,000 private GitHub repositories after infiltrating software supply chains through poisoned development tools, including VS Code extensions and trusted security scanners.
 
 ### Key Points
-- The updated search interface supports longer, natural language queries and allows users to upload videos, images, and files for multimodal analysis.
-- Google is introducing "agentic" functionality, enabling the search engine to perform ongoing tasks like tracking product prices or monitoring for local events.
-- The integration aims to improve ad targeting by better understanding user intent through conversational search patterns.
-- Critics warn that AI-generated summaries may reduce user agency, obscure information sources, and decrease traffic to third-party websites and news organizations.
-- Concerns persist regarding the accuracy of AI outputs, citing previous instances where Google’s system provided incorrect or harmful advice.
+- TeamPCP is selling 4,000 stolen GitHub repositories for $50,000 after gaining access via a malicious VS Code extension.
+- The group previously compromised the Trivy security scanner, allowing them to steal AWS keys, SSH credentials, and Kubernetes tokens from over 10,000 workflows.
+- Attackers successfully breached Cisco Systems, cloning 300 repositories containing source code for unreleased AI products and sensitive data from government and banking clients.
+- Malicious code propagated through the Bitwarden password manager and TanStack library by hijacking legitimate build pipelines and valid cryptographic signatures.
+- The malware specifically targets AI assistant credentials, including those for Claude Code, marking a new trend in supply chain exploitation.
 
 ### Why it Matters
-This shift represents a fundamental change to the internet's primary gateway, potentially transforming how users discover information and interact with online businesses. By prioritizing AI-generated summaries over traditional link lists, Google risks disrupting the digital advertising and referral traffic models that sustain many web publishers.
+This breach exposes a systemic failure in the software industry's reliance on automated build tools and implicit trust in third-party development packages. Because the attackers use valid digital signatures to sign malicious code, traditional security verification tools are currently unable to distinguish between legitimate and compromised software updates.
 
 ============================================================
-Author:   John Ruwitch
-Source:   NPR
-URL:      https://www.npr.org/2026/05/22/nx-s1-5829915/google-search-box-ai
-Category: Artificial Intelligence
+Author:   Patrick Lewis
+Source:   Naturalnews.com
+URL:      https://www.naturalnews.com/2026-05-23-hacker-group-stole-4000-github-repositories.html
+Category: Cybersecurity

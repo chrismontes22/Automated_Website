@@ -1,5 +1,185 @@
 [
   {
+    "title": "Unitree GO-M8018-6 Motor Reverse Engineering",
+    "url": "https://hackaday.com/2026/05/23/unitree-go-m8018-6-motor-reverse-engineering/",
+    "source": "Hackaday",
+    "processed_at": "2026-05-24T09:21:47.056796",
+    "author": "Maya Posch",
+    "summary": "Researcher Thomas Flayols is reverse-engineering the proprietary motor drivers of the Unitree Go2 quadruped robot to develop open-source firmware and bypass the manufacturer's restrictive software ecosystem.\n\n### Key Points\n- The Unitree Go2 utilizes compact, high-performance actuators featuring integrated reducers, magnetic encoders, and Cortex-M0-based CMS32M57xx microcontrollers.\n- Thomas Flayols identified the obscured internal components by using X-ray imaging to bypass physical markings removed by the manufacturer.\n- Researchers successfully extracted the encrypted firmware from the device's bootloader SRAM after recovering a local decryption key.\n- The project aims to create custom, open-source firmware to allow broader use of these motors in independent robotics applications.\n\n### Why it Matters\nDeveloping open-source firmware for these actuators could significantly lower the barrier to entry for custom robotics projects by providing affordable, high-quality hardware. Furthermore, this initiative offers a potential security alternative for Go2 owners concerned about existing malware vulnerabilities and proprietary firmware restrictions.",
+    "category": "Phones, Laptops, and Gadgets"
+  },
+  {
+    "title": "Apple shares iPhone and Mac post-quantum cryptography code on GitHub",
+    "url": "https://9to5mac.com/2026/05/22/apple-shares-iphone-and-mac-post-quantum-cryptography-code-on-github/",
+    "source": "9to5Mac",
+    "processed_at": "2026-05-24T09:21:56.323465",
+    "author": "Marcus Mendes",
+    "summary": "Apple has released new corecrypto source code on GitHub, detailing its formal verification process for post-quantum cryptographic algorithms designed to protect user data against future quantum computing threats.\n\n### Key Points\n- Apple published source code for ML-KEM and ML-DSA algorithms, which align with NIST standards FIPS 203 and FIPS 204.\n- The repository includes custom tools like a Cryptol-to-Isabelle translator used to verify that implementations match official cryptographic standards.\n- Formal verification helped Apple identify and resolve critical errors, including a potential data corruption issue in an early ML-DSA implementation.\n- The code supports both portable C and hand-optimized ARM64 assembly to ensure compatibility across the entire Apple silicon product lineup.\n- This release follows the 2024 introduction of the PQ3 protocol for iMessage, marking a continued expansion of Apple's post-quantum security infrastructure.\n\n### Why it Matters\nThis initiative represents a significant shift toward transparency in high-stakes cybersecurity, allowing independent researchers to audit the foundational code protecting Apple devices. By sharing these formal verification methods, Apple aims to set a higher standard for software assurance while proactively defending against the long-term risks posed by quantum computing.",
+    "category": "Cybersecurity"
+  },
+  {
+    "title": "'It's clearly coming for us': Chris Hayes reveals 'front of mind' threat on new podcast",
+    "url": "https://www.rawstory.com/chris-hayes-2676933413/",
+    "source": "Raw Story",
+    "processed_at": "2026-05-24T09:22:05.285888",
+    "author": "Matthew Chapman",
+    "summary": "MSNBC anchor Chris Hayes expressed significant concerns regarding the rapid integration of artificial intelligence, highlighting potential risks to the labor market, global warfare, and the integrity of political information.\n\n### Key Points\n- Chris Hayes discussed his apprehension toward AI integration during a recent interview with Public Notice journalist Thor Benson.\n- The anchor identified the manipulation of political information through AI models like ChatGPT, Gemini, and Anthropic as a primary societal threat.\n- Hayes cited Elon Musk’s Grok model as a specific example of how AI can be programmed to promote controversial conspiracy theories.\n- Widespread grassroots opposition is currently challenging the expansion of AI infrastructure and data centers across the United States.\n- Hayes emphasized the need for public awareness regarding how AI tools may influence future democratic processes and voter decision-making.\n\n### Why it Matters\nThe rapid adoption of generative AI models is fundamentally changing how the public accesses information, raising concerns about the potential for political bias and misinformation. As these tools replace traditional search engines, the ability of tech companies to influence public discourse through model programming becomes a critical issue for democratic stability.",
+    "category": "Artificial Intelligence"
+  },
+  {
+    "title": "Weekly Wrap: Bitcoin Treads Water As Stocks Rally",
+    "url": "https://www.cryptoprowl.com/releases/weekly-wrap-bitcoin-treads-water-as-stocks-rally-5639",
+    "source": "Cryptoprowl.com",
+    "processed_at": "2026-05-24T09:26:47.336341",
+    "author": "CryptoProwl",
+    "summary": "U.S. equities reached near-record highs following Nvidia’s strong earnings, while the cryptocurrency sector saw increased regulatory scrutiny, new institutional investments, and expanded betting options on major private companies.\n\n### Key Points\n- The House Oversight and Government Reform Committee launched a probe into potential insider trading at prediction markets Kalshi and Polymarket.\n- Ark Invest, led by Cathie Wood, purchased $12.5 million in Bullish stock as the crypto exchange's share price declined by 7%.\n- Binance introduced a \"Pre-IPO Perpetual Contract\" allowing retail investors to speculate on the valuation of SpaceX ahead of its anticipated June public offering.\n- Asset tokenization platform Securitize announced plans to go public through a merger with a special purpose acquisition company to trade on the Nasdaq.\n- Bitcoin mining stocks, including Core Scientific and Hut 8, rose following Nvidia’s financial results due to their involvement in high-performance computing and AI data centers.\n\n### Why it Matters\nThese developments highlight the growing intersection between traditional financial markets, artificial intelligence infrastructure, and the evolving regulatory landscape for digital assets. Increased oversight and institutional adoption suggest that crypto-related entities are becoming more deeply integrated into broader economic and political frameworks.",
+    "category": "Tech Business & Markets"
+  },
+  {
+    "title": "Forget iCloud. This Case Gives Your iPhone 2TB of Real Expandable SD Card Storage",
+    "url": "https://www.yankodesign.com/2026/05/22/forget-icloud-this-case-gives-your-iphone-2tb-of-real-expandable-sd-card-storage/",
+    "source": "Yanko Design",
+    "processed_at": "2026-05-24T09:27:16.921597",
+    "author": "Sarang Sheth",
+    "summary": "The iRe5 Gen 2 modular ecosystem provides iPhone and Android users with expandable microSD storage, pass-through charging, and professional-grade hub functionality to streamline mobile video production workflows.\n\n### Key Points\n- The system features two form factors: the aluminum X-Module for cinema rigs and a silicone Storage Case for daily carry.\n- Both versions support up to 2TB of microSD expansion and USB 3.0 data transfer speeds reaching 360 MB/s.\n- Advanced pass-through charging allows users to record 4K ProRes video while simultaneously powering the phone and connecting peripherals.\n- The SyncPal companion app utilizes an NFC disc to trigger automated file backups and organization without manual menu navigation.\n- The hardware is compatible with both USB-C and Lightning devices, supporting external SSDs and 3.5mm audio equipment.\n- Pricing starts at $69.90 for the X-Module, with global shipping scheduled to begin in July 2026.\n\n### Why it Matters\nThis modular solution addresses the growing friction creators face as flagship smartphones continue to remove physical storage slots and limit connectivity. By consolidating power, storage, and peripheral management into a single device, it reduces reliance on fragile dongles and cloud-based workflows during high-stakes professional shoots.",
+    "category": "Phones, Laptops, and Gadgets"
+  },
+  {
+    "title": "The sandworm malware strikes: How a hacker group stole 4,000 GitHub repositories and exposed the rot at the core of modern software security",
+    "url": "https://www.naturalnews.com/2026-05-23-hacker-group-stole-4000-github-repositories.html",
+    "source": "Naturalnews.com",
+    "processed_at": "2026-05-24T09:27:30.850768",
+    "author": "Patrick Lewis",
+    "summary": "The hacker group TeamPCP has compromised 4,000 private GitHub repositories after infiltrating software supply chains through poisoned development tools, including VS Code extensions and trusted security scanners.\n\n### Key Points\n- TeamPCP is selling 4,000 stolen GitHub repositories for $50,000 after gaining access via a malicious VS Code extension.\n- The group previously compromised the Trivy security scanner, allowing them to steal AWS keys, SSH credentials, and Kubernetes tokens from over 10,000 workflows.\n- Attackers successfully breached Cisco Systems, cloning 300 repositories containing source code for unreleased AI products and sensitive data from government and banking clients.\n- Malicious code propagated through the Bitwarden password manager and TanStack library by hijacking legitimate build pipelines and valid cryptographic signatures.\n- The malware specifically targets AI assistant credentials, including those for Claude Code, marking a new trend in supply chain exploitation.\n\n### Why it Matters\nThis breach exposes a systemic failure in the software industry's reliance on automated build tools and implicit trust in third-party development packages. Because the attackers use valid digital signatures to sign malicious code, traditional security verification tools are currently unable to distinguish between legitimate and compromised software updates.",
+    "category": "Cybersecurity"
+  },
+  {
+    "title": "18 ways AI is rewriting the future of financial services: Key insights from the AWS Financial Services Symposium",
+    "url": "https://siliconangle.com/2026/05/22/ai-in-financial-services-moves-beyond-pilots-profits-awsfinserv/",
+    "source": "SiliconANGLE News",
+    "processed_at": "2026-05-24T09:27:53.246468",
+    "author": "Emile Louw",
+    "summary": "Financial institutions are rapidly shifting from experimental AI pilots to production-ready agentic systems to automate complex workflows, enhance operational efficiency, and improve real-time decision-making across global markets.\n\n### Key Points\n- Financial firms are prioritizing generative AI in 2025 budgets, with 41% of IT leaders focusing specifically on optimizing AI workflows already in production.\n- AWS introduced Amazon Bedrock AgentCore, enabling AI agents to perform autonomous commercial transactions and payments in partnership with Coinbase and Stripe.\n- Vanguard utilized Amazon Bedrock to automate document processing, reducing account inheritance cycle times from two weeks to a single day.\n- Datadog and Dynatrace are providing unified observability platforms to help banks detect and remediate operational incidents automatically before they impact customers.\n- Major institutions like Unum Group and various mortgage lenders are using agentic workflows to modernize millions of lines of legacy mainframe code in months rather than years.\n- FICO and Numerix are deploying AI-powered decisioning tools to provide real-time risk assessment and personalized financial quotes, significantly reducing turnaround times for capital markets.\n\n### Why it Matters\nThe transition toward agentic AI represents a fundamental shift in how financial services firms manage risk, compliance, and customer interactions. By moving beyond simple automation to integrated, autonomous platforms, these institutions are gaining the ability to respond to market volatility and operational demands at speeds previously impossible with legacy infrastructure.",
+    "category": "Artificial Intelligence"
+  },
+  {
+    "title": "Weekend A La Carte (May 23)",
+    "url": "https://www.challies.com/a-la-carte/weekend-a-la-carte-may-23-2026/",
+    "source": "Challies.com",
+    "processed_at": "2026-05-24T09:28:09.821128",
+    "author": "Tim Challies",
+    "summary": "The latest edition of the A La Carte newsletter explores the intersection of technology, theology, and culture, featuring expert commentary on artificial intelligence, labor, and religious traditions.\n\n### Key Points\n- Chris Griswold examines how artificial intelligence is fueling anxiety regarding the future of work and middle-class stability.\n- Brad Littlejohn analyzes the concept of techno-feudalism and the growing influence of modern technology companies on global structures.\n- A Wall Street Journal article explores the parallels between Karl Marx’s economic theories and traditional Christian eschatology.\n- Tony Costa provides a theological critique of Eastern Orthodoxy, highlighting key doctrinal differences for Evangelical readers.\n- Michael Graham discusses the epistemological implications of relying on foundational AI models for religious and primary knowledge.\n\n### Why it Matters\nThese articles highlight the growing tension between rapid technological advancement and traditional belief systems in modern society. Understanding these shifts is essential for navigating the evolving landscape of digital ethics, labor markets, and cultural identity.",
+    "category": "Artificial Intelligence"
+  },
+  {
+    "title": "I bought a Lumix G1 for $50 — here’s how the world’s first mirrorless camera fares 18 years after launch",
+    "url": "https://www.techradar.com/cameras/mirrorless-cameras/i-bought-a-lumix-g1-for-usd50-heres-how-the-worlds-first-mirrorless-camera-fares-18-years-after-launch",
+    "source": "TechRadar",
+    "processed_at": "2026-05-24T09:28:20.926778",
+    "author": "Timothy Coleman",
+    "summary": "To celebrate 25 years of Panasonic Lumix cameras, a tech journalist revisits the Lumix G1, the world’s first mirrorless camera, to evaluate its performance and relevance in 2026.\n\n### Key Points\n- The Panasonic Lumix G1, released 18 years ago, was the industry's first mirrorless camera to replace traditional DSLRs.\n- Secondhand models are widely available, with complete kits often selling for as little as £80.\n- The camera features a 12MP Micro Four Thirds sensor, a 3fps burst rate, and an ISO range limited to 100–3200.\n- Despite its age, the G1 includes functional human subject-detection autofocus and a familiar, ergonomic DSLR-style design.\n- The Micro Four Thirds system allows for cross-brand lens compatibility, enabling the use of modern lenses like the Olympus 45mm f/1.8.\n\n### Why it Matters\nThe Lumix G1 serves as a historical benchmark for the mirrorless technology that currently dominates the professional and consumer photography markets. Its continued usability highlights the longevity of camera hardware and offers a budget-friendly entry point for enthusiasts interested in the evolution of digital imaging.",
+    "category": "Phones, Laptops, and Gadgets"
+  },
+  {
+    "title": "Save on your favorite tech over the 2026 Memorial Day weekend — grab deals on GPUs, gaming laptops, OLED monitors, and more",
+    "url": "https://www.tomshardware.com/gift-guides-seasonal-sales/save-on-your-favorite-tech-over-the-2026-memorial-day-weekend-grab-deals-on-gpus-gaming-laptops-oled-monitors-and-more",
+    "source": "Tom's Hardware UK",
+    "processed_at": "2026-05-24T09:28:32.901576",
+    "author": "Stewart Bendle",
+    "summary": "The 2026 Memorial Day sales event is currently underway, offering significant discounts on gaming laptops, high-end PC components, monitors, and peripherals through Monday, May 25.\n\n### Key Points\n- Major retailers including Newegg, Amazon, Best Buy, Dell, Lenovo, HP, and Walmart are participating with discounts reaching up to 59%.\n- Gaming hardware deals feature high-performance components like Nvidia RTX 50-series GPUs, Intel Core Ultra processors, and AMD Ryzen 7 7800X3D CPUs.\n- Monitor sales include QHD and OLED panels with refresh rates up to 240Hz from brands like Predator.\n- Peripheral discounts cover popular gaming headsets and mechanical keyboards, such as the Arctis Nova Pro and Logitech G413 SE.\n- Many deals require specific promotional codes, such as \"PCGLOWUP25\" for HP Omen configurations or \"absgamer5\" for ABS gaming PCs.\n\n### Why it Matters\nMemorial Day has evolved from a traditional holiday for home goods into a significant mid-year retail event for the technology and gaming sectors. These sales provide a strategic opportunity for consumers to upgrade hardware ahead of the larger Prime Day event later in the summer.",
+    "category": "Phones, Laptops, and Gadgets"
+  },
+  {
+    "title": "I fixed Android Auto lag with 3 tiny changes",
+    "url": "https://www.makeuseof.com/i-fixed-android-auto-lag-with-tiny-changes/",
+    "source": "MakeUseOf",
+    "processed_at": "2026-05-24T09:28:42.362953",
+    "author": "Jorge Aguilar",
+    "summary": "Android Auto users experiencing lag, stuttering, or delayed touch responses can improve performance by adjusting battery optimization settings, reducing animation scales, and clearing accumulated app cache data.\n\n### Key Points\n- Set Android Auto battery usage to \"Unrestricted\" to prevent the operating system from killing background processes during use.\n- Reduce window, transition, and animator duration scales to 0.5x within Developer Options to free up CPU resources.\n- Clear the Android Auto app cache regularly to remove fragmented data that causes system bottlenecks and performance drops.\n- Use high-quality, shielded USB 3.1 cables to ensure stable data transmission and reduce signal interference during wired connections.\n- Disable background Wi-Fi scanning to minimize CPU interrupts and prevent thermal throttling during intensive projection tasks.\n\n### Why it Matters\nThese adjustments help users resolve common connectivity issues without requiring new hardware or expensive vehicle upgrades. By optimizing how the smartphone manages resources, drivers can ensure a safer and more responsive navigation and entertainment experience on the road.",
+    "category": "Phones, Laptops, and Gadgets"
+  },
+  {
+    "title": "340 newspapers block Wayback Machine. What that means for future of internet...",
+    "url": "https://san.com/cc/more-than-340-newspapers-block-the-wayback-machine-what-that-means-for-the-future-of-the-internet/",
+    "source": "San.com",
+    "processed_at": "2026-05-24T09:29:11.672458",
+    "author": "Mark Keierleber",
+    "summary": "More than 340 U.S. news publishers have blocked the Internet Archive’s Wayback Machine from indexing their content, citing concerns that AI companies may use the archives for model training.\n\n### Key Points\n- Over 340 national and local news outlets, including The New York Times, have restricted access to the Wayback Machine.\n- The majority of these blocked sites are local newspapers owned by five major conglomerates, primarily USA Today.\n- Publishers argue that blocking the tool protects their proprietary content and ensures access remains limited to paying subscribers.\n- Internet Archive director Mark Graham maintains that the library is not a source for commercial AI scraping and warns that blocking it harms the public record.\n- A petition signed by over 200 journalists advocates for the tool's preservation, citing its necessity for historical research and digital investigations.\n\n### Why it Matters\nThe restriction of the Wayback Machine threatens the long-term preservation of digital history, as nearly 40% of web pages from a decade ago are already inaccessible. This conflict highlights the growing tension between media companies protecting their intellectual property and the public's need for an open, verifiable historical record.",
+    "category": "Artificial Intelligence"
+  },
+  {
+    "title": "Trump administration imposes 25% tariffs on advanced semiconductors to boost domestic manufacturing",
+    "url": "https://cryptobriefing.com/trump-semiconductor-tariffs-domestic-manufacturing/",
+    "source": "Crypto Briefing",
+    "processed_at": "2026-05-24T09:33:31.094732",
+    "author": "Editorial Team",
+    "summary": "The Trump administration has implemented a 25% tariff on specific advanced semiconductors from Nvidia and AMD to incentivize domestic manufacturing and reduce reliance on foreign technology supply chains.\n\n### Key Points\n- The Presidential Proclamation, signed January 14, 2026, imposes a 25% tariff on advanced computing chips including Nvidia’s H200 and AMD’s MI325X processors.\n- Tariffs were enacted following a national security investigation launched by the Commerce Department on April 1, 2025, under Section 232 of the Trade Expansion Act.\n- A 90-day negotiation window concludes April 14, 2026, with potential for expanded tariffs on additional semiconductor products.\n- Exemptions are available for chips used in US data centers, research, startups, consumer goods, and government applications.\n- The administration plans to introduce an offset program to subsidize companies that invest directly in domestic semiconductor production facilities.\n\n### Why it Matters\nThese tariffs represent a shift toward aggressive industrial policy by combining trade barriers with domestic subsidies to force a restructuring of the global semiconductor supply chain. Companies must now navigate complex compliance requirements or face increased costs, which could influence future hardware investment strategies across the technology sector.",
+    "category": "Tech Business & Markets"
+  },
+  {
+    "title": "Datadog CEO Touts AI, Cloud Migration as Revenue Growth Accelerates",
+    "url": "https://www.marketbeat.com/instant-alerts/datadog-ceo-touts-ai-cloud-migration-as-revenue-growth-accelerates-2026-05-22/?utm_source=yahoofinance&amp;utm_medium=yahoofinance",
+    "source": "MarketBeat",
+    "processed_at": "2026-05-24T09:37:55.314277",
+    "author": "MarketBeat",
+    "summary": "Datadog CEO Olivier Pomel reports that the company is experiencing sustained growth driven by cloud migration and the increasing complexity of artificial intelligence workloads across its customer base.\n\n### Key Points\n- Datadog reported 32% revenue growth, marking the fourth consecutive quarter of accelerated performance for the observability and security provider.\n- The company currently holds a 13.6% share of the observability market, which leadership views as evidence of significant long-term growth potential.\n- AI-native customer adoption is scaling rapidly, with 22 clients spending over $1 million and five spending more than $10 million annually.\n- Datadog is expanding into AI training workloads, noting a shift from specialized, homegrown systems to broader infrastructure requirements among 50 to 100 companies.\n- The Bits AI SRE tool has seen strong adoption, with 2,000 customers conducting over 100,000 investigations since the product's launch.\n\n### Why it Matters\nDatadog’s ability to capture value from both AI-native startups and traditional enterprises modernizing their infrastructure positions it as a critical utility in the evolving digital economy. By expanding its observability platform to include AI training and automated resolution, the company is securing a central role in managing the increasing complexity of modern software development.",
+    "category": "Tech Business & Markets"
+  },
+  {
+    "title": "Your next \"Raspberry Pi project\" doesn't actually need a Raspberry Pi",
+    "url": "https://www.xda-developers.com/your-next-raspberry-pi-project-doesnt-actually-need-a-raspberry-pi/",
+    "source": "XDA Developers",
+    "processed_at": "2026-05-24T09:38:10.987172",
+    "author": "Ayush Pande",
+    "summary": "The evolving landscape of DIY computing now offers more cost-effective alternatives to Raspberry Pi single-board computers, including specialized microcontrollers for IoT projects and powerful x86 mini-PCs for demanding tasks.\n\n### Key Points\n- Microcontrollers like the ESP32 and Raspberry Pi Pico provide low-cost, energy-efficient solutions for sensor-based automation and IoT projects.\n- ESP32 boards are preferred for smart home integrations, while the Raspberry Pi Pico excels in MicroPython and PIO-heavy experiments.\n- Used x86 thin clients and mini-PCs offer superior processing power and software compatibility compared to mainline Raspberry Pi models.\n- Modern x86 hardware, such as the N100, provides a performance-per-dollar advantage for users running complex applications or virtualization.\n- The Raspberry Pi Zero remains a viable, budget-friendly option for projects that require more capability than a microcontroller but less power than a full PC.\n\n### Why it Matters\nThe shift toward specialized hardware allows hobbyists to optimize their projects for either extreme power efficiency or high-performance computing. By moving away from a one-size-fits-all approach, users can significantly reduce costs while gaining access to broader software ecosystems and better hardware reliability.",
+    "category": "Phones, Laptops, and Gadgets"
+  },
+  {
+    "title": "As the AI Battle Rages, Yusuf Mehdi Becomes the Latest Microsoft Veteran to Walk",
+    "url": "https://www.adweek.com/brand-marketing/ai-battle-microsoft-yusuf-mehdi/",
+    "source": "Adweek",
+    "processed_at": "2026-05-24T09:38:30.269528",
+    "author": "Robert Klara",
+    "summary": "Microsoft chief consumer marketing officer Yusuf Mehdi, a 35-year company veteran who oversaw the rollout of the Copilot AI assistant, has announced his planned departure for June 2027.\n\n### Key Points\n- Yusuf Mehdi has served as Microsoft’s chief consumer marketing officer since 2023, managing Windows, Microsoft 365, Surface, Edge, and Bing.\n- Mehdi joined the company in 1992, playing key roles in the development of Internet Explorer, the Xbox One console, and the Windows product family.\n- His departure follows a series of exits by long-term Microsoft executives, including Rajesh Jha, Julia Liuson, and former CMO Chris Capossela.\n- Microsoft is currently navigating a transition toward AI, though adoption of the Copilot assistant remains low, with fewer than 4.5% of Microsoft 365 subscribers paying for the service.\n- The company recently introduced its first voluntary retirement program for senior staff as it attempts to reduce corporate bureaucracy under CEO Satya Nadella.\n\n### Why it Matters\nThe departure of a long-tenured executive like Mehdi signals a significant leadership transition as Microsoft shifts its focus toward aggressive AI integration. This change occurs while the company faces stiff competition in the generative AI market and internal pressure to streamline operations to remain agile against smaller, faster startups.",
+    "category": "Tech Business & Markets"
+  },
+  {
+    "title": "Xiaomi 17 Max gets disassembled on video",
+    "url": "https://www.gsmarena.com/xiaomi_17_max_gets_disassembled_on_video-news-72964.php",
+    "source": "GSMArena.com",
+    "processed_at": "2026-05-24T09:38:40.248995",
+    "author": "Vlad",
+    "summary": "Xiaomi has officially launched the 17 Max smartphone, a new flagship device featuring a Snapdragon 8 Elite Gen 5 processor and an expansive 8,000 mAh battery capacity.\n\n### Key Points\n- The Xiaomi 17 Max features a 6.9-inch 1200x2608 LTPO AMOLED display with a 120Hz refresh rate and 3,500-nit peak brightness.\n- Internal hardware includes the Snapdragon 8 Elite Gen 5 chipset, up to 16GB of RAM, and 512GB of internal storage.\n- The camera system consists of a 200MP main sensor, a 50MP periscope telephoto lens with 3x optical zoom, and a 50MP ultrawide lens.\n- The device supports 100W wired and 50W wireless charging, alongside 22.5W reverse wired and wireless charging capabilities.\n- A detailed teardown video by the YouTube channel WekiHome provides a comprehensive look at the internal components of the new handset.\n\n### Why it Matters\nThe introduction of the 17 Max expands Xiaomi's flagship lineup with a high-capacity battery that significantly exceeds standard industry benchmarks for premium smartphones. This release signals a strategic push to capture power-user segments by combining top-tier processing performance with extended battery longevity.",
+    "category": "Phones, Laptops, and Gadgets"
+  },
+  {
+    "title": "Trump Mobile Just Acknowledged The T1 Phone Database Leak Issue In The Worst Way Possible: Customers Still Not Notified",
+    "url": "https://wccftech.com/trump-mobile-just-acknowledged-the-t1-phone-database-leak-issue-in-the-worst-way-possible-customers-still-not-notified/",
+    "source": "Wccftech",
+    "processed_at": "2026-05-24T09:38:48.843656",
+    "author": "Rohail Saleem",
+    "summary": "Trump Mobile is currently evaluating whether to notify customers after a data leak exposed personal information belonging to individuals who pre-ordered the company's new T1 Phone.\n\n### Key Points\n- The data leak exposed customer names, email addresses, mailing addresses, cell phone numbers, and T1 Phone order identifiers.\n- Trump Mobile attributed the security incident to an unnamed third-party platform provider rather than its own internal network or infrastructure.\n- The T1 Phone, which retails for $499, is reportedly a rebranded HTC U24 Pro featuring a 6.78-inch screen and 512GB of storage.\n- Despite the exposure of sensitive user data, the company has not yet issued a formal notification to the affected customers.\n\n### Why it Matters\nThis incident highlights the significant security risks associated with third-party dependencies in the hardware supply chain and the importance of transparent crisis communication. Failure to promptly disclose data breaches can damage consumer trust and potentially lead to regulatory scrutiny regarding data protection standards.",
+    "category": "Cybersecurity"
+  },
+  {
+    "title": "Drupal Core SQL Injection Bug Actively Exploited, Added to CISA KEV",
+    "url": "https://thehackernews.com/2026/05/drupal-core-sql-injection-bug-actively.html",
+    "source": "Internet",
+    "processed_at": "2026-05-24T09:39:00.233831",
+    "author": "info@thehackernews.com (The Hacker News)",
+    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency has added a critical SQL injection vulnerability in Drupal Core to its Known Exploited Vulnerabilities catalog following reports of active exploitation.\n\n### Key Points\n- The vulnerability, tracked as CVE-2026-9082, carries a CVSS score of 6.5 and allows for potential privilege escalation and remote code execution.\n- Security firm Imperva reported over 15,000 attack attempts targeting nearly 6,000 websites across 65 countries, primarily in the gaming and financial sectors.\n- Drupal released patches for versions 11, 10, 9.5, and 8.9 to address the flaw within the database abstraction API.\n- Federal Civilian Executive Branch agencies are required to apply the necessary security updates by the May 27, 2026, deadline.\n\n### Why it Matters\nThis vulnerability poses a significant risk because it enables attackers to gain unauthorized access or control over websites running vulnerable PostgreSQL-backed configurations. Organizations using Drupal must prioritize patching immediately to prevent potential data breaches or full system compromise as exploitation attempts continue to rise.",
+    "category": "Cybersecurity"
+  },
+  {
+    "title": "Sketchy Imbalances In Data Training Are Distorting AI-Generated Mental Health Guidance",
+    "url": "https://www.forbes.com/sites/lanceeliot/2026/05/23/sketchy-imbalances-in-data-training-are-distorting-ai-generated-mental-health-guidance/",
+    "source": "Forbes",
+    "processed_at": "2026-05-24T09:39:09.337466",
+    "author": "Lance Eliot, Contributor, \n Lance Eliot, Contributor\n https://www.forbes.com/sites/lanceeliot/",
+    "summary": "Generative AI models often provide flawed mental health advice because their training data is heavily skewed toward common experiences, causing them to overlook or misinterpret rarer, complex clinical conditions.\n\n### Key Points\n- Large language models (LLMs) like ChatGPT and Claude are trained on vast internet datasets that prioritize frequent, mainstream content over specialized medical knowledge.\n- This data imbalance leads AI to favor \"majority class\" responses, often dismissing symptoms of serious conditions like hypomania as normal mood variations.\n- Research published in *Patterns* highlights that such imbalances increase the risk of dangerous false negatives in critical fields like healthcare and finance.\n- AI systems are often designed to be sycophantic and overly confident, which can mask their inability to accurately identify complex or edge-case mental health issues.\n- Providing specific clinical context, such as DSM-5 criteria, can improve AI accuracy, but users cannot rely on these tools to consistently recognize severe symptoms.\n\n### Why it Matters\nThe widespread use of AI as a 24/7 mental health advisor creates a significant public health risk because users often mistake the technology's confident tone for clinical authority. Without addressing these inherent data imbalances, AI platforms may inadvertently provide misleading guidance that delays professional intervention for individuals in crisis.",
+    "category": "Artificial Intelligence"
+  },
+  {
     "source": "Hackaday",
     "author": "Mike Kershaw",
     "title": "This Week in Security: AI Generated Reports, More AI Generated Reports, GitHub Chaos, and More Linux Vulnerabilities",

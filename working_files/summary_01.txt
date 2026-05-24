@@ -1,21 +1,19 @@
-This Week in Security: AI Generated Reports, More AI Generated Reports, GitHub Chaos, and More Linux Vulnerabilities
+Unitree GO-M8018-6 Motor Reverse Engineering
 ============================================================
 
-Google’s Project Zero discovered a zero-click exploit in Pixel 10 phones, while recent security disclosures highlight critical vulnerabilities across Linux kernels, NGINX servers, and major government infrastructure.
+Researcher Thomas Flayols is reverse-engineering the proprietary motor drivers of the Unitree Go2 quadruped robot to develop open-source firmware and bypass the manufacturer's restrictive software ecosystem.
 
 ### Key Points
-- Project Zero identified a memory access vulnerability in the Pixel 10 Tensor G5 chip, allowing remote-to-kernel escalation.
-- GitHub suffered an internal repository breach after a developer’s credentials were stolen via a compromised VSCode extension.
-- A CISA contractor accidentally exposed sensitive AWS GovCloud credentials and internal passwords in a public GitHub repository.
-- The Linux kernel is removing complex zero-copy code from AF_ALG to mitigate recurring memory corruption exploits like CopyFail.
-- A Chromium vulnerability, prematurely disclosed by Google, allows malicious JavaScript to maintain persistent background botnet activity in browsers.
-- The NGINX "nginx-poolslip" vulnerability currently lacks an official patch, leaving millions of web servers potentially exposed to remote code execution.
+- The Unitree Go2 utilizes compact, high-performance actuators featuring integrated reducers, magnetic encoders, and Cortex-M0-based CMS32M57xx microcontrollers.
+- Thomas Flayols identified the obscured internal components by using X-ray imaging to bypass physical markings removed by the manufacturer.
+- Researchers successfully extracted the encrypted firmware from the device's bootloader SRAM after recovering a local decryption key.
+- The project aims to create custom, open-source firmware to allow broader use of these motors in independent robotics applications.
 
 ### Why it Matters
-These incidents underscore the growing risks associated with supply chain dependencies and the increasing difficulty of managing security at scale. As organizations and developers rely more on automated tools and third-party integrations, the potential for widespread system compromise through single points of failure continues to rise.
+Developing open-source firmware for these actuators could significantly lower the barrier to entry for custom robotics projects by providing affordable, high-quality hardware. Furthermore, this initiative offers a potential security alternative for Go2 owners concerned about existing malware vulnerabilities and proprietary firmware restrictions.
 
 ============================================================
-Author:   Mike Kershaw
+Author:   Maya Posch
 Source:   Hackaday
-URL:      https://hackaday.com/2026/05/22/this-week-in-security-ai-generated-reports-more-ai-generated-reports-github-chaos-and-more-linux-vulnerabilities/
-Category: Cybersecurity
+URL:      https://hackaday.com/2026/05/23/unitree-go-m8018-6-motor-reverse-engineering/
+Category: Phones, Laptops, and Gadgets

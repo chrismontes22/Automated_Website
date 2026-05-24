@@ -1,20 +1,19 @@
-Doug Liman’s AI-Enabled Crypto Movie ‘Bitcoin’ To Feature Bezos, Zuckerberg, Putin, Eric Trump & More As Characters
+Drupal Core SQL Injection Bug Actively Exploited, Added to CISA KEV
 ============================================================
 
-Director Doug Liman’s upcoming satirical film Bitcoin, starring Casey Affleck, will feature AI-enhanced portrayals of prominent figures including Jeff Bezos, Mark Zuckerberg, and Eric Trump to explore cryptocurrency origins.
+The U.S. Cybersecurity and Infrastructure Security Agency has added a critical SQL injection vulnerability in Drupal Core to its Known Exploited Vulnerabilities catalog following reports of active exploitation.
 
 ### Key Points
-- The film stars Casey Affleck as Craig Wright, the computer scientist who unsuccessfully claimed to be Bitcoin creator Satoshi Nakamoto.
-- Supporting cast members include Pete Davidson, Gal Gadot, and Isla Fisher, with AI-enhanced cameos from figures like Vladimir Putin and Kim Jong Un.
-- Produced by Ryan Kavanaugh and Lawrence Grey, the project utilizes a $70 million budget and proprietary AI technology to replace traditional location shooting.
-- The script depicts Eric Trump promoting a "Trump coin" and includes a brief reference to Elon Musk within its satirical narrative.
-- Production was completed in 20 days using a markerless performative capture stage, adhering to current Hollywood guild AI guidelines.
+- The vulnerability, tracked as CVE-2026-9082, carries a CVSS score of 6.5 and allows for potential privilege escalation and remote code execution.
+- Security firm Imperva reported over 15,000 attack attempts targeting nearly 6,000 websites across 65 countries, primarily in the gaming and financial sectors.
+- Drupal released patches for versions 11, 10, 9.5, and 8.9 to address the flaw within the database abstraction API.
+- Federal Civilian Executive Branch agencies are required to apply the necessary security updates by the May 27, 2026, deadline.
 
 ### Why it Matters
-The film represents a significant test case for the integration of AI-enhanced performances in high-budget Hollywood productions. By blending satire with controversial real-world figures, the project highlights the evolving legal and creative boundaries surrounding the use of digital likenesses in cinema.
+This vulnerability poses a significant risk because it enables attackers to gain unauthorized access or control over websites running vulnerable PostgreSQL-backed configurations. Organizations using Drupal must prioritize patching immediately to prevent potential data breaches or full system compromise as exploitation attempts continue to rise.
 
 ============================================================
-Author:   Andreas Wiseman
-Source:   Deadline
-URL:      http://deadline.com/2026/05/doug-liman-ai-crypto-bitcoin-bezos-zuckerberg-eric-trump-1236918951/
-Category: Artificial Intelligence
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/05/drupal-core-sql-injection-bug-actively.html
+Category: Cybersecurity

@@ -1,20 +1,20 @@
-The big strategy themes behind Microsoft's executive overhaul
+Apple shares iPhone and Mac post-quantum cryptography code on GitHub
 ============================================================
 
-Microsoft CEO Satya Nadella is restructuring the company’s senior leadership team and organizational hierarchy to accelerate the tech giant's strategic pivot toward artificial intelligence and operational efficiency.
+Apple has released new corecrypto source code on GitHub, detailing its formal verification process for post-quantum cryptographic algorithms designed to protect user data against future quantum computing threats.
 
 ### Key Points
-- Microsoft is dismantling its existing senior leadership team to streamline decision-making processes under CEO Satya Nadella.
-- Commercial chief marketing officer Yusuf Mehdi, a 35-year company veteran, is preparing to depart the organization.
-- The reorganization emphasizes a "player-coach" model, requiring executives to engage directly with daily operations rather than focusing solely on high-level management.
-- Nadella is actively replacing long-tenured executives with external hires to reduce institutional inertia and encourage new perspectives.
-- The company is implementing a flatter structure to allow non-executive employees to contribute ideas directly during leadership meetings.
+- Apple published source code for ML-KEM and ML-DSA algorithms, which align with NIST standards FIPS 203 and FIPS 204.
+- The repository includes custom tools like a Cryptol-to-Isabelle translator used to verify that implementations match official cryptographic standards.
+- Formal verification helped Apple identify and resolve critical errors, including a potential data corruption issue in an early ML-DSA implementation.
+- The code supports both portable C and hand-optimized ARM64 assembly to ensure compatibility across the entire Apple silicon product lineup.
+- This release follows the 2024 introduction of the PQ3 protocol for iMessage, marking a continued expansion of Apple's post-quantum security infrastructure.
 
 ### Why it Matters
-This leadership overhaul signals a significant cultural shift for one of the world's oldest and largest technology companies as it attempts to maintain its competitive edge in the AI era. By prioritizing agility and direct involvement, Microsoft aims to replicate the successful cloud-computing transition it achieved over the past decade.
+This initiative represents a significant shift toward transparency in high-stakes cybersecurity, allowing independent researchers to audit the foundational code protecting Apple devices. By sharing these formal verification methods, Apple aims to set a higher standard for software assurance while proactively defending against the long-term risks posed by quantum computing.
 
 ============================================================
-Author:   Dan DeFrancesco
-Source:   Business Insider
-URL:      https://www.businessinsider.com/business-insider-today-newsletter-microsoft-leadership-change-2026-5
-Category: Tech Business & Markets
+Author:   Marcus Mendes
+Source:   9to5Mac
+URL:      https://9to5mac.com/2026/05/22/apple-shares-iphone-and-mac-post-quantum-cryptography-code-on-github/
+Category: Cybersecurity
