@@ -1,19 +1,20 @@
-I ran 4 simple tests to diagnose my TV’s buffering problem, and my internet speed wasn’t to blame
+Week in review: GitHub breached via poisoned VS Code extension, critical NGINX flaw exploited
 ============================================================
 
-Smart TV users experiencing persistent video buffering despite high-speed internet can resolve performance issues by testing hardware connections, clearing app cache, and switching from Wi-Fi to Ethernet.
+GitHub and Grafana Labs suffered breaches linked to a compromised VS Code extension, while critical vulnerabilities in NGINX and Microsoft Defender are currently being exploited by active threat actors.
 
 ### Key Points
-- Smart TVs often feature weaker Wi-Fi antennas and less powerful processors compared to smartphones or laptops, leading to potential signal degradation.
-- Comparing internet speeds across multiple devices helps determine if buffering is caused by the network, the streaming application, or the television hardware.
-- Connecting a TV directly to a router via an Ethernet cable can significantly increase bandwidth and eliminate wireless interference.
-- Accumulated temporary data in streaming applications can cause sluggish playback, which is often resolved by clearing the app cache in the settings menu.
+- GitHub CISO Alexis Wales confirmed the breach originated from the malicious "Nx Console" VS Code extension, which impacted 2.2 million installations.
+- Attackers are actively exploiting a critical NGINX vulnerability (CVE-2026-42945) and two Microsoft Defender flaws (CVE-2026-41091 and CVE-2026-45498).
+- The 2026 Verizon Data Breach Investigations Report identifies vulnerability exploitation as the primary method for initial network access, surpassing stolen credentials.
+- Microsoft is developing a fix for the "YellowKey" BitLocker bypass (CVE-2026-45585) that allows unauthorized access to encrypted user data.
+- Researchers discovered that deleted Google API keys remain functional for up to 23 minutes, posing a significant risk for unauthorized service access.
 
 ### Why it Matters
-Many consumers incorrectly blame their internet service providers for streaming issues, leading to unnecessary plan upgrades or hardware replacements. Identifying that the bottleneck is often internal to the TV allows users to optimize their existing equipment for a smoother viewing experience.
+The rapid shift toward automated exploitation has narrowed the window for organizations to patch critical vulnerabilities to mere hours. These incidents highlight a growing trend where supply chain compromises and identity-based attacks are increasingly used to bypass traditional security perimeters.
 
 ============================================================
-Author:   Kanika Gogia
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/ran-tests-diagnose-tvs-buffering-problem-internet-speed-wasnt-to-blame/
-Category: Phones, Laptops, and Gadgets
+Author:   Help Net Security
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/05/24/week-in-review-github-breached-via-poisoned-vs-code-extension-critical-nginx-flaw-exploited/
+Category: Cybersecurity

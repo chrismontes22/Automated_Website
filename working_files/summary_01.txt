@@ -1,19 +1,19 @@
-Unitree GO-M8018-6 Motor Reverse Engineering
+'Underminr' CDN Vulnerability Hides Malicious Traffic Behind Trusted Domains
 ============================================================
 
-Researcher Thomas Flayols is reverse-engineering the proprietary motor drivers of the Unitree Go2 quadruped robot to develop open-source firmware and bypass the manufacturer's restrictive software ecosystem.
+Researchers have identified a new vulnerability called Underminr that allows threat actors to bypass DNS filtering by exploiting shared content delivery network infrastructure across 88 million domains.
 
 ### Key Points
-- The Unitree Go2 utilizes compact, high-performance actuators featuring integrated reducers, magnetic encoders, and Cortex-M0-based CMS32M57xx microcontrollers.
-- Thomas Flayols identified the obscured internal components by using X-ray imaging to bypass physical markings removed by the manufacturer.
-- Researchers successfully extracted the encrypted firmware from the device's bootloader SRAM after recovering a local decryption key.
-- The project aims to create custom, open-source firmware to allow broader use of these motors in independent robotics applications.
+- The Underminr exploit enables attackers to hide malicious connections by forcing requests to the IP addresses of other tenants on shared edge servers.
+- Security researchers at ADAMnetworks report that the vulnerability successfully bypasses existing domain fronting mitigations and protective DNS controls.
+- Approximately 88 million domains are potentially susceptible to this exploit, which facilitates stealthy command-and-control communications.
+- Experts warn that integrating Underminr into AI-generated malware could lead to a significant surge in sophisticated, evasive cyberattacks.
 
 ### Why it Matters
-Developing open-source firmware for these actuators could significantly lower the barrier to entry for custom robotics projects by providing affordable, high-quality hardware. Furthermore, this initiative offers a potential security alternative for Go2 owners concerned about existing malware vulnerabilities and proprietary firmware restrictions.
+This vulnerability poses a substantial risk to enterprise security by undermining the effectiveness of standard DNS-based threat detection and filtering systems. As attackers increasingly leverage AI to automate these techniques, organizations may need to reevaluate their reliance on shared infrastructure for critical network security.
 
 ============================================================
-Author:   Maya Posch
-Source:   Hackaday
-URL:      https://hackaday.com/2026/05/23/unitree-go-m8018-6-motor-reverse-engineering/
-Category: Phones, Laptops, and Gadgets
+Author:   EditorDavid
+Source:   Slashdot.org
+URL:      https://tech.slashdot.org/story/26/05/24/0043256/underminr-cdn-vulnerability-hides-malicious-traffic-behind-trusted-domains
+Category: Cybersecurity

@@ -1,20 +1,20 @@
-The FBI Wants ‘Near Real-Time’ Access to US License Plate Readers
+The C64 Dead Test Font
 ============================================================
 
-The FBI is seeking nationwide, near real-time access to automated license plate reader data, even as US lawmakers introduce bipartisan legislation to restrict the use of such surveillance technology.
+The iconic, standalone font used by the Commodore 64 "Dead Test" diagnostic cartridge has been documented for the first time, revealing its unique design and a hidden Easter egg.
 
 ### Key Points
-- The FBI Directorate of Intelligence is planning to spend millions to access searchable databases containing vehicle locations, timestamps, and license plate information.
-- Google accidentally published a proof-of-concept for a high-severity Chromium vulnerability that allows websites to monitor browsing activity and launch DDoS attacks.
-- The Federal Trade Commission warned 12 "nudifying" websites to implement removal processes for nonconsensual AI-generated images under the Take It Down Act.
-- Two men were arrested by the Department of Justice for distributing thousands of AI-generated sexual images of real women on pornography platforms.
-- Former federal prosecutor Carmen Mercedes Lineberger was charged with stealing a sealed report regarding Donald Trump’s handling of classified documents.
+- The "Dead Test" diagnostic cartridge (Rev. 718220) uses a custom 8K ROM font that functions independently of the C64’s built-in character ROM.
+- The font design is heavily inspired by the MICR E-13B character set, commonly used for magnetic ink recognition on bank checks.
+- Researchers identified a "mystery" character at screen code $21, which is a "transit" symbol from the MICR set, serving as a deliberate Easter egg.
+- The cartridge operates in "Ultimax mode," a compatibility feature originally designed for the short-lived Commodore Max Machine, which allows the system to bypass standard ROMs.
+- The font includes 58 specific characters, including digits, uppercase letters, and box-drawing symbols, while using a $AA fill pattern for undefined codes.
 
 ### Why it Matters
-These developments highlight a growing tension between federal surveillance ambitions and legislative efforts to protect individual privacy and digital security. As government agencies expand their data-gathering capabilities, the public faces increasing risks from both state-sponsored tracking and unpatched software vulnerabilities.
+This documentation preserves a piece of computing history by detailing the technical implementation of a specialized diagnostic tool used by professional repair technicians. By reverse-engineering the font and its Ultimax mode integration, enthusiasts can now better understand and emulate the low-level hardware operations of the Commodore 64.
 
 ============================================================
-Author:   Matt Burgess, Dell Cameron, Andrew Couts
-Source:   Wired
-URL:      https://www.wired.com/story/security-news-this-week-fbi-license-plate-reader-real-time-access/
-Category: Cybersecurity
+Author:   mass:werk, Norbert Landsteiner
+Source:   Masswerk.at
+URL:      https://www.masswerk.at/nowgobang/2026/c64-dead-test-font
+Category: Phones, Laptops, and Gadgets
