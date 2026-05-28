@@ -1,20 +1,20 @@
-AI Chatbot Recommendations Redirect Users to Cryptojacking Malware Sites
+YouTube To Automatically Detect, Label AI-Generated Videos
 ============================================================
 
-Microsoft has identified an active cryptojacking campaign where threat actors use AI chatbots to recommend malicious software download sites, specifically targeting high-performance GPU systems for unauthorized mining.
+YouTube is introducing automated labeling for photorealistic AI-generated content and increasing the visibility of disclosure notices across long-form videos and Shorts to improve transparency for its global audience.
 
 ### Key Points
-- Attackers use AI-generated responses to direct users toward over 150 malicious domains masquerading as legitimate utilities like FurMark and PDFgear.
-- The malware utilizes ScreenConnect for persistent remote access, enabling data theft, lateral movement, and ransomware deployment beyond simple cryptocurrency mining.
-- Malicious payloads are delivered via ZIP archives containing legitimate executables paired with rogue DLLs that sideload mining software.
-- The campaign specifically targets high-performance hardware to maximize mining yield while actively terminating security tools like Task Manager to avoid detection.
-- Microsoft has blocked the associated activity and warns that this "AI search poisoning" represents a significant evolution in traditional social engineering tactics.
+- YouTube will automatically apply AI labels to videos if its internal systems detect significant use of photorealistic generative technology.
+- Disclosure labels for long-form videos will move from the expanded description to a prominent position directly below the video player.
+- AI labels for YouTube Shorts will now appear as a direct overlay on the video content for immediate viewer awareness.
+- Creators can manually adjust disclosure statuses in YouTube Studio, though labels remain permanent for content using native tools like Veo or C2PA metadata.
+- YouTube confirmed that these transparency labels do not impact video recommendations or creator monetization eligibility on the platform.
 
 ### Why it Matters
-This campaign demonstrates a shift in how threat actors exploit emerging technologies to bypass traditional security awareness by poisoning AI-generated search results. Organizations must now account for the risk that AI assistants may inadvertently serve as vectors for malware, necessitating more rigorous verification of software sources.
+These updates address growing concerns regarding misinformation by providing viewers with immediate context about the authenticity of the media they consume. By standardizing disclosure practices, YouTube aims to balance creator autonomy with the need for digital transparency in an era of increasingly realistic synthetic media.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/05/ai-chatbot-recommendations-redirect.html
-Category: Cybersecurity
+Author:   BeauHD
+Source:   Slashdot.org
+URL:      https://news.slashdot.org/story/26/05/27/1936207/youtube-to-automatically-detect-label-ai-generated-videos
+Category: Artificial Intelligence

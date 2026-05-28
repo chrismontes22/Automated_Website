@@ -1,22 +1,20 @@
-What Tim Cook’s Legacy Teaches Doctors About Money And Mission
+GlassWorm Malware Takedown Disrupts Developer Supply Chain Attack Infrastructure
 ============================================================
 
-Apple CEO Tim Cook’s leadership legacy and the shifting landscape of American medicine both highlight the growing tension between maintaining core institutional values and prioritizing long-term financial stability.
+CrowdStrike, Google, and the Shadowserver Foundation have successfully neutralized the GlassWorm campaign, a sophisticated operation that targeted software developers by distributing malicious extensions and packages to steal sensitive credentials.
 
 ### Key Points
-- Over 60% of U.S. physicians are now employed by hospitals or corporate entities, a significant increase from approximately 40% just a decade ago.
-- Private equity-backed medical practices have nearly doubled since 2022, now accounting for roughly 8% of the physician workforce.
-- Concierge medicine, which requires patients to pay annual fees for enhanced access, more than doubled in prevalence between 2018 and 2023.
-- Apple’s market capitalization grew from $350 billion to nearly $4 trillion under Tim Cook, driven by global supply chain optimization and strategic political navigation.
-- Physicians report spending an average of 13 hours weekly on administrative prior authorization tasks, contributing to the shift away from independent practice.
+- GlassWorm operators targeted developers via trojanized VS Code extensions and compromised npm and Python packages to exfiltrate data and cryptocurrency.
+- The malware utilized four resilient command-and-control channels, including the Solana blockchain, BitTorrent DHT, and Google Calendar, to evade detection.
+- The campaign successfully poisoned over 300 GitHub repositories, using infected workstations as proxies for further network infiltration.
+- CrowdStrike attributes the activity to Russia-based cybercriminals, noting the malware avoids systems located within Commonwealth of Independent States countries.
+- The coordinated takedown simultaneously disabled all four command-and-control layers, preventing infected machines from receiving further instructions or malicious payloads.
 
 ### Why it Matters
-The increasing prioritization of financial margins over professional autonomy creates a systemic risk where medicine risks losing its identity as a mission-driven service. As both corporate leaders and clinicians navigate these tradeoffs, the long-term erosion of values may ultimately diminish the quality of care and the trust essential to the patient-provider relationship.
+- This operation highlights the growing trend of supply chain attacks that leverage developer environments to gain unauthorized access to corporate infrastructure. By compromising a single workstation, attackers can potentially impact thousands of downstream users and organizations, making developer security a critical priority for modern cybersecurity.
 
 ============================================================
-Author:   Robert Pearl, M.D., Contributor, 
- Robert Pearl, M.D., Contributor
- https://www.forbes.com/sites/robertpearl/
-Source:   Forbes
-URL:      https://www.forbes.com/sites/robertpearl/2026/05/27/what-tim-cooks-legacy-teaches-doctors-about-money-and-mission/
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/05/glassworm-malware-takedown-disrupts.html
+Category: Cybersecurity
