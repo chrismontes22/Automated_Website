@@ -1,5 +1,185 @@
 [
   {
+    "category": "Cybersecurity",
+    "url": "https://mendral.com/blog/you-should-not-update",
+    "processed_at": "2026-05-29T10:45:46.484433",
+    "title": "You Should Not Update Your Dependencies",
+    "source": "Mendral.com",
+    "author": "Olivier Gambier",
+    "summary": "Modern software development faces a critical security crisis as automated dependency updates and AI-generated code have rendered traditional manual review processes and standard package management tools dangerously obsolete.\n\n### Key Points\n- Supply chain attacks have surged because developers blindly trust and automatically merge dependency updates without verifying the underlying code.\n- The rise of AI-driven coding agents has accelerated development velocity, effectively bypassing the last remaining human safety guardrail: the code review.\n- Standard practices like using \"latest\" tags, unpinned versions, and automated tools like Dependabot are now considered primary vectors for malicious code injection.\n- Security professionals are increasingly overwhelmed by non-actionable alerts, leading to a culture of complacency where teams ignore risks until a breach occurs.\n- Mendral is developing an AI-powered CI integration designed to treat dependency updates as untrusted code by performing automated, deep-context security reviews.\n\n### Why it Matters\nThe industry's reliance on automated, unverified software updates has created a systemic vulnerability that allows attackers to compromise entire supply chains through single points of failure. By treating dependencies as untrusted contributions rather than safe updates, organizations can begin to mitigate the risks posed by the current runaway pace of software development."
+  },
+  {
+    "category": "Artificial Intelligence",
+    "url": "https://drobinin.com/posts/am-i-a-bad-friend/",
+    "processed_at": "2026-05-29T10:45:56.793625",
+    "title": "I analysed 20 years of my chats",
+    "source": "Drobinin.com",
+    "author": "Vadim Drobinin",
+    "summary": "A data analyst processed 1.2 million personal messages from two decades of digital history to build a personal CRM and uncover hidden patterns in his long-term social relationships.\n\n### Key Points\n- The project analyzed 20 years of chat data from platforms including Telegram, Instagram, VK, and Twitter to create a structured life archive.\n- LLMs were used to resolve identity ambiguities, such as nicknames, and to classify 1.2 million messages into life events, sentiment, and conversational topics.\n- Findings revealed that while the author's total social network shrank by 75% over time, the annual volume of conversation-days remained consistently flat.\n- Data showed that linguistic accommodation and vocabulary overlap are strong indicators of relationship health, while questioning frequency serves as a proxy for relationship bandwidth.\n- The author utilized a deterministic Python pipeline and SQLite to maintain data provenance, ensuring all insights could be traced back to original source messages.\n\n### Why it Matters\nThis project demonstrates how individuals can leverage modern AI and data processing to gain objective insights into their personal lives and social habits. By quantifying relationship dynamics, users can identify behavioral patterns—such as a tendency to offer advice rather than support—that are otherwise invisible in day-to-day interactions."
+  },
+  {
+    "category": "Artificial Intelligence",
+    "url": "https://abcnews.com/Business/ai-blame-hiring-woes-faced-college-graduates/story?id=133309225",
+    "processed_at": "2026-05-29T10:46:05.425896",
+    "title": "Is AI to blame for hiring woes faced by college graduates?",
+    "source": "Abcnews.com",
+    "author": "Max Zahn",
+    "summary": "Recent college graduates face a challenging job market with a 5.6% unemployment rate, sparking intense debate among experts over whether artificial intelligence is hindering entry-level hiring opportunities.\n\n### Key Points\n- New York Federal Reserve data shows the unemployment rate for recent college graduates is 5.6%, significantly higher than the 4.2% national average.\n- A Stanford University study found a 16% decline in employment for young workers in AI-exposed fields like software development and customer service.\n- Anthropic CEO Dario Amodei has warned that AI technology could potentially reduce the number of U.S. entry-level positions by half by 2030.\n- U.S. Bureau of Labor Statistics data indicates the overall hiring rate dropped to 3.5% in March, down from 4.4% four years ago.\n- Economists remain divided, with some citing sector-specific AI disruption while others attribute the hiring slump to broader economic trends and general labor market stagnation.\n\n### Why it Matters\nThe uncertainty surrounding AI's impact on entry-level roles creates significant career planning challenges for students entering the workforce in high-exposure fields like technology. Understanding these trends is essential for graduates to navigate a shifting labor market where degree specialization increasingly dictates job security."
+  },
+  {
+    "category": "Cybersecurity",
+    "url": "https://www.wired.com/story/google-employee-accused-of-polymarket-one-million/",
+    "processed_at": "2026-05-29T10:46:13.562139",
+    "title": "Google Security Engineer Arrested in Million-Dollar Polymarket Trading Scheme",
+    "source": "Wired",
+    "author": "Kate Knibbs",
+    "summary": "Google security engineer Michele Spagnuolo was arrested in New York on fraud and money laundering charges for allegedly using confidential internal data to place profitable trades on Polymarket.\n\n### Key Points\n- Michele Spagnuolo, a Google employee based in Zurich, faces charges of commodities fraud, wire fraud, and money laundering.\n- Prosecutors allege Spagnuolo used internal Google data to win $1.2 million on a Polymarket bet regarding the company's most-searched person of 2025.\n- The Commodity Futures Trading Commission has filed a parallel civil complaint against Spagnuolo for insider trading.\n- Polymarket stated it referred the activity to authorities, noting that blockchain transparency helped identify the suspect's account, \"AlphaRaccoon.\"\n- This case marks the first time a tech worker has been arrested for alleged insider trading on a prediction market platform.\n\n### Why it Matters\nThis arrest highlights the growing regulatory scrutiny surrounding prediction markets as lawmakers and federal agencies increase efforts to combat market manipulation. It underscores the significant legal risks for employees who leverage proprietary corporate data for personal financial gain in emerging digital betting sectors."
+  },
+  {
+    "category": "Tech Business & Markets",
+    "url": "https://www.businessinsider.com/openai-chatgpt-ad-tests-reveal-new-advertising-trends-2026-5",
+    "processed_at": "2026-05-29T10:46:21.883459",
+    "title": "Software companies are already swarming ChatGPT's ad economy",
+    "source": "Business Insider",
+    "author": "Stephen Council",
+    "summary": "OpenAI has begun integrating advertisements into ChatGPT, testing new revenue models that prioritize software and travel-related promotions while maintaining a cautious approach to user privacy and ad frequency.\n\n### Key Points\n- OpenAI launched ad-buying tools in May 2024, allowing businesses to bid for placements within the chatbot's responses.\n- Data analysis shows software tools account for 34% of ads, while travel services like Expedia and Airbnb also feature prominently.\n- Advertisements currently appear in only 1% to 2% of total user prompts, with most conversations containing no more than one ad.\n- Ad frequency increases with commercial intent, such as prompts containing the word \"buy,\" which trigger ads 15% of the time.\n- OpenAI maintains that advertisers do not receive access to private user conversations or personal data during the testing phase.\n\n### Why it Matters\nThe introduction of ads represents a significant shift in OpenAI's business model as it seeks to monetize a platform with nearly 1 billion weekly users. This transition could reshape the digital advertising landscape by creating a new, intent-driven surface area that competes directly with established search engines like Google."
+  },
+  {
+    "category": "Phones, Laptops, and Gadgets",
+    "url": "https://www.theverge.com/tech/938518/oura-ring-5-smart-ring-price-specs-wearables-hands-on",
+    "processed_at": "2026-05-29T10:46:30.647327",
+    "title": "They’ve finally made the Oura Ring smaller and lighter",
+    "source": "The Verge",
+    "author": "Victoria Song",
+    "summary": "Oura has announced the Oura Ring 5, a redesigned, slimmer wearable featuring improved battery life and new software capabilities, including GLP-1 tracking and advanced health monitoring tools.\n\n### Key Points\n- The Oura Ring 5 is 40 percent smaller than its predecessor, measuring 6.09mm wide and 2.29mm thick, with a starting price of $399.\n- New software features include Health Radar for monitoring blood pressure and breathing, plus specific insights for users taking GLP-1 medications.\n- The device is constructed from titanium, features IP68 weather resistance, and offers a battery life lasting between six and nine days.\n- Users can now pair third-party heart rate monitors with the Oura app and utilize a new time-based data deletion feature for increased privacy.\n- Preorders are open now across major retailers, with official shipping scheduled to begin on June 4th.\n\n### Why it Matters\nThis launch signals Oura's aggressive push to integrate medical-grade health insights and AI-driven analysis into a more compact, consumer-friendly form factor. By expanding into metabolic health tracking and cognitive research, the company is positioning its hardware as a comprehensive tool for long-term health management rather than just a basic fitness tracker."
+  },
+  {
+    "category": "Tech Business & Markets",
+    "url": "https://www.coindesk.com/markets/2026/05/28/bitcoin-drops-below-usd73-000-as-us-strikes-on-iran-spark-usd1-billion-liquidations",
+    "processed_at": "2026-05-29T10:46:46.417574",
+    "title": "Bitcoin drops below $73,000 as US strikes on Iran spark $1 billion liquidations",
+    "source": "CoinDesk",
+    "author": "Shaurya Malwa",
+    "summary": "Bitcoin prices fell below $73,000 as U.S. airstrikes on Iranian military sites triggered a massive market sell-off, resulting in nearly $1 billion in liquidated leveraged cryptocurrency positions.\n\n### Key Points\n- Bitcoin dropped below $73,000 following U.S. military strikes near the Strait of Hormuz and new sanctions against Iran.\n- Approximately $958.8 million in leveraged crypto positions were liquidated within 24 hours, affecting over 167,000 traders.\n- Long positions accounted for 93% of the total liquidations, with Bitcoin and Ether leading the market decline.\n- Global stock indices retreated and oil prices rose as regional military tensions reversed recent optimism regarding a Middle East ceasefire.\n- U.S. spot Bitcoin ETFs have recorded nine consecutive days of net outflows, totaling roughly $1.3 billion in withdrawals this week.\n\n### Why it Matters\nThis event highlights the extreme sensitivity of cryptocurrency markets to geopolitical instability and the risks associated with high-leverage trading strategies. The rapid liquidation cascade demonstrates how quickly market sentiment can shift when unexpected military conflicts disrupt established price floors for risk assets."
+  },
+  {
+    "category": "Phones, Laptops, and Gadgets",
+    "url": "https://www.androidcentral.com/gaming/virtual-reality/x-by-xreal-wants-everyone-in-on-ar-glasses-launches-entry-level-pair-for-gamers-movie-lovers",
+    "processed_at": "2026-05-29T10:47:00.567313",
+    "title": "'X by Xreal' wants everyone in on AR glasses, launches entry-level pair for gamers, movie-lovers",
+    "source": "Android Central",
+    "author": "nickodiaz@sbcglobal.net (Nickolas Diaz) , Nickolas Diaz",
+    "summary": "Xreal has launched its new entry-level sub-brand, XBX, debuting the a01 AR glasses which feature a 1,600-nit MicroOLED display and will arrive in the U.S. this July for $299.\n\n### Key Points\n- The a01 glasses feature dual-layer MicroOLED screens with 1,600-nit peak brightness and SDR-to-HDR conversion technology.\n- Designed for portability, the device weighs approximately 62 grams and utilizes a lightweight nylon body without an integrated camera.\n- The hardware includes an anti-shake algorithm to maintain image clarity while users are in motion, such as on public transportation.\n- Users can customize the glasses with interchangeable front frames, including the option to 3D print personal accessories.\n- The product is positioned as an entry-level \"pocket cinema\" for gamers and movie enthusiasts to connect with smartphones and handheld consoles.\n\n### Why it Matters\nThis launch signals a strategic shift toward making augmented reality hardware more accessible by lowering the price point for entry-level consumers. By stripping away non-essential features like cameras, Xreal is positioning its new sub-brand to compete directly for the mass-market mobile entertainment and gaming audience."
+  },
+  {
+    "category": "Phones, Laptops, and Gadgets",
+    "url": "https://www.bgr.com/2179123/25mm-vs-35mm-headphone-jack-differences/",
+    "processed_at": "2026-05-29T10:47:08.782048",
+    "title": "2.5mm Vs. 3.5mm Headphone Jack: What's The Difference?",
+    "source": "BGR",
+    "author": "staff@bgr.com (Christine Persaud)",
+    "summary": "The 3.5mm headphone jack remains the standard for consumer electronics, while the smaller 2.5mm connector is primarily reserved for specialized equipment like two-way radios and professional video cameras.\n\n### Key Points\n- The 3.5mm jack measures 1/8 inches in diameter, while the 2.5mm jack measures 3/32 inches.\n- Standard 3.5mm plugs range from 14mm to 17mm in length, whereas 2.5mm plugs are typically 11mm long.\n- Most consumer devices, including laptops and tablets, utilize the 3.5mm port for headphones, microphones, and auxiliary audio connections.\n- Specialized 2.5mm jacks are commonly found in cordless phones, walkie-talkies, and specific professional audio gear.\n- These connectors are not physically interchangeable, though users can bridge the gap between different sizes using external adapters.\n\n### Why it Matters\nUnderstanding the physical differences between these connectors prevents compatibility issues when purchasing audio equipment or adapters for various devices. As manufacturers move toward wireless audio and USB-C, recognizing these legacy ports helps users maintain functionality for wired headphones and professional studio hardware."
+  },
+  {
+    "category": "Tech Business & Markets",
+    "url": "https://www.macrumors.com/2026/05/27/amazon-apple-globalstar-deal/",
+    "processed_at": "2026-05-29T10:47:16.924976",
+    "title": "Amazon to Acquire Apple's Globalstar Stake in Satellite Deal",
+    "source": "MacRumors",
+    "author": "Juli Clover",
+    "summary": "Amazon has reached an $11.57 billion agreement to acquire satellite provider Globalstar, including Apple’s 20 percent equity stake, to integrate its Project Kuiper network with future Apple device services.\n\n### Key Points\n- Amazon will form a subsidiary, Grapefruit Acquisition Sub II, to facilitate the acquisition of Globalstar and its satellite operations.\n- Apple previously invested $450 million in 2022 to secure 20 percent equity and 85 percent of Globalstar’s network capacity for iPhone satellite features.\n- The deal covers existing Apple satellite services, including Emergency SOS, Messages via satellite, Find My, and Roadside Assistance.\n- Future Apple device connectivity will transition to utilize Amazon’s expanded low Earth orbit (LEO) satellite network.\n- The transaction is valued at approximately $11.57 billion and is projected to close in 2027, pending necessary regulatory approvals.\n\n### Why it Matters\nThis acquisition marks a significant consolidation in the satellite communications market by aligning Apple’s consumer hardware ecosystem with Amazon’s massive infrastructure investment. The partnership ensures long-term stability for critical emergency connectivity features while positioning Amazon as a dominant provider of satellite-based mobile services."
+  },
+  {
+    "category": "Tech Business & Markets",
+    "url": "https://www.techradar.com/pro/one-in-four-uk-government-computer-systems-are-running-on-outdated-technology-with-taxpayers-footing-the-bill-for-any-failures",
+    "processed_at": "2026-05-29T10:47:25.000946",
+    "title": "One in four UK government computer systems are running on outdated technology — with taxpayers footing the bill for any failures",
+    "source": "TechRadar",
+    "author": "Craig Hale",
+    "summary": "A new Re:State report reveals that one-quarter of UK central government IT systems are high-risk legacy platforms, costing the economy £45 billion annually in lost productivity and inefficiencies.\n\n### Key Points\n- Approximately 25% of the 319 evaluated central government IT systems are currently \"red-rated\" due to high operational risks and outdated infrastructure.\n- Research suggests that some public sector organizations, including the NHS and local police, may have legacy tech rates as high as 70%.\n- Failure to modernize government IT is estimated to cost the UK £45 billion annually in unrealized savings and reduced productivity.\n- The Tony Blair Institute projects that full digital modernization could unlock £200 billion in AI-related savings over the next five years.\n- The report recommends creating a Digital Modernization Taskforce and implementing centralized procurement to reduce vendor lock-in and improve system visibility.\n\n### Why it Matters\nOutdated IT infrastructure creates a significant fiscal and operational burden that prevents the public sector from effectively deploying modern AI solutions. Addressing these systemic inefficiencies is essential for the government to capture billions in potential savings and improve long-term service delivery."
+  },
+  {
+    "category": "Cybersecurity",
+    "url": "https://thehackernews.com/2026/05/jinx-0164-targets-cryptocurrency-firms.html",
+    "processed_at": "2026-05-29T10:47:35.957023",
+    "title": "JINX-0164 Targets Cryptocurrency Firms with Fake Recruiter Lures and macOS Malware",
+    "source": "Internet",
+    "author": "info@thehackernews.com (The Hacker News)",
+    "summary": "A newly identified threat actor dubbed JINX-0164 is targeting cryptocurrency developers with sophisticated social engineering and custom macOS malware to steal digital assets and compromise internal development infrastructure.\n\n### Key Points\n- Researchers at Wiz identified JINX-0164, a threat actor active since mid-2025 that uses recruitment-themed social engineering to target cryptocurrency organizations.\n- Attackers use fake teleconference domains to trick victims into downloading the AUDIOFIX remote access trojan, which masquerades as a system audio driver.\n- The malware steals sensitive data, including password manager credentials, SSH keys, cryptocurrency wallet addresses, and active session tokens from messaging platforms.\n- JINX-0164 has successfully executed supply chain attacks, including the distribution of a Go-based backdoor called MiniRAT via a compromised npm package for VeloraDEX.\n- The threat actor gains lateral movement by injecting payloads into code distribution systems and development infrastructure to modify source code and escalate access.\n\n### Why it Matters\nThis campaign highlights a significant risk to the software supply chain, as attackers are successfully infiltrating development environments to compromise cryptocurrency assets. By targeting developers through professional social engineering, these actors can bypass traditional security perimeters to gain deep access to sensitive internal systems."
+  },
+  {
+    "category": "Cybersecurity",
+    "url": "https://www.androidauthority.com/android-apps-i-switched-to-3670550/",
+    "processed_at": "2026-05-29T10:47:44.256521",
+    "title": "These are the 5 popular apps I switched to this year",
+    "source": "Android Authority",
+    "author": "Mitja Rutnik",
+    "summary": "Tech enthusiasts are increasingly migrating from mainstream platforms like Google and Notion to privacy-focused alternatives such as Proton, Brave, Claude, Inoreader, and Obsidian to enhance their digital security.\n\n### Key Points\n- Proton Unlimited provides an encrypted suite of services, including Mail, Drive, and Calendar, as a privacy-centric alternative to Google’s ecosystem.\n- Brave browser offers a Chromium-based experience that prioritizes user privacy by blocking trackers and ads by default without requiring manual configuration.\n- Claude serves as a more private AI chatbot alternative to Google Gemini, featuring specialized tools like Artifacts for content creation.\n- Inoreader functions as an RSS aggregator that allows users to curate specific news feeds, replacing the algorithm-heavy experience of Google News.\n- Obsidian provides an offline, privacy-first note-taking environment that replaces cloud-based productivity tools like Notion and Evernote.\n\n### Why it Matters\nThese shifts reflect a growing consumer trend toward prioritizing data sovereignty and privacy over the convenience of integrated big-tech ecosystems. While users may sacrifice some speed or advanced AI features, these alternatives offer greater control over personal information and digital workflows."
+  },
+  {
+    "category": "Artificial Intelligence",
+    "url": "https://www.aljazeera.com/economy/2026/5/28/chinas-secret-weapon-in-ai-race-with-us-lots-of-cheap-energy",
+    "processed_at": "2026-05-29T10:47:55.262212",
+    "title": "China’s secret weapon in AI race with US? Lots of cheap energy",
+    "source": "Al Jazeera English",
+    "author": "John Power",
+    "summary": "While the United States maintains a lead in advanced AI chip access, China is leveraging its massive renewable energy capacity to build a competitive advantage in data center infrastructure.\n\n### Key Points\n- China generates more than twice the electricity of the US and is projected to add six times more generation capacity over the next five years.\n- The \"East Data, West Computing\" initiative integrates data centers with renewable energy projects in China's sparsely populated interior regions.\n- US data center expansion faces significant hurdles, including grid constraints and local community opposition that stalled at least 36 projects between 2024 and 2025.\n- China’s data center rack capacity grew by 30 percent annually from 2016 to 2023, with total capacity expected to reach 60 gigawatts by 2030.\n- Despite rapid construction, China faces challenges with hardware integration, build quality, and low utilization rates for its new data center facilities.\n\n### Why it Matters\nThe global AI race has shifted from a purely semiconductor-focused competition to a critical struggle for reliable, low-cost electrical power. As energy constraints increasingly limit US data center deployment, China’s ability to scale its power grid could determine which nation ultimately dominates the infrastructure required to sustain large-scale AI models."
+  },
+  {
+    "category": "Tech Business & Markets",
+    "url": "https://boingboing.net/2026/05/27/google-employee-charged-with-fraud-after-winning-1-2m-on-polymarket.html",
+    "processed_at": "2026-05-29T10:48:03.748245",
+    "title": "Google employee charged with fraud after winning $1.2m on Polymarket",
+    "source": "Boing Boing",
+    "author": "Rob Beschizza",
+    "summary": "Google information security engineer Michele Spagnuolo was arrested and charged with fraud for allegedly using nonpublic internal search data to win $1.2 million betting on the platform Polymarket.\n\n### Key Points\n- Michele Spagnuolo faces federal charges including commodities fraud, wire fraud, and money laundering after allegedly exploiting confidential Google search trends.\n- Prosecutors claim Spagnuolo used the pseudonym \"AlphaRaccoon\" to place bets on outcomes like the most-searched person of 2025, which he knew via internal data.\n- The defendant, a 36-year-old security engineer, was identified after a payment processor linked his identity to cryptocurrency transfers used to fund the bets.\n- Spagnuolo has been released on a $2.25 million bond following his arrest in New York.\n\n### Why it Matters\nThis case highlights the growing intersection of insider trading risks and decentralized prediction markets like Polymarket. It underscores the vulnerability of proprietary corporate data when employees with high-level security access misuse internal information for personal financial gain."
+  },
+  {
+    "category": "Artificial Intelligence",
+    "url": "https://www.androidpolice.com/gemini-gives-google-home-cameras-smarter-automation-powers/",
+    "processed_at": "2026-05-29T10:48:23.951178",
+    "title": "Gemini gives Google Home cameras smarter automation powers",
+    "source": "Android Police",
+    "author": "Rajesh Pandey",
+    "summary": "Google is integrating Gemini AI into its smart home ecosystem, allowing compatible security cameras to trigger automated actions based on real-world events detected within their video feeds.\n\n### Key Points\n- Google Home is introducing Gemini-powered automation features for compatible smart cameras.\n- The AI can analyze video footage to understand specific events and trigger home routines.\n- These new capabilities allow smart devices to react contextually to real-world activity.\n- The update aims to improve the intelligence and responsiveness of the Google Home ecosystem.\n\n### Why it Matters\n- This integration marks a significant shift toward context-aware smart homes that move beyond simple motion detection. By leveraging generative AI, Google is enabling more sophisticated automation that could reduce false alarms and improve home security utility."
+  },
+  {
+    "category": "Cybersecurity",
+    "url": "https://securelist.com/video-books-pirates-miners-rat/119943/",
+    "processed_at": "2026-05-29T10:48:33.534195",
+    "title": "Pirates in the crosshairs: how one cybercrime gang has been infecting book, movie, and TV show fans for years",
+    "source": "Securelist.com",
+    "author": "Konstantin Krasilnikov, Valery Akulenko, Artem Snegirev",
+    "summary": "Cybercriminals are distributing sophisticated cryptocurrency miners through illegal streaming and digital library websites by tricking users into installing fake video player plugin updates that trigger DLL side-loading.\n\n### Key Points\n- The malware uses a ZIP archive containing a legitimate executable and a malicious DLL to inject mining code into system processes.\n- Attackers target high-traffic pirated content sites, with associated websites recording approximately 40 million visits in April 2026.\n- The campaign employs a modified version of the SilentCryptoMiner project, utilizing DNS tunneling and process hollowing to evade detection.\n- Persistence is maintained by disabling Windows security tools, such as the Malicious Software Removal Tool, and creating unauthorized system services.\n- The modular malware includes a Remote Access Trojan (RAT) capable of executing arbitrary commands and shellcode on compromised devices.\n\n### Why it Matters\nThis campaign demonstrates how threat actors exploit the popularity of pirated content to achieve massive distribution scales while continuously evolving their evasion techniques. By compromising system integrity and disabling security features, these miners impose significant performance costs on victims and provide attackers with persistent remote control over infected machines."
+  },
+  {
+    "category": "Cybersecurity",
+    "url": "https://www.infosecurity-magazine.com/news/gchq-keast-butler-cyber-action-ai/",
+    "processed_at": "2026-05-29T10:48:41.534788",
+    "title": "GCHQ Chief Urges Action as AI Reshapes Cyber Threats",
+    "source": "Infosecurity Magazine",
+    "author": "Alessandro  Mascellino",
+    "summary": "GCHQ director Anne Keast-Butler has urged UK businesses to prioritize cybersecurity as a national defense issue to counter rapidly evolving AI-powered threats and emerging risks from quantum computing.\n\n### Key Points\n- GCHQ plans to launch a national cyber defense system using agentic AI to protect critical infrastructure within five years.\n- Anne Keast-Butler identified Russia and China as primary state actors scaling up hybrid cyber activity against the UK and its allies.\n- Industry experts warn that human-paced defenses are insufficient against machine-speed attacks, necessitating immediate improvements to basic security controls like MFA and EDR.\n- The agency advised organizations to begin migrating to quantum-resistant cryptography to protect sensitive data from future decryption capabilities.\n- Individuals are encouraged to transition from traditional passwords to passkeys to improve personal security against automated threats.\n\n### Why it Matters\nThis shift in rhetoric frames cybersecurity as a critical boardroom responsibility rather than a routine IT maintenance task. By emphasizing the speed of AI-driven threats, the government is pressuring private firms to accelerate their defensive investments to prevent systemic failures in national infrastructure."
+  },
+  {
+    "category": "Tech Business & Markets",
+    "url": "http://nymag.com/intelligencer/article/drone-stock-ukraine-iran-anduril-palantir.html",
+    "processed_at": "2026-05-29T10:48:57.202121",
+    "title": "The Degenerates of the Drone Stock Bubble",
+    "source": "New York Magazine",
+    "author": "Sharon Weinberger",
+    "summary": "A speculative bubble is inflating around drone technology stocks as retail investors and high-profile figures capitalize on the growing demand for autonomous weapons systems despite significant financial instability.\n\n### Key Points\n- Companies like Swarmer, Red Cat, and Unusual Machines have seen massive stock valuations despite limited revenue, legal challenges, or doubts regarding their ability to remain profitable.\n- The drone sector is attracting political figures and influencers, including Erik Prince, Donald Trump Jr., and Eric Trump, who are leveraging social media to drive retail investment.\n- Pentagon initiatives for \"drone dominance\" and the ongoing conflict in Ukraine have fueled a market craze, though experts warn that many firms lack the technical capability to perform in real-world combat.\n- Financial analysts compare the current drone-stock surge to the 2020 SPAC bubble, noting that many companies lack institutional vetting and rely on hype rather than fundamental business performance.\n- American drone manufacturers continue to struggle against cheaper, mass-produced alternatives from China, complicating the industry's ability to secure long-term, sustainable government contracts.\n\n### Why it Matters\nThe surge in drone stocks reflects a broader trend of \"financial nihilism\" where retail investors prioritize speculative, high-risk defense technology over traditional financial fundamentals. This disconnect between market valuation and operational reality creates a volatile environment that risks significant losses for individual investors while potentially misdirecting capital away from viable defense innovation."
+  },
+  {
+    "category": "Tech Business & Markets",
+    "url": "https://thenextweb.com/news/google-engineer-polymarket-insider-trading-charges/",
+    "processed_at": "2026-05-29T10:49:08.344644",
+    "title": "A Google engineer used internal search data to bet $2.7m on Polymarket. The DOJ has charged him.",
+    "source": "The Next Web",
+    "author": "Ana-Maria Stanciuc",
+    "summary": "Federal prosecutors have charged Google engineer Michele Spagnuolo with using internal search data to place $2.7 million in bets on Polymarket, resulting in $1.2 million in illicit profits.\n\n### Key Points\n- Michele Spagnuolo, a 36-year-old Google security engineer, allegedly used the handle \"AlphaRaccoon\" to trade on non-public Google Year-in-Search data.\n- Spagnuolo placed 25 bets on Polymarket, including a high-stakes position on singer D4vd, netting a total profit of $1.2 million.\n- The Southern District of New York charged Spagnuolo with commodities fraud, wire fraud, and money laundering.\n- The Commodity Futures Trading Commission (CFTC) has filed a parallel civil case against the engineer.\n- This marks the second federal criminal prosecution involving Polymarket, following a previous case involving a U.S. soldier.\n- Polymarket is currently facing increased regulatory scrutiny, including a probe by the U.S. House Oversight Committee and recent platform bans in Spain and India.\n\n### Why it Matters\nThis case represents a significant expansion of insider-trading enforcement into the prediction-market sector by applying commodities-fraud statutes to derivative contracts. It challenges the platform's claims of market robustness and invites further regulatory pressure on how prediction markets handle non-public information."
+  },
+  {
     "author": "Jonah Aragon",
     "source": "Jonaharagon.com",
     "processed_at": "2026-05-28T21:12:00.615394",

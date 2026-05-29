@@ -1,20 +1,20 @@
-iOS 26.5 gave Messages app encrypted RCS, here’s how to check it’s working
+Pirates in the crosshairs: how one cybercrime gang has been infecting book, movie, and TV show fans for years
 ============================================================
 
-Apple has introduced end-to-end encryption for RCS messaging in the iOS 26.5 update, allowing iPhone users to secure cross-platform conversations with non-Apple devices that support the communication standard.
+Cybercriminals are distributing sophisticated cryptocurrency miners through illegal streaming and digital library websites by tricking users into installing fake video player plugin updates that trigger DLL side-loading.
 
 ### Key Points
-- iOS 26.5 enables end-to-end encryption for RCS messages by default, provided both participants use carriers that support the security feature.
-- Users can verify encryption status by navigating to Settings, selecting Apps, choosing Messages, and checking the RCS Messaging toggle.
-- A specific "Encrypted" lock icon appears at the top of supported conversation threads when the security protocol is active.
-- Encryption status can be confirmed manually by tapping a contact's profile image and viewing the security message at the bottom of the details screen.
-- Encryption availability depends on the technical capabilities of both the sender's and the recipient's mobile carriers.
+- The malware uses a ZIP archive containing a legitimate executable and a malicious DLL to inject mining code into system processes.
+- Attackers target high-traffic pirated content sites, with associated websites recording approximately 40 million visits in April 2026.
+- The campaign employs a modified version of the SilentCryptoMiner project, utilizing DNS tunneling and process hollowing to evade detection.
+- Persistence is maintained by disabling Windows security tools, such as the Malicious Software Removal Tool, and creating unauthorized system services.
+- The modular malware includes a Remote Access Trojan (RAT) capable of executing arbitrary commands and shellcode on compromised devices.
 
 ### Why it Matters
-This update significantly improves privacy for iPhone users communicating with Android devices by extending security standards previously reserved for iMessage. It marks a major shift in cross-platform messaging, though widespread adoption remains dependent on individual carrier support for the RCS encryption protocol.
+This campaign demonstrates how threat actors exploit the popularity of pirated content to achieve massive distribution scales while continuously evolving their evasion techniques. By compromising system integrity and disabling security features, these miners impose significant performance costs on victims and provide attackers with persistent remote control over infected machines.
 
 ============================================================
-Author:   Ryan Christoffel
-Source:   9to5Mac
-URL:      https://9to5mac.com/2026/05/27/ios-26-5-gave-messages-app-encrypted-rcs-heres-how-to-check-its-working/
-Category: Phones, Laptops, and Gadgets
+Author:   Konstantin Krasilnikov, Valery Akulenko, Artem Snegirev
+Source:   Securelist.com
+URL:      https://securelist.com/video-books-pirates-miners-rat/119943/
+Category: Cybersecurity

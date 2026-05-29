@@ -1,20 +1,20 @@
-The SpaceX IPO and Data Centers in Space
+JINX-0164 Targets Cryptocurrency Firms with Fake Recruiter Lures and macOS Malware
 ============================================================
 
-SpaceX is pursuing a $2 trillion valuation through an ambitious IPO, leveraging its Starlink infrastructure and potential space-based data centers to meet the massive future demand for AI compute.
+A newly identified threat actor dubbed JINX-0164 is targeting cryptocurrency developers with sophisticated social engineering and custom macOS malware to steal digital assets and compromise internal development infrastructure.
 
 ### Key Points
-- SpaceX reported $18.67 billion in revenue and $4.9 billion in losses last year, with growth slowing to 33%.
-- The company’s S-1 filing outlines a $28.5 trillion total addressable market, heavily weighted toward AI enterprise applications.
-- American Airlines recently partnered with SpaceX to install Starlink satellite internet across more than 500 narrowbody aircraft by 2027.
-- SpaceX is exploring the feasibility of orbital data centers to bypass terrestrial zoning constraints and power limitations for AI workloads.
-- The company currently operates over 10,000 active satellites in low Earth orbit, providing global connectivity and launch capacity.
+- Researchers at Wiz identified JINX-0164, a threat actor active since mid-2025 that uses recruitment-themed social engineering to target cryptocurrency organizations.
+- Attackers use fake teleconference domains to trick victims into downloading the AUDIOFIX remote access trojan, which masquerades as a system audio driver.
+- The malware steals sensitive data, including password manager credentials, SSH keys, cryptocurrency wallet addresses, and active session tokens from messaging platforms.
+- JINX-0164 has successfully executed supply chain attacks, including the distribution of a Go-based backdoor called MiniRAT via a compromised npm package for VeloraDEX.
+- The threat actor gains lateral movement by injecting payloads into code distribution systems and development infrastructure to modify source code and escalate access.
 
 ### Why it Matters
-The SpaceX IPO represents a high-risk, high-reward bet on Elon Musk’s ability to scale infrastructure for future AI-driven agentic inference. By offering retail investors a chance to fund long-term technological moonshots, the company is attempting to transform speculative, large-scale ambitions into a new reality for global compute and connectivity.
+This campaign highlights a significant risk to the software supply chain, as attackers are successfully infiltrating development environments to compromise cryptocurrency assets. By targeting developers through professional social engineering, these actors can bypass traditional security perimeters to gain deep access to sensitive internal systems.
 
 ============================================================
-Author:   Ben Thompson
-Source:   Stratechery.com
-URL:      https://stratechery.com/2026/the-spacex-ipo-and-data-centers-in-space/
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/05/jinx-0164-targets-cryptocurrency-firms.html
+Category: Cybersecurity
