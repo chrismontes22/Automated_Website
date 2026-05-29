@@ -1,20 +1,20 @@
-Amazon to Acquire Apple's Globalstar Stake in Satellite Deal
+Threat Actors Exploit Critical FortiClient EMS Flaw to Deploy Credential Stealer
 ============================================================
 
-Amazon has reached an $11.57 billion agreement to acquire satellite provider Globalstar, including Apple’s 20 percent equity stake, to integrate its Project Kuiper network with future Apple device services.
+Threat actors are exploiting a critical pre-authentication vulnerability in FortiClient Endpoint Management Server to deploy credential-stealing malware by masquerading malicious payloads as legitimate software updates across managed endpoints.
 
 ### Key Points
-- Amazon will form a subsidiary, Grapefruit Acquisition Sub II, to facilitate the acquisition of Globalstar and its satellite operations.
-- Apple previously invested $450 million in 2022 to secure 20 percent equity and 85 percent of Globalstar’s network capacity for iPhone satellite features.
-- The deal covers existing Apple satellite services, including Emergency SOS, Messages via satellite, Find My, and Roadside Assistance.
-- Future Apple device connectivity will transition to utilize Amazon’s expanded low Earth orbit (LEO) satellite network.
-- The transaction is valued at approximately $11.57 billion and is projected to close in 2027, pending necessary regulatory approvals.
+- Cybersecurity firm Arctic Wolf identified the exploitation of CVE-2026-35616, a critical vulnerability with a CVSS score of 9.1.
+- Attackers bypass API authentication to modify EMS configurations and push malicious PowerShell scripts to all managed endpoint devices.
+- The campaign uses a fake update file, "FortiEndpoint_Patch.exe," to harvest sensitive browser data including passwords, cookies, and credit card information.
+- Fortinet addressed the security flaw in FortiClient EMS version 7.4.7 and subsequent releases.
+- Stolen data is exfiltrated to an attacker-controlled server at 83.138.53.110 via HTTP POST requests.
 
 ### Why it Matters
-This acquisition marks a significant consolidation in the satellite communications market by aligning Apple’s consumer hardware ecosystem with Amazon’s massive infrastructure investment. The partnership ensures long-term stability for critical emergency connectivity features while positioning Amazon as a dominant provider of satellite-based mobile services.
+This vulnerability allows attackers to weaponize trusted management infrastructure, turning a single server compromise into a widespread breach of all connected endpoints. The theft of session cookies and credentials poses a significant risk, as these can be used to bypass multi-factor authentication and gain unauthorized access to sensitive cloud and internal applications.
 
 ============================================================
-Author:   Juli Clover
-Source:   MacRumors
-URL:      https://www.macrumors.com/2026/05/27/amazon-apple-globalstar-deal/
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/05/threat-actors-exploit-critical.html
+Category: Cybersecurity
