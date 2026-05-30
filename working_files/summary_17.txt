@@ -1,20 +1,20 @@
-Forget Nvidia As a $39 Trillion Debt Time Bomb Meets a Divided Fed, This Unstoppable Monopoly Is a No-Brainer Buy
+What’s in the container? Analyzing vulnerabilities, risks and protection with Kaspersky Container Security and the KIRA AI assistant
 ============================================================
 
-NVIDIA faces potential market volatility due to high valuation and concentration risks, while Berkshire Hathaway offers a defensive alternative with strong cash flow and a fortress balance sheet.
+Kaspersky researchers warn that most popular Docker Hub images contain critical vulnerabilities and insecure configurations, necessitating automated security scanning to prevent container-based cyberattacks and enterprise network compromises.
 
 ### Key Points
-- NVIDIA reported $81.61 billion in revenue and a $5.14 trillion market cap, with 50% of data center revenue tied to four major hyperscalers.
-- NVIDIA’s supply commitments have reached $119.0 billion, while the stock trades at a trailing P/E of 33 and a price-to-book ratio of 27.
-- Berkshire Hathaway trades at a P/E of 10 and a price-to-book ratio of 0.94, offering a significant valuation discount compared to current tech sector leaders.
-- Berkshire maintains a low debt-to-equity ratio of 0.19 and benefits from high interest income on its substantial holdings of U.S. Treasury bills.
-- Insiders including Vice Chairman Greg Abel and Warren Buffett made significant share purchases in early 2026, signaling confidence in the conglomerate's long-term value.
+- A study of 100 popular Docker images revealed that 64% contain critical software vulnerabilities, while only 10% are fully updated.
+- Common security flaws include hardcoded plaintext passwords, excessive sudo privileges, and insecure file permissions like 777.
+- Attackers frequently exploit outdated software, such as CVE-2025-49844 in Redis or CVE-2026-24061 in Nginx, to gain remote code execution.
+- Kaspersky introduced an AI assistant named KIRA within its Container Security platform to identify misconfigurations and provide remediation guidance.
+- Supply chain risks remain high, as infrequent updates leave systems vulnerable, while frequent updates can introduce malicious dependencies if not properly scanned.
 
 ### Why it Matters
-The contrast between NVIDIA and Berkshire Hathaway highlights a growing divide between high-growth AI-focused investments and traditional value-oriented assets. As macroeconomic conditions shift toward higher capital costs, investors are increasingly weighing the risks of concentrated tech exposure against the stability of companies with durable, cash-generative business models.
+Containerized infrastructure has become a primary target for attackers seeking to deploy malware, steal data, or move laterally through enterprise networks. Implementing automated security audits and robust secret management is essential to mitigate the risks posed by vulnerable third-party images and configuration errors.
 
 ============================================================
-Author:   Alex Sirois
-Source:   24/7 Wall St.
-URL:      https://247wallst.com/investing/2026/05/28/forget-nvidia-as-a-39-trillion-debt-time-bomb-meets-a-divided-fed-this-unstoppable-monopoly-is-a-no-brainer-buy/
-Category: Tech Business & Markets
+Author:   Yaroslav Shmelev, Anton Kivva, Denis Parinov, Vladimir Kuskov, Yanina Balandyuk-Opalinskaya
+Source:   Securelist.com
+URL:      https://securelist.com/container-security-typical-issues/119974/
+Category: Cybersecurity

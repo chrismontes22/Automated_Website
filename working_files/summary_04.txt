@@ -1,20 +1,19 @@
-Software companies are already swarming ChatGPT's ad economy
+Volkswagen blocks Home Assistant by requiring client assertion
 ============================================================
 
-OpenAI has begun integrating advertisements into ChatGPT, testing new revenue models that prioritize software and travel-related promotions while maintaining a cautious approach to user privacy and ad frequency.
+Users of the Home Assistant Volkswagen Carnet integration are reporting authentication failures that prevent login, despite the official Volkswagen mobile app and web portal remaining fully functional for them.
 
 ### Key Points
-- OpenAI launched ad-buying tools in May 2024, allowing businesses to bid for placements within the chatbot's responses.
-- Data analysis shows software tools account for 34% of ads, while travel services like Expedia and Airbnb also feature prominently.
-- Advertisements currently appear in only 1% to 2% of total user prompts, with most conversations containing no more than one ad.
-- Ad frequency increases with commercial intent, such as prompts containing the word "buy," which trigger ads 15% of the time.
-- OpenAI maintains that advertisers do not receive access to private user conversations or personal data during the testing phase.
+- Users report an "authentication expired" error when attempting to log in through the Home Assistant integration.
+- The official Volkswagen Connect Android app and the vwgroup.io web portal continue to operate without issues.
+- Affected users have confirmed their credentials are valid and that no multi-factor authentication is enabled on their accounts.
+- The bug prevents the integration from connecting to vehicle data, rendering the Home Assistant dashboard unable to interact with the car.
 
 ### Why it Matters
-The introduction of ads represents a significant shift in OpenAI's business model as it seeks to monetize a platform with nearly 1 billion weekly users. This transition could reshape the digital advertising landscape by creating a new, intent-driven surface area that competes directly with established search engines like Google.
+This issue disrupts the ability of Home Assistant users to monitor and control their Volkswagen vehicles through their smart home interface. It highlights a potential compatibility break between the third-party integration and Volkswagen's authentication servers, requiring a technical update to restore service.
 
 ============================================================
-Author:   Stephen Council
-Source:   Business Insider
-URL:      https://www.businessinsider.com/openai-chatgpt-ad-tests-reveal-new-advertising-trends-2026-5
-Category: Tech Business & Markets
+Author:   robinostlund
+Source:   Github.com
+URL:      https://github.com/robinostlund/homeassistant-volkswagencarnet/issues/967
+Category: Phones, Laptops, and Gadgets

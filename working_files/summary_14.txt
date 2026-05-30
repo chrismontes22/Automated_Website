@@ -1,21 +1,20 @@
-The US phone market struggled in Q1, but one Android maker made serious headway
+Protestware for Coding Agents
 ============================================================
 
-The U.S. smartphone market declined by 3% year-over-year in Q1 2026, with Apple maintaining a 60% market share despite broader industry challenges and rising component costs.
+The Java testing library jqwik released version 1.10.0 containing a hidden prompt injection command designed to manipulate AI coding agents by instructing them to delete project source code.
 
 ### Key Points
-- Total U.S. smartphone shipments reached 33.4 million units during the first quarter of 2026.
-- Apple led the market with a 60% share, while Samsung followed with 24% after a 5% year-over-year decline.
-- Motorola was the only major manufacturer to achieve growth, recording an 18% increase driven by its refreshed Moto G lineup.
-- Market contraction was attributed to restrained carrier upgrade cycles, increased memory and storage costs, and delayed premium device launches.
-- Entry-level devices priced under $300 saw an 8% increase, contrasting with a 1% decline in the premium sector.
-- Omdia projects the overall U.S. smartphone market will experience a 4% decline for the full year of 2026.
+- Version 1.10.0 of the jqwik testing library includes a method named `printMessageForCodingAgents` that outputs a malicious command to standard output.
+- The command uses ANSI escape sequences to hide the text from human terminal users while remaining visible to automated CI logs and AI coding tools.
+- The maintainer explicitly included this code as a form of "openly communicated resistance" against the use of generative AI in software development.
+- Security researchers note that traditional supply-chain scanners fail to detect this behavior because the library performs no unauthorized system calls or file modifications.
+- The project documentation now includes a warning that using jqwik with AI coding agents is strongly discouraged.
 
 ### Why it Matters
-The shift toward entry-level devices suggests that consumers are becoming more price-sensitive amid rising hardware costs and limited carrier incentives. This trend forces manufacturers to balance premium innovation with affordable options to maintain market share in a cooling economic environment.
+This incident highlights a new class of supply-chain risk where legitimate dependencies are used to deliver prompt injections directly into the context windows of AI coding assistants. Because the malicious instructions are delivered through standard output rather than traditional code execution, they bypass existing security tooling and automated provenance checks.
 
 ============================================================
-Author:   nickodiaz@sbcglobal.net (Nickolas Diaz) , Nickolas Diaz
-Source:   Android Central
-URL:      https://www.androidcentral.com/phones/the-us-phone-market-struggled-in-q1-but-one-android-maker-made-serious-headway
-Category: Phones, Laptops, and Gadgets
+Author:   Andrew Nesbitt
+Source:   Nesbitt.io
+URL:      https://nesbitt.io/2026/05/28/protestware-for-coding-agents.html
+Category: Cybersecurity
