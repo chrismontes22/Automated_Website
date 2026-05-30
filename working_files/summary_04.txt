@@ -1,19 +1,20 @@
-Volkswagen blocks Home Assistant by requiring client assertion
+Tech companies desperately want to film you doing chores
 ============================================================
 
-Users of the Home Assistant Volkswagen Carnet integration are reporting authentication failures that prevent login, despite the official Volkswagen mobile app and web portal remaining fully functional for them.
+AI training startup Shift is offering free home cleaning services in New York and London in exchange for video footage used to teach robots how to perform domestic chores.
 
 ### Key Points
-- Users report an "authentication expired" error when attempting to log in through the Home Assistant integration.
-- The official Volkswagen Connect Android app and the vwgroup.io web portal continue to operate without issues.
-- Affected users have confirmed their credentials are valid and that no multi-factor authentication is enabled on their accounts.
-- The bug prevents the integration from connecting to vehicle data, rendering the Home Assistant dashboard unable to interact with the car.
+- Shift collects "egocentric" or first-person video data of cleaners performing tasks like scrubbing, dusting, and mopping to train physical AI models.
+- Robotics companies face a data bottleneck because physical tasks involving friction, force, and spatial awareness are difficult to scrape from the internet.
+- The startup Human Archive is scaling data collection by having gig workers record their activities while wearing specialized camera-equipped caps.
+- Home services platform Pronto has faced backlash for recording footage of clients performing chores like cooking and laundry to develop AI training sets.
+- Some companies operate "data farms" where workers are paid to repeat simple physical tasks, such as folding towels, while sensors capture their movements.
 
 ### Why it Matters
-This issue disrupts the ability of Home Assistant users to monitor and control their Volkswagen vehicles through their smart home interface. It highlights a potential compatibility break between the third-party integration and Volkswagen's authentication servers, requiring a technical update to restore service.
+This trend highlights a shift toward commodifying private domestic behavior to overcome the significant technical challenges of training robots for the physical world. As companies race to automate household labor, the practice raises critical questions regarding consumer privacy and the ethics of using personal living spaces as data collection sites.
 
 ============================================================
-Author:   robinostlund
-Source:   Github.com
-URL:      https://github.com/robinostlund/homeassistant-volkswagencarnet/issues/967
-Category: Phones, Laptops, and Gadgets
+Author:   Robert Hart
+Source:   The Verge
+URL:      https://www.theverge.com/ai-artificial-intelligence/940007/ai-companies-will-pay-for-robot-training-data
+Category: Artificial Intelligence

@@ -1,20 +1,20 @@
-Anthropic Says a Mythos-Class AI Model Will Be Available Soon
+This Week in Security: Ubiquiti Fixes, and FreeBSD Joins the Club you Don’t Want to Join
 ============================================================
 
-Anthropic has released the upgraded Claude Opus 4.8 model while continuing to restrict public access to its powerful Mythos AI due to ongoing cybersecurity and safety testing requirements.
+Ubiquiti has released critical security patches for six vulnerabilities, while other major industry developments include a botnet takedown, new phishing threats, and emerging hardware-based tracking techniques.
 
 ### Key Points
-- Anthropic launched Claude Opus 4.8, which offers improved benchmark performance and reduced hallucination rates compared to the previous 4.7 version.
-- The company is currently limiting access to its advanced Mythos Preview model to select partners under the Project Glasswing initiative.
-- Mythos demonstrated its utility by identifying over 200 security vulnerabilities for the latest version of the Mozilla Firefox browser.
-- New features on Claude.ai and Claude Cowork allow users to adjust model "effort" settings to balance response quality against usage limits.
-- Cybersecurity experts note that Mythos is roughly 30 times more expensive to operate than previous models, potentially limiting its use by smaller threat actors.
+- Ubiquiti patched six security flaws in its equipment, including one critical vulnerability rated 9.1 and another scoring a perfect 10.0 on the CVE scale.
+- A coalition including CrowdStrike and Google successfully disrupted the Glassworm botnet, which targeted open-source repositories like NPM and PyPI to steal credentials.
+- The FBI issued a warning regarding Kali365, a "Phishing-as-a-Service" platform that automates credential theft for Microsoft 365 accounts.
+- Researchers identified a new side-channel attack called FROST, which uses SSD performance timing via JavaScript to fingerprint devices and monitor user activity.
+- Microsoft is enhancing C# memory safety in .NET 11 to prevent common vulnerabilities like use-after-free errors by adopting stricter object lifetime enforcement.
 
 ### Why it Matters
-The phased release of the Mythos model highlights the growing tension between rapid AI innovation and the need for robust safeguards against potential cybersecurity exploits. As these powerful tools become more accessible, the industry faces a critical window to implement defenses before the technology is widely adopted by both developers and malicious actors.
+These developments highlight the persistent risks within both enterprise network infrastructure and the global software supply chain. As attackers increasingly leverage automated services and sophisticated side-channel techniques, organizations must prioritize rapid patch management and adopt modern memory-safe programming practices to maintain security.
 
 ============================================================
-Author:   Jon Reed
-Source:   CNET
-URL:      https://www.cnet.com/tech/services-and-software/anthropic-claude-opus-4-8-release-mythos-class-ai-model-soon/
-Category: Artificial Intelligence
+Author:   Mike Kershaw
+Source:   Hackaday
+URL:      https://hackaday.com/2026/05/29/this-week-in-security-ubiquiti-fixes-and-freebsd-joins-the-club-you-dont-want-to-join/
+Category: Cybersecurity

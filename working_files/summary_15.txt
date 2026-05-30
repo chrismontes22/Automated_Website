@@ -1,20 +1,20 @@
-Kimsuky Deploys HTTPSpy, Expands Arsenal with HelloDoor and VS Code Tunnels
+Real-time LLM Inference on Standard GPUs: 3k tokens/s per request
 ============================================================
 
-The North Korean state-sponsored hacking group Kimsuky targeted South Korean military and corporate entities throughout March and April 2026 using sophisticated social engineering and HTTPSpy malware variants.
+Kog has launched a high-speed inference engine that optimizes GPU software stacks to achieve 3,000 tokens per second for single-request AI agent workloads on standard datacenter hardware.
 
 ### Key Points
-- Kimsuky impersonated security software installers and Cisco Webex meeting pages to distribute malicious payloads to South Korean organizations.
-- The attacks utilized HTTPSpy, a remote access trojan capable of capturing screenshots, executing shell commands, and exfiltrating sensitive data from compromised endpoints.
-- Attackers leveraged stolen meeting schedules to create convincing lures, specifically targeting messaging administrators and service members.
-- New technical methods include "JSONPing" for real-time infection verification and the abuse of legitimate Microsoft VS Code tunneling for persistent remote access.
-- The group continues to evolve its toolkit, incorporating Rust-based malware like HelloDoor and HttpMalice, which are reportedly developed with the assistance of large language models.
+- The Kog Inference Engine achieves high speeds by replacing standard multi-kernel stacks with a "monokernel" that runs as a single, persistent GPU program.
+- Performance is bottlenecked by memory bandwidth rather than compute power, allowing 8-GPU nodes to reach speeds previously reserved for dedicated inference hardware.
+- The company’s "Laneformer" architecture uses Delayed Tensor Parallelism to overlap cross-device communication with computation, reducing latency in multi-GPU setups.
+- A public tech preview is available at playground.kog.ai, demonstrating the engine's capabilities using a 2B-parameter coding model on an 8x AMD MI300X node.
+- Kog is a Paris-based startup founded in 2023 that has raised $5 million to focus on low-level GPU engineering for autonomous AI agents.
 
 ### Why it Matters
-These campaigns demonstrate a significant escalation in the sophistication of North Korean cyber espionage, moving beyond simple phishing to highly tailored, context-aware attacks. By exploiting legitimate software and stolen credentials, Kimsuky poses a persistent threat to the operational security of critical defense, government, and private sector infrastructure.
+As AI agents shift from simple chatbots to complex, iterative systems, the speed of single-request token generation has become the primary bottleneck for productivity. By unlocking the full memory bandwidth of existing datacenter GPUs, this technology enables faster reasoning and tool-use loops without requiring proprietary inference hardware.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/05/kimsuky-deploys-httpspy-expands-arsenal.html
-Category: Cybersecurity
+Author:   Kog Team
+Source:   Blog.kog.ai
+URL:      https://blog.kog.ai/real-time-llm-inference-on-standard-gpus-3-000-tokens-s-per-request/
+Category: Artificial Intelligence

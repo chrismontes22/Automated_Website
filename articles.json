@@ -1,5 +1,185 @@
 [
   {
+    "category": "Cybersecurity",
+    "source": "Hackaday",
+    "summary": "Ubiquiti has released critical security patches for six vulnerabilities, while other major industry developments include a botnet takedown, new phishing threats, and emerging hardware-based tracking techniques.\n\n### Key Points\n- Ubiquiti patched six security flaws in its equipment, including one critical vulnerability rated 9.1 and another scoring a perfect 10.0 on the CVE scale.\n- A coalition including CrowdStrike and Google successfully disrupted the Glassworm botnet, which targeted open-source repositories like NPM and PyPI to steal credentials.\n- The FBI issued a warning regarding Kali365, a \"Phishing-as-a-Service\" platform that automates credential theft for Microsoft 365 accounts.\n- Researchers identified a new side-channel attack called FROST, which uses SSD performance timing via JavaScript to fingerprint devices and monitor user activity.\n- Microsoft is enhancing C# memory safety in .NET 11 to prevent common vulnerabilities like use-after-free errors by adopting stricter object lifetime enforcement.\n\n### Why it Matters\nThese developments highlight the persistent risks within both enterprise network infrastructure and the global software supply chain. As attackers increasingly leverage automated services and sophisticated side-channel techniques, organizations must prioritize rapid patch management and adopt modern memory-safe programming practices to maintain security.",
+    "title": "This Week in Security: Ubiquiti Fixes, and FreeBSD Joins the Club you Don’t Want to Join",
+    "author": "Mike Kershaw",
+    "processed_at": "2026-05-30T20:09:08.372424",
+    "url": "https://hackaday.com/2026/05/29/this-week-in-security-ubiquiti-fixes-and-freebsd-joins-the-club-you-dont-want-to-join/"
+  },
+  {
+    "category": "Cybersecurity",
+    "source": "Internet",
+    "summary": "Cybersecurity researchers discovered a malicious NuGet package named Sicoob.Sdk that impersonates a legitimate Brazilian banking tool to steal sensitive PFX certificates and client IDs from unsuspecting software developers.\n\n### Key Points\n- The malicious package, versions 2.0.0 through 2.0.4, was downloaded nearly 500 times before being blocked by NuGet.\n- Attackers used the package to exfiltrate PFX certificates, passwords, and Boleto API transaction data to a hardcoded Sentry endpoint.\n- Google Search AI Mode inadvertently amplified the threat by surfacing the malicious package as a legitimate C# library for Sicoob banking APIs.\n- The threat actor behind the \"sicoob\" profile published 11 other packages, totaling approximately 6,000 downloads across the ecosystem.\n- Affected organizations are advised to rotate all PFX credentials and audit API logs for unauthorized access or unusual activity.\n\n### Why it Matters\nThis incident highlights the growing danger of \"manufactured legitimacy,\" where attackers create convincing packages that bypass traditional security filters and developer scrutiny. Such supply chain compromises can lead to widespread financial fraud and the unauthorized exposure of sensitive corporate banking data.",
+    "title": "Malicious Sicoob NuGet Steals Banking Credentials as npm Packages Target Cloud Secrets",
+    "author": "info@thehackernews.com (The Hacker News)",
+    "processed_at": "2026-05-30T20:09:34.974772",
+    "url": "https://thehackernews.com/2026/05/malicious-sicoob-nuget-steals-banking.html"
+  },
+  {
+    "category": "Artificial Intelligence",
+    "source": "The Atlantic",
+    "summary": "The rapid expansion of AI-powered data centers has triggered a bipartisan grassroots backlash across the United States, pitting local community concerns against the massive infrastructure needs of Big Tech.\n\n### Key Points\n- A May Gallup poll indicates that 70 percent of Americans oppose the construction of AI data centers within their local communities.\n- Tech giants including Microsoft, Amazon, Meta, and Google have invested more in data centers since the launch of ChatGPT than the federal government spent on the interstate-highway system.\n- Local opposition led to the cancellation of at least 20 proposed data center projects during the first quarter of 2026.\n- Residents frequently cite noise pollution, excessive water consumption, and the secrecy of real-estate shell companies as primary drivers for their opposition.\n- Political figures ranging from Bernie Sanders and Alexandria Ocasio-Cortez to populist conservatives have expressed skepticism or support for moratoriums on new facility construction.\n\n### Why it Matters\nData centers have become a potent symbol of the perceived disconnect between wealthy tech elites and the daily realities of average citizens. This emerging conflict threatens to disrupt the AI industry's growth trajectory and will likely become a significant, polarizing issue in upcoming midterm and 2028 presidential elections.",
+    "title": "Why Everyone Hates AI Data Centers",
+    "author": "Charlie Warzel",
+    "processed_at": "2026-05-30T20:09:44.387685",
+    "url": "https://www.theatlantic.com/podcasts/2026/05/why-everyone-hates-ai-data-centers/687355/"
+  },
+  {
+    "category": "Artificial Intelligence",
+    "source": "The Verge",
+    "summary": "AI training startup Shift is offering free home cleaning services in New York and London in exchange for video footage used to teach robots how to perform domestic chores.\n\n### Key Points\n- Shift collects \"egocentric\" or first-person video data of cleaners performing tasks like scrubbing, dusting, and mopping to train physical AI models.\n- Robotics companies face a data bottleneck because physical tasks involving friction, force, and spatial awareness are difficult to scrape from the internet.\n- The startup Human Archive is scaling data collection by having gig workers record their activities while wearing specialized camera-equipped caps.\n- Home services platform Pronto has faced backlash for recording footage of clients performing chores like cooking and laundry to develop AI training sets.\n- Some companies operate \"data farms\" where workers are paid to repeat simple physical tasks, such as folding towels, while sensors capture their movements.\n\n### Why it Matters\nThis trend highlights a shift toward commodifying private domestic behavior to overcome the significant technical challenges of training robots for the physical world. As companies race to automate household labor, the practice raises critical questions regarding consumer privacy and the ethics of using personal living spaces as data collection sites.",
+    "title": "Tech companies desperately want to film you doing chores",
+    "author": "Robert Hart",
+    "processed_at": "2026-05-30T20:09:58.507185",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/940007/ai-companies-will-pay-for-robot-training-data"
+  },
+  {
+    "category": "Tech Business & Markets",
+    "source": "Business Insider",
+    "summary": "Micron, Samsung, and SK Hynix have reached a combined $1 trillion market valuation as surging demand for artificial intelligence hardware transforms the historically volatile memory-chip industry.\n\n### Key Points\n- Micron, Samsung, and SK Hynix now effectively control the global DRAM market, reducing the industry's historic tendency toward overproduction.\n- AI systems require massive amounts of data processing, creating persistent memory bottlenecks that drive demand for high-performance chips.\n- UBS analysts project the DRAM market will remain undersupplied through 2028 due to long-term supply agreements with major cloud computing providers.\n- Samsung reported over $30 billion in profit during the first quarter of this year, signaling strong financial performance across the sector.\n- Industry consolidation has reduced the number of major DRAM manufacturers from over 20 in the 1990s to just three primary players today.\n\n### Why it Matters\nThe shift toward a consolidated market and long-term pricing contracts suggests the memory industry may be moving away from its traditional cycle of boom-and-bust volatility. This stability could fundamentally change how investors value semiconductor companies as they become essential infrastructure for the global AI economy.",
+    "title": "Short memory? The most dangerous words in investing are back",
+    "author": "Alistair Barr",
+    "processed_at": "2026-05-30T20:14:28.768284",
+    "url": "https://www.businessinsider.com/ai-memory-chip-boom-bust-cycle-micron-2026-5"
+  },
+  {
+    "category": "Phones, Laptops, and Gadgets",
+    "source": "MacRumors",
+    "summary": "Apple will integrate a new variable aperture lens into the iPhone 18 Pro and Pro Max, increasing camera component costs by 50% compared to current iPhone 17 Pro models.\n\n### Key Points\n- The variable aperture lens allows physical adjustments to light intake, improving exposure control and depth of field flexibility.\n- Supply chain analyst Ming-Chi Kuo reports that Sunny Optical will supply 40% to 50% of these new camera module orders.\n- Apple doubled its 2026 shipment forecast for the MacBook Neo to 10 million units following stronger-than-expected market performance.\n- Future 2028 iPhone models are expected to adopt chip-on-board packaging for ultra-wide cameras to improve space efficiency and image quality.\n- Sunny Optical has secured component contracts for two upcoming OpenAI hardware products, including a new smartphone and a mobile device.\n\n### Why it Matters\nThe shift to variable aperture technology represents a significant hardware investment that could differentiate future iPhone Pro models in a competitive smartphone market. This supply chain expansion also highlights Sunny Optical's growing influence as a key manufacturing partner for both Apple’s hardware ecosystem and emerging AI-focused devices.",
+    "title": "iPhone 18 Pro's Camera Upgrade Will Cost Apple 50% More",
+    "author": "Hartley Charlton",
+    "processed_at": "2026-05-30T20:14:44.633477",
+    "url": "https://www.macrumors.com/2026/05/29/iphone-18-pros-camera-upgrade-will-cost-more/"
+  },
+  {
+    "category": "Cybersecurity",
+    "source": "Abcnews.com",
+    "summary": "California Attorney General Rob Bonta has filed a lawsuit against 23andMe, alleging the company failed to protect the sensitive genetic and personal data of nearly seven million users.\n\n### Key Points\n- The lawsuit targets Chrome Holding Co., the corporate entity representing 23andMe following its recent bankruptcy proceedings.\n- Hackers allegedly accessed user accounts for five months in 2023, including ancestry and genetic health information sold on the dark web.\n- Court documents claim the company ignored over one million unauthorized login attempts to a single account in one day.\n- 23andMe previously agreed to a $30 million settlement to resolve a separate class-action lawsuit regarding the same data breach.\n- The company was recently sold for $305 million to the TTAM Research Institute, a nonprofit led by former CEO Anne Wojcicki.\n\n### Why it Matters\nThis legal action highlights the significant privacy risks associated with storing highly sensitive biological data in the consumer genetic testing industry. The case underscores the potential for severe regulatory consequences when companies fail to implement adequate cybersecurity safeguards for their customers' most personal information.",
+    "title": "23andMe accused of failing to protect user data in new lawsuit",
+    "author": "Katie Kindelan, Vera Drymon",
+    "processed_at": "2026-05-30T20:15:13.250404",
+    "url": "https://abcnews.com/GMA/News/23andme-accused-failing-protect-user-data-new-lawsuit/story?id=133414032"
+  },
+  {
+    "category": "Artificial Intelligence",
+    "source": "Wired",
+    "summary": "**Author Steve Rosenbaum faces scrutiny after his book about AI-driven misinformation, \"The Future of Truth,\" was found to contain synthetic quotes and significant AI-generated content.**\n\n### Key Points\n- Steve Rosenbaum admitted to using AI tools like ChatGPT and Claude for research, brainstorming, and language refinement in his book.\n- *The New York Times* identified over six made-up or misattributed quotes within the text of the book.\n- AI-detection software Pangram estimated the book was 53 percent AI-generated, with an additional 9 percent likely AI-assisted.\n- WIRED retracted its excerpt of the book after questions arose regarding the extent of Rosenbaum's reliance on generative AI tools.\n- Rosenbaum maintains that his core ideas and reporting are original, despite his refusal to clarify which specific passages were AI-assisted.\n\n### Why it Matters\nThis controversy highlights the growing tension between traditional editorial standards and the increasing integration of generative AI in the publishing industry. It underscores the difficulty of verifying authorship and accuracy in an era where AI tools can easily blur the lines between human-led research and synthetic content.",
+    "title": "We Asked the ‘Future of Truth’ Author to Explain How He Used AI. It Didn’t Go Well",
+    "author": "Kate Knibbs",
+    "processed_at": "2026-05-30T20:15:37.334107",
+    "url": "https://www.wired.com/story/future-of-truth-ai-interview/"
+  },
+  {
+    "category": "Tech Business & Markets",
+    "source": "Nakedcapitalism.com",
+    "summary": "Tony Blair’s recent essay advocating for radical economic deregulation and AI integration has sparked debate over his influence on the Keir Starmer government and ties to Oracle.\n\n### Key Points\n- Tony Blair’s essay calls for pension cuts, NHS privatization, and the abandonment of Net Zero climate commitments to prioritize cheap energy for AI data centers.\n- Oracle founder Larry Ellison has invested over $348 million into the Tony Blair Institute for Global Change since 2021, raising concerns regarding corporate lobbying.\n- The Starmer government has implemented \"AI Growth Zones\" that bypass standard environmental assessments and community planning regulations to accelerate data center construction.\n- Blair’s policy recommendations include strengthening ties with the Trump administration and expanding the UK’s role in US-led military operations in the Middle East.\n- Public opposition is mounting against government proposals for mandatory digital identity systems, which critics argue are designed for mass surveillance and control.\n\n### Why it Matters\nThe alignment between Blair’s policy agenda and the commercial interests of his primary benefactor, Larry Ellison, highlights growing concerns over corporate influence on British public policy. This relationship suggests a shift toward a surveillance-heavy, deregulated economy that prioritizes AI infrastructure over traditional environmental and social safeguards.",
+    "title": "In His “Radical Centralism” Essay, Tony Blair Is, As Always, Talking His Book",
+    "author": "Nick Corbishley",
+    "processed_at": "2026-05-30T20:20:33.508898",
+    "url": "https://www.nakedcapitalism.com/2026/05/quelle-surprise-in-his-new-essay-for-britain-tony-blair-is-just-talking-his-book-and-that-book-belongs-to-larry-ellison.html"
+  },
+  {
+    "category": "Artificial Intelligence",
+    "source": "Rock Paper Shotgun",
+    "summary": "Fenris Creations has partnered with Google DeepMind to integrate AI research into EVE Online, aiming to modernize the space MMO’s aging codebase and enhance non-player character interactions.\n\n### Key Points\n- Fenris Creations, formerly CCP Games, granted Google DeepMind a minority stake to train AI agents on an offline version of EVE Online.\n- Developers are utilizing AI \"coaching agents\" to identify memory and security issues within the game's 30-year-old \"spaghetti code.\"\n- The partnership aims to revitalize mission-giving NPCs by using generative AI to make character interactions feel more dynamic and alive.\n- Despite widespread industry backlash against AI in gaming, EVE Online’s playerbase has remained largely receptive or cautiously curious toward the initiative.\n- Google DeepMind previously gained recognition for developing Grandmaster-ranked AI agents for StarCraft 2 and mastering complex board games like Go.\n\n### Why it Matters\nThis collaboration represents a rare instance where a dedicated gaming community has embraced AI integration, largely due to the potential for fixing long-standing technical debt. If successful, the project could provide a blueprint for using machine learning to maintain and evolve massive, legacy software environments without alienating core users.",
+    "title": "\"They have the biggest bullsh*t detectors on the planet\": How the unlikely EVE Online x Google DeepMind AI partnership landed with players",
+    "author": "James Archer",
+    "processed_at": "2026-05-30T20:21:09.812125",
+    "url": "https://www.rockpapershotgun.com/they-have-the-biggest-bullsht-detectors-on-the-planet-how-the-unlikely-eve-online-x-google-deepmind-ai-partnership-landed-with-players"
+  },
+  {
+    "category": "Tech Business & Markets",
+    "source": "CoinDesk",
+    "summary": "Intercontinental Exchange CEO Jeffrey Sprecher praised the decentralized platform Hyperliquid for its significant trading volume, highlighting the growing influence of crypto-native derivatives markets over traditional financial exchange incumbents.\n\n### Key Points\n- ICE CEO Jeffrey Sprecher stated that Hyperliquid’s trading activity in perpetual futures now exceeds that of the Nasdaq exchange.\n- Hyperliquid currently controls over 70 percent of the decentralized perpetual futures market, clearing billions in daily notional turnover.\n- The platform attracts traditional traders by offering 24/7 access to oil derivatives, including during weekends when regulated markets are closed.\n- Sprecher noted that Hyperliquid operates as an unregulated offshore entity, creating a competitive disparity with firms bound by Dodd-Frank and EMIR regulations.\n- ICE leadership has held multiple meetings with Hyperliquid’s core team, signaling a shift in how traditional Wall Street firms view crypto-native platforms.\n\n### Why it Matters\nThe comparison highlights a growing regulatory and competitive tension between traditional exchanges and decentralized platforms that operate outside established financial frameworks. Policymakers now face pressure to either create new regulatory categories for perpetual futures or force offshore venues to comply with existing global derivatives laws.",
+    "title": "Hyperliquid bigger than NASDAQ, says ICE CEO Jeffrey Sprecher",
+    "author": "Shaurya Malwa",
+    "processed_at": "2026-05-30T20:21:27.754332",
+    "url": "https://www.coindesk.com/markets/2026/05/29/ice-ceo-calls-hyperliquid-bigger-than-nasdaq-says-he-s-met-its-founders"
+  },
+  {
+    "category": "Phones, Laptops, and Gadgets",
+    "source": "Kotaku",
+    "summary": "MSI has unveiled the Claw 8 AI Plus gaming handheld featuring Intel’s new Arc G3 Extreme processor, while industry news highlights major developments in gaming hardware and labor relations.\n\n### Key Points\n- The MSI Claw 8 AI Plus features an eight-inch 1920 x 1200 touchscreen, 32GB of LPDDR5x memory, and a redesigned ergonomic chassis.\n- IO Interactive reported that its new title, 007 First Light, sold 1.5 million copies within the first 24 hours of release.\n- Developers of Warhammer 40,000: Space Marine 2 confirmed a new, highly requested character class will arrive in the first half of 2027.\n- Rockstar Games staff formed the Rockstar Game Workers Union to protest the termination of 31 employees, which workers allege was union-busting.\n- CD Projekt Red joint CEO Michał Nowakowski stated that The Witcher 4 will likely not receive massive expansions due to an ambitious three-game release schedule.\n\n### Why it Matters\nThe entry of Intel’s Arc G3 Extreme processor into the handheld market signals a significant shift in competition against AMD, potentially influencing future device performance and pricing. Meanwhile, the formation of the Rockstar Game Workers Union reflects growing labor activism within the gaming industry that could impact future studio operations and development cycles.",
+    "title": "Behold The Latest Very Cool, Super Deluxe PC Gaming Handheld You Probably Can’t Afford",
+    "author": "Ethan Gach",
+    "processed_at": "2026-05-30T20:21:49.909135",
+    "url": "https://kotaku.com/behold-the-latest-very-cool-super-deluxe-pc-gaming-handheld-you-probably-cant-afford-2000700545"
+  },
+  {
+    "category": "Phones, Laptops, and Gadgets",
+    "source": "Boing Boing",
+    "summary": "The SwiftScan VIP mobile application is currently available for a discounted lifetime price of $47.97, offering users a comprehensive tool to digitize, edit, and organize physical documents on smartphones.\n\n### Key Points\n- SwiftScan VIP converts physical documents, receipts, and business cards into high-quality PDF or JPG files using mobile device cameras.\n- The app features automatic edge detection, image enhancement, and multi-page scanning to streamline the digitization process.\n- Integrated OCR technology makes scanned text searchable, while built-in tools allow users to sign, annotate, redact, and rearrange PDF pages.\n- Scanned files can be uploaded directly to cloud storage services including iCloud, Google Drive, Dropbox, and Evernote.\n- A lifetime subscription to the service is currently priced at $47.97, a significant reduction from the original $199.99 retail cost.\n\n### Why it Matters\nThis offer provides a cost-effective solution for individuals and professionals looking to reduce physical paper clutter through mobile-first document management. By enabling seamless cloud integration and searchable digital archives, the tool improves personal productivity and simplifies long-term record keeping.",
+    "title": "This app digitizes your paper clutter for $48 for life",
+    "author": "Boing Boing's Shop",
+    "processed_at": "2026-05-30T20:22:26.967431",
+    "url": "https://boingboing.net/2026/05/29/this-app-digitizes-your-paper-clutter-for-48-for-life.html"
+  },
+  {
+    "category": "Phones, Laptops, and Gadgets",
+    "source": "Android Central",
+    "summary": "Google Chrome users on various Android tablets are reporting a persistent \"You can have up to 5 windows\" error message that prevents the browser from opening correctly.\n\n### Key Points\n- Affected devices include the Samsung Galaxy Tab S9 Plus, S9 FE, Galaxy Tab A11 Plus, Lenovo Tab M11, and Xiaomi Pad 6.\n- The error message prevents the browser from launching, rendering the application unusable for many tablet owners.\n- Google has officially acknowledged the bug on its IssueTracker and is currently gathering device data from impacted users.\n- A temporary workaround involves uninstalling Chrome updates via the Google Play Store, though this action deletes all saved browser data.\n\n### Why it Matters\nThis bug significantly disrupts the browsing experience for Android tablet users who rely on Chrome as their primary web interface. As Google investigates the root cause, the lack of a permanent fix forces users to either lose their saved data through a factory reset or switch to alternative browsers.",
+    "title": "Android tablets have a problem: Chrome's not working, but Google's racing to fix it",
+    "author": "nickodiaz@sbcglobal.net (Nickolas Diaz) , Nickolas Diaz",
+    "processed_at": "2026-05-30T20:22:39.556790",
+    "url": "https://www.androidcentral.com/tablets/android-tablets-have-a-problem-chromes-not-working-but-googles-racing-to-fix-it"
+  },
+  {
+    "category": "Artificial Intelligence",
+    "source": "Blog.kog.ai",
+    "summary": "Kog has launched a high-speed inference engine that optimizes GPU software stacks to achieve 3,000 tokens per second for single-request AI agent workloads on standard datacenter hardware.\n\n### Key Points\n- The Kog Inference Engine achieves high speeds by replacing standard multi-kernel stacks with a \"monokernel\" that runs as a single, persistent GPU program.\n- Performance is bottlenecked by memory bandwidth rather than compute power, allowing 8-GPU nodes to reach speeds previously reserved for dedicated inference hardware.\n- The company’s \"Laneformer\" architecture uses Delayed Tensor Parallelism to overlap cross-device communication with computation, reducing latency in multi-GPU setups.\n- A public tech preview is available at playground.kog.ai, demonstrating the engine's capabilities using a 2B-parameter coding model on an 8x AMD MI300X node.\n- Kog is a Paris-based startup founded in 2023 that has raised $5 million to focus on low-level GPU engineering for autonomous AI agents.\n\n### Why it Matters\nAs AI agents shift from simple chatbots to complex, iterative systems, the speed of single-request token generation has become the primary bottleneck for productivity. By unlocking the full memory bandwidth of existing datacenter GPUs, this technology enables faster reasoning and tool-use loops without requiring proprietary inference hardware.",
+    "title": "Real-time LLM Inference on Standard GPUs: 3k tokens/s per request",
+    "author": "Kog Team",
+    "processed_at": "2026-05-30T20:22:57.632468",
+    "url": "https://blog.kog.ai/real-time-llm-inference-on-standard-gpus-3-000-tokens-s-per-request/"
+  },
+  {
+    "category": "Tech Business & Markets",
+    "source": "Googleblog.com",
+    "summary": "Google Workspace has launched a beta program allowing administrators to convert client-side encrypted Google Slides files following a data export through Google Vault or Google Takeout services.\n\n### Key Points\n- The beta program enables interoperability for client-side encrypted (CSE) Slides after exporting data.\n- Eligible editions include Enterprise Plus, Education Standard, Education Plus, Frontline Plus, and Assured Controls.\n- Interested administrators must apply via a registration form to gain access to the CSE Office Interop beta.\n- This update follows the recent general availability of similar conversion capabilities for Google Sheets files.\n- The rollout is currently active for both Rapid Release and Scheduled Release domains upon successful beta acceptance.\n\n### Why it Matters\nThis update simplifies data management for organizations that rely on client-side encryption for sensitive document security. By enabling file conversion after exports, Google provides administrators with greater flexibility when migrating or auditing encrypted content across enterprise environments.",
+    "title": "Available in beta: Convert your client-side encrypted Slides after a Vault or Takeout export",
+    "author": "Paul Jiménez Vela",
+    "processed_at": "2026-05-30T20:23:15.701562",
+    "url": "https://workspaceupdates.googleblog.com/2026/05/available-in-beta-convert-your-client-side-encrypted-Slides-after-a-Vault-or-Takeout-export.html"
+  },
+  {
+    "category": "Artificial Intelligence",
+    "source": "TechRadar",
+    "summary": "Artificial intelligence is lowering technical barriers to entrepreneurship, offering a critical opportunity to close the gender gap in technology by enabling women to become creators rather than just users.\n\n### Key Points\n- No-code AI platforms allow individuals to build digital products and automate workflows without requiring traditional software engineering expertise or large development teams.\n- AI literacy is becoming a fundamental skill for career progression and economic mobility across sectors including healthcare, education, and retail.\n- Major corporations like Meta, Microsoft, and Amazon are restructuring workforces to prioritize AI, increasing the necessity for workers to master AI-driven workflows.\n- By automating repetitive tasks like scheduling and data handling, AI provides female founders with more capacity to focus on leadership and strategic business growth.\n- Inclusive participation in AI development ensures that future technologies reflect diverse perspectives, preventing the reinforcement of existing societal and gender-based inequalities.\n\n### Why it Matters\nThe shift toward AI-driven production represents a fundamental change in who can participate in the digital economy and influence future technological systems. If women are actively encouraged to build with these tools, they can overcome historical barriers to funding and technical access, ultimately fostering a more equitable and innovative business landscape.",
+    "title": "Closing the AI literacy gap is the real gender equalizer in tech",
+    "author": "Cien Solon",
+    "processed_at": "2026-05-30T20:23:33.747071",
+    "url": "https://www.techradar.com/pro/closing-the-ai-literacy-gap-is-the-real-gender-equalizer-in-tech"
+  },
+  {
+    "category": "Cybersecurity",
+    "source": "Tom's Hardware UK",
+    "summary": "Microsoft has identified an ongoing cryptojacking campaign using SEO poisoning and AI-generated recommendations to trick users into downloading GPU-mining malware disguised as popular PC utility software.\n\n### Key Points\n- Attackers impersonate legitimate tools like CrystalDiskInfo, HWMonitor, and FurMark to target users with high-performance graphics cards.\n- The malware uses DLL sideloading to execute payloads and establishes persistence by injecting code into trusted Microsoft-signed .NET utilities.\n- Malicious links have been observed appearing in AI chatbot responses, marking an emerging trend in AI-assisted search poisoning.\n- Once installed, the malware deploys ScreenConnect for remote access and runs GPU miners like lolMiner, gminer, and SRBMiner-MULTI.\n- The campaign has utilized over 150 malicious domains since March 2026 to evade detection and maintain long-term system access.\n\n### Why it Matters\nThis campaign demonstrates how threat actors are evolving to exploit both traditional search engines and emerging AI-assisted discovery tools to distribute malware. Users must prioritize downloading software exclusively from official vendor websites to avoid sophisticated threats that bypass standard security measures.",
+    "title": "Microsoft warns GPU mining malware is being spread to users through SEO poisoning and AI chatbots — cryptojacking campaign targets gamers and high-end PC users with downloads disguised as popular PC utilities",
+    "author": "Etiido Uko",
+    "processed_at": "2026-05-30T20:23:58.720388",
+    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/microsoft-warns-gpu-mining-malware-is-being-spread-to-users-through-seo-poisoning-and-ai-chatbots-cryptojacking-campaign-targets-gamers-and-high-end-pc-users-with-downloads-disguised-as-popular-pc-utilities"
+  },
+  {
+    "category": "Artificial Intelligence",
+    "source": "The Intercept",
+    "summary": "Kevin O’Leary is facing intense public backlash over the proposed 40,000-acre Stratos data center project in Utah, which critics argue threatens local water supplies and exacerbates environmental degradation.\n\n### Key Points\n- The Stratos project covers 40,000 acres near the drought-stricken Great Salt Lake, an area more than double the size of Manhattan.\n- Policy director Jim Walsh of Food and Water Watch warns the facility will increase reliance on the Ruby Pipeline, further incentivizing water-intensive fracking.\n- Data centers currently consume roughly 176 terawatt-hours of electricity annually, with projections suggesting a massive increase to 580 terawatt-hours by 2028.\n- The Trump administration is actively seeking to accelerate data center development by easing federal regulations and permitting requirements.\n- Local communities in states like Georgia and Utah are increasingly enacting moratoriums to address concerns over water quality, pressure, and resource depletion.\n\n### Why it Matters\nThe rapid expansion of AI infrastructure is creating a direct conflict between the tech industry’s energy demands and the essential resource needs of local communities. This tension highlights a growing national debate over whether the economic and strategic benefits of data centers justify the long-term environmental costs to public water and power grids.",
+    "title": "The Race to Build AI Data Centers — Before the People Can Protest",
+    "author": "The Intercept Briefing",
+    "processed_at": "2026-05-30T20:24:13.660391",
+    "url": "https://theintercept.com/2026/05/29/ai-data-centers-water/"
+  },
+  {
+    "category": "Phones, Laptops, and Gadgets",
+    "source": "9to5Mac",
+    "summary": "The new SwitchBot Rechargeable Button Pusher now features native Matter support, allowing users to easily integrate physical appliance buttons into the Apple Home ecosystem without complex software workarounds.\n\n### Key Points\n- The updated SwitchBot device includes a 370 mAh lithium-ion battery that provides up to six months of usage per charge.\n- Users can now connect the button pusher to Apple Home by scanning a Matter pairing code via a compatible SwitchBot hub.\n- The device functions as a physical robotic arm designed to press buttons on appliances that do not support smart connectivity.\n- Automations can be configured in the Apple Home app to trigger the device based on motion sensor data or specific time ranges.\n- The hardware features a USB-C port for recharging and replaces previous methods that required API keys and third-party plugins.\n\n### Why it Matters\nThis update significantly lowers the technical barrier for users looking to automate non-smart appliances within the Apple Home framework. By adopting the Matter standard, SwitchBot simplifies the setup process, making advanced home automation more accessible to mainstream consumers.",
+    "title": "HomeKit Weekly: SwitchBot Button Pusher finally works natively with Apple Home",
+    "author": "Bradley C",
+    "processed_at": "2026-05-30T20:24:32.397859",
+    "url": "https://9to5mac.com/2026/05/29/switchbot-button-pusher-finally-works-natively-with-apple-home/"
+  },
+  {
     "category": "Artificial Intelligence",
     "author": "Jon Reed",
     "title": "Anthropic Says a Mythos-Class AI Model Will Be Available Soon",

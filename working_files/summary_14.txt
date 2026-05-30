@@ -1,20 +1,19 @@
-Protestware for Coding Agents
+Android tablets have a problem: Chrome's not working, but Google's racing to fix it
 ============================================================
 
-The Java testing library jqwik released version 1.10.0 containing a hidden prompt injection command designed to manipulate AI coding agents by instructing them to delete project source code.
+Google Chrome users on various Android tablets are reporting a persistent "You can have up to 5 windows" error message that prevents the browser from opening correctly.
 
 ### Key Points
-- Version 1.10.0 of the jqwik testing library includes a method named `printMessageForCodingAgents` that outputs a malicious command to standard output.
-- The command uses ANSI escape sequences to hide the text from human terminal users while remaining visible to automated CI logs and AI coding tools.
-- The maintainer explicitly included this code as a form of "openly communicated resistance" against the use of generative AI in software development.
-- Security researchers note that traditional supply-chain scanners fail to detect this behavior because the library performs no unauthorized system calls or file modifications.
-- The project documentation now includes a warning that using jqwik with AI coding agents is strongly discouraged.
+- Affected devices include the Samsung Galaxy Tab S9 Plus, S9 FE, Galaxy Tab A11 Plus, Lenovo Tab M11, and Xiaomi Pad 6.
+- The error message prevents the browser from launching, rendering the application unusable for many tablet owners.
+- Google has officially acknowledged the bug on its IssueTracker and is currently gathering device data from impacted users.
+- A temporary workaround involves uninstalling Chrome updates via the Google Play Store, though this action deletes all saved browser data.
 
 ### Why it Matters
-This incident highlights a new class of supply-chain risk where legitimate dependencies are used to deliver prompt injections directly into the context windows of AI coding assistants. Because the malicious instructions are delivered through standard output rather than traditional code execution, they bypass existing security tooling and automated provenance checks.
+This bug significantly disrupts the browsing experience for Android tablet users who rely on Chrome as their primary web interface. As Google investigates the root cause, the lack of a permanent fix forces users to either lose their saved data through a factory reset or switch to alternative browsers.
 
 ============================================================
-Author:   Andrew Nesbitt
-Source:   Nesbitt.io
-URL:      https://nesbitt.io/2026/05/28/protestware-for-coding-agents.html
-Category: Cybersecurity
+Author:   nickodiaz@sbcglobal.net (Nickolas Diaz) , Nickolas Diaz
+Source:   Android Central
+URL:      https://www.androidcentral.com/tablets/android-tablets-have-a-problem-chromes-not-working-but-googles-racing-to-fix-it
+Category: Phones, Laptops, and Gadgets

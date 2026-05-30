@@ -1,20 +1,20 @@
-Xbox CEO Asha Sharma warns tough decisions are ahead, raising questions about Helix, Xbox Game Studios, and exclusives
+Microsoft warns GPU mining malware is being spread to users through SEO poisoning and AI chatbots — cryptojacking campaign targets gamers and high-end PC users with downloads disguised as popular PC utilities
 ============================================================
 
-Xbox CEO Asha Sharma has signaled that the company faces difficult strategic decisions to improve profitability and address shifting market conditions ahead of the upcoming June 7 Showcase.
+Microsoft has identified an ongoing cryptojacking campaign using SEO poisoning and AI-generated recommendations to trick users into downloading GPU-mining malware disguised as popular PC utility software.
 
 ### Key Points
-- CEO Asha Sharma announced a shift toward a more deliberate brand strategy, citing the need for hard choices regarding investments and future company structure.
-- Microsoft remains committed to producing Xbox hardware despite supply chain challenges and high costs associated with sourcing memory components.
-- Recent price cuts for Xbox Game Pass Ultimate have reportedly begun to reverse negative subscription and retention trends.
-- The company is evaluating the fiscal performance of smaller Xbox Game Studios acquisitions to improve overall margins.
-- Analysts anticipate potential price increases for Xbox Series X|S consoles later this year as existing memory supply contracts expire.
+- Attackers impersonate legitimate tools like CrystalDiskInfo, HWMonitor, and FurMark to target users with high-performance graphics cards.
+- The malware uses DLL sideloading to execute payloads and establishes persistence by injecting code into trusted Microsoft-signed .NET utilities.
+- Malicious links have been observed appearing in AI chatbot responses, marking an emerging trend in AI-assisted search poisoning.
+- Once installed, the malware deploys ScreenConnect for remote access and runs GPU miners like lolMiner, gminer, and SRBMiner-MULTI.
+- The campaign has utilized over 150 malicious domains since March 2026 to evade detection and maintain long-term system access.
 
 ### Why it Matters
-These strategic shifts reflect broader economic pressures facing the consumer tech industry, including rising hardware costs and increased competition for user attention. How Microsoft balances these fiscal demands with fan expectations for exclusive content will determine the long-term viability of the Xbox platform.
+This campaign demonstrates how threat actors are evolving to exploit both traditional search engines and emerging AI-assisted discovery tools to distribute malware. Users must prioritize downloading software exclusively from official vendor websites to avoid sophisticated threats that bypass standard security measures.
 
 ============================================================
-Author:   jez@windowscentral.com (Jez Corden) , Jez Corden
-Source:   Windows Central
-URL:      https://www.windowscentral.com/gaming/xbox/xbox-ceo-asha-sharma-tough-decisions-ahead-what-could-this-mean-for-xbox-helix-xbox-games-studios-or-xbox-exclusives
-Category: Tech Business & Markets
+Author:   Etiido Uko
+Source:   Tom's Hardware UK
+URL:      https://www.tomshardware.com/tech-industry/artificial-intelligence/microsoft-warns-gpu-mining-malware-is-being-spread-to-users-through-seo-poisoning-and-ai-chatbots-cryptojacking-campaign-targets-gamers-and-high-end-pc-users-with-downloads-disguised-as-popular-pc-utilities
+Category: Cybersecurity
