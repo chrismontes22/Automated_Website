@@ -1,20 +1,20 @@
-Bitcoin’s brutal 5.5% weekly slide exposes the mechanical heart of a market in crisis
+New Report Suggests Age Verification Service Used By PlayStation And Meta Is A Privacy Mess
 ============================================================
 
-Bitcoin prices have fallen to approximately $72,800 following significant institutional outflows from U.S. spot ETFs and heightened geopolitical tensions stemming from recent U.S. airstrikes near the Strait of Hormuz.
+A new report from researchers at Georgia Tech and UC Berkeley alleges that Yoti’s age verification software collects excessive user data and shares sensitive information with third-party services.
 
 ### Key Points
-- Bitcoin has declined over 5.5% in five days, dropping from highs above $77,000 to roughly $72,600.
-- BlackRock’s iShares Bitcoin Trust (IBIT) recorded $527.84 million in net outflows on Wednesday, its second-largest single-day withdrawal.
-- Total U.S. spot Bitcoin ETF outflows reached $733.43 million on Wednesday, the highest daily combined total since late January.
-- A single investor executed a $1.29 billion dark-pool block trade of IBIT shares on Tuesday, contributing to record-high ETF trading volumes.
-- Analysts attribute the volatility to a combination of geopolitical instability and a mechanical "cooling" period for institutional investors.
+- Researchers presented the study, "Papers, Please: A First Look at Age Verification on the Web," at the IEEE Symposium on Security and Privacy on May 18.
+- Yoti software reportedly gathers unnecessary device metadata, including OS versions, RAM, connection types, and CPU architecture, which could enable unauthorized user tracking.
+- The report identifies that Yoti shared sensitive telemetry with the payment processor Stripe, potentially allowing for the identification of users across different websites.
+- Yoti claims to have resolved the issue regarding Stripe’s access to first-party website data, though researchers have not independently verified the effectiveness of this fix.
+- Yoti’s age verification tools are currently utilized by major platforms including Meta, TikTok, and PlayStation to confirm user age.
 
 ### Why it Matters
-The shift toward institutional ETF ownership has transformed Bitcoin into a market governed by mechanical, high-volume trading rather than purely speculative narratives. This infrastructure now acts as a shock absorber, but it also facilitates rapid capital outflows that can amplify price volatility during periods of global uncertainty.
+This report raises significant privacy concerns regarding the data collection practices of identity verification services used by millions of internet users. It highlights the potential for third-party tracking and the risks associated with sharing granular device telemetry during standard security checks.
 
 ============================================================
-Author:   Jacob Thomas
-Source:   Naturalnews.com
-URL:      https://www.naturalnews.com/2026-05-30-bitcoin-weekly-slides-exposes-market-in-crisis.html
-Category: Tech Business & Markets
+Author:   Lewis Parker
+Source:   Kotaku
+URL:      https://kotaku.com/new-report-suggests-age-verification-service-used-by-playstation-and-meta-is-a-privacy-mess-2000700789
+Category: Cybersecurity

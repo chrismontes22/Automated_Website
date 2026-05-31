@@ -1,20 +1,20 @@
-Malicious npm packages abuse dependency confusion to profile developer environments
+Kevin O'Leary claims Chinese propaganda is to blame for anti-datacenter backlash, 'hundreds of millions of dollars' being spent to kill US dominance in AI — industry proponents and Trump administration reinforce claims of foreign interference
 ============================================================
 
-Microsoft Threat Intelligence has identified a sophisticated supply chain attack using malicious npm packages to perform reconnaissance on corporate environments through dependency confusion and obfuscated payloads.
+Investor Kevin O'Leary and U.S. officials allege that foreign propaganda is fueling local opposition to massive data center projects, though residents cite legitimate environmental and resource concerns.
 
 ### Key Points
-- Attackers published malicious packages across nine organizational scopes between May 28 and May 29, 2026, impersonating legitimate internal enterprise infrastructure.
-- The campaign utilized three npm maintainer accounts—mr.4nd3r50n, ce-rwb, and t-in-one—to distribute packages that execute obfuscated reconnaissance scripts during installation.
-- Malicious code automatically collects system information, environment variables, and developer context, sending data to a command-and-control server at oob.moika[.]tech.
-- The attack architecture includes a "reconnaissance-only" mode, allowing the operator to identify high-value targets for potential future exploitation.
-- Microsoft has confirmed the malicious repositories were removed from the npm registry following forensic investigation and reporting.
+- Billionaire investor Kevin O'Leary is proposing a $100-billion, 40,000-acre data center project in Utah.
+- O'Leary and Interior Secretary Doug Burgum claim opposition to such projects is driven by Chinese-funded "dark money" and foreign-directed propaganda.
+- Neither O'Leary nor government officials have provided verifiable evidence to support the allegations of foreign interference in local protests.
+- Local residents and critics argue that data centers strain limited water supplies, increase electricity costs, and contribute to environmental degradation.
+- Industry analysts note that while foreign influence campaigns may exist, they are not the primary driver of widespread public skepticism toward AI infrastructure.
 
 ### Why it Matters
-This campaign demonstrates a high level of sophistication by mimicking internal corporate namespaces to trick developers into installing malicious dependencies. Organizations should audit their CI/CD pipelines and developer environments for these packages to prevent potential credential theft and unauthorized system access.
+The debate highlights the growing tension between the rapid expansion of AI infrastructure and the resource constraints of local communities. As the U.S. and China engage in a global AI arms race, these projects face increasing scrutiny over their long-term impact on power grids, water security, and local economies.
 
 ============================================================
-Author:   Microsoft Defender Security Research Team
-Source:   Microsoft.com
-URL:      https://www.microsoft.com/en-us/security/blog/2026/05/29/33-malicious-npm-packages-abuse-dependency-confusion-profile-developer-environments/
-Category: Cybersecurity
+Author:   editors@tomshardware.com (Bruno Ferreira) , Bruno Ferreira
+Source:   Tom's Hardware UK
+URL:      https://www.tomshardware.com/tech-industry/artificial-intelligence/kevin-oleary-claims-chinese-propaganda-is-to-blame-for-anti-datacenter-sentiment-industry-proponents-and-trump-administration-reinforce-claims-of-foreign-interference
+Category: Tech Business & Markets
