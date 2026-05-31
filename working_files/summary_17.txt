@@ -1,20 +1,20 @@
-Closing the AI literacy gap is the real gender equalizer in tech
+Malicious npm packages abuse dependency confusion to profile developer environments
 ============================================================
 
-Artificial intelligence is lowering technical barriers to entrepreneurship, offering a critical opportunity to close the gender gap in technology by enabling women to become creators rather than just users.
+Microsoft Threat Intelligence has identified a sophisticated supply chain attack using malicious npm packages to perform reconnaissance on corporate environments through dependency confusion and obfuscated payloads.
 
 ### Key Points
-- No-code AI platforms allow individuals to build digital products and automate workflows without requiring traditional software engineering expertise or large development teams.
-- AI literacy is becoming a fundamental skill for career progression and economic mobility across sectors including healthcare, education, and retail.
-- Major corporations like Meta, Microsoft, and Amazon are restructuring workforces to prioritize AI, increasing the necessity for workers to master AI-driven workflows.
-- By automating repetitive tasks like scheduling and data handling, AI provides female founders with more capacity to focus on leadership and strategic business growth.
-- Inclusive participation in AI development ensures that future technologies reflect diverse perspectives, preventing the reinforcement of existing societal and gender-based inequalities.
+- Attackers published malicious packages across nine organizational scopes between May 28 and May 29, 2026, impersonating legitimate internal enterprise infrastructure.
+- The campaign utilized three npm maintainer accounts—mr.4nd3r50n, ce-rwb, and t-in-one—to distribute packages that execute obfuscated reconnaissance scripts during installation.
+- Malicious code automatically collects system information, environment variables, and developer context, sending data to a command-and-control server at oob.moika[.]tech.
+- The attack architecture includes a "reconnaissance-only" mode, allowing the operator to identify high-value targets for potential future exploitation.
+- Microsoft has confirmed the malicious repositories were removed from the npm registry following forensic investigation and reporting.
 
 ### Why it Matters
-The shift toward AI-driven production represents a fundamental change in who can participate in the digital economy and influence future technological systems. If women are actively encouraged to build with these tools, they can overcome historical barriers to funding and technical access, ultimately fostering a more equitable and innovative business landscape.
+This campaign demonstrates a high level of sophistication by mimicking internal corporate namespaces to trick developers into installing malicious dependencies. Organizations should audit their CI/CD pipelines and developer environments for these packages to prevent potential credential theft and unauthorized system access.
 
 ============================================================
-Author:   Cien Solon
-Source:   TechRadar
-URL:      https://www.techradar.com/pro/closing-the-ai-literacy-gap-is-the-real-gender-equalizer-in-tech
-Category: Artificial Intelligence
+Author:   Microsoft Defender Security Research Team
+Source:   Microsoft.com
+URL:      https://www.microsoft.com/en-us/security/blog/2026/05/29/33-malicious-npm-packages-abuse-dependency-confusion-profile-developer-environments/
+Category: Cybersecurity

@@ -1,20 +1,20 @@
-Real-time LLM Inference on Standard GPUs: 3k tokens/s per request
+Atmos Is a Weather App By Photographers, for Photographers
 ============================================================
 
-Kog has launched a high-speed inference engine that optimizes GPU software stacks to achieve 3,000 tokens per second for single-request AI agent workloads on standard datacenter hardware.
+Photographer Matthew Raifman has launched Atmos, a specialized iOS weather application that provides photographers with predictive shootability scores based on complex atmospheric data, sun positioning, and specific terrain analysis.
 
 ### Key Points
-- The Kog Inference Engine achieves high speeds by replacing standard multi-kernel stacks with a "monokernel" that runs as a single, persistent GPU program.
-- Performance is bottlenecked by memory bandwidth rather than compute power, allowing 8-GPU nodes to reach speeds previously reserved for dedicated inference hardware.
-- The company’s "Laneformer" architecture uses Delayed Tensor Parallelism to overlap cross-device communication with computation, reducing latency in multi-GPU setups.
-- A public tech preview is available at playground.kog.ai, demonstrating the engine's capabilities using a 2B-parameter coding model on an 8x AMD MI300X node.
-- Kog is a Paris-based startup founded in 2023 that has raised $5 million to focus on low-level GPU engineering for autonomous AI agents.
+- Atmos aggregates data on cloud altitude, wind, humidity, and sun angles to generate photography-specific condition scores.
+- The app features a "horizon gap" analysis to help photographers identify optimal lighting windows for sunsets and sunrises.
+- It tracks NOAA space weather data, including Kp index and solar wind, to assist users in predicting aurora visibility.
+- The platform provides independent scoring for 12 photography genres, including astrophotography, wildlife, and long-exposure shots.
+- Atmos is currently available on iOS for $3.99 per month following a two-week free trial period.
 
 ### Why it Matters
-As AI agents shift from simple chatbots to complex, iterative systems, the speed of single-request token generation has become the primary bottleneck for productivity. By unlocking the full memory bandwidth of existing datacenter GPUs, this technology enables faster reasoning and tool-use loops without requiring proprietary inference hardware.
+This app streamlines the pre-shoot planning process by replacing multiple weather services with a single, specialized tool tailored to the technical needs of outdoor photographers. By interpreting raw meteorological data into actionable shootability scores, it helps professionals and hobbyists maximize their time in the field.
 
 ============================================================
-Author:   Kog Team
-Source:   Blog.kog.ai
-URL:      https://blog.kog.ai/real-time-llm-inference-on-standard-gpus-3-000-tokens-s-per-request/
-Category: Artificial Intelligence
+Author:   Jeremy Gray
+Source:   PetaPixel
+URL:      https://petapixel.com/2026/05/29/atmos-is-a-weather-app-by-photographers-for-photographers/
+Category: Phones, Laptops, and Gadgets

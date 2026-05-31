@@ -1,20 +1,20 @@
-"They have the biggest bullsh*t detectors on the planet": How the unlikely EVE Online x Google DeepMind AI partnership landed with players
+PAN-OS GlobalProtect Authentication Bypass (CVE-2026-0257) Under Active Exploitation
 ============================================================
 
-Fenris Creations has partnered with Google DeepMind to integrate AI research into EVE Online, aiming to modernize the space MMO’s aging codebase and enhance non-player character interactions.
+Palo Alto Networks has confirmed active exploitation of a medium-severity authentication bypass vulnerability, tracked as CVE-2026-0257, affecting GlobalProtect portals and gateways within its PAN-OS and Prisma Access software.
 
 ### Key Points
-- Fenris Creations, formerly CCP Games, granted Google DeepMind a minority stake to train AI agents on an offline version of EVE Online.
-- Developers are utilizing AI "coaching agents" to identify memory and security issues within the game's 30-year-old "spaghetti code."
-- The partnership aims to revitalize mission-giving NPCs by using generative AI to make character interactions feel more dynamic and alive.
-- Despite widespread industry backlash against AI in gaming, EVE Online’s playerbase has remained largely receptive or cautiously curious toward the initiative.
-- Google DeepMind previously gained recognition for developing Grandmaster-ranked AI agents for StarCraft 2 and mastering complex board games like Go.
+- The vulnerability, assigned a CVSS score of 7.8, allows unauthorized actors to establish VPN connections by bypassing security restrictions.
+- Exploitation attempts were first identified by Rapid7 on May 17, 2026, with a second wave of activity occurring on May 21.
+- Affected systems include firewalls where authentication override cookies are enabled alongside specific certificate configurations.
+- Palo Alto Networks released an official advisory on May 13, 2026, urging administrators to apply available patches immediately.
+- Temporary mitigations include disabling the authentication override feature or generating a new, dedicated certificate for authentication processes.
 
 ### Why it Matters
-This collaboration represents a rare instance where a dedicated gaming community has embraced AI integration, largely due to the potential for fixing long-standing technical debt. If successful, the project could provide a blueprint for using machine learning to maintain and evolve massive, legacy software environments without alienating core users.
+This vulnerability poses a significant risk because it allows attackers to gain unauthorized access to internal enterprise networks through edge-facing VPN appliances. Organizations must prioritize patching or applying mitigations to prevent potential data breaches and unauthorized network entry.
 
 ============================================================
-Author:   James Archer
-Source:   Rock Paper Shotgun
-URL:      https://www.rockpapershotgun.com/they-have-the-biggest-bullsht-detectors-on-the-planet-how-the-unlikely-eve-online-x-google-deepmind-ai-partnership-landed-with-players
-Category: Artificial Intelligence
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/05/pan-os-globalprotect-authentication.html
+Category: Cybersecurity
