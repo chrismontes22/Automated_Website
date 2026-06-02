@@ -1,19 +1,20 @@
-IPOs are no longer Wall Street's starting line — they're the exit ramp: Chart of the Day
+OpenAI Codex Authentication Tokens Stolen in codexui-android npm Supply Chain Attack
 ============================================================
 
-SpaceX is nearing a potential public listing 24 years after its founding, highlighting a growing trend where major technology companies remain private for decades before entering public markets.
+Cybersecurity researchers have identified a malicious supply chain campaign targeting OpenAI Codex developers through a compromised npm package and Android applications that exfiltrate sensitive authentication tokens to attackers.
 
 ### Key Points
-- SpaceX is following a long-term private growth strategy that contrasts with the rapid IPO timelines of early tech giants like Amazon and Apple.
-- Companies such as Reddit and Palantir have recently waited nearly two decades before pursuing public listings, signaling a shift in corporate financing norms.
-- Historical data shows that early tech leaders typically went public within three to six years of their founding, compared to the decade-plus wait common today.
-- The modern IPO process is increasingly serving as an exit strategy for early investors and employees rather than a primary vehicle for initial capital growth.
+- The malicious npm package "codexui-android" has recorded over 29,000 weekly downloads and embeds code to steal local Codex authentication tokens.
+- Stolen data includes access, refresh, and ID tokens, which are sent to a malicious server masquerading as the monitoring platform Sentry.
+- Two Android applications, "OpenClaw Codex Claude AI Agent" and "Codex," have been identified as part of the campaign, totaling over 60,000 downloads.
+- The attacker, linked to the npm account "friuns" and developer "BrutalStrike," uses a PRoot sandbox to extract credentials from the ~/.codex/auth.json file.
+- Researchers warn that stolen refresh tokens provide attackers with persistent, indefinite access to a user's account and associated capabilities.
 
 ### Why it Matters
-This shift forces public market investors to rely on ETFs and proxy stocks to gain exposure to high-growth companies that previously would have been accessible much earlier. As firms stay private longer, the most significant value creation now occurs outside the reach of traditional retail and public market participants.
+This campaign highlights a growing trend of threat actors targeting AI developer tools to gain unauthorized access to sensitive cloud environments and user data. Because the stolen refresh tokens do not expire, victims face long-term security risks that persist even after initial detection.
 
 ============================================================
-Author:   Jared Blikre
-Source:   Yahoo Entertainment
-URL:      https://finance.yahoo.com/markets/article/ipos-are-no-longer-wall-streets-starting-line--theyre-the-exit-ramp-chart-of-the-day-114434009.html
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/06/openai-codex-authentication-tokens.html
+Category: Cybersecurity

@@ -1,20 +1,20 @@
-How the House Financial Services Committee is taking on tokenization: State of Crypto
+Stop managing vulnerabilities and start managing scanner assumptions
 ============================================================
 
-House Financial Services Committee Chairman French Hill identified the tokenization of real-world assets as the next major policy priority for his committee following recent progress on stablecoin legislation.
+Security leaders must recognize that vulnerability scanners often produce inconsistent results due to underlying structural differences in how tools identify packages, match data, and interpret security metadata.
 
 ### Key Points
-- Chairman French Hill stated that the committee is evaluating whether tokenization requires new federal legislation or can be managed through existing regulatory frameworks.
-- The committee held a hearing in late March to assess how the SEC and bank regulators can facilitate the tokenization of assets like common stocks.
-- Hill highlighted the potential for tokenizing commercial bank deposits to improve settlement speeds and reduce fraud, similar to the digitization of equity markets in the 1980s.
-- The committee continues to push for bipartisan consensus on the Clarity Act, which aims to establish a comprehensive market structure for digital assets.
-- Future policy efforts will focus on addressing interoperability and compliance challenges within blockchain-based financial systems.
+- Industry-standard scanners like Grype and Trivy can show an 80% divergence in vulnerability findings when analyzing the exact same container image.
+- Discrepancies arise from inconsistent use of CPE and PURL identifiers, which lack standardized formatting across different software ecosystems.
+- Vulnerability databases, including NVD and OSV, provide varying levels of coverage and update speeds, leading to further reporting inconsistencies.
+- SBOM generators significantly impact scan results, as different tools include or omit metadata that scanners rely on to match vulnerabilities.
+- Security teams often unknowingly rely on default suppression rules or vendor-specific scoring logic that can mask critical risks or inflate false positives.
 
 ### Why it Matters
-The House Financial Services Committee serves as a primary oversight body for federal regulators, meaning its focus on tokenization will likely dictate the pace and direction of digital asset adoption in traditional finance. By determining the necessity of new laws versus regulatory guidance, the committee's actions will directly influence how financial institutions integrate blockchain technology into existing market infrastructure.
+Relying on unverified scanner output creates a false sense of security that can leave critical vulnerabilities undetected or overwhelm teams with irrelevant data. Organizations must audit their toolchains and document internal suppression rules to ensure their security programs produce reliable, actionable intelligence rather than just raw numbers.
 
 ============================================================
-Author:   Nikhilesh De
-Source:   CoinDesk
-URL:      https://www.coindesk.com/policy/2026/05/31/how-the-house-financial-services-committee-is-taking-on-tokenization-state-of-crypto
-Category: Tech Business & Markets
+Author:   Lexi Selldorff
+Source:   TechRadar
+URL:      https://www.techradar.com/pro/stop-managing-vulnerabilities-and-start-managing-scanner-assumptions
+Category: Cybersecurity
