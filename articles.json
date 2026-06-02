@@ -1,5 +1,185 @@
 [
   {
+    "author": "BeauHD",
+    "source": "Slashdot.org",
+    "url": "https://it.slashdot.org/story/26/06/01/1624228/red-hat-npm-packages-compromised-to-spread-a-credential-stealing-worm",
+    "summary": "More than 30 official Red Hat Cloud Services npm packages were compromised by the Miasma malware, which steals sensitive developer credentials through a malicious automated preinstall script.\n\n### Key Points\n- Aikido Security identified over 30 compromised Red Hat Cloud Services packages containing the Miasma credential-stealing worm.\n- The attack originated from a compromised GitHub Actions CI/CD pipeline rather than a stolen npm token.\n- Malicious code executes automatically upon installation via a hidden 4.2 MB obfuscated payload in the package.json file.\n- The malware targets AWS, GCP, and Azure credentials, alongside SSH keys, Kubernetes tokens, and various CI/CD secrets.\n- Users who installed affected packages since June 1, 2026, are advised to rotate all cloud and development environment credentials immediately.\n\n### Why it Matters\nThis supply-chain attack highlights the critical vulnerability of automated CI/CD pipelines when used to publish official software packages. Organizations must now treat all development environment secrets as compromised if they have utilized these specific Red Hat packages, underscoring the need for rigorous dependency auditing.",
+    "processed_at": "2026-06-02T21:47:37.074478",
+    "category": "Cybersecurity",
+    "title": "Red Hat npm Packages Compromised to Spread a Credential-Stealing Worm"
+  },
+  {
+    "author": "patrick.farmer@futurenet.com (Patrick Farmer) , Patrick Farmer",
+    "source": "Android Central",
+    "url": "https://www.androidcentral.com/accessories/storage/samsungs-1tb-portable-t9-ssd-just-scored-a-rare-discount-at-amazon-score-1tb-of-storage-for-usd0-25-per-gig",
+    "summary": "Amazon is currently offering a 13% discount on the 1TB Samsung T9 portable SSD, reducing the price to $249.99 amid ongoing market volatility in storage and RAM pricing.\n\n### Key Points\n- The 1TB Samsung T9 portable SSD is discounted to $249.99, with larger 2TB and 4TB models seeing deeper price cuts of 17% and 30% respectively.\n- The device features transfer speeds reaching 2,000MB/s and includes AES 256-bit hardware encryption for enhanced data security.\n- Designed for durability, the T9 is built to withstand drops from heights of up to 9.8 feet.\n- The drive incorporates an advanced thermal cooling system to prevent overheating during intensive data transfer tasks.\n\n### Why it Matters\nThis discount provides a rare opportunity for consumers to acquire reliable external storage during a period of rising hardware costs. It may also signal broader price adjustments for portable drives ahead of the upcoming Amazon Prime Day 2026 sales event.",
+    "processed_at": "2026-06-02T21:47:47.523571",
+    "category": "Phones, Laptops, and Gadgets",
+    "title": "Samsung's 1TB portable T9 SSD just scored a rare discount at Amazon — score 1TB of storage for $0.25 per gig"
+  },
+  {
+    "author": "Tim O’Reilly",
+    "source": "Oreilly.com",
+    "url": "https://www.oreilly.com/radar/ai-sovereignty-and-the-architecture-of-participation/#BlogPosting",
+    "summary": "Nations are increasingly pursuing technological and medical sovereignty by building domestic infrastructure to reduce reliance on centralized global supply chains and dominant foreign technology firms.\n\n### Key Points\n- Brazil is expanding its domestic vaccine and pharmaceutical manufacturing capacity through public institutions like Fiocruz and Butantan to ensure medical independence.\n- Countries including India, Japan, and members of the EU are launching national AI initiatives to develop local compute infrastructure and reduce dependence on American and Chinese hyperscalers.\n- Experts argue that true sovereignty requires physical infrastructure—such as data centers, power grids, and chips—rather than just access to open-source model weights.\n- The current global trade model is criticized for concentrating value at central hubs, prompting a shift toward federated systems where participants retain more control.\n- Industrial policy and public procurement are identified as essential tools for building the foundational capacity needed to support sovereign technology ecosystems.\n\n### Why it Matters\nThis shift toward sovereign infrastructure represents a fundamental move away from the neoliberal model of globalized trade toward a more federated, decentralized economic architecture. By prioritizing local capacity, nations aim to prevent the \"enshittification\" and platform dominance that have historically allowed a few powerful entities to control essential technologies and resources.",
+    "processed_at": "2026-06-02T21:47:56.189592",
+    "category": "Artificial Intelligence",
+    "title": "AI Sovereignty and the Architecture of Participation"
+  },
+  {
+    "author": "info@thehackernews.com (The Hacker News)",
+    "source": "Internet",
+    "url": "https://thehackernews.com/2026/06/weekly-recap-new-linux-flaw-pan-os.html",
+    "summary": "Security researchers report a surge in cyberattacks leveraging AI-driven automation, unpatched software vulnerabilities, and malicious repository packages to compromise enterprise systems and steal sensitive user credentials globally.\n\n### Key Points\n- Palo Alto Networks confirmed active exploitation of a medium-severity authentication bypass vulnerability (CVE-2026-0257) affecting PAN-OS and Prisma Access firewalls.\n- A critical zero-day vulnerability in the Gogs Git service allows unauthenticated remote code execution, enabling attackers to dump credentials and modify repository code.\n- CrowdStrike and partners dismantled the GlassWorm malware operation, which distributed trojanized VS Code extensions and malicious Python packages via Russian-linked infrastructure.\n- CERT-In issued new guidance urging organizations to patch critical internet-facing vulnerabilities within 12 hours to counter the rapid speed of AI-assisted exploitation.\n- A sophisticated phishing campaign using the EvilTokens platform is abusing OAuth 2.0 device authorization flows to conduct large-scale credential theft.\n\n### Why it Matters\nThe rapid integration of AI into cybercriminal workflows is significantly compressing the time between vulnerability disclosure and active exploitation, leaving traditional security teams with smaller windows for remediation. Organizations must prioritize patching internet-facing systems and auditing automated tool configurations to mitigate the risks posed by these increasingly efficient and low-cost attack vectors.",
+    "processed_at": "2026-06-02T21:48:08.473973",
+    "category": "Cybersecurity",
+    "title": "⚡ Weekly Recap: New Linux Flaw, PAN-OS Exploit, AI-Powered Attacks, OAuth Phishing and More"
+  },
+  {
+    "author": "Katelyn Chedraoui",
+    "source": "CNET",
+    "url": "https://www.cnet.com/tech/services-and-software/florida-sues-openai-chatgpt-safety-lawsuit-news/",
+    "summary": "Florida has become the first U.S. state to sue OpenAI and CEO Sam Altman, alleging the company engaged in deceptive trade practices regarding ChatGPT’s safety and user risks.\n\n### Key Points\n- Florida Attorney General James Uthmeier filed the civil lawsuit, accusing OpenAI of prioritizing market value and profits over user safety.\n- The complaint alleges that ChatGPT provides children with access to harmful content, including information regarding eating disorders and self-harm.\n- State officials are investigating whether the chatbot played a role in planning a 2023 mass shooting at Florida State University.\n- The lawsuit claims OpenAI willfully ignored internal and external warnings about the potential for cognitive decline and the spread of dangerous misinformation.\n- OpenAI maintains that it is committed to implementing significant protections for minors and parents using its AI platforms.\n\n### Why it Matters\nThis legal action marks a significant escalation in state-level efforts to regulate artificial intelligence companies through consumer protection laws. The outcome could establish a critical legal precedent for how tech firms are held liable for the societal impacts and safety risks associated with their generative AI products.",
+    "processed_at": "2026-06-02T21:48:18.087885",
+    "category": "Artificial Intelligence",
+    "title": "'A Web of Deceit': Florida Sues OpenAI Over ChatGPT Safety Concerns"
+  },
+  {
+    "author": "Lauren Feiner",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/policy/940220/microsoft-ftc-antitrust-investigation-cloud-ai",
+    "summary": "The Federal Trade Commission is investigating Microsoft over potential antitrust violations, focusing on whether the company uses exclusionary practices within its Azure cloud services and artificial intelligence sectors.\n\n### Key Points\n- The FTC issued civil investigative demands to multiple competitors to examine Microsoft’s licensing, bundling, and interoperability practices.\n- Investigators are specifically probing whether Microsoft leverages its market dominance to gain an unfair advantage in cloud computing and AI.\n- Microsoft maintains that its business practices promote competition and is cooperating fully with the ongoing federal inquiry.\n- Similar antitrust investigations into Microsoft’s cloud services are currently underway in the European Union, the United Kingdom, and Japan.\n- The probe follows years of complaints from rivals regarding 2019 licensing changes that increased costs for running Windows on non-Azure infrastructure.\n\n### Why it Matters\nThis investigation signals a potential shift in regulatory scrutiny toward Microsoft, which has largely avoided the aggressive antitrust litigation faced by other major technology firms. A formal legal challenge could significantly alter the competitive landscape for cloud computing and AI, potentially forcing changes to how the company bundles its software and services.",
+    "processed_at": "2026-06-02T21:48:26.539000",
+    "category": "Tech Business & Markets",
+    "title": "Microsoft could be the next Big Tech antitrust target"
+  },
+  {
+    "author": "Pete Cottell",
+    "source": "Wired",
+    "url": "https://www.wired.com/review/universal-audio-volt-876-usb-audio-interface/",
+    "summary": "Modern audio interfaces have evolved from complex, driver-dependent hardware into affordable, plug-and-play devices that allow creators to record high-quality music directly onto computers, tablets, and smartphones with minimal latency.\n\n### Key Points\n- Early 2000s audio interfaces often required difficult driver configurations and suffered from significant latency issues.\n- Modern class-compliant hardware allows devices to function immediately upon connection without the need for proprietary software installations.\n- Current audio interfaces are compatible with various operating systems, including Windows, macOS, iOS, and Android.\n- High-quality recording equipment is now widely accessible for under $200 through major online retailers like Amazon.\n- The shift toward plug-and-play technology has lowered the barrier to entry for home studio production and social media content creation.\n\n### Why it Matters\nThe transition to class-compliant audio hardware has democratized music production by removing technical barriers that previously hindered amateur creators. This shift allows artists to focus on content creation rather than troubleshooting, significantly expanding the accessibility of professional-grade recording tools for the general public.",
+    "processed_at": "2026-06-02T21:48:44.770532",
+    "category": "Phones, Laptops, and Gadgets",
+    "title": "Universal Audio Volt 876 USB Audio Interface Review: Pro-Level Polish"
+  },
+  {
+    "author": "Ashley Stewart",
+    "source": "Business Insider",
+    "url": "https://www.businessinsider.com/microsoft-surveys-employees-sentiment-memo-2026-6",
+    "summary": "Microsoft’s latest internal employee survey reveals that staff feel increasingly energized and empowered, though they report declining satisfaction with managerial coaching, feedback, and overall team motivation.\n\n### Key Points\n- Microsoft’s \"Thriving\" score, measuring feelings of empowerment and meaningful work, rose 3 points to 79.\n- Employees rated security prioritization and team inclusion as top company strengths, both scoring 88 and 86 respectively.\n- Managerial effectiveness remains steady at 85%, but scores for coaching and clear feedback dropped by 5 and 4 points.\n- The survey included feedback from 71% of the workforce, totaling nearly 265,000 comments in the \"Employee Signals\" report.\n- Chief People Officer Amy Coleman acknowledged employee uncertainty resulting from recent organizational changes and increased performance pressure.\n\n### Why it Matters\nThese survey results highlight a growing disconnect between high-level corporate culture and the day-to-day support provided by middle management during a period of intense organizational transition. Addressing these gaps in leadership communication and coaching is critical for Microsoft to maintain employee retention and productivity amid ongoing shifts in company strategy.",
+    "processed_at": "2026-06-02T21:48:53.166611",
+    "category": "Tech Business & Markets",
+    "title": "Internal Microsoft employee surveys reveal how sentiment is changing inside the software giant"
+  },
+  {
+    "author": "Laura Hazard Owen",
+    "source": "Niemanlab.org",
+    "url": "https://www.niemanlab.org/2026/06/youll-need-journalism-so-distinctive-it-has-its-own-gravity-new-york-times-publisher-a-g-sulzberger-on-how-news-organizations-can-stand-up-to-ai/",
+    "summary": "New York Times publisher A.G. Sulzberger warned that AI companies are threatening the future of journalism by using copyrighted news content without permission, compensation, or proper attribution.\n\n### Key Points\n- A.G. Sulzberger criticized tech giants for \"strip-mining\" news websites to train AI models and repackage original reporting as their own.\n- The New York Times Company has invested over $20 million in legal actions against OpenAI, Microsoft, and Perplexity to protect its intellectual property.\n- Sulzberger urged news organizations to prioritize direct audience relationships and focus on distinctive, original reporting to remain viable in an AI-driven landscape.\n- Newsrooms were advised to establish clear ethical standards for internal AI use while aggressively adopting the technology to improve operational efficiency.\n\n### Why it Matters\nThis confrontation highlights a critical tension between the news industry and major technology firms regarding the sustainability of professional journalism in the digital age. If news organizations cannot secure compensation for their content, the resulting decline in original reporting could significantly weaken public accountability and democratic discourse.",
+    "processed_at": "2026-06-02T21:49:01.786448",
+    "category": "Tech Business & Markets",
+    "title": "“You’ll need journalism so distinctive it has its own gravity”: New York Times publisher A.G. Sulzberger on how news organizations can stand up to AI companies"
+  },
+  {
+    "author": "Phil Lees",
+    "source": "TechRadar",
+    "url": "https://www.techradar.com/pro/the-biggest-cyber-threats-businesses-face-in-2026",
+    "summary": "The UK Government’s 2025 Cyber Security Breaches Survey reveals that 43% of businesses faced attacks, highlighting the urgent need for organizations to defend against increasingly sophisticated, AI-driven cyber threats.\n\n### Key Points\n- The 2025 UK Government survey reports that 612,000 businesses and 61,000 charities suffered cyber breaches in the past year.\n- AI-powered phishing and deepfake impersonation are now primary methods used to manipulate employees into transferring funds or sharing credentials.\n- Ransomware-as-a-Service (RaaS) has lowered the barrier to entry for criminals, allowing less experienced attackers to launch high-volume, automated campaigns.\n- Supply chain vulnerabilities and cloud misconfigurations remain critical risks, as attackers exploit third-party trust and unprotected data storage.\n- Experts recommend adopting a zero-trust security model, implementing multi-factor authentication, and conducting regular employee training to mitigate human error.\n\n### Why it Matters\nCybersecurity is no longer just an IT concern but a fundamental business risk that can lead to significant financial loss and operational disruption. Organizations must prioritize proactive defense strategies to protect against evolving threats that target both digital infrastructure and human behavior.",
+    "processed_at": "2026-06-02T21:49:09.876293",
+    "category": "Cybersecurity",
+    "title": "The biggest cyber threats businesses face in 2026"
+  },
+  {
+    "author": "Hartley Charlton",
+    "source": "MacRumors",
+    "url": "https://www.macrumors.com/2026/06/01/foldable-iphone-rumored-to-feature-vapor-chamber/",
+    "summary": "Apple is reportedly on track for a September launch of its first foldable iPhone, the \"iPhone Ultra,\" which will feature advanced vapor chamber cooling despite ongoing manufacturing production challenges.\n\n### Key Points\n- The iPhone Ultra is expected to debut in September alongside the iPhone 18 Pro and Pro Max with a starting price near $2,000.\n- Leaker \"Fixed Focus Digital\" reports the device will utilize vapor chamber cooling to manage thermal performance for its A20 chip.\n- The foldable design measures 4.5mm in thickness, leading to the omission of features like Face ID, MagSafe, and a physical SIM slot.\n- Production reports indicate difficulties with surface-mount technology and pre-assembly processes, though the overall launch timeline remains unchanged.\n- Hardware specifications include a 7.8-inch inner display, a 5.5-inch cover display, and a C2 modem.\n\n### Why it Matters\nThis device represents Apple's first major entry into the foldable smartphone market, signaling a significant shift in the company's hardware design strategy. Successfully balancing extreme thinness with advanced thermal management will be critical for Apple to compete with established foldable rivals while maintaining its performance standards.",
+    "processed_at": "2026-06-02T21:53:27.247162",
+    "category": "Phones, Laptops, and Gadgets",
+    "title": "Foldable 'iPhone Ultra' Rumored to Feature Vapor Chamber Cooling Despite Thin Design"
+  },
+  {
+    "author": "Chris Hoffman",
+    "source": "PCWorld",
+    "url": "https://www.pcworld.com/article/2323370/your-antivirus-could-replace-your-vpn-password-manager-and-backup-app.html",
+    "summary": "Modern antivirus security suites like Norton 360 Deluxe now offer comprehensive, all-in-one protection by bundling essential digital tools into a single, convenient, and cost-effective subscription package for users.\n\n### Key Points\n- Security suites consolidate features including VPNs, password managers, cloud backup, and dark web monitoring into one unified dashboard.\n- Integrated dark web scanning alerts users if personal information, such as email addresses or credit card numbers, appears in known data breaches.\n- Built-in VPN services provide automatic protection for public Wi-Fi connections, often including features like kill switches and split tunneling.\n- Software updaters scan for outdated applications to mitigate security risks, while parental controls allow for screen time management and location tracking.\n- Privacy monitors help users identify and remove personal data from third-party data broker websites.\n\n### Why it Matters\nConsolidating these tools into a single suite simplifies digital security management and eliminates the need to juggle multiple individual subscriptions. This all-in-one approach provides significant value and convenience for users who want robust protection without the complexity of managing disparate software applications.",
+    "processed_at": "2026-06-02T21:53:35.229089",
+    "category": "Cybersecurity",
+    "title": "Your antivirus could replace your VPN, password manager, and backup app"
+  },
+  {
+    "author": "Christine Persaud",
+    "source": "MakeUseOf",
+    "url": "https://www.makeuseof.com/the-usb-drive-in-your-drawer-is-slowly-losing-your-data-right-now/",
+    "summary": "USB flash drives are unreliable for long-term data storage because NAND flash memory degrades over time, making them better suited for temporary file transfers rather than permanent archival purposes.\n\n### Key Points\n- USB flash drives typically have a lifespan of about 10 years due to electron leakage within their NAND flash memory cells.\n- Frequent read and write cycles accelerate data deterioration, increasing the risk of file corruption or permanent loss.\n- Environmental factors like extreme temperatures, high humidity, and dust can significantly shorten a drive's functional life.\n- Users should prioritize cloud storage or dedicated solid-state hard drives for sensitive, long-term backups of important personal documents and photos.\n- Proper maintenance, such as using reputable brands like SanDisk and safely ejecting drives, can help prevent immediate file corruption.\n\n### Why it Matters\nRelying on USB drives for long-term archival creates a significant risk of losing irreplaceable personal data like family photos or legal documents. Users should adopt more stable storage solutions to ensure their files remain accessible for decades rather than just a few years.",
+    "processed_at": "2026-06-02T21:57:54.736516",
+    "category": "Phones, Laptops, and Gadgets",
+    "title": "The USB drive in your drawer is slowly losing your data right now"
+  },
+  {
+    "author": "Trishla Ostwal",
+    "source": "Adweek",
+    "url": "https://www.adweek.com/media/anthropic-files-for-ipo-as-ai-race-hits-public-markets/",
+    "summary": "AI startup Anthropic has officially filed for an initial public offering, signaling a major move to test investor demand following a recent $965 billion post-money valuation.\n\n### Key Points\n- Anthropic filed for an IPO on Monday, allowing the company to go public pending a formal review by the Securities and Exchange Commission.\n- The company recently closed a $65 billion Series H funding round, achieving a $965 billion post-money valuation.\n- Founded in 2021 by former OpenAI executives, the firm focuses on safety-oriented large language models and its flagship AI assistant, Claude.\n- Anthropic is expanding its enterprise presence with tools like Claude Design, which automates the creation of marketing materials and sales presentations.\n\n### Why it Matters\nThis IPO filing highlights the rapid financial escalation of top-tier AI firms as they compete for dominance in the enterprise software market. The company's public market debut will serve as a critical benchmark for investor confidence in the long-term profitability of generative AI technologies.",
+    "processed_at": "2026-06-02T21:58:03.314997",
+    "category": "Tech Business & Markets",
+    "title": "Anthropic Files for IPO as AI Race Hits Public Markets"
+  },
+  {
+    "author": "Steve Weisman, Contributor, \n Steve Weisman, Contributor\n https://www.forbes.com/sites/steveweisman/",
+    "source": "Forbes",
+    "url": "https://www.forbes.com/sites/steveweisman/2026/06/01/crypto-ponzi-scheme-convictions-key-red-flags-investors-must-know/",
+    "summary": "Rathnakishore Giri has been sentenced to nine years in federal prison for orchestrating a cryptocurrency Ponzi scheme that defrauded investors while funding his own lavish, luxury lifestyle.\n\n### Key Points\n- Rathnakishore Giri falsely claimed to be an expert in Bitcoin derivatives trading to solicit funds from unsuspecting investors.\n- The scheme operated as a classic Ponzi fraud, using capital from new investors to pay returns to earlier participants.\n- Giri used stolen funds to purchase luxury items, including a Lamborghini, high-end watches, and private jet travel.\n- The Commodity Futures Trading Commission (CFTC) first charged Giri with fraud in 2022, yet he continued the scheme while awaiting sentencing.\n- Evidence included a recorded interaction where Giri admitted to an undercover federal agent that he fabricated a list of fake investors to appear legitimate.\n\n### Why it Matters\nThis case highlights the persistent danger of investment fraud in the unregulated cryptocurrency market, where perpetrators often exploit investor ignorance regarding complex financial derivatives. It serves as a critical reminder for individuals to verify the registration of financial advisers and conduct independent research before committing capital to high-yield, guaranteed-return opportunities.",
+    "processed_at": "2026-06-02T21:58:12.410454",
+    "category": "Tech Business & Markets",
+    "title": "Crypto Ponzi Scheme Convictions: Key Red Flags Investors Must Know"
+  },
+  {
+    "author": "Sheldon Reback, Shaurya Malwa, Saksham Diwan",
+    "source": "CoinDesk",
+    "url": "https://www.coindesk.com/markets/2026/06/01/bitcoin-ether-start-june-in-the-red-while-futures-show-taste-for-risk-xlm-hype-gain",
+    "summary": "Bitcoin and ether prices declined at the start of June amid geopolitical tensions, while Stellar’s XLM token surged following a major integration announcement with the financial firm DTCC.\n\n### Key Points\n- Bitcoin fell to $72,700 as spot bitcoin ETFs recorded 10 consecutive days of net outflows totaling $2.97 billion.\n- Stellar’s XLM token jumped 40% after the DTCC selected the Stellar network for its upcoming tokenized securities platform.\n- Derivatives data shows institutional risk appetite remains stable, with bitcoin open interest holding steady at $19.5 billion.\n- Hyperliquid’s HYPE token reached a record high of $73.94, driven by capital inflows into newly launched ETFs.\n- Global market sentiment was pressured by ongoing geopolitical tensions between the United States and Iran.\n\n### Why it Matters\nThe integration of the Stellar blockchain into the DTCC’s infrastructure marks a significant milestone for the adoption of public blockchains within traditional Wall Street clearing systems. This development highlights a growing institutional shift toward tokenizing real-world assets, potentially bridging the gap between decentralized finance and global securities markets.",
+    "processed_at": "2026-06-02T21:58:21.087465",
+    "category": "Tech Business & Markets",
+    "title": "Bitcoin, ether start June in the red while futures show taste for risk. XLM, HYPE gain"
+  },
+  {
+    "author": "Ben Lovejoy",
+    "source": "9to5Mac",
+    "url": "https://9to5mac.com/2026/06/01/controller-for-homekit-app-adds-ai-feature-just-say-it/",
+    "summary": "The Controller for HomeKit app has introduced a new AI-powered feature that allows users to create complex smart home automations and scenes using simple, natural language voice commands.\n\n### Key Points\n- The new \"just say it\" feature automatically generates HomeKit scenes and workflows based on user-provided descriptions.\n- Users can define specific triggers and actions, such as adjusting lighting levels or operating smart shades based on time or occupancy.\n- Controller for HomeKit operates on a subscription model, with an Essentials tier at $40 per year and a Plus tier at $80 per year.\n- A seven-day free trial is available for new users to test the AI automation capabilities before committing to a subscription.\n\n### Why it Matters\nThis update simplifies the often complex process of configuring smart home automations by removing the need for manual programming. By lowering the technical barrier to entry, the app could increase user engagement with advanced HomeKit features and influence how developers integrate generative AI into home management software.",
+    "processed_at": "2026-06-02T22:02:48.503649",
+    "category": "Artificial Intelligence",
+    "title": "Controller for HomeKit app adds AI feature: ‘Just say it’"
+  },
+  {
+    "author": "Yamini Rangan",
+    "source": "Hubspot.com",
+    "url": "https://blog.hubspot.com/marketing/ai-perception-reality-gap",
+    "summary": "HubSpot is challenging industry norms by prioritizing outcome-based AI strategies over mere activity, arguing that businesses should focus on measurable results rather than simply increasing token usage and automation.\n\n### Key Points\n- HubSpot transitioned to outcome-based pricing in April, citing a 25% faster ticket response rate and 76% more leads generated for its AI agent users.\n- The company argues that AI should function as a layer on top of existing business foundations rather than a replacement for human roles or core infrastructure.\n- Current AI development disproportionately favors large enterprises with dedicated engineering teams, leaving small and midsize businesses without accessible, integrated solutions.\n- HubSpot emphasizes that vendors are often incentivized to prioritize high token consumption, which conflicts with the customer's need for cost-efficient, high-impact business outcomes.\n- The firm advocates for a \"human-in-the-loop\" approach, asserting that trust, judgment, and relationship-building remain essential competitive advantages that AI cannot replicate.\n\n### Why it Matters\nThis shift in perspective highlights a growing tension between AI vendors focused on volume-based revenue and businesses seeking tangible return on investment. By aligning pricing models with specific outcomes, companies can better integrate AI into their workflows without sacrificing human expertise or operational stability.",
+    "processed_at": "2026-06-02T22:03:05.233792",
+    "category": "Artificial Intelligence",
+    "title": "The AI Perception Reality Gap"
+  },
+  {
+    "author": "kevinokemwa@outlook.com (Kevin Okemwa) , Kevin Okemwa",
+    "source": "Windows Central",
+    "url": "https://www.windowscentral.com/artificial-intelligence/microsofts-own-data-suggests-ai-is-more-expensive-than-hiring-humans-as-a-mystery-firm-burns-usd-500-million-on-claude-in-one-month",
+    "summary": "Microsoft is shifting its internal development workflows from Anthropic’s Claude Code to its own GitHub Copilot CLI as the company prepares to debut a new coding model at Build 2026.\n\n### Key Points\n- Microsoft is mandating that employees transition from Claude Code to the in-house GitHub Copilot CLI by the end of June.\n- The company maintains its multibillion-dollar Foundry partnership with Anthropic despite the internal shift in coding tools.\n- Microsoft plans to unveil a new proprietary coding model during its annual developer conference, Build 2026.\n- Reports indicate an unnamed corporation recently incurred $500 million in costs after failing to set usage limits on employee Claude AI licenses.\n- Microsoft CEO Satya Nadella noted that AI currently generates approximately 30% of the company's internal code.\n\n### Why it Matters\nThis transition highlights the growing tension between the high operational costs of generative AI and the need for companies to demonstrate clear financial returns. As investors become increasingly skeptical of AI spending, Microsoft’s move reflects a broader industry effort to consolidate internal tools and manage the massive expenses associated with large-scale AI deployment.",
+    "processed_at": "2026-06-02T22:03:13.471944",
+    "category": "Artificial Intelligence",
+    "title": "Microsoft’s own data suggests AI is more expensive than hiring humans, as a mystery firm burns USD 500 million on Claude in one month"
+  },
+  {
+    "author": "Neha Panjwani",
+    "source": "Barchart.com",
+    "url": "https://www.barchart.com/story/news/2233389/is-booking-holdings-stock-underperforming-the-nasdaq",
+    "summary": "Booking Holdings Inc. faces significant market pressure as its stock underperforms the Nasdaq Composite, despite maintaining a strong portfolio of travel brands and a consensus \"Strong Buy\" analyst rating.\n\n### Key Points\n- Booking Holdings maintains a $129.7 billion market cap, operating major travel platforms including Booking.com, Priceline, Agoda, Kayak, and OpenTable.\n- The stock has declined 23.6% over the past 52 weeks, currently trading below both its 50-day and 200-day moving averages.\n- First-quarter financial results exceeded expectations with an adjusted EPS of $1.14 and $5.53 billion in revenue.\n- Analysts remain optimistic, issuing a consensus \"Strong Buy\" rating with a mean price target of $222.78, representing a potential 33.1% upside.\n\n### Why it Matters\nThe company's recent stock underperformance highlights the volatility within the online travel sector compared to broader market indices like the Nasdaq. While current technical indicators suggest a bearish trend, the strong analyst consensus indicates potential for recovery as the company leverages its dominant market position.",
+    "processed_at": "2026-06-02T22:03:30.283625",
+    "category": "Tech Business & Markets",
+    "title": "Is Booking Holdings Stock Underperforming the Nasdaq?"
+  },
+  {
     "summary": "The macOS threat landscape is evolving as attackers increasingly utilize sophisticated trojans, AI-driven automation, and social engineering tactics to bypass Apple’s security measures and target developer credentials.\n\n### Key Points\n- Trojans now account for over 50% of Mac malware detections, with many infostealers incorporating backdoors for persistent system access.\n- North Korean threat actors are actively targeting developers via LinkedIn, using fake job offers and malicious coding challenges to deploy malware like BeaverTail and FlexibleFerret.\n- New malware variants, including Phoenix Worm and MonetaStealer, are increasingly modular and often evade detection by running primarily in system memory.\n- Apple continues to iterate on security, recently introducing Terminal command warnings, though attackers are bypassing these by using malicious applescript:// URL schemes.\n- Anthropic’s AI model, Claude Mythos, is being used by a consortium including Apple to proactively identify and patch zero-day vulnerabilities across operating systems.\n\n### Why it Matters\nThe shift toward modular, AI-assisted malware signals a transition from simple \"smash-and-grab\" attacks to long-term, persistent threats that prioritize credential harvesting and cloud infrastructure access. As these sophisticated techniques become more accessible, both individual users and enterprise organizations must adopt more rigorous security postures to defend against increasingly automated and deceptive social engineering campaigns.",
     "url": "https://9to5mac.com/2026/05/31/security-bite-q1-review-may-2026/",
     "category": "Cybersecurity",

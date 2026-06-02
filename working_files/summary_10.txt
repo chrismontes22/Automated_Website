@@ -1,20 +1,20 @@
-OpenAI Codex Authentication Tokens Stolen in codexui-android npm Supply Chain Attack
+The biggest cyber threats businesses face in 2026
 ============================================================
 
-Cybersecurity researchers have identified a malicious supply chain campaign targeting OpenAI Codex developers through a compromised npm package and Android applications that exfiltrate sensitive authentication tokens to attackers.
+The UK Government’s 2025 Cyber Security Breaches Survey reveals that 43% of businesses faced attacks, highlighting the urgent need for organizations to defend against increasingly sophisticated, AI-driven cyber threats.
 
 ### Key Points
-- The malicious npm package "codexui-android" has recorded over 29,000 weekly downloads and embeds code to steal local Codex authentication tokens.
-- Stolen data includes access, refresh, and ID tokens, which are sent to a malicious server masquerading as the monitoring platform Sentry.
-- Two Android applications, "OpenClaw Codex Claude AI Agent" and "Codex," have been identified as part of the campaign, totaling over 60,000 downloads.
-- The attacker, linked to the npm account "friuns" and developer "BrutalStrike," uses a PRoot sandbox to extract credentials from the ~/.codex/auth.json file.
-- Researchers warn that stolen refresh tokens provide attackers with persistent, indefinite access to a user's account and associated capabilities.
+- The 2025 UK Government survey reports that 612,000 businesses and 61,000 charities suffered cyber breaches in the past year.
+- AI-powered phishing and deepfake impersonation are now primary methods used to manipulate employees into transferring funds or sharing credentials.
+- Ransomware-as-a-Service (RaaS) has lowered the barrier to entry for criminals, allowing less experienced attackers to launch high-volume, automated campaigns.
+- Supply chain vulnerabilities and cloud misconfigurations remain critical risks, as attackers exploit third-party trust and unprotected data storage.
+- Experts recommend adopting a zero-trust security model, implementing multi-factor authentication, and conducting regular employee training to mitigate human error.
 
 ### Why it Matters
-This campaign highlights a growing trend of threat actors targeting AI developer tools to gain unauthorized access to sensitive cloud environments and user data. Because the stolen refresh tokens do not expire, victims face long-term security risks that persist even after initial detection.
+Cybersecurity is no longer just an IT concern but a fundamental business risk that can lead to significant financial loss and operational disruption. Organizations must prioritize proactive defense strategies to protect against evolving threats that target both digital infrastructure and human behavior.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/06/openai-codex-authentication-tokens.html
+Author:   Phil Lees
+Source:   TechRadar
+URL:      https://www.techradar.com/pro/the-biggest-cyber-threats-businesses-face-in-2026
 Category: Cybersecurity

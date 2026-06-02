@@ -1,22 +1,20 @@
-SpaceX Says It’s Sparking One Of Galaxy’s Most Advanced Civilizations
+⚡ Weekly Recap: New Linux Flaw, PAN-OS Exploit, AI-Powered Attacks, OAuth Phishing and More
 ============================================================
 
-SpaceX’s inclusion of claims regarding the development of a Kardashev II-level civilization in its SEC IPO filing has drawn scrutiny from space experts and potential regulatory concern.
+Security researchers report a surge in cyberattacks leveraging AI-driven automation, unpatched software vulnerabilities, and malicious repository packages to compromise enterprise systems and steal sensitive user credentials globally.
 
 ### Key Points
-- SpaceX founder Elon Musk claims the company’s satellite and AI initiatives will help humanity reach a Kardashev II civilization, which harnesses a star's total energy.
-- Space scholar Brian Hurley notes that Earth is currently rated below a Kardashev I civilization, making Musk’s assertion scientifically unsupported by current astronomical standards.
-- The Kardashev scale, created by Soviet astronomer Nikolai Kardashev, measures a civilization's technological advancement based on its ability to consume energy.
-- Experts suggest the SEC may investigate whether these ambitious claims in the company's S-1 filing are misleading to potential investors.
-- Musk has linked his vision for a Mars colony to the urgent need for a human sanctuary in the event of global thermonuclear conflict.
+- Palo Alto Networks confirmed active exploitation of a medium-severity authentication bypass vulnerability (CVE-2026-0257) affecting PAN-OS and Prisma Access firewalls.
+- A critical zero-day vulnerability in the Gogs Git service allows unauthenticated remote code execution, enabling attackers to dump credentials and modify repository code.
+- CrowdStrike and partners dismantled the GlassWorm malware operation, which distributed trojanized VS Code extensions and malicious Python packages via Russian-linked infrastructure.
+- CERT-In issued new guidance urging organizations to patch critical internet-facing vulnerabilities within 12 hours to counter the rapid speed of AI-assisted exploitation.
+- A sophisticated phishing campaign using the EvilTokens platform is abusing OAuth 2.0 device authorization flows to conduct large-scale credential theft.
 
 ### Why it Matters
-The inclusion of speculative, scientifically disputed claims in an official IPO filing creates potential legal and regulatory risks for SpaceX. If the SEC determines these statements are material and misleading, it could complicate the company's transition to a publicly traded entity.
+The rapid integration of AI into cybercriminal workflows is significantly compressing the time between vulnerability disclosure and active exploitation, leaving traditional security teams with smaller windows for remediation. Organizations must prioritize patching internet-facing systems and auditing automated tool configurations to mitigate the risks posed by these increasingly efficient and low-cost attack vectors.
 
 ============================================================
-Author:   Kevin Holden Platt, Contributor, 
- Kevin Holden Platt, Contributor
- https://www.forbes.com/sites/kevinholdenplatt/
-Source:   Forbes
-URL:      https://www.forbes.com/sites/kevinholdenplatt/2026/05/31/spacex-says-its-sparking-one-of-galaxys-most-advanced-civilizations/
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/06/weekly-recap-new-linux-flaw-pan-os.html
+Category: Cybersecurity

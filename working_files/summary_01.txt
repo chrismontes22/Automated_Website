@@ -1,20 +1,20 @@
-Security Bite Q1 Review: May 2026
+Red Hat npm Packages Compromised to Spread a Credential-Stealing Worm
 ============================================================
 
-The macOS threat landscape is evolving as attackers increasingly utilize sophisticated trojans, AI-driven automation, and social engineering tactics to bypass Apple’s security measures and target developer credentials.
+More than 30 official Red Hat Cloud Services npm packages were compromised by the Miasma malware, which steals sensitive developer credentials through a malicious automated preinstall script.
 
 ### Key Points
-- Trojans now account for over 50% of Mac malware detections, with many infostealers incorporating backdoors for persistent system access.
-- North Korean threat actors are actively targeting developers via LinkedIn, using fake job offers and malicious coding challenges to deploy malware like BeaverTail and FlexibleFerret.
-- New malware variants, including Phoenix Worm and MonetaStealer, are increasingly modular and often evade detection by running primarily in system memory.
-- Apple continues to iterate on security, recently introducing Terminal command warnings, though attackers are bypassing these by using malicious applescript:// URL schemes.
-- Anthropic’s AI model, Claude Mythos, is being used by a consortium including Apple to proactively identify and patch zero-day vulnerabilities across operating systems.
+- Aikido Security identified over 30 compromised Red Hat Cloud Services packages containing the Miasma credential-stealing worm.
+- The attack originated from a compromised GitHub Actions CI/CD pipeline rather than a stolen npm token.
+- Malicious code executes automatically upon installation via a hidden 4.2 MB obfuscated payload in the package.json file.
+- The malware targets AWS, GCP, and Azure credentials, alongside SSH keys, Kubernetes tokens, and various CI/CD secrets.
+- Users who installed affected packages since June 1, 2026, are advised to rotate all cloud and development environment credentials immediately.
 
 ### Why it Matters
-The shift toward modular, AI-assisted malware signals a transition from simple "smash-and-grab" attacks to long-term, persistent threats that prioritize credential harvesting and cloud infrastructure access. As these sophisticated techniques become more accessible, both individual users and enterprise organizations must adopt more rigorous security postures to defend against increasingly automated and deceptive social engineering campaigns.
+This supply-chain attack highlights the critical vulnerability of automated CI/CD pipelines when used to publish official software packages. Organizations must now treat all development environment secrets as compromised if they have utilized these specific Red Hat packages, underscoring the need for rigorous dependency auditing.
 
 ============================================================
-Author:   Arin Waichulis
-Source:   9to5Mac
-URL:      https://9to5mac.com/2026/05/31/security-bite-q1-review-may-2026/
+Author:   BeauHD
+Source:   Slashdot.org
+URL:      https://it.slashdot.org/story/26/06/01/1624228/red-hat-npm-packages-compromised-to-spread-a-credential-stealing-worm
 Category: Cybersecurity
