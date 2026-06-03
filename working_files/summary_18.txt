@@ -1,22 +1,21 @@
-Bitcoin Falls Below $70,000 For The First Time Since April
+ESPHome's Device Builder finally lets you compile multiple devices at once, and it changes everything
 ============================================================
 
-Bitcoin prices dropped below $70,000 for the first time since April after Michael Saylor’s firm, Strategy, sold a portion of its holdings to fund dividend payments to stockholders.
+The ESPHome 2026.5.0 update introduces a public beta of the Device Builder, featuring significant workflow improvements for managing and scaling large fleets of smart home devices efficiently.
 
 ### Key Points
-- Bitcoin fell to a low of $69,690 on Tuesday, marking a 3.8% daily decline and an 8.4% drop over the past week.
-- Strategy sold 32 bitcoins for approximately $2.5 million at an average price of $77,135 per token.
-- The company remains the largest institutional holder of the cryptocurrency, currently retaining 843,706 bitcoins.
-- Strategy’s stock price declined 5.85% following the SEC filing, reducing founder Michael Saylor’s net worth by $183 million.
-- Other major cryptocurrencies, including Ether, BNB, and XRP, remained largely unaffected by the bitcoin selloff.
+- The new Device Builder allows users to queue multiple firmware compilations simultaneously, replacing the previous sequential build process.
+- Real-time schema validation and a visual component builder help identify configuration errors and wiring issues before compilation begins.
+- Users can now offload compilation tasks to more powerful hardware on their network via mDNS discovery, bypassing the limitations of low-power devices like Raspberry Pi.
+- A new cross-config search and YAML diff tool enables users to track changes and debug patterns across multiple device configuration files at once.
+- Watchdog monitoring efficiency has been improved, reducing CPU overhead on microcontrollers by approximately 50 percent.
+- The update is available now as a public beta add-on within the Home Assistant store.
 
 ### Why it Matters
-This rare divestment by a major institutional holder highlights the tension between maintaining long-term crypto reserves and meeting immediate corporate financial obligations like dividend payouts. The market reaction underscores investor sensitivity to any reduction in holdings by the world's largest corporate bitcoin owner.
+These updates transform ESPHome from a simple firmware tool into a robust management platform for users maintaining large smart home ecosystems. By streamlining bulk operations and hardware resource usage, the update significantly reduces the maintenance burden for enthusiasts managing more than ten devices.
 
 ============================================================
-Author:   Siladitya Ray, Forbes Staff, 
- Siladitya Ray, Forbes Staff
- https://www.forbes.com/sites/siladityaray/
-Source:   Forbes
-URL:      https://www.forbes.com/sites/siladityaray/2026/06/02/bitcoin-falls-below-70000-for-the-first-time-since-april/
-Category: Tech Business & Markets
+Author:   Samir Makwana
+Source:   XDA Developers
+URL:      https://www.xda-developers.com/esphome-device-builder-lets-compile-multiple-devices-at-once/
+Category: Phones, Laptops, and Gadgets

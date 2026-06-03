@@ -1,20 +1,20 @@
-Attackers Hijack Red Hat npm Scope to Steal Cloud Secrets
+The AI boom is creating surging demand for this nontraditional tech job
 ============================================================
 
-Attackers hijacked Red Hat’s official npm namespace on June 1 to distribute 32 backdoored software packages designed to steal cloud credentials and developer tokens from compromised build pipelines.
+The rapid expansion of AI infrastructure is driving a surge in demand for physical security professionals to protect the growing number of data centers across the United States.
 
 ### Key Points
-- Malicious versions of 32 packages within the @redhat-cloud-services scope were published to npm in just 72 seconds.
-- The malware, identified as a variant of the Miasma worm, executes automatically during the package installation process.
-- Attackers utilized compromised GitHub Actions OIDC tokens to bypass security measures and gain unauthorized access to the build pipeline.
-- The stolen credentials include cloud provider keys, CI/CD tokens, and npm access tokens, which the malware uses to attempt further propagation.
-- Red Hat has since removed the malicious versions and released clean updates, though affected systems remain at risk of credential exposure.
+- Job postings mentioning "physical security" and "data centers" have nearly quadrupled since early 2020, according to Indeed.
+- By the end of 2024, there were 1,240 data centers either built or approved for construction across the U.S.
+- Security roles now require technical expertise to manage advanced tools like drones, robotics, and remote video monitoring systems.
+- Compensation varies significantly, with senior management roles at companies like CoreWeave offering salaries up to $191,000.
+- Facilities face diverse threats, including industrial espionage, drone incursions, and public backlash regarding resource consumption and land use.
 
 ### Why it Matters
-This incident highlights a critical vulnerability in "trusted publishing" workflows, where attackers can exploit compromised CI/CD pipelines to distribute malware through legitimate vendor namespaces. Organizations must now treat any system that installed these packages as compromised and rotate all potentially exposed credentials to prevent further unauthorized access.
+Data centers are increasingly viewed as critical economic infrastructure, necessitating a shift toward more sophisticated and human-led security operations. As these facilities grow in scale and public visibility, the demand for specialized security talent will remain a long-term requirement for the tech industry.
 
 ============================================================
-Author:   Alessandro  Mascellino
-Source:   Infosecurity Magazine
-URL:      https://www.infosecurity-magazine.com/news/red-hat-npm-scope-backdoored/
-Category: Cybersecurity
+Author:   Tim Paradis
+Source:   Business Insider
+URL:      https://www.businessinsider.com/demand-for-physical-security-workers-at-data-centers-is-growing-2026-6
+Category: Artificial Intelligence
