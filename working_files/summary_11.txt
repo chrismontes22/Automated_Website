@@ -1,20 +1,20 @@
-Foldable 'iPhone Ultra' Rumored to Feature Vapor Chamber Cooling Despite Thin Design
+Attackers Hijack Red Hat npm Scope to Steal Cloud Secrets
 ============================================================
 
-Apple is reportedly on track for a September launch of its first foldable iPhone, the "iPhone Ultra," which will feature advanced vapor chamber cooling despite ongoing manufacturing production challenges.
+Attackers hijacked Red Hat’s official npm namespace on June 1 to distribute 32 backdoored software packages designed to steal cloud credentials and developer tokens from compromised build pipelines.
 
 ### Key Points
-- The iPhone Ultra is expected to debut in September alongside the iPhone 18 Pro and Pro Max with a starting price near $2,000.
-- Leaker "Fixed Focus Digital" reports the device will utilize vapor chamber cooling to manage thermal performance for its A20 chip.
-- The foldable design measures 4.5mm in thickness, leading to the omission of features like Face ID, MagSafe, and a physical SIM slot.
-- Production reports indicate difficulties with surface-mount technology and pre-assembly processes, though the overall launch timeline remains unchanged.
-- Hardware specifications include a 7.8-inch inner display, a 5.5-inch cover display, and a C2 modem.
+- Malicious versions of 32 packages within the @redhat-cloud-services scope were published to npm in just 72 seconds.
+- The malware, identified as a variant of the Miasma worm, executes automatically during the package installation process.
+- Attackers utilized compromised GitHub Actions OIDC tokens to bypass security measures and gain unauthorized access to the build pipeline.
+- The stolen credentials include cloud provider keys, CI/CD tokens, and npm access tokens, which the malware uses to attempt further propagation.
+- Red Hat has since removed the malicious versions and released clean updates, though affected systems remain at risk of credential exposure.
 
 ### Why it Matters
-This device represents Apple's first major entry into the foldable smartphone market, signaling a significant shift in the company's hardware design strategy. Successfully balancing extreme thinness with advanced thermal management will be critical for Apple to compete with established foldable rivals while maintaining its performance standards.
+This incident highlights a critical vulnerability in "trusted publishing" workflows, where attackers can exploit compromised CI/CD pipelines to distribute malware through legitimate vendor namespaces. Organizations must now treat any system that installed these packages as compromised and rotate all potentially exposed credentials to prevent further unauthorized access.
 
 ============================================================
-Author:   Hartley Charlton
-Source:   MacRumors
-URL:      https://www.macrumors.com/2026/06/01/foldable-iphone-rumored-to-feature-vapor-chamber/
-Category: Phones, Laptops, and Gadgets
+Author:   Alessandro  Mascellino
+Source:   Infosecurity Magazine
+URL:      https://www.infosecurity-magazine.com/news/red-hat-npm-scope-backdoored/
+Category: Cybersecurity

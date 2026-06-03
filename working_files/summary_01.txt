@@ -1,20 +1,19 @@
-Red Hat npm Packages Compromised to Spread a Credential-Stealing Worm
+Northern Ireland cops issue PSA after official phone number spoofed by scammers
 ============================================================
 
-More than 30 official Red Hat Cloud Services npm packages were compromised by the Miasma malware, which steals sensitive developer credentials through a malicious automated preinstall script.
+UK lawmakers are urging the government to terminate its NHS contract with Palantir, citing concerns that reliance on a few major suppliers hinders national digital transformation and infrastructure plans.
 
 ### Key Points
-- Aikido Security identified over 30 compromised Red Hat Cloud Services packages containing the Miasma credential-stealing worm.
-- The attack originated from a compromised GitHub Actions CI/CD pipeline rather than a stolen npm token.
-- Malicious code executes automatically upon installation via a hidden 4.2 MB obfuscated payload in the package.json file.
-- The malware targets AWS, GCP, and Azure credentials, alongside SSH keys, Kubernetes tokens, and various CI/CD secrets.
-- Users who installed affected packages since June 1, 2026, are advised to rotate all cloud and development environment credentials immediately.
+- The UK parliamentary committee argues that vendor lock-in prevents the government from effectively executing its long-term digital strategy.
+- Palantir currently holds a significant contract to manage data systems for the National Health Service.
+- Lawmakers expressed concern that over-reliance on a small number of private technology firms creates systemic risks for public sector operations.
+- The committee recommended diversifying the supplier base to improve competition and flexibility within government digital projects.
 
 ### Why it Matters
-This supply-chain attack highlights the critical vulnerability of automated CI/CD pipelines when used to publish official software packages. Organizations must now treat all development environment secrets as compromised if they have utilized these specific Red Hat packages, underscoring the need for rigorous dependency auditing.
+This recommendation highlights the growing tension between government agencies seeking advanced data analytics and the risks associated with long-term dependency on single private-sector vendors. If adopted, this shift could force a major restructuring of public sector procurement policies and impact the market dominance of large-scale data contractors.
 
 ============================================================
-Author:   BeauHD
-Source:   Slashdot.org
-URL:      https://it.slashdot.org/story/26/06/01/1624228/red-hat-npm-packages-compromised-to-spread-a-credential-stealing-worm
-Category: Cybersecurity
+Author:   Connor Jones
+Source:   Theregister.com
+URL:      https://www.theregister.com/security/2026/06/02/northern-ireland-cops-issue-psa-after-official-phone-number-spoofed-by-scammers/5249999
+Category: Tech Business & Markets

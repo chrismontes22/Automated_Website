@@ -1,20 +1,20 @@
-Your antivirus could replace your VPN, password manager, and backup app
+Sophos uncovers AI-powered malware lab built for EDR evasion
 ============================================================
 
-Modern antivirus security suites like Norton 360 Deluxe now offer comprehensive, all-in-one protection by bundling essential digital tools into a single, convenient, and cost-effective subscription package for users.
+Sophos researchers have uncovered a sophisticated malware-testing lab utilizing AI agents to develop and refine evasion techniques against major endpoint detection and response products like CrowdStrike and Microsoft Defender.
 
 ### Key Points
-- Security suites consolidate features including VPNs, password managers, cloud backup, and dark web monitoring into one unified dashboard.
-- Integrated dark web scanning alerts users if personal information, such as email addresses or credit card numbers, appears in known data breaches.
-- Built-in VPN services provide automatic protection for public Wi-Fi connections, often including features like kill switches and split tunneling.
-- Software updaters scan for outdated applications to mitigate security risks, while parental controls allow for screen time management and location tracking.
-- Privacy monitors help users identify and remove personal data from third-party data broker websites.
+- Threat actors used Claude Opus 4.5 agents to automate malware development, EDR testing, and infrastructure management within a virtualized Windows Server 2022 environment.
+- The framework utilized the Model Context Protocol to connect AI assistants with Git repositories, enabling the testing of over 70 distinct evasion techniques.
+- Attackers employed the Ludus platform for infrastructure deployment and the Cursor IDE to write Python-based payloads designed to bypass security software.
+- The malicious toolkit included Cobalt Strike profiles, Telegram-based command-and-control mechanisms, and Cloudflare Workers to conceal backend operations.
+- Sophos identified that the threat actors used "red-team" framing to bypass AI model safety guardrails, a tactic increasingly observed in global cyberattacks.
 
 ### Why it Matters
-Consolidating these tools into a single suite simplifies digital security management and eliminates the need to juggle multiple individual subscriptions. This all-in-one approach provides significant value and convenience for users who want robust protection without the complexity of managing disparate software applications.
+This discovery highlights how threat actors are leveraging AI-native development tools to accelerate the creation of evasive malware and automate the testing of security bypasses. While the effectiveness of these AI-generated tools may be limited by model hallucinations, the integration of automated agents into the cyberattack lifecycle poses a significant challenge for traditional endpoint defense strategies.
 
 ============================================================
-Author:   Chris Hoffman
-Source:   PCWorld
-URL:      https://www.pcworld.com/article/2323370/your-antivirus-could-replace-your-vpn-password-manager-and-backup-app.html
+Author:   Sinisa Markovic
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/06/02/ai-agents-edr-evasion-techniques/
 Category: Cybersecurity
