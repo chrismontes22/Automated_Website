@@ -1,20 +1,20 @@
-Custom model training is bringing enterprise AI from experimentation to production
+Argamal: Malware hidden in hentai games
 ============================================================
 
-Snowflake is expanding its Cortex platform to enable secure, governed custom model training, allowing enterprises to fine-tune AI models on proprietary data without moving information to external clouds.
+A new malware campaign dubbed Argamal is targeting players of adult-themed games by deploying a remote access trojan that grants attackers full control over compromised Windows computer systems.
 
 ### Key Points
-- Snowflake introduced Cortex Training to allow businesses to fine-tune open-weight models like Qwen and Mistral within a secure, governed environment.
-- The platform utilizes multi-tenant GPU technology to increase training efficiency, potentially doubling the number of training runs per GPU budget.
-- New engineering innovations, such as the ZoRRo zero-redundancy rollout, are being implemented to optimize reinforcement learning training workloads.
-- Resolve AI is leveraging custom models to improve accuracy and performance for specialized tasks like autonomous site reliability engineering and software debugging.
-- The strategy emphasizes combining general-purpose frontier models with domain-specific models to meet unique enterprise requirements for accuracy and latency.
+- The Argamal malware is distributed through trojanized game files hosted on file-sharing services like PixelDrain and various torrent trackers.
+- Attackers use COM hijacking and scheduled tasks to maintain persistence, ensuring the malicious payload executes automatically upon every user login.
+- Once active, the malware functions as a Remote Access Trojan (RAT), capable of capturing screenshots, executing shell commands, and stealing sensitive user data.
+- Kaspersky researchers identified hundreds of infections across Russia, Brazil, Germany, and Vietnam, noting that the threat actor continues to update the malware's infrastructure.
+- The malicious code includes checks to detect and evade over 40 different security solutions, including products from Kaspersky, Avast, and McAfee.
 
 ### Why it Matters
-This shift allows organizations to deploy production-grade AI while maintaining strict data security and reducing the complexity of managing distributed GPU infrastructure. By enabling domain-specific model training, companies can achieve higher accuracy for specialized business use cases that general-purpose models often struggle to handle.
+This campaign highlights the significant security risks associated with downloading software from unofficial sources or torrent sites. By compromising legitimate game files, attackers can bypass standard user caution to gain deep, persistent access to personal devices for espionage or credential theft.
 
 ============================================================
-Author:   Kelly Knight
-Source:   SiliconANGLE News
-URL:      https://siliconangle.com/2026/06/02/custom-model-training-matters-enterprise-ai-snowflakesummit/
-Category: Artificial Intelligence
+Author:   Mikhail Reznichenko
+Source:   Securelist.com
+URL:      https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/
+Category: Cybersecurity

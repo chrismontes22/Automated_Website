@@ -1,20 +1,20 @@
-Preinstall to persistence: Inside the Red Hat npm Miasma credential-stealing campaign
+These iPhones, iPads, Macs may not support Apple’s new software
 ============================================================
 
-Microsoft Threat Intelligence has uncovered a sophisticated supply chain attack targeting 32 npm packages under the @redhat-cloud-services scope, resulting in widespread credential theft and unauthorized system access.
+Apple is expected to drop support for several older iPhone, iPad, and Mac models when it unveils iOS 27, iPadOS 27, and macOS 27 at next week's WWDC event.
 
 ### Key Points
-- Attackers compromised the RedHatInsights CI/CD pipeline to inject malicious code into over 90 versions of legitimate npm packages.
-- The malware uses a multi-stage dropper to download the Bun JavaScript runtime, enabling cross-platform execution on Linux, macOS, and Windows.
-- Stolen data includes credentials for GitHub, AWS, Azure, GCP, HashiCorp Vault, and Kubernetes, alongside SSH keys and browser wallet information.
-- The payload scrapes GitHub Actions runner memory for secrets and uses forged SLSA provenance signatures to facilitate further downstream propagation.
-- A destructive "tripwire" mechanism can wipe a victim's home directory if the malware detects interference with its planted decoy tokens.
+- Apple will officially end support for all remaining Intel-based Mac models with the release of macOS 27.
+- Rumored iPhone exclusions include the iPhone 11 series and the second-generation iPhone SE.
+- iPad models likely to lose support include the eighth-generation iPad, iPad Air 3, and iPad mini 5.
+- The Mac compatibility list includes the 2019 Mac Pro, 2020 iMac, and specific 2019 and 2020 MacBook Pro configurations.
+- Device compatibility expectations are based on industry leaks and Apple's previously announced transition away from Intel hardware.
 
 ### Why it Matters
-This incident highlights the severe risks posed by compromised CI/CD pipelines, which can turn trusted software updates into vehicles for large-scale credential harvesting and worm-like propagation. By forging provenance metadata, the attackers successfully eroded trust in supply chain security frameworks, necessitating urgent audits of developer environments and automated build systems.
+These software changes will force users of older hardware to consider upgrading their devices to maintain access to the latest security patches and features. This transition marks a significant milestone in Apple's long-term strategy to unify its ecosystem under proprietary silicon while phasing out legacy Intel-based architecture.
 
 ============================================================
-Author:   Microsoft Defender Security Research Team
-Source:   Microsoft.com
-URL:      https://www.microsoft.com/en-us/security/blog/2026/06/02/preinstall-persistence-inside-red-hat-npm-miasma-credential-stealing-campaign/
-Category: Cybersecurity
+Author:   Ryan Christoffel
+Source:   9to5Mac
+URL:      https://9to5mac.com/2026/06/03/these-iphones-ipads-macs-may-not-support-apples-new-software/
+Category: Phones, Laptops, and Gadgets

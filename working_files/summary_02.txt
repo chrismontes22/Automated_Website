@@ -1,20 +1,20 @@
-Argamal: Malware hidden in hentai games
+Show HN: Rscrypto, pure-Rust crypto with industry leading public benches
 ============================================================
 
-A new malware campaign dubbed Argamal is targeting players of adult-themed games by deploying a remote access trojan that grants attackers full control over compromised Windows computer systems.
+The rscrypto crate provides a unified, high-performance Rust cryptography library that eliminates dependencies on external C or system libraries while supporting no_std and hardware-accelerated environments.
 
 ### Key Points
-- The Argamal malware is distributed through trojanized game files hosted on file-sharing services like PixelDrain and various torrent trackers.
-- Attackers use COM hijacking and scheduled tasks to maintain persistence, ensuring the malicious payload executes automatically upon every user login.
-- Once active, the malware functions as a Remote Access Trojan (RAT), capable of capturing screenshots, executing shell commands, and stealing sensitive user data.
-- Kaspersky researchers identified hundreds of infections across Russia, Brazil, Germany, and Vietnam, noting that the threat actor continues to update the malware's infrastructure.
-- The malicious code includes checks to detect and evade over 40 different security solutions, including products from Kaspersky, Avast, and McAfee.
+- Offers a comprehensive primitive stack including RSA, Ed25519, X25519, AEADs, hashes, and password hashing in a single dependency.
+- Features a portable Rust backend as the source of truth, with optional SIMD and assembly acceleration for x86, Arm, Apple Silicon, and RISC-V.
+- Supports granular feature flags, allowing developers to include only necessary primitives to keep binary sizes minimal.
+- Designed for security with constant-time operations, zeroized secret types, and strict arithmetic to prevent common side-channel vulnerabilities.
+- Benchmarks show significant performance gains over existing Rust baselines, with a 1.61x geomean speedup in Linux CI environments.
 
 ### Why it Matters
-This campaign highlights the significant security risks associated with downloading software from unofficial sources or torrent sites. By compromising legitimate game files, attackers can bypass standard user caution to gain deep, persistent access to personal devices for espionage or credential theft.
+By consolidating cryptographic primitives into one modular crate, rscrypto simplifies dependency management and improves security auditing for Rust projects. This approach allows developers to maintain high performance and small binary footprints across diverse platforms, from bare-metal embedded systems to high-scale server environments.
 
 ============================================================
-Author:   Mikhail Reznichenko
-Source:   Securelist.com
-URL:      https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/
+Author:   loadingalias
+Source:   Github.com
+URL:      https://github.com/loadingalias/rscrypto
 Category: Cybersecurity

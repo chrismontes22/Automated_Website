@@ -1,20 +1,20 @@
-The world is connected by copper. It's a huge target for thieves
+New HTTP/2 Bomb Vulnerability Allows Remote DoS on NGINX, Apache, IIS, Envoy & Cloudflare
 ============================================================
 
-Rising copper prices driven by the artificial intelligence boom have triggered a surge in infrastructure theft, forcing companies like AT&T to implement security measures and pursue legal action.
+Cybersecurity researchers have identified a new remote denial-of-service vulnerability called HTTP/2 Bomb that threatens major web servers including NGINX, Apache HTTPD, Microsoft IIS, Envoy, and Cloudflare Pingora.
 
 ### Key Points
-- AT&T reported over 10,400 copper wire theft incidents nationwide last year, with 4,300 occurring in California alone.
-- Copper values have roughly doubled in the past year, incentivizing thieves to strip cables from phone lines, streetlamps, and EV chargers.
-- AT&T is currently suing California to retire its aging copper network, arguing that state "carrier of last resort" mandates force them to maintain vulnerable infrastructure.
-- Mitigation efforts include installing sensors, bolting down manhole covers, hiring private security, and offering a $20,000 bounty for information leading to arrests.
-- ChargePoint is developing cut-resistant, Kevlar-impregnated cables to protect EV charging stations from frequent vandalism.
+- The HTTP/2 Bomb exploit combines a compression bomb with a Slowloris-style hold to exhaust server memory.
+- Attackers can consume 32GB of server memory against Apache HTTPD and Envoy in approximately 20 seconds using a single client.
+- The vulnerability bypasses existing decoded-size limits by targeting per-entry bookkeeping rather than the header data itself.
+- Patches are currently available for NGINX (version 1.29.8+) and Apache HTTPD (mod_http2 v2.0.41).
+- Microsoft IIS, Envoy, and Cloudflare Pingora remain unpatched and vulnerable to this exploit as of the latest disclosure.
 
 ### Why it Matters
-Copper theft causes significant service disruptions for critical infrastructure, including hospitals, schools, and emergency communication networks. The financial burden of these repairs, combined with the high cost of security, creates a complex challenge for utility providers balancing public safety with the transition to modern fiber-optic technology.
+This vulnerability highlights a critical flaw in how HTTP/2 specifications manage memory allocation and connection persistence, allowing low-bandwidth attackers to crash high-capacity servers. Organizations must prioritize patching or disabling HTTP/2 to prevent potential service outages until vendors release comprehensive security updates.
 
 ============================================================
-Author:   John Ruwitch
-Source:   NPR
-URL:      https://www.npr.org/2026/06/03/nx-s1-5838875/copper-wire-theft-att-lawsuit
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/06/new-http2-bomb-vulnerability-allows.html
+Category: Cybersecurity
