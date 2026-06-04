@@ -1,20 +1,20 @@
-Strategic Stability, Structural Strain | Sinification: May 2026
+Preinstall to persistence: Inside the Red Hat npm Miasma credential-stealing campaign
 ============================================================
 
-Chinese analysts are debating the long-term implications of the May 2026 Xi-Trump summit, focusing on strategic stability, AI governance, and the structural challenges facing China’s domestic economy.
+Microsoft Threat Intelligence has uncovered a sophisticated supply chain attack targeting 32 npm packages under the @redhat-cloud-services scope, resulting in widespread credential theft and unauthorized system access.
 
 ### Key Points
-- Analysts are divided on stimulus strategies, with proponents favoring infrastructure investment while critics argue for consumption-based reforms like increased rural pensions.
-- The US-China intergovernmental AI dialogue is viewed as a critical, narrow window for China to secure a role in global governance and industrial ecosystems.
-- Scholars are debating a "dual-core multipolar" global order, where China and the US act as primary powers while allowing middle powers space to hedge.
-- Concerns regarding China’s research culture have intensified following high-profile academic fraud cases, prompting calls for reforms to better cultivate original talent.
-- Experts warn that Japan’s remilitarization and its evolving role in the US alliance system are becoming significant obstacles to regional stability and Taiwan policy.
+- Attackers compromised the RedHatInsights CI/CD pipeline to inject malicious code into over 90 versions of legitimate npm packages.
+- The malware uses a multi-stage dropper to download the Bun JavaScript runtime, enabling cross-platform execution on Linux, macOS, and Windows.
+- Stolen data includes credentials for GitHub, AWS, Azure, GCP, HashiCorp Vault, and Kubernetes, alongside SSH keys and browser wallet information.
+- The payload scrapes GitHub Actions runner memory for secrets and uses forged SLSA provenance signatures to facilitate further downstream propagation.
+- A destructive "tripwire" mechanism can wipe a victim's home directory if the malware detects interference with its planted decoy tokens.
 
 ### Why it Matters
-These debates reflect a growing internal consensus that China must navigate a more fragmented global order while addressing deep-seated domestic economic and institutional imbalances. The shift in discourse highlights a strategic pivot toward "competitive coexistence" as Beijing attempts to balance its technological ambitions with the risks of international isolation.
+This incident highlights the severe risks posed by compromised CI/CD pipelines, which can turn trusted software updates into vehicles for large-scale credential harvesting and worm-like propagation. By forging provenance metadata, the attackers successfully eroded trust in supply chain security frameworks, necessitating urgent audits of developer environments and automated build systems.
 
 ============================================================
-Author:   James Farquharson
-Source:   Sinocism.com
-URL:      https://sinocism.com/p/strategic-stability-structural-strain
-Category: Tech Business & Markets
+Author:   Microsoft Defender Security Research Team
+Source:   Microsoft.com
+URL:      https://www.microsoft.com/en-us/security/blog/2026/06/02/preinstall-persistence-inside-red-hat-npm-miasma-credential-stealing-campaign/
+Category: Cybersecurity

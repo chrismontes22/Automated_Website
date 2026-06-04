@@ -1,21 +1,20 @@
-ESPHome's Device Builder finally lets you compile multiple devices at once, and it changes everything
+Huge Botnet Linked To Russia Infected Over 10 Million Devices Before Being Shut Down
 ============================================================
 
-The ESPHome 2026.5.0 update introduces a public beta of the Device Builder, featuring significant workflow improvements for managing and scaling large fleets of smart home devices efficiently.
+**Dutch authorities have dismantled a massive global botnet that hijacked over 17 million consumer devices to facilitate large-scale cyberattacks and illegal residential proxy services linked to Russian interests.**
 
 ### Key Points
-- The new Device Builder allows users to queue multiple firmware compilations simultaneously, replacing the previous sequential build process.
-- Real-time schema validation and a visual component builder help identify configuration errors and wiring issues before compilation begins.
-- Users can now offload compilation tasks to more powerful hardware on their network via mDNS discovery, bypassing the limitations of low-power devices like Raspberry Pi.
-- A new cross-config search and YAML diff tool enables users to track changes and debug patterns across multiple device configuration files at once.
-- Watchdog monitoring efficiency has been improved, reducing CPU overhead on microcontrollers by approximately 50 percent.
-- The update is available now as a public beta add-on within the Home Assistant store.
+- Dutch investigators confiscated 200 servers in the Netherlands used to manage the botnet's infrastructure.
+- The network compromised over 17 million devices, including computers, smartphones, tablets, and security cameras.
+- Infected devices were repurposed as nodes in a residential proxy service to mask malicious internet traffic.
+- Reports link the operation to the proxy service Asocks, which has been previously associated with Russian cybercriminal activity.
+- The National Cyber Security Centre (NCSC) led the investigation, highlighting the growing threat of residential proxies in global cyberattacks.
 
 ### Why it Matters
-These updates transform ESPHome from a simple firmware tool into a robust management platform for users maintaining large smart home ecosystems. By streamlining bulk operations and hardware resource usage, the update significantly reduces the maintenance burden for enthusiasts managing more than ten devices.
+This operation underscores the increasing sophistication of botnets that exploit everyday consumer hardware to conduct anonymous, large-scale cybercrimes. As these networks become more prevalent, users must prioritize basic security measures like updating software and securing Wi-Fi networks to prevent their devices from being weaponized against others.
 
 ============================================================
-Author:   Samir Makwana
-Source:   XDA Developers
-URL:      https://www.xda-developers.com/esphome-device-builder-lets-compile-multiple-devices-at-once/
-Category: Phones, Laptops, and Gadgets
+Author:   staff@bgr.com (Alec Hively)
+Source:   BGR
+URL:      https://www.bgr.com/2186338/netherlands-record-breaking-botnet-17-million-devices-shut-down-russia-ties/
+Category: Cybersecurity

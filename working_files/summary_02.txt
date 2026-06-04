@@ -1,20 +1,20 @@
-Android's big June Drop keeps kids safe this summer, adds 'Fake Call' protections for phones
+Argamal: Malware hidden in hentai games
 ============================================================
 
-Google is rolling out its June Android Drop, introducing new scam-detection tools, enhanced safety features for children, and expanded file-sharing compatibility between Android devices and iPhones.
+A new malware campaign dubbed Argamal is targeting players of adult-themed games by deploying a remote access trojan that grants attackers full control over compromised Windows computer systems.
 
 ### Key Points
-- The Phone by Google app is adding "Fake Call Detection" to warn users when an incoming call may be a scammer spoofing a known contact.
-- Children aged 13 and under will gain access to the Personal Safety app, allowing them to display medical information and emergency contacts on their lock screens.
-- New safety features for minors include Car Crash detection, real-time location sharing, and Safety Check functionality.
-- Google is expanding Quick Share support to more Android devices, enabling offline file transfers to iOS devices.
-- Fake Call Detection requires Android 12 or higher and will trigger a red alert on the call screen if a caller's identity cannot be verified.
+- The Argamal malware is distributed through trojanized game files hosted on file-sharing services like PixelDrain and various torrent trackers.
+- Attackers use COM hijacking and scheduled tasks to maintain persistence, ensuring the malicious payload executes automatically upon every user login.
+- Once active, the malware functions as a Remote Access Trojan (RAT), capable of capturing screenshots, executing shell commands, and stealing sensitive user data.
+- Kaspersky researchers identified hundreds of infections across Russia, Brazil, Germany, and Vietnam, noting that the threat actor continues to update the malware's infrastructure.
+- The malicious code includes checks to detect and evade over 40 different security solutions, including products from Kaspersky, Avast, and McAfee.
 
 ### Why it Matters
-These updates strengthen the Android ecosystem by addressing critical security concerns regarding identity theft and child safety. By bridging the file-sharing gap between Android and iOS, Google continues to improve cross-platform interoperability for its users.
+This campaign highlights the significant security risks associated with downloading software from unofficial sources or torrent sites. By compromising legitimate game files, attackers can bypass standard user caution to gain deep, persistent access to personal devices for espionage or credential theft.
 
 ============================================================
-Author:   nickodiaz@sbcglobal.net (Nickolas Diaz) , Nickolas Diaz
-Source:   Android Central
-URL:      https://www.androidcentral.com/apps-software/android-os/android-big-june-drop-kids-safe-adds-fake-call-protections
-Category: Phones, Laptops, and Gadgets
+Author:   Mikhail Reznichenko
+Source:   Securelist.com
+URL:      https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/
+Category: Cybersecurity
