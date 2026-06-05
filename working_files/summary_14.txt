@@ -1,20 +1,20 @@
-New HTTP/2 Bomb Vulnerability Allows Remote DoS on NGINX, Apache, IIS, Envoy & Cloudflare
+Travel scams are everywhere. Here’s how to avoid them
 ============================================================
 
-Cybersecurity researchers have identified a new remote denial-of-service vulnerability called HTTP/2 Bomb that threatens major web servers including NGINX, Apache HTTPD, Microsoft IIS, Envoy, and Cloudflare Pingora.
+Travelers face increasing cybersecurity risks as scammers leverage fake websites, phishing emails, and fraudulent rental listings to steal sensitive financial information and personal data from unsuspecting vacation planners.
 
 ### Key Points
-- The HTTP/2 Bomb exploit combines a compression bomb with a Slowloris-style hold to exhaust server memory.
-- Attackers can consume 32GB of server memory against Apache HTTPD and Envoy in approximately 20 seconds using a single client.
-- The vulnerability bypasses existing decoded-size limits by targeting per-entry bookkeeping rather than the header data itself.
-- Patches are currently available for NGINX (version 1.29.8+) and Apache HTTPD (mod_http2 v2.0.41).
-- Microsoft IIS, Envoy, and Cloudflare Pingora remain unpatched and vulnerable to this exploit as of the latest disclosure.
+- Booking.com-related scams increased by 56% following a data breach disclosed in April, according to Scam Guard data.
+- Attackers frequently use SEO poisoning and fake websites to mimic legitimate travel brands and distribute malware like Remote Access Trojans.
+- Scammers often impersonate platforms like Airbnb and TripAdvisor to lure victims into making payments outside of secure, official booking channels.
+- Common red flags include requests for cryptocurrency or gift card payments, urgent demands for card verification, and suspicious PDF attachments.
+- Experts recommend using credit cards for better fraud protection and avoiding sponsored search results when booking flights or accommodations.
 
 ### Why it Matters
-This vulnerability highlights a critical flaw in how HTTP/2 specifications manage memory allocation and connection persistence, allowing low-bandwidth attackers to crash high-capacity servers. Organizations must prioritize patching or disabling HTTP/2 to prevent potential service outages until vendors release comprehensive security updates.
+The travel and hospitality sector remains a primary target for cybercriminals due to the high volume of sensitive personal data and large financial transactions processed daily. By understanding these common tactics, consumers can better protect their identities and finances while navigating the increasingly complex landscape of online travel bookings.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/06/new-http2-bomb-vulnerability-allows.html
+Author:   Pieter Arntz
+Source:   Malwarebytes.com
+URL:      https://www.malwarebytes.com/blog/scams/2026/06/travel-scams-are-everywhere-heres-how-to-avoid-them
 Category: Cybersecurity

@@ -1,21 +1,20 @@
-Android Gets Fake Call Detection That Uses RCS
+Hacking Meta’s AI Chatbot
 ============================================================
 
-Google is launching a new fake call detection feature for Android devices to protect users from AI-powered impersonation scams by verifying the legitimacy of incoming calls in real time.
+Hackers exploited a vulnerability in Meta’s AI support chatbot to hijack Instagram accounts by tricking the automated system into resetting passwords and bypassing standard security verification protocols.
 
 ### Key Points
-- The feature uses end-to-end encrypted RCS technology to send a silent confirmation signal between devices during a call.
-- If a call lacks the required verification signal, the system pings the contact's device to confirm if they are actually initiating a call.
-- Users receive an on-screen warning to hang up immediately if the system detects a potential impersonation attempt.
-- The tool requires the Phone by Google app, Google Messages, and Google Contacts to be installed on both devices.
-- Rolling out this month, the feature supports Android 12 and newer devices, starting with Google Pixel phones.
-- Google designed the technology to be potentially adoptable by other device manufacturers and third-party applications.
+- Attackers used VPNs to spoof target locations and avoid triggering Instagram’s automated security protections.
+- The exploit involved convincing the Meta AI Support Assistant to add a hacker-controlled email address to a victim's account.
+- By sharing verification codes with the chatbot, hackers gained the ability to reset passwords and seize full account control.
+- Instagram spokesperson Andy Stone confirmed on Monday that the specific vulnerability has been patched.
+- Security experts warn that LLM-based chatbots remain susceptible to various evolving manipulation tactics that are difficult to block entirely.
 
 ### Why it Matters
-This security update addresses the rising risk of sophisticated deepfake scams that leverage artificial intelligence to deceive mobile users. By integrating verification directly into the Android ecosystem, Google provides a scalable defense mechanism that could significantly reduce successful social engineering attacks.
+This incident highlights the significant security risks associated with integrating large language models into sensitive account management and customer support workflows. As companies automate more administrative tasks, these AI tools become high-value targets for attackers seeking to bypass traditional authentication measures.
 
 ============================================================
-Author:   BeauHD
-Source:   Slashdot.org
-URL:      https://tech.slashdot.org/story/26/06/02/2357229/android-gets-fake-call-detection-that-uses-rcs
+Author:   Bruce Schneier
+Source:   Schneier.com
+URL:      https://www.schneier.com/blog/archives/2026/06/hacking-metas-ai-chatbot.html
 Category: Cybersecurity

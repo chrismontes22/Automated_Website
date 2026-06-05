@@ -1,20 +1,20 @@
-Show HN: Rscrypto, pure-Rust crypto with industry leading public benches
+The waitlist is not the control: Why frontier cyber AI needs business-side guardrails
 ============================================================
 
-The rscrypto crate provides a unified, high-performance Rust cryptography library that eliminates dependencies on external C or system libraries while supporting no_std and hardware-accelerated environments.
+Organizations adopting frontier cybersecurity AI must implement a rigorous "Cyber AI Acceptance Test" to evaluate security risks before integrating these advanced models into their production environments and workflows.
 
 ### Key Points
-- Offers a comprehensive primitive stack including RSA, Ed25519, X25519, AEADs, hashes, and password hashing in a single dependency.
-- Features a portable Rust backend as the source of truth, with optional SIMD and assembly acceleration for x86, Arm, Apple Silicon, and RISC-V.
-- Supports granular feature flags, allowing developers to include only necessary primitives to keep binary sizes minimal.
-- Designed for security with constant-time operations, zeroized secret types, and strict arithmetic to prevent common side-channel vulnerabilities.
-- Benchmarks show significant performance gains over existing Rust baselines, with a 1.61x geomean speedup in Linux CI environments.
+- Cybersecurity AI can accelerate vulnerability discovery and code analysis, but it requires a shift from traditional procurement benchmarks to operational security assessments.
+- The proposed "Cyber AI Acceptance Test" uses five gates—distribution, data, capability, containment, and accountability—to determine if a system is safe for production.
+- Enterprises must distinguish between a model's ability to observe or analyze data and its capacity to take autonomous actions that impact infrastructure.
+- Organizations should establish a "kill switch" and independent logging systems to ensure they can revoke access and preserve forensic evidence during failures.
+- A single internal owner must be assigned to manage the model's access scope and hold the authority to terminate operations without committee approval.
 
 ### Why it Matters
-By consolidating cryptographic primitives into one modular crate, rscrypto simplifies dependency management and improves security auditing for Rust projects. This approach allows developers to maintain high performance and small binary footprints across diverse platforms, from bare-metal embedded systems to high-scale server environments.
+Treating vendor-granted access as a green light for production integration creates significant security blind spots regarding data exposure and unauthorized system control. By implementing a structured acceptance framework, technology leaders can govern AI capabilities effectively and mitigate the risks of deploying autonomous tools within sensitive corporate networks.
 
 ============================================================
-Author:   loadingalias
-Source:   Github.com
-URL:      https://github.com/loadingalias/rscrypto
+Author:   Nik Kale
+Source:   TechRadar
+URL:      https://www.techradar.com/pro/the-waitlist-is-not-the-control-why-frontier-cyber-ai-needs-business-side-guardrails
 Category: Cybersecurity
