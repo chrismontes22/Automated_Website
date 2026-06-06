@@ -1,19 +1,20 @@
-Infosecurity Europe: How Proton Fights Against Cybercriminals Using Its Services
+PCPJack Hijacks 230 AWS, Google Cloud, and Azure Servers for Covert SMTP Relay Network
 ============================================================
 
-Proton is navigating the challenge of preventing cybercriminals from using its encrypted email service while maintaining the strict privacy standards and technical architecture that define its brand identity.
+The threat actor PCPJack has compromised cloud servers on AWS, Google Cloud, and Microsoft Azure to establish a covert SMTP email relay network for large-scale malicious operations.
 
 ### Key Points
-- Proton utilizes machine-learning models to detect and block bot-driven account creation and suspicious behavioral patterns before malicious operations begin.
-- The company’s end-to-end encryption prevents it from accessing message contents or geolocating users, limiting its ability to assist in content-level surveillance.
-- Law enforcement requests for metadata or account closures must be validated by Swiss federal authorities or Interpol to ensure legal legitimacy.
-- Proton explicitly refuses to comply with requests targeting political opponents, prioritizing the protection of user privacy against non-criminal interference.
+- Researchers at Hunt.io discovered an unsecured command-and-control server containing source code, deployment logs, and Sliver-integrated SMTP proxy toolkits.
+- The operation converts compromised Linux servers into SMTP proxies, persisting as hidden files at "/var/tmp/.xs" to relay emails.
+- Beacons check in with the C2 server every five minutes, with the network filtering for hosts capable of connecting to Gmail's SMTP servers.
+- The infrastructure maintains a pool of verified proxies, enriched with geolocation data, and syncs them to a downstream consumer server.
+- The campaign currently utilizes at least 230 compromised nodes across the U.S., Europe, and Asia to facilitate its relay activities.
 
 ### Why it Matters
-This approach highlights the ongoing tension between providing absolute digital privacy and preventing the exploitation of secure platforms by malicious actors. By requiring Swiss legal oversight, Proton aims to maintain user trust while ensuring it remains a tool for privacy rather than a safe haven for cybercrime.
+This campaign demonstrates how threat actors leverage major cloud infrastructure to build scalable, automated networks for spam or phishing delivery. The ability to maintain persistent, verified proxy lists poses a significant risk to email security and organizational reputation by facilitating high-volume malicious communications.
 
 ============================================================
-Author:   Kevin  Poireault
-Source:   Infosecurity Magazine
-URL:      https://www.infosecurity-magazine.com/news/how-proton-fights-against/
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/06/pcpjack-hijacks-230-aws-google-cloud.html
 Category: Cybersecurity

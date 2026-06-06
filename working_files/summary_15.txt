@@ -1,20 +1,19 @@
-Lingon and Lingon Pro 10
+Connecting Your Car to Home Assistant
 ============================================================
 
-The developer Peter Borg Apps has released Lingon 10 and Lingon Pro 10, updated macOS utilities that simplify scheduling apps, scripts, and commands through a user-friendly interface.
+The MeatPi WiCAN dongle allows users to integrate vehicle data directly into Home Assistant by connecting to the car's OBD-II port for real-time monitoring and remote diagnostics.
 
 ### Key Points
-- Lingon 10 is a free, simplified version available on the Mac App Store, while Lingon Pro 10 is an advanced, one-time purchase standalone application.
-- Both versions are optimized for macOS 14 Sonoma and later, featuring full support for Apple Silicon processors.
-- Lingon Pro 10 includes advanced capabilities such as running tasks as root, background task monitoring, and Apple Intelligence integration for script creation.
-- New features across both versions include natural language task creation, menu bar execution, and improved scheduling options.
-- Lingon Pro 10 offers professional tools like smart folders, log filtering, and the ability to manage multiple tasks via tabs and windows.
+- The WiCAN device utilizes an ESP32-S3 microcontroller and runs open-source firmware to bridge vehicle data to local Wi-Fi networks.
+- Users can monitor specific vehicle metrics including fuel levels, coolant temperature, and upcoming service intervals through the Home Assistant dashboard.
+- MeatPi provides official documentation to assist with the configuration process, which requires car-specific adjustments to interpret ECU data correctly.
+- Remote access to OBD-II data enables proactive maintenance by identifying potential engine or battery issues before they result in costly repairs.
 
 ### Why it Matters
-These utilities provide a graphical interface for managing `launchd`, the system process responsible for background tasks on macOS, removing the need for users to interact directly with the Terminal. By streamlining automation, the software makes complex system scheduling accessible to general users while offering the power required by advanced administrators.
+Integrating vehicle diagnostics into smart home platforms provides a centralized way to track automotive health and performance metrics alongside household systems. This connectivity helps owners identify mechanical issues early, potentially preventing expensive failures and improving overall vehicle maintenance efficiency.
 
 ============================================================
-Author:   John Gruber
-Source:   Peterborgapps.com
-URL:      https://www.peterborgapps.com/lingon/
+Author:   Maya Posch
+Source:   Hackaday
+URL:      https://hackaday.com/2026/06/04/connecting-your-car-to-home-assistant/
 Category: Phones, Laptops, and Gadgets
