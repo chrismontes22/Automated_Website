@@ -1,20 +1,20 @@
-"2,000 to 3,000 new hits every single day": Dangerous malware "WeedHack" hides in Minecraft mods, gives attackers webcam access, Steam and Discord passwords, and more
+The Empty Field That Wasn't: GPS, OTAD and Two Decades of Encrypted Broadcasts
 ============================================================
 
-McAfee researchers have identified a dangerous new malware called WeedHack, which disguises itself within Minecraft mods to steal sensitive user data and gain remote control over infected Windows computers.
+Researchers have discovered that the GPS L1 signal has been broadcasting encrypted military data for nearly two decades, effectively functioning as a global, publicly accessible numbers station.
 
 ### Key Points
-- WeedHack is a Malware-as-a-Service (MaaS) campaign active since January that targets Minecraft players via malicious mod files.
-- The malware disables Windows Defender and steals credentials from browsers, Steam, Discord, and crypto wallets.
-- Premium versions of the software allow attackers to access webcams, record screens, and execute remote command-line operations.
-- Over 116,000 users have been affected, with the campaign currently averaging 2,000 to 3,000 new infections daily.
-- Security experts advise downloading mods only from verified platforms like CurseForge, Modrinth, Nexus Mods, or ModDB.
+- Analysis of 12.16 million observations from 2007 to 2026 confirms that Subframe 4, Page 17 of the GPS signal carries high-entropy ciphertext rather than readable text.
+- The data stream is linked to the U.S. Over-the-Air Distribution (OTAD) network, which delivers cryptographic keys to military receivers equipped with SAASM modules.
+- Researchers identified structural patterns, including hardware test signals (0xAA) and protocol headers like "LY47IRP16," that indicate coordinated fleet-wide cryptographic updates.
+- A significant network shift occurred on 26 May 2011, when all 31 active GPS satellites synchronized to a new operational pace for key distribution.
+- Recent changes in late 2023 introduced a new "TEXT" prefix format, suggesting ongoing evolution in how military data is transmitted over civilian infrastructure.
 
 ### Why it Matters
-This campaign highlights the significant security risks posed by low-cost, accessible malware targeting younger gaming demographics. The widespread use of these tools for cyberbullying and data theft underscores the critical need for users to verify the legitimacy of third-party software downloads.
+This discovery reveals that critical military cryptographic infrastructure has been operating in plain sight within the global civilian GPS signal for twenty years. It highlights a significant intersection between public navigation systems and secure military communications, offering security researchers a unique opportunity to study operational traffic analysis.
 
 ============================================================
-Author:   lowryb3865@gmail.com (Brendan Lowry) , Brendan Lowry
-Source:   Windows Central
-URL:      https://www.windowscentral.com/gaming/minecraft/dangerous-malware-weedhack-hides-in-minecraft-mods-gives-attackers-webcam-access-steam-and-discord-passwords-and-more
+Author:   Steven J. Murdoch
+Source:   Benthamsgaze.org
+URL:      https://www.benthamsgaze.org/2026/06/02/the-quiet-numbers-station-decoding-nineteen-years-of-gps-cryptography/
 Category: Cybersecurity

@@ -1,20 +1,20 @@
-PCPJack Hijacks 230 AWS, Google Cloud, and Azure Servers for Covert SMTP Relay Network
+Sakana AI's Recursive Self-Improvement (RSI) Lab
 ============================================================
 
-The threat actor PCPJack has compromised cloud servers on AWS, Google Cloud, and Microsoft Azure to establish a covert SMTP email relay network for large-scale malicious operations.
+Sakana AI has launched a dedicated Recursive Self-Improvement (RSI) Lab in Tokyo to develop autonomous, sample-efficient AI architectures that redesign the development process through continuous, evolutionary machine learning.
 
 ### Key Points
-- Researchers at Hunt.io discovered an unsecured command-and-control server containing source code, deployment logs, and Sliver-integrated SMTP proxy toolkits.
-- The operation converts compromised Linux servers into SMTP proxies, persisting as hidden files at "/var/tmp/.xs" to relay emails.
-- Beacons check in with the C2 server every five minutes, with the network filtering for hosts capable of connecting to Gmail's SMTP servers.
-- The infrastructure maintains a pool of verified proxies, enriched with geolocation data, and syncs them to a downstream consumer server.
-- The campaign currently utilizes at least 230 compromised nodes across the U.S., Europe, and Asia to facilitate its relay activities.
+- The RSI Lab focuses on building AI systems that autonomously write, benchmark, and verify their own code to achieve exponential performance gains.
+- Previous breakthroughs include "The AI Scientist," which automates end-to-end research, and the "ALE-Agent," which outperformed 804 human experts in heuristic contests.
+- The lab prioritizes sample-efficient optimization over brute-force compute scaling, aiming to make frontier AI accessible to nations with modest infrastructure.
+- Research initiatives like "Digital Red Queen" explore adversarial coevolution to improve cybersecurity and automated vulnerability patching.
+- Sakana AI is actively recruiting global research scientists and core engineers to its Tokyo headquarters to advance these sovereign AI capabilities.
 
 ### Why it Matters
-This campaign demonstrates how threat actors leverage major cloud infrastructure to build scalable, automated networks for spam or phishing delivery. The ability to maintain persistent, verified proxy lists poses a significant risk to email security and organizational reputation by facilitating high-volume malicious communications.
+This shift toward recursive self-improvement challenges the current industry reliance on massive, compute-heavy model scaling by proving that autonomous agents can achieve superior results through evolutionary efficiency. By democratizing access to frontier-level intelligence, this approach allows smaller institutions and nations to develop sovereign AI systems without needing the hyperscale resources of global tech giants.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/06/pcpjack-hijacks-230-aws-google-cloud.html
-Category: Cybersecurity
+Author:   Sakana AI
+Source:   Sakana.ai
+URL:      https://sakana.ai/rsi-lab/
+Category: Artificial Intelligence

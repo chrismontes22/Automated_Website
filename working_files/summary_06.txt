@@ -1,20 +1,20 @@
-Save 50% Off the TSA-Approved Talix 20,000mAh 140W Power Bank, Now Just $44.99
+IronWorm and New Miasma Worm Variant Hit npm in Supply Chain Attacks
 ============================================================
 
-Amazon is currently offering the Lenovo-backed Talix 20,000mAh 140W power bank for $44.99, providing a significant 55% discount for all customers when using the promotional code GOMWBQ8A.
+Threat actors are targeting the npm ecosystem with sophisticated supply chain attacks, deploying IronWorm and Miasma malware to steal developer credentials and propagate malicious code across GitHub repositories.
 
 ### Key Points
-- The Talix power bank features a 20,000mAh capacity and three output ports, including a 140W USB-C connection.
-- Customers can redeem the 55% discount by applying the coupon code "GOMWBQ8A" at checkout on Amazon.
-- The device is compatible with high-power electronics, including the Asus ROG Ally X, Lenovo Legion Go, and various MacBook Pro models.
-- With a 74Whr rating, the power bank complies with TSA regulations for carry-on luggage on commercial flights.
-- The hardware is functionally identical to the Lenovo Thinkplus Fluxo power bank and features a transparent design showcasing internal circuitry.
+- The IronWorm malware uses an eBPF kernel rootkit to scrape secrets from 86 environment variables, including AWS, Docker, Kubernetes, and various AI coding assistant configurations.
+- Attackers compromised the "asteroiddao" npm account to inject malicious Rust-based binaries that self-replicate by pushing unauthorized commits to GitHub organizations.
+- A separate campaign involving the Miasma worm utilizes a "Phantom Gyp" technique to bypass standard security monitoring by executing code through binding.gyp files during installation.
+- The Miasma variant targets CI/CD environments by scraping GitHub Actions runner memory and abusing Trusted Publishing flows to distribute poisoned packages.
+- Security researchers identified that these attacks leverage legitimate platforms like GitHub as adaptive command-and-control infrastructure to evade traditional network-level detection.
 
 ### Why it Matters
-This deal offers a high-performance charging solution at a steep discount for users of power-hungry gaming handhelds and modern laptops. Because the unit meets airline safety standards, it serves as a versatile travel accessory for professionals and gamers who require reliable, high-wattage portable power.
+These attacks represent a significant escalation in software supply chain threats by weaponizing trusted developer tools and AI coding assistants to harvest high-value credentials. By automating propagation and bypassing standard security scripts, these campaigns pose a severe risk to both individual developers and enterprise CI/CD pipelines.
 
 ============================================================
-Author:   Eric Song
-Source:   IGN
-URL:      https://www.ign.com/articles/talix-20000mah-140w-power-bank-deal-lenovo-rebadged-june-2026
-Category: Phones, Laptops, and Gadgets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/06/ironworm-and-new-miasma-worm-variant.html
+Category: Cybersecurity

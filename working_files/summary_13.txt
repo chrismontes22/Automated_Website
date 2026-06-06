@@ -1,20 +1,20 @@
-Today Marks 22 Years Of Phoronix For Linux Hardware Testing & Benchmarking
+Mantine-datatable (and others) compromised – owner account suspended
 ============================================================
 
-Phoronix celebrates its 22nd anniversary as a leading source for Linux hardware testing and benchmarking, reflecting on two decades of industry evolution and the ongoing challenges of independent publishing.
+A malicious software worm identified as Miasma has compromised 73 Microsoft repositories and various third-party projects, prompting urgent security concerns regarding ongoing supply chain vulnerabilities on GitHub.
 
 ### Key Points
-- Phoronix has maintained a streak of daily original content since September 26, 2012, spanning over 13 years of continuous reporting.
-- The platform highlights significant Linux advancements, including Valve’s Steam Deck, the dominance of Linux in AI and HPC, and improved open-source GPU driver support.
-- Key industry shifts include the rise of OpenBMC, LVFS/Fwupd for firmware updates, and increased open-source contributions from vendors like AMD and NVIDIA.
-- The site faces financial sustainability challenges due to high ad-blocker usage and a low conversion rate of less than 0.5% for Phoronix Premium subscriptions.
-- To mark the anniversary, the site is offering a discounted Phoronix Premium subscription rate through June 8 to support ongoing hardware testing and benchmarking operations.
+- Security researchers identified the Miasma worm, a strain of the Shai-Hulud malware family, targeting software repositories via stolen contributor tokens.
+- The campaign successfully breached 73 Microsoft-owned repositories, including Azure and MicrosoftDocs, before GitHub disabled the affected accounts.
+- Independent analysis by SafeDep confirmed the malicious payload is a byte-level match for the Miasma strain across multiple compromised projects.
+- Developer Ionut Florescu remains locked out of his account, leaving malicious commits active in his repositories despite ongoing efforts to contact GitHub support.
+- Technical documentation and indicators of compromise have been published to assist developers in identifying and mitigating potential infections.
 
 ### Why it Matters
-The longevity of Phoronix provides a unique historical perspective on the maturation of the Linux ecosystem from a niche hobbyist project to a dominant force in data centers and gaming. Its struggle to remain independent highlights the broader economic difficulties faced by specialized, ad-supported technical journalism in an era of automated content scraping and widespread ad-blocking.
+This incident highlights the significant risks posed by supply chain attacks that leverage stolen authentication tokens to inject malicious code into widely used software repositories. The persistence of the payload in smaller projects underscores the challenges developers face when account suspensions prevent them from removing compromised code.
 
 ============================================================
-Author:   Michael Larabel
-Source:   Phoronix
-URL:      https://www.phoronix.com/news/Phoronix-Turns-22
-Category: Tech Business & Markets
+Author:   icflorescu
+Source:   Github.com
+URL:      https://github.com/icflorescu/mantine-datatable/discussions/813
+Category: Cybersecurity
