@@ -1,19 +1,20 @@
-Your Chrome searches could soon bypass Google Search entirely
+Claude Opus Found a Four-Year-Old Hole in Zcash’s Privacy Layer. Nobody Knows If Someone Already Used It.
 ============================================================
 
-Google is testing a new feature in Chrome Canary that redirects address bar search queries directly to AI Mode instead of the traditional Google Search results page.
+Security researcher Taylor Hornby utilized Anthropic’s Claude Opus 4.8 AI model to discover a critical, four-year-old vulnerability in the Zcash Orchard privacy pool that could have enabled counterfeit transactions.
 
 ### Key Points
-- The experimental feature is controlled by a flag titled "Fulfill Searchbox Queries in AI Mode" within Chrome Canary.
-- Testing is currently available for desktop platforms, including Windows, Mac, Linux, and ChromeOS, but excludes mobile applications.
-- Users can enable the feature by navigating to chrome://flags and restarting the browser after toggling the specific searchbox setting.
-- Google stated in a code commit that the implementation is currently for exploration only, with no confirmed plans for a public release.
+- The vulnerability existed from the Orchard pool's launch in May 2022 until an emergency patch was deployed on June 1, 2026.
+- The flaw allowed for the potential creation of counterfeit ZEC that would appear legitimate due to the system's zero-knowledge proof architecture.
+- Because of the network's privacy features, it is impossible to cryptographically verify whether the exploit was utilized by bad actors prior to the fix.
+- Following the disclosure, the price of ZEC dropped 43%, reaching a low of $250.
+- Shielded Labs is proposing a "turnstile accounting" network upgrade to force all existing coins through a checkpoint to verify the integrity of the total supply.
 
 ### Why it Matters
-This potential shift represents a significant change in how users interact with the world's most popular web browser by prioritizing generative AI over traditional search results. If implemented, this update could fundamentally alter user search habits and increase the integration of AI-driven responses into daily browsing workflows.
+This incident demonstrates that advanced AI models can rapidly identify complex cryptographic flaws that have evaded human review for years. It raises significant concerns regarding the security of existing blockchain protocols and highlights the difficulty of auditing privacy-focused systems where exploitation may remain permanently undetectable.
 
 ============================================================
-Author:   Karandeep Singh Oberoi
-Source:   Android Police
-URL:      https://www.androidpolice.com/google-chrome-might-soon-send-you-straight-to-ai-mode-istead-of-search/
-Category: Artificial Intelligence
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/193224/hacking/claude-opus-found-a-four-year-old-hole-in-zcashs-privacy-layer-nobody-knows-if-someone-already-used-it.html
+Category: Cybersecurity

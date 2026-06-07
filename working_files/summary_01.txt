@@ -1,20 +1,20 @@
-The Empty Field That Wasn't: GPS, OTAD and Two Decades of Encrypted Broadcasts
+Free Apps Are Quietly Turning Smart TVs Into Web-Scraping Proxies for AI
 ============================================================
 
-Researchers have discovered that the GPS L1 signal has been broadcasting encrypted military data for nearly two decades, effectively functioning as a global, publicly accessible numbers station.
+Researchers have discovered that Bright Data’s software development kit turns consumer devices, including iPhones and smart TVs, into residential proxy nodes used to relay web-scraping traffic for AI companies.
 
 ### Key Points
-- Analysis of 12.16 million observations from 2007 to 2026 confirms that Subframe 4, Page 17 of the GPS signal carries high-entropy ciphertext rather than readable text.
-- The data stream is linked to the U.S. Over-the-Air Distribution (OTAD) network, which delivers cryptographic keys to military receivers equipped with SAASM modules.
-- Researchers identified structural patterns, including hardware test signals (0xAA) and protocol headers like "LY47IRP16," that indicate coordinated fleet-wide cryptographic updates.
-- A significant network shift occurred on 26 May 2011, when all 31 active GPS satellites synchronized to a new operational pace for key distribution.
-- Recent changes in late 2023 introduced a new "TEXT" prefix format, suggesting ongoing evolution in how military data is transmitted over civilian infrastructure.
+- Security researchers found that Bright Data’s SDK allows third-party apps to utilize a user's home internet connection as an exit node for web-scraping operations.
+- The SDK, which claims to be consent-based, can facilitate up to 200 GB of data usage per month on mobile devices and smart TVs.
+- Technical analysis revealed that the SDK’s peer-to-peer traffic lacks robust authentication and can bypass active VPN connections on iOS devices.
+- Major platforms including Google, Amazon, and Roku have restricted background proxy SDKs, though Bright Data continues to support other smart-TV operating systems.
+- Users can mitigate this activity by blocking specific Bright Data domains, such as proxyjs.bright-sdk.com, at the router level using tools like Pi-hole or NextDNS.
 
 ### Why it Matters
-This discovery reveals that critical military cryptographic infrastructure has been operating in plain sight within the global civilian GPS signal for twenty years. It highlights a significant intersection between public navigation systems and secure military communications, offering security researchers a unique opportunity to study operational traffic analysis.
+This practice highlights a growing tension between consumer privacy and the massive data demands of the AI industry, which relies on residential IPs to bypass anti-bot security measures. While Bright Data maintains that its network is built on user consent, the technical findings raise significant questions regarding the transparency of these agreements and the potential for unauthorized bandwidth consumption.
 
 ============================================================
-Author:   Steven J. Murdoch
-Source:   Benthamsgaze.org
-URL:      https://www.benthamsgaze.org/2026/06/02/the-quiet-numbers-station-decoding-nineteen-years-of-gps-cryptography/
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/06/free-apps-are-quietly-turning-smart-tvs.html
 Category: Cybersecurity
