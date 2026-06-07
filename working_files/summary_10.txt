@@ -1,20 +1,20 @@
-Google’s Updated Guidance Urges FTC Complaints Against Shady SEOs via @sejournal, @martinibuster
+Free Apps Are Quietly Turning Smart TVs Into Web-Scraping Proxies for AI
 ============================================================
 
-Google has updated its "Do you need an SEO?" guidance to include AI optimization services while warning businesses against third-party tools and encouraging reports of deceptive practices to the FTC.
+Researchers have discovered that Bright Data’s software development kit turns consumer devices, including iPhones and smart TVs, into residential proxy nodes used to relay web-scraping traffic for AI companies.
 
 ### Key Points
-- Google officially added Generative AI Optimization (AEO/GEO) to its list of recognized SEO services.
-- The updated guidance explicitly warns businesses that Google does not endorse or provide internal ranking data to third-party SEO tools.
-- Businesses are now encouraged to report unethical or fraudulent SEO service providers directly to the U.S. Federal Trade Commission (FTC).
-- The documentation clarifies that no SEO provider can guarantee a top-ranking position or claim a "special relationship" with Google.
-- Content was rewritten to be more concise, emphasizing that site owners should verify all third-party audit recommendations against official Google documentation.
+- Security researchers found that Bright Data’s SDK allows third-party apps to utilize a user's home internet connection as an exit node for web-scraping operations.
+- The SDK, which claims to be consent-based, can facilitate up to 200 GB of data usage per month on mobile devices and smart TVs.
+- Technical analysis revealed that the SDK’s peer-to-peer traffic lacks robust authentication and can bypass active VPN connections on iOS devices.
+- Major platforms including Google, Amazon, and Roku have restricted background proxy SDKs, though Bright Data continues to support other smart-TV operating systems.
+- Users can mitigate this activity by blocking specific Bright Data domains, such as proxyjs.bright-sdk.com, at the router level using tools like Pi-hole or NextDNS.
 
 ### Why it Matters
-These updates signal a shift in how Google manages its relationship with the SEO industry by moving beyond internal policy enforcement into the realm of legal accountability. By directing businesses to the FTC, Google is raising the stakes for providers who use deceptive marketing or spam-heavy tactics to manipulate search results.
+This practice highlights a growing tension between consumer privacy and the massive data demands of the AI industry, which relies on residential IPs to bypass anti-bot security measures. While Bright Data maintains that its network is built on user consent, the technical findings raise significant questions regarding the transparency of these agreements and the potential for unauthorized bandwidth consumption.
 
 ============================================================
-Author:   Roger Montti
-Source:   Search Engine Journal
-URL:      https://www.searchenginejournal.com/googles-updated-guidance-urges-ftc-complaints-against-shady-seos/578151/
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/06/free-apps-are-quietly-turning-smart-tvs.html
+Category: Cybersecurity

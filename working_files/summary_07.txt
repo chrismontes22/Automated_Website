@@ -1,19 +1,20 @@
-Google just pulled the plug on Pixel's AI image generator
+Meta confirms 1000s of Instagram accounts were hacked by abusing its AI chatbot
 ============================================================
 
-Google has officially discontinued the Pixel Studio image generation app for Pixel devices, redirecting users to the Gemini app to utilize advanced Nano Banana models for future AI creations.
+Meta has confirmed that a vulnerability in its AI-assisted account recovery system allowed hackers to hijack over 20,000 Instagram accounts by tricking the chatbot into resetting user passwords.
 
 ### Key Points
-- Google released version 2.3 of Pixel Studio, which completely disables all on-device image generation capabilities.
-- The app now features an "Open Gemini" button that prompts users to transition to the Gemini platform for image tasks.
-- Users retain access to their previously generated images, which remain viewable and shareable within the Pixel Studio interface.
-- Pixel Studio was originally launched in 2024 alongside the Pixel 9 series to provide local AI-powered image creation tools.
+- Meta notified 20,225 individuals that their Instagram accounts were compromised between April 17 and this week.
+- The breach occurred because a chatbot bug failed to verify that password reset requests matched the email address associated with the target account.
+- Hackers gained full access to compromised profiles, including private direct messages, contact information, and account activity.
+- Meta has disabled the affected AI chatbot and removed the flawed code path to prevent further unauthorized password resets.
+- The company is currently auditing other AI chatbots across its platforms to identify and mitigate similar security vulnerabilities.
 
 ### Why it Matters
-This move reflects Google's broader strategy to consolidate its AI features under the Gemini brand rather than maintaining fragmented, device-specific applications. By shifting users to Gemini, the company aims to provide a more powerful and unified experience powered by its latest Nano Banana models.
+This incident highlights the significant security risks associated with integrating automated AI tools into sensitive account recovery processes. It serves as a reminder for users to enable two-factor authentication to protect their accounts against automated exploits and system-level vulnerabilities.
 
 ============================================================
-Author:   sanujb6@gmail.com (Sanuj Bhatia) , Sanuj Bhatia
-Source:   Android Central
-URL:      https://www.androidcentral.com/phones/google-pixel/google-just-pulled-the-plug-on-pixels-ai-image-generator
-Category: Artificial Intelligence
+Author:   Zack Whittaker
+Source:   Weekinsecurity.com
+URL:      https://this.weekinsecurity.com/meta-confirms-thousands-of-instagram-accounts-were-hacked-by-abusing-its-ai-chatbot/
+Category: Cybersecurity

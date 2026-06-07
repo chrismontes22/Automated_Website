@@ -1,20 +1,20 @@
-Claude Opus Found a Four-Year-Old Hole in Zcash’s Privacy Layer. Nobody Knows If Someone Already Used It.
+Apple @ Work: How zero-touch enrollment killed the market for stolen corporate devices
 ============================================================
 
-Security researcher Taylor Hornby utilized Anthropic’s Claude Opus 4.8 AI model to discover a critical, four-year-old vulnerability in the Zcash Orchard privacy pool that could have enabled counterfeit transactions.
+Apple’s Automated Device Enrollment and Apple Business platform have significantly reduced corporate hardware theft by linking device serial numbers to company servers, rendering stolen Macs and iPads effectively unusable.
 
 ### Key Points
-- The vulnerability existed from the Orchard pool's launch in May 2022 until an emergency patch was deployed on June 1, 2026.
-- The flaw allowed for the potential creation of counterfeit ZEC that would appear legitimate due to the system's zero-knowledge proof architecture.
-- Because of the network's privacy features, it is impossible to cryptographically verify whether the exploit was utilized by bad actors prior to the fix.
-- Following the disclosure, the price of ZEC dropped 43%, reaching a low of $250.
-- Shielded Labs is proposing a "turnstile accounting" network upgrade to force all existing coins through a checkpoint to verify the integrity of the total supply.
+- Apple Business Manager permanently maps device serial numbers to corporate accounts at the point of purchase.
+- Zero-touch enrollment forces stolen devices to connect to Apple activation servers, triggering mandatory corporate login screens.
+- Managed Activation Lock prevents unauthorized users from wiping or reselling stolen hardware on the secondary market.
+- IT administrators can track the IP address of a stolen device once it connects to the internet.
+- Devices not enrolled through official enterprise channels remain vulnerable to theft and unauthorized resale.
 
 ### Why it Matters
-This incident demonstrates that advanced AI models can rapidly identify complex cryptographic flaws that have evaded human review for years. It raises significant concerns regarding the security of existing blockchain protocols and highlights the difficulty of auditing privacy-focused systems where exploitation may remain permanently undetectable.
+These security features protect corporate data and eliminate the financial incentive for stealing enterprise-grade hardware. By rendering stolen devices effectively bricked, Apple has shifted the burden of security from manual firmware passwords to a seamless, server-level management system.
 
 ============================================================
-Author:   Pierluigi Paganini
-Source:   Securityaffairs.com
-URL:      https://securityaffairs.com/193224/hacking/claude-opus-found-a-four-year-old-hole-in-zcashs-privacy-layer-nobody-knows-if-someone-already-used-it.html
+Author:   Bradley C
+Source:   9to5Mac
+URL:      https://9to5mac.com/2026/06/06/apple-work-how-zero-touch-enrollment-killed-the-market-for-stolen-corporate-devices/
 Category: Cybersecurity

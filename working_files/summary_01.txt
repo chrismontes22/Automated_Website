@@ -1,20 +1,20 @@
-Free Apps Are Quietly Turning Smart TVs Into Web-Scraping Proxies for AI
+The Smart TV in Your LivingRoom Is a Node in the AIScraping Economy
 ============================================================
 
-Researchers have discovered that Bright Data’s software development kit turns consumer devices, including iPhones and smart TVs, into residential proxy nodes used to relay web-scraping traffic for AI companies.
+Bright Data utilizes a residential proxy network of over 400 million IP addresses, often sourced through software development kits embedded in consumer mobile apps and smart TVs.
 
 ### Key Points
-- Security researchers found that Bright Data’s SDK allows third-party apps to utilize a user's home internet connection as an exit node for web-scraping operations.
-- The SDK, which claims to be consent-based, can facilitate up to 200 GB of data usage per month on mobile devices and smart TVs.
-- Technical analysis revealed that the SDK’s peer-to-peer traffic lacks robust authentication and can bypass active VPN connections on iOS devices.
-- Major platforms including Google, Amazon, and Roku have restricted background proxy SDKs, though Bright Data continues to support other smart-TV operating systems.
-- Users can mitigate this activity by blocking specific Bright Data domains, such as proxyjs.bright-sdk.com, at the router level using tools like Pi-hole or NextDNS.
+- Bright Data’s SDK turns consumer devices into exit nodes, allowing third-party customers to route web-scraping traffic through residential IP addresses.
+- Smart TVs are considered ideal proxies due to their constant power connection, high-speed Wi-Fi, and lack of corporate or family oversight.
+- The SDK includes features that bypass VPNs and standard network inspection tools by binding traffic directly to physical network interfaces.
+- Partner apps identified in public manifests include various gaming and utility applications, with some configurations allowing up to 200 GB of monthly bandwidth usage.
+- Security researchers identified specific DNS hostnames and TLS fingerprints that can be used to block the SDK’s peer-tunnel traffic at the network level.
 
 ### Why it Matters
-This practice highlights a growing tension between consumer privacy and the massive data demands of the AI industry, which relies on residential IPs to bypass anti-bot security measures. While Bright Data maintains that its network is built on user consent, the technical findings raise significant questions regarding the transparency of these agreements and the potential for unauthorized bandwidth consumption.
+Residential proxy networks are increasingly used by AI companies to bypass anti-scraping protections that block traffic from known datacenter IP addresses. This practice effectively turns personal home internet connections into infrastructure for large-scale data harvesting without most users fully understanding the scope of the resource consumption.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/06/free-apps-are-quietly-turning-smart-tvs.html
+Author:   buchodi
+Source:   Includesecurity.com
+URL:      https://blog.includesecurity.com/2026/06/the-smart-tv-in-your-livingroom-is-a-node-in-the-aiscraping-economy/
 Category: Cybersecurity
