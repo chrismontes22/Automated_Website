@@ -1,20 +1,20 @@
-The Smart TV in Your LivingRoom Is a Node in the AIScraping Economy
+Week in review: Cisco SD-WAN 0-day exploited, Patch Tuesday forecast
 ============================================================
 
-Bright Data utilizes a residential proxy network of over 400 million IP addresses, often sourced through software development kits embedded in consumer mobile apps and smart TVs.
+Cybersecurity professionals are managing a surge in active exploits, including critical vulnerabilities in Cisco SD-WAN and Windows Netlogon, while navigating the growing security risks posed by autonomous AI agents.
 
 ### Key Points
-- Bright Data’s SDK turns consumer devices into exit nodes, allowing third-party customers to route web-scraping traffic through residential IP addresses.
-- Smart TVs are considered ideal proxies due to their constant power connection, high-speed Wi-Fi, and lack of corporate or family oversight.
-- The SDK includes features that bypass VPNs and standard network inspection tools by binding traffic directly to physical network interfaces.
-- Partner apps identified in public manifests include various gaming and utility applications, with some configurations allowing up to 200 GB of monthly bandwidth usage.
-- Security researchers identified specific DNS hostnames and TLS fingerprints that can be used to block the SDK’s peer-tunnel traffic at the network level.
+- Cisco Catalyst SD-WAN Manager is currently under attack via an unpatched 0-day privilege escalation vulnerability (CVE-2026-20245).
+- A critical Windows Netlogon remote code execution flaw (CVE-2026-41089) is being actively exploited, threatening domain controller security.
+- Researchers identified that nearly 90% of production AI agents lack sufficient security, leaving them vulnerable to hostile document takeovers.
+- A proof-of-concept AI-driven worm has been developed that can autonomously reason and strategize attacks against corporate networks.
+- Dashlane confirmed a brute-force attack resulted in unauthorized access to user accounts and the theft of encrypted password vaults.
 
 ### Why it Matters
-Residential proxy networks are increasingly used by AI companies to bypass anti-scraping protections that block traffic from known datacenter IP addresses. This practice effectively turns personal home internet connections into infrastructure for large-scale data harvesting without most users fully understanding the scope of the resource consumption.
+The rapid integration of autonomous AI agents into enterprise workflows is outpacing current security frameworks, creating new, unpredictable attack surfaces. Organizations must balance the pressure to innovate with the reality that existing vulnerabilities and AI-specific threats are being weaponized faster than traditional defenses can respond.
 
 ============================================================
-Author:   buchodi
-Source:   Includesecurity.com
-URL:      https://blog.includesecurity.com/2026/06/the-smart-tv-in-your-livingroom-is-a-node-in-the-aiscraping-economy/
+Author:   Help Net Security
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/06/07/week-in-review-cisco-sd-wan-0-day-exploited-june-2026-patch-tuesday-forecast/
 Category: Cybersecurity

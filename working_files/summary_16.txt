@@ -1,21 +1,20 @@
-Critical Everest Forms Pro flaw exploited to take over WordPress sites
+Google’s New Guidance Claims Authority Over SEO, Tools, And AEO/GEO via @sejournal, @martinibuster
 ============================================================
 
-Hackers are actively exploiting a critical unauthenticated remote code execution vulnerability, tracked as CVE-2026-3300, in the Everest Forms Pro WordPress plugin to create unauthorized administrator accounts on websites.
+Google has released new official guidance asserting itself as the primary authority on SEO, AI optimization, and the evaluation of third-party tools and services for website owners.
 
 ### Key Points
-- The vulnerability affects Everest Forms Pro versions 1.9.12 and earlier by improperly sanitizing input in the Complex Calculation feature.
-- Attackers inject malicious PHP code via form fields to execute commands on the server, bypassing existing security filters.
-- Wordfence reports that attackers are using this flaw to create rogue administrator accounts under the username "diksimarina."
-- A security patch was released by the plugin developer on March 18 to address the vulnerability.
-- Active exploitation began on April 13, with the Wordfence firewall blocking over 29,300 malicious attempts.
-- Administrators should update the plugin immediately and audit user accounts for suspicious activity or unauthorized administrative access.
+- Google now explicitly positions its own documentation as the canonical source of truth for SEO, AEO, and GEO practices.
+- The guidance warns businesses to think critically about third-party SEO services and tools that claim Google approval or endorsement.
+- Google clarifies that third-party tools lack access to internal ranking data and cannot guarantee performance improvements or search success.
+- The company recommends using Google Search Console as the primary, reliable source for direct search data and performance insights.
+- The documentation advises users to weigh all external SEO advice against official Google guidelines before implementation.
 
 ### Why it Matters
-This vulnerability poses a severe risk because it allows attackers to gain full control over WordPress sites without requiring authentication. Compromised websites face significant threats, including data theft, the installation of backdoors, and the potential for widespread malware distribution.
+This shift signals a more aggressive stance by Google to minimize the influence of external SEO consultants and data providers on site owners' decision-making processes. By framing third-party insights as potentially misleading, Google is effectively centralizing control over how businesses optimize their web presence for search and generative AI.
 
 ============================================================
-Author:   Bill Toulas
-Source:   BleepingComputer
-URL:      https://www.bleepingcomputer.com/news/security/critical-everest-forms-pro-flaw-exploited-to-take-over-wordpress-sites/
-Category: Cybersecurity
+Author:   Roger Montti
+Source:   Search Engine Journal
+URL:      https://www.searchenginejournal.com/googles-new-guidance-claims-authority-over-seo-tools-and-aeo-geo/578162/
+Category: Tech Business & Markets
