@@ -1,20 +1,20 @@
-Week in review: Cisco SD-WAN 0-day exploited, Patch Tuesday forecast
+PSA: Incognito Mode Doesn't Totally Hide Your Online Activity
 ============================================================
 
-Cybersecurity professionals are managing a surge in active exploits, including critical vulnerabilities in Cisco SD-WAN and Windows Netlogon, while navigating the growing security risks posed by autonomous AI agents.
+Private browsing modes in web browsers like Chrome, Safari, and Firefox primarily clear local history and cookies, but they do not provide complete anonymity from websites or network administrators.
 
 ### Key Points
-- Cisco Catalyst SD-WAN Manager is currently under attack via an unpatched 0-day privilege escalation vulnerability (CVE-2026-20245).
-- A critical Windows Netlogon remote code execution flaw (CVE-2026-41089) is being actively exploited, threatening domain controller security.
-- Researchers identified that nearly 90% of production AI agents lack sufficient security, leaving them vulnerable to hostile document takeovers.
-- A proof-of-concept AI-driven worm has been developed that can autonomously reason and strategize attacks against corporate networks.
-- Dashlane confirmed a brute-force attack resulted in unauthorized access to user accounts and the theft of encrypted password vaults.
+- Private browsing modes, such as Chrome's Incognito or Edge's InPrivate, prevent browsers from saving search history, cookies, and site data locally.
+- These features do not hide activity from internet service providers, employers, schools, or the websites themselves.
+- Downloaded files and saved bookmarks remain on the device even after a private session is closed.
+- IP addresses are not masked by private browsing, meaning your general location and connection remain visible to third parties.
+- A 2024 legal settlement required Google to destroy billions of data records collected from users who believed they were browsing privately.
 
 ### Why it Matters
-The rapid integration of autonomous AI agents into enterprise workflows is outpacing current security frameworks, creating new, unpredictable attack surfaces. Organizations must balance the pressure to innovate with the reality that existing vulnerabilities and AI-specific threats are being weaponized faster than traditional defenses can respond.
+Understanding the limitations of private browsing is essential for maintaining digital privacy, as many users mistakenly believe these modes offer total invisibility. Relying on these tools for sensitive tasks can lead to unintended data exposure, highlighting the need for additional security measures like VPNs for those seeking to mask their network activity.
 
 ============================================================
-Author:   Help Net Security
-Source:   Help Net Security
-URL:      https://www.helpnetsecurity.com/2026/06/07/week-in-review-cisco-sd-wan-0-day-exploited-june-2026-patch-tuesday-forecast/
+Author:   Nelson Aguilar
+Source:   CNET
+URL:      https://www.cnet.com/tech/services-and-software/psa-incognito-mode-doesnt-totally-hide-your-online-activity/
 Category: Cybersecurity

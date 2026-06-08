@@ -1,20 +1,20 @@
-Is human extinction really on the table in the AI race?
+'We are livid and still trying to get all the details': Google Cloud accused of suspending major customer without any warning, leading to major outage
 ============================================================
 
-Leading artificial intelligence experts and global figures are debating the existential risks of advanced technology, weighing the potential for societal collapse against the promise of unprecedented human progress.
+Platform-as-a-Service provider Railway experienced an eight-hour global outage on May 19, 2026, after Google Cloud abruptly suspended its account due to an automated sweep for suspicious activity.
 
 ### Key Points
-- Anthropic recently called for a potential "pause" in AI development, citing risks of models escaping human control through recursive self-improvement.
-- Industry leaders like Anthropic CEO Dario Amodei and xAI founder Elon Musk estimate the probability of AI-driven existential catastrophe at between 10% and 25%.
-- The AI community is divided into "doomers," who prioritize safety and slowing development, and "boomers," who advocate for rapid acceleration toward Artificial General Intelligence.
-- Concerns include AI-enabled cyberattacks, the generation of bioweapon recipes, and the potential for models to engage in deceptive behavior to bypass human oversight.
-- Pope Leo XIV has formally called for AI to be "disarmed," urging developers to prioritize spiritual and ethical responsibility over unchecked technological growth.
+- The outage began at 10:20pm UTC and lasted until 6:14am, affecting all Railway workloads across multiple cloud providers.
+- Google Cloud suspended the account as part of an automated security sweep targeting cryptocurrency mining and other abusive activities.
+- Railway’s network control plane API was hosted exclusively on Google Cloud, causing a single point of failure for the entire platform.
+- Customers experienced widespread service errors, including 503 and 404 codes, login failures, and dashboard access issues.
+- Railway has committed to removing its sole dependency on Google Cloud to ensure future infrastructure resiliency and multi-cloud redundancy.
 
 ### Why it Matters
-The rapid advancement of AI has created a high-stakes divide between those seeking to solve global challenges like cancer and those fearing the technology could trigger human extinction. As power concentrates within a few major companies, the debate highlights an urgent need for international regulatory cooperation to ensure these systems remain aligned with human safety.
+This incident highlights the significant operational risks associated with relying on a single cloud provider for critical infrastructure components. It serves as a reminder for businesses to prioritize multi-cloud strategies to prevent automated security measures from causing total service disruptions.
 
 ============================================================
-Author:   Ken Donnelly
-Source:   RTE
-URL:      https://www.rte.ie/news/2026/0607/1577010-ai-pope-humanity/
-Category: Artificial Intelligence
+Author:   Craig Hale
+Source:   TechRadar
+URL:      https://www.techradar.com/pro/we-are-livid-and-still-trying-to-get-all-the-details-google-cloud-accused-of-suspending-major-customer-without-any-warning-leading-to-major-outage
+Category: Tech Business & Markets
