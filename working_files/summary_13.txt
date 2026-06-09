@@ -1,20 +1,20 @@
-Ukraine Is Not Losing. Russia Is Not Winning.
+A Matter Wi-Fi Light Bulb in Rust on the Raspberry Pi Pico 2 W
 ============================================================
 
-Ukraine’s rapid development of AI-powered drone interceptors and networked situational awareness systems has fundamentally altered the war, effectively stalling Russian advances and shifting the conflict's strategic landscape.
+This collection of Rust-based examples demonstrates how to utilize the Embassy async framework for hardware projects on the Raspberry Pi Pico 2, powered by the RP2350 microcontroller.
 
 ### Key Points
-- Ukraine has deployed hundreds of mobile drone-interceptor bases that use radar and acoustic sensors to identify and destroy incoming Russian aerial vehicles.
-- A new domestic tech sector, comprised of hundreds of companies founded since 2022, provides the military with real-time data and battle-tested hardware.
-- Ukrainian drone strikes have successfully reduced Russian oil refining capacity by at least 20 percent by targeting critical infrastructure deep within Russia.
-- The front line has evolved into a 20-mile-wide "no-go zone" where constant drone surveillance makes traditional large-scale Russian troop movements nearly impossible.
-- International interest in Ukrainian defense technology has grown, with Gulf states seeking to acquire the country's proven drone-interception capabilities.
+- Supports the RP2350 dual-core MCU featuring both Arm Cortex-M33 and RISC-V cores.
+- Includes drivers for sensors like the HS3003, ADXL345, DS18B20, and DHT11.
+- Features advanced display projects using Adafruit 2.2" TFT LCDs with DMA-based rendering.
+- Implements a Matter-compatible Wi-Fi light bulb for integration with Apple Home, Google Home, and Home Assistant.
+- Provides cycle-accurate timing implementations to support sensitive protocols like 1-Wire and DHT11.
 
 ### Why it Matters
-The emergence of Ukraine’s networked defense system challenges the long-standing narrative that Russia holds an inevitable military advantage. This technological evolution not only forces a stalemate on the battlefield but also positions Ukraine as a global leader in modern drone warfare, potentially reshaping future international security alliances.
+These examples provide a robust template for developers looking to leverage the memory safety and concurrency features of Rust on the latest Raspberry Pi hardware. By utilizing the Embassy framework, developers can build highly efficient, non-blocking embedded applications that simplify complex tasks like smart home connectivity and high-speed sensor data processing.
 
 ============================================================
-Author:   Anne Applebaum
-Source:   The Atlantic
-URL:      https://www.theatlantic.com/ideas/2026/06/ukraine-war-momentum-shift/687444/
-Category: Artificial Intelligence
+Author:   melastmohican
+Source:   Github.com
+URL:      https://github.com/melastmohican/rust-rpico2-embassy-examples
+Category: Phones, Laptops, and Gadgets
