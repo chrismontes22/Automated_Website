@@ -1,20 +1,20 @@
-Microsoft's new Windows 11 update has a hidden performance booster — here's how to get it early
+Python Bytes: #483 Thanks Brian
 ============================================================
 
-Microsoft is introducing the Low Latency Profile feature in its June 2026 Windows update to improve system responsiveness by temporarily boosting CPU performance during common user interactions.
+The latest Python development updates include a critical security vulnerability in the Starlette framework and new malware scanning capabilities introduced in the Astral uv package manager.
 
 ### Key Points
-- The Low Latency Profile (LLP) is part of the Windows K2 initiative, which aims to resolve core performance and responsiveness issues.
-- LLP increases CPU frequency for one to three seconds during tasks like launching apps, opening the Start menu, or using Windows Search.
-- Performance testing indicates native app launch speeds improve by 40%, while UI elements like the Start menu load 70% faster.
-- The feature is currently available via the Windows Insider Program update KB5089573 or can be force-enabled using the ViveTool utility.
-- Increased CPU activity may slightly impact laptop battery life, and Microsoft currently provides no native setting to disable the feature.
+- Astral released `uv audit`, which scans dependencies for vulnerabilities and malware 4–10x faster than `pip-audit` by utilizing the OSV database.
+- A critical vulnerability, "BadHost" (CVE-2026-48710), affects the Starlette framework, potentially exposing sensitive data in FastAPI, vLLM, and MCP server applications.
+- Users should immediately patch Starlette to version 1.0.1 and utilize the mcp-scan.nemesis.services tool to verify their server security.
+- The `alembic-git-revisions` tool was introduced to automate database migration chaining by leveraging git commit history to resolve revision conflicts.
+- Niquest is emerging as a potential drop-in replacement for the Requests library, offering support for HTTP/1.1, HTTP/2, and HTTP/3 protocols.
 
 ### Why it Matters
-This update represents a shift in how Windows manages hardware resources by prioritizing immediate responsiveness for everyday tasks over sustained background performance. While it offers a significant usability boost for budget and older hardware, the lack of user control over CPU spikes may concern power users focused on battery efficiency.
+These updates highlight the increasing security risks facing the Python ecosystem, particularly as AI agents and automated tools rely heavily on open-source frameworks. Addressing these vulnerabilities is essential for protecting sensitive data pipelines and maintaining the integrity of production environments.
 
 ============================================================
-Author:   Pankil Shah
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/enable-windows-11-low-latency-profile/
-Category: Phones, Laptops, and Gadgets
+Author:   Michael Kennedy (@mkennedy)
+Source:   Pythonbytes.fm
+URL:      https://pythonbytes.fm/episodes/show/483/thanks-brian
+Category: Cybersecurity
