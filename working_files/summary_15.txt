@@ -1,20 +1,19 @@
-Python Bytes: #483 Thanks Brian
+PSA: RCS E2EE is missing in iOS 27 beta 1, but it will be back
 ============================================================
 
-The latest Python development updates include a critical security vulnerability in the Starlette framework and new malware scanning capabilities introduced in the Astral uv package manager.
+Apple’s iOS 27 developer beta 1 is currently missing the RCS end-to-end encryption toggle, though the company confirms this is a temporary software branching issue rather than a removal.
 
 ### Key Points
-- Astral released `uv audit`, which scans dependencies for vulnerabilities and malware 4–10x faster than `pip-audit` by utilizing the OSV database.
-- A critical vulnerability, "BadHost" (CVE-2026-48710), affects the Starlette framework, potentially exposing sensitive data in FastAPI, vLLM, and MCP server applications.
-- Users should immediately patch Starlette to version 1.0.1 and utilize the mcp-scan.nemesis.services tool to verify their server security.
-- The `alembic-git-revisions` tool was introduced to automate database migration chaining by leveraging git commit history to resolve revision conflicts.
-- Niquest is emerging as a potential drop-in replacement for the Requests library, offering support for HTTP/1.1, HTTP/2, and HTTP/3 protocols.
+- The RCS end-to-end encryption feature, introduced in iOS 26.5, is absent from the initial iOS 27 developer beta release.
+- Apple attributes the missing toggle to standard software branching, where features from previous builds are temporarily excluded during early development cycles.
+- RCS encryption is a collaborative effort between Apple, Google, and the GSMA to secure cross-platform messaging between iPhone and Android devices.
+- Users currently relying on encrypted RCS messaging are advised to remain on iOS 26.5 until the feature is restored in a future beta update.
 
 ### Why it Matters
-These updates highlight the increasing security risks facing the Python ecosystem, particularly as AI agents and automated tools rely heavily on open-source frameworks. Addressing these vulnerabilities is essential for protecting sensitive data pipelines and maintaining the integrity of production environments.
+This temporary omission highlights the inherent instability of early-stage developer betas and the complexities of maintaining cross-platform security standards. Ensuring consistent encryption across messaging protocols remains a critical priority for Apple as it bridges the communication gap between iOS and Android ecosystems.
 
 ============================================================
-Author:   Michael Kennedy (@mkennedy)
-Source:   Pythonbytes.fm
-URL:      https://pythonbytes.fm/episodes/show/483/thanks-brian
-Category: Cybersecurity
+Author:   Arin Waichulis
+Source:   9to5Mac
+URL:      https://9to5mac.com/2026/06/09/psa-rcs-e2ee-is-missing-in-ios-27-beta-1-but-it-will-be-back/
+Category: Phones, Laptops, and Gadgets

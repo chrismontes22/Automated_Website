@@ -1,20 +1,20 @@
-Hades PyPI Attack: 19 Packages Poisoned to Auto-Run Bun Credential Stealer
+Apple’s WWDC Apple Intelligence Announcement
 ============================================================
 
-The Hades supply chain campaign has compromised 37 packages on the Python Package Index (PyPI), deploying obfuscated JavaScript stealers to harvest sensitive developer credentials and CI/CD secrets.
+Apple has unveiled its next generation of Apple Intelligence, integrating advanced AI models across its hardware ecosystem to enhance user privacy, productivity, and creative capabilities starting this fall.
 
 ### Key Points
-- Attackers injected malicious code into 37 PyPI packages, including tools for bioinformatics and computational biology, to execute payloads during installation.
-- The malware downloads the Bun JavaScript runtime to execute obfuscated scripts that scrape credentials for GitHub, AWS, GCP, Azure, and various AI development tools.
-- New persistence mechanisms include *-setup.pth files and "__init__.py" hooks that trigger execution before a package is even imported by the user.
-- The campaign employs novel evasion techniques, such as prompt injection to deceive AI-based security scanners and memory scraping for macOS and Windows systems.
-- Stolen data is exfiltrated via GitHub repositories, and the malware includes a "gh-token-monitor" service that wipes local files if a compromised token is revoked.
+- Apple Intelligence features will launch this fall with iOS 27, iPadOS 27, macOS 27, watchOS 27, and visionOS 27.
+- The update introduces a conversational Siri AI, an Image Playground for generative imagery, and advanced photo editing tools like Spatial Reframing.
+- New Safari capabilities include automated tab organization, price-drop monitoring, and agentic password management.
+- The system utilizes a privacy-first architecture combining on-device processing with Private Cloud Compute, developed in collaboration with Google’s Gemini models.
+- Supported devices include iPhone 16 and later, iPhone 15 Pro models, M1-series Macs and iPads, Apple Vision Pro, and recent Apple Watch models.
 
 ### Why it Matters
-This campaign demonstrates that attackers are successfully evolving supply chain tactics to bypass traditional security controls and exploit the trust placed in open-source package registries. By targeting developer environments and CI/CD pipelines, these threats can lead to widespread credential theft and unauthorized access to critical cloud infrastructure and proprietary codebases.
+This rollout represents a significant strategic shift for Apple as it embeds generative AI directly into the core of its operating systems to compete with rival platforms. By prioritizing on-device processing and Private Cloud Compute, the company aims to maintain its market differentiation through a privacy-centric approach to advanced machine learning.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/06/hades-pypi-attack-19-packages-poisoned.html
-Category: Cybersecurity
+Author:   John Gruber
+Source:   Apple Newsroom
+URL:      https://www.apple.com/newsroom/2026/06/apple-intelligence-brings-powerful-ai-capabilities-into-everyday-experiences/
+Category: Artificial Intelligence
