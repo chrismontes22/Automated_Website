@@ -1,20 +1,20 @@
-AI email marketing tools: Our top picks for 2026
+The Evolution of 'More Like This'
 ============================================================
 
-AI-powered email marketing tools leverage machine learning and generative technology to automate content creation, personalization, and campaign optimization, helping teams scale engagement while improving overall marketing performance and ROI.
+Modern "More Like This" (MLT) search systems are evolving from traditional lexical keyword matching to hybrid approaches that integrate semantic vector embeddings for more accurate, context-aware document discovery.
 
 ### Key Points
-- AI tools automate core tasks including subject line drafting, send-time optimization, audience segmentation, and deliverability monitoring.
-- Platforms like HubSpot, Klaviyo, and ActiveCampaign integrate AI directly into CRM workflows to link email engagement to revenue attribution.
-- Generative AI models, such as those in HubSpot’s Email Writer or Jasper, reduce production time by creating copy variations and testing content.
-- Predictive analytics enable behavioral triggers and lifecycle automation, allowing for personalized communication based on real-time user actions.
-- Effective implementation requires CRM integration, clear brand voice guardrails, and human oversight to ensure compliance and strategic alignment.
+- Traditional MLT relies on lexical analysis like BM25 to find documents sharing specific words, error codes, or product SKUs.
+- Modern vector search uses numerical embeddings to identify semantically similar content, even when different terminology is used.
+- Hybrid search combines full-text lexical matching with vector proximity to balance exact identifier precision and broad semantic relevance.
+- Performing vector lookups directly within the search engine, such as Manticore Search, reduces architectural complexity and inter-service latency.
+- Approximate Nearest Neighbor (ANN) indexing allows systems to efficiently query large datasets by trading minor precision for significant speed gains.
 
 ### Why it Matters
-Integrating AI into email marketing allows teams to move beyond static, manual campaigns toward dynamic, data-driven communication that resonates with individual recipients. By connecting these tools to a centralized CRM, businesses can accurately measure the impact of their email programs on pipeline and revenue, ultimately driving higher efficiency and better marketing outcomes.
+Integrating semantic search directly into the database engine simplifies system architecture by eliminating the need for external services to manage vector storage and retrieval. This approach ensures that critical features like access control filters and exact-match requirements remain synchronized with semantic results, ultimately improving the reliability of recommendation and retrieval-augmented generation (RAG) systems.
 
 ============================================================
-Author:   Jeanne Jennings
-Source:   Hubspot.com
-URL:      https://blog.hubspot.com/marketing/ai-email-marketing-tools
+Author:   Sergey Nikolaev
+Source:   Manticoresearch.com
+URL:      https://manticoresearch.com/blog/the-evolution-of-more-like-this/
 Category: Artificial Intelligence
