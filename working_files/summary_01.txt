@@ -1,20 +1,21 @@
-Hackers used Meta AI to expose over 34,000 Instagram accounts, but Meta isn’t slowing down
+The iPad was on Tailscale: a WebRTC debugging story
 ============================================================
 
-A security flaw in Meta’s automated AI support system allowed hackers to compromise over 34,000 Instagram accounts by manipulating password recovery workflows to gain unauthorized access to user profiles.
+**Developers identified a silent network failure where Tailscale’s VPN client drops IPv6 fragments, causing WebRTC applications to hang when packet sizes exceed the tunnel's maximum transmission unit.**
 
 ### Key Points
-- Hackers exploited an AI chatbot to change account recovery emails, enabling them to reset passwords and hijack approximately 20,000 Instagram profiles.
-- The breach exposed sensitive personal data, including phone numbers, email addresses, and birth dates, for thousands of affected users.
-- High-profile accounts, including those belonging to businesses and government-linked organizations, were among the profiles compromised during the incident.
-- Meta has paused the specific automated recovery tool involved in the breach while continuing its broader integration of AI-powered customer support systems.
-- The company is currently conducting a comprehensive security review and notifying affected users and regulators about the unauthorized access.
+- The issue originated from a hardcoded 1,228-byte MTU constant in the `webrtc-rs` library, which triggered fragmentation when combined with VPN overhead.
+- Tailscale’s IPv6 parser lacks support for fragmentation, causing the client to silently drop fragmented packets and label them as "ACL" policy denials.
+- Debugging revealed that while IPv4 fragments were handled correctly, IPv6 fragments were lost entirely, leading to intermittent connection failures on specific devices.
+- The team confirmed the bug using a simple `ping -s 1400` test, which resulted in 100% packet loss over IPv6 across all tested Tailscale devices.
+- Formal issues have been filed with the `webrtc-rs` maintainers and the Tailscale repository to address the MTU configuration and fragment handling.
 
 ### Why it Matters
-This incident highlights the significant security risks associated with replacing human customer support agents with automated AI systems that may lack robust verification safeguards. As tech companies accelerate AI adoption, the ability for a single flaw to be exploited at scale poses a growing threat to user privacy and account integrity.
+- This discovery highlights the risks of relying on default network assumptions in peer-to-peer applications, where mismatched MTU limits can cause silent, difficult-to-diagnose failures.
+- Developers building real-time services should implement proactive path MTU discovery or use conservative packet sizing to ensure compatibility across diverse network environments and VPN tunnels.
 
 ============================================================
-Author:   Shimul Sood
-Source:   Android Authority
-URL:      https://www.androidauthority.com/meta-ai-plans-after-instagram-hack-3676164/
+Author:   p2claw
+Source:   P2claw.com
+URL:      https://p2claw.com/blog/2026-06-09-the-ipad-was-on-tailscale/
 Category: Cybersecurity

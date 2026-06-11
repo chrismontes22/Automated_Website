@@ -1,20 +1,20 @@
-Microsoft Patches Record 206 Flaws, Including Three Zero-Days and Critical RCE Bugs
+The quantum clock is ticking: it's Bitcoin's problem, not Ethereum's
 ============================================================
 
-**Microsoft has released a record-breaking 206 security patches to address critical vulnerabilities, including several zero-day flaws and remote code execution risks affecting its Windows software portfolio.**
+Citi analysts and Google Quantum AI researchers warn that Bitcoin faces significant quantum computing risks due to its slow governance and reliance on vulnerable elliptic curve digital signature algorithms.
 
 ### Key Points
-- Microsoft addressed 206 vulnerabilities, including 39 critical and 167 important flaws, marking a record volume for a single update cycle.
-- Three critical vulnerabilities (CVE-2026-45657, CVE-2026-47291, and CVE-2026-44815) carry a CVSS score of 9.8, allowing unauthorized remote code execution.
-- Patches include fixes for multiple BitLocker security feature bypasses, such as the "YellowKey" and "bitskrieg" exploits, which allow access to encrypted data.
-- The update mitigates the "HTTP2/Bomb" denial-of-service attack by introducing a new "MaxHeadersCount" registry setting to limit header-based memory exhaustion.
-- Security experts attribute the surge in discovered vulnerabilities to the increasing use of AI-assisted tools in identifying software flaws.
+- Google Quantum AI and Stanford researchers estimate that a quantum computer with fewer than 500,000 physical qubits could compromise Bitcoin’s private keys in nine minutes.
+- Citi analysts highlighted that Bitcoin’s conservative, consensus-driven governance model makes implementing necessary post-quantum security upgrades significantly slower than Ethereum’s.
+- Ethereum has already begun integrating post-quantum standards, utilizing its account abstraction architecture to allow for voluntary, account-level security transitions.
+- Industry experts, including Nic Carter, estimate that approximately 6.9 million BTC could be vulnerable to quantum-scale attacks as early as 2028.
+- Global regulatory bodies, including U.S. federal agencies and the G7, have established strict deadlines for transitioning critical infrastructure to post-quantum cryptography.
 
 ### Why it Matters
-The unprecedented volume of patches highlights a significant shift in the cybersecurity landscape as AI-driven discovery tools accelerate the identification of software vulnerabilities. Organizations must prioritize these updates to prevent potential system compromises, as many of the addressed flaws require no user interaction to exploit.
+The disparity in quantum readiness between Bitcoin and Ethereum creates a significant long-term risk profile for institutional investors and corporate treasurers holding digital assets. As regulatory compliance requirements evolve, the ability of a blockchain to adapt its foundational security architecture will likely become a primary factor in determining its institutional viability.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/06/microsoft-patches-record-206-flaws.html
+Author:   Samir Tabar
+Source:   CoinDesk
+URL:      https://www.coindesk.com/opinion/2026/06/10/the-quantum-clock-is-ticking-it-s-bitcoin-s-problem-not-ethereum-s
 Category: Cybersecurity

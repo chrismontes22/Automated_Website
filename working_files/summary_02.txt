@@ -1,20 +1,20 @@
-I replaced Pi-hole with Unbound for a week, and the privacy upgrade wasn't the only win
+An AI voice startup cuts pricing by more than 50% to help consumer startups survive
 ============================================================
 
-A home network administrator improved privacy and independence by replacing third-party DNS resolvers like Quad9 and Cloudflare with a self-hosted Unbound recursive DNS server on their local infrastructure.
+Inworld CEO Kylan Gibbs is slashing AI voice model prices by over 50% to help consumer startups survive the unsustainable costs of running high-demand artificial intelligence applications.
 
 ### Key Points
-- The user transitioned from a Pi-hole and dnscrypt-proxy setup to a self-hosted Unbound instance to eliminate reliance on external DNS providers.
-- Unbound performs recursive lookups directly, distributing query data across root, TLD, and authoritative servers rather than exposing the full request chain to one provider.
-- A custom script was implemented to integrate Steven Black’s host list, enabling ad and tracker blocking directly within the Unbound configuration.
-- The setup supports DNSSEC validation and native split-DNS functionality, allowing for local domain resolution without external tunneling services.
-- While Unbound offers greater control, it lacks the user-friendly graphical dashboard and detailed query visualization provided by Pi-hole.
+- Consumer AI startups currently spend 70% to 90% of their operating budgets on inference costs required to power chatbots and voice assistants.
+- Inworld, which has raised over $117 million, is reducing its pricing to prevent startups from failing as their user engagement and computing expenses scale.
+- Unlike enterprise software, consumer-facing AI apps struggle to maintain profitability because users are highly price-sensitive and subscription fees remain low.
+- Large technology companies with proprietary infrastructure and favorable chip pricing hold a significant competitive advantage over smaller startups in the current market.
+- High inference costs are forcing many startups to pivot toward business-to-business products or cease operations entirely to avoid financial collapse.
 
 ### Why it Matters
-Self-hosting a DNS resolver allows users to reclaim ownership of their network traffic and reduce dependency on centralized third-party infrastructure. This approach provides deeper insight into how internet requests are resolved while enhancing privacy by preventing any single entity from logging a complete history of domain lookups.
+The current economic model for consumer AI creates a paradox where product success leads to decreased profitability due to rising infrastructure expenses. Lowering these costs is essential for startups to scale effectively and compete against larger rivals that dominate the industry.
 
 ============================================================
-Author:   Shekhar Vaidya
-Source:   XDA Developers
-URL:      https://www.xda-developers.com/replaced-pi-hole-with-unbound-for-week-privacy-upgrade-wasnt-only-win/
-Category: Cybersecurity
+Author:   Alistair Barr
+Source:   Business Insider
+URL:      https://www.businessinsider.com/inworld-ceo-cuts-ai-model-prices-to-aid-consumer-startups-2026-6
+Category: Artificial Intelligence
