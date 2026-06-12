@@ -1,20 +1,20 @@
-Microsoft Patches Record 206 Flaws, Including Three Zero-Days and Critical RCE Bugs
+JDY Botnet Evolves After KV Takedown, Targets Military Networks
 ============================================================
 
-**Microsoft has released a record-breaking 206 security patches to address critical vulnerabilities, including several zero-day flaws and remote code execution risks affecting its Windows software portfolio.**
+Lumen’s Black Lotus Labs reports that the JDY botnet has expanded to over 1,500 compromised IoT and SOHO devices, serving as a sophisticated reconnaissance tool for state-sponsored hacking groups.
 
 ### Key Points
-- Microsoft addressed 206 vulnerabilities, including 39 critical and 167 important flaws, marking a record volume for a single update cycle.
-- Three critical vulnerabilities (CVE-2026-45657, CVE-2026-47291, and CVE-2026-44815) carry a CVSS score of 9.8, allowing unauthorized remote code execution.
-- Patches include fixes for multiple BitLocker security feature bypasses, such as the "YellowKey" and "bitskrieg" exploits, which allow access to encrypted data.
-- The update mitigates the "HTTP2/Bomb" denial-of-service attack by introducing a new "MaxHeadersCount" registry setting to limit header-based memory exhaustion.
-- Security experts attribute the surge in discovered vulnerabilities to the increasing use of AI-assisted tools in identifying software flaws.
+- The JDY botnet has more than doubled in size since January 2024, now targeting hardware from manufacturers including Ubiquiti, Hikvision, Linksys, and Cisco.
+- Operators utilize hidden Tor services and fileless malware execution to maintain command-and-control while evading detection by security software.
+- The network performs high-performance scanning to map exposed services, often identifying vulnerable targets within hours of public vulnerability disclosures.
+- Most infected nodes are located in the United States, allowing attackers to bypass geofencing and blend malicious traffic with legitimate user activity.
+- Data collected by the botnet is used to support follow-on exploitation, with significant targeting observed against U.S. military networks and associated infrastructure.
 
 ### Why it Matters
-The unprecedented volume of patches highlights a significant shift in the cybersecurity landscape as AI-driven discovery tools accelerate the identification of software vulnerabilities. Organizations must prioritize these updates to prevent potential system compromises, as many of the addressed flaws require no user interaction to exploit.
+The resurgence of JDY demonstrates that disrupting individual botnet clusters is insufficient to eliminate persistent, state-sponsored reconnaissance capabilities. This evolving threat highlights the critical risk posed by unpatched IoT devices, which attackers increasingly leverage to map and prepare for large-scale cyber operations against sensitive infrastructure.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/06/microsoft-patches-record-206-flaws.html
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/193490/malware/jdy-botnet-evolves-after-kv-takedown-targets-military-networks.html
 Category: Cybersecurity

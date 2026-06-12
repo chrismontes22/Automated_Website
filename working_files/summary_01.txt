@@ -1,21 +1,20 @@
-The iPad was on Tailscale: a WebRTC debugging story
+Why AI hasn't replaced software engineers, and won't
 ============================================================
 
-**Developers identified a silent network failure where Tailscale’s VPN client drops IPv6 fragments, causing WebRTC applications to hang when packet sizes exceed the tunnel's maximum transmission unit.**
+Evidence suggests that artificial intelligence will not replace software engineers because the profession relies on human decision-making and accountability that cannot be fully automated by current coding agents.
 
 ### Key Points
-- The issue originated from a hardcoded 1,228-byte MTU constant in the `webrtc-rs` library, which triggered fragmentation when combined with VPN overhead.
-- Tailscale’s IPv6 parser lacks support for fragmentation, causing the client to silently drop fragmented packets and label them as "ACL" policy denials.
-- Debugging revealed that while IPv4 fragments were handled correctly, IPv6 fragments were lost entirely, leading to intermittent connection failures on specific devices.
-- The team confirmed the bug using a simple `ping -s 1400` test, which resulted in 100% packet loss over IPv6 across all tested Tailscale devices.
-- Formal issues have been filed with the `webrtc-rs` maintainers and the Tailscale repository to address the MTU configuration and fragment handling.
+- Software development functions as a "decide-execute-deliver" sandwich, where AI only compresses the execution layer while leaving critical decision and delivery phases to humans.
+- Recent corporate layoffs attributed to AI, such as those at Block, Snap, and Intuit, often reflect financial restructuring or "AI washing" rather than actual technological displacement.
+- Data from New York’s WARN Act filings shows that AI-related layoffs account for less than 0.2% of total job losses in the state.
+- Research indicates that AI increases the volume of code written but does not significantly reduce the human labor required for verification, debugging, and system integration.
+- Software demand remains highly price-elastic, meaning cheaper production costs likely lead to increased software creation rather than a reduction in the need for engineering talent.
 
 ### Why it Matters
-- This discovery highlights the risks of relying on default network assumptions in peer-to-peer applications, where mismatched MTU limits can cause silent, difficult-to-diagnose failures.
-- Developers building real-time services should implement proactive path MTU discovery or use conservative packet sizing to ensure compatibility across diverse network environments and VPN tunnels.
+The misconception that AI will trigger mass unemployment in software engineering stems from a misunderstanding of the actual bottlenecks in the development process. By recognizing that human judgment and accountability remain essential, businesses can better focus on integrating AI as a tool for productivity rather than a replacement for skilled labor.
 
 ============================================================
-Author:   p2claw
-Source:   P2claw.com
-URL:      https://p2claw.com/blog/2026-06-09-the-ipad-was-on-tailscale/
-Category: Cybersecurity
+Author:   Arvind Narayanan, Sayash Kapoor
+Source:   Normaltech.ai
+URL:      https://www.normaltech.ai/p/why-ai-hasnt-replaced-software-engineers
+Category: Artificial Intelligence
