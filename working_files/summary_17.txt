@@ -1,20 +1,20 @@
-RV maker's self-driving tow sled packs battery power of 2 Cybertrucks
+Building agents without harness engineering
 ============================================================
 
-Silicon Valley startup Lightship has launched the Powersled, an electric, self-propelled cargo trailer featuring a high-capacity battery system designed to provide mobile power for off-grid commercial and industrial operations.
+Prismvideos has launched a new API that allows developers to deploy Hermes-based AI agents, enabling them to bypass complex infrastructure engineering by focusing on custom tools and skills.
 
 ### Key Points
-- The Powersled offers battery capacity options of 80 kWh, 160 kWh, and 240 kWh, with a maximum payload capacity between 6,200 and 8,700 pounds.
-- It utilizes Lightship’s Trekdrive powered axle, which uses a sensor-loaded hitch to assist the tow vehicle, potentially doubling its fuel economy and range.
-- The trailer provides 38 kilowatts of continuous 240VAC power for equipment, pumps, and tools, serving as a silent, emission-free alternative to traditional fuel generators.
-- Exedy Drones is the first customer, planning to use the unit as a mobile charging and operations hub for agricultural drone services.
-- Production takes place at Lightship’s Colorado facility, which is currently undergoing an expansion to quadruple manufacturing capacity by the end of the year.
+- The API enables developers to deploy Hermes agents with built-in memory, automations, and persistent filesystems via a single POST request.
+- Prismvideos shifted from building custom agent infrastructure to using Hermes to gain features like self-learning and observational memory.
+- The platform supports advanced capabilities including image and video input, subagents, and the "Ralph Wiggum loop" for persistent goal-setting.
+- The service provides per-container isolation and credential management, allowing integration with proprietary data and external connectors like Google Drive.
+- The API competes with managed offerings from LangChain and Claude by providing broader support for automations and multi-modal inputs.
 
 ### Why it Matters
-The Powersled represents a significant shift in logistics by combining cargo transport with high-capacity energy storage to eliminate the need for separate generator trailers. This technology could drastically improve operational efficiency and sustainability for industries like construction, emergency response, and agriculture by providing reliable, portable power in remote locations.
+By offloading the "harness-engineering" of AI agents to a managed API, developers can focus on creating differentiated value through proprietary data and specific user workflows. This shift reflects a broader industry trend where infrastructure is becoming commoditized, forcing startups to prioritize unique application-level features over building foundational agent frameworks.
 
 ============================================================
-Author:   C.C. Weiss
-Source:   New Atlas
-URL:      https://newatlas.com/camping-trailers/lightship-powersled-battery-trailer/
-Category: Phones, Laptops, and Gadgets
+Author:   Rajit Khanna
+Source:   Rajitkhanna.com
+URL:      https://rajitkhanna.com/agents/
+Category: Artificial Intelligence
