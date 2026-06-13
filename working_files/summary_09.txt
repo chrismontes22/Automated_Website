@@ -1,20 +1,20 @@
-Nobody understands smartphone design like Motorola, and I'm totally surprised by how good the Motorola Edge 2026 is
+Hades malware campaign tricks AI scanners with fake nuclear weapon prompts — malicious code triggers safety failsafes so scanners skip the payload
 ============================================================
 
-The Motorola Edge 2026 delivers a refined, lightweight design and strong performance, marking a significant improvement for the company’s mid-range smartphone lineup despite limited long-term software support.
+The Hades malware campaign is targeting scientific and machine-learning development packages by using adversarial prompt-injection attacks to bypass automated security scanners and steal sensitive developer credentials and keys.
 
 ### Key Points
-- The Motorola Edge 2026 features a 6.3-inch AMOLED display, MediaTek Dimensity 7450 processor, and a 5000mAh battery.
-- It retails for $599.99 and is available unlocked or through major carriers including Verizon, AT&T, and T-Mobile.
-- Key hardware highlights include an IP69 rating, Gorilla Glass 7i, and a versatile triple-camera system with 3x optical zoom.
-- The device ships with a clean, bloatware-free version of Android 16, though it is limited to only two OS updates.
-- The phone weighs 160.5g and features a unique Pantone Martini Olive textile-like back finish.
+- The Hades campaign currently impacts 37 Python and 106 JavaScript packages, including several typo-squatting variants of popular libraries.
+- Attackers are embedding prompt-injection instructions in JavaScript comments to trigger AI safety filters, causing scanners to abort before analyzing malicious payloads.
+- The malware now exfiltrates a wide range of sensitive data, including AWS credentials, SSH keys, Kubernetes tokens, and .env files.
+- New evasion techniques include splitting payloads across multiple packages and delaying execution until the package is initialized rather than installed.
+- The malware includes self-destruct mechanisms that trigger if it detects a sandboxed environment or security analysis tools.
 
 ### Why it Matters
-This release represents a major turnaround for Motorola in the competitive mid-range market by successfully addressing previous complaints regarding build quality and performance. While the limited software update policy remains a drawback, the device offers a compelling, high-quality alternative to more expensive flagship models for budget-conscious consumers.
+This campaign highlights a critical vulnerability in the growing reliance on AI-driven security tools for scanning software supply chains. By exploiting the safety protocols of these models, attackers can effectively blind automated defenses, leaving development environments exposed to credential theft and unauthorized access.
 
 ============================================================
-Author:   Nicholas Sutrich
-Source:   Android Central
-URL:      https://www.androidcentral.com/phones/motorola/motorola-edge-2026-review
-Category: Phones, Laptops, and Gadgets
+Author:   editors@tomshardware.com (Bruno Ferreira) , Bruno Ferreira
+Source:   Tom's Hardware UK
+URL:      https://www.tomshardware.com/tech-industry/cyber-security/hades-malware-campaign-now-tricks-ai-bots-by-injecting-text-about-biological-and-nuclear-weapons-failsafe-mechanisms-triggered-by-prompts-for-weapon-creation-stop-scans-before-payload-is-seen
+Category: Cybersecurity

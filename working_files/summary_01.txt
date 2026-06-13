@@ -1,20 +1,21 @@
-Comcast Business SecurityEdge Preferred strengthens security for small businesses
+This Week in Security: Microsoft on Microsoft, Register Your Domains, Linux on ARM, and FreeBSD Joins the File Cache Club
 ============================================================
 
-Comcast Business has launched SecurityEdge Preferred, a network-native cybersecurity solution designed to protect small businesses from digital threats without requiring additional hardware or dedicated IT staff for management.
+Microsoft is addressing a surge in supply chain attacks as the Miasma worm compromises open-source repositories, prompting major security updates across GitHub, NPM, and Windows platforms.
 
 ### Key Points
-- SecurityEdge Preferred integrates directly into the Comcast Business network to intercept malware, ransomware, and phishing attempts at the network edge.
-- The service utilizes AI-powered threat intelligence to monitor traffic in real time and block malicious IP addresses or unauthorized software.
-- Comcast reported that the system blocked threats at an average rate of over 230 per second during May 2026.
-- The solution is available for $40 to $60 per month depending on internet speed, with no per-seat licensing or annual subscription fees.
-- Setup requires no additional hardware beyond an existing Comcast Business router and can be activated in minutes.
+- GitHub automatically disabled 73 Microsoft-related repositories, including Azure packages, following infections by the Miasma supply chain worm.
+- NPM 12 will block automatic execution of install-phase scripts and remote URL dependencies to mitigate the spread of malicious packages.
+- Microsoft’s latest Patch Tuesday addressed over 200 security vulnerabilities, including exploits for Windows Defender and BitLocker.
+- The researcher known as MSNightmare released new Windows exploits, including the RoguePlanet vulnerability, following a public dispute with Microsoft.
+- A Python linter, Ruff, successfully blocked a malicious code injection attempt by rejecting commits that violated project style guidelines.
+- New vulnerabilities were identified in OpenSSL, the Linux kernel on Arm processors, and the FreeBSD kernel’s page-cache system.
 
 ### Why it Matters
-Small businesses are increasingly targeted by cyberattacks, yet many lack the resources or technical expertise to implement enterprise-grade security measures. By embedding protection directly into the network infrastructure, this service lowers the barrier to entry for essential digital defense in an era of rising financial losses from data breaches.
+These incidents highlight the growing fragility of the software supply chain as automated malware and credential-harvesting worms increasingly target developer environments. Organizations must prioritize robust dependency management and automated security patching to defend against these sophisticated, high-volume attacks.
 
 ============================================================
-Author:   Industry News
-Source:   Help Net Security
-URL:      https://www.helpnetsecurity.com/2026/06/12/comcast-business-securityedge-preferred-small-businesses/
+Author:   Mike Kershaw
+Source:   Hackaday
+URL:      https://hackaday.com/2026/06/12/this-week-in-security-microsoft-on-microsoft-register-your-domains-linux-on-arm-and-freebsd-joins-the-file-cache-club/
 Category: Cybersecurity
