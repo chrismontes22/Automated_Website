@@ -1,20 +1,19 @@
-Hades malware campaign tricks AI scanners with fake nuclear weapon prompts — malicious code triggers safety failsafes so scanners skip the payload
+Google Publishes Tennessee Search “Blacklist” Guidance via @sejournal, @martinibuster
 ============================================================
 
-The Hades malware campaign is targeting scientific and machine-learning development packages by using adversarial prompt-injection attacks to bypass automated security scanners and steal sensitive developer credentials and keys.
+Google has introduced new guidelines for Tennessee small businesses to comply with SB 2262, a state law granting companies legal recourse against search engine blacklisting and review removal.
 
 ### Key Points
-- The Hades campaign currently impacts 37 Python and 106 JavaScript packages, including several typo-squatting variants of popular libraries.
-- Attackers are embedding prompt-injection instructions in JavaScript comments to trigger AI safety filters, causing scanners to abort before analyzing malicious payloads.
-- The malware now exfiltrates a wide range of sensitive data, including AWS credentials, SSH keys, Kubernetes tokens, and .env files.
-- New evasion techniques include splitting payloads across multiple packages and delaying execution until the package is initialized rather than installed.
-- The malware includes self-destruct mechanisms that trigger if it detects a sandboxed environment or security analysis tools.
+- Tennessee law SB 2262 takes effect July 1, protecting businesses with 50 or fewer employees from search engine visibility reductions or review deletions of 25% or more.
+- The legislation allows small businesses to demand a formal explanation and justification from search engines regarding adverse actions within five business days.
+- Google’s new guidelines require Tennessee business owners to verify their websites via Search Console and claim Google Business Profiles to receive mandatory legal notifications.
+- Businesses may initiate court actions against search engines if they believe they have been unfairly blacklisted or had their digital presence restricted.
 
 ### Why it Matters
-This campaign highlights a critical vulnerability in the growing reliance on AI-driven security tools for scanning software supply chains. By exploiting the safety protocols of these models, attackers can effectively blind automated defenses, leaving development environments exposed to credential theft and unauthorized access.
+This legislation establishes a new legal framework for transparency between major search platforms and local businesses, potentially setting a precedent for state-level regulation of big tech. By providing a clear path for appeal and accountability, the law aims to protect small enterprises from sudden, unexplained losses in digital visibility and reputation.
 
 ============================================================
-Author:   editors@tomshardware.com (Bruno Ferreira) , Bruno Ferreira
-Source:   Tom's Hardware UK
-URL:      https://www.tomshardware.com/tech-industry/cyber-security/hades-malware-campaign-now-tricks-ai-bots-by-injecting-text-about-biological-and-nuclear-weapons-failsafe-mechanisms-triggered-by-prompts-for-weapon-creation-stop-scans-before-payload-is-seen
-Category: Cybersecurity
+Author:   Roger Montti
+Source:   Search Engine Journal
+URL:      https://www.searchenginejournal.com/google-publishes-tennessee-search-blacklist-guidance/579161/
+Category: Tech Business & Markets

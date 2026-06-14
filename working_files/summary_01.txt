@@ -1,21 +1,20 @@
-This Week in Security: Microsoft on Microsoft, Register Your Domains, Linux on ARM, and FreeBSD Joins the File Cache Club
+'Baffling' or 'based'? Tech world reacts to export controls on Anthropic's new AI models
 ============================================================
 
-Microsoft is addressing a surge in supply chain attacks as the Miasma worm compromises open-source repositories, prompting major security updates across GitHub, NPM, and Windows platforms.
+The Trump Administration has ordered Anthropic to block all foreign access to its Fable 5 and Mythos 5 AI models, effectively restricting use by foreign nationals globally.
 
 ### Key Points
-- GitHub automatically disabled 73 Microsoft-related repositories, including Azure packages, following infections by the Miasma supply chain worm.
-- NPM 12 will block automatic execution of install-phase scripts and remote URL dependencies to mitigate the spread of malicious packages.
-- Microsoft’s latest Patch Tuesday addressed over 200 security vulnerabilities, including exploits for Windows Defender and BitLocker.
-- The researcher known as MSNightmare released new Windows exploits, including the RoguePlanet vulnerability, following a public dispute with Microsoft.
-- A Python linter, Ruff, successfully blocked a malicious code injection attempt by rejecting commits that violated project style guidelines.
-- New vulnerabilities were identified in OpenSSL, the Linux kernel on Arm processors, and the FreeBSD kernel’s page-cache system.
+- The U.S. government mandate applies to both international users and foreign-national employees working within the United States.
+- Critics argue the move stems from Anthropic’s own marketing, which previously characterized the models as dangerous "munitions" or "bombs."
+- Industry experts warn that "deemed export" rules prevent Anthropic’s own foreign staff from accessing the technology they helped develop.
+- Observers suggest the policy could stifle U.S. innovation, drive foreign talent toward international competitors, and trigger significant First Amendment legal challenges.
+- The directive has sparked debate over whether the Department of Commerce’s export control strategy is incoherent or a necessary step in national security.
 
 ### Why it Matters
-These incidents highlight the growing fragility of the software supply chain as automated malware and credential-harvesting worms increasingly target developer environments. Organizations must prioritize robust dependency management and automated security patching to defend against these sophisticated, high-volume attacks.
+This unprecedented intervention signals a major shift toward aggressive federal oversight of frontier AI development, moving beyond voluntary safety commitments to strict, government-enforced export controls. The decision creates a restrictive precedent that could fundamentally alter how AI labs operate, recruit global talent, and deploy their most advanced models.
 
 ============================================================
-Author:   Mike Kershaw
-Source:   Hackaday
-URL:      https://hackaday.com/2026/06/12/this-week-in-security-microsoft-on-microsoft-register-your-domains-linux-on-arm-and-freebsd-joins-the-file-cache-club/
-Category: Cybersecurity
+Author:   Tracy Connor
+Source:   Business Insider
+URL:      https://www.businessinsider.com/reaction-to-trump-controls-on-anthropic-fable-and-mythos-2026-6#article
+Category: Artificial Intelligence

@@ -1,20 +1,20 @@
-Cable Lobbyists Show How Trump FCC’s Extortive ‘Foreign Router Ban’ Isn’t Workable
+Iran-Linked Handala Breached a California Water Utility. It Could Have Done Worse, and It Knows That.
 ============================================================
 
-The NCTA has petitioned the FCC for a broad exemption from the Trump administration’s foreign router ban, citing significant supply chain constraints and the impracticality of immediate domestic manufacturing.
+The Iran-linked threat group Handala compromised California Water Service on June 11, 2026, exposing customer billing data and internal GPS infrastructure used for maintaining critical water utility systems.
 
 ### Key Points
-- The NCTA, representing the cable industry, filed a petition requesting an expedited waiver from the FCC’s restrictions on foreign-made networking hardware.
-- Industry groups argue that current supply chain shortages for critical components like memory modules make immediate onshoring of router production impossible.
-- Manufacturers such as Amazon’s Eero and Netgear have already received conditional exemptions, though the specific terms of these agreements remain undisclosed.
-- The FCC policy, championed by Brendan Carr, aims to force hardware manufacturing back to the United States under the guise of national security.
-- Cable providers warn that failing to grant these waivers could lead to widespread broadband service disruptions for consumers and businesses across the country.
+- Handala published a 5GB data dump containing customer names, addresses, phone numbers, and payment histories from multiple California Water Service districts.
+- The breach originated through an internet-exposed RTKBase GNSS platform, which served as a lateral pivot point to access the company's billing database.
+- Exposed infrastructure includes seven operational districts, such as Bakersfield, Chico, Salinas, Stockton, and Visalia, with plaintext administrative credentials now publicly available.
+- While no disruption to water treatment or SCADA systems occurred, the group is known for using destructive wipers and MBR-overwriting tools in previous attacks.
+- Security experts advise utilities to immediately audit internet-facing GPS hardware and enforce strict network segmentation between operational technology and administrative billing environments.
 
 ### Why it Matters
-The ongoing conflict highlights the tension between aggressive protectionist trade policies and the complex, globalized reality of modern telecommunications supply chains. If these regulations remain unworkable, they risk increasing costs for providers and potentially destabilizing internet access for millions of American users.
+This incident highlights the severe risks posed by internet-exposed, lightweight infrastructure in critical utility sectors. It serves as a warning that attackers are actively targeting life-sustaining systems to escalate from data theft to potentially destructive operations.
 
 ============================================================
-Author:   Karl Bode
-Source:   Techdirt
-URL:      http://www.techdirt.com/2026/06/12/cable-lobbyists-show-how-trump-fccs-extortive-foreign-router-ban-isnt-workable/
-Category: Tech Business & Markets
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/193565/uncategorized/iran-linked-handala-breached-a-california-water-utility-it-could-have-done-worse-and-it-knows-that.html
+Category: Cybersecurity
