@@ -1,19 +1,20 @@
-★ The Talk Show: Live From WWDC 2026
+Chinese hackers hijack auth flow, spy on isolated network for a decade
 ============================================================
 
-John Gruber hosted a live discussion at San Jose’s California Theatre featuring Joanna Stern and Nilay Patel to analyze the latest product announcements from Apple’s 2026 WWDC event.
+The Chinese cyberespionage group Velvet Ant maintained undetected access to a critical infrastructure network for ten years by compromising authentication stacks and pivoting into isolated, air-gapped systems.
 
 ### Key Points
-- John Gruber recorded a live podcast episode at The California Theatre on June 9, 2026.
-- Guests Joanna Stern and Nilay Patel joined the discussion to review Apple’s WWDC 2026 announcements.
-- Sandwich Vision released immersive 3D video content with spatial audio for the Apple Vision Pro headset.
-- The production team at Sandwich managed the livestream and upcoming on-demand video release.
+- Researchers at Sygnia discovered "Operation Highland," a decade-long espionage campaign targeting a large organization's isolated network.
+- Velvet Ant gained initial access via internet-facing servers before using custom SOCKS5 proxies to tunnel into air-gapped environments.
+- The attackers achieved long-term persistence by replacing legitimate Linux PAM and OpenSSH components with backdoored versions to harvest credentials.
+- Nine distinct variants of malicious PAM modules were identified, allowing the group to bypass authentication and monitor all administrative activity.
+- Remediation proved highly complex, requiring researchers to build a testing lab to prevent operational outages during the removal of trojanized system files.
 
 ### Why it Matters
-This event provides expert analysis on Apple's latest software and hardware ecosystem updates following the company's annual developer conference. The integration of high-fidelity spatial video highlights the ongoing push to expand immersive media capabilities for the Vision Pro platform.
+This breach highlights the severe risks posed by sophisticated actors who embed themselves directly into core authentication processes to bypass standard security measures. Organizations must prioritize file integrity monitoring and hardened access controls to protect critical system components from such deep-seated, long-term persistence.
 
 ============================================================
-Author:   John Gruber
-Source:   Daringfireball.net
-URL:      https://daringfireball.net/2026/06/the_talk_show_live_from_wwdc_2026
-Category: Phones, Laptops, and Gadgets
+Author:   Bill Toulas
+Source:   BleepingComputer
+URL:      https://www.bleepingcomputer.com/news/security/chinese-hackers-hijack-auth-flow-spy-on-isolated-network-for-a-decade/
+Category: Cybersecurity

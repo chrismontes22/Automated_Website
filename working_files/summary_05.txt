@@ -1,20 +1,20 @@
-5 Raspberry Pi projects I'm self-hosting this year instead of wasting money on monthly subscriptions
+Your smart home is killing your Wi-Fi — here's the solution nobody talks about
 ============================================================
 
-**Raspberry Pi users can significantly reduce monthly subscription costs by hosting open-source alternatives like Nextcloud, Vaultwarden, and Jellyfin to manage files, passwords, and media on their own hardware.**
+LoRaWAN technology offers an alternative to Wi-Fi for smart home connectivity by utilizing low-power, long-range radio signals to manage devices without congesting a standard home wireless network.
 
 ### Key Points
-- Nextcloud serves as a private, self-hosted alternative to Google Drive, offering file synchronization and a suite of office applications.
-- Vaultwarden provides a lightweight, secure password management solution that functions as a private alternative to LastPass.
-- BentoPDF and OmniTools offer browser-based, client-side processing for PDF editing and file conversions, minimizing the resource load on Raspberry Pi hardware.
-- Jellyfin acts as a free, feature-rich media streaming server that avoids the paywalls and promotional content found in platforms like Plex.
-- Tailscale is recommended for securely accessing these locally hosted services from outside the home network.
+- LoRaWAN operates on a low-frequency, long-range protocol capable of reaching distances up to 15 kilometers, significantly outperforming traditional Wi-Fi coverage.
+- The system requires specific hardware, including LoRaWAN-compatible sensors or nodes, a central gateway, and a network server like a Raspberry Pi running Home Assistant.
+- Unlike mesh networks, LoRaWAN uses a single central gateway to manage device communication, effectively penetrating walls and covering large indoor or outdoor areas.
+- Users must ensure devices explicitly state "LoRaWAN" compatibility on packaging, as standard LoRa-only hardware may not support the necessary network protocol.
+- Practical applications include monitoring temperature, humidity, and security sensors in rural settings or large buildings where standard Wi-Fi signals are unreliable.
 
 ### Why it Matters
-Self-hosting tools on a Raspberry Pi allows users to regain control over their personal data while eliminating recurring monthly subscription fees for popular software services. This approach provides a cost-effective, privacy-focused alternative for managing digital workflows without sacrificing essential features.
+Adopting LoRaWAN reduces network congestion by offloading smart home traffic from standard Wi-Fi, leading to more stable and efficient device performance. This technology provides a scalable solution for users needing deep wall penetration and long-range connectivity that traditional consumer networking hardware cannot achieve.
 
 ============================================================
-Author:   Abhishek Kumar Mishra
-Source:   XDA Developers
-URL:      https://www.xda-developers.com/raspberry-pi-projects-self-hosting-this-year-instead-of-paying-monthly/
+Author:   Chris Hachey
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/lorawan-antenna-nodes-sensors/
 Category: Phones, Laptops, and Gadgets
