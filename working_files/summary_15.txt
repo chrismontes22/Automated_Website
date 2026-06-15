@@ -1,20 +1,20 @@
-GLM 5.2 Is Out
+I gave my NAS a local AI brain, and it finally became the home dashboard I always wanted
 ============================================================
 
-Zhipu AI has officially released GLM-5.2, a powerful open-source model featuring a 1M context window designed to support complex agent applications and advanced coding tasks for global developers.
+A home server enthusiast has integrated a local large language model into their NAS to automate log analysis and provide natural language status updates on system performance.
 
 ### Key Points
-- GLM-5.2 is Zhipu AI’s most capable open-source model, optimized for long-horizon tasks and high-performance coding.
-- The model supports a 1M context window, allowing for the processing of extensive data sequences in complex applications.
-- Access is currently available to all GLM Coding Plan users, including Lite, Pro, and Max tiers.
-- A public API for the GLM-5.2 model is scheduled to launch next week.
-- The release emphasizes a commitment to open-source development in response to increasing international restrictions on frontier AI models.
+- The setup utilizes Ollama to run the Llama 3 model locally on a repurposed x86 gaming rig.
+- Open WebUI provides a browser-based interface for querying system data from any device on the local network.
+- Custom Python scripts parse TrueNAS logs and Plex SQLite database files to feed relevant text data into the LLM.
+- The system summarizes 24-hour log activity, flags hardware warnings, and tracks media playback history without requiring external APIs.
+- This configuration requires significant RAM and CPU resources, making it unsuitable for low-power ARM-based NAS devices or systems with under 8GB of memory.
 
 ### Why it Matters
-This release provides developers with a high-capacity alternative to restricted proprietary models, potentially lowering barriers for building sophisticated AI agents. By prioritizing open access, Zhipu AI aims to decentralize frontier intelligence and ensure that advanced tools remain available for global research and commercial innovation.
+Integrating local AI into home server infrastructure transforms passive storage devices into proactive systems that can communicate operational health and usage trends. This approach demonstrates a cost-effective way for home lab users to leverage existing hardware for automated monitoring and data management.
 
 ============================================================
-Author:   Zephyr, Alex J. Champandard 🌱, Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞), Chubby♨️, Deli Chen, kache
-Source:   digg.com
-URL:      https://digg.com/tech/ii9xibgn
+Author:   Korbin Brown
+Source:   XDA Developers
+URL:      https://www.xda-developers.com/nas-ai-brain-home-dashboard/
 Category: Artificial Intelligence

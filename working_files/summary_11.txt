@@ -1,20 +1,20 @@
-What new Google Messages features are rolling out [June 2026]
+Week in review: Exploited Check Point VPN zero-day, Oracle PeopleSoft servers under attack
 ============================================================
 
-Google is actively updating its Messages for Android app with new interface designs, enhanced RCS features, and a transition away from Samsung Messages in the United States.
+Recent cybersecurity reports highlight a surge in active exploits targeting enterprise software, including critical vulnerabilities in Check Point VPN, Oracle PeopleSoft, and the LiteLLM open-source AI gateway.
 
 ### Key Points
-- Google is phasing out Samsung Messages in the U.S., requiring users to switch to Google Messages for RCS functionality on Android 14 and newer devices.
-- Apple introduced end-to-end encrypted RCS support for iPhone users in iOS 26.5, enabling secure cross-platform messaging with Google Messages users.
-- New interface updates include a floating long-press menu for images, a redesigned read receipt system, and a "Tap to draft" option for Smart Replies.
-- Google is transitioning Messages for web from QR code pairing to a mandatory Google Account sign-in process.
-- A new trash folder feature now retains deleted chats for 30 days before permanent removal.
+- Attackers are actively exploiting a zero-day authentication bypass vulnerability (CVE-2026-50751) in Check Point Remote Access VPNs.
+- A critical zero-day flaw (CVE-2026-35273) in Oracle PeopleSoft PeopleTools is currently being leveraged by threat actors in the wild.
+- CISA confirmed active exploitation of a command injection vulnerability (CVE-2026-42271) within the LiteLLM open-source AI gateway.
+- Microsoft released its largest-ever Patch Tuesday, addressing nearly 200 vulnerabilities, while researchers identified a new "RoguePlanet" zero-day affecting Windows Defender.
+- Meta reported that hackers hijacked over 20,000 Instagram accounts by exploiting a flaw in the company's AI-assisted account recovery system.
 
 ### Why it Matters
-These updates reflect Google's ongoing effort to standardize the messaging experience across Android and iOS through the universal adoption of RCS. By streamlining features and security protocols, Google aims to improve cross-platform communication while consolidating its ecosystem under a unified Google Account framework.
+The rapid weaponization of zero-day vulnerabilities across both legacy enterprise software and modern AI infrastructure significantly shortens the window for organizations to implement defensive patches. This trend forces security teams to move beyond traditional update cycles toward more aggressive, real-time vulnerability management to prevent widespread data breaches.
 
 ============================================================
-Author:   Abner Li
-Source:   9to5google.com
-URL:      http://9to5google.com/2026/06/13/new-google-messages-features/
-Category: Phones, Laptops, and Gadgets
+Author:   Anamarija Pogorelec
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/06/14/week-in-review-exploited-check-point-vpn-zero-day-oracle-peoplesoft-servers-under-attack/
+Category: Cybersecurity

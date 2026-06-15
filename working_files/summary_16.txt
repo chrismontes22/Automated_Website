@@ -1,19 +1,19 @@
-The 10th Generation Kindle can’t be jailbreaked anymore
+10th Gen Honda Civic Updates Are Signed with AOSP Test Keys
 ============================================================
 
-Amazon has released a software update for 10th-generation Kindle e-readers that restricts device modding and prevents the use of third-party tools to remove digital rights management from e-books.
+A security researcher discovered a vulnerability in 2021 Honda Civic headunits that allows arbitrary code execution by exploiting the vehicle's USB-based Android Open Source Project update process.
 
 ### Key Points
-- The 5.18.1.1.1 software update targets the Kindle Paperwhite 4 and base Kindle models to block jailbreaking tools.
-- Amazon transitioned older e-readers to the KFX-ZIP format, which is incompatible with common DeDRM plugins and Calibre software.
-- The company has discontinued USB file transfers and replaced the Kindle for PC application with a native Windows 10 and 11 app.
-- These changes effectively prevent users from backing up their purchased e-books or modifying their device software.
+- The "EvilValet" vulnerability allows attackers with physical access to the vehicle's USB port to install unauthorized software.
+- Honda’s update system relies on a publicly known AOSP test key, enabling the installation of custom firmware without requiring root access.
+- New open-source tools, including `ota-builder` and `apk-rebuilder`, have been released to help researchers automate the analysis and modification of headunit update files.
+- The researcher is calling for community contributions to map software versions and improve tools for parsing AIDL interfaces on the infotainment system.
 
 ### Why it Matters
-These updates signal a shift toward stricter digital rights management, limiting how users manage and store their personal e-book libraries. By restricting third-party software compatibility, Amazon is centralizing control over content access and reducing the long-term flexibility of older hardware.
+This discovery highlights significant security weaknesses in automotive infotainment systems that rely on standard Android update mechanisms. The ability to execute arbitrary code via a simple USB connection poses a potential risk to vehicle data privacy and system integrity.
 
 ============================================================
-Author:   Michael Kozlowski
-Source:   Goodereader
-URL:      https://goodereader.com/blog/kindle/the-10th-generation-kindle-cant-be-jailbreaked-anymore
-Category: Phones, Laptops, and Gadgets
+Author:   Eric McDonald
+Source:   Juniperspring.org
+URL:      https://juniperspring.org/posts/honda-evil-valet/
+Category: Cybersecurity

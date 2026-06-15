@@ -1,20 +1,20 @@
-Chinese hackers hijack auth flow, spy on isolated network for a decade
+Nexstar CEO: big tech swallowed local newspapers. Local TV could be next
 ============================================================
 
-The Chinese cyberespionage group Velvet Ant maintained undetected access to a critical infrastructure network for ten years by compromising authentication stacks and pivoting into isolated, air-gapped systems.
+Nexstar Media Group argues that regulatory relief and increased scale are essential for local television broadcasters to compete against dominant Big Tech platforms and preserve trusted community journalism.
 
 ### Key Points
-- Researchers at Sygnia discovered "Operation Highland," a decade-long espionage campaign targeting a large organization's isolated network.
-- Velvet Ant gained initial access via internet-facing servers before using custom SOCKS5 proxies to tunnel into air-gapped environments.
-- The attackers achieved long-term persistence by replacing legitimate Linux PAM and OpenSSH components with backdoored versions to harvest credentials.
-- Nine distinct variants of malicious PAM modules were identified, allowing the group to bypass authentication and monitor all administrative activity.
-- Remediation proved highly complex, requiring researchers to build a testing lab to prevent operational outages during the removal of trojanized system files.
+- Big Tech companies, including Google, Meta, and TikTok, now control a significant majority of the advertising market, projected to reach 65% by 2026.
+- YouTube alone generated more video advertising revenue last year than the entire broadcast television industry combined.
+- The newspaper industry lost nearly 270,000 jobs over the last two decades due to the rise of digital competitors and shifting advertising models.
+- Nexstar Media Group, which employs 18,000 people, argues that its acquisition of TEGNA is necessary to maintain the viability of local news production.
+- Local broadcasters currently produce over 300,000 hours of news annually, serving as a primary source of verified information for American communities.
 
 ### Why it Matters
-This breach highlights the severe risks posed by sophisticated actors who embed themselves directly into core authentication processes to bypass standard security measures. Organizations must prioritize file integrity monitoring and hardened access controls to protect critical system components from such deep-seated, long-term persistence.
+The decline of local news outlets threatens the availability of fact-based reporting and civic engagement in communities across the United States. If broadcasters cannot achieve the scale necessary to compete with algorithm-driven social media platforms, the loss of local journalism could further accelerate the spread of misinformation.
 
 ============================================================
-Author:   Bill Toulas
-Source:   BleepingComputer
-URL:      https://www.bleepingcomputer.com/news/security/chinese-hackers-hijack-auth-flow-spy-on-isolated-network-for-a-decade/
-Category: Cybersecurity
+Author:   Perry A. Sook
+Source:   Fortune
+URL:      https://fortune.com/2026/06/14/nexstar-tegna-local-tv-big-tech-advertising-perry-sook/
+Category: Tech Business & Markets
