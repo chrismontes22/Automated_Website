@@ -1,22 +1,20 @@
-Forget Elon’s Data Centers In Space. This Startup Wants To Float Them At Sea
+Chinese Hackers Abused Google Workspace Rules to Steal Research and Defense Emails
 ============================================================
 
-SpaceX and startup Panthalassa are competing to develop autonomous, remote data centers that bypass terrestrial infrastructure constraints by utilizing energy sources in space and the open ocean.
+A China-linked espionage group known as UNC6508 compromised North American research and military networks by exploiting REDCap servers and abusing Google Workspace email forwarding rules to steal sensitive data.
 
 ### Key Points
-- SpaceX aims to launch orbital, solar-powered data centers by 2028, though the company acknowledges significant technical and commercial hurdles.
-- Portland-based Panthalassa plans to deploy floating, wave-powered data center buoys in the Southern Ocean by 2027.
-- Panthalassa’s nodes generate electricity via wave-driven turbines and utilize cold seawater for efficient, emission-free cooling.
-- The startup recently raised $140 million in Series B funding from investors including Peter Thiel, Marc Benioff, and former Meta CTO Mike Schroepfer.
-- Panthalassa targets a 100-fold cost advantage over space-based alternatives by avoiding the high expenses associated with rocket launches.
+- The threat actor UNC6508 infiltrated clinical, academic, and military health institutions in the U.S. and Canada between September 2023 and November 2025.
+- Attackers deployed custom malware called INFINITERED to hijack REDCap research servers, harvest login credentials, and establish persistent backdoors.
+- Once gaining domain administrator access, the group configured Google Workspace content compliance rules to silently BCC sensitive emails to an attacker-controlled account.
+- Stolen data included information on military strategy, advanced technology, AI, uncrewed vehicles, and specific medical research like the chikungunya virus.
+- Google’s Threat Intelligence Group identified the campaign and has since disabled the attacker-controlled infrastructure and notified affected organizations.
 
 ### Why it Matters
-These initiatives represent a radical shift in addressing the massive power and cooling demands of modern artificial intelligence. By moving infrastructure to the ocean or orbit, companies hope to circumvent the environmental backlash, zoning disputes, and rising utility costs currently plaguing land-based data centers.
+This campaign demonstrates how sophisticated actors can weaponize legitimate administrative features in cloud environments to exfiltrate data without triggering traditional security alerts. Organizations must prioritize auditing mail-forwarding rules and securing administrator accounts with phishing-resistant multi-factor authentication to prevent similar unauthorized data access.
 
 ============================================================
-Author:   Alan Ohnsman, Forbes Staff, 
- Alan Ohnsman, Forbes Staff
- https://www.forbes.com/sites/alanohnsman/
-Source:   Forbes
-URL:      https://www.forbes.com/sites/alanohnsman/2026/06/15/forget-elons-data-centers-in-space-this-startup-wants-to-float-them-at-sea/
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/06/chinese-hackers-abused-google-workspace.html
+Category: Cybersecurity
