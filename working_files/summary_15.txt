@@ -1,20 +1,20 @@
-Nexstar CEO: big tech swallowed local newspapers. Local TV could be next
+152 Chrome Wallpaper Extensions with 105K Installs Linked to Adware and Fake Traffic
 ============================================================
 
-Nexstar Media Group argues that regulatory relief and increased scale are essential for local television broadcasters to compete against dominant Big Tech platforms and preserve trusted community journalism.
+Researchers have identified 152 malicious Google Chrome extensions disguised as live wallpaper add-ons that are actively harvesting user data and engaging in sophisticated traffic-attribution fraud across 105,000 installations.
 
 ### Key Points
-- Big Tech companies, including Google, Meta, and TikTok, now control a significant majority of the advertising market, projected to reach 65% by 2026.
-- YouTube alone generated more video advertising revenue last year than the entire broadcast television industry combined.
-- The newspaper industry lost nearly 270,000 jobs over the last two decades due to the rise of digital competitors and shifting advertising models.
-- Nexstar Media Group, which employs 18,000 people, argues that its acquisition of TEGNA is necessary to maintain the viability of local news production.
-- Local broadcasters currently produce over 300,000 hours of news annually, serving as a primary source of verified information for American communities.
+- The malicious network spans 38 publisher accounts and three primary brand backends: tabplugins[.]com, yowgames[.]com, and chromewallpaper[.]com.
+- Extensions falsely claim to protect user privacy while secretly logging IP addresses, ISP details, and click counts for third-party ad partners.
+- The software uses hard-coded JavaScript to fabricate "organic" Google search traffic by manipulating install and uninstall redirect URLs.
+- A dormant feature within the extensions allows them to enumerate and delete IndexedDB databases stored on a user's browser.
+- Security analysts categorize the campaign as a financially motivated adware operation, with evidence suggesting a potential origin in Turkey.
 
 ### Why it Matters
-The decline of local news outlets threatens the availability of fact-based reporting and civic engagement in communities across the United States. If broadcasters cannot achieve the scale necessary to compete with algorithm-driven social media platforms, the loss of local journalism could further accelerate the spread of misinformation.
+This discovery highlights a significant vulnerability in the Chrome Web Store, where malicious actors use popular themes to bypass security and manipulate search engine analytics. By fabricating traffic data, these extensions deceive advertisers and compromise user privacy, demonstrating the ongoing risks associated with installing third-party browser add-ons.
 
 ============================================================
-Author:   Perry A. Sook
-Source:   Fortune
-URL:      https://fortune.com/2026/06/14/nexstar-tegna-local-tv-big-tech-advertising-perry-sook/
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/06/152-chrome-wallpaper-extensions-with.html
+Category: Cybersecurity

@@ -1,20 +1,20 @@
-Apple still has three unannounced iOS 27 features in the pipeline: report
+Modat enhances Magnify with Passive DNS for faster threat hunting and infrastructure analysis
 ============================================================
 
-Apple is expected to release several unannounced features for iOS 27 and the Apple Watch by September, including expanded Siri AI integrations and a simplified Modular Ultra watch face.
+Modat has integrated native Passive DNS intelligence into its Magnify platform, allowing security teams to conduct faster threat hunting by unifying domain, IP, and certificate data in one interface.
 
 ### Key Points
-- Apple plans to introduce a simplified version of the Modular Ultra watch face for Apple Watch models this September.
-- The company is developing a new Siri Extensions API to allow direct integration with third-party AI models like Claude and Gemini.
-- Discussions are ongoing with OpenAI, Anthropic, and Google regarding the technical requirements for these new third-party Siri integrations.
-- A fully customizable Camera app, allowing users to rearrange controls, is expected to launch alongside the iPhone 18 Pro.
-- Delays in these features are reportedly linked to EU regulatory concerns, internal marketing strategies, and potential litigation risks.
+- Modat added Passive DNS to the Magnify platform to enable seamless pivoting between domains, IP addresses, TLS certificates, and device fingerprints.
+- The platform uses clustering-based device fingerprinting and geo-native scanning to identify infrastructure often missed by traditional internet scanners.
+- Analysts can perform retrospective infrastructure analysis by querying Passive DNS alongside existing IP, device, and certificate timelines.
+- The system features automated correlation of new domains and IPs with known indicators of compromise, malware families, and threat actor tactics.
+- Magnify offers an API-first design for integration with existing SIEM, SOAR, and threat intelligence tools.
 
 ### Why it Matters
-These upcoming software updates represent a significant shift in Apple's strategy toward opening its ecosystem to broader third-party AI competition. By moving away from exclusive partnerships, Apple aims to provide users with more flexibility while navigating complex legal and privacy challenges.
+This integration reduces the manual effort required for security analysts to correlate disparate data points during complex threat investigations. By streamlining infrastructure analysis into a single graph, organizations can accelerate incident response times and improve the accuracy of their exposure management strategies.
 
 ============================================================
-Author:   Michael Burkhardt
-Source:   9to5Mac
-URL:      https://9to5mac.com/2026/06/14/three-major-unannounced-ios-27-features-coming-soon/
-Category: Artificial Intelligence
+Author:   Industry News
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/06/15/modat-enhances-magnify-with-passive-dns-for-faster-threat-hunting-and-infrastructure-analysis/
+Category: Cybersecurity

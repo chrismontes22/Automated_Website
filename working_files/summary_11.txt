@@ -1,19 +1,20 @@
-Upcoming Speaking Engagements
+2021 Honda Civic infotainment system can be jailbroken via USB — flaw uses public Android test keys to install unauthorized apps, enables for 'EvilValet' attacks
 ============================================================
 
-A cybersecurity expert has announced a series of international speaking engagements scheduled throughout 2026, covering topics ranging from national security and digital humanism to quantum computing threats.
+Software architect Eric McDonald discovered a security vulnerability in the 2021 Honda Civic infotainment system that allows unauthorized users to install custom software via the vehicle's USB port.
 
 ### Key Points
-- Keynote address at Cybernation 2026 in Berlin on June 24, 2026.
-- Presentations at the Potsdam Conference on National Cybersecurity and the Digital Humanism Conference in Vienna.
-- Remote panel participation at the Quantum.Tech World event in Boston on June 26, 2026, regarding Q-Day deadlines.
-- Additional speaking dates scheduled in Prague, Nuremberg, and Vancouver through October 2026.
+- The vulnerability stems from the head unit accepting AOSP files signed with a publicly known test key.
+- Attackers with temporary physical access can install malware to record conversations, track location, and capture video.
+- Captured data can be exfiltrated using the vehicle's built-in Bluetooth, Wi-Fi, or cellular connectivity.
+- The flaw is limited to the infotainment system and does not grant control over engine, braking, or safety features.
+- Similar vulnerabilities may exist in other vehicle makes that share identical infotainment hardware or software components.
 
 ### Why it Matters
-These engagements highlight the global demand for expert insight into evolving cybersecurity risks and the societal implications of emerging technologies. The diverse schedule reflects the critical need for cross-border collaboration among academic, policy, and technical institutions to address digital threats.
+This security flaw highlights the growing privacy risks associated with increasingly digitized vehicles that lack robust authentication protocols. While the exploit requires physical access, it demonstrates how modern infotainment systems can be weaponized for surveillance and data theft.
 
 ============================================================
-Author:   B. Schneier
-Source:   Schneier.com
-URL:      https://www.schneier.com/blog/archives/2026/06/upcoming-speaking-engagements-57.html
+Author:   editors@tomshardware.com (Jowi Morales) , Jowi Morales
+Source:   Tom's Hardware UK
+URL:      https://www.tomshardware.com/tech-industry/cyber-security/2021-honda-civic-infotainment-system-can-be-jailbroken-via-usb-flaw-uses-public-android-test-keys-to-install-unauthorized-apps-enables-for-evilvalet-attacks
 Category: Cybersecurity
