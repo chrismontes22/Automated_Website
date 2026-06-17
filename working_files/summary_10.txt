@@ -1,20 +1,20 @@
-Transcript: Jean Eric Salata, Chair of EQT group
+ClickFix Campaigns Expand Malware Delivery With New Loaders and Fake Update Lures
 ============================================================
 
-**EQT Group Chair Jean Eric Salata discusses the evolution of private equity, the firm's global expansion, and the strategic importance of cross-border investment in a shifting macroeconomic landscape.**
+Cybersecurity researchers have identified multiple active campaigns using ClickFix social engineering to deploy sophisticated malware loaders, including BabaDeda, Lorem Ipsum, and Potemkin, across various global industry sectors.
 
 ### Key Points
-- Jean Eric Salata serves as chair of EQT Group, a global alternative asset manager overseeing more than $316 billion in assets.
-- The firm recently completed a $7 billion merger with Baring Private Equity Asia (BPEA), combining regional expertise with EQT’s global platform.
-- EQT is currently managing a $5 billion "Scale Up Europe" fund focused on advancing AI, quantum computing, and life sciences technology.
-- Salata highlights a "CapEx supercycle" driven by AI infrastructure, energy transition, and reindustrialization as a primary global investment theme.
-- The firm achieved a record $40 billion in distributions last year, largely through public market exits and strategic sales of assets like Galderma.
+- ClickFix attacks deceive users into executing malicious PowerShell commands by masquerading as legitimate browser security updates or troubleshooting instructions.
+- The BabaDeda Loader, linked to the Vanilla Tempest threat group, uses stealthy techniques like DLL side-loading and in-memory shellcode to drop information stealers and ransomware.
+- Lorem Ipsum Loader is distributed via compromised WordPress sites and utilizes outdated Node.js versions to execute JavaScript-based payloads and establish persistent backdoors.
+- The Potemkin loader employs a domain generation algorithm (DGA) to communicate with command-and-control servers and facilitates the deployment of RMMProject and EtherRAT.
+- These modular frameworks allow attackers to separate delivery, storage, and execution, significantly complicating forensic analysis and detection by traditional security tools.
 
 ### Why it Matters
-The integration of BPEA into EQT reflects a broader industry trend toward consolidation and scale, allowing firms to navigate increasingly complex geopolitical and regulatory environments. By diversifying across regions and asset classes, EQT provides institutional and private investors with a hedge against the concentration risks often found in US-centric portfolios.
+These campaigns demonstrate how threat actors rapidly pivot their delivery infrastructure to bypass security measures like code-signing requirements. By exploiting human behavior through simple, authoritative-looking instructions, attackers continue to successfully compromise systems and deploy high-impact threats like ransomware.
 
 ============================================================
-Author:   Barry Ritholtz
-Source:   Ritholtz.com
-URL:      https://ritholtz.com/2026/06/transcript-jean-eric-salata/
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/06/clickfix-campaigns-expand-malware.html
+Category: Cybersecurity

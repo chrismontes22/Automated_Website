@@ -1,20 +1,19 @@
-Apple Details Terminal Anti-Scam Warning in macOS
+Russian Spam and Profanities Are Now Plaguing the Arch Linux AUR
 ============================================================
 
-Apple has released a support document clarifying the purpose of new macOS security alerts designed to prevent users from pasting potentially malicious commands into the Terminal application.
+More than 70 packages in the Arch Linux User Repository have been compromised by unauthorized commits that inject Russian spam and offensive messages into user shell configuration files.
 
 ### Key Points
-- The security feature, introduced in macOS Tahoe 26.4, warns users when pasting commands copied from external sources like websites or chat agents.
-- Users can bypass the standard warning by selecting "Paste Anyway," though the system may block commands entirely if known malware is detected.
-- Apple implemented these alerts to protect users from social engineering tactics where scammers trick individuals into compromising their system privacy.
-- The system distinguishes between general warnings for suspicious activity and hard blocks for commands identified as malicious scripts.
-- Users who believe a command was incorrectly flagged can report the incident to Apple for further review.
+- Over 70 AUR packages, including Llama.cpp and various Python and Ruby tools, were modified to include malicious shell scripts.
+- The unauthorized commits occurred on October 14, shortly after a separate incident involving 1,500 malware-laden packages.
+- Security researcher Nicolas Boichat identified the spam using an AI-based detection bot designed to monitor repository content.
+- The injected code targets common shell configuration files, specifically bashrc, zshrc, and Fish, to display offensive messaging.
 
 ### Why it Matters
-This security update reflects Apple's ongoing effort to mitigate social engineering risks that target non-technical users through command-line exploitation. By adding these guardrails, the company aims to reduce successful malware infections while maintaining necessary flexibility for advanced users.
+These recurring security incidents highlight significant vulnerabilities in the community-driven maintenance model of the Arch Linux User Repository. The reliance on automated detection tools underscores the ongoing challenge of securing open-source software distribution platforms against persistent malicious activity.
 
 ============================================================
-Author:   Tim Hardwick
-Source:   MacRumors
-URL:      https://www.macrumors.com/2026/06/16/apple-details-terminal-anti-scam-warning-in-macos/
+Author:   BeauHD
+Source:   Slashdot.org
+URL:      https://it.slashdot.org/story/26/06/16/0618239/russian-spam-and-profanities-are-now-plaguing-the-arch-linux-aur
 Category: Cybersecurity
