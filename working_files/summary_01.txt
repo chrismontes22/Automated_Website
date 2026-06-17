@@ -1,20 +1,20 @@
-Who decides who gets to use a piece of software?
+Apple Details Terminal Anti-Scam Warning in macOS
 ============================================================
 
-**The U.S. Commerce Department recently ordered Anthropic to disable its Fable 5 and Mythos 5 AI models globally, citing national security concerns regarding potential cybersecurity vulnerabilities and unauthorized access.**
+Apple has released a support document clarifying the purpose of new macOS security alerts designed to prevent users from pasting potentially malicious commands into the Terminal application.
 
 ### Key Points
-- The directive required Anthropic to block all foreign nationals from accessing the Fable 5 and Mythos 5 models, regardless of their physical location.
-- Anthropic complied by temporarily shutting down both models for all users worldwide, including its own international staff and domestic customers.
-- Officials reportedly issued the order due to concerns that a China-linked group discovered a method to bypass safeguards and access raw cyberattack capabilities.
-- This marks the first time the U.S. government has utilized national-security export controls to force a commercial AI provider to revoke access to a live service.
-- While the models were restored within days, the incident highlights the vulnerability of global institutions that rely on U.S.-based AI services for critical operations.
+- The security feature, introduced in macOS Tahoe 26.4, warns users when pasting commands copied from external sources like websites or chat agents.
+- Users can bypass the standard warning by selecting "Paste Anyway," though the system may block commands entirely if known malware is detected.
+- Apple implemented these alerts to protect users from social engineering tactics where scammers trick individuals into compromising their system privacy.
+- The system distinguishes between general warnings for suspicious activity and hard blocks for commands identified as malicious scripts.
+- Users who believe a command was incorrectly flagged can report the incident to Apple for further review.
 
 ### Why it Matters
-This event establishes a significant precedent by demonstrating that the U.S. government can unilaterally disable commercial AI services globally with little notice or transparent process. It forces international businesses and governments to reconsider their reliance on American-controlled software, potentially accelerating the development of sovereign AI initiatives in Europe, India, and beyond.
+This security update reflects Apple's ongoing effort to mitigate social engineering risks that target non-technical users through command-line exploitation. By adding these guardrails, the company aims to reduce successful malware infections while maintaining necessary flexibility for advanced users.
 
 ============================================================
-Author:   Ana-Maria Stanciuc
-Source:   The Next Web
-URL:      https://thenextweb.com/news/who-decides-who-gets-to-use-a-piece-of-software/
-Category: Artificial Intelligence
+Author:   Tim Hardwick
+Source:   MacRumors
+URL:      https://www.macrumors.com/2026/06/16/apple-details-terminal-anti-scam-warning-in-macos/
+Category: Cybersecurity
