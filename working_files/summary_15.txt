@@ -1,20 +1,19 @@
-Android 17 is here
+Google just made it harder to ditch the Gemini paper trail at work
 ============================================================
 
-Android 17 has officially launched for supported Pixel devices, introducing a major shift toward an intelligence-first operating system that prioritizes adaptive development and enhanced AI-driven app functionality.
+Google is introducing granular administrative controls for Gemini in Workspace, allowing IT departments to manage user access to temporary chats and conversation deletion features across their corporate domains.
 
 ### Key Points
-- Android 17 mandates adaptive-first development, removing opt-outs for large-screen resizability and free-form windowing for apps targeting API level 37.
-- The platform transitions to a "Compose-first" standard, placing legacy View-based components into maintenance mode.
-- New AppFunctions APIs allow AI agents, such as Google Gemini, to execute specific app workflows directly through on-device integration.
-- Performance updates include stricter memory management, a lock-free MessageQueue architecture, and an optimized garbage collector to reduce UI stutter.
-- Privacy enhancements include session-based data access for contacts and photos, alongside new restrictions on local network permissions.
+- Google Workspace admins can now enable or disable Gemini’s temporary chat and manual deletion tools for specific organizational units or groups.
+- The new controls allow IT teams to manage data retention policies while balancing user privacy needs within enterprise environments.
+- Google Vault retention policies will continue to override individual user deletions to ensure compliance with eDiscovery and legal requirements.
+- The rollout of these administrative toggles began on June 15, with policy enforcement scheduled to take effect by June 21, 2026.
 
 ### Why it Matters
-This release signals a fundamental transformation of Android from a traditional operating system into an intelligence-driven platform designed for seamless AI interaction. By mandating adaptive layouts and prioritizing Jetpack Compose, Google is forcing developers to modernize their codebases to support a diverse ecosystem of foldables, tablets, and desktop-mode displays.
+These controls address the tension between employee privacy and corporate data governance by giving IT departments oversight of generative AI interactions. By standardizing these settings, companies can better mitigate legal risks and ensure that sensitive business communications remain compliant with industry regulations.
 
 ============================================================
-Author:   Android Developers
-Source:   Googleblog.com
-URL:      https://android-developers.googleblog.com/2026/06/Android-17.html
+Author:   Jay Bonggolto
+Source:   Android Authority
+URL:      https://www.androidauthority.com/workspace-gemini-app-new-admin-controls-3678354/
 Category: Artificial Intelligence

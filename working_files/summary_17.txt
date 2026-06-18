@@ -1,20 +1,20 @@
-Building AI Agents: The System That Automates 60% of One Entrepreneur’s Workload
+AMD silently removes memory encryption from consumer Ryzen CPUs, leaving users unaware that they may be vulnerable — security feature vanishes after newer AGESA firmware, AMD engineers go radio silent when pressed about the change
 ============================================================
 
-Building a custom system of AI agents requires defining specific business processes and providing structured context to ensure reliable, repeatable task execution for improved operational efficiency.
+AMD has silently removed the Transparent Secure Memory Encryption (TSME) security feature from consumer-grade Ryzen processors, leaving users vulnerable to physical memory attacks without prior notice or explanation.
 
 ### Key Points
-- Keith Moehring recommends using an accountability chart to map business functions and recurring tasks before building any automation.
-- The system relies on a "context layer" of folders containing playbooks, templates, and client-specific data to guide AI decision-making.
-- Cursor serves as the primary user interface, allowing AI models like Claude to access local files and execute tasks via natural language.
-- Effective automation follows a bottom-up approach, starting with simple, single-task agents before layering in complex orchestration agents.
-- Integrating tools like Granola for meeting notes via API connectors allows agents to automatically generate tasks in platforms like ClickUp.
+- The removal of TSME was identified in firmware version AGESA 1.2.7.0, affecting consumer Ryzen CPUs that previously supported the feature.
+- TSME protects data by encrypting system RAM, guarding against physical exploits like cold-boot attacks and memory module tampering.
+- AMD engineers have not provided a clear reason for the change, with some internal communications suggesting the feature is now reserved exclusively for Pro-series processors.
+- The change is difficult to detect, as the feature appears disabled in system audits even when toggled on within the motherboard BIOS.
+- MSI testing confirmed that consumer chips fail to activate the encryption flag, while Pro-series processors continue to support the feature regardless of firmware.
 
 ### Why it Matters
-Developing a tailored AI agent system transforms automation from generic templates into a proprietary "second brain" that mirrors a company's unique workflows. This approach significantly reduces manual administrative burdens, allowing business owners to reclaim time while ensuring consistent, high-quality output across all operations.
+This change effectively restricts a critical security layer to enterprise-tier hardware, potentially leaving consumer users exposed to physical data extraction risks. The lack of transparency regarding whether this is an intentional product segmentation strategy or an accidental firmware regression has raised significant concerns among privacy-conscious users and hardware enthusiasts.
 
 ============================================================
-Author:   Michael Stelzner
-Source:   Socialmediaexaminer.com
-URL:      https://www.socialmediaexaminer.com/?p=278877
-Category: Artificial Intelligence
+Author:   Etiido Uko
+Source:   Tom's Hardware UK
+URL:      https://www.tomshardware.com/pc-components/cpus/amd-silently-removes-memory-encryption-from-consumer-ryzen-cpus-leaving-users-unaware-that-they-may-be-vulnerable-security-feature-vanishes-after-newer-agesa-firmware-amd-engineers-go-radio-silent-when-pressed-about-the-change
+Category: Cybersecurity
