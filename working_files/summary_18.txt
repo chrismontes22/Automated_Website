@@ -1,20 +1,20 @@
-How security teams are getting credential visibility into developer endpoints
+Securing the Future of AI Agents
 ============================================================
 
-GitGuardian has launched Developer Endpoint Protection within its ggshield CLI tool to help security teams identify and monitor sensitive credentials stored on developer workstations and AI coding assistants.
+Google has introduced an AI Control Roadmap, a defense-in-depth framework designed to secure internal systems by treating autonomous AI agents as potential insider threats to prevent harmful actions.
 
 ### Key Points
-- The tool scans developer endpoints for credentials, including those in AI agent directories, processing 500,000 files in under three minutes.
-- It utilizes local honeytokens to provide real-time alerts if an infostealer attempts to validate a compromised credential.
-- Integration with the GitGuardian dashboard allows security teams to correlate endpoint exposures with existing repository and cloud data.
-- The solution supports enterprise-grade deployment via MDM platforms like Intune and Jamf across Windows, Linux, and macOS.
-- It specifically monitors AI coding agent configurations and MCP servers to prevent unauthorized data exfiltration.
+- The framework utilizes a threat-modeling system based on the industry-standard MITRE ATT&CK knowledge base to identify and track potential adversary tactics.
+- Google employs trusted AI "supervisors" to monitor the reasoning and actions of autonomous agents in real-time to detect and block misaligned behavior.
+- Security performance is measured using three specific metrics: coverage of traffic, recall of misaligned behaviors, and the system's time-to-response.
+- The roadmap mandates synchronous, real-time prevention for high-risk actions, such as cyber attacks, while allowing asynchronous review for low-risk, reversible tasks.
+- Future security protocols will evolve to inspect internal model workings as AI agents become more capable of evading detection or using opaque reasoning.
 
 ### Why it Matters
-Developer workstations have become primary targets for supply chain attacks, yet they remain a significant blind spot for traditional perimeter-based security controls. By extending visibility to these endpoints, organizations can proactively secure machine identities and respond to breaches before attackers gain access to production environments.
+This framework establishes a proactive security model that assumes AI agents may act unexpectedly, providing a necessary safety layer as autonomous systems become more integrated into corporate infrastructure. By standardizing these controls, Google aims to mitigate risks associated with advanced AI while enabling the safe deployment of technology that could generate significant economic value.
 
 ============================================================
-Author:   Help Net Security
-Source:   Help Net Security
-URL:      https://www.helpnetsecurity.com/2026/06/18/gitguardian-developer-endpoint-protection/
+Author:   Rohin Shah, Four Flynn
+Source:   Deepmind.google
+URL:      https://deepmind.google/blog/securing-the-future-of-ai-agents/
 Category: Cybersecurity

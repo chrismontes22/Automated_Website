@@ -1,20 +1,20 @@
-Local Qwen isn't a worse Opus, it's a different tool
+This robotic self-driving toilet comes to you
 ============================================================
 
-A software founder details the practical realities of running local Qwen models on high-end hardware, highlighting their utility for private data analysis despite significant limitations in autonomous coding tasks.
+Chinese company Yueban has unveiled the Xiaoban, an autonomous, self-driving smart toilet designed to assist individuals with mobility issues by navigating to users and handling waste disposal independently.
 
 ### Key Points
-- The author utilizes an NVIDIA RTX 6000 Pro with 96GB of VRAM to run Qwen 3.6 27B models for specialized, privacy-sensitive business workflows.
-- Local models excel at analyzing telemetry data and customer diagnostic logs, providing a secure alternative to cloud-based AI services.
-- Performance is hampered by "infinite loops" and hallucination risks, particularly during long-horizon, unsupervised coding tasks.
-- Speculative decoding using MTP (Multi-Token Prediction) improved generation speeds from 67 tokens per second to between 130 and 200 tokens per second.
-- The author emphasizes that local models are not yet "Opus-level" and require careful tuning of temperature, quantization, and context settings to remain functional.
+- The Xiaoban utilizes lidar and ultrasonic sensors to navigate homes and care facilities while avoiding obstacles.
+- The device features a built-in bidet, warm air dryer, and ultraviolet light sterilization to maintain hygiene and minimize odors.
+- It is priced at approximately ¥28,999, or $4,300, though international availability remains unconfirmed.
+- The unit automatically returns to a docking station to recharge, refill water reservoirs, and empty waste into plumbing systems.
+- It is intended to reduce the physical burden on caregivers by eliminating the need to transport patients to traditional bathrooms.
 
 ### Why it Matters
-Local AI models offer a viable path for businesses to maintain data sovereignty and avoid vendor lock-in, but they currently lack the reliability required for fully autonomous software development. While they provide significant value for bounded, internal tasks, they remain a complex operational burden that cannot yet replace the reasoning capabilities of frontier cloud models.
+This innovation represents a significant advancement in assistive technology by integrating autonomous robotics into personal healthcare and daily living. By automating the toileting process, the device could improve independence for elderly or disabled users while reducing the labor-intensive tasks currently required of professional and family caregivers.
 
 ============================================================
-Author:   Alex Ellis
-Source:   Alexellis.io
-URL:      https://blog.alexellis.io/local-ai-is-not-opus/
-Category: Artificial Intelligence
+Author:   Andrew Liszewski
+Source:   The Verge
+URL:      https://www.theverge.com/tech/952441/yueban-xiaoban-self-driving-autonomous-toilet
+Category: Phones, Laptops, and Gadgets

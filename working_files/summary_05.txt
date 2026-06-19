@@ -1,20 +1,20 @@
-The Korean Telecom Giant at the Center of Anthropic’s Mythos Controversy
+‘Popa’ Botnet Linked to Publicly-Traded Israeli Firm
 ============================================================
 
-The Trump administration has ordered Anthropic to revoke access to its advanced Claude Mythos and Fable 5 AI models for all foreign nationals following national security and vulnerability concerns.
+The Popa botnet, linked to Alarum Technologies’ NetNut service, has compromised millions of Android-based TV boxes to facilitate large-scale data scraping, advertising fraud, and unauthorized network access.
 
 ### Key Points
-- The White House mandated that Anthropic restrict access to its most powerful AI models to US citizens only, citing potential security risks.
-- Anthropic chose to disable access to Claude Mythos and Fable 5 entirely rather than implement complex nationality-based screening processes.
-- US officials expressed concern over South Korean telecom giant SK Telecom’s historical business ties to China and its access to the Project Glasswing program.
-- Amazon researchers identified vulnerabilities in the Fable 5 model that could potentially allow users to bypass safety guardrails and access cyber-offensive capabilities.
-- SK Telecom, which invested $100 million in Anthropic in 2023, denies having current ties to China that would compromise national security.
+- Security researchers identified Popa as a plugin component within the Vo1d botnet, which targets unofficial Android streaming devices.
+- The botnet maintains between 1.5 million and 2.5 million active IP addresses daily, routing traffic for various commercial and malicious purposes.
+- Analysis by firms including Synthient and Nokia Deepfield links Popa’s outbound traffic directly to the residential proxy infrastructure of NetNut.
+- Alarum Technologies denies that its SDKs constitute a botnet, asserting that its services maintain strict compliance and user consent protocols.
+- Proxy-tracking firm Spur reports that many residential proxy providers lack meaningful "know your customer" checks, allowing anonymous users to purchase access to home networks.
 
 ### Why it Matters
-This dispute highlights the growing tension between AI developers and the US government regarding the export and accessibility of powerful, dual-use artificial intelligence technologies. The decision sets a significant precedent for how AI labs must manage international partnerships and security protocols to comply with evolving federal oversight.
+Residential proxy networks are increasingly used to bypass security filters for aggressive web scraping, which is a primary driver for training large-scale artificial intelligence models. This practice risks turning consumer devices into conduits for cyberattacks, potentially exposing corporate and government networks to legal liability and security breaches when employees connect compromised hardware to their workplace environments.
 
 ============================================================
-Author:   Louise Matsakis, Maxwell Zeff
-Source:   Wired
-URL:      https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/
-Category: Artificial Intelligence
+Author:   BrianKrebs
+Source:   Krebs on Security
+URL:      https://krebsonsecurity.com/2026/06/popa-botnet-linked-to-publicly-traded-israeli-firm/
+Category: Cybersecurity

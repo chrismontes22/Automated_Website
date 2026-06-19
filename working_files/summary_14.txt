@@ -1,20 +1,20 @@
-Crypto Clipper uses Tor and worm-like propagation for persistence and control
+10 of The Top Mistakes First Time Founders Make. Again and Again and Again.
 ============================================================
 
-Microsoft Threat Intelligence has identified a sophisticated Windows-based cryptocurrency clipper malware, active since February 2026, that uses Tor-routed communications to steal digital assets and execute remote commands.
+First-time SaaS founders frequently encounter predictable pitfalls, such as underestimating development timelines and failing to prioritize customer feedback, which can hinder long-term growth and lead to business failure.
 
 ### Key Points
-- The malware spreads via malicious .lnk shortcuts on USB drives, deploying a worm component for propagation and a stealer component for data harvesting.
-- It monitors the clipboard every 500 milliseconds to intercept cryptocurrency seed phrases, private keys, and wallet addresses for real-time substitution.
-- Attackers utilize a bundled Tor client and local SOCKS5 proxy on port 9050 to communicate with hidden-service command-and-control servers anonymously.
-- The threat includes remote code execution capabilities, allowing attackers to push arbitrary scripts to compromised systems via an EVAL command.
-- Microsoft Defender detects the threat as Trojan:Win32/CryptoBandits.A and identifies suspicious behaviors like unauthorized PowerShell screen captures and script-based data exfiltration.
+- SaaS businesses typically require at least 24 months to achieve product-market fit and profitability.
+- Founders should conduct direct research by interviewing 20 to 30 potential customers to validate market pain points.
+- Products must offer a 10x improvement in at least one critical area to effectively differentiate from competitors.
+- Premature scaling, such as aggressive hiring or marketing spend, often leads to unsustainable cash burn and layoffs.
+- Ignoring negative metrics like high churn or weak margins prevents founders from making necessary operational adjustments.
 
 ### Why it Matters
-This campaign demonstrates how lightweight, script-based malware can evolve into a persistent backdoor by leveraging anonymized network routing and multi-stage obfuscation. Organizations must prioritize behavioral monitoring of script interpreters and restrict the use of removable media to prevent significant financial loss from wallet-address hijacking.
+Avoiding these common errors helps entrepreneurs preserve capital and maintain the operational focus required to build a sustainable company. By prioritizing customer success and data-driven decision-making, founders can significantly increase their chances of achieving long-term viability in a competitive market.
 
 ============================================================
-Author:   Microsoft Defender Security Research Team and Microsoft Defender Experts
-Source:   Microsoft.com
-URL:      https://www.microsoft.com/en-us/security/blog/2026/06/17/crypto-clipper-uses-tor-worm-like-propagation-for-persistence-control/
-Category: Cybersecurity
+Author:   Jason Lemkin
+Source:   Saastr.com
+URL:      https://www.saastr.com/10-of-the-top-mistakes-first-time-founders-make/
+Category: Tech Business & Markets
