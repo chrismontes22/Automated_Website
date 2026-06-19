@@ -1,19 +1,20 @@
-How Did the Feds Get Into Anti-ICE Activists’ Signal Messages?
+Microsoft Confirms RoguePlanet Zero-Day in Defender, Patch Under Development
 ============================================================
 
-Federal authorities in Minnesota have indicted 15 activists for allegedly using Signal to coordinate anti-ICE protests, highlighting how physical device access can bypass encrypted messaging security measures.
+Microsoft has acknowledged a zero-day vulnerability in the Microsoft Malware Protection Engine, tracked as CVE-2026-50656, which allows attackers to gain SYSTEM-level privileges on Windows 10 and 11 systems.
 
 ### Key Points
-- The Department of Homeland Security indicted 15 individuals for conspiracy to impede federal officers and other charges related to ICE-tracking activities.
-- Evidence in the case includes over 100 messages, call logs, and transcripts recovered from Signal, suggesting investigators gained access to physical devices.
-- While Signal provides end-to-end encryption for data in transit, it does not protect communications if a device is seized and unlocked by law enforcement.
-- Experts recommend hardening security by enabling disappearing messages, disabling call history integration, and regularly deleting entire chat threads to minimize forensic footprints.
+- The vulnerability, dubbed RoguePlanet, carries a CVSS score of 7.8 and exploits a race condition within Microsoft Defender.
+- Security researcher Chaotic Eclipse published a proof-of-concept exploit that functions even on fully updated Windows systems.
+- Microsoft is currently developing a security update to address the flaw and is investigating the researcher's claims of additional memory corruption issues.
+- The exploit currently affects Windows 10 and 11, though the researcher suggests the underlying vulnerability may also impact Windows Server installations.
+- This disclosure follows a series of public zero-day releases by the same researcher, including vulnerabilities named YellowKey, GreenPlasma, and RedSun.
 
 ### Why it Matters
-This case demonstrates that encrypted messaging apps are not a complete safeguard against surveillance when physical hardware is compromised. It serves as a critical reminder for activists and privacy-conscious users that digital security requires both robust software settings and strict physical device management.
+The public release of functional exploit code creates an immediate security risk for users by allowing attackers to bypass standard protections before a patch is available. This incident highlights the ongoing tension between independent security researchers and Microsoft regarding the company's coordinated vulnerability disclosure and bug bounty processes.
 
 ============================================================
-Author:   Nikita Mazurov
-Source:   The Intercept
-URL:      https://theintercept.com/2026/06/17/signal-messages-minneapolis-ice-protests/
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/193830/security/microsoft-confirms-rogueplanet-zero-day-in-defender-patch-under-development.html
 Category: Cybersecurity

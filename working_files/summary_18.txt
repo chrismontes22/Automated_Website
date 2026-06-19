@@ -1,19 +1,20 @@
-It's STILL a terrible time to buy a Surface, but it's not just Microsoft's fault
+How security teams are getting credential visibility into developer endpoints
 ============================================================
 
-Microsoft has unveiled the Surface Pro 12 and Surface Laptop 8 featuring Snapdragon X2 chips, though both devices launch with significantly higher price tags than their previous iterations.
+GitGuardian has launched Developer Endpoint Protection within its ggshield CLI tool to help security teams identify and monitor sensitive credentials stored on developer workstations and AI coding assistants.
 
 ### Key Points
-- The Surface Pro 12 starts at $1,499, while the Surface Laptop 8 begins at $1,599, representing $500 and $600 increases over predecessor launch prices.
-- Ongoing global component shortages, particularly regarding RAM, have forced major manufacturers including Dell, HP, Lenovo, and Apple to raise hardware prices.
-- Budget-friendly laptops like the Dell XPS 13 and the $599 MacBook Neo are gaining market share by offering high-quality designs at lower price points.
-- Current discounts on older models like the Surface Pro 11 and Surface Laptop 7 often only bring prices down to levels seen one year ago.
+- The tool scans developer endpoints for credentials, including those in AI agent directories, processing 500,000 files in under three minutes.
+- It utilizes local honeytokens to provide real-time alerts if an infostealer attempts to validate a compromised credential.
+- Integration with the GitGuardian dashboard allows security teams to correlate endpoint exposures with existing repository and cloud data.
+- The solution supports enterprise-grade deployment via MDM platforms like Intune and Jamf across Windows, Linux, and macOS.
+- It specifically monitors AI coding agent configurations and MCP servers to prevent unauthorized data exfiltration.
 
 ### Why it Matters
-Rising component costs and premium pricing strategies are making high-end laptops increasingly difficult to justify for the average consumer. As a result, budget-tier devices are becoming the more practical choice for most users, shifting the competitive landscape for major PC manufacturers.
+Developer workstations have become primary targets for supply chain attacks, yet they remain a significant blind spot for traditional perimeter-based security controls. By extending visibility to these endpoints, organizations can proactively secure machine identities and respond to breaches before attackers gain access to production environments.
 
 ============================================================
-Author:   sean.endicott@futurenet.com (Sean Endicott) , Sean Endicott
-Source:   Windows Central
-URL:      https://www.windowscentral.com/hardware/surface/its-still-a-terrible-time-to-buy-a-surface-but-its-not-just-microsofts-fault
-Category: Phones, Laptops, and Gadgets
+Author:   Help Net Security
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/06/18/gitguardian-developer-endpoint-protection/
+Category: Cybersecurity

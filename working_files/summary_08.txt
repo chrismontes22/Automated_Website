@@ -1,20 +1,20 @@
-The Startup That Wants To Audit Your Programmatic Decisions (Every Single One Of Them)
+Right-click extract just got better in Windows, and most people haven't noticed
 ============================================================
 
-Ad tech startup Precise.ai has secured $7 million in seed funding to develop a platform that provides transparency into the automated decision-making processes behind programmatic advertising campaigns.
+Microsoft has integrated the open-source libarchive library into Windows 11, allowing users to natively extract and create various archive formats without needing third-party software like WinRAR or 7-Zip.
 
 ### Key Points
-- Precise.ai raised $7 million in a seed round co-led by Blockchange Ventures and Lasagna.
-- The platform uses "decisioning economics" to analyze the cost and performance contribution of individual inputs in programmatic ad buys.
-- The company was formed through the 2024 merger of privacy firm Qonsent and blockchain infrastructure developer Valence Labs.
-- Precise.ai is currently conducting six pilot programs, including one with a major advertising holding company.
-- The startup aims to provide an independent intelligence layer to track how automated agents make bidding and targeting decisions.
+- Windows 11 now natively supports extracting and creating formats including .7z, .tar, .tar.gz, .tar.bz2, .tar.xz, and .tar.zst.
+- The new functionality is powered by the open-source libarchive project, which processes files as a stream to improve performance and reduce memory usage.
+- Users can access these features directly in File Explorer by right-clicking files and selecting "Extract All" or "Compress to."
+- Native tools currently lack support for password-protected archives, AES-256 encryption, and multi-volume splitting.
+- Microsoft cannot add native RAR creation support due to ongoing licensing restrictions held by RARLAB.
 
 ### Why it Matters
-As programmatic advertising becomes increasingly automated, brands and agencies often lack visibility into how specific variables impact campaign performance and costs. This technology provides a necessary accountability layer that allows advertisers to verify the value of their supply chain decisions in real time.
+This update reduces the security risks and system bloat associated with installing third-party file management utilities for the average user. While power users requiring advanced encryption or complex archive management may still prefer dedicated software, the native integration simplifies basic file handling for the broader Windows ecosystem.
 
 ============================================================
-Author:   Allison Schiff
-Source:   AdExchanger
-URL:      http://www.adexchanger.com/technology/the-startup-that-wants-to-audit-your-programmatic-decisions-every-single-one-of-them/
-Category: Tech Business & Markets
+Author:   Jorge Aguilar
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/right-click-extract-got-better-in-windows-most-havent-noticed/
+Category: Phones, Laptops, and Gadgets

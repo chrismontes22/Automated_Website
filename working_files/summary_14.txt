@@ -1,19 +1,20 @@
-No, Pokémon Didn’t Just Announce Generative AI For The Trading Card Game
+Crypto Clipper uses Tor and worm-like propagation for persistence and control
 ============================================================
 
-The Pokémon Company is facing backlash over a new Kaggle competition that challenges developers to create AI capable of playing the Pokémon Trading Card Game in simulated tournaments.
+Microsoft Threat Intelligence has identified a sophisticated Windows-based cryptocurrency clipper malware, active since February 2026, that uses Tor-routed communications to steal digital assets and execute remote commands.
 
 ### Key Points
-- The Pokémon Company launched a coding contest on Google’s Kaggle platform to develop AI that plays the Trading Card Game.
-- Participants retain ownership of their submitted code, though they grant the company a license to use the work for competition operations.
-- The challenge focuses on game theory and decision-making rather than generative art or card creation.
-- Critics have expressed concerns regarding the company's inconsistent history with AI, including past controversies over promotional materials and fan art submissions.
+- The malware spreads via malicious .lnk shortcuts on USB drives, deploying a worm component for propagation and a stealer component for data harvesting.
+- It monitors the clipboard every 500 milliseconds to intercept cryptocurrency seed phrases, private keys, and wallet addresses for real-time substitution.
+- Attackers utilize a bundled Tor client and local SOCKS5 proxy on port 9050 to communicate with hidden-service command-and-control servers anonymously.
+- The threat includes remote code execution capabilities, allowing attackers to push arbitrary scripts to compromised systems via an EVAL command.
+- Microsoft Defender detects the threat as Trojan:Win32/CryptoBandits.A and identifies suspicious behaviors like unauthorized PowerShell screen captures and script-based data exfiltration.
 
 ### Why it Matters
-This competition highlights the growing tension between gaming companies and fans regarding the integration of artificial intelligence in creative and competitive spaces. While this specific event focuses on game logic, it underscores the broader public skepticism toward corporate AI initiatives and the ongoing debate over intellectual property rights.
+This campaign demonstrates how lightweight, script-based malware can evolve into a persistent backdoor by leveraging anonymized network routing and multi-stage obfuscation. Organizations must prioritize behavioral monitoring of script interpreters and restrict the use of removable media to prevent significant financial loss from wallet-address hijacking.
 
 ============================================================
-Author:   Kenneth Shepard
-Source:   Kotaku
-URL:      https://kotaku.com/pokemon-ai-challenges-trading-card-game-tcg-art-kaggle-2000707573
-Category: Artificial Intelligence
+Author:   Microsoft Defender Security Research Team and Microsoft Defender Experts
+Source:   Microsoft.com
+URL:      https://www.microsoft.com/en-us/security/blog/2026/06/17/crypto-clipper-uses-tor-worm-like-propagation-for-persistence-control/
+Category: Cybersecurity

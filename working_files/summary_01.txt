@@ -1,20 +1,20 @@
-Malicious JetBrains Plugins Steal AI API Keys as Chrome Extensions Capture Chatbot Chats
+The enemy within: how to stop a simple Teams message taking down your business
 ============================================================
 
-Cybersecurity researchers have identified 15 malicious plugins on the JetBrains Marketplace that steal AI provider API keys, alongside two Chrome extensions caught exfiltrating private user conversations with chatbots.
+Microsoft has issued a warning regarding attackers impersonating IT help desk staff on Teams to gain remote access, hijack administrative accounts, and exfiltrate sensitive data from corporate tenants.
 
 ### Key Points
-- Aikido Security discovered 15 malicious JetBrains plugins masquerading as AI coding assistants that exfiltrate user API keys to a remote server.
-- Popular plugins like CodeGPT AI Assistant and DeepSeek AI Assist have recorded over 25,000 downloads each since the campaign began in October 2025.
-- Attackers monetize the stolen credentials by selling access to victim API keys while simultaneously charging users for a fake "paid tier" service.
-- Two Chrome extensions, Smart Adblocker and Adblock for Browser, were found capturing private chat data from platforms including ChatGPT, Claude, and Gemini.
-- The Chrome extensions use a custom interception engine to siphon conversation history and account metadata under the guise of legitimate ad-blocking functionality.
+- Attackers pose as third-party IT support via Microsoft Teams to trick employees into granting remote access.
+- The exploit uses legitimate Microsoft features like Quick Assist, making the activity invisible to traditional endpoint security software.
+- Once inside, hackers can hijack Global Admin accounts to encrypt OneDrive and SharePoint data or modify sensitivity labels.
+- These attacks bypass standard ransomware defenses because they rely on authorized administrative tools rather than malicious code.
+- Recovery from a full tenant takeover often requires direct Microsoft intervention and can result in weeks of business disruption.
 
 ### Why it Matters
-These campaigns highlight a growing trend of "LLMjacking," where threat actors exploit developer tools and browser extensions to harvest valuable AI credentials and proprietary data. Users should exercise extreme caution when granting plugins or extensions access to sensitive API keys or private chatbot sessions.
+This attack vector highlights a critical vulnerability in organizations that rely solely on native Microsoft 365 controls without additional oversight. Because the exploit weaponizes legitimate administrative features, businesses must implement dedicated monitoring layers to detect anomalous configuration changes and privilege escalations in real time.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/06/malicious-jetbrains-plugins-steal-ai.html
+Author:   Andrea Sivieri
+Source:   TechRadar
+URL:      https://www.techradar.com/pro/the-enemy-within-how-to-stop-a-simple-teams-message-taking-down-your-business
 Category: Cybersecurity
