@@ -1,20 +1,19 @@
-I found 10k GitHub repositories distributing Trojan malware
+4 security upgrades in Android 17 you didn’t know about, but will be glad to have
 ============================================================
 
-A security researcher has identified a large-scale malware campaign involving 10,000 GitHub repositories that distribute Trojan-infected zip archives by mimicking legitimate project structures to deceive unsuspecting software developers.
+Google’s Android 17 update introduces critical security and performance enhancements, including stricter app memory management, restricted local network access, improved malware protections, and default certificate transparency for web traffic.
 
 ### Key Points
-- The campaign uses automated scripts to clone legitimate repositories, adding malicious zip files to readme updates.
-- Malicious archives contain executable files that bypass VirusTotal detection but install Trojans upon execution.
-- Attackers frequently overwrite commit histories to evade GitHub’s automated security detection and indexing algorithms.
-- The researcher utilized the gharchive service to analyze GitHub event data and identify 10,000 active malicious repositories.
-- GitHub has historically relied on manual reports for removal, failing to proactively identify or purge the automated distribution network.
+- Android 17 enforces per-app memory limits to automatically terminate resource-heavy applications that cause system sluggishness.
+- A new ACCESS_LOCAL_NETWORK permission prevents apps from silently scanning home Wi-Fi devices without explicit user authorization.
+- The update restricts dynamic code loading by requiring native libraries to be read-only, closing a common loophole used by malware.
+- Certificate Transparency is now enabled by default for all TLS connections, ensuring web traffic is verified against public audit logs.
 
 ### Why it Matters
-This discovery highlights a significant vulnerability in software supply chain security where attackers exploit repository cloning to distribute malware through trusted platforms. The persistence of this campaign suggests that current automated moderation tools are insufficient to detect sophisticated, high-volume social engineering tactics on major code-hosting services.
+These updates shift the balance of power from third-party applications back to the user by limiting background data collection and system resource consumption. By hardening the operating system against common malware techniques and unauthorized network scanning, Google is significantly reducing the attack surface for mobile devices.
 
 ============================================================
-Author:   Orchid
-Source:   Orchidfiles.com
-URL:      https://orchidfiles.com/github-repositories-distributing-malware/
+Author:   Robert Triggs
+Source:   Android Authority
+URL:      https://www.androidauthority.com/android-17-security-upgrades-3679016/
 Category: Cybersecurity

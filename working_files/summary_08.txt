@@ -1,20 +1,21 @@
-Carl Pei tells Apple he's stealing its customers, as if iMessage isn't holding them hostage
+Salesforce Disables Klue App Integration After OAuth Token Abuse Exposes Customer Data
 ============================================================
 
-Nothing founder Carl Pei has publicly challenged Apple’s market dominance, aiming to attract dissatisfied iPhone users by expanding the brand's unique, transparent hardware presence into US Best Buy stores.
+Salesforce has disabled the Klue Battlecards integration after the threat group Icarus exploited a legacy credential to steal OAuth tokens and exfiltrate sensitive customer data from connected CRM environments.
 
 ### Key Points
-- Carl Pei, founder of the London-based smartphone company Nothing, launched a public campaign to convert iPhone users to his brand.
-- Nothing differentiates its products through transparent hardware designs and highly customized software interfaces.
-- The company plans to increase its US market share by expanding its retail availability through a partnership with Best Buy.
-- Industry analysts note that Nothing faces significant competition from established giants like Apple, Samsung, Xiaomi, and OPPO.
-- Critics argue that Nothing lacks a comprehensive services ecosystem, such as iMessage or Apple Watch, to effectively challenge Apple's user retention.
+- Salesforce disabled the Klue app on June 11, 2026, following unauthorized access to customer data via the integration.
+- The threat actor Icarus used a compromised legacy credential to access Klue’s infrastructure and steal OAuth tokens.
+- Stolen tokens allowed attackers to bypass standard authentication and perform bulk data extraction from Salesforce environments.
+- Impacted companies include Huntress, Jamf, Recorded Future, Tanium, Gong, and Sprout Social.
+- Compromised data primarily includes business contacts, sales quotes, and account information, rather than core product telemetry or passwords.
+- Klue has revoked affected credentials, removed unauthorized code, and is working with impacted customers to mitigate the breach.
 
 ### Why it Matters
-This expansion represents a strategic effort to move beyond niche marketing and compete directly with industry leaders in physical retail spaces. While the brand offers a distinct aesthetic alternative, its long-term success depends on whether it can overcome the strong ecosystem lock-in that keeps consumers within Apple’s walled garden.
+This incident highlights the growing risk of SaaS supply chain attacks where threat actors target trusted third-party vendors to gain broad access to multiple enterprise environments simultaneously. It underscores the critical need for organizations to monitor non-human identities and OAuth integrations as rigorously as they monitor standard employee user accounts.
 
 ============================================================
-Author:   techkritiko@gmail.com (Jay Bonggolto) , Jay Bonggolto
-Source:   Android Central
-URL:      https://www.androidcentral.com/phones/nothing-phones/carl-pei-tells-apple-hes-stealing-its-customers-as-if-imessage-isnt-holding-them-hostage
-Category: Phones, Laptops, and Gadgets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/06/salesforce-disables-klue-app.html
+Category: Cybersecurity

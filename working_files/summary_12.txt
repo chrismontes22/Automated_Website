@@ -1,20 +1,20 @@
-You can buy an Xbox Series X, PS5, and Switch 2 for less than the MSI Claw 8 EX AI+ — It feels to me like the handheld PC gaming era is over
+Your browser tab could become encrypted storage for someone else’s files
 ============================================================
 
-MSI has officially launched its Claw 8 EX AI+ gaming handheld, sparking significant debate due to its premium $1,799 price tag and high-performance Intel Arc G-series hardware.
+Researcher Gregory Magarshak has introduced Safecloud, a decentralized storage network that utilizes browser-based nodes to store encrypted file chunks while ensuring data privacy through a unique key-derivation architecture.
 
 ### Key Points
-- The MSI Claw 8 EX AI+ is scheduled for official release on June 23.
-- Retail pricing is currently listed at $1,799 at Best Buy and MSI’s website, with Newegg transitioning from $1,699.
-- The device features an 8-inch, 120Hz display and utilizes Intel’s new Arc G-series chips for improved gaming performance.
-- MSI attributes the high cost to increased RAM and storage prices driven by global demand for AI data center components.
-- Performance benchmarks show up to 42% higher 1080p performance compared to the ROG Ally X with AMD Z2 Extreme.
+- Safecloud splits files into encrypted chunks stored within browser-based "Drops" using IndexedDB, while "Jets" act as routing servers to manage retrieval.
+- The system employs a triple-tree structure—Merkle, key-derivation, and access trees—to simultaneously verify data integrity, manage decryption, and authorize user access.
+- A native token called Safebux incentivizes storage and routing, with payment security enforced through the OpenClaiming Protocol to prevent replay attacks.
+- The architecture supports efficient media streaming by allowing users to grant access to specific file segments or chapters using individual range keys.
+- Current development has finalized the encryption and integrity layers, while the proof-of-storage and payment verification mechanisms are currently being integrated.
 
 ### Why it Matters
-The high price point positions this handheld against full-featured gaming laptops and a combination of multiple major consoles, challenging the value proposition of portable PC gaming. This pricing strategy highlights how supply chain constraints for memory and storage are increasingly impacting consumer electronics costs across the industry.
+This architecture offers a more cost-effective alternative to existing decentralized storage solutions by eliminating the need for resource-intensive "sealing" processes. By leveraging browser-native storage, it provides a scalable framework for private, verifiable data hosting that could significantly lower the barrier for decentralized cloud applications.
 
 ============================================================
-Author:   c.cale.hunt@gmail.com (Cale Hunt) , Cale Hunt
-Source:   Windows Central
-URL:      https://www.windowscentral.com/hardware/handheld-gaming-pc/msi-claw-8-ex-ai-plus-cost-xbox-ps5-switch-2
-Category: Phones, Laptops, and Gadgets
+Author:   Mirko Zorz
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/06/19/safecloud-browser-based-encrypted-storage/
+Category: Cybersecurity
