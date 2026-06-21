@@ -1,20 +1,21 @@
-The Most Dangerous Surveillance Bill You’ve Probably Never Heard Of
+CISA Warns of Active Exploitation Following FortiBleed Leak
 ============================================================
 
-Canada’s proposed Bill C-22, the Lawful Access Act, faces intense scrutiny from privacy advocates and major technology companies over concerns regarding expanded government surveillance and mandatory metadata retention requirements.
+CISA has issued an emergency alert after researchers discovered a massive credential leak affecting approximately 74,000 Fortinet firewalls and VPN gateways, enabling active exploitation by malicious cyber actors.
 
 ### Key Points
-- Bill C-22 aims to modernize investigative tools for law enforcement to combat crimes involving encrypted communications and cloud services.
-- Critics, including the Electronic Frontier Foundation and OpenMedia, warn the bill could force companies to weaken encryption and privacy protections.
-- The legislation includes provisions for mandatory metadata retention for up to one year and new powers to compel data preservation before warrants are issued.
-- Major technology firms, such as Apple, Google, Meta, and Signal, have publicly expressed opposition to the proposed surveillance measures.
-- Opponents have criticized the government for limiting parliamentary debate on the bill's most controversial provisions.
+- The "FortiBleed" incident involves leaked plaintext credentials for 73,932 unique Fortinet devices across 194 countries.
+- Security researchers Bob Diachenko and Kevin Beaumont confirmed the dataset includes valid login information for major corporations and government agencies.
+- A Russian-speaking threat group reportedly used a 45-GPU cluster to crack authentication hashes and conduct over 1.1 billion credential attempts.
+- The leaked data originated from exported device configurations, suggesting attackers gained prior access to the affected hardware.
+- CISA mandates that organizations reset all administrative passwords, enable phishing-resistant multi-factor authentication, and remove management interfaces from the public internet.
+- Hudson Rock has launched a free lookup tool at hudsonrock.com/fortinet for organizations to verify if their domains are included in the compromised dataset.
 
 ### Why it Matters
-This legislation represents a significant test case for how democratic nations balance modern law enforcement requirements with individual digital privacy rights. The outcome in Canada may set a global precedent for how governments regulate encryption and access to personal data in the digital age.
+This breach represents a significant threat to global critical infrastructure, as compromised firewall credentials grant attackers deep access to internal corporate and government networks. Because the data includes business intelligence for potential sale, it highlights a sophisticated, organized effort to monetize initial access to high-value targets.
 
 ============================================================
-Author:   Geeks are Sexy
-Source:   Geeksaresexy.net
-URL:      https://www.geeksaresexy.net/2026/06/19/the-most-dangerous-surveillance-bill-youve-probably-never-heard-of/
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/193902/hacking/cisa-warns-of-active-exploitation-following-fortibleed-leak.html
 Category: Cybersecurity

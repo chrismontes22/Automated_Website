@@ -1,19 +1,20 @@
-4 security upgrades in Android 17 you didn’t know about, but will be glad to have
+AI model helps some patients get diagnoses after years of uncertainty, study finds
 ============================================================
 
-Google’s Android 17 update introduces critical security and performance enhancements, including stricter app memory management, restricted local network access, improved malware protections, and default certificate transparency for web traffic.
+A new study published in the New England Journal of Medicine demonstrates how an AI model developed by OpenAI and Boston Children's Hospital successfully diagnosed rare pediatric genetic conditions.
 
 ### Key Points
-- Android 17 enforces per-app memory limits to automatically terminate resource-heavy applications that cause system sluggishness.
-- A new ACCESS_LOCAL_NETWORK permission prevents apps from silently scanning home Wi-Fi devices without explicit user authorization.
-- The update restricts dynamic code loading by requiring native libraries to be read-only, closing a common loophole used by malware.
-- Certificate Transparency is now enabled by default for all TLS connections, ensuring web traffic is verified against public audit logs.
+- Researchers analyzed existing genetic data from 18 pediatric patients to identify previously undiagnosed rare diseases.
+- The AI model processed complex genomic information in six to 10 minutes per case, acting as a diagnostic aid for specialists.
+- One participant received a diagnosis of Myofibrillar Myopathy after nearly two decades of medical uncertainty.
+- All AI-generated findings required confirmation by human experts and certified clinical laboratories before being shared with families.
+- The study suggests that revisiting older, inconclusive genetic test results with updated AI tools could help identify previously missed diagnoses.
 
 ### Why it Matters
-These updates shift the balance of power from third-party applications back to the user by limiting background data collection and system resource consumption. By hardening the operating system against common malware techniques and unauthorized network scanning, Google is significantly reducing the attack surface for mobile devices.
+This research highlights the potential for AI to accelerate the diagnostic process for the millions of Americans living with rare, often overlooked genetic diseases. By automating the review of complex genomic data, these tools allow clinicians to focus their expertise on final patient care while providing families with long-awaited answers and closure.
 
 ============================================================
-Author:   Robert Triggs
-Source:   Android Authority
-URL:      https://www.androidauthority.com/android-17-security-upgrades-3679016/
-Category: Cybersecurity
+Author:   DR. JOSHUA ANTHONY
+Source:   Abcnews.com
+URL:      https://abcnews.com/Health/ai-model-helps-patients-diagnoses-after-years-uncertainty/story?id=134040827
+Category: Artificial Intelligence

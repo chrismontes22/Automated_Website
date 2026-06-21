@@ -1,20 +1,20 @@
-How to Think About AI Before It’s Too Late
+I freed up 143 GB by letting Claude scan my C: drive — Windows never found any of it
 ============================================================
 
-Author and activist Cory Doctorow argues that the current AI boom is driven by corporate power dynamics and unsustainable growth, rather than genuine technological necessity or human flourishing.
+Anthropic’s AI coding agent, Claude Code, successfully recovered 143 GB of storage space on a Windows laptop by identifying and safely removing hidden junk files that native tools ignored.
 
 ### Key Points
-- Doctorow defines "reverse centaurs" as workers forced to act as extensions of machines, often leading to exhaustion and dehumanization.
-- The "enshittification" thesis suggests platforms degrade services to extract value once they have captured a market.
-- AI development is characterized as a massive, potentially unsustainable capital expenditure bubble exceeding $1 trillion.
-- Corporate reliance on AI often creates "accountability sinks," where companies blame automated systems for foreseeable errors to avoid responsibility.
-- Doctorow advocates for structural regulation and antitrust enforcement to curb the influence of oligarchy on technological development.
+- Claude Code operates directly within the terminal, allowing it to execute commands and analyze file structures on a local machine.
+- The AI identified 72.6 GB of unused VirtualBox images and approximately 30 GB of leftover AI model data from uninstalled applications.
+- It cleared 19 GB of Nvidia driver caches and DirectX shader files that Windows Storage Sense failed to detect or categorize as removable.
+- The tool provided a structured breakdown of files, explicitly labeling which items were safe to delete to prevent system instability.
+- Total free space on the 470 GB partition increased from 13.63 GB to 157.06 GB after the cleanup process.
 
 ### Why it Matters
-The unchecked pursuit of AI-driven automation risks creating unstable, inefficient systems that prioritize corporate cost-cutting over human needs and public safety. Addressing these power imbalances is essential to preventing long-term economic volatility and the further erosion of labor rights.
+This demonstration highlights the shift from rigid, rule-based system utilities to intelligent agents capable of nuanced, context-aware file management. By reasoning through complex directory structures, AI agents can perform deep maintenance tasks that traditional software avoids to prevent potential system errors.
 
 ============================================================
-Author:   Charlie Warzel
-Source:   The Atlantic
-URL:      https://www.theatlantic.com/podcasts/2026/06/how-to-think-about-ai-before-its-too-late/687644/
+Author:   Yadullah Abidi
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/freed-143-gb-claude-scan-c-drive-windows-never-found/
 Category: Artificial Intelligence
