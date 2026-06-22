@@ -1,20 +1,20 @@
-Web Browsers on PDAS
+Week in review: 74k Fortinet firewall credentials stolen, Splunk Enterprise RCE under active attack
 ============================================================
 
-Early personal digital assistants (PDAs) pioneered mobile internet access through diverse operating systems and specialized browsers before the rise of modern smartphones rendered the dedicated PDA category largely obsolete.
+A massive data leak exposed 74,000 Fortinet firewall credentials, while critical vulnerabilities in Splunk Enterprise and SimpleHelp RMM are currently being exploited by attackers in the wild.
 
 ### Key Points
-- Early PDA connectivity relied on dial-up, infrared, and expansion cards before Wi-Fi and Bluetooth became standard in high-end devices by 2003.
-- Major operating systems included EPOC, Apple Newton, Palm OS, Windows Mobile, and the Linux-based Sharp Zaurus.
-- Browsers evolved from basic proxy-based tools like Palmscape and NetHopper to more advanced, native engines like Opera Mobile, NetFront, and Internet Explorer Mobile.
-- Specialized software like Minimo and Fennec attempted to bring full desktop-class browsing experiences from Mozilla Firefox to resource-constrained PDA hardware.
-- The transition from proprietary systems to Linux on devices like the Zaurus allowed users to run full desktop environments, effectively turning PDAs into portable mini-laptops.
+- A Russian-speaking group leaked credentials from 74,000 Fortinet firewalls and VPN gateways after accidentally exposing them on a server.
+- CISA added a critical, remotely exploitable vulnerability in Splunk Enterprise (CVE-2026-20253) to its Known Exploited Vulnerabilities catalog.
+- A critical flaw in the SimpleHelp RMM tool (CVE-2026-48558) allows unauthenticated attackers to gain full remote access to managed endpoints.
+- Attackers are actively exploiting three vulnerabilities in FortiSandbox, a platform essential for threat blocking and automated security responses.
+- Microsoft is developing a patch for a zero-day vulnerability in Defender (CVE-2026-50656) that enables local privilege escalation.
 
 ### Why it Matters
-The evolution of PDA browsers represents the foundational era of the mobile web, establishing the technical standards and user interface patterns that define today's smartphone experience. Understanding this history highlights the rapid shift from limited, proxy-dependent browsing to the powerful, standards-compliant mobile internet ecosystem we rely on today.
+These incidents highlight a significant escalation in supply chain and infrastructure risks, as attackers increasingly target the management tools that organizations rely on for security. The widespread exposure of administrative credentials and active exploitation of RMM software demonstrate that even robust security perimeters are vulnerable when foundational management platforms are compromised.
 
 ============================================================
-Author:   Declan Chidlow
-Source:   Vale.rocks
-URL:      https://vale.rocks/posts/pda-browsers
-Category: Phones, Laptops, and Gadgets
+Author:   Help Net Security
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/06/21/week-in-review-74k-fortinet-firewall-credentials-stolen-splunk-enterprise-rce-under-active-attack/
+Category: Cybersecurity

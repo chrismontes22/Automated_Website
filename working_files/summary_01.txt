@@ -1,21 +1,20 @@
-Deal Days has a 15-device VPN for less than $30
+A Critical Deadline Is Approaching for Windows and Linux Security
 ============================================================
 
-FastestVPN Pro is currently available for $29.97 during the Deal Days event, offering a lifetime subscription for up to 15 devices along with a one-year password manager subscription.
+Microsoft and Linux users must update cryptographic keys by June 24 to maintain Secure Boot protections against firmware-based UEFI infections following the discovery of critical LogoFail vulnerabilities.
 
 ### Key Points
-- The promotional price of $29.97 represents a significant discount from the standard $600 retail value.
-- Users gain access to over 900 servers across 100 countries with unlimited bandwidth and server switching.
-- Security features include 256-bit AES encryption, a kill switch, IPv6 leak protection, and an integrated ad blocker.
-- The subscription supports a wide range of platforms, including Windows, macOS, iOS, Android, smart TVs, and gaming consoles.
-- The package includes a one-year subscription to Passhulk Password Manager for secure credential storage.
-- The Deal Days promotion is scheduled to run through June 28.
+- Three Microsoft-signed certificates used for Secure Boot verification are set to expire on June 24.
+- Secure Boot prevents UEFI bootkits from loading malicious firmware before the operating system starts.
+- The update replaces 2011-era cryptographic signatures with new 2023 versions to mitigate risks like the LogoFail vulnerability.
+- Windows 10 and 11 users can verify their status via the Device Security settings menu.
+- Linux distributors are currently releasing updated "shims" to bridge Secure Boot keys with their bootloaders.
 
 ### Why it Matters
-This offer provides a cost-effective solution for users looking to secure multiple devices across various platforms with a single subscription. By bundling a VPN with a password manager, the deal addresses two fundamental aspects of personal cybersecurity for a significantly reduced price.
+Failure to update these keys leaves systems vulnerable to persistent malware that can survive operating system reinstalls and bypass traditional security software. Maintaining an updated chain of trust is essential for preventing attackers from compromising the foundational firmware of modern computing devices.
 
 ============================================================
-Author:   Boing Boing's Shop
-Source:   Boing Boing
-URL:      https://boingboing.net/2026/06/20/deal-days-has-a-15-device-vpn-for-less-than-30.html
+Author:   Dan Goodin, Ars Technica
+Source:   Wired
+URL:      https://www.wired.com/story/a-critical-deadline-is-approaching-for-windows-and-linux-security/
 Category: Cybersecurity
