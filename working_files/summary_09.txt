@@ -1,20 +1,21 @@
-Prime Members: Belkin 45W Compact USB-C Foldable Charger (2 Colors) $13 & More + Free S&H
+Amazon Bedrock Managed Knowledge Base を触ってみた
 ============================================================
 
-The new Belkin 45-watt USB-C wall charger provides rapid power delivery for smartphones, tablets, and laptops, capable of charging an iPhone 16 Pro to 50% in 28 minutes.
+Amazon Bedrock Managed Knowledge Baseは、ベクトルストアの構築やデータパイプライン管理を不要にするフルマネージドなRAGサービスとして、2026年6月17日にリリースされました。
 
 ### Key Points
-- Delivers a maximum 45-watt output compatible with MacBook, Chromebook, and iPad Pro devices.
-- Features USB-C PD 3.1 certification to ensure safe, high-power charging while minimizing heat output.
-- Charges a Samsung S23 to 50% in under 30 minutes and a ThinkPad C13 Yoga in 37 minutes.
-- Designed with foldable prongs to improve portability and durability for frequent travelers.
-- Supports a wide range of USB-C devices, including various iPhone models and Samsung Galaxy smartphones.
+- ベクトルストアの運用が不要で、マネージドな埋め込みモデルやリランカーを標準搭載しています。
+- Smart Parsing機能により、PDFやPPTX内の図解やテーブル構造を自動で解析・抽出可能です。
+- AgenticRetrieveStream APIを使用することで、クエリの分解や複数Knowledge Baseの横断検索を自動化できます。
+- ドキュメント単位のアクセス制御（ACL）に対応し、ユーザーごとの閲覧権限設定が可能です。
+- 料金はインデックスストレージが月額5ドル/GB、検索APIは1,000回あたり1ドルから利用できます。
 
 ### Why it Matters
-This charger offers a versatile, high-speed solution for users managing multiple power-hungry devices with a single compact accessory. Its broad compatibility and safety certifications simplify the charging ecosystem for consumers who prioritize efficiency and portability.
+- 本サービスはインフラ管理の負担を大幅に軽減するため、小〜中規模のRAG構築において高いコスト効率と開発スピードを実現します。
+- 複雑なクエリに対する自動検索や複数ソースの横断的な情報抽出が可能となり、企業内ナレッジ検索の精度と利便性が大きく向上します。
 
 ============================================================
-Author:   phoinix
-Source:   Slickdeals.net
-URL:      https://slickdeals.net/f/19647234-prime-members-belkin-45w-compact-usb-c-foldable-charger-2-colors-13-more-free-s-h
-Category: Phones, Laptops, and Gadgets
+Author:   神野 雄大
+Source:   Classmethod.jp
+URL:      https://dev.classmethod.jp/articles/bedrock-managed-knowledge-base-retrieve-agentic-retrieval/
+Category: Artificial Intelligence

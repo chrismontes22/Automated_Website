@@ -1,20 +1,20 @@
-I tested Claude Code, Codex, and Antigravity on a real electronics project — only one actually finished
+Study Reveals Exploit That Lets Your Browsing History Be Spied On Using Your SSD
 ============================================================
 
-**Claude Code outperformed Antigravity and Codex in a comparative test to build an ESP32-based dashboard, delivering the most functional and efficient code for the hardware project.**
+Researchers at Graz University of Technology have identified a new security vulnerability called FROST that allows malicious websites to track user browsing history by measuring SSD latency patterns.
 
 ### Key Points
-- The project required an ESP32 to display Claude usage limits, monitor DHT22 sensor data, and integrate with Home Assistant.
-- Anthropic’s Claude Code provided a single, ready-to-flash INO file, demonstrating superior reasoning and integration capabilities.
-- Google’s Antigravity (Gemini 3.1 Pro) prioritized complex planning and multi-file structures, which added unnecessary overhead for a local device.
-- OpenAI’s Codex (GPT 5.5) relied heavily on ESPHome, forcing a YAML-based workflow that was suboptimal for the specific multi-task requirements.
-- Claude Code successfully utilized a clever API workaround to fetch usage data, whereas other models struggled to find direct solutions.
+- The FROST (Fingerprinting Remotely using OPFS-based SSD Timing) attack exploits the File System Access API found in modern web browsers.
+- Researchers achieved up to 89% accuracy in identifying visited websites on general systems, with accuracy reaching 96% on Mac devices.
+- The attack uses JavaScript to create an isolated file system within the Origin Private File System (OPFS) to measure I/O latency spikes.
+- A convolutional neural network (CNN) processes these latency traces to classify and identify the specific websites a user has visited.
+- Users can mitigate the risk by configuring browsers to require explicit permission before allowing websites to create OPFS files.
 
 ### Why it Matters
-Choosing the right AI coding agent is critical for hardware development, as different models vary significantly in their ability to handle constrained environments and multi-subsystem integration. While some agents prioritize speed or established documentation, the most effective tool for embedded firmware is one that balances architectural simplicity with accurate, ready-to-deploy code.
+This vulnerability highlights a significant privacy risk where hardware performance characteristics are leveraged to bypass traditional browser security measures. Because the attack requires no native code installation, it demonstrates how standard web APIs can be repurposed to deanonymize user activity without the victim's knowledge.
 
 ============================================================
-Author:   Yadullah Abidi
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/tested-claude-code-codex-antigravity-electronics-project-one-finished/
-Category: Artificial Intelligence
+Author:   staff@bgr.com (Aaron Greenbaum)
+Source:   BGR
+URL:      https://www.bgr.com/2195379/browsing-history-spied-on-through-ssd-exploit-frost/
+Category: Cybersecurity

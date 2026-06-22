@@ -1,20 +1,20 @@
-When I reject AI code even if it works
+I benchmarked Quad9, NextDNS, and Cloudflare, and the winner wasn't the big name
 ============================================================
 
-Software engineers are increasingly facing cognitive overload as AI-generated code requires rigorous human review to ensure long-term system scalability, maintainability, and architectural integrity despite rapid implementation speeds.
+A comparative performance analysis of NextDNS, Quad9, and Cloudflare reveals that DNS resolution speeds fluctuate significantly based on local network conditions, ISP peering, and specific geographic routing paths.
 
 ### Key Points
-- Rapid AI code generation creates a bottleneck where developers must manually review large volumes of automated changes.
-- Developers report higher success rates when they fully understand the problem context before directing AI agents to implement specific solutions.
-- Common reasons for rejecting AI-generated code include unnecessary abstractions, excessive diff sizes, and code that is difficult to reason about.
-- Automated tests passing in a CI environment do not guarantee that the generated code provides a scalable or extensible software solution.
-- Human oversight remains essential because AI agents currently lack the ability to autonomously produce sustainable, high-quality code without expert guidance.
+- Testing compared DNS resolution speeds for Cloudflare, Quad9, and NextDNS across two distinct network environments using a standardized PowerShell script.
+- Cloudflare demonstrated the most consistent performance across both café and home networks, despite not always achieving the fastest individual resolution times.
+- Quad9 showed high variability, ranging from the slowest performer on public Wi-Fi to the fastest during home network testing.
+- NextDNS experienced significant reliability issues on public Wi-Fi but performed competitively with a 7.5ms average on a stable home connection.
+- All three providers utilize anycast routing, which directs traffic to the network-closest server rather than the geographically nearest one, causing inconsistent results.
 
 ### Why it Matters
-The reliance on AI coding agents shifts the developer's role from primary author to technical reviewer, necessitating a higher standard for code quality control. Failing to maintain this human-led oversight risks introducing technical debt and complex, unmanageable systems into production environments.
+DNS performance is highly dependent on individual network infrastructure and ISP routing, meaning there is no single "fastest" provider for every user. Choosing a DNS service should prioritize reliability, security features like malware blocking, and custom configurability over generalized speed benchmarks.
 
 ============================================================
-Author:   Vinicius Brasil
-Source:   Vinibrasil.com
-URL:      https://vinibrasil.com/when-i-reject-ai-code-even-if-it-works/
-Category: Artificial Intelligence
+Author:   Gavin Phillips
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/i-benchmarked-quad9-nextdns-cloudflare-winner-wasnt-the-big-name/
+Category: Cybersecurity
