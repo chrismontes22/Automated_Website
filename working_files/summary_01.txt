@@ -1,20 +1,20 @@
-A Critical Deadline Is Approaching for Windows and Linux Security
+AryStinger Malware Infects 4,300 Legacy Routers to Build Reconnaissance Proxy Network
 ============================================================
 
-Microsoft and Linux users must update cryptographic keys by June 24 to maintain Secure Boot protections against firmware-based UEFI infections following the discovery of critical LogoFail vulnerabilities.
+**Researchers at QiAnXin XLab have identified a new malware family called AryStinger that is compromising thousands of legacy routers and NAS devices to create a stealthy reconnaissance proxy network.**
 
 ### Key Points
-- Three Microsoft-signed certificates used for Secure Boot verification are set to expire on June 24.
-- Secure Boot prevents UEFI bootkits from loading malicious firmware before the operating system starts.
-- The update replaces 2011-era cryptographic signatures with new 2023 versions to mitigate risks like the LogoFail vulnerability.
-- Windows 10 and 11 users can verify their status via the Device Security settings menu.
-- Linux distributors are currently releasing updated "shims" to bridge Secure Boot keys with their bootloaders.
+- AryStinger has infected at least 4,300 routers, primarily targeting D-Link DIR-850L models equipped with older Realtek RTL819X chips.
+- The malware exploits known vulnerabilities, including CVE-2013-3307 and CVE-2016-5681, to turn devices into nodes for internet scanning and traffic relaying.
+- A secondary strain targets QNAP NAS devices by exploiting CVE-2025-11837, a code injection flaw within the manufacturer's own malware-removal tool.
+- Infected devices are concentrated in South Korea and China, functioning as a distributed infrastructure for attackers to mask their origins during cyber intrusions.
+- Security experts recommend retiring end-of-life hardware that no longer receives firmware updates and disabling remote administration features on all exposed network appliances.
 
 ### Why it Matters
-Failure to update these keys leaves systems vulnerable to persistent malware that can survive operating system reinstalls and bypass traditional security software. Maintaining an updated chain of trust is essential for preventing attackers from compromising the foundational firmware of modern computing devices.
+This campaign highlights the persistent security risk posed by end-of-life networking equipment that remains in use despite lacking modern patches. By repurposing these devices into operational relay boxes, attackers can conduct large-scale reconnaissance and hide their digital footprints, complicating efforts by security teams to trace malicious activity.
 
 ============================================================
-Author:   Dan Goodin, Ars Technica
-Source:   Wired
-URL:      https://www.wired.com/story/a-critical-deadline-is-approaching-for-windows-and-linux-security/
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/06/arystinger-malware-infects-4300-legacy.html
 Category: Cybersecurity

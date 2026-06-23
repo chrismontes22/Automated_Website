@@ -1,20 +1,20 @@
-AryStinger botnet infected thousands of D-Link routers worldwide
+Encrypted DNS still tells an eavesdropper where to look
 ============================================================
 
-A newly discovered malware botnet called AryStinger has compromised over 4,000 outdated D-Link routers, repurposing the devices as proxies to facilitate large-scale malicious network scanning and traffic interception.
+Researchers have identified that encrypted DNS traffic remains vulnerable to eavesdropping due to exposed plaintext headers, prompting a new proposal to use header elision to improve network privacy.
 
 ### Key Points
-- Researchers at Qianxin’s XLab identified AryStinger, which exploits known vulnerabilities including CVE-2013-3307 and CVE-2025-11837.
-- The botnet primarily targets D-Link DIR-850L and DIR-818LW routers, with 48.5% of infections located in South Korea.
-- Infected devices function as distributed executors, allowing attackers to perform command execution, DNS hijacking, and network reconnaissance.
-- A secondary Go-based variant of the malware exists, specifically designed to target and compromise network-attached storage (NAS) systems.
-- Security experts recommend replacing end-of-life hardware and disabling remote management panels to mitigate the risk of unauthorized device control.
+- Encrypted DNS protocols like DoT and DoH protect query contents but leave plaintext headers, such as IP addresses and TCP sequence numbers, visible to network observers.
+- A study of 58,768 request-response pairs revealed that monotonic counters and specific header fields allow attackers to identify and profile DNS traffic patterns.
+- Researchers proposed using Static Context Header Compression (SCHC) and block-wise transfer to obscure packet lengths and remove identifiable header fields.
+- Implementing these defenses reduced classifier accuracy for identifying DNS flows to between 77 and 86 percent, significantly increasing the difficulty of traffic analysis.
+- The team recommends using protocols like QUIC, OSCORE, and Oblivious DNS, alongside timing obfuscation, to further protect traffic in non-IoT environments.
 
 ### Why it Matters
-This campaign highlights the persistent security risks posed by end-of-life networking equipment that no longer receives official firmware updates. By leveraging these vulnerable devices, attackers can build resilient, distributed infrastructures to mask malicious activity and conduct large-scale cyber operations.
+This research highlights a critical privacy gap where metadata leaks undermine the security benefits of encrypted DNS, particularly for Internet of Things devices. By demonstrating how header information can be used to profile user activity, the study provides a roadmap for developers to harden network protocols against sophisticated traffic analysis attacks.
 
 ============================================================
-Author:   Bill Toulas
-Source:   BleepingComputer
-URL:      https://www.bleepingcomputer.com/news/security/arystinger-botnet-infected-thousands-of-d-link-routers-worldwide/
+Author:   Mirko Zorz
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/06/22/research-encrypted-dns-privacy/
 Category: Cybersecurity

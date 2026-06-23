@@ -1,20 +1,20 @@
-Study Reveals Exploit That Lets Your Browsing History Be Spied On Using Your SSD
+MoneyGram joins Solana as validator, expanding role in blockchain infrastructure
 ============================================================
 
-Researchers at Graz University of Technology have identified a new security vulnerability called FROST that allows malicious websites to track user browsing history by measuring SSD latency patterns.
+MoneyGram has officially joined the Solana blockchain as a validator, marking a significant expansion of the remittance giant's infrastructure to support stablecoin transactions and secure the decentralized network.
 
 ### Key Points
-- The FROST (Fingerprinting Remotely using OPFS-based SSD Timing) attack exploits the File System Access API found in modern web browsers.
-- Researchers achieved up to 89% accuracy in identifying visited websites on general systems, with accuracy reaching 96% on Mac devices.
-- The attack uses JavaScript to create an isolated file system within the Origin Private File System (OPFS) to measure I/O latency spikes.
-- A convolutional neural network (CNN) processes these latency traces to classify and identify the specific websites a user has visited.
-- Users can mitigate the risk by configuring browsers to require explicit permission before allowing websites to create OPFS files.
+- MoneyGram is now staking SOL tokens and processing transaction blocks to directly support the Solana network's security.
+- The company has joined the Solana Developer Platform to further integrate blockchain technology into its treasury and payment operations.
+- This move follows the May launch of MoneyGram’s MGUSD stablecoin on the Stellar network for international fund transfers.
+- Competitor Western Union is also expanding its blockchain footprint by deploying the USDPT stablecoin on Solana across multiple global markets.
+- Industry data indicates that stablecoin transaction volumes for institutional clients rose 81% year-on-year, driven by demand for efficient cross-border settlement.
 
 ### Why it Matters
-This vulnerability highlights a significant privacy risk where hardware performance characteristics are leveraged to bypass traditional browser security measures. Because the attack requires no native code installation, it demonstrates how standard web APIs can be repurposed to deanonymize user activity without the victim's knowledge.
+The integration of stablecoins into remittance networks allows companies to bypass traditional banking fees and reduce the capital tied up in prefunding requirements. By adopting blockchain infrastructure, firms like MoneyGram and Western Union aim to improve profit margins and enable 24/7 global money movement for their customers.
 
 ============================================================
-Author:   staff@bgr.com (Aaron Greenbaum)
-Source:   BGR
-URL:      https://www.bgr.com/2195379/browsing-history-spied-on-through-ssd-exploit-frost/
-Category: Cybersecurity
+Author:   Nate Kostar
+Source:   Cointelegraph
+URL:      https://cointelegraph.com/news/moneygram-joins-solana-validator-expanding-role-blockchain-infrastructure
+Category: Tech Business & Markets

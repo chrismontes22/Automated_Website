@@ -1,20 +1,20 @@
-Tech workers are spending nights and weekends learning new AI tools. They say they can't afford not to.
+I Gave an AI a Civilization to Run. It Built a Nuke – Launching CivBench
 ============================================================
 
-Tech workers are increasingly dedicating significant personal time and money to mastering artificial intelligence tools outside of work hours to remain competitive in a rapidly evolving job market.
+**Researchers have developed CivBench, a new evaluation framework using the strategy game Civilization VI to test the long-term reasoning and decision-making capabilities of frontier artificial intelligence models.**
 
 ### Key Points
-- An Ernst & Young survey found that 85% of US desk workers are learning to use AI tools during their personal time.
-- Software engineers and product designers report spending 10 to 20 hours weekly on after-hours AI experimentation to avoid becoming technically obsolete.
-- Professionals are paying out-of-pocket for subscriptions to tools like ChatGPT, Claude, and Cursor, with some spending thousands annually on training and software.
-- LinkedIn data shows a surge in hiring for AI-specific engineering roles, while demand for traditional software engineering positions has remained flat or declined.
-- Some employees, such as those at Amazon, report that internal company resources help, but heavy workloads still force most learning into evenings and weekends.
+- CivBench utilizes 76 custom tools to allow AI agents to interact with the Civilization VI game engine through text-based commands.
+- The project identifies the "sensorium effect," where AI agents fail to perceive threats they do not explicitly query, and a "knowing-doing gap" where models fail to execute planned strategies.
+- Testing revealed that models often struggle with long-horizon planning, frequently ignoring rival victory conditions even when provided with the necessary data.
+- The benchmark includes a diary system that acts as external memory, allowing agents to maintain strategic continuity across hundreds of game turns.
+- The framework is open-source and designed to help researchers measure how AI systems handle complex, multi-variable decision-making under uncertainty.
 
 ### Why it Matters
-This trend highlights a growing "learning tax" where the burden of professional development shifts from employers to individual workers to keep pace with technological disruption. As AI continues to reshape industry standards, the ability to adapt quickly is becoming a critical factor in long-term job security and career advancement.
+Current AI benchmarks often rely on static quizzes that measure information recall rather than the ability to navigate complex, evolving environments. By testing how models perform in a dynamic strategy game, CivBench provides a more realistic assessment of how AI might handle high-stakes, long-term policy and government decision-making.
 
 ============================================================
-Author:   Jacob Zinkula
-Source:   Business Insider
-URL:      https://www.businessinsider.com/tech-workers-learning-ai-tools-after-work-productivity-jobs-amazon-2026-6#article
+Author:   Liam Wilkinson
+Source:   Lwilko.com
+URL:      https://lwilko.com/blog/i-gave-an-ai-a-civilization
 Category: Artificial Intelligence

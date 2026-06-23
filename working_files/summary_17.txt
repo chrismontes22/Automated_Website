@@ -1,19 +1,20 @@
-10 Sunday Reads
+4,300+ Outdated Routers Hijacked in Stealthy Spy Infrastructure by AryStinger malware
 ============================================================
 
-Leading deepfake expert Hany Farid warns that generative AI advancements are making it increasingly difficult to distinguish authentic media from synthetic content, challenging the future of digital evidence.
+QiAnXin’s XLab researchers have identified AryStinger, a sophisticated malware campaign utilizing thousands of outdated routers and NAS devices to build a covert, distributed infrastructure for global intrusion reconnaissance.
 
 ### Key Points
-- Hany Farid, a prominent deepfake expert, reports losing confidence in his ability to visually verify the authenticity of digital media.
-- The rapid evolution of generative video technology is complicating efforts to maintain journalistic integrity and legal evidentiary standards.
-- Disinformation campaigns, such as the Russian "Matryoshka" bot network, continue to exploit these technological gaps to spread false narratives.
-- The rise of synthetic media necessitates new verification tools to combat the erosion of public trust in online information.
+- AryStinger targets end-of-life hardware, specifically Realtek RTL819X-based routers and QNAP NAS devices, using long-standing vulnerabilities.
+- The botnet currently comprises over 4,300 infected devices, with D-Link models accounting for approximately 75% of the identified router pool.
+- Infected nodes act as "Executors" that perform parallelized tasks like port scanning, service identification, and subdomain enumeration for the attacker.
+- The malware features a modular design, including a C-based build for routers and a Go-based build for NAS devices that supports dynamic script execution.
+- Primary infections are concentrated in South Korea (48%) and China (32%), with additional activity detected in Sweden, Malaysia, and Singapore.
 
 ### Why it Matters
-The inability to distinguish between real and AI-generated content poses a significant threat to democratic institutions and the reliability of public discourse. As visual evidence becomes easier to manipulate, society faces a growing crisis of trust that impacts everything from journalism to legal proceedings.
+This campaign highlights the significant security risks posed by legacy hardware that no longer receives firmware updates, effectively turning forgotten devices into permanent, invisible attack springboards. By leveraging these "n-day" vulnerabilities, attackers can establish a massive, low-detection infrastructure capable of conducting large-scale reconnaissance against critical networks.
 
 ============================================================
-Author:   Barry Ritholtz
-Source:   Ritholtz.com
-URL:      https://ritholtz.com/2026/06/10-sunday-reads-233/
-Category: Artificial Intelligence
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/193987/security/4300-outdated-routers-hijacked-in-stealthy-spy-infrastructure-by-arystinger-malware.html
+Category: Cybersecurity
