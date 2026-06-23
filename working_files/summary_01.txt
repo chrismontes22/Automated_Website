@@ -1,20 +1,21 @@
-AryStinger Malware Infects 4,300 Legacy Routers to Build Reconnaissance Proxy Network
+New OXLOADER Loader Uses Malicious Google Ads to Deliver CastleStealer
 ============================================================
 
-**Researchers at QiAnXin XLab have identified a new malware family called AryStinger that is compromising thousands of legacy routers and NAS devices to create a stealthy reconnaissance proxy network.**
+Cybersecurity researchers at Elastic Security Labs have identified a new malware campaign, codenamed REF8372, that uses malicious Google Ads to distribute the OXLOADER malware and CastleStealer information stealer.
 
 ### Key Points
-- AryStinger has infected at least 4,300 routers, primarily targeting D-Link DIR-850L models equipped with older Realtek RTL819X chips.
-- The malware exploits known vulnerabilities, including CVE-2013-3307 and CVE-2016-5681, to turn devices into nodes for internet scanning and traffic relaying.
-- A secondary strain targets QNAP NAS devices by exploiting CVE-2025-11837, a code injection flaw within the manufacturer's own malware-removal tool.
-- Infected devices are concentrated in South Korea and China, functioning as a distributed infrastructure for attackers to mask their origins during cyber intrusions.
-- Security experts recommend retiring end-of-life hardware that no longer receives firmware updates and disabling remote administration features on all exposed network appliances.
+- The campaign targets users searching for software like Node.js, redirecting them to fraudulent websites via deceptive Google Ads.
+- Threat actors utilize the decentralized cloud storage platform Storj to host malicious payloads and evade domain-based security filters.
+- OXLOADER employs advanced obfuscation techniques, including control-flow flattening and mixed Boolean-Arithmetic, to bypass static detection and sandbox analysis.
+- The malware performs DLL side-loading to execute the final CastleStealer payload, which is designed to harvest sensitive user information.
+- Evidence suggests the attackers are likely Russian-speaking, as the malware includes specific exclusions to avoid infecting systems within the Commonwealth of Independent States.
+- Google removed the associated advertiser account and malicious campaigns from its platform on May 14, 2026.
 
 ### Why it Matters
-This campaign highlights the persistent security risk posed by end-of-life networking equipment that remains in use despite lacking modern patches. By repurposing these devices into operational relay boxes, attackers can conduct large-scale reconnaissance and hide their digital footprints, complicating efforts by security teams to trace malicious activity.
+This campaign highlights the growing trend of threat actors leveraging legitimate cloud services and verified ad accounts to bypass traditional security defenses. The sophisticated engineering behind OXLOADER demonstrates a significant investment in evasion tactics, posing a persistent threat to users who rely on search engines to download software.
 
 ============================================================
 Author:   info@thehackernews.com (The Hacker News)
 Source:   Internet
-URL:      https://thehackernews.com/2026/06/arystinger-malware-infects-4300-legacy.html
+URL:      https://thehackernews.com/2026/06/new-oxloader-loader-uses-malicious.html
 Category: Cybersecurity

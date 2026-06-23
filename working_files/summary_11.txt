@@ -1,20 +1,19 @@
-Encrypted DNS still tells an eavesdropper where to look
+Security shops among the 'hundreds' of Klue hack victims
 ============================================================
 
-Researchers have identified that encrypted DNS traffic remains vulnerable to eavesdropping due to exposed plaintext headers, prompting a new proposal to use header elision to improve network privacy.
+Oracle has reduced its global workforce by 21,000 employees over the past year as the company shifts its financial focus toward massive investments in artificial intelligence and datacenter expansion.
 
 ### Key Points
-- Encrypted DNS protocols like DoT and DoH protect query contents but leave plaintext headers, such as IP addresses and TCP sequence numbers, visible to network observers.
-- A study of 58,768 request-response pairs revealed that monotonic counters and specific header fields allow attackers to identify and profile DNS traffic patterns.
-- Researchers proposed using Static Context Header Compression (SCHC) and block-wise transfer to obscure packet lengths and remove identifiable header fields.
-- Implementing these defenses reduced classifier accuracy for identifying DNS flows to between 77 and 86 percent, significantly increasing the difficulty of traffic analysis.
-- The team recommends using protocols like QUIC, OSCORE, and Oblivious DNS, alongside timing obfuscation, to further protect traffic in non-IoT environments.
+- Oracle’s total headcount dropped from 162,000 to 141,000 employees during the most recent fiscal year.
+- The company is aggressively reallocating capital to fund large-scale datacenter construction projects.
+- Financial reports indicate a strategic pivot toward AI infrastructure to compete in the cloud services market.
+- The workforce reduction represents a significant contraction of the company's total staff size.
 
 ### Why it Matters
-This research highlights a critical privacy gap where metadata leaks undermine the security benefits of encrypted DNS, particularly for Internet of Things devices. By demonstrating how header information can be used to profile user activity, the study provides a roadmap for developers to harden network protocols against sophisticated traffic analysis attacks.
+This workforce reduction highlights the aggressive restructuring traditional tech giants are undertaking to prioritize AI-driven growth. Investors are closely watching whether these massive capital expenditures in datacenters will yield the long-term profitability required to offset the loss of human capital.
 
 ============================================================
-Author:   Mirko Zorz
-Source:   Help Net Security
-URL:      https://www.helpnetsecurity.com/2026/06/22/research-encrypted-dns-privacy/
-Category: Cybersecurity
+Author:   Jessica Lyons
+Source:   Theregister.com
+URL:      https://www.theregister.com/cyber-crime/2026/06/22/security-shops-among-the-hundreds-of-klue-hack-victims/5259743
+Category: Tech Business & Markets

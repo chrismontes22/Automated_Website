@@ -1,20 +1,20 @@
-4,300+ Outdated Routers Hijacked in Stealthy Spy Infrastructure by AryStinger malware
+Microsoft scrambles to patch a Defender security flaw called RoguePlanet
 ============================================================
 
-QiAnXin’s XLab researchers have identified AryStinger, a sophisticated malware campaign utilizing thousands of outdated routers and NAS devices to build a covert, distributed infrastructure for global intrusion reconnaissance.
+Security researcher Nightmare Eclipse has identified RoguePlanet, a critical zero-day vulnerability in Microsoft Defender that allows unauthorized system-level access on fully patched Windows 10 and 11 operating systems.
 
 ### Key Points
-- AryStinger targets end-of-life hardware, specifically Realtek RTL819X-based routers and QNAP NAS devices, using long-standing vulnerabilities.
-- The botnet currently comprises over 4,300 infected devices, with D-Link models accounting for approximately 75% of the identified router pool.
-- Infected nodes act as "Executors" that perform parallelized tasks like port scanning, service identification, and subdomain enumeration for the attacker.
-- The malware features a modular design, including a C-based build for routers and a Go-based build for NAS devices that supports dynamic script execution.
-- Primary infections are concentrated in South Korea (48%) and China (32%), with additional activity detected in Sweden, Malaysia, and Singapore.
+- The vulnerability, tracked as CVE-2026-50656, exploits a race condition within the Microsoft Malware Protection Engine.
+- Attackers can leverage this flaw to gain full system privileges on affected Windows 10 and 11 devices.
+- Researcher Nightmare Eclipse released a proof-of-concept exploit after previous repositories were removed from GitHub and GitLab.
+- Microsoft has officially acknowledged the threat and is currently developing a security patch for all users.
+- This discovery follows a series of recent vulnerability reports by the same researcher, including flaws named BlueHammer and RedSun.
 
 ### Why it Matters
-This campaign highlights the significant security risks posed by legacy hardware that no longer receives firmware updates, effectively turning forgotten devices into permanent, invisible attack springboards. By leveraging these "n-day" vulnerabilities, attackers can establish a massive, low-detection infrastructure capable of conducting large-scale reconnaissance against critical networks.
+This vulnerability poses a significant security risk because it grants attackers elevated control over compromised systems despite users maintaining fully updated software. Microsoft's pending patch is essential to prevent potential exploitation of this high-privilege access flaw across the Windows ecosystem.
 
 ============================================================
-Author:   Pierluigi Paganini
-Source:   Securityaffairs.com
-URL:      https://securityaffairs.com/193987/security/4300-outdated-routers-hijacked-in-stealthy-spy-infrastructure-by-arystinger-malware.html
+Author:   Mikael Markander, Hans-Christian Dirscherl
+Source:   PCWorld
+URL:      https://www.pcworld.com/article/3171876/microsoft-scrambles-to-patch-a-defender-security-flaw-called-rogueplanet.html
 Category: Cybersecurity
