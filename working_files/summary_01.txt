@@ -1,21 +1,20 @@
-New OXLOADER Loader Uses Malicious Google Ads to Deliver CastleStealer
+How 100 Romanian hospitals switched to pen and paper to defeat a national cyber-attack
 ============================================================
 
-Cybersecurity researchers at Elastic Security Labs have identified a new malware campaign, codenamed REF8372, that uses malicious Google Ads to distribute the OXLOADER malware and CastleStealer information stealer.
+More than 100 Romanian hospitals successfully mitigated a massive ransomware attack in February 2024 by disconnecting from the internet and reverting to manual, paper-based patient care procedures.
 
 ### Key Points
-- The campaign targets users searching for software like Node.js, redirecting them to fraudulent websites via deceptive Google Ads.
-- Threat actors utilize the decentralized cloud storage platform Storj to host malicious payloads and evade domain-based security filters.
-- OXLOADER employs advanced obfuscation techniques, including control-flow flattening and mixed Boolean-Arithmetic, to bypass static detection and sandbox analysis.
-- The malware performs DLL side-loading to execute the final CastleStealer payload, which is designed to harvest sensitive user information.
-- Evidence suggests the attackers are likely Russian-speaking, as the malware includes specific exclusions to avoid infecting systems within the Commonwealth of Independent States.
-- Google removed the associated advertiser account and malicious campaigns from its platform on May 14, 2026.
+- Hackers targeted the Hippocrates medical software, infecting 26 hospitals with the BackMyData ransomware strain.
+- Romania’s National Cyber-Security Centre (DNSC) ordered over 100 hospitals to disconnect from the internet to contain the breach.
+- Attackers demanded a ransom of €160,000 in bitcoin, but the government mandated that no payments be made to the criminals.
+- Medical staff maintained patient care using manual records, Excel, and paper-based lab results during the four-day emergency period.
+- Most hospitals restored operations within five days using recent data backups, with no reported patient deaths or serious harm.
 
 ### Why it Matters
-This campaign highlights the growing trend of threat actors leveraging legitimate cloud services and verified ad accounts to bypass traditional security defenses. The sophisticated engineering behind OXLOADER demonstrates a significant investment in evasion tactics, posing a persistent threat to users who rely on search engines to download software.
+This incident serves as a critical case study for global disaster planners on the necessity of maintaining offline protocols and regular data backups in digitized healthcare systems. It highlights the growing vulnerability of medical infrastructure to ransomware and demonstrates that decisive, coordinated government intervention can prevent catastrophic outcomes without yielding to criminal extortion.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/06/new-oxloader-loader-uses-malicious.html
+Author:   Joe Tidy - Cyber Correspondent, World Service
+Source:   BBC News
+URL:      https://www.bbc.com/news/articles/c4gyk756mzlo?xtor=AL-72-%5Bpartner%5D-%5Byahoo.north.america%5D-%5Bheadline%5D-%5Bnews%5D-%5Bbizdev%5D-%5Bisapi%5D
 Category: Cybersecurity

@@ -1,20 +1,20 @@
-It only took weeks for AI usage to break the corporate piggy bank
+Rickrolling the World Cup
 ============================================================
 
-Major technology companies including Uber, Meta, and Microsoft are aggressively curbing internal artificial intelligence spending as high token costs and unproven productivity gains force a shift toward budget austerity.
+Security researcher bobdahacker discovered a critical vulnerability in FIFA’s digital infrastructure that could have allowed unauthorized individuals to hijack live match broadcasts and manipulate sensitive tournament data.
 
 ### Key Points
-- Uber exhausted its entire 2026 AI coding budget in four months, leading to new monthly token caps for employees.
-- Microsoft is canceling internal Claude Code licenses for its Experiences + Devices division to reduce runaway software costs.
-- Meta has pivoted from "tokenmaxxing" to "tokenminimizing," implementing usage dashboards and caps for 6,000 employees.
-- Amazon terminated its internal "KiroRank" leaderboard after discovering staff were assigning AI agents unnecessary tasks to inflate usage metrics.
-- Corporate AI spending has surged, with data from Ramp showing a 13-fold increase in AI-related expenses over the past year.
+- The researcher gained access to the FIFA Football Data Platform by exploiting a misconfigured Microsoft Entra account system.
+- The flaw allowed potential control over RTMP ingest URLs, which serve as the primary broadcast feed for live World Cup matches.
+- Exposed systems included administrative dashboards, player bios, match scores, and the FIFA AI Pro analysis tool.
+- The researcher bypassed client-side access restrictions that failed to verify user roles on the server side.
+- Instead of exploiting the access, the researcher reported the security gaps to FIFA, their streaming contractors, and law enforcement.
 
 ### Why it Matters
-The rapid transition from unrestricted AI adoption to strict cost-rationing signals that current enterprise AI models often fail to provide a clear return on investment. As even the wealthiest tech firms struggle to justify these expenses, businesses relying on third-party AI models face significant financial risks when their own subscription renewals arrive.
+This incident highlights the severe risks associated with centralized authentication systems when internal access controls are not properly enforced on the server side. The vulnerability demonstrates how a single configuration error in a global organization can jeopardize the integrity of high-profile international broadcasts and sensitive sporting data.
 
 ============================================================
-Author:   Josh Centers
-Source:   TheBlaze
-URL:      https://www.theblaze.com/tech/it-only-took-weeks-for-ai-usage-to-break-the-corporate-piggy-bank
-Category: Tech Business & Markets
+Author:   Navarre Bartz
+Source:   Hackaday
+URL:      https://hackaday.com/2026/06/22/rickrolling-the-world-cup/
+Category: Cybersecurity

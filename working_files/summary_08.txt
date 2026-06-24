@@ -1,22 +1,20 @@
-FTC Warning: Crypto ATM Scams Up 1,000%—How To Protect Yourself
+Fable 5 wrote a Windows kernel in 38 minutes
 ============================================================
 
-The Federal Trade Commission reports a surge in cryptocurrency ATM fraud, prompting several U.S. states to implement bans and federal lawmakers to propose stricter consumer protection regulations.
+A developer successfully used the Claude Fable 5 AI model to write a functional, NT-compatible kernel in Rust, which booted in QEMU and passed self-tests in 38 minutes.
 
 ### Key Points
-- Cryptocurrency ATM scam losses reached $388 million in 2025, marking a 58% increase over the previous year.
-- Indiana, Tennessee, and Minnesota have enacted outright bans on cryptocurrency ATMs to curb illicit financial activity.
-- Massachusetts filed a lawsuit against operator Bitcoin Depot, alleging over half of its transaction volume involved scam-related funds.
-- Senator Richard Durbin introduced the Crypto ATM Fraud Prevention Act in 2025 to mandate operator registration and transaction limits.
-- Victims over age 60 are disproportionately targeted, reporting average losses of $10,000 per incident.
+- The project, ntoskrnl-rs, consists of approximately 5,100 lines of code across 27 files.
+- The kernel successfully implements core components including a scheduler, memory manager, and I/O manager.
+- Following the initial 38-minute build, the project evolved over eight days to support unmodified Windows drivers and user-mode binaries like cmd.exe.
+- The development process utilized two different AI models: Claude Fable 5 for rapid greenfield generation and Claude Opus 4.8 for iterative debugging.
+- The kernel serves as a "trusted computing base," meaning it requires rigorous verification to ensure security and stability for production use.
 
 ### Why it Matters
-The rapid rise in ATM-based fraud highlights a significant regulatory gap in the digital asset market that leaves vulnerable consumers exposed to irreversible financial losses. Federal and state interventions aim to curb these crimes by imposing stricter compliance standards on operators and limiting the anonymity that makes these machines attractive to scammers.
+This project demonstrates that generative AI can now autonomously architect complex, low-level infrastructure software that was previously considered too costly or risky to rewrite by hand. While the ability to generate code has outpaced current verification methods, this capability suggests a future where legacy C-based systems can be systematically replaced with memory-safe alternatives.
 
 ============================================================
-Author:   Steve Weisman, Contributor, 
- Steve Weisman, Contributor
- https://www.forbes.com/sites/steveweisman/
-Source:   Forbes
-URL:      https://www.forbes.com/sites/steveweisman/2026/06/22/ftc-warning-crypto-atm-scams-up-1000-how-to-protect-yourself/
-Category: Cybersecurity
+Author:   Tolmo
+Source:   Tolmo.com
+URL:      https://tolmo.com/blog/when-the-model-writes-the-kernel/
+Category: Artificial Intelligence
