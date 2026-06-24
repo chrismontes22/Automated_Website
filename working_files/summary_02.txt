@@ -1,19 +1,20 @@
-Apple has finally fixed this annoying RCS texting quirk for Android users
+Show HN: peerd – AI agent harness that runs entirely in your browser
 ============================================================
 
-Apple’s iOS 27 beta 2 update introduces native support for inline threaded replies and emoji reactions, significantly improving cross-platform messaging compatibility between iPhone users and Android device owners.
+peerd is a new experimental browser extension for Chrome and Firefox that functions as an AI agent, enabling users to automate tasks directly within their existing browser sessions.
 
 ### Key Points
-- iOS 27 beta 2 enables native emoji and photomoji reactions for RCS conversations, replacing clunky text descriptions on Android devices.
-- The update adds support for inline threaded replies, bringing cross-platform messaging closer to the standard iMessage experience.
-- These features utilize the RCS 2.7 Universal Profile standard, which may eventually allow for message editing and unsending capabilities.
-- This release follows the recent implementation of default end-to-end encryption for cross-platform RCS chats in iOS 26.5.
+- Operates as a native browser agent that reads pages, drives interactions, and executes code in sandboxed environments like Linux VMs and JS Notebooks.
+- Employs a "bring your own key" (BYOK) model, storing API credentials in an encrypted local vault that never transmits secrets to cloud servers.
+- Utilizes hardened browser security features, including V8 isolates and WebAuthn, to ensure the agent cannot access raw page data or run untrusted code.
+- Features a modular architecture consisting of five core components: provider adapters, egress security, execution engines, runtime logic, and a peer-to-peer dweb layer.
+- Currently in an experimental 0.x beta phase, requiring users to manage API keys for services like Anthropic, OpenRouter, or local Ollama instances.
 
 ### Why it Matters
-These updates reduce the long-standing feature disparity between Apple and Android messaging ecosystems, improving the user experience for cross-platform communication. By adopting the RCS 2.7 standard, Apple is effectively lowering technical barriers that previously hindered seamless interaction between different mobile operating systems.
+By running entirely within the browser, peerd offers a privacy-focused alternative to cloud-based AI automation tools that typically require external data processing. This architecture allows users to maintain control over their sensitive API keys and browsing data while leveraging AI to perform complex, multi-step web tasks.
 
 ============================================================
-Author:   Aamir Siddiqui
-Source:   Android Authority
-URL:      https://www.androidauthority.com/ios-27-beta-2-rcs-upgrades-3680267/
-Category: Phones, Laptops, and Gadgets
+Author:   NotASithLord
+Source:   Github.com
+URL:      https://github.com/NotASithLord/peerd
+Category: Artificial Intelligence

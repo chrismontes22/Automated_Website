@@ -1,20 +1,20 @@
-How 100 Romanian hospitals switched to pen and paper to defeat a national cyber-attack
+There's a 30-second change that makes public Wi-Fi noticeably safer — and it costs nothing
 ============================================================
 
-More than 100 Romanian hospitals successfully mitigated a massive ransomware attack in February 2024 by disconnecting from the internet and reverting to manual, paper-based patient care procedures.
+Using encrypted DNS settings on public Wi-Fi networks protects your browsing activity from being intercepted or redirected by malicious actors who monitor unencrypted traffic on shared internet connections.
 
 ### Key Points
-- Hackers targeted the Hippocrates medical software, infecting 26 hospitals with the BackMyData ransomware strain.
-- Romania’s National Cyber-Security Centre (DNSC) ordered over 100 hospitals to disconnect from the internet to contain the breach.
-- Attackers demanded a ransom of €160,000 in bitcoin, but the government mandated that no payments be made to the criminals.
-- Medical staff maintained patient care using manual records, Excel, and paper-based lab results during the four-day emergency period.
-- Most hospitals restored operations within five days using recent data backups, with no reported patient deaths or serious harm.
+- Public Wi-Fi networks often use unencrypted DNS, allowing others on the network to track your browsing history or perform man-in-the-middle attacks.
+- Implementing DNS over HTTPS (DoH) or DNS over TLS (DoT) encrypts your lookup requests, preventing unauthorized parties from harvesting your data.
+- Users can manually configure secure DNS providers like Cloudflare (1.1.1.1) or Google in their device network settings to ensure private lookups.
+- Android devices support encrypted DNS via the "Private DNS" setting, while iOS and desktop systems allow manual configuration or profile-based setups.
+- Encrypted DNS is not a complete security solution and does not replace the privacy benefits of a VPN or the need to avoid sensitive logins on public networks.
 
 ### Why it Matters
-This incident serves as a critical case study for global disaster planners on the necessity of maintaining offline protocols and regular data backups in digitized healthcare systems. It highlights the growing vulnerability of medical infrastructure to ransomware and demonstrates that decisive, coordinated government intervention can prevent catastrophic outcomes without yielding to criminal extortion.
+Securing your DNS settings is a simple, free, and effective way to prevent network administrators or hackers from monitoring your online behavior on public Wi-Fi. While this does not provide total anonymity, it significantly reduces the risk of being redirected to fraudulent websites designed to steal credentials or distribute malware.
 
 ============================================================
-Author:   Joe Tidy - Cyber Correspondent, World Service
-Source:   BBC News
-URL:      https://www.bbc.com/news/articles/c4gyk756mzlo?xtor=AL-72-%5Bpartner%5D-%5Byahoo.north.america%5D-%5Bheadline%5D-%5Bnews%5D-%5Bbizdev%5D-%5Bisapi%5D
+Author:   Jorge Aguilar
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/change-that-makes-public-wi-fi-noticeably-safer-costs-nothing/
 Category: Cybersecurity
