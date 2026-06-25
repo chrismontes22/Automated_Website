@@ -1,20 +1,20 @@
-GitHub Is Becoming a Giant AI Code Dump
+Exploiting vulnerabilities in Johnson and Johnson web apps
 ============================================================
 
-GitHub is facing a surge in low-quality, AI-generated code and fake repository activity, leading major open-source projects to restrict external submissions to maintain software security and integrity.
+Security researcher reports reveal that Johnson & Johnson web applications contained critical vulnerabilities that exposed student data and internal audit records across twenty different corporate entities.
 
 ### Key Points
-- Nearly half of all new code on GitHub is now AI-generated, yet developer trust in AI-produced code has fallen from 77% to 60%.
-- Research indicates AI-written code contains 1.7 times more critical issues than human-written code, with 45% of submissions containing OWASP Top 10 vulnerabilities.
-- A randomized controlled trial by Meter found that AI users were 19% slower at coding despite perceiving themselves as 20% faster.
-- Major projects including curl, Ghost, and Tailscale have implemented restrictions or bans on external pull requests to combat the influx of AI-generated noise.
-- Carnegie Mellon University researchers identified 6 million fake stars on GitHub, while security firm Socket linked 370,000 "fix stars" to fraudulent activity.
+- A campus recruiting portal vulnerability exposed personal details and interview notes for nearly 1,000 students due to improper API authentication.
+- An internal Audit Tracking Management System (ATMS) allowed unauthorized administrative access, potentially exposing confidential meeting minutes and transcripts.
+- Both systems relied on insecure client-side authentication logic that failed to validate Microsoft SSO tokens, allowing researchers to bypass login requirements.
+- The researcher reported the flaws in October 2025, but the ATMS vulnerability remained unpatched until April 2026 following media intervention.
+- The ATMS platform served as a centralized hub for sensitive data across twenty J&J subsidiaries, including Ethicon, Janssen, and Abiomed.
 
 ### Why it Matters
-The proliferation of unverified AI code threatens the stability of the open-source ecosystem by overwhelming maintainers with low-quality submissions and security vulnerabilities. Implementing automated governance and rigorous auditing is becoming essential for organizations to safely integrate AI tools into production environments.
+These security lapses highlight the significant risks associated with relying on client-side code for authentication in enterprise web applications. The delay in addressing the audit system vulnerability underscores the critical need for robust internal reporting processes to prevent potential data breaches.
 
 ============================================================
-Author:   MAREF Engineering
-Source:   Maref.cc
-URL:      https://maref.cc/en/blog/vibe-coding-crisis/
+Author:   Eaton
+Source:   Eaton-works.com
+URL:      https://eaton-works.com/2026/06/24/jnj-webapp-hacks/
 Category: Cybersecurity

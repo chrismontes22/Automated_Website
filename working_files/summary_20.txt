@@ -1,20 +1,20 @@
-Worker bees rejoice — HUANUO has up to 30% off for Prime Day: Shop monitors, desks, more
+Another LastPass security breach traces back to a compromised vendor
 ============================================================
 
-HUANUO is offering significant discounts on ergonomic office equipment, including monitor arms and standing desks, during the Amazon Prime Day shopping event running from June 23 through June 26.
+LastPass confirmed a data breach originating from third-party vendor Klue, resulting in the unauthorized exposure of customer contact details and support records through compromised OAuth tokens and cloud integrations.
 
 ### Key Points
-- HUANUO is providing up to 30% off select ergonomic workspace products to help remote workers improve their desk setups.
-- The FlowLift Pro Single Monitor Arm is available for $15.89 with code OFORSXRF, featuring an American Chiropractic Association-endorsed design.
-- The Glass Standing Desk includes a tempered glass whiteboard surface, motorized height adjustments, and built-in USB charging ports.
-- A compact 32-inch electric standing desk is available for small living spaces, with additional savings via code NEW5YPOST.
-- Exclusive promo codes are available for various products, with some offers limited to the first 100 or 150 orders.
+- Hackers accessed LastPass customer data on June 12 by compromising a legacy credential at the competitive intelligence platform Klue.
+- Stolen OAuth tokens granted attackers unauthorized access to LastPass’s connected Salesforce and Gong environments.
+- Exposed information includes customer names, email addresses, phone numbers, physical addresses, and specific support case records.
+- LastPass confirmed that its core infrastructure, encrypted password vaults, and user credentials remain secure and were not impacted.
+- Salesforce disabled the affected Klue app connection after detecting suspicious activity within its platform.
 
 ### Why it Matters
-Investing in ergonomic office furniture can significantly reduce physical strain and improve productivity for individuals spending long hours at a desk. These Prime Day discounts provide a cost-effective opportunity for remote workers and students to upgrade their workspaces with professional-grade equipment.
+This incident highlights the growing security risks associated with third-party vendor integrations and the potential for supply chain attacks to expose sensitive customer data. While core password vaults remain secure, the exposure of contact information increases the risk of targeted phishing and social engineering campaigns against affected users.
 
 ============================================================
-Author:   Will Kenton
-Source:   New York Post
-URL:      https://nypost.com/2026/06/23/shopping/worker-bees-rejoice-huanuo-prime-day-deals-are-here/
-Category: Phones, Laptops, and Gadgets
+Author:   Jay Bonggolto
+Source:   Android Authority
+URL:      https://www.androidauthority.com/lastpass-data-breach-klue-3680836/
+Category: Cybersecurity
