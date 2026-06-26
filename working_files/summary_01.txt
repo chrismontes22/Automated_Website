@@ -1,19 +1,20 @@
-Embedding Forbidden Text in Spyware to Discourage AI Analysis
+New Mistic Backdoor Linked to KongTuke in ClickFix and ModeloRAT Campaigns
 ============================================================
 
-Malware developers are embedding fake policy-triggering text regarding weapons into spyware payloads to confuse and derail automated AI-based security analysis tools during the initial triage process.
+Cybersecurity researchers have identified a stealthy new backdoor called Mistic, deployed by the threat actor KongTuke to facilitate financially motivated attacks across multiple industries since April 2026.
 
 ### Key Points
-- Developers are inserting large JavaScript block comments containing prohibited content into the headers of malicious files.
-- The technique targets AI-mediated analysis tools that process file content without properly isolating untrusted data from system instructions.
-- The malicious code remains functional because the runtime environment ignores the comments, executing the actual payload only after the header.
-- Traditional security methods, including YARA rules, entropy checks, and behavioral analysis, remain effective at detecting this specific type of obfuscation.
+- The Mistic backdoor, also known as MLTBackdoor, operates entirely in memory to avoid detection and includes a self-deletion kill switch.
+- Threat actor KongTuke, also tracked as Woodgnat and TAG-124, uses the backdoor alongside the Python-based remote access trojan ModeloRAT.
+- Attackers utilize DLL side-loading via legitimate Microsoft security tools to maintain persistence and evade traditional endpoint security monitoring.
+- Delivery vectors include ClickFix campaigns, malicious browser extensions, and fraudulent Microsoft Teams messages sent from fake IT support accounts.
+- The group operates a traffic distribution system on compromised WordPress sites to target organizations in the insurance, education, IT, and professional services sectors.
 
 ### Why it Matters
-This tactic highlights a growing vulnerability in security pipelines that rely heavily on large language models for automated threat triage. As organizations integrate AI into their defense stacks, they must ensure these systems are robust enough to distinguish between actual malicious intent and adversarial prompt injection attempts.
+This campaign highlights a growing trend of initial access brokers developing sophisticated, custom malware to sell entry points to ransomware affiliates. By prioritizing stealth and memory-resident execution, these actors pose a significant challenge to organizations attempting to detect and remediate unauthorized network access.
 
 ============================================================
-Author:   Bruce Schneier
-Source:   Schneier.com
-URL:      https://www.schneier.com/blog/archives/2026/06/embedding-forbidden-text-in-spyware-to-discourage-ai-analysis-2.html
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/06/new-mistic-backdoor-linked-to-kongtuke.html
 Category: Cybersecurity
