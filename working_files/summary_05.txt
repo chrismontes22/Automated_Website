@@ -1,20 +1,20 @@
-Dreame’s autonomous Lawn Mower packs more self-driving tech than most cars
+Chinese-Speaking APT Deploys New TinyRCT Backdoor in Southeast Asia Campaign
 ============================================================
 
-Dreame Technology has launched the A3 AWD Pro, an autonomous robot lawn mower featuring advanced LiDAR navigation and all-terrain capabilities that eliminate the need for perimeter wires or beacons.
+A Chinese-speaking threat actor known as CL-STA-1062 is targeting government and energy sectors in Southeast Asia using a custom backdoor called TinyRCT to exfiltrate sensitive data.
 
 ### Key Points
-- The A3 AWD Pro utilizes 360-degree 3D LiDAR and binocular AI vision to identify over 300 obstacle types without requiring pre-installed signal wires.
-- Its four-wheel-drive system features independent hub motors, allowing the mower to climb slopes up to 80 percent and navigate vertical obstacles up to 5.5 centimeters.
-- The device includes EdgeMaster 2.0 technology for precise border trimming and a floating dual-disc cutting deck to maintain consistent grass height on uneven terrain.
-- Security features include 4G real-time location tracking, an integrated Apple AirTag slot, and PIN-protected operation to prevent theft.
-- Available in four coverage variants, the mower supports dual-map scheduling for disconnected yards and is priced starting at $2,599.99.
+- Palo Alto Networks Unit 42 identified CL-STA-1062, a group linked to at least 10 organizational breaches between October and December 2025.
+- The group utilizes TinyRCT, a previously undocumented .NET backdoor capable of remote command execution, file exfiltration, and screen capture.
+- Attackers gain initial access by deploying ASPX web shells and using AppDomainManager injection techniques disguised as legitimate software like Google Chrome.
+- The threat actor employs a hybrid toolkit, combining custom malware with open-source utilities such as SoftEther VPN, Mimikatz, and the Yuze SOCKS5 proxy.
+- Operations involve scanning critical infrastructure for vulnerabilities to facilitate lateral movement and long-term persistence within compromised government networks.
 
 ### Why it Matters
-This product signals Dreame’s transition from a home appliance manufacturer to a high-performance robotics company by applying complex mobility engineering to consumer lawn care. By removing the setup tax of perimeter wires and beacons, the company is setting a new standard for accessibility and intelligence in the autonomous outdoor equipment market.
+This campaign highlights a sophisticated, sustained effort by state-aligned actors to infiltrate critical infrastructure and government entities across Southeast Asia. The use of custom, lightweight backdoors like TinyRCT alongside common tools demonstrates an evolving strategy that complicates detection and increases the risk of long-term data espionage.
 
 ============================================================
-Author:   Sarang Sheth
-Source:   Yanko Design
-URL:      https://www.yankodesign.com/2026/06/25/dreames-autonomous-lawn-mower-packs-more-self-driving-tech-than-most-cars/
-Category: Phones, Laptops, and Gadgets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/06/chinese-speaking-apt-deploys-new.html
+Category: Cybersecurity
