@@ -1,21 +1,20 @@
-OVHcloud confirms its outlook as public cloud growth accelerates past 20%
+Google Details Turla's New STOCKSTAY Backdoor Used in Ukraine Espionage Attacks
 ============================================================
 
-French cloud provider OVHcloud reported a revenue increase to €289.6 million in its fiscal third quarter, driven by a significant 20.2% growth surge within its public cloud segment.
+The Russian state-sponsored hacking group Turla is deploying a sophisticated .NET backdoor called STOCKSTAY to target government and military organizations in Ukraine and various European diplomatic entities.
 
 ### Key Points
-- Revenue for the quarter ending in May reached €289.6 million, representing a 6.9% like-for-like increase.
-- The Public Cloud segment grew by 20.2%, recovering sharply from 12.9% growth in the previous quarter.
-- Private Cloud revenue rose 4.0% to €174.0 million, while Web Cloud grew 2.0% to €50.0 million.
-- OVHcloud reaffirmed its full-year financial guidance and long-term objectives for 2026.
-- The company secured a portion of a €180 million European Commission sovereign cloud contract alongside partners.
-- OVHcloud entered exclusive negotiations to acquire voice-AI specialist Gladia to bolster its OVHai unit.
+- STOCKSTAY is a modular Windows backdoor that mimics legitimate software like PDF viewers and calculators to evade detection.
+- The malware utilizes a multi-component architecture, including a proxy-aware tunneler and a controller that manages command-and-control communications via secure WebSockets.
+- Google Threat Intelligence Group identified significant functional and code overlaps between STOCKSTAY and the long-standing Turla implant known as Kazuar.
+- Attackers distribute the malware through phishing campaigns, malicious RDP files, and exploits targeting a known WinRAR vulnerability, CVE-2025-8088.
+- The backdoor supports extensive post-exploitation capabilities, including file manipulation, screen capturing, and Windows Registry modification.
 
 ### Why it Matters
-As a primary European alternative to American hyperscalers, OVHcloud’s performance serves as a key indicator for the continent's digital sovereignty ambitions. The company's ability to maintain growth while navigating complex infrastructure dependencies highlights the ongoing challenges and opportunities for regional providers in the global cloud market.
+This discovery highlights the ongoing evolution of Turla’s cyber espionage toolkit and their continued focus on high-value government and military targets. The use of STOCKSTAY alongside established tools like Kazuar suggests the group is actively testing new infrastructure to maintain persistent access within compromised networks.
 
 ============================================================
-Author:   Ana-Maria Stanciuc
-Source:   The Next Web
-URL:      https://thenextweb.com/news/ovhcloud-confirms-outlook-public-cloud-growth/
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/06/google-details-turlas-new-stockstay.html
+Category: Cybersecurity
