@@ -1,20 +1,20 @@
-Running local LLMs on your NPU from R with Foundry Local and ellmer
+It took a while, but Google's finally fixing a SiriusXM radio issue on its smart speakers
 ============================================================
 
-A developer has successfully integrated the Surface Pro 11’s Neural Processing Unit with the R programming language to run local large language models using Foundry Local and ellmer.
+Google is rolling out a fix in late June to resolve a month-long bug that prevented users from streaming SiriusXM radio content on various Google Home smart speakers.
 
 ### Key Points
-- The project utilizes the Foundry Local SDK to interface with the Surface Pro 11's integrated NPU hardware.
-- R code leverages the `ellmer` and `httr2` packages to establish an OpenAI-compatible connection to local model endpoints.
-- The implementation requires the Foundry CLI to be installed and accessible via the system PATH for service management.
-- The workflow automates model downloading, loading, and unloading processes directly through R system commands.
-- This method provides an alternative for users seeking to run LLMs locally without relying on software like Ollama or LM Studio.
+- Google confirmed a resolution for the streaming error that previously triggered playback failure messages on smart speakers.
+- The technical issue persisted for approximately one month before Google officially acknowledged and addressed the service disruption.
+- Google recently launched the $99 Home Speaker, the company's first device designed specifically to integrate with the Gemini AI assistant.
+- Gemini for Home has expanded to more international markets with a 40% improvement in response times and better device-command accuracy.
+- Google is opening the Gemini for Home platform to third-party hardware manufacturers and carriers to increase native AI support across devices.
 
 ### Why it Matters
-This experiment demonstrates how developers can bridge the gap between specialized hardware accelerators and data science environments like R. By bypassing traditional GUI-based tools, users gain more granular control over local AI deployment on modern Windows-based ARM hardware.
+This fix restores core functionality for existing smart home users who rely on Google devices for satellite radio streaming. Furthermore, the expansion of Gemini to third-party hardware signals a strategic shift toward making Google's AI the standard interface for future smart home ecosystems.
 
 ============================================================
-Author:   Giles Dickenson-Jones
-Source:   R-bloggers.com
-URL:      https://www.r-bloggers.com/2026/06/running-local-llms-on-your-npu-from-r-with-foundry-local-and-ellmer/
-Category: Artificial Intelligence
+Author:   nickodiaz@sbcglobal.net (Nickolas Diaz) , Nickolas Diaz
+Source:   Android Central
+URL:      https://www.androidcentral.com/accessories/smart-home/it-took-a-while-but-googles-finally-fixing-a-siriusxm-radio-issue-on-its-smart-speakers
+Category: Phones, Laptops, and Gadgets
