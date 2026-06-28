@@ -1,21 +1,20 @@
-This $70 Photoshop rival is now free, and I like it better than Photoshop
+Running local LLMs on your NPU from R with Foundry Local and ellmer
 ============================================================
 
-Canva has launched a free, unified version of its Affinity creative suite, offering professional-grade photo editing, vector design, and page layout tools as a direct alternative to Adobe Photoshop.
+A developer has successfully integrated the Surface Pro 11’s Neural Processing Unit with the R programming language to run local large language models using Foundry Local and ellmer.
 
 ### Key Points
-- Canva acquired developer Serif in 2024 and released the unified "Affinity" app in late 2025.
-- The software combines previous standalone tools—Affinity Photo, Designer, and Publisher—into one integrated workspace.
-- The core professional toolkit is free for all users, requiring only a free Canva account for access.
-- Generative AI features, such as background removal and Generative Fill, remain locked behind a $120-per-year Canva Premium subscription.
-- Affinity is optimized for Apple Silicon, offering faster performance and lower memory usage compared to Adobe Photoshop on macOS.
-- Over one million users registered for the new platform within the first four days of its launch.
+- The project utilizes the Foundry Local SDK to interface with the Surface Pro 11's integrated NPU hardware.
+- R code leverages the `ellmer` and `httr2` packages to establish an OpenAI-compatible connection to local model endpoints.
+- The implementation requires the Foundry CLI to be installed and accessible via the system PATH for service management.
+- The workflow automates model downloading, loading, and unloading processes directly through R system commands.
+- This method provides an alternative for users seeking to run LLMs locally without relying on software like Ollama or LM Studio.
 
 ### Why it Matters
-This move disrupts the long-standing subscription model for professional creative software by providing a high-performance, no-cost alternative to Adobe’s industry-standard tools. It forces a shift in the market that challenges the necessity of monthly fees for independent creators while positioning Canva to capture a larger share of the professional design ecosystem.
+This experiment demonstrates how developers can bridge the gap between specialized hardware accelerators and data science environments like R. By bypassing traditional GUI-based tools, users gain more granular control over local AI deployment on modern Windows-based ARM hardware.
 
 ============================================================
-Author:   Bryan M. Wolfe
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/this-photoshop-rival-now-free-i-like-it-better-than-photoshop/
-Category: Tech Business & Markets
+Author:   Giles Dickenson-Jones
+Source:   R-bloggers.com
+URL:      https://www.r-bloggers.com/2026/06/running-local-llms-on-your-npu-from-r-with-foundry-local-and-ellmer/
+Category: Artificial Intelligence
