@@ -1,21 +1,19 @@
-Wayfinder Router: deterministic routing of queries between local and hosted LLM
+Nest’s quest to fix your thermostat
 ============================================================
 
-Wayfinder is an open-source, deterministic routing tool that analyzes prompt complexity offline to automatically direct tasks to either local or cloud-based LLMs, optimizing performance and reducing costs.
+Apple veteran Tony Fadell discusses his transition from developing the iPhone to founding Nest, aiming to modernize the home thermostat and reshape the future of smart home technology.
 
 ### Key Points
-- Routes prompts based on structural complexity scores (0.0–1.0) without requiring additional model calls or network latency.
-- Supports tiered routing, allowing users to assign different prompt difficulty levels to specific local or hosted model endpoints.
-- Compatible with any OpenAI-style API client, enabling integration with tools like LibreChat, Open WebUI, and various agent frameworks.
-- Includes calibration features to tune routing thresholds against user-provided datasets or automated feedback logs.
-- Operates entirely offline for decision-making, ensuring sensitive API keys and prompt data remain secure and local.
-- Provides a transparent "explain" mode to visualize why specific prompts were routed to a particular model tier.
+- Tony Fadell, a key figure in the creation of the iPhone, founded Nest to address frustrations with outdated and inefficient home temperature control systems.
+- The latest episode of The Verge’s "Version History" podcast explores the early development, rapid success, and design challenges of the original Nest Learning Thermostat.
+- Hosts David Pierce, Nilay Patel, and Jennifer Pattison Tuohy analyze how Nest’s vision for the smart home eventually became an industry standard.
+- The episode is part of the fourth season of "Version History," which focuses on the history of iconic consumer electronics like the Roomba and Harmony remote.
 
 ### Why it Matters
-By eliminating the need for an LLM to decide where to route a prompt, Wayfinder removes the latency and costs typically associated with intelligent model selection. This approach allows developers to maintain high-quality outputs for complex tasks while significantly lowering expenses by offloading simple queries to cheaper, local infrastructure.
+The story of Nest highlights how consumer-focused design principles from the mobile industry successfully transitioned into the home automation market. This shift fundamentally changed how users interact with household infrastructure and paved the way for the modern smart home ecosystem.
 
 ============================================================
-Author:   itsthelore
-Source:   Github.com
-URL:      https://github.com/itsthelore/wayfinder-router
-Category: Artificial Intelligence
+Author:   David Pierce
+Source:   The Verge
+URL:      https://www.theverge.com/podcast/958735/nest-thermostat-version-history
+Category: Phones, Laptops, and Gadgets

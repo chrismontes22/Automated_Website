@@ -1,20 +1,19 @@
-Germany’s spy agency comes in from the cold
+RF Hacking A Ceiling Fan Via The Remote
 ============================================================
 
-Germany is planning the most significant reforms in the BND’s 70-year history to modernize the intelligence agency and strengthen national defense against increasing threats from Russia.
+Tech enthusiast Sam Wilkinson successfully bypassed the cloud-only restrictions of his Dreo CLF513S ceiling fan by building a custom radio-frequency bridge to integrate the device into Home Assistant.
 
 ### Key Points
-- The German government has increased the BND’s annual budget by approximately 25 percent to €1.51 billion.
-- New legislation expected by autumn aims to expand powers regarding signals intelligence, AI integration, and "hack back" cyber capabilities.
-- Proposed reforms seek to extend data retention periods, which are currently limited to a maximum of six months.
-- The BND currently operates under strict oversight from four separate entities, including a council of judges and the Bundestag.
-- The agency employs 6,500 staff and operates from a massive headquarters in Berlin that is larger than the CIA’s base in Langley.
+- Sam Wilkinson reverse-engineered the Dreo CLF513S ceiling fan remote, which operates on the 433.92 MHz radio frequency band.
+- Using an RTL-SDR, Wilkinson captured the remote's on-off keying signals to identify specific command patterns.
+- The custom hardware solution utilizes an ESP32-C6 microcontroller paired with an RFM69HCW radio transceiver to transmit fan commands.
+- The project enables local control of the fan via the MQTT protocol, removing the need for the manufacturer's proprietary cloud-based smart home application.
 
 ### Why it Matters
-These reforms represent a fundamental shift in Germany’s security posture as the nation seeks to reduce its reliance on US intelligence and counter Russian hybrid warfare. By attempting to balance constitutional privacy protections with the need for proactive espionage, the government is testing whether its bureaucratic culture can adapt to a more volatile global landscape.
+This project demonstrates how hobbyists can reclaim control over smart home appliances that rely on restrictive, cloud-dependent ecosystems. By utilizing affordable microcontrollers and radio hardware, users can achieve local integration and improve the privacy and reliability of their home automation setups.
 
 ============================================================
-Author:   Sam Jones
-Source:   The Irish Times
-URL:      https://www.irishtimes.com/world/europe/2026/06/28/germanys-spy-agency-comes-in-from-the-cold/
+Author:   Zoe Skyforest
+Source:   Hackaday
+URL:      https://hackaday.com/2026/06/28/rf-hacking-a-ceiling-fan-via-the-remote/
 Category: Cybersecurity

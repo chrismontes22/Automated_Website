@@ -1,20 +1,20 @@
-Week in review: Fortibleed campaign’s impact on orgs, Cisco Unified CM flaw exploited
+Watch out — that income tax form could actually be dangerous malware
 ============================================================
 
-Recent cybersecurity developments include the active exploitation of a Cisco Unified CM vulnerability, a major credential-harvesting campaign targeting FortiGate firewalls, and ongoing international efforts to disrupt global malware networks.
+Cybersecurity researchers at CYFIRMA have identified a sophisticated phishing campaign targeting Indian taxpayers with fake income tax assessment notices designed to install remote access malware on victim devices.
 
 ### Key Points
-- Cisco Unified CM is under active attack via CVE-2026-20230, a server-side request forgery flaw used to deploy webshells.
-- A widespread credential-harvesting campaign has compromised thousands of organizations utilizing FortiGate firewalls.
-- Operation Endgame successfully targeted the StealC and Amadey malware networks as part of a global law enforcement initiative.
-- Research indicates that 282 of 444 analyzed iOS apps with AI features expose sensitive backend credentials or access mechanisms.
-- A supply chain attack on the platform Klue resulted in unauthorized access to customer data within LastPass’s Salesforce environment.
+- Attackers use a fraudulent website mimicking the official Indian Income Tax Department to pressure victims into downloading malicious ZIP archives.
+- The malware utilizes a multi-stage infection process, including a loader and a disguised DLL file, to evade automated security detection.
+- Once installed, the payload functions as a Remote Access Trojan, establishing encrypted communication with servers located in Hong Kong.
+- The malicious infrastructure exhibits technical similarities to known threat families like XWorm, suggesting a financially motivated operation.
+- Security experts advise verifying tax correspondence through official government portals and restricting the execution of unknown files from archives or disk images.
 
 ### Why it Matters
-These incidents highlight the persistent vulnerability of enterprise infrastructure to both legacy software flaws and sophisticated supply chain compromises. As organizations increasingly integrate AI and third-party vendors into their workflows, the resulting expansion of the attack surface necessitates more rigorous security oversight and proactive vulnerability management.
+This campaign highlights how attackers exploit seasonal financial anxiety to deploy persistent, multi-functional malware that can lead to data theft or ransomware attacks. Businesses and individuals must remain vigilant, as the modular nature of this threat allows attackers to adapt their payloads for various malicious objectives.
 
 ============================================================
-Author:   Help Net Security
-Source:   Help Net Security
-URL:      https://www.helpnetsecurity.com/2026/06/28/week-in-review-fortibleed-campaigns-impact-on-orgs-cisco-unified-cm-flaw-exploited/
+Author:   Efosa Udinmwen
+Source:   TechRadar
+URL:      https://www.techradar.com/pro/security/watch-out-that-income-tax-form-could-actually-be-dangerous-malware
 Category: Cybersecurity
