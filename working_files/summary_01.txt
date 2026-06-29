@@ -1,20 +1,20 @@
-Security News This Week: LastPass Users Had Their Data Stolen—Again
+Week in review: Fortibleed campaign’s impact on orgs, Cisco Unified CM flaw exploited
 ============================================================
 
-Former national security adviser John Bolton pleaded guilty to mishandling classified defense information, while international law enforcement agencies disrupted major malware infrastructure used by global cybercriminal networks this week.
+Recent cybersecurity developments include the active exploitation of a Cisco Unified CM vulnerability, a major credential-harvesting campaign targeting FortiGate firewalls, and ongoing international efforts to disrupt global malware networks.
 
 ### Key Points
-- John Bolton, 77, faces a potential five-year prison sentence and a $2.25 million fine after pleading guilty to the illegal retention of classified defense information.
-- Microsoft and Europol’s Operation Endgame seized 326 servers and 142 domains linked to the Amadey and StealC infostealer malware.
-- The operation recovered 27 million stolen access credentials and identified $47 million in illicit cryptocurrency.
-- Australia’s ASIO discovered nation-state hackers inside a critical infrastructure provider, noting the actors were mapping networks to prepare for potential future sabotage.
-- LastPass confirmed a data breach involving customer contact information, resulting from a third-party security compromise at the business intelligence firm Klue.
+- Cisco Unified CM is under active attack via CVE-2026-20230, a server-side request forgery flaw used to deploy webshells.
+- A widespread credential-harvesting campaign has compromised thousands of organizations utilizing FortiGate firewalls.
+- Operation Endgame successfully targeted the StealC and Amadey malware networks as part of a global law enforcement initiative.
+- Research indicates that 282 of 444 analyzed iOS apps with AI features expose sensitive backend credentials or access mechanisms.
+- A supply chain attack on the platform Klue resulted in unauthorized access to customer data within LastPass’s Salesforce environment.
 
 ### Why it Matters
-These events highlight the escalating risks posed by both internal security lapses and sophisticated state-sponsored cyber threats to global infrastructure. The successful disruption of major malware networks demonstrates the growing role of AI-assisted analysis in modern law enforcement, even as organizations struggle to secure sensitive data against persistent digital attacks.
+These incidents highlight the persistent vulnerability of enterprise infrastructure to both legacy software flaws and sophisticated supply chain compromises. As organizations increasingly integrate AI and third-party vendors into their workflows, the resulting expansion of the attack surface necessitates more rigorous security oversight and proactive vulnerability management.
 
 ============================================================
-Author:   Lily Hay Newman
-Source:   Wired
-URL:      https://www.wired.com/story/security-news-this-week-lastpass-users-had-their-data-stolen-again/
+Author:   Help Net Security
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/06/28/week-in-review-fortibleed-campaigns-impact-on-orgs-cisco-unified-cm-flaw-exploited/
 Category: Cybersecurity

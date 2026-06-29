@@ -1,20 +1,20 @@
-Clean GitHub repo tricks AI coding agents into running malware
+IBM is Getting Ready to Scale Quantum Computing
 ============================================================
 
-Mozilla researchers have discovered a new security vulnerability where AI coding agents like Claude Code can be manipulated to execute malicious payloads hidden within seemingly benign GitHub repositories.
+IBM is transitioning its quantum computing research into a commercial business by launching a $2 billion silicon wafer foundry subsidiary called Anderon to support future industry-wide hardware development.
 
 ### Key Points
-- Researchers at Mozilla’s 0DIN platform demonstrated how AI agents can be tricked into executing malicious commands by attempting to resolve common setup errors.
-- The attack chain involves a clean repository that triggers a specific error, prompting the AI to run a command that fetches and executes a remote payload.
-- Attackers use DNS TXT records to deliver malicious instructions, bypassing traditional security scanners and human oversight during the automated setup process.
-- Successful exploitation grants attackers an interactive shell with the developer's local privileges, potentially exposing API keys, environment variables, and sensitive configuration files.
-- Experts recommend that AI agents provide full transparency by disclosing the entire execution chain of commands, including any scripts fetched dynamically at runtime.
+- IBM is establishing Anderon, an independent subsidiary focused on manufacturing silicon wafers for quantum-computing processors.
+- The new venture is funded by a $1 billion investment from the Trump administration and $1 billion from IBM.
+- IBM plans to invest an additional $9 billion over five years to achieve fault-tolerant quantum computing.
+- The company aims to launch its Starling quantum computer by 2029, with further advancements planned for 2033.
+- Boston Consulting Group projects the quantum computing market could reach a valuation between $90 billion and $170 billion by 2040.
 
 ### Why it Matters
-This vulnerability highlights a significant security risk as developers increasingly rely on autonomous AI agents to manage complex project environments. If left unaddressed, this attack vector could allow threat actors to compromise developer workstations and infiltrate corporate networks without triggering standard security alerts.
+This strategic shift marks IBM's transition from experimental research toward building a scalable, revenue-generating supply chain for the emerging quantum industry. By controlling the production of essential hardware components, the company aims to secure a dominant position in a market projected to reach massive scale over the next two decades.
 
 ============================================================
-Author:   Bill Toulas
-Source:   BleepingComputer
-URL:      https://www.bleepingcomputer.com/news/security/clean-github-repo-tricks-ai-coding-agents-into-running-malware/
-Category: Cybersecurity
+Author:   EditorDavid
+Source:   Slashdot.org
+URL:      https://hardware.slashdot.org/story/26/06/28/032226/ibm-is-getting-ready-to-scale-quantum-computing
+Category: Tech Business & Markets

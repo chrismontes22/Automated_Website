@@ -1,20 +1,21 @@
-3 charts to understand the stock market's 'mega rotation' out of tech
+Wayfinder Router: deterministic routing of queries between local and hosted LLM
 ============================================================
 
-Investors are shifting capital away from mega-cap technology stocks toward cyclical, value, and defensive sectors as the broader market undergoes a significant rotation amid rising hardware costs.
+Wayfinder is an open-source, deterministic routing tool that analyzes prompt complexity offline to automatically direct tasks to either local or cloud-based LLMs, optimizing performance and reducing costs.
 
 ### Key Points
-- The "Magnificent Seven" tech stocks, including Nvidia, Apple, and Microsoft, faced recent declines due to rising memory chip costs and sector fatigue.
-- Piper Sandler’s Craig Johnson describes the trend as a "mega rotation" where capital moves from lagging tech giants into overlooked cyclical and value industries.
-- The Dow Jones Industrial Average reached intraday record highs on Thursday, demonstrating resilience compared to the tech-heavy Nasdaq Composite and S&P 500.
-- Sectors such as healthcare, industrials, and small-cap companies are benefiting from lower energy costs and declining long-term interest rates.
-- The equal-weight S&P 500 has gained over 11% in 2026, significantly outperforming the standard benchmark index and signaling a broadening of market participation.
+- Routes prompts based on structural complexity scores (0.0–1.0) without requiring additional model calls or network latency.
+- Supports tiered routing, allowing users to assign different prompt difficulty levels to specific local or hosted model endpoints.
+- Compatible with any OpenAI-style API client, enabling integration with tools like LibreChat, Open WebUI, and various agent frameworks.
+- Includes calibration features to tune routing thresholds against user-provided datasets or automated feedback logs.
+- Operates entirely offline for decision-making, ensuring sensitive API keys and prompt data remain secure and local.
+- Provides a transparent "explain" mode to visualize why specific prompts were routed to a particular model tier.
 
 ### Why it Matters
-This shift suggests that investor sentiment remains positive despite the cooling of high-growth technology themes that previously dominated market gains. By moving into value and defensive sectors, the market is demonstrating a healthier, more sustainable breadth that reduces reliance on a small group of mega-cap stocks.
+By eliminating the need for an LLM to decide where to route a prompt, Wayfinder removes the latency and costs typically associated with intelligent model selection. This approach allows developers to maintain high-quality outputs for complex tasks while significantly lowering expenses by offloading simple queries to cheaper, local infrastructure.
 
 ============================================================
-Author:   insider@insider.com (Naomi Buchanan)
-Source:   Business Insider
-URL:      https://www.businessinsider.com/stock-market-charts-rotation-stocks-tech-value-investing-strategy-2026-6#article
-Category: Tech Business & Markets
+Author:   itsthelore
+Source:   Github.com
+URL:      https://github.com/itsthelore/wayfinder-router
+Category: Artificial Intelligence
