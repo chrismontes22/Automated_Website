@@ -1,20 +1,20 @@
-Week in review: Fortibleed campaign’s impact on orgs, Cisco Unified CM flaw exploited
+Amazon S3 server access logs now deliver to Amazon CloudWatch Logs and Amazon S3 Tables
 ============================================================
 
-Recent cybersecurity developments include the active exploitation of a Cisco Unified CM vulnerability, a major credential-harvesting campaign targeting FortiGate firewalls, and ongoing international efforts to disrupt global malware networks.
+Amazon S3 now supports delivering server access logs to Amazon CloudWatch Logs and Amazon S3 Tables, providing users with enhanced monitoring, real-time querying, and improved data security capabilities.
 
 ### Key Points
-- Cisco Unified CM is under active attack via CVE-2026-20230, a server-side request forgery flaw used to deploy webshells.
-- A widespread credential-harvesting campaign has compromised thousands of organizations utilizing FortiGate firewalls.
-- Operation Endgame successfully targeted the StealC and Amadey malware networks as part of a global law enforcement initiative.
-- Research indicates that 282 of 444 analyzed iOS apps with AI features expose sensitive backend credentials or access mechanisms.
-- A supply chain attack on the platform Klue resulted in unauthorized access to customer data within LastPass’s Salesforce environment.
+- Amazon S3 server access logs can now be delivered directly to Amazon CloudWatch Logs for real-time monitoring and alerting.
+- Logs can be mirrored to Amazon S3 Tables in Apache Iceberg format without incurring additional storage costs.
+- Integration with CloudWatch Logs enables cross-account and cross-Region log aggregation and AWS KMS encryption.
+- Data stored in S3 Tables is immediately queryable using SQL via Amazon Athena, Amazon Redshift, and other Iceberg-compatible engines.
+- The new delivery options are available in all AWS Regions, excluding AWS China and AWS GovCloud (US) locations.
 
 ### Why it Matters
-These incidents highlight the persistent vulnerability of enterprise infrastructure to both legacy software flaws and sophisticated supply chain compromises. As organizations increasingly integrate AI and third-party vendors into their workflows, the resulting expansion of the attack surface necessitates more rigorous security oversight and proactive vulnerability management.
+These updates provide organizations with more flexible tools to audit security, track usage trends, and troubleshoot operational issues across their cloud infrastructure. By streamlining log analysis, businesses can more efficiently manage data access patterns and reduce the time required to investigate potential security incidents.
 
 ============================================================
-Author:   Help Net Security
-Source:   Help Net Security
-URL:      https://www.helpnetsecurity.com/2026/06/28/week-in-review-fortibleed-campaigns-impact-on-orgs-cisco-unified-cm-flaw-exploited/
+Author:   aws@amazon.com
+Source:   Amazon.com
+URL:      https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-s3-cloudwatch-logs-tables/
 Category: Cybersecurity

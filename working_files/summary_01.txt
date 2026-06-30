@@ -1,20 +1,20 @@
-Watch out — that income tax form could actually be dangerous malware
+Hijacked npm and Go Packages Use VS Code Tasks to Deploy Python Infostealer
 ============================================================
 
-Cybersecurity researchers at CYFIRMA have identified a sophisticated phishing campaign targeting Indian taxpayers with fake income tax assessment notices designed to install remote access malware on victim devices.
+Cybersecurity researchers have identified malicious npm and Go packages that exploit Visual Studio Code tasks to deploy the InvisibleFerret Python infostealer on Windows, Linux, and macOS developer systems.
 
 ### Key Points
-- Attackers use a fraudulent website mimicking the official Indian Income Tax Department to pressure victims into downloading malicious ZIP archives.
-- The malware utilizes a multi-stage infection process, including a loader and a disguised DLL file, to evade automated security detection.
-- Once installed, the payload functions as a Remote Access Trojan, establishing encrypted communication with servers located in Hong Kong.
-- The malicious infrastructure exhibits technical similarities to known threat families like XWorm, suggesting a financially motivated operation.
-- Security experts advise verifying tax correspondence through official government portals and restricting the execution of unknown files from archives or disk images.
+- Attackers uploaded two malicious npm packages, "html-to-gutenberg" and "fetch-page-assets," alongside 16 compromised Go packages to distribute malware.
+- The infection triggers when a developer opens a project folder in VS Code, executing a hidden task that runs malicious code disguised as a font file.
+- The malware uses blockchain transaction data from TronGrid and Aptos to retrieve encrypted payloads, making the command-and-control infrastructure resilient to takedowns.
+- The InvisibleFerret backdoor harvests cryptocurrency wallets, browser credentials, Git tokens, and cloud storage metadata, exfiltrating data to a remote server or Telegram bot.
+- Security analysts attribute this "Fake Font" campaign to North Korean actors as part of the ongoing "Contagious Interview" operation targeting software developers.
 
 ### Why it Matters
-This campaign highlights how attackers exploit seasonal financial anxiety to deploy persistent, multi-functional malware that can lead to data theft or ransomware attacks. Businesses and individuals must remain vigilant, as the modular nature of this threat allows attackers to adapt their payloads for various malicious objectives.
+This campaign highlights a sophisticated supply chain risk where attackers leverage trusted development environments and IDE features to bypass traditional security filters. Developers and organizations must audit their dependencies and IDE configurations to prevent unauthorized access to sensitive credentials and proprietary source code.
 
 ============================================================
-Author:   Efosa Udinmwen
-Source:   TechRadar
-URL:      https://www.techradar.com/pro/security/watch-out-that-income-tax-form-could-actually-be-dangerous-malware
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/06/hijacked-npm-and-go-packages-use-vs.html
 Category: Cybersecurity
