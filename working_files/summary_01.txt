@@ -1,20 +1,20 @@
-Hijacked npm and Go Packages Use VS Code Tasks to Deploy Python Infostealer
+Linux isn't immune to malware — the AUR just proved it
 ============================================================
 
-Cybersecurity researchers have identified malicious npm and Go packages that exploit Visual Studio Code tasks to deploy the InvisibleFerret Python infostealer on Windows, Linux, and macOS developer systems.
+Malicious actors compromised over 1,500 packages in the Arch User Repository between June 11 and June 12, 2026, by hijacking orphaned packages to distribute malware to Linux users.
 
 ### Key Points
-- Attackers uploaded two malicious npm packages, "html-to-gutenberg" and "fetch-page-assets," alongside 16 compromised Go packages to distribute malware.
-- The infection triggers when a developer opens a project folder in VS Code, executing a hidden task that runs malicious code disguised as a font file.
-- The malware uses blockchain transaction data from TronGrid and Aptos to retrieve encrypted payloads, making the command-and-control infrastructure resilient to takedowns.
-- The InvisibleFerret backdoor harvests cryptocurrency wallets, browser credentials, Git tokens, and cloud storage metadata, exfiltrating data to a remote server or Telegram bot.
-- Security analysts attribute this "Fake Font" campaign to North Korean actors as part of the ongoing "Contagious Interview" operation targeting software developers.
+- Attackers hijacked orphaned AUR packages by modifying PKGBUILD files to include malicious post-install npm scripts.
+- The security breach affected more than 1,500 individual packages within the Arch Linux ecosystem.
+- The Arch Linux team has since identified and flagged the compromised packages to normalize the repository.
+- Security experts recommend that users manually review PKGBUILD files for suspicious code before installing software.
+- The incident highlights that Linux systems are not immune to malware and remain vulnerable to targeted supply chain attacks.
 
 ### Why it Matters
-This campaign highlights a sophisticated supply chain risk where attackers leverage trusted development environments and IDE features to bypass traditional security filters. Developers and organizations must audit their dependencies and IDE configurations to prevent unauthorized access to sensitive credentials and proprietary source code.
+This incident challenges the common misconception that Linux distributions are inherently immune to malware compared to Windows or macOS. It underscores the risks associated with unmoderated community repositories and highlights the need for stricter security protocols in open-source software distribution.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/06/hijacked-npm-and-go-packages-use-vs.html
+Author:   Dipan Saha
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/linux-isnt-immune-to-malware-the-aur-just-proved-it/
 Category: Cybersecurity

@@ -1,20 +1,20 @@
-Stocks perk up and oil cools as US and Iran halt hostilities
+The best way to run macOS Tahoe and Golden Gate on the same Mac [Video]
 ============================================================
 
-Global stock markets rose on Monday as investors tracked progress on an interim U.S.-Iran peace deal, while oil prices climbed following recent regional attacks near the Strait of Hormuz.
+**Apple users can safely test the macOS Golden Gate beta by installing it on a separate APFS volume to avoid potential software conflicts with their primary production operating system.**
 
 ### Key Points
-- Wall Street led global gains, with the Nasdaq Composite rising 2.07% as technology shares rebounded from recent selloffs.
-- U.S. and Iranian technical teams are scheduled to meet in Doha to discuss the implementation of their interim peace agreement.
-- Brent crude futures increased 1.61% to $73.15 per barrel, while U.S. WTI crude rose 2.2% to $70.75.
-- The dollar index fell 0.27% to 101.09, retreating slightly from the 13-month high reached during the previous week.
-- MSCI’s global stock gauge climbed 0.89%, supported by positive performance across major U.S. indices and modest gains in Japanese and emerging markets.
+- Users should install the macOS Golden Gate beta on a secondary APFS volume rather than replacing the current macOS Tahoe production environment.
+- The process requires using the Terminal command `softwareupdate --fetch-full-installer` to download the specific macOS 27 installer.
+- Disk Utility is used to create a new, non-encrypted APFS volume to host the beta software safely.
+- Users can switch between the production and beta operating systems via the Startup Disk settings or by holding the power button during boot.
+- Installing on a separate volume prevents potential bugs or hardware compatibility issues from affecting the primary system's stability.
 
 ### Why it Matters
-The ongoing volatility in energy markets reflects investor anxiety regarding the stability of oil shipments through the Strait of Hormuz amid persistent geopolitical tensions. These fluctuations highlight how sensitive global equities remain to both diplomatic progress in the Middle East and shifting expectations for Federal Reserve interest rate policy.
+Testing beta software on a secondary volume allows users to explore new features without risking the functionality of their primary work environment. This strategy mitigates the higher risks associated with macOS betas compared to mobile operating systems, ensuring that essential legacy software and hardware remain operational.
 
 ============================================================
-Author:   By Ankur Banerjee and Harry Robertson
-Source:   Yahoo Entertainment
-URL:      https://finance.yahoo.com/markets/articles/stocks-adrift-oil-us-iran-014817134.html
-Category: Tech Business & Markets
+Author:   Jeff Benjamin
+Source:   9to5Mac
+URL:      https://9to5mac.com/2026/06/29/how-to-install-macos-golden-gate-on-a-separate-apfs-volume-video/
+Category: Phones, Laptops, and Gadgets
