@@ -1,20 +1,20 @@
-How And Why To Fight Back Against Social Media Bans
+A critical exploit bypasses Microsoft Defender in Windows 11 and Windows 10 — so much for "everyday risk protection without additional software"
 ============================================================
 
-Legislators across several U.S. states are advancing controversial bills to restrict youth access to social media, raising significant concerns regarding digital privacy, free speech, and mass surveillance.
+Security researcher Nightmare-Eclipse has disclosed a new zero-day vulnerability named RoguePlanet affecting Microsoft Defender, prompting Microsoft to track the flaw as CVE-2026-50656 while developing a security patch.
 
 ### Key Points
-- States including California, Massachusetts, Idaho, and Minnesota are pushing legislation that mandates age verification or behavioral age estimation for social media users.
-- Age verification requirements often force users to submit government IDs or biometric data, creating massive databases vulnerable to identity theft and security breaches.
-- Behavioral age estimation relies on AI and existing user data to guess ages, potentially incentivizing platforms to expand invasive data collection practices.
-- Critics argue these bans disproportionately harm marginalized groups, including LGBTQ+ youth and low-income families, by cutting off access to essential online communities and resources.
-- Legal experts warn that these measures violate First Amendment rights by chilling free expression and effectively ending online anonymity for users of all ages.
+- The RoguePlanet exploit allows attackers to gain full system control by leveraging an elevation of privilege in the Microsoft Malware Protection Engine.
+- Microsoft previously addressed three other zero-day exploits discovered by the researcher, identified as YellowKey, GreenPlasma, and MiniPlasma.
+- The researcher published a proof-of-concept for the vulnerability in a self-hosted Git repository after Microsoft allegedly removed previous exploit disclosures from GitHub and GitLab.
+- Microsoft has officially confirmed the vulnerability and is currently working on a high-quality security update to mitigate the risk for Windows 10 and 11 users.
+- Following community backlash, Microsoft has abandoned plans to pursue legal action against security researchers who publish findings regarding their software vulnerabilities.
 
 ### Why it Matters
-These legislative efforts represent a significant shift toward state-mandated surveillance that threatens the privacy and constitutional rights of all internet users, not just minors. By forcing platforms to collect sensitive identity data, these laws create permanent security risks and undermine the open nature of the digital public square.
+This discovery challenges Microsoft's long-standing position that its built-in Defender software provides sufficient protection for the average Windows user. The incident highlights ongoing tensions between independent security researchers and major tech corporations regarding the disclosure and remediation of critical system vulnerabilities.
 
 ============================================================
-Author:   Molly Buckley
-Source:   Techdirt
-URL:      http://www.techdirt.com/2026/06/29/how-and-why-to-fight-back-against-social-media-bans/
+Author:   kevinokemwa@outlook.com (Kevin Okemwa) , Kevin Okemwa
+Source:   Windows Central
+URL:      https://www.windowscentral.com/microsoft/a-critical-exploit-bypasses-microsoft-defender-in-windows
 Category: Cybersecurity

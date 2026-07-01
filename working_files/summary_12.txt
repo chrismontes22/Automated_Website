@@ -1,20 +1,20 @@
-Adobe and Disney are teaming up to design the next generation of theme park rides with Foundry AI
+Beyond Prompt Injection
 ============================================================
 
-Walt Disney Imagineering is partnering with Adobe to integrate custom Firefly AI models into its design workflows for future theme park attractions, hotels, and cruise ship experiences.
+Indirect prompt injection has emerged as a critical security vulnerability for generative AI, forcing organizations to shift their defense strategies from input filtering to deterministic action-layer validation.
 
 ### Key Points
-- Disney will use Adobe’s Firefly Foundry to transform hand-drawn sketches into rendered 2D concept art and detailed 3D prototypes.
-- The AI models are trained exclusively on Disney’s proprietary intellectual property, including franchises like Frozen, Moana, and Cars.
-- The collaboration aims to accelerate development timelines and compress workloads while maintaining consistency with Disney’s established visual storytelling standards.
-- Disney emphasizes that the technology is intended to support human creators rather than replace them in the design process.
-- This partnership serves as a significant validation for Adobe’s enterprise AI strategy amid ongoing investor scrutiny regarding the company's generative AI business model.
+- Indirect prompt injection is now ranked as the top risk for LLM applications by OWASP and NIST.
+- The "ForcedLeak" vulnerability in Salesforce’s Agentforce demonstrated how attackers can exfiltrate data using trusted domains.
+- Security experts argue that input sanitization is insufficient because prompt injection is a structural property of language models.
+- Effective defense requires "capability contracts" that use deterministic code to validate agent actions against predefined policies.
+- Organizations should implement least-privilege access and human-in-the-loop requirements for high-risk actions to mitigate potential breaches.
 
 ### Why it Matters
-This partnership provides Adobe with a high-profile endorsement for its Firefly Foundry service, helping to solidify its position in the competitive generative AI market. For Disney, the move represents a strategic effort to leverage AI for operational efficiency while maintaining strict control over its intellectual property rights.
+Relying solely on input filtering creates a false sense of security that leaves enterprise systems vulnerable to sophisticated, non-malicious-looking adversarial instructions. By moving security enforcement to the action layer, companies can ensure that even if an AI agent is compromised, it remains unable to execute unauthorized or high-risk operations.
 
 ============================================================
-Author:   Rahimnoorali11@gmail.com (Rahim Amir) , Rahim Amir
-Source:   TechRadar
-URL:      https://www.techradar.com/pro/adobe-and-disney-are-teaming-up-to-design-the-next-generation-of-theme-park-rides-with-foundry-ai
-Category: Artificial Intelligence
+Author:   Shania Rasheed Nalagath
+Source:   Oreilly.com
+URL:      https://www.oreilly.com/radar/beyond-prompt-injection/#BlogPosting
+Category: Cybersecurity
