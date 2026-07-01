@@ -1,20 +1,20 @@
-Linux isn't immune to malware — the AUR just proved it
+mssPortable 1.453.345 (Microsoft Safety Scanner antivirus launcher) Released
 ============================================================
 
-Malicious actors compromised over 1,500 packages in the Arch User Repository between June 11 and June 12, 2026, by hijacking orphaned packages to distribute malware to Linux users.
+The latest version of mssPortable is now available, allowing users to run the Microsoft Safety Scanner as a portable application for malware detection without requiring a full Windows installation.
 
 ### Key Points
-- Attackers hijacked orphaned AUR packages by modifying PKGBUILD files to include malicious post-install npm scripts.
-- The security breach affected more than 1,500 individual packages within the Arch Linux ecosystem.
-- The Arch Linux team has since identified and flagged the compromised packages to normalize the repository.
-- Security experts recommend that users manually review PKGBUILD files for suspicious code before installing software.
-- The incident highlights that Linux systems are not immune to malware and remain vulnerable to targeted supply chain attacks.
+- mssPortable enables users to execute the Microsoft Safety Scanner directly from a portable drive.
+- The tool is packaged in the PortableApps.com Format for seamless integration with the PortableApps.com Platform.
+- Users can perform automatic updates or install the software directly through the PortableApps.com store.
+- The scanner is free for personal use but requires a fresh download every 10 days to remain functional.
+- The application preserves existing user settings during the upgrade process.
 
 ### Why it Matters
-This incident challenges the common misconception that Linux distributions are inherently immune to malware compared to Windows or macOS. It underscores the risks associated with unmoderated community repositories and highlights the need for stricter security protocols in open-source software distribution.
+This release provides a convenient, non-intrusive method for users to scan for malware on Windows systems without modifying the host computer's registry or files. It serves as a useful utility for technicians and individuals who need a portable security tool for quick system diagnostics.
 
 ============================================================
-Author:   Dipan Saha
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/linux-isnt-immune-to-malware-the-aur-just-proved-it/
+Author:   John T. Haller
+Source:   Portableapps.com
+URL:      https://portableapps.com/news/2026-06-29--mssportable-1.453.345-released
 Category: Cybersecurity
