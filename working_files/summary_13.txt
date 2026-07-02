@@ -1,21 +1,20 @@
-This $349 cordless car-wash machine was designed for drivers without a driveway
+Apple Hide My Email Vulnerability Exposes Real Email Addresses
 ============================================================
 
-The Linyo H1 is a portable, closed-loop car cleaning system designed for urban residents, allowing users to wash and vacuum vehicles in shared parking spaces without external water access.
+A security vulnerability in Apple’s Hide My Email service allows unauthorized parties to uncover users' real email addresses, despite the company being notified of the flaw over a year ago.
 
 ### Key Points
-- The H1 uses "Lift & Extract" technology to remove grime with a rotating roller, preventing paint scratches caused by traditional wash mitts.
-- Its closed-loop system consumes only 0.5 gallons of water per wash, which is 80 times less than a standard garden hose.
-- The device functions as both a car washer and a 16,000 Pa handheld vacuum, weighing 21 pounds for easy transport in a vehicle trunk.
-- A 5,000mAh battery supports two full exterior washes per charge, with a hybrid power option available for continuous use.
-- The system applies a protective nano-ceramic coating during the 20-minute wash cycle, making it suitable for matte wraps and sensitive EV paint.
-- Pricing starts at $349 during the pre-order period, with global shipping scheduled to begin in August 2026.
+- Researcher Tyler Murphy discovered the flaw and first reported it to Apple in June 2025.
+- Testing confirmed that 100% of Hide My Email aliases are currently vulnerable to identification.
+- Apple acknowledged the issue multiple times but failed to implement a functional fix by May 2026.
+- The vulnerability exposes users to potential doxxing, as revealed email addresses can be linked to personal data via public people-search databases.
+- Apple has not suspended the creation of new aliases despite requests from the researcher to limit user risk.
 
 ### Why it Matters
-This product addresses the growing disconnect between modern urban housing and traditional vehicle maintenance requirements. By enabling water-efficient, mess-free cleaning in restricted parking environments, it provides a practical solution for car owners who lack private driveways or access to standard wash infrastructure.
+This flaw undermines the primary privacy function of iCloud+, which is designed to protect users from spam and unwanted identification. Because the service is widely used to mask personal contact information, the ongoing exposure could lead to significant privacy risks for individuals relying on these aliases for safety.
 
 ============================================================
-Author:   Sarang Sheth
-Source:   Yanko Design
-URL:      https://www.yankodesign.com/2026/06/30/this-349-cordless-car-wash-machine-was-designed-for-drivers-without-a-driveway/
-Category: Phones, Laptops, and Gadgets
+Author:   Hartley Charlton
+Source:   MacRumors
+URL:      https://www.macrumors.com/2026/07/01/hide-my-email-vulnerability-exposes-real-addresses/
+Category: Cybersecurity

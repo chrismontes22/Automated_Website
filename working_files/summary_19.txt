@@ -1,20 +1,21 @@
-Elon Musk is remaking the world, like Henry Ford before him – but more dangerously
+6 security settings every GitHub maintainer should enable this week
 ============================================================
 
-The book *Muskism: A Guide for the Perplexed* by Quinn Slobodian and Ben Tarnoff analyzes how Elon Musk’s business empire is fundamentally reshaping global society, democracy, and state power.
+GitHub Security Lab has introduced a "Protect Your Project" guide, outlining six essential, free security settings to help open-source maintainers automate protection and reduce vulnerabilities in their repositories.
 
 ### Key Points
-- Authors Quinn Slobodian and Ben Tarnoff define "Muskism" as a system of "techno-sovereignty" that merges private corporate infrastructure with national government interests.
-- The book traces Musk’s worldview to his upbringing in apartheid-era South Africa, emphasizing a philosophy of "fortress futurism" and self-reliance.
-- Musk’s business model relies on state symbiosis, notably through SpaceX’s role as a primary U.S. government contractor and Starlink’s integration into military operations.
-- The authors argue that Musk’s companies—including Tesla, Neuralink, and X—aim to create an insular, surveilled socioeconomic order that weakens democratic oversight.
-- The text contrasts Musk’s approach with the "Fordism" of the 20th century, noting a shift away from mass employment toward automated, vertically integrated conglomerates.
+- The "Protect Your Project" flow bundles six critical security configurations that can be implemented in under 30 minutes.
+- Essential steps include creating a SECURITY.md file and enabling private vulnerability reporting to manage bug disclosures securely.
+- Secret scanning with push protection helps prevent the accidental exposure of credentials, which saw a 34% increase in leaks during 2025.
+- Dependabot and dependency review tools automate the identification of vulnerabilities within third-party packages and project dependencies.
+- Code scanning using CodeQL provides automated static analysis to detect common security flaws like SQL injection and unsafe workflows.
+- Branch protection rules require pull request approvals, ensuring that security alerts are addressed before code is merged into the main branch.
 
 ### Why it Matters
-The rise of "Muskism" suggests a significant shift in the balance of power between private tech oligarchs and sovereign states. By controlling critical infrastructure like satellite internet and AI, Musk is effectively shaping the future of global policy and social hierarchy without public mandate or democratic accountability.
+Implementing these automated security measures significantly hardens open-source projects against common, large-scale automated attacks. By closing these accessible entry points, maintainers protect both their own codebases and the broader software supply chain that relies on their work.
 
 ============================================================
-Author:   Noel Castree, Adjunct Professor of Society & Environment, University of Technology Sydney
-Source:   The Conversation Africa
-URL:      https://theconversation.com/elon-musk-is-remaking-the-world-like-henry-ford-before-him-but-more-dangerously-285247
-Category: Tech Business & Markets
+Author:   Natalie Guevara
+Source:   Github.blog
+URL:      https://github.blog/security/6-security-settings-every-github-maintainer-should-enable-this-week/
+Category: Cybersecurity
