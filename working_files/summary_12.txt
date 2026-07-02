@@ -1,20 +1,20 @@
-Beyond Prompt Injection
+‘Let’s Go Kill the Internet’
 ============================================================
 
-Indirect prompt injection has emerged as a critical security vulnerability for generative AI, forcing organizations to shift their defense strategies from input filtering to deterministic action-layer validation.
+Doublespeed, a venture-backed startup founded by Zuhair Lakhani, utilizes large-scale phone farms and AI agents to manufacture viral social media content and replace human influencers with automated personas.
 
 ### Key Points
-- Indirect prompt injection is now ranked as the top risk for LLM applications by OWASP and NIST.
-- The "ForcedLeak" vulnerability in Salesforce’s Agentforce demonstrated how attackers can exfiltrate data using trusted domains.
-- Security experts argue that input sanitization is insufficient because prompt injection is a structural property of language models.
-- Effective defense requires "capability contracts" that use deterministic code to validate agent actions against predefined policies.
-- Organizations should implement least-privilege access and human-in-the-loop requirements for high-risk actions to mitigate potential breaches.
+- Doublespeed received investment from Andreessen Horowitz (a16z) through the firm's Speedrun accelerator program.
+- The company operates a fleet of thousands of physical smartphones to bypass platform bot-detection systems and simulate authentic user behavior.
+- Clients pay approximately $450 per month to have AI-generated content posted across platforms like TikTok to influence consumer trends.
+- The startup aims to automate the entire content creation process, from ideation to publishing, without human intervention.
+- Lakhani markets the service using a nihilistic, "dystopian" brand identity, claiming that traditional organic growth is no longer viable for new companies.
 
 ### Why it Matters
-Relying solely on input filtering creates a false sense of security that leaves enterprise systems vulnerable to sophisticated, non-malicious-looking adversarial instructions. By moving security enforcement to the action layer, companies can ensure that even if an AI agent is compromised, it remains unable to execute unauthorized or high-risk operations.
+This business model highlights the accelerating "enshittification" of social media, where synthetic content increasingly crowds out human interaction to manipulate platform algorithms. As companies prioritize automated virality over authentic engagement, the line between genuine consumer trends and manufactured propaganda continues to blur, challenging the future of digital trust.
 
 ============================================================
-Author:   Shania Rasheed Nalagath
-Source:   Oreilly.com
-URL:      https://www.oreilly.com/radar/beyond-prompt-injection/#BlogPosting
-Category: Cybersecurity
+Author:   Rebecca Jennings
+Source:   New York Magazine
+URL:      http://nymag.com/intelligencer/article/doublespeed-tech-founder-creating-an-army-of-ai-influencers.html
+Category: Tech Business & Markets

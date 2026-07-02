@@ -1,20 +1,20 @@
-A critical exploit bypasses Microsoft Defender in Windows 11 and Windows 10 — so much for "everyday risk protection without additional software"
+AI Agents Struggle To Read B2B Pricing, Report Finds via @sejournal, @MattGSouthern
 ============================================================
 
-Security researcher Nightmare-Eclipse has disclosed a new zero-day vulnerability named RoguePlanet affecting Microsoft Defender, prompting Microsoft to track the flaw as CVE-2026-50656 while developing a security patch.
+A new Siteline report reveals that many B2B software websites are failing to provide accurate pricing and feature data to AI agents due to bot blocking and JavaScript-rendered content.
 
 ### Key Points
-- The RoguePlanet exploit allows attackers to gain full system control by leveraging an elevation of privilege in the Microsoft Malware Protection Engine.
-- Microsoft previously addressed three other zero-day exploits discovered by the researcher, identified as YellowKey, GreenPlasma, and MiniPlasma.
-- The researcher published a proof-of-concept for the vulnerability in a self-hosted Git repository after Microsoft allegedly removed previous exploit disclosures from GitHub and GitLab.
-- Microsoft has officially confirmed the vulnerability and is currently working on a high-quality security update to mitigate the risk for Windows 10 and 11 users.
-- Following community backlash, Microsoft has abandoned plans to pursue legal action against security researchers who publish findings regarding their software vulnerabilities.
+- Siteline tested a Claude agent on 100 B2B software products, conducting 534 attempts to retrieve pricing and feature information.
+- Approximately 30% of agent runs encountered access errors, forcing the AI to rely on potentially inaccurate third-party sources for information.
+- JavaScript-heavy pages, such as those used by Zendesk and Coda, often appeared empty to agents, leading to higher operational costs and data retrieval failures.
+- About 30% of marketing, sales, and customer support products lacked public pricing, which may cause agents to favor competitors with transparent, machine-readable rates.
+- The report recommends server-side rendering of key product details and maintaining accessible pricing pages to ensure AI agents can accurately represent software offerings.
 
 ### Why it Matters
-This discovery challenges Microsoft's long-standing position that its built-in Defender software provides sufficient protection for the average Windows user. The incident highlights ongoing tensions between independent security researchers and major tech corporations regarding the disclosure and remediation of critical system vulnerabilities.
+As businesses increasingly deploy AI agents to compare software options, websites that are not optimized for machine readability risk being excluded from automated procurement processes. Companies that fail to provide clear, accessible data may lose potential customers to competitors whose pricing and features are easily parsed by AI tools.
 
 ============================================================
-Author:   kevinokemwa@outlook.com (Kevin Okemwa) , Kevin Okemwa
-Source:   Windows Central
-URL:      https://www.windowscentral.com/microsoft/a-critical-exploit-bypasses-microsoft-defender-in-windows
-Category: Cybersecurity
+Author:   Matt G. Southern
+Source:   Search Engine Journal
+URL:      https://www.searchenginejournal.com/ai-agents-struggle-to-read-b2b-pricing-report-finds/581186/
+Category: Artificial Intelligence
