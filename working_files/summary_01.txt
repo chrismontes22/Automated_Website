@@ -1,19 +1,20 @@
-T-Mobile is about to eliminate a major vulnerability from its network
+Malware found spreading through sponsored ads on X
 ============================================================
 
-T-Mobile will officially shut down its legacy 2G GSM network on August 3, 2026, marking the final transition for major U.S. carriers toward more secure, modern network technologies.
+Jamf Threat Labs discovered a malicious ClickFix-style advertising campaign on X that impersonates the popular Mac utility DynamicLake to distribute Atomic Stealer malware to unsuspecting Apple computer users.
 
 ### Key Points
-- T-Mobile is the last major U.S. carrier to retire its 2G network, following AT&T in 2017 and Verizon in 2020.
-- The shutdown eliminates significant security risks, as the 2G standard lacks modern encryption and is vulnerable to call interception and spoofing.
-- The remaining 2G user base is minimal, consisting primarily of legacy IoT devices and international roamers without VoLTE capabilities.
-- Retiring the 2G infrastructure allows T-Mobile to repurpose valuable radio spectrum to expand and improve its 5G network performance.
+- Attackers used a compromised verified account on X to promote a fake domain, dynamicmacisland[.]com, masquerading as the legitimate DynamicLake app.
+- Victims were prompted to execute malicious code via the macOS Terminal, a common social engineering tactic known as ClickFix.
+- The malware payload identified by Jamf includes variants of Atomic Stealer, specifically tracked as MacSync, and DigitStealer.
+- Legitimate software developers, including the creator of DynamicLake, warn users to only download applications from official, verified websites.
+- Jamf Threat Labs reported the malicious advertisement to X, which subsequently removed the content from its platform.
 
 ### Why it Matters
-The decommissioning of 2G infrastructure significantly improves mobile security by removing outdated protocols susceptible to rogue cell tower attacks. This transition also enables carriers to optimize spectrum efficiency, supporting the continued expansion of faster and more reliable 5G connectivity for all users.
+This incident highlights significant vulnerabilities in social media advertising systems that allow malicious actors to bypass automated security scans using verified accounts. It serves as a critical reminder for users to exercise extreme caution when interacting with promoted content, as even trusted platforms can inadvertently facilitate the distribution of sophisticated malware.
 
 ============================================================
-Author:   Aamir Siddiqui
-Source:   Android Authority
-URL:      https://www.androidauthority.com/t-mobile-2g-shutdown-date-3683679/
+Author:   Arin Waichulis
+Source:   9to5Mac
+URL:      https://9to5mac.com/2026/07/02/malware-found-spreading-through-sponsored-ads-on-x/
 Category: Cybersecurity

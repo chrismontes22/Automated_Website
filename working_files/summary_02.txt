@@ -1,20 +1,20 @@
-What does Xbox's Matthew Ball mean when he says "We are working very hard to rethink everything that we can about Helix"?
+I finally understand why Microsoft made TPM mandatory
 ============================================================
 
-Microsoft is rethinking the development of its next-generation Xbox Helix console as rising global memory costs and shifting consumer gaming habits threaten the traditional hardware-subsidized business model.
+Microsoft’s mandatory TPM 2.0 requirement for Windows 11 serves as a critical hardware-based security layer designed to protect encryption keys, login credentials, and system boot integrity from malicious tampering.
 
 ### Key Points
-- Rising memory prices, driven by high demand for AI infrastructure, are significantly increasing the production costs for consumer hardware like the Xbox Helix and PlayStation 6.
-- Xbox Chief Strategy Officer Matthew Ball confirmed the company is actively re-evaluating the console's design to ensure it remains affordable and flexible for consumers.
-- The potential inclusion of third-party storefronts like Steam creates a financial dilemma, as Microsoft may no longer be able to subsidize hardware costs through exclusive software sales.
-- Microsoft is exploring alternative strategies, including potential ad-supported models or hardware configurations that remove non-essential components to lower the retail price.
-- Current market trends show a shift toward free-to-play titles like Fortnite and Roblox, which complicates the traditional console model of selling hardware at a loss to capture software revenue.
+- The Trusted Platform Module (TPM) is a dedicated hardware chip that stores sensitive cryptographic keys separately from the main CPU and system memory.
+- Microsoft has required TPM 2.0 support for all new Windows 10 PCs since July 2016 to ensure a standardized security baseline.
+- TPM technology enables "sealing," which prevents the system from releasing encryption keys if the boot environment or BIOS has been altered.
+- Essential Windows features like BitLocker and Windows Hello rely on the TPM to anchor credentials to specific hardware, preventing unauthorized extraction.
+- Users can bypass the TPM requirement to install Windows 11 on older hardware, but they lose critical security protections and automatic feature updates.
 
 ### Why it Matters
-The rising cost of components threatens the long-standing console business model where manufacturers sell hardware at a loss to secure long-term software revenue. If Microsoft cannot reconcile the high cost of "open" PC-like hardware with consumer demand for affordability, it may be forced to abandon its open-platform ambitions or significantly increase retail prices.
+The TPM requirement represents a broader industry shift toward hardware-rooted trust, moving security away from vulnerable software-based storage. By mandating this standard, Microsoft ensures that modern operating systems can verify the integrity of the entire boot chain, significantly raising the barrier for attackers.
 
 ============================================================
-Author:   jez@windowscentral.com (Jez Corden) , Jez Corden
-Source:   Windows Central
-URL:      https://www.windowscentral.com/gaming/xbox/what-does-xboxs-matthew-ball-mean-when-he-says-we-are-working-very-hard-to-rethink-everything-that-we-can-about-helix
-Category: Tech Business & Markets
+Author:   Tashreef Shareef
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/windows-11-tpm-requirement-explained/
+Category: Cybersecurity

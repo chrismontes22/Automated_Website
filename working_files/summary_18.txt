@@ -1,21 +1,20 @@
-MemoMind One AI glasses open preorders at $399
+Comparing Fable and 10 other LLMs on refactoring a LangGraph god node
 ============================================================
 
-MemoMind has launched the MemoMind One, a pair of camera-free AI display glasses designed for productivity, featuring real-time translation, navigation, and note-taking capabilities starting at $399 on Kickstarter.
+A recent experiment evaluated 11 large language models on their ability to refactor a complex "god node" within a LangGraph agent, testing both architectural design and analytical accuracy.
 
 ### Key Points
-- The glasses feature dual Micro-LED displays with 640x350 resolution, 2000 nits brightness, and a 25-degree field of view.
-- Hardware includes Harman AudioEFX open-ear audio, triple microphones, and a lightweight magnesium-aluminum alloy frame weighing 46.6 grams.
-- Core features include Memo AI for live translation in over 26 languages, meeting summaries, and an adaptive teleprompter.
-- The device offers up to 16 hours of battery life and supports iOS, Android, and HarmonyOS connectivity.
-- An optional $19.99 monthly subscription, Memo+, provides an "AI Long Memory" system for organizing daily tasks, journals, and searchable conversation history.
-- The product is available in three frame styles—Nomad, Archive, and Gotham—with options for prescription lenses.
+- The experiment compared 11 models, including GPT-5.4/5.5, Fable-5, DeepSeek-4-pro, and Qwen-3.7-max, on a code reorganization task.
+- Models were tasked with splitting a 350-line "plan node" into a more modular, observable graph structure.
+- Fable-5 and GPT-5.5 emerged as the most reliable evaluators, consistently identifying critical bugs like double-calculation errors and skipped iteration increments.
+- The study highlighted that while models are effective at generating architectural options, they frequently struggle with factual consistency and risk assessment in complex codebases.
+- Findings suggest that using multiple models to generate proposals, followed by a rigorous review by top-performing evaluators, yields the most robust architectural results.
 
 ### Why it Matters
-By omitting a camera, MemoMind One avoids the social friction and privacy concerns associated with recording devices, positioning itself as a practical, unobtrusive productivity tool. This approach shifts the focus of smart eyewear from content creation to glanceable information, testing whether consumers prioritize utility and comfort over advanced visual capture.
+This experiment demonstrates that while LLMs are powerful tools for architectural refactoring, they remain prone to subtle logic errors and hallucinations that require human oversight. Relying on a single model for critical infrastructure changes is risky, but using a multi-model approach significantly improves the quality and safety of the final system design.
 
 ============================================================
-Author:   Vincent Nguyen
-Source:   The Gadgeteer
-URL:      https://the-gadgeteer.com/2026/07/01/memomind-one-ai-glasses-open-preorders-at-399/
-Category: Phones, Laptops, and Gadgets
+Author:   Korridzy
+Source:   Korridzy.com
+URL:      https://wtf.korridzy.com/twilight-of-the-gods/
+Category: Artificial Intelligence
