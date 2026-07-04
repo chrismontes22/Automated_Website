@@ -1,20 +1,20 @@
-Incogni Review: Comprehensive and Transparent Data Removals
+OpenTelemetry GenAI: Instrument AI Agents Without Sending Data to the Cloud
 ============================================================
 
-Incogni is a prominent data removal service that offers extensive coverage of over 3,000 data broker sites, providing users with high transparency and a detailed activity history for monitoring.
+This tutorial demonstrates how to implement a fully local, cloud-free observability pipeline for AI agents using OpenTelemetry GenAI semantic conventions, Docker, and the Jaeger tracing platform.
 
 ### Key Points
-- The service offers four subscription tiers, with annual plans providing the best value compared to monthly billing.
-- An independent audit by Deloitte confirmed the company’s data removal processes and verified that it does not sell user information.
-- Users can track removal progress via a minimalist dashboard that assigns sensitivity scores to different data sources.
-- The platform is limited by its inability to scan for multiple name variations or more than three addresses per account.
-- Incogni maintains a data retention policy of up to 24 months, which is longer than many competing services.
+- Deploy a local OpenTelemetry Collector and Jaeger instance using Docker Compose with pinned image versions.
+- Instrument Node.js AI agents with OpenTelemetry SDKs to capture model identifiers, token usage, and operation types.
+- Use `startActiveSpan` to create parent-child hierarchies for multi-step reasoning chains and complex agent flows.
+- Visualize trace data, latency, and token costs by building a custom React dashboard connected to the Jaeger API.
+- Ensure data privacy by keeping all telemetry, prompts, and sensitive business logic within your local infrastructure.
 
 ### Why it Matters
-Incogni stands out for its broad reach and commitment to transparency, making it a strong candidate for users prioritizing comprehensive data broker coverage. However, the service's limitations regarding personal information tracking and its lengthy data retention policy may require users to weigh convenience against specific privacy needs.
+Implementing vendor-neutral observability allows teams to monitor AI performance and costs without exposing sensitive data to third-party cloud providers. This local-first approach ensures compliance while providing the granular visibility needed to debug complex, non-deterministic AI agent behaviors.
 
 ============================================================
-Author:   Zachary McAuliffe
-Source:   CNET
-URL:      https://www.cnet.com/tech/services-and-software/incogni-review/
-Category: Cybersecurity
+Author:   SitePoint Team
+Source:   SitePoint
+URL:      https://www.sitepoint.com/opentelemetry-genai-instrument-ai-agents-without-sending-data-to-the-cloud/
+Category: Artificial Intelligence

@@ -1,20 +1,20 @@
-This startup wants to turn the world into a searchable video feed, starting in San Francisco
+I sync my text snippets across all my devices without the cloud, and it only takes two free tools
 ============================================================
 
-San Francisco startup Orchestra is deploying a network of AI-powered street cameras to index physical world activity, aiming to sell structured data analytics to law enforcement and businesses.
+Users can synchronize text expansion shortcuts across multiple devices by combining the Espanso text expander with Syncthing to maintain consistent configuration files without relying on third-party cloud services.
 
 ### Key Points
-- Orchestra has installed over 100 street-facing cameras in San Francisco and plans to add 900 more across commercial corridors within six months.
-- The company uses AI to convert live video into structured data, identifying objects and incidents while blurring faces to maintain user anonymity.
-- Potential customers include police departments for evidence, insurance firms for accident analysis, and autonomous-vehicle companies for navigation data.
-- The startup is developing an AI agent called "Robocop" that monitors 911 dispatch data to automatically package relevant footage into evidence files.
-- Founders include CEO Drake Burciaga, COO Stephania Stavropoulos, CTO Bruno Beccaria, and AI lead Michael Coen.
+- Espanso is a cross-platform, open-source text expander that uses YAML configuration files to manage custom text shortcuts and terminal commands.
+- Syncthing enables direct, peer-to-peer file synchronization between computers, eliminating the need for external cloud storage providers.
+- Users can deploy Syncthing on a home lab or NAS, such as TrueNAS, to act as a central, always-on server for configuration files.
+- The setup process involves linking devices via unique identification strings and pointing Syncthing to the local Espanso configuration directory.
+- This method ensures that text expansion rules remain identical across Windows, macOS, and Linux systems while keeping all data private and locally hosted.
 
 ### Why it Matters
-This initiative represents a significant expansion of private surveillance infrastructure, raising complex questions about the balance between public safety and individual privacy. As the company seeks to scale its "Omniscience" model globally, it faces the challenge of navigating growing public and regulatory backlash against AI-enabled monitoring technologies.
+This workflow provides a private, automated solution for maintaining productivity tools across multiple operating systems without recurring subscription costs or cloud security risks. By self-hosting the synchronization process, users gain full control over their data while ensuring their custom shortcuts are always available on every device.
 
 ============================================================
-Author:   Rya Jetha
-Source:   Business Insider
-URL:      https://www.businessinsider.com/this-startup-wants-to-make-city-streets-searchable-with-ai-2026-7#article
-Category: Artificial Intelligence
+Author:   João Carrasqueira
+Source:   XDA Developers
+URL:      https://www.xda-developers.com/sync-text-snippets-across-machines-without-cloud-takes-two-free-tools/
+Category: Phones, Laptops, and Gadgets

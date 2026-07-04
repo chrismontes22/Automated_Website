@@ -1,20 +1,20 @@
-Indie Game Engine Will Require ‘All Code To Be Human-Authored’ Following An AI Code ‘Shitshow’
+iOS 27 helps apps detect when a user may be getting scammed in real time
 ============================================================
 
-The Godot game engine has implemented a strict new contribution policy requiring all code and communication to be human-authored to combat a surge of AI-generated pull requests.
+Apple is introducing the Trust Insights framework in iOS 27 to help applications detect and mitigate social engineering scams by analyzing user behavioral patterns and interaction context on-device.
 
 ### Key Points
-- Godot’s GitHub repository currently faces a backlog of over 5,000 unresolved pull requests, largely attributed to AI-generated submissions.
-- The updated policy mandates that all code must be human-authored, explicitly banning "vibe coding" and machine-generated project descriptions.
-- Developers may still use AI for menial tasks like find-and-replace or code autocompletion, provided they include a formal disclosure.
-- Project manager Rémi Verschelde noted that AI contributions demoralize maintainers by removing the opportunity to mentor human developers.
-- The policy change aims to restore efficiency and respect for the volunteer maintainers who review community submissions.
+- The framework monitors interaction patterns, timing, and sensor data to identify potential fraud without accessing private content in Photos, Messages, or Mail.
+- Trust Insights assigns risk levels to transactions, allowing apps to trigger warnings, delays, or additional verification steps for users.
+- The system covers five primary operation categories: payment, account management, resource use, communication, and a fallback category for other activities.
+- Processing occurs primarily on-device, with only a single output value sent to Apple servers to maintain user privacy.
+- Users can disable the feature in settings, though a cooldown period is enforced to prevent scammers from coercing victims into turning off protections.
 
 ### Why it Matters
-This policy shift highlights the growing tension between open-source project sustainability and the influx of automated content. By prioritizing human interaction, Godot aims to preserve its community-driven development model while distancing itself from the industry trend of integrating generative AI tools.
+This framework represents a significant shift in mobile security by addressing the human element of fraud that traditional automated filters often miss. By providing developers with real-time risk assessments, Apple aims to curb the rising prevalence of AI-driven scams and authority impersonation attacks.
 
 ============================================================
-Author:   Amelia Zollner
-Source:   Kotaku
-URL:      https://kotaku.com/indie-game-engine-will-require-all-code-to-be-human-authored-following-an-ai-code-shitshow-2000711737
-Category: Artificial Intelligence
+Author:   Marcus Mendes
+Source:   9to5Mac
+URL:      https://9to5mac.com/2026/07/02/ios-27-helps-apps-detect-when-a-user-may-be-getting-scammed-in-real-time/
+Category: Cybersecurity

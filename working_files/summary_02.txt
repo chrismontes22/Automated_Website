@@ -1,20 +1,20 @@
-I finally understand why Microsoft made TPM mandatory
+Faster and further reaching — NordVPN quietly brings its obfuscated servers to its in-house censorship-resistant protocol
 ============================================================
 
-Microsoft’s mandatory TPM 2.0 requirement for Windows 11 serves as a critical hardware-based security layer designed to protect encryption keys, login credentials, and system boot integrity from malicious tampering.
+NordVPN has transitioned its obfuscated server infrastructure from OpenVPN to the proprietary NordWhisper protocol, aiming to provide users with faster connection speeds and access to more global server locations.
 
 ### Key Points
-- The Trusted Platform Module (TPM) is a dedicated hardware chip that stores sensitive cryptographic keys separately from the main CPU and system memory.
-- Microsoft has required TPM 2.0 support for all new Windows 10 PCs since July 2016 to ensure a standardized security baseline.
-- TPM technology enables "sealing," which prevents the system from releasing encryption keys if the boot environment or BIOS has been altered.
-- Essential Windows features like BitLocker and Windows Hello rely on the TPM to anchor credentials to specific hardware, preventing unauthorized extraction.
-- Users can bypass the TPM requirement to install Windows 11 on older hardware, but they lose critical security protections and automatic feature updates.
+- NordVPN replaced OpenVPN with its in-house NordWhisper protocol for all obfuscated server connections.
+- The update is currently live for iOS users, with Android, Windows, and macOS support arriving in the coming weeks.
+- NordWhisper uses web tunnel technology to disguise VPN traffic as standard internet activity to bypass restrictive firewalls.
+- The shift is designed to reduce performance overhead, resulting in faster speeds compared to the previous OpenVPN-based obfuscation.
+- The transition expands the number of available server locations for users attempting to bypass network censorship.
 
 ### Why it Matters
-The TPM requirement represents a broader industry shift toward hardware-rooted trust, moving security away from vulnerable software-based storage. By mandating this standard, Microsoft ensures that modern operating systems can verify the integrity of the entire boot chain, significantly raising the barrier for attackers.
+This transition represents a significant shift in how VPN providers manage traffic to bypass sophisticated network filtering and deep packet inspection. By moving to a proprietary protocol, NordVPN aims to improve user experience by balancing high-level stealth with the faster performance speeds typically associated with modern, non-obfuscated connections.
 
 ============================================================
-Author:   Tashreef Shareef
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/windows-11-tpm-requirement-explained/
+Author:   monicajwrites@gmail.com (Monica J. White) , Monica J. White
+Source:   TechRadar
+URL:      https://www.techradar.com/vpn/vpn-services/faster-and-further-reaching-nordvpn-quietly-brings-its-obfuscated-servers-to-its-in-house-censorship-resistant-protocol
 Category: Cybersecurity
