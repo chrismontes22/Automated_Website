@@ -1,20 +1,20 @@
-Apple Responds to Lawsuit Filed by Three YouTube Channels
+North Korea-Linked npm Packages Mimic Rollup Polyfills to Steal Developer Secrets
 ============================================================
 
-Three YouTube channels have filed a class action lawsuit against Apple, alleging the company illegally scraped copyrighted video content to train its generative artificial intelligence models without compensation.
+North Korean threat actors are distributing malicious npm packages disguised as legitimate Rollup polyfill tools to facilitate remote access, credential theft, and data exfiltration from developer workstations.
 
 ### Key Points
-- The lawsuit was filed in the U.S. District Court for the Northern District of California by h3h3Productions, MrShortGame Golf, and Golfholics.
-- Plaintiffs allege Apple violated the Digital Millennium Copyright Act by circumventing YouTube’s technological protections to access and scrape millions of videos.
-- Apple filed a motion to dismiss the case, arguing that the videos were publicly accessible on YouTube without passwords or payment requirements.
-- The tech giant maintains that its data collection practices are permitted under the DMCA and align with YouTube’s existing terms of service.
-- Similar legal actions have been initiated by these content creators against other major technology firms, including Meta, Nvidia, ByteDance, and Snap.
+- Researchers at JFrog identified six malicious npm packages, including "rollup-packages-polyfill-core" and "rollup-runtime-polyfill-core," that mimic legitimate development tools.
+- The malware uses a multi-stage execution process to bypass security sandboxes and fetch encrypted payloads from external servers.
+- Once active, the scripts enable remote terminal access, capture screenshots, and steal sensitive data from browsers, cryptocurrency wallets, and developer configuration files.
+- The campaign specifically targets credentials for services like AWS, Microsoft Azure, Google Gemini, and Anthropic Claude, as well as SSH and Git keys.
+- All identified malicious packages have been removed from the npm registry, but users are advised to rotate credentials and audit their development environments.
 
 ### Why it Matters
-This case highlights the ongoing legal tension between generative AI developers and content creators regarding the unauthorized use of intellectual property for model training. The court's eventual ruling could establish a significant precedent for how tech companies access public internet data and whether such scraping constitutes a violation of copyright law.
+This campaign highlights the ongoing risk of software supply chain attacks targeting developers, who often possess high-level access to sensitive corporate infrastructure and cloud secrets. By compromising build environments, attackers can gain persistent access to proprietary source code and critical production credentials, posing a significant threat to organizational security.
 
 ============================================================
-Author:   Joe Rossignol
-Source:   MacRumors
-URL:      https://www.macrumors.com/2026/07/02/apple-responds-to-youtuber-ai-lawsuit/
-Category: Artificial Intelligence
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/07/north-korea-linked-npm-packages-mimic.html
+Category: Cybersecurity

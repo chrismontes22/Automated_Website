@@ -1,20 +1,20 @@
-OpenTelemetry GenAI: Instrument AI Agents Without Sending Data to the Cloud
+Tesla Vs. SpaceX: Here’s Which Will Outperform the Other by the End of July
 ============================================================
 
-This tutorial demonstrates how to implement a fully local, cloud-free observability pipeline for AI agents using OpenTelemetry GenAI semantic conventions, Docker, and the Jaeger tracing platform.
+Tesla prepares for a critical July 22 second-quarter earnings report while SpaceX experiences strong institutional momentum following its recent initial public offering and expansion into hyperscale computing.
 
 ### Key Points
-- Deploy a local OpenTelemetry Collector and Jaeger instance using Docker Compose with pinned image versions.
-- Instrument Node.js AI agents with OpenTelemetry SDKs to capture model identifiers, token usage, and operation types.
-- Use `startActiveSpan` to create parent-child hierarchies for multi-step reasoning chains and complex agent flows.
-- Visualize trace data, latency, and token costs by building a custom React dashboard connected to the Jaeger API.
-- Ensure data privacy by keeping all telemetry, prompts, and sensitive business logic within your local infrastructure.
+- Tesla reported Q1 revenue of $22.387 billion with automotive gross margins expanding to 21.1% due to lower material costs.
+- FSD subscriptions for Tesla grew 51% to 1.28 million, though energy storage revenue declined 12% to $2.408 billion.
+- SpaceX reported $18 billion in trailing revenue with growth projections reaching $62 billion by 2026.
+- SpaceX secured major hyperscaler contracts, including a $1.25 billion monthly deal with Anthropic and a $920 million monthly agreement with Google.
+- Tesla is investing heavily in the Cybercab, Semi, and Optimus robot projects at its Gigafactory Texas facility.
 
 ### Why it Matters
-Implementing vendor-neutral observability allows teams to monitor AI performance and costs without exposing sensitive data to third-party cloud providers. This local-first approach ensures compliance while providing the granular visibility needed to debug complex, non-deterministic AI agent behaviors.
+The divergence between Tesla’s earnings-driven volatility and SpaceX’s post-IPO momentum highlights shifting investor priorities between established automotive manufacturing and emerging AI infrastructure. Market participants are closely monitoring Tesla's profit margins while evaluating whether SpaceX’s rapid growth in compute capacity justifies its current valuation.
 
 ============================================================
-Author:   SitePoint Team
-Source:   SitePoint
-URL:      https://www.sitepoint.com/opentelemetry-genai-instrument-ai-agents-without-sending-data-to-the-cloud/
-Category: Artificial Intelligence
+Author:   Alex Sirois
+Source:   24/7 Wall St.
+URL:      https://247wallst.com/investing/2026/07/03/tesla-vs-spacex-heres-which-will-outperform-the-other-by-the-end-of-july/
+Category: Tech Business & Markets
