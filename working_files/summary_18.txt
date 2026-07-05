@@ -1,20 +1,20 @@
-Godot bans "vibe-coded" code contributions
+I found a hidden way to limit RAM on Windows 11, and the results were way more surprising than I expected
 ============================================================
 
-The Godot game engine development team is updating its contribution policy to strictly prohibit AI-generated code, citing concerns over code quality and the inability of contributors to maintain submissions.
+Windows 11 users can restrict total system memory for testing and debugging purposes by adjusting the Maximum memory setting within the legacy System Configuration tool, also known as msconfig.
 
 ### Key Points
-- Godot maintainers are banning autonomous AI-authored code and "vibe-coded" contributions to prevent repository clutter.
-- New contributors with three or fewer merged pull requests must now obtain explicit permission before submitting significant features or refactoring.
-- AI usage is restricted to menial tasks like code completion or regex, and any AI assistance must be disclosed in pull request discussions.
-- Communication channels will be restricted to human-to-human interaction, explicitly banning AI agents and bots from participating in discussions.
-- The team stated that AI-generated pull requests are demoralizing and create an unsustainable burden for maintainers who must review and fix the code.
+- Access the memory limit setting by searching for "msconfig" and navigating to the Boot tab's Advanced options.
+- Users must input the desired memory limit in megabytes, such as 4096 for 4GB or 8192 for 8GB.
+- A system restart is required to apply the memory restriction or to restore full RAM access.
+- Modern systems with UEFI firmware and Secure Boot enabled may require temporarily disabling security features to modify these settings.
+- This configuration is strictly for testing or troubleshooting and is not recommended for improving everyday system performance.
 
 ### Why it Matters
-This policy shift highlights a growing tension between open-source maintainers and the influx of automated code contributions that lack human oversight. By prioritizing code comprehension and accountability, Godot is setting a precedent for how major software projects may restrict AI tools to preserve long-term project stability and developer morale.
+Artificially limiting RAM is a specialized diagnostic technique used by developers and IT professionals to simulate low-memory environments without hardware changes. Using this setting for general use is counterproductive, as it significantly degrades system performance and restricts the operating system's ability to manage resources efficiently.
 
 ============================================================
-Author:   Piyush Gupta
-Source:   Blogspot.com
-URL:      https://theguptalog.blogspot.com/2026/07/godot-bans-ai-generated-code.html
-Category: Artificial Intelligence
+Author:   mhuck@live.com (Mauro Huculak) , Mauro Huculak
+Source:   Windows Central
+URL:      https://www.windowscentral.com/microsoft/windows-11/i-found-a-hidden-way-to-limit-ram-on-windows-11-and-it-actually-works
+Category: Phones, Laptops, and Gadgets

@@ -1,19 +1,20 @@
-Building A Wireless Fingerprint Authorization Device
+I self-hosted PewDiePie’s Odysseus AI workspace, and it’s surprisingly brilliant
 ============================================================
 
-The immurok is a custom-built, wireless biometric authentication device designed to streamline terminal workflows and system logins for Linux and Mac users by replacing manual password entry with fingerprints.
+YouTuber PewDiePie has released Odysseus, a privacy-focused, self-hosted AI workspace that allows users to manage local models, automate tasks, and maintain control over their personal data and documents.
 
 ### Key Points
-- The device utilizes a WCH CH592F microcontroller for Bluetooth connectivity and an R559S capacitive sensor for local biometric verification.
-- It functions as a standard Bluetooth HID keyboard, ensuring compatibility across different operating systems without transmitting sensitive biometric data.
-- Linux integration relies on a CLI/TUI application and PAM to manage system logins and sudo terminal commands.
-- Mac users can utilize a dedicated menu bar application and PAM integration to handle administrative prompts and lock screen authentication.
+- Odysseus is designed for self-hosting via Docker, ensuring user data remains local rather than being stored by third-party providers.
+- The platform features a "Cookbook" interface that helps users select and manage AI models from Hugging Face based on their specific hardware capabilities.
+- Users can integrate external cloud-hosted models through API keys from services like OpenRouter to supplement local processing power.
+- Built-in tools include deep research capabilities, document co-editing, and a "Persona" system for creating custom, reusable AI system prompts.
+- The software supports self-learning features, allowing agents to build memories of user preferences and refine their own skill sets over time.
 
 ### Why it Matters
-This project offers a practical solution for power users who frequently encounter repetitive password prompts during terminal-heavy workflows. By bringing mobile-style biometric convenience to desktop environments, it demonstrates how custom hardware can effectively bridge gaps in existing operating system security interfaces.
+Odysseus represents a growing shift toward local, transparent AI control, offering a viable alternative to subscription-based services like ChatGPT or Gemini. By prioritizing data privacy and self-hosted infrastructure, it provides power users with a customizable, agentic workspace that avoids the limitations and security concerns of centralized cloud platforms.
 
 ============================================================
-Author:   Zoe Skyforest
-Source:   Hackaday
-URL:      https://hackaday.com/2026/07/03/building-a-wireless-fingerprint-authorization-device/
-Category: Phones, Laptops, and Gadgets
+Author:   Robert Triggs
+Source:   Android Authority
+URL:      https://www.androidauthority.com/pewdiepie-odysseus-ai-hands-on-3682909/
+Category: Artificial Intelligence

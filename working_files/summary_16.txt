@@ -1,20 +1,20 @@
-iPhone 18 Pro leaks, Redmi K90 Ultra arrives, Week 27 in review
+FBI: TeamPCP Compromised Dev Tools to Steal Cloud Credentials
 ============================================================
 
-Apple is preparing for its September 8, 2026, launch event, featuring the new iPhone 18 Pro series, the foldable iPhone Ultra, and significant battery capacity upgrades for flagship models.
+The FBI issued a FLASH alert on July 2, 2026, warning that the criminal group TeamPCP is compromising developer tools to execute large-scale software supply chain attacks.
 
 ### Key Points
-- The iPhone 18 Pro Max will feature a 5,235 mAh battery for physical SIM models and a 5,425 mAh capacity for eSIM versions.
-- Xiaomi announced the Redmi K90 Ultra in China, featuring a Snapdragon 8 Elite chipset, 165Hz AMOLED display, and an 8,550mAh battery.
-- Nothing is scheduled to launch its Phone (4b) on July 7, which will include a 6,000 mAh battery and a Snapdragon 6 Gen 4 processor.
-- The OnePlus N6 launched in India for INR 22,999, boasting an 8,000mAh battery and a seven-year battery health guarantee.
-- Leaked documents from an Apple supplier cyberattack suggest the iPhone 18 Pro series will utilize a mix of Qualcomm and proprietary Apple C2 modems.
+- TeamPCP injected malicious code into widely used tools including Trivy, KICS, LiteLLM, and the Telnyx Python SDK.
+- The group deployed four malware families—CanisterWorm, SANDCLOCK, Mini Shai-Hulud, and Miasma—to harvest cloud tokens, SSH keys, and Kubernetes secrets.
+- Attackers gained control of npm accounts by registering expired recovery email domains linked to package maintainers.
+- The campaign is associated with four specific CVEs: CVE-2026-33634, CVE-2026-48027, CVE-2026-45321, and CVE-2025-55182.
+- Recommended mitigations include pinning GitHub Actions to commit SHAs, enforcing phishing-resistant MFA, and rotating all CI/CD secrets.
 
 ### Why it Matters
-These hardware developments highlight a growing industry trend toward significantly larger battery capacities and extended device longevity to support intensive mobile gaming and daily usage. As manufacturers like Apple, Xiaomi, and Nothing compete for market share, these technical specifications will likely influence consumer purchasing decisions throughout the second half of 2026.
+This campaign demonstrates how attackers can bypass traditional security by poisoning the trusted tools and pipelines that organizations rely on for software development. Because the stolen credentials may be shared with other criminal groups, impacted organizations must treat all exposed data as a persistent, long-term security risk.
 
 ============================================================
-Author:   Michail
-Source:   GSMArena.com
-URL:      https://www.gsmarena.com/iphone_18_pro_leaks_redmi_k90_ultra_arrives_week_27_in_review-news-73570.php
-Category: Phones, Laptops, and Gadgets
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/194741/uncategorized/fbi-teampcp-compromised-dev-tools-to-steal-cloud-credentials.html
+Category: Cybersecurity

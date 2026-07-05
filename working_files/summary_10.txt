@@ -1,20 +1,20 @@
-Prime Day is done, but this best-selling 4K projector is still at its lowest price
+BareMetal RAM Dumper – Bare-metal x86 tool for Cold Boot Attack experiments
 ============================================================
 
-The XGIMI Horizon 20 Max is currently the top-rated 4K long-throw projector, offering significant improvements in brightness, ease of setup, and image quality for a discounted price of $2,199.
+A new bare-metal x86 tool enables users to perform cold boot attacks by dumping system RAM directly to a USB drive via legacy BIOS interrupts and unreal mode.
 
 ### Key Points
-- The Horizon 20 Max features a built-in gimbal and optical zoom, allowing for flexible placement and easy screen alignment.
-- It delivers up to 5,700 lumens of brightness, ensuring vibrant image quality even in rooms with significant ambient light.
-- The device is powered by the MediaTek MT9679 platform with 4GB of RAM and 128GB of storage for a smooth Google TV experience.
-- Connectivity options include Wi-Fi 6, dual HDMI ports with eARC, and support for Dolby Vision and IMAX Enhanced formats.
-- XGIMI has discounted the projector to $2,199 for the Fourth of July, marking its lowest price point to date.
+- The tool operates without an operating system by booting directly from a USB drive using a custom 512-byte boot sector.
+- It utilizes BIOS INT 0x15 E820 to map physical memory and INT 0x13 to write 32KB chunks of RAM to the boot medium.
+- Users must enable Legacy BIOS or Compatibility Support Module (CSM) settings on the target machine to execute the memory dump.
+- The software requires NASM for compilation and overwrites data on the target USB drive starting at Logical Block Address (LBA) 64.
+- This utility is designed for security research, specifically for extracting sensitive information like encryption keys from frozen memory modules.
 
 ### Why it Matters
-This projector simplifies the home theater experience by removing the technical barriers typically associated with installing long-throw hardware. Its high brightness and automated setup features make it a versatile option for users who want a premium, large-screen viewing experience without needing a dedicated dark room.
+This tool demonstrates the persistent security risks associated with physical memory access and the vulnerability of data stored in RAM during cold boot scenarios. It serves as a practical resource for security researchers to test system defenses against hardware-level memory extraction techniques.
 
 ============================================================
-Author:   harish.jonnalagadda@futurenet.com (Harish Jonnalagadda) , Harish Jonnalagadda
-Source:   Android Central
-URL:      https://www.androidcentral.com/streaming-tv/xgimi-horizon-20-max-4k-projector-shining-bright
-Category: Phones, Laptops, and Gadgets
+Author:   pIat0n
+Source:   Github.com
+URL:      https://github.com/pIat0n/BareMetal-RAM-Dumper
+Category: Cybersecurity

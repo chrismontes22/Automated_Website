@@ -1,20 +1,20 @@
-Cybersecurity in space: Protecting the next frontier of critical infrastructure
+North Korean Hackers Publish 108 Malicious Packages and Extensions in PolinRider Campaign
 ============================================================
 
-Cybersecurity experts are warning that the rapid expansion of space-based infrastructure requires new autonomous defense strategies, as satellites and orbital systems face unique, unpatchable vulnerabilities to cyberattacks.
+North Korean threat actors are actively compromising software supply chains through the PolinRider campaign, which uses malicious packages and VS Code tasks to distribute malware to unsuspecting developers.
 
 ### Key Points
-- Cybersecurity firm OPSWAT successfully tested its MetaDefender Kiosk in near-space conditions, demonstrating the potential for autonomous, offline file sanitization in extreme environments.
-- Space-based assets, including GPS, telecommunications, and financial networks, are increasingly classified as critical infrastructure vulnerable to jamming, signal spoofing, and ransomware.
-- The World Economic Forum’s Global Cybersecurity Outlook 2026 highlights that organizations are now integrating space-based asset risks into their formal cyber defense planning.
-- Future orbital data centers and satellite constellations require zero-trust architectures that prioritize prevention over traditional, human-led patching and monitoring.
-- Canada is prioritizing space resilience as companies like Telesat expand low-Earth orbit networks, necessitating advanced security against nation-state and criminal cyber threats.
+- The PolinRider campaign has deployed 108 unique malicious packages and extensions across npm, Packagist, Go, and Google Chrome.
+- Attackers have compromised 1,951 public GitHub repositories by exploiting maintainer accounts and injecting obfuscated JavaScript loaders.
+- Malicious VS Code task files are used to trigger arbitrary code execution when developers open infected folders in IDEs like VS Code or Cursor.
+- The campaign delivers second-stage payloads, including the DEV#POPPER RAT and OmniStealer, by fetching encrypted data from blockchain infrastructure.
+- Threat actors use Git history rewriting and anti-dated commits to disguise malicious changes as legitimate, long-standing repository updates.
 
 ### Why it Matters
-As global reliance on space-based systems grows, the inability to physically repair or manually patch orbital hardware creates a significant security gap. Developing autonomous, prevention-first cybersecurity is essential to protecting the critical infrastructure that supports modern telecommunications, military operations, and global financial stability.
+This campaign highlights a significant escalation in supply chain attacks that target developer environments rather than just end-user applications. By compromising trusted repositories and IDE configurations, these actors can bypass traditional security measures and gain persistent access to sensitive development infrastructure.
 
 ============================================================
-Author:   Dr. Tim Sandle
-Source:   Digital Journal
-URL:      https://www.digitaljournal.com/article/cybersecurity-in-space-protecting-the-next-frontier-of-critical-infrastructure/
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/07/north-korean-hackers-publish-108.html
 Category: Cybersecurity
