@@ -1,20 +1,19 @@
-Web Review, Week 2026-27
+Building A Wireless Fingerprint Authorization Device
 ============================================================
 
-The latest weekly web review highlights critical developments in artificial intelligence safety, software architecture performance, and the growing societal concerns regarding digital surveillance and data privacy.
+The immurok is a custom-built, wireless biometric authentication device designed to streamline terminal workflows and system logins for Linux and Mac users by replacing manual password entry with fingerprints.
 
 ### Key Points
-- Research indicates that current large language model architectures face fundamental challenges in achieving reliable safety and security.
-- Data-oriented design techniques are proving effective for optimizing performance in parsing tasks and memory management.
-- New studies confirm that the use of personal names is not an exclusively human trait, supported by emerging biological evidence.
-- Experts are raising alarms over the security risks of proprietary AI systems and the feasibility of proposed space-based data centers.
-- Technical resources for developers now include guides on Rust memory allocation, 3D physics engines, and spline mathematics for graphics programming.
+- The device utilizes a WCH CH592F microcontroller for Bluetooth connectivity and an R559S capacitive sensor for local biometric verification.
+- It functions as a standard Bluetooth HID keyboard, ensuring compatibility across different operating systems without transmitting sensitive biometric data.
+- Linux integration relies on a CLI/TUI application and PAM to manage system logins and sudo terminal commands.
+- Mac users can utilize a dedicated menu bar application and PAM integration to handle administrative prompts and lock screen authentication.
 
 ### Why it Matters
-These insights reflect a broader industry shift toward prioritizing system transparency and performance efficiency amidst increasing concerns over AI safety. Understanding these technical and ethical trade-offs is essential for professionals navigating the future of software development and digital policy.
+This project offers a practical solution for power users who frequently encounter repetitive password prompts during terminal-heavy workflows. By bringing mobile-style biometric convenience to desktop environments, it demonstrates how custom hardware can effectively bridge gaps in existing operating system security interfaces.
 
 ============================================================
-Author:   Kevin Ottens
-Source:   Ipsquad.net
-URL:      https://ervin.ipsquad.net/blog/2026/07/03/web-review-week-2026-27/
-Category: Artificial Intelligence
+Author:   Zoe Skyforest
+Source:   Hackaday
+URL:      https://hackaday.com/2026/07/03/building-a-wireless-fingerprint-authorization-device/
+Category: Phones, Laptops, and Gadgets

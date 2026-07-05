@@ -1,20 +1,20 @@
-A top Goldman Sachs economist says AI will displace the jobs of 15 million US workers
+Soatok's Informal Guide to Threat Models
 ============================================================
 
-Goldman Sachs economist Joseph Briggs estimates that artificial intelligence adoption could displace 15 million American workers, though historical trends suggest new job creation will likely offset these labor losses.
+Effective threat modeling requires identifying assets, potential adversaries, and attack vectors while clearly documenting system assumptions to build more resilient and secure software architectures.
 
 ### Key Points
-- Goldman Sachs researcher Joseph Briggs projects that AI will displace approximately 9% of the U.S. workforce, totaling 15 million jobs.
-- Current AI integration in sectors like tech and graphic design is reducing monthly employment growth by 10,000 to 15,000 positions.
-- MIT researcher Neil Thompson notes that technical, regulatory, and cost hurdles will likely slow the pace of AI adoption across various industries.
-- Historical data indicates that 85% of job growth over the last 80 years has been driven by the creation of new roles through technological advancement.
-- The U.S. labor market experiences a natural churn of roughly 30 million jobs created and 29 million destroyed annually.
+- A functional threat model must define protected assets, identify potential actors, map attack scenarios, and outline specific prevention or mitigation strategies.
+- Effective models are living documents that explicitly state assumptions and acknowledge risks that the development team chooses not to address.
+- Visualizing system components as a graph helps identify inappropriate dependencies and potential security blind spots during the design phase.
+- Poorly constructed threat models often lack lists of assumptions or asset relationships, rendering them ineffective for actual security analysis.
+- Applying threat modeling to technical debates, such as post-quantum cryptography standards, helps distinguish between legitimate security concerns and ideological fearmongering.
 
 ### Why it Matters
-This shift highlights a critical transition in the labor market as businesses balance automation efficiency with the necessity of human oversight. Understanding these dynamics helps stakeholders anticipate how workforce roles will evolve rather than disappear entirely as AI tools become more prevalent.
+Understanding threat modeling allows developers to move beyond buzzwords and proactively design systems that force attackers into predictable, mitigated paths. By identifying and documenting assumptions early, teams can avoid architectural flaws that are difficult or impossible to patch after a product is deployed.
 
 ============================================================
-Author:   Georgia Hennessy
-Source:   Business Insider
-URL:      https://www.businessinsider.com/goldman-sachs-economist-predicts-ai-displacing-15-million-jobs-2026-7#article
-Category: Artificial Intelligence
+Author:   View Archive →
+Source:   Soatok.blog
+URL:      https://soatok.blog/2026/06/30/soatoks-informal-guide-to-threat-models/
+Category: Cybersecurity

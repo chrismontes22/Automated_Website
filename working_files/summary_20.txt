@@ -1,20 +1,19 @@
-Zoom buys Common Room to push past the video call into AI sales
+Someone used a Raspberry Pi 5 to give Claude Fable 5 a robot body, because that's not worrying or anything
 ============================================================
 
-Zoom is expanding its enterprise sales capabilities by acquiring Seattle-based startup Common Room, integrating AI-driven customer intelligence tools to help businesses identify and engage potential buyers more effectively.
+A hobbyist developer has successfully integrated the Claude Fable 5 artificial intelligence model into a walking robot, utilizing a Raspberry Pi 5 and Nvidia Jetson Nano for local control.
 
 ### Key Points
-- Zoom announced the acquisition of Common Room on Thursday to bolster its enterprise sales software offerings.
-- Common Room uses AI to aggregate data from CRM records and product usage to provide a unified view of potential customers.
-- The startup was founded in 2020 by tech veterans and previously raised $52 million in venture capital funding.
-- Common Room’s client list includes major technology companies such as Notion, Okta, Snowflake, and Anthropic.
-- The acquisition aims to integrate Common Room’s intelligence platform with Zoom’s existing Revenue Accelerator tool.
+- The robot uses a Raspberry Pi 5 with 8GB of RAM to manage core logic and API communication.
+- An Nvidia Jetson Nano handles vision processing, supported by two front-mounted cameras for stereo perception.
+- The system operates by sending visual data to the Claude Fable 5 API, which then returns movement commands.
+- All hardware control systems and decision-making logic are processed locally on the robot's onboard hardware.
 
 ### Why it Matters
-This acquisition signals Zoom's strategic shift from a video conferencing provider to a comprehensive "system of action" for enterprise workflows. By embedding AI-driven sales intelligence into its platform, Zoom aims to capture more value from the pre-meeting sales process and remain competitive in the evolving enterprise software market.
+This project demonstrates the increasing accessibility of integrating advanced cloud-based AI models with physical robotics hardware. It highlights a growing trend in DIY engineering where compact, affordable computing components enable sophisticated autonomous behaviors in small-scale machines.
 
 ============================================================
-Author:   Cristian Dina
-Source:   The Next Web
-URL:      https://thenextweb.com/news/zoom-acquires-common-room-ai-sales/
-Category: Tech Business & Markets
+Author:   Simon Batt
+Source:   XDA Developers
+URL:      https://www.xda-developers.com/someone-used-a-raspberry-pi-5-to-give-claude-fable-5-a-robot-body-because-thats-not-worrying-or-anything/
+Category: Artificial Intelligence

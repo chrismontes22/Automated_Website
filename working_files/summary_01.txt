@@ -1,21 +1,20 @@
-This Week in Security: Windows 10 Gets Another Year, SmartTV Botnets, Hiding Payloads, and LastPass Customer Leak
+FBI: TeamPCP Compromised Dev Tools to Steal Cloud Credentials
 ============================================================
 
-A recent analysis reveals that nearly half of the apps on LG smart TVs contain proxy software, while other critical security updates and vulnerabilities impact global technology platforms.
+The FBI issued a FLASH alert on July 2, 2026, warning that the criminal group TeamPCP is compromising developer tools to execute large-scale software supply chain attacks.
 
 ### Key Points
-- Researchers found that 50% of LG smart TV apps utilize proxy software, potentially turning devices into network nodes without explicit user consent.
-- Microsoft extended Windows 10 security support until October 2027, requiring some users to sync OneDrive or pay a fee to access updates.
-- Russian hacker groups are targeting Signal users with phishing campaigns designed to steal remote backup authentication tokens from high-profile individuals.
-- Security researcher Sasha Romijn demonstrated that injecting malicious payloads into WiFi SSIDs and TLS certificates can compromise hosting providers and OpenWRT devices.
-- A breach at LastPass marketing partner Klue exposed customer contact information, though the company confirmed that primary password vaults remain secure.
-- New vulnerabilities in Apple AirDrop and Google Quick Share allow nearby attackers to trigger denial-of-service crashes across iOS, macOS, Windows, and Android devices.
+- TeamPCP injected malicious code into widely used tools including Trivy, KICS, LiteLLM, and the Telnyx Python SDK.
+- The group deployed four malware families—CanisterWorm, SANDCLOCK, Mini Shai-Hulud, and Miasma—to harvest cloud tokens, SSH keys, and Kubernetes secrets.
+- Attackers gained control of npm accounts by registering expired recovery email domains linked to package maintainers.
+- The campaign is associated with four specific CVEs: CVE-2026-33634, CVE-2026-48027, CVE-2026-45321, and CVE-2025-55182.
+- Recommended mitigations include pinning GitHub Actions to commit SHAs, enforcing phishing-resistant MFA, and rotating all CI/CD secrets.
 
 ### Why it Matters
-These developments highlight the persistent risks associated with insecure IoT ecosystems and the increasing sophistication of targeted phishing and injection attacks. Users and administrators must remain vigilant, as even trusted services and hardware can serve as entry points for unauthorized data access or system disruption.
+This campaign demonstrates how attackers can bypass traditional security by poisoning the trusted tools and pipelines that organizations rely on for software development. Because the stolen credentials may be shared with other criminal groups, impacted organizations must treat all exposed data as a persistent, long-term security risk.
 
 ============================================================
-Author:   Mike Kershaw
-Source:   Hackaday
-URL:      https://hackaday.com/2026/07/03/this-week-in-security-windows-10-gets-another-year-smarttv-botnets-hiding-payloads-and-lastpass-customer-leak/
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/194741/uncategorized/fbi-teampcp-compromised-dev-tools-to-steal-cloud-credentials.html
 Category: Cybersecurity
