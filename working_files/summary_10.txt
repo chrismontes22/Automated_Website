@@ -1,20 +1,20 @@
-Amentum Holdings (AMTM) Appears Attractive With New Contract Awards
+Why DMARC's new "NP" tag can fail with DNSSEC
 ============================================================
 
-Amentum Holdings Inc. has secured a five-year contract from the General Services Administration to provide AI-driven supply chain management services for U.S. military operations across the Indo-Pacific region.
+The new DMARC "np" tag, designed to secure non-existent subdomains, often fails on domains using DNSSEC due to technical incompatibilities with the "Compact Denial of Existence" standard, RFC 9824.
 
 ### Key Points
-- The General Services Administration awarded Amentum a 60-month firm-fixed price contract on June 17.
-- Amentum will manage supply chain logistics for the Pentagon and federal agencies operating in Japan.
-- The program utilizes AI-integrated techniques to enhance predictive analysis, demand forecasting, and catalog management.
-- Services are designed to support military operational readiness within the United States Indo-Pacific Command area of responsibility.
-- Amentum provides specialized engineering, cybersecurity, and logistics solutions for government and defense clients.
+- RFC 9989 introduced the "np" tag to define policies for non-existent subdomains, but it relies on the traditional NXDOMAIN DNS response code.
+- Many major DNS providers, including Cloudflare, AWS Route 53, and Azure, use "compact denial" (RFC 9824), which returns a NOERROR code instead of NXDOMAIN.
+- Because most DMARC implementations strictly look for NXDOMAIN, they fail to recognize non-existent subdomains when compact denial is active.
+- Optional mechanisms to restore the NXDOMAIN signal, such as the CO flag, currently lack widespread support among DNS resolvers and authoritative servers.
+- Research indicates that nearly half of all DNSSEC-signed domains among the top one million websites utilize compact denial, leaving them vulnerable to this policy mismatch.
 
 ### Why it Matters
-This contract reinforces Amentum’s role as a critical logistics partner for the U.S. military in a strategically sensitive geopolitical region. By integrating AI into supply chain operations, the company aims to improve efficiency and delivery reliability for federal installations operating in challenging environments.
+This technical conflict prevents the "np" tag from reliably blocking malicious emails on unused subdomains for a significant portion of the internet. Domain owners should currently assume that the "np" policy will not function as intended until DMARC implementations or DNS providers achieve better cross-standard compatibility.
 
 ============================================================
-Author:   Muhammad Ali Khalid
-Source:   Yahoo Entertainment
-URL:      https://finance.yahoo.com/markets/stocks/articles/amentum-holdings-amtm-appears-attractive-022540192.html
-Category: Tech Business & Markets
+Author:   Matteo
+Source:   Dmarcwise.io
+URL:      https://dmarcwise.io/blog/dmarc-np-incompatibility-with-dnssec
+Category: Cybersecurity

@@ -1,20 +1,20 @@
-Windows Central Podcast: The path ahead for Xbox with Jez Corden
+Fake Mac Clipboard App Delivers New Password-Stealing Malware
 ============================================================
 
-The Windows Central Podcast examines the current state of Xbox under CEO Asha Sharma, addressing studio closure rumors, rising hardware costs, and the future of next-generation console strategy.
+Jamf Threat Labs has discovered a new Rust-based macOS infostealer called PamStealer that disguises itself as the Maccy clipboard manager to harvest user passwords and sensitive system data.
 
 ### Key Points
-- New Xbox CEO Asha Sharma is navigating corporate belt-tightening driven by massive Microsoft-wide investments in artificial intelligence infrastructure.
-- Rising component costs, specifically RAM, have rendered the traditional console subsidy model unsustainable for both Microsoft and Sony.
-- Microsoft is evaluating the future of first-party studios, including potential sales or closures of teams like Ninja Theory and Undead Labs.
-- The upcoming "Helix" console project faces internal debates regarding whether to function as an open Windows-based device or a closed ecosystem.
-- New technology codenamed "Positron" may allow users to convert physical disc ownership into permanent digital licenses on their Microsoft accounts.
+- PamStealer uses a malicious AppleScript file to validate user passwords via macOS Pluggable Authentication Modules before stealing credentials.
+- The malware targets Apple Silicon Macs and disguises its second-stage payload as legitimate system processes like Finder or Software Update.
+- Attackers are distributing the malware through lookalike websites and sponsored advertisements on social media platforms like X.
+- Once installed, the infostealer attempts to gain Full Disk Access to compromise browser data, Keychain information, and encrypted backups.
+- Jamf Threat Labs also identified a separate campaign using X advertisements to distribute the Atomic Stealer variant via a site called dynamicmacisland.com.
 
 ### Why it Matters
-These shifts signal a fundamental change in the gaming industry as hardware manufacturers struggle to balance premium pricing with the declining profitability of traditional consoles. The potential move toward an open Windows ecosystem or all-digital models reflects a broader effort to adapt to the dominance of free-to-play titles and rising development costs.
+This campaign highlights the growing sophistication of social engineering tactics that exploit user trust in sponsored advertisements and open-source software. By bypassing traditional security monitoring and abusing legitimate system prompts, these infostealers pose a significant risk to both individual privacy and corporate data security.
 
 ============================================================
-Author:   zac.bowden@futurenet.com (Zac Bowden) , Zac Bowden
-Source:   Windows Central
-URL:      https://www.windowscentral.com/gaming/xbox/windows-central-podcast-the-path-ahead-for-xbox-with-jez-corden
-Category: Tech Business & Markets
+Author:   Jason Nelson
+Source:   Decrypt
+URL:      https://decrypt.co/372743/fake-mac-clipboard-app-delivers-password-stealing-malware
+Category: Cybersecurity

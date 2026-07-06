@@ -1,20 +1,20 @@
-I switched to OLED for my entire setup, but I had to keep an LCD around just for coding
+Lean Software Scaling Laws
 ============================================================
 
-QD-OLED and W-OLED monitors currently struggle with text clarity for productivity tasks due to non-standard subpixel arrangements that conflict with Windows and macOS font rendering software like ClearType.
+Researchers are proposing a new methodology to measure how coding LLM perplexity scales with codebase size, using the Lean programming language to evaluate long-term software security and predictability.
 
 ### Key Points
-- QD-OLED panels use a triangular subpixel layout, while W-OLED adds a white subpixel, both of which cause color fringing on text.
-- Windows ClearType and macOS text renderers are optimized for traditional RGB-stripe subpixel arrangements found in standard IPS panels.
-- Automatic Brightness Limiter (ABL) technology in OLED displays causes inconsistent brightness levels when viewing large white windows like code editors.
-- Upcoming 2026 display panels from Samsung and LG aim to resolve these issues by adopting V-Stripe and RGB-stripe layouts.
-- High pixel density, such as 4K resolution on smaller screens, can mitigate fringing, but current ultrawide options often lack sufficient density for sharp text.
+- The study aims to determine if formal languages like Lean possess superior scaling exponents compared to popular, less restrictive languages like Python or JavaScript.
+- Researchers will measure perplexity across increasing context windows to identify which programming languages become easier for LLMs to understand and maintain as codebases grow.
+- The methodology includes injecting artificial bugs to test "inverse scaling," where higher model surprise indicates a better grasp of the codebase's underlying logic.
+- By analyzing the "predictability" of code, the project seeks to identify whether formal verification can mitigate the security risks inherent in AI-generated software.
+- The study suggests that even if Lean currently lacks large training datasets, its potential for better scaling could justify massive investments in rewriting existing systems for improved correctness.
 
 ### Why it Matters
-The incompatibility between OLED subpixel structures and operating system font rendering creates significant visual fatigue for professionals who spend hours reading text. While OLED remains superior for gaming, the current hardware limitations make traditional IPS panels a more reliable and consistent choice for coding and document-heavy workflows.
+This research could fundamentally shift how the industry selects programming languages for AI-driven development by prioritizing long-term maintainability over initial ease of use. If proven, these scaling laws would provide a data-driven justification for transitioning critical infrastructure to formally verifiable languages, potentially reducing the global cybersecurity risks posed by insecure AI-generated code.
 
 ============================================================
-Author:   Joe Rice-Jones
-Source:   XDA Developers
-URL:      https://www.xda-developers.com/switched-to-oled-for-my-entire-setup-but-kept-an-lcd-just-for-coding/
-Category: Phones, Laptops, and Gadgets
+Author:   Gwern
+Source:   Gwern.net
+URL:      https://gwern.net/lean-scaling
+Category: Artificial Intelligence
