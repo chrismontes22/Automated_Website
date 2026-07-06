@@ -1,20 +1,20 @@
-FBI: TeamPCP Compromised Dev Tools to Steal Cloud Credentials
+Alibaba Bans Claude Code: The Backdoor Scare Explained
 ============================================================
 
-The FBI issued a FLASH alert on July 2, 2026, warning that the criminal group TeamPCP is compromising developer tools to execute large-scale software supply chain attacks.
+Alibaba has banned the use of Anthropic’s Claude Code across its engineering divisions following reports that the tool contained covert anti-distillation logic targeting specific geographic IP ranges.
 
 ### Key Points
-- TeamPCP injected malicious code into widely used tools including Trivy, KICS, LiteLLM, and the Telnyx Python SDK.
-- The group deployed four malware families—CanisterWorm, SANDCLOCK, Mini Shai-Hulud, and Miasma—to harvest cloud tokens, SSH keys, and Kubernetes secrets.
-- Attackers gained control of npm accounts by registering expired recovery email domains linked to package maintainers.
-- The campaign is associated with four specific CVEs: CVE-2026-33634, CVE-2026-48027, CVE-2026-45321, and CVE-2025-55182.
-- Recommended mitigations include pinning GitHub Actions to commit SHAs, enforcing phishing-resistant MFA, and rotating all CI/CD secrets.
+- Reports indicate Claude Code used hidden system prompts and IP filtering to detect and disrupt potential model extraction attempts.
+- Alibaba’s security team flagged the tool for unauthorized data transmission and opaque behavior that prevented internal auditing.
+- Anthropic reportedly acknowledged the feature as an intellectual property protection measure and pledged to remove it in a future update.
+- The incident originated from community-led reverse engineering, which identified anomalous network traffic and hidden instructions within the software.
+- Other technology firms are reportedly reviewing their AI tool deployments, though no further public bans have been confirmed.
 
 ### Why it Matters
-This campaign demonstrates how attackers can bypass traditional security by poisoning the trusted tools and pipelines that organizations rely on for software development. Because the stolen credentials may be shared with other criminal groups, impacted organizations must treat all exposed data as a persistent, long-term security risk.
+This incident highlights a growing tension between AI developers protecting proprietary models and the enterprise need for transparent, auditable software. It underscores the necessity for organizations to rigorously vet AI coding assistants, as covert features can create significant security and compliance risks for sensitive corporate environments.
 
 ============================================================
-Author:   Pierluigi Paganini
-Source:   Securityaffairs.com
-URL:      https://securityaffairs.com/194741/uncategorized/fbi-teampcp-compromised-dev-tools-to-steal-cloud-credentials.html
+Author:   Matt Mickiewicz
+Source:   SitePoint
+URL:      https://www.sitepoint.com/alibaba-bans-claude-code-the-backdoor-scare-explained/
 Category: Cybersecurity

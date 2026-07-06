@@ -1,20 +1,20 @@
-BareMetal RAM Dumper – Bare-metal x86 tool for Cold Boot Attack experiments
+Amentum Holdings (AMTM) Appears Attractive With New Contract Awards
 ============================================================
 
-A new bare-metal x86 tool enables users to perform cold boot attacks by dumping system RAM directly to a USB drive via legacy BIOS interrupts and unreal mode.
+Amentum Holdings Inc. has secured a five-year contract from the General Services Administration to provide AI-driven supply chain management services for U.S. military operations across the Indo-Pacific region.
 
 ### Key Points
-- The tool operates without an operating system by booting directly from a USB drive using a custom 512-byte boot sector.
-- It utilizes BIOS INT 0x15 E820 to map physical memory and INT 0x13 to write 32KB chunks of RAM to the boot medium.
-- Users must enable Legacy BIOS or Compatibility Support Module (CSM) settings on the target machine to execute the memory dump.
-- The software requires NASM for compilation and overwrites data on the target USB drive starting at Logical Block Address (LBA) 64.
-- This utility is designed for security research, specifically for extracting sensitive information like encryption keys from frozen memory modules.
+- The General Services Administration awarded Amentum a 60-month firm-fixed price contract on June 17.
+- Amentum will manage supply chain logistics for the Pentagon and federal agencies operating in Japan.
+- The program utilizes AI-integrated techniques to enhance predictive analysis, demand forecasting, and catalog management.
+- Services are designed to support military operational readiness within the United States Indo-Pacific Command area of responsibility.
+- Amentum provides specialized engineering, cybersecurity, and logistics solutions for government and defense clients.
 
 ### Why it Matters
-This tool demonstrates the persistent security risks associated with physical memory access and the vulnerability of data stored in RAM during cold boot scenarios. It serves as a practical resource for security researchers to test system defenses against hardware-level memory extraction techniques.
+This contract reinforces Amentum’s role as a critical logistics partner for the U.S. military in a strategically sensitive geopolitical region. By integrating AI into supply chain operations, the company aims to improve efficiency and delivery reliability for federal installations operating in challenging environments.
 
 ============================================================
-Author:   pIat0n
-Source:   Github.com
-URL:      https://github.com/pIat0n/BareMetal-RAM-Dumper
-Category: Cybersecurity
+Author:   Muhammad Ali Khalid
+Source:   Yahoo Entertainment
+URL:      https://finance.yahoo.com/markets/stocks/articles/amentum-holdings-amtm-appears-attractive-022540192.html
+Category: Tech Business & Markets
