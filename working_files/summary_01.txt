@@ -1,20 +1,20 @@
-The Threat Landscape Has Evolved to Target Your Data, Not Just Your Devices
+New Java-Based QuimaRAT MaaS Built to Run on Windows, Linux, and macOS
 ============================================================
 
-Modern cybercriminals are increasingly shifting their focus from crashing computers to stealing personal and financial data, resulting in significant identity theft risks and billions of dollars in annual losses.
+Cybersecurity researchers have identified QuimaRAT, a modular, cross-platform remote access trojan sold as a service that targets Windows, Linux, and macOS systems to enable comprehensive remote system control.
 
 ### Key Points
-- Cyber-related crimes cost Americans approximately $21 billion in 2025, according to the FBI’s Internet Crime Report.
-- Common attack methods include social engineering, ransomware, and adversary-in-the-middle attacks to intercept sensitive information.
-- The Identity Theft Resource Center recorded 3,322 data breaches in 2025, highlighting the scale of institutional security vulnerabilities.
-- Personal data is also harvested through non-malicious tools like tracking pixels, cookies, and web scrapers used by third-party advertisers.
-- Security experts recommend using password managers, VPNs, passkeys, and antivirus software to minimize digital footprints and protect against identity theft.
+- QuimaRAT is a Java-based malware suite offered via a subscription model ranging from $150 monthly to $1,200 for lifetime access.
+- The toolkit includes a builder, a browser-cache payload delivery service, and an HTML dropper designed to bypass security protections like Windows SmartScreen.
+- The malware supports modular expansion through encrypted plugins and utilizes native libraries to interact directly with low-level operating system APIs.
+- Attackers can perform credential theft, file transfers, clipboard manipulation, and webcam surveillance once the trojan establishes a command-and-control connection.
+- Persistence is achieved through various system-specific methods, including Registry keys on Windows, crontab tasks on Linux, and LaunchAgent files on macOS.
 
 ### Why it Matters
-The evolution of cybercrime toward data theft creates long-term financial and personal consequences that can take years for victims to resolve. By understanding these threats and adopting proactive security measures, individuals can significantly reduce their vulnerability to identity fraud and financial loss.
+The availability of sophisticated, modular malware-as-a-service platforms like QuimaRAT lowers the barrier to entry for cybercriminals seeking to conduct cross-platform attacks. By leveraging trusted system processes and obfuscation techniques, this tool poses a significant threat to both individual users and enterprise environments.
 
 ============================================================
-Author:   Dianna Gunn
-Source:   CNET
-URL:      https://www.cnet.com/tech/services-and-software/threat-landscape-evolution-target-data/
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/07/new-java-based-quimarat-maas-built-to.html
 Category: Cybersecurity

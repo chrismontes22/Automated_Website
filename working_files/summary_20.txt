@@ -1,19 +1,20 @@
-VeraCrypt Portable 1.26.29 (free disk encryption) Released
+When checking the URL isn’t enough: a Device Code Phishing attack via a Microsoft website
 ============================================================
 
-The latest version of VeraCrypt Portable has been released, offering users a free, open-source disk encryption utility that integrates seamlessly with the PortableApps.com platform for secure data management.
+**Device Code Phishing exploits the legitimate Microsoft Identity Platform’s Device Authorization Grant flow to trick users into authorizing malicious applications, allowing attackers to harvest sensitive session and refresh tokens.**
 
 ### Key Points
-- VeraCrypt Portable provides full disk encryption and virtual volume creation based on the original TrueCrypt 7.1a software.
-- The utility supports multiple encryption algorithms, including AES, Serpent, and TwoFish, alongside security tokens and keyfiles.
-- The software is packaged in the PortableApps.com format, allowing for automatic installation, settings preservation, and platform integration.
-- Users can update the application directly through the PortableApps.com platform or by downloading the installer from the official project homepage.
+- The attack leverages the OAuth 2.0 Device Authorization Grant, a protocol designed for input-constrained devices like smart TVs and printers.
+- Attackers prompt victims to enter a one-time code on the official Microsoft login page, which grants the attacker's application persistent access to the victim's account.
+- Phishing campaigns often use open redirects on trusted domains, such as Cacoo.com, to bypass security filters and direct users to malicious landing pages.
+- Once a victim completes the MFA process on the legitimate Microsoft portal, attackers gain access to OneDrive files, Teams conversations, and email accounts.
+- Organizations can mitigate this risk by disabling the Device Code Flow via Microsoft Entra ID Conditional Access policies if it is not required for business operations.
 
 ### Why it Matters
-This update ensures that users can maintain robust data security across various devices without requiring a permanent installation on a host computer. By streamlining the encryption process for portable drives, the tool provides a critical privacy solution for individuals who need to protect sensitive information while working on the go.
+This attack method is particularly dangerous because it bypasses traditional security warnings by utilizing legitimate, trusted Microsoft infrastructure for the final authentication step. By weaponizing standard authorization workflows, threat actors can maintain long-term access to corporate environments while appearing to follow standard security procedures.
 
 ============================================================
-Author:   John T. Haller
-Source:   Portableapps.com
-URL:      https://portableapps.com/news/2026-07-05--veracrypt-portable-1.26.29-released
+Author:   Roman Dedenok
+Source:   Securelist.com
+URL:      https://securelist.com/microsoft-device-code-phishing-attack/120350/
 Category: Cybersecurity
