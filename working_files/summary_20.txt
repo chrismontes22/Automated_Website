@@ -1,20 +1,19 @@
-When checking the URL isn’t enough: a Device Code Phishing attack via a Microsoft website
+Moody Bible Institute breach leaves 2.3M accounts needing salvation, says cyber expert
 ============================================================
 
-**Device Code Phishing exploits the legitimate Microsoft Identity Platform’s Device Authorization Grant flow to trick users into authorizing malicious applications, allowing attackers to harvest sensitive session and refresh tokens.**
+South Korean startup FuriosaAI is expanding its global footprint by deploying its RNGD artificial intelligence accelerators within Equinix data centers located in Lisbon, Portugal.
 
 ### Key Points
-- The attack leverages the OAuth 2.0 Device Authorization Grant, a protocol designed for input-constrained devices like smart TVs and printers.
-- Attackers prompt victims to enter a one-time code on the official Microsoft login page, which grants the attacker's application persistent access to the victim's account.
-- Phishing campaigns often use open redirects on trusted domains, such as Cacoo.com, to bypass security filters and direct users to malicious landing pages.
-- Once a victim completes the MFA process on the legitimate Microsoft portal, attackers gain access to OneDrive files, Teams conversations, and email accounts.
-- Organizations can mitigate this risk by disabling the Device Code Flow via Microsoft Entra ID Conditional Access policies if it is not required for business operations.
+- FuriosaAI is targeting the European market with its specialized RNGD hardware designed for high-performance AI workloads.
+- The deployment utilizes Equinix’s infrastructure in Lisbon to provide localized access to advanced machine learning acceleration.
+- RNGD accelerators are engineered to optimize efficiency and performance for enterprise-grade AI applications.
+- This move marks a significant international expansion for the Seoul-based chip manufacturer as it competes with established silicon providers.
 
 ### Why it Matters
-This attack method is particularly dangerous because it bypasses traditional security warnings by utilizing legitimate, trusted Microsoft infrastructure for the final authentication step. By weaponizing standard authorization workflows, threat actors can maintain long-term access to corporate environments while appearing to follow standard security procedures.
+This expansion highlights the growing demand for specialized AI hardware as companies seek alternatives to traditional GPU-heavy infrastructure to manage rising computational costs. By establishing a presence in European data centers, FuriosaAI aims to capture market share from incumbents while providing enterprises with more flexible options for scaling their artificial intelligence operations.
 
 ============================================================
-Author:   Roman Dedenok
-Source:   Securelist.com
-URL:      https://securelist.com/microsoft-device-code-phishing-attack/120350/
-Category: Cybersecurity
+Author:   Connor Jones
+Source:   Theregister.com
+URL:      https://www.theregister.com/security/2026/07/06/moody-bible-institute-breach-leaves-23m-accounts-needing-salvation-says-cyber-expert/5266827
+Category: Artificial Intelligence

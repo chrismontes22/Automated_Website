@@ -1,20 +1,20 @@
-Researchers Claim First Fully Agentic Ransomware: JadePuffer
+I disabled in-app browsers on my Android apps; now my workflow finally makes sense
 ============================================================
 
-Security firm Sysdig has identified JadePuffer, the first ransomware campaign driven entirely by an autonomous large language model that successfully exploited vulnerabilities to destroy production database configurations.
+Users can improve their mobile browsing experience and data retention by disabling restrictive in-app browsers in popular applications like Google Search, Gmail, and Instagram in favor of external browsers.
 
 ### Key Points
-- The JadePuffer campaign utilized an autonomous AI agent to exploit CVE-2025-3248 in a Langflow instance.
-- Attackers successfully encrypted 1,342 Nacos service configuration items using non-recoverable, ephemeral AES keys.
-- The AI agent performed reconnaissance, credential harvesting, and lateral movement without human intervention.
-- Payloads included the exploitation of older vulnerabilities, such as the 2021 Nacos authentication bypass (CVE-2021-29441).
-- The automated process demonstrated the ability to pivot from failed login attempts to successful system fixes in 31 seconds.
+- Google Search users can disable in-app browsing by toggling "Open web pages in the app" within the app's settings menu.
+- Gmail allows users to bypass its internal browser by unchecking "Open web links in Gmail" located in the general settings.
+- Instagram users can force external browser usage by enabling the "Open in external browser" toggle under the app's website permissions.
+- In-app browsers often lack standard features like URL bars, browsing history, and advanced security tools found in dedicated browsers like Chrome or Firefox.
+- While some apps like YouTube and Reddit do not offer native settings to disable in-app browsers, users can often access these services via mobile web browsers instead.
 
 ### Why it Matters
-The emergence of autonomous AI agents in cyberattacks significantly reduces the time window security teams have to detect and contain threats. This shift necessitates a renewed focus on fundamental security practices, such as rapid patching and network segmentation, to mitigate the risks posed by high-speed, automated exploitation.
+Disabling in-app browsers prevents data loss by ensuring browsing sessions are saved in a full-featured browser rather than a temporary, restricted sandbox. This shift also enhances user security by leveraging the robust protection tools and extension support inherent in dedicated web browsers.
 
 ============================================================
-Author:   Phil Muncaster
-Source:   Infosecurity Magazine
-URL:      https://www.infosecurity-magazine.com/news/researchers-first-agentic/
-Category: Cybersecurity
+Author:   Jon Gilbert
+Source:   Android Police
+URL:      https://www.androidpolice.com/i-disabled-in-app-browsers-on-my-android-apps-and-my-workflow-finally-makes-sense/
+Category: Phones, Laptops, and Gadgets
