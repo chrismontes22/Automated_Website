@@ -1,20 +1,20 @@
-Someone made an ESP32 passwordless fingerprint unlocker, and you can make one at home
+Cloud Storage Vs. Local Storage: Is One Safer For Your Personal Data?
 ============================================================
 
-GitHub user Zimeng Xiong has developed a DIY fingerprint scanner using an ESP32S3 microcontroller that provides a passwordless authentication alternative for personal computers by utilizing encrypted data transmission.
+Choosing between cloud and local storage requires balancing the convenience of automated off-site backups against the physical control and privacy of keeping sensitive data on personal hardware devices.
 
 ### Key Points
-- The device uses an ESP32S3 Seeduino XIAO to authenticate users via fingerprint scans.
-- It requests encrypted passwords from a host computer, types them via HID, and immediately clears its memory.
-- Security relies on the physical possession of both the computer and the hardware device.
-- Potential vulnerabilities include UART spoofing or physical tampering with the fingerprint sensor.
-- Project documentation and instructions are publicly available on GitHub for home implementation.
+- Cloud storage protects data from physical disasters like fires or theft by maintaining automated, off-site backups accessible from any location.
+- Local storage, such as USB drives or external hard drives, offers users direct control but remains vulnerable to hardware failure, wear, and physical loss.
+- External hard drives typically have a lifespan of up to five years, while USB flash drives may last for a decade or longer.
+- Security risks for cloud services often stem from weak user passwords or failure to enable multi-factor authentication rather than provider-side vulnerabilities.
+- The 3-2-1 backup rule recommends keeping three total copies of data across two different media types, with at least one copy stored off-site.
 
 ### Why it Matters
-This project highlights the growing consumer interest in moving away from traditional passwords toward biometric authentication methods. While not suitable for high-security environments, such DIY solutions demonstrate how accessible hardware can improve personal cybersecurity workflows.
+Adopting a hybrid storage strategy is the most effective way to mitigate the unique risks associated with both physical hardware failure and digital security breaches. By diversifying where data is kept, users ensure their personal information remains accessible even if one storage method is compromised or destroyed.
 
 ============================================================
-Author:   Simon Batt
-Source:   XDA Developers
-URL:      https://www.xda-developers.com/someone-made-an-esp32-passwordless-fingerprint-unlocker-and-you-can-make-one-at-home/
+Author:   staff@bgr.com (Kyle Schurman)
+Source:   BGR
+URL:      https://www.bgr.com/2207393/cloud-vs-local-storage-safer-for-personal-data/
 Category: Cybersecurity
