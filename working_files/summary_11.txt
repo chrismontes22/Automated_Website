@@ -1,20 +1,20 @@
-Alleged Operators of HiAnime Piracy Ring Arrested in Vietnam with U.S. Support
+Someone made an ESP32 passwordless fingerprint unlocker, and you can make one at home
 ============================================================
 
-Vietnamese authorities have arrested seven individuals linked to the popular piracy portal HiAnime, following a joint investigation with U.S. law enforcement into a massive illegal streaming network.
+GitHub user Zimeng Xiong has developed a DIY fingerprint scanner using an ESP32S3 microcontroller that provides a passwordless authentication alternative for personal computers by utilizing encrypted data transmission.
 
 ### Key Points
-- Vietnamese police charged seven suspects with copyright infringement and money laundering related to a network of over 100 pirate websites.
-- The operation, which included the 150-million-visit site HiAnime, allegedly generated approximately $12.8 million in advertising revenue since 2020.
-- Investigations were supported by intelligence from the U.S. Homeland Security Investigations (HSI) and the Alliance for Creativity and Entertainment (ACE).
-- Suspects reportedly laundered cryptocurrency earnings through real estate and vehicle purchases to legitimize illicit proceeds.
-- The crackdown follows U.S. diplomatic pressure, including the U.S. Trade Representative’s classification of Vietnam as a "Priority Foreign Country" regarding intellectual property.
+- The device uses an ESP32S3 Seeduino XIAO to authenticate users via fingerprint scans.
+- It requests encrypted passwords from a host computer, types them via HID, and immediately clears its memory.
+- Security relies on the physical possession of both the computer and the hardware device.
+- Potential vulnerabilities include UART spoofing or physical tampering with the fingerprint sensor.
+- Project documentation and instructions are publicly available on GitHub for home implementation.
 
 ### Why it Matters
-This enforcement action highlights the growing international cooperation between U.S. rightsholders and foreign governments to dismantle large-scale digital piracy operations. The outcome of these trials will serve as a critical test of whether Vietnam will impose deterrent prison sentences to satisfy U.S. trade demands.
+This project highlights the growing consumer interest in moving away from traditional passwords toward biometric authentication methods. While not suitable for high-security environments, such DIY solutions demonstrate how accessible hardware can improve personal cybersecurity workflows.
 
 ============================================================
-Author:   Ernesto Van der Sar
-Source:   Torrentfreak.com
-URL:      https://torrentfreak.com/alleged-operators-of-hianime-piracy-ring-arrested-in-vietnam-with-u-s-support/
+Author:   Simon Batt
+Source:   XDA Developers
+URL:      https://www.xda-developers.com/someone-made-an-esp32-passwordless-fingerprint-unlocker-and-you-can-make-one-at-home/
 Category: Cybersecurity

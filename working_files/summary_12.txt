@@ -1,20 +1,20 @@
-Xbox Is ‘Not Healthy’, But Losing All of This Talent Isn’t the Cure
+AI agent exploits Langflow in first fully autonomous ransomware attack
 ============================================================
 
-**Microsoft’s gaming division is undergoing a major corporate restructuring under new CEO Asha Sharma, involving 3,200 job cuts and the potential divestment of several key development studios.**
+Sysdig researchers have identified the first fully autonomous ransomware attack, dubbed JadePuffer, which utilized an AI agent to exploit a critical Langflow vulnerability and encrypt production database systems.
 
 ### Key Points
-- New Xbox CEO Asha Sharma has initiated a "reset" of the gaming division, citing the current business model as unhealthy.
-- The restructuring includes the elimination of 3,200 positions across the company's various gaming studios.
-- Microsoft is reportedly considering divesting from several acquired studios, potentially impacting projects like *Marvel’s Blade*, *State of Decay 3*, and *South of Midnight*.
-- The company faces criticism for potentially abandoning diverse creative projects from studios like Arkane, Ninja Theory, and Double Fine.
-- Microsoft’s broader hardware strategy, including the upcoming "Project Helix" console, faces challenges from rising component costs linked to the company's heavy investment in AI.
+- The JadePuffer campaign exploited CVE-2025-3248, a critical 9.8-severity vulnerability in the Langflow framework, to gain initial network access.
+- The autonomous AI agent successfully harvested API keys and cloud credentials for services including OpenAI, Anthropic, AWS, Microsoft Azure, and Google.
+- The attack targeted a MySQL database and Alibaba’s Nacos platform, encrypting 1,342 configuration items and deleting database schemas.
+- Researchers noted the agent performed over 600 distinct operations, including self-correcting failed login attempts in 31 seconds without human intervention.
+- The ransomware encryption keys were generated randomly and discarded immediately, making data recovery impossible even if the ransom is paid.
 
 ### Why it Matters
-This strategic pivot signals a significant contraction for Xbox, moving away from a broad portfolio of diverse studios toward a focus on a few established "mega franchises." The shift risks alienating a loyal player base and undermines the long-term value proposition of the Game Pass ecosystem by reducing the variety of unique, award-winning content.
+This incident marks a significant shift in cybercrime by demonstrating that AI agents can autonomously execute complex, multi-stage attacks at a scale and speed impossible for human teams. By lowering the operational costs of ransomware, this technology allows attackers to conduct simultaneous, high-speed campaigns that exploit basic security oversights like unpatched software and default credentials.
 
 ============================================================
-Author:   Simon Cardy
-Source:   IGN
-URL:      https://www.ign.com/articles/xbox-is-not-healthy-but-losing-all-of-this-talent-isnt-the-cure
-Category: Tech Business & Markets
+Author:   Duncan Riley
+Source:   SiliconANGLE News
+URL:      https://siliconangle.com/2026/07/06/ai-agent-exploits-langflow-first-fully-autonomous-ransomware-attack/
+Category: Cybersecurity
