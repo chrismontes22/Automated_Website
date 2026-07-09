@@ -1,20 +1,20 @@
-7 Habits That Are More Important Than Using Antivirus on Your Phone
+CISA Adds 4 Actively Exploited Adobe, Joomla, and Langflow Flaws to KEV
 ============================================================
 
-Modern smartphones feature robust built-in security, making traditional antivirus software largely unnecessary for most users who should instead prioritize account protection against phishing and social engineering scams.
+The U.S. Cybersecurity and Infrastructure Security Agency has added four critical vulnerabilities affecting Adobe ColdFusion, Langflow, and Joomla extensions to its Known Exploited Vulnerabilities catalog following active exploitation.
 
 ### Key Points
-- Apple and Google integrate advanced protections like app sandboxing and regular security updates to prevent malware from compromising mobile operating systems.
-- Mobile antivirus apps are often limited by operating system restrictions, preventing them from performing the deep system scans common on desktop computers.
-- Cybercriminals increasingly favor social engineering tactics, such as phishing texts and fake login pages, over technical exploits to steal user credentials.
-- Security experts recommend using password managers, enabling two-factor authentication, and downloading apps exclusively from official stores to maintain device safety.
-- Sideloading apps on Android devices or downloading files from unverified websites increases risk, potentially making additional security software useful for those specific users.
+- CISA added CVE-2026-48282, CVE-2026-56290, CVE-2026-55255, and CVE-2026-48908 to its KEV catalog due to confirmed real-world attacks.
+- Adobe ColdFusion (CVE-2026-48282) and JoomShaper SP Page Builder (CVE-2026-48908) both carry maximum CVSS scores of 10.0.
+- Attackers are using CVE-2026-55255 in Langflow to steal sensitive AWS and LLM provider keys through cross-tenant IDOR exploits.
+- Exploitation of Joomlack Page Builder (CVE-2026-56290) involves deploying web shells, with patches available in version 3.6.0.
+- Federal Civilian Executive Branch agencies must apply all necessary security updates by the July 10, 2026, deadline to mitigate these risks.
 
 ### Why it Matters
-Focusing on account security rather than antivirus software addresses the most common modern cyber threats, which target human behavior instead of device vulnerabilities. By adopting better digital hygiene, users can significantly reduce the risk of identity theft and unauthorized account access.
+- These vulnerabilities represent a significant threat to enterprise infrastructure, as attackers are actively using them to gain unauthorized access, deploy web shells, and steal cloud credentials. Organizations must prioritize patching these specific flaws to prevent data breaches and the potential deployment of botnets or ransomware.
 
 ============================================================
-Author:   Marshall Gunnell
-Source:   CNET
-URL:      https://www.cnet.com/tech/services-and-software/7-habits-more-important-than-antivirus-for-your-phone/
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/07/cisa-adds-4-actively-exploited-adobe.html
 Category: Cybersecurity
