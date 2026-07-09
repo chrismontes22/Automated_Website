@@ -1,20 +1,20 @@
-Orbia CISO Miranda Ritchie on building security into sustainable infrastructure
+PSA: macOS 28 will drop support for encrypted Mac OS Extended volumes
 ============================================================
 
-Orbia CISO Miranda Ritchie explains how the company integrates cybersecurity into industrial infrastructure to protect physical processes, human safety, and environmental sustainability across its global manufacturing operations.
+Apple has announced that macOS 28 will drop support for encrypted Mac OS Extended (HFS+) storage volumes, requiring users to decrypt or reformat their drives to maintain compatibility.
 
 ### Key Points
-- Orbia operates over 100 production sites in more than 50 countries, managing diverse industrial systems including chemical production and precision agriculture.
-- The company prioritizes a "safety-first" culture, treating cyber incidents as potential threats to physical equipment, human health, and the environment.
-- Ritchie emphasizes moving away from the "trusted network" assumption by implementing zero-trust, network segmentation, and secure remote access for legacy hardware.
-- Cyber teams are embedded early in project design phases to ensure secure-by-design principles are applied before new technologies are deployed.
-- Orbia recently conducted its first operational technology (OT) cyber incident tabletop exercise to align leadership on the intersection of security and business resilience.
+- Starting with macOS 28, encrypted Mac OS Extended volumes will no longer be supported on Mac computers.
+- Users must either decrypt their existing HFS+ volumes or reformat them to the modern APFS file system.
+- Apple will begin issuing notifications in macOS 26 to alert users if they are currently using an incompatible encrypted volume.
+- Unencrypted Mac OS Extended volumes will remain compatible with macOS 28 and future versions of the operating system.
+- Users can verify their drive status by selecting a volume in Disk Utility and checking for the "Encrypted" label.
 
 ### Why it Matters
-Integrating cybersecurity into industrial operations is critical for companies managing physical infrastructure where digital failures can cause real-world environmental or safety disasters. By treating security as a core component of sustainability and operational resilience, organizations can scale new technologies faster while mitigating the risks associated with aging hardware and distributed networks.
+This transition marks another step in Apple's long-term effort to phase out legacy file systems in favor of the more secure and efficient APFS. Users relying on older external storage or legacy backup drives must take proactive steps to migrate their data to avoid potential access issues after the update.
 
 ============================================================
-Author:   Mirko Zorz
-Source:   Help Net Security
-URL:      https://www.helpnetsecurity.com/2026/07/08/miranda-ritchie-orbia-industrial-cybersecurity/
-Category: Cybersecurity
+Author:   Marcus Mendes
+Source:   9to5Mac
+URL:      https://9to5mac.com/2026/07/08/psa-macos-28-will-drop-support-for-encrypted-mac-os-extended-volumes/
+Category: Phones, Laptops, and Gadgets

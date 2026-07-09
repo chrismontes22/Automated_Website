@@ -1,20 +1,20 @@
-Bitcoin under pressure as U.S.-Iran escalation lifts oil
+I audited my Windows laptop on hotel Wi-Fi and was shocked by what it exposed
 ============================================================
 
-Bitcoin and major cryptocurrencies declined as renewed aerial strikes between the United States and Iran triggered a surge in oil prices and heightened global economic inflation concerns.
+**Windows users should audit specific network and sharing settings before connecting to public Wi-Fi to prevent unauthorized access to files and background services configured for private home networks.**
 
 ### Key Points
-- Bitcoin fell to $62,657, while Ether, XRP, and Solana recorded losses between 1% and 2.3% during Asian trading hours.
-- WTI crude oil futures rose over 2% to $72.27 per barrel following the escalation of military hostilities in the Middle East.
-- The U.S. launched strikes against Iran after attacks on tankers in the Strait of Hormuz, prompting retaliatory Iranian strikes on military installations.
-- Former President Donald Trump declared the existing ceasefire with Iran effectively over, citing a breakdown in diplomatic relations.
-- Rising oil prices have renewed fears of global interest rate hikes, which typically reduce investor appetite for high-risk assets like digital currencies.
+- Change the Windows network profile from Private to Public to restrict automatic trust and discovery on shared networks.
+- Disable Network Discovery and File and Printer Sharing in Advanced Sharing Settings to hide the device from other users.
+- Use the PowerShell command `Get-NetTCPConnection` to identify active services listening for incoming network connections.
+- Utilize the Sysinternals tool TCPView to monitor real-time background traffic and identify potentially insecure applications.
+- Review startup applications in Windows Settings to prevent remote access or file-sharing tools from running automatically on public connections.
 
 ### Why it Matters
-The escalation of geopolitical conflict threatens to destabilize global markets by reigniting inflation fears and forcing central banks to maintain higher interest rates. This environment discourages investment in volatile assets like cryptocurrencies as traders shift capital toward safer, yield-bearing alternatives.
+Many Windows laptops are configured for trusted home environments, which leaves them vulnerable when exposed to the open, untrusted infrastructure of hotels or airports. Performing these manual security checks prevents sensitive data exposure and limits the attack surface created by background services and file-sharing protocols.
 
 ============================================================
-Author:   Omkar Godbole
-Source:   CoinDesk
-URL:      https://www.coindesk.com/markets/2026/07/08/bitcoin-under-pressure-as-u-s-iran-escalation-lifts-oil
-Category: Tech Business & Markets
+Author:   Gregory Gibson
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/i-audited-my-windows-laptop-on-hotel-wi-fi-and-was-shocked-by-what-it-exposed/
+Category: Cybersecurity

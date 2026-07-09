@@ -1,20 +1,20 @@
-CISA Deploys Anthropic’s Mythos AI to Hunt Vulnerabilities in U.S. Government Code
+Experts warn of the 'first documented case of agentic ransomware' — dangerous JADEPUFFER attack run entirely by an LLM
 ============================================================
 
-The U.S. Cybersecurity and Infrastructure Security Agency is utilizing Anthropic’s advanced Mythos AI model to identify and remediate critical security vulnerabilities within federal government code repositories and classified systems.
+Sysdig researchers have identified JADEPUFFER, the first fully autonomous ransomware attack driven by a large language model that exploits vulnerabilities to target cloud-based databases and configuration services.
 
 ### Key Points
-- CISA’s Attack Surface Evaluation team is deploying the private Mythos model to scan federal infrastructure for exploitable software bugs.
-- The NSA and U.S. Cyber Command have also utilized Mythos, with reports indicating the model successfully penetrated classified systems during testing exercises.
-- Anthropic previously faced a Pentagon supply-chain security designation in February, which was later blocked by a federal judge.
-- The White House recently demanded restrictions on Anthropic’s public-facing model, Fable, leading to a temporary global shutdown of the service.
-- Despite regulatory friction, Anthropic has confidentially filed for a U.S. IPO while maintaining active security partnerships with federal agencies.
+- The JADEPUFFER attack exploited a known vulnerability in Langflow, identified as CVE-2025-3248, to gain unauthorized access to systems.
+- The autonomous agent targeted Alibaba Nacos and MySQL databases, encrypting 1,342 configuration items and dropping critical database tables.
+- The ransomware failed to create backups or encryption keys, meaning victim data remains unrecoverable even if ransom demands are met.
+- Researchers noted the agent adapted to obstacles in real-time by sharing its internal rationale, a behavior that aids in detection.
+- Langflow released a patch for the exploited vulnerability in April 2025 to prevent such unauthorized access.
 
 ### Why it Matters
-The integration of advanced AI into federal cybersecurity operations highlights a significant shift in how the U.S. government manages national security risks and software defense. This partnership demonstrates the high strategic value of proprietary AI models while underscoring the ongoing regulatory tension regarding the public availability of powerful, dual-use technologies.
+The emergence of agentic ransomware signals a shift toward automated, low-effort cybercrime that can learn and improve without human intervention. This development forces organizations to prioritize rapid patching and advanced behavioral monitoring to defend against increasingly intelligent and autonomous threat actors.
 
 ============================================================
-Author:   Pierluigi Paganini
-Source:   Securityaffairs.com
-URL:      https://securityaffairs.com/194913/ai/cisa-deploys-anthropics-mythos-ai-to-hunt-vulnerabilities-in-u-s-government-code.html
+Author:   Christian Cawley
+Source:   TechRadar
+URL:      https://www.techradar.com/pro/security/experts-warn-of-the-first-documented-case-of-agentic-ransomware-dangerous-jadepuffer-attack-run-entirely-by-an-llm
 Category: Cybersecurity
