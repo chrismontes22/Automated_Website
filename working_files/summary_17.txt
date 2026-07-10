@@ -1,20 +1,20 @@
-What's slowing down the AI buildout
+Is It Safe to Host HTML That Runs Its Own JavaScript?
 ============================================================
 
-The rapid expansion of AI data centers is currently constrained by inefficient electric grid interconnection processes rather than a fundamental shortage of electricity generation capacity across the United States.
+ShareMyPage developer explains how the platform securely hosts user-generated HTML and JavaScript by utilizing sandboxed iframes and isolated, cookieless origins to prevent session hijacking and cross-site scripting attacks.
 
 ### Key Points
-- Major AI projects like the $40 billion Stargate campus require gigawatt-scale power, straining existing infrastructure and grid capacity.
-- The median wait time for power plant grid interconnection has surged from under 20 months in 2005 to 55 months by 2023.
-- Current "first-come, first-served" queue systems are backlogged with speculative projects, preventing high-value infrastructure from connecting efficiently.
-- Grid operators face significant congestion costs, which rose 45% to $11.5 billion in 2023 due to transmission bottlenecks.
-- Proposed solutions include auctioning grid capacity, adopting "connect and manage" policies, and incentivizing data centers to use on-site backup during peak demand.
+- ShareMyPage avoids sanitizing HTML to preserve the functionality of interactive, data-driven web prototypes.
+- The platform uses sandboxed iframes with the `allow-same-origin` permission omitted to ensure scripts run within a null origin.
+- Content is served from a separate, temporary origin that contains no session cookies or authentication tokens.
+- The architecture prevents XSS and session hijacking by ensuring that even a successful sandbox escape would land in an empty, non-privileged environment.
+- The security model does not prevent CPU-intensive tasks like cryptomining or potential browser-level zero-day exploits.
 
 ### Why it Matters
-The inability to connect new power-hungry infrastructure to the grid threatens to stall the economic potential of the AI boom and broader industrial electrification. By reforming outdated interconnection policies, regulators can ensure that critical technology projects receive the energy they need without compromising grid reliability or driving up consumer costs.
+This approach demonstrates a "defense-in-depth" strategy that prioritizes architectural isolation over the often-unreliable practice of filtering malicious code. By assuming the sandbox will eventually fail, the developer creates a system where security breaches result in no data loss, offering a robust model for platforms that must execute untrusted third-party code.
 
 ============================================================
-Author:   Works in Progress, Chris Gillett
-Source:   Worksinprogress.news
-URL:      https://www.worksinprogress.news/p/ai-is-bottlenecked-by-the-grid
-Category: Artificial Intelligence
+Author:   ShareMyPage
+Source:   Sharemypage.app
+URL:      https://sharemypage.app/blog/is-it-safe-to-host-html-that-runs-javascript
+Category: Cybersecurity

@@ -1,20 +1,19 @@
-What's the best way to do authentication in modern applications
+iPhone 18 Pro Max Said to Be Thicker and Heavier Than Predecessor
 ============================================================
 
-**Storing authentication tokens in browser-accessible storage like localStorage exposes applications to significant security risks, making server-side session cookies the recommended standard for modern web development.**
+Apple’s upcoming iPhone 18 Pro Max is expected to be thicker and heavier than its predecessor due to the integration of a significantly larger battery and new cooling components.
 
 ### Key Points
-- **LocalStorage Risks:** Storing JWTs in localStorage allows malicious scripts to exfiltrate tokens via Cross-Site Scripting (XSS) attacks.
-- **Cookie Security:** Using `HttpOnly`, `Secure`, and `SameSite` cookie flags prevents JavaScript from accessing session data, significantly reducing the risk of token theft.
-- **CSRF Mitigation:** Developers must implement CSRF tokens, `SameSite` attributes, and origin-checking headers to prevent unauthorized requests from malicious third-party sites.
-- **BFF Pattern:** The "Backend for Frontend" (BFF) architecture keeps sensitive tokens on the server, ensuring the browser only holds a non-sensitive session identifier.
-- **Emerging Threats:** Infostealer malware can bypass browser-based protections by reading cookies directly from disk, necessitating new hardware-backed solutions like Device Bound Session Credentials (DBSC).
+- The iPhone 18 Pro Max will reportedly measure 9mm in thickness and weigh approximately 240 grams.
+- Regulatory filings indicate the device will feature a battery capacity of up to 5,567mAh, an increase of nearly 500mAh.
+- A new stainless steel vapor chamber is expected to contribute to the increased physical dimensions and weight.
+- The device is projected to launch in September alongside Apple’s first foldable smartphone model.
 
 ### Why it Matters
-Moving authentication logic to the server protects sensitive user data from common browser-based vulnerabilities that client-side storage cannot defend against. By adopting the BFF pattern and hardware-bound sessions, developers can significantly reduce the "blast radius" of potential security breaches and ensure robust protection against evolving cyber threats.
+This design shift highlights Apple's ongoing trade-off between maintaining a slim form factor and meeting consumer demand for extended battery life. The move suggests that future flagship performance and thermal management requirements may prioritize internal capacity over the ultra-lightweight designs seen in recent years.
 
 ============================================================
-Author:   Neciu Dan
-Source:   Neciudan.dev
-URL:      https://neciudan.dev/most-secure-way-to-store-auth-token
-Category: Cybersecurity
+Author:   Tim Hardwick
+Source:   MacRumors
+URL:      https://www.macrumors.com/2026/07/09/iphone-18-pro-max-thicker-heavier/
+Category: Phones, Laptops, and Gadgets
