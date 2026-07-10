@@ -1,20 +1,20 @@
-Meta's Muse Image can use public Instagram profiles for AI creations
+What's the best way to do authentication in modern applications
 ============================================================
 
-Meta has unveiled Muse Image, a new generative AI model for Meta AI that creates personalized images by incorporating public Instagram profiles and integrating across WhatsApp and Instagram.
+**Storing authentication tokens in browser-accessible storage like localStorage exposes applications to significant security risks, making server-side session cookies the recommended standard for modern web development.**
 
 ### Key Points
-- Muse Image allows users to @-mention Instagram contacts to include their public photos in AI-generated content.
-- The tool supports complex prompts, web-based context searching, and the creation of legible infographics or how-to guides.
-- Meta is rolling out 30 new AI-powered effects for Instagram Stories alongside image generation capabilities within WhatsApp chats.
-- The model includes suggested presets for photo editing and room redesigns using products from Facebook Marketplace.
-- Meta plans to expand Muse Image availability to more countries and integrate the technology into Facebook and Messenger.
+- **LocalStorage Risks:** Storing JWTs in localStorage allows malicious scripts to exfiltrate tokens via Cross-Site Scripting (XSS) attacks.
+- **Cookie Security:** Using `HttpOnly`, `Secure`, and `SameSite` cookie flags prevents JavaScript from accessing session data, significantly reducing the risk of token theft.
+- **CSRF Mitigation:** Developers must implement CSRF tokens, `SameSite` attributes, and origin-checking headers to prevent unauthorized requests from malicious third-party sites.
+- **BFF Pattern:** The "Backend for Frontend" (BFF) architecture keeps sensitive tokens on the server, ensuring the browser only holds a non-sensitive session identifier.
+- **Emerging Threats:** Infostealer malware can bypass browser-based protections by reading cookies directly from disk, necessitating new hardware-backed solutions like Device Bound Session Credentials (DBSC).
 
 ### Why it Matters
-This release signals Meta's strategy to differentiate its AI tools by anchoring them in existing social networks and personal user data. By integrating generative capabilities directly into its messaging and social platforms, Meta aims to increase user engagement and streamline content creation for its massive global audience.
+Moving authentication logic to the server protects sensitive user data from common browser-based vulnerabilities that client-side storage cannot defend against. By adopting the BFF pattern and hardware-bound sessions, developers can significantly reduce the "blast radius" of potential security breaches and ensure robust protection against evolving cyber threats.
 
 ============================================================
-Author:   nickodiaz@sbcglobal.net (Nickolas Diaz) , Nickolas Diaz
-Source:   Android Central
-URL:      https://www.androidcentral.com/apps-software/meta/meta-ai-muse-image-people-on-instagram-fun-creations
-Category: Artificial Intelligence
+Author:   Neciu Dan
+Source:   Neciudan.dev
+URL:      https://neciudan.dev/most-secure-way-to-store-auth-token
+Category: Cybersecurity

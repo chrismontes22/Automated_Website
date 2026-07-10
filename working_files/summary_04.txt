@@ -1,20 +1,20 @@
-SCMBANKER Malware Uses ClickFix Lures to Target Mexican Banking Users
+Google's new remote attestation scheme is every bit as terrible as its old remote attestation scheme
 ============================================================
 
-A sophisticated threat actor known as REF6045 is targeting Mexican financial institutions using the SCMBANKER malware toolkit, which leverages fake CAPTCHA lures and AI-generated scripts to compromise users.
+Google is testing a new "reCAPTCHA Mobile Verification" feature that uses device hardware to identify and potentially block users running independent, privacy-focused versions of the Android operating system.
 
 ### Key Points
-- The REF6045 group uses "ClickFix" lures, masquerading as CAPTCHA challenges to trick victims into executing malicious PowerShell commands.
-- SCMBANKER malware monitors banking sessions, hijacks clipboards to reroute transactions, and deploys remote-access tools for full system takeovers.
-- Researchers at Elastic Security Labs discovered the operation after an operational security lapse exposed the group's entire web root directory.
-- The toolkit includes specialized modules for vishing, browser redirection, and monitoring window titles for specific Mexican banks and cryptocurrency exchanges.
-- Analysis indicates the attackers utilized large language models to generate significant portions of the malicious code, resulting in a mix of clean and obfuscated scripts.
+- The experimental tool utilizes a device's Trusted Platform Module (TPM) or secure enclave to verify software configurations.
+- It aims to restrict access for users of "de-Googled" Android alternatives like CalyxOS, PureOS, and GrapheneOS.
+- This initiative follows previous controversial proposals like Web Environment Integrity (WEI), which sought to force devices to disclose system details to servers.
+- Critics argue these measures undermine user agency by preventing the use of ad-blockers, privacy tools, and accessibility modifications.
+- Google faces ongoing scrutiny for its market dominance, including recent federal antitrust rulings regarding its search and advertising practices.
 
 ### Why it Matters
-This campaign highlights the growing trend of threat actors using generative AI to rapidly develop and deploy complex malware toolkits against specific regional financial sectors. By automating the creation of phishing and monitoring tools, attackers can scale their operations while maintaining a persistent presence on victim devices to facilitate fraud.
+These technical restrictions threaten the open nature of the web by allowing companies to dictate how users interact with digital services. By enforcing "walled garden" environments, Google risks centralizing control over user privacy and limiting the ability of individuals to modify their own devices.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/07/scmbanker-malware-uses-clickfix-lures.html
+Author:   Cory Doctorow
+Source:   EFF
+URL:      https://www.eff.org/deeplinks/2026/07/googles-new-remote-attestation-scheme-every-bit-terrible-its-old-remote
 Category: Cybersecurity
