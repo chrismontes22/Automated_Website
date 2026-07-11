@@ -1,20 +1,20 @@
-Microsoft Warns of GigaWiper Backdoor Built to Destroy Windows PCs
+AI browsers haven't gone anywhere, and this one claims you can have personalization without giving up your privacy
 ============================================================
 
-Microsoft has identified GigaWiper, a sophisticated Windows backdoor that grants attackers remote control over infected systems before executing destructive commands to permanently wipe data or encrypt files.
+The new Jatter web browser distinguishes itself from other AI-powered competitors by prioritizing user privacy and local data processing over agentic, task-oriented automation features for daily browsing.
 
 ### Key Points
-- GigaWiper combines code from three older malware families, including Crucio ransomware and FlockWiper, into a single, modular backdoor.
-- The malware maintains persistence by creating a scheduled task disguised as a "OneDrive Update" that runs at system startup.
-- Attackers can remotely execute 20 different commands, including screen recording, registry modification, and the ability to overwrite physical drive partitions.
-- The encryption function mimics ransomware but lacks a recovery mechanism, as randomly generated keys are never saved by the operators.
-- Microsoft Defender now includes specific detections for GigaWiper, and the company advises enabling cloud-delivered protection and endpoint detection in block mode.
+- Jatter is a Chromium-based browser available on macOS, Windows, iOS, and Android that focuses on "personal answers" derived from user browsing habits.
+- Unlike agentic browsers that perform tasks like booking flights, Jatter functions as a passive assistant that synthesizes information from sites the user explicitly authorizes.
+- The browser features five integrated apps—Chats, Personal Answers, Notes, Maps, and Settings—to organize and query data learned from the user's digital activity.
+- Developers claim all personal data is encrypted end-to-end on the device, with no information used for model training and a one-click option to wipe learned history.
+- The company behind Jatter, formerly known as Beacon, has a history of developing privacy-focused tools, including encrypted location-sharing and anonymized chat applications.
 
 ### Why it Matters
-This threat represents a significant evolution in malware design by integrating surveillance, remote administration, and multiple destruction methods into one persistent implant. Organizations must prioritize monitoring for suspicious scheduled tasks and unauthorized disk operations to prevent potential data loss from these sophisticated, multi-stage attacks.
+Jatter represents a shift in the AI browser market toward privacy-first personalization, challenging the industry trend of building autonomous agents that require broad account access. While its security claims remain difficult for external users to audit, the browser offers a transparent, opt-in model that may appeal to privacy-conscious users wary of data-hungry AI tools.
 
 ============================================================
-Author:   Waqas
-Source:   HackRead
-URL:      https://hackread.com/microsoft-gigawiper-backdoor-destroy-windows-pcs/
-Category: Cybersecurity
+Author:   Mahnoor Faisal
+Source:   XDA Developers
+URL:      https://www.xda-developers.com/jatter-claims-you-can-have-personalization-without-giving-up-your-privacy/
+Category: Artificial Intelligence

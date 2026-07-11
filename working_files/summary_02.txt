@@ -1,20 +1,19 @@
-The Fed's new task forces feature big names in business, from Marc Andreessen to Asha Sharma
+This Week in Security: Escaping Linux VMs, Vulnerable Solar, Confusing AI (Again), and Confusing NPM Malware
 ============================================================
 
-Fed Chair Kevin Warsh has appointed five expert task forces comprising prominent economists and business leaders to develop comprehensive recommendations for reforming the Federal Reserve’s operations by year-end.
+A critical 16-year-old vulnerability in the Linux KVM subsystem allows guest virtual machines to corrupt host memory, potentially impacting major cloud providers like Amazon AWS and Google GCP.
 
 ### Key Points
-- The task forces will focus on five critical areas: communications, balance sheet policy, economic data, productivity and jobs, and inflation frameworks.
-- Notable appointees include former Bank of England Governor Mervyn King, former Reserve Bank of India Governor Raghuram Rajan, and Walmart’s former CEO Doug McMillon.
-- The productivity and jobs panel features tech industry leaders Marc Andreessen and Xbox CEO Asha Sharma to analyze the economic impact of artificial intelligence.
-- The inflation framework group includes Nobel laureate Thomas J. Sargent and Harvard economist Greg Mankiw to evaluate current price stability measures.
-- These groups are tasked with delivering formal recommendations to the central bank by the end of the calendar year.
+- The Januscape vulnerability enables guest-to-host isolation breakouts within the Linux Kernel Virtual Machine (KVM) environment.
+- KVM is a foundational technology for major cloud platforms, including Amazon AWS, Google GCP, and Digital Ocean.
+- The flaw has existed for 16 years, spanning nearly the entire operational history of the Linux KVM subsystem.
+- Patches for the vulnerability are currently available in the Linux mainline kernel for immediate deployment by hosting providers.
 
 ### Why it Matters
-These task forces signal a significant shift in how the Federal Reserve approaches monetary policy, data utilization, and the integration of emerging technologies like artificial intelligence. By incorporating diverse perspectives from global central bankers and private sector executives, the Fed aims to modernize its framework to better address contemporary economic challenges.
+This vulnerability poses a significant security risk to shared hosting environments that rely on KVM to isolate untrusted guest systems from physical hardware. Because the flaw allows for memory corruption and potential cross-guest access, it represents a critical threat to the integrity of multi-tenant cloud infrastructure.
 
 ============================================================
-Author:   Katherine Tangalakis-Lippert
-Source:   Business Insider
-URL:      https://www.businessinsider.com/fed-chair-warsh-task-force-members-2026-7#article
-Category: Tech Business & Markets
+Author:   Mike Kershaw
+Source:   Hackaday
+URL:      https://hackaday.com/2026/07/10/this-week-in-security-escaping-linux-vms-vulnerable-solar-confusing-ai-again-and-confusing-npm-malware/
+Category: Cybersecurity

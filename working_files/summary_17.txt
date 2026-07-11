@@ -1,20 +1,20 @@
-Browser Fingerprinting – How websites track you across internet –without cookies
+RoguePlanet let hackers take over your PC. Microsoft just patched it
 ============================================================
 
-Browser fingerprinting is a sophisticated tracking technique that identifies users by collecting unique technical device data, operating silently in the background without relying on traditional cookies or user consent.
+Microsoft has released an automatic security update for Windows Defender to patch the critical RoguePlanet zero-day vulnerability, identified as CVE-2026-50656, which previously allowed unauthorized full system access.
 
 ### Key Points
-- Fingerprinting scripts aggregate data like GPU details, installed fonts, screen resolution, and browser versions to create a mathematically unique identifier for each device.
-- Techniques such as canvas, WebGL, and audio probing extract hardware-specific characteristics that remain consistent even in incognito mode or after clearing browser history.
-- While ad tech companies use these profiles for behavioral tracking, banks and security platforms utilize the same data for fraud detection and bot prevention.
-- A VPN does not prevent fingerprinting because it only masks an IP address, leaving the underlying hardware and software signals fully exposed to tracking scripts.
-- Privacy-focused browsers like Brave, Firefox, and Tor offer varying levels of protection by either randomizing signals or standardizing device data to make users appear identical.
+- Microsoft issued a patch for the RoguePlanet zero-day vulnerability, officially tracked as CVE-2026-50656.
+- The flaw allowed attackers to gain complete control over affected Windows systems through the Malware Protection Engine.
+- Security researcher Nightmare Eclipse discovered the vulnerability and reported it alongside several other Windows security flaws.
+- Users receive the fix automatically through the standard Windows Update process without requiring manual intervention.
+- Microsoft confirmed the update is now active and advises users to verify their Malware Protection Engine version.
 
 ### Why it Matters
-Browser fingerprinting represents a significant shift in digital privacy because it targets inherent device characteristics that users cannot easily delete or reset. This creates a persistent tracking method that challenges current regulatory frameworks and necessitates specialized browser configurations to maintain anonymity online.
+This update is essential for maintaining system integrity, as the vulnerability posed a significant risk of unauthorized remote access and potential data compromise. Ensuring the latest security patches are installed remains the primary defense against evolving threats targeting core Windows components.
 
 ============================================================
-Author:   MySysInfo
-Source:   Mysysinfo.com
-URL:      https://mysysinfo.com/blog/what-is-browser-fingerprinting
+Author:   Mikael Markander, Laura Pippig
+Source:   PCWorld
+URL:      https://www.pcworld.com/article/3188750/rogueplanet-let-hackers-take-over-your-pc-microsoft-just-patched-it.html
 Category: Cybersecurity
