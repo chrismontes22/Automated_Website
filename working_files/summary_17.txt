@@ -1,20 +1,20 @@
-Is It Safe to Host HTML That Runs Its Own JavaScript?
+Browser Fingerprinting – How websites track you across internet –without cookies
 ============================================================
 
-ShareMyPage developer explains how the platform securely hosts user-generated HTML and JavaScript by utilizing sandboxed iframes and isolated, cookieless origins to prevent session hijacking and cross-site scripting attacks.
+Browser fingerprinting is a sophisticated tracking technique that identifies users by collecting unique technical device data, operating silently in the background without relying on traditional cookies or user consent.
 
 ### Key Points
-- ShareMyPage avoids sanitizing HTML to preserve the functionality of interactive, data-driven web prototypes.
-- The platform uses sandboxed iframes with the `allow-same-origin` permission omitted to ensure scripts run within a null origin.
-- Content is served from a separate, temporary origin that contains no session cookies or authentication tokens.
-- The architecture prevents XSS and session hijacking by ensuring that even a successful sandbox escape would land in an empty, non-privileged environment.
-- The security model does not prevent CPU-intensive tasks like cryptomining or potential browser-level zero-day exploits.
+- Fingerprinting scripts aggregate data like GPU details, installed fonts, screen resolution, and browser versions to create a mathematically unique identifier for each device.
+- Techniques such as canvas, WebGL, and audio probing extract hardware-specific characteristics that remain consistent even in incognito mode or after clearing browser history.
+- While ad tech companies use these profiles for behavioral tracking, banks and security platforms utilize the same data for fraud detection and bot prevention.
+- A VPN does not prevent fingerprinting because it only masks an IP address, leaving the underlying hardware and software signals fully exposed to tracking scripts.
+- Privacy-focused browsers like Brave, Firefox, and Tor offer varying levels of protection by either randomizing signals or standardizing device data to make users appear identical.
 
 ### Why it Matters
-This approach demonstrates a "defense-in-depth" strategy that prioritizes architectural isolation over the often-unreliable practice of filtering malicious code. By assuming the sandbox will eventually fail, the developer creates a system where security breaches result in no data loss, offering a robust model for platforms that must execute untrusted third-party code.
+Browser fingerprinting represents a significant shift in digital privacy because it targets inherent device characteristics that users cannot easily delete or reset. This creates a persistent tracking method that challenges current regulatory frameworks and necessitates specialized browser configurations to maintain anonymity online.
 
 ============================================================
-Author:   ShareMyPage
-Source:   Sharemypage.app
-URL:      https://sharemypage.app/blog/is-it-safe-to-host-html-that-runs-javascript
+Author:   MySysInfo
+Source:   Mysysinfo.com
+URL:      https://mysysinfo.com/blog/what-is-browser-fingerprinting
 Category: Cybersecurity

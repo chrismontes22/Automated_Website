@@ -1,20 +1,20 @@
-This antivirus doesn’t slow your PC down — it quietly keeps it safe for $19.99
+Hackers tried to backdoor Injective npm package to steal wallet keys
 ============================================================
 
-StackCommerce has released a comprehensive series of 2026 consumer technology buying guides covering essential hardware, home robotics, cybersecurity software, and networking solutions for modern home and office environments.
+Hackers compromised the @injectivelabs/sdk-ts NPM package in a supply chain attack, attempting to steal cryptocurrency wallet private keys and seed phrases through malicious code injections.
 
 ### Key Points
-- The collection features specialized guides for Dell and Alienware laptops, monitors, and gaming gear.
-- Home maintenance technology is covered through dedicated buying guides for ECOVACS robot vacuums and Navimow robotic lawn mowers.
-- Cybersecurity and data privacy resources include guides for 1Password, Avast, Norton, and Optery.
-- Networking and performance hardware are addressed via TP-Link mesh Wi-Fi, MSI Wi-Fi 7, and Seagate external storage guides.
-- Gaming-focused content includes recommendations for GIGABYTE AI laptops, ROG custom keyboards, and ZOTAC graphics cards.
+- Security firm Socket identified that version 1.20.21 of the Injective SDK was modified via a compromised GitHub account starting June 8.
+- The malicious code was designed to hook into key-derivation functions to record and exfiltrate private keys and mnemonics to a fraudulent server.
+- Socket reported 310 downloads of the malicious package, though Injective Labs CEO Eric Chen stated the issue was resolved and claimed zero successful downloads.
+- The compromise extended to 17 other packages within the Injective Labs NPM scope, potentially exposing developers who did not install the SDK directly.
+- Injective Labs has deprecated the affected versions and confirmed that no funds on the blockchain network are currently at risk.
 
 ### Why it Matters
-These guides provide consumers with curated purchasing advice across a wide range of competitive technology sectors as manufacturers transition toward AI-integrated hardware and advanced connectivity standards. By consolidating expert recommendations, the series helps users navigate complex product ecosystems to make informed decisions for their home and professional setups.
+This incident highlights the growing trend of supply chain attacks targeting developer tools rather than direct blockchain vulnerabilities. As attackers increasingly exploit trusted platforms like GitHub and NPM, developers must remain vigilant about the integrity of third-party software dependencies to prevent widespread wallet compromises.
 
 ============================================================
-Author:   DealPost Team
-Source:   PCWorld
-URL:      https://www.pcworld.com/article/3183616/this-antivirus-doesnt-slow-your-pc-down-it-quietly-keeps-it-safe-for-19-99.html
+Author:   Cointelegraph by Martin Young
+Source:   Cointelegraph
+URL:      https://cointelegraph.com/news/hackers-compromise-injective-npm-package-with-malware-to-steal-wallet-keys
 Category: Cybersecurity

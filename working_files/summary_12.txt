@@ -1,19 +1,20 @@
-PSA: Flip these two Instagram toggles now to stop people using your face
+Injective SDK on npm infected with cryptocurrency wallet stealer
 ============================================================
 
-Meta has launched its new Muse Image AI tool for Instagram, which automatically allows public profile photos and posts to be used as prompts for generative AI content.
+Hackers compromised the Injective Labs SDK GitHub repository to distribute a malicious npm package designed to steal cryptocurrency wallet private keys and mnemonic seed phrases from unsuspecting software developers.
 
 ### Key Points
-- Meta introduced Muse Image, an AI-powered creative tool integrated into Instagram, WhatsApp, and Stories.
-- Public Instagram accounts are automatically opted into a feature allowing others to use their content for AI remixes.
-- Users can disable this data usage by toggling off settings under the "Sharing and Reuse" menu in the Instagram app.
-- The update includes over 30 new AI-powered effects for Stories and conversational image generation within direct chats.
+- Attackers compromised a contributor's GitHub account on June 8 to inject malicious code into version 1.20.21 of the @injectivelabs/sdk-ts package.
+- The malware specifically targets wallet functions, exfiltrating sensitive seed phrases and private keys via HTTP POST requests to a public infrastructure endpoint.
+- Security researchers at Socket, Ox Security, and StepSecurity confirmed the malicious package was downloaded 310 times before being deprecated.
+- The compromised SDK is a critical tool for building decentralized finance applications, trading bots, and cryptocurrency wallets on the Injective blockchain.
+- Developers who utilized the affected version are advised to immediately transfer digital assets to new wallets and rotate all compromised security credentials.
 
 ### Why it Matters
-This update highlights ongoing tensions between social media platforms and user privacy regarding the training and utilization of generative AI models. By defaulting users into data sharing, Meta faces increased scrutiny over how personal likenesses and content are leveraged for third-party creative tools.
+This supply-chain attack highlights the significant risks posed to the decentralized finance ecosystem when core development tools are weaponized to target end-user assets. By compromising a trusted software dependency, attackers can bypass traditional security measures and gain unauthorized access to private keys, potentially leading to irreversible financial losses for developers and their users.
 
 ============================================================
-Author:   Ben Lovejoy
-Source:   9to5Mac
-URL:      https://9to5mac.com/2026/07/09/psa-flip-these-two-instagram-toggles-now-to-stop-people-using-your-face/
-Category: Artificial Intelligence
+Author:   Bill Toulas
+Source:   BleepingComputer
+URL:      https://www.bleepingcomputer.com/news/security/injective-sdk-on-npm-infected-with-cryptocurrency-wallet-stealer/
+Category: Cybersecurity
