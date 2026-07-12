@@ -1,20 +1,20 @@
-Meet the crypto billionaires building a world where money buys you a vote
+ZeroFS vs. Amazon S3 Files
 ============================================================
 
-The Free Republic of Liberland, a self-proclaimed micronation on the Danube, serves as a testing ground for tech billionaires aiming to replace traditional democratic governance with blockchain-based systems.
+Amazon S3 Files and ZeroFS both provide POSIX-compliant filesystem interfaces for object storage, but they differ significantly in how they manage data layout, interoperability, and storage performance costs.
 
 ### Key Points
-- Liberland is a disputed territory between Serbia and Croatia, founded by Vít Jedlička as a libertarian, tax-free state governed by cryptocurrency tokens.
-- Chinese crypto entrepreneur Justin Sun, who serves as Liberland’s prime minister, has invested heavily in the project alongside other tech billionaires.
-- Governance in Liberland is tied to "Liberland Merits," a digital token system that grants voting power proportional to an individual's financial investment.
-- The project draws inspiration from "Dark Enlightenment" philosophy, which advocates for replacing democratic nation-states with corporate-style, blockchain-run entities.
-- Similar initiatives, such as Prospera in Honduras and Tim Draper’s digital nation projects, reflect a broader movement among tech elites to decentralize state authority.
+- Amazon S3 Files maintains a one-to-one mapping between files and S3 objects, allowing native S3 access after asynchronous synchronization.
+- ZeroFS uses an LSM tree and immutable segments to store compressed, encrypted data, rendering files inaccessible via standard S3 API calls.
+- S3 Files utilizes a high-performance storage tier for low-latency access, while ZeroFS relies on local RAM and disk caching for performance.
+- ZeroFS supports multiple object stores including Azure Blob and Google Cloud Storage, whereas S3 Files is exclusive to Amazon S3.
+- S3 Files incurs additional costs for high-performance storage residency and synchronization, while ZeroFS costs are driven by compute, cache, and request volume.
 
 ### Why it Matters
-These projects represent a growing effort by influential tech figures to shift political power from public institutions to private, code-based systems controlled by wealthy shareholders. By lobbying heavily in the U.S. and funding alternative governance models, these investors are testing whether blockchain technology can effectively bypass traditional democratic oversight and taxation.
+Choosing between these solutions depends on whether an organization requires direct S3 object interoperability or optimized storage efficiency through compression and encryption. While S3 Files integrates seamlessly with existing S3-based workflows, ZeroFS offers a private, high-performance substrate that prioritizes filesystem-level features over external object accessibility.
 
 ============================================================
-Author:   https://www.facebook.com/bbcnews
-Source:   BBC News
-URL:      https://www.bbc.co.uk/news/articles/cly8eqyj8e2o
+Author:   Pierre Barre
+Source:   Zerofs.net
+URL:      https://www.zerofs.net/blog/zerofs-vs-aws-s3-files/
 Category: Tech Business & Markets
