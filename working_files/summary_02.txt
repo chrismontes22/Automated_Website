@@ -1,20 +1,20 @@
-ZeroFS vs. Amazon S3 Files
+'I'm dying laughing' - what leaked messages tell us about global hacking gang
 ============================================================
 
-Amazon S3 Files and ZeroFS both provide POSIX-compliant filesystem interfaces for object storage, but they differ significantly in how they manage data layout, interoperability, and storage performance costs.
+Leaked internal communications from the notorious Conti ransomware gang reveal the group's operational structure, internal conflicts over the Ukraine invasion, and the devastating impact of their global cyberattacks.
 
 ### Key Points
-- Amazon S3 Files maintains a one-to-one mapping between files and S3 objects, allowing native S3 access after asynchronous synchronization.
-- ZeroFS uses an LSM tree and immutable segments to store compressed, encrypted data, rendering files inaccessible via standard S3 API calls.
-- S3 Files utilizes a high-performance storage tier for low-latency access, while ZeroFS relies on local RAM and disk caching for performance.
-- ZeroFS supports multiple object stores including Azure Blob and Google Cloud Storage, whereas S3 Files is exclusive to Amazon S3.
-- S3 Files incurs additional costs for high-performance storage residency and synchronization, while ZeroFS costs are driven by compute, cache, and request volume.
+- Conti generated an estimated $180 million in 2021 by extorting organizations through data encryption and ransom demands.
+- The group’s 2021 attack on Ireland’s Health Service Executive (HSE) crippled hospital systems and delayed critical patient care during the pandemic.
+- A 2021 breach of luxury jeweler Graff exposed sensitive data of high-profile celebrities and royals, forcing the gang to issue rare apologies to avoid retaliation.
+- Internal rifts regarding the Russian invasion of Ukraine led a member to leak over 300,000 private messages, exposing the group's inner workings.
+- German authorities identified the group's leader, Vitaly Nikolaevich Kovalev, who remains subject to international sanctions and an Interpol Red Notice.
 
 ### Why it Matters
-Choosing between these solutions depends on whether an organization requires direct S3 object interoperability or optimized storage efficiency through compression and encryption. While S3 Files integrates seamlessly with existing S3-based workflows, ZeroFS offers a private, high-performance substrate that prioritizes filesystem-level features over external object accessibility.
+These leaks provide unprecedented insight into the professionalized, corporate-like structure of modern cybercriminal syndicates. The exposure of their internal decision-making processes highlights the significant real-world consequences of ransomware, particularly when critical healthcare infrastructure becomes a target.
 
 ============================================================
-Author:   Pierre Barre
-Source:   Zerofs.net
-URL:      https://www.zerofs.net/blog/zerofs-vs-aws-s3-files/
-Category: Tech Business & Markets
+Author:   Geoff White - BBC Cyber Hack podcast
+Source:   BBC News
+URL:      https://www.bbc.com/news/articles/cz9lz8zp04po?xtor=AL-72-%5Bpartner%5D-%5Byahoo.north.america%5D-%5Bheadline%5D-%5Bnews%5D-%5Bbizdev%5D-%5Bisapi%5D
+Category: Cybersecurity
