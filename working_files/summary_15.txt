@@ -1,21 +1,19 @@
-Back-to-School Tech Deals 2026: Laptops, Tablets, and Gear
+Microsoft's patch for a Windows Defender 0-day may have created a new attack path
 ============================================================
 
-Major retailers including Apple, Dell, Lenovo, and Best Buy have launched their 2026 back-to-school sales, offering significant discounts and promotional bundles on laptops, tablets, and essential student accessories.
+Microsoft’s recent security patch for the RoguePlanet zero-day vulnerability in Windows Defender is reportedly flawed, potentially allowing attackers to exhaust system storage and disrupt critical operating system functions.
 
 ### Key Points
-- Apple offers education pricing on Macs and iPads, with potential free accessories like AirPods or Apple Pencils for verified students.
-- Dell provides an additional 10% discount on XPS and Inspiron laptops, while Lenovo features competitive pricing on ThinkPad and IdeaPad models.
-- Best Buy’s student hub lists budget Chromebooks starting at approximately $230, with HP offering up to 40% off select devices.
-- Microsoft’s College PC bundle includes a free year of Microsoft 365 Premium and Xbox Game Pass for qualifying Windows 11 laptop purchases.
-- Most discounts require student verification through platforms like UNiDAYS, ID.me, or a valid .edu email address.
-- Rising hardware costs, including recent Apple price increases and memory shortages, make these seasonal promotions essential for budget-conscious students.
+- Security researcher NightmareEclipse identified that the CVE-2026-50656 patch for the Malware Protection Engine (mpengine.dll) remains vulnerable to exploitation.
+- The flaw allows attackers to force Windows Defender to leak data and quarantine large files by abusing the SpyNet cloud service and NTFS Alternate Data Streams.
+- Successful exploitation can fill the system volume, causing erratic behavior in Windows 11 25H2 and Windows Server 2025.
+- The researcher is currently investigating methods to execute this attack remotely without requiring a custom Server Message Block (SMB) server connection.
 
 ### Why it Matters
-These promotions provide critical cost savings for students navigating a market impacted by recent price hikes and hardware supply constraints. Leveraging these verified discounts allows families to secure necessary academic technology while maximizing value through bundled software and accessory offers.
+This discovery highlights ongoing stability risks within the Windows ecosystem when security patches fail to fully remediate complex zero-day vulnerabilities. If left unaddressed, these flaws could be leveraged to compromise system reliability and create significant operational disruptions for enterprise and individual users.
 
 ============================================================
-Author:   Rei Padla
-Source:   The Gadgeteer
-URL:      https://the-gadgeteer.com/2026/07/11/back-to-school-tech-deals-2026/
-Category: Phones, Laptops, and Gadgets
+Author:   Alfonso Maruccia
+Source:   TechSpot
+URL:      https://www.techspot.com/news/113076-microsoft-patch-windows-defender-0-day-may-have.html
+Category: Cybersecurity

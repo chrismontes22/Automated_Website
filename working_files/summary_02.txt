@@ -1,20 +1,20 @@
-'I'm dying laughing' - what leaked messages tell us about global hacking gang
+Croc: Securely transfer files and folders between two computers
 ============================================================
 
-Leaked internal communications from the notorious Conti ransomware gang reveal the group's operational structure, internal conflicts over the Ukraine invasion, and the devastating impact of their global cyberattacks.
+Croc is a secure, cross-platform command-line tool that enables users to transfer files and folders between computers using end-to-end encryption and password-authenticated key agreement without requiring port forwarding.
 
 ### Key Points
-- Conti generated an estimated $180 million in 2021 by extorting organizations through data encryption and ransom demands.
-- The group’s 2021 attack on Ireland’s Health Service Executive (HSE) crippled hospital systems and delayed critical patient care during the pandemic.
-- A 2021 breach of luxury jeweler Graff exposed sensitive data of high-profile celebrities and royals, forcing the gang to issue rare apologies to avoid retaliation.
-- Internal rifts regarding the Russian invasion of Ukraine led a member to leak over 300,000 private messages, exposing the group's inner workings.
-- German authorities identified the group's leader, Vitaly Nikolaevich Kovalev, who remains subject to international sanctions and an Interpol Red Notice.
+- Facilitates secure data transfers between Windows, Linux, and macOS systems using a relay-based architecture.
+- Utilizes Password-Authenticated Key Agreement (PAKE) to ensure end-to-end encryption for all transmitted files and folders.
+- Supports advanced features including interrupted transfer resumption, proxy integration via Tor, and IPv6-first connectivity.
+- Offers flexible installation options across major package managers like Homebrew, Scoop, Chocolatey, Winget, Nix, and Docker.
+- Allows users to host custom relays to maintain full control over their data transfer infrastructure and security parameters.
 
 ### Why it Matters
-These leaks provide unprecedented insight into the professionalized, corporate-like structure of modern cybercriminal syndicates. The exposure of their internal decision-making processes highlights the significant real-world consequences of ransomware, particularly when critical healthcare infrastructure becomes a target.
+Croc simplifies the often complex process of moving data between disparate systems by removing the need for local server configuration or firewall adjustments. Its focus on security and ease of use provides a robust alternative for developers and power users who require a reliable, encrypted method for peer-to-peer file sharing.
 
 ============================================================
-Author:   Geoff White - BBC Cyber Hack podcast
-Source:   BBC News
-URL:      https://www.bbc.com/news/articles/cz9lz8zp04po?xtor=AL-72-%5Bpartner%5D-%5Byahoo.north.america%5D-%5Bheadline%5D-%5Bnews%5D-%5Bbizdev%5D-%5Bisapi%5D
+Author:   schollz
+Source:   Github.com
+URL:      https://github.com/schollz/croc/
 Category: Cybersecurity
