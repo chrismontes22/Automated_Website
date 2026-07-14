@@ -1,19 +1,19 @@
-Microsoft's patch for a Windows Defender 0-day may have created a new attack path
+Samsung will kill your health data if you don’t consent to AI training
 ============================================================
 
-Microsoft’s recent security patch for the RoguePlanet zero-day vulnerability in Windows Defender is reportedly flawed, potentially allowing attackers to exhaust system storage and disrupt critical operating system functions.
+Samsung Health users must now consent to having their personal medical and activity data used for AI training or face the deletion of their synced account information.
 
 ### Key Points
-- Security researcher NightmareEclipse identified that the CVE-2026-50656 patch for the Malware Protection Engine (mpengine.dll) remains vulnerable to exploitation.
-- The flaw allows attackers to force Windows Defender to leak data and quarantine large files by abusing the SpyNet cloud service and NTFS Alternate Data Streams.
-- Successful exploitation can fill the system volume, causing erratic behavior in Windows 11 25H2 and Windows Server 2025.
-- The researcher is currently investigating methods to execute this attack remotely without requiring a custom Server Message Block (SMB) server connection.
+- Samsung introduced a mandatory toggle requiring users to permit AI training and modeling to maintain health data synchronization.
+- Refusing consent results in the loss of cloud-synced health records, including sleep, nutrition, medication, and clinical data.
+- The company’s policy explicitly states that collected data may be subject to human review to improve its health algorithms and AI features.
+- Affected data categories include sensitive information such as menstrual cycle tracking, body measurements, and past medical diagnoses.
 
 ### Why it Matters
-This discovery highlights ongoing stability risks within the Windows ecosystem when security patches fail to fully remediate complex zero-day vulnerabilities. If left unaddressed, these flaws could be leveraged to compromise system reliability and create significant operational disruptions for enterprise and individual users.
+This policy change forces a trade-off between data privacy and the basic functionality of syncing health records across devices. It raises significant concerns regarding user autonomy and the ethical standards of utilizing highly sensitive personal health information for corporate AI development.
 
 ============================================================
-Author:   Alfonso Maruccia
-Source:   TechSpot
-URL:      https://www.techspot.com/news/113076-microsoft-patch-windows-defender-0-day-may-have.html
-Category: Cybersecurity
+Author:   Hadlee Simons
+Source:   Android Authority
+URL:      https://www.androidauthority.com/samsung-health-train-ai-data-3686684/
+Category: Artificial Intelligence

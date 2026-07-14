@@ -1,20 +1,20 @@
-I made my Wi-Fi channel narrower, and my whole house got faster
+I lost 4TB of files in a single SSD failure, and now I understand why a NAS should come first
 ============================================================
 
-Adjusting your router's 2.4GHz channel width to 20MHz can significantly improve home network stability and reduce connection drops caused by signal congestion in densely populated residential areas.
+A sudden, silent failure of a 4TB high-capacity SSD highlights the critical risks of storing irreplaceable data on single internal drives and the necessity of robust backup strategies.
 
 ### Key Points
-- Narrowing the 2.4GHz channel width from 40MHz to 20MHz minimizes interference from neighboring networks and Bluetooth devices.
-- Only three non-overlapping channels exist on the 2.4GHz band, making wider 40MHz settings prone to performance degradation.
-- Apple and TP-Link both recommend 20MHz for the 2.4GHz band to ensure consistent connectivity for smart home devices.
-- Intel notes that while wider channels like 80MHz or 160MHz may increase speed on the 5GHz band, they also heighten the risk of interference.
-- Users can modify these settings by accessing their router's administrative interface, typically found under wireless or advanced network configuration menus.
+- High-capacity SSDs often fail without warning due to silent NAND flash degradation or controller firmware panics.
+- Dense TLC and QLC V-NAND storage technology is prone to wear from intense thermal cycles and continuous write operations.
+- Modern SSDs may enter a read-only "safe mode" upon detecting errors, which prevents operating systems from booting and accessing stored files.
+- Network-attached storage (NAS) systems provide superior data security by using multi-drive arrays with distributed parity to prevent total data loss.
+- Moving data to a NAS allows users to treat PCs as compute nodes while ensuring files remain accessible even if individual hardware components fail.
 
 ### Why it Matters
-Optimizing channel width provides a cost-free method to resolve persistent connectivity issues without requiring new hardware or complex mesh system installations. This simple configuration change is particularly effective for users in crowded environments where signal interference frequently disrupts smart home devices and video calls.
+Relying on a single internal drive for long-term storage creates a single point of failure that can lead to permanent data loss. Transitioning to a NAS or redundant storage architecture ensures that hardware malfunctions remain minor maintenance tasks rather than catastrophic events.
 
 ============================================================
-Author:   Sagar Naresh
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/i-made-my-wi-fi-channel-narrower-and-my-whole-house-got-faster/
+Author:   Jasmine Mannan
+Source:   XDA Developers
+URL:      https://www.xda-developers.com/lost-4tb-files-after-ssd-failed-think-might-be-time-to-invest-in-nas/
 Category: Phones, Laptops, and Gadgets
