@@ -1,20 +1,20 @@
-Who Owns Wyze, The Controversial Smart Home Device Manufacturer?
+Lessons Learned from CISA’s Recent GitHub Leak
 ============================================================
 
-Wyze is an independent smart home manufacturer based in Kirkland, Washington, founded by former Amazon employees to provide affordable security cameras and devices to budget-conscious consumers.
+The Cybersecurity and Infrastructure Security Agency has released a postmortem report detailing how a contractor’s six-month data leak exposed sensitive AWS GovCloud credentials and internal system passwords.
 
 ### Key Points
-- Wyze is an independent company founded by former Amazon employees and headquartered in Kirkland, Washington.
-- The company manufactures its hardware in China, utilizing the services of Tianjin Hualai Technology, a partner of Amazon Kinesis.
-- A 2024 security incident exposed camera feeds between users, leading to temporary criticism from outlets like The New York Times' Wirecutter.
-- Wyze has since implemented enhanced security measures, including regular penetration testing and metadata overhauls, to regain consumer trust.
-- The company collects user data for interest-based advertising but maintains that it does not sell personal information directly to third parties.
+- A public GitHub repository titled "Private CISA" exposed 844 MB of sensitive data, including administrative AWS GovCloud keys and plaintext passwords.
+- The exposed credentials remained accessible for six months despite nine automated alerts from the security firm GitGuardian.
+- CISA required over 48 hours to invalidate the leaked secrets, citing complex system interconnections and a lack of defined internal reporting channels.
+- The agency has since revoked the contractor's access, rotated all compromised secrets, and committed to improving its incident response playbooks.
+- CISA now advocates for continuous public repository scanning and the establishment of clear, accessible reporting channels for external security researchers.
 
 ### Why it Matters
-The company’s history highlights the ongoing tension between consumer demand for affordable smart home technology and concerns regarding data privacy and international manufacturing. As the industry faces scrutiny over security standards, Wyze’s efforts to improve its infrastructure reflect a broader market trend toward increased transparency and rigorous cybersecurity protocols.
+This incident highlights critical vulnerabilities in how government agencies manage developer secrets and respond to external security disclosures. By publicly documenting its failures, CISA sets a new standard for transparency that encourages other organizations to prioritize continuous monitoring and streamlined communication with the security research community.
 
 ============================================================
-Author:   staff@bgr.com (Sead Fadilpasic)
-Source:   BGR
-URL:      https://www.bgr.com/2210799/who-owns-wyze-smart-home-brand-controversy/
-Category: Phones, Laptops, and Gadgets
+Author:   BrianKrebs
+Source:   Krebs on Security
+URL:      https://krebsonsecurity.com/2026/07/lessons-learned-from-cisas-recent-github-leak/
+Category: Cybersecurity

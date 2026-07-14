@@ -1,20 +1,20 @@
-No SpaceX, No Tesla? No Problem for These ‘Ex-Elon’ ETFs
+'Cryptomining can be a lucrative post-compromise activity in cloud environments': Experts warn AI gateways connected to Amazon Bedrock are being hijacked to steal crypto
 ============================================================
 
-Subversive ETFs has filed to launch two new funds, QQNE and SPNE, which track the Nasdaq-100 and S&P 500 while specifically excluding companies led or associated with Elon Musk.
+Cybersecurity firm Darktrace reports that attackers compromised a LiteLLM-Proxy gateway on Amazon Bedrock via exposed SSH credentials to conduct unauthorized XMRig cryptocurrency mining and illicit cloud activity.
 
 ### Key Points
-- The proposed Nasdaq-100 Ex-Elon Enterprises ETF (QQNE) and S&P 500 Ex-Elon Enterprises ETF (SPNE) will actively exclude firms like Tesla and SpaceX.
-- Subversive ETFs filed the registration documents with the Securities and Exchange Commission last week.
-- Analysts note that Tesla and SpaceX represent less than 5% of the Nasdaq-100, potentially limiting the funds' differentiation from standard index trackers.
-- The firm previously launched the Subversive Metaverse ETF (PUNK), which excluded Meta, before closing the fund in 2023.
-- These new products aim to attract investors concerned about corporate governance, political risks, and share-price volatility associated with Musk’s leadership.
+- Attackers exploited an Amazon EC2 instance running LiteLLM-Proxy that was incorrectly configured to accept public SSH connections.
+- The compromised gateway was used to deploy XMRig software, which initiated unauthorized cryptocurrency mining operations.
+- Darktrace identified suspicious IAM activity, including unauthorized attempts to enumerate Amazon Bedrock models and create new user accounts.
+- Forensic analysis traced the malicious activity to IP addresses located in Vietnam.
+- Security experts recommend enforcing strict port closures, implementing least-privilege IAM roles, and monitoring cloud control planes to prevent similar breaches.
 
 ### Why it Matters
-These funds represent a growing trend of values-based investing that prioritizes political or social alignment over traditional market-cap weighting. However, the success of such niche products remains uncertain, as investors must decide if they are willing to potentially sacrifice performance to avoid exposure to specific high-profile figures.
+This incident highlights the growing security risks associated with centralized AI gateways that hold privileged access to generative AI models. Organizations must secure these infrastructure components to prevent attackers from leveraging them as entry points for cryptojacking or broader cloud credential theft.
 
 ============================================================
-Author:   Mallika Mitra
-Source:   Thedailyupside.com
-URL:      https://www.thedailyupside.com/etf/investing-strategies-etf/no-spacex-no-tesla-no-problem-for-these-ex-elon-etfs/
-Category: Tech Business & Markets
+Author:   Sead Fadilpašić
+Source:   TechRadar
+URL:      https://www.techradar.com/pro/security/cryptomining-can-be-a-lucrative-post-compromise-activity-in-cloud-environments-experts-warn-ai-gateways-connected-to-amazon-bedrock-are-being-hijacked-to-steal-crypto
+Category: Cybersecurity
