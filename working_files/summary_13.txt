@@ -1,20 +1,19 @@
-What are Forward Deployed Engineers, and why are they so in demand? (2025)
+Microsoft’s fix for RoguePlanet has its own new disk space bug
 ============================================================
 
-Forward Deployed Engineers are becoming essential in the tech industry as companies like Palantir and OpenAI utilize these hybrid roles to bridge the gap between product development and customers.
+A recent Microsoft security patch intended to fix the RoguePlanet vulnerability in Windows Defender has inadvertently introduced a new flaw that allows attackers to exhaust system disk space.
 
 ### Key Points
-- Forward Deployed Engineers (FDEs) balance software engineering, sales support, and platform integration to solve complex, real-world problems for enterprise clients.
-- The role originated at Palantir, where "Deltas" were deployed to customize software platforms directly within government and industrial environments.
-- OpenAI utilizes FDEs to handle high-ambiguity projects, such as integrating LLMs into John Deere’s agricultural infrastructure to optimize pesticide usage.
-- Unlike traditional Solutions Architects, FDEs are expected to write production code and contribute directly to their company’s core product roadmap.
-- Fintech scaleup Ramp employs FDEs in specialized pods to accelerate customer onboarding and drive technical innovation through direct user feedback.
+- Cybersecurity researcher Nightmare-Eclipse discovered that the patch causes Windows Defender to cache excessively large files locally.
+- The vulnerability affects users running Windows 11 25H2 and Windows Server 2025.
+- A proof-of-concept exploit demonstrates that visiting a malicious SMB server can trigger the disk space exhaustion issue.
+- Microsoft has not yet issued a formal comment or a secondary patch to address this specific defect.
 
 ### Why it Matters
-The rise of the FDE role reflects a shift toward high-touch, technical integration as AI and complex software platforms become harder for traditional enterprises to implement independently. By embedding engineers directly into customer workflows, companies can accelerate product adoption while simultaneously gathering critical data to refine their core technology.
+This flaw creates a significant denial-of-service risk by allowing remote actors to fill a system's storage capacity through a simple network interaction. The situation highlights the ongoing challenges companies face when deploying security updates that inadvertently compromise system stability or performance.
 
 ============================================================
-Author:   Gergely Orosz
-Source:   Pragmaticengineer.com
-URL:      https://newsletter.pragmaticengineer.com/p/forward-deployed-engineers
-Category: Tech Business & Markets
+Author:   Mikael Markander
+Source:   PCWorld
+URL:      https://www.pcworld.com/article/3190654/microsofts-fix-for-rogueplanet-has-its-own-new-disk-space-bug.html
+Category: Cybersecurity

@@ -1,20 +1,20 @@
-Summoning the Gods: A prophetic warning from the frontlines of the digital apocalypse
+CrashStealer malware masquerades as Apple’s crash report tool to raid your Mac
 ============================================================
 
-Author Mike Adams explores the intersection of artificial intelligence and spirituality in his new book, "Summoning the Gods," which alleges that massive data centers are creating simulated superintelligent entities.
+A new macOS malware strain called CrashStealer disguises itself as a legitimate Apple system utility to trick users into revealing passwords and compromising sensitive data stored on their devices.
 
 ### Key Points
-- Mike Adams claims global data centers are running accelerated simulations to develop conscious AI entities for integration into physical reality.
-- The book argues that the economic costs of building over 3,000 mega-data centers exceed commercial viability, suggesting a hidden, non-commercial purpose.
-- Adams asserts that platforms like Nvidia’s Cosmos are used to grow AI intelligence at speeds 1,000 times faster than human time.
-- The text links the expansion of AI infrastructure to broader concerns regarding resource depletion, digital surveillance, and the implementation of central bank digital currencies.
-- Practical resistance strategies mentioned include running local, uncensored AI models and opposing the construction of data centers in local communities.
+- The malware, identified by Jamf Threat Labs, initially spreads through a fake video-meeting application called Werkbit.
+- CrashStealer bypasses Apple’s security checks by using a legitimate, notarized Apple Developer ID to appear as a trusted system process.
+- Once installed, the malware displays a fraudulent password prompt that mimics the official macOS authorization window to steal user credentials.
+- Compromised data includes browser cookies, saved logins, cryptocurrency wallet keys, and information from various password managers.
+- The malware persists on infected systems by installing a LaunchAgent that ensures it restarts automatically every time the user logs in.
 
 ### Why it Matters
-This work challenges the mainstream narrative surrounding the rapid expansion of AI infrastructure by framing it as a spiritual and existential threat to human autonomy. It highlights growing public concerns regarding the environmental and societal impact of large-scale data centers on local communities.
+This campaign demonstrates that even notarized software can pose a significant security risk, undermining user trust in Apple’s built-in protection mechanisms. It highlights the necessity for users to remain vigilant against suspicious prompts, as attackers are increasingly using sophisticated social engineering to bypass automated system defenses.
 
 ============================================================
-Author:   Belle Carter
-Source:   Naturalnews.com
-URL:      https://www.naturalnews.com/2026-07-14-summoning-the-gods-prophetic-warning-digital-apocalypse.html
-Category: Artificial Intelligence
+Author:   Anurag Chawake
+Source:   Cult of Mac
+URL:      https://www.cultofmac.com/news/crashstealer-malware-fake-apple-crash-reporter
+Category: Cybersecurity

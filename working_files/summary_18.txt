@@ -1,20 +1,21 @@
-Zimbra patched a flaw that let hackers hijack accounts just by sending an email
+Mozilla’s Inaugural ‘State of Open Source AI’ Report Is Here
 ============================================================
 
-Synacor has released Zimbra version 10.1.19 to patch a critical stored cross-site scripting vulnerability in the Classic Web Client that could allow attackers to execute malicious scripts on devices.
+Mozilla’s inaugural State of Open Source AI report reveals that open models have nearly closed the performance gap with proprietary systems while significantly reducing operational costs for global developers.
 
 ### Key Points
-- The update addresses a stored cross-site scripting (XSS) flaw that triggers when a user opens a malformed email message.
-- Exploitation of this vulnerability could compromise sensitive account settings, mailbox information, and user session data.
-- Zimbra advises all customers utilizing the Classic Web Client to install the latest software version immediately.
-- While the company currently rates the deployment risk as low, the flaw remains a significant security concern for enterprise users.
-- This update follows a history of similar XSS-based security incidents targeting the Zimbra platform throughout 2023 and 2025.
+- Open source AI models now perform within 3% of top proprietary systems like ChatGPT and Claude.
+- Costs for running open models have decreased by up to 50 times over the past three years.
+- While 79% of developers use open models, only 51% have successfully deployed them into production environments.
+- China and East Asia lead global adoption at 89%, treating open source AI as a core national strategy.
+- Open models currently power one-third of real-world AI applications but generate only 4% of total industry revenue.
+- The report identifies "agentic harnesses"—the software layer controlling AI actions—as the most critical area for future development and governance.
 
 ### Why it Matters
-This security patch is essential for protecting enterprise communication infrastructure from persistent XSS threats that have historically targeted Zimbra users. Promptly applying this update prevents potential unauthorized access to sensitive corporate data and mitigates the risk of account compromise.
+The shift toward open source AI offers organizations the ability to own their infrastructure rather than renting proprietary services from major tech providers. However, a lack of mature deployment tooling and sustainable revenue models threatens to limit the long-term viability of open ecosystems compared to closed, scalable alternatives.
 
 ============================================================
-Author:   Alfonso Maruccia
-Source:   TechSpot
-URL:      https://www.techspot.com/news/113097-zimbra-patched-flaw-hackers-hijack-accounts-sending-email.html
-Category: Cybersecurity
+Author:   Raffi Krikorian
+Source:   Mozilla.org
+URL:      https://blog.mozilla.org/en/mozilla/mozilla-state-of-open-source-ai-report/
+Category: Artificial Intelligence
