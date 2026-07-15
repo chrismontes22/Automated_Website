@@ -1,20 +1,20 @@
-Stop looking for ironclad cybersecurity answers. They often don’t exist
+Just Let Me Write Digits
 ============================================================
 
-PCWorld reports that cybersecurity advice often appears contradictory because experts weigh risks differently, emphasizing the need for users to understand the specific context behind security recommendations and warnings.
+**A software bug in the Swiss government’s AGOV login system prevented users with French AZERTY keyboard layouts from entering verification codes due to restrictive JavaScript input handling.**
 
 ### Key Points
-- Cybersecurity experts often provide conflicting guidance because recommendations vary based on individual risk tolerance and specific technical environments.
-- Microsoft is implementing AI-driven tools to accelerate Windows security updates and identify vulnerabilities more efficiently for automatic update users.
-- A data breach at insurer AssuranceAmerica exposed the personal information of approximately 7 million drivers, including driver’s license numbers and policy details.
-- Opera introduced a "Paste Protect" feature designed to block clipboard hijacking attacks that attempt to paste malicious data into a user's browser.
-- Comcast customers affected by a 2023 data breach have until September 14 to file claims for a share of a $117.5 million settlement.
+- The AGOV system, launched in 2024, serves as the mandatory digital gateway for Swiss government services, including tax filings and citizenship applications.
+- A technical flaw in the registration form rejected the "Shift" key, which is required to type digits on standard French AZERTY keyboards.
+- The system’s reliance on a single, gated web form for both user registration and technical support created a "chicken and egg" lockout for affected users.
+- Developers implemented a custom JavaScript logic that intercepted keystrokes and bypassed standard browser form behavior, complicating troubleshooting for end users.
+- The author successfully bypassed the bug by temporarily switching their operating system's keyboard layout to QWERTY.
 
 ### Why it Matters
-Understanding the nuance behind security advice helps users distinguish between ideal best practices and realistic, everyday digital habits. By seeking context, individuals can make more informed decisions that balance personal convenience with necessary protection against evolving cyber threats.
+This incident highlights the risks of over-engineering web forms and centralizing government services behind rigid, non-standard authentication interfaces. It demonstrates how excluding diverse hardware and software configurations can inadvertently disenfranchise significant user populations, including international residents and cross-border workers.
 
 ============================================================
-Author:   Alaina Yee
-Source:   PCWorld
-URL:      https://www.pcworld.com/article/3188288/stop-looking-for-ironclad-cybersecurity-answers-they-often-dont-exist.html
+Author:   Guillaume Endignoux
+Source:   Gendx.dev
+URL:      https://gendx.dev/blog/2026/07/13/input-digits.html
 Category: Cybersecurity

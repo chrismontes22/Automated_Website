@@ -1,20 +1,20 @@
-5 Android features I miss every time I switch to an iPhone
+Defending SaaS-based applications against ShinyHunters OAuth abuse
 ============================================================
 
-Users transitioning from Android to iPhone often report missing key productivity and customization features, including advanced multitasking, desktop modes, flexible file management, and broader app installation options.
+Microsoft has identified threat actors using ShinyHunters-linked tradecraft to compromise Salesforce customer environments by abusing OAuth trust relationships and social engineering employees through sophisticated voice phishing campaigns.
 
 ### Key Points
-- Android devices offer superior multitasking through split-screen views, pop-up windows, and app bubbles, which are not natively supported on iOS.
-- Samsung DeX allows Galaxy smartphones to function as desktop computers, providing a PC-like interface for productivity tasks when connected to external displays.
-- Android allows sideloading apps from third-party sources and repositories like GitHub, bypassing the restrictions and commissions of the official Apple App Store.
-- The Android file system provides deeper access for bulk operations and background syncing, whereas iOS remains a strictly sandboxed environment.
-- Reverse wireless charging on Android phones enables users to power up accessories like earbuds or secondary devices on the go.
+- Threat actors utilized voice phishing to trick employees into granting malicious OAuth applications access to Salesforce tenants.
+- Supply chain compromises involving trusted integrations like Salesloft and Gainsight allowed attackers to obtain connection secrets and maintain persistent access.
+- Campaigns targeted various industries, including retail, education, and manufacturing, to perform bulk data exfiltration of CRM records.
+- Microsoft upgraded Defender for Cloud Apps to provide near-real-time detection, connected application attribution, and enhanced visibility into OAuth scopes.
+- New posture management tools allow security teams to identify and revoke unused or highly privileged applications to reduce the overall attack surface.
 
 ### Why it Matters
-These feature disparities highlight the fundamental philosophical differences between the open, utility-focused nature of Android and the controlled, streamlined ecosystem of Apple’s iOS. For power users, these missing capabilities can significantly impact daily workflows and device versatility, often making the switch to an iPhone feel like a functional limitation.
+- These campaigns demonstrate how attackers can bypass traditional authentication by operating through legitimate, pre-authorized SaaS workflows. Organizations must prioritize the governance of OAuth-connected applications to prevent unauthorized data access and maintain the integrity of their integrated software ecosystems.
 
 ============================================================
-Author:   Yash Wate
-Source:   Android Authority
-URL:      https://www.androidauthority.com/5-android-features-i-miss-when-switching-iphone-3685743/
-Category: Phones, Laptops, and Gadgets
+Author:   Microsoft Security Research and Microsoft Defender Security Research Team
+Source:   Microsoft.com
+URL:      https://www.microsoft.com/en-us/security/blog/2026/07/13/defending-saas-based-applications-against-shinyhunters-oauth-abuse/
+Category: Cybersecurity

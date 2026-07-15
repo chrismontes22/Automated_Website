@@ -1,22 +1,20 @@
-As Investment Fraud Losses Hit $8.6 Billion, The SEC Rethinks A Job It Was Already Supposed To Be Doing
+Zimbra patched a flaw that let hackers hijack accounts just by sending an email
 ============================================================
 
-The Securities and Exchange Commission has launched a new Retail Fraud Working Group to proactively identify and combat rising investment scams, market manipulation, and broker misconduct targeting individual investors.
+Synacor has released Zimbra version 10.1.19 to patch a critical stored cross-site scripting vulnerability in the Classic Web Client that could allow attackers to execute malicious scripts on devices.
 
 ### Key Points
-- The FBI reported that Americans lost over $8.6 billion to online investment fraud in 2023, a significant increase from $3.3 billion in 2022.
-- Cryptocurrency-related schemes accounted for $7.2 billion of the total losses reported to the FBI last year.
-- The new SEC working group will focus on pump-and-dump schemes, securities offering fraud, and misconduct by investment advisers and brokers.
-- SEC Chairman Paul Atkins stated the initiative aims to refocus the agency’s enforcement efforts on its core mission of protecting retail investors.
-- The group plans to utilize data and technology to identify suspicious activities and coordinate with other federal and state regulators.
+- The update addresses a stored cross-site scripting (XSS) flaw that triggers when a user opens a malformed email message.
+- Exploitation of this vulnerability could compromise sensitive account settings, mailbox information, and user session data.
+- Zimbra advises all customers utilizing the Classic Web Client to install the latest software version immediately.
+- While the company currently rates the deployment risk as low, the flaw remains a significant security concern for enterprise users.
+- This update follows a history of similar XSS-based security incidents targeting the Zimbra platform throughout 2023 and 2025.
 
 ### Why it Matters
-This initiative highlights the SEC's attempt to shift from reactive enforcement to proactive fraud detection as retail investors face increasingly complex digital threats. The success of the working group will depend on its ability to utilize modern technology to stop financial losses before they occur rather than investigating after funds have been stolen.
+This security patch is essential for protecting enterprise communication infrastructure from persistent XSS threats that have historically targeted Zimbra users. Promptly applying this update prevents potential unauthorized access to sensitive corporate data and mitigates the risk of account compromise.
 
 ============================================================
-Author:   Brandon Kochkodin, Forbes Staff, 
- Brandon Kochkodin, Forbes Staff
- https://www.forbes.com/sites/brandonkochkodin/
-Source:   Forbes
-URL:      https://www.forbes.com/sites/brandonkochkodin/2026/07/13/as-investment-fraud-losses-hit-86-billion-the-sec-rethinks-a-job-it-was-already-supposed-to-be-doing/
-Category: Tech Business & Markets
+Author:   Alfonso Maruccia
+Source:   TechSpot
+URL:      https://www.techspot.com/news/113097-zimbra-patched-flaw-hackers-hijack-accounts-sending-email.html
+Category: Cybersecurity

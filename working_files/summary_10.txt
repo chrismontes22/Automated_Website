@@ -1,21 +1,20 @@
-Show HN: OpenClawMachines – Extending OpenClaw to the Enterprise
+Ad Tech Briefing: Private equity’s ad tech playbook returns
 ============================================================
 
-OpenClaw Machines is an open-source platform that enables users to run multiple hardware-isolated AI agents within secure Firecracker microVMs on their own private Linux infrastructure.
+Private equity firms Vista Equity Partners and Quinti Capital have launched a $3.7 billion takeover bid for Criteo, signaling a potential surge in acquisitions of undervalued ad tech companies.
 
 ### Key Points
-- Utilizes Firecracker microVMs with KVM hardware boundaries to provide secure, isolated environments for untrusted AI agent code.
-- Features a Go-based control plane for managing machine lifecycles, host enrollment, and durable workflows.
-- Integrates Cloudflare Tunnels for secure, authenticated access to individual agent subdomains without exposing host ports.
-- Includes a per-host LLM proxy to manage API keys, track usage, and route traffic to local or external models.
-- Supports native Model Context Protocol (MCP) integrations for tools like GitHub, Google Workspace, and GraphQL.
-- Licensed under Apache-2.0, allowing for self-hosting on bare-metal servers to optimize costs and maintain data sovereignty.
+- Vista Equity Partners and Quinti Capital offered a 50% premium over Criteo’s recent share price to acquire the firm.
+- The IAB Tech Lab introduced the Redefining Media Types (RMT) Standard to standardize video advertising classification across fragmented digital environments.
+- The RMT framework replaces legacy labels like CTV and AVOD with categories based on viewing environments and technical attributes.
+- Lidian Jones, formerly of Slack and Bumble, has been appointed as the new CEO of Integral Ad Science following a C-suite shakeup.
+- Corporate development experts anticipate increased private equity activity in the second half of the year as AI capabilities boost the valuation of public ad tech platforms.
 
 ### Why it Matters
-This platform offers a cost-effective alternative to managed AI services by allowing users to consolidate multiple agents onto a single server while maintaining strict security through hardware isolation. It provides developers with greater control over their infrastructure, data privacy, and model routing, making it a scalable solution for enterprise-grade AI deployments.
+The potential acquisition of Criteo suggests that private equity firms are increasingly targeting public ad tech companies that possess strong AI capabilities and defensible data assets. This trend, combined with the IAB’s new classification standards, reflects a broader industry effort to stabilize valuations and create a more unified language for digital media planning and measurement.
 
 ============================================================
-Author:   mathaix
-Source:   Github.com
-URL:      https://github.com/mathaix/OpenClawMachines
-Category: Artificial Intelligence
+Author:   Ronan Shields
+Source:   Digiday
+URL:      http://digiday.com/media-buying/ad-tech-briefing-private-equitys-ad-tech-playbook-returns/
+Category: Tech Business & Markets

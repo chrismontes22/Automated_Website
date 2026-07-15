@@ -1,20 +1,20 @@
-Lessons Learned from CISA’s Recent GitHub Leak
+What are Forward Deployed Engineers, and why are they so in demand? (2025)
 ============================================================
 
-The Cybersecurity and Infrastructure Security Agency has released a postmortem report detailing how a contractor’s six-month data leak exposed sensitive AWS GovCloud credentials and internal system passwords.
+Forward Deployed Engineers are becoming essential in the tech industry as companies like Palantir and OpenAI utilize these hybrid roles to bridge the gap between product development and customers.
 
 ### Key Points
-- A public GitHub repository titled "Private CISA" exposed 844 MB of sensitive data, including administrative AWS GovCloud keys and plaintext passwords.
-- The exposed credentials remained accessible for six months despite nine automated alerts from the security firm GitGuardian.
-- CISA required over 48 hours to invalidate the leaked secrets, citing complex system interconnections and a lack of defined internal reporting channels.
-- The agency has since revoked the contractor's access, rotated all compromised secrets, and committed to improving its incident response playbooks.
-- CISA now advocates for continuous public repository scanning and the establishment of clear, accessible reporting channels for external security researchers.
+- Forward Deployed Engineers (FDEs) balance software engineering, sales support, and platform integration to solve complex, real-world problems for enterprise clients.
+- The role originated at Palantir, where "Deltas" were deployed to customize software platforms directly within government and industrial environments.
+- OpenAI utilizes FDEs to handle high-ambiguity projects, such as integrating LLMs into John Deere’s agricultural infrastructure to optimize pesticide usage.
+- Unlike traditional Solutions Architects, FDEs are expected to write production code and contribute directly to their company’s core product roadmap.
+- Fintech scaleup Ramp employs FDEs in specialized pods to accelerate customer onboarding and drive technical innovation through direct user feedback.
 
 ### Why it Matters
-This incident highlights critical vulnerabilities in how government agencies manage developer secrets and respond to external security disclosures. By publicly documenting its failures, CISA sets a new standard for transparency that encourages other organizations to prioritize continuous monitoring and streamlined communication with the security research community.
+The rise of the FDE role reflects a shift toward high-touch, technical integration as AI and complex software platforms become harder for traditional enterprises to implement independently. By embedding engineers directly into customer workflows, companies can accelerate product adoption while simultaneously gathering critical data to refine their core technology.
 
 ============================================================
-Author:   BrianKrebs
-Source:   Krebs on Security
-URL:      https://krebsonsecurity.com/2026/07/lessons-learned-from-cisas-recent-github-leak/
-Category: Cybersecurity
+Author:   Gergely Orosz
+Source:   Pragmaticengineer.com
+URL:      https://newsletter.pragmaticengineer.com/p/forward-deployed-engineers
+Category: Tech Business & Markets
