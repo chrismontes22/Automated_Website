@@ -1,20 +1,20 @@
-CrashStealer malware masquerades as Apple’s crash report tool to raid your Mac
+Two SonicWall SMA 1000 Zero-Days Exploited, One Could Enable Admin Commands
 ============================================================
 
-A new macOS malware strain called CrashStealer disguises itself as a legitimate Apple system utility to trick users into revealing passwords and compromising sensitive data stored on their devices.
+SonicWall has issued urgent security patches for two actively exploited zero-day vulnerabilities in its SMA 1000 series appliances that allow attackers to execute arbitrary commands and bypass authentication.
 
 ### Key Points
-- The malware, identified by Jamf Threat Labs, initially spreads through a fake video-meeting application called Werkbit.
-- CrashStealer bypasses Apple’s security checks by using a legitimate, notarized Apple Developer ID to appear as a trusted system process.
-- Once installed, the malware displays a fraudulent password prompt that mimics the official macOS authorization window to steal user credentials.
-- Compromised data includes browser cookies, saved logins, cryptocurrency wallet keys, and information from various password managers.
-- The malware persists on infected systems by installing a LaunchAgent that ensures it restarts automatically every time the user logs in.
+- CVE-2026-15409 is a critical SSRF vulnerability with a 10.0 CVSS score, while CVE-2026-15410 is a 7.2-rated post-authentication code injection flaw.
+- Patches are available in versions 12.4.3-03453 and 12.5.0-02835 or higher to remediate the security risks.
+- CISA has added both vulnerabilities to its Known Exploited Vulnerabilities catalog, mandating federal agencies to apply fixes by July 17, 2026.
+- Rapid7 reports that attackers are chaining these flaws to extract credentials and MFA seeds, enabling persistent access and lateral movement into internal networks.
+- Users should inspect logs for specific indicators of compromise and re-image appliances if unauthorized activity is detected.
 
 ### Why it Matters
-This campaign demonstrates that even notarized software can pose a significant security risk, undermining user trust in Apple’s built-in protection mechanisms. It highlights the necessity for users to remain vigilant against suspicious prompts, as attackers are increasingly using sophisticated social engineering to bypass automated system defenses.
+These vulnerabilities provide attackers with a stealthy, persistent backdoor into corporate networks by compromising perimeter security appliances. Because the flaws allow for the extraction of high-value credentials and MFA data, organizations face a significant risk of lateral movement and unauthorized access to core domain controllers.
 
 ============================================================
-Author:   Anurag Chawake
-Source:   Cult of Mac
-URL:      https://www.cultofmac.com/news/crashstealer-malware-fake-apple-crash-reporter
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/07/two-sonicwall-sma-1000-zero-days.html
 Category: Cybersecurity

@@ -1,20 +1,20 @@
-Probe into claims Southport victims' NHS records accessed
+Who's running all those tiny RPKI servers?
 ============================================================
 
-The North West Ambulance Service is investigating claims that staff inappropriately accessed the medical records of victims injured during the July 2024 Southport stabbing attack.
+Independent RPKI publication servers play a critical role in securing Internet routing by allowing network operators to cryptographically authorize IP address prefixes and prevent malicious BGP hijacking attempts.
 
 ### Key Points
-- The North West Ambulance Service (NWAS) identified concerns that under 10 staff members may have accessed sensitive patient records without authorization.
-- This follows a previous incident where nearly 50 staff at Aintree Hospital were found to have inappropriately viewed the medical records of the same victims.
-- Fletchers Solicitors, representing 22 survivors, is calling for a full-scale NHS England review into disciplinary procedures regarding patient data privacy.
-- The Information Commissioner’s Office (ICO) has been notified and is assessing whether criminal investigations into data protection breaches are necessary.
-- Affected families have criticized the lack of transparency, noting they discovered the potential breaches while reviewing documents two years after the incident.
+- Resource Public Key Infrastructure (RPKI) uses Route Origin Authorizations (ROAs) to verify that an Autonomous System (AS) is authorized to announce specific IP address prefixes.
+- While five global Regional Internet Registries (RIRs) manage most RPKI data, a "long tail" of smaller, independent servers exists for operational control, cross-registry management, and research.
+- Researchers analyzed 3,778 ROA objects across 1,163 unique ASes, finding that 91% of these objects are cryptographically valid.
+- Over 50% of analyzed ROAs use the "maxLength" parameter, which can inadvertently increase vulnerability to sub-prefix hijacks if not configured according to RFC 9319 guidelines.
+- The study identified that 19.6% of ROAs using maxLength lack corresponding BGP announcements, creating potential security risks for those specific network segments.
 
 ### Why it Matters
-These recurring data breaches highlight a systemic issue regarding patient privacy and the unauthorized "snooping" of medical records within the National Health Service. The incidents undermine public trust in healthcare providers and raise urgent questions about the adequacy of current data protection enforcement and staff accountability measures.
+RPKI is essential for maintaining the integrity of global Internet routing, as it provides a mechanism to detect and block unauthorized traffic redirection. Understanding the diversity of these publication servers helps identify potential security gaps and operational risks that could impact the verifiability and stability of critical online services.
 
 ============================================================
-Author:   https://www.facebook.com/bbcnews
-Source:   BBC News
-URL:      https://www.bbc.co.uk/news/articles/c5yzy71p9zeo
+Author:   Ties Dirksen
+Source:   Apnic.net
+URL:      https://blog.apnic.net/2026/07/15/whos-running-all-those-tiny-rpki-servers/
 Category: Cybersecurity

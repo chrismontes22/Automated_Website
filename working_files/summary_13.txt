@@ -1,19 +1,20 @@
-Microsoft’s fix for RoguePlanet has its own new disk space bug
+California AG says Paramount's Netflix defense misses the point
 ============================================================
 
-A recent Microsoft security patch intended to fix the RoguePlanet vulnerability in Windows Defender has inadvertently introduced a new flaw that allows attackers to exhaust system disk space.
+California Attorney General Rob Bonta and 11 other state officials have filed a lawsuit to block the proposed merger between Paramount and Warner Bros. Discovery over antitrust concerns.
 
 ### Key Points
-- Cybersecurity researcher Nightmare-Eclipse discovered that the patch causes Windows Defender to cache excessively large files locally.
-- The vulnerability affects users running Windows 11 25H2 and Windows Server 2025.
-- A proof-of-concept exploit demonstrates that visiting a malicious SMB server can trigger the disk space exhaustion issue.
-- Microsoft has not yet issued a formal comment or a secondary patch to address this specific defect.
+- The lawsuit seeks a preliminary injunction to halt the Paramount-WBD transaction, citing potential market concentration in film distribution and cable licensing.
+- Bonta argues the merger would grant the combined entity excessive leverage over theater owners and pay-TV distributors, likely leading to higher costs for consumers.
+- The legal challenge specifically targets the distribution of wide-release movies, blockbuster films, and cable channels rather than the streaming sector.
+- Paramount contends the merger is necessary to compete against dominant tech platforms like Netflix and Amazon, which it claims have harmed the traditional entertainment industry.
+- The proposed deal would consolidate major assets including HBO, CBS, CNN, Paramount Pictures, Warner Bros. Studios, and various cable networks under David Ellison’s leadership.
 
 ### Why it Matters
-This flaw creates a significant denial-of-service risk by allowing remote actors to fill a system's storage capacity through a simple network interaction. The situation highlights the ongoing challenges companies face when deploying security updates that inadvertently compromise system stability or performance.
+This legal challenge highlights a significant tension between traditional antitrust enforcement and the evolving media landscape driven by streaming competition. If successful, the lawsuit could force a major restructuring of the entertainment industry and set a precedent for how regulators evaluate mergers in a shifting digital economy.
 
 ============================================================
-Author:   Mikael Markander
-Source:   PCWorld
-URL:      https://www.pcworld.com/article/3190654/microsofts-fix-for-rogueplanet-has-its-own-new-disk-space-bug.html
-Category: Cybersecurity
+Author:   James Faris
+Source:   Business Insider
+URL:      https://www.businessinsider.com/rob-bonta-interview-paramount-wbd-lawsuit-movie-theaters-cable-tv-2026-7#article
+Category: Tech Business & Markets
