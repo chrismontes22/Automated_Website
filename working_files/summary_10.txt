@@ -1,20 +1,20 @@
-Future of TV Briefing: The M&A match game (summer 2026 edition)
+Compromised AsyncAPI npm Packages Deliver Multi-Stage Botnet Malware
 ============================================================
 
-The media and streaming landscape is experiencing a wave of potential mergers and acquisitions as companies seek to consolidate power and scale in a competitive digital market.
+Four compromised npm packages in the @asyncapi namespace were found distributing a sophisticated multi-stage botnet loader that executes malicious code immediately upon being imported into a project.
 
 ### Key Points
-- Netflix is reportedly considering a move for NBCUniversal to secure live sports rights and increase its streaming watch time.
-- Walmart is evaluating a potential acquisition of The Trade Desk to bolster its advertising technology and compete with Amazon and Google.
-- Beast Industries and Mattel are viewed as potential partners to bridge the gap between creator-led IP and traditional toy manufacturing.
-- Recent industry activity includes the Paramount-Skydance deal, Fox’s acquisition of Roku, and Comcast’s spin-out of NBCUniversal.
-- Market volatility, including an 80% stock decline for The Trade Desk since February 2025, is driving speculation regarding these high-stakes corporate consolidations.
+- Affected packages include @asyncapi/generator-helpers, @asyncapi/generator-components, @asyncapi/generator, and @asyncapi/specs.
+- The malware, identified as a variant of the Miasma framework, downloads an encrypted payload from IPFS when the module is loaded by Node.js.
+- Attackers exploited a misconfigured GitHub Actions workflow to gain repository access and publish packages with legitimate SLSA provenance attestations.
+- The malicious code features a dead man's switch and evasion techniques to avoid detection by security tools and sandbox environments.
+- All five malicious package versions have been removed from the npm registry, though impacted systems should be treated as potentially compromised.
 
 ### Why it Matters
-These potential mega-deals reflect a broader industry shift where traditional media companies and retailers are aggressively pursuing scale to compete with dominant platforms like YouTube. Successful integration of these assets could redefine the future of streaming, advertising technology, and the creator economy.
+This incident highlights a critical vulnerability in CI/CD pipelines where legitimate provenance attestations can mask malicious code injected through compromised repository workflows. Because the malware triggers upon module import rather than installation, standard security mitigations like ignoring install scripts are ineffective against this supply chain threat.
 
 ============================================================
-Author:   Tim Peterson
-Source:   Digiday
-URL:      http://digiday.com/future-of-tv/future-of-tv-briefing-the-ma-match-game-summer-2026-edition/
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/07/compromised-asyncapi-npm-packages.html
+Category: Cybersecurity

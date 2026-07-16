@@ -1,20 +1,20 @@
-Two SonicWall SMA 1000 Zero-Days Exploited, One Could Enable Admin Commands
+The network perimeter is dead. Now what?
 ============================================================
 
-SonicWall has issued urgent security patches for two actively exploited zero-day vulnerabilities in its SMA 1000 series appliances that allow attackers to execute arbitrary commands and bypass authentication.
+The National Cyber Security Centre warns that Russian actor APT28 is exploiting vulnerable routers, highlighting how traditional perimeter-based security models are failing to protect modern, distributed enterprise networks.
 
 ### Key Points
-- CVE-2026-15409 is a critical SSRF vulnerability with a 10.0 CVSS score, while CVE-2026-15410 is a 7.2-rated post-authentication code injection flaw.
-- Patches are available in versions 12.4.3-03453 and 12.5.0-02835 or higher to remediate the security risks.
-- CISA has added both vulnerabilities to its Known Exploited Vulnerabilities catalog, mandating federal agencies to apply fixes by July 17, 2026.
-- Rapid7 reports that attackers are chaining these flaws to extract credentials and MFA seeds, enabling persistent access and lateral movement into internal networks.
-- Users should inspect logs for specific indicators of compromise and re-image appliances if unauthorized activity is detected.
+- The NCSC issued an advisory regarding Russian cyber actor APT28 using DNS hijacking to exploit vulnerabilities in enterprise routers.
+- State-sponsored actors, including those linked to Volt Typhoon, previously compromised over 100 US utility companies by exploiting unpatched FortiGate 300D firewalls.
+- Verizon’s 2025 Data Breach Investigations Report identifies the human element and credential theft as factors in 60% of all security breaches.
+- Experts recommend out-of-band management (OOBM) to maintain visibility and control of edge devices via a secure, parallel network path during cyber incidents.
+- Modern threats are increasingly augmented by agentic AI tools, which allow attackers to move laterally through systems in minutes after gaining initial access.
 
 ### Why it Matters
-These vulnerabilities provide attackers with a stealthy, persistent backdoor into corporate networks by compromising perimeter security appliances. Because the flaws allow for the extraction of high-value credentials and MFA data, organizations face a significant risk of lateral movement and unauthorized access to core domain controllers.
+The shift toward distributed edge infrastructure has rendered traditional perimeter-based security models obsolete, leaving organizations vulnerable to persistent, long-term breaches. Adopting resilient management strategies is now essential for maintaining operational control and recovery capabilities when primary network defenses are inevitably bypassed.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/07/two-sonicwall-sma-1000-zero-days.html
+Author:   Alan Stewart-Brown
+Source:   TechRadar
+URL:      https://www.techradar.com/pro/the-network-perimeter-is-dead-now-what
 Category: Cybersecurity

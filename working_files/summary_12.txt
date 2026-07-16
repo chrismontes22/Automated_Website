@@ -1,20 +1,20 @@
-Who's running all those tiny RPKI servers?
+You have a strong password. Here’s why your online accounts are still at risk
 ============================================================
 
-Independent RPKI publication servers play a critical role in securing Internet routing by allowing network operators to cryptographically authorize IP address prefixes and prevent malicious BGP hijacking attempts.
+Strong passwords alone are insufficient for digital security, requiring users to integrate email aliases, password managers, and two-factor authentication to effectively protect their online accounts from data breaches.
 
 ### Key Points
-- Resource Public Key Infrastructure (RPKI) uses Route Origin Authorizations (ROAs) to verify that an Autonomous System (AS) is authorized to announce specific IP address prefixes.
-- While five global Regional Internet Registries (RIRs) manage most RPKI data, a "long tail" of smaller, independent servers exists for operational control, cross-registry management, and research.
-- Researchers analyzed 3,778 ROA objects across 1,163 unique ASes, finding that 91% of these objects are cryptographically valid.
-- Over 50% of analyzed ROAs use the "maxLength" parameter, which can inadvertently increase vulnerability to sub-prefix hijacks if not configured according to RFC 9319 guidelines.
-- The study identified that 19.6% of ROAs using maxLength lack corresponding BGP announcements, creating potential security risks for those specific network segments.
+- Use email alias services like SimpleLogin or DuckDuckGo to hide your primary email address and prevent it from being exposed in data breaches.
+- Implement a password manager to generate and store unique, complex passwords for every service, eliminating the risk of credential stuffing.
+- Enable two-factor authentication (2FA) using physical security keys like YubiKey or authenticator apps like Ente Auth to add a critical secondary layer of defense.
+- Update your account credentials incrementally over time rather than attempting to change all passwords at once to avoid becoming overwhelmed.
+- Recognize that SMS-based 2FA, while less secure than hardware keys, remains a significantly better protection measure than having no secondary authentication enabled at all.
 
 ### Why it Matters
-RPKI is essential for maintaining the integrity of global Internet routing, as it provides a mechanism to detect and block unauthorized traffic redirection. Understanding the diversity of these publication servers helps identify potential security gaps and operational risks that could impact the verifiability and stability of critical online services.
+Relying solely on passwords creates a single point of failure that leaves users vulnerable to sophisticated phishing and credential-harvesting attacks. Adopting a three-tiered security strategy ensures that even if one layer is compromised, the remaining defenses prevent unauthorized access to your digital identity.
 
 ============================================================
-Author:   Ties Dirksen
-Source:   Apnic.net
-URL:      https://blog.apnic.net/2026/07/15/whos-running-all-those-tiny-rpki-servers/
+Author:   Karandeep Singh
+Source:   Android Authority
+URL:      https://www.androidauthority.com/strong-password-not-enough-online-security-why-3686495/
 Category: Cybersecurity
