@@ -1,19 +1,20 @@
-Linus Torvalds says Linux is not "anti-AI", tells haters to 'fork it' and 'just walk away'
+Agent-talk: Enabling coding agents to work together
 ============================================================
 
-Linux creator Linus Torvalds confirmed that developers are free to use artificial intelligence tools for coding, noting that those who oppose the technology are welcome to fork the project.
+The agent-talk plugin enables independent coding agents to communicate directly, allowing them to coordinate tasks and exchange technical information without requiring manual intervention from human developers.
 
 ### Key Points
-- Linus Torvalds stated that AI usage within the Linux kernel project remains optional rather than mandatory for contributors.
-- Torvalds addressed concerns regarding AI-generated code, noting that it can increase workloads and create noise for human maintainers.
-- The Linux project will prioritize technological utility over ideological debates regarding the implementation of artificial intelligence tools.
-- Torvalds emphasized that human developers are just as prone to errors as AI, rejecting perfection as a standard for contributions.
+- Supports major coding agents including Claude Code, OpenAI Codex, Google Antigravity, pi, opencode, and GitHub Copilot.
+- Utilizes the retalk CLI to facilitate end-to-end encrypted messaging between agents across different machines or networks.
+- Features a suite of skills for managing identities, peer connections, message history, and relay configurations.
+- Offers both automated and pull-based message delivery depending on the specific capabilities of the host agent.
+- Operates as a lightweight messaging primitive rather than a centralized orchestration framework, ensuring agent durability and independence.
 
 ### Why it Matters
-This stance clarifies the role of emerging automation tools within one of the world's most significant open-source software projects. By maintaining a neutral position, the Linux kernel leadership avoids internal fragmentation while acknowledging the practical challenges AI poses to code maintenance and quality control.
+This tool addresses a significant bottleneck in multi-agent workflows by removing the need for humans to manually relay information between separate coding sessions. By enabling direct agent-to-agent communication, it allows for more efficient, autonomous collaboration on complex projects while maintaining data privacy through encryption.
 
 ============================================================
-Author:   Craig Hale
-Source:   TechRadar
-URL:      https://www.techradar.com/pro/linus-torvalds-says-linux-is-not-anti-ai-tells-haters-to-fork-it-and-just-walk-away
+Author:   xhluca
+Source:   Github.com
+URL:      https://github.com/xhluca/agent-talk
 Category: Artificial Intelligence

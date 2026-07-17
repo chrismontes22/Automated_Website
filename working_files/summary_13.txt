@@ -1,20 +1,21 @@
-‘Selfish Bravado’ Behind TfL Cyber-Attack, Judge Says as Pair Jailed
+Building scalable AI agents with modular prompt transpilation
 ============================================================
 
-Two young men linked to the Scattered Spider hacking group have been sentenced to five years and six months in prison for the 2024 cyber-attack on Transport for London.
+Software engineers can improve AI agent reliability by transitioning from monolithic prompt files to modular, transpiled build systems that support version control, dependency management, and automated testing.
 
 ### Key Points
-- Owen Flowers and Thalha Jubair pleaded guilty to unauthorized system access under the UK’s Computer Misuse Act.
-- The 2024 attack cost Transport for London approximately £39 million in recovery expenses and lost revenue.
-- The breach compromised data for up to 10 million people, forcing the suspension of Oyster photocard and Dial-a-Ride services.
-- Perpetrators used social engineering and SIM swapping to bypass two-factor authentication and escalate privileges within internal systems.
-- The National Crime Agency identified this as the largest cybercrime prosecution in UK history, significantly disrupting the Scattered Spider collective.
+- Monolithic prompt files often fail in production due to difficulties in testing, collaboration, and managing complex safety or domain-specific instructions.
+- Developers can adopt a modular approach by using template engines to compose prompts from smaller, reusable skill files.
+- A transpilation pipeline allows for static validation, such as checking for circular dependencies and missing variables, before deployment.
+- CI/CD integration enables drift checking by comparing generated "golden files" against committed artifacts to ensure consistency.
+- Progressive disclosure techniques help manage token usage by dynamically loading only the necessary skill modules for specific tasks.
+- Modular prompt systems allow agents to propose their own logic updates via pull requests, which are then subjected to standard human review and validation.
 
 ### Why it Matters
-This case highlights the severe operational and financial risks posed by organized cybercriminal groups targeting critical national infrastructure. It serves as a landmark legal precedent for the UK, demonstrating the government's commitment to prosecuting high-level digital threats despite the perpetrators' youth.
+Treating prompts as build artifacts rather than static text bridges the gap between experimental AI development and enterprise-grade software engineering. This shift ensures that AI agents remain stable, auditable, and scalable as they are integrated into critical business workflows.
 
 ============================================================
-Author:   Kevin  Poireault
-Source:   Infosecurity Magazine
-URL:      https://www.infosecurity-magazine.com/news/selfish-bravado-behind-tfl/
-Category: Cybersecurity
+Author:   Simerus Mahesh
+Source:   Googleblog.com
+URL:      https://developers.googleblog.com/building-scalable-ai-agents-with-modular-prompt-transpilation/
+Category: Artificial Intelligence

@@ -1,20 +1,20 @@
-20+ Hijacked Government Websites Became an Attack Channel
+US Sanctions First VPN in Crackdown on Ransomware Criminals
 ============================================================
 
-Researchers at ANY.RUN have uncovered the PhantomEnigma campaign, which hijacked over 20 Brazilian government websites to distribute modular backdoors and malware through highly convincing, authenticated phishing emails.
+The U.S. Department of the Treasury has sanctioned the First VPN service and two administrators for providing infrastructure and obfuscation tools that facilitated global ransomware attacks against American institutions.
 
 ### Key Points
-- Attackers compromised legitimate .gov.br domains, including police and fire department portals, to host malicious redirects and bypass security filters.
-- Phishing lures utilized fake police-themed documents and official notices that successfully passed SPF, DKIM, and DMARC authentication checks.
-- The malware evolved from a browser-based banking threat into a sophisticated, modular Inno/Node.js backdoor capable of executing remote JavaScript commands.
-- Once installed, the backdoor maintains persistence, collects system data, and communicates with rotating command-and-control infrastructure every 180 seconds.
-- The campaign’s modular design allows operators to deploy secondary payloads, such as credential stealers or remote management tools, after the initial infection.
+- The Treasury sanctioned First VPN, administrator Dmytro Rashevskyi, and Yegeniy Vladimirovich Silayev for enabling cybercriminal activity.
+- First VPN, also known as 1VPNS, provided anonymous infrastructure and "cryptor" tools designed to bypass security systems and hide malware.
+- European authorities dismantled the service and arrested Rashevskyi in May following a multi-year investigation that began in 2021.
+- The service was widely advertised on Russian-language cybercrime forums since 2014, promising no data logging and refusal to cooperate with law enforcement.
+- Sanctions prohibit U.S. persons and financial institutions from engaging in transactions involving the property or interests of the designated individuals.
 
 ### Why it Matters
-This campaign demonstrates a significant shift in threat actor tactics by weaponizing trusted government infrastructure to evade traditional email and web security defenses. Organizations must move beyond static blocklists and implement behavioral analysis to detect these sophisticated, multi-stage attacks that exploit the perceived legitimacy of official communication channels.
+These sanctions represent a significant effort to disrupt the infrastructure that supports the global ransomware economy, which is estimated to cost $74 billion annually. By targeting the specific tools used to mask malicious activity, the Treasury aims to increase the operational costs and risks for cybercriminals targeting critical U.S. infrastructure.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/07/20-hijacked-government-websites.html
+Author:   Alex Valdes
+Source:   CNET
+URL:      https://www.cnet.com/tech/services-and-software/us-treasury-sanctions-first-vpn-service-1vpns-ransomware/
 Category: Cybersecurity
