@@ -1,20 +1,20 @@
-Windows 11 has more recovery options than ever, and here’s exactly when I would use each one to fix a broken PC
+20+ Hijacked Government Websites Became an Attack Channel
 ============================================================
 
-Microsoft has significantly enhanced Windows 11 with a comprehensive suite of recovery tools designed to resolve system instability, update failures, and boot issues without requiring a clean installation.
+Researchers at ANY.RUN have uncovered the PhantomEnigma campaign, which hijacked over 20 Brazilian government websites to distribute modular backdoors and malware through highly convincing, authenticated phishing emails.
 
 ### Key Points
-- The Windows Recovery Environment (WinRE) serves as the central hub for troubleshooting tools like Startup Repair, System Restore, and Safe Mode.
-- "Reset This PC" offers options to keep personal files or wipe the system, with "Cloud download" providing a fresh, reliable installation image.
-- "Cloud rebuild" allows users to restore the operating system and drivers from Microsoft servers without needing external installation media.
-- "Go Back" and "Uninstall Updates" provide quick rollbacks for users experiencing performance issues or bugs immediately following a system update.
-- Automated features like Quick Machine Recovery and Point-in-time Restore aim to resolve critical errors behind the scenes without requiring manual user intervention.
+- Attackers compromised legitimate .gov.br domains, including police and fire department portals, to host malicious redirects and bypass security filters.
+- Phishing lures utilized fake police-themed documents and official notices that successfully passed SPF, DKIM, and DMARC authentication checks.
+- The malware evolved from a browser-based banking threat into a sophisticated, modular Inno/Node.js backdoor capable of executing remote JavaScript commands.
+- Once installed, the backdoor maintains persistence, collects system data, and communicates with rotating command-and-control infrastructure every 180 seconds.
+- The campaign’s modular design allows operators to deploy secondary payloads, such as credential stealers or remote management tools, after the initial infection.
 
 ### Why it Matters
-These layered recovery options reduce the need for time-consuming manual reinstalls and minimize data loss during system failures. By shifting toward cloud-based and automated solutions, Microsoft is making Windows 11 more resilient and accessible for users who lack advanced technical troubleshooting skills.
+This campaign demonstrates a significant shift in threat actor tactics by weaponizing trusted government infrastructure to evade traditional email and web security defenses. Organizations must move beyond static blocklists and implement behavioral analysis to detect these sophisticated, multi-stage attacks that exploit the perceived legitimacy of official communication channels.
 
 ============================================================
-Author:   mhuck@live.com (Mauro Huculak) , Mauro Huculak
-Source:   Windows Central
-URL:      https://www.windowscentral.com/microsoft/windows-11/windows-11-has-more-recovery-features-than-ever-and-heres-when-i-would-use-each-one
-Category: Phones, Laptops, and Gadgets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/07/20-hijacked-government-websites.html
+Category: Cybersecurity

@@ -1,20 +1,20 @@
-Compromised AsyncAPI npm Packages Deliver Multi-Stage Botnet Malware
+Satyajit Das: Déjà Vu All Over Again! Are Stock Markets Repeating Dot.com Mistakes?
 ============================================================
 
-Four compromised npm packages in the @asyncapi namespace were found distributing a sophisticated multi-stage botnet loader that executes malicious code immediately upon being imported into a project.
+Current market enthusiasm for AI and space ventures mirrors the 2000 dot-com bubble, raising concerns that speculative valuations for companies like SpaceX, OpenAI, and Anthropic may trigger significant losses.
 
 ### Key Points
-- Affected packages include @asyncapi/generator-helpers, @asyncapi/generator-components, @asyncapi/generator, and @asyncapi/specs.
-- The malware, identified as a variant of the Miasma framework, downloads an encrypted payload from IPFS when the module is loaded by Node.js.
-- Attackers exploited a misconfigured GitHub Actions workflow to gain repository access and publish packages with legitimate SLSA provenance attestations.
-- The malicious code features a dead man's switch and evasion techniques to avoid detection by security tools and sandbox environments.
-- All five malicious package versions have been removed from the npm registry, though impacted systems should be treated as potentially compromised.
+- SpaceX is currently valued at approximately $1.75 trillion, a figure exceeding 90 times its annual revenue and 220 times its earnings.
+- OpenAI and Anthropic are targeting valuations exceeding $1 trillion, despite facing intense competition and high operational costs for AI model development.
+- The "spray-and-pay" investment strategy prioritizes rapid growth and user acquisition over proven business viability or profitability.
+- Financial intermediaries and banks have collected over $500 million in fees from recent offerings, incentivizing the promotion of high-risk technology stocks.
+- Similar to the 2000 crash, rising interest rates and tightening liquidity threaten companies that rely on continuous external funding to cover net losses.
 
 ### Why it Matters
-This incident highlights a critical vulnerability in CI/CD pipelines where legitimate provenance attestations can mask malicious code injected through compromised repository workflows. Because the malware triggers upon module import rather than installation, standard security mitigations like ignoring install scripts are ineffective against this supply chain threat.
+The decoupling of asset valuations from financial reality suggests that retail investors may be absorbing excessive risk as insiders seek to cash out. A potential market correction could mirror the social and economic fallout of the dot-com era, disproportionately impacting household savings and eroding trust in financial systems.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/07/compromised-asyncapi-npm-packages.html
-Category: Cybersecurity
+Author:   Yves Smith
+Source:   Nakedcapitalism.com
+URL:      https://www.nakedcapitalism.com/2026/07/satyajit-das-deja-vu-all-over-again-are-stock-markets-repeating-dot-com-mistakes.html
+Category: Tech Business & Markets
