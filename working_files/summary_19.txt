@@ -1,19 +1,20 @@
-Linus Torvalds says Linux is not "anti-AI", tells haters to 'fork it' and 'just walk away'
+Grok CLI Secretly Uploaded Full User Directories and SSH Keys
 ============================================================
 
-Linux creator Linus Torvalds confirmed that developers are free to use artificial intelligence tools for coding, noting that those who oppose the technology are welcome to fork the project.
+The xAI Grok Command-Line Interface is facing intense scrutiny after reports revealed the tool automatically uploaded sensitive user directories and private credentials to company servers without explicit consent.
 
 ### Key Points
-- Linus Torvalds stated that AI usage within the Linux kernel project remains optional rather than mandatory for contributors.
-- Torvalds addressed concerns regarding AI-generated code, noting that it can increase workloads and create noise for human maintainers.
-- The Linux project will prioritize technological utility over ideological debates regarding the implementation of artificial intelligence tools.
-- Torvalds emphasized that human developers are just as prone to errors as AI, rejecting perfection as a standard for contributions.
+- Security researchers discovered Grok CLI transmitted SSH keys, Git repositories, and password manager databases to xAI servers.
+- Unauthorized data uploads occurred even when users disabled "help improve this model" settings, drawing comparisons to malware behavior.
+- xAI responded by introducing a `/privacy` command and disabling specific data-sharing flags to mitigate the privacy breach.
+- Elon Musk announced that all previously uploaded user data would be deleted from company servers following the backlash.
+- Critics argue that relying on server-side toggles rather than client-side restrictions fails to fully resolve underlying data security vulnerabilities.
 
 ### Why it Matters
-This stance clarifies the role of emerging automation tools within one of the world's most significant open-source software projects. By maintaining a neutral position, the Linux kernel leadership avoids internal fragmentation while acknowledging the practical challenges AI poses to code maintenance and quality control.
+This incident highlights a critical gap in privacy standards for AI-powered coding tools compared to competitors like Claude Code and Gemini. It underscores the growing tension between rapid AI innovation and the ethical responsibility of tech companies to protect sensitive user information.
 
 ============================================================
-Author:   Craig Hale
-Source:   TechRadar
-URL:      https://www.techradar.com/pro/linus-torvalds-says-linux-is-not-anti-ai-tells-haters-to-fork-it-and-just-walk-away
-Category: Artificial Intelligence
+Author:   Julian Horsey
+Source:   Geeky Gadgets
+URL:      https://www.geeky-gadgets.com/grok-cli-unauthorized-codebase-uploads/
+Category: Cybersecurity

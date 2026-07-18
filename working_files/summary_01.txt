@@ -1,20 +1,20 @@
-US Sanctions First VPN in Crackdown on Ransomware Criminals
+CISA Adds Exploited SharePoint RCE Zero-Day CVE-2026-58644 to KEV
 ============================================================
 
-The U.S. Department of the Treasury has sanctioned the First VPN service and two administrators for providing infrastructure and obfuscation tools that facilitated global ransomware attacks against American institutions.
+The U.S. Cybersecurity and Infrastructure Security Agency has added a critical Microsoft SharePoint Server vulnerability to its Known Exploited Vulnerabilities catalog, mandating federal agency patches by July 19, 2026.
 
 ### Key Points
-- The Treasury sanctioned First VPN, administrator Dmytro Rashevskyi, and Yegeniy Vladimirovich Silayev for enabling cybercriminal activity.
-- First VPN, also known as 1VPNS, provided anonymous infrastructure and "cryptor" tools designed to bypass security systems and hide malware.
-- European authorities dismantled the service and arrested Rashevskyi in May following a multi-year investigation that began in 2021.
-- The service was widely advertised on Russian-language cybercrime forums since 2014, promising no data logging and refusal to cooperate with law enforcement.
-- Sanctions prohibit U.S. persons and financial institutions from engaging in transactions involving the property or interests of the designated individuals.
+- The vulnerability, CVE-2026-58644, carries a critical CVSS score of 9.8 and allows unauthorized remote code execution.
+- Affected software includes Microsoft SharePoint Server Subscription Edition, 2019, and 2016.
+- Microsoft confirmed the flaw was exploited as a zero-day before patches were released on July 14, 2026.
+- CISA also added two critical Fortinet FortiSandbox vulnerabilities, CVE-2026-25089 and CVE-2026-39808, to the mandatory remediation list.
+- Recommended hardening measures include enabling Antimalware Scan Interface integration and restricting direct internet exposure for SharePoint servers.
 
 ### Why it Matters
-These sanctions represent a significant effort to disrupt the infrastructure that supports the global ransomware economy, which is estimated to cost $74 billion annually. By targeting the specific tools used to mask malicious activity, the Treasury aims to increase the operational costs and risks for cybercriminals targeting critical U.S. infrastructure.
+This directive highlights the ongoing risk of remote code execution attacks targeting widely used enterprise infrastructure. By mandating rapid remediation, CISA aims to prevent threat actors from gaining persistent access to sensitive government networks through weaponized software flaws.
 
 ============================================================
-Author:   Alex Valdes
-Source:   CNET
-URL:      https://www.cnet.com/tech/services-and-software/us-treasury-sanctions-first-vpn-service-1vpns-ransomware/
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/07/cisa-adds-exploited-sharepoint-rce-zero.html
 Category: Cybersecurity

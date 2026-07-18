@@ -1,20 +1,20 @@
-Data centers are booming. Indigenous leaders want help protecting their lands.
+ACR Stealer: Two observed intrusion chains amid increased threat activity
 ============================================================
 
-Indigenous leaders are calling for greater oversight and consent regarding the construction of energy-intensive AI data centers that threaten local water supplies, sacred lands, and environmental stability globally.
+Microsoft Defender Experts have identified a surge in ACR Stealer malware campaigns using ClickFix social engineering to compromise enterprise browser credentials, authentication tokens, and sensitive corporate data.
 
 ### Key Points
-- Hyperscale AI data centers can consume over 100 megawatts of power annually, equivalent to the electricity usage of 100,000 households.
-- Research indicates U.S. data centers consumed approximately 17.4 billion gallons of water in 2023, with energy generation requiring an additional 211 billion gallons.
-- Indigenous groups in countries including Mexico, Chile, Brazil, and the U.S. are challenging projects through protests, lawsuits, and municipal moratoriums.
-- Some Indigenous nations, such as the Woodland Cree First Nation in Canada, are pursuing economic opportunities by taking majority stakes in data center projects.
-- Organizations like Te Kāhui Raraunga in New Zealand are developing governance frameworks to ensure AI infrastructure aligns with Indigenous rights and digital sovereignty.
+- ACR Stealer, a malware-as-a-service family formerly known as Amatera Stealer, targets enterprise environments to exfiltrate browser-stored credentials and sensitive documents.
+- Attackers utilize ClickFix lures via malvertising or SEO-manipulated search results to trick users into executing malicious commands.
+- One campaign variant employs WebDAV-delivered payloads and blockchain-backed dead-drop command-and-control resolution to evade traditional detection.
+- A second campaign utilizes fileless, in-memory execution through MSHTA and steganography, hiding malicious payloads within image pixels.
+- Microsoft Defender for Endpoint provides behavioral coverage for these techniques, including suspicious WebDAV activity, obfuscated PowerShell execution, and unauthorized browser credential access.
 
 ### Why it Matters
-The rapid expansion of AI infrastructure creates a significant tension between global technological advancement and the protection of Indigenous land rights and natural resources. Establishing clear standards for consent and environmental impact is essential to prevent the marginalization of vulnerable communities as the demand for digital power continues to surge.
+These campaigns demonstrate how sophisticated information-stealing malware can bypass traditional security by blending into legitimate network traffic and utilizing fileless execution methods. Organizations face significant risks of account takeover and unauthorized access to cloud resources, necessitating proactive monitoring of script-based execution and browser credential stores.
 
 ============================================================
-Author:   Aimee Gabay
-Source:   Grist
-URL:      https://grist.org/global-indigenous-affairs-desk/data-centers-are-booming-indigenous-leaders-want-help-protecting-their-lands/
-Category: Artificial Intelligence
+Author:   Microsoft Security Research and Balaji Venkatesh S
+Source:   Microsoft.com
+URL:      https://www.microsoft.com/en-us/security/blog/2026/07/16/acr-stealer-two-observed-intrusion-chains-amid-increased-threat-activity/
+Category: Cybersecurity

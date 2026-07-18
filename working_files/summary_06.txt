@@ -1,20 +1,20 @@
-XPeng’s New ‘Budget’ EV Looks Like the Ferrari Luce
+Show HN: ReasonGate- An explainable gate that blocks LLM prompt injection
 ============================================================
 
-Chinese electric vehicle manufacturer XPeng has announced the global launch of its L03 model, a budget-friendly EV designed to compete in 60 countries across Europe, Asia, and Latin America.
+ReasonGate is an open-source, self-hostable Python library that provides a multi-layered defense-in-depth system to detect prompt injections, jailbreaks, and data leaks in large language model applications.
 
 ### Key Points
-- The XPeng L03 starts at €35,600 and features a 320-mile WLTP range with fast-charging capabilities of 10 to 80 percent in 20 minutes.
-- The vehicle includes high-end interior features such as a 15.6-inch central screen, 27-inch head-up display, and AI-powered voice control as standard equipment.
-- XPeng utilizes a camera-only autonomous driving system powered by its proprietary Turing 7-nanometer AI chips, opting against the lidar technology used by many Chinese rivals.
-- The L03 design was led by former Ferrari exterior design head JuanMa López, aiming to provide premium aesthetics and material quality in a mass-market vehicle.
-- The Ultra trim level will support L2++ hands-off navigation, with functionality expected to reach European markets via over-the-air updates by 2027.
+- Uses a rule-based pipeline to normalize obfuscated text, such as leetspeak or base64, before scanning for known malicious patterns.
+- Implements an "action gate" that prevents sensitive tool calls if the destination data originates from untrusted or poisoned sources.
+- Features zero dependencies and performs no network calls, allowing for secure deployment on isolated or classified internal networks.
+- Provides machine-readable audit records for every decision, including risk scores and evidence logs for SIEM integration.
+- Achieves 75.6% recall on obfuscated known attacks, while an optional embedding-based add-on handles novel, naturally-phrased injection attempts.
 
 ### Why it Matters
-XPeng’s aggressive pricing and premium feature set signal a strategic effort to disrupt the global mass-market EV segment currently dominated by established legacy automakers. By blurring the lines between budget and luxury design, the company is challenging traditional market segmentation and increasing competitive pressure on international manufacturers.
+ReasonGate addresses the inherent vulnerability of LLMs by treating security as a multi-layered process rather than a single boundary filter. By combining signature-based detection with capability-based access control, it helps developers mitigate risks like indirect prompt injection that traditional text-only filters often miss.
 
 ============================================================
-Author:   Jeremy White
-Source:   Wired
-URL:      https://www.wired.com/story/xpeng-new-budget-ev-looks-like-the-ferrari-luce/
-Category: Tech Business & Markets
+Author:   cgrtml
+Source:   Github.com
+URL:      https://github.com/cgrtml/reasongate
+Category: Cybersecurity
