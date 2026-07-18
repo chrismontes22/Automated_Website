@@ -1,20 +1,20 @@
-Show HN: ReasonGate- An explainable gate that blocks LLM prompt injection
+iOS 27 Public Beta: It's... Fine I Guess?
 ============================================================
 
-ReasonGate is an open-source, self-hostable Python library that provides a multi-layered defense-in-depth system to detect prompt injections, jailbreaks, and data leaks in large language model applications.
+Apple has released the public beta for iOS 27, introducing performance enhancements, larger widget options, and updated weather features alongside a controversial, AI-integrated version of the Siri assistant.
 
 ### Key Points
-- Uses a rule-based pipeline to normalize obfuscated text, such as leetspeak or base64, before scanning for known malicious patterns.
-- Implements an "action gate" that prevents sensitive tool calls if the destination data originates from untrusted or poisoned sources.
-- Features zero dependencies and performs no network calls, allowing for secure deployment on isolated or classified internal networks.
-- Provides machine-readable audit records for every decision, including risk scores and evidence logs for SIEM integration.
-- Achieves 75.6% recall on obfuscated known attacks, while an optional embedding-based add-on handles novel, naturally-phrased injection attempts.
+- The iOS 27 public beta, released July 13, offers improved system speed, fluid app transitions, and expanded widget sizes for apps like Apple Music and Weather.
+- New Weather app tools provide detailed hourly and weekly visualizations for precipitation and wind patterns.
+- The revamped Siri AI features cross-app integration for reminders and notes but currently suffers from inconsistent performance and inaccurate information.
+- New AI-powered photo editing tools, Extend and Reframe, have produced distorted results in early testing.
+- Enabling the new Siri AI changes the Notification Center gesture, requiring a swipe from the top-left corner instead of the traditional top-middle.
 
 ### Why it Matters
-ReasonGate addresses the inherent vulnerability of LLMs by treating security as a multi-layered process rather than a single boundary filter. By combining signature-based detection with capability-based access control, it helps developers mitigate risks like indirect prompt injection that traditional text-only filters often miss.
+This update represents a significant shift in Apple's software strategy by prioritizing generative AI integration despite ongoing concerns regarding reliability and user interface friction. The mixed performance of these features suggests that while the underlying system is more efficient, the company faces challenges in making AI tools feel essential rather than intrusive for everyday users.
 
 ============================================================
-Author:   cgrtml
-Source:   Github.com
-URL:      https://github.com/cgrtml/reasongate
-Category: Cybersecurity
+Author:   Zachary McAuliffe
+Source:   CNET
+URL:      https://www.cnet.com/tech/services-and-software/ios-27-public-beta-its-fine-i-guess/
+Category: Phones, Laptops, and Gadgets

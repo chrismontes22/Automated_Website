@@ -1,20 +1,21 @@
-CISA Adds Exploited SharePoint RCE Zero-Day CVE-2026-58644 to KEV
+This Week in Security: Another Record Patch Tuesday, LAME is More Secure, Secure Boot is Less Secure, and Milk Malware
 ============================================================
 
-The U.S. Cybersecurity and Infrastructure Security Agency has added a critical Microsoft SharePoint Server vulnerability to its Known Exploited Vulnerabilities catalog, mandating federal agency patches by July 19, 2026.
+Microsoft’s July Patch Tuesday sets a new record for security fixes, while researchers uncover critical vulnerabilities in Dell BIOS, Windows boot loaders, and the LegacyHive registry exploit.
 
 ### Key Points
-- The vulnerability, CVE-2026-58644, carries a critical CVSS score of 9.8 and allows unauthorized remote code execution.
-- Affected software includes Microsoft SharePoint Server Subscription Edition, 2019, and 2016.
-- Microsoft confirmed the flaw was exploited as a zero-day before patches were released on July 14, 2026.
-- CISA also added two critical Fortinet FortiSandbox vulnerabilities, CVE-2026-25089 and CVE-2026-39808, to the mandatory remediation list.
-- Recommended hardening measures include enabling Antimalware Scan Interface integration and restricting direct internet exposure for SharePoint servers.
+- Microsoft released over 60 patches for critical Windows vulnerabilities, including fixes for BitLocker bypasses, DHCP privilege escalation, and an AI prompt injection in Edge.
+- Researchers identified a Dell BIOS vulnerability allowing administrator password extraction, with passwords of 12 characters or fewer stored in plaintext.
+- ESET discovered 11 Microsoft-signed boot loaders that allow attackers to bypass Secure Boot protections and execute arbitrary code.
+- The LegacyHive exploit, disclosed by researcher NightmareEclipse, enables unauthorized access to the registry settings and configuration files of other Windows users.
+- Fairlife Dairy suspended U.S. production operations following a ransomware attack, with no current timeline for facility restoration.
+- The LAME MP3 encoder received its first update in nearly a decade, addressing long-standing stack buffer overflow and integer underflow vulnerabilities.
 
 ### Why it Matters
-This directive highlights the ongoing risk of remote code execution attacks targeting widely used enterprise infrastructure. By mandating rapid remediation, CISA aims to prevent threat actors from gaining persistent access to sensitive government networks through weaponized software flaws.
+These developments highlight a significant increase in the discovery of complex, high-impact vulnerabilities across both hardware firmware and core operating system components. For organizations and individual users, the rapid pace of these disclosures underscores the critical necessity of maintaining updated systems to mitigate risks from supply chain exploits and persistent firmware-level threats.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/07/cisa-adds-exploited-sharepoint-rce-zero.html
+Author:   Mike Kershaw
+Source:   Hackaday
+URL:      https://hackaday.com/2026/07/17/this-week-in-security-another-record-patch-tuesday-lame-is-more-secure-secure-boot-is-less-secure-and-milk-malware/
 Category: Cybersecurity

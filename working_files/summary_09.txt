@@ -1,20 +1,20 @@
-ACR Stealer: Two observed intrusion chains amid increased threat activity
+GoldenEyeDog Subgroup Linked to DigiCert Breach and Code-Signing Certificate Theft
 ============================================================
 
-Microsoft Defender Experts have identified a surge in ACR Stealer malware campaigns using ClickFix social engineering to compromise enterprise browser credentials, authentication tokens, and sensitive corporate data.
+Cybersecurity researchers have attributed the April 2026 DigiCert security breach to the Chinese threat group CylindricalCanine, which exploited support portals to steal and weaponize legitimate code-signing certificates.
 
 ### Key Points
-- ACR Stealer, a malware-as-a-service family formerly known as Amatera Stealer, targets enterprise environments to exfiltrate browser-stored credentials and sensitive documents.
-- Attackers utilize ClickFix lures via malvertising or SEO-manipulated search results to trick users into executing malicious commands.
-- One campaign variant employs WebDAV-delivered payloads and blockchain-backed dead-drop command-and-control resolution to evade traditional detection.
-- A second campaign utilizes fileless, in-memory execution through MSHTA and steganography, hiding malicious payloads within image pixels.
-- Microsoft Defender for Endpoint provides behavioral coverage for these techniques, including suspicious WebDAV activity, obfuscated PowerShell execution, and unauthorized browser credential access.
+- The threat actor CylindricalCanine, a sub-group of GoldenEyeDog, compromised two DigiCert support analyst workstations via malicious files sent through a customer chat channel.
+- Attackers leveraged internal support portal functions to access initialization codes, allowing them to fraudulently obtain and issue 60 unauthorized code-signing certificates.
+- DigiCert revoked the compromised certificates, 27 of which were used to digitally sign the "Zhong Stealer" malware to evade security detection.
+- The group utilizes a modular remote access trojan known as Golden Gh0st RAT, which is capable of keystroke logging, data theft, and establishing SOCKS proxy tunnels.
+- Attack chains typically involve DLL side-loading and decoy documents to mask the deployment of malicious payloads on target systems.
 
 ### Why it Matters
-These campaigns demonstrate how sophisticated information-stealing malware can bypass traditional security by blending into legitimate network traffic and utilizing fileless execution methods. Organizations face significant risks of account takeover and unauthorized access to cloud resources, necessitating proactive monitoring of script-based execution and browser credential stores.
+This incident highlights a critical vulnerability in how certificate authorities manage internal support tools and sensitive initialization data. By weaponizing trusted certificates, attackers can bypass security software, posing a significant risk to the integrity of software supply chains globally.
 
 ============================================================
-Author:   Microsoft Security Research and Balaji Venkatesh S
-Source:   Microsoft.com
-URL:      https://www.microsoft.com/en-us/security/blog/2026/07/16/acr-stealer-two-observed-intrusion-chains-amid-increased-threat-activity/
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/07/goldeneyedog-subgroup-linked-to.html
 Category: Cybersecurity
