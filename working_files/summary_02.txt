@@ -1,20 +1,20 @@
-The next DeepSeek? A surprise AI breakthrough in China is rattling US market heavyweights.
+TP-Link Kasa cameras leaked home GPS via unauthenticated UDP for 6 years
 ============================================================
 
-Chinese startup Moonshot has released its Kimi K3 AI model, triggering a significant sell-off in US semiconductor stocks as investors fear increased competition and cooling capital expenditure returns.
+TP-Link has released firmware version 2.4.1 to remediate critical security vulnerabilities in Kasa Spot EC71 cameras, including unauthorized GPS exposure, insecure credential storage, and fleet-wide cryptographic key usage.
 
 ### Key Points
-- The Philadelphia Semiconductor Index dropped 4% on Friday, falling 19% from its recent peak and nearing technical bear market territory.
-- Major tech stocks saw declines, including Samsung down 9%, Taiwan Semiconductor Manufacturing down 3%, and Nvidia down 2%.
-- Moonshot’s Kimi K3 is being compared to the DeepSeek model for its ability to achieve high performance while utilizing fewer advanced AI chips.
-- Taiwan Semiconductor Manufacturing increased its global capital budget by 14% to $64 billion, fueling investor concerns regarding the long-term profitability of massive AI hardware spending.
-- The Nasdaq 100 fell nearly 2% as broader market sentiment shifted toward risk-off amid geopolitical tensions in the Middle East.
+- Firmware 2.4.1 addresses CVE-2026-9770 and CVE-2026-13230, which previously allowed unauthorized access to sensitive user data.
+- The update eliminates the broadcast of precise GPS coordinates and hardware identifiers via unauthenticated UDP requests on port 9999.
+- Security patches replace fleet-wide RSA keys with unique per-device certificates and implement at-rest encryption for stored user credentials.
+- Previous firmware versions stored TP-Link ID passwords as unsalted MD5 hashes, creating risks for cross-domain account takeover across the TP-Link ecosystem.
+- The vulnerabilities enabled a secondary market attack path where secondhand devices could leak a previous owner's home location and account credentials.
 
 ### Why it Matters
-The emergence of efficient, high-performing Chinese AI models challenges the assumption that US firms maintain an insurmountable lead in artificial intelligence development. This shift, combined with investor skepticism over the massive capital expenditures required for AI infrastructure, suggests a potential cooling period for the tech sector's recent growth.
+These vulnerabilities highlight significant privacy risks for smart home users, as they allowed attackers to correlate physical home locations with compromised cloud account credentials. The remediation is essential for protecting users against unauthorized access to their broader network infrastructure and personal surveillance data.
 
 ============================================================
-Author:   jsor@businessinsider.com (Jennifer Sor)
-Source:   Business Insider
-URL:      https://www.businessinsider.com/stock-market-today-chip-selloff-kimi-moonshot-ai-rotation-soxx-2026-7#article
-Category: Tech Business & Markets
+Author:   BadChemical
+Source:   Github.com
+URL:      https://github.com/BadChemical/IoT-Vulnerability-Research-Public/blob/main/TP-Link_Kasa_EC71/Kasa_EC71.md
+Category: Cybersecurity
