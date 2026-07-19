@@ -1,20 +1,20 @@
-Getting Started with Apple’s Foundation Models [FREE]
+Daxin: 13-Year-Old China-Linked Malware Found Still Active on Manufacturer’s Network
 ============================================================
 
-Apple is introducing Foundation Models in version 26 of its operating systems, enabling developers to integrate optimized, on-device artificial intelligence directly into their iOS, iPadOS, and macOS applications.
+Symantec researchers discovered the China-linked Daxin rootkit and a new Stupig backdoor operating on a compromised Taiwanese manufacturing network, revealing a potential thirteen-year undetected intrusion into critical infrastructure.
 
 ### Key Points
-- Apple Foundation Models are large language models optimized to run locally on end-user hardware by reducing parameters and quantizing values.
-- The framework allows apps to perform tasks like text generation and data summarization without requiring an internet connection.
-- Developers can access the technology using the `FoundationModels` framework and the `SystemLanguageModel` class in Xcode 26 or later.
-- Apps must verify device compatibility and Apple Intelligence status, as the models require specific hardware support and user enablement.
-- The framework provides built-in error handling to inform users if models are unavailable due to device eligibility, settings, or download status.
+- The Daxin Windows kernel-mode rootkit, first documented in 2022, remains active and capable of hijacking legitimate network traffic to bypass security monitoring.
+- The newly identified Stupig backdoor disguises itself as a keyboard-layout DLL to execute commands with SYSTEM privileges directly from the Windows login screen.
+- Both malicious tools feature 2013 compilation timestamps, suggesting the compromised host may have remained under attacker control for over a decade.
+- Investigators suspect the initial breach occurred through an outdated Digiwin single sign-on portal running end-of-life Java software from 2009 to 2011.
+- Stupig evades detection by avoiding standard authentication logs, allowing attackers to gain high-level system access before a user even logs in.
 
 ### Why it Matters
-By shifting AI processing from data centers to local hardware, Apple enhances user privacy and reduces latency for mobile applications. This transition allows developers to build sophisticated, AI-driven features that function reliably offline while maintaining strict data security standards.
+This discovery highlights the extreme longevity of sophisticated state-sponsored cyber espionage campaigns that utilize stealthy, kernel-level persistence mechanisms. By targeting overlooked areas like keyboard-layout providers and Windows login processes, these threats demonstrate that traditional network monitoring is often insufficient to detect long-term, deeply embedded intrusions.
 
 ============================================================
-Author:   bmorefield
-Source:   Kodeco.com
-URL:      https://www.kodeco.com/53631607-getting-started-with-apple-s-foundation-models
-Category: Artificial Intelligence
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/195577/malware/daxin-13-year-old-china-linked-malware-found-still-active-on-manufacturers-network.html
+Category: Cybersecurity

@@ -1,20 +1,20 @@
-TP-Link Kasa cameras leaked home GPS via unauthenticated UDP for 6 years
+Free up computer space with 2TB of cloud storage for $59 — for life
 ============================================================
 
-TP-Link has released firmware version 2.4.1 to remediate critical security vulnerabilities in Kasa Spot EC71 cameras, including unauthorized GPS exposure, insecure credential storage, and fleet-wide cryptographic key usage.
+FileJump is currently offering a lifetime subscription for 2TB of cloud storage at a discounted price of $59, providing users with a permanent alternative to traditional physical hard drives.
 
 ### Key Points
-- Firmware 2.4.1 addresses CVE-2026-9770 and CVE-2026-13230, which previously allowed unauthorized access to sensitive user data.
-- The update eliminates the broadcast of precise GPS coordinates and hardware identifiers via unauthenticated UDP requests on port 9999.
-- Security patches replace fleet-wide RSA keys with unique per-device certificates and implement at-rest encryption for stored user credentials.
-- Previous firmware versions stored TP-Link ID passwords as unsalted MD5 hashes, creating risks for cross-domain account takeover across the TP-Link ecosystem.
-- The vulnerabilities enabled a secondary market attack path where secondhand devices could leak a previous owner's home location and account credentials.
+- The lifetime subscription is priced at $59, a significant reduction from the original $467 MSRP.
+- Users receive 2TB of secure cloud storage accessible via desktop, mobile, Android, and iOS platforms.
+- The service features 256-bit AES end-to-end encryption to protect stored photos, videos, and documents.
+- FileJump supports file uploads up to 15GB each with no speed limits on transfers or downloads.
+- The platform includes a drag-and-drop interface and tools for sharing files with friends, family, or clients.
 
 ### Why it Matters
-These vulnerabilities highlight significant privacy risks for smart home users, as they allowed attackers to correlate physical home locations with compromised cloud account credentials. The remediation is essential for protecting users against unauthorized access to their broader network infrastructure and personal surveillance data.
+This offer provides a cost-effective, long-term solution for individuals seeking to offload data from physical hardware to a secure, remote environment. By eliminating recurring monthly subscription fees, it presents a practical alternative for users looking to manage large digital libraries across multiple devices.
 
 ============================================================
-Author:   BadChemical
-Source:   Github.com
-URL:      https://github.com/BadChemical/IoT-Vulnerability-Research-Public/blob/main/TP-Link_Kasa_EC71/Kasa_EC71.md
-Category: Cybersecurity
+Author:   Boing Boing's Shop
+Source:   Boing Boing
+URL:      https://boingboing.net/2026/07/18/free-up-computer-space-with-2tb-of-cloud-storage-for-59-for-life.html
+Category: Phones, Laptops, and Gadgets
