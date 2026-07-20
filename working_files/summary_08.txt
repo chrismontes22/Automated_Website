@@ -1,20 +1,20 @@
-As Google sits back and watches, terrible ads are ruining Android’s free app ecosystem
+Deepsec
 ============================================================
 
-Google faces growing criticism for allowing predatory, intrusive advertising practices to dominate the Android Play Store, effectively degrading the user experience and stifling independent app development on the platform.
+Deepsec is an agent-powered vulnerability scanner designed for large-scale infrastructure that utilizes advanced AI models to identify and patch complex security flaws within existing code repositories.
 
 ### Key Points
-- Modern Android apps frequently utilize "dark patterns," including unclosable interstitial video ads, deceptive playable mini-games, and unauthorized notification spam.
-- Aggressive ad SDKs from major brokers have become the primary revenue source for developers, as traditional banner ad payouts have significantly declined.
-- Independent developers are increasingly leaving the ecosystem because they cannot compete with low-effort, ad-heavy "copycat" apps that prioritize data harvesting over utility.
-- Critics argue that Google, as the owner of both the Android platform and the AdMob network, has a financial conflict of interest that discourages strict enforcement.
-- While Google claims to use AI and developer verification to block policy-violating apps, users report that fraudulent and hostile advertising remains widespread.
+- Deepsec performs on-demand code reviews by leveraging high-level AI models to detect deep-seated vulnerabilities.
+- The tool supports parallel processing across worker machines, allowing it to resume interrupted scans without re-analyzing previously checked files.
+- Users can integrate Vercel AI Gateway to manage high-concurrency API quotas required for scanning extensive codebases.
+- Security features include optional Vercel Sandbox microVMs to isolate environments and prevent potential credential exfiltration during the scanning process.
+- The command-line interface offers specialized modes, including PR-specific diff scanning, P0-P2 triage classification, and automated revalidation of findings.
 
 ### Why it Matters
-The proliferation of toxic advertising is eroding user trust in the Android ecosystem, potentially rendering the platform's library of free utilities unusable. If Google fails to regulate these predatory practices, it risks permanently damaging the reputation of its mobile software marketplace and alienating its massive global user base.
+This tool addresses the limitations of traditional scanners by using AI agents to uncover complex, long-standing vulnerabilities that automated regex tools often miss. By enabling scalable, infrastructure-native security audits, it helps organizations significantly reduce the time and cost associated with manual code remediation.
 
 ============================================================
-Author:   Jerry Hildenbrand
-Source:   Android Authority
-URL:      https://www.androidauthority.com/terrible-ads-ruining-android-apps-google-doing-nothing-3687904/
-Category: Phones, Laptops, and Gadgets
+Author:   vercel-labs
+Source:   Github.com
+URL:      https://github.com/vercel-labs/deepsec
+Category: Cybersecurity

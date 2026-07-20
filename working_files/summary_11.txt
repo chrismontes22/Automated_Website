@@ -1,20 +1,20 @@
-I interned at OpenAI in San Francisco. Here's how landed it, what it was like, and what I thought of Sam Altman.
+blind-transpiler 1.0.0
 ============================================================
 
-Hamza Mostafa, a 21-year-old software engineer, details his journey from Canada to San Francisco to secure a competitive internship at OpenAI and build a career in the tech industry.
+The new open-source Python library blind_transpiler enables developers to convert Qiskit quantum circuits into secure, blind counterparts for applications in quantum homomorphic encryption and universal blind quantum computation.
 
 ### Key Points
-- Hamza Mostafa moved to San Francisco in October 2025 after completing multiple internships in Canada and San Mateo.
-- He secured a three-month internship at OpenAI’s Mission Bay office, which ran from May to August 2025.
-- The internship required rigorous technical interviews focused on coding speed and design processes.
-- Mostafa learned to utilize AI agents to accelerate his coding workflow while working alongside experienced engineers.
-- Despite facing visa challenges that delayed a return offer, he remains in San Francisco to pursue independent agentic AI projects.
+- Supports four distinct blind transpilation protocols: qhe, ubqc, fdqc, and ssdqc.
+- Allows users to delegate complex quantum computations to remote servers without exposing input, output, or algorithmic data.
+- Features a modular, four-layer architecture designed for robustness and compatibility with Qiskit primitives.
+- Provides tools for estimating encryption key sizes and managing secure communication rounds between client and server.
+- Available for installation via PyPI or direct source download under the Apache 2.0 license.
 
 ### Why it Matters
-The narrative highlights San Francisco's enduring status as the primary global hub for talent seeking to work at the frontier of artificial intelligence. It underscores how networking and proximity to industry leaders remain critical factors for young professionals aiming to break into high-growth tech sectors.
+This library simplifies the implementation of secure delegated quantum computing, a critical requirement for protecting sensitive data in cloud-based quantum environments. By automating the transpilation process, it lowers the barrier for researchers to prototype privacy-preserving quantum algorithms and cryptographic protocols.
 
 ============================================================
-Author:   ccheong@insider.com (Charissa Cheong)
-Source:   Business Insider
-URL:      https://www.businessinsider.com/intern-openai-sam-altman-san-francisco-make-it-in-tech-2026-7#article
-Category: Artificial Intelligence
+Author:   joshimohit@bhu.ac.in
+Source:   Pypi.org
+URL:      https://pypi.org/project/blind-transpiler/1.0.0/
+Category: Cybersecurity

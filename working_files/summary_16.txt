@@ -1,20 +1,20 @@
-Budget-Friendly $299 Meta Glasses vs Meta Ray-Ban: Which Frames Should You Buy?
+Attackers Can Take Over WordPress Sites Using Newly Released wp2shell Exploits
 ============================================================
 
-Meta has launched its new $299 smart glasses, offering a budget-friendly alternative to the Meta Ray-Ban line with improved comfort, customizable frame styles, and advanced Meta AI integration.
+WordPress has released critical security updates for versions 6.9.x and 7.0.x to patch a dangerous remote code execution vulnerability chain that allows attackers to compromise sites without authentication.
 
 ### Key Points
-- The glasses feature a 12-megapixel 3K camera and open-ear speakers for hands-free media capture and communication.
-- Battery life lasts up to 8 hours, with an included foldable charging case providing an additional 40 hours of power.
-- Connectivity is upgraded to Wi-Fi 6 and Bluetooth 5.4 for faster file transfers and more reliable device pairing.
-- Users can choose from three frame styles—Fury, Adventure, and Starpire—with options for prescription or transition lenses.
-- The hardware includes a customizable button and an integrated touchpad for gesture-based control of volume and media playback.
+- WordPress versions 6.9.0–6.9.4 and 7.0.0–7.0.1 are vulnerable to a pre-authentication remote code execution exploit known as wp2shell.
+- The flaw chains a REST API batch-route confusion bug (CVE-2026-63030) with a high-severity SQL injection (CVE-2026-60137).
+- WordPress has issued mandatory forced automatic updates to version 7.0.2 and 6.9.5 to mitigate the risk for affected installations.
+- Researchers at Searchlight Cyber discovered the vulnerabilities, which can be exploited by anonymous users on default WordPress configurations without requiring plugins.
+- Administrators can use a provided online tool to check if their specific WordPress instance is currently vulnerable to these exploits.
 
 ### Why it Matters
-By pivoting to its own branded hardware, Meta is positioning smart eyewear as a mass-market consumer product rather than a luxury accessory. This strategy could accelerate the adoption of wearable technology by lowering the entry price while maintaining high-utility features for everyday users.
+These vulnerabilities pose a significant threat because they affect over 500 million websites and require no user credentials to execute malicious code. Immediate patching is essential to prevent unauthorized site takeovers, as the widespread nature of the platform makes it a primary target for automated exploitation.
 
 ============================================================
-Author:   Julian Horsey
-Source:   Geeky Gadgets
-URL:      https://www.geeky-gadgets.com/meta-glasses-vs-ray-ban/
-Category: Phones, Laptops, and Gadgets
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/195597/hacking/attackers-can-take-over-wordpress-sites-using-newly-released-wp2shell-exploits.html
+Category: Cybersecurity
