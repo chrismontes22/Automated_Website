@@ -1,20 +1,22 @@
-Attackers Can Take Over WordPress Sites Using Newly Released wp2shell Exploits
+The Digital Dust Bowl: The Brutal Physical Reality Of The AI Boom
 ============================================================
 
-WordPress has released critical security updates for versions 6.9.x and 7.0.x to patch a dangerous remote code execution vulnerability chain that allows attackers to compromise sites without authentication.
+The rapid expansion of artificial intelligence data centers is straining local power grids and water supplies, forcing a national debate over resource accountability and the true cost of infrastructure.
 
 ### Key Points
-- WordPress versions 6.9.0–6.9.4 and 7.0.0–7.0.1 are vulnerable to a pre-authentication remote code execution exploit known as wp2shell.
-- The flaw chains a REST API batch-route confusion bug (CVE-2026-63030) with a high-severity SQL injection (CVE-2026-60137).
-- WordPress has issued mandatory forced automatic updates to version 7.0.2 and 6.9.5 to mitigate the risk for affected installations.
-- Researchers at Searchlight Cyber discovered the vulnerabilities, which can be exploited by anonymous users on default WordPress configurations without requiring plugins.
-- Administrators can use a provided online tool to check if their specific WordPress instance is currently vulnerable to these exploits.
+- Northern Virginia hosts over 300 data centers, handling approximately 70% of global internet traffic while facing grid connection wait times of up to seven years.
+- Data centers in Northern Virginia consumed nearly 2 billion gallons of treated municipal water in 2023, a figure projected to reach 399 billion gallons in Texas by 2030.
+- Global data center energy consumption is expected to reach 1,050 TWh this year, roughly equivalent to the combined electricity usage of Germany and France.
+- Virginia recently implemented a 1.1-cent-per-kilowatt-hour tax on data center electricity to offset the costs of grid infrastructure upgrades and protect residential utility rates.
+- The constant, 24/7 power demand of AI servers often necessitates the continued use of coal or natural gas plants to provide reliable baseload electricity.
 
 ### Why it Matters
-These vulnerabilities pose a significant threat because they affect over 500 million websites and require no user credentials to execute malicious code. Immediate patching is essential to prevent unauthorized site takeovers, as the widespread nature of the platform makes it a primary target for automated exploitation.
+The physical demands of AI infrastructure are creating significant competition for resources, potentially hindering housing, manufacturing, and hospital development. Policymakers must now decide how to balance technological competitiveness with the need to hold tech companies accountable for the long-term strain placed on public utilities.
 
 ============================================================
-Author:   Pierluigi Paganini
-Source:   Securityaffairs.com
-URL:      https://securityaffairs.com/195597/hacking/attackers-can-take-over-wordpress-sites-using-newly-released-wp2shell-exploits.html
-Category: Cybersecurity
+Author:   Ken Silverstein, Senior Contributor, 
+ Ken Silverstein, Senior Contributor
+ https://www.forbes.com/sites/kensilverstein/
+Source:   Forbes
+URL:      https://www.forbes.com/sites/kensilverstein/2026/07/19/the-digital-dust-bowl-the-brutal-physical-reality-of-the-ai-boom/
+Category: Artificial Intelligence
