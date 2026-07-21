@@ -1,20 +1,20 @@
-Volexity Uncovers Zero-Day Campaign Targeting SonicWall VPN Appliances
+U.S. regulatory developments and earnings, ECB rate decision: Crypto Week Ahead
 ============================================================
 
-SonicWall has released patches for two zero-day vulnerabilities, CVE-2026-15409 and CVE-2026-15410, which threat actor UTA0533 used to gain root-level access to SMA 1000 series VPN appliances since June 2026.
+Crypto markets face a busy week of regulatory deadlines in Washington D.C., major macroeconomic data releases, and significant token unlocks that could influence digital asset price volatility.
 
 ### Key Points
-- Threat actor UTA0533 chained a CVSS 10.0 SSRF vulnerability and a CVSS 7.2 code injection flaw to compromise physical and virtual VPN appliances.
-- The exploit chain allowed attackers to bypass authentication, execute arbitrary OS commands as administrator, and install custom malware like the ORANGETAIL web shell.
-- Attackers captured cleartext LDAP credentials by deploying scripts to monitor network traffic directly from the compromised VPN hardware.
-- SonicWall confirmed active exploitation in the wild and issued security patches to address the vulnerabilities discovered by their internal PSIRT team.
-- A separate authentication bypass exists for physical appliances due to a world-readable hardware UUID file, though it was not used in this specific campaign.
+- The Office of the Comptroller of the Currency closes its comment period for proposed GENIUS Act stablecoin regulations on July 24.
+- The Commodity Futures Trading Commission concludes its comment window regarding 24/7 trading and perpetual-style bitcoin futures on July 27.
+- The European Central Bank is scheduled to announce its latest interest-rate decision on July 23, with markets widely anticipating a hold.
+- Major token unlocks are scheduled throughout the week, including significant distributions for Worldcoin, Avalanche, and Toncoin.
+- Corporate earnings reports from Tesla, Nasdaq, and CME Group provide additional data points for broader market sentiment.
 
 ### Why it Matters
-VPN appliances serve as critical gateways for network authentication, making them high-value targets for attackers seeking to intercept credentials and gain persistent access to internal systems. Organizations must prioritize patching these vulnerabilities immediately to prevent unauthorized administrative control and potential data exfiltration from their secure environments.
+These regulatory and macroeconomic events represent critical inflection points for institutional adoption and the legal framework governing stablecoins and derivatives. Investors should monitor these developments closely, as they may dictate market liquidity and the long-term compliance landscape for digital assets.
 
 ============================================================
-Author:   Pierluigi Paganini
-Source:   Securityaffairs.com
-URL:      https://securityaffairs.com/195626/hacking/volexity-uncovers-zero-day-campaign-targeting-sonicwall-vpn-appliances.html
-Category: Cybersecurity
+Author:   Francisco Rodrigues
+Source:   CoinDesk
+URL:      https://www.coindesk.com/markets/2026/07/20/u-s-regulatory-developments-and-earnings-ecb-rate-decision-crypto-week-ahead
+Category: Tech Business & Markets

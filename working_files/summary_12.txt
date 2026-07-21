@@ -1,21 +1,20 @@
-South Korea's Kospi drops 4.5% as some AI stocks swoon, while oil keeps climbing
+HollowGraph Malware Hides C2 and Stolen Files in Microsoft 365 Events Dated 2050
 ============================================================
 
-Wall Street indices finished lower on Monday as investors reassessed the recent artificial intelligence boom while awaiting upcoming quarterly earnings reports from major technology companies like Alphabet.
+Researchers at Group-IB have identified a new espionage implant called HollowGraph that uses hijacked Microsoft 365 calendar events set to the year 2050 to exfiltrate stolen data undetected.
 
 ### Key Points
-- The S&P 500 fell 0.2%, while the Dow Jones Industrial Average dropped 307 points amid ongoing volatility in the technology sector.
-- Advanced Micro Devices rose 1.6% following the announcement of an expanded partnership with Microsoft to utilize its new Helios AI product.
-- AMC Entertainment shares surged 26.8% after the theater operator reported quarterly revenue that exceeded analyst expectations.
-- Domino's Pizza climbed 2.1% as the company reported growth in both carryout and delivery orders despite broader consumer spending pressures.
-- Jersey Mike's initiated its roadshow for an upcoming initial public offering on the New York Stock Exchange with a target price range of $21 to $25.
-- U.S. gasoline prices have climbed back above $4 per gallon, contributing to ongoing inflationary concerns for American households.
+- HollowGraph is a .NET DLL malware that uses the Microsoft Graph API to treat compromised mailboxes as two-way dead drops for command-and-control.
+- The malware hides instructions and stolen files as encrypted attachments within calendar events dated May 13, 2050, to avoid user discovery.
+- A secondary communication channel uses DNS queries to the domain cloudlanecdn[.]com to refresh Entra ID credentials and maintain persistent access.
+- Group-IB identified the malware on at least 12 machines, with active traffic observed between June 3 and July 9, 2026.
+- The implant shares technical similarities with the Cavern backdoor framework, which has been linked to Iranian state-sponsored threat actors.
 
 ### Why it Matters
-The market is currently balancing high valuations against the necessity for companies to prove that massive capital investments in artificial intelligence will yield tangible long-term profits. Upcoming earnings reports will be critical in determining whether current stock prices are justified or if the recent rally in tech-heavy indices is unsustainable.
+This campaign highlights a growing trend of attackers leveraging legitimate cloud service functionality to bypass traditional network security controls. Because the malware exploits standard API traffic rather than software vulnerabilities, organizations must prioritize identity monitoring and strict auditing of application permissions to detect unauthorized mailbox activity.
 
 ============================================================
-Author:   CHAN HO-HIM
-Source:   Yahoo Entertainment
-URL:      https://finance.yahoo.com/markets/world-indices/articles/south-koreas-kospi-drops-nearly-043530052.html
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/07/hollowgraph-malware-hides-c2-and-stolen.html
+Category: Cybersecurity

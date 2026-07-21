@@ -1,20 +1,20 @@
-SleeperGem Uses Three Malicious RubyGems Packages to Target Developer Machines
+Hacker wipes Romania's land registry database
 ============================================================
 
-Cybersecurity researchers have identified a supply chain attack dubbed SleeperGem, which involves hijacking dormant RubyGems accounts to distribute malicious software payloads that establish persistence on developer machines.
+A hacker breached Romania’s National Agency for Cadastre and Real Estate Advertising, wiping the country’s land registry database and halting real-estate transactions after a failed extortion attempt.
 
 ### Key Points
-- Attackers compromised multiple RubyGems accounts to push malicious updates to packages including git_credential_manager, Dendreo, and fastlane-plugin-run_tests_firebase_testlab.
-- The malware avoids CI/CD build environments, specifically targeting developer workstations to install native daemons and establish persistence.
-- Malicious payloads are fetched from a Forgejo host and can escalate privileges to root if the user has passwordless sudo access.
-- Five packages were identified as carriers for the malicious dependency, potentially exposing users of slackHtmlToMarkdown, seo_optimizer, and array_fast_methods.
-- Security experts recommend that affected users rotate all credentials and manually remove malicious files, including a setuid root shell found at /usr/local/sbin/ping6.
+- The breach at the National Agency for Cadastre and Real Estate Advertising (ANCPI) occurred on July 14, forcing the agency to take its systems offline.
+- The attacker, identified as Zakaria Mahdjoub (alias ByteToBreach), gained access using valid credentials and deleted both live data and backups.
+- Stolen internal documents and employee credentials were subsequently posted for sale on a known hacking forum.
+- ANCPI is currently rebuilding its entire network from scratch, though officials reportedly recovered an offline backup to prevent long-term data loss.
+- This incident marks the latest in a series of land registry hacks targeting government agencies across Europe and beyond over the last three years.
 
 ### Why it Matters
-This campaign highlights the significant security risks posed by dormant developer accounts, which are increasingly targeted for hijacking to bypass standard security scrutiny. The incident underscores the need for developers to audit dependencies and maintain strict account security to prevent the exploitation of trusted software registries.
+The total loss of digital land records has paralyzed Romania's real-estate market, preventing notaries from processing transactions and citizens from verifying property ownership. This event highlights the critical vulnerability of national infrastructure to extortion-driven cyberattacks and underscores the necessity of maintaining secure, offline backups for essential government services.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/07/sleepergem-uses-three-malicious.html
+Author:   Catalin Cimpanu
+Source:   Risky.biz
+URL:      https://news.risky.biz/risky-bulletin-hacker-wipes-romanias-entire-land-registry-database/
 Category: Cybersecurity

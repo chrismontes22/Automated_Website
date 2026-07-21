@@ -1,20 +1,20 @@
-Sign Commits from Anywhere Without Your Keys Going Anywhere
+FBI accuse Steam user of stealing over $220,000 via malware-infected games like BlockBlasters, Lunara and Dashverse
 ============================================================
 
-A developer has created a robust system using symlinks and SSH agent forwarding to ensure Git commits remain hardware-signed via Secure Enclave even when working remotely.
+The FBI has arrested Florida student Zyaire Dontaevious Zamarion Wilkins for allegedly distributing malware through Steam games to steal over $220,000 in cryptocurrency from approximately 8,000 infected computers.
 
 ### Key Points
-- The setup uses Secretive to store SSH keys in the Apple Secure Enclave, ensuring private keys never exist as files on disk.
-- A custom symlink, `~/.ssh/agent.sock`, dynamically switches between the local machine's agent and a forwarded remote agent.
-- Git is configured with `gpg.ssh.defaultKeyCommand` to resolve the correct signing key at the moment of execution rather than using a static configuration.
-- Shell hooks and a LaunchAgent ensure that GUI applications and long-lived processes, such as Claude Code, maintain access to the active agent socket.
-- The system supports multi-device workflows, allowing commits from an iPad or secondary laptop to be verified by GitHub using device-specific keys.
+- Zyaire Dontaevious Zamarion Wilkins was arrested on July 14 following an FBI investigation into malware-infected games on the Steam platform.
+- The malicious software was embedded in titles including PirateFi, Dashverse, Lampy, Lunara, and BlockBlasters, all of which have since been removed.
+- Investigators linked the suspect to the scheme by tracking stolen cryptocurrency used to purchase Uber gift cards delivered to his residence.
+- The operation, which targeted users via Discord, LinkedIn, and Telegram, successfully compromised roughly 8,000 PCs over a two-year period.
+- One victim, streamer RastalandTV, reportedly lost $32,000 while playing the game BlockBlasters to raise funds for his cancer treatment.
 
 ### Why it Matters
-This configuration solves the common security trade-off between using hardware-backed keys and maintaining a flexible, remote-first development workflow. By automating agent management, developers can maintain high-security standards without sacrificing the ability to sign commits from any device they control.
+This case highlights the growing threat of sophisticated malware distribution through legitimate gaming platforms and social media channels. It serves as a critical reminder for users to exercise caution when downloading free software from unverified sources to protect their digital assets.
 
 ============================================================
-Author:   Phil Haack
-Source:   Haacked.com
-URL:      https://haacked.com/archive/2026/07/20/remote-commit-signing/
+Author:   Edwin Evans-Thirlwell
+Source:   Rock Paper Shotgun
+URL:      https://www.rockpapershotgun.com/fbi-accuse-steam-user-of-stealing-over-220000-via-malware-infected-games-like-blockblasters-lunara-and-dashverse
 Category: Cybersecurity

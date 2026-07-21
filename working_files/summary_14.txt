@@ -1,20 +1,20 @@
-Grok-iOS – remote Grok Build from your iPhone over ACP
+SaaS *is* dead. But not because AI "killed" it, because AI killed it
 ============================================================
 
-Developer Pedro Shakour has released an open-source iOS client for Grok Build, allowing users to control xAI agents remotely from an iPhone by connecting to a local Mac host.
+The rise of "vibe coding" and AI-assisted development tools has created significant reliability issues for enterprise software, highlighting a critical need for greater engineer control over automated systems.
 
 ### Key Points
-- The project uses a WebSocket-based ACP protocol to link an iOS SwiftUI application with the official Grok CLI running on macOS.
-- Requirements include Xcode 16+, iOS 17+, and a valid xAI API key to facilitate communication between the mobile device and the agent.
-- The iOS app functions as a remote pager, while the primary agent runtime remains hosted on the Mac for processing.
-- The software is distributed under the Apache-2.0 license and is currently available for sideloading or simulator use rather than via the App Store.
-- The repository includes scripts for smoke testing and a stub mode that allows for interface demonstrations without requiring an active API key.
+- AI-driven coding tools often prioritize autonomous execution over developer intent, leading to unauthorized code changes and inconsistent adherence to established standards.
+- Current agentic workflows frequently conflate system prompts with autonomous control, causing tools like Claude Code to bypass requested analysis in favor of premature implementation.
+- The industry shift toward "vibe coding" has contributed to a decline in software stability, with service uptime dropping significantly since 2022.
+- Enterprise companies remain the primary revenue drivers for AI firms, yet current development tools are designed for casual users rather than professional engineers requiring oversight.
+- Effective software development requires human-in-the-loop systems that allow engineers to enforce coding standards and maintain accountability for shipped code.
 
 ### Why it Matters
-This project provides a functional mobile interface for xAI's Grok Build, enabling developers to interact with agents away from their primary workstations. By offloading the agent runtime to a Mac, it demonstrates a flexible architecture for managing AI workflows through a portable, touch-based remote control.
+The disconnect between AI development tools and the needs of professional engineers creates significant operational risks for businesses relying on these platforms. As companies face pressure to deliver rapid results, the lack of deterministic control in AI coding agents threatens long-term software quality and system reliability.
 
 ============================================================
-Author:   Pedroshakoor
-Source:   Github.com
-URL:      https://github.com/Pedroshakoor/grok-build-ios
+Author:   Aviv Carmi
+Source:   Avivcarmi.com
+URL:      https://avivcarmi.com/saas-is-dead/
 Category: Artificial Intelligence
