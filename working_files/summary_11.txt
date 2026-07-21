@@ -1,20 +1,20 @@
-Think QQQ Is Concentrated? This Nasdaq ETF Bets Even Harder on Big Tech (And It’s Winning)
+Sign Commits from Anywhere Without Your Keys Going Anywhere
 ============================================================
 
-The iShares Nasdaq Top 30 Stocks ETF (QTOP) offers investors a concentrated, market-cap-weighted portfolio of the 30 largest Nasdaq companies, aiming to outperform broader tech-heavy indices like QQQ.
+A developer has created a robust system using symlinks and SSH agent forwarding to ensure Git commits remain hardware-signed via Secure Enclave even when working remotely.
 
 ### Key Points
-- QTOP launched in October 2024 and currently manages approximately $266 million in assets.
-- The fund charges an expense ratio of 0.20% and focuses exclusively on capital appreciation from mega-cap technology stocks.
-- Over the past year, QTOP returned 30%, outperforming the Invesco QQQ Trust’s 27% return by focusing on top-tier performers like Alphabet and Apple.
-- The portfolio is highly concentrated, with technology companies accounting for nearly 60% of total assets and Nvidia representing a significant individual holding.
-- Key risks include high correlation between top holdings, elevated valuation multiples, and limited trading liquidity due to the fund's smaller size.
+- The setup uses Secretive to store SSH keys in the Apple Secure Enclave, ensuring private keys never exist as files on disk.
+- A custom symlink, `~/.ssh/agent.sock`, dynamically switches between the local machine's agent and a forwarded remote agent.
+- Git is configured with `gpg.ssh.defaultKeyCommand` to resolve the correct signing key at the moment of execution rather than using a static configuration.
+- Shell hooks and a LaunchAgent ensure that GUI applications and long-lived processes, such as Claude Code, maintain access to the active agent socket.
+- The system supports multi-device workflows, allowing commits from an iPad or secondary laptop to be verified by GitHub using device-specific keys.
 
 ### Why it Matters
-This fund provides a targeted vehicle for investors seeking to amplify exposure to the artificial intelligence sector by stripping away the smaller companies found in broader Nasdaq indices. However, the extreme concentration creates significant volatility risks, as the portfolio lacks the diversification necessary to protect against a simultaneous downturn in its largest tech holdings.
+This configuration solves the common security trade-off between using hardware-backed keys and maintaining a flexible, remote-first development workflow. By automating agent management, developers can maintain high-security standards without sacrificing the ability to sign commits from any device they control.
 
 ============================================================
-Author:   Omor Ibne Ehsan
-Source:   24/7 Wall St.
-URL:      https://247wallst.com/investing/etf/2026/07/19/think-qqq-is-concentrated-this-nasdaq-etf-bets-even-harder-on-big-tech-and-its-winning/
-Category: Tech Business & Markets
+Author:   Phil Haack
+Source:   Haacked.com
+URL:      https://haacked.com/archive/2026/07/20/remote-commit-signing/
+Category: Cybersecurity

@@ -1,20 +1,20 @@
-I didn't understand the RCS hype until I tried these features
+Exploit brokers pay $500k for WordPress RCEs. I found one with GPT5.6 and $25
 ============================================================
 
-The widespread adoption of Rich Communication Services (RCS) across iOS and Android devices is finally replacing outdated SMS and MMS standards with modern, secure, and feature-rich messaging capabilities.
+A security researcher used the GPT5.6 Sol Ultra AI model to discover and chain multiple vulnerabilities in WordPress, successfully achieving remote code execution (RCE) in under 10 hours.
 
 ### Key Points
-- RCS supports high-quality media sharing with file limits exceeding 100MB, eliminating the pixelation common with legacy MMS standards.
-- Users can now edit messages within 15 minutes of sending or unsend them before the recipient opens the chat.
-- The standard introduces reliable delivery and read receipts, providing confirmation that messages have reached the recipient.
-- Cross-platform reactions now display correctly between iPhone and Android users instead of appearing as separate, disruptive text notifications.
-- RCS enables end-to-end encryption and allows messaging over Wi-Fi or cellular data, improving both security and connectivity.
+- The AI identified a pre-authentication SQL injection by exploiting a validation desynchronization bug within the WordPress Batch API.
+- Researchers bypassed API method restrictions by using recursive batch calls, allowing the execution of unauthorized GET requests.
+- The exploit chain leveraged in-memory cache poisoning and a cycle-detection gadget to temporarily escalate privileges to an administrator.
+- By triggering the `parse_request` hook while holding administrator authority, the AI enabled the creation of a new admin account to upload a backdoor.
+- The entire research process, including exploit development, cost approximately $25 in AI subscription usage.
 
 ### Why it Matters
-The transition to RCS marks a significant improvement in cross-platform communication by bridging the long-standing functional gap between iPhone and Android users. By standardizing these features, the industry is effectively phasing out insecure legacy protocols in favor of a more reliable, modern messaging experience for all mobile consumers.
+This discovery highlights a significant shift in cybersecurity where AI models can autonomously chain complex, disparate vulnerabilities that would typically require days of expert human analysis. As these tools become more capable, organizations must prioritize rapid patching and automated security testing to defend against increasingly sophisticated, AI-driven exploit development.
 
 ============================================================
-Author:   Brady Snyder
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/i-didnt-understand-rcs-hype-until-i-tried-features/
-Category: Phones, Laptops, and Gadgets
+Author:   Adam Kues
+Source:   Slcyber.io
+URL:      https://slcyber.io/research-center/exploit-brokers-pay-500000-for-a-wordpress-rce-i-found-one-with-gpt5-6/
+Category: Cybersecurity

@@ -1,21 +1,20 @@
-South Korean regulator begins sanctions process against Dunamu: Report
+Grok-iOS – remote Grok Build from your iPhone over ACP
 ============================================================
 
-South Korea’s Financial Supervisory Service has initiated a formal sanctions process against Dunamu, the operator of the Upbit crypto exchange, following a $36 million security breach in November 2025.
+Developer Pedro Shakour has released an open-source iOS client for Grok Build, allowing users to control xAI agents remotely from an iPhone by connecting to a local Mac host.
 
 ### Key Points
-- The Financial Supervisory Service issued an inspection opinion letter to Dunamu to begin the formal sanctions procedure.
-- Upbit faced public criticism for delaying the disclosure of the $36 million hack for nearly 24 hours after the incident occurred.
-- Regulators are currently evaluating potential violations of the Virtual Asset User Protection Act despite a lack of explicit provisions for cyberattacks.
-- Dunamu has committed to fully reimbursing affected customers using its own corporate assets and has overhauled its crypto wallet architecture.
-- The company launched an Onchain AI Tracer System to track stolen funds and assist in recovery efforts.
-- South Korean authorities intend to close existing regulatory gaps by introducing new sanctions and compensation requirements in the upcoming Digital Asset Basic Act.
+- The project uses a WebSocket-based ACP protocol to link an iOS SwiftUI application with the official Grok CLI running on macOS.
+- Requirements include Xcode 16+, iOS 17+, and a valid xAI API key to facilitate communication between the mobile device and the agent.
+- The iOS app functions as a remote pager, while the primary agent runtime remains hosted on the Mac for processing.
+- The software is distributed under the Apache-2.0 license and is currently available for sideloading or simulator use rather than via the App Store.
+- The repository includes scripts for smoke testing and a stub mode that allows for interface demonstrations without requiring an active API key.
 
 ### Why it Matters
-This investigation highlights the current limitations of South Korea's regulatory framework in addressing large-scale crypto exchange hacks. The outcome of this case will likely influence future legislation and set a precedent for how major exchanges are held accountable for security failures.
+This project provides a functional mobile interface for xAI's Grok Build, enabling developers to interact with agents away from their primary workstations. By offloading the agent runtime to a Mac, it demonstrates a flexible architecture for managing AI workflows through a portable, touch-based remote control.
 
 ============================================================
-Author:   Cointelegraph by Zoltan Vardai
-Source:   Cointelegraph
-URL:      https://cointelegraph.com/news/south-korean-regulator-inspection-letter-upbit-36m-hack
-Category: Cybersecurity
+Author:   Pedroshakoor
+Source:   Github.com
+URL:      https://github.com/Pedroshakoor/grok-build-ios
+Category: Artificial Intelligence

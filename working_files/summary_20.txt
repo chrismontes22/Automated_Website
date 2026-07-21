@@ -1,20 +1,20 @@
-The AI-Powered Status Quo: AI Transformation is a Test of Leadership
+Volexity Uncovers Zero-Day Campaign Targeting SonicWall VPN Appliances
 ============================================================
 
-ServiceNow leaders argue that businesses must move beyond simple automation to fundamentally transform their operations and business models by adopting an AI-first mindset for future competitiveness.
+SonicWall has released patches for two zero-day vulnerabilities, CVE-2026-15409 and CVE-2026-15410, which threat actor UTA0533 used to gain root-level access to SMA 1000 series VPN appliances since June 2026.
 
 ### Key Points
-- Organizations often use AI to accelerate legacy processes rather than redesigning them for modern, intelligent operations.
-- The "WWAID" (What Would AI Do) framework encourages leaders to question existing workflows before applying automation to them.
-- Companies should pursue two growth curves simultaneously: iterative AI for efficiency and innovative AI for creating new business value.
-- AI maturity evolves from basic task automation to human augmentation and, eventually, autonomous agentic workflows.
-- Leaders must avoid the trap of using AI solely for cost reduction, which risks reinforcing outdated organizational structures.
+- Threat actor UTA0533 chained a CVSS 10.0 SSRF vulnerability and a CVSS 7.2 code injection flaw to compromise physical and virtual VPN appliances.
+- The exploit chain allowed attackers to bypass authentication, execute arbitrary OS commands as administrator, and install custom malware like the ORANGETAIL web shell.
+- Attackers captured cleartext LDAP credentials by deploying scripts to monitor network traffic directly from the compromised VPN hardware.
+- SonicWall confirmed active exploitation in the wild and issued security patches to address the vulnerabilities discovered by their internal PSIRT team.
+- A separate authentication bypass exists for physical appliances due to a world-readable hardware UUID file, though it was not used in this specific campaign.
 
 ### Why it Matters
-Focusing exclusively on efficiency risks creating a faster version of an obsolete business model that fails to innovate. By shifting from automation to strategic reinvention, leaders can leverage AI to build more resilient, competitive organizations capable of long-term growth.
+VPN appliances serve as critical gateways for network authentication, making them high-value targets for attackers seeking to intercept credentials and gain persistent access to internal systems. Organizations must prioritize patching these vulnerabilities immediately to prevent unauthorized administrative control and potential data exfiltration from their secure environments.
 
 ============================================================
-Author:   Brian Solis
-Source:   Briansolis.com
-URL:      https://briansolis.com/2026/07/the-ai-powered-status-quo-ai-transformation-is-a-test-of-leadership/
-Category: Artificial Intelligence
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/195626/hacking/volexity-uncovers-zero-day-campaign-targeting-sonicwall-vpn-appliances.html
+Category: Cybersecurity
