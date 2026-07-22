@@ -1,20 +1,19 @@
-Exploit brokers pay $500k for WordPress RCEs. I found one with GPT5.6 and $25
+From Polestar to OnePlus to DJI, the US is becoming a harder place for globally influential brands
 ============================================================
 
-A security researcher used the GPT5.6 Sol Ultra AI model to discover and chain multiple vulnerabilities in WordPress, successfully achieving remote code execution (RCE) in under 10 hours.
+Polestar, OnePlus, and DJI are retreating from the United States market due to a combination of regulatory pressures, political scrutiny, and the high costs of competing against domestic incumbents.
 
 ### Key Points
-- The AI identified a pre-authentication SQL injection by exploiting a validation desynchronization bug within the WordPress Batch API.
-- Researchers bypassed API method restrictions by using recursive batch calls, allowing the execution of unauthorized GET requests.
-- The exploit chain leveraged in-memory cache poisoning and a cycle-detection gadget to temporarily escalate privileges to an administrator.
-- By triggering the `parse_request` hook while holding administrator authority, the AI enabled the creation of a new admin account to upload a backdoor.
-- The entire research process, including exploit development, cost approximately $25 in AI subscription usage.
+- Polestar exited the US market after the Commerce Department denied authorization under the Connected Vehicle Rule due to its Chinese ownership.
+- OnePlus ceased US smartphone sales, citing the high costs of navigating a market dominated by powerful carrier gatekeepers and established incumbents.
+- DJI faces ongoing challenges from its placement on the government’s Entity List, which restricts access to US technology and complicates its long-term operations.
+- These departures reflect a broader trend where global hardware brands increasingly view the US as a high-risk, low-reward environment for product launches.
 
 ### Why it Matters
-This discovery highlights a significant shift in cybersecurity where AI models can autonomously chain complex, disparate vulnerabilities that would typically require days of expert human analysis. As these tools become more capable, organizations must prioritize rapid patching and automated security testing to defend against increasingly sophisticated, AI-driven exploit development.
+The departure of these major brands limits consumer choice and reduces the competitive pressure on domestic companies to innovate. By isolating the US market from global alternatives, the country risks a technological stagnation where incumbents face fewer challenges to their market dominance.
 
 ============================================================
-Author:   Adam Kues
-Source:   Slcyber.io
-URL:      https://slcyber.io/research-center/exploit-brokers-pay-500000-for-a-wordpress-rce-i-found-one-with-gpt5-6/
-Category: Cybersecurity
+Author:   Sarang Sheth
+Source:   Yanko Design
+URL:      https://www.yankodesign.com/2026/07/20/from-polestar-to-oneplus-to-dji-the-us-is-becoming-a-harder-place-for-globally-influential-brands/
+Category: Tech Business & Markets

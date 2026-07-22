@@ -1,20 +1,20 @@
-HollowGraph Malware Hides C2 and Stolen Files in Microsoft 365 Events Dated 2050
+US judge approves Anthropic's $1.5 billion settlement of copyright lawsuit
 ============================================================
 
-Researchers at Group-IB have identified a new espionage implant called HollowGraph that uses hijacked Microsoft 365 calendar events set to the year 2050 to exfiltrate stolen data undetected.
+A federal judge in San Francisco has granted final approval to a $1.5 billion settlement between Anthropic and authors who alleged their books were misused to train the Claude chatbot.
 
 ### Key Points
-- HollowGraph is a .NET DLL malware that uses the Microsoft Graph API to treat compromised mailboxes as two-way dead drops for command-and-control.
-- The malware hides instructions and stolen files as encrypted attachments within calendar events dated May 13, 2050, to avoid user discovery.
-- A secondary communication channel uses DNS queries to the domain cloudlanecdn[.]com to refresh Entra ID credentials and maintain persistent access.
-- Group-IB identified the malware on at least 12 machines, with active traffic observed between June 3 and July 9, 2026.
-- The implant shares technical similarities with the Cavern backdoor framework, which has been linked to Iranian state-sponsored threat actors.
+- U.S. District Judge Araceli Martinez-Olguin finalized the agreement, marking the largest copyright settlement in U.S. history.
+- The lawsuit alleged Anthropic used over 480,000 pirated books to train its AI models without obtaining proper authorization.
+- While the court previously ruled that AI training constituted fair use, it found Anthropic liable for storing 7 million pirated books in a central library.
+- Claims were filed for more than 92% of the works included in the settlement, despite objections from some authors regarding the payout structure.
+- Several authors and publishers opted out of the deal and are continuing to pursue separate litigation against the company.
 
 ### Why it Matters
-This campaign highlights a growing trend of attackers leveraging legitimate cloud service functionality to bypass traditional network security controls. Because the malware exploits standard API traffic rather than software vulnerabilities, organizations must prioritize identity monitoring and strict auditing of application permissions to detect unauthorized mailbox activity.
+This settlement establishes a significant legal precedent for how artificial intelligence companies manage copyrighted data during the development of large language models. It highlights the ongoing tension between tech innovation and intellectual property rights, signaling that companies may face substantial financial risks for unauthorized data storage practices.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/07/hollowgraph-malware-hides-c2-and-stolen.html
-Category: Cybersecurity
+Author:   By Blake Brittain
+Source:   Yahoo Entertainment
+URL:      https://www.yahoo.com/news/articles/us-judge-approves-anthropics-1-205152567.html
+Category: Artificial Intelligence

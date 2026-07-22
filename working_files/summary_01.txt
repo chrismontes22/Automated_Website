@@ -1,20 +1,20 @@
-Hacker wipes Romania's land registry database
+New ENCFORGE Ransomware Targets AI Model Files in Langflow RCE Attack
 ============================================================
 
-A hacker breached Romania’s National Agency for Cadastre and Real Estate Advertising, wiping the country’s land registry database and halting real-estate transactions after a failed extortion attempt.
+The JADEPUFFER threat actor is targeting AI infrastructure by exploiting Langflow vulnerabilities to deploy ENCFORGE, a specialized ransomware strain designed to encrypt model weights, datasets, and vector indexes.
 
 ### Key Points
-- The breach at the National Agency for Cadastre and Real Estate Advertising (ANCPI) occurred on July 14, forcing the agency to take its systems offline.
-- The attacker, identified as Zakaria Mahdjoub (alias ByteToBreach), gained access using valid credentials and deleted both live data and backups.
-- Stolen internal documents and employee credentials were subsequently posted for sale on a known hacking forum.
-- ANCPI is currently rebuilding its entire network from scratch, though officials reportedly recovered an offline backup to prevent long-term data loss.
-- This incident marks the latest in a series of land registry hacks targeting government agencies across Europe and beyond over the last three years.
+- The JADEPUFFER operator exploits CVE-2025-3248, an unauthenticated remote code execution flaw in Langflow versions prior to 1.3.0.
+- ENCFORGE is a Go-based ransomware that specifically targets approximately 180 file extensions, including PyTorch, TensorFlow, Hugging Face SafeTensors, and GGUF model formats.
+- The attacker uses the Docker socket to break out of containers, gaining host-level access to encrypt AI assets using AES-256-CTR and RSA-2048 encryption.
+- Sysdig researchers identified the campaign through a shared Proton Mail address (e78393397@proton.me) used in both the initial Nacos database attacks and this new ENCFORGE deployment.
+- Security teams are advised to patch Langflow to version 1.9.1 or later and restrict access to the Docker socket to prevent unauthorized host-level container creation.
 
 ### Why it Matters
-The total loss of digital land records has paralyzed Romania's real-estate market, preventing notaries from processing transactions and citizens from verifying property ownership. This event highlights the critical vulnerability of national infrastructure to extortion-driven cyberattacks and underscores the necessity of maintaining secure, offline backups for essential government services.
+The emergence of ENCFORGE signals a shift toward ransomware specifically engineered to cripple AI development pipelines by destroying expensive model weights and training data. Organizations face significant financial risk, as the cost to reconstruct encrypted AI models can reach $500,000 per instance in compute and engineering resources.
 
 ============================================================
-Author:   Catalin Cimpanu
-Source:   Risky.biz
-URL:      https://news.risky.biz/risky-bulletin-hacker-wipes-romanias-entire-land-registry-database/
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/07/new-encforge-ransomware-targets-ai.html
 Category: Cybersecurity

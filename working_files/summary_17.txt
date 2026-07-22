@@ -1,19 +1,20 @@
-UK's seventh prime minister in a decade says he'll ditch digital ID scheme
+Zimbra Update Patches Critical Vulnerabilities
 ============================================================
 
-AI music platform Suno has suffered a significant data breach exposing the personal information of 55 million users, according to security experts and the Have I Been Pwned service.
+Zimbra has released critical security patches for its Collaboration Suite, addressing a severe command injection vulnerability and several other flaws that could allow unauthorized server access and data exfiltration.
 
 ### Key Points
-- The breach affects approximately 55 million registered users of the AI-powered music generation platform.
-- Security researcher Troy Hunt, founder of Have I Been Pwned, confirmed the scale and authenticity of the exposed data.
-- The incident highlights growing security vulnerabilities within rapidly expanding generative AI services.
-- Suno has not yet released a comprehensive public statement regarding the specific cause or scope of the unauthorized access.
+- Zimbra Collaboration Suite version 10.1.20 fixes a critical command injection bug in the SNMP monitoring component.
+- The update resolves four cross-site scripting (XSS) vulnerabilities found within the Classic Web Client interface.
+- Patches address a mail forwarding restriction bypass, an EWS extension access control issue, and a mailbox delegation authorization flaw.
+- A server-side request forgery (SSRF) vulnerability within the Nextcloud integration has been remediated.
+- Users are urged to update immediately, though Zimbra has not reported any active exploitation of these vulnerabilities in the wild.
 
 ### Why it Matters
-This incident underscores the increasing security risks associated with AI platforms that collect and store large volumes of user data. As these services grow in popularity, they become high-value targets for cybercriminals, necessitating more robust data protection and transparency standards for the industry.
+These vulnerabilities pose a significant risk to organizations relying on Zimbra for email and collaboration, as they could allow attackers to execute arbitrary commands or steal sensitive communications. Promptly applying the 10.1.20 update is essential to maintaining server integrity and preventing potential unauthorized access to internal data.
 
 ============================================================
-Author:   Carly Page
-Source:   Theregister.com
-URL:      https://www.theregister.com/public-sector/2026/07/20/uks-seventh-prime-minister-in-a-decade-says-hell-ditch-digital-id-scheme/5274794
+Author:   Ionut Arghire
+Source:   Securityweek.com
+URL:      https://www.securityweek.com/zimbra-update-patches-critical-vulnerabilities/
 Category: Cybersecurity
