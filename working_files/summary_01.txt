@@ -1,20 +1,20 @@
-New ENCFORGE Ransomware Targets AI Model Files in Langflow RCE Attack
+Analog hobbies are booming as AI burnout hits Gen Z hardest — and the Windows PC could be the unexpected winner
 ============================================================
 
-The JADEPUFFER threat actor is targeting AI infrastructure by exploiting Langflow vulnerabilities to deploy ENCFORGE, a specialized ransomware strain designed to encrypt model weights, datasets, and vector indexes.
+Younger generations are driving a significant analog revival, prompting Microsoft to reconsider its aggressive AI-focused strategy for Windows 11 in favor of a more intentional, tool-based computing experience.
 
 ### Key Points
-- The JADEPUFFER operator exploits CVE-2025-3248, an unauthenticated remote code execution flaw in Langflow versions prior to 1.3.0.
-- ENCFORGE is a Go-based ransomware that specifically targets approximately 180 file extensions, including PyTorch, TensorFlow, Hugging Face SafeTensors, and GGUF model formats.
-- The attacker uses the Docker socket to break out of containers, gaining host-level access to encrypt AI assets using AES-256-CTR and RSA-2048 encryption.
-- Sysdig researchers identified the campaign through a shared Proton Mail address (e78393397@proton.me) used in both the initial Nacos database attacks and this new ENCFORGE deployment.
-- Security teams are advised to patch Langflow to version 1.9.1 or later and restrict access to the Docker socket to prevent unauthorized host-level container creation.
+- Michaels reported a 919% increase in searches for analog hobbies like knitting and journaling in March 2026.
+- Yarn accessory sales grew by 40% in 2026 compared to the previous year, signaling a shift toward hands-on activities.
+- Microsoft is scaling back Copilot AI features in Windows 11 apps like Notepad and Photos following user backlash regarding performance and reliability.
+- Windows president Pavan Davuluri confirmed in early 2026 that the company is prioritizing system stability and addressing user pain points over AI integration.
+- The PC is increasingly viewed as a "workbench" for intentional tasks, contrasting with the constant notifications and distractions of smartphone-based digital environments.
 
 ### Why it Matters
-The emergence of ENCFORGE signals a shift toward ransomware specifically engineered to cripple AI development pipelines by destroying expensive model weights and training data. Organizations face significant financial risk, as the cost to reconstruct encrypted AI models can reach $500,000 per instance in compute and engineering resources.
+This shift suggests that consumers are seeking an escape from the attention economy and generative AI fatigue by prioritizing manual, offline hobbies. By pivoting Windows toward a focused, tool-oriented platform, Microsoft has a strategic opportunity to align with this cultural movement and regain user trust.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/07/new-encforge-ransomware-targets-ai.html
-Category: Cybersecurity
+Author:   c.cale.hunt@gmail.com (Cale Hunt) , Cale Hunt
+Source:   Windows Central
+URL:      https://www.windowscentral.com/microsoft/windows/analog-revival-microsoft-windows
+Category: Tech Business & Markets

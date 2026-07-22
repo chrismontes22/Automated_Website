@@ -1,20 +1,20 @@
-Zero to Agent in 30 Minutes: Build a Workflow Agent with John Berryman
+New Bit2Watt Attack Could Let Cloud Tenants Disrupt Power Grids Without an Exploit
 ============================================================
 
-AI consultant John Berryman explains how to build functional AI agents using a dual-loop architecture and a repeatable "outside-in" development method during the Zero to Agent series.
+Zhejiang University researchers have identified a potential security vulnerability called Bit2Watt, where cloud-based GPU workloads can be manipulated to destabilize power grids through controlled, high-frequency electrical load oscillations.
 
 ### Key Points
-- AI agents are defined by a dual-loop structure: an outer loop for user interaction and an inner loop for tool execution.
-- The "outside-in" development method prioritizes building traditional software interfaces and data models before integrating AI components.
-- Developers can use stubs to simulate AI responses, ensuring system stability before replacing them with minimal agents using Pydantic.
-- Effective agents require a limited toolkit, specifically read, write, edit, and shell access, to perform autonomous research and tasks.
-- Programming agents in natural language allows subject matter experts to audit reasoning, identify errors, and update instructions without needing engineering support.
+- Bit2Watt uses synthetic CUDA kernels or modified LLM training scripts to create rapid, rhythmic power consumption spikes in GPUs.
+- Simulations show that 1,000 synchronized GPUs could cause significant harmonic distortion and grid instability, potentially triggering cascading load shedding.
+- The technique requires no system exploits or elevated privileges, as it utilizes standard, legitimate computational workloads to modulate power draw.
+- Researchers successfully used the power-modulation technique as a covert channel to exfiltrate data via electromagnetic emissions.
+- Current data center monitoring tools, such as PDU counters and standard telemetry, lack the sampling frequency required to detect these high-speed oscillations.
 
 ### Why it Matters
-This approach democratizes AI development by allowing non-engineers to build and maintain complex systems using plain language instructions. By standardizing the agent-building process, companies can accelerate the deployment of autonomous tools that operate across multiple software interfaces.
+This research highlights a critical architectural gap where the tight coupling between massive, volatile data center loads and modern power grids creates a new, unpatchable security risk. Because compute and utility infrastructures are managed by separate entities, there is currently no unified oversight to prevent these physical-layer disturbances from impacting grid reliability.
 
 ============================================================
-Author:   Michelle Smith
-Source:   Oreilly.com
-URL:      https://www.oreilly.com/radar/zero-to-agent-in-30-minutes-build-a-workflow-agent-with-john-berryman/#BlogPosting
-Category: Artificial Intelligence
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/07/new-bit2watt-attack-could-let-cloud.html
+Category: Cybersecurity

@@ -1,21 +1,20 @@
-Google is readying a major autofill upgrade for Chrome
+France's Anssi Will Block PQC-Free Products from Certification Starting 2027
 ============================================================
 
-Google is testing a new "Find and Fill with Gemini" feature in Chrome Canary that uses AI to pull personal information from Gmail and Photos for form autofill.
+France’s national cybersecurity agency, ANSSI, will stop certifying security products lacking quantum-resistant encryption by 2027, mandating that all government and critical infrastructure technology transition to quantum-safe standards.
 
 ### Key Points
-- The feature is powered by Google’s Personal Intelligence, which connects data across various Google apps.
-- Users can trigger the tool by typing "@@" in a text field or by using a custom keyboard shortcut.
-- The upgrade allows Chrome to retrieve information from external apps without requiring users to leave their current webpage.
-- Privacy settings allow users to disable the feature within the "Enhanced Autofill" menu in Chrome settings.
-- Google notes that page titles and URLs where the feature is activated may be reviewed by humans to improve the service.
-- The functionality is currently in limited testing and is not yet available to all Chrome Canary users.
+- ANSSI will require quantum-resistant encryption for all security product certifications starting in 2027.
+- The agency mandates that businesses exclusively purchase quantum-safe products for critical infrastructure by 2030.
+- ANSSI’s policy requires hybrid cryptographic implementations, combining classical and post-quantum algorithms, rather than standalone post-quantum solutions.
+- This 2027 deadline aligns with the U.S. National Security Agency’s CNSA 2.0 procurement requirements, creating a synchronized global standard for government technology.
+- The mandate aims to mitigate "Harvest Now, Decrypt Later" attacks, where adversaries store encrypted data today to decrypt it once quantum computers become viable.
 
 ### Why it Matters
-This integration represents a significant shift toward using generative AI to automate routine browser tasks by centralizing personal data access. While it offers increased convenience, the potential for human review of browsing data highlights ongoing privacy trade-offs in AI-driven browser features.
+This policy shift forces a rapid transition for technology vendors, as products failing to meet these standards will be barred from French government and critical infrastructure markets. By setting a binding 2027 deadline, regulators are effectively accelerating the global adoption of quantum-resistant cryptography regardless of when functional quantum computers arrive.
 
 ============================================================
-Author:   Rahul Naskar
-Source:   Android Police
-URL:      https://www.androidpolice.com/google-chrome-major-autofill-upgrade/
-Category: Artificial Intelligence
+Author:   Marin Ivezic
+Source:   Postquantum.com
+URL:      https://postquantum.com/security-pqc/anssi-pqc-certification-2027/
+Category: Cybersecurity
