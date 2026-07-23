@@ -1,20 +1,20 @@
-Why you can’t buy security on the dark web
+A bizarre new malware campaign hacks your printer and forces it to print out ransomware demands
 ============================================================
 
-Qrator Labs warns that businesses should avoid engaging with the dark web, as paying ransoms or purchasing stolen data fuels the cybercrime economy without guaranteeing security or recovery.
+The newly identified XEntry Team is targeting organizations in Colombia and Mexico by exploiting system misconfigurations to deploy BitLocker ransomware and print physical extortion notes via office printers.
 
 ### Key Points
-- The dark web functions as a mature B2B marketplace for stolen credentials, malware, and Ransomware-as-a-Service (RaaS) operations.
-- Paying ransoms is ineffective, as 80% of organizations that pay are targeted again, according to a 2021 Cybereason study.
-- High-profile cases like Uber and HBO demonstrate that paying attackers does not prevent the public release of stolen data or regulatory consequences.
-- Dark web monitoring often produces unreliable, noisy, or fabricated signals that cannot replace robust internal security controls.
-- Hiring anonymous actors for infrastructure audits creates significant risks, including the potential for unauthorized access and future exploitation.
+- Security firm Kaspersky identified two ransomware attacks in Colombia and Mexico attributed to a threat actor known as the XEntry Team.
+- Attackers gained unauthorized access by exploiting misconfigured Remote Desktop Protocol (RDP) settings and MSSQL services.
+- The perpetrators utilized BitLocker to encrypt critical data and used office printers to deliver ransom demands directly to victims.
+- In the Colombian incident, attackers successfully extorted a $3,000 payment after disabling the victim's Endpoint Protection Platform.
+- Kaspersky reports that over 13% of global security incidents stem from policy violations and configuration errors rather than software vulnerabilities.
 
 ### Why it Matters
-Directly engaging with the dark web incentivizes criminal activity and strengthens the infrastructure used to launch large-scale cyberattacks. Organizations should prioritize building internal cyber resilience through vulnerability management and incident response rather than attempting to negotiate with or pay malicious actors.
+These incidents highlight that basic security hygiene, such as properly configuring RDP and database services, remains a critical defense against modern ransomware threats. Organizations that fail to address these common misconfigurations leave themselves vulnerable to attackers who prioritize exploiting existing system weaknesses over complex technical exploits.
 
 ============================================================
-Author:   Andrey Leskin
+Author:   Sead Fadilpašić
 Source:   TechRadar
-URL:      https://www.techradar.com/pro/why-you-cant-buy-security-on-the-dark-web
+URL:      https://www.techradar.com/pro/security/a-bizarre-new-malware-campaign-hacks-your-printer-and-forces-it-to-print-out-ransomware-demands
 Category: Cybersecurity

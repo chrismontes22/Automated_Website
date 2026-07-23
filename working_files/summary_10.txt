@@ -1,21 +1,20 @@
-I use an Android phone, iPhone, and Mac. These are the 10 apps keeping me sane
+Adobe Acrobat Extension Flaw Let Malicious Sites Read WhatsApp Web Data
 ============================================================
 
-To maintain productivity across diverse hardware, users can leverage ten essential cross-platform applications that ensure seamless data synchronization between Android, iOS, macOS, and Windows devices.
+Adobe has patched a critical vulnerability in its Acrobat Chrome extension, tracked as CVE-2026-48294, which could have allowed attackers to silently hijack sensitive user data from WhatsApp Web.
 
 ### Key Points
-- Bitwarden provides secure, cross-platform password management and encrypted note storage for all login credentials.
-- Google Authenticator enables two-factor authentication code syncing across mobile devices, though it lacks end-to-end encryption.
-- TickTick and Obsidian offer robust task management and structured note-taking with real-time synchronization across multiple operating systems.
-- Notesnook serves as an open-source, privacy-focused alternative for everyday note-taking with rich-text support.
-- LocalSend facilitates secure, offline file transfers between devices on the same Wi-Fi network without file size limitations.
-- Firefox, Raindrop.io, Google Photos, and Google Drive provide unified browsing, bookmarking, and cloud storage solutions for multi-device workflows.
+- The vulnerability, codenamed HermeticReader, affects all Adobe Acrobat Chrome extension versions up to and including 26.5.2.2.
+- Researchers at Guardio Labs identified the flaw as a universal cross-site scripting (UXSS) issue with a CVSS score of 7.4.
+- Exploitation requires a user to visit a malicious URL, which triggers the extension to inject a form into the WhatsApp Web DOM.
+- Attackers can capture private information, including contact names, chat lists, and the text of open conversations, without needing malware or stolen cookies.
+- The extension has an install base of over 314 million users, making it a significant target for cross-origin data disclosure attacks.
 
 ### Why it Matters
-Using cross-platform software prevents data fragmentation and eliminates the need to rely on restrictive, ecosystem-specific tools. This approach empowers users to maintain a consistent, efficient workflow regardless of the hardware or operating system they choose to use.
+This vulnerability highlights the severe security risks posed by browser extensions that possess broad permissions to interact with third-party web applications. Because the exploit bypasses standard security policies without requiring traditional malware, it demonstrates how easily trusted browser tools can be weaponized to compromise private user communications.
 
 ============================================================
-Author:   Yash Wate
-Source:   Android Authority
-URL:      https://www.androidauthority.com/android-iphone-mac-user-10-best-apps-3687654/
-Category: Phones, Laptops, and Gadgets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/07/adobe-acrobat-extension-flaw-let.html
+Category: Cybersecurity

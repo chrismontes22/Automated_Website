@@ -1,20 +1,20 @@
-Why Modern SOCs Need Multi-Layered Detections
+The web has a new answer to AI scraping: poison
 ============================================================
 
-Modern cybersecurity threats are increasingly bypassing traditional endpoint defenses, forcing organizations to adopt unified Network Detection and Response platforms to correlate telemetry and counter AI-driven attack tactics.
+Website owners are increasingly using "tarpitting" and content poisoning tools to combat unauthorized AI data scraping by feeding bots deceptive information or trapping them in endless digital mazes.
 
 ### Key Points
-- CrowdStrike reports that 79% of modern cyberattacks are malware-free, relying instead on credential theft and lateral movement techniques.
-- Verizon data indicates a 19% increase in firewall and VPN gateway breaches, highlighting significant vulnerabilities in perimeter security.
-- Network Detection and Response (NDR) tools provide immutable, out-of-band traffic data that remains visible even if local endpoint agents are disabled.
-- Advanced NDR platforms integrate signature-based, behavioral, and machine learning models to identify complex threats like Mythos-class autonomous exploit engines.
-- High-quality network telemetry is essential for AI-driven security, as model efficacy is strictly limited by the quality and breadth of input data.
+- Content poisoning, such as the Nightshade tool, embeds invisible pixel noise into images to corrupt how AI models interpret artistic styles.
+- Tarpitting tools like Nepenthes and Iocaine lure automated crawlers into infinite loops of generated nonsense to waste computational resources.
+- Cloudflare’s AI Labyrinth provides an enterprise-grade tarpitting service, currently utilized by major publishers including AP, Condé Nast, and Gannett.
+- These defensive measures aim to protect intellectual property, though their long-term effectiveness remains unproven as AI companies implement data-cleaning pipelines.
+- Legal experts consider the use of these defensive traps a grey area, as no definitive court rulings have established the rights of site owners to sabotage crawlers.
 
 ### Why it Matters
-As attackers leverage AI to accelerate the time from initial compromise to full system breach, traditional siloed security tools are no longer sufficient to protect enterprise environments. By centralizing network evidence, organizations can provide AI models with the high-fidelity data required to reduce false positives and enable rapid, confident incident response.
+This escalating arms race between content creators and AI developers highlights the growing tension over data ownership and the ethics of automated web scraping. As these defensive tools become more accessible, they could significantly alter how AI companies source training data and force a reevaluation of standard web crawling practices.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/07/why-modern-socs-need-multi-layered.html
-Category: Cybersecurity
+Author:   Gavin Phillips
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/the-web-has-a-new-answer-to-ai-scraping-poison/
+Category: Artificial Intelligence
