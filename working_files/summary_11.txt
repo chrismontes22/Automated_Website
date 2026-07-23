@@ -1,20 +1,22 @@
-New Bit2Watt Attack Could Let Cloud Tenants Disrupt Power Grids Without an Exploit
+Is AI Taking Over Audio — Radio, Podcasting, Audiobooks?
 ============================================================
 
-Zhejiang University researchers have identified a potential security vulnerability called Bit2Watt, where cloud-based GPU workloads can be manipulated to destabilize power grids through controlled, high-frequency electrical load oscillations.
+Artificial intelligence is rapidly transforming the audio industry, reshaping production standards and listener experiences across the audiobook, radio, and podcasting sectors through synthetic voices and automated content generation.
 
 ### Key Points
-- Bit2Watt uses synthetic CUDA kernels or modified LLM training scripts to create rapid, rhythmic power consumption spikes in GPUs.
-- Simulations show that 1,000 synchronized GPUs could cause significant harmonic distortion and grid instability, potentially triggering cascading load shedding.
-- The technique requires no system exploits or elevated privileges, as it utilizes standard, legitimate computational workloads to modulate power draw.
-- Researchers successfully used the power-modulation technique as a covert channel to exfiltrate data via electromagnetic emissions.
-- Current data center monitoring tools, such as PDU counters and standard telemetry, lack the sampling frequency required to detect these high-speed oscillations.
+- Research by Spoken and Edison Research indicates that 65% of listeners are open to AI-narrated audiobooks, provided the quality and multi-cast immersion meet human standards.
+- Radio stations are increasingly utilizing tools like RadioGPT to automate overnight shifts and generate local content, though some networks are implementing "Guaranteed Human" policies.
+- Data from the Podcast Index shows that AI-generated content now accounts for nearly half of all new podcast feeds, with firms like Inception Point AI producing thousands of shows.
+- Major platforms including Apple Podcasts and RSS.com have introduced mandatory disclosure requirements to ensure transparency when AI is used to generate audio content.
+- Recent AI-driven initiatives, such as The Washington Post’s personalized podcasts, have faced internal criticism and public scrutiny due to factual errors and misattributed quotes.
 
 ### Why it Matters
-This research highlights a critical architectural gap where the tight coupling between massive, volatile data center loads and modern power grids creates a new, unpatchable security risk. Because compute and utility infrastructures are managed by separate entities, there is currently no unified oversight to prevent these physical-layer disturbances from impacting grid reliability.
+The integration of AI into audio media presents a significant shift in how content is produced, monetized, and consumed by global audiences. While the technology offers efficiency and scalability for publishers, it simultaneously threatens the intimate host-audience relationship that serves as the foundation for long-term listener loyalty and industry credibility.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/07/new-bit2watt-attack-could-let-cloud.html
-Category: Cybersecurity
+Author:   Frank Racioppi, Contributor, 
+ Frank Racioppi, Contributor
+ https://www.forbes.com/sites/frankracioppi/
+Source:   Forbes
+URL:      https://www.forbes.com/sites/frankracioppi/2026/07/22/is-ai-taking-over-audio---radio-podcasting-audiobooks/
+Category: Artificial Intelligence
