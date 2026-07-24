@@ -1,20 +1,20 @@
-Protecting our FLOSS commons from LLMs
+There are some files you don't want anyone to open, and this Android app takes care of them
 ============================================================
 
-Codeberg e. V. members have voted to prohibit the use of platform data for training large language models and to restrict the hosting of automated, AI-generated software projects.
+The open-source Android application AstraCrypt provides enhanced data security by using AES256-GCM encryption to protect sensitive files, offering a robust alternative to standard, non-encrypted file-hiding apps on mobile devices.
 
 ### Key Points
-- Members passed two motions to protect the free and open-source software ecosystem from the impacts of generative artificial intelligence.
-- Codeberg officially prohibits the use of its user and project data for training large language models.
-- New terms of use will discourage "vibe-coded" projects, defined as resource-heavy, unmaintained software created primarily by AI agents.
-- The organization cited rising hardware costs, server strain from web crawlers, and the erosion of human-centric collaboration as primary drivers for the policy change.
-- Enforcement will focus on high-resource, autonomous projects rather than individual experiments or human-led projects that utilize AI as a secondary tool.
+- AstraCrypt secures photos, videos, documents, and notes within a locked container using AES256-GCM and AEAD encryption algorithms.
+- The app is open-source, allowing users to verify its security claims and confirming it does not collect or share personal data.
+- Users can add an extra layer of security by setting a custom password and camouflaging the app interface as a calculator.
+- The application is available for download via the Google Play Store or as an APK file directly from the project's GitHub repository.
+- While effective, some users have reported occasional stability issues when importing large batches of media files.
 
 ### Why it Matters
-This decision highlights a growing tension between open-source communities and the resource-intensive demands of generative AI developers. By prioritizing human collaboration over automated output, Codeberg aims to preserve its infrastructure and maintain the integrity of its software commons against the rising costs and social challenges posed by AI-generated content.
+AstraCrypt offers a transparent, high-security alternative for users whose devices lack built-in protection like Samsung’s Secure Folder. By utilizing verifiable encryption rather than simple file hiding, it provides a more reliable way to safeguard sensitive personal information from unauthorized access.
 
 ============================================================
-Author:   Codeberg e.V.
-Source:   Codeberg.org
-URL:      https://blog.codeberg.org/protecting-our-floss-commons-from-llms.html
-Category: Artificial Intelligence
+Author:   Sagar Naresh
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/some-filesdont-want-anyone-open-this-android-app-takes-care-them/
+Category: Cybersecurity

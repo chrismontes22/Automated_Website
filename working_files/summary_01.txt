@@ -1,20 +1,20 @@
-Google now lets you sign in to your account using a selfie video
+Attackers Weaponize GitHub Actions Runners to Target cPanel and WHM Servers
 ============================================================
 
-Google has introduced a new account recovery feature that allows users to verify their identity by recording and comparing short selfie videos to regain access to locked accounts.
+Compromised GitHub repositories are being used to launch automated attacks against cPanel and WHM servers by exploiting a critical authentication bypass vulnerability identified as CVE-2026-41940.
 
 ### Key Points
-- Users can set up the feature by following onscreen prompts to capture multiple angles of their face through head movements.
-- The reference video is encrypted and stored in the cloud, allowing for account access across different devices.
-- Google employs security measures to detect and prevent impersonation attempts using static photos or deepfake technology.
-- Users can manage or delete their stored reference video at any time through their Google account settings.
-- The feature is currently undergoing a phased global rollout, with eligibility status available at g.co/signin-selfie.
+- Attackers compromised 10 Packagist packages belonging to developer dinushchathurya between July 12 and 13, 2026.
+- Malicious GitHub Actions workflows were injected into repositories to trigger scanning and exploitation payloads.
+- The campaign uses GitHub-hosted runners to target servers vulnerable to CVE-2026-41940, bypassing authentication to harvest sensitive credentials and cloud keys.
+- Researchers identified approximately 6,100 malicious workflow files linked to the campaign, indicating a large-scale, automated infrastructure.
+- Stolen data includes AWS credentials, Stripe keys, SSH material, and various API tokens used for follow-on monetization or system compromise.
 
 ### Why it Matters
-This update provides a critical alternative for users who lose access to traditional two-factor authentication methods or forget their passwords. By leveraging biometric verification, Google aims to reduce account lockouts while maintaining security standards against sophisticated digital impersonation threats.
+This campaign demonstrates a sophisticated shift where attackers abuse legitimate CI/CD infrastructure to conduct large-scale, automated server exploitation rather than targeting individual end-users. Organizations must audit their GitHub Actions workflows and prioritize patching cPanel and WHM instances to mitigate the risk of credential theft and unauthorized remote access.
 
 ============================================================
-Author:   Andrew Liszewski
-Source:   The Verge
-URL:      https://www.theverge.com/tech/969361/google-account-sign-in-selfie-video-security
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/07/attackers-weaponize-github-actions.html
 Category: Cybersecurity
