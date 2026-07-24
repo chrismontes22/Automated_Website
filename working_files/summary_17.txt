@@ -1,20 +1,20 @@
-A bizarre new malware campaign hacks your printer and forces it to print out ransomware demands
+Protecting our FLOSS commons from LLMs
 ============================================================
 
-The newly identified XEntry Team is targeting organizations in Colombia and Mexico by exploiting system misconfigurations to deploy BitLocker ransomware and print physical extortion notes via office printers.
+Codeberg e. V. members have voted to prohibit the use of platform data for training large language models and to restrict the hosting of automated, AI-generated software projects.
 
 ### Key Points
-- Security firm Kaspersky identified two ransomware attacks in Colombia and Mexico attributed to a threat actor known as the XEntry Team.
-- Attackers gained unauthorized access by exploiting misconfigured Remote Desktop Protocol (RDP) settings and MSSQL services.
-- The perpetrators utilized BitLocker to encrypt critical data and used office printers to deliver ransom demands directly to victims.
-- In the Colombian incident, attackers successfully extorted a $3,000 payment after disabling the victim's Endpoint Protection Platform.
-- Kaspersky reports that over 13% of global security incidents stem from policy violations and configuration errors rather than software vulnerabilities.
+- Members passed two motions to protect the free and open-source software ecosystem from the impacts of generative artificial intelligence.
+- Codeberg officially prohibits the use of its user and project data for training large language models.
+- New terms of use will discourage "vibe-coded" projects, defined as resource-heavy, unmaintained software created primarily by AI agents.
+- The organization cited rising hardware costs, server strain from web crawlers, and the erosion of human-centric collaboration as primary drivers for the policy change.
+- Enforcement will focus on high-resource, autonomous projects rather than individual experiments or human-led projects that utilize AI as a secondary tool.
 
 ### Why it Matters
-These incidents highlight that basic security hygiene, such as properly configuring RDP and database services, remains a critical defense against modern ransomware threats. Organizations that fail to address these common misconfigurations leave themselves vulnerable to attackers who prioritize exploiting existing system weaknesses over complex technical exploits.
+This decision highlights a growing tension between open-source communities and the resource-intensive demands of generative AI developers. By prioritizing human collaboration over automated output, Codeberg aims to preserve its infrastructure and maintain the integrity of its software commons against the rising costs and social challenges posed by AI-generated content.
 
 ============================================================
-Author:   Sead Fadilpašić
-Source:   TechRadar
-URL:      https://www.techradar.com/pro/security/a-bizarre-new-malware-campaign-hacks-your-printer-and-forces-it-to-print-out-ransomware-demands
-Category: Cybersecurity
+Author:   Codeberg e.V.
+Source:   Codeberg.org
+URL:      https://blog.codeberg.org/protecting-our-floss-commons-from-llms.html
+Category: Artificial Intelligence

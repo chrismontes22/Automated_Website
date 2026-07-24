@@ -1,20 +1,20 @@
-At The Daily Upside, a Founder Steps Back As Growth Accelerates
+Adobe Acrobat Chrome extension bug enabled silent WhatsApp data theft
 ============================================================
 
-The Daily Upside is undergoing a leadership transition as founder Patrick Trousdale steps back, appointing McKay Murphy as CEO to oversee the newsletter publisher’s continued financial growth.
+A critical vulnerability in the Adobe Acrobat Chrome extension, identified as HermeticReader, allowed attackers to silently steal private WhatsApp data from users simply by visiting a malicious webpage.
 
 ### Key Points
-- Founder Patrick Trousdale is transitioning to an advisory role, naming former COO McKay Murphy as the new CEO.
-- The company projects $6.5 million in revenue for the year, representing growth of more than 60%.
-- New senior hires include Chief Revenue Officer Katherine Divney and Head of Operations Carmen Starnes.
-- The publisher plans to launch a CFO-focused newsletter this fall to expand its B2B portfolio.
-- The business remains profitable with a staff of 25 and reaches approximately 1 million retail investors.
+- Guardio Labs discovered a vulnerability chain, tracked as CVE-2026-48294, affecting the Adobe Acrobat Chrome extension installed on approximately 329 million browsers.
+- The exploit required no malware or phishing, instead leveraging three flaws in the extension’s internal messaging system to gain full DOM control over WhatsApp Web.
+- Attackers could inject malicious code to exfiltrate chat history, contacts, and message previews by forcing the browser to submit page content to an external server.
+- The vulnerability was identified within hours of Adobe’s June 3 release using an agentic AI system that analyzed 344 obfuscated JavaScript files.
+- Adobe patched the security flaw over a single weekend following the disclosure from Guardio Labs.
 
 ### Why it Matters
-This leadership shift highlights the maturation of lean, business-oriented newsletter publishers that prioritize targeted B2B verticals and expert-led content. By scaling its revenue through diversified products and professional editorial hires, the company demonstrates a sustainable model for growth in the modern digital media landscape.
+This incident highlights the significant security risks posed by widely installed browser extensions that lack rigorous internal message validation. It demonstrates how minor, non-critical coding shortcuts can be chained together to create powerful exploits that bypass traditional security measures like session cookies or passwords.
 
 ============================================================
-Author:   Mark Stenberg
-Source:   Adweek
-URL:      https://www.adweek.com/media/daily-upside-founder-step-back-growth-accelerate/
-Category: Tech Business & Markets
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/195805/hacking/adobe-acrobat-chrome-extension-bug-enabled-silent-whatsapp-data-theft.html
+Category: Cybersecurity
