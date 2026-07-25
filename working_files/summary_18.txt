@@ -1,20 +1,20 @@
-Crypto catches its breath as bitcoin settles into a holding pattern amid July rally
+FakeGit Targets AI Coding Agents with Malicious GitHub Repos
 ============================================================
 
-Bitcoin is currently consolidating between $64,000 and $66,800 as the cryptocurrency market pauses following a 13% recovery from July lows while awaiting a new macro-economic catalyst for direction.
+Cybersecurity researchers at Island have identified 7,600 malicious GitHub repositories using "AgentBaiting" tactics to trick AI coding assistants into recommending malware-laden software to unsuspecting software developers.
 
 ### Key Points
-- Bitcoin is trading in a stable range between $64,000 and $66,800 after failing to break the $66,000 resistance level on Tuesday.
-- The WLFI token surged 12.18% to reach a $2 billion market capitalization, standing out as the session's primary mover.
-- Bitcoin’s 30-day implied volatility index has risen for five consecutive days, a metric that historically signals potential downward price pressure.
-- Futures open interest for Bitcoin has declined to 743,000 BTC, suggesting an unwinding of positions as the recent rally stalls.
-- Traditional markets, including the Nasdaq 100 and S&P 500, remain flat, providing no clear tailwinds or headwinds for crypto assets.
+- Attackers are using 7,600 fake GitHub repositories to distribute the SmartLoader and StealC malware, which exfiltrates passwords, cookies, and sensitive session data.
+- The "AgentBaiting" technique exploits AI coding assistants like Claude Code, Gemini, and ChatGPT, causing them to autonomously recommend malicious repositories as legitimate tools.
+- Malicious repositories are disguised as AI skills or Model Context Protocol (MCP) servers, targeting integrations for platforms like Docker, Jenkins, and Gmail.
+- Researchers confirmed over 14 million downloads from approximately 200 of the identified repositories, with the campaign activity peaking in April.
+- The attack chain begins with an obfuscated Lua payload that executes once a developer follows instructions found in the repository's README file.
 
 ### Why it Matters
-The current market stasis reflects a lack of directional conviction among traders as they wait for fresh economic data to influence price action. While Bitcoin consolidates, the stability of major exchanges like Binance and shifting options demand suggest that investors are hedging against volatility while preparing for the next major move.
+This campaign demonstrates a significant shift in threat actor strategy by weaponizing the autonomous discovery capabilities of AI coding agents. Organizations must now implement stricter verification processes for AI-suggested tools and utilize isolated environments to prevent automated systems from inadvertently introducing malware into secure development workflows.
 
 ============================================================
-Author:   Oliver Knight, Omkar Godbole
-Source:   CoinDesk
-URL:      https://www.coindesk.com/markets/2026/07/23/crypto-catches-its-breath-as-bitcoin-settles-into-a-holding-pattern-after-its-best-month-since-january
-Category: Tech Business & Markets
+Author:   Jeff Burt
+Source:   DevOps.com
+URL:      https://devops.com/fakegit-targets-ai-coding-agents-with-malicious-github-repos/
+Category: Cybersecurity

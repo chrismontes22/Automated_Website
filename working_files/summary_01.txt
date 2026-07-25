@@ -1,20 +1,20 @@
-Attackers Weaponize GitHub Actions Runners to Target cPanel and WHM Servers
+Fake Notepad++ Plugin Delivers MATCHBOIL.V2 in UAC-0099 Attacks
 ============================================================
 
-Compromised GitHub repositories are being used to launch automated attacks against cPanel and WHM servers by exploiting a critical authentication bypass vulnerability identified as CVE-2026-41940.
+The Computer Emergency Response Team of Ukraine has identified a new cyberattack campaign where Russia-aligned group UAC-0099 uses malicious Notepad++ plugins to compromise Windows systems via phishing emails.
 
 ### Key Points
-- Attackers compromised 10 Packagist packages belonging to developer dinushchathurya between July 12 and 13, 2026.
-- Malicious GitHub Actions workflows were injected into repositories to trigger scanning and exploitation payloads.
-- The campaign uses GitHub-hosted runners to target servers vulnerable to CVE-2026-41940, bypassing authentication to harvest sensitive credentials and cloud keys.
-- Researchers identified approximately 6,100 malicious workflow files linked to the campaign, indicating a large-scale, automated infrastructure.
-- Stolen data includes AWS credentials, Stripe keys, SSH material, and various API tokens used for follow-on monetization or system compromise.
+- The UAC-0099 threat group distributes a malicious DLL, codenamed LUNCHPOKE, disguised as a legitimate Notepad++ plugin to execute secondary payloads.
+- Attacks begin with phishing emails containing image attachments that lead victims to download a ZIP archive from file-sharing services like EasySend.
+- The malware chain includes the BURNYBEAR loader and a C#-based tool called MATCHBOIL.V2, which can exhaust system resources if launched incorrectly.
+- CERT-UA advises organizations to update WinRAR, 7-Zip, and Notepad++ to the latest versions to mitigate risks from these exploitation techniques.
+- Separate campaigns by Russian actors, including Laundry Bear and TA458, are currently targeting global webmail servers using "half-click" exploits and zero-day vulnerabilities.
 
 ### Why it Matters
-This campaign demonstrates a sophisticated shift where attackers abuse legitimate CI/CD infrastructure to conduct large-scale, automated server exploitation rather than targeting individual end-users. Organizations must audit their GitHub Actions workflows and prioritize patching cPanel and WHM instances to mitigate the risk of credential theft and unauthorized remote access.
+These campaigns demonstrate an increasing trend of Russian-aligned threat actors using Ukrainian organizations as a testing ground for sophisticated cyber espionage techniques before deploying them globally. The shift toward "half-click" exploits and modular malware highlights a growing risk to both government and commercial entities relying on standard webmail and productivity software.
 
 ============================================================
 Author:   info@thehackernews.com (The Hacker News)
 Source:   Internet
-URL:      https://thehackernews.com/2026/07/attackers-weaponize-github-actions.html
+URL:      https://thehackernews.com/2026/07/fake-notepad-plugin-delivers.html
 Category: Cybersecurity
