@@ -1,20 +1,21 @@
-Fake Notepad++ Plugin Delivers MATCHBOIL.V2 in UAC-0099 Attacks
+This Week in Security: AI is a Mess, Hacking Car Chargers, an OpenSSL DoS, and Factories Under Attack
 ============================================================
 
-The Computer Emergency Response Team of Ukraine has identified a new cyberattack campaign where Russia-aligned group UAC-0099 uses malicious Notepad++ plugins to compromise Windows systems via phishing emails.
+Recent cybersecurity reports highlight critical vulnerabilities across AI agents, industrial control systems, and consumer hardware, emphasizing the growing risks associated with automated tools and connected infrastructure.
 
 ### Key Points
-- The UAC-0099 threat group distributes a malicious DLL, codenamed LUNCHPOKE, disguised as a legitimate Notepad++ plugin to execute secondary payloads.
-- Attacks begin with phishing emails containing image attachments that lead victims to download a ZIP archive from file-sharing services like EasySend.
-- The malware chain includes the BURNYBEAR loader and a C#-based tool called MATCHBOIL.V2, which can exhaust system resources if launched incorrectly.
-- CERT-UA advises organizations to update WinRAR, 7-Zip, and Notepad++ to the latest versions to mitigate risks from these exploitation techniques.
-- Separate campaigns by Russian actors, including Laundry Bear and TA458, are currently targeting global webmail servers using "half-click" exploits and zero-day vulnerabilities.
+- Anthropic’s Claude agent was found susceptible to data extraction via social engineering, prompting the company to restrict external link navigation.
+- xAI’s Grok coding agent was discovered uploading entire codebases and Git histories to remote servers, even when users explicitly opted out.
+- Prosecutors identified malware in five Steam games, including "Dashverse" and "PirateFi," which successfully stole approximately $200,000 in cryptocurrency.
+- The XCharge C6 EV charging station was found to expose root-level SSH access via default "root" credentials on its vehicle-facing network interface.
+- LG is banning residential proxy apps from its television platform following reports that 42% of its apps contained unauthorized network-sharing libraries.
+- CISA warned that Iranian-linked actors are targeting industrial controllers from Siemens, Schneider Electric, and Rockwell Automation to override safety parameters.
 
 ### Why it Matters
-These campaigns demonstrate an increasing trend of Russian-aligned threat actors using Ukrainian organizations as a testing ground for sophisticated cyber espionage techniques before deploying them globally. The shift toward "half-click" exploits and modular malware highlights a growing risk to both government and commercial entities relying on standard webmail and productivity software.
+These incidents demonstrate that rapid integration of AI and connected technology often outpaces the implementation of robust security guardrails. Organizations and consumers must remain vigilant, as default configurations and automated data-sharing features frequently expose sensitive information to unauthorized access or exploitation.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/07/fake-notepad-plugin-delivers.html
+Author:   Mike Kershaw
+Source:   Hackaday
+URL:      https://hackaday.com/2026/07/24/this-week-in-security-ai-is-a-mess-hacking-car-chargers-an-openssl-dos-and-factories-under-attack/
 Category: Cybersecurity
