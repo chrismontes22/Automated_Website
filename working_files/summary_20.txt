@@ -1,20 +1,21 @@
-The biggest indie "friendslop" game of 2026 appears to be delivering malware via Steam Workshop — How to protect your PC (and what to do next)
+How to Find and Back Up Your BitLocker Recovery Key in Windows 11 and 10
 ============================================================
 
-Security researcher Feint has discovered malicious scripts hidden within custom Steam Workshop maps for the popular indie game Meccha Chameleon, which can execute unauthorized batch files on Windows PCs.
+Windows users can prevent data loss by backing up their 48-digit BitLocker recovery key, which is required to unlock encrypted drives after firmware updates or hardware configuration changes.
 
 ### Key Points
-- Malicious maps use a disguised Blueprint actor to inject batch files into the user's Documents folder upon loading.
-- The script attempts to launch a hidden PowerShell process to download secondary payloads from an external server.
-- Suspicious map listings are characterized by recently created Steam accounts with disabled comments and ratings.
-- Users are advised to avoid downloading new custom maps and to run antivirus scans if they have recently installed community content.
-- Valve has been notified of the security vulnerability, though the company has not yet confirmed the removal of the specific files.
+- BitLocker encrypts Windows drives to protect files, requiring a 48-digit recovery key if the Trusted Platform Module (TPM) detects a startup change.
+- Users should verify their recovery key by matching the Key ID displayed on the recovery screen with the entry saved in their Microsoft account.
+- Essential backups include a digital copy in a Microsoft account and a secondary offline copy, such as a printed document or a secure USB drive.
+- Microsoft cannot bypass or recover a lost BitLocker key; if no valid key exists, the encrypted drive must be reset, resulting in total data loss.
+- Organizations managing Windows PCs typically store recovery keys in systems like Microsoft Entra ID or Intune rather than personal user accounts.
+- Recent Windows updates, specifically the May 2026 release, addressed known bugs that triggered unnecessary recovery prompts for some users.
 
 ### Why it Matters
-This incident highlights ongoing security risks within the Steam Workshop, where malicious actors can exploit game engines to bypass standard user protections. It serves as a reminder for PC gamers to exercise caution when downloading community-created content, as even popular platforms remain vulnerable to sophisticated malware distribution.
+Maintaining a verified, offline backup of your BitLocker recovery key is the only way to ensure access to your files if a system update or hardware failure triggers a lockout. Because Microsoft cannot bypass this encryption, failing to secure the key effectively renders your data permanently inaccessible.
 
 ============================================================
-Author:   c.cale.hunt@gmail.com (Cale Hunt) , Cale Hunt
-Source:   Windows Central
-URL:      https://www.windowscentral.com/gaming/pc-gaming/meccha-chameleon-steam-workshop-malware
+Author:   Aseem Kishore
+Source:   Helpdeskgeek.com
+URL:      https://helpdeskgeek.com/find-back-up-bitlocker-recovery-key-windows/#article
 Category: Cybersecurity
