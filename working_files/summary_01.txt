@@ -1,20 +1,20 @@
-No more ads? Get speedy, secure, and seamless connectivity with this VPN for 94% off
+Malvertising Sends Malware in Pieces, Then Makes the Browser Build the Executable
 ============================================================
 
-iProVPN is currently offering a five-year subscription to its advanced encryption and ad-blocking service for a discounted one-time payment of $19.99, down from the original $360 price.
+The SourTrade malvertising operation targets cryptocurrency investors by using a legitimate Bun runtime to dynamically assemble malicious Windows executables directly within a victim's browser during the download process.
 
 ### Key Points
-- The subscription provides access to over 250 servers located across more than 45 countries.
-- Users can connect up to 10 devices simultaneously under a single, one-time payment plan.
-- The service includes integrated malware detection, a kill switch, and a strict zero-logs privacy policy.
-- It supports streaming content from major platforms including Netflix, Disney+, Hulu, and Amazon Prime.
-- The deal represents a 94% discount off the standard retail price for a five-year term.
+- Security firm Confiant identified the SourTrade campaign, which has been active since late 2024 and impersonates brands like TradingView, Solana, and Luno.
+- The operation targets retail traders across 12 countries by using browser-based ServiceWorkers to build unique, per-session executable files.
+- By assembling the final binary on the victim's machine, attackers bypass traditional hash-based detection methods used by security software.
+- The malicious process utilizes a legitimate Bun runtime to compile JavaScriptCore bytecode into standalone Windows executables without hosting a complete malicious file on a server.
+- Confiant documented 96 malicious domains associated with the campaign, which uses sophisticated cloaking to hide landing pages from security researchers and automated bots.
 
 ### Why it Matters
-This promotion offers a low-cost entry point for users seeking to enhance their digital privacy and bypass regional content restrictions. By providing long-term access for a single fee, it serves as a budget-friendly alternative to recurring monthly subscription models for cybersecurity tools.
+This technique represents a significant evolution in malware delivery by shifting the burden of file assembly from the attacker's server to the victim's browser. Because each downloaded file is unique, traditional signature-based security tools struggle to identify and block these threats effectively.
 
 ============================================================
-Author:   Boing Boing's Shop
-Source:   Boing Boing
-URL:      https://boingboing.net/2026/07/24/no-more-ads-get-speedy-secure-and-seamless-connectivity-with-this-vpn-for-94-off.html
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/07/malvertising-sends-malware-in-pieces.html
 Category: Cybersecurity

@@ -1,21 +1,19 @@
-How to Find and Back Up Your BitLocker Recovery Key in Windows 11 and 10
+"Generative AI" != speech-to-text, diarization etc.
 ============================================================
 
-Windows users can prevent data loss by backing up their 48-digit BitLocker recovery key, which is required to unlock encrypted drives after firmware updates or hardware configuration changes.
+An Indiana Court of Appeals judge recently criticized a trial transcript for containing numerous errors, suggesting that improperly proofread artificial intelligence tools likely caused the significant inaccuracies.
 
 ### Key Points
-- BitLocker encrypts Windows drives to protect files, requiring a 48-digit recovery key if the Trusted Platform Module (TPM) detects a startup change.
-- Users should verify their recovery key by matching the Key ID displayed on the recovery screen with the entry saved in their Microsoft account.
-- Essential backups include a digital copy in a Microsoft account and a secondary offline copy, such as a printed document or a secure USB drive.
-- Microsoft cannot bypass or recover a lost BitLocker key; if no valid key exists, the encrypted drive must be reset, resulting in total data loss.
-- Organizations managing Windows PCs typically store recovery keys in systems like Microsoft Entra ID or Intune rather than personal user accounts.
-- Recent Windows updates, specifically the May 2026 release, addressed known bugs that triggered unnecessary recovery prompts for some users.
+- Judge Jeffrey L. Marchal identified multiple typos, misattributed statements, and incorrect names within the official court transcript.
+- The court noted that motions and closing arguments were wrongly attributed to the trial judge and bailiff rather than the attorneys.
+- The memorandum suggests these errors stem from a court reporter failing to verify the output of an automated speech-to-text system.
+- The judge emphasized that professionals must rigorously proofread any documents generated or assisted by artificial intelligence tools.
 
 ### Why it Matters
-Maintaining a verified, offline backup of your BitLocker recovery key is the only way to ensure access to your files if a system update or hardware failure triggers a lockout. Because Microsoft cannot bypass this encryption, failing to secure the key effectively renders your data permanently inaccessible.
+This incident highlights the growing risks of relying on automated transcription software within the legal system where accuracy is paramount. It serves as a warning that failing to verify AI-generated content can compromise the integrity of official court records and judicial proceedings.
 
 ============================================================
-Author:   Aseem Kishore
-Source:   Helpdeskgeek.com
-URL:      https://helpdeskgeek.com/find-back-up-bitlocker-recovery-key-windows/#article
-Category: Cybersecurity
+Author:   Mark Liberman
+Source:   Upenn.edu
+URL:      https://languagelog.ldc.upenn.edu/nll/?p=73905
+Category: Artificial Intelligence

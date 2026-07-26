@@ -1,20 +1,20 @@
-Android May Soon Restrict On-Device ADB
+Major Video Doorbell Companies Are Being Sued for Privacy Violations. Here’s Why
 ============================================================
 
-Google is considering restricting on-device Android Debug Bridge (ADB) connections to improve security, a move that could inadvertently disable popular power-user tools like Shizuku and various developer applications.
+Amazon Ring and Google Nest are facing multiple class-action lawsuits alleging that their video doorbells’ facial recognition features collect biometric data from non-consenting individuals in violation of privacy laws.
 
 ### Key Points
-- Google developers are discussing limiting ADB daemon (ADBD) connections to the Wi-Fi interface (wlan0) to mitigate potential privilege escalation exploits.
-- The proposed change would effectively block "on-device" ADB, where developers use terminal emulators to run ADB commands locally via the loopback address (127.0.0.1).
-- Popular open-source projects, including Shizuku, aShell, and various call recording utilities, rely on this local loopback connection to function.
-- Security concerns stem from CVE-2026-0073, which previously allowed attackers to bypass Wireless ADB authentication.
-- Critics argue that malicious exploitation of on-device ADB requires significant manual user intervention, making a total ban unnecessary and overly restrictive for power users.
+- Lawsuits including *Fennessy v. Google* and *Sigwalt v. Amazon* challenge the use of "familiar-face" technology to create biometric faceprints.
+- Plaintiffs argue that these devices capture and analyze images of neighbors and passersby without obtaining explicit consent.
+- Ring and Nest have already disabled facial recognition features in jurisdictions like Illinois and Texas due to strict biometric privacy regulations.
+- The legal complaints cite various state statutes, including Virginia’s Computer Crimes Act and California privacy laws, to contest data collection practices.
+- Google previously settled a Texas biometric data lawsuit for $1.4 billion in 2025, highlighting the significant legal risks associated with facial recognition.
 
 ### Why it Matters
-Restricting on-device ADB would disrupt a niche but vital ecosystem of tools that allow users to customize their devices and manage permissions without a secondary computer. This change highlights the ongoing tension between Google’s efforts to harden Android security and the needs of developers who rely on advanced system-level access.
+These lawsuits highlight a growing legal conflict between consumer home security features and individual privacy rights regarding biometric data. If the plaintiffs succeed, tech companies may be forced to restrict or remove facial recognition capabilities across the United States to avoid further litigation.
 
 ============================================================
-Author:   Kitsumed
-Source:   Github.io
-URL:      https://kitsumed.github.io/blog/posts/android-may-soon-restrict-on-device-adb/
+Author:   Tyler Lacoma
+Source:   CNET
+URL:      https://www.cnet.com/home/security/major-video-doorbell-companies-are-being-sued-for-privacy-violations-heres-why/
 Category: Cybersecurity
