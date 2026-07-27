@@ -1,20 +1,21 @@
-My parents’ Android phones were ruined by invasive ads. Here’s how I fixed them for good
+Android's new backup trick is exactly what I needed, and here's how to turn it on
 ============================================================
 
-Android users are increasingly encountering deceptive, predatory advertisements within legitimate applications, prompting many to adopt network-wide DNS filtering solutions to protect less tech-savvy family members from potential scams.
+Android has introduced a new built-in document backup feature that allows users to automatically save local files to Google Drive, though the setting must be enabled manually by users.
 
 ### Key Points
-- Deceptive ads, often disguised as system updates or PDF alerts, are appearing in popular apps, including those developed by Google.
-- NextDNS provides a customizable, network-wide filtering service that allows users to block malicious domains across multiple devices.
-- The service supports individual profiles, remote management, and utilizes Android’s Private DNS feature for a simple, set-it-and-forget-it configuration.
-- DNS filtering is not a total solution for platforms like YouTube, which often serve ads through the same domains as their primary content.
-- A multi-layered security approach, including the use of alternative apps like SmartTube and regular permission audits, is recommended for comprehensive device protection.
+- The feature is rolling out via Google Play Services version 26.25 and later.
+- Users can enable the tool by navigating to Settings > Accounts and backup > Google backup.
+- Supported file types include .PDF, .ZIP, .APK, .JSON, .DOC, .PPT, and .XLS.
+- Backups are organized by device and folder within the Google Drive Android backups directory.
+- The service functions as a one-way backup rather than a two-way synchronization tool.
+- Backed-up files count against the user's total Google Drive storage limit.
 
 ### Why it Matters
-The prevalence of manipulative advertising on mobile platforms poses a significant security risk to users who may be tricked into installing malicious software. Implementing robust filtering tools helps mitigate these threats, ensuring a safer digital environment for vulnerable individuals who rely on their devices for sensitive tasks.
+This update simplifies data recovery for Android users by automating the protection of locally stored documents that were previously excluded from system backups. However, because these files consume limited cloud storage, users must balance the convenience of automatic backups against their available Google Drive capacity.
 
 ============================================================
-Author:   Andy Walker
-Source:   Android Authority
-URL:      https://www.androidauthority.com/block-ads-on-android-for-parents-3687831/
-Category: Cybersecurity
+Author:   Rita El Khoury
+Source:   Android Police
+URL:      https://www.androidpolice.com/android-new-file-backup-trick/
+Category: Phones, Laptops, and Gadgets

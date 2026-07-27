@@ -1,20 +1,20 @@
-Steam forum ClickFix attacks infect gamers with XMRig cryptominers
+Farmland real estate values jumped nearly 40% since 2020 — these 2 publicly traded REITs let everyday investors buy in
 ============================================================
 
-Threat actors are exploiting Steam discussion forums by posting malicious PowerShell commands disguised as technical fixes that secretly install XMRig cryptominers on victims' Windows computers.
+Farmland values have surged nearly 40% since 2020, prompting investors to utilize publicly traded real estate investment trusts as a accessible way to gain exposure to the agricultural sector.
 
 ### Key Points
-- Attackers use fake Steam accounts to reply to user support threads with instructions to run PowerShell commands.
-- The malicious script masquerades as a "msf utility \ PC Opt" tool that performs fake system maintenance tasks.
-- Once executed with administrator privileges, the malware creates a hidden directory and adds a Microsoft Defender exclusion to avoid detection.
-- The script downloads and installs an XMRig miner, creating a scheduled task to ensure the malicious process persists after system reboots.
-- Users are advised to check for the 'C:\Windows\Background' directory and remove any scheduled tasks starting with 'XMRig-' if they suspect compromise.
+- The average U.S. farmland value reached $4,350 per acre in 2025, marking a 4.3% increase over the previous year.
+- Farmland Partners and Gladstone Land are currently the only two publicly traded farmland REITs available to retail investors.
+- Farmland Partners trades on the NYSE and focuses primarily on commodity crops such as corn, rice, and cotton.
+- Gladstone Land trades on the NASDAQ and specializes in fresh produce, including fruits and vegetables, to mitigate commodity price volatility.
+- REITs provide a way to earn income through land appreciation and rental payments without the capital requirements of direct farm ownership.
 
 ### Why it Matters
-This campaign highlights the effectiveness of ClickFix social engineering, which bypasses automated security protections by tricking users into manually executing malicious code. Because the malware runs with system-level privileges, it poses a significant risk to device integrity and may necessitate a full operating system reinstallation to ensure complete removal.
+Farmland investments offer a unique hedge against market volatility because their performance often lacks a strong correlation with traditional stock market fluctuations. By diversifying portfolios with agricultural assets, investors can potentially protect their wealth against the financial swings typically associated with equities, bonds, and cryptocurrencies.
 
 ============================================================
-Author:   Lawrence Abrams
-Source:   BleepingComputer
-URL:      https://www.bleepingcomputer.com/news/security/steam-forum-clickfix-attacks-infect-gamers-with-xmrig-cryptominers/
-Category: Cybersecurity
+Author:   Joseph Zeballos-Roig
+Source:   Yahoo Entertainment
+URL:      https://finance.yahoo.com/real-estate/articles/farmland-real-estate-values-jumped-113000607.html
+Category: Tech Business & Markets

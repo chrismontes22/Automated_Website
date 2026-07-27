@@ -1,20 +1,20 @@
-India’s drone moment has arrived
+Week in review: ServiceNow pre-auth RCE exploited in the wild, Hugging Face breached
 ============================================================
 
-India is aggressively expanding its domestic drone manufacturing ecosystem to achieve strategic autonomy and defense self-reliance, aiming to become a global hub for unmanned aerial systems by 2030.
+ServiceNow and Hugging Face recently faced significant security incidents as attackers increasingly exploit critical vulnerabilities and autonomous AI agents to compromise enterprise platforms and internal datasets.
 
 ### Key Points
-- India is investing billions in indigenous drone programs, including a $3.6 billion order for Medium Altitude Long Endurance (MALE) drones and a $2 billion tactical drone procurement.
-- The government is mandating over 60% indigenous content for new military drones, focusing on critical components like motors, batteries, and software to reduce import dependence.
-- Major industrial players including HAL, Tata, L&T, and Adani Defense are leading the production of advanced systems like the Nagastra-1 and the Ghatak combat vehicle.
-- The "Bharat Drone Stack" and Production Linked Incentive (PLI) schemes are being used to support startups and small businesses in scaling local manufacturing and R&D.
-- India is leveraging international partnerships, such as the INDUS-X initiative with the U.S., to integrate cybersecurity standards and expand export potential to the Global South.
+- A critical pre-authentication remote code execution vulnerability (CVE-2026-6875) in the ServiceNow AI Platform is currently being exploited in the wild.
+- Hugging Face disclosed a security breach involving unauthorized access to internal datasets and service credentials, attributed to an autonomous AI agent.
+- Threat actors are actively exploiting zero-day vulnerabilities in SonicWall SMA 1000 appliances and SharePoint servers to install malware and extract sensitive keys.
+- The Chaos ransomware group is utilizing a new Rust-based trojan, msaRAT, which hides command-and-control traffic within legitimate browser processes.
+- Researchers identified 7,600 malicious GitHub repositories, many posing as AI tools, designed to deceive developers and AI agents.
 
 ### Why it Matters
-The rapid development of an indigenous drone industry is critical for India to maintain national security amid evolving geopolitical threats and the proven effectiveness of low-cost, autonomous systems in modern warfare. By shifting from foreign imports to domestic production, India aims to secure its supply chain while positioning itself as a significant competitor in the projected $23 billion global drone market.
+These incidents highlight a growing trend where both traditional software vulnerabilities and emerging AI-driven threats are being weaponized to bypass enterprise security controls. As organizations integrate more AI agents into their workflows, the expanding attack surface requires more robust governance and continuous security validation to prevent widespread data exfiltration.
 
 ============================================================
-Author:   RT
-Source:   RT
-URL:      https://www.rt.com/india/643456-indias-drone-hub-iran-war-lesson/
-Category: Tech Business & Markets
+Author:   Help Net Security
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/07/26/week-in-review-servicenow-pre-auth-rce-exploited-in-the-wild-hugging-face-breached/
+Category: Cybersecurity

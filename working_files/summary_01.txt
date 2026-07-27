@@ -1,20 +1,21 @@
-Week in review: ServiceNow pre-auth RCE exploited in the wild, Hugging Face breached
+How I stopped being my parents' emergency IT hotline — The complete list of Windows Security settings I made them fix once and for all
 ============================================================
 
-ServiceNow and Hugging Face recently faced significant security incidents as attackers increasingly exploit critical vulnerabilities and autonomous AI agents to compromise enterprise platforms and internal datasets.
+This comprehensive guide outlines essential cybersecurity best practices for Windows 11 users to protect their personal data and devices from common digital threats, scams, and unauthorized system access.
 
 ### Key Points
-- A critical pre-authentication remote code execution vulnerability (CVE-2026-6875) in the ServiceNow AI Platform is currently being exploited in the wild.
-- Hugging Face disclosed a security breach involving unauthorized access to internal datasets and service credentials, attributed to an autonomous AI agent.
-- Threat actors are actively exploiting zero-day vulnerabilities in SonicWall SMA 1000 appliances and SharePoint servers to install malware and extract sensitive keys.
-- The Chaos ransomware group is utilizing a new Rust-based trojan, msaRAT, which hides command-and-control traffic within legitimate browser processes.
-- Researchers identified 7,600 malicious GitHub repositories, many posing as AI tools, designed to deceive developers and AI agents.
+- Enable Windows Hello for secure biometric or PIN-based logins and ensure Windows Update and Windows Defender are active to receive critical security patches and malware protection.
+- Activate the "Find My Device" feature in Windows 11 to allow for remote location tracking and device locking in the event of theft or loss.
+- Switch from a local account to a Microsoft account with two-factor authentication (2FA) to improve account recovery and add an extra layer of security.
+- Enable device encryption, such as BitLocker or standard device encryption, to prevent unauthorized access to data if a physical drive is removed from the computer.
+- Transition from an Administrator account to a Standard user account for daily tasks to limit the potential system-wide impact of malicious software.
+- Utilize reputable password managers like NordPass, 1Password, or Bitwarden to generate and store unique, complex passwords for all online accounts.
 
 ### Why it Matters
-These incidents highlight a growing trend where both traditional software vulnerabilities and emerging AI-driven threats are being weaponized to bypass enterprise security controls. As organizations integrate more AI agents into their workflows, the expanding attack surface requires more robust governance and continuous security validation to prevent widespread data exfiltration.
+Implementing these foundational security measures significantly reduces the risk of identity theft, data loss, and unauthorized remote access to personal computers. By adopting these proactive habits, users can better defend themselves against increasingly sophisticated phishing scams and common technical support fraud.
 
 ============================================================
-Author:   Help Net Security
-Source:   Help Net Security
-URL:      https://www.helpnetsecurity.com/2026/07/26/week-in-review-servicenow-pre-auth-rce-exploited-in-the-wild-hugging-face-breached/
+Author:   c.cale.hunt@gmail.com (Cale Hunt) , Cale Hunt
+Source:   Windows Central
+URL:      https://www.windowscentral.com/microsoft/windows/windows-security-cheat-sheet-family-it
 Category: Cybersecurity
