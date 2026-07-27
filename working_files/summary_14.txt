@@ -1,19 +1,20 @@
-Experts claim to have found more weaknesses in Apple's Gatekeeper tool — but it doesn't seem too bothered
+Steam forum ClickFix attacks infect gamers with XMRig cryptominers
 ============================================================
 
-Security researchers Talal Haj Barky and Tommy Mysk discovered a method to bypass macOS Gatekeeper by replacing previously authorized applications with malicious versions that evade further security verification.
+Threat actors are exploiting Steam discussion forums by posting malicious PowerShell commands disguised as technical fixes that secretly install XMRig cryptominers on victims' Windows computers.
 
 ### Key Points
-- Researchers Talal Haj Barky and Tommy Mysk identified a vulnerability where Gatekeeper fails to re-verify macOS applications after they are replaced by malicious files.
-- The attack requires an initial stage of user-level code execution to archive and swap legitimate app bundles with malicious counterparts.
-- Apple declined to address the issue, stating that locally rebuilt app bundles fall outside the scope of Gatekeeper’s security protections.
-- The company maintains that risks involving user authorization prompts for Keychain or TCC access are considered social engineering rather than security flaws.
+- Attackers use fake Steam accounts to reply to user support threads with instructions to run PowerShell commands.
+- The malicious script masquerades as a "msf utility \ PC Opt" tool that performs fake system maintenance tasks.
+- Once executed with administrator privileges, the malware creates a hidden directory and adds a Microsoft Defender exclusion to avoid detection.
+- The script downloads and installs an XMRig miner, creating a scheduled task to ensure the malicious process persists after system reboots.
+- Users are advised to check for the 'C:\Windows\Background' directory and remove any scheduled tasks starting with 'XMRig-' if they suspect compromise.
 
 ### Why it Matters
-This vulnerability highlights a potential gap in macOS security where established trust in an application can be exploited to bypass system defenses. Because Apple considers this behavior out of scope, users must remain vigilant against social engineering tactics that could lead to unauthorized system access.
+This campaign highlights the effectiveness of ClickFix social engineering, which bypasses automated security protections by tricking users into manually executing malicious code. Because the malware runs with system-level privileges, it poses a significant risk to device integrity and may necessitate a full operating system reinstallation to ensure complete removal.
 
 ============================================================
-Author:   Sead Fadilpašić
-Source:   TechRadar
-URL:      https://www.techradar.com/pro/security/experts-claim-to-have-found-more-weaknesses-in-apples-gatekeeper-tool-but-it-doesnt-seem-too-bothered
+Author:   Lawrence Abrams
+Source:   BleepingComputer
+URL:      https://www.bleepingcomputer.com/news/security/steam-forum-clickfix-attacks-infect-gamers-with-xmrig-cryptominers/
 Category: Cybersecurity

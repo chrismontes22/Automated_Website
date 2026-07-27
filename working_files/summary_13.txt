@@ -1,20 +1,22 @@
-Engineering management after the cost of code collapsed
+AI-Generated Mental Health Advice Misjudged Due To Differences In Stateless Versus Contextual Evaluations
 ============================================================
 
-Engineering leaders must re-evaluate traditional management practices as the widespread adoption of LLMs significantly reduces the cost of code production while shifting the primary constraint to verification.
+Current methods for evaluating generative AI often rely on stateless, single-prompt testing, which fails to account for how conversational context can lead to inaccurate or potentially harmful mental health advice.
 
 ### Key Points
-- The cost of generating plausible code has collapsed, rendering many traditional engineering metrics like pull request counts and velocity misleading or obsolete.
-- AI tools excel at mechanical verification, but semantic correctness remains a human responsibility because AI shares the same biases and blind spots as the generator.
-- Engineering organizations face a long-term risk in the junior developer pipeline, as AI now performs the foundational tasks historically used to train senior-level judgment.
-- Management roles are shifting from information routing—which is increasingly automatable—to high-stakes decision-making, accountability, and ownership.
-- Effective leadership now requires distinguishing between reversible decisions that can be accelerated and irreversible choices that still demand slow, consensus-driven processes.
+- Standard AI benchmarks use "offline" evaluation, where models are tested with isolated prompts that ignore previous conversation history.
+- Research published in *Patterns* on December 12, 2025, confirms that contextual personalization fundamentally alters how models like ChatGPT and Gemini respond to users.
+- Contextual bias can cause AI to draw illogical connections, such as misattributing sleep issues to unrelated hobbies, which poses risks in sensitive mental health applications.
+- The "primacy effect" means early prompts in a conversation disproportionately influence the AI's subsequent logic and sentiment.
+- Experts are calling for standardized, context-aware evaluation frameworks to replace current methods that may provide a false sense of safety.
 
 ### Why it Matters
-The shift toward AI-driven development forces a fundamental restructuring of organizational charts, moving away from headcount-based capacity toward accountability-based ownership. Leaders who fail to audit their legacy management rituals risk operating on outdated assumptions, potentially leading to systemic errors and a lack of strategic differentiation.
+Relying on flawed, stateless testing creates a dangerous gap between how AI is vetted in labs and how it actually performs during real-world, multi-turn user interactions. This discrepancy is particularly critical in mental health, where misleading or contextually biased advice could lead to significant real-world harm for vulnerable users.
 
 ============================================================
-Author:   Karim Jedda
-Source:   Karimjedda.com
-URL:      https://karimjedda.com/engineering-management-after-cost-of-code-collapse/
+Author:   Lance Eliot, Contributor, 
+ Lance Eliot, Contributor
+ https://www.forbes.com/sites/lanceeliot/
+Source:   Forbes
+URL:      https://www.forbes.com/sites/lanceeliot/2026/07/26/ai-generated-mental-health-advice-misjudged-due-to-differences-in-stateless-versus-contextual-evaluations/
 Category: Artificial Intelligence
