@@ -1,20 +1,20 @@
-Apple Planning to Unveil Privacy-Focused Smart Glasses at WWDC 2027
+GitHub delays version updates so malware gets caught first
 ============================================================
 
-Apple plans to debut its first pair of smart glasses at WWDC in June 2027, focusing on advanced privacy features to differentiate the hardware from existing competitor products.
+GitHub has introduced a mandatory three-day delay for automated Dependabot version updates to prevent developers from inadvertently installing malicious code published to the npm package registry.
 
 ### Key Points
-- Apple is targeting a late 2027 shipping date for its inaugural smart glasses following a planned unveiling at WWDC.
-- The device will likely feature integrated speakers and microphones to support Siri, phone calls, and media playback.
-- Prototyping efforts include versions with and without cameras to address consumer concerns regarding secret recording.
-- Marketing strategies will emphasize privacy protections to distinguish the product from Meta’s Ray-Ban smart glasses.
-- Development teams are currently testing unique hardware and software privacy features not found in Apple's current product lineup.
+- GitHub’s Dependabot now waits 72 hours before opening pull requests for non-security version updates to allow time for malicious packages to be identified and removed.
+- The policy change follows a September 2025 incident where compromised versions of popular packages like chalk and debug were automatically pushed to users within hours.
+- Security updates remain unaffected by the delay, as these patches address known vulnerabilities that require immediate remediation.
+- GitHub logged over 6,500 npm malware advisories in the year ending May 2026, averaging 18 new malicious packages discovered daily.
+- Developers can customize the cooldown period in their dependabot.yml configuration files or disable it for trusted internal packages.
 
 ### Why it Matters
-This launch represents Apple’s strategic entry into the wearable smart glasses market, positioning privacy as a primary competitive advantage against established rivals. By addressing surveillance concerns, the company aims to overcome consumer hesitation and set a new standard for data security in personal augmented reality hardware.
+This update provides a critical buffer against automated supply chain attacks that exploit the speed of continuous integration tools. While it does not protect against long-term sabotage or dormant backdoors, it effectively mitigates the risk of "fast-burn" malware that is typically caught by the community within hours of publication.
 
 ============================================================
-Author:   Joe Rossignol
-Source:   MacRumors
-URL:      https://www.macrumors.com/2026/07/26/apple-smart-glasses-wwdc-2027-report/
-Category: Phones, Laptops, and Gadgets
+Author:   Sinisa Markovic
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/07/27/github-dependabot-cooldown/
+Category: Cybersecurity

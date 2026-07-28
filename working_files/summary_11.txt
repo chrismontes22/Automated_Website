@@ -1,20 +1,20 @@
-India’s drone moment has arrived
+Wattage: A token-spend profiler and cost-regression gate for AI agents
 ============================================================
 
-India is aggressively expanding its domestic drone manufacturing ecosystem to achieve strategic autonomy and defense self-reliance, aiming to become a global hub for unmanned aerial systems by 2030.
+The open-source tool Wattage analyzes AI agent traces to identify token waste, calculate associated costs, and provide actionable fixes for optimizing LLM performance and reducing operational expenses.
 
 ### Key Points
-- India is investing billions in indigenous drone programs, including a $3.6 billion order for Medium Altitude Long Endurance (MALE) drones and a $2 billion tactical drone procurement.
-- The government is mandating over 60% indigenous content for new military drones, focusing on critical components like motors, batteries, and software to reduce import dependence.
-- Major industrial players including HAL, Tata, L&T, and Adani Defense are leading the production of advanced systems like the Nagastra-1 and the Ghatak combat vehicle.
-- The "Bharat Drone Stack" and Production Linked Incentive (PLI) schemes are being used to support startups and small businesses in scaling local manufacturing and R&D.
-- India is leveraging international partnerships, such as the INDUS-X initiative with the U.S., to integrate cybersecurity standards and expand export potential to the Global South.
+- Wattage processes OpenTelemetry (OTel) JSON traces to detect inefficiencies like redundant tool calls, prompt prefix churn, and non-convergent loops.
+- The tool provides a 0–100 token efficiency score and generates visual reports, including HTML flame graphs and status badges for project documentation.
+- A built-in CI integration allows developers to set cost-regression gates that fail builds if agent changes exceed defined price or efficiency thresholds.
+- The software operates fully offline without requiring API keys, ensuring data privacy while analyzing agent behavior and token consumption patterns.
+- Its convergence engine identifies complex thrashing patterns that standard exact-match detectors often miss, achieving high precision in identifying stalled agent loops.
 
 ### Why it Matters
-The rapid development of an indigenous drone industry is critical for India to maintain national security amid evolving geopolitical threats and the proven effectiveness of low-cost, autonomous systems in modern warfare. By shifting from foreign imports to domestic production, India aims to secure its supply chain while positioning itself as a significant competitor in the projected $23 billion global drone market.
+As AI agents become more complex, hidden inefficiencies in token usage can lead to significant, unexpected cloud infrastructure costs. Wattage provides a standardized, automated way for engineering teams to monitor and gate these expenses, ensuring that performance optimizations are maintained throughout the development lifecycle.
 
 ============================================================
-Author:   RT
-Source:   RT
-URL:      https://www.rt.com/india/643456-indias-drone-hub-iran-war-lesson/
-Category: Tech Business & Markets
+Author:   faizannraza
+Source:   Github.com
+URL:      https://github.com/faizannraza/wattage
+Category: Artificial Intelligence
