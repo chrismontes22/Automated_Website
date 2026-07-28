@@ -1,19 +1,20 @@
-Mercor is embracing old-school Big Tech interview strategies that even Google and Microsoft are ditching
+Operation BlueDash Deploys Level RMM and ScreenConnect via Fake Teams Update
 ============================================================
 
-Mercor has shifted its hiring strategy away from AI-assisted take-home assignments, opting instead for traditional whiteboarding sessions to better evaluate a candidate's fundamental judgment and technical problem-solving skills.
+Cybersecurity researchers have identified Operation BlueDash, a sophisticated phishing campaign using fake Microsoft Teams updates to deploy remote monitoring tools and establish persistent unauthorized access to corporate systems.
 
 ### Key Points
-- Head of Product Osvald Nitski confirmed the $10 billion startup now prioritizes whiteboarding to test systems design, statistical knowledge, and experimental reasoning.
-- The company aims to prevent candidates from relying on AI tools like Claude to generate work rather than demonstrating independent decision-making abilities.
-- This approach contrasts with industry trends where companies like Google, Microsoft, and various AI startups are increasingly integrating AI tools into their interview processes.
-- Many tech firms now favor work trials and "vibe coding" assessments to gauge how effectively candidates utilize AI coding assistants in real-world scenarios.
+- Attackers use a counterfeit Microsoft Store page, "teamvem[.]com," to trick users into downloading a malicious "supportdev.exe" file.
+- The malware installs legitimate remote monitoring and management (RMM) tools, specifically Level RMM and ConnectWise ScreenConnect, to maintain persistent access.
+- Operation BlueDash is attributed to a Nigeria-based threat actor group active since February 2026, utilizing GitHub infrastructure to host phishing payloads.
+- Once inside a system, attackers execute commands to enumerate local administrators, check firewall status, and determine if the host requires a reboot.
+- The campaign also employs a secondary Zoom-themed lure to distribute Tactical RMM agents, demonstrating a multi-brand strategy for compromising enterprise environments.
 
 ### Why it Matters
-This shift highlights a growing debate in the tech industry regarding whether to embrace AI-assisted workflows or prioritize foundational human expertise during recruitment. By rejecting AI-heavy assessments, Mercor is positioning itself against the broader Silicon Valley trend of integrating generative tools into standard technical evaluations.
+This campaign highlights the growing trend of threat actors weaponizing legitimate administrative software to bypass traditional security defenses. By using authorized RMM tools, attackers can maintain persistent, stealthy access that often evades detection by standard endpoint security solutions.
 
 ============================================================
-Author:   Shubhangi Goel
-Source:   Business Insider
-URL:      https://www.businessinsider.com/mercro-ditching-ai-embraces-old-school-big-tech-interviews-2-2026-7#article
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/07/operation-bluedash-deploys-level-rmm.html
+Category: Cybersecurity

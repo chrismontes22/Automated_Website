@@ -1,21 +1,20 @@
-Generative Bionics' smart robot skin prevents collisions
+I ran double NAT for two years without knowing it, and fixing it explained problems I'd blamed on everything else
 ============================================================
 
-Italian startup Generative Bionics has unveiled Gene.01, a humanoid robot featuring advanced sensing skin designed to safely navigate factory floors and collaborate alongside human workers in industrial environments.
+Improperly configuring a secondary router as a standalone device instead of an access point can create a double NAT issue that disrupts smart home connectivity and remote access services.
 
 ### Key Points
-- Gene.01 uses a network of sensors to detect proximity, temperature, and force, allowing the robot to anticipate human presence and avoid physical collisions.
-- The platform enables humans to physically guide the robot's limbs, teaching it precise grip strength for delicate or heavy tasks.
-- Developed from Italian Institute of Technology research, the robot utilizes "Physical AI" to integrate hardware mechanics and movement control into a single system.
-- Generative Bionics secured $81 million in seed funding from investors including AMD Ventures, Eni Next, and CDP Venture Capital.
-- The company is partnering with shipbuilding firm Fincantieri to deploy a specialized welding version of the humanoid in industrial shipyards.
-- A strategic alliance with German firm Synapticon aims to establish a sovereign European supply chain for robot actuators and safety components.
+- Double NAT occurs when two routers on a single network both perform network address translation, creating two stacked private subnets.
+- Common symptoms include failed port forwarding, unreliable smart home device discovery, and connection timeouts for self-hosted services like Jellyfin or Vaultwarden.
+- Users can diagnose the issue by checking if a secondary router’s WAN IP address is a private IP range rather than a public one.
+- Running a traceroute can confirm the problem by showing multiple hops through private IP addresses before reaching the public internet.
+- Switching a secondary router to "Access Point Mode" disables its DHCP and NAT functions, allowing the primary router to manage all network traffic.
 
 ### Why it Matters
-This technology addresses critical safety and precision challenges that have historically hindered the integration of humanoid robots into human-centric industrial workspaces. By prioritizing localized European manufacturing and adaptive sensing, the company aims to set new standards for collaborative robotics in global manufacturing markets.
+Double NAT often goes unnoticed because it does not impact basic web browsing or video streaming, leading users to incorrectly blame their ISP or hardware for intermittent connectivity issues. Properly configuring network topology is essential for maintaining stable peer-to-peer connections and ensuring that self-hosted applications remain accessible from outside the home network.
 
 ============================================================
-Author:   Omar Kardoudi
-Source:   New Atlas
-URL:      https://newatlas.com/ai-humanoids/gene-01-smart-skin-robot/
-Category: Artificial Intelligence
+Author:   Samir Makwana
+Source:   XDA Developers
+URL:      https://www.xda-developers.com/ran-double-nat-without-knowing-fixing-it-explained-problems/
+Category: Phones, Laptops, and Gadgets
