@@ -1,20 +1,20 @@
-A trove of users’ seemingly private conversations with Anthropic’s Claude AI chatbot showed up in Google search results
+Amazon Neptune now supports tag-based access control for IAM
 ============================================================
 
-Private conversations from Anthropic’s Claude chatbot were inadvertently indexed by Google search results, exposing sensitive user data including cryptocurrency keys and personal information through the platform's share feature.
+Amazon Neptune now supports tag-based access control, allowing administrators to manage database cluster permissions dynamically using AWS resource tags and IAM principal attributes instead of individual resource identifiers.
 
 ### Key Points
-- The vulnerability affected Claude conversations that users manually shared via unique URLs, which were subsequently indexed by search engines.
-- Exposed data included personal addresses, work notes, programming code, and cryptocurrency wallet keys.
-- Anthropic stated that it does not share chat directories with search engines and that links are only discoverable if users share them publicly.
-- The company has reportedly fixed the indexing issue, though previously generated links remain accessible to those who possess them.
-- Similar data exposure incidents have previously impacted other major AI platforms, including OpenAI’s ChatGPT and Elon Musk’s Grok.
+- Amazon Neptune now enables tag-based access control (TBAC) for IAM policies and Service Control Policies (SCPs).
+- Users can restrict database operations by matching IAM principal tags to specific Neptune cluster tags.
+- The feature supports federated identity workflows using SAML or OIDC session tags from external providers.
+- Implementation requires Neptune engine version 1.2.0.0 or later with IAM authentication enabled.
+- The update is available in all AWS regions where Amazon Neptune is currently supported.
 
 ### Why it Matters
-This incident highlights the significant privacy risks associated with AI chatbot sharing features, which often inadvertently make sensitive user data publicly discoverable. As users increasingly treat these tools as repositories for private work and personal information, the industry faces ongoing challenges in preventing the accidental indexing of confidential conversations.
+This update simplifies security management for organizations operating large-scale database environments by removing the need to manually update policies for every individual cluster. It enhances security posture by enforcing automated, attribute-based access boundaries that prevent unauthorized lateral movement between projects.
 
 ============================================================
-Author:   Beatrice Nolan
-Source:   Yahoo Entertainment
-URL:      https://tech.yahoo.com/ai/claude/articles/trove-users-seemingly-private-conversations-172028613.html
+Author:   aws@amazon.com
+Source:   Amazon.com
+URL:      https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-neptune-tbac/
 Category: Cybersecurity

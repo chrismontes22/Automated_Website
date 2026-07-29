@@ -1,5 +1,185 @@
 [
   {
+    "summary": "Microsoft has launched MAI-Cyber-1-Flash, a specialized cybersecurity model integrated into its MDASH vulnerability remediation harness, designed to improve efficiency and reduce operational costs for enterprise security teams.\n\n### Key Points\n- MAI-Cyber-1-Flash is a 137-billion parameter sparse mixture-of-experts model featuring a 256,000-token context window.\n- The model is currently available in private preview via Azure AI Foundry for approved MDASH customers.\n- Microsoft reports a 95.95% score on the CyberGym benchmark when pairing the new model with GPT-5.4.\n- The configuration reportedly reduces system costs by 50% compared to previous MDASH model combinations.\n- MAI-Cyber-1-Flash is the first component of Project Perception, a broader defensive security agent system launching August 3.\n\n### Why it Matters\nThis release highlights a strategic shift toward specialized, cost-effective AI agents that handle routine security tasks while reserving more powerful models for complex challenges. By optimizing the system architecture, Microsoft aims to make automated vulnerability remediation more accessible and scalable for enterprise security operations.",
+    "title": "Microsoft Says New Cybersecurity AI Model Helps MDASH Hit 95.95% at Half the Cost",
+    "processed_at": "2026-07-29T09:37:10.380895",
+    "category": "Cybersecurity",
+    "author": "info@thehackernews.com (The Hacker News)",
+    "source": "Internet",
+    "url": "https://thehackernews.com/2026/07/microsoft-says-new-cybersecurity-ai.html"
+  },
+  {
+    "summary": "Amazon Neptune now supports tag-based access control, allowing administrators to manage database cluster permissions dynamically using AWS resource tags and IAM principal attributes instead of individual resource identifiers.\n\n### Key Points\n- Amazon Neptune now enables tag-based access control (TBAC) for IAM policies and Service Control Policies (SCPs).\n- Users can restrict database operations by matching IAM principal tags to specific Neptune cluster tags.\n- The feature supports federated identity workflows using SAML or OIDC session tags from external providers.\n- Implementation requires Neptune engine version 1.2.0.0 or later with IAM authentication enabled.\n- The update is available in all AWS regions where Amazon Neptune is currently supported.\n\n### Why it Matters\nThis update simplifies security management for organizations operating large-scale database environments by removing the need to manually update policies for every individual cluster. It enhances security posture by enforcing automated, attribute-based access boundaries that prevent unauthorized lateral movement between projects.",
+    "title": "Amazon Neptune now supports tag-based access control for IAM",
+    "processed_at": "2026-07-29T09:37:18.273795",
+    "category": "Cybersecurity",
+    "author": "aws@amazon.com",
+    "source": "Amazon.com",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-neptune-tbac/"
+  },
+  {
+    "summary": "Tech journalist Lance Ulanoff argues that Elon Musk’s vision of an AI-driven age of abundance ignores fundamental economic and physical constraints regarding global energy, water, and resource scarcity.\n\n### Key Points\n- Elon Musk predicts AI and robotics will eliminate the need for money and create a world of abundance by 2036.\n- Critics argue that AI development consumes vast amounts of electricity and water, potentially exacerbating resource scarcity rather than solving it.\n- The physical extraction and processing of precious metals for robotics remain labor-intensive tasks that cannot be easily automated to reduce costs to zero.\n- Recent incidents, such as an OpenAI model accessing external systems via Hugging Face, highlight the unpredictable and potentially unsettling nature of current AI advancements.\n- Skeptics suggest that promoting an AI-utopia narrative serves the financial interests of Musk’s companies, including Tesla, SpaceX, and xAI.\n\n### Why it Matters\nThe debate over AI’s potential to solve global poverty highlights a growing tension between speculative tech optimism and the reality of finite physical resources. If industry leaders prioritize utopian narratives over sustainable infrastructure, it could lead to market instability and increased costs for essential goods like energy and water.",
+    "title": "Elon Musk's age of abundance is an AI pipe dream soaked in snake oil, and I've about had it",
+    "processed_at": "2026-07-29T09:37:26.426280",
+    "category": "Artificial Intelligence",
+    "author": "lance.ulanoff@futurenet.com (Lance Ulanoff) , Lance Ulanoff",
+    "source": "TechRadar",
+    "url": "https://www.techradar.com/ai-platforms-assistants/elon-musks-age-of-abundance-is-an-ai-pipe-dream-soaked-in-snake-oil-and-ive-about-had-it"
+  },
+  {
+    "summary": "Shared Claude chat links were discovered appearing in Google Search results, prompting concerns about the privacy of conversations that users intended to share only with specific individuals.\n\n### Key Points\n- Reddit users identified that shared Claude conversation links were being indexed by Google, making them discoverable via search queries.\n- Anthropic stated it does not provide search engines with chat directories or sitemaps, attributing the indexing to users posting links publicly.\n- Google confirmed it indexes pages based on public availability and respects site owner directives regarding crawlability.\n- The indexed content reportedly included sensitive information, such as financial details and personal identification numbers.\n- Anthropic and Google have since taken steps to remove the affected links from search results.\n- Users can manage or disable active shared links through the Privacy settings menu in their Claude account.\n\n### Why it Matters\nThis incident highlights the risks associated with sharing AI-generated content and the importance of understanding how link-sharing features function. It serves as a reminder that any content shared via a public URL can be indexed by search engines, potentially exposing sensitive information to a wider audience than intended.",
+    "title": "Ever shared a Claude chat? It may have appeared in Google Search",
+    "processed_at": "2026-07-29T09:37:34.572683",
+    "category": "Cybersecurity",
+    "author": "Matt Horne",
+    "source": "Android Authority",
+    "url": "https://www.androidauthority.com/shared-claude-chats-on-google-search-3691594/"
+  },
+  {
+    "summary": "Wall Street indices showed mixed results on Tuesday as strong corporate earnings reports boosted the Dow Jones Industrial Average while a global sell-off in semiconductor stocks pressured the Nasdaq.\n\n### Key Points\n- The Dow Jones Industrial Average rose 537 points, while the S&P 500 gained 0.2% and the Nasdaq composite fell 0.2%.\n- Coca-Cola shares climbed 5% following a 7% revenue increase, while Sherwin-Williams and Illinois Tool Works also beat quarterly earnings expectations.\n- Micron Technology shares dropped 8.9%, leading a decline in AI-linked chipmakers that also included Advanced Micro Devices and Applied Materials.\n- South Korea’s Kospi index plunged 10.8% due to sharp losses for SK Hynix and Samsung Electronics, triggering temporary trading halts.\n- Market analysts cited concerns over China’s advancing chipmaking capabilities and the long-term sustainability of AI-driven investment growth.\n\n### Why it Matters\nThe divergence between strong traditional corporate earnings and the volatility in the semiconductor sector highlights growing investor anxiety regarding the sustainability of the artificial intelligence boom. This shift suggests that markets are increasingly sensitive to potential competition from China and the risk that AI-related capital expenditures may not yield expected productivity gains.",
+    "title": "South Korea’s Kospi index sinks more than 10% on heavy selling of chipmaking stocks",
+    "processed_at": "2026-07-29T09:41:53.407100",
+    "category": "Tech Business & Markets",
+    "author": "Associated Press",
+    "source": "Yahoo Entertainment",
+    "url": "https://finance.yahoo.com/markets/world-indices/articles/south-korea-kospi-index-sinks-040623347.html"
+  },
+  {
+    "summary": "Microsoft has introduced Project Perception, an AI-driven cybersecurity system combining MAI-Cyber-1-Flash and GPT-5.4 that outperforms Anthropic’s Claude Mythos 5 on industry-standard security benchmarks.\n\n### Key Points\n- Project Perception enters public preview on August 3 and will be integrated directly into Microsoft Defender.\n- The system achieved a 96% score on the CyberGym benchmark, surpassing the 84% score recorded by Anthropic’s Claude Mythos 5.\n- MAI-Cyber-1-Flash processes 90% of security queries, while the larger GPT-5.4 model handles the remaining 10% of complex tasks.\n- Pricing is based on consumption of security compute units, with Microsoft claiming a 50% cost reduction compared to the existing MDASH configuration.\n- The initiative aims to leverage Microsoft’s extensive enterprise data and cybersecurity expertise to defend against AI-powered threats.\n\n### Why it Matters\nThis development signals a shift toward more efficient, multi-model AI architectures in enterprise security, offering higher performance at a lower operational cost. By integrating these tools into Microsoft Defender, the company is positioning its platform as a primary defense against increasingly sophisticated AI-driven cyberattacks.",
+    "title": "Microsoft Says Its New Cybersecurity AI Beats Industry Leaders at Half the Cost",
+    "processed_at": "2026-07-29T09:42:01.632439",
+    "category": "Cybersecurity",
+    "author": "Corinne Reichert",
+    "source": "CNET",
+    "url": "https://www.cnet.com/tech/services-and-software/microsoft-says-its-new-cybersecurity-ai-beats-industry-leaders-at-half-the-cost/"
+  },
+  {
+    "summary": "Episode 23 of the Design Mindset podcast features LIFX leadership discussing how to simplify smart home technology by prioritizing intuitive, human-centered design over complex, feature-heavy digital interfaces.\n\n### Key Points\n- LIFX executives Rachel Wilson, Mark Hollins, and Matthew Redding analyze why smart home systems often fail to meet user expectations for convenience and reliability.\n- The discussion emphasizes a shift toward \"invisible\" technology that integrates into daily routines rather than requiring constant app management or manual troubleshooting.\n- The company highlights the importance of hybrid controls, such as physical buttons on the Smart Mirror and Luna lamp, to accommodate diverse household needs.\n- Experts argue that lighting design should focus on emotional impact and wellness, such as adjusting Kelvin temperatures, rather than just technical connectivity.\n- The episode addresses the role of the Matter standard in improving interoperability while noting that it is not a complete solution for user experience challenges.\n\n### Why it Matters\nThis conversation signals a maturing consumer electronics market that is moving away from feature-bloated products toward more practical, user-friendly hardware. By prioritizing behavioral design over technical complexity, brands like LIFX are attempting to solve the fragmentation issues that have historically hindered widespread smart home adoption.",
+    "title": "Do Smart Homes Need More Innovation, Or Just More Common Sense?",
+    "processed_at": "2026-07-29T09:42:09.821319",
+    "category": "Phones, Laptops, and Gadgets",
+    "author": "Sarang Sheth",
+    "source": "Yanko Design",
+    "url": "https://www.yankodesign.com/2026/07/27/do-smart-homes-need-more-innovation-or-just-more-common-sense/"
+  },
+  {
+    "summary": "While the Raspberry Pi remains a popular learning tool, used mini PCs and other x86 hardware now offer superior performance and better long-term value for home server projects.\n\n### Key Points\n- Used mini PCs like the Dell OptiPlex Micro or Lenovo ThinkCenter Tiny provide upgradable storage and memory at prices competitive with Raspberry Pi kits.\n- Intel NUCs and older Mac minis offer premium build quality and quiet operation, making them ideal for running services like Nextcloud or Jellyfin.\n- Repurposing old laptops, such as HP Elitebooks or ThinkPads, provides a cost-effective, all-in-one server solution with built-in battery backup and peripherals.\n- Thin clients like the Dell Wyse 5070 serve as silent, low-power alternatives for lightweight tasks like running Docker containers or AdGuard Home.\n- Full-sized desktop PCs remain the best choice for users requiring extensive storage, 10GbE networking, or dedicated GPU support for growing home labs.\n\n### Why it Matters\nTransitioning to x86 hardware allows home lab enthusiasts to run more demanding virtual machines and media servers with greater longevity than ARM-based alternatives. This shift reflects a broader market trend where affordable, refurbished enterprise equipment provides better price-to-performance ratios for modern self-hosting needs.",
+    "title": "These 5 old devices can make better home servers than a Raspberry Pi",
+    "processed_at": "2026-07-29T09:42:18.458796",
+    "category": "Phones, Laptops, and Gadgets",
+    "author": "Samir Makwana",
+    "source": "XDA Developers",
+    "url": "https://www.xda-developers.com/old-devices-make-better-home-servers-than-a-raspberry-pi/"
+  },
+  {
+    "summary": "Samsung is reportedly planning to upgrade its flagship Galaxy S27 Ultra and S27 Pro smartphones with larger battery capacities starting in 2027 to improve overall device runtime.\n\n### Key Points\n- The Galaxy S27 Ultra is expected to feature a 5,534mAh rated battery, likely marketed as 5,700mAh or 5,800mAh.\n- Samsung will reportedly introduce a new Galaxy S27 Pro model equipped with a 5,087mAh rated battery.\n- The company is expected to utilize silicon-carbon anode technology to increase capacity without significantly increasing device thickness or weight.\n- These upgrades mark a departure from the 5,000mAh standard Samsung has maintained for its flagship Ultra models since 2020.\n\n### Why it Matters\nThis shift addresses long-standing consumer demand for better battery life in Samsung's premium smartphone lineup. By adopting advanced battery materials, the company aims to remain competitive against rival Android devices that have already begun integrating higher-capacity power cells.",
+    "title": "Samsung may finally fix the Galaxy S Ultra’s biggest weakness",
+    "processed_at": "2026-07-29T09:42:26.773068",
+    "category": "Phones, Laptops, and Gadgets",
+    "author": "Rajesh Pandey",
+    "source": "Android Police",
+    "url": "https://www.androidpolice.com/samsung-may-finally-fix-galaxy-s-ultras-biggest-weakness/"
+  },
+  {
+    "summary": "Threat actors are compromising public Wi-Fi gateways at hotels and conference centers to silently hijack Microsoft 365 accounts by redirecting user traffic through malicious DNS poisoning attacks.\n\n### Key Points\n- ReliaQuest researchers identified attackers exploiting weak gateway credentials to intercept traffic without needing to compromise individual user devices.\n- The campaign targets users across various sectors, including finance, legal, and healthcare, with incidents reported in the United States, India, and Saudi Arabia.\n- Attackers use fraudulent domains like m365-owa[.]com to impersonate Microsoft login pages and steal credentials from unsuspecting travelers.\n- Standard security measures like using public DNS providers or DNSSEC are insufficient because they do not encrypt traffic or prevent gateway-level interception.\n- Experts recommend using full-tunnel VPNs, disabling automatic proxy discovery, and enforcing strict conditional access policies to mitigate these network-level risks.\n\n### Why it Matters\nThis attack vector highlights a critical vulnerability in how corporate devices trust local network infrastructure, potentially leading to significant data exfiltration from enterprise accounts. By bypassing endpoint security, these gateway compromises force organizations to rethink their reliance on public Wi-Fi and prioritize encrypted, end-to-end traffic tunnels for remote employees.",
+    "title": "Hackers are compromising hotel Wi-Fi gateways to hijack Microsoft 365 accounts",
+    "processed_at": "2026-07-29T09:42:35.096728",
+    "category": "Cybersecurity",
+    "author": "Taryn Plumb",
+    "source": "Computerworld",
+    "url": "https://www.computerworld.com/article/4202088/hackers-are-compromising-hotel-wi-fi-gateways-to-hijack-microsoft-365-accounts-2.html"
+  },
+  {
+    "summary": "The viral self-published novel Daggermouth has sparked intense debate after researchers identified it as potentially containing significant AI-generated text, despite the author’s strong denials of using such technology.\n\n### Key Points\n- Daggermouth, a popular science-fiction romance, was acquired by Simon & Schuster for a seven-figure sum following its success on Amazon.\n- A study by Stony Brook University researchers used the detection tool Pangram to classify 60 percent of the novel as AI-generated.\n- The analysis identified \"rare expressions\" in the book that also appear in other suspected AI-written titles, suggesting potential commonalities in generation patterns.\n- Author H. M. Wolfe denies using generative AI, citing her opposition to the technology and the unreliability of current detection software.\n- Research indicates that books with substantial AI assistance now account for approximately 10 percent of best sellers in their respective genres on Amazon.\n\n### Why it Matters\nThe controversy surrounding Daggermouth highlights the growing tension between human creativity and the increasing use of generative AI in the publishing industry. As AI-assisted works become more commercially successful, the lack of reliable detection methods creates a market environment where transparency is discouraged and the line between human craft and machine generation remains blurred.",
+    "title": "Is This What Comes After AI Slop?",
+    "processed_at": "2026-07-29T09:42:43.390180",
+    "category": "Artificial Intelligence",
+    "author": "Will Oremus",
+    "source": "The Atlantic",
+    "url": "https://www.theatlantic.com/technology/2026/07/daggermouth-novel-bestseller-ai/688067/"
+  },
+  {
+    "summary": "GitHub has implemented a series of security updates across npm and GitHub Actions to disrupt common supply chain attack vectors and protect the open-source software development ecosystem.\n\n### Key Points\n- High-impact npm accounts now enter a 72-hour read-only mode following email changes or 2FA recovery to prevent unauthorized access.\n- GitHub Actions now defaults to blocking untrusted code execution from forks and restricts cache modifications to prevent privilege escalation.\n- Staged publishing for npm requires additional 2FA approval, effectively decoupling automated CI/CD credentials from final package distribution.\n- The upcoming npm v12 release will disable install-time scripts by default to block common malware exfiltration techniques.\n- Dependabot now enforces a three-day cooldown on version updates to allow time for malicious releases to be identified before adoption.\n- New self-service APIs allow for the immediate revocation of compromised GitHub OAuth and App tokens during security incidents.\n\n### Why it Matters\nThese updates significantly reduce the attack surface for developers by shifting security from reactive measures to proactive, default-on protections. By hardening CI/CD pipelines and package management, GitHub is mitigating the risk of widespread malware distribution that threatens both individual projects and enterprise software supply chains.",
+    "title": "Disrupting supply chain attacks on npm and GitHub Actions",
+    "processed_at": "2026-07-29T09:42:51.535626",
+    "category": "Cybersecurity",
+    "author": "Greg Ose",
+    "source": "Github.blog",
+    "url": "https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/"
+  },
+  {
+    "summary": "Notion, AudioPen, and Obsidian are among the top-rated AI-powered note-taking tools for students, offering specialized features for organization, lecture capture, and long-term knowledge management during the 2026 academic year.\n\n### Key Points\n- Notion provides a comprehensive, free workspace for students with a valid .edu email, integrating task tracking, databases, and AI-driven study assistance.\n- AudioPen specializes in lecture capture by transcribing audio into structured, formatted notes, offering a one-time purchase option for students.\n- Obsidian is a free, offline-first tool that uses a graph view to help students link concepts across different academic disciplines over time.\n- Mem utilizes AI to automatically organize notes and surface connections, eliminating the need for manual filing or folder management.\n- Reflect prioritizes data security by offering end-to-end encryption for students who require a private environment for their research and personal notes.\n\n### Why it Matters\nSelecting the right note-taking system can significantly improve academic efficiency by centralizing study materials and automating tedious organizational tasks. Students who leverage these AI tools effectively can create a more connected, searchable, and durable knowledge base to support their learning throughout their entire degree.",
+    "title": "Best AI Note-Taking Tools for Students",
+    "processed_at": "2026-07-29T09:42:59.791834",
+    "category": "Artificial Intelligence",
+    "author": "Thanh Pham",
+    "source": "Asianefficiency.com",
+    "url": "https://www.asianefficiency.com/productivity/best-ai-note-taking-tools-students/"
+  },
+  {
+    "summary": "The Northern Territory government is challenging federal renewable energy mandates by proposing a $40 billion data centre project powered by natural gas from the Beetaloo Basin near Darwin.\n\n### Key Points\n- The Northern Territory plans to build hyper-scale AI data centre campuses requiring 3 GW of electricity.\n- Proposed facilities would rely on gas extraction from the Beetaloo Basin rather than renewable energy sources.\n- Federal government rules currently aim to force new data centres to operate exclusively on renewable power.\n- Queensland officials have joined the Northern Territory in opposing the federal mandate, citing a lack of economic modelling.\n- State governments argue that prioritizing gas-powered infrastructure is essential to securing billions in high-tech investment and tax revenue.\n\n### Why it Matters\nThis conflict highlights a growing tension between federal climate policy and state-level economic development strategies regarding the rapidly expanding AI data centre sector. The outcome of this dispute will determine whether Australia can attract major international technology investments or if strict renewable requirements will drive capital to more flexible jurisdictions.",
+    "title": "Oops – Another Aussie State Just Forgot to Enforce Prime Minister Albanese’s Green Data Center Mandate",
+    "processed_at": "2026-07-29T09:43:09.770395",
+    "category": "Tech Business & Markets",
+    "author": "Eric Worrall",
+    "source": "Wattsupwiththat.com",
+    "url": "https://wattsupwiththat.com/2026/07/27/oops-another-aussie-state-just-forgot-to-enforce-prime-minister-albaneses-green-data-center-mandate/"
+  },
+  {
+    "summary": "Bitcoin prices dropped 2.7% to approximately $63,200 as a sharp sell-off in Asian equity markets and uncertainty surrounding upcoming U.S. Federal Reserve interest rate decisions triggered broader volatility.\n\n### Key Points\n- Bitcoin fell to $63,200, dragging down major cryptocurrencies including ether, XRP, and solana.\n- South Korea’s Kospi index dropped 10%, marking a 25% decline from its mid-June peak amid heavy losses for chipmakers like Samsung.\n- The U.S. Senate delayed the CLARITY Act to prioritize a Russia sanctions bill, pushing potential crypto regulatory votes until next week.\n- Analysts expect increased market volatility ahead of the Federal Reserve’s interest rate decision on Wednesday and key U.S. economic data releases on Thursday.\n- Binance maintained a 55% share of user funds and 24% of spot trading volume despite broader market outflows in early July.\n\n### Why it Matters\nThe decline highlights how macroeconomic stress and interest rate concerns continue to drive correlation between digital assets and traditional equity markets. Investors are now closely monitoring upcoming Federal Reserve policy updates and U.S. economic data to gauge the potential for further market repricing.",
+    "title": "Bitcoin slides 2% after U.S. close while Korea’s Kospi plunges 10%",
+    "processed_at": "2026-07-29T09:43:18.235971",
+    "category": "Tech Business & Markets",
+    "author": "Omkar Godbole",
+    "source": "CoinDesk",
+    "url": "https://www.coindesk.com/markets/2026/07/28/bitcoin-slides-2-after-u-s-close-while-korea-s-kospi-plunges-10"
+  },
+  {
+    "summary": "Nvidia and a coalition of technology firms have launched the Open Secure AI Alliance to develop open-source tools for testing, auditing, and protecting artificial intelligence systems from threats.\n\n### Key Points\n- The Open Secure AI Alliance focuses on creating shared resources to help defenders identify and mitigate vulnerabilities in AI models and agents.\n- Nvidia advocates for open-weight systems, citing a recent incident where Hugging Face used the GLM 5.2 model to analyze 17,000 actions during a breach.\n- The initiative emphasizes that open access to security tools allows defenders to verify system integrity more effectively than relying solely on closed-source software.\n- Participating companies aim to establish rigorous evaluation standards and rapid remediation protocols to prevent malicious misuse of AI technology.\n\n### Why it Matters\nThis initiative represents a strategic shift toward transparency in AI security, prioritizing collaborative defense over the limitations of proprietary, closed-source systems. By standardizing open-source auditing tools, the alliance aims to improve the resilience of critical infrastructure against increasingly sophisticated cyberattacks.",
+    "title": "Nvidia, Tech Giants Launch AI Safety Initiative",
+    "processed_at": "2026-07-29T09:43:34.268539",
+    "category": "Artificial Intelligence",
+    "author": "BeauHD",
+    "source": "Slashdot.org",
+    "url": "https://it.slashdot.org/story/26/07/27/195206/nvidia-tech-giants-launch-ai-safety-initiative"
+  },
+  {
+    "summary": "Global stock markets experienced a sharp sell-off in artificial intelligence-related shares, led by significant declines in South Korean tech giants Samsung Electronics and SK Hynix following Nvidia's recent losses.\n\n### Key Points\n- South Korea’s Kospi index closed 10.8% lower on Tuesday after a temporary trading halt triggered by an 8% slide.\n- Samsung Electronics and SK Hynix shares both dropped by more than 13% amid heightened volatility in the Asian tech sector.\n- Nvidia lost its position as the world’s most valuable listed company to Apple after a 5% decline in New York on Monday.\n- Japan’s Nikkei 225 index fell nearly 4% as investors reacted to concerns regarding the long-term profitability of massive AI infrastructure spending.\n- China’s ChangXin Memory Technologies saw its shares surge 470% during its Shanghai IPO debut on Monday.\n\n### Why it Matters\nThe market correction highlights growing investor anxiety over whether the billions of dollars being poured into AI data centers will generate sustainable financial returns. This shift in sentiment has prompted a rotation toward more stable assets like Apple, which remains less exposed to the immediate risks of the AI spending race.",
+    "title": "Chipmakers fall in US and Asia as AI jitters rattle investors",
+    "processed_at": "2026-07-29T09:43:42.910429",
+    "category": "Tech Business & Markets",
+    "author": "https://www.facebook.com/bbcnews",
+    "source": "BBC News",
+    "url": "https://www.bbc.co.uk/news/articles/cly8zng43npo"
+  },
+  {
+    "summary": "While video doorbells offer convenient home security, users must navigate significant drawbacks including privacy concerns, technical reliability issues, hardware blind spots, recurring subscription costs, and frequent false motion alerts.\n\n### Key Points\n- Privacy risks include the unauthorized recording of neighbors and potential data sharing between manufacturers like Ring and law enforcement agencies.\n- Wi-Fi dependency often leads to connectivity dead zones, causing delayed notifications or pixelated video feeds during critical moments.\n- Fixed camera angles create blind spots that frequently obscure packages left on porches, rendering them vulnerable to theft.\n- Most devices require ongoing monthly or yearly subscription fees to access essential features like cloud storage and advanced motion detection.\n- Excessive false alerts from wind or passing traffic can cause notification fatigue, leading users to ignore the device entirely.\n\n### Why it Matters\nVideo doorbells represent a long-term commitment to both recurring costs and potential security vulnerabilities that extend beyond the home. Understanding these trade-offs is essential for consumers to determine if the convenience of smart monitoring outweighs the risks to personal privacy and hardware reliability.",
+    "title": "5 Disadvantages Of Using Video Doorbells",
+    "processed_at": "2026-07-29T09:43:51.158142",
+    "category": "Phones, Laptops, and Gadgets",
+    "author": "staff@bgr.com (Suzanne Bonnett)",
+    "source": "BGR",
+    "url": "https://www.bgr.com/2221195/disadvantages-video-doorbells/"
+  },
+  {
+    "summary": "HP is currently offering a limited-time $120 discount on its 16-inch OmniBook 3 touchscreen laptop, reducing the price to $449.99 for the duration of the back-to-school shopping season.\n\n### Key Points\n- The HP OmniBook 3 is available for $449.99, representing a 33% discount from its standard $670 retail price.\n- Hardware specifications include an AMD Ryzen 3 processor, 8GB of RAM, and a 256GB solid-state drive.\n- The device features a 16-inch touchscreen display and comes with the Windows 11 operating system preinstalled.\n- No discount codes or coupons are required to access the promotional pricing.\n- The laptop is finished in a Mica Silver color scheme designed for academic or professional environments.\n\n### Why it Matters\nThis promotion provides a budget-friendly hardware option for students and professionals seeking a reliable machine for productivity tasks. The deal highlights the competitive nature of the back-to-school electronics market as retailers look to capture consumer spending before the academic year begins.",
+    "title": "Save $120 Off HP’s 16-Inch Touchscreen Laptop With AMD Ryzen 3, 8GB RAM, 256GB SSD",
+    "processed_at": "2026-07-29T09:43:59.605122",
+    "category": "Phones, Laptops, and Gadgets",
+    "author": "Oliver Haslam",
+    "source": "redmondpie.com",
+    "url": "https://www.redmondpie.com/save-120-off-hps-16-inch-touchscreen-laptop-with-amd-ryzen-3-8gb-ram-256gb-ssd/"
+  },
+  {
+    "summary": "T-Mobile has fully restored cellular service across the United States following a widespread network outage that left many iPhone users unable to place calls or access mobile data.\n\n### Key Points\n- The outage began around 4 p.m. ET on the affected date, causing widespread connectivity issues for subscribers nationwide.\n- Impacted iPhone users reported seeing an \"SOS\" icon in their status bars, indicating a total loss of cellular network connectivity.\n- Downdetector and social media platforms, including Reddit, recorded thousands of user complaints regarding the inability to send texts or use data.\n- T-Mobile confirmed the resolution of the technical challenges and issued a formal apology to customers for the service disruption.\n- Competitor networks, including Verizon and AT&T, were not reported to be affected by the technical issues impacting T-Mobile.\n\n### Why it Matters\nReliable cellular connectivity is essential for modern communication, and widespread outages highlight the vulnerability of mobile infrastructure to technical failures. This incident underscores the critical dependence consumers have on carrier stability for both personal communication and emergency services.",
+    "title": "PSA: T-Mobile is down, iPhones showing ‘SOS’ mode",
+    "processed_at": "2026-07-29T09:44:07.576163",
+    "category": "Phones, Laptops, and Gadgets",
+    "author": "Chance Miller",
+    "source": "9to5Mac",
+    "url": "https://9to5mac.com/2026/07/27/psa-t-mobile-is-down-iphones-forced-into-sos-mode/"
+  },
+  {
     "processed_at": "2026-07-28T20:15:54.132788",
     "author": "Nilay Patel",
     "url": "https://www.theverge.com/podcast/971306/tariffs-liberation-day-ai-trade-shipping-jobs-canada",

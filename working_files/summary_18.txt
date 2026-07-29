@@ -1,20 +1,20 @@
-I ran double NAT for two years without knowing it, and fixing it explained problems I'd blamed on everything else
+5 Disadvantages Of Using Video Doorbells
 ============================================================
 
-Improperly configuring a secondary router as a standalone device instead of an access point can create a double NAT issue that disrupts smart home connectivity and remote access services.
+While video doorbells offer convenient home security, users must navigate significant drawbacks including privacy concerns, technical reliability issues, hardware blind spots, recurring subscription costs, and frequent false motion alerts.
 
 ### Key Points
-- Double NAT occurs when two routers on a single network both perform network address translation, creating two stacked private subnets.
-- Common symptoms include failed port forwarding, unreliable smart home device discovery, and connection timeouts for self-hosted services like Jellyfin or Vaultwarden.
-- Users can diagnose the issue by checking if a secondary router’s WAN IP address is a private IP range rather than a public one.
-- Running a traceroute can confirm the problem by showing multiple hops through private IP addresses before reaching the public internet.
-- Switching a secondary router to "Access Point Mode" disables its DHCP and NAT functions, allowing the primary router to manage all network traffic.
+- Privacy risks include the unauthorized recording of neighbors and potential data sharing between manufacturers like Ring and law enforcement agencies.
+- Wi-Fi dependency often leads to connectivity dead zones, causing delayed notifications or pixelated video feeds during critical moments.
+- Fixed camera angles create blind spots that frequently obscure packages left on porches, rendering them vulnerable to theft.
+- Most devices require ongoing monthly or yearly subscription fees to access essential features like cloud storage and advanced motion detection.
+- Excessive false alerts from wind or passing traffic can cause notification fatigue, leading users to ignore the device entirely.
 
 ### Why it Matters
-Double NAT often goes unnoticed because it does not impact basic web browsing or video streaming, leading users to incorrectly blame their ISP or hardware for intermittent connectivity issues. Properly configuring network topology is essential for maintaining stable peer-to-peer connections and ensuring that self-hosted applications remain accessible from outside the home network.
+Video doorbells represent a long-term commitment to both recurring costs and potential security vulnerabilities that extend beyond the home. Understanding these trade-offs is essential for consumers to determine if the convenience of smart monitoring outweighs the risks to personal privacy and hardware reliability.
 
 ============================================================
-Author:   Samir Makwana
-Source:   XDA Developers
-URL:      https://www.xda-developers.com/ran-double-nat-without-knowing-fixing-it-explained-problems/
+Author:   staff@bgr.com (Suzanne Bonnett)
+Source:   BGR
+URL:      https://www.bgr.com/2221195/disadvantages-video-doorbells/
 Category: Phones, Laptops, and Gadgets

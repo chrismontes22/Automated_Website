@@ -1,20 +1,20 @@
-★ Ads in Software Are Like Stickers on Laptops
+Hackers are compromising hotel Wi-Fi gateways to hijack Microsoft 365 accounts
 ============================================================
 
-Apple faces criticism for increasing advertisements within its digital services, drawing unfavorable comparisons to the company’s long-standing refusal to place third-party marketing stickers on its physical hardware products.
+Threat actors are compromising public Wi-Fi gateways at hotels and conference centers to silently hijack Microsoft 365 accounts by redirecting user traffic through malicious DNS poisoning attacks.
 
 ### Key Points
-- Apple has expanded advertising placements across its App Store and Apple News platforms, with potential plans to include Apple Maps.
-- Critics argue these digital ads contradict the company's historical commitment to a clean, minimalist user experience on its physical devices.
-- During a 2007 event, Steve Jobs famously rejected "Intel Inside" stickers on Macs, stating that customers prefer products free of intrusive branding.
-- Modern Apple hardware, such as the iPhone, remains devoid of model numbers or regulatory text to maintain a clean aesthetic.
-- The current App Store interface now prioritizes paid advertisements in prominent search result positions.
+- ReliaQuest researchers identified attackers exploiting weak gateway credentials to intercept traffic without needing to compromise individual user devices.
+- The campaign targets users across various sectors, including finance, legal, and healthcare, with incidents reported in the United States, India, and Saudi Arabia.
+- Attackers use fraudulent domains like m365-owa[.]com to impersonate Microsoft login pages and steal credentials from unsuspecting travelers.
+- Standard security measures like using public DNS providers or DNSSEC are insufficient because they do not encrypt traffic or prevent gateway-level interception.
+- Experts recommend using full-tunnel VPNs, disabling automatic proxy discovery, and enforcing strict conditional access policies to mitigate these network-level risks.
 
 ### Why it Matters
-This shift in strategy highlights a growing tension between Apple’s historical focus on premium user experience and its increasing reliance on high-margin advertising revenue. The move risks alienating long-term customers who associate the brand with a clean, ad-free ecosystem.
+This attack vector highlights a critical vulnerability in how corporate devices trust local network infrastructure, potentially leading to significant data exfiltration from enterprise accounts. By bypassing endpoint security, these gateway compromises force organizations to rethink their reliance on public Wi-Fi and prioritize encrypted, end-to-end traffic tunnels for remote employees.
 
 ============================================================
-Author:   John Gruber
-Source:   Daringfireball.net
-URL:      https://daringfireball.net/2026/07/ads_in_software_are_like_stickers_on_laptops
-Category: Tech Business & Markets
+Author:   Taryn Plumb
+Source:   Computerworld
+URL:      https://www.computerworld.com/article/4202088/hackers-are-compromising-hotel-wi-fi-gateways-to-hijack-microsoft-365-accounts-2.html
+Category: Cybersecurity
