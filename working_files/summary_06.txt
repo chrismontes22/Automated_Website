@@ -1,20 +1,20 @@
-Microsoft Says Its New Cybersecurity AI Beats Industry Leaders at Half the Cost
+Anthropic says your leaked Claude chats are working as intended
 ============================================================
 
-Microsoft has introduced Project Perception, an AI-driven cybersecurity system combining MAI-Cyber-1-Flash and GPT-5.4 that outperforms Anthropic’s Claude Mythos 5 on industry-standard security benchmarks.
+**Search engines indexed thousands of private Claude conversations after Anthropic failed to implement standard web protocols, exposing sensitive medical records, legal documents, and personal contact information to the public.**
 
 ### Key Points
-- Project Perception enters public preview on August 3 and will be integrated directly into Microsoft Defender.
-- The system achieved a 96% score on the CyberGym benchmark, surpassing the 84% score recorded by Anthropic’s Claude Mythos 5.
-- MAI-Cyber-1-Flash processes 90% of security queries, while the larger GPT-5.4 model handles the remaining 10% of complex tasks.
-- Pricing is based on consumption of security compute units, with Microsoft claiming a 50% cost reduction compared to the existing MDASH configuration.
-- The initiative aims to leverage Microsoft’s extensive enterprise data and cybersecurity expertise to defend against AI-powered threats.
+- Anthropic’s shareable link feature lacked "noindex" tags, allowing Google to crawl and index private user chats containing sensitive data.
+- Exposed information included patient medical reports, clinical trial results, primary school student contact details, and private cryptocurrency wallet keys.
+- Anthropic maintains the system functioned as intended, stating that users are responsible for the privacy of links they choose to share.
+- Unlike Google Docs, which prevents search indexing by default, Claude’s shared links were discoverable via simple search operators like "site:claude.ai/share."
+- Users can manage or revoke previously shared conversations by navigating to the Privacy settings menu within their Claude account.
 
 ### Why it Matters
-This development signals a shift toward more efficient, multi-model AI architectures in enterprise security, offering higher performance at a lower operational cost. By integrating these tools into Microsoft Defender, the company is positioning its platform as a primary defense against increasingly sophisticated AI-driven cyberattacks.
+This incident highlights a critical disconnect between user expectations of privacy and the technical reality of how AI platforms handle shared data. It underscores the necessity for developers to implement robust, default-on security measures to prevent sensitive information from being inadvertently published to the open web.
 
 ============================================================
-Author:   Corinne Reichert
-Source:   CNET
-URL:      https://www.cnet.com/tech/services-and-software/microsoft-says-its-new-cybersecurity-ai-beats-industry-leaders-at-half-the-cost/
+Author:   Ana Maria Constantin
+Source:   The Next Web
+URL:      https://thenextweb.com/news/claude-shared-chats-artifacts-google-search-indexed/
 Category: Cybersecurity

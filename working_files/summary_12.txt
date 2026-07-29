@@ -1,21 +1,21 @@
-Disrupting supply chain attacks on npm and GitHub Actions
+Tengu Botnet Reboots Compromised Linux Devices When Defenders Kill Its Process
 ============================================================
 
-GitHub has implemented a series of security updates across npm and GitHub Actions to disrupt common supply chain attack vectors and protect the open-source software development ecosystem.
+Researchers at Nozomi Networks Labs have identified Tengu, a sophisticated Mirai-derived botnet that utilizes hardware watchdogs and multiple persistence mechanisms to maintain control over compromised Linux-based IoT devices.
 
 ### Key Points
-- High-impact npm accounts now enter a 72-hour read-only mode following email changes or 2FA recovery to prevent unauthorized access.
-- GitHub Actions now defaults to blocking untrusted code execution from forks and restricts cache modifications to prevent privilege escalation.
-- Staged publishing for npm requires additional 2FA approval, effectively decoupling automated CI/CD credentials from final package distribution.
-- The upcoming npm v12 release will disable install-time scripts by default to block common malware exfiltration techniques.
-- Dependabot now enforces a three-day cooldown on version updates to allow time for malicious releases to be identified before adoption.
-- New self-service APIs allow for the immediate revocation of compromised GitHub OAuth and App tokens during security incidents.
+- Tengu uses a hardware watchdog to force device reboots if security defenders terminate its primary malicious process.
+- The malware supports 25 distinct DDoS attack methods, SOCKS5 proxy capabilities, and the ability to execute shell commands.
+- It targets various architectures including i386, amd64, MIPS, ARM, PowerPC, and m68k, with potential for Android-based device infection.
+- Persistence is maintained through fake systemd services, modified init scripts, and by marking its binary files as immutable.
+- The botnet overwrites standard reboot and shutdown utilities with "ELFOOD" headers to prevent administrators from safely restarting infected hardware.
+- Nozomi Networks Labs recommends disabling Telnet, updating firmware, and segmenting IoT networks to mitigate the risk of Tengu infections.
 
 ### Why it Matters
-These updates significantly reduce the attack surface for developers by shifting security from reactive measures to proactive, default-on protections. By hardening CI/CD pipelines and package management, GitHub is mitigating the risk of widespread malware distribution that threatens both individual projects and enterprise software supply chains.
+This botnet represents an evolution in Mirai-based threats by incorporating advanced self-defense and persistence techniques that make standard remediation efforts significantly more difficult. Organizations must prioritize securing IoT infrastructure, as these devices are increasingly targeted for use in large-scale distributed denial-of-service attacks.
 
 ============================================================
-Author:   Greg Ose
-Source:   Github.blog
-URL:      https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/07/tengu-botnet-reboots-compromised-linux.html
 Category: Cybersecurity
