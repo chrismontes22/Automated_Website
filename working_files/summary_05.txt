@@ -1,20 +1,20 @@
-How Gemini Flash agents are helping a Michigan dairy farmer
+Nvidia paid $20 billion for SRAM decode - AMD just partnered for it instead
 ============================================================
 
-Michigan dairy farmer Paul Windemuller is utilizing Gemini 3.6 Flash AI agents to automate complex data analysis, significantly reducing manual spreadsheet work and improving operational efficiency at his farm.
+AMD and Cerebras Systems have announced a technical partnership to create a disaggregated inference solution, combining Helios rackscale systems and Wafer-Scale Engines for improved energy efficiency by 2026.
 
 ### Key Points
-- Paul Windemuller of Dream Winds Dairy uses Gemini 3.6 Flash to integrate siloed data from sensor collars, weather stations, and milk quality reports.
-- The multi-agent system employs specialized roles, including an orchestrator and ingestion agents, to process raw files into a daily "Farm CEO Briefing."
-- The workflow calculates the Daily Static Variable Margin (SVM) to isolate biological and operational efficiency from volatile market price fluctuations.
-- Gemini 3.6 Flash provides a cost-effective solution for small businesses by reducing output tokens by approximately 17 percent compared to previous versions.
-- The system operates via a local, directory-based file interface, ensuring sensitive farm data remains under the owner's control without requiring external APIs.
+- The partnership pairs AMD Helios racks for prompt processing with Cerebras Wafer-Scale Engines for token generation.
+- Internal testing indicates the combined configuration delivers five times higher tokens per second per watt compared to standalone WSE setups.
+- The solution is scheduled to become available to customers through the Cerebras Cloud in the second half of 2026.
+- Testing utilized the Kimi 2.6 1T model, a mixture-of-experts design that operates natively in INT4.
+- The collaboration allows AMD to enhance its inference capabilities without the multibillion-dollar licensing costs associated with alternative SRAM decode technologies.
 
 ### Why it Matters
-This implementation demonstrates how low-cost, agentic AI workflows can help small-scale businesses automate complex administrative tasks that were previously too expensive or time-consuming. By streamlining data-heavy operations, independent farmers can focus on core production goals rather than manual data entry and spreadsheet management.
+This partnership represents a strategic effort to optimize AI inference efficiency by leveraging the specific hardware strengths of two different architectures. By offloading resource-intensive prompt processing to AMD, the companies aim to improve performance sustainability and provide a competitive alternative to existing market-leading infrastructure.
 
 ============================================================
-Author:   News from Google Team
-Source:   Blog.google
-URL:      https://blog.google/innovation-and-ai/models-and-research/gemini-models/using-gemini-to-manage-farm/
+Author:   Rahimnoorali11@gmail.com (Rahim Amir) , Rahim Amir
+Source:   TechRadar
+URL:      https://www.techradar.com/pro/nvidia-paid-usd20-billion-for-sram-decode-amd-just-partnered-for-it-instead
 Category: Artificial Intelligence

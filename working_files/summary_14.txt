@@ -1,20 +1,20 @@
-Europe's biggest tech giant slides 5% on reports of a Chinese rival encroaching on its turf
+Coordinated “cyberattack” on Minnesota water utilities: What you need to know
 ============================================================
 
-ASML shares declined by over 5% following reports that a Chinese state-backed firm has begun manufacturing deep-ultraviolet lithography machines, challenging the Dutch company's dominance in the global chip market.
+A coordinated cyberattack disrupted water and wastewater utility operations across more than 30 Minnesota communities in late July 2026, highlighting ongoing vulnerabilities in critical infrastructure and industrial control systems.
 
 ### Key Points
-- ASML stock fell nearly 11% over two days following reports of Chinese progress in domestic lithography machine production.
-- China plans to manufacture five deep-ultraviolet (DUV) machines this year, with production expected to scale to 20 units in 2025.
-- ASML remains the global leader, projecting shipments of 130 comparable DUV machines throughout the current year.
-- The Dutch company is currently restricted by US and Dutch regulations from exporting its most advanced extreme ultraviolet (EUV) technology to China.
-- ASML’s EUV machines are critical for high-end semiconductor fabrication, including Elon Musk’s proposed $55 billion Terafab project.
+- The attacks occurred between July 26 and July 27, 2026, impacting communities including Braham, Plymouth, South St. Paul, and Maple Plain.
+- Federal authorities suspect the involvement of Iranian-affiliated actors, specifically the CyberAv3ngers group, which has targeted U.S. infrastructure since 2020.
+- CISA Advisory AA26-097A warns that attackers are exploiting internet-exposed PLCs from Rockwell Automation, Schneider Electric, and Siemens to manipulate utility controls.
+- CVE-2021-22681, a critical authentication bypass in Rockwell Automation controllers, remains a primary vector for these attacks with no available software patch.
+- Defenders are urged to disconnect PLCs from the public internet, implement network segmentation, and set physical mode switches to "Run" to prevent unauthorized logic modifications.
 
 ### Why it Matters
-This development signals a significant step in China's effort to achieve semiconductor self-sufficiency and bypass Western export restrictions on advanced chip-making equipment. While current Chinese production remains in the early stages, it poses a long-term competitive threat to ASML’s market share and the global supply chain for AI-capable hardware.
+These incidents demonstrate the severe risks posed by internet-exposed industrial equipment, which often lacks robust security and cannot be easily patched. As geopolitical tensions rise, small utilities with limited cybersecurity resources remain prime targets for state-sponsored actors seeking to disrupt essential public services.
 
 ============================================================
-Author:   Tom Carter
-Source:   Business Insider
-URL:      https://www.businessinsider.com/asml-shares-fall-china-chipmaking-lithography-machine-2026-7#article
-Category: Tech Business & Markets
+Author:   Research Special Operations
+Source:   Tenable.com
+URL:      https://www.tenable.com/blog/coordinated-cyberattack-on-minnesota-water-utilities-what-you-need-to-know
+Category: Cybersecurity

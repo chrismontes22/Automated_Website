@@ -1,19 +1,20 @@
-10 Tuesday AM Reads
+Running Kimi K3 on a M1 Mac
 ============================================================
 
-Major corporations are increasing headcount despite fears of AI-driven job losses, as recent data from the Stanford Institute for Economic Policy Research suggests the technology's labor impact remains nuanced.
+Deltafin is an open-source research project enabling the execution of large Mixture-of-Experts models on consumer hardware by utilizing efficient streaming, quantization, and native kernel optimizations for local inference.
 
 ### Key Points
-- Major companies in sectors like tech, transportation, and defense are actively hiring, contradicting predictions of an AI-induced employment collapse.
-- Research from the Stanford Institute for Economic Policy Research indicates that AI's overall effect on employment levels is currently small.
-- While AI adoption is accelerating across the economy, its impact on worker productivity remains mixed and unevenly distributed.
-- New graduates may face a more challenging job market, though experts suggest this is only partially attributable to the integration of AI tools.
+- Supports Apple Silicon macOS and x86-64/aarch64 Linux with automatic hardware acceleration via MPS, CUDA, or CPU.
+- Implements a Mixture-of-Experts architecture that requires approximately 1.7 TB for a full local installation or 215 GB for streaming mode.
+- Achieves a median inference speed of 14.6 seconds per token on a 64 GB M1 Max by using int8 quantization and expert-caching techniques.
+- Provides an OpenAI-compatible API server, allowing integration with standard coding agents and chat interfaces.
+- Uses n-gram speculation and layer-by-layer loading to minimize memory overhead and improve throughput on resource-constrained machines.
 
 ### Why it Matters
-The disconnect between widespread fears of an AI job apocalypse and current hiring trends highlights the difference between speculative hype and measured economic reality. Understanding these labor market shifts is essential for businesses and policymakers as they navigate the long-term integration of artificial intelligence into the workforce.
+This project demonstrates that massive, high-parameter models can run on standard workstations by prioritizing I/O efficiency and intelligent memory management over raw compute power. It serves as a critical existence proof for local AI, offering a blueprint for developers to run complex models without relying on expensive cloud-based infrastructure.
 
 ============================================================
-Author:   Barry Ritholtz
-Source:   Ritholtz.com
-URL:      https://ritholtz.com/2026/07/10-tuesday-am-reads-483/
+Author:   gavamedia
+Source:   Github.com
+URL:      https://github.com/gavamedia/deltafin
 Category: Artificial Intelligence
