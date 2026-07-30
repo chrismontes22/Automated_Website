@@ -1,20 +1,20 @@
-Running Kimi K3 on a M1 Mac
+Anthropic Says It’s Against A Ban On Open Weight Models. It Just Wants To Ban Everything That Makes Them Good.
 ============================================================
 
-Deltafin is an open-source research project enabling the execution of large Mixture-of-Experts models on consumer hardware by utilizing efficient streaming, quantization, and native kernel optimizations for local inference.
+Anthropic is opposing a total ban on open-weight AI models while simultaneously advocating for government restrictions on the distillation techniques that make these competitive alternatives viable for developers.
 
 ### Key Points
-- Supports Apple Silicon macOS and x86-64/aarch64 Linux with automatic hardware acceleration via MPS, CUDA, or CPU.
-- Implements a Mixture-of-Experts architecture that requires approximately 1.7 TB for a full local installation or 215 GB for streaming mode.
-- Achieves a median inference speed of 14.6 seconds per token on a 64 GB M1 Max by using int8 quantization and expert-caching techniques.
-- Provides an OpenAI-compatible API server, allowing integration with standard coding agents and chat interfaces.
-- Uses n-gram speculation and layer-by-layer loading to minimize memory overhead and improve throughput on resource-constrained machines.
+- Major AI firms including Nvidia, Google, and OpenAI signed an open letter defending open-weight models to foster competition and prevent industry consolidation.
+- Anthropic CEO Dario Amodei argues that while open-weight models shouldn't be banned, the U.S. should penalize "industrial-scale distillation" used by Chinese firms like Alibaba.
+- Distillation involves training smaller models using outputs from larger, more powerful frontier models, a process Anthropic claims is a form of intellectual property theft.
+- Critics argue that mandatory safety testing and distillation crackdowns function as protectionist policies that create high compliance costs, effectively shielding large incumbents from smaller competitors.
+- The debate centers on whether open-weight models provide necessary transparency for security or if they pose risks by democratizing access to advanced AI capabilities.
 
 ### Why it Matters
-This project demonstrates that massive, high-parameter models can run on standard workstations by prioritizing I/O efficiency and intelligent memory management over raw compute power. It serves as a critical existence proof for local AI, offering a blueprint for developers to run complex models without relying on expensive cloud-based infrastructure.
+The conflict highlights a growing tension between the push for open-source AI infrastructure and the desire of frontier model labs to maintain proprietary control. If the U.S. government adopts restrictive policies against distillation or open-weight models, it could stifle innovation and force the global developer ecosystem to rely on non-American AI tools.
 
 ============================================================
-Author:   gavamedia
-Source:   Github.com
-URL:      https://github.com/gavamedia/deltafin
+Author:   Mike Masnick
+Source:   Techdirt
+URL:      http://www.techdirt.com/2026/07/29/anthropic-says-its-against-a-ban-on-open-weight-models-it-just-wants-to-ban-everything-that-makes-them-good/
 Category: Artificial Intelligence

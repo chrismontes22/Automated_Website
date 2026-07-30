@@ -1,20 +1,20 @@
-Android malware detection collapses when the context stage comes out
+The Growing Threat of Docusign Phishing Attacks
 ============================================================
 
-Researchers from Singapore Management University and Nankai University found that popular Android malware detectors frequently misidentify legitimate, permission-heavy applications as malicious due to flawed context-based analysis methods.
+Researchers from Cado Security Labs have identified a sophisticated spearphishing campaign using compromised Japanese business email accounts to impersonate Docusign and steal sensitive corporate login credentials from executives.
 
 ### Key Points
-- Six widely used Android malware detectors, including Drebin and LAMD, incorrectly flagged over 50% of benign apps as malicious in recent testing.
-- The researchers developed PRAXIS, a three-stage detection system that reduced false positive rates to 13% by verifying malicious intent through code-based execution chains.
-- Current industry-standard detectors often fail because they equate broad permission usage with malicious behavior, ignoring the context of legitimate device-management and backup tools.
-- The study highlights that the "context stage" of analysis is critical, as removing it caused the PRAXIS system's detection accuracy to drop significantly.
-- Practical implementation remains challenging due to high computational costs and the potential for attackers to manipulate UI text to deceive automated analysis models.
+- Attackers use compromised Japanese domains to bypass DMARC checks and improve email deliverability by leveraging high-reputation sender addresses.
+- Phishing emails mimic legitimate Docusign branding and often include fake email threads to deceive recipients into clicking malicious links.
+- Technical analysis revealed obfuscated JavaScript scripts designed to redirect users through fake Google Workspace login pages to harvest credentials.
+- Malicious infrastructure identified in the campaign includes domains such as "yperbole9[.]com" and "blegabouc[.]com" used to host credential-stealing portals.
+- The campaign specifically targets tech executives to gain access for further business email compromise (BEC) attacks or to sell stolen data on illicit marketplaces.
 
 ### Why it Matters
-These findings suggest that current automated security gates for app stores may be unfairly penalizing legitimate software, leading to unnecessary removal of functional applications. Improving detection accuracy is essential for developers and enterprise security teams to reduce the burden of manual review queues and prevent the accidental blocking of essential tools.
+These attacks exploit the high level of trust organizations place in electronic signature platforms to bypass standard security filters. By compromising legitimate business accounts, attackers significantly increase the risk of successful data breaches and subsequent corporate financial fraud.
 
 ============================================================
-Author:   Anamarija Pogorelec
-Source:   Help Net Security
-URL:      https://www.helpnetsecurity.com/2026/07/29/android-malware-detection-research/
+Author:   Tara Gould
+Source:   Darktrace.com
+URL:      https://www.darktrace.com/blog/the-growing-threat-of-docusign-phishing-attacks
 Category: Cybersecurity
