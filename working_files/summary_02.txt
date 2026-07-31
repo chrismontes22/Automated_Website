@@ -1,20 +1,20 @@
-Your PC upgrade checklist starts here: Windows 11 Pro and Office 2021 for one $33 payment
+Toy Ghouls’ new toy: the GenieLocker ransomware
 ============================================================
 
-A discounted software bundle featuring lifetime licenses for Windows 11 Pro and Microsoft Office Professional 2021 is available for $32.97 through August 9, offering significant savings over retail pricing.
+The ransomware group Toy Ghouls has launched a custom encryption tool called GenieLocker, targeting manufacturing and industrial organizations across the Russian Federation since March 2026.
 
 ### Key Points
-- The bundle includes Windows 11 Pro and the full Microsoft Office Professional 2021 suite for a one-time payment of $32.97.
-- Microsoft Office 2021 includes Word, Excel, PowerPoint, Outlook, OneNote, Teams, Publisher, and Access.
-- Windows 11 Pro features include BitLocker encryption, Hyper-V, Windows Sandbox, and Azure AD support.
-- The offer represents a significant discount from the original $418.99 MSRP and expires on August 9.
-- Users must ensure their hardware meets Windows 11 system requirements, including TPM 2.0 support, before installation.
+- GenieLocker is a bespoke ransomware family capable of infecting Windows, Linux, and ESXi environments.
+- Attackers gain initial access via compromised OpenVPN credentials and move laterally using RDP, SSH, and tools like Mimikatz.
+- The malware utilizes the XChaCha20-Poly1305 encryption algorithm and does not currently employ a double-extortion model or data-leak website.
+- Windows variants include anti-debugging features and "secret argument" validation to prevent analysis in sandboxes.
+- The Linux and ESXi versions support daemonization and can modify the VMware "Welcome Message" on compromised servers.
 
 ### Why it Matters
-This promotion provides a cost-effective alternative to recurring software subscriptions by offering permanent, non-expiring licenses for essential operating system and productivity tools. It allows individual users and small businesses to upgrade their computing environments while avoiding the long-term financial commitment of monthly service plans.
+The shift to custom-built ransomware indicates that the Toy Ghouls group is maturing its operations to reduce reliance on third-party software. This development poses a significant threat to industrial sectors, as the unified, cross-platform nature of GenieLocker allows for more efficient and coordinated attacks on critical infrastructure.
 
 ============================================================
-Author:   Boing Boing's Shop
-Source:   Boing Boing
-URL:      https://boingboing.net/2026/07/29/your-pc-upgrade-checklist-starts-here-windows-11-pro-and-office-2021-for-one-33-payment.html
-Category: Phones, Laptops, and Gadgets
+Author:   Fedor Sinitsyn, Yanis Zinchenko
+Source:   Securelist.com
+URL:      https://securelist.com/genielocker-ransomware-for-windows-linux-and-esxi/120843/
+Category: Cybersecurity

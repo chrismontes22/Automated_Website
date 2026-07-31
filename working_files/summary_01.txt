@@ -1,20 +1,20 @@
-The Growing Threat of Docusign Phishing Attacks
+Amazon Links Debug and Chalk npm Hijack to North Korea’s Sapphire Sleet
 ============================================================
 
-Researchers from Cado Security Labs have identified a sophisticated spearphishing campaign using compromised Japanese business email accounts to impersonate Docusign and steal sensitive corporate login credentials from executives.
+Amazon Threat Intelligence has attributed the September 2025 hijacking of popular npm packages debug and chalk to North Korean state-sponsored actors, citing patterns in malicious software development.
 
 ### Key Points
-- Attackers use compromised Japanese domains to bypass DMARC checks and improve email deliverability by leveraging high-reputation sender addresses.
-- Phishing emails mimic legitimate Docusign branding and often include fake email threads to deceive recipients into clicking malicious links.
-- Technical analysis revealed obfuscated JavaScript scripts designed to redirect users through fake Google Workspace login pages to harvest credentials.
-- Malicious infrastructure identified in the campaign includes domains such as "yperbole9[.]com" and "blegabouc[.]com" used to host credential-stealing portals.
-- The campaign specifically targets tech executives to gain access for further business email compromise (BEC) attacks or to sell stolen data on illicit marketplaces.
+- Amazon links the debug and chalk compromises to the same group behind the March 2026 axios attack, identifying them as North Korean operatives.
+- The campaign involved socially engineering maintainers to push malicious updates into packages that collectively see over 2 billion weekly downloads.
+- Analysts identified a 2025 test run involving a trojanized package called typo-crypto, which used obfuscated code and hardcoded command-and-control servers.
+- While Amazon claims the attacks share consistent tradecraft, other security firms like Aikido note that the technical execution methods varied significantly between incidents.
+- Despite recent security updates, npm still lacks comprehensive defenses against the social engineering tactics used to compromise legitimate developer accounts.
 
 ### Why it Matters
-These attacks exploit the high level of trust organizations place in electronic signature platforms to bypass standard security filters. By compromising legitimate business accounts, attackers significantly increase the risk of successful data breaches and subsequent corporate financial fraud.
+This attribution highlights the persistent threat North Korean actors pose to the global software supply chain by targeting widely used open-source dependencies. As these attacks evolve, they demonstrate that even high-traffic packages remain vulnerable to sophisticated social engineering, necessitating more robust verification processes for software maintainers.
 
 ============================================================
-Author:   Tara Gould
-Source:   Darktrace.com
-URL:      https://www.darktrace.com/blog/the-growing-threat-of-docusign-phishing-attacks
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/07/amazon-links-debug-and-chalk-npm-hijack.html
 Category: Cybersecurity
