@@ -1,20 +1,20 @@
-Toy Ghouls’ new toy: the GenieLocker ransomware
+Most Smart Fitness Devices Lack Essential Data Protection, EFF Warns
 ============================================================
 
-The ransomware group Toy Ghouls has launched a custom encryption tool called GenieLocker, targeting manufacturing and industrial organizations across the Russian Federation since March 2026.
+A new report from the Electronic Frontier Foundation reveals that most major smart health device manufacturers lack sufficient transparency regarding law enforcement data requests and robust encryption standards.
 
 ### Key Points
-- GenieLocker is a bespoke ransomware family capable of infecting Windows, Linux, and ESXi environments.
-- Attackers gain initial access via compromised OpenVPN credentials and move laterally using RDP, SSH, and tools like Mimikatz.
-- The malware utilizes the XChaCha20-Poly1305 encryption algorithm and does not currently employ a double-extortion model or data-leak website.
-- Windows variants include anti-debugging features and "secret argument" validation to prevent analysis in sandboxes.
-- The Linux and ESXi versions support daemonization and can modify the VMware "Welcome Message" on compromised servers.
+- The Electronic Frontier Foundation evaluated leading smart health device companies on data transparency and end-to-end encryption practices.
+- Only Apple and Google currently publish transparency reports detailing how they handle government or law enforcement requests for user health data.
+- Apple is the only company identified that utilizes end-to-end encryption for data collected by the Apple Watch within its Health app.
+- Whoop has committed to notifying users of law enforcement data requests, while Oura has pledged to begin issuing transparency reports in the future.
+- Most manufacturers rely on industry-standard encryption that allows the company to access user data, rather than providing full end-to-end security.
 
 ### Why it Matters
-The shift to custom-built ransomware indicates that the Toy Ghouls group is maturing its operations to reduce reliance on third-party software. This development poses a significant threat to industrial sectors, as the unified, cross-platform nature of GenieLocker allows for more efficient and coordinated attacks on critical infrastructure.
+The lack of standardized privacy protections for sensitive biometric data leaves consumers vulnerable to unauthorized access or government surveillance. As wearable technology continues to collect intimate health metrics, the industry's current approach highlights a significant gap between user expectations of privacy and actual data security practices.
 
 ============================================================
-Author:   Fedor Sinitsyn, Yanis Zinchenko
-Source:   Securelist.com
-URL:      https://securelist.com/genielocker-ransomware-for-windows-linux-and-esxi/120843/
+Author:   Jeff Carlson
+Source:   CNET
+URL:      https://www.cnet.com/news/privacy/most-smart-fitness-devices-lack-essential-data-protection-eff-warns/
 Category: Cybersecurity
