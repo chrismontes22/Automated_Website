@@ -1,20 +1,20 @@
-Going beneath NTFS: USN Journal, dfir_NTFS, and artefact-driven investigations
+Booming AWS Revenue Shields Amazon From Meta-Sized Backlash
 ============================================================
 
-Forensic investigators can bypass attacker anti-forensic measures by correlating data from the Master File Table, USN Journal, and $LogFile to reconstruct accurate timelines of file system activity.
+Amazon shares surged 9% after the company reported strong second-quarter earnings driven by a 37% revenue increase in its cloud computing division, Amazon Web Services.
 
 ### Key Points
-- NTFS stores metadata in two MFT locations: $STANDARD_INFORMATION, which is easily modified, and $FILE_NAME, which is kernel-written and harder to alter.
-- The USN Journal ($Extend\$UsnJrnl) provides a sequential, 20-day history of file system changes, including deletions and renames, that survives file removal.
-- The $LogFile acts as a low-level transaction journal, allowing analysts to verify the actual time metadata attributes were last written.
-- Tools like MFTECmd provide analyst-ready CSV outputs, while the dfir_ntfs Python library offers programmatic access to raw NTFS structures and volume shadow copies.
-- Discrepancies between $SI and $FN timestamps serve as a primary indicator of timestomping, as the kernel prevents these values from diverging under normal operation.
+- Amazon Web Services revenue reached $42.2 billion, marking the fifth consecutive quarter of accelerating growth for the cloud platform.
+- CEO Andy Jassy increased the company’s capital expenditure guidance by 10% to $220 billion to support ongoing infrastructure investments.
+- Amazon’s internal AI chip business and AWS AI services both surpassed $25 billion annual run rates with triple-digit year-over-year growth.
+- Major AI firms including Anthropic and OpenAI have committed to using Amazon’s proprietary Trainium chips for their computing needs.
+- The company is reportedly winding down its internal Nova AI model development to focus on supplying hardware and infrastructure to the broader industry.
 
 ### Why it Matters
-Attackers often attempt to hide their tracks by clearing logs and modifying file timestamps, but these actions rarely account for the redundant, layered nature of NTFS metadata. By cross-referencing these three independent data sources, investigators can expose malicious activity that would otherwise remain hidden, significantly increasing the reliability of digital forensic evidence.
+Investors are increasingly distinguishing between tech companies that can demonstrate immediate returns on massive artificial intelligence spending and those that cannot. Amazon’s ability to monetize its cloud infrastructure and custom silicon provides a clear roadmap for profitability that reassures markets amid rising capital expenditure requirements.
 
 ============================================================
-Author:   Andrea Fortuna
-Source:   Andreafortuna.org
-URL:      https://andreafortuna.org/2026/07/06/ntfs-forensics-deep-dive/
-Category: Cybersecurity
+Author:   Brian Boyle
+Source:   Thedailyupside.com
+URL:      https://www.thedailyupside.com/technology/artificial-intelligence/booming-aws-revenue-saves-amazon-from-meta-sized-backlash/
+Category: Tech Business & Markets

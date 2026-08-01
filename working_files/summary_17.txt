@@ -1,19 +1,20 @@
-U.S. Government Bans Foreign-Made Robots
+CISA Urges Water Sector to Protect OT After Coordinated Attacks on PLCs
 ============================================================
 
-The Federal Communications Commission has implemented an immediate ban on the import and use of foreign-made advanced robotic devices and networked power inverters due to national security concerns.
+The Cybersecurity and Infrastructure Security Agency is urging water utility operators to secure internet-exposed programmable logic controllers following a wave of coordinated cyberattacks targeting Minnesota water systems.
 
 ### Key Points
-- The FCC cited significant cybersecurity risks, including potential data surveillance and the ability for foreign actors to remotely commandeer robotic systems.
-- Affected hardware includes various companion, industrial, and transport robots from manufacturers such as UBTECH, Unitree, Hyundai, and AGIBOT.
-- Networked power inverters were also prohibited to prevent potential cyberattacks against critical United States energy infrastructure.
-- Current owners of these foreign-produced robotic devices and power components are exempt from the new federal restrictions.
+- CISA issued an urgent alert on July 30 warning that threat actors are actively targeting programmable logic controllers (PLCs) within the water and wastewater sector.
+- Over 30 community water systems in Minnesota experienced operational disruptions on July 26 and 27, leading to manual control procedures and localized boil water notices.
+- Attackers are gaining access to OT systems by exploiting publicly exposed devices, modifying passwords, and altering IP addresses to lock out legitimate operators.
+- The agency specifically identified risks associated with undocumented cellular modems and controllers manufactured by Siemens, Rockwell Automation, and Schneider Electric.
+- Operators are advised to disconnect PLCs from the public internet, implement VPNs for remote access, and maintain clean, offline backups of all controller configurations.
 
 ### Why it Matters
-This regulatory action signals a major shift in how the United States manages supply chain security for emerging technologies and critical infrastructure. By restricting foreign-made networked hardware, the government aims to mitigate espionage risks and prevent potential vulnerabilities in the nation's power grid and private data networks.
+These attacks highlight a critical vulnerability in national infrastructure as threat actors increasingly target the automated systems that manage essential public water services. Securing these industrial controllers is vital to preventing service outages and ensuring the continued safety of municipal water supplies across the country.
 
 ============================================================
-Author:   Rain Noe
-Source:   Core77.com
-URL:      https://www.core77.com/posts/144899/US-Government-Bans-Foreign-Made-Robots
+Author:   Mike Lennon
+Source:   Securityweek.com
+URL:      https://www.securityweek.com/cisa-urges-water-sector-to-protect-ot-after-coordinated-attacks-on-plcs/
 Category: Cybersecurity
