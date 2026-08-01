@@ -1,20 +1,20 @@
-Booming AWS Revenue Shields Amazon From Meta-Sized Backlash
+This Week in Security: What’s in a name, the AI Bugpocalypse Hits Everyone, OpenWRT flaws, and Duress Passwords
 ============================================================
 
-Amazon shares surged 9% after the company reported strong second-quarter earnings driven by a 37% revenue increase in its cloud computing division, Amazon Web Services.
+Google has introduced new threat actor naming conventions as the cybersecurity industry grapples with a surge in vulnerabilities and evolving patch management strategies across major software platforms.
 
 ### Key Points
-- Amazon Web Services revenue reached $42.2 billion, marking the fifth consecutive quarter of accelerating growth for the cloud platform.
-- CEO Andy Jassy increased the company’s capital expenditure guidance by 10% to $220 billion to support ongoing infrastructure investments.
-- Amazon’s internal AI chip business and AWS AI services both surpassed $25 billion annual run rates with triple-digit year-over-year growth.
-- Major AI firms including Anthropic and OpenAI have committed to using Amazon’s proprietary Trainium chips for their computing needs.
-- The company is reportedly winding down its internal Nova AI model development to focus on supplying hardware and infrastructure to the broader industry.
+- Google launched "RELIC," "CASTLE," and "COMET" naming schemes to classify threat groups, joining existing systems from CrowdStrike and Microsoft.
+- OpenWRT released critical security patches for the odhcpd server and uhttpd, though many legacy MIPS-based devices will remain permanently vulnerable.
+- Cisco is shifting to a twice-monthly patch cycle and will stop assigning CVEs to bugs unless they require specific compensating controls.
+- Oracle addressed 1,499 security issues across 334 products in its July 2026 update, while the Linux kernel patched 323 vulnerabilities in three days.
+- FreeBSD issued a security update to fix a cryptographic validation flaw in its WireGuard VPN implementation that allowed for potential packet injection.
 
 ### Why it Matters
-Investors are increasingly distinguishing between tech companies that can demonstrate immediate returns on massive artificial intelligence spending and those that cannot. Amazon’s ability to monetize its cloud infrastructure and custom silicon provides a clear roadmap for profitability that reassures markets amid rising capital expenditure requirements.
+The rapid increase in AI-generated vulnerability reports is overwhelming traditional security workflows, forcing major vendors to reconsider how they track and patch software flaws. This shift risks creating a "patch fatigue" cycle where organizations struggle to balance the need for rapid updates against the stability and testing requirements of enterprise environments.
 
 ============================================================
-Author:   Brian Boyle
-Source:   Thedailyupside.com
-URL:      https://www.thedailyupside.com/technology/artificial-intelligence/booming-aws-revenue-saves-amazon-from-meta-sized-backlash/
-Category: Tech Business & Markets
+Author:   Mike Kershaw
+Source:   Hackaday
+URL:      https://hackaday.com/2026/07/31/this-week-in-security-whats-in-a-name-the-ai-bugpocalypse-hits-everyone-openwrt-flaws-and-duress-passwords/
+Category: Cybersecurity

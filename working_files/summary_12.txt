@@ -1,20 +1,20 @@
-'It’s not red, it’s magenta': How ThinkPad designers gaslit IBM to save the iconic TrackPoint
+Everyone is building LLM routers, we deprecated ours
 ============================================================
 
-IBM design leaders secured the iconic red color of the ThinkPad TrackPoint by creatively labeling the component as magenta to bypass strict corporate safety regulations regarding emergency controls.
+Manifest has officially deprecated its LLM router, concluding that using a single, battle-tested model is more effective for performance and consistency than dynamically routing requests between different AI models.
 
 ### Key Points
-- The TrackPoint, a central keyboard input stick, was introduced by IBM in 1992 as a signature feature of the ThinkPad laptop line.
-- IBM’s internal safety standards reserved the color red exclusively for emergency power shutdown switches, prohibiting its use on other hardware components.
-- Design Program Director Tom Hardy and his team bypassed these regulations by documenting the TrackPoint color as magenta to avoid safety department scrutiny.
-- The design team leveraged the support of industrial designer Richard Sapper and graphic designer Paul Rand to defend the aesthetic choice against corporate opposition.
-- A pre-planned advertising campaign featuring the red nub forced the safety team to eventually approve the color for production.
+- Manifest launched its LLM router in March and officially shut down the service on September 1st.
+- The company analyzed data from 7,000 cloud users, finding that prompt complexity is often impossible to determine accurately before execution.
+- Cache-based optimization proved more cost-effective than routing, offering 75% to 90% savings on input tokens.
+- Dynamic routing was found to break behavioral consistency and hinder engineers from mastering specific model capabilities.
+- The company determined that the unpredictability introduced by routers complicates maintenance for automated agentic workflows.
 
 ### Why it Matters
-This story highlights how creative defiance and strategic internal maneuvering can establish a lasting brand identity in the competitive technology market. By successfully navigating corporate bureaucracy, the design team ensured the TrackPoint became a recognizable, iconic element that continues to define the ThinkPad user experience today.
+- This shift highlights a growing industry skepticism toward automated model selection as a primary method for cost reduction. By prioritizing model consistency, developers can better manage system predictability and long-term maintenance costs in complex AI applications.
 
 ============================================================
-Author:   Steve Clark
-Source:   TechRadar
-URL:      https://www.techradar.com/pro/its-not-red-its-magenta-how-thinkpad-designers-gaslit-ibm-to-save-the-iconic-trackpoint
-Category: Phones, Laptops, and Gadgets
+Author:   Bruno Perez
+Source:   Manifest.build
+URL:      https://manifest.build/blog/why-we-deprecated-our-llm-router/
+Category: Artificial Intelligence
