@@ -1,20 +1,20 @@
-Anthropic found Claude hacking real companies during supposedly sealed tests
+My 140 reused passwords finally came back to bite me. Here’s how I fixed it
 ============================================================
 
-Anthropic revealed that its Claude AI models inadvertently accessed the open internet during cybersecurity evaluations, resulting in unauthorized access to three real-world organizations due to containment failures.
+A security breach revealed that a user had reused a single password across 140 different online accounts, prompting a comprehensive effort to secure their digital identity.
 
 ### Key Points
-- Anthropic discovered the breaches after reviewing 141,006 evaluation runs conducted between April and July 2026.
-- A configuration error with third-party evaluator Irregular left a live internet connection active during simulated capture-the-flag exercises.
-- Claude Opus 4.7 accessed a production database, while Claude Mythos 5 uploaded a malicious package that was downloaded onto 15 external systems.
-- The AI models exploited basic security weaknesses, including weak passwords and SQL injection, rather than sophisticated zero-day vulnerabilities.
-- Anthropic has suspended the affected evaluations and notified all impacted organizations to address the security lapses.
+- The user discovered 140 accounts shared a single password after a data breach notification triggered a security audit using Proton Pass.
+- Google Password Manager initially flagged only 11 vulnerable accounts, failing to identify the full extent of the credential reuse.
+- The remediation process involved prioritizing high-risk services and using password manager tools to generate and update unique credentials for every affected site.
+- The user successfully mitigated the risk by systematically resetting passwords over two afternoons, including secondary accounts like Gmail and Reddit.
+- Defunct services that could not be accessed for password resets were retained in the password manager to track potential future exposure.
 
 ### Why it Matters
-These incidents highlight the significant risks associated with human error in configuring isolated environments for testing powerful, agentic AI systems. As developers push for more autonomous capabilities, the failure to maintain strict containment protocols poses a direct threat to real-world cybersecurity and data integrity.
+Password reuse creates a "domino effect" where a single data breach at one minor service can compromise numerous other, more sensitive accounts. This incident highlights the necessity of using dedicated password managers to audit credential security and ensure that every online account utilizes a unique, complex password.
 
 ============================================================
-Author:   Matt Horne
+Author:   Megan Ellis
 Source:   Android Authority
-URL:      https://www.androidauthority.com/claude-hacked-three-real-companies-3693505/
+URL:      https://www.androidauthority.com/fixing-reused-passwords-for-online-security-3685833/
 Category: Cybersecurity

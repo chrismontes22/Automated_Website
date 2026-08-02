@@ -1,19 +1,20 @@
-Unpublished novel's $2.4m deal pulled over AI concerns
+Windows Hello vs. Enhanced Sign‑in Security: Which sign‑in method actually keeps your Windows 11 PC safer, and what's the difference?
 ============================================================
 
-A debut novel’s $2.4 million licensing deal with Minotaur/Macmillan was canceled after literary agents could no longer verify the manuscript's authorship amid concerns regarding AI-generated content.
+Microsoft is expanding its Enhanced Sign-in Security feature in the August 2026 Windows 11 update to include support for compatible external fingerprint readers for improved biometric authentication.
 
 ### Key Points
-- Literary agent Sandy Hodgman withdrew the unnamed novel from international markets after failing to substantiate claims that the work was written without AI assistance.
-- The cancellation follows reports that the self-published hit *Daggermouth* may be 60 percent AI-generated, according to analysis by the detection tool Pangram.
-- A study of 14,000 Kindle ebooks found that one in five titles contained at least 25 percent AI-generated text.
-- Industry experts suggest that publishers may be failing to adequately vet manuscripts, prioritizing market buzz and financial projections over editorial review.
+- Enhanced Sign-in Security (ESS) isolates biometric processing using Virtualization-Based Security (VBS) and TPM 2.0 technology.
+- The update allows external fingerprint readers with dedicated secure processors to perform matching within the hardware itself.
+- ESS creates an encrypted communication channel between the biometric sensor and the operating system to reduce the potential attack surface.
+- Enabling ESS requires users to re-register fingerprints and update their PIN, as existing non-ESS biometric credentials are removed for security.
+- Standard Windows Hello remains a highly secure authentication method for users whose hardware does not support the enhanced feature.
 
 ### Why it Matters
-This incident highlights a growing crisis of trust and quality control within the publishing industry as AI-generated content becomes increasingly difficult to distinguish from human writing. It forces publishers to confront the financial and reputational risks of acquiring high-value manuscripts without rigorous verification of their origins.
+This update provides a higher level of hardware-backed security for users who rely on external biometric peripherals rather than built-in sensors. By expanding compatibility, Microsoft is standardizing a more robust authentication architecture that protects biometric data even if the operating system is compromised.
 
 ============================================================
-Author:   Rob Beschizza
-Source:   Boing Boing
-URL:      https://boingboing.net/2026/07/31/unpublished-novels-2-4m-deal-pulled-over-ai-concerns.html
-Category: Artificial Intelligence
+Author:   mhuck@live.com (Mauro Huculak) , Mauro Huculak
+Source:   Windows Central
+URL:      https://www.windowscentral.com/microsoft/windows-11/windows-hello-vs-enhanced-sign-in-security-which-one-should-you-use-on-windows-11
+Category: Cybersecurity

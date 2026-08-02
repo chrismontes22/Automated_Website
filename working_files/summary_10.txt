@@ -1,19 +1,20 @@
-Famous Science YouTuber Admits He Has Unhealthy Relationship With AI After Facing Backlash Over Recent Video
+Russian Hackers Hijack Hotel Wi-Fi to Steal Microsoft 365 Tokens
 ============================================================
 
-Science content creator Hank Green plans to pause his main YouTube channel after admitting to an unhealthy overreliance on ChatGPT for script research and content generation.
+Microsoft Threat Intelligence has identified the CaptiveCrunch campaign, where the Russian-linked group Storm-2945 compromises hotel and conference Wi-Fi networks to deploy malware and steal corporate user credentials.
 
 ### Key Points
-- Hank Green faced backlash after viewers accused him of using AI-generated language in a recent episode of the Complexly channel.
-- Green confirmed he has been using ChatGPT for research notes, acknowledging that his recent scripts sounded too much like AI-generated text.
-- The creator plans to reduce his overall content output to address his dependency on large language models and improve his personal well-being.
-- Green publicly apologized to his audience on Reddit, citing concerns from his family regarding his unsustainable workload and digital habits.
+- Storm-2945, a sub-cluster of the Russian SVR-linked Midnight Blizzard, has been active since May 2026.
+- Attackers manipulate DNS and HTTP traffic on captive portal networks to redirect guests to malicious landing pages.
+- The campaign deploys CornFlake, a sophisticated Windows remote access trojan, and ChocoShell, an in-memory PowerShell infostealer.
+- Malicious pages impersonate legitimate software updates or verification prompts to trick users into executing payloads.
+- Attackers are utilizing device code phishing to bypass multi-factor authentication and hijack active Microsoft 365 and Azure sessions.
 
 ### Why it Matters
-This situation highlights the growing tension between content creators and the integration of generative AI in professional workflows. It serves as a case study on how reliance on automated tools can impact audience trust and the perceived authenticity of digital media.
+This campaign highlights a significant vulnerability in shared network infrastructure, potentially exposing corporate travelers to widespread credential theft and system compromise. Organizations should restrict device code authentication flows and advise employees to avoid public Wi-Fi in favor of cellular data to mitigate these risks.
 
 ============================================================
-Author:   Zack Zwiezen
-Source:   Kotaku
-URL:      https://kotaku.com/famous-science-youtuber-admits-he-has-unhealthy-relationship-with-ai-after-facing-backlash-over-recent-video-2000720908
-Category: Artificial Intelligence
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/196441/apt/russian-hackers-hijack-hotel-wi-fi-to-steal-microsoft-365-tokens.html
+Category: Cybersecurity

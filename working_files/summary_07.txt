@@ -1,20 +1,20 @@
-With Switch 2, iPhone, and laptop tricks, the Sharge Disk Pro 2 is finally a worthy EDC
+CISA Alert: Water Sector PLC Targeting
 ============================================================
 
-Sharge has launched the Disk Pro 2, a versatile portable SSD enclosure that functions as a 4K HDMI dock and USB-C hub for laptops, phones, and gaming consoles.
+CISA has issued an urgent warning regarding threat actors targeting internet-exposed programmable logic controllers in the water sector, leading to operational disruptions and mandatory boil-water notices nationwide.
 
 ### Key Points
-- The device supports M.2 2280, 2242, and 2230 SSDs with up to 8TB of storage capacity.
-- Integrated features include a 4K 144Hz HDMI 2.1 port, a 5Gbps USB-A port, SD and microSD card readers, and USB-C passthrough charging.
-- Built-in MagSafe-compatible magnets allow the device to attach directly to smartphones like the iPhone or Pixel.
-- Two models are available: the Ultra, which supports 4K 144Hz output, and the Lite, which is limited to 4K 60Hz.
-- The unit includes an active cooling fan and is currently available via Kickstarter with a retail price of $89.
+- Threat actors are locking out operators by changing passwords and disconnecting devices by modifying IP addresses on critical water infrastructure.
+- CISA identified Rockwell Automation, Siemens, and Schneider Electric equipment as primary targets for these malicious cyber activities.
+- Cellular modems are frequently overlooked in security scans, creating significant blind spots for critical infrastructure operators and system integrators.
+- Censys data from July 30, 2026, reveals over 10,000 internet-exposed hosts across the three identified vendors globally.
+- Recommended mitigations include removing PLCs from the public internet and routing all remote access through secure VPNs or gateway devices.
 
 ### Why it Matters
-This device consolidates multiple essential peripherals into a single, pocket-sized form factor, significantly reducing the amount of hardware users need to carry for mobile workstations. By bridging the gap between high-speed storage and display connectivity, it offers a practical solution for power users and gamers who frequently switch between mobile devices and external monitors.
+The targeting of water and wastewater systems poses a direct threat to public health and the reliability of essential utility services. By securing operational technology, organizations can prevent unauthorized access that leads to service outages and dangerous water quality issues.
 
 ============================================================
-Author:   Sean Hollister
-Source:   The Verge
-URL:      https://www.theverge.com/gadgets/973886/sharge-disk-pro-2-hands-on-switch-2-hdmi-usb-c-dock
-Category: Phones, Laptops, and Gadgets
+Author:   Alex Gartner
+Source:   Censys.com
+URL:      https://censys.com/blog/cisa-alert-water-tower-plc-targeting/
+Category: Cybersecurity
