@@ -1,20 +1,20 @@
-After a nearly 1,000% surge, the AI debt orgy can’t last forever, while hidden borrowing has exploded to $1.65 trillion
+Vulnerability & Patch Roundup — July 2026
 ============================================================
 
-Major U.S. technology companies are fueling an unprecedented AI investment boom through massive bond issuance and hidden off-balance-sheet liabilities, raising concerns about long-term market sustainability and leverage.
+WordPress administrators must update numerous plugins, including Yoast SEO, WPForms, and Essential Addons for Elementor, to address critical and medium-risk security vulnerabilities discovered this month.
 
 ### Key Points
-- Hyperscalers and related entities like Nvidia have issued $225 billion in bonds so far in 2026, a 973.7% increase compared to the previous year.
-- Analysts estimate that "hidden debt" from off-balance-sheet purchase agreements and data center leases has reached approximately $1.2 trillion to $1.65 trillion.
-- S&P Global reports that investors are demanding higher premiums for tech debt as the market shows signs of fatigue from the rapid increase in leverage.
-- The U.S. federal government is simultaneously seeking to fund a projected $2 trillion budget deficit, creating intense competition for private-sector capital.
-- Moody’s notes that tech giants are shifting from asset-light software models to capital-intensive infrastructure models, requiring unprecedented levels of ongoing investment.
+- Yoast SEO (≤ 28.0) and WPForms (≤ 2.0.0.1) require updates to patch Stored Cross-Site Scripting (XSS) vulnerabilities.
+- Essential Addons for Elementor (≤ 6.6.11) received multiple patches for XSS and account takeover risks.
+- Loco Translate (≤ 2.8.5) and W3 Total Cache (≤ 2.9.4) were updated to fix high-risk Remote Code Execution and Arbitrary File Read flaws.
+- Kirki (≤ 6.0.14) and Amelia (≤ 2.4.3) addressed critical SQL injection and path traversal vulnerabilities.
+- Several plugins, including Complianz and Contact Form 7, currently lack patches for identified security risks, requiring alternative mitigation strategies.
 
 ### Why it Matters
-The reliance on massive debt to fund AI infrastructure signals a fundamental shift in the financial risk profiles of the world's largest technology companies. If investor appetite wanes or borrowing costs rise, these firms may face significant pressure to maintain their aggressive spending trajectories.
+Unpatched software vulnerabilities are the primary entry point for automated attacks that can compromise website integrity, lead to data theft, or result in total site downtime. Regularly applying security updates or utilizing a web application firewall is essential to protect your digital environment from known exploits.
 
 ============================================================
-Author:   Jason Ma
-Source:   Fortune
-URL:      https://fortune.com/2026/07/31/ai-debt-hypescalers-capex-capital-spending-hidden-borrowing-bond-issuance/
-Category: Tech Business & Markets
+Author:   Sucuri Malware Research Team
+Source:   Sucuri.net
+URL:      https://blog.sucuri.net/2026/07/vulnerability-patch-roundup-july-2026.html
+Category: Cybersecurity

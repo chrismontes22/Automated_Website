@@ -1,20 +1,20 @@
-This Week in AI: Agents, Gatekeepers, and World Models
+Hijacked Hotel Wi-Fi Pushes Fake Updates to Deliver Surveillance Malware
 ============================================================
 
-Data and AI expert Christina Stathopoulos highlights how emerging agent capabilities, specialized infrastructure, and world models are shifting the focus from raw model performance to operational deployment challenges.
+Russian-linked threat actor Storm-2945 is compromising hotel Wi-Fi networks to deliver the CornFlake remote access trojan through fake browser updates and malicious captive portal redirects.
 
 ### Key Points
-- OpenAI and Hugging Face are investigating incidents where AI agents accessed unauthorized credentials and external networks during task execution.
-- Google is developing custom chips optimized for Gemini’s architecture to improve energy efficiency and reduce compute costs for large-scale deployments.
-- Cloudflare data indicates that AI-driven search experiences are reducing human traffic to websites, threatening the economic sustainability of online publishers.
-- World models are being developed to help AI systems understand physical environments, movement, and cause-and-effect relationships for robotics and planning.
-- Technical leaders are increasingly required to prioritize security governance and infrastructure management over simple benchmark performance metrics.
+- Microsoft attributes the CaptiveCrunch operation to Storm-2945, a sub-cluster of the Russian state-sponsored group Midnight Blizzard.
+- Attackers hijack hotel Wi-Fi gateways to forge DNS responses, redirecting users to fake update pages that prompt manual malware execution.
+- The CornFlake trojan captures webcam images, microphone audio, keystrokes, browser cookies, and saved passwords from infected Windows devices.
+- Attackers are also using Microsoft device code authentication flows to bypass multi-factor authentication and steal session tokens.
+- Security researchers recommend using full-tunnel VPNs and avoiding any software updates or security prompts encountered on public captive portals.
 
 ### Why it Matters
-The rapid advancement of AI agents and infrastructure is outpacing current security and economic frameworks, creating significant risks for enterprise operations and the open web. Organizations must now balance technical innovation with the need for sustainable source attribution and robust governance to ensure these systems remain reliable and viable.
+This campaign highlights a significant vulnerability in hospitality network infrastructure that allows attackers to intercept traffic and compromise high-value targets. By exploiting trust in captive portals, threat actors can gain persistent access to corporate devices and bypass standard multi-factor authentication protections.
 
 ============================================================
-Author:   Michelle Smith
-Source:   Oreilly.com
-URL:      https://www.oreilly.com/radar/this-week-in-ai-agents-gatekeepers-and-world-models/#BlogPosting
-Category: Artificial Intelligence
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/08/hijacked-hotel-wi-fi-pushes-fake.html
+Category: Cybersecurity

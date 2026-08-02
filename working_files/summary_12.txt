@@ -1,20 +1,21 @@
-Everyone is building LLM routers, we deprecated ours
+XRP Ledger upgrade brings back features once pulled over critical bugs
 ============================================================
 
-Manifest has officially deprecated its LLM router, concluding that using a single, battle-tested model is more effective for performance and consistency than dynamically routing requests between different AI models.
+The upcoming xrpld 3.3.0 software release introduces five proposed amendments to the XRP Ledger, including revised versions of two features previously withdrawn due to critical security vulnerabilities.
 
 ### Key Points
-- Manifest launched its LLM router in March and officially shut down the service on September 1st.
-- The company analyzed data from 7,000 cloud users, finding that prompt complexity is often impossible to determine accurately before execution.
-- Cache-based optimization proved more cost-effective than routing, offering 75% to 90% savings on input tokens.
-- Dynamic routing was found to break behavioral consistency and hinder engineers from mastering specific model capabilities.
-- The company determined that the unpredictability introduced by routers complicates maintenance for automated agentic workflows.
+- The xrpld 3.3.0 release includes five amendments: Batch, Permission Delegation, Confidential MPT, Sponsored Fees and Reserves, and Dynamic MPT.
+- Batch allows up to eight cross-account transactions to execute atomically, while Permission Delegation enables institutions to grant scoped signing authority to other accounts.
+- Previous versions of Batch and Permission Delegation were pulled after researchers identified flaws that could have allowed unauthorized transactions or fee draining.
+- Confidential MPT utilizes zero-knowledge proofs and encryption to enable private tokenized-asset activity while maintaining auditability for regulators.
+- Sponsored Fees and Reserves allows platforms to cover transaction costs for users, removing the requirement for individuals to hold XRP to transact.
+- Amendments require 80% approval from network validators for two consecutive weeks before they are officially integrated into the XRP Ledger.
 
 ### Why it Matters
-- This shift highlights a growing industry skepticism toward automated model selection as a primary method for cost reduction. By prioritizing model consistency, developers can better manage system predictability and long-term maintenance costs in complex AI applications.
+These updates aim to enhance the institutional utility of the XRP Ledger by improving transaction efficiency and lowering barriers to entry for new users. By addressing past security concerns, the release seeks to provide a more robust infrastructure for tokenized assets and decentralized financial services.
 
 ============================================================
-Author:   Bruno Perez
-Source:   Manifest.build
-URL:      https://manifest.build/blog/why-we-deprecated-our-llm-router/
-Category: Artificial Intelligence
+Author:   Shaurya Malwa
+Source:   CoinDesk
+URL:      https://www.coindesk.com/tech/2026/08/01/xrp-ledger-upgrade-brings-back-features-once-pulled-over-critical-bugs
+Category: Tech Business & Markets
