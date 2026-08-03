@@ -1,20 +1,21 @@
-Mathematics Without Mathematicians
+That innocent-looking game on your smart TV might be quietly routing someone else's internet traffic through your home
 ============================================================
 
-OpenAI has reportedly developed an unreleased artificial intelligence model capable of solving ten complex, open mathematical problems, signaling a potential shift in the future of scientific research.
+Thousands of smart TV apps on LG and Samsung platforms contain software that turns home internet connections into residential proxies, potentially routing third-party web traffic through private networks.
 
 ### Key Points
-- OpenAI’s new model successfully addressed ten previously unsolved mathematical problems, including significant advancements in coding theory.
-- The technology utilizes formal verification methods, such as Lean proofs, to establish mathematical results without requiring human intervention.
-- Experts suggest that AI-driven discovery could eventually outpace human capacity to learn or verify frontier mathematics.
-- The integration of AI into research may lead to a "demon-haunted world" where engineering and scientific principles are discovered by machines beyond human comprehension.
-- The development raises concerns regarding the long-term social and professional relevance of human mathematicians in an increasingly automated research landscape.
+- Security firm Spur identified residential proxy software in over 2,000 apps across LG’s webOS and Samsung’s Tizen platforms.
+- The software allows third parties to route web traffic through a user's home IP address, often for data scraping or advertising purposes.
+- Apps containing this code include seemingly harmless utilities like games, clocks, and screensavers.
+- Developers often include these proxy SDKs as a monetization tool, sometimes offering ad-free experiences in exchange for "bandwidth sharing."
+- Smart TVs are ideal hosts for this activity because they remain powered on, connected to the internet, and rarely monitored by users.
+- LG has announced it will suspend apps that continue to utilize residential proxy functionality.
 
 ### Why it Matters
-This development suggests that AI could soon replace human researchers as the primary architects of scientific and mathematical progress. If firms prioritize AI-driven efficiency over human oversight, the resulting technological advancements may become impossible for humans to understand or replicate, fundamentally altering the nature of innovation.
+This practice turns household internet connections into infrastructure for third-party traffic without the user fully understanding the security or privacy implications. Because smart TVs lack transparent network monitoring, homeowners may unknowingly host malicious or unauthorized activity that could impact their network's reputation and security.
 
 ============================================================
-Author:   Fernando Borretti
-Source:   Borretti.me
-URL:      https://borretti.me/article/mathematics-without-mathematicians
-Category: Artificial Intelligence
+Author:   Jeff Butts
+Source:   XDA Developers
+URL:      https://www.xda-developers.com/smart-tv-apps-residential-proxy-traffic/
+Category: Cybersecurity
