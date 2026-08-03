@@ -1,20 +1,21 @@
-Over half of PC gamers are still on 1080p in 2026, and the reason isn't the monitors
+kognisant added to PyPI
 ============================================================
 
-The June 2026 Steam Hardware Survey reveals that 51.12% of users remain on 1080p displays, as rising GPU costs and VRAM requirements hinder the transition to 1440p gaming.
+Kognisant is an open-source, dependency-free AI command-line assistant that features persistent project memory, autonomous agent swarms, and background job execution for streamlined software development workflows.
 
 ### Key Points
-- Over half of Steam users still utilize 1080p monitors, despite 1440p panels becoming increasingly affordable with entry-level options available for under $200.
-- Omdia reports that OLED monitor shipments are projected to rise by 34% as manufacturers shift production capacity toward desktop panels.
-- Most experts recommend at least 12GB of VRAM for smooth 1440p performance, yet 25% of the Steam user base currently relies on 8GB configurations.
-- Nvidia and AMD have implemented multiple price hikes in 2026, with Nvidia raising costs across its RTX stack by 20–30% due to the ongoing DRAM crisis.
-- Mid-range graphics cards, once considered the "sweet spot" for 1440p gaming, have seen significant price increases, making them less accessible for budget-conscious consumers.
+- Requires Python 3.10+ with no external dependencies, Docker, or Node.js.
+- Supports Kognisant Cloud, local models via Ollama, and any OpenAI-compatible API.
+- Features a two-layer memory system that retains project architecture and global patterns across sessions.
+- Includes a POSIX-compatible daemon for scheduling cron jobs and running persistent background services.
+- Enables remote AI access through integrations with platforms like Telegram and Discord.
+- Utilizes a multi-agent "PERP" swarm to plan, execute, and reflect on complex coding tasks in parallel.
 
 ### Why it Matters
-The shift toward higher-resolution gaming is currently stalled not by monitor costs, but by the rising price of the graphics hardware required to power them. This trend forces consumers to choose between staying at 1080p or paying a premium for the VRAM necessary to support modern 1440p gaming standards.
+Kognisant reduces developer friction by eliminating the need to repeatedly provide project context to AI models during coding sessions. Its focus on zero-dependency, portable architecture makes advanced autonomous AI tooling more accessible for developers in emerging markets and resource-constrained environments.
 
 ============================================================
-Author:   Abhinav Raj
-Source:   XDA Developers
-URL:      https://www.xda-developers.com/over-half-of-pc-gamers-are-still-on-1080p-in-2026-and-the-reason-isnt-the-monitors/
-Category: Phones, Laptops, and Gadgets
+Author:   msugroo@gmail.com
+Source:   Pypi.org
+URL:      https://pypi.org/project/kognisant/
+Category: Artificial Intelligence

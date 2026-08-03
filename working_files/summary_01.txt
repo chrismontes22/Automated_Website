@@ -1,20 +1,20 @@
-My 140 reused passwords finally came back to bite me. Here’s how I fixed it
+IBM i (OS/400) the Database Operating System
 ============================================================
 
-A security breach revealed that a user had reused a single password across 140 different online accounts, prompting a comprehensive effort to secure their digital identity.
+IBM i, formerly known as AS/400, is a highly integrated, object-based operating system designed for extreme reliability and long-term application compatibility in enterprise-level business environments.
 
 ### Key Points
-- The user discovered 140 accounts shared a single password after a data breach notification triggered a security audit using Proton Pass.
-- Google Password Manager initially flagged only 11 vulnerable accounts, failing to identify the full extent of the credential reuse.
-- The remediation process involved prioritizing high-risk services and using password manager tools to generate and update unique credentials for every affected site.
-- The user successfully mitigated the risk by systematically resetting passwords over two afternoons, including secondary accounts like Gmail and Reddit.
-- Defunct services that could not be accessed for password resets were retained in the password manager to track potential future exposure.
+- The platform utilizes a unique Single Level Storage architecture that treats RAM and disk space as one continuous, flat address space.
+- Db2 for i is integrated directly into the system kernel, allowing for high-performance database operations without external software overhead.
+- The Technology Independent Machine Interface (TIMI) layer ensures that applications written decades ago can run natively on modern IBM Power hardware.
+- Security is enforced through object-level encapsulation, preventing unauthorized access or code modification at the system level.
+- The system supports modern development through the Integrated File System (IFS) and the Portable Application Solutions Environment (PASE), enabling the use of Python, Node.js, and Git.
 
 ### Why it Matters
-Password reuse creates a "domino effect" where a single data breach at one minor service can compromise numerous other, more sensitive accounts. This incident highlights the necessity of using dedicated password managers to audit credential security and ensure that every online account utilizes a unique, complex password.
+IBM i remains a critical backbone for global banking and logistics due to its legendary stability and ability to run legacy code alongside modern web services. Its architecture minimizes administrative overhead and downtime, providing a secure, high-performance environment that prioritizes business continuity over the rapid, often disruptive, update cycles of consumer operating systems.
 
 ============================================================
-Author:   Megan Ellis
-Source:   Android Authority
-URL:      https://www.androidauthority.com/fixing-reused-passwords-for-online-security-3685833/
-Category: Cybersecurity
+Author:   Kamil Pytliński
+Source:   Osadmins.com
+URL:      https://osadmins.com/en/ibm-i-os-400-the-database-operating-system/
+Category: Tech Business & Markets
