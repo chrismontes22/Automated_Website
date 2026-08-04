@@ -1,20 +1,20 @@
-Boris Cherny on Trying to Get Claude Code to Rewrite the Claude App
+An analysis of incidents at Brazilian educational institutions
 ============================================================
 
-**Claude Code creator Boris Cherny highlights how the new Opus 5 model enables long-running, autonomous AI agents capable of managing complex software development tasks with minimal human intervention.**
+Educational institutions in Brazil are increasingly targeted by cybercriminals using ransomware and insider threats, often exploiting weak security practices, outdated software, and compromised user credentials to gain access.
 
 ### Key Points
-- Opus 5 demonstrates significant advancements in long-term task execution, allowing agents to operate for weeks or months without constant manual scaffolding.
-- The model shows improved resistance to prompt injection, utilizing mechanistic interpretability to identify and block malicious instructions at the neural level.
-- Developers are encouraged to "press delete" on legacy system prompts and rigid code harnesses, as modern models often perform better with fewer manual constraints.
-- Claude Code now supports dynamic workflows, enabling the orchestration of thousands of agents to perform complex tasks like full-scale code base migrations.
-- Automated maintenance routines, such as dead code removal and abstraction unification, allow AI to manage its own development environment across multiple platforms.
+- Incident response data from January 2025 to June 2026 shows 60% of attacks targeted private institutions, with São Paulo being the most affected region.
+- Ransomware families like LockBit 3 and DragonForce are primary threats, frequently deployed via valid accounts and remote access tools like AnyDesk.
+- Attackers commonly use "Potato" variants for privilege escalation and PsExec for lateral movement within compromised academic networks.
+- Many institutions remain vulnerable due to the continued use of unsupported operating systems, including Windows 10 and Windows Server 2016.
+- Insider threats involve simple Python-based keyloggers used to harvest credentials from shared machines, often bypassing basic security controls.
 
 ### Why it Matters
-The shift toward agentic AI requires developers to move away from rigid, over-specified instructions and adopt an empirical, scientific approach to model interaction. By leveraging "product overhang"—the gap between a model's actual capabilities and current product implementations—founders can build highly autonomous systems that significantly increase engineering productivity.
+These findings highlight a critical need for academic institutions to move beyond basic security by implementing multi-factor authentication and strict account management policies. Failure to address these vulnerabilities leaves sensitive student and administrative data exposed to financially motivated attackers who exploit predictable gaps in network hygiene.
 
 ============================================================
-Author:   John Gruber
-Source:   Ycrootaccess.com
-URL:      https://www.ycrootaccess.com/p/boris-cherny-building-claude-code
-Category: Artificial Intelligence
+Author:   Cristian Souza
+Source:   Securelist.com
+URL:      https://securelist.com/incidents-at-brazilian-educational-institutions/120803/
+Category: Cybersecurity

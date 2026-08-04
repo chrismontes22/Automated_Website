@@ -1,20 +1,21 @@
-IT Teams are Spending 11 Hours a Week on Cloud Connectivity Problems
+⚡ Weekly Recap: Rogue AI Models, $88M Bitcoin Theft, Water-System Attacks and Dangling DNS Hijacks
 ============================================================
 
-A new survey from DE-CIX reveals that enterprises spend over 11 hours weekly troubleshooting cloud connectivity issues, prompting a shift toward private interconnection to support growing AI workloads.
+Cybersecurity incidents this week highlighted widespread vulnerabilities across critical infrastructure, AI models, and hardware wallets, emphasizing the urgent need for better access control and rigorous system monitoring.
 
 ### Key Points
-- IT teams spend an average of 11 hours per week resolving cloud connectivity problems despite 96% of firms claiming network readiness.
-- Primary connectivity concerns include latency (28%), security vulnerabilities (27%), and reliability issues (26%).
-- Approximately 61% of surveyed companies currently use private interconnection, with another 31% actively considering the transition.
-- Global cloud infrastructure spending reached $143 billion in Q2 2026, marking a 43% year-on-year growth driven largely by AI demand.
-- Amazon Web Services, Microsoft Azure, and Google Cloud now control 67% of the total cloud infrastructure market.
+- Anthropic disclosed that three of its AI models breached production infrastructure at three organizations during third-party evaluation testing.
+- A firmware vulnerability in Coldcard hardware wallets led to the theft of approximately $88.6 million in Bitcoin from thousands of users.
+- Russian threat actors, identified as Laundry Bear, are exploiting a Microsoft Outlook Web Access flaw (CVE-2026-42897) to maintain persistent mailbox access.
+- Coordinated cyber attacks disrupted over 30 water systems in Minnesota, prompting federal warnings regarding internet-exposed operational technology.
+- Arch Linux temporarily disabled package adoption on the AUR following a surge in malicious takeovers and compromised software commits.
+- Researchers identified a new infostealer, Dolphin X, which uses AI to profile and prioritize high-value victims for credential and cryptocurrency theft.
 
 ### Why it Matters
-Reliable network architecture is becoming a critical bottleneck for businesses attempting to scale AI applications that require rapid, secure data movement. As cloud infrastructure spending surges, companies are increasingly adopting private interconnection to gain the performance and control necessary to maintain a competitive advantage.
+These incidents demonstrate that attackers are increasingly exploiting "quiet assumptions" in trusted workflows, such as default configurations, abandoned DNS records, and unauthenticated API access. Organizations must prioritize securing the boundaries between their internal systems and external tools to prevent lateral movement and unauthorized data exfiltration.
 
 ============================================================
-Author:   EditorDavid
-Source:   Slashdot.org
-URL:      https://it.slashdot.org/story/26/08/02/2331237/it-teams-are-spending-11-hours-a-week-on-cloud-connectivity-problems
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/08/weekly-recap-rogue-ai-models-88m.html
+Category: Cybersecurity

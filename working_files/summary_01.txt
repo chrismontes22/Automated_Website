@@ -1,20 +1,20 @@
-Mapping the malware blast radius a single alert won’t show you
+Microsoft CVP on optimizing Windows 11 for 8GB RAM: "We're relentless at reducing the memory footprint", breaks down how Microsoft is minimizing performance bloat across the OS
 ============================================================
 
-Stairwell has launched Backstory, an AI-powered investigation platform designed to automatically map the full blast radius of malware campaigns by identifying hidden variants across enterprise endpoint environments.
+Microsoft is actively optimizing Windows 11 to reduce memory usage and improve performance on devices with 8GB of RAM, with updates expected to roll out later this year.
 
 ### Key Points
-- Backstory uses "Variant Discovery" technology to identify structurally related malicious files that often evade traditional signature-based detection.
-- Research by Stairwell found that every published malware sample hides an average of 2.4 undocumented variants.
-- The platform maintains "ground truth" by permanently archiving every executable file, including binaries and DLLs, that runs on customer endpoints.
-- Unlike log-based systems, Backstory allows security teams to re-examine historical files whenever new threat intelligence becomes available.
-- The tool automates investigative pivots, connecting disparate data points like file rarity, shared infrastructure, and code reuse to uncover complete attack campaigns.
+- Microsoft executives Marcus Ash and Pavan Davuluri confirmed a company-wide initiative to enhance OS efficiency for low-memory hardware.
+- The optimization process involves a full-stack review, ranging from kernel schedulers and drivers to UI design and application preloading.
+- Teams are instrumenting common user workflows to identify and eliminate unnecessary memory consumption during stressful system conditions.
+- The project aims to address rising memory costs and maintain competitiveness against alternative platforms like Apple's MacBook.
+- Performance improvements are scheduled for release before the end of the current calendar year.
 
 ### Why it Matters
-This platform addresses the growing challenge of AI-generated malware, which allows attackers to create unique, low-cost variants that bypass traditional security defenses. By shifting the focus from reactive alert triage to proactive, evidence-based investigation, organizations can better identify the full scope of a breach rather than just individual incidents.
+These optimizations are critical for maintaining the viability of Windows 11 on entry-level hardware, which remains a significant segment of the consumer market. By reducing the memory footprint, Microsoft aims to improve user experience and responsiveness, ensuring the OS remains competitive against increasingly efficient hardware and software alternatives.
 
 ============================================================
-Author:   Mirko Zorz
-Source:   Help Net Security
-URL:      https://www.helpnetsecurity.com/2026/08/03/mike-wiacek-stairwell-backstory-malware-blast-radius/
-Category: Cybersecurity
+Author:   zac.bowden@futurenet.com (Zac Bowden) , Zac Bowden
+Source:   Windows Central
+URL:      https://www.windowscentral.com/microsoft/windows-11/microsoft-cvp-on-optimizing-windows-11-for-8gb-ram-were-relentless-at-reducing-the-memory-footprint-breaks-down-how-microsoft-is-minimizing-performance-bloat-across-the-os
+Category: Phones, Laptops, and Gadgets

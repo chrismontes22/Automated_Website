@@ -1,20 +1,20 @@
-Thermo Fisher Patches Flaw That Could Make DNA File Tampering Nearly Undetectable
+Samsung Bans Smart TV Apps That Share Users' Internet Connections
 ============================================================
 
-Thermo Fisher Scientific has released security updates for Applied Biosystems software to prevent unauthorized tampering with DNA data files that could potentially compromise forensic analysis and laboratory integrity.
+Security researchers at Mnemonic discovered that numerous Samsung smart TV apps contain code that turns devices into residential proxy exit nodes, potentially exposing users to unauthorized internet traffic.
 
 ### Key Points
-- Thermo Fisher issued patches for five product lines to add digital signatures, preventing undetectable modifications to .fsa and .hid DNA data files.
-- The vulnerability, tracked as CVE-2026-17583, received a high CVSS v4.0 score of 8.2 due to the risk of data manipulation before analysis.
-- Three legacy product lines, including the 3130 and 3100 series, have reached end-of-life status and will not receive security updates.
-- Researchers demonstrated that modified DNA files could bypass existing detection software, potentially allowing the creation of fraudulent profiles from existing data.
-- The company recommends that laboratories unable to update their software implement strict access controls, file encryption, and network restrictions to maintain data integrity.
+- Cybersecurity firm Mnemonic identified apps on Samsung smart TVs that funnel external web traffic through home internet connections.
+- Affected applications include simple games, such as a Pac-Man title previously featured in Samsung’s "Editor's Choice" section.
+- These apps function as residential proxy networks, allowing third parties to use private IP addresses for potentially illicit online activities.
+- Samsung is now banning apps that utilize proxy software and is implementing stricter developer policies to remove existing malicious components.
+- LG has also initiated a suspension of apps containing similar ResProxy software following reports that 42% of its store apps posed similar risks.
 
 ### Why it Matters
-This vulnerability highlights significant risks to the reliability of digital forensic evidence used in criminal investigations and legal proceedings. Because the flaw potentially affects historical data generated over decades, it raises concerns regarding the long-term verification of DNA records and the necessity for robust cybersecurity standards in laboratory environments.
+This discovery highlights significant security vulnerabilities in smart TV ecosystems where low-quality apps can bypass standard review processes. By turning consumer devices into proxy exit nodes, these apps threaten user privacy and could implicate household internet connections in cybercriminal activity.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/08/thermo-fisher-patches-flaw-that-could.html
+Author:   BeauHD
+Source:   Slashdot.org
+URL:      https://entertainment.slashdot.org/story/26/08/03/1637257/samsung-bans-smart-tv-apps-that-share-users-internet-connections
 Category: Cybersecurity

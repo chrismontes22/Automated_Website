@@ -1,20 +1,20 @@
-At colleges, the AI boom means everyone wants to dabble in computer science
+Get a Remote Terminal With One Binary, One URL, and Zero Config
 ============================================================
 
-Universities across the United States are rapidly expanding artificial intelligence curricula for non-computer science majors as students seek to gain essential technical literacy for an evolving job market.
+Developer Rich LeGrand has released BitBang, an open-source framework that enables secure, peer-to-peer remote terminal access and file sharing through web browsers without requiring complex network configurations.
 
 ### Key Points
-- Enrollment in traditional computer and information science programs has declined by over 8% since spring 2025 as entry-level software developer job postings decrease.
-- Institutions including Virginia Commonwealth University, Purdue, and Harvard are implementing new AI minors, graduation requirements, and specialized workshops for students outside of STEM fields.
-- Northwestern University is streamlining prerequisites and adding an AI major to accommodate high demand from students in diverse disciplines like music and the humanities.
-- Community colleges, such as Johnson County Community College, are accelerating course development to offer non-credit AI certificates and occupation-specific training in weeks rather than years.
-- Educators are balancing the need for AI literacy with concerns that over-reliance on automated tools may hinder students' fundamental understanding of their chosen professional fields.
+- BitBang uses WebRTC to establish encrypted connections between systems without needing VPNs, port forwarding, or firewall modifications.
+- Users initiate connections by running a single static binary and sharing a generated QR code, URL, or numerical code.
+- The framework includes bitbang-cli for remote access, a Python library for web applications, and an OctoPrint plugin for 3D printer management.
+- A lightweight, trustless signaling server brokers the initial connection but cannot access or decrypt the private data transmitted between peers.
+- Developers can host their own local signaling server instance using bitbang-server to maintain complete control over their infrastructure.
 
 ### Why it Matters
-Integrating AI education across all disciplines prepares graduates to remain competitive as machine learning increasingly disrupts traditional career paths. This shift reflects a broader institutional recognition that AI proficiency is becoming a foundational skill comparable to basic literacy or mathematics.
+This tool simplifies remote connectivity by removing the technical barriers typically associated with secure network access. By enabling zero-config peer-to-peer connections, it provides a streamlined solution for developers and hobbyists to manage remote hardware and applications securely.
 
 ============================================================
-Author:   HEATHER HOLLINGSWORTH
-Source:   Yahoo Entertainment
-URL:      https://www.yahoo.com/news/science/articles/colleges-ai-boom-means-everyone-041442839.html
-Category: Artificial Intelligence
+Author:   Donald Papp
+Source:   Hackaday
+URL:      https://hackaday.com/2026/08/03/get-a-remote-terminal-with-one-binary-one-url-and-zero-config/
+Category: Cybersecurity
