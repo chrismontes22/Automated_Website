@@ -1,21 +1,20 @@
-NACCIMA offers firms $150m low-interest expansion loan
+Thermo Fisher Patches Flaw That Could Make DNA File Tampering Nearly Undetectable
 ============================================================
 
-The Nigerian Association of Chambers of Commerce, Industry, Mines and Agriculture has launched a $150 million offshore financing facility to provide Nigerian businesses with long-term, single-digit interest capital.
+Thermo Fisher Scientific has released security updates for Applied Biosystems software to prevent unauthorized tampering with DNA data files that could potentially compromise forensic analysis and laboratory integrity.
 
 ### Key Points
-- The $150 million facility is a partnership between NACCIMA and the Germany-based commercial banking group ODDO BHF SE.
-- Eligible companies can apply for a minimum of $10 million in financing with a repayment tenure of at least seven and a half years.
-- Funding prioritizes sectors including manufacturing, agro-allied processing, energy, logistics, and 20 percent is reserved for the digital economy and ICT.
-- Applicants must provide three years of audited financial statements and demonstrate compliance with environmental, social, and governance (ESG) standards.
-- Beneficiaries are required to spend 35 to 50 percent of the funds on European machinery, equipment, or services to facilitate industrial modernization.
-- The application process is managed through a secure, encrypted digital portal featuring automated Know-Your-Customer verification.
+- Thermo Fisher issued patches for five product lines to add digital signatures, preventing undetectable modifications to .fsa and .hid DNA data files.
+- The vulnerability, tracked as CVE-2026-17583, received a high CVSS v4.0 score of 8.2 due to the risk of data manipulation before analysis.
+- Three legacy product lines, including the 3130 and 3100 series, have reached end-of-life status and will not receive security updates.
+- Researchers demonstrated that modified DNA files could bypass existing detection software, potentially allowing the creation of fraudulent profiles from existing data.
+- The company recommends that laboratories unable to update their software implement strict access controls, file encryption, and network restrictions to maintain data integrity.
 
 ### Why it Matters
-This initiative provides a critical pathway for Nigerian enterprises to access affordable foreign capital, which is essential for scaling operations and acquiring advanced European technology. By establishing a transparent, globally aligned investment pipeline, the program aims to boost the competitiveness of the local private sector and foster long-term industrial growth.
+This vulnerability highlights significant risks to the reliability of digital forensic evidence used in criminal investigations and legal proceedings. Because the flaw potentially affects historical data generated over decades, it raises concerns regarding the long-term verification of DNA records and the necessity for robust cybersecurity standards in laboratory environments.
 
 ============================================================
-Author:   Punch Newspapers
-Source:   The Punch
-URL:      https://punchng.com/naccima-offers-firms-150m-low-interest-expansion-loan/
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/08/thermo-fisher-patches-flaw-that-could.html
+Category: Cybersecurity
