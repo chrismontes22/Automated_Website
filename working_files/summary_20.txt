@@ -1,20 +1,20 @@
-UK’s Police National Legal Database Reveals Data Breach
+Show HN: cMCP, deny an AI agent's tool call and get a signed receipt
 ============================================================
 
-The Police National Legal Database has confirmed a significant data breach involving the personal information of thousands of British police officers and criminal justice professionals across the UK.
+The cMCP (Confidential MCP Runtime) is a new open-source gateway that secures AI agent tool calls by enforcing Cedar policies within a hardware-based Trusted Execution Environment.
 
 ### Key Points
-- The breach, identified on July 26, exposed names and work email addresses of staff from all 43 police forces in England and Wales.
-- The extortion group ExfilSquad claimed responsibility for the incident, alleging they possess 135,000 records totaling 1.9GB of data.
-- Compromised information also includes contact details for individuals who previously submitted inquiries to the Ask the Police service.
-- PNLD officials stated that no passwords, security credentials, or confidential data regarding victims, witnesses, or offenders were accessed during the attack.
-- The National Crime Agency and specialist cybersecurity organizations are currently investigating the breach and the group's claims.
+- cMCP intercepts agent tool calls and evaluates them against Cedar policy bundles inside a secure Trusted Execution Environment (TEE).
+- The runtime supports hardware attestation via TPM 2.0, AMD SEV-SNP, and Intel TDX to ensure policy integrity and prevent unauthorized tampering.
+- Each session generates a signed, tamper-evident TRACE Claim that provides verifiable proof of policy enforcement without requiring trust in the operator.
+- The system is designed to meet regulatory standards, including the EU AI Act and NIST SP 800-207, by providing immutable audit logs.
+- Developers can test the runtime using a software-only mode, which requires no specialized hardware, before deploying to production environments.
 
 ### Why it Matters
-The exposure of professional contact details provides cybercriminals with a targeted directory to launch sophisticated spear-phishing and social engineering campaigns against law enforcement personnel. This incident highlights the ongoing vulnerability of public sector databases and reinforces the UK government's firm stance against paying extortion demands to cyber adversaries.
+This technology addresses critical security gaps in agentic AI by moving policy enforcement out of the reach of potentially compromised host operating systems. By providing hardware-attested proof of compliance, it enables organizations to safely integrate AI agents with sensitive APIs while meeting strict regulatory and audit requirements.
 
 ============================================================
-Author:   Phil Muncaster
-Source:   Infosecurity Magazine
-URL:      https://www.infosecurity-magazine.com/news/uks-police-national-legal-database/
+Author:   agentrust-io
+Source:   Github.com
+URL:      https://github.com/agentrust-io/cmcp
 Category: Cybersecurity

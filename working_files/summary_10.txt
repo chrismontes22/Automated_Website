@@ -1,20 +1,20 @@
-DOUBLECUP Uses ClickFix and Cached PNGs to Deliver CountLoader and DeviceManager RAT
+Vlt 1.0 and Hosted Package Registries
 ============================================================
 
-A new Russian loader-as-a-service platform called DOUBLECUP is utilizing ClickFix lures and steganographic images to distribute CountLoader and the DeviceManager remote access trojan to unsuspecting Windows and macOS users.
+The vlt platform has officially launched version 1.0, introducing a security-focused JavaScript package manager alongside hosted registry services designed to provide faster, safer dependency management for modern development teams.
 
 ### Key Points
-- DOUBLECUP has been active since June 2026, providing operators with a license-based panel to manage malware campaigns and payload delivery.
-- The attack chain uses steganographic PNG images hidden in browser caches to execute malicious scripts, including JavaScript, VBScript, and PowerShell.
-- Payloads are decrypted in memory using environmental keying, which utilizes the victim's public IP address as a cryptographic seed to prevent unauthorized analysis.
-- CountLoader targets both Windows and macOS, while the Python-based DeviceManager uses EtherHiding to resolve command-and-control infrastructure via blockchain smart contracts.
-- Campaigns impersonate legitimate CRM login pages for services like Salesforce, HubSpot, and NetSuite to trick users into executing malicious ClickFix commands.
+- The vlt client serves as a drop-in replacement for npm, supporting existing workflows while offering up to 38% faster installation speeds.
+- The platform features over 60 graph-native pseudo selectors, including specialized tools to identify malware, outdated dependencies, and unmaintained packages.
+- New infrastructure provides OIDC "trusted publishing," allowing developers to publish packages from CI environments like GitHub Actions without using long-lived tokens.
+- Hosted registries are backwards compatible with npm, pnpm, yarn, bun, and Deno, ensuring seamless integration with current JavaScript tooling.
+- The service actively monitors and blocks malicious packages in real-time, having already flagged over 275,000 package versions that remain available on the public npm registry.
 
 ### Why it Matters
-This loader-as-a-service model lowers the barrier to entry for cybercriminals by providing a sophisticated, automated pipeline for malware distribution and evasion. The use of blockchain-based infrastructure and environmental keying demonstrates an increasing trend toward resilient, highly targeted attacks that are difficult for traditional security tools to detect.
+By providing a security-first alternative to the standard npm registry, vlt addresses critical supply chain vulnerabilities that often plague modern software development. This platform enables teams to adopt faster, agent-native workflows while maintaining strict control over dependency integrity and installation performance.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/08/doublecup-uses-clickfix-and-cached-pngs.html
+Author:   darcy
+Source:   Www.vlt.io
+URL:      https://www.vlt.io/blog/1-0
 Category: Cybersecurity
