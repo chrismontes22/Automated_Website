@@ -1,20 +1,20 @@
-Keyv and friends compromised in active Shai-Hulud supply chain attack
+Pass the Passkey: A Novel Attack Surface in Passwordless Authentication
 ============================================================
 
-A compromised GitHub account led to a widespread supply chain attack affecting over 444 npm packages, enabling a malicious worm to steal credentials from developers and CI/CD environments.
+Researchers at Palo Alto Networks Unit 42 have identified three novel "Pass-ta-key" attack vectors that allow malware to bypass security protections and hijack Google-synced passkey-protected accounts.
 
 ### Key Points
-- Attackers hijacked the maintainer account for the popular keyv library, injecting a credential-stealing worm into 11 core packages and over 400 downstream dependencies.
-- The malware, triggered via `npm install`, uses an obfuscated dropper to execute a payload that harvests secrets from AWS, Kubernetes, GitHub, Stripe, and local filesystem files.
-- The worm propagates automatically by using stolen npm tokens to publish malicious updates to other packages and by injecting hooks into VS Code and Claude configurations.
-- Stolen data is encrypted and exfiltrated to public GitHub repositories or a dynamic command-and-control domain managed via an Ethereum smart contract.
-- Affected packages include widely used utilities like flat-cache, file-entry-cache, and cacheable-request, which collectively account for over 2 billion monthly installs.
+- The "Pass-ta-key" attacks exploit vulnerabilities in Google Chrome’s passkey implementation on Windows devices equipped with Trusted Platform Modules (TPM).
+- Attackers can use unprivileged malware to silently sign authentication requests, bypassing user interaction and biometric verification requirements.
+- The "Silver" attack variant allows attackers to register their own verification keys, enabling persistent, automated account takeover without needing the victim's device.
+- The "Golden" attack variant involves extracting the Security Domain Secret (SDS) from process memory to decrypt and steal all synced passkey private keys.
+- These exploits succeed by targeting gaps in onboarding, recovery workflows, and inconsistent validation of the User Verified (UV) flag by relying parties.
 
 ### Why it Matters
-This incident represents a severe escalation in supply chain security threats, as the worm actively weaponizes stolen credentials to infect other maintainers and organizations. The automated nature of the propagation and the breadth of targeted secret stores pose a critical risk to the integrity of global software development pipelines.
+These findings demonstrate that while passkeys significantly improve security over traditional passwords, they are not immune to sophisticated endpoint-based malware. Organizations and users must treat passkey deployments as one layer of a broader security strategy, emphasizing the need for strict validation of authentication signals and robust endpoint protection.
 
 ============================================================
-Author:   Ilyas Makari
-Source:   Aikido.dev
-URL:      https://www.aikido.dev/blog/keyv-and-friends-compromised-in-npm-supply-chain-attack
+Author:   Arie Olshtein
+Source:   Paloaltonetworks.com
+URL:      https://unit42.paloaltonetworks.com/passwordless-authentication-security-risks/
 Category: Cybersecurity

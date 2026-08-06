@@ -1,20 +1,20 @@
-1 Reason Wall Street Is Obsessed With This Tech Stock
+An SLM trained on $8 ESP32-S3
 ============================================================
 
-Marvell Technology is expanding its market share in AI infrastructure by providing essential custom silicon and optical networking components to major hyperscalers amid accelerating fiscal revenue growth.
+Researchers have successfully trained a 319,000-parameter transformer model from scratch on an eight-dollar ESP32-S3 microcontroller, demonstrating that edge devices can perform autonomous machine learning without external cloud computing resources.
 
 ### Key Points
-- Marvell reported Q1 FY2027 revenue of $2.418 billion, representing a 27.6% year-over-year increase.
-- The Data Center segment accounted for 76% of total revenue, totaling $1.833 billion for the quarter.
-- Management projects Q2 revenue at $2.7 billion, signaling an expected 35% year-over-year growth rate.
-- The company maintains a strong financial position with $3.844 billion in cash and a 126.8% increase in Q1 free cash flow.
-- Marvell specializes in 800G and 1.6T optics, 51.2T Ethernet switches, and custom ASIC designs for AI data centers.
+- The project, dubbed "Qapla'," uses an ESP32-S3 N16R8 chip to perform full training cycles, including backpropagation and weight updates, entirely on-device.
+- The model was trained on the Klingon language to test its ability to learn complex grammatical structures and morphology from a limited, structured dataset.
+- Unlike typical Edge AI applications that only run pre-trained inference, this experiment handles the entire learning process, including memory-intensive gradient calculations and optimizer states.
+- The system operates without internet connectivity, proving that microcontrollers can adapt to local data environments, such as industrial sensors or agricultural monitoring.
+- The implementation avoids heavy frameworks like PyTorch, utilizing custom C code to manage the transformer architecture within the chip's limited RAM and PSRAM.
 
 ### Why it Matters
-Marvell serves as a critical "picks-and-shovels" provider for the AI industry, offering specialized hardware that allows hyperscalers to optimize data center economics beyond standard GPU deployments. While the company faces risks from customer concentration, its focus on long-term design wins and interconnect technology positions it as a key beneficiary of sustained global AI infrastructure spending.
+This experiment challenges the assumption that artificial intelligence training requires massive data centers and high-end GPUs, opening new possibilities for truly autonomous, localized machine learning. By enabling devices to learn from their specific surroundings in real-time, this approach could lead to more efficient, privacy-focused, and resilient smart sensors in remote or disconnected environments.
 
 ============================================================
-Author:   Vandita Jadeja
-Source:   24/7 Wall St.
-URL:      https://247wallst.com/investing/2026/08/04/1-reason-wall-street-is-obsessed-with-this-tech-stock/
-Category: Tech Business & Markets
+Author:   Carloscodix
+Source:   Github.com
+URL:      https://github.com/Carloscodix/qapla
+Category: Artificial Intelligence
