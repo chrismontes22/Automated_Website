@@ -1,20 +1,20 @@
-Pass the Passkey: A Novel Attack Surface in Passwordless Authentication
+Sunbird relaunched its iMessage app for Android users after three years away
 ============================================================
 
-Researchers at Palo Alto Networks Unit 42 have identified three novel "Pass-ta-key" attack vectors that allow malware to bypass security protections and hijack Google-synced passkey-protected accounts.
+Sunbird Messaging has relaunched on the Google Play Store, allowing Android users to access iMessage features for a monthly subscription fee following a significant security-focused platform overhaul.
 
 ### Key Points
-- The "Pass-ta-key" attacks exploit vulnerabilities in Google Chrome’s passkey implementation on Windows devices equipped with Trusted Platform Modules (TPM).
-- Attackers can use unprivileged malware to silently sign authentication requests, bypassing user interaction and biometric verification requirements.
-- The "Silver" attack variant allows attackers to register their own verification keys, enabling persistent, automated account takeover without needing the victim's device.
-- The "Golden" attack variant involves extracting the Security Domain Secret (SDS) from process memory to decrypt and steal all synced passkey private keys.
-- These exploits succeed by targeting gaps in onboarding, recovery workflows, and inconsistent validation of the User Verified (UV) flag by relying parties.
+- The service costs $2.99 per month and enables iMessage features like high-quality media sharing and reactions on Android devices.
+- Sunbird claims to have resolved previous security vulnerabilities, citing an independent audit that found no critical flaws in the rebuilt application.
+- The platform utilizes AES-256 encryption for data at rest and in transit, ensuring messages remain protected before reaching Apple’s iMessage servers.
+- CEO Danny Mizrahi stated that Apple ID passwords are used only for initial session setup and are not stored by the company.
+- Future updates are expected to include integration for WhatsApp and Facebook Messenger, alongside an AI assistant for drafting replies and summarizing conversations.
 
 ### Why it Matters
-These findings demonstrate that while passkeys significantly improve security over traditional passwords, they are not immune to sophisticated endpoint-based malware. Organizations and users must treat passkey deployments as one layer of a broader security strategy, emphasizing the need for strict validation of authentication signals and robust endpoint protection.
+This relaunch addresses long-standing friction in cross-platform communication by attempting to bridge the gap between Android and iOS messaging ecosystems. While the service offers a workaround for iMessage limitations, users must weigh the convenience of blue bubble integration against the inherent privacy risks of routing personal communications through a third-party intermediary.
 
 ============================================================
-Author:   Arie Olshtein
-Source:   Paloaltonetworks.com
-URL:      https://unit42.paloaltonetworks.com/passwordless-authentication-security-risks/
-Category: Cybersecurity
+Author:   Stevie Bonifield
+Source:   The Verge
+URL:      https://www.theverge.com/tech/975563/imessage-android-sunbird
+Category: Phones, Laptops, and Gadgets
