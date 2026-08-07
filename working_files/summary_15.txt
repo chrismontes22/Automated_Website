@@ -1,20 +1,20 @@
-Trusted AI data becomes the missing link as enterprises push models into production
+Microsoft warns hotel/airport Wi-Fi is being hijacked to steal your login
 ============================================================
 
-Enterprises are increasingly prioritizing trusted data governance and encryption as essential requirements for successfully transitioning artificial intelligence models from experimental pilot programs into scalable, secure production environments.
+Microsoft has issued a security warning regarding the CaptiveCrunch attack campaign, where Russian hackers exploit public Wi-Fi networks to steal user credentials and install malware on devices.
 
 ### Key Points
-- Hewlett Packard Enterprise, BigID, and Fortanix executives emphasized that data quality and governance are the primary barriers to scaling AI deployments.
-- BigID’s discovery tools are identifying "shadow AI" and unauthorized sandbox environments that currently lack necessary IT compliance and oversight.
-- Fortanix provides encryption layers to secure sensitive data during processing, particularly for regulated industries like healthcare and banking.
-- Organizations are increasingly moving AI workloads back to on-premises infrastructure to keep models closer to sensitive data sources.
-- HPE GreenLake offers a unified hybrid cloud control plane to manage data governance consistently across cloud, on-premises, and SaaS environments.
+- The hacker group Storm-2945, linked to the Russian Foreign Intelligence Service, is identified as the primary actor behind the CaptiveCrunch campaign.
+- Attackers manipulate DNS queries on public Wi-Fi networks to redirect users to sophisticated phishing sites that mimic official Microsoft login portals.
+- Compromised captive portals at locations like hotels and airports are used to intercept OAuth codes and capture sensitive device credentials.
+- Malware deployed during these attacks includes Trojans capable of recording keystrokes, hijacking cameras, and exfiltrating private files from infected systems.
+- Microsoft is currently investigating commonalities in network management systems to determine how attackers gain initial access to these public infrastructure points.
 
 ### Why it Matters
-Establishing a secure, governed data foundation is critical for companies to mitigate risks associated with rogue AI models and regulatory non-compliance. As businesses move beyond experimentation, these integrated strategies ensure that AI outputs remain reliable and protected across complex, distributed IT architectures.
+This campaign highlights a significant vulnerability in public Wi-Fi infrastructure that could lead to widespread account takeovers and long-term device surveillance. Users should prioritize private mobile hotspots or encrypted VPN connections to mitigate the risk of credential theft and unauthorized remote access.
 
 ============================================================
-Author:   Kelly Knight
-Source:   SiliconANGLE News
-URL:      https://siliconangle.com/2026/08/05/trusted-ai-data-enables-enterprise-production-ai-blackhat/
-Category: Artificial Intelligence
+Author:   Hans-Christian Dirscherl
+Source:   PCWorld
+URL:      https://www.pcworld.com/article/3207883/microsoft-warns-hotel-and-airport-wi-fi-are-being-hijacked-to-steal-your-login.html
+Category: Cybersecurity

@@ -1,20 +1,20 @@
-Cloudflare is the only vendor named a Visionary in 2026 SASE and SSE reports
+AI Recommendation Poisoning: How "Ask AI" Buttons Silently Alter LLM Memory
 ============================================================
 
-Cloudflare has been recognized as the only vendor named a Visionary in both the 2026 Gartner Magic Quadrant for SASE Platforms and the 2026 Gartner Magic Quadrant for Security Service Edge.
+Commercial websites are increasingly using hidden deep-link prompts to manipulate AI assistant memory, forcing models to treat specific marketing domains as trusted sources without user consent.
 
 ### Key Points
-- Cloudflare One is a unified, composable SASE platform built on a single global network architecture.
-- The platform provides native governance for AI agents and human users, including cost-capping for AI inference.
-- Cloudflare has integrated post-quantum encryption across its network to mitigate "harvest-now, decrypt-later" security threats.
-- The company aims to deliver a fully quantum-secure SASE platform by 2028, ahead of the 2030 NIST mandate.
-- Integration with Cloudflare Workers allows organizations to program custom security workflows directly into the SASE fabric.
+- Microsoft identified this behavior as "AI Recommendation Poisoning," tracking 31 companies across 14 industries using the technique.
+- The attack exploits standard deep-linking features in ChatGPT, Claude, Gemini, and Grok to execute unauthorized commands upon a single user click.
+- Malicious payloads instruct LLMs to permanently store a vendor's domain as a "trusted source," biasing future AI responses in that vendor's favor.
+- The technique is formally categorized in the MITRE ATLAS knowledge base as AML.T0080 (Memory Poisoning).
+- Marketing tools and CMS plugins are increasingly commoditizing these prompts, framing them as standard brand reinforcement strategies.
 
 ### Why it Matters
-This recognition highlights a shift in the cybersecurity market toward unified, agile architectures that can handle modern challenges like AI sprawl and quantum computing threats. By moving away from fragmented, legacy-stitched platforms, enterprises can achieve faster deployment times and more consistent security governance across their entire digital infrastructure.
+This practice undermines the neutrality of AI assistants by surreptitiously injecting marketing bias into a user's long-term memory store. It creates a significant security risk for organizations, as employees may unknowingly rely on poisoned AI models for objective vendor evaluations and critical decision-making.
 
 ============================================================
-Author:   Michael Keane
-Source:   Cloudflare.com
-URL:      https://blog.cloudflare.com/cloudflare-sase-sse-gartner-magic-quadrants-2026/
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/08/ai-recommendation-poisoning-how-ask-ai.html
 Category: Cybersecurity

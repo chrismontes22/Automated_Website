@@ -1,20 +1,20 @@
-This major smartphone maker just turned up in a list no company wants to be on
+Biggest backdoor yet found in Chinese routers sold under multiple brand names
 ============================================================
 
-Chinese smartphone manufacturer OPPO is among more than 1,600 global organizations compromised by a sophisticated, years-long hacking campaign linked to North Korean state-sponsored actors targeting software developers.
+Cybersecurity researchers at VulnCheck have discovered a critical, deliberate backdoor named ENDLESSDOORS embedded in various routers manufactured by Shenzhen Zhibotong Electronics, posing significant risks to global network security.
 
 ### Key Points
-- Cybersecurity researcher Vangelis Stykas identified the breach, which spans 57 countries and includes targets like Coinbase, Uniswap Labs, and Boston Children’s Hospital.
-- Attackers utilized fake high-paying job interviews to trick developers into downloading malware during coding tests.
-- The campaign, dubbed "Contagious Interview" by Microsoft, granted hackers privileged access to internal corporate networks.
-- While the primary objective was stealing cryptocurrency and blockchain assets, researchers warn the persistent access poses significant long-term espionage risks.
-- Approximately 700 to 800 of the affected organizations suffered severe intrusions, according to findings presented at the Black Hat security conference.
+- The ENDLESSDOORS backdoor uses a tool called rctl to establish outbound connections to command servers, bypassing firewalls and standard network security measures.
+- Affected devices are sold under multiple brand names, including Zbtlink and Wiflyer, often obscuring their true origin from consumers and internet service providers.
+- The vulnerability allows remote attackers to execute arbitrary shell commands or spawn reverse bash shells on compromised hardware.
+- VulnCheck identified 20 specific model numbers, such as the WE826-T3-DSIM and Z8102AX-2DSIM, that contain this security flaw.
+- Experts recommend that users immediately disconnect and replace any hardware matching the identified model list to prevent unauthorized network access.
 
 ### Why it Matters
-This incident highlights the growing vulnerability of corporate supply chains to social engineering tactics targeting highly skilled technical employees. The breach underscores the persistent threat posed by state-sponsored actors seeking both financial gain and long-term access to sensitive internal infrastructure.
+This discovery highlights the severe supply chain risks associated with rebadged networking hardware that may contain pre-installed malicious firmware. Because these devices initiate outbound connections, they can bypass traditional perimeter defenses, leaving both home and enterprise networks vulnerable to persistent remote control.
 
 ============================================================
-Author:   Adamya Sharma
-Source:   Android Authority
-URL:      https://www.androidauthority.com/oppo-north-korean-hacking-victim-3695068/
+Author:   Ben Lovejoy
+Source:   9to5Mac
+URL:      https://9to5mac.com/2026/08/06/biggest-backdoor-yet-found-in-chinese-routers-sold-under-multiple-brand-names/
 Category: Cybersecurity
