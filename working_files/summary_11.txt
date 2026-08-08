@@ -1,20 +1,20 @@
-AI Recommendation Poisoning: How "Ask AI" Buttons Silently Alter LLM Memory
+Thousands of server motherboards are vulnerable to controller flaws that could give attackers hardware-level control
 ============================================================
 
-Commercial websites are increasingly using hidden deep-link prompts to manipulate AI assistant memory, forcing models to treat specific marketing domains as trusted sources without user consent.
+New research presented at Black Hat reveals that thousands of enterprise servers remain vulnerable to exploitation due to persistent, unpatched security flaws in baseboard management controllers.
 
 ### Key Points
-- Microsoft identified this behavior as "AI Recommendation Poisoning," tracking 31 companies across 14 industries using the technique.
-- The attack exploits standard deep-linking features in ChatGPT, Claude, Gemini, and Grok to execute unauthorized commands upon a single user click.
-- Malicious payloads instruct LLMs to permanently store a vendor's domain as a "trusted source," biasing future AI responses in that vendor's favor.
-- The technique is formally categorized in the MITRE ATLAS knowledge base as AML.T0080 (Memory Poisoning).
-- Marketing tools and CMS plugins are increasingly commoditizing these prompts, framing them as standard brand reinforcement strategies.
+- Security researcher HD Moore identified critical vulnerabilities in BMCs from major vendors including HPE, Supermicro, Dell, Lenovo, Huawei, and Avocent.
+- Public internet scans identified over 86,000 exposed BMCs, with 54% containing at least one critical vulnerability.
+- Internal network scans of 126,761 devices revealed that nearly 29% of corporate BMCs remain susceptible to exploitation.
+- Flaws include predictable session IDs, weak authentication protocols, and memory corruption issues that allow for remote code execution.
+- Moore released an open-source tool called OOBscan to help administrators identify and secure vulnerable hardware within their server fleets.
 
 ### Why it Matters
-This practice undermines the neutrality of AI assistants by surreptitiously injecting marketing bias into a user's long-term memory store. It creates a significant security risk for organizations, as employees may unknowingly rely on poisoned AI models for objective vendor evaluations and critical decision-making.
+BMCs provide deep, low-level control over server hardware, meaning a compromise can grant attackers persistent access that bypasses traditional operating system security. Because these controllers are often under-monitored and rarely patched, they represent a significant, widespread attack surface for enterprise infrastructure.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/08/ai-recommendation-poisoning-how-ask-ai.html
+Author:   Skye Jacobs
+Source:   TechSpot
+URL:      https://www.techspot.com/news/113379-thousands-enterprise-servers-vulnerable-bmc-flaws-give-attackers.html
 Category: Cybersecurity
