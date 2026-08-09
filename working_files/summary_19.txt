@@ -1,20 +1,20 @@
-Nearly 800 malicious npm packages hide RAT behind a simple require()
+GOP Senator Promotes Crypto Bill Which Possibly Benefits Human Traffickers
 ============================================================
 
-Cybersecurity researchers have identified a new supply chain attack using typo-squatted packages that deploy malicious payloads like the Sliver framework across Windows, macOS, and Linux development environments.
+Senator Tim Scott is advocating for the Digital Asset Market Clarity Act, a cryptocurrency bill facing significant opposition from anti-trafficking organizations and law enforcement over regulatory concerns.
 
 ### Key Points
-- Attackers use AI-generated, typo-squatted package names to trick developers into importing malicious code via standard `require()` calls.
-- The WEL1DROPPER malware retrieves payloads from Cloudflare Workers or via DNS TXT records under the `wel1.ru` domain as a fallback.
-- Windows variants actively disable security monitoring tools like ETW and AMSI to maintain persistence and evade sandbox detection.
-- The malware deploys platform-specific persistence mechanisms, including Registry Run entries on Windows and LaunchAgents on macOS.
-- Security teams should audit lockfiles, build logs, and DNS traffic for indicators of compromise related to the `wel1.ru` domain.
+- Senator Tim Scott, chair of the Senate Banking Committee, argues the bill increases financial access for single mothers.
+- The Alliance to End Human Trafficking and the National Sheriffs’ Association warn the legislation creates loopholes for criminal activity.
+- A July analysis by the Center for American Progress claims the bill undermines government oversight of illicit financial transactions.
+- Democratic lawmakers, led by Senator Elizabeth Warren, oppose the bill due to concerns regarding investor protection and potential conflicts of interest.
+- The crypto industry has provided significant campaign donations to officials from both political parties to support the legislation.
 
 ### Why it Matters
-This campaign highlights a sophisticated shift in supply chain attacks that bypass traditional installation-script detection by requiring manual code integration. Organizations must treat any compromised CI runner or workstation as fully breached, necessitating immediate credential rotation and deep forensic investigation.
+The debate highlights a growing tension between promoting financial innovation and maintaining necessary regulatory safeguards against criminal exploitation. The outcome of this legislation could fundamentally alter how the United States oversees digital assets and impacts the future of national security and financial accountability.
 
 ============================================================
-Author:   IT News
-Source:   4sysops.com
-URL:      https://4sysops.com/archives/nearly-800-malicious-npm-packages-hide-rat-behind-a-simple-require/
-Category: Cybersecurity
+Author:   Oliver Willis
+Source:   Crooksandliars.com
+URL:      https://crooksandliars.com/2026/08/gop-senator-promotes-crypto-bill-which
+Category: Tech Business & Markets

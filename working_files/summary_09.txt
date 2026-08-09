@@ -1,19 +1,20 @@
-Water Utilities Group Partners With DEF CON Offshoot For Water Watch Center
+Sensitive Info Goes Into ‘No Reply’ Emails Constantly. This Guy Sees It All
 ============================================================
 
-The National Rural Water Association and DEF CON Franklin have launched the Water Watch Center to provide essential cybersecurity services to small U.S. water utilities facing rising threats.
+Security researcher Cory Solovewicz is warning businesses about data leaks after his ownership of "noreply" domains revealed hundreds of thousands of misdirected, sensitive corporate and personal emails.
 
 ### Key Points
-- The Water Watch Center supports community water systems serving fewer than 10,000 people, which account for 91% of all U.S. water utilities.
-- Five cybersecurity firms—Rapid7, Defendify, Legato Security, L1 Secure, and Sentinel Technologies—will provide managed detection and response services.
-- The initiative aims to protect critical infrastructure from state-sponsored cyber adversaries, including groups linked to the Iranian Red Guard and the Chinese military.
-- The National Rural Water Association will serve as a central hub for sharing threat intelligence and vulnerability patch data among participating utilities.
+- Security researcher Cory Solovewicz owns the domains noreply.us and noreply.net, which have collectively received over 400,000 automated messages since 2020.
+- The intercepted emails contain sensitive data, including injury reports, test credentials, pizza orders, and internal company secrets.
+- Solovewicz and researcher Mike Sheward have purchased over 30 domains to prevent malicious actors from accessing misdirected corporate communications.
+- Analysis of 7,136 domains revealed that 328 are configured as catch-all inboxes, suggesting a widespread systemic failure in how organizations handle automated email routing.
+- Experts recommend that companies use internal domains or the ".invalid" top-level domain to ensure automated messages are never sent to the public internet.
 
 ### Why it Matters
-This partnership addresses a critical security gap for thousands of small water systems that often lack the resources to defend against sophisticated nation-state cyberattacks. By centralizing threat intelligence, the program provides a scalable model to protect essential public infrastructure from potential service disruptions.
+This issue highlights a significant vulnerability where companies inadvertently expose private customer and employee data due to poor internal system configurations. If these domains were controlled by malicious actors rather than ethical researchers, the intercepted information could be exploited for identity theft, corporate espionage, or large-scale extortion.
 
 ============================================================
-Author:   BeauHD
-Source:   Slashdot.org
-URL:      https://it.slashdot.org/story/26/08/07/2137206/water-utilities-group-partners-with-def-con-offshoot-for-water-watch-center
+Author:   Matt Burgess
+Source:   Wired
+URL:      https://www.wired.com/story/sensitive-info-goes-into-no-reply-emails-constantly-this-guy-sees-it-all/
 Category: Cybersecurity
