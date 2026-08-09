@@ -1,20 +1,20 @@
-Never lose your wallet again with this $32 smart tracker
+Nearly 800 malicious npm packages hide RAT behind a simple require()
 ============================================================
 
-The KeySmart SmartCard Gen 3 is a slim, rechargeable tracking device compatible with Apple Find My and Google Find networks, currently available for a discounted price of $31.99.
+Cybersecurity researchers have identified a new supply chain attack using typo-squatted packages that deploy malicious payloads like the Sliver framework across Windows, macOS, and Linux development environments.
 
 ### Key Points
-- The device measures 1.8mm thick, allowing it to fit easily into standard wallets or behind smartphone cases.
-- It features IPX8 waterproof protection and offers up to 11 months of battery life on a single charge.
-- The Gen 3 model provides 30% improved connectivity and reliability compared to previous versions.
-- Users can recharge the unit via Qi wireless charging, eliminating the need for disposable batteries.
-- Each purchase includes a two-year warranty and integrates directly with existing Apple or Android tracking ecosystems.
+- Attackers use AI-generated, typo-squatted package names to trick developers into importing malicious code via standard `require()` calls.
+- The WEL1DROPPER malware retrieves payloads from Cloudflare Workers or via DNS TXT records under the `wel1.ru` domain as a fallback.
+- Windows variants actively disable security monitoring tools like ETW and AMSI to maintain persistence and evade sandbox detection.
+- The malware deploys platform-specific persistence mechanisms, including Registry Run entries on Windows and LaunchAgents on macOS.
+- Security teams should audit lockfiles, build logs, and DNS traffic for indicators of compromise related to the `wel1.ru` domain.
 
 ### Why it Matters
-This smartcard offers a practical solution for users looking to prevent the loss of essential items like wallets and identification cards through digital tracking. By integrating with major mobile ecosystems, it provides a reliable, reusable alternative to traditional Bluetooth trackers that require frequent battery replacements.
+This campaign highlights a sophisticated shift in supply chain attacks that bypass traditional installation-script detection by requiring manual code integration. Organizations must treat any compromised CI runner or workstation as fully breached, necessitating immediate credential rotation and deep forensic investigation.
 
 ============================================================
-Author:   Boing Boing's Shop
-Source:   Boing Boing
-URL:      https://boingboing.net/2026/08/07/never-lose-your-wallet-again-with-this-32-smart-tracker.html
-Category: Phones, Laptops, and Gadgets
+Author:   IT News
+Source:   4sysops.com
+URL:      https://4sysops.com/archives/nearly-800-malicious-npm-packages-hide-rat-behind-a-simple-require/
+Category: Cybersecurity

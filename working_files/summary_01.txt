@@ -1,20 +1,20 @@
-Malicious AI ‘skills’ turned agents into credential thieves, at scale
+I stopped using free VPNs after I learned what they do with your traffic
 ============================================================
 
-Security researchers at Zenity Labs discovered a malicious credential-stealing campaign targeting AI agents through typosquatted add-ons hosted on the Vercel-run skills.sh registry for AI tools.
+Many free VPN services compromise user privacy by leaking data, tracking browsing habits, or selling personal information to third parties, necessitating caution when selecting a secure connection tool.
 
 ### Key Points
-- Attackers cloned legitimate AI skills and injected malicious instructions designed to exfiltrate SSH keys, cloud credentials, and database logins.
-- One malicious skill family reached over 1.7 million aggregate installs before being identified and removed by Vercel and GitHub.
-- Over 30% of the identified dangerous skills specifically targeted Claude Code and OpenClaw to deploy malware.
-- Some malicious packages implemented self-preservation tactics, such as rewriting system prompts to prevent deletion or replacing legitimate skill-creator tools.
-- Zenity Labs released a free tool called AI Total that sandboxes and analyzes skills to detect hidden malicious behavior before execution.
+- Research from MVPNalyzer indicates that over 80% of free Android VPNs send user data to known advertising and tracking domains.
+- Common security failures include leaking DNS queries, exposing IPv6 traffic, and transmitting data in plaintext without encryption.
+- Providers like Urban VPN have been caught harvesting user data, including AI chat logs, even when the application is disabled.
+- Trustworthy free VPNs, such as Proton VPN and Windscribe, typically feature open-source clients, independent security audits, and transparent business models.
+- Self-hosting a VPN using WireGuard on a virtual private server offers a secure alternative that eliminates reliance on third-party providers.
 
 ### Why it Matters
-This incident highlights a critical vulnerability in the AI agent supply chain where instructions, rather than traditional code, are weaponized to compromise user data. As agents gain broader access to sensitive systems, the ability for malicious actors to hide instructions in seemingly benign tools poses a significant security risk for enterprise and individual users.
+Using unreliable free VPNs can expose sensitive metadata and browsing history to malicious actors or data brokers rather than protecting it. Choosing audited, transparent services or self-hosted solutions is essential for maintaining genuine digital privacy and security.
 
 ============================================================
-Author:   Ana Maria Constantin
-Source:   The Next Web
-URL:      https://thenextweb.com/news/zenity-malicious-ai-skills-1-7m-installs-supply-chain-credential-theft
+Author:   Joe Rice-Jones
+Source:   XDA Developers
+URL:      https://www.xda-developers.com/stopped-using-free-vpns-after-learned-what-they-do-with-your-traffic/
 Category: Cybersecurity

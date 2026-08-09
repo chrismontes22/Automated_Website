@@ -1,19 +1,20 @@
-Take-Two CEO Predicts That We’ll All Be Streaming Our Games In Three Years
+Could this be the end of BIOS-locked laptops? AI tweaker deploys Claude to unlock and change settings for good
 ============================================================
 
-Take-Two Interactive CEO Strauss Zelnick predicts that low-latency game streaming will become commercially viable within three years, potentially expanding the industry's total install base by tenfold.
+A Reddit user utilized the Claude Code AI assistant to reverse-engineer firmware on an HP 15-dw1036ne laptop, successfully unlocking 55 hidden setup fields and four configuration tabs.
 
 ### Key Points
-- Strauss Zelnick stated that rising hardware costs are detrimental to the gaming industry but will not hinder Take-Two’s business performance.
-- The CEO expects high-quality, low-latency cloud streaming to reach commercial maturity by 2027.
-- Streaming technology could transform non-gaming devices like tablets and phones into platforms capable of running AAA titles.
-- Zelnick believes this shift will allow publishers to reach broader audiences beyond the current core market of console and PC owners.
+- The modification bypassed the RSA-2048 signature verification by patching the firmware routine to return a success signal.
+- The process involved using Ghidra for disassembly, UEFITool for extraction, and Unicorn Engine for emulation.
+- Claude Code acted as an assistant to bridge documentation gaps, significantly reducing the time required for manual reverse-engineering.
+- Successful implementation requires physical access to the motherboard via a hardware flash programmer and carries a risk of bricking the device.
+- The unlocked firmware remains model-specific and leaves the laptop more vulnerable to potential future firmware-based security implants.
 
 ### Why it Matters
-The transition to cloud-based gaming could significantly lower the barrier to entry for consumers by removing the need for expensive, dedicated hardware. If successful, this shift would fundamentally change how major publishers distribute high-budget titles and expand the total addressable market for the gaming industry.
+This development demonstrates how AI can lower the barrier to entry for complex firmware modification, potentially extending the lifespan of locked hardware that would otherwise become e-waste. While it offers a path for device recovery, it also highlights ongoing security vulnerabilities in hardware lacking robust, root-of-trust boot protection.
 
 ============================================================
-Author:   Rebekah Valentine
-Source:   Kotaku
-URL:      https://kotaku.com/take-two-ceo-predicts-game-streaming-three-years-2000722435
-Category: Tech Business & Markets
+Author:   Rahimnoorali11@gmail.com (Rahim Amir) , Rahim Amir
+Source:   TechRadar
+URL:      https://www.techradar.com/pro/could-this-be-the-end-of-bios-locked-laptops-ai-tweaker-deploys-claude-to-unlock-and-change-settings-for-good
+Category: Cybersecurity
