@@ -1,20 +1,21 @@
-Before you buy another USB-C charger, make sure it has this critical (and hidden) spec
+Ed Crewe: From Routing Checks to Trajectory Testing: Evaluating an Agentic Chatbot
 ============================================================
 
-Consumers should look beyond total wattage when buying USB-C chargers, as specific voltage and current profiles are required to achieve optimal fast-charging speeds for modern smartphones and devices.
+Developers building agentic chatbots for complex products like Postgres AI Hybrid Manager can ensure reliability by implementing a tiered evaluation framework that tests routing, task completion, and multi-step trajectories.
 
 ### Key Points
-- USB Power Delivery (USB PD) with Programmable Power Supply (PPS) is essential for fast charging on most modern Android devices, including Samsung Galaxy and Google Pixel phones.
-- Total wattage is often insufficient for determining speed; chargers must support specific voltage and current combinations, such as the 21V profiles required by newer handsets.
-- PPS support is typically indicated by a voltage range, such as 3.3V–21V, rather than the fixed voltage outputs found on standard USB PD chargers.
-- Multi-port chargers often split total power between connections, and high-speed charging may require a cable specifically rated for 5A current.
-- Manufacturers often omit detailed charging specifications, requiring consumers to check product labels or technical documentation for broad voltage coverage.
+- **Routing Evals:** Use deterministic tests to verify that user prompts correctly trigger the intended agent skill or tool.
+- **Task Completion Rate (TCR):** Employ LLM-as-a-judge patterns with specific rubrics to score complex, non-deterministic responses.
+- **Multi-step Testing:** Maintain conversation state across turns to ensure the agent handles follow-up questions and context correctly.
+- **Trajectory Testing:** Evaluate the entire path of an interaction, including tool selection, argument validity, and final output.
+- **Instrumentation:** Utilize tools like Langfuse to capture trace-level telemetry, enabling developers to debug specific points of failure.
+- **Tiered Architecture:** Adjust evaluation expectations based on model size to accommodate constraints in sovereign or air-gapped deployments.
 
 ### Why it Matters
-Understanding these technical specifications prevents consumers from purchasing chargers that provide sluggish performance despite high wattage claims. Investing in a charger with broad PPS voltage support ensures compatibility with future devices and reduces the accumulation of electronic waste.
+Moving beyond simple text-based testing is essential for agentic applications that perform real-world actions, such as database migrations or cluster management. By validating the entire execution path rather than just the final response, developers can ensure their AI tools remain reliable, secure, and functional across diverse deployment environments.
 
 ============================================================
-Author:   Robert Triggs
-Source:   Android Authority
-URL:      https://www.androidauthority.com/usb-c-charger-need-to-know-before-buying-3694333/
-Category: Phones, Laptops, and Gadgets
+Author:   Ed
+Source:   Blogspot.com
+URL:      http://edcrewe.blogspot.com/2026/08/from-routing-checks-to-trajectory.html
+Category: Artificial Intelligence
