@@ -1,20 +1,20 @@
-There Are Magic Hexagons of Every Order
+Open-source stealth USB hides an encrypted partition behind an 8GB decoy drive — 'Phantom Drive' appears as a regular USB stick until you create a text file to unlock the hidden data
 ============================================================
 
-Researchers have successfully proven the existence of abnormal magic hexagons for all orders greater than three by utilizing advanced AI-driven search algorithms and collaborative mathematical reasoning.
+Rootkit Labs has released the Phantomdrive, an open-source, inconspicuous USB device that uses AES-256 encryption and a hidden partition to protect sensitive data from unauthorized physical access.
 
 ### Key Points
-- A magic hexagon is a grid where every straight line sums to the same constant, with abnormal versions allowing non-consecutive starting numbers.
-- The researcher utilized GPT-5.6 Sol to develop a custom simulated annealing solver, successfully identifying magic hexagons up to order $n=21$.
-- By leveraging AI for iterative hypothesis testing and construction, the team established a deterministic algorithm for all orders $n>3$.
-- The final construction was refined to remove previous divisibility constraints, lowering the theoretical proof threshold to $n=114$.
-- The project highlights the evolving role of AI in mathematics, shifting from a simple computational tool to an active participant in creative proof generation.
+- The Phantomdrive utilizes a CH569 microcontroller and a user-provided microSD card to manage both a decoy 8GB partition and a hidden, encrypted storage area.
+- Firmware intercepts specific text file commands to unlock the hidden partition, ensuring the password is never written to the physical storage cells.
+- Security features include PBKDF2-HMAC-SHA-256 hashing with intentional delays to prevent brute-force attacks and hardware-bound encryption keys.
+- Users can spoof vendor IDs to make the device appear as a standard, low-cost USB drive from brands like Kingston to avoid suspicion.
+- The project is fully open-source, with schematics, PCB layouts, and firmware available on GitHub, or available for purchase from Rootkit Labs for $50.
 
 ### Why it Matters
-This breakthrough demonstrates how AI-human collaboration can solve long-standing combinatorial problems that were previously considered computationally intractable. It underscores a shift in mathematical research where AI agents generate complex proofs faster than humans can verify them, highlighting the growing necessity for machine-verifiable systems like Lean.
+This device provides a low-cost, DIY-friendly solution for individuals operating in environments where digital privacy and encryption rights are actively threatened. By prioritizing physical obfuscation and hardware-level security, it offers a practical tool for protecting sensitive information against forced disclosure or unauthorized inspection.
 
 ============================================================
-Author:   Konstantin Gukov
-Source:   Gukov.dev
-URL:      https://gukov.dev/math/2026/08/02/new-magic-hexagons.html
-Category: Artificial Intelligence
+Author:   editors@tomshardware.com (Hassam Nasir) , Hassam Nasir
+Source:   Tom's Hardware UK
+URL:      https://www.tomshardware.com/pc-components/usb-flash-drives/open-source-stealth-usb-hides-an-encrypted-partition-behind-an-8gb-decoy-drive-phantom-drive-appears-as-a-regular-usb-stick-until-you-create-a-text-file-to-unlock-the-hidden-data
+Category: Cybersecurity
