@@ -1,20 +1,20 @@
-What Happened to HackerOne?
+Over 181,000 AI meeting recordings left wide open in note taking app
 ============================================================
 
-HackerOne faces growing criticism from the security research community over claims that its AI-driven triage and testing tools are utilizing proprietary vulnerability data to improve platform automation.
+A critical security vulnerability in the AI meeting platform tl;dv has left the private meeting data of over 84,000 users exposed in an unsecured Firestore database for months.
 
 ### Key Points
-- Long-time researchers allege that HackerOne has shifted from a hacker-centric community to a profit-driven, sales-focused corporate entity.
-- The platform’s "Hai" AI assistant and new "Continuous Testing" product have sparked concerns regarding the potential use of researcher submissions for model training.
-- Despite official denials from leadership, internal documentation and marketing materials have caused confusion about how "contextual learning" impacts future automated triage.
-- Critics argue that the platform’s feature development has stagnated, leading to a decline in user experience and a lack of transparency regarding data usage.
-- Co-founders have engaged in damage control, promising that no model training occurs while acknowledging the need for better communication and incentive structures.
+- The vulnerability allows any authenticated user to query the entire "meetings" collection, exposing email addresses, conference IDs, and real-time recording statuses.
+- Researchers confirmed the flaw by joining live, uninvited meetings hosted by government entities and universities, including the Malaysian Ministry of Education.
+- Data from 35,003 unique domains is affected, including sensitive records from government agencies across 23 countries and major corporations like HubSpot.
+- An additional internal application, "World Cup Pick'em," lacks authentication, leaking the full names and corporate email addresses of tl;dv employees.
+- Despite multiple disclosures beginning in January 2026, the company has failed to secure the database or respond to security inquiries as of July 2026.
 
 ### Why it Matters
-The controversy highlights a deepening rift between bug bounty platforms and the ethical hackers who power them, raising questions about data ownership in the age of AI. As platforms prioritize automated efficiency and B2B sales, they risk alienating the security experts necessary for identifying critical vulnerabilities.
+This incident highlights a severe failure in data privacy and tenant isolation for a platform that records sensitive corporate, government, and academic communications. The lack of remediation despite repeated warnings raises significant concerns regarding the company's commitment to its stated SOC2 and GDPR compliance standards.
 
 ============================================================
-Author:   Joel Margolis
-Source:   Teknogeek.io
-URL:      https://blog.teknogeek.io/posts/what-happened-to-hackerone/
+Author:   BobDaHacker
+Source:   Bobdahacker.com
+URL:      https://bobdahacker.com/blog/tldv-hack
 Category: Cybersecurity

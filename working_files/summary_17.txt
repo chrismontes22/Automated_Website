@@ -1,20 +1,20 @@
-Act like it is science
+Meta Muse Glimmer – open weights 30B local coding model
 ============================================================
 
-Economist Tyler Cowen challenges critics of recent AI security incidents to provide empirical, data-driven forecasts regarding the long-term financial impact of potential cybersecurity threats on the industry.
+Meta Superintelligence Labs has released Muse Glimmer, a 30-billion-parameter open-weights model optimized for local agent workflows, available now on Hugging Face under an Apache 2.0 license.
 
 ### Key Points
-- Tyler Cowen argues that current concerns regarding AI security breaches often lack rigorous, scientific evidence to support their pessimistic outlooks.
-- Critics are asked to outline specific methodologies for estimating future cybersecurity costs associated with AI vulnerabilities over the next two to three years.
-- The proposal suggests creating numerical cost projections under various regulatory and safety scenarios to allow for future verification.
-- Cowen questions the conviction of skeptics by asking if they have shorted stocks or assets in response to their stated fears about AI risks.
-- The request aims to shift the public discourse from subjective anxiety toward a more objective, evidence-based analysis of technological risks.
+- Muse Glimmer is a 30-billion-parameter model designed to run locally on consumer hardware like PCs and Macs using 4-bit quantization.
+- The model supports complex agentic tasks, including multi-step reasoning, precise tool calling, failure recovery, and multimodal input processing.
+- It utilizes a lightweight "DFlash" drafter model to enable faster text generation through speculative decoding.
+- The release includes integrations for llama.cpp, MLX, and ExecuTorch, with further support from partners like AMD, Intel, and NVIDIA.
+- Performance was validated against benchmarks such as SWE-Bench and DeepSearch QA, showing competitive results against models like Gemma4-31B and Qwen3.6-27B.
 
 ### Why it Matters
-This call for empirical rigor highlights a growing tension between speculative fears regarding AI safety and the need for quantifiable economic risk assessment. By demanding specific predictions, the proposal encourages a more disciplined approach to evaluating how emerging technologies impact market stability and corporate security expenditures.
+By enabling high-performance agentic AI to run locally, this release reduces reliance on cloud infrastructure and enhances user privacy for sensitive tasks. This shift allows developers to build responsive, offline-capable autonomous agents that can manage personal data and complex workflows directly on consumer devices.
 
 ============================================================
-Author:   Tyler Cowen
-Source:   Marginalrevolution.com
-URL:      https://marginalrevolution.com/marginalrevolution/2026/08/act-like-it-is-science.html
-Category: Tech Business & Markets
+Author:   Meta Superintelligence Labs
+Source:   Meta.ai
+URL:      https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model
+Category: Artificial Intelligence

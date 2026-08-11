@@ -1,5 +1,185 @@
 [
   {
+    "source": "The Next Web",
+    "category": "Artificial Intelligence",
+    "summary": "OpenAI has launched GPT-5.6-Cyber, a specialized model designed for vulnerability research and exploit development, accessible exclusively through the company’s vetted Daybreak cybersecurity program for authorized industry partners.\n\n### Key Points\n- GPT-5.6-Cyber features a 95% completion rate for high-risk cyber tasks, significantly higher than the 1.5% rate of standard models with active safeguards.\n- The model successfully identified two previously unknown vulnerabilities in Google’s V8 JavaScript engine, resulting in the issuance of CVE-2026-15903.\n- OpenAI’s Daybreak program is now divided into \"Blue\" for general-purpose defensive work and \"Red\" for specialized offensive security testing.\n- Access is strictly controlled through identity verification, legal attestations, and a mandatory requirement for hardware security keys starting September 1, 2026.\n- Early commercial partners include major firms such as Cisco, IBM, CrowdStrike, Palo Alto Networks, and Accenture.\n\n### Why it Matters\nThis release signals a strategic shift toward providing security professionals with powerful offensive AI tools to preemptively identify and patch vulnerabilities before malicious actors can exploit them. By formalizing this access through the Daybreak program, OpenAI is attempting to balance the risks of dual-use technology with the urgent industry demand for advanced defensive capabilities.",
+    "title": "OpenAI paused a model over cyber risk on Friday. On Monday it shipped one trained to refuse less.",
+    "url": "https://thenextweb.com/news/openai-gpt-5-6-cyber-daybreak-expansion-refusal-rate",
+    "processed_at": "2026-08-11T19:59:56.152772",
+    "author": "Ana Maria Constantin"
+  },
+  {
+    "source": "Bobdahacker.com",
+    "category": "Cybersecurity",
+    "summary": "A critical security vulnerability in the AI meeting platform tl;dv has left the private meeting data of over 84,000 users exposed in an unsecured Firestore database for months.\n\n### Key Points\n- The vulnerability allows any authenticated user to query the entire \"meetings\" collection, exposing email addresses, conference IDs, and real-time recording statuses.\n- Researchers confirmed the flaw by joining live, uninvited meetings hosted by government entities and universities, including the Malaysian Ministry of Education.\n- Data from 35,003 unique domains is affected, including sensitive records from government agencies across 23 countries and major corporations like HubSpot.\n- An additional internal application, \"World Cup Pick'em,\" lacks authentication, leaking the full names and corporate email addresses of tl;dv employees.\n- Despite multiple disclosures beginning in January 2026, the company has failed to secure the database or respond to security inquiries as of July 2026.\n\n### Why it Matters\nThis incident highlights a severe failure in data privacy and tenant isolation for a platform that records sensitive corporate, government, and academic communications. The lack of remediation despite repeated warnings raises significant concerns regarding the company's commitment to its stated SOC2 and GDPR compliance standards.",
+    "title": "Over 181,000 AI meeting recordings left wide open in note taking app",
+    "url": "https://bobdahacker.com/blog/tldv-hack",
+    "processed_at": "2026-08-11T20:00:04.601508",
+    "author": "BobDaHacker"
+  },
+  {
+    "source": "Meta.com",
+    "category": "Artificial Intelligence",
+    "summary": "Meta CEO Mark Zuckerberg outlines a philosophy for the future of superintelligence, advocating for the broad distribution of AI tools to empower individuals rather than centralizing power within institutions.\n\n### Key Points\n- Meta aims to provide billions of users with personal AI agents capable of assisting with health, career, and creative tasks while maintaining end-to-end encryption.\n- The company plans to resume releasing open-source AI models to prevent the risks associated with centralized, proprietary control of superintelligent systems.\n- Zuckerberg proposes a \"Community Compact\" to ensure data center investments provide tangible local benefits, such as infrastructure funding and skilled trade training.\n- To address safety, Meta suggests frontier labs share intermediate training checkpoints with the government to help harden critical infrastructure against cybersecurity and biological threats.\n- The strategy emphasizes that a balance of power, where individuals and businesses use competing AI agents, is the most effective way to ensure safety and alignment.\n\n### Why it Matters\nBy prioritizing individual empowerment over centralized control, Meta is positioning its AI strategy as a democratic alternative to the \"doom-focused\" discourse surrounding superintelligence. This approach seeks to foster broad economic prosperity and innovation while attempting to mitigate existential risks through competitive checks and balances rather than restrictive regulation.",
+    "title": "The Future Is for Everyone – The Path to a Positive AI Future",
+    "url": "https://www.meta.com/thefutureisforeveryone/",
+    "processed_at": "2026-08-11T20:00:13.931122",
+    "author": "Mark Zuckerberg, Founder and CEO, Meta"
+  },
+  {
+    "source": "Al Jazeera English",
+    "category": "Cybersecurity",
+    "summary": "North Korean state-linked hacking group Kimsuky is utilizing artificial intelligence to automate and scale sophisticated spear-phishing attacks targeting military, diplomatic, and academic sectors, according to a new report.\n\n### Key Points\n- South Korean cybersecurity firm Genians identified Kimsuky’s use of AI to generate malicious documents disguised as legitimate research reports and invitations.\n- The hackers utilize offline, open-source tools including Ollama, GPT-4All, and Msty to run large language models without triggering internet-based security detections.\n- This shift allows threat actors to produce high-quality, deceptive content rapidly, significantly increasing the efficiency of large-scale social engineering campaigns.\n- North Korean state-backed groups have a history of cyber operations, including the theft of over $2 billion in cryptocurrency during the first nine months of 2025.\n\n### Why it Matters\nThe integration of generative AI into cyber warfare lowers the technical barrier for entry, allowing threat actors to execute complex attacks with greater speed and volume. This development signals a broader shift in the global threat landscape where AI-supported social engineering is becoming a standard, highly effective tool for state-sponsored espionage.",
+    "title": "North Korea’s hackers using AI for attacks, cybersecurity firm says",
+    "url": "https://www.aljazeera.com/economy/2026/8/10/north-koreas-hackers-using-ai-for-attacks-cybersecurity-firm-says",
+    "processed_at": "2026-08-11T20:00:22.246107",
+    "author": "John Power"
+  },
+  {
+    "source": "Yahoo Entertainment",
+    "category": "Artificial Intelligence",
+    "summary": "Meta CEO Mark Zuckerberg predicts that artificial intelligence will create an abundance of new career opportunities rather than causing a widespread collapse of the global labor market.\n\n### Key Points\n- Mark Zuckerberg argues that AI will catalyze new roles, including virtual world builders, personal biologists, and independent product designers.\n- The Meta CEO criticized peers like Sam Altman and Dario Amodei for suggesting that AI could lead to a dystopian elimination of human labor.\n- Zuckerberg acknowledged a potential \"difficult period\" of transition if automation outpaces the ability of the workforce to acquire new skills.\n- Meta has invested $115 million into the America's Workforce Academy to train individuals for high-demand roles as data center technicians.\n- The company emphasizes the need for more skilled tradespeople, such as electricians and carpenters, to support the ongoing infrastructure buildout.\n\n### Why it Matters\nThis perspective offers a counter-narrative to growing industry fears regarding the potential for AI-driven mass unemployment and the concentration of technological power. By focusing on workforce training and new job categories, Zuckerberg’s stance highlights the critical role of human adaptation in navigating the economic shifts caused by rapid automation.",
+    "title": "Mark Zuckerberg says the future will have an ‘abundance of jobs’—and predicts a wave of new careers like world builders and personal biologists",
+    "url": "https://finance.yahoo.com/technology/ai/articles/mark-zuckerberg-says-future-abundance-150233108.html",
+    "processed_at": "2026-08-11T20:00:32.310891",
+    "author": "Preston Fore"
+  },
+  {
+    "source": "CNET",
+    "category": "Cybersecurity",
+    "summary": "Homeowners can significantly enhance their digital and physical privacy by adjusting smart device settings, utilizing local storage, and removing outdated property information from public real estate platforms.\n\n### Key Points\n- Use physical shutters or off-switches on smart cameras and microphones to prevent unauthorized remote access when devices are not in use.\n- Disable unnecessary data-sharing, voice history, and AI recognition features within the settings of smart home apps like Amazon Alexa and Ring.\n- Prioritize local storage options, such as microSD cards or hubs from brands like Eufy or Wyze, to keep video data off cloud servers.\n- Remove interior photos and floor plans from real estate sites like Zillow and request that Google Maps blur your home’s street view.\n- Encrypt home network traffic by installing a VPN directly on your Wi-Fi router to protect all connected smart devices from third-party tracking.\n\n### Why it Matters\nTreating smart home devices as connected computers rather than simple appliances is essential for maintaining personal security in an increasingly digitized living space. Proactive management of these settings reduces the risk of data breaches and unauthorized surveillance, giving users greater control over their private information.",
+    "title": "Your Home Needs These 8 Headache-Free Privacy Boosts",
+    "url": "https://www.cnet.com/home/security/your-home-needs-these-headache-free-privacy-boosts/",
+    "processed_at": "2026-08-11T20:00:42.520305",
+    "author": "Tyler Lacoma"
+  },
+  {
+    "source": "The Verge",
+    "category": "Phones, Laptops, and Gadgets",
+    "summary": "Keychron’s K2 HE wireless mechanical keyboard featuring customizable Hall effect sensors is currently discounted to $103.99 at Amazon, matching the lowest price recorded for the device this year.\n\n### Key Points\n- The Keychron K2 HE features a 75-percent layout, aluminum construction, and hot-swappable switches with Rapid Trigger technology.\n- Connectivity options include USB-C, Bluetooth, and a 2.4GHz wireless connection, with full support for Windows, macOS, and Linux.\n- The Gigabyte Aero X16 gaming laptop, equipped with an Nvidia RTX 5060 and Ryzen AI 7 350 processor, is available at Walmart for $1,099.\n- Sony’s InZone H9 Mk. 2 wireless headset is discounted to $248, while the wired InZone H6 Air is available for $178.\n- A Hoto electric screwdriver with three torque settings and 12 bits is priced at $27.99 on Amazon using a specific promotional code.\n\n### Why it Matters\nThese discounts provide significant savings on high-performance gaming peripherals and hardware, making advanced features like Hall effect sensors more accessible to mainstream consumers. The price drops on established brands like Sony and Keychron offer a timely opportunity for users to upgrade their setups with reliable, feature-rich equipment.",
+    "title": "Keychron’s wireless Hall effect keyboard is back to its lowest price",
+    "url": "https://www.theverge.com/gadgets/977300/keychron-hall-effect-sony-inzone-headsets-gaming-laptop-deal-sale",
+    "processed_at": "2026-08-11T20:00:59.309411",
+    "author": "Cameron Faulkner"
+  },
+  {
+    "source": "Business Insider",
+    "category": "Artificial Intelligence",
+    "summary": "Boston Consulting Group has appointed three veteran leaders to oversee its North American AI and technology divisions, signaling a strategic shift toward prioritizing human-centric AI integration and organizational change.\n\n### Key Points\n- Amanda Luther will lead regional AI and functional activation, while Silvio Palumbo takes over BCG X and Natasha Taylor manages technology and digital operations.\n- The firm is prioritizing employee upskilling and experimentation to ensure staff can effectively leverage generative AI tools in client-facing projects.\n- Consulting firms are increasingly recruiting diverse technical talent, including engineers and technologists, to meet the growing demand for hands-on digital transformation.\n- Leadership mandates now emphasize managing organizational change and helping clients achieve measurable outcomes rather than traditional advisory services.\n- Data indicates that 72% of CEOs now act as primary decision-makers for AI initiatives, requiring consultants to provide more sophisticated, data-driven strategic support.\n\n### Why it Matters\nThe consulting industry is undergoing a fundamental transformation as firms move away from time-based billing toward outcome-based models driven by AI implementation. By elevating leaders who prioritize both technical expertise and change management, firms like BCG are attempting to bridge the gap between complex AI deployment and the human organizational shifts required to realize actual ROI.",
+    "title": "BCG is betting that the best AI leaders know how to lead people, too",
+    "url": "https://www.businessinsider.com/bcg-leadership-ai-transformation-people-skills-2026-8#article",
+    "processed_at": "2026-08-11T20:05:17.156715",
+    "author": "Lakshmi Varanasi"
+  },
+  {
+    "source": "NPR",
+    "category": "Artificial Intelligence",
+    "summary": "The Federal Aviation Administration has awarded an $875 million contract to Air Space Intelligence to modernize U.S. airspace management using predictive artificial intelligence and data analytics technology.\n\n### Key Points\n- Alaska Airlines reported saving approximately one million gallons of fuel annually by using the Flyways AI software to optimize flight routes.\n- The FAA’s new SMART system aims to provide a unified, real-time view of national airspace to prevent bottlenecks and congestion before they occur.\n- Air Space Intelligence has previously partnered with Delta Air Lines, United Airlines, the U.S. Army, and the U.S. Air Force.\n- The technology functions as a decision-making aid for human dispatchers and controllers rather than an autonomous replacement for human oversight.\n\n### Why it Matters\nThis initiative represents a significant shift toward integrating predictive analytics into national infrastructure to improve operational efficiency and reduce environmental impact. If successful, the transition could fundamentally transform how air traffic controllers manage the world's busiest and most complex airspace.",
+    "title": "The FAA wants to reboot the nation's airspace. This airline shows how it might work",
+    "url": "https://www.npr.org/2026/08/10/nx-s1-5872752/airspace-reboot-alaska-airlines-flyways",
+    "processed_at": "2026-08-11T20:05:25.473561",
+    "author": "Joel Rose"
+  },
+  {
+    "source": "Fb.com",
+    "category": "Artificial Intelligence",
+    "summary": "Meta CEO Mark Zuckerberg outlines a philosophy for the future of superintelligence, advocating for the broad distribution of AI tools to empower individuals rather than centralizing power within institutions.\n\n### Key Points\n- Meta aims to provide personal AI agents to billions of users, focusing on individual empowerment, privacy, and tools for creation and learning.\n- The company plans to resume releasing open-source AI models to prevent the risks associated with centralized, proprietary superintelligence.\n- Zuckerberg proposes a \"balance of power\" model where competing AI agents and diverse user goals act as natural checks against systemic risks.\n- Meta is implementing a new governance structure that grants its independent board of directors authority over safety criteria and model releases.\n- The strategy includes proactive collaboration with the U.S. government to harden critical infrastructure against cybersecurity and biological threats.\n\n### Why it Matters\nBy prioritizing the widespread distribution of AI, Meta seeks to counter the narrative that superintelligence must be restricted to a few elite institutions to remain safe. This approach aims to foster economic growth and personal agency while positioning open-source development as a vital component of national security and democratic stability.",
+    "title": "The Future is for Everyone",
+    "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/",
+    "processed_at": "2026-08-11T20:05:40.148387",
+    "author": "Facebook"
+  },
+  {
+    "source": "Cryptoprowl.com",
+    "category": "Tech Business & Markets",
+    "summary": "U.S. hedge funds are shifting their strategy toward Bitcoin as professional traders begin betting on a price rally following a period of significant market decline throughout this year.\n\n### Key Points\n- Data from CryptoQuant indicates hedge funds are moving from short positions to bullish wagers on Bitcoin futures via the Chicago Mercantile Exchange.\n- Major firms including Citadel, Bridgewater Associates, and Renaissance Technologies have historically maintained negative stances on cryptocurrency assets.\n- Bitcoin has remained rangebound between $60,000 and $65,000 since late June, following a yearly low of $58,000.\n- Current futures market activity suggests that many institutional traders now view the $58,000 price point as a potential bottom for the asset.\n- Bitcoin is currently trading at $64,800, significantly below its all-time high of over $126,000 recorded last October.\n\n### Why it Matters\nThe pivot by institutional investors signals a potential change in market sentiment for the largest cryptocurrency by market capitalization. This shift could provide necessary momentum to break Bitcoin out of its current trading range and influence broader digital asset valuations.",
+    "title": "Hedge Funds Start To Bet On A Bitcoin Rally",
+    "url": "https://www.cryptoprowl.com/releases/hedge-funds-start-to-bet-on-a-bitcoin-rally-6368",
+    "processed_at": "2026-08-11T20:05:48.597234",
+    "author": "CryptoProwl"
+  },
+  {
+    "source": "MacRumors",
+    "category": "Tech Business & Markets",
+    "summary": "Apple has reportedly canceled plans for a radical all-glass iPhone redesign, leading Jefferies to downgrade the company’s stock due to concerns over production yields and future pricing power.\n\n### Key Points\n- Jefferies analyst Edison Lee reported the cancellation of the all-glass iPhone project, which was originally slated for a 2027 release.\n- The project was scrapped primarily due to poor manufacturing yields, which prevented the production of defect-free units.\n- Following the report, Jefferies downgraded Apple stock to \"Underperform\" and lowered its price target to $263.66.\n- Apple shares dropped 2.1% as analysts expressed concern over the company's ability to increase average selling prices and margins.\n- The canceled device was projected to retail for approximately $2,060, serving as a premium flagship for the iPhone's 20th anniversary.\n\n### Why it Matters\nThe cancellation signals a significant challenge for Apple’s strategy to offset rising memory costs by introducing higher-priced, premium hardware. This setback raises questions about the company's ability to drive revenue growth through major design innovations as it continues to navigate the slow rollout of its AI-focused features.",
+    "title": "Apple's All-Glass 20th Anniversary iPhone Reportedly Canceled",
+    "url": "https://www.macrumors.com/2026/08/10/all-glass-20th-anniversary-iphone-canceled/",
+    "processed_at": "2026-08-11T20:05:57.922047",
+    "author": "Hartley Charlton"
+  },
+  {
+    "source": "Android Central",
+    "category": "Phones, Laptops, and Gadgets",
+    "summary": "As Google prepares to launch the Pixel 11 series, consumers must decide whether to purchase discounted Pixel 10 models now or wait for the upcoming flagship's rumored hardware upgrades.\n\n### Key Points\n- The Google Pixel 11 is expected to launch with a $100 price increase across the lineup, starting at $899 for the base model.\n- Leaked pricing suggests the Pixel 11 Pro will cost $1,099, while the Pixel 11 Pro XL will be priced at $1,299.\n- The Pixel 10a is currently available for $424, offering a budget-friendly alternative to the upcoming flagship series.\n- The Pixel 11 is rumored to feature the Tensor G6 chipset and a potential \"Pixel Glow\" rear lighting interface.\n- Official details for the Pixel 11 will be revealed during the Made by Google event on Wednesday, August 12, at 3 p.m. PT.\n\n### Why it Matters\nRising smartphone prices and the integration of AI features are changing traditional consumer buying habits, making the decision between current and next-generation hardware more complex. Evaluating these trade-offs helps users determine if the latest performance improvements and design novelties justify the higher entry costs of new flagship devices.",
+    "title": "Should you wait for the Google Pixel 11? Here's everything you should consider and how I'd spend my money",
+    "url": "https://www.androidcentral.com/phones/google-pixel/should-you-wait-for-google-pixel-11",
+    "processed_at": "2026-08-11T20:06:08.963504",
+    "author": "bradypsnyder@gmail.com (Brady Snyder) , Brady Snyder"
+  },
+  {
+    "source": "Jezebel",
+    "category": "Tech Business & Markets",
+    "summary": "Amazon has received regulatory approval to construct a massive natural gas power plant in West Texas to support a new data center, significantly increasing its carbon emissions.\n\n### Key Points\n- The facility will utilize 35 natural gas turbines to generate up to 7.65 gigawatts of power exclusively for the Amazon data center.\n- Projected annual emissions reach 33 million tons of carbon dioxide, more than doubling the output of the current most polluting U.S. power plant.\n- Located in Pecos County, the project is designed to operate independently of the local power grid to avoid impacting residential electricity costs.\n- The development highlights a growing trend among tech companies prioritizing rapid AI infrastructure deployment over previous corporate carbon neutrality commitments.\n\n### Why it Matters\nThis project underscores the escalating tension between the massive energy demands of commercial artificial intelligence and corporate sustainability pledges. It signals a potential shift in the tech industry toward on-site fossil fuel generation, which could significantly complicate national efforts to reduce greenhouse gas emissions.",
+    "title": "Amazon Is Building the Country’s Single Most Polluting Power Plant for a Texas Data Center",
+    "url": "https://www.jezebel.com/amazon-texas-power-plant-pollution-record-levels-co2-emissions-33-million-tons-data-centers-ai",
+    "processed_at": "2026-08-11T20:14:47.105481",
+    "author": "Jim Vorel"
+  },
+  {
+    "source": "Kotaku",
+    "category": "Cybersecurity",
+    "summary": "Valve is notifying European Steam hardware customers that their personal information may have been compromised following a late July cyberattack on the shipping partner CEVA Logistics.\n\n### Key Points\n- CEVA Logistics, Valve’s European shipping partner, suffered a cyberattack between July 29 and August 1.\n- Compromised data includes customer names, email addresses, phone numbers, and physical shipping addresses.\n- Valve confirmed that Steam account credentials and payment information remain secure and were not accessed.\n- The breach potentially affects European customers who purchased Steam hardware within 90 days of the incident.\n- Valve warned affected users to remain vigilant against phishing attempts via email, SMS, or phone calls.\n\n### Why it Matters\nThis incident highlights the significant security risks associated with third-party logistics providers handling sensitive customer data. Affected users should exercise caution regarding unsolicited communications to avoid falling victim to targeted phishing scams resulting from the leaked contact information.",
+    "title": "Steam Machine And Controller User Data Leaks After Valve’s European Supplier Gets Hit With Cyber Attack",
+    "url": "https://kotaku.com/steam-machine-and-controller-user-data-leaks-after-valves-european-supplier-gets-hit-with-cyber-attack-2000722955",
+    "processed_at": "2026-08-11T20:14:57.532802",
+    "author": "Lewis Parker"
+  },
+  {
+    "source": "Hackaday",
+    "category": "Cybersecurity",
+    "summary": "Users can bypass commercial limitations and maintain full control over their private networks by using Headscale, an open-source, self-hosted alternative to the popular Tailscale control server.\n\n### Key Points\n- Headscale functions as a self-hosted control plane that is fully compatible with existing official Tailscale client software.\n- The platform supports core features including MagicDNS, subnet routers, exit nodes, ACLs, and Tailscale SSH for secure remote access.\n- Users can manage their self-hosted networks via the command line or through Headplane, an open-source web-based administration interface.\n- Deployment typically requires a Linux or BSD server with a public IP address, often hosted on a small VPS or local machine.\n- While Tailscale provides public DERP relay servers for encrypted traffic, advanced users have the option to host their own relay infrastructure.\n\n### Why it Matters\nSelf-hosting the control plane allows users to bypass commercial service limits, avoid vendor lock-in, and maintain complete privacy over their network configuration. This approach provides a robust solution for hobbyists and power users who require total control over their infrastructure without sacrificing the ease of use provided by WireGuard-based networking.",
+    "title": "Linux Fu: Heads or Tails for VPN",
+    "url": "https://hackaday.com/2026/08/10/linux-fu-heads-or-tails-for-vpn/",
+    "processed_at": "2026-08-11T20:19:41.370298",
+    "author": "Al Williams"
+  },
+  {
+    "source": "Meta.ai",
+    "category": "Artificial Intelligence",
+    "summary": "Meta Superintelligence Labs has released Muse Glimmer, a 30-billion-parameter open-weights model optimized for local agent workflows, available now on Hugging Face under an Apache 2.0 license.\n\n### Key Points\n- Muse Glimmer is a 30-billion-parameter model designed to run locally on consumer hardware like PCs and Macs using 4-bit quantization.\n- The model supports complex agentic tasks, including multi-step reasoning, precise tool calling, failure recovery, and multimodal input processing.\n- It utilizes a lightweight \"DFlash\" drafter model to enable faster text generation through speculative decoding.\n- The release includes integrations for llama.cpp, MLX, and ExecuTorch, with further support from partners like AMD, Intel, and NVIDIA.\n- Performance was validated against benchmarks such as SWE-Bench and DeepSearch QA, showing competitive results against models like Gemma4-31B and Qwen3.6-27B.\n\n### Why it Matters\nBy enabling high-performance agentic AI to run locally, this release reduces reliance on cloud infrastructure and enhances user privacy for sensitive tasks. This shift allows developers to build responsive, offline-capable autonomous agents that can manage personal data and complex workflows directly on consumer devices.",
+    "title": "Meta Muse Glimmer – open weights 30B local coding model",
+    "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+    "processed_at": "2026-08-11T20:19:52.496518",
+    "author": "Meta Superintelligence Labs"
+  },
+  {
+    "source": "Techdirt",
+    "category": "Tech Business & Markets",
+    "summary": "A New Mexico judge has ordered Meta to implement significant product design changes for minors, effectively acting as a product manager to address alleged harms to youth mental health.\n\n### Key Points\n- Judge Bryan Biedscheid ordered Meta to pay an additional $567 million in remedies following a state lawsuit regarding child safety.\n- The ruling mandates age verification for all users to enforce restrictions on accounts belonging to individuals under 18.\n- Meta must disable push notifications during school hours and overnight, and hide \"like\" counts for minor accounts by default.\n- The court requires Meta to display daily information screens about safe platform use and fund a state-approved educational campaign.\n- The judge prohibited Meta from re-enabling end-to-end encryption on Instagram, citing concerns over adolescent safety.\n\n### Why it Matters\nThis ruling sets a controversial precedent by allowing a judge to dictate specific software design features and user interface elements rather than relying on industry experts or empirical data. It raises significant concerns regarding the limits of judicial authority over private technology companies and the potential for unintended negative consequences when courts mandate product changes without rigorous testing or scientific consensus.",
+    "title": "New Mexico Judge Appoints Himself Meta’s New Product Manager",
+    "url": "http://www.techdirt.com/2026/08/10/new-mexico-judge-appoints-himself-metas-new-product-manager/",
+    "processed_at": "2026-08-11T20:20:01.575242",
+    "author": "Mike Masnick"
+  },
+  {
+    "source": "MarketBeat",
+    "category": "Tech Business & Markets",
+    "summary": "Keel Infrastructure reported a $141 million operating loss for the second quarter as the company accelerates its strategic transition from Bitcoin mining toward high-performance AI data center development.\n\n### Key Points\n- Second-quarter revenue fell to $30 million from $61 million, driven by lower Bitcoin prices and the shutdown of cryptocurrency mining operations.\n- The company reported a $141 million operating loss, which included $63 million in accelerated depreciation from retired mining rigs.\n- Keel raised $458 million through a convertible senior notes offering to fund power capacity expansion at its Pennsylvania sites.\n- Development is advancing at three priority sites in Moses Lake, Washington, and Sharon and Panther Creek, Pennsylvania, with commissioning expected by 2027.\n- Total liquidity reached $819 million as of August 7, intended to support site development and operations through 2028.\n\n### Why it Matters\nThe company’s pivot highlights the growing industry trend of repurposing power-constrained infrastructure to meet the surging demand for artificial intelligence and high-performance computing. By exiting volatile cryptocurrency mining to focus on long-term data center leases, Keel aims to secure more stable, utility-backed revenue streams.",
+    "title": "Bitfarms Q2 Earnings Call Highlights",
+    "url": "https://www.marketbeat.com/instant-alerts/bitfarms-q2-earnings-call-highlights-2026-08-10/?utm_source=yahoofinance&amp;utm_medium=yahoofinance",
+    "processed_at": "2026-08-11T20:20:26.884167",
+    "author": "MarketBeat"
+  },
+  {
+    "source": "9to5Mac",
+    "category": "Phones, Laptops, and Gadgets",
+    "summary": "Apple is reportedly exploring the development of a round-faced smartwatch to compete with traditional designs, while industry speculation suggests the company may also prioritize a future smart ring.\n\n### Key Points\n- Bloomberg reports that Apple is investigating a circular form factor for future Apple Watch models to appeal to users who prioritize traditional aesthetics.\n- The current rectangular Apple Watch design remains favored for its high information density, which aligns with standard screen formats for phones and computers.\n- A round display could serve users who primarily utilize the device for health tracking, sleep monitoring, and emergency features rather than content consumption.\n- Industry analysts and reports suggest that Apple executive Eddy Cue is a proponent of smart ring technology as a potential alternative to wrist-worn devices.\n- The growing popularity of products like the Oura Ring highlights a market shift toward unobtrusive, 24/7 health monitoring devices that do not require a screen.\n\n### Why it Matters\nA shift toward round smartwatches or a dedicated smart ring would allow Apple to capture consumers who prefer traditional watch aesthetics or less intrusive health-tracking hardware. This potential product diversification could expand Apple's footprint in the wearable market by catering to users who prioritize comfort and style over screen-based utility.",
+    "title": "A round Apple Watch is possible, but an Apple Ring more likely",
+    "url": "https://9to5mac.com/2026/08/10/a-round-apple-watch-is-possible-but-an-apple-ring-more-likely/",
+    "processed_at": "2026-08-11T20:24:55.602152",
+    "author": "Ben Lovejoy"
+  },
+  {
     "author": "Tuong Nguyen",
     "source": "CNET",
     "summary": "Top-rated VPN services including ExpressVPN, Surfshark, and NordVPN are currently offering significant discounts, with some subscription plans available for as little as $2 per month for new users.\n\n### Key Points\n- Surfshark offers plans starting at $2.49 per month, supporting unlimited devices and including optional features like virus protection and ad blocking.\n- ExpressVPN provides a 24-month plan that averages $3 per month, maintaining high performance and security standards despite its acquisition by Kape Technologies.\n- NordVPN features discounts of up to 75% on multi-year plans, which support up to 10 devices and include tools like password management and malware protection.\n- Private Internet Access and IPVanish serve as budget-friendly alternatives, with current promotional pricing around $2 per month for long-term commitments.\n- Proton VPN remains the only free service recommended by experts, though its paid \"Plus\" tier offers enhanced functionality for $3 per month.\n- Most providers offer a 30-day money-back guarantee, though users should note that many advertised deals require upfront payments for multi-year subscriptions.\n\n### Why it Matters\nUsing a VPN provides essential encryption for sensitive data, protecting users from cybercrime while shopping or banking online. These current discounts make professional-grade digital security accessible for a low monthly cost, though consumers should carefully review long-term contract commitments and ownership changes before purchasing.",

@@ -1,20 +1,20 @@
-Product showcase: Enpass Password Manager breaks away from the proprietary cloud model
+Linux Fu: Heads or Tails for VPN
 ============================================================
 
-Enpass offers a versatile password management solution that allows users to store encrypted data locally or via third-party cloud services instead of relying on a proprietary cloud model.
+Users can bypass commercial limitations and maintain full control over their private networks by using Headscale, an open-source, self-hosted alternative to the popular Tailscale control server.
 
 ### Key Points
-- Enpass supports cross-platform synchronization across Windows, macOS, Linux, Android, and iOS, along with major web browsers.
-- Users can store encrypted vaults in personal cloud accounts like iCloud, Google Drive, Dropbox, OneDrive, Nextcloud, or WebDAV.
-- The application includes built-in tools for password generation, breach monitoring, passkey management, and TOTP authentication codes.
-- Security features include biometric unlocking, AutoFill capabilities, and a comprehensive security dashboard to track password health and compromised accounts.
-- The platform allows for unlimited vaults, enabling users to separate personal and professional credentials within a single account interface.
+- Headscale functions as a self-hosted control plane that is fully compatible with existing official Tailscale client software.
+- The platform supports core features including MagicDNS, subnet routers, exit nodes, ACLs, and Tailscale SSH for secure remote access.
+- Users can manage their self-hosted networks via the command line or through Headplane, an open-source web-based administration interface.
+- Deployment typically requires a Linux or BSD server with a public IP address, often hosted on a small VPS or local machine.
+- While Tailscale provides public DERP relay servers for encrypted traffic, advanced users have the option to host their own relay infrastructure.
 
 ### Why it Matters
-By decoupling data storage from its own servers, Enpass provides a privacy-focused alternative for users who want control over where their sensitive information resides. This approach offers a balance between robust security features and the flexibility required for multi-device workflows across different operating systems.
+Self-hosting the control plane allows users to bypass commercial service limits, avoid vendor lock-in, and maintain complete privacy over their network configuration. This approach provides a robust solution for hobbyists and power users who require total control over their infrastructure without sacrificing the ease of use provided by WireGuard-based networking.
 
 ============================================================
-Author:   Anamarija Pogorelec
-Source:   Help Net Security
-URL:      https://www.helpnetsecurity.com/2026/08/10/product-showcase-enpass-password-manager/
+Author:   Al Williams
+Source:   Hackaday
+URL:      https://hackaday.com/2026/08/10/linux-fu-heads-or-tails-for-vpn/
 Category: Cybersecurity
