@@ -1,20 +1,20 @@
-I tested the MacBook Neo; now I know why the Googlebook will disappoint
+Run Android ARM64 VR APKs on Apple Vision Pro
 ============================================================
 
-Anticipation for the upcoming Googlebook has waned as reports suggest the device will prioritize aggressive Gemini AI integration over the user-controlled experience offered by competing laptop platforms.
+The new Klepton project enables Android ARM64 VR applications to run on Apple Vision Pro and macOS by translating native libraries without requiring Just-In-Time compilation.
 
 ### Key Points
-- The Googlebook is scheduled for a full reveal on August 12, following years of Google hardware development including the Pixelbook series.
-- Early demonstrations of the "Magic Cursor" feature have been criticized for being unresponsive and clunky during hands-on testing.
-- Unlike Apple’s approach with Apple Intelligence, which allows users to opt out entirely, Google integrates Gemini across its entire software ecosystem.
-- The author opted for a MacBook Neo, citing a preference for hardware that does not force persistent AI suggestions or reminders on the user.
-- Google officially discontinued its previous in-house laptop hardware line in 2023, ending the legacy of the Pixelbook.
+- Klepton uses the `klepton-ld` tool to convert Android .so libraries into Apple-compatible .dylib and .framework formats.
+- Graphics rendering is handled by translating GLES 3.2 to ANGLE GLES 3.0 and Vulkan to MoltenVK for Metal compatibility.
+- The runtime provides reimplementations of Android-specific components like ALooper, ANativeWindow, and JNIEnv to bridge the OS gap.
+- Developers can currently run the game Beat Saber on visionOS and macOS, though some minor graphical issues remain.
+- The project includes automated build scripts for macOS and visionOS, with ongoing work to support Steam VR Link.
 
 ### Why it Matters
-The shift toward "AI-first" hardware design highlights a growing divide in how major tech companies approach consumer autonomy and software integration. Users are increasingly prioritizing devices that offer control over AI features, potentially creating a market disadvantage for products that mandate constant engagement with generative tools.
+This development significantly lowers the barrier for porting existing Android-based VR content to Apple’s spatial computing platform. By bypassing the need for JIT compilation, Klepton provides a viable path for developers to bring legacy VR titles to the Vision Pro ecosystem.
 
 ============================================================
-Author:   Jon Gilbert
-Source:   Android Police
-URL:      https://www.androidpolice.com/i-tested-the-macbook-neo-now-i-know-why-the-googlebook-will-disappoint/
+Author:   shinyquagsire23
+Source:   Github.com
+URL:      https://github.com/shinyquagsire23/Klepton
 Category: Phones, Laptops, and Gadgets
