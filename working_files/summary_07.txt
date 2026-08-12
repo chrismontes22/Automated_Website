@@ -1,20 +1,19 @@
-Cybersecurity stocks hit record highs, and one analyst target lasted a morning
+A Zoom Screen-Sharing Bug Let Anyone Take Over Other Devices on a Call
 ============================================================
 
-Cybersecurity stocks including CrowdStrike and Palo Alto Networks reached record highs on Monday following industry discussions at the Black Hat conference regarding the evolving threat of AI agents.
+Researchers from A Security discovered critical vulnerabilities in Zoom’s screen-sharing annotation protocol that could allow attackers to take control of a target's device without any user interaction.
 
 ### Key Points
-- CrowdStrike shares rose 5.28% while Palo Alto Networks gained 4.90%, reaching a trading price of $381.70.
-- BTIG analysts raised price targets for Palo Alto, CrowdStrike, and Rubrik, citing the fundamental shift in the threat landscape caused by AI.
-- Security firms have documented real-world ransomware attacks executed by AI agents, moving the technology from theoretical to practical application.
-- Other sector players including Tenable, Rubrik, Netskope, and Zscaler saw gains of approximately 5% to 7% during the trading session.
-- Private security firm Mate Security secured $50 million in funding during the same week, highlighting increased investor interest in AI-driven defense tools.
+- A Security researchers identified the flaws in early June using publicly available AI models with fewer than 20 prompts.
+- The vulnerabilities affected all Zoom-supported operating systems, including Windows, macOS, Linux, iOS, and Android.
+- Zoom has released both server-side and client-side patches to address the security risks associated with the real-time annotation feature.
+- The exploit allowed for silent device takeovers simply by joining a call, bypassing the need for victim interaction.
 
 ### Why it Matters
-The surge reflects growing market confidence that AI-driven security threats will force enterprises to increase their cybersecurity spending significantly. While these gains are currently driven by analyst sentiment rather than earnings, they underscore a broader industry transition toward AI as a central pillar of both digital infrastructure and defense.
+The democratization of AI-driven vulnerability research significantly lowers the barrier for attackers to discover complex exploits in widely used enterprise software. This shift forces companies to accelerate their security patching cycles as the speed of automated threat discovery continues to outpace traditional manual code reviews.
 
 ============================================================
-Author:   Cristian Dina
-Source:   The Next Web
-URL:      https://thenextweb.com/news/crowdstrike-palo-alto-record-highs-black-hat-ai-agents
-Category: Tech Business & Markets
+Author:   Lily Hay Newman
+Source:   Wired
+URL:      https://www.wired.com/story/a-zoom-screen-sharing-bug-let-anyone-take-over-other-devices-on-a-call/
+Category: Cybersecurity
