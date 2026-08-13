@@ -1,19 +1,20 @@
-EY to add “agent economics” role to scrutinise AI spending- report
+Python Bytes: #491 Feeling Judged
 ============================================================
 
-EY is hiring a head of agent economics to oversee its AI-powered workforce and ensure that the firm’s technology investments deliver measurable business value across all global divisions.
+Python Bytes episode 491 explores new developer tools including Claude Code insights, post-quantum cryptography in Python, major updates to the Model Context Protocol, and terminal autocomplete utilities.
 
 ### Key Points
-- The new executive will lead EY’s AI value realisation office, reporting to global managing partner Anthony Caterino.
-- The role aims to centralize the management of AI agents to prevent fragmented deployments across different business functions.
-- EY is advising clients to adopt similar oversight structures to track the tangible impact of their own artificial intelligence initiatives.
-- The firm previously introduced AI token budgets and routing systems to optimize model selection and control operational spending.
+- Claude Code’s new `/insights` command analyzes local session logs to provide automated feedback on developer workflows, friction points, and interaction styles.
+- The `pyca/cryptography` library version 48 now includes NIST-standardized post-quantum algorithms ML-KEM and ML-DSA to prepare for upcoming federal security deadlines.
+- The Model Context Protocol (MCP) 2.0 SDK introduces a stateless architecture, breaking changes to the API, and renames `FastMCP` to `MCPServer`.
+- `inshellisense` offers IDE-style autocomplete for over 600 command-line tools across Windows, Linux, and macOS.
+- Django 6.1 has been officially released, and tickets are currently available for the upcoming DjangoCon US.
 
 ### Why it Matters
-This move reflects a growing corporate trend of shifting from experimental AI adoption to rigorous financial accountability and centralized governance. By establishing a dedicated oversight office, EY is setting a precedent for how large enterprises can quantify the return on investment for complex, agentic AI systems.
+These updates reflect a significant shift toward integrating advanced AI-driven tooling and post-quantum security standards into standard Python development environments. Developers must now navigate breaking changes in core protocols like MCP while preparing their infrastructure for the mandatory transition to quantum-resistant cryptographic primitives.
 
 ============================================================
-Author:   Ellichipuram Umesh
-Source:   Internationalaccountingbulletin.com
-URL:      https://www.internationalaccountingbulletin.com/news/ey-to-add-agent-economics-role-to-scrutinise-ai-spending-report/
-Category: Tech Business & Markets
+Author:   Michael Kennedy (@mkennedy)
+Source:   Pythonbytes.fm
+URL:      https://pythonbytes.fm/episodes/show/491/feeling-judged
+Category: Artificial Intelligence

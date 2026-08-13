@@ -1,20 +1,20 @@
-Every major free DNS service has a hidden second mode
+Microsoft Plugs Nearly 400 Security Holes
 ============================================================
 
-Switching your DNS provider to specialized services like Cloudflare, Quad9, or AdGuard allows users to easily implement custom levels of malware, phishing, and adult content filtering for networks.
+Microsoft has released security updates addressing 398 vulnerabilities in Windows and related software, including one actively exploited zero-day flaw, as AI-driven discovery continues to increase monthly patch volumes.
 
 ### Key Points
-- Cloudflare offers tiered DNS filtering, ranging from standard resolution at 1.1.1.1 to options that block malware and adult content.
-- Quad9 provides malware and phishing protection by default at 9.9.9.9, while offering an unfiltered secondary address for users seeking unrestricted access.
-- AdGuard features three distinct DNS configurations that manage advertising, tracker blocking, and family-oriented content restrictions.
-- OpenDNS provides a "Family Shield" for automated blocking, alongside a customizable "Home" service that allows for per-device filtering settings.
-- Most unfiltered DNS options still maintain baseline security through DNSSEC validation, which provides essential encryption for DNS records.
+- Microsoft issued 398 security fixes this month, with 42 vulnerabilities rated as critical.
+- The update addresses CVE-2026-68820, a privilege escalation zero-day flaw found in the Windows afd.sys driver.
+- Two additional vulnerabilities, CVE-2026-62832 and CVE-2026-72971, were publicly disclosed prior to the official patch release.
+- Security experts attribute the rising volume of discovered flaws to the increased use of artificial intelligence in vulnerability research.
+- Research from 1Password indicates that AI-generated patches often fail to resolve issues or introduce new security weaknesses, necessitating human oversight.
 
 ### Why it Matters
-Customizing DNS settings is a simple, effective way for users to enhance their digital security and privacy without installing complex software. By choosing the right provider, individuals can proactively block malicious domains and manage content access across their entire home network.
+The surge in AI-assisted vulnerability discovery is forcing organizations to manage significantly higher patch volumes, complicating standard IT maintenance workflows. While AI excels at identifying security gaps, the current reliance on human verification remains critical to ensure that automated fixes do not destabilize production environments.
 
 ============================================================
-Author:   Gavin Phillips
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/every-major-free-dns-service-has-a-hidden-second-mode/
+Author:   BrianKrebs
+Source:   Krebs on Security
+URL:      https://krebsonsecurity.com/2026/08/microsoft-plugs-nearly-400-security-holes/
 Category: Cybersecurity

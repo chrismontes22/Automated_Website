@@ -1,19 +1,20 @@
-A Zoom Screen-Sharing Bug Let Anyone Take Over Other Devices on a Call
+338 million attack simulations reveal the state of enterprise defense
 ============================================================
 
-Researchers from A Security discovered critical vulnerabilities in Zoom’s screen-sharing annotation protocol that could allow attackers to take control of a target's device without any user interaction.
+The Picus Blue Report 2026, based on 338 million attack simulations, reveals that while perimeter defenses are improving, internal security remains highly vulnerable to quiet, non-signature-based cyberattacks.
 
 ### Key Points
-- A Security researchers identified the flaws in early June using publicly available AI models with fewer than 20 prompts.
-- The vulnerabilities affected all Zoom-supported operating systems, including Windows, macOS, Linux, iOS, and Android.
-- Zoom has released both server-side and client-side patches to address the security risks associated with the real-time annotation feature.
-- The exploit allowed for silent device takeovers simply by joining a call, bypassing the need for victim interaction.
+- Average perimeter prevention effectiveness rose to 69%, but post-compromise defenses blocked only 37% of attacker actions.
+- Reconnaissance and credential harvesting remain largely undetected, with success rates for blocking these activities as low as 10% to 22%.
+- Malware prevention based on indicators of compromise (IOCs) dropped to 50%, down from 71% in 2024.
+- Despite increased logging, only 14% of simulated attacks triggered an actionable security alert.
+- Ransomware prevention is declining, with top families blocked less than 38% of the time due to reliance on outdated signature-based detection.
 
 ### Why it Matters
-The democratization of AI-driven vulnerability research significantly lowers the barrier for attackers to discover complex exploits in widely used enterprise software. This shift forces companies to accelerate their security patching cycles as the speed of automated threat discovery continues to outpace traditional manual code reviews.
+The report highlights a critical disconnect where organizations prioritize loud, signature-based perimeter defenses while leaving internal networks exposed to sophisticated, behavioral-based threats. This trend suggests that current security investments are failing to address the full attacker lifecycle, necessitating a shift toward continuous, TTP-based validation to identify and close internal gaps.
 
 ============================================================
-Author:   Lily Hay Newman
-Source:   Wired
-URL:      https://www.wired.com/story/a-zoom-screen-sharing-bug-let-anyone-take-over-other-devices-on-a-call/
+Author:   Help Net Security
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/08/12/picus-security-blue-report-2026/
 Category: Cybersecurity
