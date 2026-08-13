@@ -1,20 +1,20 @@
-These seaside apartments were a ghost city - then police say scammers moved in
+Tailscale Traces Database Corruption to 16y/o SQLite WAL-Reset Bug
 ============================================================
 
-Malaysia’s $100 billion Forest City project has become a hub for transnational cryptocurrency scam syndicates, as high vacancy rates and modern infrastructure attract criminal operations seeking anonymity.
+Tailscale has resolved a series of persistent service outages caused by a 16-year-old "WAL-Reset" data race bug discovered within the core SQLite database engine.
 
 ### Key Points
-- Malaysian police recently arrested 335 individuals across 32 Forest City properties for running international investment and love scams.
-- The seized assets included over 1,500 mobile phones and 300 computers used to facilitate fraudulent activities from residential apartments.
-- Originally designed for 700,000 residents, the project remains largely vacant, with current occupancy estimated at less than 5,000 people.
-- Experts suggest criminal syndicates are migrating to Malaysia after facing increased pressure and government crackdowns in Cambodia.
-- The project was developed by Country Garden and Danga 88 but stalled due to the pandemic and China’s property market slump.
+- Tailscale experienced 19 separate database corruption incidents over six months due to a rare race condition between write transactions and manual checkpointing.
+- The company collaborated with SQLite core developers to create a custom virtual filesystem shim, which successfully isolated the root cause.
+- The bug, which could cause data loss during specific checkpoint timing, was officially patched by the SQLite team in version 3.51.3.
+- Tailscale improved its infrastructure by implementing automated transaction logging and enhanced backup monitoring to minimize future downtime.
+- The investigation confirmed that Tailscale’s aggressive, non-standard use of SQLite checkpointing triggered the rare bug, which had remained hidden for over a decade.
 
 ### Why it Matters
-The transformation of Forest City into a base for organized crime illustrates how failing mega-projects can inadvertently provide cover for sophisticated, multinational fraud networks. By embedding themselves within legitimate-looking commercial developments, these syndicates exploit low occupancy and modern connectivity to operate with minimal oversight.
+This incident highlights the operational risks of using "boring" technology in non-standard, high-frequency configurations that deviate from typical deployment patterns. By working with open-source maintainers to identify and patch a long-standing database flaw, Tailscale has contributed to the stability of the broader software ecosystem while reinforcing its own platform reliability.
 
 ============================================================
-Author:   https://www.facebook.com/bbcnews
-Source:   BBC News
-URL:      https://www.bbc.co.uk/news/articles/cx2kvlye1k5o
+Author:   Alex Chan
+Source:   Tailscale.com
+URL:      https://tailscale.com/blog/sqlite-wal-reset-bug
 Category: Cybersecurity

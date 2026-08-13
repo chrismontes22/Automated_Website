@@ -1,20 +1,20 @@
-Yulu raises $93 mn in Series C funding round, plans to scale EV fleet to 2 lakh
+Malicious LiteLLM Releases Tied to Trivy Hack May Have Exposed 2,100+ Organizations
 ============================================================
 
-Electric mobility platform Yulu has secured $93 million in Series C funding to quadruple its electric vehicle fleet to 200,000 units and prepare for a future public listing.
+Malicious versions of the open-source AI gateway LiteLLM were uploaded to PyPI in March, exposing sensitive credentials from over 2,500 organizations to a sophisticated supply-chain attack campaign.
 
 ### Key Points
-- The funding round includes $63 million in equity led by GEF Capital Partners and $30 million in debt.
-- Yulu plans to expand its service hubs and launch Yulu Express, a high-payload electric scooter designed for e-commerce and parcel delivery.
-- The company maintains strategic partnerships with Bajaj Auto and Magna International to support its vertically integrated ecosystem.
-- Yulu currently operates across 12 primary Indian metros, including Bengaluru, Mumbai, Delhi-NCR, and Hyderabad.
-- The firm reported a sevenfold revenue increase since fiscal year 2023 and has sustained positive EBITDA since April 2025.
+- Compromised LiteLLM versions 1.82.7 and 1.82.8 were active on PyPI for 40 minutes on March 24, harvesting cloud keys, SSH keys, and database passwords.
+- Threat intelligence firm CloudSEK identified potential exposure across 2,500 organizations, including major entities like NVIDIA, Cisco, and the European Commission.
+- The incident is part of the broader "TeamPCP" supply-chain campaign, which also involved the compromise of the Trivy security scanner.
+- Malicious code executed automatically upon Python interpreter startup, exfiltrating environment variables and secrets to an attacker-controlled domain.
+- The FBI and security researchers advise organizations to rotate all credentials that were accessible on systems where the compromised packages were installed.
 
 ### Why it Matters
-This capital injection positions Yulu to dominate India's growing urban logistics sector by scaling its infrastructure and diversifying into high-capacity delivery vehicles. Achieving consistent profitability and operational scale provides a clear pathway for the company to transition into the public markets.
+This incident highlights the severe risks posed by supply-chain attacks where malicious code can be introduced through unpinned dependencies or compromised CI/CD pipelines. Because stolen credentials remain valid until revoked, organizations must prioritize rotating secrets rather than simply removing the malicious software to prevent long-term unauthorized access.
 
 ============================================================
-Author:   PTI
-Source:   BusinessLine
-URL:      https://www.thehindubusinessline.com/companies/yulu-raises-93-mn-in-series-c-funding-round-plans-to-scale-ev-fleet-to-2-lakh/article71335135.ece
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/08/malicious-litellm-releases-tied-to.html
+Category: Cybersecurity
