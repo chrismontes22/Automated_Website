@@ -1,20 +1,20 @@
-Tailscale Traces Database Corruption to 16y/o SQLite WAL-Reset Bug
+Google’s new Tensor G6 brings performance, efficiency, and post-quantum security to the Pixel 11 series
 ============================================================
 
-Tailscale has resolved a series of persistent service outages caused by a 16-year-old "WAL-Reset" data race bug discovered within the core SQLite database engine.
+Google’s new Pixel 11 lineup features the Tensor G6 processor and a Titan M3 security chip designed to meet NIST post-quantum cryptography standards for enhanced device protection.
 
 ### Key Points
-- Tailscale experienced 19 separate database corruption incidents over six months due to a rare race condition between write transactions and manual checkpointing.
-- The company collaborated with SQLite core developers to create a custom virtual filesystem shim, which successfully isolated the root cause.
-- The bug, which could cause data loss during specific checkpoint timing, was officially patched by the SQLite team in version 3.51.3.
-- Tailscale improved its infrastructure by implementing automated transaction logging and enhanced backup monitoring to minimize future downtime.
-- The investigation confirmed that Tailscale’s aggressive, non-standard use of SQLite checkpointing triggered the rare bug, which had remained hidden for over a decade.
+- The Tensor G6 chip offers 25% faster browsing, 20% better power efficiency, and a TPU with 50% more compute capacity.
+- The Titan M3 coprocessor is Google’s first mobile security chip to adopt NIST post-quantum cryptography standards against future decryption threats.
+- Gemini Nano now runs background tasks 3.5 times faster while consuming 3.5 times less energy on the new hardware.
+- The Pixel 11 series includes four models starting at $899, with the entry-level 128GB storage tier removed from the lineup.
+- Advanced camera features include 120x Pro Zoom, 4K portrait video, and significantly faster Instant Night Sight processing.
 
 ### Why it Matters
-This incident highlights the operational risks of using "boring" technology in non-standard, high-frequency configurations that deviate from typical deployment patterns. By working with open-source maintainers to identify and patch a long-standing database flaw, Tailscale has contributed to the stability of the broader software ecosystem while reinforcing its own platform reliability.
+The integration of post-quantum cryptography addresses the "harvest now, decrypt later" threat, where encrypted data is stolen today to be unlocked by future quantum computers. By adopting these standards, Google is aligning its hardware with federal mandates and setting a new security benchmark for the broader smartphone industry.
 
 ============================================================
-Author:   Alex Chan
-Source:   Tailscale.com
-URL:      https://tailscale.com/blog/sqlite-wal-reset-bug
-Category: Cybersecurity
+Author:   Ana Maria Constantin
+Source:   The Next Web
+URL:      https://thenextweb.com/news/google-tensor-g6-titan-m3-post-quantum-pixel-11
+Category: Phones, Laptops, and Gadgets

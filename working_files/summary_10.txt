@@ -1,20 +1,20 @@
-Malicious LiteLLM Releases Tied to Trivy Hack May Have Exposed 2,100+ Organizations
+Twitch confirms Amazon is training its AI models on livestreams
 ============================================================
 
-Malicious versions of the open-source AI gateway LiteLLM were uploaded to PyPI in March, exposing sensitive credentials from over 2,500 organizations to a sophisticated supply-chain attack campaign.
+Twitch has confirmed that Amazon is utilizing user livestreams to train its artificial intelligence models, prompting significant backlash from creators who are now required to manually opt out.
 
 ### Key Points
-- Compromised LiteLLM versions 1.82.7 and 1.82.8 were active on PyPI for 40 minutes on March 24, harvesting cloud keys, SSH keys, and database passwords.
-- Threat intelligence firm CloudSEK identified potential exposure across 2,500 organizations, including major entities like NVIDIA, Cisco, and the European Commission.
-- The incident is part of the broader "TeamPCP" supply-chain campaign, which also involved the compromise of the Trivy security scanner.
-- Malicious code executed automatically upon Python interpreter startup, exfiltrating environment variables and secrets to an attacker-controlled domain.
-- The FBI and security researchers advise organizations to rotate all credentials that were accessible on systems where the compromised packages were installed.
+- Twitch users are automatically opted into AI training, requiring them to manually disable the setting within their privacy dashboard.
+- The announcement triggered widespread criticism from high-profile streamers and community members on social media platforms like X.
+- Twitch executives Mary Kish and Mike Minton confirmed the training practices during a livestream but stated they lack oversight of Amazon’s specific data usage.
+- Twitch currently uses AI for internal tools like captions and content classification, though it does not currently employ generative AI features.
+- Amazon, which acquired Twitch in 2014, is aggressively scaling its AI infrastructure to compete with industry leaders like OpenAI and Anthropic.
 
 ### Why it Matters
-This incident highlights the severe risks posed by supply-chain attacks where malicious code can be introduced through unpinned dependencies or compromised CI/CD pipelines. Because stolen credentials remain valid until revoked, organizations must prioritize rotating secrets rather than simply removing the malicious software to prevent long-term unauthorized access.
+This development highlights growing tensions between content creators and major technology companies regarding the use of user-generated data for training large-scale AI models. As Amazon accelerates its efforts to compete in the frontier model market, the controversy underscores the increasing demand for transparency and user control over digital intellectual property.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/08/malicious-litellm-releases-tied-to.html
-Category: Cybersecurity
+Author:   Truman Dickerson
+Source:   Business Insider
+URL:      https://www.businessinsider.com/twitch-livestreams-amazon-ai-model-training-opt-out-feature-2026-8#article
+Category: Artificial Intelligence
