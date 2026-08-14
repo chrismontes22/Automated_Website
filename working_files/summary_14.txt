@@ -1,20 +1,20 @@
-Bitcoin firms ask AI labs for same tools attackers already have
+Exposed AWS Access Key Linked to Data Breach Affecting 1500+ UK Charities
 ============================================================
 
-More than three dozen cryptocurrency firms, including Coinbase and Block, are urging major AI labs to provide security researchers with early access to advanced, powerful artificial intelligence models.
+A compromised AWS access key exposed the personal data of approximately 1,500 UK charities after a security breach hit the CRM provider Beacon on July 27.
 
 ### Key Points
-- The Bitcoin Policy Institute organized the letter, which is signed by companies like BitGo, ARK Invest, and Anchorage Digital.
-- Signatories argue that current AI safety filters prevent developers from identifying software vulnerabilities before malicious actors can exploit them.
-- Recent attacks on BTCPay Server and Lightning nodes highlight the urgent need for better defensive tools to protect critical financial infrastructure.
-- The group is requesting early model access, dedicated computing budgets, secure testing environments, and direct communication channels with AI lab security teams.
-- Volunteer groups like the "Bitcoin Red Team" are already using AI to scan codebases, having filed thousands of findings across hundreds of projects.
+- Beacon confirmed that an AWS access key, inadvertently exposed in public Javascript build artifacts, allowed unauthorized access to its entire CRM platform.
+- The breach occurred over an 87-minute window on July 27, resulting in the unauthorized download of all customer data and attachments.
+- Affected information includes names, email addresses, phone numbers, and donation records, though no payment card or bank details were compromised.
+- Beacon has reset all integrated service credentials and confirmed no evidence of persistent access or public data publication by the attacker.
+- Impacted organizations include The Survivor’s Trust, the British Deaf Association, and various hospital charities, all of which have been advised to notify the ICO.
 
 ### Why it Matters
-This request highlights a growing security imbalance where cybercriminals utilize advanced AI tools while legitimate developers are restricted by safety guardrails. Providing security researchers with equal access could significantly improve the resilience of the trillion-dollar Bitcoin network against increasingly sophisticated automated attacks.
+This incident highlights the significant security risks posed by improper management of development credentials in cloud environments. For the affected charities, the breach necessitates urgent vigilance against potential social engineering attacks targeting their donors and service users.
 
 ============================================================
-Author:   Shaurya Malwa
-Source:   CoinDesk
-URL:      https://www.coindesk.com/tech/2026/08/13/bitcoin-firms-ask-ai-labs-for-same-tools-attackers-already-have
+Author:   James Coker
+Source:   Infosecurity Magazine
+URL:      https://www.infosecurity-magazine.com/news/exposed-aws-key-data-charities/
 Category: Cybersecurity

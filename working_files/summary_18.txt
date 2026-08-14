@@ -1,20 +1,20 @@
-Investors baulk at plan to take ICG private
+Bridging Older Tasmota Hardware Into Apple Home
 ============================================================
 
-Kingspan has acquired engineering firm BMC Manufacturing for €900 million, while Intel’s stock has quadrupled following a significant financial turnaround supported by a major United States government investment.
+The new Tasmoshelf app allows users to integrate Tasmota-based smart home devices directly into the Apple Home platform by leveraging native Matter support on compatible ESP32 microcontrollers.
 
 ### Key Points
-- Kingspan purchased Ashbourne-based BMC Manufacturing for €900 million following the firm's profit growth from €50,000 to €22.5 million in five years.
-- Intel shares have quadrupled in value after the company recovered from $18.8 billion in losses, aided by a 10 per cent stake taken by the US government.
-- Irish mortgage interest rates fell below the euro zone average in June for the first time in three years, according to Central Bank data.
-- Revolut has revoked access to WeWork office spaces for its premium subscribers in Dublin and elsewhere due to rising service fees.
-- Google launched its Pixel 11 smartphone series, focusing on enhanced artificial intelligence capabilities, improved camera hardware, and extended battery life.
+- Developer Christof Müller created Tasmoshelf to bridge Tasmota devices with Apple Home without requiring MQTT brokers or Home Assistant servers.
+- The app utilizes Matter technology, which is natively supported by ESP32 devices running Tasmota 13 firmware or newer.
+- Tasmoshelf can automatically scan networks to identify devices and determine if they require a bridge to connect to Apple Home.
+- ESP32 units can function as bridges for older ESP8266 hardware that lacks native Matter compatibility.
+- The application is free for up to three devices, with a one-time purchase required to manage additional hardware.
 
 ### Why it Matters
-These developments highlight significant shifts in the technology and construction sectors, ranging from major corporate acquisitions to the stabilization of critical semiconductor supply chains. Understanding these market movements provides essential context for investors and consumers navigating changing interest rates and evolving digital service landscapes.
+This tool simplifies smart home management by removing the technical barriers typically associated with integrating open-source firmware into proprietary ecosystems like Apple Home. By streamlining the connection process, it makes advanced home automation more accessible to users who prefer not to maintain complex server-based workarounds.
 
 ============================================================
-Author:   Dominic Coyle
-Source:   The Irish Times
-URL:      https://www.irishtimes.com/business/2026/08/13/investors-baulk-at-plan-to-take-icg-private-and-women-bearing-the-brunt-of-techs-bad-decisions/
-Category: Tech Business & Markets
+Author:   Zoe Skyforest
+Source:   Hackaday
+URL:      https://hackaday.com/2026/08/13/bridging-older-tasmota-hardware-into-apple-home/
+Category: Phones, Laptops, and Gadgets

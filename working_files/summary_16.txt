@@ -1,19 +1,20 @@
-Smart Clock Helps With Medication Management
+Armored Likho expands its cyber-espionage toolkit
 ============================================================
 
-Maker hvermaak.projects developed the Ouma Ria Smart Clock, a custom-built device featuring medication reminders, motion sensing, and automated scheduling to assist with daily household management and personal tasks.
+The cyber-espionage group Armored Likho is targeting Russian individuals and organizations with a new Rust-based toolkit designed to steal Telegram data and conduct covert audio surveillance.
 
 ### Key Points
-- The device is powered by an ESP32-WROOM-32 microcontroller and four 8×8 WS2812B addressable LED panels.
-- Integrated hardware includes a DS3231 real-time clock, a BH1750 ambient light sensor, and a DFPlayer Mini for audio alerts.
-- AM312 passive infrared sensors enable the clock to function as a basic security monitor for the home.
-- Users can manage schedules and device settings through a custom-built web interface.
+- The campaign uses fake donation apps as droppers to deploy the "Still Toolkit," which includes the Still Sync and Still Audio modules.
+- Still Sync extracts Telegram session data, chat logs, and media files by leveraging the Telegram API and stolen account credentials.
+- Still Audio performs voice-activated surveillance by recording audio when it detects speech, then exfiltrating the files to a command-and-control server.
+- Attackers utilize the Tauri framework for the initial dropper and employ sophisticated techniques like the Dead Drop Resolver to maintain persistent access.
+- Kaspersky identifies these threats as Trojan.Win64.Agent.* and HEUR:Backdoor.Win32.Generic.
 
 ### Why it Matters
-This project demonstrates how hobbyists can leverage affordable microcontrollers and modular sensors to create personalized assistive technology. Such custom builds highlight the growing potential for DIY smart home solutions to address specific accessibility and organizational needs that mass-market products may overlook.
+- This campaign demonstrates a significant evolution in Armored Likho’s capabilities, moving beyond simple data theft to active, multi-channel intelligence gathering. The development of a cohesive, modular ecosystem suggests the group is refining its tools for long-term, high-impact espionage against both private and public sector targets.
 
 ============================================================
-Author:   Zoe Skyforest
-Source:   Hackaday
-URL:      https://hackaday.com/2026/08/12/smart-clock-helps-with-medication-management/
-Category: Phones, Laptops, and Gadgets
+Author:   Konstantin Isakov
+Source:   Securelist.com
+URL:      https://securelist.com/armored-likho-still-toolkit/121033/
+Category: Cybersecurity
