@@ -1,20 +1,20 @@
-Domas: Bypassing memory protection with AMD's memory controllers
+EU introduces strict new security rules for VPNs with the help of industry giants
 ============================================================
 
-Security researcher Christopher Domas has demonstrated a proof-of-concept exploit using AMD memory controller bank swizzle modes to bypass hardware protections and access restricted system firmware and data.
+The European Telecommunications Standards Institute has introduced the EN 304 620 standard, establishing mandatory cybersecurity requirements for VPN providers operating within the European Union under the Cyber Resilience Act.
 
 ### Key Points
-- Christopher Domas discovered a method to bypass memory protection by leveraging AMD memory controller bank swizzle modes.
-- The technique allows kernel-level access to read or write arbitrary data, including CPU microcode and platform security processor memory.
-- Attackers could potentially manipulate processor instructions, undermining memory encryption and virtual machine isolation.
-- The vulnerability relies on documented design features rather than a software bug, though its use for arbitrary memory access appears unintentional.
-- Exploitation requires high-level kernel privileges, limiting the immediate risk to most standard software environments.
+- The new EN 304 620 standard mandates auditable security controls for VPN clients, servers, and gateways regarding encryption, authentication, and vulnerability management.
+- Major industry participants, including NordVPN, Surfshark, Cisco, Google, and Palo Alto Networks, collaborated to help shape these technical security baselines.
+- Providers must implement deterministic security measures and adhere to strict incident reporting protocols for any actively exploited vulnerabilities.
+- The regulation is a core component of the broader Cyber Resilience Act, which requires digital product manufacturers to meet essential security standards by late 2027.
+- These guidelines extend to other digital products, including password managers, antivirus software, and smart home devices, to improve overall European digital safety.
 
 ### Why it Matters
-This discovery highlights a significant security concern regarding the accessibility of immutable firmware components within modern processor architectures. While the requirement for kernel-level access mitigates immediate threats, the ability to manipulate core hardware instructions poses long-term risks to system integrity and virtualization security.
+This legislation shifts the burden of proof from consumer trust to mandatory regulatory compliance, effectively eliminating the market for insecure or opaque VPN services. By standardizing security benchmarks, the European Union is creating a more resilient digital ecosystem that protects user data through enforced, testable engineering requirements.
 
 ============================================================
-Author:   daroc
-Source:   Lwn.net
-URL:      https://lwn.net/Articles/1088778/
+Author:   Rene Millman
+Source:   TechRadar
+URL:      https://www.techradar.com/vpn/vpn-services/eu-introduces-strict-new-security-rules-for-vpns-with-the-help-of-industry-giants
 Category: Cybersecurity

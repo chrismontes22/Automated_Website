@@ -1,20 +1,21 @@
-Bridging Older Tasmota Hardware Into Apple Home
+HomeKit Weekly: This iPad app turns your HomeKit setup into a wall-mountable command center
 ============================================================
 
-The new Tasmoshelf app allows users to integrate Tasmota-based smart home devices directly into the Apple Home platform by leveraging native Matter support on compatible ESP32 microcontrollers.
+The Dashboard for your home app transforms older iPads into centralized smart home control centers, allowing users to manage Apple HomeKit devices, cameras, and calendars from one screen.
 
 ### Key Points
-- Developer Christof Müller created Tasmoshelf to bridge Tasmota devices with Apple Home without requiring MQTT brokers or Home Assistant servers.
-- The app utilizes Matter technology, which is natively supported by ESP32 devices running Tasmota 13 firmware or newer.
-- Tasmoshelf can automatically scan networks to identify devices and determine if they require a bridge to connect to Apple Home.
-- ESP32 units can function as bridges for older ESP8266 hardware that lacks native Matter compatibility.
-- The application is free for up to three devices, with a one-time purchase required to manage additional hardware.
+- The app supports live previews for up to four cameras, with unlimited access available through a $9.99 annual Premium subscription.
+- Users can control up to four thermostats and eight switches, organized by room, alongside a six-day local weather forecast.
+- A 3D floor plan feature allows users to upload home layouts and toggle devices like lights and locks via interactive icons.
+- The interface includes a seven-day calendar view with countdown timers and supports automatic wake-up via motion sensors or the iPad's front camera.
+- Configuration settings can be synced across multiple devices using iCloud, and the developer states the app collects no user data.
+- The software requires iPadOS 17 or later and is compatible with existing Apple HomeKit setups.
 
 ### Why it Matters
-This tool simplifies smart home management by removing the technical barriers typically associated with integrating open-source firmware into proprietary ecosystems like Apple Home. By streamlining the connection process, it makes advanced home automation more accessible to users who prefer not to maintain complex server-based workarounds.
+This application provides a practical way to repurpose older hardware into a dedicated interface for managing complex smart home ecosystems. By centralizing controls and visual data, it enhances the utility of Apple HomeKit for users seeking a streamlined, wall-mounted management solution.
 
 ============================================================
-Author:   Zoe Skyforest
-Source:   Hackaday
-URL:      https://hackaday.com/2026/08/13/bridging-older-tasmota-hardware-into-apple-home/
+Author:   Bradley C
+Source:   9to5Mac
+URL:      https://9to5mac.com/2026/08/14/dashboard-for-your-home/
 Category: Phones, Laptops, and Gadgets

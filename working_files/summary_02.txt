@@ -1,20 +1,20 @@
-Future Apple wearables, iOS 27 beta 5, iPhone 20 details
+Snooping Flume Water Monitor Data On The Wire
 ============================================================
 
-Apple is testing new fitness wearable concepts and exploring expanded sports broadcasting rights for Apple TV, including potential golf coverage, alongside the latest iOS 18 beta updates.
+Security researcher Stephen successfully intercepted and decrypted data from a Flume smart water monitor by exploiting vulnerabilities in the device's static encryption key implementation and network communication.
 
 ### Key Points
-- Apple released the fifth beta version of iOS 18, introducing several system refinements and feature updates.
-- The company is reportedly evaluating new hardware designs for future fitness-focused wearable devices.
-- Rumors suggest Apple is actively pursuing additional sports broadcasting rights, specifically targeting professional golf.
-- Apple TV has launched a new promotional campaign offering a curated collection of free movies to subscribers.
-- Discussions include early speculation regarding the design and material composition of the future iPhone 20.
+- The Flume system uses a sensor and bridge device to transmit water usage data to utility servers.
+- Stephen bypassed encryption by harvesting a static device secret key directly from the bridge's onboard flash memory.
+- A custom man-in-the-middle tool now allows for local logging of water flow data without disrupting server connectivity.
+- The researcher published the relay tool on GitHub for public review and further experimentation.
+- Users implementing this workaround may face potential issues receiving future automatic firmware updates from the manufacturer.
 
 ### Why it Matters
-These developments highlight Apple's ongoing strategy to integrate health-tracking hardware with a robust ecosystem of exclusive sports and entertainment content. By diversifying its media rights and wearable portfolio, the company aims to increase long-term user engagement across its services and hardware platforms.
+This research highlights significant security vulnerabilities in smart home utility devices that rely on static keys for data encryption. It demonstrates how easily local network traffic can be intercepted when hardware lacks robust, dynamic authentication protocols.
 
 ============================================================
-Author:   Chance Miller
-Source:   9to5Mac
-URL:      https://9to5mac.com/2026/08/13/happy-hour-603/
-Category: Phones, Laptops, and Gadgets
+Author:   Zoe Skyforest
+Source:   Hackaday
+URL:      https://hackaday.com/2026/08/14/snooping-flume-water-monitor-data-on-the-wire/
+Category: Cybersecurity
