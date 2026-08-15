@@ -1,20 +1,20 @@
-Exposed AWS Access Key Linked to Data Breach Affecting 1500+ UK Charities
+Domas: Bypassing memory protection with AMD's memory controllers
 ============================================================
 
-A compromised AWS access key exposed the personal data of approximately 1,500 UK charities after a security breach hit the CRM provider Beacon on July 27.
+Security researcher Christopher Domas has demonstrated a proof-of-concept exploit using AMD memory controller bank swizzle modes to bypass hardware protections and access restricted system firmware and data.
 
 ### Key Points
-- Beacon confirmed that an AWS access key, inadvertently exposed in public Javascript build artifacts, allowed unauthorized access to its entire CRM platform.
-- The breach occurred over an 87-minute window on July 27, resulting in the unauthorized download of all customer data and attachments.
-- Affected information includes names, email addresses, phone numbers, and donation records, though no payment card or bank details were compromised.
-- Beacon has reset all integrated service credentials and confirmed no evidence of persistent access or public data publication by the attacker.
-- Impacted organizations include The Survivor’s Trust, the British Deaf Association, and various hospital charities, all of which have been advised to notify the ICO.
+- Christopher Domas discovered a method to bypass memory protection by leveraging AMD memory controller bank swizzle modes.
+- The technique allows kernel-level access to read or write arbitrary data, including CPU microcode and platform security processor memory.
+- Attackers could potentially manipulate processor instructions, undermining memory encryption and virtual machine isolation.
+- The vulnerability relies on documented design features rather than a software bug, though its use for arbitrary memory access appears unintentional.
+- Exploitation requires high-level kernel privileges, limiting the immediate risk to most standard software environments.
 
 ### Why it Matters
-This incident highlights the significant security risks posed by improper management of development credentials in cloud environments. For the affected charities, the breach necessitates urgent vigilance against potential social engineering attacks targeting their donors and service users.
+This discovery highlights a significant security concern regarding the accessibility of immutable firmware components within modern processor architectures. While the requirement for kernel-level access mitigates immediate threats, the ability to manipulate core hardware instructions poses long-term risks to system integrity and virtualization security.
 
 ============================================================
-Author:   James Coker
-Source:   Infosecurity Magazine
-URL:      https://www.infosecurity-magazine.com/news/exposed-aws-key-data-charities/
+Author:   daroc
+Source:   Lwn.net
+URL:      https://lwn.net/Articles/1088778/
 Category: Cybersecurity
