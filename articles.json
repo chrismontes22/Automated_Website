@@ -1,5 +1,185 @@
 [
   {
+    "title": "Anthropic ran 133 million contractor chats with its bioweapon filters off",
+    "url": "https://thenextweb.com/news/anthropic-risk-report-bio-classifiers-human-feedback-gap",
+    "summary": "Anthropic’s latest risk report reveals that safety filters were disabled on human feedback platforms for nearly a year, exposing 133 million model exchanges to potential security vulnerabilities.\n\n### Key Points\n- Anthropic’s biological weapon safety classifiers were inactive on human feedback platforms from May 2025 to April 2026, affecting roughly 50,000 users.\n- An internal flag meant for testing inadvertently disabled both blocking behaviors and activity logging for 133 million interactions.\n- Contractors at data-labeling vendors exploited a separate flaw in April 2026 to access the powerful Mythos Preview model without safety safeguards for two weeks.\n- The company increased its internal risk rating for catastrophic misalignment from \"very low\" to \"low\" due to rising uncertainty and cybersecurity evaluation failures.\n- Anthropic utilized its own Claude model to audit the report, which subsequently criticized the company for being overly reassuring and redacting key incident details.\n- The report disclosed the existence of \"Model 2,\" a highly capable unreleased system that the company has withheld from public deployment.\n\n### Why it Matters\nThis report highlights significant oversight gaps in the AI industry's internal safety infrastructure, particularly regarding the use of third-party vendors for model training and feedback. By publicly documenting these failures, Anthropic sets a new transparency standard that pressures competitors to disclose their own hidden security vulnerabilities and safety lapses.",
+    "category": "Artificial Intelligence",
+    "source": "The Next Web",
+    "processed_at": "2026-08-16T19:20:36.751524",
+    "author": "Ana Maria Constantin"
+  },
+  {
+    "title": "‘The great quantum migration’ is coming as more than $2 trillion in digital assets is at risk—nearly the entire value of the overall crypto market",
+    "url": "https://finance.yahoo.com/markets/crypto/articles/great-quantum-migration-coming-more-100000519.html",
+    "summary": "Advancements in quantum computing threaten to compromise the elliptic curve cryptography securing over $2 trillion in digital assets, necessitating a massive industry-wide migration to quantum-resistant security infrastructure.\n\n### Key Points\n- Quantum computers utilize qubits to perform complex calculations significantly faster than traditional supercomputers, potentially breaking current encryption methods.\n- Approximately $2.16 trillion in cryptocurrency assets currently rely on elliptic curve cryptography, which has been identified as vulnerable to quantum-based attacks.\n- Researchers at Google suggest that the computational resources required to breach these cryptographic standards may be lower than previously estimated.\n- High-value targets include large Bitcoin cold wallets and the administrative keys governing stablecoins like USDT, which could destabilize the entire decentralized finance ecosystem.\n- Industry experts, including Quantus CEO Christopher Smith, are calling for an urgent transition to quantum-secure blockchain networks to prevent future asset theft.\n\n### Why it Matters\nThe potential for quantum computers to bypass existing security protocols poses an existential threat to the stability and trust of the global digital asset market. If cryptographic infrastructure is not updated, a successful attack could lead to catastrophic financial losses and the collapse of decentralized finance platforms.",
+    "category": "Cybersecurity",
+    "source": "Yahoo Entertainment",
+    "processed_at": "2026-08-16T19:20:51.313659",
+    "author": "Joshua Hong"
+  },
+  {
+    "title": "Why Are Big Tech CEOs Writing Long Manifestos About AI?",
+    "url": "https://slashdot.org/story/26/08/15/0431256/why-are-big-tech-ceos-writing-long-manifestos-about-ai",
+    "summary": "Meta CEO Mark Zuckerberg and other prominent tech leaders are releasing lengthy manifestos to promote an optimistic vision of artificial intelligence amid growing public concern regarding its societal impact.\n\n### Key Points\n- Meta CEO Mark Zuckerberg published a 6,500-word open letter titled \"The Future is for Everyone\" to advocate for AI development.\n- Other executives, including OpenAI’s Sam Altman and Anthropic’s Dario Amodei, have released similar manifestos promoting the transformative potential of AI.\n- The International Monetary Fund has warned that AI could impact nearly 40% of global jobs, fueling public anxiety and skepticism.\n- Critics note that these manifestos serve as a strategic effort to counter negative public sentiment regarding job displacement and environmental concerns.\n- Experts suggest these documents are attempts by industry leaders to shape the regulatory and ethical direction of rapidly evolving AI technologies.\n\n### Why it Matters\nThese manifestos represent a coordinated effort by tech giants to influence public perception and policy as AI development faces increasing scrutiny. By framing their products as essential for future prosperity, executives hope to mitigate backlash while maintaining control over the narrative surrounding the industry's rapid growth.",
+    "category": "Artificial Intelligence",
+    "source": "Slashdot.org",
+    "processed_at": "2026-08-16T19:21:00.480364",
+    "author": "EditorDavid"
+  },
+  {
+    "title": "Amazon Can Use Your Twitch Content to Train Its AI—Unless You Opt Out",
+    "url": "https://www.wired.com/story/amazon-uses-your-twitch-content-to-train-its-ai-how-to-opt-out/",
+    "summary": "Twitch has introduced a new opt-out setting allowing streamers to prevent their content from being used to train artificial intelligence models developed by its parent company, Amazon.\n\n### Key Points\n- Streamers can disable AI training by navigating to the Security and Privacy section within their account settings on the Twitch website or mobile app.\n- The update follows significant backlash from over 16,000 creators who opposed the platform's default practice of using user content for AI development.\n- Twitch executives acknowledged that keeping the training option enabled by default was a strategic choice to ensure sufficient participation in the data collection process.\n- The platform clarified that opting out of AI training does not stop Amazon from using content for other features like AutoMod or sponsorship tools.\n- Twitch’s March 2024 Terms of Service grant the company broad rights to reproduce and modify user content, though AI training was not explicitly mentioned previously.\n\n### Why it Matters\nThis development highlights the growing tension between tech giants seeking high-quality data for AI innovation and creators concerned about the unauthorized use of their intellectual property. As training data becomes a scarce strategic resource, the industry faces increasing pressure to improve transparency regarding how user-generated content fuels the next generation of artificial intelligence.",
+    "category": "Artificial Intelligence",
+    "source": "Wired",
+    "processed_at": "2026-08-16T19:21:14.021482",
+    "author": "Fernanda González"
+  },
+  {
+    "title": "These 6 homelab services are seriously boring and geniunely essential",
+    "url": "https://www.makeuseof.com/these-6-homelab-services-are-seriously-boring-and-geniunely-essential/",
+    "summary": "**Essential self-hosted services like AdGuard Home, Nginx Proxy Manager, and Vaultwarden provide the critical, reliable infrastructure required to maintain a functional and secure home laboratory environment.**\n\n### Key Points\n- AdGuard Home manages network-wide ad blocking and DNS rewrites to simplify local service addressing.\n- Nginx Proxy Manager acts as a reverse proxy to handle subdomains, routing, and HTTPS certificate management.\n- Vaultwarden serves as a lightweight, self-hosted password manager for securing credentials and API keys.\n- Uptime Kuma provides automated monitoring and alerts to track the status of various network services.\n- Tailscale enables secure remote access to home servers without requiring complex router port forwarding configurations.\n- Kopia performs scheduled, encrypted backups to protect critical data and configuration files from hardware failure.\n\n### Why it Matters\nThese foundational tools transform a collection of experimental containers into a stable, manageable, and secure private network. Relying on this \"boring\" infrastructure ensures that critical services remain accessible and recoverable, preventing minor technical glitches from escalating into total system failure.",
+    "category": "Cybersecurity",
+    "source": "MakeUseOf",
+    "processed_at": "2026-08-16T19:25:42.304599",
+    "author": "Afam Onyimadu"
+  },
+  {
+    "title": "Why a mini PC might be the better back-to-school buy than a laptop for work and play",
+    "url": "https://www.xda-developers.com/why-a-mini-pc-might-be-the-better-back-to-school-buy-than-a-laptop-for-work-and-play/",
+    "summary": "University students can optimize their academic and gaming performance by choosing a mini PC over a heavy gaming laptop to improve portability, thermal efficiency, and long-term hardware upgradability.\n\n### Key Points\n- High-performance gaming laptops like the Lenovo Legion Pro often exceed 7 pounds, creating significant physical strain for students carrying them to daily lectures.\n- Mini PCs offer superior thermal management compared to laptops, allowing processors to run at higher power levels without the constraints of battery and display heat.\n- Desktop-based setups using mini PCs support multiple external monitors, which reduces cognitive load by allowing students to view research, notes, and writing simultaneously.\n- Unlike many modern laptops with soldered components, most mini PCs allow users to upgrade RAM and NVMe storage to extend the device's lifespan.\n- Current market conditions make mini PCs a high-value purchase, as many models currently ship with 32GB of DDR5 memory at competitive price points.\n\n### Why it Matters\nChoosing a mini PC allows students to maintain a powerful, upgradable workstation at their desk while utilizing a lighter, more portable device for campus mobility. This strategy avoids the performance bottlenecks and physical fatigue associated with carrying heavy, high-end gaming laptops throughout a degree program.",
+    "category": "Phones, Laptops, and Gadgets",
+    "source": "XDA Developers",
+    "processed_at": "2026-08-16T19:25:54.432472",
+    "author": "Abhinav Raj"
+  },
+  {
+    "title": "Top Stories: iOS 27 Beta 5, iPhone 18 Pro Rumors, and More",
+    "url": "https://www.macrumors.com/2026/08/15/top-stories-ios-27-beta-5/",
+    "summary": "Apple is finalizing the iOS 27 release ahead of next month's iPhone launch while new leaks reveal battery upgrades, foldable design details, and potential Apple Watch redesigns.\n\n### Key Points\n- Apple released the fifth beta of iOS 27, featuring refined app icons, Liquid Glass adjustments, and new Home app features for iCloud+ subscribers.\n- Leaked images suggest the iPhone 18 Pro Max will feature a 5,391 mAh battery, representing a 12% capacity increase over the previous model.\n- Third-party screen protectors for the rumored \"iPhone Ultra\" indicate an asymmetric design with square corners near the hinge and rounded outer edges.\n- Reports indicate Apple is exploring radical Apple Watch redesigns, including potential round displays and screenless fitness trackers.\n- New 14-inch MacBook Pro models with M6 chips and refreshed 24-inch iMacs are expected to debut during an Apple event in October.\n\n### Why it Matters\nThese developments signal a significant shift in Apple's hardware strategy as the company balances incremental performance gains with experimental form factors like foldable devices. Investors and consumers should monitor these changes, as rising manufacturing costs and new design directions could influence future product pricing and market positioning.",
+    "category": "Phones, Laptops, and Gadgets",
+    "source": "MacRumors",
+    "processed_at": "2026-08-16T19:26:21.509792",
+    "author": "MacRumors Staff"
+  },
+  {
+    "title": "4 reasons why you should buy a Galaxy Z Fold 8, and 4 reasons why you should skip it",
+    "url": "https://www.androidcentral.com/phones/samsung-galaxy/should-you-buy-the-samsung-galaxy-z-fold-8",
+    "summary": "Samsung has launched the Galaxy Z Fold 8, a compact and lightweight foldable smartphone that offers flagship performance and multitasking capabilities at a lower price point than the Ultra.\n\n### Key Points\n- The Galaxy Z Fold 8 features the Snapdragon 8 Elite Gen 5 processor with 12GB or 16GB of RAM.\n- It includes advanced AI features like My FanCam and integrated Gemini tools for task automation and data privacy.\n- The device offers a creaseless inner display and a form factor comparable to a passport when folded.\n- It lacks S Pen support and features a camera system that underperforms compared to the Galaxy Z Fold 8 Ultra.\n- The phone is priced at $1,900, positioning it as a more affordable alternative to the $2,100 Ultra model.\n\n### Why it Matters\nThe Galaxy Z Fold 8 represents a strategic shift for Samsung by offering a more portable, tablet-like experience that challenges the design standards of current foldable devices. Its market success could influence future industry trends, particularly if it successfully establishes a new blueprint for balancing high-end performance with a more accessible form factor.",
+    "category": "Phones, Laptops, and Gadgets",
+    "source": "Android Central",
+    "processed_at": "2026-08-16T19:26:36.505918",
+    "author": "derrek.lee@futurenet.com (Derrek Lee) , Derrek Lee"
+  },
+  {
+    "title": "Why was there an 'evil’ Delta airlines Wi-Fi network? The experts weigh in",
+    "url": "https://www.techradar.com/pro/security/why-was-there-an-evil-delta-airlines-wi-fi-network-the-experts-weigh-in",
+    "summary": "A passenger on a Delta flight departing from the DEF CON hacker conference in Las Vegas allegedly launched a malicious \"evil twin\" Wi-Fi attack against fellow travelers.\n\n### Key Points\n- The attacker used a deauthentication attack to jam legitimate onboard Wi-Fi for 30 minutes.\n- A fake network named \"Delta WiFi Fast\" was broadcast to trick passengers into connecting.\n- The incident was reported by flight crew via ACARS messages after passengers raised concerns.\n- Delta confirmed that aircraft operating systems remained secure and flight safety was never compromised.\n- Experts warn that such attacks, which can harvest credentials via phishing, are federal crimes.\n- The FBI is reportedly involved in investigating the incident following the flight's departure from Las Vegas.\n\n### Why it Matters\nThis incident highlights the significant security risks posed by untrusted public networks, particularly for business travelers who may inadvertently expose sensitive corporate data. It serves as a reminder that users should utilize always-on VPNs and remain vigilant against suspicious login prompts when accessing Wi-Fi in transit.",
+    "category": "Cybersecurity",
+    "source": "TechRadar",
+    "processed_at": "2026-08-16T19:27:04.499782",
+    "author": "benedict.collins@futurenet.com (Benedict Collins) , Benedict Collins"
+  },
+  {
+    "title": "Kalshi ordered to stop broad range of prediction markets in Washington",
+    "url": "https://cointelegraph.com/news/kalshi-stop-prediction-market-contracts-washington",
+    "summary": "A Washington state judge has ordered the prediction market platform Kalshi to halt operations for various event contracts, ruling that state gambling laws take precedence over federal regulations.\n\n### Key Points\n- King County Superior Court Judge John McHale prohibited Kalshi from offering contracts related to sports, elections, politics, entertainment, and technology.\n- Contracts involving commodities, climate, economics, and finance remain exempt from the court-ordered injunction.\n- Kalshi must implement initial IP-based geofencing by August 19 and a comprehensive GeoComply system by September 2.\n- Washington Attorney General Nick Brown stated the ruling holds the platform accountable for operating an illegal gambling business within the state.\n- The court rejected Kalshi’s argument that federal Commodity Exchange Act jurisdiction preempts Washington’s specific state gambling statutes.\n\n### Why it Matters\nThis ruling highlights the ongoing legal friction between state-level gambling regulations and federally regulated prediction markets. The decision sets a significant precedent for how platforms like Kalshi must navigate conflicting jurisdictional authorities when expanding their services across the United States.",
+    "category": "Tech Business & Markets",
+    "source": "Cointelegraph",
+    "processed_at": "2026-08-16T19:28:51.919265",
+    "author": "Cointelegraph by Zoltan Vardai"
+  },
+  {
+    "title": "The $11.2 billion in 2026 funding that killed crypto’s permissionless era",
+    "url": "https://www.coindesk.com/business/2026/08/15/the-usd11-2-billion-in-2026-funding-that-killed-crypto-s-permissionless-era",
+    "summary": "Crypto startups raised $11.2 billion in the first half of 2026, with all disclosed funding flowing exclusively to regulated, permissioned businesses rather than traditional permissionless blockchain projects.\n\n### Key Points\n- Crypto firms secured $11.2 billion across 377 financing rounds between January and June 2026.\n- Top-funded sectors included payments and stablecoins ($3.7 billion), prediction markets ($2 billion), and exchanges ($1.7 billion).\n- Major institutional investors, including BlackRock, Goldman Sachs, and HSBC, directed capital toward licensed, compliant ventures.\n- Notable deals included a $1 billion round for Kalshi and Mastercard’s $1.8 billion acquisition of stablecoin payments firm BVNK.\n- Investors now view regulatory licenses as defensible, high-value assets that create significant barriers to entry for competitors.\n\n### Why it Matters\nThe shift in capital indicates that the cryptocurrency industry is prioritizing institutional integration and regulatory compliance over its original permissionless ethos. This trend suggests that future market growth will be driven by licensed financial infrastructure rather than decentralized, ungoverned experiments.",
+    "category": "Tech Business & Markets",
+    "source": "CoinDesk",
+    "processed_at": "2026-08-16T19:33:54.144995",
+    "author": "Olivier Acuna"
+  },
+  {
+    "title": "Met Police apologises for data breach involving alleged Al Fayed victims",
+    "url": "https://www.bbc.co.uk/news/articles/c1w1yv987jqo",
+    "summary": "The Metropolitan Police has apologized after inadvertently exposing the email addresses of approximately 140 survivors of sexual abuse linked to the late Harrods owner Mohamed Al Fayed.\n\n### Key Points\n- The data breach occurred when the Metropolitan Police failed to use blind copy (BCC) while sending an update regarding Operation Cornpoppy to survivors.\n- Operation Cornpoppy is an ongoing investigation into individuals who allegedly facilitated or enabled sexual offending by Mohamed Al Fayed.\n- The force has referred itself to the Information Commissioner's Office (ICO) following the incident.\n- Investigators confirmed that seven suspects in their 70s and 80s have been interviewed under caution as part of the probe.\n- This incident follows a recent ICO enforcement notice issued to the Metropolitan Police regarding systemic failures in handling sensitive personal data.\n\n### Why it Matters\nThis breach undermines trust in the Metropolitan Police among vulnerable victims who have already faced significant barriers to reporting sexual abuse. It highlights ongoing concerns regarding the force's ability to protect sensitive information, potentially discouraging other survivors from coming forward to assist with criminal investigations.",
+    "category": "Cybersecurity",
+    "source": "BBC News",
+    "processed_at": "2026-08-16T19:34:22.207305",
+    "author": "https://www.facebook.com/bbcnews"
+  },
+  {
+    "title": "Don’t overlook Elektron’s budget electronic music instruments",
+    "url": "https://www.theverge.com/gadgets/980275/elektron-model-cycles-model-samples-groovebox-electronic-music-instruments-review",
+    "summary": "Elektron’s Model:Samples and Model:Cycles grooveboxes offer an accessible, budget-friendly entry point into electronic music production, featuring powerful sequencing capabilities that often outperform more expensive, complex hardware alternatives.\n\n### Key Points\n- The Model:Cycles utilizes FM synthesis, while the Model:Samples allows users to load audio files via USB for playback.\n- Both devices feature six-track sequencers with \"trigs\" and \"locks,\" enabling complex, evolving arrangements within a 64-step pattern.\n- The hardware includes six velocity-sensitive pads and dedicated knobs for hands-on control, prioritizing live performance over deep menu diving.\n- Advanced features like \"Control-all\" allow users to manipulate all tracks simultaneously for creative sound design and chaotic breakdowns.\n- These units are priced at $349 new, with secondary market prices on platforms like Reverb or Craigslist often dropping as low as $200.\n\n### Why it Matters\nThese grooveboxes provide a high-value alternative for beginners who might otherwise be intimidated by the complex workflows of premium electronic music hardware. By balancing ease of use with deep sequencing features, they remain relevant tools for both novice producers and experienced musicians seeking a portable, performance-oriented instrument.",
+    "category": "Phones, Laptops, and Gadgets",
+    "source": "The Verge",
+    "processed_at": "2026-08-16T19:34:35.624191",
+    "author": "Terrence O’Brien"
+  },
+  {
+    "title": "Best iPhone Location Spoofer: How To Fake GPS Without Jailbreaking",
+    "url": "https://www.redmondpie.com/best-iphone-location-spoofer-how-to-fake-gps-without-jailbreaking/",
+    "summary": "iPhone users can safely spoof their GPS location without jailbreaking by using desktop-tethered software that simulates coordinates while maintaining the integrity of the official iOS system and applications.\n\n### Key Points\n- Apple’s strict \"sandboxing\" prevents mobile-only apps from altering system-level GPS data, making desktop tethering the only secure, non-jailbreak alternative.\n- Users must enable Developer Mode in iOS 16, 17, or 18 settings to allow the device to accept simulated location data from a computer.\n- Tools like Fonelora Location Changer provide features such as Teleport Mode, Joystick control, and Multi-Spot GPX routing for precise movement.\n- VPNs only mask IP addresses and cannot change hardware-level GPS coordinates used by apps like Pokémon GO or Find My.\n- Respecting \"cooldown\" periods and using official App Store game clients significantly reduces the risk of account bans compared to using modified third-party apps.\n\n### Why it Matters\nUsing desktop-tethered software is the industry-standard method for balancing device security with the ability to manipulate location data. This approach protects users from the high security risks and potential account bans associated with modified apps or unauthorized device jailbreaking.",
+    "category": "Phones, Laptops, and Gadgets",
+    "source": "redmondpie.com",
+    "processed_at": "2026-08-16T19:35:11.911147",
+    "author": "RP Staff"
+  },
+  {
+    "title": "Microsoft makes threat modeling central to post-quantum migration",
+    "url": "https://4sysops.com/archives/microsoft-makes-threat-modeling-central-to-post-quantum-migration/",
+    "summary": "Microsoft urges organizations to prioritize cryptographic inventories and quantum-resistant upgrades to protect sensitive data against future threats, aiming for full migration across its critical services by 2029.\n\n### Key Points\n- Cryptographic inventories must include operating systems, cloud platforms, hardware, and third-party frameworks to identify hidden dependencies.\n- Teams should document specific algorithms, key sizes, and implementation providers to maintain comprehensive oversight of security assets.\n- Microsoft recommends transitioning key establishment to ML-KEM and adopting ML-DSA or SLH-DSA for digital signatures to counter quantum computing risks.\n- AES-256 remains the standard for bulk encryption, while TLS 1.3 connections require hybrid key-establishment groups to achieve post-quantum security.\n- Organizations must establish crypto-agility to manage external upgrade schedules and ensure long-term data confidentiality.\n\n### Why it Matters\nProactive migration to post-quantum cryptography is essential to prevent future decryption of sensitive data as quantum computing capabilities advance. By building crypto-agility now, businesses can mitigate systemic risks and ensure their infrastructure remains resilient against evolving cryptographic standards.",
+    "category": "Cybersecurity",
+    "source": "4sysops.com",
+    "processed_at": "2026-08-16T19:35:28.522658",
+    "author": "IT News"
+  },
+  {
+    "title": "macOS Screen Sharing Flaw Exploited to Deploy Monero Miners",
+    "url": "https://securityaffairs.com/197234/uncategorized/macos-screen-sharing-flaw-exploited-to-deploy-monero-miners.html",
+    "summary": "The Dutch National Cyber Security Centre has confirmed active exploitation of a critical authentication vulnerability in macOS Screen Sharing, urging users to update their systems immediately to prevent compromise.\n\n### Key Points\n- The vulnerability, tracked as CVE-2026-65400, carries a critical CVSS score of 9.8 and allows unauthorized network access without valid credentials.\n- Apple released patches for macOS Tahoe 26.6.1, Sequoia 15.7.9, and Sonoma 14.8.9 to address the flaw discovered by researcher Alfredo Pesoli.\n- Attackers are actively targeting systems with port 5900 exposed to the internet to gain root access and install Monero cryptocurrency miners.\n- Security firm Calif reported that the logic-based flaw is simple to exploit, with functional attack code created in just four hours using AI tools.\n- Experts recommend disabling Screen Sharing in system settings if immediate software updates are not possible to mitigate the risk of unauthorized remote access.\n\n### Why it Matters\nThis incident highlights the rapidly shrinking window between the disclosure of a software vulnerability and the deployment of functional exploits by malicious actors. The ease of weaponizing these logic errors suggests that exposed network services face an immediate and high risk of automated compromise.",
+    "category": "Cybersecurity",
+    "source": "Securityaffairs.com",
+    "processed_at": "2026-08-16T19:40:00.800184",
+    "author": "Pierluigi Paganini"
+  },
+  {
+    "title": "AI could help fossil fuel companies create more emissions",
+    "url": "https://grist.org/business/ai-could-help-fossil-fuel-companies-create-more-emissions/",
+    "summary": "New research published in the journal npj Climate Action suggests that AI-driven productivity gains in the fossil fuel industry could significantly increase global greenhouse gas emissions.\n\n### Key Points\n- AI-enabled fossil fuel production could increase global energy emissions by 1.2 to 4.8 percent annually.\n- The projected emissions increase is comparable to the total annual output of countries like Mexico or Russia.\n- Researchers argue these \"enabled emissions\" from AI tools outweigh the climate benefits of AI-driven clean energy advancements.\n- Former Microsoft sustainability employees Will and Holly Alpine authored the study after leaving the company over its fossil fuel partnerships.\n- The study highlights a \"self-reinforcing\" cycle where tech companies provide AI tools to oil firms while simultaneously relying on them for data center power.\n\n### Why it Matters\nThis research challenges the narrative that AI will be a net positive for the climate by highlighting the overlooked environmental impact of industrial efficiency tools. It suggests that current corporate sustainability metrics fail to account for the massive emissions generated when technology accelerates fossil fuel extraction.",
+    "category": "Artificial Intelligence",
+    "source": "Grist",
+    "processed_at": "2026-08-16T19:40:10.814450",
+    "author": "Molly Taft, WIRED"
+  },
+  {
+    "title": "5 Of The Best-Selling Video Doorbells On Amazon",
+    "url": "https://www.bgr.com/2233519/best-selling-video-doorbells-amazon/",
+    "summary": "Choosing the right smart home security device can be simplified by reviewing top-rated, best-selling video doorbells on Amazon that offer various features, power options, and subscription-based or local storage.\n\n### Key Points\n- The Ring Battery Doorbell 2K offers 2K resolution and flexible power options but requires a paid subscription for video storage and person detection.\n- The Blink Video Doorbell is a budget-friendly option starting under $40, though it relies on a paid subscription plan for advanced motion-activated alerts.\n- The Arlo Video Doorbell 2K (2nd Gen) features a 180-degree field of view and HDR support, with basic live streaming available without a monthly fee.\n- The Eufy Security Video Doorbell E340 utilizes a dual-camera system and provides 8 GB of built-in local storage, eliminating the need for cloud subscriptions.\n- The Tapo D210 by TP-Link includes a bundled chime and supports local microSD storage, maintaining a 4.4-star rating for its value and performance.\n\n### Why it Matters\nVideo doorbells serve as an accessible entry point for home security, allowing users to monitor visitors and property remotely. While these devices offer significant convenience, consumers must weigh the trade-offs between recurring subscription costs for cloud features and the upfront investment in hardware that supports local storage.",
+    "category": "Phones, Laptops, and Gadgets",
+    "source": "BGR",
+    "processed_at": "2026-08-16T19:40:21.248499",
+    "author": "staff@bgr.com (Gaurav Shukla)"
+  },
+  {
+    "title": "Intel says PC market is ‘a tale of two kingdoms’ with mainstream ‘taking a beating’ — VP suggests a split between mainstream and enthusiast sockets across the industry",
+    "url": "https://www.tomshardware.com/pc-components/cpus/intel-says-pc-market-is-a-tale-of-two-kingdoms-with-mainstream-taking-a-beating-vp-suggests-a-split-between-mainstream-and-enthusiast-sockets-across-the-industry",
+    "summary": "Intel executive Robert Hallock anticipates a permanent industry shift toward separate mainstream and enthusiast processor sockets to address rising manufacturing costs and a starkly divided consumer PC market.\n\n### Key Points\n- Intel vice president Robert Hallock describes the current PC market as a \"tale of two kingdoms,\" split between budget-constrained buyers and high-end enthusiasts.\n- Rising supply chain and component costs are forcing manufacturers to pass expenses to consumers, leading to higher average selling prices.\n- Intel is reportedly planning a socket transition, potentially moving to LGA 1700 for mainstream users and LGA 1954 for upcoming enthusiast-grade Nova Lake processors.\n- Companies are increasingly using short-term pricing concessions, such as deep discounts on Arrow Lake Refresh chips, to maintain sales volume during economic volatility.\n- Industry leaders suggest that maintaining a unified platform is becoming unsustainable, necessitating product stack concessions to keep hardware affordable for the mainstream segment.\n\n### Why it Matters\nThis strategic shift signals a long-term departure from universal motherboard compatibility, which could increase the total cost of ownership for PC builders and limit future upgrade paths. By segmenting the market, Intel and other hardware manufacturers aim to protect profit margins on premium products while attempting to prevent the entry-level desktop market from becoming entirely unaffordable.",
+    "category": "Tech Business & Markets",
+    "source": "Tom's Hardware UK",
+    "processed_at": "2026-08-16T19:40:53.615772",
+    "author": "Jake Roach"
+  },
+  {
+    "title": "Three new Windows flaws can bypass security, gain system privileges, and even install malware remotely",
+    "url": "https://www.techspot.com/news/113493-three-new-windows-flaws-can-bypass-security-gain.html",
+    "summary": "Cybersecurity researchers have identified three critical vulnerabilities in Windows systems, including the \"Download more RAM\" memory exploit, which allow attackers to gain unauthorized system privileges remotely.\n\n### Key Points\n- The \"Download more RAM\" exploit (CVE-2026-23670) allows remote attackers to bypass Windows 11 security by manipulating unprotected Serial Presence Detect chips on consumer memory modules.\n- Major memory manufacturers including Corsair, G.Skill, and ADATA reportedly shipped hardware violating JEDEC guidelines by failing to implement necessary write protection.\n- The ShieldBreak zero-day (CVE-2026-50656) enables privilege escalation within Microsoft Defender on Windows 10, Windows 11, and Windows Server environments.\n- A \"plug and pwn\" vulnerability allows attackers to install malicious vendor drivers with system-level privileges remotely over RDP without requiring physical hardware access.\n- Microsoft released mitigations in its April 2026 update, while Corsair and HWiNFO have introduced software tools to enable manual write protection for affected memory modules.\n\n### Why it Matters\nThese vulnerabilities represent a significant shift in threat modeling because they allow remote exploitation of hardware and system-level processes that previously required physical access. Organizations and users must prioritize updating their systems and hardware management software to prevent potential unauthorized access to sensitive security enclaves and corporate device settings.",
+    "category": "Cybersecurity",
+    "source": "TechSpot",
+    "processed_at": "2026-08-16T19:45:19.913020",
+    "author": "Kishalaya Kundu"
+  },
+  {
     "author": "Joe Rice-Jones",
     "source": "XDA Developers",
     "title": "Windows 11 can now run Linux containers without Docker, and I tested if WSL Containers could actually replace it",

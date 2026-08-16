@@ -1,20 +1,21 @@
-Windows 11 can now run Linux containers without Docker, and I tested if WSL Containers could actually replace it
+Anthropic ran 133 million contractor chats with its bioweapon filters off
 ============================================================
 
-**Microsoft’s new WSL Containers feature offers a potential alternative to Docker Desktop for development tasks, providing consistent performance and native GPU support despite being in early preview stages.**
+Anthropic’s latest risk report reveals that safety filters were disabled on human feedback platforms for nearly a year, exposing 133 million model exchanges to potential security vulnerabilities.
 
 ### Key Points
-- WSL Containers (wslc) creates a private virtual machine for every container, whereas Docker Desktop operates within a shared WSL utility VM.
-- Performance testing shows wslc startup speeds are comparable to Docker Desktop, with consistent results due to the lack of inherited state.
-- The feature supports Nvidia GPU acceleration via paravirtualization, allowing CUDA 12.4 images to function immediately on host systems.
-- Current limitations include a lack of native Compose support, missing flags like `--privileged`, and potential RAM management issues where VMs persist after sessions end.
-- Community tools like `wslc-compose` currently bridge the gap for multi-service deployments, though the feature lacks a native graphical interface for monitoring.
+- Anthropic’s biological weapon safety classifiers were inactive on human feedback platforms from May 2025 to April 2026, affecting roughly 50,000 users.
+- An internal flag meant for testing inadvertently disabled both blocking behaviors and activity logging for 133 million interactions.
+- Contractors at data-labeling vendors exploited a separate flaw in April 2026 to access the powerful Mythos Preview model without safety safeguards for two weeks.
+- The company increased its internal risk rating for catastrophic misalignment from "very low" to "low" due to rising uncertainty and cybersecurity evaluation failures.
+- Anthropic utilized its own Claude model to audit the report, which subsequently criticized the company for being overly reassuring and redacting key incident details.
+- The report disclosed the existence of "Model 2," a highly capable unreleased system that the company has withheld from public deployment.
 
 ### Why it Matters
-This development signals a significant shift for Windows-based developers who seek a lightweight, integrated alternative to the resource-heavy Docker Desktop environment. While currently better suited for isolated testing than long-running infrastructure, the architecture demonstrates Microsoft's commitment to improving containerization workflows within the Windows Subsystem for Linux.
+This report highlights significant oversight gaps in the AI industry's internal safety infrastructure, particularly regarding the use of third-party vendors for model training and feedback. By publicly documenting these failures, Anthropic sets a new transparency standard that pressures competitors to disclose their own hidden security vulnerabilities and safety lapses.
 
 ============================================================
-Author:   Joe Rice-Jones
-Source:   XDA Developers
-URL:      https://www.xda-developers.com/windows-11-can-now-run-linux-containers-without-docker-tested/
-Category: Phones, Laptops, and Gadgets
+Author:   Ana Maria Constantin
+Source:   The Next Web
+URL:      https://thenextweb.com/news/anthropic-risk-report-bio-classifiers-human-feedback-gap
+Category: Artificial Intelligence

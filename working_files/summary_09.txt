@@ -1,20 +1,21 @@
-RISC-V: They should have known better
+Why was there an 'evil’ Delta airlines Wi-Fi network? The experts weigh in
 ============================================================
 
-A critical analysis of the RISC-V instruction set architecture argues that its design flaws, excessive optionality, and fragmented ecosystem hinder its viability for high-performance computing and desktop applications.
+A passenger on a Delta flight departing from the DEF CON hacker conference in Las Vegas allegedly launched a malicious "evil twin" Wi-Fi attack against fellow travelers.
 
 ### Key Points
-- The author contends that RISC-V’s "infinite optionality" creates incompatible hardware implementations, forcing developers to target the lowest common denominator.
-- Interrupt handling in RISC-V is criticized as significantly slower and more complex than the industry-standard ARM Cortex-M0.
-- The architecture lacks essential features like register-plus-register addressing modes, which the author claims were ignored for years before being added as optional extensions.
-- Compressed instruction encodings are described as poorly designed, with inconsistent immediate values and overlapping bit patterns that can cause semantic errors.
-- The author predicts RISC-V will succeed primarily in low-cost, single-use microcontroller markets where price is the deciding factor rather than architectural quality.
+- The attacker used a deauthentication attack to jam legitimate onboard Wi-Fi for 30 minutes.
+- A fake network named "Delta WiFi Fast" was broadcast to trick passengers into connecting.
+- The incident was reported by flight crew via ACARS messages after passengers raised concerns.
+- Delta confirmed that aircraft operating systems remained secure and flight safety was never compromised.
+- Experts warn that such attacks, which can harvest credentials via phishing, are federal crimes.
+- The FBI is reportedly involved in investigating the incident following the flight's departure from Las Vegas.
 
 ### Why it Matters
-The critique highlights a growing tension between the open-source nature of the RISC-V specification and the practical requirements of software compatibility and performance. As major distributions like Android and Linux move toward mandatory profiles like RVA23, the industry faces a potential divide between "standard-compliant" hardware and the vast array of existing, fragmented RISC-V implementations.
+This incident highlights the significant security risks posed by untrusted public networks, particularly for business travelers who may inadvertently expose sensitive corporate data. It serves as a reminder that users should utilize always-on VPNs and remain vigilant against suspicious login prompts when accessing Wi-Fi in transit.
 
 ============================================================
-Author:   Dmitry.GR
-Source:   Dmitry.gr
-URL:      https://dmitry.gr/?r=06.%20Thoughts&proj=12.%20RV
-Category: Tech Business & Markets
+Author:   benedict.collins@futurenet.com (Benedict Collins) , Benedict Collins
+Source:   TechRadar
+URL:      https://www.techradar.com/pro/security/why-was-there-an-evil-delta-airlines-wi-fi-network-the-experts-weigh-in
+Category: Cybersecurity

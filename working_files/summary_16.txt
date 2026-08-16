@@ -1,21 +1,20 @@
-I stopped apologizing for my mic on video calls after installing this free app
+macOS Screen Sharing Flaw Exploited to Deploy Monero Miners
 ============================================================
 
-Nvidia Broadcast utilizes AI-powered processing on RTX graphics cards to enhance audio and video quality for remote workers by suppressing background noise and improving webcam image clarity.
+The Dutch National Cyber Security Centre has confirmed active exploitation of a critical authentication vulnerability in macOS Screen Sharing, urging users to update their systems immediately to prevent compromise.
 
 ### Key Points
-- Nvidia Broadcast uses Tensor Cores in RTX 2060 or newer GPUs to perform local AI-based noise suppression and video enhancement.
-- The software isolates human speech to eliminate ambient sounds like fan hums and keyboard clicks without requiring cloud-based processing.
-- Webcam features include virtual backgrounds, auto-framing, eye contact correction, and low-light noise reduction to improve professional appearance.
-- Users must have at least 8GB of RAM and download approximately 1.5GB of data to install the necessary AI models.
-- AMD users can access similar noise suppression via the Adrenalin Edition software on Ryzen 6000 or RX 6000 series hardware and newer.
-- Windows Studio Effects offers comparable AI enhancements for systems equipped with a dedicated Neural Processing Unit (NPU).
+- The vulnerability, tracked as CVE-2026-65400, carries a critical CVSS score of 9.8 and allows unauthorized network access without valid credentials.
+- Apple released patches for macOS Tahoe 26.6.1, Sequoia 15.7.9, and Sonoma 14.8.9 to address the flaw discovered by researcher Alfredo Pesoli.
+- Attackers are actively targeting systems with port 5900 exposed to the internet to gain root access and install Monero cryptocurrency miners.
+- Security firm Calif reported that the logic-based flaw is simple to exploit, with functional attack code created in just four hours using AI tools.
+- Experts recommend disabling Screen Sharing in system settings if immediate software updates are not possible to mitigate the risk of unauthorized remote access.
 
 ### Why it Matters
-These software-based tools allow professionals to achieve studio-quality audio and video results using existing, lower-cost hardware. By leveraging local AI processing, users can significantly improve their remote meeting presence without the expense of purchasing high-end microphones or cameras.
+This incident highlights the rapidly shrinking window between the disclosure of a software vulnerability and the deployment of functional exploits by malicious actors. The ease of weaponizing these logic errors suggests that exposed network services face an immediate and high risk of automated compromise.
 
 ============================================================
-Author:   Shaheer Khan
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/stopped-apologizing-for-mic-on-video-calls-after-installing-free-app/
-Category: Artificial Intelligence
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/197234/uncategorized/macos-screen-sharing-flaw-exploited-to-deploy-monero-miners.html
+Category: Cybersecurity
