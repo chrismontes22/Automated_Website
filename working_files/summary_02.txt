@@ -1,20 +1,20 @@
-Snooping Flume Water Monitor Data On The Wire
+ChatGPT Can Now Add Your Mac Activity to Its Memories
 ============================================================
 
-Security researcher Stephen successfully intercepted and decrypted data from a Flume smart water monitor by exploiting vulnerabilities in the device's static encryption key implementation and network communication.
+OpenAI has launched a new Computer History feature for macOS that tracks user activity across websites and applications to provide personalized context for its ChatGPT and Codex models.
 
 ### Key Points
-- The Flume system uses a sensor and bridge device to transmit water usage data to utility servers.
-- Stephen bypassed encryption by harvesting a static device secret key directly from the bridge's onboard flash memory.
-- A custom man-in-the-middle tool now allows for local logging of water flow data without disrupting server connectivity.
-- The researcher published the relay tool on GitHub for public review and further experimentation.
-- Users implementing this workaround may face potential issues receiving future automatic firmware updates from the manufacturer.
+- The feature is currently available to ChatGPT Pro, Business, and Enterprise subscribers on macOS, excluding users in the UK, Switzerland, and the European Economic Area.
+- It utilizes the macOS accessibility API to log clicks, typing, keyboard shortcuts, and app switches rather than recording screen visuals or audio.
+- Users maintain control over the feature through manual opt-in, the ability to pause tracking, and the option to delete specific history logs at any time.
+- OpenAI states that activity summaries are generated in the cloud but stored locally, and the data is not used for training its AI models.
+- The company warns that Computer History files are not encrypted by the application and could potentially be accessed by other programs running on the user's system.
 
 ### Why it Matters
-This research highlights significant security vulnerabilities in smart home utility devices that rely on static keys for data encryption. It demonstrates how easily local network traffic can be intercepted when hardware lacks robust, dynamic authentication protocols.
+This feature represents a significant shift toward highly personalized AI agents that anticipate user needs by monitoring cross-application behavior. While it offers increased productivity, the lack of native file encryption raises potential security concerns regarding how sensitive user data is handled and stored on local devices.
 
 ============================================================
-Author:   Zoe Skyforest
-Source:   Hackaday
-URL:      https://hackaday.com/2026/08/14/snooping-flume-water-monitor-data-on-the-wire/
-Category: Cybersecurity
+Author:   Lori Grunin
+Source:   CNET
+URL:      https://www.cnet.com/tech/services-and-software/chatgpt-mac-activity-computer-history/
+Category: Artificial Intelligence

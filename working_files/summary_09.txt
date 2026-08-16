@@ -1,20 +1,20 @@
-Apple trained its own AI model for China with help from Alibaba
+RISC-V: They should have known better
 ============================================================
 
-Apple has partnered with Alibaba to develop a custom artificial intelligence model specifically for the Chinese market, marking a significant strategic shift for the technology giant’s international operations.
+A critical analysis of the RISC-V instruction set architecture argues that its design flaws, excessive optionality, and fragmented ecosystem hinder its viability for high-performance computing and desktop applications.
 
 ### Key Points
-- Apple collaborated with Alibaba to train a proprietary large language model tailored for Chinese users and local regulatory requirements.
-- The initiative allows Apple to maintain greater control over its generative AI features as it prepares to launch Apple Intelligence in China.
-- Apple recently secured approval from China’s cyberspace regulator, clearing a critical legal hurdle for the upcoming iOS update.
-- This partnership represents a rare cross-border collaboration amid ongoing geopolitical tensions between the United States and China regarding AI development.
-- Apple is expected to be the first U.S. company authorized to deploy its own custom AI model within the Chinese smartphone market.
+- The author contends that RISC-V’s "infinite optionality" creates incompatible hardware implementations, forcing developers to target the lowest common denominator.
+- Interrupt handling in RISC-V is criticized as significantly slower and more complex than the industry-standard ARM Cortex-M0.
+- The architecture lacks essential features like register-plus-register addressing modes, which the author claims were ignored for years before being added as optional extensions.
+- Compressed instruction encodings are described as poorly designed, with inconsistent immediate values and overlapping bit patterns that can cause semantic errors.
+- The author predicts RISC-V will succeed primarily in low-cost, single-use microcontroller markets where price is the deciding factor rather than architectural quality.
 
 ### Why it Matters
-This development signals a major pivot in Apple’s strategy to navigate China’s strict regulatory environment while maintaining its competitive edge in a key global market. By securing government approval for a proprietary model, the company may establish a new blueprint for how Western tech firms can operate within China’s restricted AI ecosystem.
+The critique highlights a growing tension between the open-source nature of the RISC-V specification and the practical requirements of software compatibility and performance. As major distributions like Android and Linux move toward mandatory profiles like RVA23, the industry faces a potential divide between "standard-compliant" hardware and the vast array of existing, fragmented RISC-V implementations.
 
 ============================================================
-Author:   Robert Hart
-Source:   The Verge
-URL:      https://www.theverge.com/ai-artificial-intelligence/980160/apple-intelligence-china-custom-ai-model-alibaba
-Category: Artificial Intelligence
+Author:   Dmitry.GR
+Source:   Dmitry.gr
+URL:      https://dmitry.gr/?r=06.%20Thoughts&proj=12.%20RV
+Category: Tech Business & Markets

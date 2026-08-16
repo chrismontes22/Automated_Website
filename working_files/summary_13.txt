@@ -1,20 +1,20 @@
-Who’s Tracking You? Use This New Service to Find Out
+Show HN: AletheionAGI – Grounding enforcement for AI agents
 ============================================================
 
-The new service DecryptAds provides a free, searchable database that scrapes and correlates adtech data to help users identify the companies tracking them across websites and mobile applications.
+AletheionAGI has launched a new security-focused grounding layer designed to provide persistent, authorized memory for AI systems while preventing unsupported claims from reaching customer-facing interfaces.
 
 ### Key Points
-- DecryptAds aggregates publicly available files like ads.txt, app-ads.txt, and sellers.json to map the complex advertising supply chain.
-- The platform identifies high-risk ad partners, including those based in countries like Russia, China, and the UAE, which may pose security or privacy threats.
-- Researchers use the tool to track malicious "malvertising" campaigns, AI-generated content farms, and data brokers harvesting geolocation or device fingerprinting information.
-- A "quiet removals" feature tracks when ad exchanges silently drop partners, helping to expose suspicious activity that is typically hidden from the public.
-- The service includes a Legal Dossier lookup to reveal ownership relationships and historical data for specific domains and mobile applications.
+- The system utilizes a "fail-closed" boundary to block AI responses that lack verified evidence or violate defined security policies.
+- Performance testing on 979 support questions achieved a 93.6% recall rate and a 66.5% diagnostic answer score.
+- The architecture supports 22 distinct failure classes, including protection against prompt injection, cross-namespace leakage, and malicious feedback.
+- AletheionAGI functions as an integration layer that works with existing AI readers, allowing companies to maintain their own infrastructure.
+- A one-time, 1,000-query proof-of-concept plan is available for R$ 99 to test the system's grounding and retrieval capabilities.
 
 ### Why it Matters
-This tool provides much-needed transparency into the opaque adtech ecosystem, allowing security researchers and privacy-conscious users to identify potential threats like malware and data harvesting. By exposing the hidden connections between ad networks and content farms, it empowers users to make informed decisions about their digital footprint and the risks associated with specific websites and apps.
+This technology addresses the critical business risk of AI "hallucinations" by enforcing strict provenance and authorization over the data used in customer interactions. By separating the AI reader from the grounding boundary, companies can improve the reliability of their automated agents without replacing their existing AI infrastructure.
 
 ============================================================
-Author:   BrianKrebs
-Source:   Krebs on Security
-URL:      https://krebsonsecurity.com/2026/08/whos-tracking-you-use-this-new-service-to-find-out/
-Category: Cybersecurity
+Author:   AletheionAGI
+Source:   Aletheionagi.com
+URL:      https://www.aletheionagi.com
+Category: Artificial Intelligence
