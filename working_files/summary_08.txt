@@ -1,20 +1,20 @@
-ProofRun – a local verification receipt for AI coding agents
+I’m a gamer and a parent. The KIDS Act makes my kids less safe.
 ============================================================
 
-ProofRun is a new open-source tool that cryptographically binds test results to specific code states, ensuring developers can verify if their software tests remain valid after changes.
+The proposed KIDS Act aims to enhance child safety online but faces criticism for potentially mandating widespread collection of sensitive biometric data and government-issued identification from young users.
 
 ### Key Points
-- ProofRun uses HMAC-SHA256 signatures to link test outcomes to a specific git commit and file fingerprint.
-- The tool categorizes test statuses as PASS, FAIL, STALE, or NOT RUN, automatically flagging results as STALE if code changes occur.
-- It operates entirely offline without telemetry, relying on real subprocess execution rather than AI-based inference or string matching.
-- The project includes a GitHub Action that independently re-runs tests to prevent reliance on potentially tampered local receipt files.
-- ProofRun is designed to hold AI coding agents accountable by ensuring their claims of passing tests are backed by verifiable, recent execution data.
+- The KIDS Act mandates age verification across various online platforms, including gaming services and social media.
+- Critics argue the legislation forces companies to collect sensitive data like government IDs and biometrics, increasing the risk of large-scale data breaches.
+- The bill is criticized for applying a one-size-fits-all regulatory framework to diverse digital experiences, ranging from console gaming to educational platforms.
+- Opponents suggest that existing parental control tools and private software solutions are more effective than government-mandated age verification systems.
+- Historical data from similar laws in the United Kingdom shows that third-party age-checking providers have previously suffered security breaches exposing user identity documents.
 
 ### Why it Matters
-This tool addresses the critical "trust gap" in AI-assisted development where agents may falsely claim code passes tests without actually running them. By providing a tamper-evident audit trail, ProofRun helps engineering teams maintain code integrity and prevents the silent introduction of bugs during automated development workflows.
+The legislation highlights a growing tension between government efforts to regulate digital safety and the fundamental cybersecurity principle of data minimization. By incentivizing the mass collection of sensitive personal information, the bill may inadvertently create new security vulnerabilities that threaten the privacy of children it intends to protect.
 
 ============================================================
-Author:   yebiguo
-Source:   Github.com
-URL:      https://github.com/yebiguo/ProofRun
-Category: Artificial Intelligence
+Author:   Donald Kimball
+Source:   TheBlaze
+URL:      https://www.theblaze.com/columns/opinion/im-a-gamer-and-a-parent-the-kids-act-makes-my-kids-less-safe
+Category: Cybersecurity

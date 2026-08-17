@@ -1,20 +1,20 @@
-Jellyfin does everything Plex does — except charge you for it
+New AmnesiaStealer macOS malware hijacks browser sessions via remote control
 ============================================================
 
-Jellyfin has emerged as a superior, open-source alternative to Plex for home media servers by offering all premium features for free without intrusive advertisements or cloud-based tracking.
+A new macOS malware called AmnesiaStealer uses ClickFix campaigns to hijack authenticated browser sessions, allowing attackers to remotely control Chromium-based browsers and steal sensitive user data.
 
 ### Key Points
-- Jellyfin is an open-source fork of Emby that provides all features, including hardware transcoding and remote access, without subscription paywalls.
-- The platform offers a clean, distraction-free interface that focuses exclusively on local media files rather than integrated ad-supported streaming channels or storefronts.
-- Jellyfin functions entirely offline and does not rely on external servers for user authentication, ensuring access even during internet outages.
-- The software does not collect user telemetry or viewing data, providing a more private experience compared to the default settings of Plex.
-- Jellyfin supports a wide range of devices, including Windows, macOS, Android TV, Apple TV, Roku, and Fire TV, alongside a robust third-party plugin ecosystem.
+- AmnesiaStealer targets 16 Chromium-based browsers, including Google Chrome, Microsoft Edge, Brave, and Arc, to exfiltrate passwords, cookies, and cryptocurrency wallet data.
+- The malware utilizes a "stream_module" to launch a headless browser instance, enabling attackers to interact with authenticated sessions via the Chrome DevTools Protocol.
+- Attackers gain real-time control over the victim's browser, including mouse and keyboard input, while receiving a live screencast of the session.
+- Distribution occurs through fake GitHub download pages that prompt users to execute shell scripts from password-protected ZIP archives.
+- Researchers at Jamf identified that the malware shares distribution templates with previous threats like Atomic and MacSync infostealers.
 
 ### Why it Matters
-Choosing Jellyfin allows users to reclaim full control over their personal media libraries while avoiding the rising costs of subscription-based software services. By eliminating cloud dependencies and data tracking, it provides a more reliable and private solution for long-term home media management.
+This malware represents a significant escalation in threat sophistication by moving beyond simple data exfiltration to live, interactive session hijacking. By operating through a headless browser, attackers can bypass traditional security measures and perform actions as the authenticated user, posing a severe risk to both personal and corporate accounts.
 
 ============================================================
-Author:   Oliver Haslam
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/jellyfin-does-everything-plex-does-except-charge-you-for-it/
-Category: Phones, Laptops, and Gadgets
+Author:   Bill Toulas
+Source:   BleepingComputer
+URL:      https://www.bleepingcomputer.com/news/security/new-amnesiastealer-macos-malware-hijacks-browser-sessions-via-remote-control/
+Category: Cybersecurity

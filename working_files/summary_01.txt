@@ -1,20 +1,21 @@
-5 Google apps I replace on every Android phone, and what I use instead
+Week in review: Salesforce and ServiceNow portals exposed for 17 months, exploited Metabase 0-day
 ============================================================
 
-Android users are increasingly replacing default Google applications with third-party alternatives to gain better privacy, enhanced organizational features, and more robust functionality across their mobile devices.
+Global security researchers recently uncovered a 17-month data exposure affecting Salesforce and ServiceNow portals, while new zero-day exploits and supply chain attacks continue to threaten enterprise software environments.
 
 ### Key Points
-- Brave browser replaces Chrome to provide built-in ad-blocking, privacy-focused tracking protection, and integration with Brave Search.
-- Notesnook offers a secure, end-to-end encrypted alternative to Google Keep with rich text editing and cross-device synchronization.
-- TickTick serves as a more persistent task management tool than Google Tasks, featuring snooze capabilities and location-based reminders.
-- Proton Pass provides a zero-knowledge, open-source password management solution that functions across multiple platforms and browsers.
-- Breezy Weather is used as a customizable alternative to Google’s weather service, allowing users to select forecast providers and specific data metrics.
+- A long-running campaign dubbed City-Forum exploited Salesforce and ServiceNow portals for 17 months via a generic server.
+- Framework suffered a data breach after attackers leveraged a zero-day vulnerability in the Metabase business intelligence service.
+- A LiteLLM supply chain attack resulted in a 153GB archive of stolen credentials impacting major firms like AWS, Samsung, and Cisco.
+- Microsoft’s August 2026 Patch Tuesday addressed over 400 vulnerabilities, including one actively exploited zero-day (CVE-2026-68820).
+- Researchers identified 84 previously unknown security flaws in 5G network software, with 81 now assigned CVE tracking numbers.
+- GitHub expanded its Dependabot malware alerts to cover eight major package ecosystems, including PyPI, Maven, and Go.
 
 ### Why it Matters
-Moving away from default ecosystem apps allows users to break free from platform lock-in and prioritize specific needs like data privacy or advanced productivity tools. These alternatives demonstrate that specialized third-party software often provides more granular control and better performance than integrated, general-purpose services.
+These incidents highlight the persistent vulnerability of widely used enterprise platforms and the increasing sophistication of supply chain attacks. Organizations must prioritize rapid patching and robust identity management to mitigate the risks posed by both automated exploits and long-term unauthorized data access.
 
 ============================================================
-Author:   Megan Ellis
-Source:   XDA Developers
-URL:      https://www.xda-developers.com/google-app-alternatives-on-android-phone/
-Category: Phones, Laptops, and Gadgets
+Author:   Help Net Security
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/08/16/week-in-review-salesforce-and-servicenow-portals-exposed-for-17-months-exploited-metabase-0-day/
+Category: Cybersecurity
