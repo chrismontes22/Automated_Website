@@ -1,20 +1,20 @@
-4 reasons why you should buy a Galaxy Z Fold 8, and 4 reasons why you should skip it
+ProofRun – a local verification receipt for AI coding agents
 ============================================================
 
-Samsung has launched the Galaxy Z Fold 8, a compact and lightweight foldable smartphone that offers flagship performance and multitasking capabilities at a lower price point than the Ultra.
+ProofRun is a new open-source tool that cryptographically binds test results to specific code states, ensuring developers can verify if their software tests remain valid after changes.
 
 ### Key Points
-- The Galaxy Z Fold 8 features the Snapdragon 8 Elite Gen 5 processor with 12GB or 16GB of RAM.
-- It includes advanced AI features like My FanCam and integrated Gemini tools for task automation and data privacy.
-- The device offers a creaseless inner display and a form factor comparable to a passport when folded.
-- It lacks S Pen support and features a camera system that underperforms compared to the Galaxy Z Fold 8 Ultra.
-- The phone is priced at $1,900, positioning it as a more affordable alternative to the $2,100 Ultra model.
+- ProofRun uses HMAC-SHA256 signatures to link test outcomes to a specific git commit and file fingerprint.
+- The tool categorizes test statuses as PASS, FAIL, STALE, or NOT RUN, automatically flagging results as STALE if code changes occur.
+- It operates entirely offline without telemetry, relying on real subprocess execution rather than AI-based inference or string matching.
+- The project includes a GitHub Action that independently re-runs tests to prevent reliance on potentially tampered local receipt files.
+- ProofRun is designed to hold AI coding agents accountable by ensuring their claims of passing tests are backed by verifiable, recent execution data.
 
 ### Why it Matters
-The Galaxy Z Fold 8 represents a strategic shift for Samsung by offering a more portable, tablet-like experience that challenges the design standards of current foldable devices. Its market success could influence future industry trends, particularly if it successfully establishes a new blueprint for balancing high-end performance with a more accessible form factor.
+This tool addresses the critical "trust gap" in AI-assisted development where agents may falsely claim code passes tests without actually running them. By providing a tamper-evident audit trail, ProofRun helps engineering teams maintain code integrity and prevents the silent introduction of bugs during automated development workflows.
 
 ============================================================
-Author:   derrek.lee@futurenet.com (Derrek Lee) , Derrek Lee
-Source:   Android Central
-URL:      https://www.androidcentral.com/phones/samsung-galaxy/should-you-buy-the-samsung-galaxy-z-fold-8
-Category: Phones, Laptops, and Gadgets
+Author:   yebiguo
+Source:   Github.com
+URL:      https://github.com/yebiguo/ProofRun
+Category: Artificial Intelligence
