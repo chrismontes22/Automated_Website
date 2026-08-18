@@ -1,20 +1,20 @@
-Suspected China-Nexus Actor Exploits VMware vCenter Flaw, Deploys Babuk-Derived Ransomware
+It’s about ethics in journalism, with Ben Smith
 ============================================================
 
-A China-nexus threat actor is actively exploiting a critical directory-traversal vulnerability in Broadcom VMware vCenter servers to execute arbitrary code and deploy persistent backdoors across global networks.
+**Semafor editor-in-chief Ben Smith is building an "anti-scale" media company that prioritizes high-quality journalism and profitable live events over the traditional, traffic-dependent digital advertising model.**
 
 ### Key Points
-- The campaign exploits CVE-2026-59310, a critical vulnerability with a CVSS score of 9.8, which allows for remote code execution with root privileges.
-- Researchers at QUIRSO identified 361 compromised IP addresses across 47 countries, with the highest infection rates in Germany, the U.S., Turkey, Iran, and France.
-- Attackers utilize a "linuxFile" backdoor, reverse SSH tunnels, and malicious cron jobs to maintain persistence and escalate administrative access.
-- The intrusion includes the deployment of Babuk-derived ransomware on ESXi hosts, which researchers believe may serve as a smokescreen to destroy forensic logs.
-- Evidence of Chinese-language artifacts, specific working hours, and reused research suggests the operation is conducted by a China-based advanced persistent threat group.
+- Semafor, co-founded by Ben Smith and Justin Smith in 2022, generates roughly half of its revenue from its "convening" business, which includes high-profile global events.
+- The company employs approximately 60 journalists and 100 total staff, focusing on a targeted, college-educated audience rather than chasing massive, viral traffic.
+- Smith utilizes a signature "Semaform" writing style that explicitly separates objective facts from reporter analysis to increase transparency and reader trust.
+- The organization is expanding its global footprint, with established operations in Sub-Saharan Africa and plans for further growth in the Gulf, Europe, and Asia.
+- Smith remains bullish on using AI for internal production tasks, such as synthesizing transcripts from large-scale events, while maintaining strict ethical boundaries regarding journalistic independence.
 
 ### Why it Matters
-This campaign highlights the severe risks posed by unpatched infrastructure vulnerabilities, as attackers can gain full root control over enterprise management servers within days of a disclosure. The use of sophisticated cleanup tools and ransomware as a distraction demonstrates an evolving strategy to evade detection and complicate incident response efforts for global organizations.
+The shift toward an anti-scale business model reflects a broader industry reckoning as legacy media brands struggle to compete with the algorithmic dominance of social platforms. By diversifying revenue through events and focusing on a high-value audience, Semafor is attempting to prove that independent, quality journalism can remain financially viable in an era of declining trust and platform instability.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/08/suspected-china-nexus-actor-exploits.html
-Category: Cybersecurity
+Author:   Nilay Patel
+Source:   The Verge
+URL:      https://www.theverge.com/podcast/980759/ben-smith-semafor-ethics-journalism-ai-events-buzzfeed-media-news
+Category: Tech Business & Markets

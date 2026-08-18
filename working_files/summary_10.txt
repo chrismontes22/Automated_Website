@@ -1,20 +1,20 @@
-Akira Ransomware Uses Safe Mode to Bypass EDR
+Here’s How Job Applicants Are Trying to Make Their Resumes Stand Out: ‘There’s No Way to Fight It’
 ============================================================
 
-An Akira ransomware affiliate attempted to disable security software by rebooting a compromised host into Safe Mode, but the tactic caused the encryption payload to crash from memory exhaustion.
+Job seekers and employers are increasingly integrating artificial intelligence terminology into resumes and job descriptions as the labor market adapts to rapid technological shifts and widespread employment uncertainty.
 
 ### Key Points
-- Attackers gained initial access on August 4 by exploiting an MFA-less SonicWall VPN to steal credentials and exfiltrate data via an S3 bucket.
-- The affiliate rebooted the victim host into Safe Mode with Networking to disable EDR and Microsoft Defender real-time protection.
-- The ransomware process failed 13 seconds after launch due to an "out-of-virtual-memory" error caused by the restricted Safe Mode environment.
-- Attackers maintained persistence by adding AnyDesk to the Safe Mode registry before the reboot.
-- Huntress researchers identified this as the first observed instance of Akira using Safe Mode to bypass security controls.
+- LinkedIn reports a 70% increase in U.S. users adding AI-related terms to their professional profiles over the past year.
+- Data from Indeed shows that 8% of U.S. job postings mentioned AI in early 2026, compared to only 3% in 2022.
+- Stanford economists found that current LinkedIn profiles contain 30% more AI references than archived versions from before 2023.
+- A free AI training course at the University of Maryland attracted 62,000 registrants, far exceeding the initial expectation of 500 sign-ups.
+- AI-related job requirements are expanding beyond technical roles to include diverse positions like physical therapists and autonomous truck drivers.
 
 ### Why it Matters
-While the ransomware failed in this specific instance, the tactic demonstrates an evolving threat where attackers intentionally manipulate system boot states to blind security software. Organizations cannot rely on such technical glitches for protection, as future iterations of the malware could be optimized to function within the memory constraints of Safe Mode.
+This trend reflects a fundamental shift in how workers and companies navigate the uncertainty surrounding AI's long-term impact on job security and productivity. As professional standards evolve, the ability to demonstrate AI competency is becoming a critical factor for remaining competitive in a rapidly changing global labor market.
 
 ============================================================
-Author:   Pierluigi Paganini
-Source:   Securityaffairs.com
-URL:      https://securityaffairs.com/197339/malware/akira-ransomware-uses-safe-mode-to-bypass-edr.html
-Category: Cybersecurity
+Author:   Sherin Shibu
+Source:   Entrepreneur
+URL:      https://www.entrepreneur.com/business-news/heres-how-job-applicants-are-trying-to-make-their-resumes-stand-out
+Category: Artificial Intelligence

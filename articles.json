@@ -1,5 +1,149 @@
 [
   {
+    "title": "It’s about ethics in journalism, with Ben Smith",
+    "summary": "**Semafor editor-in-chief Ben Smith is building an \"anti-scale\" media company that prioritizes high-quality journalism and profitable live events over the traditional, traffic-dependent digital advertising model.**\n\n### Key Points\n- Semafor, co-founded by Ben Smith and Justin Smith in 2022, generates roughly half of its revenue from its \"convening\" business, which includes high-profile global events.\n- The company employs approximately 60 journalists and 100 total staff, focusing on a targeted, college-educated audience rather than chasing massive, viral traffic.\n- Smith utilizes a signature \"Semaform\" writing style that explicitly separates objective facts from reporter analysis to increase transparency and reader trust.\n- The organization is expanding its global footprint, with established operations in Sub-Saharan Africa and plans for further growth in the Gulf, Europe, and Asia.\n- Smith remains bullish on using AI for internal production tasks, such as synthesizing transcripts from large-scale events, while maintaining strict ethical boundaries regarding journalistic independence.\n\n### Why it Matters\nThe shift toward an anti-scale business model reflects a broader industry reckoning as legacy media brands struggle to compete with the algorithmic dominance of social platforms. By diversifying revenue through events and focusing on a high-value audience, Semafor is attempting to prove that independent, quality journalism can remain financially viable in an era of declining trust and platform instability.",
+    "source": "The Verge",
+    "processed_at": "2026-08-18T19:26:41.914274",
+    "category": "Tech Business & Markets",
+    "url": "https://www.theverge.com/podcast/980759/ben-smith-semafor-ethics-journalism-ai-events-buzzfeed-media-news",
+    "author": "Nilay Patel"
+  },
+  {
+    "title": "Apple's macOS Screen Sharing Flaw Is Being Exploited in the Wild",
+    "summary": "Apple has released urgent security updates for macOS after reports confirmed that hackers are actively exploiting a screen sharing vulnerability to install unauthorized cryptocurrency mining software on devices.\n\n### Key Points\n- Apple patched a critical authentication flaw in macOS Tahoe, Sonoma, and Sequoia that allowed unauthorized remote access to screens, keyboards, and mice.\n- The Netherlands' National Cyber Security Center confirmed the vulnerability is being exploited on systems with port 5900 exposed to the internet.\n- Attackers are using the flaw to gain root access and install Monero cryptocurrency miners on compromised Mac computers.\n- Apple addressed the issue through improved state management and urges all users to install the latest software updates immediately.\n- Security experts recommend using a VPN when screen sharing is active to provide an additional layer of protection against unauthorized access.\n\n### Why it Matters\nThis exploit highlights the significant risks associated with leaving default ports exposed on internet-connected devices. Users must prioritize system updates to prevent attackers from hijacking hardware resources for malicious activities like unauthorized cryptocurrency mining.",
+    "source": "MacRumors",
+    "processed_at": "2026-08-18T19:26:50.040894",
+    "category": "Cybersecurity",
+    "url": "https://www.macrumors.com/2026/08/17/macos-screen-sharing-flaw-exploited/",
+    "author": "Tim Hardwick"
+  },
+  {
+    "title": "Billionaire investor Leon Cooperman sees a recession in 2027 and a stock drop ahead",
+    "summary": "Billionaire investor Leon Cooperman warns that the United States economy faces a likely recession next year, potentially triggering a significant market downturn as current stock valuations remain overextended.\n\n### Key Points\n- Omega Advisors CEO Leon Cooperman predicts a recession within the next year, citing parallels to historical boom-and-bust cycles like the Nifty Fifty era.\n- Cooperman argues that S&P 500 earnings estimates are currently mispriced and warns that investor enthusiasm for artificial intelligence may soon begin to fizzle.\n- Rising oil prices and elevated inflation remain significant threats, with Brent crude trading 22% higher than levels recorded before the start of the Iran conflict.\n- US retail sales declined by 0.6% in July, signaling that consumers are tightening spending habits under the pressure of persistent inflation.\n- Despite Cooperman’s bearish outlook, the Nasdaq 100 has climbed 19% this year, supported by widespread investor confidence in the long-term profitability of AI technology.\n\n### Why it Matters\nCooperman’s contrarian stance highlights a growing divide between cautious veteran investors and a market currently driven by optimism surrounding artificial intelligence. His warnings serve as a reminder of potential systemic risks, such as inflation and consumer fatigue, that could disrupt the current equity rally if economic conditions deteriorate.",
+    "source": "Business Insider",
+    "processed_at": "2026-08-18T19:26:59.063855",
+    "category": "Tech Business & Markets",
+    "url": "https://www.businessinsider.com/us-recession-2027-stock-market-outlook-leon-cooperman-2026-8",
+    "author": "Jennifer Sor"
+  },
+  {
+    "title": "Inside Defcon, the Conference That Made Cybersecurity Noob-Friendly",
+    "summary": "A first-time attendee explores the Defcon hacker convention in Las Vegas, discovering how specialized villages and hands-on workshops make the complex world of cybersecurity accessible to beginners.\n\n### Key Points\n- Defcon features specialized \"villages\" focused on diverse topics including lock picking, artificial intelligence, aerospace, and maritime security.\n- Attendees participate in \"capture the flag\" (CTF) competitions and collect custom electronic badges that often function as interactive puzzles or soldering projects.\n- The Noob Village provides a dedicated space for newcomers to receive career advice, mentorship, and answers to basic technical questions.\n- Organizations like the Ginger Hacker Initiative offer resources to help veterans, students, and career changers enter the cybersecurity field.\n- The convention serves as a hub for networking, where professionals and hobbyists share knowledge through informal conversations and collaborative learning.\n\n### Why it Matters\nThe Defcon experience highlights how community-driven events can demystify technical fields for those without formal training. By fostering an environment that prioritizes curiosity over expertise, such conventions help bridge the talent gap in the cybersecurity industry.",
+    "source": "CNET",
+    "processed_at": "2026-08-18T19:31:18.498846",
+    "category": "Cybersecurity",
+    "url": "https://www.cnet.com/tech/services-and-software/inside-defcon-the-conference-that-made-cybersecurity-noob-friendly/",
+    "author": "Nelson Aguilar"
+  },
+  {
+    "title": "Evooo1Bot Linux Botnet Exploits Known Flaws to Turn Edge Devices Into SOCKS5 Proxies",
+    "summary": "Cybersecurity researchers at Fortinet have identified Evooo1Bot, a new Linux-based botnet that utilizes Mirai source code to transform compromised internet-facing devices into malicious SOCKS5 proxy nodes.\n\n### Key Points\n- Evooo1Bot has been active since July 2026, targeting various routers, firewalls, and IP cameras through known security vulnerabilities.\n- The malware uses an encrypted command-and-control communication channel over port 443 to blend in with standard HTTPS traffic.\n- It features a wide range of capabilities, including credential sniffing, SSH brute-force scanning, DDoS attack execution, and persistent file management.\n- The botnet exploits at least 18 distinct vulnerabilities, including flaws in hardware from D-Link, Tenda, Telesquare, and software like Atlassian Confluence and Kubernetes.\n- Infected devices are converted into SOCKS5 proxies, allowing attackers to mask malicious traffic and bypass geographic restrictions or internal network security controls.\n\n### Why it Matters\nThis botnet poses a significant threat by turning common edge devices into a distributed infrastructure for anonymous traffic forwarding and further cyberattacks. By leveraging residential and enterprise IP addresses, attackers can effectively hide their origins and bypass traditional network security perimeters.",
+    "source": "Internet",
+    "processed_at": "2026-08-18T19:31:34.092392",
+    "category": "Cybersecurity",
+    "url": "https://thehackernews.com/2026/08/evooo1bot-linux-botnet-exploits-known.html",
+    "author": "info@thehackernews.com (The Hacker News)"
+  },
+  {
+    "title": "\"Market response has far exceeded our expectations\" — ASUS can't make enough laptops with RTX Spark ahead of their expected Q4 launch",
+    "summary": "ASUS has sold out of its initial pre-order supply for the new ProArt P14 and P16 laptops, which feature NVIDIA’s high-performance RTX Spark ARM-based system-on-chip technology.\n\n### Key Points\n- NVIDIA’s RTX Spark is an ARM-powered SoC integrating Blackwell RTX GPU architecture and up to 128GB of unified memory.\n- ASUS reported a complete sell-out of its ProArt P14 and P16 inventory during its Q2 earnings call.\n- The RTX Spark chip is designed to compete with Intel, AMD, and Qualcomm processors in the Windows 11 PC market.\n- ASUS plans to replenish supplies ahead of the official retail launch scheduled for Q4 2026.\n- The laptops feature 4K OLED displays and are marketed for their high AI computing power and extended battery life.\n\n### Why it Matters\nThe strong demand for these devices signals a significant shift in the Windows laptop market toward ARM-based architectures that offer high-end performance without bulky discrete GPUs. This success suggests that NVIDIA’s entry into the SoC space could disrupt the traditional dominance of x86 chipmakers in the premium computing sector.",
+    "source": "Windows Central",
+    "processed_at": "2026-08-18T19:32:23.498338",
+    "category": "Phones, Laptops, and Gadgets",
+    "url": "https://www.windowscentral.com/hardware/asus/asus-rtx-spark-proart-laptops-market-response",
+    "author": "c.cale.hunt@gmail.com (Cale Hunt) , Cale Hunt"
+  },
+  {
+    "title": "Android 17 QPR2 Beta 3 is pretty neat, especially if you hate fraud and scams",
+    "summary": "Google has released Android 17 QPR2 Beta 3 for eligible Pixel devices, introducing new security measures against call-forwarding fraud alongside interface customizations and critical system stability bug fixes.\n\n### Key Points\n- The update introduces OS-level confirmation dialogs for manual call-forwarding codes to prevent social engineering scams.\n- New Quick Settings layout options allow users to rearrange media cards, brightness bars, and tiles for improved personalization.\n- Foldable devices receive a new app handle feature to simplify switching between full-screen and split-screen viewing modes.\n- Google resolved bugs causing visual corruption in the notification shade and false battery capacity degradation warnings.\n- The Pixel 6 and 6 Pro are officially excluded from the beta program as they have reached their end-of-life support cycle.\n- Eligible devices include the Pixel 6a, 7 series, Pixel Fold, and Pixel Tablet, with the final release expected in the December 2026 Feature Drop.\n\n### Why it Matters\nThese updates demonstrate Google's ongoing commitment to mitigating mobile security threats while refining the user experience through interface flexibility. By addressing both high-level fraud prevention and device stability, the company ensures its ecosystem remains competitive and secure for long-term users.",
+    "source": "Android Central",
+    "processed_at": "2026-08-18T19:33:01.939224",
+    "category": "Phones, Laptops, and Gadgets",
+    "url": "https://www.androidcentral.com/apps-software/android-os/android-17-qpr2-beta-3-is-pretty-neat-especially-if-you-hate-fraud-and-scams",
+    "author": "nickodiaz@sbcglobal.net (Nickolas Diaz) , Nickolas Diaz"
+  },
+  {
+    "title": "Here’s How Job Applicants Are Trying to Make Their Resumes Stand Out: ‘There’s No Way to Fight It’",
+    "summary": "Job seekers and employers are increasingly integrating artificial intelligence terminology into resumes and job descriptions as the labor market adapts to rapid technological shifts and widespread employment uncertainty.\n\n### Key Points\n- LinkedIn reports a 70% increase in U.S. users adding AI-related terms to their professional profiles over the past year.\n- Data from Indeed shows that 8% of U.S. job postings mentioned AI in early 2026, compared to only 3% in 2022.\n- Stanford economists found that current LinkedIn profiles contain 30% more AI references than archived versions from before 2023.\n- A free AI training course at the University of Maryland attracted 62,000 registrants, far exceeding the initial expectation of 500 sign-ups.\n- AI-related job requirements are expanding beyond technical roles to include diverse positions like physical therapists and autonomous truck drivers.\n\n### Why it Matters\nThis trend reflects a fundamental shift in how workers and companies navigate the uncertainty surrounding AI's long-term impact on job security and productivity. As professional standards evolve, the ability to demonstrate AI competency is becoming a critical factor for remaining competitive in a rapidly changing global labor market.",
+    "source": "Entrepreneur",
+    "processed_at": "2026-08-18T19:33:52.279836",
+    "category": "Artificial Intelligence",
+    "url": "https://www.entrepreneur.com/business-news/heres-how-job-applicants-are-trying-to-make-their-resumes-stand-out",
+    "author": "Sherin Shibu"
+  },
+  {
+    "title": "The Samsung T9 is our favorite portable SSD ever — and it's down to $240 at Amazon",
+    "summary": "The Samsung T9 portable SSD is currently discounted at Amazon, offering high-speed performance and durable hardware encryption for users requiring fast data transfers for professional or personal projects.\n\n### Key Points\n- The 1TB Samsung T9 is priced at $240, while the 2TB model is available for $405.\n- The drive utilizes a USB 3.2 Gen 2x2 interface to reach sequential read and write speeds of up to 2,000MB/s.\n- Security features include XTS-AES 256-bit hardware encryption and a five-year limited warranty.\n- The device is drop-resistant up to 3 meters and includes both USB-C and USB-A connectivity cables.\n- Performance benchmarks confirm the drive is competitive with similar high-speed storage options from Crucial and Kingston.\n\n### Why it Matters\nThis discount improves the competitive value of the Samsung T9, which previously faced criticism for being overpriced compared to similar market alternatives. The drive remains a top-tier choice for users with compatible USB 3.2 Gen 2x2 hardware who need reliable, high-speed storage for large media files.",
+    "source": "TechRadar",
+    "processed_at": "2026-08-18T19:34:21.992284",
+    "category": "Phones, Laptops, and Gadgets",
+    "url": "https://www.techradar.com/pro/the-samsung-t9-is-our-favorite-portable-ssd-ever-and-its-down-to-usd240-at-amazon",
+    "author": "bryan.wolfe@futurenet.com (Bryan M Wolfe) , Bryan M Wolfe"
+  },
+  {
+    "title": "Agentic AI costs set to balloon fivefold by 2028",
+    "summary": "Security researchers and industry experts are highlighting critical vulnerabilities in AI systems, evolving ransomware threats, and significant infrastructure security initiatives following recent developments at Black Hat and DEF CON.\n\n### Key Points\n- Microsoft’s Security Copilot was successfully manipulated by researchers to reveal internal instructions on how to bypass its own safety protocols.\n- Experts warn that autonomous AI agents pose a significant threat to critical infrastructure, potentially escalating digital intrusions into physical disasters.\n- The DEF CON Franklin project is expanding its scope to enlist hackers in hardening national critical infrastructure against cyber threats.\n- EQT has acquired a majority stake in Swiss cybersecurity firm Acronis, valuing the company at more than $3.5 billion.\n- Attackers are actively exploiting high-severity vulnerabilities in Joomla extensions, including iCagenda and Balbooa Forms, to compromise websites.\n- Debian has released its final version supporting x86-32 architecture, marking a significant transition for the long-standing Linux distribution.\n\n### Why it Matters\nThese developments underscore the dual-use nature of AI, which simultaneously offers advanced automation capabilities and new, complex attack surfaces for malicious actors. As critical infrastructure becomes increasingly digitized, the collaboration between security researchers and industry leaders is essential to mitigate systemic risks to global operations.",
+    "source": "Theregister.com",
+    "processed_at": "2026-08-18T19:34:37.901208",
+    "category": "Cybersecurity",
+    "url": "https://www.theregister.com/ai-and-ml/2026/08/17/agentic-ai-costs-set-to-balloon-fivefold-by-2028/5288363",
+    "author": "Dan Robinson"
+  },
+  {
+    "title": "TMY Google TV projector drops to $175.99 in its first Amazon price drop",
+    "summary": "The TMY Smart Projector featuring an integrated Google TV system is currently available on Amazon for $175.99, marking the first price reduction since the device's initial market release.\n\n### Key Points\n- The projector is discounted by 30% from its original $249.99 retail price, resulting in a total savings of $74.\n- The device features built-in Google TV support, allowing direct access to streaming services like Netflix, Prime Video, and YouTube.\n- Technical specifications include 1080p Full HD playback with support for 4K input, Wi-Fi, and Bluetooth connectivity.\n- The hardware includes a rotatable design for flexible placement and comes with a one-year warranty and a 30-day money-back guarantee.\n\n### Why it Matters\nThis discount positions the TMY projector as a highly competitive entry-level option for consumers seeking an all-in-one home theater solution without external streaming hardware. The price drop may signal a broader effort by budget projector brands to capture market share by emphasizing integrated smart software features.",
+    "source": "Android Authority",
+    "processed_at": "2026-08-18T19:41:59.112098",
+    "category": "Phones, Laptops, and Gadgets",
+    "url": "https://www.androidauthority.com/tmy-google-tv-projector-deal-3699398/",
+    "author": "Matt Horne"
+  },
+  {
+    "title": "Anthropic CEO Says AI Backlash Is 'Fundamentally a Crisis of Trust'",
+    "summary": "Anthropic CEO Dario Amodei attributes the growing public backlash against artificial intelligence to a fundamental crisis of trust in major institutions rather than warnings from industry executives.\n\n### Key Points\n- Investor Gavin Baker argued that Amodei’s warnings about AI risks have fueled negative public sentiment and government crackdowns on data centers.\n- Amodei defended his messaging, stating his public writing maintains a balanced perspective between the potential benefits and the inherent risks of AI technology.\n- The Anthropic CEO authored the essay \"Machines of Loving Grace\" to provide a more inspiring vision of how AI could positively transform the world.\n- Amodei acknowledged that public skepticism is a significant problem but rejected the claim that executive warnings are the primary driver of this trend.\n- Anthropic has actively supported specific AI regulations, including a California bill focused on transparency requirements for large-scale AI companies.\n\n### Why it Matters\nThis debate highlights the tension between AI developers advocating for safety regulations and investors concerned that such rhetoric hinders industry growth and public perception. As trust in tech companies remains low, the industry faces a significant challenge in balancing transparency with the need to maintain public confidence in future innovation.",
+    "source": "Slashdot.org",
+    "processed_at": "2026-08-18T19:42:19.181067",
+    "category": "Artificial Intelligence",
+    "url": "https://slashdot.org/story/26/08/17/1557213/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust",
+    "author": "BeauHD"
+  },
+  {
+    "title": "HIVE Digital’s Stock Jumps 14% On News Of Nvidia Deal",
+    "summary": "HIVE Digital has secured a five-year, $350 million cloud computing contract with Nvidia to deploy advanced GPUs at its data centre facility located in Merritt, British Columbia.\n\n### Key Points\n- HIVE Digital will deploy 2,016 Nvidia Blackwell Ultra GPUs to expand its artificial intelligence and high-performance computing infrastructure.\n- The agreement is expected to generate $70 million in annual revenue, pushing the company’s total annual recurring revenue toward $180 million.\n- The project requires $185 million in capital expenditure, with the facility expected to become fully operational by the fourth quarter of this year.\n- Once active, the new GPU cloud services are projected to generate approximately $500,000 in daily revenue for the company.\n- HIVE Digital continues to maintain a Bitcoin mining operation, holding $11 million in cryptocurrency assets alongside its growing data centre business.\n\n### Why it Matters\nThis deal marks a significant strategic pivot for HIVE Digital as it transitions from a Bitcoin-focused miner into a major player in the artificial intelligence cloud computing market. By securing a long-term partnership with Nvidia, the company establishes a more stable and diversified revenue stream that reduces its reliance on volatile cryptocurrency markets.",
+    "source": "Cryptoprowl.com",
+    "processed_at": "2026-08-18T19:42:59.091315",
+    "category": "Tech Business & Markets",
+    "url": "https://www.cryptoprowl.com/releases/hive-digitals-stock-jumps-14-on-news-of-nvidia-deal-6444",
+    "author": "CryptoProwl"
+  },
+  {
+    "title": "5 Highly Rated TP-Link Devices That Aren't Routers",
+    "summary": "Beyond its core networking equipment, TP-Link offers a variety of highly-rated consumer electronics, including smart home devices, PC components, and connectivity adapters that maintain the brand's reputation for reliability.\n\n### Key Points\n- The TP-Link Archer TX3000E PCIe Wi-Fi card provides Wi-Fi 6 speeds and Bluetooth 5.3 for desktop computers, holding a 4.7-star rating from over 10,000 Amazon reviews.\n- Kasa Smart Plug HS103P2 and the Kasa Smart Light Switch HS200 offer hub-free smart home control and integration with Alexa and Google Home.\n- The TP-Link UE306 USB to Ethernet adapter enables wired internet connections for devices lacking Ethernet ports, including laptops and the Nintendo Switch.\n- The Tapo C210 2K Pan Tilt Security Camera features motion detection, infrared night vision, and support for local microSD storage up to 512GB.\n- All featured products were selected based on maintaining at least a 4.5-star rating with thousands of customer reviews on Amazon.\n\n### Why it Matters\nThese products demonstrate TP-Link's successful expansion from a router manufacturer into a broader ecosystem of affordable, user-friendly consumer technology. By leveraging its networking expertise, the company provides accessible smart home and connectivity solutions that integrate seamlessly into existing digital environments.",
+    "source": "BGR",
+    "processed_at": "2026-08-18T19:43:15.981192",
+    "category": "Phones, Laptops, and Gadgets",
+    "url": "https://www.bgr.com/2234700/highly-rated-tp-link-devices-arent-routers/",
+    "author": "staff@bgr.com (Marinel Sigue)"
+  },
+  {
+    "title": "Changing this display setting is the easiest battery win on Windows laptops",
+    "summary": "Windows laptop users can significantly extend battery life by manually lowering high refresh rate display settings or enabling the Dynamic Refresh Rate feature within the system display menu.\n\n### Key Points\n- High refresh rate panels, such as 120Hz or 165Hz, increase display power consumption by 25% to 80% compared to standard 60Hz settings.\n- Testing on a Lenovo ThinkPad showed that reducing a 165Hz panel to 60Hz extended battery runtime by approximately 90 minutes during Wi-Fi browsing.\n- Users can adjust refresh rates by navigating to Settings, then System, Display, and selecting Advanced display to access the refresh rate dropdown menu.\n- Windows 11 offers a Dynamic Refresh Rate (DRR) feature that automatically adjusts screen speed based on activity to balance visual smoothness with power efficiency.\n- Lowering refresh rates is most effective for static tasks like word processing or reading, while high rates remain ideal for gaming and active scrolling.\n\n### Why it Matters\nAdjusting display settings provides a simple, cost-free method for users to gain extra hours of battery life during travel or remote work. This practice helps mitigate the common trade-off between high-performance hardware and the practical need for portable, long-lasting power.",
+    "source": "MakeUseOf",
+    "processed_at": "2026-08-18T19:43:24.675855",
+    "category": "Phones, Laptops, and Gadgets",
+    "url": "https://www.makeuseof.com/changing-display-setting-easiest-battery-win-windows-laptops/",
+    "author": "Yadullah Abidi"
+  },
+  {
+    "title": "Public Wi-Fi just got riskier. Follow these 4 security tips",
+    "summary": "Hackers are exploiting hotel Wi-Fi login portals using a deceptive \"ClickFix\" technique to trick travelers into installing malware and compromising their Microsoft 365 accounts and personal data.\n\n### Key Points\n- Microsoft identified a new attack vector where hackers hijack hotel captive portals to display fake error messages.\n- The \"ClickFix\" method prompts users to run malicious commands under the guise of fixing account or PC issues.\n- Successful exploitation allows attackers to install malware, spy on user activity, and steal sensitive login credentials.\n- Security experts recommend using a VPN, avoiding insecure HTTP websites, and utilizing mobile hotspots instead of public Wi-Fi.\n- Legitimate hotel portals will never request that users run software commands or input credentials for unrelated third-party accounts.\n\n### Why it Matters\nThese attacks demonstrate how trusted infrastructure like hotel Wi-Fi can be weaponized to bypass standard user caution. As hackers increasingly target common travel amenities, travelers must adopt stricter security habits to protect their corporate and personal accounts from sophisticated phishing and malware campaigns.",
+    "source": "PCWorld",
+    "processed_at": "2026-08-18T19:43:33.078868",
+    "category": "Cybersecurity",
+    "url": "https://www.pcworld.com/article/3212076/public-wi-fi-just-got-riskier-follow-these-4-security-tips.html",
+    "author": "Alaina Yee"
+  },
+  {
     "processed_at": "2026-08-18T13:15:05.932686",
     "title": "Told to book a gym class, an AI agent hacked the website instead, in Australia’s first known autonomous cyberattack",
     "category": "Cybersecurity",
