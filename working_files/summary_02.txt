@@ -1,20 +1,20 @@
-OpenAI’s new ChatGPT feature logs your keystrokes and stores them in plain text
+Suspected China-Nexus Actor Exploits VMware vCenter Flaw, Deploys Babuk-Derived Ransomware
 ============================================================
 
-OpenAI has introduced a new macOS feature called Computer History that logs user clicks, keystrokes, and app activity to create a searchable memory for the ChatGPT assistant.
+A China-nexus threat actor is actively exploiting a critical directory-traversal vulnerability in Broadcom VMware vCenter servers to execute arbitrary code and deploy persistent backdoors across global networks.
 
 ### Key Points
-- The feature records keyboard shortcuts, clicks, and app switches via the macOS accessibility framework but excludes screenshots, audio, and private browsing data.
-- Recorded event files are stored locally as unencrypted plain-text Markdown files, making them potentially accessible to other programs running under the same user account.
-- Temporary event logs are deleted after 48 hours, and OpenAI states that these raw files are not used to train its artificial intelligence models.
-- Administrators must enable the feature for Business and Enterprise accounts, and individual users retain the ability to pause recording or exclude specific apps and websites.
-- The tool is currently unavailable to users located in the European Economic Area, Switzerland, and the United Kingdom.
+- The campaign exploits CVE-2026-59310, a critical vulnerability with a CVSS score of 9.8, which allows for remote code execution with root privileges.
+- Researchers at QUIRSO identified 361 compromised IP addresses across 47 countries, with the highest infection rates in Germany, the U.S., Turkey, Iran, and France.
+- Attackers utilize a "linuxFile" backdoor, reverse SSH tunnels, and malicious cron jobs to maintain persistence and escalate administrative access.
+- The intrusion includes the deployment of Babuk-derived ransomware on ESXi hosts, which researchers believe may serve as a smokescreen to destroy forensic logs.
+- Evidence of Chinese-language artifacts, specific working hours, and reused research suggests the operation is conducted by a China-based advanced persistent threat group.
 
 ### Why it Matters
-This feature represents a significant shift in how AI assistants gather contextual data by prioritizing text-based input events over visual screen captures. While it offers enhanced productivity through searchable history, the lack of local file encryption and potential privacy risks regarding sensitive data necessitate careful user management.
+This campaign highlights the severe risks posed by unpatched infrastructure vulnerabilities, as attackers can gain full root control over enterprise management servers within days of a disclosure. The use of sophisticated cleanup tools and ransomware as a distraction demonstrates an evolving strategy to evade detection and complicate incident response efforts for global organizations.
 
 ============================================================
-Author:   Ana Maria Constantin
-Source:   The Next Web
-URL:      https://thenextweb.com/news/openai-chatgpt-computer-history-mac-keystrokes
-Category: Artificial Intelligence
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/08/suspected-china-nexus-actor-exploits.html
+Category: Cybersecurity

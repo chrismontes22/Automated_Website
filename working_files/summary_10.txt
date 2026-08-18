@@ -1,20 +1,20 @@
-Anthropic IPO valuation hinges on $190B-$200B 2028 revenue forecast: sources
+Akira Ransomware Uses Safe Mode to Bypass EDR
 ============================================================
 
-Anthropic is preparing for a potential initial public offering by projecting 2028 revenue between $190 billion and $200 billion to justify its valuation to prospective Wall Street investors.
+An Akira ransomware affiliate attempted to disable security software by rebooting a compromised host into Safe Mode, but the tactic caused the encryption payload to crash from memory exhaustion.
 
 ### Key Points
-- Anthropic’s projected 2028 revenue of $190 billion to $200 billion significantly exceeds its current $47 billion annual revenue run rate.
-- Investors are utilizing enterprise value-to-revenue multiples based on long-term forecasts to value the company despite its heavy infrastructure and model training expenditures.
-- The company is using public firms like Palantir, Cloudflare, and SpaceX as valuation benchmarks to establish its market position.
-- Anthropic reported a revenue run rate of $9 billion in late 2025, which surged to over $47 billion by May 2026.
-- The firm anticipates its first quarterly operating profit of $559 million in the second quarter of 2026.
+- Attackers gained initial access on August 4 by exploiting an MFA-less SonicWall VPN to steal credentials and exfiltrate data via an S3 bucket.
+- The affiliate rebooted the victim host into Safe Mode with Networking to disable EDR and Microsoft Defender real-time protection.
+- The ransomware process failed 13 seconds after launch due to an "out-of-virtual-memory" error caused by the restricted Safe Mode environment.
+- Attackers maintained persistence by adding AnyDesk to the Safe Mode registry before the reboot.
+- Huntress researchers identified this as the first observed instance of Akira using Safe Mode to bypass security controls.
 
 ### Why it Matters
-This valuation strategy highlights the extreme difficulty of pricing high-growth AI companies that currently prioritize massive capital expenditure over immediate profitability. By looking years into the future, investors are betting that Anthropic’s operational efficiency will scale rapidly enough to justify its massive infrastructure investments.
+While the ransomware failed in this specific instance, the tactic demonstrates an evolving threat where attackers intentionally manipulate system boot states to blind security software. Organizations cannot rely on such technical glitches for protection, as future iterations of the malware could be optimized to function within the memory constraints of Safe Mode.
 
 ============================================================
-Author:   Reuters
-Source:   New York Post
-URL:      https://nypost.com/2026/08/16/business/anthropic-ipo-valuation-hinges-on-190b-200b-2028-revenue-forecast-sources/
-Category: Tech Business & Markets
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/197339/malware/akira-ransomware-uses-safe-mode-to-bypass-edr.html
+Category: Cybersecurity

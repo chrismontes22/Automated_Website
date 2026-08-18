@@ -1,20 +1,20 @@
-New AmnesiaStealer macOS malware hijacks browser sessions via remote control
+South Carolina: From Slaves to Bots
 ============================================================
 
-A new macOS malware called AmnesiaStealer uses ClickFix campaigns to hijack authenticated browser sessions, allowing attackers to remotely control Chromium-based browsers and steal sensitive user data.
+The deployment of humanoid robots at a BMW plant in South Carolina highlights growing concerns regarding the economic impact of automation and the rise of a jobless boom.
 
 ### Key Points
-- AmnesiaStealer targets 16 Chromium-based browsers, including Google Chrome, Microsoft Edge, Brave, and Arc, to exfiltrate passwords, cookies, and cryptocurrency wallet data.
-- The malware utilizes a "stream_module" to launch a headless browser instance, enabling attackers to interact with authenticated sessions via the Chrome DevTools Protocol.
-- Attackers gain real-time control over the victim's browser, including mouse and keyboard input, while receiving a live screencast of the session.
-- Distribution occurs through fake GitHub download pages that prompt users to execute shell scripts from password-protected ZIP archives.
-- Researchers at Jamf identified that the malware shares distribution templates with previous threats like Atomic and MacSync infostealers.
+- BMW recently introduced humanoid robots at its manufacturing facility in Spartanburg, South Carolina, to perform manual labor tasks.
+- South Carolina maintains a "right-to-work" status with only 2.7 percent union membership, limiting worker leverage during technological transitions.
+- A "jobless boom" is currently affecting the S&P 500, where companies are increasing profits through AI adoption while simultaneously curtailing new hiring.
+- Approximately 40 percent of political campaigns this year are addressing AI and data center expansion as major voter concerns.
+- Critics argue that tech industry leaders are prioritizing automation-driven profits while remaining indifferent to the displacement of human workers.
 
 ### Why it Matters
-This malware represents a significant escalation in threat sophistication by moving beyond simple data exfiltration to live, interactive session hijacking. By operating through a headless browser, attackers can bypass traditional security measures and perform actions as the authenticated user, posing a severe risk to both personal and corporate accounts.
+The shift toward AI-driven automation is fundamentally altering the American labor market by decoupling corporate profitability from job creation. This trend intensifies public skepticism toward current economic structures and is increasingly shaping political discourse as voters demand accountability for the social costs of technological displacement.
 
 ============================================================
-Author:   Bill Toulas
-Source:   BleepingComputer
-URL:      https://www.bleepingcomputer.com/news/security/new-amnesiastealer-macos-malware-hijacks-browser-sessions-via-remote-control/
-Category: Cybersecurity
+Author:   Harold Meyerson
+Source:   The American Prospect
+URL:      https://prospect.org/2026/08/17/south-carolina-slaves-bots-ai-artificial-intelligence-workers-unions-bmw-robots/
+Category: Artificial Intelligence
