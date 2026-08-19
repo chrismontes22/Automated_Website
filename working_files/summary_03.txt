@@ -1,20 +1,19 @@
-Apple's macOS Screen Sharing Flaw Is Being Exploited in the Wild
+Attackers Could Take Over Your Mac Through Screen Sharing Unless You Update Now
 ============================================================
 
-Apple has released urgent security updates for macOS after reports confirmed that hackers are actively exploiting a screen sharing vulnerability to install unauthorized cryptocurrency mining software on devices.
+Apple has released critical security updates for macOS Sonoma, Sequoia, and Tahoe to patch a screen-sharing vulnerability that allows unauthorized attackers to gain full control of user devices.
 
 ### Key Points
-- Apple patched a critical authentication flaw in macOS Tahoe, Sonoma, and Sequoia that allowed unauthorized remote access to screens, keyboards, and mice.
-- The Netherlands' National Cyber Security Center confirmed the vulnerability is being exploited on systems with port 5900 exposed to the internet.
-- Attackers are using the flaw to gain root access and install Monero cryptocurrency miners on compromised Mac computers.
-- Apple addressed the issue through improved state management and urges all users to install the latest software updates immediately.
-- Security experts recommend using a VPN when screen sharing is active to provide an additional layer of protection against unauthorized access.
+- Apple patched a security flaw in macOS Sonoma 14.8.9, Sequoia 15.7.9, and Tahoe 26.6.1 that permits unauthorized screen-sharing access.
+- The vulnerability allows attackers on the same network to bypass authentication, view private files, and control keyboard or mouse inputs.
+- Researchers in the Netherlands identified that the exploit is currently being leveraged by hackers to facilitate unauthorized cryptocurrency mining.
+- Users can mitigate immediate risks by disabling screen sharing in System Settings under the General and Sharing menus.
 
 ### Why it Matters
-This exploit highlights the significant risks associated with leaving default ports exposed on internet-connected devices. Users must prioritize system updates to prevent attackers from hijacking hardware resources for malicious activities like unauthorized cryptocurrency mining.
+This vulnerability poses a significant security risk because it grants attackers complete remote control over a compromised Mac without requiring valid credentials. Users should prioritize installing these updates immediately to prevent potential data theft, privacy breaches, and the unauthorized use of system resources for malicious activities.
 
 ============================================================
-Author:   Tim Hardwick
-Source:   MacRumors
-URL:      https://www.macrumors.com/2026/08/17/macos-screen-sharing-flaw-exploited/
+Author:   Omar Gallaga
+Source:   CNET
+URL:      https://www.cnet.com/tech/services-and-software/attackers-could-take-over-your-mac-through-screen-sharing-unless-you-update-now/
 Category: Cybersecurity

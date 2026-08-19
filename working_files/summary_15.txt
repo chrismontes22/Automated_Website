@@ -1,20 +1,20 @@
-Anthropic CEO Says AI Backlash Is 'Fundamentally a Crisis of Trust'
+The AI Conversations Leaking Into Your Search Console via @sejournal, @suganthan
 ============================================================
 
-Anthropic CEO Dario Amodei attributes the growing public backlash against artificial intelligence to a fundamental crisis of trust in major institutions rather than warnings from industry executives.
+Google Search Console is inadvertently recording fragments of user conversations with AI tools as search queries, providing site owners with a new, albeit limited, window into AI-driven traffic.
 
 ### Key Points
-- Investor Gavin Baker argued that Amodei’s warnings about AI risks have fueled negative public sentiment and government crackdowns on data centers.
-- Amodei defended his messaging, stating his public writing maintains a balanced perspective between the potential benefits and the inherent risks of AI technology.
-- The Anthropic CEO authored the essay "Machines of Loving Grace" to provide a more inspiring vision of how AI could positively transform the world.
-- Amodei acknowledged that public skepticism is a significant problem but rejected the claim that executive warnings are the primary driver of this trend.
-- Anthropic has actively supported specific AI regulations, including a California bill focused on transparency requirements for large-scale AI companies.
+- Search Console records AI follow-up questions and responses—such as "yes" or "what about"—as standard search queries within the general performance report.
+- These conversational fragments fall into seven distinct categories, including reply artifacts, pivot follow-ups, conversational questions, and automated tracker probes.
+- Google’s official Generative AI performance reports exclude query and click data, making these leaked fragments the only available insight into specific user prompts.
+- A new, free classifier tool for the Search Console MCP allows users to identify and categorize these conversational queries within their own site data.
+- Large websites can use BigQuery bulk exports to capture a more comprehensive view of these rare, non-repeating conversational strings.
 
 ### Why it Matters
-This debate highlights the tension between AI developers advocating for safety regulations and investors concerned that such rhetoric hinders industry growth and public perception. As trust in tech companies remains low, the industry faces a significant challenge in balancing transparency with the need to maintain public confidence in future innovation.
+This discovery reveals that standard SEO performance data is increasingly contaminated by AI-generated conversation logs, which can skew traditional keyword analysis and traffic reporting. By isolating these fragments, site owners can better understand how their content is being consumed within AI answer blocks and optimize specific passages to improve visibility in generative search results.
 
 ============================================================
-Author:   BeauHD
-Source:   Slashdot.org
-URL:      https://slashdot.org/story/26/08/17/1557213/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust
+Author:   Suganthan Mohanadasan
+Source:   Suganthan.com
+URL:      https://suganthan.com/blog/ai-mode-queries-search-console/
 Category: Artificial Intelligence

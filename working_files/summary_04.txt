@@ -1,20 +1,20 @@
-Billionaire investor Leon Cooperman sees a recession in 2027 and a stock drop ahead
+I disabled one registry value and my PC finally shut down without stalling
 ============================================================
 
-Billionaire investor Leon Cooperman warns that the United States economy faces a likely recession next year, potentially triggering a significant market downturn as current stock valuations remain overextended.
+Windows 11 users can accelerate the system shutdown process by modifying specific registry keys to automatically terminate unresponsive applications and background services that typically delay the power-off sequence.
 
 ### Key Points
-- Omega Advisors CEO Leon Cooperman predicts a recession within the next year, citing parallels to historical boom-and-bust cycles like the Nifty Fifty era.
-- Cooperman argues that S&P 500 earnings estimates are currently mispriced and warns that investor enthusiasm for artificial intelligence may soon begin to fizzle.
-- Rising oil prices and elevated inflation remain significant threats, with Brent crude trading 22% higher than levels recorded before the start of the Iran conflict.
-- US retail sales declined by 0.6% in July, signaling that consumers are tightening spending habits under the pressure of persistent inflation.
-- Despite Cooperman’s bearish outlook, the Nasdaq 100 has climbed 19% this year, supported by widespread investor confidence in the long-term profitability of AI technology.
+- The AutoEndTasks registry string forces Windows to close active applications immediately during shutdown or sign-out.
+- Users can enable this feature by setting the AutoEndTasks value to 1 within the HKEY_CURRENT_USER\Control Panel\Desktop registry path.
+- The WaitToKillServiceTimeout key allows users to reduce the time Windows spends waiting for background services to terminate before shutting down.
+- Modifying the WaitToKillServiceTimeout value in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control can be set to 0 milliseconds for near-instant service termination.
+- Backing up the Windows Registry is essential before making these changes to prevent potential system instability or boot failures.
 
 ### Why it Matters
-Cooperman’s contrarian stance highlights a growing divide between cautious veteran investors and a market currently driven by optimism surrounding artificial intelligence. His warnings serve as a reminder of potential systemic risks, such as inflation and consumer fatigue, that could disrupt the current equity rally if economic conditions deteriorate.
+These registry tweaks provide a more efficient shutdown experience for users who manually save their work and want to avoid waiting for unresponsive background processes. However, forcing these tasks to close risks the loss of unsaved data, making these settings unsuitable for users who frequently leave documents open.
 
 ============================================================
-Author:   Jennifer Sor
-Source:   Business Insider
-URL:      https://www.businessinsider.com/us-recession-2027-stock-market-outlook-leon-cooperman-2026-8
-Category: Tech Business & Markets
+Author:   Shaheer Khan
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/my-pc-wouldnt-shut-down-because-of-one-annoying-registry-value/
+Category: Phones, Laptops, and Gadgets
