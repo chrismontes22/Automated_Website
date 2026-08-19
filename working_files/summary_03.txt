@@ -1,19 +1,20 @@
-Attackers Could Take Over Your Mac Through Screen Sharing Unless You Update Now
+CISA orders a three-day patch after a flaw in the Ray AI framework comes under active attack
 ============================================================
 
-Apple has released critical security updates for macOS Sonoma, Sequoia, and Tahoe to patch a screen-sharing vulnerability that allows unauthorized attackers to gain full control of user devices.
+The Cybersecurity and Infrastructure Security Agency has added a critical code-injection vulnerability in the Ray AI framework to its Known Exploited Vulnerabilities catalogue, mandating immediate federal patching.
 
 ### Key Points
-- Apple patched a security flaw in macOS Sonoma 14.8.9, Sequoia 15.7.9, and Tahoe 26.6.1 that permits unauthorized screen-sharing access.
-- The vulnerability allows attackers on the same network to bypass authentication, view private files, and control keyboard or mouse inputs.
-- Researchers in the Netherlands identified that the exploit is currently being leveraged by hackers to facilitate unauthorized cryptocurrency mining.
-- Users can mitigate immediate risks by disabling screen sharing in System Settings under the General and Sharing menus.
+- CISA identified CVE-2025-62593, a code-injection flaw allowing remote attackers to execute arbitrary commands on vulnerable Ray deployments.
+- Federal agencies must patch their systems or cease operations by August 20, 2025, due to the high risk of active exploitation.
+- The vulnerability is accessible via standard web browsers, significantly lowering the barrier for unauthorized access to AI compute clusters.
+- Anyscale, the maintainer of the open-source Ray framework, has released a fix in version 2.52.0 to address the security weakness.
+- Ray is widely used to distribute machine-learning workloads across CPU and GPU clusters, often housing sensitive proprietary models and training data.
 
 ### Why it Matters
-This vulnerability poses a significant security risk because it grants attackers complete remote control over a compromised Mac without requiring valid credentials. Users should prioritize installing these updates immediately to prevent potential data theft, privacy breaches, and the unauthorized use of system resources for malicious activities.
+This vulnerability highlights the systemic risk posed by widely used open-source infrastructure that often lacks rigorous security oversight in fast-moving data science environments. Because Ray clusters frequently manage high-value AI assets and cloud credentials, failing to patch these systems could lead to significant data theft or unauthorized resource hijacking.
 
 ============================================================
-Author:   Omar Gallaga
-Source:   CNET
-URL:      https://www.cnet.com/tech/services-and-software/attackers-could-take-over-your-mac-through-screen-sharing-unless-you-update-now/
+Author:   Ana-Maria Stanciuc
+Source:   The Next Web
+URL:      https://thenextweb.com/news/cisa-kev-ray-ai-framework
 Category: Cybersecurity

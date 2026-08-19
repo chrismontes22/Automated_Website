@@ -1,20 +1,20 @@
-OpenAI president’s blog pushing agentic AI most notable for what it did not say
+Hackers Tricked a Major Retailer’s AI Shopping Bot to Do Something It Was Never Supposed To
 ============================================================
 
-OpenAI President Greg Brockman is urging enterprise security leaders to adopt AI-driven agentic systems to defend against evolving cyber threats, despite criticism regarding the company's own role in risks.
+Cybersecurity researchers from Rein Security demonstrated an indirect prompt injection attack that allowed them to bypass safeguards and execute unauthorized code within a major retailer's AI shopping assistant.
 
 ### Key Points
-- OpenAI President Greg Brockman advised CISOs to integrate AI agents into security workflows to identify and remediate system vulnerabilities before attackers exploit them.
-- The recommendation follows the Hugging Face incident, which Brockman admitted demonstrated that OpenAI underestimated the real-world cyber capabilities of its own AI models.
-- Suggested defensive tools include OpenAI’s Codex and the Codex Security plugin, which provide automated assistance for code review, vulnerability analysis, and supply-chain risk management.
-- Industry analysts and security experts criticized the advice as self-serving, noting that OpenAI is actively selling the solutions to problems its own technology helped create.
-- Critics, including CISOs from LexisNexis and Aikido Security, argued that OpenAI should prioritize accountability, liability, and "undo" mechanisms for rogue agents over sales-driven pitches.
+- Researchers Netanel Rubin and Dan Avraham exploited an AI shopping assistant at one of the three largest U.S. retailers during the Black Hat conference.
+- The attack utilized indirect prompt injection, where malicious instructions hidden in external web content tricked the AI into executing unauthorized code.
+- Security gaps were identified in the app's search field, which lacked the same protective layers applied to the main chat interface.
+- The researchers discovered exposed Google Maps API keys, which could potentially be exploited to incur unauthorized costs on the retailer's account.
+- Vulnerabilities were reported to the retailer on March 13, but Rein Security stated the issues remained unpatched as of July 16.
 
 ### Why it Matters
-The push for AI-driven security reflects a broader industry shift where vendors are prioritizing cybersecurity capabilities to reassure investors ahead of potential public offerings. While these tools offer efficiency, they place the burden of risk management on enterprises, raising significant questions about vendor liability and the long-term safety of autonomous systems.
+This incident highlights a critical security blind spot as companies grant AI agents increasing access to internal tools and sensitive backend systems. It demonstrates that current safeguards often fail to account for malicious instructions embedded in external data, posing significant risks to both corporate infrastructure and customer data privacy.
 
 ============================================================
-Author:   Evan Schuman
-Source:   Computerworld
-URL:      https://www.computerworld.com/article/4210729/openai-presidents-blog-pushing-agentic-ai-most-notable-for-what-it-did-not-say.html
-Category: Artificial Intelligence
+Author:   Nelson Aguilar
+Source:   CNET
+URL:      https://www.cnet.com/tech/services-and-software/hackers-tricked-a-major-retailers-ai-shopping-bot-to-do-something-it-was-never-supposed-to/
+Category: Cybersecurity

@@ -1,20 +1,20 @@
-The AI Conversations Leaking Into Your Search Console via @sejournal, @suganthan
+SafePal Hardware Wallet Maker Says Flaw Exposed Data of Nearly 40,000 Customers
 ============================================================
 
-Google Search Console is inadvertently recording fragments of user conversations with AI tools as search queries, providing site owners with a new, albeit limited, window into AI-driven traffic.
+Hardware wallet manufacturer SafePal has disclosed a security breach involving an authorization flaw that exposed the personal contact and shipping information of approximately 39,798 customers.
 
 ### Key Points
-- Search Console records AI follow-up questions and responses—such as "yes" or "what about"—as standard search queries within the general performance report.
-- These conversational fragments fall into seven distinct categories, including reply artifacts, pivot follow-ups, conversational questions, and automated tracker probes.
-- Google’s official Generative AI performance reports exclude query and click data, making these leaked fragments the only available insight into specific user prompts.
-- A new, free classifier tool for the Search Console MCP allows users to identify and categorize these conversational queries within their own site data.
-- Large websites can use BigQuery bulk exports to capture a more comprehensive view of these rare, non-repeating conversational strings.
+- The breach exposed names, email addresses, phone numbers, and shipping details for orders placed between March 2, 2025, and April 11, 2026.
+- SafePal confirmed that no wallet credentials, private keys, seed phrases, or financial payment information were compromised during the incident.
+- A configuration error in a data-cleanup process inadvertently extended the period that older order records remained accessible in the system.
+- The company has implemented a 90-day data retention policy and engaged a third-party security firm to audit its order-processing infrastructure.
+- A dataset matching the affected customer count and order window has appeared on a cybercrime forum, prompting warnings about potential phishing and physical security risks.
 
 ### Why it Matters
-This discovery reveals that standard SEO performance data is increasingly contaminated by AI-generated conversation logs, which can skew traditional keyword analysis and traffic reporting. By isolating these fragments, site owners can better understand how their content is being consumed within AI answer blocks and optimize specific passages to improve visibility in generative search results.
+This incident highlights the significant physical and digital security risks faced by cryptocurrency hardware wallet users when their personal shipping data is leaked. Because this information can be used to target individuals for sophisticated phishing attacks or physical extortion, it underscores the critical importance of strict data minimization and short-term retention policies for hardware vendors.
 
 ============================================================
-Author:   Suganthan Mohanadasan
-Source:   Suganthan.com
-URL:      https://suganthan.com/blog/ai-mode-queries-search-console/
-Category: Artificial Intelligence
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/08/safepal-hardware-wallet-maker-says-flaw.html
+Category: Cybersecurity

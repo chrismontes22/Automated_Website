@@ -1,20 +1,20 @@
-macOS Tahoe 26.7 is Full of References to Unreleased Apple Products
+Show HN: macOS data protection keychain for Electron apps
 ============================================================
 
-The macOS Tahoe 26.7 release candidate reveals codenames for several unreleased Apple products, including new home hubs, iPhone 18 models, updated MacBook Pros, and potential camera-equipped AirPods.
+The keychain-store library provides a secure, modern interface for Electron and Node.js applications to manage sensitive data using the macOS Data Protection Keychain and native code-signing entitlements.
 
 ### Key Points
-- Apple is developing two home hub variants, J490 and J491, alongside a tabletop robot codenamed J595.
-- Code references indicate a new "B790" AirPods project featuring camera integration and image streaming capabilities.
-- Future iPhone hardware includes the iPhone 18 series and a foldable iPhone Ultra, with expected releases starting this September.
-- Upcoming Mac updates feature M6-powered 14-inch MacBook Pros and new iMac models, while the iPad mini is slated for an OLED display upgrade.
-- Software strings confirm that Apple Intelligence Writing Tools are expanding to China, subject to specific content safety and regulatory restrictions.
+- Utilizes the modern macOS Data Protection Keychain (SecItem API) instead of legacy file-based storage.
+- Supports biometric authentication, including Touch ID, and optional iCloud Keychain synchronization for stored items.
+- Restricts data access to applications with specific code-signing entitlements and declared access groups.
+- Handles both UTF-8 strings and binary data (Uint8Array) with explicit account management for mutable and immutable items.
+- Includes a companion Swift library for native macOS development, ensuring cross-language compatibility for shared data.
 
 ### Why it Matters
-These findings provide a roadmap for Apple’s hardware strategy, signaling a significant expansion into smart home robotics and advanced wearable technology. The inclusion of these codenames in official software suggests that several of these devices are nearing production and could be unveiled at upcoming fall events.
+This library enables developers to implement robust, Apple-compliant security standards within cross-platform desktop applications without relying on deprecated or insecure legacy APIs. By leveraging native macOS access controls, it ensures that sensitive user credentials and tokens remain protected against unauthorized access while supporting modern features like biometric verification.
 
 ============================================================
-Author:   Juli Clover
-Source:   MacRumors
-URL:      https://www.macrumors.com/2026/08/17/macos-26-7-unreleased-apple-devices/
-Category: Phones, Laptops, and Gadgets
+Author:   biw
+Source:   Github.com
+URL:      https://github.com/biw/keychain-store
+Category: Cybersecurity
