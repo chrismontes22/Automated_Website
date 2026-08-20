@@ -1,21 +1,20 @@
-The Lenovo IdeaPad Slim 3i 15 Gen 11 is the smarter choice for portability
+Alternative to WMIC: PowerShell Get-CimInstance
 ============================================================
 
-The Lenovo IdeaPad Slim 3i 15 Gen 11 is a versatile, portable laptop designed for students and professionals, featuring Intel Core 7 processing and military-grade durability for everyday use.
+Microsoft has officially removed the WMIC utility from Windows 11 versions 24H2 and 25H2, requiring administrators to transition their management scripts to the PowerShell Get-CimInstance cmdlet.
 
 ### Key Points
-- The laptop features a 15.3-inch 1920x1200 IPS touchscreen with a 120Hz refresh rate and a 16:10 aspect ratio.
-- It is powered by an Intel Core 7 350 processor, 16GB of DDR5 RAM, and a 512GB SSD.
-- The device weighs 3.51 pounds, measures 17.9mm thin, and meets MIL-STD-810H military-grade standards for durability.
-- Integrated AI features, supported by a dedicated Neural Processing Unit, enable Copilot+ PC capabilities like real-time translation and live captions.
-- Connectivity options include Wi-Fi 6, Bluetooth 5.3, two USB-A ports, one USB-C port, an HDMI port, and an SD card reader.
-- The 50WHr battery supports Rapid Charge Boost, providing two hours of usage from a 15-minute charge.
+- Microsoft released update KB5120998 on August 14, 2026, finalizing the deprecation of the WMIC tool.
+- The removal is a security hardening measure to prevent attackers from using the signed binary for living-off-the-land attacks.
+- Administrators must replace WMIC aliases with specific Win32 class names when using the Get-CimInstance cmdlet.
+- Remote queries now require WinRM-based CIM sessions instead of the legacy DCOM protocol used by WMIC.
+- Applications interacting with WMI through .NET, COM, or PowerShell remain unaffected by this change.
 
 ### Why it Matters
-This laptop occupies a competitive middle ground by offering premium features like high-refresh-rate displays and AI-assisted processing at a price point accessible to students and families. Its combination of portability and military-grade durability provides a reliable, long-term hardware solution for users who require a single device for both professional productivity and personal entertainment.
+This update forces a significant shift in how IT professionals manage Windows environments, moving away from legacy command-line tools toward modern PowerShell standards. Organizations must audit existing scripts and runbooks to prevent service disruptions following the deployment of these Windows builds.
 
 ============================================================
-Author:   Sponsored
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/lenovo-ideapad-slim-3i-15-gen-11-portability/
-Category: Phones, Laptops, and Gadgets
+Author:   IT Experts
+Source:   4sysops.com
+URL:      https://4sysops.com/archives/alternative-to-wmic-powershell-get-ciminstance/
+Category: Cybersecurity

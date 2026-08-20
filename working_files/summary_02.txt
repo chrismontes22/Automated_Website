@@ -1,20 +1,20 @@
-What Happens If OpenAI Dies?
+I built a Zigbee sniffer on a $60 ESP32 screen, and now I can watch my smart home talk to itself
 ============================================================
 
-OpenAI faces significant financial instability as it struggles with massive compute obligations, slowing revenue growth, and the potential for a collapse that could impact major global technology firms.
+A developer has built a custom Zigbee network monitor using an Elecrow CrowPanel display and an ESP32-H2 module to visualize live smart home traffic without requiring external software.
 
 ### Key Points
-- OpenAI faces over $800 billion in compute obligations through 2030, requiring consistent, massive capital injections to remain an ongoing concern.
-- The company reported a $20.9 billion loss in 2025 and maintains a non-GAAP operating margin of negative 122% as of early 2026.
-- Recent executive departures, including the Chief Revenue Officer, coincide with concerns that OpenAI is losing ground to competitor Anthropic.
-- OpenAI relies on "annualized revenue" metrics that critics argue are misleading and prone to inflation during short, high-spend periods.
-- Major investors like SoftBank and Amazon are showing signs of liquidity strain, complicating the company's ability to secure future funding rounds.
+- The project utilizes an ESP32-P4-based 10.1-inch display paired with an ESP32-H2 wireless module for real-time packet sniffing.
+- The system decodes Zigbee frames locally, displaying source, destination, cluster, and command data on a dedicated screen or web interface.
+- The ESP32-H2 captures network keys during initial pairing to decrypt traffic, allowing it to function autonomously without a constant connection to Wireshark.
+- Hardware integration required custom firmware to bridge the two chips via UART, as the ESP32-P4 lacks native wireless connectivity.
+- The interface provides a live feed, a device-specific traffic table, and a capture health monitor to track network performance and signal strength.
 
 ### Why it Matters
-OpenAI’s precarious financial position poses a systemic risk to the broader AI industry, as its massive compute commitments underpin the revenue models of major cloud providers like Microsoft, Google, and Amazon. If the company fails to secure further funding or achieve profitability, its collapse could trigger widespread economic fallout and force a significant revaluation of the entire artificial intelligence sector.
+This DIY tool transforms invisible smart home network traffic into a tangible, real-time dashboard, offering a more accessible alternative to complex packet-capture software. By providing immediate visibility into device communication and signal health, it helps users troubleshoot connectivity issues within their own Zigbee networks.
 
 ============================================================
-Author:   Ed Zitron
-Source:   Wheresyoured.at
-URL:      https://www.wheresyoured.at/what-happens-if-openai-dies/
-Category: Tech Business & Markets
+Author:   Adam Conway
+Source:   XDA Developers
+URL:      https://www.xda-developers.com/built-zigbee-sniffer-esp32-screen-watch-smart-home-talk/
+Category: Phones, Laptops, and Gadgets
