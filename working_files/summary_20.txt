@@ -1,20 +1,20 @@
-Alternative to WMIC: PowerShell Get-CimInstance
+Rethinking secure file transfer for a cross-domain world
 ============================================================
 
-Microsoft has officially removed the WMIC utility from Windows 11 versions 24H2 and 25H2, requiring administrators to transition their management scripts to the PowerShell Get-CimInstance cmdlet.
+The UK's National Cyber Security Centre warns that traditional file transfer systems are increasingly vulnerable, urging organizations to abandon perimeter-based trust in favor of proactive, continuous file verification.
 
 ### Key Points
-- Microsoft released update KB5120998 on August 14, 2026, finalizing the deprecation of the WMIC tool.
-- The removal is a security hardening measure to prevent attackers from using the signed binary for living-off-the-land attacks.
-- Administrators must replace WMIC aliases with specific Win32 class names when using the Get-CimInstance cmdlet.
-- Remote queries now require WinRM-based CIM sessions instead of the legacy DCOM protocol used by WMIC.
-- Applications interacting with WMI through .NET, COM, or PowerShell remain unaffected by this change.
+- The National Cyber Security Centre (NCSC) warns that modern interconnected systems rely on outdated protocols that cannot withstand sophisticated cyberattacks.
+- Traditional Managed File Transfer (MFT) models prioritize delivery speed over security, leaving organizations exposed to malware and supply chain vulnerabilities.
+- High-profile incidents like the 2023 MoveIT breach demonstrate how attackers exploit the assumption that routine file transfer platforms are inherently safe.
+- Security experts recommend deep content inspection, sandboxing, and Content Disarm and Reconstruction (CDR) to sanitize files before they enter internal networks.
+- Organizations must shift from reactive patching to a security-first model where every file is validated at every stage of its journey.
 
 ### Why it Matters
-This update forces a significant shift in how IT professionals manage Windows environments, moving away from legacy command-line tools toward modern PowerShell standards. Organizations must audit existing scripts and runbooks to prevent service disruptions following the deployment of these Windows builds.
+Relying on perimeter-based security is no longer sufficient as attackers now exploit vulnerabilities within 48 hours of disclosure. By treating every file as a potential threat, businesses can prevent lateral movement and mitigate the risk of catastrophic data breaches in increasingly complex digital environments.
 
 ============================================================
-Author:   IT Experts
-Source:   4sysops.com
-URL:      https://4sysops.com/archives/alternative-to-wmic-powershell-get-ciminstance/
+Author:   James Neilson
+Source:   TechRadar
+URL:      https://www.techradar.com/pro/rethinking-secure-file-transfer-for-a-cross-domain-world
 Category: Cybersecurity

@@ -1,19 +1,20 @@
-Comcast's Xfinity Shield turns your router into a motion sensor — and it may share what it sees
+Don't panic over Windows' new 'no antivirus detected' warning just yet
 ============================================================
 
-Comcast has launched Xfinity Shield, a new home security platform that utilizes compatible Xfinity Gateways to provide motion detection, cybersecurity features, and parental controls for residential customers.
+Windows 11 users are reporting a false "no antivirus detected" warning on recent builds, though Microsoft Defender remains active and fully functional despite the inaccurate security interface notification.
 
 ### Key Points
-- Xfinity Shield uses existing Wi-Fi signals between gateways and stationary devices to detect household motion.
-- The platform includes a free tier with network-level malware protection and a $15 monthly Shield Select tier featuring cameras and sensors.
-- Wi-Fi Motion is an opt-in feature that remains disabled by default, requiring manual activation through the Xfinity app.
-- Comcast reserves the right to disclose motion-generated data to third parties during legal proceedings, investigations, or in response to court orders.
+- The reporting glitch affects Windows 11 versions 24H2 and 25H2, particularly those running recent Insider Release Preview builds.
+- Users receive a "Turn on virus protection" notification even when Microsoft Defender or third-party antivirus software is actively running.
+- The issue stems from a synchronization error between the Windows Security Center UI and the underlying security services.
+- Microsoft has not yet officially acknowledged the bug on its known issues pages for the affected Windows 11 versions.
+- Users can verify their actual protection status by running the "Get-MpComputerStatus" command in PowerShell or checking settings within the Windows Security app.
 
 ### Why it Matters
-This platform deepens customer reliance on ISP-provided hardware by integrating home security directly into the internet gateway. While it offers convenient protection, users must weigh the privacy implications of allowing their internet provider to record and potentially share data regarding physical activity within their homes.
+This bug highlights the potential for UI-based reporting errors to cause unnecessary alarm regarding critical system security. While the current warning is a false positive, users should verify their protection status to ensure that genuine security failures are not overlooked.
 
 ============================================================
-Author:   Hamed Paydarfar
+Author:   Rob LeFebvre
 Source:   MakeUseOf
-URL:      https://www.makeuseof.com/xfinity-shield-motion-detector-share-data/
+URL:      https://www.makeuseof.com/dont-panic-over-windows-new-no-antivirus-detected-warning-just-yet/
 Category: Cybersecurity
