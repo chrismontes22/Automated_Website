@@ -1,20 +1,20 @@
-Don't panic over Windows' new 'no antivirus detected' warning just yet
+Elementor Pro Flaw Could Let Unauthenticated Attackers Upload PHP and Execute Code
 ============================================================
 
-Windows 11 users are reporting a false "no antivirus detected" warning on recent builds, though Microsoft Defender remains active and fully functional despite the inaccurate security interface notification.
+A critical vulnerability in the Elementor Pro WordPress plugin, tracked as CVE-2026-32475, allows unauthenticated attackers to execute remote code by bypassing file upload restrictions on vulnerable websites.
 
 ### Key Points
-- The reporting glitch affects Windows 11 versions 24H2 and 25H2, particularly those running recent Insider Release Preview builds.
-- Users receive a "Turn on virus protection" notification even when Microsoft Defender or third-party antivirus software is actively running.
-- The issue stems from a synchronization error between the Windows Security Center UI and the underlying security services.
-- Microsoft has not yet officially acknowledged the bug on its known issues pages for the affected Windows 11 versions.
-- Users can verify their actual protection status by running the "Get-MpComputerStatus" command in PowerShell or checking settings within the Windows Security app.
+- The flaw, rated 9.0 on the CVSS scale, affects all Elementor Pro versions up to and including 4.2.1.
+- Attackers can exploit the Forms module's File Upload field to upload malicious PHP scripts to public directories.
+- Security researcher Tin Pham discovered the vulnerability, which was subsequently patched in version 4.2.2 on August 19, 2026.
+- Exploitation requires only a published page containing an Elementor Form widget with a File Upload field.
+- WordPress also recently addressed a separate high-severity remote code execution vulnerability, CVE-2026-65640, in core versions up to 7.0.
 
 ### Why it Matters
-This bug highlights the potential for UI-based reporting errors to cause unnecessary alarm regarding critical system security. While the current warning is a false positive, users should verify their protection status to ensure that genuine security failures are not overlooked.
+- These vulnerabilities pose a significant risk to the vast ecosystem of WordPress sites that rely on common form-based interactions and media uploads. Failure to update plugins and core software leaves websites susceptible to full system compromise and integration into malicious botnet infrastructures.
 
 ============================================================
-Author:   Rob LeFebvre
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/dont-panic-over-windows-new-no-antivirus-detected-warning-just-yet/
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/08/elementor-pro-flaw-could-let.html
 Category: Cybersecurity

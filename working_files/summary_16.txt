@@ -1,20 +1,21 @@
-ClarityCheck people-finder left millions of face photos exposed, likely without their knowledge
+Talk Python to Me: #559: 12 Things You Should (and Shouldn't) Do in AWS
 ============================================================
 
-The facial-identification service ClarityCheck exposed over nine million user-uploaded photos on an unsecured cloud server, potentially compromising the privacy of adults, teenagers, and children worldwide.
+AWS consultant Matt Lea shares essential best practices for managing cloud infrastructure, emphasizing that incident response is a result of decisions made long before an outage occurs.
 
 ### Key Points
-- Security researcher Jeremiah Fowler discovered a database containing 9,042,977 image files totaling 450.2GB of data.
-- The exposed files were neither password-protected nor encrypted, allowing public access to facial images for several months.
-- ClarityCheck facilitates reverse image searches to identify individuals from social media profiles and dating apps without their consent.
-- The company acknowledged ownership of the database and confirmed that the server has since been secured.
-- Exposed data included images of minors, raising significant concerns regarding privacy and potential misuse by malicious actors.
+- Use Infrastructure as Code (IaC) tools like Terraform or OpenTofu instead of manual console provisioning to ensure consistency and reproducibility.
+- Replace long-lived access keys with IAM roles to minimize the risk of credential leaks and unauthorized system access.
+- Implement granular IAM permissions and avoid wildcard characters to prevent minor security incidents from becoming catastrophic failures.
+- Isolate sensitive backend resources in private subnets and use security groups to restrict lateral movement within your network.
+- Treat servers as disposable "cattle" rather than "puppies" by using containerization and automated build pipelines for deployments.
+- Practice incident response through simulated outages, such as those offered by Cloud War Games, to build team resilience before real emergencies happen.
 
 ### Why it Matters
-This breach highlights the severe security risks associated with facial-recognition platforms that aggregate personal data without explicit user authorization. The exposure of these images provides scammers with high-quality assets to facilitate identity theft and sophisticated social engineering fraud.
+Proactive infrastructure management prevents the common "convenience-first" mistakes that lead to costly downtime and security breaches. By aligning development workflows with secure, automated standards, teams can reduce the stress of 3 a.m. outages and ensure their systems remain reliable under pressure.
 
 ============================================================
-Author:   Ben Lovejoy
-Source:   9to5Mac
-URL:      https://9to5mac.com/2026/08/19/claritycheck-people-finder-left-millions-of-face-photos-exposed-likely-without-their-knowledge/
+Author:   Michael Kennedy
+Source:   Talkpython.fm
+URL:      https://talkpython.fm/episodes/show/559/12-things-you-should-and-shouldnt-do-in-aws
 Category: Cybersecurity
