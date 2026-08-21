@@ -1,21 +1,20 @@
-Talk Python to Me: #559: 12 Things You Should (and Shouldn't) Do in AWS
+SMIC posts record $3B quarter and hikes wafer prices — US sanctions hand Chinese foundry a captive AI market
 ============================================================
 
-AWS consultant Matt Lea shares essential best practices for managing cloud infrastructure, emphasizing that incident response is a result of decisions made long before an outage occurs.
+SMIC reported its first $3 billion quarterly revenue, driven by surging demand for domestic AI chips as U.S. export controls force Chinese firms to rely on local foundries.
 
 ### Key Points
-- Use Infrastructure as Code (IaC) tools like Terraform or OpenTofu instead of manual console provisioning to ensure consistency and reproducibility.
-- Replace long-lived access keys with IAM roles to minimize the risk of credential leaks and unauthorized system access.
-- Implement granular IAM permissions and avoid wildcard characters to prevent minor security incidents from becoming catastrophic failures.
-- Isolate sensitive backend resources in private subnets and use security groups to restrict lateral movement within your network.
-- Treat servers as disposable "cattle" rather than "puppies" by using containerization and automated build pipelines for deployments.
-- Practice incident response through simulated outages, such as those offered by Cloud War Games, to build team resilience before real emergencies happen.
+- SMIC revenue grew 36.1% year-on-year to $3.01 billion, with net profit reaching $479.2 million.
+- Capacity utilization hit 93.7% as the company prepares to raise wafer prices for the third quarter.
+- China accounted for 90% of total revenue, fueled by demand for logic ICs, power-management parts, and optical transceivers.
+- SMIC remains the only domestic foundry capable of mass-producing 7nm-class logic, serving as the primary supplier for Huawei’s Ascend AI accelerators.
+- Despite record growth, SMIC faces high production costs and yield challenges compared to global competitors like TSMC.
 
 ### Why it Matters
-Proactive infrastructure management prevents the common "convenience-first" mistakes that lead to costly downtime and security breaches. By aligning development workflows with secure, automated standards, teams can reduce the stress of 3 a.m. outages and ensure their systems remain reliable under pressure.
+SMIC’s performance highlights the effectiveness of Beijing’s push for semiconductor self-sufficiency amid tightening U.S. trade restrictions. This captive market environment allows the foundry to raise prices, though the long-term sustainability of this growth remains tied to government policy and the technical limitations of domestic chip production.
 
 ============================================================
-Author:   Michael Kennedy
-Source:   Talkpython.fm
-URL:      https://talkpython.fm/episodes/show/559/12-things-you-should-and-shouldnt-do-in-aws
-Category: Cybersecurity
+Author:   Luke James
+Source:   Tom's Hardware UK
+URL:      https://www.tomshardware.com/tech-industry/semiconductors/smic-is-raising-wafer-prices-into-a-shortage-as-sanctions-wall-off-chinas-ai-demand
+Category: Tech Business & Markets
