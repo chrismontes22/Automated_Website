@@ -1,20 +1,20 @@
-Spoofed Serial Number Unlocks Cricut Machine
+Android Car Malware Spreads Through Built-In Updaters for Ad Fraud, Proxy Botnet
 ============================================================
 
-A hardware hacker known as xssfox successfully bypassed the deactivation lock on a discarded Cricut Maker by intercepting and spoofing USB communications between the device and its software.
+Cybersecurity researchers at Kaspersky have identified a new malware family targeting Android-based vehicle head units from DoFun, marking the first documented infection chain tailored specifically for automotive systems.
 
 ### Key Points
-- The researcher salvaged a discarded Cricut Maker and repaired its damaged rollers to restore physical functionality.
-- The device was initially unusable because Cricut’s software marked the machine as deactivated, likely following a warranty replacement.
-- Analysis revealed that the machine transmits its serial number to the host computer via USB without encryption or checksums.
-- By installing an RP2040 microcontroller as a man-in-the-middle device, the hacker successfully spoofed the serial number to unlock the machine.
-- The project demonstrates that a software-only bypass may also be possible for future users looking to reactivate locked hardware.
+- The malware exploits legitimate firmware update mechanisms to deliver a multi-stage downloader for ad fraud and proxy botnet operations.
+- Kaspersky discovered the threat in June 2026, attributing the campaign to the MoYu Group, the same entity behind the global BADBOX botnet.
+- Attackers weaponized the TWCore system app to download the JarService dropper, which covertly executes malicious payloads in the background.
+- The malware supports nine commands, including executing arbitrary JavaScript, performing HTTP requests, and downloading additional malicious modules like the "zhima" reverse proxy.
+- The vulnerability was addressed following responsible disclosure, though the incident highlights ongoing risks from actors associated with the BADBOX infrastructure.
 
 ### Why it Matters
-This project highlights significant security vulnerabilities in proprietary hardware that relies on cloud-based deactivation to control device lifecycles. It raises broader questions about the right to repair and the ability of manufacturers to remotely disable consumer electronics after they have been discarded or sold.
+This discovery marks a significant escalation in automotive cybersecurity, as attackers have successfully weaponized essential vehicle software update channels to compromise hardware. It underscores the growing vulnerability of connected vehicle platforms and the need for manufacturers to implement more rigorous security protocols for aftermarket and factory-installed infotainment systems.
 
 ============================================================
-Author:   Zoe Skyforest
-Source:   Hackaday
-URL:      https://hackaday.com/2026/08/21/spoofed-serial-number-unlocks-cricut-machine/
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/08/android-car-malware-spreads-through.html
 Category: Cybersecurity

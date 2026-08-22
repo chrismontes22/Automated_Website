@@ -1,20 +1,21 @@
-Cisco Patches Nine Crosswork and Secure Workload Flaws, Five Scoring CVSS 10.0
+This Week in Security: Apple Warns Users, Stripe Merchants Leak Keys, Copilot Helps Hack Itself, and Comcast Senses Movement
 ============================================================
 
-Cisco has released critical security updates for its Crosswork platforms and Secure Workload software to address multiple high-severity vulnerabilities discovered during a comprehensive internal security review.
+Apple is notifying users in 110 countries about potential state-sponsored malware threats, while recent security reports highlight vulnerabilities in aviation systems, AI platforms, and widespread payment processing API keys.
 
 ### Key Points
-- Cisco patched four critical vulnerabilities in Crosswork Data Gateway, Network Controller, and Planning, all affecting version 7.2.1 and earlier.
-- Three of the Crosswork flaws received a maximum CVSS score of 10.0, including issues related to SQL injection and missing authentication.
-- Five vulnerabilities in Cisco Secure Workload were remediated, with fixes now available for versions 3.10 and 4.0.
-- The Secure Workload patches address severe security risks, including command injection, authentication bypass, and buffer overflow vulnerabilities.
-- Cisco confirmed these flaws were identified through internal testing and are not currently known to be exploited in the wild.
+- Apple is alerting users to potential malware targeting, recommending "Lockdown Mode" to mitigate risks from sophisticated, state-level threats.
+- Researchers at Usenix 2026 demonstrated a theoretical vulnerability in Boeing 737 communications buses that could allow unauthorized remote access via hardware modifications.
+- Microsoft Copilot contained an undocumented "autorun" parameter that allowed unauthorized execution of prompts, potentially exposing sensitive user data and inbox contents.
+- Approximately 650 companies using Stripe may be compromised after API keys were leaked via misconfigured servers, GitHub repositories, and infostealer malware.
+- A new Windows Defender exploit, CVE-2026-69414, allows attackers to escalate to administrative privileges, with no immediate official patch currently available.
+- Malicious packages have been identified in the Rust programming language ecosystem, utilizing build scripts to execute unauthorized payloads during the compilation process.
 
 ### Why it Matters
-These updates are essential for enterprise security because Cisco hardware and software are foundational components of global network infrastructure. Promptly applying these patches prevents potential unauthorized access and protects sensitive corporate environments from exploitation by malicious actors.
+These incidents underscore the persistent risk of supply chain vulnerabilities and the increasing sophistication of attacks targeting both consumer devices and critical infrastructure. Organizations and individuals must prioritize robust credential management and proactive security configurations to defend against these evolving digital threats.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/08/cisco-patches-nine-crosswork-and-secure.html
+Author:   Mike Kershaw
+Source:   Hackaday
+URL:      https://hackaday.com/2026/08/21/this-week-in-security-apple-warns-users-stripe-merchants-leak-keys-copilot-helps-hack-itself-and-comcast-senses-movement/
 Category: Cybersecurity
