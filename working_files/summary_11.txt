@@ -1,20 +1,20 @@
-Your Business Doesn’t Need More Software — It Needs Software That Adapts. Here’s How AI Is Making That Possible.
+Spoofed Serial Number Unlocks Cricut Machine
 ============================================================
 
-Businesses are shifting away from managing dozens of disconnected SaaS applications by using generative AI and no-code tools to customize existing platforms and streamline complex operational workflows.
+A hardware hacker known as xssfox successfully bypassed the deactivation lock on a discarded Cricut Maker by intercepting and spoofing USB communications between the device and its software.
 
 ### Key Points
-- The proliferation of SaaS subscriptions has created "application glut," leading to data silos, increased costs, and reduced employee productivity.
-- Generative AI enables "citizen developers" to build automated processes and custom applications using natural-language prompts without requiring dedicated engineering teams.
-- Adaptive SaaS allows businesses to configure existing software to fit specific operational needs rather than forcing processes to match rigid application structures.
-- No-code and low-code platforms provide essential governance, security, and documentation guardrails for AI-generated tools to prevent the accumulation of unmanageable "vibe slop."
-- Companies are prioritizing flexible, adaptable platforms over software with high feature counts to ensure long-term operational sustainability.
+- The researcher salvaged a discarded Cricut Maker and repaired its damaged rollers to restore physical functionality.
+- The device was initially unusable because Cricut’s software marked the machine as deactivated, likely following a warranty replacement.
+- Analysis revealed that the machine transmits its serial number to the host computer via USB without encryption or checksums.
+- By installing an RP2040 microcontroller as a man-in-the-middle device, the hacker successfully spoofed the serial number to unlock the machine.
+- The project demonstrates that a software-only bypass may also be possible for future users looking to reactivate locked hardware.
 
 ### Why it Matters
-This transition marks a fundamental shift from purchasing software based on feature lists to prioritizing tools that integrate seamlessly into existing business processes. By consolidating their tech stacks and using AI to customize workflows, businesses can reduce operational complexity and regain control over their critical data.
+This project highlights significant security vulnerabilities in proprietary hardware that relies on cloud-based deactivation to control device lifecycles. It raises broader questions about the right to repair and the ability of manufacturers to remotely disable consumer electronics after they have been discarded or sold.
 
 ============================================================
-Author:   Jeremy Jarry
-Source:   Entrepreneur
-URL:      https://www.entrepreneur.com/business-news/tech/your-business-doesnt-need-more-software-it-needs-software-that-adapts-heres-how-ai-is-making-that-possible
-Category: Artificial Intelligence
+Author:   Zoe Skyforest
+Source:   Hackaday
+URL:      https://hackaday.com/2026/08/21/spoofed-serial-number-unlocks-cricut-machine/
+Category: Cybersecurity

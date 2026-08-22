@@ -1,20 +1,20 @@
-Oops! Qualcomm retracts key Snapdragon C benchmarks for budget laptops
+Nine Million Photos of People’s Faces Discovered in Exposed Database
 ============================================================
 
-Qualcomm has retracted specific benchmark data for its new Snapdragon C processors, raising questions about the performance of these budget-friendly chips intended for low-cost Windows 11 devices.
+Cybersecurity researcher Jeremiah Fowler discovered an unsecured Amazon S3 bucket containing nine million facial images linked to the people-search service ClarityCheck, raising significant privacy and security concerns.
 
 ### Key Points
-- Qualcomm requested the removal of benchmark slides comparing Snapdragon C performance during idle app usage and web browsing.
-- The Snapdragon C is an 8-core, 6nm processor featuring an Adreno GPU and Hexagon NPU designed for $300 entry-level laptops.
-- Remaining data claims the chip offers twice the power efficiency of the Intel N250 when running Netflix or the Edge browser.
-- The processor supports LPDDR5x memory up to 16GB, Wi-Fi 6E, and Bluetooth 6.0 for Windows 11 on ARM systems.
-- Qualcomm cited a need for "clarity and relevance" as the reason for updating the previously released performance documentation.
+- Cybersecurity researcher Jeremiah Fowler identified 450 gigabytes of exposed data, including profile images and screenshots, stored in an unsecured Amazon S3 bucket.
+- ClarityCheck allows users to identify individuals using photos, phone numbers, or email addresses by leveraging public records and open-source intelligence.
+- The exposed database contained images of individuals who may not have consented to their photos being uploaded or stored by the service.
+- Fowler warned that the exposed images could be harvested by AI bots for training purposes or exploited by malicious actors and data brokers.
+- ClarityCheck disputes the findings, claiming the data was not publicly exposed because access required knowledge of a specific, unindexed URL.
 
 ### Why it Matters
-The lack of transparent, verified performance data for web browsing creates uncertainty for consumers looking for reliable budget-friendly computing options. Independent testing will be essential to determine if these chips can deliver the efficiency and responsiveness required for daily tasks in the entry-level PC market.
+This incident highlights the growing risks associated with the collection and storage of biometric data by third-party search services. It underscores the potential for unauthorized access to sensitive personal imagery, which could be exploited for identity theft, scams, or unauthorized AI model training.
 
 ============================================================
-Author:   sean.endicott@futurenet.com (Sean Endicott) , Sean Endicott
-Source:   Windows Central
-URL:      https://www.windowscentral.com/hardware/qualcomm/oops-qualcomm-retracts-key-snapdragon-c-benchmarks-for-budget-laptops
-Category: Phones, Laptops, and Gadgets
+Author:   Matt Growcoot
+Source:   PetaPixel
+URL:      https://petapixel.com/2026/08/21/nine-million-photos-of-peoples-face-discovered-in-exposed-database/
+Category: Cybersecurity

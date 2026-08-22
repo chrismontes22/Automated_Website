@@ -1,20 +1,20 @@
-Privacy advocates call on Maryland to investigate data brokers
+We Rebuilt the Linux MicroVM Stack on Apple Silicon
 ============================================================
 
-A coalition of privacy and civil rights groups has filed a formal complaint urging Maryland’s attorney general to investigate data brokers for allegedly violating state privacy laws.
+Encore has developed "crackling," a cross-platform tool that enables engineers to run backend build environments locally on macOS and Linux using native hypervisors instead of remote shared servers.
 
 ### Key Points
-- The complaint targets companies including Penlink, Thomson Reuters, Motorola, Insight LPR, LexisNexis, and Flock Safety for allegedly selling geolocation data without proper warrants.
-- Advocates claim these brokers are violating Maryland law by selling sensitive personal information to U.S. Immigration and Customs Enforcement (ICE) for surveillance purposes.
-- Maryland’s privacy law, updated in 2024, prohibits the sale of precise geolocation data and restricts data sharing with immigration enforcement agencies without a warrant.
-- Companies named in the complaint, including Penlink and Thomson Reuters, have denied the allegations and maintain that their business practices comply with all applicable regulations.
-- The complaint was authored by the Georgetown University Law Center’s Technology Law Clinic on behalf of 12 organizations, including We Are CASA.
+- Crackling replaces a complex remote build system that relied on shared Linux hosts, SSH, and manual Docker-to-block-device image conversions.
+- The tool uses Firecracker on Linux and Apple’s Virtualization.framework (VZ) on macOS to boot OCI images as lightweight virtual machines.
+- A unified Rust-based agent communicates with the host via vsock, providing consistent shell, execution, and file-copying capabilities across both platforms.
+- The system handles kernel unwrapping and root filesystem generation in userspace, allowing it to boot Linux images natively on Apple Silicon.
+- By moving the build environment to local hardware, developers can now use standard debugging tools and breakpoints directly within their build pipeline.
 
 ### Why it Matters
-This case highlights the growing tension between state-level privacy protections and the federal government's use of the "data broker loophole" to conduct surveillance without judicial oversight. If successful, an investigation could set a significant legal precedent for how states can restrict law enforcement access to commercially purchased personal data.
+This transition eliminates the latency and friction of remote development, allowing engineers to iterate on backend infrastructure as easily as application code. By unifying the build environment across different operating systems, Encore improves developer productivity and ensures that local testing environments accurately mirror production deployments.
 
 ============================================================
-Author:   Jude Joffe-Block
-Source:   NPR
-URL:      https://www.npr.org/2026/08/20/nx-s1-5938822/maryland-privacy-data-brokers
-Category: Cybersecurity
+Author:   Ivan Cernja
+Source:   Encore.dev
+URL:      https://encore.dev/blog/firecracker-apple-silicon
+Category: Phones, Laptops, and Gadgets
