@@ -1,5 +1,176 @@
 [
   {
+    "author": "Afam Onyimadu",
+    "url": "https://www.makeuseof.com/your-thunderbolt-port-used-steal-data-from-locked-pc-setting-that-stops/",
+    "category": "Cybersecurity",
+    "title": "Your Thunderbolt port can be used to steal data from a locked PC — here's the setting that stops it",
+    "processed_at": "2026-08-23T19:21:07.358690",
+    "source": "MakeUseOf",
+    "summary": "Windows users should verify their Kernel DMA Protection status in System Information to ensure Thunderbolt and USB4 devices cannot bypass lock screen security to access system memory.\n\n### Key Points\n- Windows lock screens do not automatically prevent PCIe-connected peripherals from accessing system RAM via Direct Memory Access (DMA).\n- Kernel DMA Protection uses an Input-Output Memory Management Unit (IOMMU) to restrict external devices to specific, safe memory regions.\n- Users can check their security status by typing \"MSInfo32\" in the Windows Run dialog and locating the \"Kernel DMA Protection\" field.\n- The feature is hardware-dependent and requires specific UEFI and chipset support, meaning it cannot be manually enabled on incompatible systems.\n- Older interfaces like FireWire and ExpressCard are not covered by Kernel DMA Protection, leaving them vulnerable to unauthorized memory access.\n\n### Why it Matters\nThis security feature is critical for protecting sensitive data, such as authentication credentials, from physical \"drive-by\" attacks using malicious peripherals. Understanding your device's DMA protection status helps identify potential hardware vulnerabilities that remain active even when a computer is locked."
+  },
+  {
+    "author": "Jasmine Mannan",
+    "url": "https://www.xda-developers.com/ways-i-secured-my-plex-server-before-exposing-it-to-the-internet/",
+    "category": "Cybersecurity",
+    "title": "4 ways I secured my Plex server before exposing it to the internet",
+    "processed_at": "2026-08-23T19:21:15.616737",
+    "source": "XDA Developers",
+    "summary": "Plex users are urged to move beyond default remote access settings by implementing reverse proxies and network segmentation to protect their home servers from automated web-based security threats.\n\n### Key Points\n- Disable default port 32400 forwarding to prevent automated bots from identifying and probing your media server for vulnerabilities.\n- Deploy a reverse proxy like Caddy or Nginx to enforce HTTPS encryption and hide internal server details from the public internet.\n- Enable mandatory two-factor authentication and set secure connections to \"required\" to block unencrypted HTTP fallbacks and credential-stuffing attacks.\n- Use VLAN segmentation to isolate the media server in a DMZ, preventing attackers from accessing other sensitive devices on your local network.\n- Implement automated patching tools like Watchtower to ensure the Plex application and underlying container infrastructure remain updated against zero-day exploits.\n\n### Why it Matters\nRelying on default configurations leaves home networks vulnerable to unauthorized access and potential data breaches through exposed media server ports. Implementing these security layers allows users to enjoy remote streaming while significantly reducing the risk of compromising their broader home infrastructure."
+  },
+  {
+    "author": "Polly Thompson",
+    "url": "https://www.businessinsider.com/consulting-race-to-become-ai-native-tech-first-2026-8#article",
+    "category": "Tech Business & Markets",
+    "title": "Consulting's race to become AI native",
+    "processed_at": "2026-08-23T19:21:24.015868",
+    "source": "Business Insider",
+    "summary": "Major consulting firms are rapidly integrating artificial intelligence into their service models, forcing a strategic shift that increasingly blurs the traditional lines between professional advisory and technology companies.\n\n### Key Points\n- Firms like KPMG, PwC, and McKinsey are embedding AI across their operations, with some reporting that tech-focused services now account for over 40% of global revenue.\n- Major consultancies are aggressively hiring thousands of data and AI professionals while introducing new technical career tracks to meet client demand for implementation.\n- Partnerships with AI leaders including OpenAI, Nvidia, and Microsoft are enabling firms to automate junior-level tasks and offer clients direct access to AI-enhanced platforms.\n- Despite the \"AI-native\" branding, industry experts note that most firms remain focused on organizational change rather than becoming pure-play technology developers.\n- Research from Source Global indicates that while clients expect AI to impact service delivery, many remain skeptical about the extent of this transformation.\n\n### Why it Matters\nThe shift toward AI-driven services allows consulting firms to capture higher-growth revenue streams while remaining essential intermediaries for Fortune 500 companies navigating digital transformation. However, firms must carefully balance their new technical identities with their traditional premium pricing models to avoid being commoditized as low-cost software providers."
+  },
+  {
+    "author": "Vikki Blake",
+    "url": "https://www.eurogamer.net/gta-6-cyberleek-website-down",
+    "category": "Cybersecurity",
+    "title": "Is this the end of the GTA 6 leaks? Take-Two's legal crusade appears to shut down the hubs behind them",
+    "processed_at": "2026-08-23T19:21:31.992321",
+    "source": "Eurogamer.net",
+    "summary": "Take-Two Interactive has successfully forced the CyberLeek website and associated Telegram channel offline as part of an ongoing legal effort to stop unauthorized leaks of Grand Theft Auto 6.\n\n### Key Points\n- Take-Two Interactive filed subpoenas against Microsoft and Discord to identify the individuals behind the CyberLeek persona.\n- Despite the removal of primary leak hubs, a seventh clip of unreleased GTA 6 gameplay has reportedly surfaced on Reddit.\n- The CyberLeek group allegedly used the leaks to promote a cryptocurrency scheme involving a $CYBERLEEK meme coin.\n- Grand Theft Auto 6 remains scheduled for a November 19, 2026, release on PlayStation 5 and Xbox Series X/S.\n\n### Why it Matters\nThese leaks highlight the significant security challenges major publishers face when protecting highly anticipated intellectual property from bad actors. While Take-Two maintains that the incident will not impact long-term sales, the situation underscores the growing intersection between gaming leaks and illicit financial schemes."
+  },
+  {
+    "author": "Rich Duprey",
+    "url": "https://247wallst.com/investing/2026/08/22/ais-absurd-spending-boom-hyperscalers-are-spending-102-of-cloud-revenue-on-capex/",
+    "category": "Tech Business & Markets",
+    "title": "AI’s Absurd Spending Boom? Hyperscalers Are Spending 102% of Cloud Revenue on Capex",
+    "processed_at": "2026-08-23T19:21:42.152609",
+    "source": "24/7 Wall St.",
+    "summary": "Major cloud providers and technology firms are projected to invest $4.1 trillion in artificial intelligence infrastructure between 2026 and 2028 to meet long-term computing demand.\n\n### Key Points\n- UBS forecasts total hyperscaler capital expenditures will reach $1.619 trillion annually by 2028, tripling the spending levels seen over the previous six years.\n- Alphabet, Meta, Microsoft, and Amazon lead the investment surge, with combined projected spending exceeding $2.9 trillion through 2028.\n- Emerging players including SpaceX, Oracle, CoreWeave, and Nebius Group are significantly expanding the total pool of infrastructure capital.\n- Cloud providers are expected to allocate over 90% of their cloud revenue toward capital expenditures through 2028 to build out AI-ready data centers.\n- The massive investment cycle aims to establish a permanent, higher baseline for global AI compute capacity and infrastructure requirements.\n\n### Why it Matters\nThis unprecedented capital commitment suggests that AI is fundamentally resetting industry spending requirements rather than serving as a temporary technology upgrade. Investors must now monitor whether these massive infrastructure investments translate into sustainable revenue and high utilization rates to justify the long-term financial risk."
+  },
+  {
+    "author": "Nicholas Sutrich",
+    "url": "https://www.androidcentral.com/phones/google-pixel/google-ai-pro-trial-pixel-11-pro",
+    "category": "Phones, Laptops, and Gadgets",
+    "title": "If you bought a Pixel 11 Pro, you should activate this free perk immediately",
+    "processed_at": "2026-08-23T19:26:00.884387",
+    "source": "Android Central",
+    "summary": "Google Pixel 11 Pro and Pro XL owners can now claim a complimentary six-month subscription to Google AI Pro, providing access to advanced artificial intelligence tools and premium services.\n\n### Key Points\n- The Google AI Pro subscription, formerly known as Gemini Advanced, offers a retail value of approximately $120 over the six-month trial period.\n- Included benefits feature 5TB of cloud storage, YouTube Premium Lite, and 30 days of event history for Nest devices via Google Home Premium.\n- Users gain access to advanced tools like the Jules coding agent, Google Antigravity development platform, and increased usage limits for Gemini in Google apps.\n- Activation requires navigating to the settings menu within the Gemini app to manually initiate the trial offer.\n- The subscription is managed through Google Play, requiring a payment method on file that will only be charged after the six-month promotional period expires.\n\n### Why it Matters\nThis promotion highlights Google's strategy to integrate its advanced AI ecosystem directly into the hardware experience to drive user adoption of its subscription services. By bundling high-value features like cloud storage and premium media access, Google aims to demonstrate the long-term utility of its AI platform to new smartphone customers."
+  },
+  {
+    "author": "https://www.facebook.com/bbcnews",
+    "url": "https://www.bbc.co.uk/news/articles/ce979zpjj85o",
+    "category": "Phones, Laptops, and Gadgets",
+    "title": "Laptop catches fire on US flight, pilot reports",
+    "processed_at": "2026-08-23T19:26:08.593954",
+    "source": "BBC News",
+    "summary": "A passenger’s laptop caught fire on an American Airlines flight from Atlanta to Dallas, prompting an emergency response and medical treatment for one individual on board.\n\n### Key Points\n- American Airlines Flight 2398 landed safely at Dallas Fort Worth International Airport on Friday following reports of smoke from a passenger's device.\n- Flight attendants contained the fire mid-flight, and emergency personnel met the aircraft at the gate upon arrival.\n- The Federal Aviation Administration has recorded 58 verified lithium battery incidents involving smoke or fire on aircraft so far this year.\n- FAA regulations mandate that lithium batteries must be stowed in carry-on baggage rather than checked luggage to mitigate fire risks.\n- Data shows 84 laptop-related battery incidents have been reported to the FAA over the last two decades.\n\n### Why it Matters\nLithium battery fires represent a persistent safety challenge for the aviation industry as the use of portable electronics and power banks continues to rise. These incidents highlight the critical importance of strict adherence to battery storage regulations to prevent mid-air emergencies and protect passenger safety."
+  },
+  {
+    "author": "Jaclyn Diaz",
+    "url": "https://www.npr.org/2026/08/22/nx-s1-5931446/flock-fallout-competitors-see-opportunity",
+    "category": "Tech Business & Markets",
+    "title": "As Flock battles public scrutiny, other police surveillance companies see an opening",
+    "processed_at": "2026-08-23T19:26:18.086181",
+    "source": "NPR",
+    "summary": "Flock Safety faces significant public backlash and contract cancellations over privacy concerns, prompting competitors like Axon and Motorola Solutions to aggressively pursue its law enforcement surveillance market share.\n\n### Key Points\n- Grassroots groups like DeFlock DC are actively campaigning to terminate municipal contracts with Flock Safety due to concerns over national data sharing.\n- Approximately 100 cities have reportedly deactivated cameras or rejected Flock contracts, with some municipalities switching to competitors like Axon.\n- Flock Safety’s national database allows police to track vehicles across jurisdictions, a feature critics argue facilitates overreach and potential misuse.\n- Axon CEO Rick Smith confirmed that law enforcement agencies are increasingly transitioning to their platform, citing superior privacy controls.\n- Privacy advocates warn that replacing Flock with other surveillance providers does not resolve fundamental issues regarding mass data collection and civil liberties.\n\n### Why it Matters\nThe shift in market share highlights a growing tension between public demand for privacy and the widespread adoption of automated surveillance technology by law enforcement. While Flock currently bears the brunt of public scrutiny, the industry-wide reliance on integrated data systems suggests that privacy concerns will persist regardless of which specific vendor provides the hardware."
+  },
+  {
+    "author": "Alina Maria Stan",
+    "url": "https://thenextweb.com/news/ormat-geothermal-data-centres-google-europe",
+    "category": "Artificial Intelligence",
+    "title": "A 60-year-old geothermal company just became an AI infrastructure play",
+    "processed_at": "2026-08-23T19:26:26.532170",
+    "source": "The Next Web",
+    "summary": "Geothermal energy provider Ormat has secured a major power purchase agreement to supply Google with up to 150 megawatts of carbon-free electricity from new Nevada-based projects by 2030.\n\n### Key Points\n- Ormat will provide Google with 150 megawatts of geothermal power, with Nevada regulatory approval expected in late 2024.\n- The company is expanding its global capacity from 1.85 gigawatts to a target of 2.8 gigawatts by 2028.\n- Enhanced geothermal pilots are currently underway in partnership with Sage Geosystems and SLB, with expected completion in 2027.\n- Ormat reported $662.7 million in revenue for the first half of 2026, representing a 43% increase over the previous period.\n- Unlike intermittent solar or wind, geothermal provides continuous, reliable power essential for the 24/7 operational demands of large-scale data centers.\n\n### Why it Matters\nThis agreement highlights the growing trend of major technology firms securing long-term, reliable energy sources to support the massive power requirements of artificial intelligence infrastructure. By prioritizing geothermal energy, companies like Google are establishing a blueprint for grid stability that contrasts with the regulatory and supply constraints currently hindering similar projects in Europe."
+  },
+  {
+    "author": "Dhruv Bhutani",
+    "url": "https://www.androidauthority.com/amazon-kindle-drm-update-quitting-3701426/",
+    "category": "Phones, Laptops, and Gadgets",
+    "title": "I’m quitting Kindle, and Amazon’s new DRM update proves why you should too",
+    "processed_at": "2026-08-23T19:26:34.851605",
+    "source": "Android Authority",
+    "summary": "Amazon’s latest Kindle software update has sparked backlash by closing a popular Libby library-loan loophole and tightening DRM restrictions, prompting users to reconsider their loyalty to the platform.\n\n### Key Points\n- Amazon implemented an on-device digital timer that automatically locks Libby library books once the loan period expires, even in airplane mode.\n- New DRM protocols restrict users from managing or backing up purchased ebooks using third-party software like Calibre.\n- The update affects older hardware, including the Kindle Oasis, limiting the ability of users to preserve or archive their digital libraries.\n- Critics argue Amazon prioritizes subscription services like Kindle Unlimited and publisher contracts over user-requested features like custom wallpapers and better file organization.\n- Competitors such as Kobo and Boox are gaining traction by offering more flexible, open-format support and greater control over hardware and software.\n\n### Why it Matters\nThese changes highlight the growing tension between corporate digital rights management and the consumer expectation of true ownership over purchased media. As Amazon continues to restrict device functionality through silent updates, users are increasingly shifting toward open-ecosystem alternatives that offer more autonomy and long-term control over their digital libraries."
+  },
+  {
+    "author": "MarketBeat Staff",
+    "url": "https://www.marketbeat.com/articles/marketbeat-week-in-review-08-17-08-21/?utm_source=yahoofinance&amp;utm_medium=yahoofinance",
+    "category": "Tech Business & Markets",
+    "title": "MarketBeat Week in Review – 08/17 - 08/21",
+    "processed_at": "2026-08-23T19:26:43.722033",
+    "source": "MarketBeat",
+    "summary": "U.S. stock markets faced a volatile week as Treasury bond buyback announcements, rising oil prices, and cautious earnings reports from major companies pressured the primary market indexes.\n\n### Key Points\n- The U.S. Treasury Department announced it will double bond buybacks starting in September, contributing to market uncertainty.\n- Bitcoin rallied following White House discussions aimed at advancing the Clarity Act, which boosted investor sentiment for risk-on assets.\n- Moderna shares surged 177% after a successful late-stage clinical trial for a melanoma vaccine developed with Merck.\n- RTX secured a $23 billion U.S. Navy contract, providing long-term revenue stability despite broader concerns over high valuations in the defense sector.\n- SK hynix announced a record $28.6 billion share repurchase and cancellation program to highlight its strong balance sheet amid tech sector pressure.\n- Investors are awaiting the Personal Consumption Expenditures (PCE) index release on August 26 to gauge the current trajectory of inflation.\n\n### Why it Matters\nMarket participants are currently balancing macroeconomic policy shifts with sector-specific growth opportunities in artificial intelligence, commodities, and healthcare. Monitoring upcoming inflation data and corporate earnings remains critical for investors navigating this period of heightened volatility and shifting liquidity."
+  },
+  {
+    "author": "Aniket Verma",
+    "url": "https://finance.yahoo.com/markets/crypto/articles/trumps-crypto-comments-cheered-robinhood-094524088.html",
+    "category": "Tech Business & Markets",
+    "title": "Trump's Crypto Comments Cheered: Robinhood CEO Stresses 'Broad Ownership' At White House Event, Binance Founder Says, 'We're So Back'",
+    "processed_at": "2026-08-23T19:26:52.393117",
+    "source": "Yahoo Entertainment",
+    "summary": "President Donald Trump hosted a White House summit with cryptocurrency industry leaders to reaffirm his administration's commitment to establishing U.S. leadership in digital assets and emerging technologies.\n\n### Key Points\n- Coinbase CEO Brian Armstrong expressed optimism that the administration and regulators will successfully pass the CLARITY Act.\n- Robinhood CEO Vlad Tenev emphasized the company's mission to promote broad financial ownership as a pillar of a stable, prosperous society.\n- Ripple CEO Brad Garlinghouse noted that 67 million Americans now hold cryptocurrency, highlighting the sector's transition from a fringe industry to a mainstream political force.\n- SEC Chairman Paul Atkins and CFTC Chairman Michael Selig are reportedly aligned with the administration's goal of creating consistent regulatory rules.\n- Binance founder Changpeng Zhao publicly celebrated the administration's supportive stance toward the digital asset sector.\n\n### Why it Matters\nThis summit signals a significant shift toward formalizing cryptocurrency regulation, potentially providing the legal certainty that industry participants have long sought. By aligning federal regulators with legislative goals, the administration aims to solidify the United States as a global hub for digital asset innovation and investment."
+  },
+  {
+    "author": "c.cale.hunt@gmail.com (Cale Hunt) , Cale Hunt",
+    "url": "https://www.windowscentral.com/hardware/laptops/hyper-hyperdrive-next-thunderbolt-5-dock-review",
+    "category": "Phones, Laptops, and Gadgets",
+    "title": "I switched to the HyperDrive Next Thunderbolt 5 dock for a few weeks, and it could be the best accessory for productivity masters — here's why",
+    "processed_at": "2026-08-23T19:27:00.893361",
+    "source": "Windows Central",
+    "summary": "The HyperDrive Next Thunderbolt 5 Dock offers integrated M.2 SSD storage and Thunderbolt Share capabilities, providing a versatile connectivity solution for users managing multiple PCs in professional office environments.\n\n### Key Points\n- The dock features a built-in M.2 PCIe 4.0 NVMe SSD slot supporting drives up to 16TB.\n- It includes Intel Thunderbolt Share certification, allowing direct communication and file transfers between two connected laptops.\n- Connectivity includes three Thunderbolt 5 ports, four 10Gbps USB-A ports, and a 2.5Gb Ethernet jack.\n- The device supports up to three 4K external displays at 60Hz but lacks native HDMI or DisplayPort video outputs.\n- It is currently priced at approximately $319.99, positioning it as a mid-range option among current Thunderbolt 5 hardware.\n\n### Why it Matters\nThis docking station highlights the growing trend of integrating specialized storage and multi-PC management tools directly into peripheral hardware. While it offers significant convenience for power users, the reliance on Thunderbolt-only video output and potential performance bottlenecks during heavy simultaneous data transfers may influence purchasing decisions for those requiring high-speed, dedicated connectivity."
+  },
+  {
+    "author": "DealPost Team",
+    "url": "https://www.pcworld.com/article/3217217/block-ads-on-nine-devices-for-life-for-11-reg-169-99.html",
+    "category": "Cybersecurity",
+    "title": "Block ads on nine devices for life for $11 (reg. $169.99)",
+    "processed_at": "2026-08-23T19:27:25.643622",
+    "source": "PCWorld",
+    "summary": "AdGuard is currently offering a lifetime subscription to its Family plan for $11, providing comprehensive ad blocking, privacy protection, and parental controls for up to nine individual devices.\n\n### Key Points\n- The promotional price of $11 represents a significant discount from the standard $169.99 retail cost.\n- A single purchase covers up to nine devices, including smartphones, tablets, and computers running Android or iOS.\n- The software blocks banner ads, video advertisements, pop-ups, and online trackers to improve browsing privacy.\n- Integrated security features include filters designed to detect and prevent access to known malware and phishing websites.\n- Parental control settings allow users to restrict access to inappropriate content across connected devices.\n- The lifetime license includes automatic updates and new feature rollouts without requiring recurring subscription renewals.\n\n### Why it Matters\nThis deal offers a cost-effective solution for households looking to secure multiple devices under a single, one-time payment model. By eliminating recurring subscription fees, users can maintain long-term digital privacy and ad-free browsing across their entire family's hardware."
+  },
+  {
+    "author": "staff@bgr.com (Kyle Schurman)",
+    "url": "https://www.bgr.com/2238280/why-companies-switch-google-microsoft-365/",
+    "category": "Tech Business & Markets",
+    "title": "Why Do Companies Switch From Google Workspace To Microsoft 365?",
+    "processed_at": "2026-08-23T19:27:33.892233",
+    "source": "BGR",
+    "summary": "Businesses are increasingly migrating from Google Workspace to Microsoft 365 to leverage superior offline functionality, advanced data security compliance, and more cost-effective enterprise collaboration and AI features.\n\n### Key Points\n- Microsoft 365 provides robust offline access to core applications like Word, Excel, and PowerPoint, whereas Google Workspace primarily relies on consistent internet connectivity.\n- Microsoft 365 offers more integrated data protection tools, including regional security management and email encryption, which are often easier to configure for HIPAA compliance.\n- Microsoft Teams supports up to 20,000 meeting attendees and includes recording capabilities across all business tiers, outperforming Google Workspace’s 1,000-person limit.\n- Microsoft 365 includes the Copilot AI tool within existing subscriptions, potentially reducing the need for businesses to purchase separate third-party AI services.\n- Data loss prevention (DLP) tools are standard in Microsoft 365, while Google Workspace often restricts these advanced security features to higher-priced enterprise subscription tiers.\n\n### Why it Matters\nThe choice between these platforms significantly impacts operational efficiency and long-term IT expenditures for growing organizations. By consolidating security, communication, and AI tools into a single ecosystem, businesses can reduce administrative overhead and ensure better compliance with strict data protection standards."
+  },
+  {
+    "author": "David Vellante and Amit Eyal Govrin",
+    "url": "https://siliconangle.com/2026/08/22/from-tokenmaxxing-to-sovereign-alpha-who-controls-your-ai-economics/",
+    "category": "Tech Business & Markets",
+    "title": "From tokenmaxxing to sovereign alpha: Who controls your AI economics?",
+    "processed_at": "2026-08-23T19:27:42.562239",
+    "source": "SiliconANGLE News",
+    "summary": "Enterprises are increasingly prioritizing financial sovereignty over vendor-dependent AI metrics to protect profit margins and maintain control over their long-term operational costs and strategic business outcomes.\n\n### Key Points\n- Canva reduced AI task costs by approximately 90% by shifting from expensive third-party frontier models to in-house solutions and task-level routing.\n- Companies like Uber and Lindy have faced significant budget strain, forcing them to reset AI defaults and route workloads to lower-cost models.\n- Financial sovereignty requires enterprises to own their \"agentic operating system,\" including context engines, routing logic, and evaluation assets.\n- Experts recommend measuring success by the \"cost per accepted, governed business outcome\" rather than vendor-centric metrics like token consumption.\n- A hybrid architecture allows firms to use frontier models for complex reasoning while keeping predictable, sensitive workloads on self-hosted, governed infrastructure.\n\n### Why it Matters\nRelying solely on third-party AI providers creates significant financial risk, as enterprises may find their budgets depleted by unpredictable usage-based pricing. By architecting a sovereign control plane, businesses can retain their competitive \"alpha\" and ensure they remain agile enough to switch vendors or models without disrupting core operations."
+  },
+  {
+    "author": "Rob Isbitts",
+    "url": "https://www.barchart.com/story/news/3985463/the-bond-king-goes-bananas-over-nvidia-s-500-billion-move-how-it-may-be-affecting-your-portfolio",
+    "category": "Tech Business & Markets",
+    "title": "The Bond King Goes Bananas Over Nvidia's $500 Billion Move. How It May Be Affecting Your Portfolio.",
+    "processed_at": "2026-08-23T19:27:51.184882",
+    "source": "Barchart.com",
+    "summary": "Investor Jeffrey Gundlach is warning that using rapidly depreciating Nvidia GPUs as collateral for long-term debt creates a dangerous financial mismatch that could threaten the broader stock market.\n\n### Key Points\n- Jeffrey Gundlach criticized a new trend where firms like Apollo, BlackRock, and KKR issue debt backed by Nvidia hardware to fund AI data center infrastructure.\n- The critique highlights a duration mismatch, as GPU technology typically becomes obsolete within 18 to 24 months, while the associated debt is long-term.\n- Gundlach compared the practice to securitizing \"warehouses of newly engineered bananas,\" suggesting the collateral will lose value long before the debt matures.\n- Mark Cuban supported the warning, comparing the current trend of treating chips as a stable asset class to the volatility seen in the cryptocurrency market.\n- Over 475 U.S.-listed ETFs hold Nvidia stock, meaning a potential re-rating of this debt could negatively impact a vast range of diversified investment funds.\n\n### Why it Matters\nThis financial engineering strategy risks creating a systemic vulnerability because Nvidia serves as a central \"Jenga piece\" for the current equity market. If credit markets force a re-rating of this debt, the resulting decline in hardware spending could trigger significant losses across hundreds of ETFs and the broader tech sector."
+  },
+  {
+    "author": "hamish.hector@futurenet.com (Hamish Hector) , Hamish Hector",
+    "url": "https://www.techradar.com/tech/icymi-heres-the-weeks-7-biggest-tech-news-stories-from-the-major-gta-6-leaks-to-metas-usd1-4-trillion-lawsuit",
+    "category": "Tech Business & Markets",
+    "title": "ICYMI: here's the week's 7 biggest tech news stories from the major GTA 6 leaks to Meta's $1.4 trillion lawsuit",
+    "processed_at": "2026-08-23T19:28:16.234738",
+    "source": "TechRadar",
+    "summary": "This week’s top tech stories include a massive $1.4 trillion lawsuit against Meta, significant leaks for Grand Theft Auto 6, and new regulatory developments for home solar.\n\n### Key Points\n- Meta faces a potential $1.4 trillion lawsuit from 32 US states alleging the company intentionally designed platforms to addict teenage users.\n- Hacker group Cyberleek leaked gameplay, cutscenes, and the map for Grand Theft Auto 6, protesting Rockstar’s shift to digital-only game releases.\n- The UK will legalize plug-in home solar kits on August 27, with UKSOL launching compatible systems starting at £699.\n- Amazon updated Kindle Oasis software to enforce stricter DRM and require internet connections for reading library books borrowed via Libby.\n- A Tesla Robotaxi was filmed colliding with traffic posts in Texas, raising concerns as the company prepares to trial its autonomous Cybercab.\n- The Google Pixel 11 Pro Fold launched with hardware improvements like IP68 protection and a lighter build, though camera upgrades remain limited.\n\n### Why it Matters\nThese developments highlight growing regulatory and public scrutiny regarding the safety, privacy, and business practices of major technology corporations. From potential trillion-dollar legal liabilities to consumer pushback against digital restrictions, these events signal a shifting landscape for how tech companies interact with users and regulators."
+  },
+  {
+    "author": "Thomas Claburn",
+    "url": "https://www.theregister.com/ai-and-ml/2026/08/22/ai-slop-is-good-for-business-if-you-know-what-youre-doing/5291382",
+    "category": "Artificial Intelligence",
+    "title": "AI slop is good for business if you know what you're doing",
+    "processed_at": "2026-08-23T19:28:24.534408",
+    "source": "Theregister.com",
+    "summary": "Waymo is developing custom 5nm machine learning accelerators to enhance its autonomous vehicle capabilities, aiming to maintain a competitive technological advantage over Tesla in the self-driving market.\n\n### Key Points\n- Waymo’s new custom-designed robocar chips are engineered to deliver over 1,000 TOPS with ultra-low latency.\n- The 5nm ML accelerators are specifically optimized to process complex sensor data for autonomous navigation.\n- This hardware development represents a strategic move to secure a performance lead against Tesla’s proprietary FSD hardware.\n- The initiative highlights the growing trend of automotive companies moving toward vertical integration of specialized silicon for AI workloads.\n\n### Why it Matters\nThis shift toward custom silicon underscores the critical importance of specialized hardware in the race to achieve reliable, scalable autonomous driving. By controlling the underlying chip architecture, Waymo can optimize performance and power efficiency in ways that off-the-shelf components cannot match."
+  },
+  {
     "summary": "Software companies are increasingly prioritizing privacy as a core competitive advantage, shifting from optional settings to default, verifiable protections across browsers, messaging apps, VPNs, and AI tools.\n\n### Key Points\n- Browsers like Brave, DuckDuckGo, and Firefox are gaining market share by blocking trackers and ads by default rather than relying on limited incognito modes.\n- Messaging platforms, including WhatsApp and Signal, are standardizing end-to-end encryption and ephemeral messaging features to prevent data scanning for advertising purposes.\n- Top-tier VPN providers are adopting independent no-logs audits and RAM-only server infrastructure to provide verifiable proof of user data protection.\n- AI developers are shifting toward on-device processing and client-side encryption to deliver personalized services without storing sensitive user data on remote servers.\n\n### Why it Matters\nPrivacy has transitioned from a regulatory compliance burden into a primary product strategy that drives consumer trust and brand loyalty. Companies that fail to provide verifiable transparency now face significant competitive disadvantages against platforms built on privacy-first architectures.",
     "author": "Will Jones",
     "processed_at": "2026-08-23T07:36:26.655921",

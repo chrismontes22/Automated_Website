@@ -1,19 +1,20 @@
-4 super smart shifts proving privacy is software’s new killer feature
+Your Thunderbolt port can be used to steal data from a locked PC — here's the setting that stops it
 ============================================================
 
-Software companies are increasingly prioritizing privacy as a core competitive advantage, shifting from optional settings to default, verifiable protections across browsers, messaging apps, VPNs, and AI tools.
+Windows users should verify their Kernel DMA Protection status in System Information to ensure Thunderbolt and USB4 devices cannot bypass lock screen security to access system memory.
 
 ### Key Points
-- Browsers like Brave, DuckDuckGo, and Firefox are gaining market share by blocking trackers and ads by default rather than relying on limited incognito modes.
-- Messaging platforms, including WhatsApp and Signal, are standardizing end-to-end encryption and ephemeral messaging features to prevent data scanning for advertising purposes.
-- Top-tier VPN providers are adopting independent no-logs audits and RAM-only server infrastructure to provide verifiable proof of user data protection.
-- AI developers are shifting toward on-device processing and client-side encryption to deliver personalized services without storing sensitive user data on remote servers.
+- Windows lock screens do not automatically prevent PCIe-connected peripherals from accessing system RAM via Direct Memory Access (DMA).
+- Kernel DMA Protection uses an Input-Output Memory Management Unit (IOMMU) to restrict external devices to specific, safe memory regions.
+- Users can check their security status by typing "MSInfo32" in the Windows Run dialog and locating the "Kernel DMA Protection" field.
+- The feature is hardware-dependent and requires specific UEFI and chipset support, meaning it cannot be manually enabled on incompatible systems.
+- Older interfaces like FireWire and ExpressCard are not covered by Kernel DMA Protection, leaving them vulnerable to unauthorized memory access.
 
 ### Why it Matters
-Privacy has transitioned from a regulatory compliance burden into a primary product strategy that drives consumer trust and brand loyalty. Companies that fail to provide verifiable transparency now face significant competitive disadvantages against platforms built on privacy-first architectures.
+This security feature is critical for protecting sensitive data, such as authentication credentials, from physical "drive-by" attacks using malicious peripherals. Understanding your device's DMA protection status helps identify potential hardware vulnerabilities that remain active even when a computer is locked.
 
 ============================================================
-Author:   Will Jones
-Source:   The Next Web
-URL:      https://thenextweb.com/news/privacy-software-killer-feature-2026
+Author:   Afam Onyimadu
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/your-thunderbolt-port-used-steal-data-from-locked-pc-setting-that-stops/
 Category: Cybersecurity
