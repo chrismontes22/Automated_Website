@@ -1,19 +1,20 @@
-These are the first apps I install on every new Samsung phone
+14 Trojanized npm Packages Drop RedC2 4.0 Linux Backdoor With AI-Assisted C2
 ============================================================
 
-Samsung Galaxy users can enhance their device experience by installing third-party applications that offer superior customization, cross-platform password management, and advanced privacy features beyond the default software offerings.
+Cybersecurity researchers have identified 14 malicious npm packages masquerading as calendar utilities that stealthily install the RedC2 4.0 Linux implant to facilitate unauthorized remote system access and control.
 
 ### Key Points
-- Good Lock provides deep system customization, including widget resizing, status bar icon management, and advanced automation through the Routines+ module.
-- The Standby Mode app transforms charging Galaxy devices into smart displays with photo slideshows, clock widgets, and built-in OLED burn-in protection.
-- Proton Pass offers a cross-platform password manager with end-to-end encryption and email alias generation to improve security and reduce spam.
-- Brave browser delivers faster page loading, native ad-blocking, and consistent cross-device syncing that outperforms the default Samsung Internet browser.
+- Trend Micro researchers discovered 14 trojanized npm packages, including streak-metrics-math and kit-map-vim, that function as intended while secretly deploying a Linux backdoor.
+- The malicious packages contain a hidden binary that executes the RedShell Linux beacon, which establishes communication with a remote command-and-control server.
+- RedC2 4.0 is a cross-platform framework marketed for $99.99 that includes "Red Agent," an AI-powered tool allowing operators to execute complex attacks using natural language commands.
+- Once active, the RedShell beacon enables credential theft, file operations, SOCKS5 proxying, and network pivoting on compromised Linux hosts.
+- The framework, developed by a threat actor known as "MarlboroMan," has been under active development since at least August 2025.
 
 ### Why it Matters
-These third-party tools allow users to overcome the limitations of manufacturer-specific ecosystems and proprietary software lock-in. By integrating these applications, Galaxy owners can achieve a more personalized, secure, and consistent digital experience across all their hardware devices.
+This discovery highlights a growing trend of threat actors leveraging AI-integrated command-and-control frameworks to lower the barrier for executing sophisticated, multi-stage cyberattacks. By embedding these tools within legitimate-looking software dependencies, attackers can compromise development environments and gain persistent access to enterprise systems.
 
 ============================================================
-Author:   Tashreef Shareef
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/samsung-phone-apps-to-install-first/
-Category: Phones, Laptops, and Gadgets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/08/14-trojanized-npm-packages-drop-redc2.html
+Category: Cybersecurity
