@@ -1,20 +1,20 @@
-A 60-year-old geothermal company just became an AI infrastructure play
+simulacra: A modular, multi-node ESP32 anti-tracking decoy swarm — summon the crowd, bury the signal. · GitHub
 ============================================================
 
-Geothermal energy provider Ormat has secured a major power purchase agreement to supply Google with up to 150 megawatts of carbon-free electricity from new Nevada-based projects by 2030.
+Simulacra is an open-source, modular anti-tracking system that uses ESP32 hardware to generate synthetic wireless noise, effectively masking a user's real devices within a crowd of fake signals.
 
 ### Key Points
-- Ormat will provide Google with 150 megawatts of geothermal power, with Nevada regulatory approval expected in late 2024.
-- The company is expanding its global capacity from 1.85 gigawatts to a target of 2.8 gigawatts by 2028.
-- Enhanced geothermal pilots are currently underway in partnership with Sage Geosystems and SLB, with expected completion in 2027.
-- Ormat reported $662.7 million in revenue for the first half of 2026, representing a 43% increase over the previous period.
-- Unlike intermittent solar or wind, geothermal provides continuous, reliable power essential for the 24/7 operational demands of large-scale data centers.
+- The system creates a rotating population of fake BLE and Wi-Fi devices with realistic MAC addresses and advertising patterns to confuse passive trackers.
+- It utilizes a multi-node architecture, including the ESP32-C5, ESP32-C6, and a "Vigil" controller board, coordinated via an encrypted ESP-NOW wireless link.
+- The software features on-device self-learning that harvests ambient device structures to create new, anonymous decoy archetypes without storing identifying information.
+- A "Vigil" touch-screen console provides real-time monitoring of fleet health, threat detection, and manual control over transmission presets like the high-volume "TURBO" mode.
+- Users can deploy the system using a browser-based web-flasher or by compiling the firmware via ESP-IDF for custom, secure deployments.
 
 ### Why it Matters
-This agreement highlights the growing trend of major technology firms securing long-term, reliable energy sources to support the massive power requirements of artificial intelligence infrastructure. By prioritizing geothermal energy, companies like Google are establishing a blueprint for grid stability that contrasts with the regulatory and supply constraints currently hindering similar projects in Europe.
+This project provides a sophisticated, hardware-based approach to personal privacy by addressing the growing prevalence of passive wireless surveillance and device tracking. By enabling users to blend into a synthetic crowd, it offers a practical tool for individuals to mitigate the risks posed by persistent trackers and location-based data collection.
 
 ============================================================
-Author:   Alina Maria Stan
-Source:   The Next Web
-URL:      https://thenextweb.com/news/ormat-geothermal-data-centres-google-europe
-Category: Artificial Intelligence
+Author:   mandarine
+Source:   Github.com
+URL:      https://github.com/Em3ritus/simulacra
+Category: Cybersecurity

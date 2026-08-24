@@ -1,20 +1,19 @@
-Your Thunderbolt port can be used to steal data from a locked PC — here's the setting that stops it
+A supposed GTA 6 build is going around the internet, but don't be fooled: it's fake and full of malware
 ============================================================
 
-Windows users should verify their Kernel DMA Protection status in System Information to ensure Thunderbolt and USB4 devices cannot bypass lock screen security to access system memory.
+Cybercriminals are distributing a fraudulent 113GB file disguised as a leaked build of Rockstar Games' upcoming title Grand Theft Auto 6 to infect user computers with malicious software.
 
 ### Key Points
-- Windows lock screens do not automatically prevent PCIe-connected peripherals from accessing system RAM via Direct Memory Access (DMA).
-- Kernel DMA Protection uses an Input-Output Memory Management Unit (IOMMU) to restrict external devices to specific, safe memory regions.
-- Users can check their security status by typing "MSInfo32" in the Windows Run dialog and locating the "Kernel DMA Protection" field.
-- The feature is hardware-dependent and requires specific UEFI and chipset support, meaning it cannot be manually enabled on incompatible systems.
-- Older interfaces like FireWire and ExpressCard are not covered by Kernel DMA Protection, leaving them vulnerable to unauthorized memory access.
+- Security researchers identified a fake 113GB GTA 6 installer circulating on various torrent websites.
+- Reverse-engineering of the files confirmed the package contains malicious code rather than actual game data.
+- Experts warn that the file size is unrealistic given the expected scale of the upcoming Rockstar Games title.
+- Users are advised to avoid downloading any unverified game files to prevent potential system compromise and data theft.
 
 ### Why it Matters
-This security feature is critical for protecting sensitive data, such as authentication credentials, from physical "drive-by" attacks using malicious peripherals. Understanding your device's DMA protection status helps identify potential hardware vulnerabilities that remain active even when a computer is locked.
+High-profile game releases frequently attract scammers who exploit fan anticipation to distribute malware through unofficial channels. This incident serves as a critical reminder for users to rely exclusively on official distribution platforms to maintain cybersecurity and protect personal data.
 
 ============================================================
-Author:   Afam Onyimadu
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/your-thunderbolt-port-used-steal-data-from-locked-pc-setting-that-stops/
+Author:   Simon Batt
+Source:   XDA Developers
+URL:      https://www.xda-developers.com/theres-a-supposed-gta-6-build-going-around-the-internet-but-watch-out-its-fake-and-full-of-malware/
 Category: Cybersecurity

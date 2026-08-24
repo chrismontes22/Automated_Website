@@ -1,20 +1,20 @@
-4 ways I secured my Plex server before exposing it to the internet
+InfraGuard v0.4.3
 ============================================================
 
-Plex users are urged to move beyond default remote access settings by implementing reverse proxies and network segmentation to protect their home servers from automated web-based security threats.
+InfraGuard v0.4.3 is a sophisticated command-and-control redirection proxy designed to protect red team infrastructure by validating inbound traffic against malleable C2 profiles and blocking unauthorized security probes.
 
 ### Key Points
-- Disable default port 32400 forwarding to prevent automated bots from identifying and probing your media server for vulnerabilities.
-- Deploy a reverse proxy like Caddy or Nginx to enforce HTTPS encryption and hide internal server details from the public internet.
-- Enable mandatory two-factor authentication and set secure connections to "required" to block unencrypted HTTP fallbacks and credential-stuffing attacks.
-- Use VLAN segmentation to isolate the media server in a DMZ, preventing attackers from accessing other sensitive devices on your local network.
-- Implement automated patching tools like Watchtower to ensure the Plex application and underlying container infrastructure remain updated against zero-day exploits.
+- Supports eight C2 frameworks, including Cobalt Strike, Mythic, Brute Ratel C4, Sliver, Havoc, Nighthawk, and PoshC2.
+- Utilizes a scoring-based filter pipeline to detect and block scanners, bots, and sandboxes using JA3 fingerprinting and header analysis.
+- Features automated infrastructure rotation, circuit breakers, and protocol failover to maintain operational resilience during engagements.
+- Includes a web-based dashboard and Command Post for multi-instance aggregation, real-time request monitoring, and AI-assisted profile generation via Ollama.
+- Integrates with SIEM platforms and provides automated threat intelligence updates from sources like abuse.ch and Spamhaus.
 
 ### Why it Matters
-Relying on default configurations leaves home networks vulnerable to unauthorized access and potential data breaches through exposed media server ports. Implementing these security layers allows users to enjoy remote streaming while significantly reducing the risk of compromising their broader home infrastructure.
+InfraGuard provides a comprehensive security layer for red team operations, significantly reducing the risk of infrastructure attribution by automated scanners and blue team defenders. By automating complex tasks like profile validation, burn detection, and infrastructure rotation, it allows operators to maintain stealthy, resilient command-and-control channels more effectively than legacy tools.
 
 ============================================================
-Author:   Jasmine Mannan
-Source:   XDA Developers
-URL:      https://www.xda-developers.com/ways-i-secured-my-plex-server-before-exposing-it-to-the-internet/
+Author:   Kitploit
+Source:   Kitploit.com
+URL:      https://kitploit.com/en/posts/github-whispergate-infraguard-v043
 Category: Cybersecurity

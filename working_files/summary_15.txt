@@ -1,21 +1,20 @@
-Block ads on nine devices for life for $11 (reg. $169.99)
+Open-Source ExpressLRS Receiver Reaches for Range
 ============================================================
 
-AdGuard is currently offering a lifetime subscription to its Family plan for $11, providing comprehensive ad blocking, privacy protection, and parental controls for up to nine individual devices.
+Electronics enthusiast Stan has developed custom ExpressLRS drone receivers that utilize Chirp Spread Spectrum modulation to maintain reliable long-range control links over significant distances using 2.4 GHz frequencies.
 
 ### Key Points
-- The promotional price of $11 represents a significant discount from the standard $169.99 retail cost.
-- A single purchase covers up to nine devices, including smartphones, tablets, and computers running Android or iOS.
-- The software blocks banner ads, video advertisements, pop-ups, and online trackers to improve browsing privacy.
-- Integrated security features include filters designed to detect and prevent access to known malware and phishing websites.
-- Parental control settings allow users to restrict access to inappropriate content across connected devices.
-- The lifetime license includes automatic updates and new feature rollouts without requiring recurring subscription renewals.
+- The custom receivers utilize the SX1281 radio chip and ESP32 microcontroller to implement the ExpressLRS protocol.
+- Chirp Spread Spectrum modulation allows the system to decode signals below the receiver's noise floor by providing an equivalent gain of 24 dB.
+- Testing confirmed the receivers maintained stable connections over five kilometers, even when obstructed by dense forest terrain.
+- The design successfully utilized unconventional antenna via placement without compromising signal integrity or impedance matching.
+- ExpressLRS builds upon LoRa technology to achieve high-reliability, low-data-rate communication suitable for long-range drone operations.
 
 ### Why it Matters
-This deal offers a cost-effective solution for households looking to secure multiple devices under a single, one-time payment model. By eliminating recurring subscription fees, users can maintain long-term digital privacy and ad-free browsing across their entire family's hardware.
+This development demonstrates how advanced modulation techniques can significantly extend the operational range of compact, low-power drone hardware. By leveraging open-source protocols like ExpressLRS, hobbyists and engineers can achieve professional-grade connectivity that rivals much more expensive proprietary systems.
 
 ============================================================
-Author:   DealPost Team
-Source:   PCWorld
-URL:      https://www.pcworld.com/article/3217217/block-ads-on-nine-devices-for-life-for-11-reg-169-99.html
-Category: Cybersecurity
+Author:   Aaron Beckendorf
+Source:   Hackaday
+URL:      https://hackaday.com/2026/08/22/open-source-expresslrs-receiver-reaches-for-range/
+Category: Phones, Laptops, and Gadgets
