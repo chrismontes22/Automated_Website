@@ -1,20 +1,20 @@
-InfraGuard v0.4.3
+Slovakia finds Russian backdoor in traffic speed cameras
 ============================================================
 
-InfraGuard v0.4.3 is a sophisticated command-and-control redirection proxy designed to protect red team infrastructure by validating inbound traffic against malleable C2 profiles and blocking unauthorized security probes.
+Slovakia’s national security agency has issued an alert regarding NERO R-ONE traffic cameras, which contain a Russian-linked backdoor allowing unauthorized network access via hardcoded SMS commands.
 
 ### Key Points
-- Supports eight C2 frameworks, including Cobalt Strike, Mythic, Brute Ratel C4, Sliver, Havoc, Nighthawk, and PoshC2.
-- Utilizes a scoring-based filter pipeline to detect and block scanners, bots, and sandboxes using JA3 fingerprinting and header analysis.
-- Features automated infrastructure rotation, circuit breakers, and protocol failover to maintain operational resilience during engagements.
-- Includes a web-based dashboard and Command Post for multi-instance aggregation, real-time request monitoring, and AI-assisted profile generation via Ollama.
-- Integrates with SIEM platforms and provides automated threat intelligence updates from sources like abuse.ch and Spamhaus.
+- The NBU identified the cameras as rebranded CORDON PRO.M devices manufactured by the Russian firm Semicon.
+- Security analysis revealed a backdoor triggered by SMS messages from hardcoded Russian phone numbers.
+- Technical flaws include disabled SecureBoot, vulnerable web management portals, and unencrypted live video streams.
+- The Interior Ministry paused the deployment of 279 cameras purchased for a €30 million EU-funded traffic monitoring project.
+- Similar devices are reportedly installed in Croatia and other Eastern European nations.
 
 ### Why it Matters
-InfraGuard provides a comprehensive security layer for red team operations, significantly reducing the risk of infrastructure attribution by automated scanners and blue team defenders. By automating complex tasks like profile validation, burn detection, and infrastructure rotation, it allows operators to maintain stealthy, resilient command-and-control channels more effectively than legacy tools.
+This incident highlights the significant national security risks associated with integrating foreign-manufactured hardware into critical infrastructure. The discovery of backdoors in government-procured equipment underscores the urgent need for rigorous supply chain vetting and independent security audits for public sector technology projects.
 
 ============================================================
-Author:   Kitploit
-Source:   Kitploit.com
-URL:      https://kitploit.com/en/posts/github-whispergate-infraguard-v043
+Author:   Catalin Cimpanu
+Source:   Risky.biz
+URL:      https://risky.biz/risky-bulletin-slovakia-finds-russian-backdoor-in-traffic-speed-cameras/
 Category: Cybersecurity
