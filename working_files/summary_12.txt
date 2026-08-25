@@ -1,20 +1,20 @@
-Former The O.C. actor on crusade to take down 'stupid' cryptocurrency
+WordlistLoader Delivers Amatera via ClickFix, SynkLoader Phishes Windows Passwords
 ============================================================
 
-Actor Ben McKenzie, known for his role in The OC, has transitioned into a vocal critic of the cryptocurrency industry, labeling it a massive Ponzi scheme in his documentary.
+Cybersecurity researchers have identified two new malware families, WordlistLoader and SynkLoader, which are being used to deliver malicious payloads and facilitate unauthorized access for potential ransomware operations.
 
 ### Key Points
-- Ben McKenzie, who holds an undergraduate degree in economics, testified before the US Senate regarding the risks of the cryptocurrency market.
-- The actor produced and directed the documentary *Everyone Is Lying To You For Money* to expose what he describes as the industry's fraudulent nature.
-- The film features an interview with Sam Bankman-Fried, the disgraced founder of the collapsed FTX exchange, which faced an $11 billion accounting deficit.
-- McKenzie successfully "shorted" cryptocurrency during the 2022 market crash, using the profits to help fund his investigative film project.
-- Despite McKenzie's warnings, Bitcoin continues to see high market valuations and remains a subject of intense debate regarding federal regulation and political support.
+- WordlistLoader delivers the Amatera Stealer by tricking users into executing malicious commands through deceptive "ClickFix" CAPTCHA verification prompts on compromised websites.
+- The WordlistLoader infection chain utilizes hardware breakpoints to bypass Event Tracing for Windows (ETW) and reconstructs shellcode from encoded English word sequences.
+- SynkLoader is distributed via Microsoft Teams phishing campaigns, masquerading as an IT service desk to trick victims into installing a malicious MSI file.
+- Once installed, SynkLoader deploys various modules, including a fake Windows lock screen to capture credentials, a remote access trojan, and a VNC module for desktop control.
+- Threat actors are increasingly abusing legitimate services like jsDelivr CDNs and Azure storage endpoints to host malicious scripts and evade security detection.
 
 ### Why it Matters
-McKenzie’s public crusade highlights the ongoing tension between decentralized finance advocates and critics who fear the lack of institutional oversight. His work underscores the significant financial risks retail investors face when engaging with volatile digital assets that lack traditional consumer protections.
+These sophisticated loaders demonstrate a growing trend of using social engineering and legitimate infrastructure to bypass traditional security defenses. By facilitating initial access and credential theft, these tools provide a critical entry point for ransomware groups to compromise enterprise networks.
 
 ============================================================
-Author:   Emilia Terzon
-Source:   ABC News (AU)
-URL:      https://www.abc.net.au/news/2026-08-24/ben-mckenzie-cryptocurrency-bitcoin-documentary-oc-star/107062012
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/08/wordlistloader-delivers-amatera-via.html
+Category: Cybersecurity

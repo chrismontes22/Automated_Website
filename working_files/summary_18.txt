@@ -1,19 +1,21 @@
-BitcoinâsÂ latestÂ 23% weekly surgeÂ tied to a favorable regulatory climate incoming, as CLARITY Act vote nears
+Show HN: Kern – container and resource runtime in a 1.5 MB binary, no daemon
 ============================================================
 
-Treasury Secretary Scott Bessent’s decision to double long-dated bond buybacks has triggered a market rally, while President Trump pushes the CLARITY Act to integrate digital assets into federal finance.
+kern is a lightweight, daemonless container runtime that provides kernel-enforced isolation for workloads, including untrusted or AI-generated code, using a single 1.52 MB static binary.
 
 ### Key Points
-- Treasury Secretary Scott Bessent announced a plan to double buybacks of long-dated bonds, effectively lowering long-term yields and weakening the U.S. dollar.
-- President Trump designated this week as "crypto week" to promote the CLARITY Act, which aims to establish a comprehensive regulatory framework for digital assets.
-- The CLARITY Act is scheduled for a Senate procedural vote on September 15 to bolster national competitiveness in the digital asset sector.
-- The administration projects the stablecoin market could reach $3.7 trillion by 2030, potentially creating a new, captive buyer base for U.S. Treasury debt.
+- Executes OCI-compliant containers with cold start times of approximately 3.5 milliseconds.
+- Operates as a rootless, daemon-free runtime requiring only a Linux kernel with cgroup v2 and unprivileged user namespaces.
+- Supports Docker Compose files and OCI images without requiring a background service or complex daemon stack.
+- Includes resource profiling for CPU, memory, and device access, configurable via a simple TOML file.
+- Offers language bindings for Python and Node.js, enabling developers to embed secure, isolated sandboxes directly into applications.
+- Compatible with Linux, WSL2, and ARM-based hardware like Raspberry Pi and Jetson boards.
 
 ### Why it Matters
-This policy shift signals a strategic pivot toward using digital assets to finance national debt, potentially replacing traditional reliance on foreign central banks. However, linking fiscal stability to the volatility of the crypto market introduces significant systemic risks that could trigger a crisis if investor confidence falters.
+By eliminating the overhead of a persistent daemon, kern significantly reduces resource consumption and startup latency for isolated execution environments. This makes it a highly efficient solution for developers needing to run untrusted code, CI jobs, or AI-generated tasks securely without the complexity of traditional container engines.
 
 ============================================================
-Author:   Lance D Johnson
-Source:   Naturalnews.com
-URL:      https://www.naturalnews.com/2026-08-24-bitcoins-latest-weekly-surge-favorable-regulatory-climate-incoming.html
-Category: Tech Business & Markets
+Author:   getkern
+Source:   Github.com
+URL:      https://github.com/getkern/kern
+Category: Cybersecurity

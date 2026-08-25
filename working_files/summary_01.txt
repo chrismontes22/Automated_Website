@@ -1,20 +1,19 @@
-Everything I own, owned
+Windows 11 is finally getting better, and the Windows Central Podcast breaks down all the improvements that have been announced and delivered since March
 ============================================================
 
-A security researcher successfully reverse-engineered five common computer peripherals using AI-driven automation, revealing significant firmware vulnerabilities and a lack of robust security across various consumer hardware devices.
+The latest Windows Central Podcast episode analyzes new Windows 11 Insider features, including File Explorer performance updates and a comparative study of Qualcomm’s Snapdragon X2 processor against competitors.
 
 ### Key Points
-- The researcher used Claude Opus 5 to analyze firmware for the Insta360 Link, ASUS ROG Swift PG42UQ, Shure MV7, Elgato Cam Link 4K, and Elgato Key Light Mini.
-- Most devices lacked secure boot or integrity checks, allowing for unauthorized firmware modifications, such as disabling camera activity LEDs or bypassing microphone mute status.
-- The Elgato Key Light Mini featured Ed25519 signature validation, but a memory-write vulnerability allowed the researcher to disable the check via a simple HTTP POST request.
-- The entire reverse-engineering process for all five devices required only 13 hours of AI "churn" and 98 prompts over two weeks.
-- Vulnerabilities were discovered in various communication protocols, including USB HID, I2C, and network-based interfaces, often exposing plaintext command shells.
+- Hosts Daniel Rubino and Zac Bowden review Windows 11 updates, including customizable context menus and a new setting to force apps into full-screen mode.
+- A Signal 65 study indicates that Qualcomm’s Snapdragon X2 chips outperform recent Intel and AMD processors in specific laptop testing scenarios.
+- The episode highlights significant File Explorer performance improvements designed to eliminate freezing and UI delays.
+- The discussion provides a comprehensive recap of quality-of-life enhancements introduced to the Windows 11 operating system since March.
 
 ### Why it Matters
-- This research demonstrates that AI significantly lowers the barrier to entry for discovering complex hardware vulnerabilities, moving tasks that once required expert human labor into the realm of automated scripts. The findings highlight a critical security gap where peripherals can be permanently backdoored, potentially turning trusted devices into persistent threats that operate outside the visibility of standard host-based security software.
+These updates signal a shift in the competitive landscape for laptop hardware as Qualcomm chips challenge the long-standing dominance of Intel and AMD. For users, the ongoing Windows 11 refinements reflect Microsoft's commitment to improving system stability and interface customization.
 
 ============================================================
-Author:   Chaz Schlarp
-Source:   Schlarp.com
-URL:      https://schlarp.com/posts/everything-i-own-owned/
-Category: Cybersecurity
+Author:   zac.bowden@futurenet.com (Zac Bowden) , Zac Bowden
+Source:   Windows Central
+URL:      https://www.windowscentral.com/microsoft/windows-11/windows-11-is-finally-getting-better-and-the-windows-central-podcast-breaks-down-all-the-improvements-that-have-been-announced-and-delivered-since-march
+Category: Phones, Laptops, and Gadgets
