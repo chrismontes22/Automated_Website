@@ -1,20 +1,20 @@
-Week in review: Records allegedly stolen from Azure tenants, Medusa ransomware hits 500+ orgs
+Everything I own, owned
 ============================================================
 
-Recent cybersecurity reports highlight a surge in sophisticated threats, including Medusa ransomware attacks on 500 organizations and widespread data breaches affecting major corporate Azure tenants and French tax authorities.
+A security researcher successfully reverse-engineered five common computer peripherals using AI-driven automation, revealing significant firmware vulnerabilities and a lack of robust security across various consumer hardware devices.
 
 ### Key Points
-- The Medusa ransomware gang has compromised over 500 organizations since June 2021, according to a joint advisory from the FBI, CISA, and HHS.
-- A threat actor known as "TheHatman" allegedly stole millions of employee records from Azure environments belonging to Fortune 500 companies like McDonald’s and Vodafone.
-- France’s tax authority confirmed a breach of the General Directorate of Public Finances (DGFiP), exposing the personal data of 678,000 individuals.
-- Researchers discovered a critical vulnerability in Windows 11 that allows attackers to bypass security protections without physical access to the machine.
-- Rapid7 reported 8,539 high- or critical-severity vulnerability disclosures in Q2 2026, doubling the volume of security flaws recorded during the same period last year.
+- The researcher used Claude Opus 5 to analyze firmware for the Insta360 Link, ASUS ROG Swift PG42UQ, Shure MV7, Elgato Cam Link 4K, and Elgato Key Light Mini.
+- Most devices lacked secure boot or integrity checks, allowing for unauthorized firmware modifications, such as disabling camera activity LEDs or bypassing microphone mute status.
+- The Elgato Key Light Mini featured Ed25519 signature validation, but a memory-write vulnerability allowed the researcher to disable the check via a simple HTTP POST request.
+- The entire reverse-engineering process for all five devices required only 13 hours of AI "churn" and 98 prompts over two weeks.
+- Vulnerabilities were discovered in various communication protocols, including USB HID, I2C, and network-based interfaces, often exposing plaintext command shells.
 
 ### Why it Matters
-The rapid increase in both the volume of vulnerabilities and the sophistication of AI-driven attacks is forcing organizations to reevaluate their defensive strategies and incident response timelines. As threat actors leverage automation to exploit systems at machine speed, the widening gap in security visibility and credential management poses a significant risk to global enterprise infrastructure.
+- This research demonstrates that AI significantly lowers the barrier to entry for discovering complex hardware vulnerabilities, moving tasks that once required expert human labor into the realm of automated scripts. The findings highlight a critical security gap where peripherals can be permanently backdoored, potentially turning trusted devices into persistent threats that operate outside the visibility of standard host-based security software.
 
 ============================================================
-Author:   Help Net Security
-Source:   Help Net Security
-URL:      https://www.helpnetsecurity.com/2026/08/23/week-in-review-records-allegedly-stolen-from-azure-tenants-medusa-ransomware-hits-500-orgs/
+Author:   Chaz Schlarp
+Source:   Schlarp.com
+URL:      https://schlarp.com/posts/everything-i-own-owned/
 Category: Cybersecurity
