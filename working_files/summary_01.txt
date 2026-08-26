@@ -1,19 +1,20 @@
-Windows 11 is finally getting better, and the Windows Central Podcast breaks down all the improvements that have been announced and delivered since March
+How to self-host n8n
 ============================================================
 
-The latest Windows Central Podcast episode analyzes new Windows 11 Insider features, including File Explorer performance updates and a comparative study of Qualcomm’s Snapdragon X2 processor against competitors.
+The fair-code automation platform n8n allows users to bypass cloud-based subscription limits by self-hosting their own workflow environments using Docker, Docker Compose, and Linux-based server infrastructure.
 
 ### Key Points
-- Hosts Daniel Rubino and Zac Bowden review Windows 11 updates, including customizable context menus and a new setting to force apps into full-screen mode.
-- A Signal 65 study indicates that Qualcomm’s Snapdragon X2 chips outperform recent Intel and AMD processors in specific laptop testing scenarios.
-- The episode highlights significant File Explorer performance improvements designed to eliminate freezing and UI delays.
-- The discussion provides a comprehensive recap of quality-of-life enhancements introduced to the Windows 11 operating system since March.
+- Users require a server or virtual machine with at least 2 vCPUs and 4GB of RAM to run n8n effectively.
+- The installation process utilizes Docker and Docker Compose to manage containers, volumes, and environment variables.
+- n8n is distributed under a fair-code license, permitting free use for personal or internal business workflows.
+- The platform includes a built-in SQLite database, though PostgreSQL is recommended for high-volume production environments.
+- Security best practices include using HTTPS connections and managing encryption keys through dedicated secret managers rather than plain-text files.
 
 ### Why it Matters
-These updates signal a shift in the competitive landscape for laptop hardware as Qualcomm chips challenge the long-standing dominance of Intel and AMD. For users, the ongoing Windows 11 refinements reflect Microsoft's commitment to improving system stability and interface customization.
+Self-hosting n8n provides businesses and developers with a cost-effective alternative to subscription-based automation tools by eliminating token-based billing and usage restrictions. This approach grants users full control over their data and infrastructure, making it a scalable solution for complex, internal workflow automation.
 
 ============================================================
-Author:   zac.bowden@futurenet.com (Zac Bowden) , Zac Bowden
-Source:   Windows Central
-URL:      https://www.windowscentral.com/microsoft/windows-11/windows-11-is-finally-getting-better-and-the-windows-central-podcast-breaks-down-all-the-improvements-that-have-been-announced-and-delivered-since-march
-Category: Phones, Laptops, and Gadgets
+Author:   ritoban@nutgraf.agency (Ritoban Mukherjee) , Ritoban Mukherjee
+Source:   TechRadar
+URL:      https://www.techradar.com/pro/how-to-self-host-n8n
+Category: Artificial Intelligence

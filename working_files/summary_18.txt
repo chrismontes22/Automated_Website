@@ -1,21 +1,20 @@
-Show HN: Kern – container and resource runtime in a 1.5 MB binary, no daemon
+This Tiny USB Device Turns Your Phone Into a Keyboard, Mouse, and SSH Terminal
 ============================================================
 
-kern is a lightweight, daemonless container runtime that provides kernel-enforced isolation for workloads, including untrusted or AI-generated code, using a single 1.52 MB static binary.
+TechxArtisan has launched the Openterface KeyMod on CrowdSupply, a versatile USB-bridge device that allows users to control computers and manage headless servers directly from their smartphones.
 
 ### Key Points
-- Executes OCI-compliant containers with cold start times of approximately 3.5 milliseconds.
-- Operates as a rootless, daemon-free runtime requiring only a Linux kernel with cgroup v2 and unprivileged user namespaces.
-- Supports Docker Compose files and OCI images without requiring a background service or complex daemon stack.
-- Includes resource profiling for CPU, memory, and device access, configurable via a simple TOML file.
-- Offers language bindings for Python and Node.js, enabling developers to embed secure, isolated sandboxes directly into applications.
-- Compatible with Linux, WSL2, and ARM-based hardware like Raspberry Pi and Jetson boards.
+- The device functions as a composite USB keyboard, mouse, and network bridge, enabling SSH access and file transfers without requiring existing Wi-Fi or DHCP configurations.
+- It features a WCH CH32V208 RISC-V microcontroller and supports BLE 5.3, with the "Plus" model offering an additional wired USB connection for higher bandwidth.
+- The KeyCmd app provides advanced features including macro scripting, gamepad emulation, and an experimental AI agent mode for executing terminal commands via LLMs.
+- Hardware is available in two variants, Mini (USB-C) and Plus (USB-A), both priced at $42 with an estimated shipping date of February 14, 2027.
+- The project is slated to become fully open source, with plans for OSHWA certification and future firmware updates to enable AES-128 Bluetooth encryption.
 
 ### Why it Matters
-By eliminating the overhead of a persistent daemon, kern significantly reduces resource consumption and startup latency for isolated execution environments. This makes it a highly efficient solution for developers needing to run untrusted code, CI jobs, or AI-generated tasks securely without the complexity of traditional container engines.
+This tool simplifies remote server management and hardware troubleshooting by eliminating the need for dedicated peripherals or complex network setups. By providing low-level access to BIOS and recovery environments via a smartphone, it offers a portable, efficient solution for IT professionals and Linux enthusiasts.
 
 ============================================================
-Author:   getkern
-Source:   Github.com
-URL:      https://github.com/getkern/kern
-Category: Cybersecurity
+Author:   Abhishek Prakash
+Source:   Itsfoss.com
+URL:      https://itsfoss.com/news/openterface-keymod-crowdfunding-campaign/
+Category: Phones, Laptops, and Gadgets

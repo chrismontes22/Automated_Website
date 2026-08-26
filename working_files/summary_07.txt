@@ -1,21 +1,20 @@
-3 Digital Strategies Small Business Owners Can Use to Do More With Less
+24 npm Packages Abuse unpkg Mirrors to Host Fake Cloudflare CAPTCHA Pages
 ============================================================
 
-Small business owners can drive sustainable growth by strategically adopting digital tools to improve operational efficiency, expand market reach, and enhance customer engagement through data-backed personalization.
+Cybersecurity researchers have identified a campaign using 24 malicious npm packages to host fake Cloudflare CAPTCHA pages on trusted CDN mirrors for credential harvesting and phishing attacks.
 
 ### Key Points
-- Small businesses contribute 43.5% of the U.S. GDP and employ over 62 million people, yet often struggle to scale with limited operational resources.
-- Owners should prioritize digital investments that automate manual tasks, such as accounting, inventory tracking, and customer relationship management.
-- Data from the Bank of America Institute indicates that small businesses are increasing their spending on technology services, including artificial intelligence.
-- A 2026 survey shows that 93% of shoppers are more likely to remain loyal to brands that successfully implement personalized customer experiences.
-- Developing a structured digital road map helps businesses move beyond reactive technology adoption toward intentional, goal-oriented growth strategies.
-- While 40% of employees use AI at work, only 5% are considered "AI fluent," highlighting the need for owner-led investment in staff education.
+- Researchers at OX Security discovered 24 npm packages serving as free, validated storage for phishing infrastructure.
+- Attackers leverage npm mirrors like unpkg to host HTML files that display deceptive CAPTCHA prompts to users.
+- The campaign uses the legitimate service KeyVal as a dead drop resolver to dynamically update and hide malicious redirect URLs.
+- Initial iterations of the attack targeted a typosquat domain impersonating Microsoft before shifting to public key-value storage APIs.
+- These packages remain accessible on mirrors even after removal from the official npm registry, providing persistent hosting for attackers.
 
 ### Why it Matters
-Strategic technology adoption allows lean small business teams to compete more effectively against larger corporations by optimizing workflows and deepening customer loyalty. By moving from reactive spending to a structured digital road map, owners can maximize their return on investment and ensure long-term operational sustainability.
+This campaign highlights a growing trend of threat actors abusing legitimate software supply chain infrastructure to bypass security filters and host malicious content. By turning trusted services into storage for phishing payloads, attackers can effectively evade detection and maintain long-term persistence for their operations.
 
 ============================================================
-Author:   Sharon Miller
-Source:   Entrepreneur
-URL:      https://www.entrepreneur.com/building-a-business/3-digital-strategies-small-business-owners-can-use-to-do-more-with-less
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/08/24-npm-packages-abuse-unpkg-mirrors-to.html
+Category: Cybersecurity
