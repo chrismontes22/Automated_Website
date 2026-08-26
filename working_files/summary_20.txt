@@ -1,20 +1,19 @@
-Amazon Devices Just Got A Lot More Expensive Thanks To The Memory Crisis
+ReliaQuest Rejects Compromise Claims After ShinyHunters Incident
 ============================================================
 
-Amazon has quietly increased prices across its Echo, Kindle, Fire TV, and eero hardware lineups, citing significant rising costs for memory and storage components within the electronics industry.
+Threat intelligence firm ReliaQuest confirmed a brief, view-only security breach following a social engineering attack by the ShinyHunters group, while denying claims of ransomware or customer data theft.
 
 ### Key Points
-- The Echo Dot price increased from $49.99 to $79.99, while the 16GB Kindle rose from $109.99 to $149.99.
-- Amazon attributed the hikes to industry-wide surges in memory and storage component costs that the company can no longer absorb.
-- Other major tech firms, including Roku, Apple, and Samsung, have recently implemented similar price increases across their respective hardware portfolios.
-- Market analysts at TrendForce project DRAM prices will rise another 13% to 18% in Q3 2026, further pressuring consumer electronics pricing.
-- High demand for AI-focused server memory is limiting supply for consumer devices, with significant production relief not expected until late 2027 or 2028.
+- ShinyHunters used a lookalike domain and phone-based social engineering to trick a ReliaQuest employee into providing login credentials on August 22.
+- The attacker gained temporary, view-only access to an identity dashboard but failed to reach internal applications, systems, or customer data.
+- ReliaQuest utilized device trust controls and session termination to immediately contain the threat and reset all authentication factors.
+- SOCRadar analysis corroborated ReliaQuest’s report, noting that the threat group’s public taunts did not substantiate claims of a wider network breach.
 
 ### Why it Matters
-These widespread price hikes signal a sustained period of inflation for consumer electronics as manufacturers prioritize high-bandwidth memory for AI data centers. Consumers should expect continued cost increases and potential hardware downgrades, such as reduced RAM standards, until global production capacity catches up to demand.
+This incident highlights the persistent risk of sophisticated social engineering attacks targeting even well-trained security personnel. It underscores the necessity of defense-in-depth strategies, such as device-level authentication, to prevent single-account compromises from escalating into full-scale data breaches.
 
 ============================================================
-Author:   staff@bgr.com (Joshua Hawkins)
-Source:   BGR
-URL:      https://www.bgr.com/2243463/amazon-devices-price-hike-memory-crisis/
-Category: Phones, Laptops, and Gadgets
+Author:   Phil Muncaster
+Source:   Infosecurity Magazine
+URL:      https://www.infosecurity-magazine.com/news/reliaquest-not-compromised-by/
+Category: Cybersecurity

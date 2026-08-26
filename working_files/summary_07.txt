@@ -1,20 +1,20 @@
-24 npm Packages Abuse unpkg Mirrors to Host Fake Cloudflare CAPTCHA Pages
+Native SMB3 Client Brings Modern NAS Access To 20-Year-Old PowerPC Macs
 ============================================================
 
-Cybersecurity researchers have identified a campaign using 24 malicious npm packages to host fake Cloudflare CAPTCHA pages on trusted CDN mirrors for credential harvesting and phishing attacks.
+Aqualink, a new native SMB3 client, enables 20-year-old PowerPC Macs running OS X Tiger and Leopard to connect to modern network storage using updated file-sharing protocols.
 
 ### Key Points
-- Researchers at OX Security discovered 24 npm packages serving as free, validated storage for phishing infrastructure.
-- Attackers leverage npm mirrors like unpkg to host HTML files that display deceptive CAPTCHA prompts to users.
-- The campaign uses the legitimate service KeyVal as a dead drop resolver to dynamically update and hide malicious redirect URLs.
-- Initial iterations of the attack targeted a typosquat domain impersonating Microsoft before shifting to public key-value storage APIs.
-- These packages remain accessible on mirrors even after removal from the official npm registry, providing persistent hosting for attackers.
+- Aqualink utilizes Ronnie Sahlberg’s libsmb2 library to provide SMB2 and SMB3 support for legacy Apple operating systems.
+- The software allows older PowerPC hardware to bypass the security risks associated with outdated SMB1 protocols.
+- Users can mount remote volumes by leveraging the built-in mount_webdav feature found in OS X Tiger.
+- The project source code and documentation are currently available for public access on GitHub.
+- The tool addresses long-standing stability issues that previously forced users to rely on the deprecated CIFS standard.
 
 ### Why it Matters
-This campaign highlights a growing trend of threat actors abusing legitimate software supply chain infrastructure to bypass security filters and host malicious content. By turning trusted services into storage for phishing payloads, attackers can effectively evade detection and maintain long-term persistence for their operations.
+This development extends the functional lifespan of vintage hardware by allowing legacy systems to integrate securely with modern network-attached storage environments. It provides a practical solution for retro-computing enthusiasts who need to maintain connectivity without compromising network security through obsolete protocols.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/08/24-npm-packages-abuse-unpkg-mirrors-to.html
-Category: Cybersecurity
+Author:   Maya Posch
+Source:   Hackaday
+URL:      https://hackaday.com/2026/08/25/native-smb3-client-brings-modern-nas-access-to-20-year-old-powerpc-macs/
+Category: Phones, Laptops, and Gadgets
