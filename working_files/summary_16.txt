@@ -1,19 +1,20 @@
-New Account Security Features for WhatsApp
+AurionMail: E2EE suite (CryptPad/Stalwart) with single-password UX
 ============================================================
 
-WhatsApp is enhancing user security by introducing alphanumeric passwords for two-step verification, providing caller context for unknown numbers, and expanding passkey support across multiple mobile devices.
+The new AurionMail Suite integrates CryptPad and JMAP-based email into a single, open-source platform that uses one master password for unified, end-to-end encrypted document and email management.
 
 ### Key Points
-- Two-step verification now supports longer, alphanumeric passwords with special characters to replace the traditional six-digit PIN.
-- Android users will receive additional context for unknown callers, including country codes and shared group information, to help identify potential scams.
-- Over one billion users have adopted passkeys, which utilize biometric authentication like fingerprint or face ID for secure account access.
-- Users can now register multiple passkeys to their accounts, facilitating easier access across both Android and iOS devices.
+- AurionMail combines CryptPad, Bulwark Webmail, Stalwart Mail Server, and Ory Hydra into a cohesive, self-hosted suite.
+- The platform enables a Zero-Knowledge experience where one password manages both email encryption and collaborative document access.
+- It utilizes open standards including OpenPGP and JMAP to ensure interoperability without relying on proprietary backends.
+- Security features include global logout, emergency account destruction, and automated key synchronization across authorized user devices.
+- Administrators can deploy the suite via the Orchestra binary, which bundles all core services and custom integrations into a single package.
 
 ### Why it Matters
-These updates provide users with more robust tools to defend against account takeovers and unwanted communication. By prioritizing biometric authentication and improved caller transparency, the platform aims to reduce the effectiveness of common phishing and social engineering tactics.
+AurionMail bridges the gap between the convenience of commercial platforms like Proton and the transparency of self-hosted, open-source software. By eliminating the need for fragmented logins and manual PGP key management, it provides a professional-grade privacy solution for users who require full control over their data infrastructure.
 
 ============================================================
-Author:   Facebook
-Source:   Fb.com
-URL:      https://about.fb.com/news/2026/08/new-account-security-features-for-whatsapp/
+Author:   AurionMail
+Source:   Github.com
+URL:      https://github.com/AurionMail/docs
 Category: Cybersecurity
