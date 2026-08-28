@@ -1,20 +1,20 @@
-Motorola shares all the new features coming with its Android 17 update
+Android 17 boosts network security by hiding domain names, lets carriers disable 2G
 ============================================================
 
-Motorola has officially released the changelog for its Android 17 update, introducing system-wide interface refinements, enhanced security protections, and new cross-platform file sharing capabilities for flagship devices.
+Google has introduced enhanced network security features in Android 17, including Encrypted Client Hello support and stricter local network permissions to better protect user privacy and prevent malicious attacks.
 
 ### Key Points
-- The update features a redesigned Quick Settings panel, stackable home screen widgets, and improved HDR brightness management for media playback.
-- New security tools include automated scam detection for SMS and RCS messages, alongside strengthened PIN protocols and failed authentication locks.
-- Cross-platform sharing is expanded through Quick Share QR codes, allowing non-Android and iOS users to access files via a web interface.
-- Integrated hardware diagnostics allow users to monitor component health and system telemetry directly from the device settings.
-- AI-powered features now include real-time, on-screen language translation within the Circle to Search tool.
+- Android 17 implements Encrypted Client Hello (ECH) to hide domain names from network operators and eavesdroppers during the initial connection handshake.
+- App developers must upgrade to OkHttp 5.5.0 and enable ECH to ensure destination website names remain encrypted and private.
+- Mobile carriers can now disable 2G connectivity by default to prevent SMS blaster attacks that force devices onto insecure legacy networks.
+- New local network protection requires apps to request explicit user permission before scanning or connecting to other devices on a home network.
+- Certificate Transparency requirements now mandate that all security certificates be logged in a public registry to detect and prevent the use of fraudulent credentials.
 
 ### Why it Matters
-This update represents a significant software overhaul for Motorola users, focusing on both usability and proactive security against modern digital threats. However, inconsistencies in the company's official device eligibility list have created uncertainty regarding which specific models will receive these new features.
+These updates significantly reduce the risk of targeted phishing, data profiling, and unauthorized device tracking by closing long-standing gaps in network communication. By standardizing these security protocols, Google is forcing a shift toward a more private mobile ecosystem that limits the ability of malicious actors to intercept or manipulate user traffic.
 
 ============================================================
-Author:   Aamir Siddiqui
-Source:   Android Authority
-URL:      https://www.androidauthority.com/motorola-android-17-update-official-changelog-3703287/
-Category: Phones, Laptops, and Gadgets
+Author:   Abner Li
+Source:   9to5google.com
+URL:      http://9to5google.com/2026/08/27/android-17-network-security/
+Category: Cybersecurity

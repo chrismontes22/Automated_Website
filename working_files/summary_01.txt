@@ -1,21 +1,19 @@
-Motorola details everything coming with its big Android 17 update
+Android 17 has some new tricks to keep your web traffic private
 ============================================================
 
-Motorola has officially detailed its upcoming Android 17 software update, which introduces new customization tools, AI-powered notification management, and enhanced display features for over 50 compatible smartphone models.
+Google is introducing significant network security upgrades in Android 17, including Encrypted Client Hello support and new protections against malicious SMS Blaster attacks to enhance user privacy.
 
 ### Key Points
-- Android 17 introduces stackable home screen widgets, themed icons, and the ability to hide labels within the Quick Settings menu.
-- New notification features include Live Updates for real-time data and AI-driven summaries that condense long message threads into single sentences.
-- Machine learning will automatically bundle low-priority alerts into a dedicated silent folder to reduce user distraction.
-- Updated display settings allow users to manually adjust or disable Enhanced HDR brightness for photos and videos.
-- New sharing tools, Tap to Share and Quick Drop, facilitate faster file transfers between devices.
-- The update is confirmed for more than 50 Motorola devices, including recent models from the Razr and Edge product lines.
+- Android 17 implements Encrypted Client Hello (ECH) to encrypt DNS server lookups and prevent third-party tracking of visited websites.
+- New carrier-integrated defenses allow mobile networks to block low-security 2G connections, mitigating risks from SMS Blaster and "stingray" surveillance devices.
+- The update restricts app access to local network information to prevent device fingerprinting and the identification of vulnerable hardware.
+- Certificate Transparency is now enabled by default to ensure devices verify the authenticity of SSL certificates during server communication.
 
 ### Why it Matters
-This update significantly improves the user experience by streamlining notification clutter and offering deeper customization options for the home screen. By integrating these features across a wide range of devices, Motorola ensures that a large portion of its user base benefits from modern performance and security enhancements.
+These updates represent a major shift in mobile privacy by closing long-standing loopholes in DNS traffic and cellular network security. By broadly adopting ECH, Google aims to set a new industry standard that encourages wider server-side support for encrypted web browsing.
 
 ============================================================
-Author:   sanujb6@gmail.com (Sanuj Bhatia) , Sanuj Bhatia
-Source:   Android Central
-URL:      https://www.androidcentral.com/phones/motorola/motorola-features-android-17-update
-Category: Phones, Laptops, and Gadgets
+Author:   Stephen Schenck
+Source:   Android Authority
+URL:      https://www.androidauthority.com/android-17-data-privacy-3703596/
+Category: Cybersecurity
