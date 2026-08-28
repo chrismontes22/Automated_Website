@@ -1,20 +1,20 @@
-Ring Gave Itself a Security Makeover Called TAKE. Here’s What’s Actually Changing
+Talk Python to Me: #560: Building a Research OS: From Django to 30,000 Samples
 ============================================================
 
-Ring is introducing a new encryption standard called Throw Away the Key Encryption this September to improve data transparency and security for its cloud-based camera video analysis.
+Gastroenterologist Dr. Shaun Chuah developed Foundry120, a research operating system built with Django that leverages agentic AI to manage 30,000 biological samples and 10 terabytes of clinical research data.
 
 ### Key Points
-- The new Throw Away the Key Encryption (TAKE) standard uses rotating keys to secure video data processed by Ring’s artificial intelligence features.
-- Ring will use a one-time key to access and analyze footage for enabled features, then immediately delete that key to prevent further access.
-- Users retain a master key for their cloud storage, which remains accessible for up to 180 days depending on the subscription plan.
-- The update will be enabled by default for all Ring subscribers starting in September.
-- Existing end-to-end encryption options remain available for users who prefer to disable cloud-based AI features entirely for increased privacy.
+- Foundry120 uses Django for secure, role-based access control and Azure Blob Storage to centralize diverse datasets like genomics and endoscopy videos.
+- The platform integrates Helix, an agentic AI assistant that autonomously writes and executes Python code to analyze data within isolated, secure virtual machine sandboxes.
+- Dr. Chuah built the system to replace manual, error-prone tracking in Microsoft Excel, enabling researchers to perform complex data joins and analysis in minutes.
+- The architecture prioritizes data governance and security by keeping all inference and compute within the University of Glasgow’s compliant Azure cloud environment.
+- The platform supports high-performance, parallelized bioinformatics pipelines, utilizing hundreds of Azure CPUs to process large-scale datasets on demand.
 
 ### Why it Matters
-This update addresses long-standing privacy concerns regarding how Ring accesses and utilizes customer video data for its AI-driven analysis tools. By implementing a more transparent, time-limited access model, the company aims to balance the demand for smart home features with the necessity of protecting sensitive user footage.
+- This project demonstrates how domain experts can build sophisticated, production-grade research infrastructure by leveraging battle-tested frameworks and cloud-native tools. It highlights a shift in scientific workflows where the researcher's role evolves from manual data processing to supervising and verifying AI-driven analysis.
 
 ============================================================
-Author:   Tyler Lacoma
-Source:   CNET
-URL:      https://www.cnet.com/home/security/ring-gave-itself-a-security-makeover-called-take-heres-whats-actually-changing-2/
-Category: Cybersecurity
+Author:   Michael Kennedy
+Source:   Talkpython.fm
+URL:      https://talkpython.fm/episodes/show/560/building-a-research-os-from-django-to-30-000-samples
+Category: Artificial Intelligence

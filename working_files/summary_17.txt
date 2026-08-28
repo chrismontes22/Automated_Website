@@ -1,20 +1,20 @@
-The network becomes the computer as Cisco and Nvidia accelerate AI factory rack-scale
+AurionMail: E2EE suite (CryptPad/Stalwart) with single-password UX
 ============================================================
 
-Cisco Systems and Nvidia are partnering to transition AI infrastructure from GPU acquisition to rack-scale production, integrating networking technology to create more efficient, enterprise-ready AI factory systems.
+The new AurionMail Suite integrates CryptPad and JMAP-based email into a single, open-source platform that uses one master password for unified, end-to-end encrypted document and email management.
 
 ### Key Points
-- Cisco and Nvidia are collaborating on a "Secure AI Factory" architecture that integrates Nvidia’s Spectrum-X Ethernet networking with Cisco’s enterprise management and operating systems.
-- The partnership includes a new rack-scale compute solution developed with Supermicro, featuring liquid cooling and support for Nvidia’s Blackwell and Vera Rubin platforms.
-- The initiative aims to shift AI infrastructure from bespoke supercomputing projects to repeatable, industrial-grade systems that are orderable starting in September.
-- The architecture focuses on "continuous token production" by optimizing the entire stack, including physical data centers, chips, networking, and software models.
-- Cisco’s role serves as a bridge, connecting Nvidia’s high-performance AI clusters to existing enterprise data, storage, and application environments.
+- AurionMail combines CryptPad, Bulwark Webmail, Stalwart Mail Server, and Ory Hydra into a cohesive, self-hosted suite.
+- The platform enables a Zero-Knowledge experience where one password manages both email encryption and collaborative document access.
+- It utilizes open standards including OpenPGP and JMAP to ensure interoperability without relying on proprietary backends.
+- Security features include global logout, emergency account destruction, and automated key synchronization across authorized user devices.
+- Administrators can deploy the suite via the Orchestra binary, which bundles all core services and custom integrations into a single package.
 
 ### Why it Matters
-This partnership signals a shift in the AI market from simply acquiring hardware to building reliable, scalable production environments that integrate with existing enterprise infrastructure. By treating the network as a core component of the computer, these companies aim to maximize the return on investment for massive AI deployments through better lifecycle management and operational efficiency.
+AurionMail bridges the gap between the convenience of commercial platforms like Proton and the transparency of self-hosted, open-source software. By eliminating the need for fragmented logins and manual PGP key management, it provides a professional-grade privacy solution for users who require full control over their data infrastructure.
 
 ============================================================
-Author:   John Furrier
-Source:   SiliconANGLE News
-URL:      https://siliconangle.com/2026/08/26/the-network-becomes-the-computer-as-cisco-and-nvidia-accelerate-ai-factory-rack-scale-cisconvidiaaifactory/
-Category: Artificial Intelligence
+Author:   AurionMail
+Source:   Github.com
+URL:      https://github.com/AurionMail/docs
+Category: Cybersecurity
