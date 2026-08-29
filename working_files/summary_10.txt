@@ -1,20 +1,20 @@
-5 Ultra-Thin Laptops Perfect For Home And Travel
+DNS has a new encrypted version that isn't DoH or DoT, and almost nobody's adopted it yet
 ============================================================
 
-Modern ultra-thin laptops now offer high-performance hardware and durable designs, making them ideal portable solutions for professionals and students who require reliable computing power while traveling or working remotely.
+DNS over QUIC (DoQ) is an emerging protocol designed to improve internet privacy and connection speeds by streamlining DNS requests through the modern, encrypted QUIC transport layer.
 
 ### Key Points
-- The 2026 MacBook Air 13 M5 features a 10-core CPU and 18-hour battery life in a 0.44-inch thin chassis.
-- LG Gram Pro 16 offers extensive connectivity, including two Thunderbolt 4 ports and an SD card reader, within a 0.52-inch frame.
-- Lenovo’s ThinkPad X1 Carbon Gen 13 Aura Edition includes a 14-inch 2.8K OLED display and optional 4G LTE for mobile connectivity.
-- The ASUS ExpertBook Ultra provides MIL-STD 810H durability and up to 26 hours of battery life for business-focused users.
-- The Lenovo Yoga Slim 7i Gen 11 Aura targets creatives with a 1100-nit 3K OLED touchscreen and high color accuracy.
+- DoQ eliminates the overhead of HTTP and TCP by running DNS requests directly over the QUIC protocol, which is built on UDP.
+- The protocol improves performance by reducing connection handshake times and preventing head-of-line blocking common in older standards.
+- Unlike DNS over HTTPS (DoH), which wraps requests in web traffic, DoQ functions as a dedicated, efficient protocol for DNS infrastructure.
+- Native support for DoQ is currently absent from major operating systems like Windows, macOS, and mobile platforms.
+- Enthusiasts can currently implement DoQ using home DNS server software such as AdGuard Home, Technitium, or dnsproxy.
 
 ### Why it Matters
-These ultra-thin devices demonstrate that users no longer need to sacrifice processing power or battery longevity for a portable form factor. Choosing the right model allows professionals to maintain high productivity levels across diverse environments, from home offices to international travel.
+Widespread adoption of DoQ could significantly enhance web security and reduce latency for everyday internet users by modernizing core network communication. Its success depends on major providers like Cloudflare or browser developers integrating the protocol into standard consumer-facing settings.
 
 ============================================================
-Author:   staff@bgr.com (Christian Wait)
-Source:   BGR
-URL:      https://www.bgr.com/2242470/ultra-thin-laptops-perfect-home-travel/
-Category: Phones, Laptops, and Gadgets
+Author:   Gavin Phillips
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/dns-new-encrypted-version-that-isnt-doh-dot-almost-nobody-adopted-it-yet/
+Category: Cybersecurity

@@ -1,20 +1,21 @@
-AI Is Changing Website Security. Here’s What SEO Teams Should Know via @sejournal, @vahandev
+This Week in Security: Android Malware, VOIP Hijack, Signal Contact Discovery, and TeamPCP Arrests
 ============================================================
 
-Over 100 major technology and cybersecurity firms have signed an open letter urging global cooperation to deploy defensive AI tools against increasingly sophisticated, AI-enabled cyberattacks on critical infrastructure.
+Security researchers have recently uncovered widespread digital threats, ranging from pre-installed malware on budget Android streaming devices to sophisticated supply chain attacks and data breaches at major corporations.
 
 ### Key Points
-- Signatories include OpenAI, Microsoft, Google, AWS, Oracle, CrowdStrike, and Cloudflare.
-- The coalition warns that AI allows attackers to exploit unpatched software and weak authentication faster than traditional security measures can respond.
-- The letter calls for a coordinated effort between governments, tech companies, and organizations to prioritize the protection of hospitals, utilities, and local governments.
-- Recommendations include auditing codebases with security plugins, maintaining updated software libraries, and implementing granular monitoring for unusual network activity.
-- The initiative highlights the growing risk posed by uncensored, open-source AI models that can lower the barrier to entry for executing complex cyberattacks.
+- Cheap Android streaming boxes were found pre-loaded with the Vo1d botnet, which enables ad-click fraud, residential proxy abuse, and unauthorized remote access.
+- A researcher discovered that registering expired domains allowed for the potential hijacking of sensitive VoIP calls intended for military bases via the abandoned e164-arpa protocol.
+- AliExpress is utilizing advanced browser fingerprinting, including silent audio waveform analysis, to track users even when traditional cookies are disabled.
+- Signal patched two vulnerabilities in its Intel SGX Enclave contact discovery process that could have allowed attackers to extract private user contact lists.
+- Boston Scientific operations were disrupted by an unspecified cyberattack, while Carhartt suffered a ransomware breach resulting in the leak of 13 million customer accounts.
+- AI agents like Claude and Codex were observed executing malicious code hidden within website llms.txt files, posing significant risks to corporate data security.
 
 ### Why it Matters
-AI-driven threats significantly accelerate the speed at which vulnerabilities are exploited, turning standard website maintenance into a critical security priority. For businesses, failing to secure digital infrastructure can lead to catastrophic data loss, search engine penalties, and long-term damage to organic traffic and brand reputation.
+These incidents highlight the persistent vulnerability of both consumer hardware and enterprise infrastructure to evolving cyber threats. As attackers increasingly exploit automated systems and legacy protocols, organizations and users must remain vigilant against sophisticated methods of data exfiltration and unauthorized system access.
 
 ============================================================
-Author:   Vahan Petrosyan
-Source:   Search Engine Journal
-URL:      https://www.searchenginejournal.com/ai-changing-website-security-seo-teams-should-know/587352/
+Author:   Mike Kershaw
+Source:   Hackaday
+URL:      https://hackaday.com/2026/08/28/this-week-in-security-android-malware-voip-hijack-signal-contact-discovery-and-teampcp-arrests/
 Category: Cybersecurity

@@ -1,20 +1,20 @@
-AI IR Overlay – Incident Response Specification for AI Agents
+19 Chrome and Edge Extensions Found With Wallet-Stealing and Crypto-Draining Code
 ============================================================
 
-The AI IR Overlay framework provides a standardized specification for managing incident response in autonomous agents by focusing on containment, evidence collection, and mapping potential system blast radii.
+Cybersecurity researchers have identified 19 malicious Google Chrome and Microsoft Edge extensions that use sophisticated update tactics to steal cryptocurrency and sensitive user data from unsuspecting victims.
 
 ### Key Points
-- The framework includes 24 playbooks, three JSON schemas, and two reference implementations to address risks from authorized but unintended agent actions.
-- It introduces an AI Bill of Materials (AI-BOM) to document service identities, tool scopes, and write targets for production agents.
-- A containment ladder (M0–M5) allows security teams to restrict agent capabilities, such as disabling write tools, without fully terminating the session.
-- The specification maps directly to NIST SP 800-61 Rev. 3, NIST CSF 2.0, and the OWASP Top 10 for Agentic Applications.
-- The validator tool performs schema checks to ensure security controls are declared, though it does not verify the functional performance of those controls.
+- Socket researchers identified 19 malicious extensions, including 14 created by threat actors and five legitimate tools purchased to distribute malware.
+- The campaign, tracked as "Superior," has been active since February 2024 and utilizes automatic browser updates to push malicious code to existing users.
+- Malicious capabilities include harvesting seed phrases, draining cryptocurrency wallets, and stealing credentials from platforms like Facebook and LinkedIn.
+- The "Enable Right Click & Copy" extension, which has approximately 80,000 users, is among the most significant threats identified in the cluster.
+- Attackers employ dynamic command-and-control servers to rotate infrastructure, effectively reducing detection risks and enabling targeted data exfiltration.
 
 ### Why it Matters
-This framework addresses the unique challenge of securing autonomous agents that operate using valid credentials, where traditional intrusion detection fails to identify malicious activity. By providing a structured approach to containment and evidence gathering, it helps organizations identify critical security gaps in their agentic workflows before an incident occurs.
+This campaign highlights a critical vulnerability in browser extension ecosystems where legitimate, trusted tools can be weaponized through routine software updates. Users should remain cautious of browser extensions that request excessive permissions, as these tools can bypass security headers to inject malicious scripts directly into web pages.
 
 ============================================================
-Author:   Darknet
-Source:   Darknet.org.uk
-URL:      https://www.darknet.org.uk/2026/08/ai-ir-overlay-incident-response-specification-for-ai-agents/
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/08/19-chrome-and-edge-extensions-found.html
 Category: Cybersecurity
