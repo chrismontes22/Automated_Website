@@ -1,20 +1,20 @@
-The AI revolution is optimizing for the wrong things
+AI IR Overlay – Incident Response Specification for AI Agents
 ============================================================
 
-Frontier AI models are increasingly optimized for coding and agentic tasks, leading to a measurable decline in general writing performance that challenges enterprise productivity and deployment value.
+The AI IR Overlay framework provides a standardized specification for managing incident response in autonomous agents by focusing on containment, evidence collection, and mapping potential system blast radii.
 
 ### Key Points
-- Wizard Labs founder Maz Ahmadi reports that frontier AI models are showing regression in prose quality as they are updated for logic and coding.
-- McKinsey data indicates that while 44% of organizations are scaling AI, only 37% report a measurable impact on earnings before interest and taxes (EBIT).
-- Anthropic is implementing text watermarking in future Claude models to comply with the EU AI Act, raising concerns about potential impacts on output quality.
-- Experts recommend that businesses move away from public benchmarks and instead develop custom evaluation suites tailored to their specific operational requirements.
-- The shift toward agentic workflows means generic models may no longer be the most effective choice for specialized business communication and documentation tasks.
+- The framework includes 24 playbooks, three JSON schemas, and two reference implementations to address risks from authorized but unintended agent actions.
+- It introduces an AI Bill of Materials (AI-BOM) to document service identities, tool scopes, and write targets for production agents.
+- A containment ladder (M0–M5) allows security teams to restrict agent capabilities, such as disabling write tools, without fully terminating the session.
+- The specification maps directly to NIST SP 800-61 Rev. 3, NIST CSF 2.0, and the OWASP Top 10 for Agentic Applications.
+- The validator tool performs schema checks to ensure security controls are declared, though it does not verify the functional performance of those controls.
 
 ### Why it Matters
-The widening gap between AI deployment and actual financial return suggests that companies are relying too heavily on generalized benchmarks rather than task-specific performance. By prioritizing custom evaluation, organizations can avoid the risks of model regression and ensure their AI investments align with actual business outcomes.
+This framework addresses the unique challenge of securing autonomous agents that operate using valid credentials, where traditional intrusion detection fails to identify malicious activity. By providing a structured approach to containment and evidence gathering, it helps organizations identify critical security gaps in their agentic workflows before an incident occurs.
 
 ============================================================
-Author:   Maz Ahmadi
-Source:   The Next Web
-URL:      https://thenextweb.com/news/ai-revolution-optimizing-wrong-things
-Category: Artificial Intelligence
+Author:   Darknet
+Source:   Darknet.org.uk
+URL:      https://www.darknet.org.uk/2026/08/ai-ir-overlay-incident-response-specification-for-ai-agents/
+Category: Cybersecurity
