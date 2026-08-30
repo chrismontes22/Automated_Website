@@ -1,20 +1,20 @@
-This Week in AI: The Guardrails Are Getting Tested
+Philippine Nuclear and Naval Targets Hit by Suspected Chinese Operator
 ============================================================
 
-OpenAI’s restricted release of its new cyber model and surging data center energy demands highlight the rapid, often unpredictable, evolution of artificial intelligence across global security and infrastructure.
+A suspected Chinese-speaking threat actor compromised a Philippine nuclear research agency and a naval-linked engineering firm by exploiting known vulnerabilities in ownCloud and WordPress software systems.
 
 ### Key Points
-- OpenAI restricted access to its new GPT-5.6 Cyber model, citing concerns over its advanced vulnerability-detection capabilities.
-- IBM reports a 56% year-over-year increase in AI-enabled security breaches, with total victim notifications exceeding 471 million this year.
-- Global data center electricity consumption is projected to nearly double by 2030, reaching 950 terawatt-hours as demand outpaces grid capacity.
-- Unitree’s recent Shanghai IPO raised $905 million, highlighting investor interest despite humanoid robots struggling with basic tasks like operating fire extinguishers.
-- AMD launched its Helios system using EPYC 9006 chips to challenge NVIDIA’s market dominance in high-performance AI hardware.
+- Researchers at Hunt.io discovered an exposed server in Amsterdam containing 1.17 GB of stolen data, logs, and offensive tools like Sliver and Metasploit.
+- The nuclear research body was breached via CVE-2023-49105, an authentication-bypass flaw in ownCloud that allowed unauthorized file retrieval without credentials.
+- The marine engineering company was compromised through CVE-2024-28000, a privilege-escalation vulnerability in the LiteSpeed Cache WordPress plugin.
+- Stolen materials included nuclear reactor databases, radiation-safety documents, personnel records, and financial disclosures from Philippine officials.
+- Attackers utilized custom Python scripts with random delays to exfiltrate data slowly, attempting to evade detection by security monitoring systems.
 
 ### Why it Matters
-The rapid acceleration of AI development is creating significant friction between technological capability and the physical infrastructure required to support it. As security threats evolve and energy scarcity grows, companies must prioritize robust governance and power-ready sites to ensure long-term operational stability.
+This incident highlights how threat actors leverage unpatched, publicly known vulnerabilities to infiltrate critical infrastructure and defense-related organizations. The exposure of sensitive personnel and strategic data underscores the urgent need for organizations to prioritize software updates and secure configuration management.
 
 ============================================================
-Author:   Michelle Smith
-Source:   Oreilly.com
-URL:      https://www.oreilly.com/radar/this-week-in-ai-the-guardrails-are-getting-tested/#BlogPosting
-Category: Artificial Intelligence
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/198041/intelligence/philippine-nuclear-and-naval-targets-hit-by-suspected-chinese-operator.html
+Category: Cybersecurity
