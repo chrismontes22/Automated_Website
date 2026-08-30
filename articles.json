@@ -1,5 +1,131 @@
 [
   {
+    "title": "A new browser feature hides which website you're visiting from your ISP, and it has nothing to do with a VPN",
+    "category": "Cybersecurity",
+    "summary": "The newly finalized Encrypted Client Hello (ECH) standard, established in RFC 9849, enhances internet privacy by masking the specific website hostnames previously visible to internet service providers during connections.\n\n### Key Points\n- The ECH standard, finalized in March 2026, encrypts the Server Name Indication (SNI) field to prevent ISPs from tracking domain-level browsing activity.\n- ECH functions by sending a decoy handshake to the server while hiding the actual destination hostname within an encrypted, secondary message.\n- Major browsers including Chrome and Firefox have supported ECH since September 2023, with Android adding native support in August 2026.\n- Users can verify ECH functionality by checking the \"sni=\" status on the Cloudflare diagnostic page, which confirms if the connection is encrypted.\n- ECH does not replace the need for encrypted DNS or browser fingerprinting protections, as it only secures the initial handshake hostname.\n\n### Why it Matters\nThis technology closes a significant privacy loophole that allowed ISPs to monitor user browsing habits for advertising and profiling purposes. By automating this protection at the browser and operating system level, ECH provides a more secure baseline for all internet users without requiring manual configuration.",
+    "url": "https://www.makeuseof.com/new-browser-feature-hides-website-visiting-from-your-isp-nothing-to-do-with-vpn/",
+    "author": "Gavin Phillips",
+    "source": "MakeUseOf",
+    "processed_at": "2026-08-30T21:50:49.927582"
+  },
+  {
+    "title": "A Folding iPhone at Last? What to Expect From Apple’s Surprise and Shine Fall Event",
+    "category": "Phones, Laptops, and Gadgets",
+    "summary": "Apple will host its \"Surprise and Shine\" event on September 9, featuring the debut of the foldable iPhone Ultra, new Pro models, and a leadership transition to John Ternus.\n\n### Key Points\n- Apple CEO Tim Cook will step down, with hardware engineering chief John Ternus assuming the top leadership role just days before the September 9 event.\n- The company plans an extended rollout, prioritizing the foldable iPhone Ultra and iPhone 18 Pro models while delaying the base iPhone 18 until 2027.\n- The iPhone 18 Pro and Pro Max are expected to feature the A20 processor, variable-aperture cameras, and enhanced satellite connectivity.\n- The Apple Watch Series 12 is anticipated to include a more energy-efficient display and a new S12 processor, with potential biometric Touch ID integration.\n- New AirPods may debut with infrared cameras for visual intelligence, alongside updates to the iOS 27 operating system and its integrated Siri AI features.\n\n### Why it Matters\nThis event marks a pivotal shift for Apple as it navigates a major leadership change and attempts to stimulate market interest with high-end, luxury hardware. The strategic decision to delay base-model iPhones while focusing on premium devices reflects the company's response to ongoing supply chain pressures and the competitive AI landscape.",
+    "url": "https://www.cnet.com/tech/mobile/apple-event-what-to-expect-iphone-18-ultra-fold/",
+    "author": "Katelyn Chedraoui",
+    "source": "CNET",
+    "processed_at": "2026-08-30T21:55:57.734799"
+  },
+  {
+    "title": "Hasbro Data Breach Exposed Employee Personal Information",
+    "category": "Cybersecurity",
+    "summary": "Hasbro has begun notifying current and former employees that their personal information, including financial data and national identification numbers, may have been compromised in a recent security breach.\n\n### Key Points\n- Hasbro confirmed that exposed data may include names, email addresses, postal addresses, phone numbers, and financial information.\n- The breach follows a late March cyberattack that forced the company to take systems offline, resulting in $11 million in cleanup costs.\n- Massachusetts state filings indicate at least 436 residents were impacted, though the total number of affected employees remains unconfirmed.\n- Hasbro is offering identity protection services to affected individuals despite stating there is no current evidence of data misuse.\n- The company has not officially confirmed if this specific data exposure is directly linked to the March cyberattack.\n\n### Why it Matters\nThis incident highlights the ongoing financial and operational risks large corporations face from sophisticated cyberattacks that compromise sensitive employee records. The breach underscores the importance of robust data protection protocols and the long-term recovery costs associated with securing enterprise networks after a security failure.",
+    "url": "https://www.securityweek.com/hasbro-data-breach-exposed-employee-personal-information/",
+    "author": "Eduard Kovacs",
+    "source": "Securityweek.com",
+    "processed_at": "2026-08-30T21:56:13.847612"
+  },
+  {
+    "title": "Judge Questions Google AI, Spam Update Fallout – SEO Pulse via @sejournal, @MattGSouthern",
+    "category": "Artificial Intelligence",
+    "summary": "A federal judge is scrutinizing Google’s use of publisher content for AI Overviews, while new data reveals discrepancies between brand recommendations and actual website citation traffic.\n\n### Key Points\n- Judge Amit Mehta questioned Google’s antitrust defense, suggesting that using publisher content for AI Overviews without control is unfair to content creators.\n- Reports indicate Google’s August spam update targeted large-scale, automated content production rather than AI-generated material that provides genuine value.\n- Google’s John Mueller stated that no specific Generative Engine Optimization (GEO) is required, as standard SEO fundamentals remain effective for AI search results.\n- Ecommerce data shows that when AI tools recommend a brand, the brand’s own website receives the citation only 31% of the time.\n- Testing on ChatGPT reveals that Reddit’s citation frequency is highly query-dependent, contradicting theories that the platform was broadly deprioritized in search results.\n\n### Why It Matters\nThese developments highlight a growing disconnect between brand visibility in AI answers and the actual traffic or referral value captured by websites. Businesses must now distinguish between being mentioned by an AI and securing the direct citations necessary to drive meaningful user engagement and conversions.",
+    "url": "https://www.searchenginejournal.com/seo-pulse-judge-questions-google-ai-spam-update-fallout/587325/",
+    "author": "Matt G. Southern",
+    "source": "Search Engine Journal",
+    "processed_at": "2026-08-30T21:56:22.899561"
+  },
+  {
+    "title": "Brave browser adds email aliases to help users evade tracking",
+    "category": "Cybersecurity",
+    "summary": "The Brave browser has launched a new Email Aliases feature in version 1.94, allowing users to generate disposable addresses to protect their primary identity from data breaches and spam.\n\n### Key Points\n- Brave version 1.94 introduces disposable email aliases to prevent cross-site identity tracking and reduce exposure to phishing attacks.\n- Users must register a free Brave Account to enable message forwarding, which is currently limited to five aliases per user.\n- The system utilizes the OPAQUE protocol to authenticate users without transmitting passwords or hashes to Brave’s servers.\n- Forwarded emails undergo automated spam and malware filtering before being deleted from Brave’s servers within seconds of delivery.\n- Brave plans to launch a paid Premium version in the future to remove the current five-alias restriction.\n\n### Why it Matters\nThis feature addresses a significant privacy gap by preventing websites from linking user identities through email addresses stored in databases. By masking primary contact information, users can better mitigate the long-term risks associated with corporate data breaches and targeted phishing campaigns.",
+    "url": "https://www.bleepingcomputer.com/news/security/brave-browser-adds-email-aliases-to-help-users-evade-tracking/",
+    "author": "Bill Toulas",
+    "source": "BleepingComputer",
+    "processed_at": "2026-08-30T21:56:30.763025"
+  },
+  {
+    "title": "Hugging Face built a $4.5 billion empire on free AI models. Now Nvidia is buying it for $12.9 billion",
+    "category": "Tech Business & Markets",
+    "summary": "Nvidia has agreed to acquire the open-source AI platform Hugging Face for $12.9 billion, marking a significant consolidation of the AI ecosystem and its underlying developer infrastructure.\n\n### Key Points\n- The $12.9 billion acquisition values Hugging Face at approximately 86 times its $150 million in annualized revenue.\n- Hugging Face hosts over 4 million open-source models and serves as a primary hub for AI researchers and developers.\n- The company has expanded into physical robotics, including the Reachy Mini and Microduck, and enterprise-grade blob storage solutions.\n- Nvidia aims to secure a critical distribution layer for open-source AI while integrating Hugging Face’s managed compute and cloud services.\n- Hugging Face maintains a team of 250 employees and has completed six talent-driven acquisitions to date.\n\n### Why it Matters\nThis acquisition allows Nvidia to control the primary gateway for open-source AI development, effectively bridging the gap between its hardware dominance and the software ecosystem. By absorbing Hugging Face, Nvidia gains a direct channel to millions of developers and a strategic outlet for its excess cloud computing capacity.",
+    "url": "https://thenextweb.com/news/hugging-face-nvidia-acquisition-thomas-wolf-interview",
+    "author": "Anna Tutova",
+    "source": "The Next Web",
+    "processed_at": "2026-08-30T22:13:06.477559"
+  },
+  {
+    "title": "Gamescom Says Stolen Laptops ‘Make Us Very Sad,’ But Says Exhibitors Have To Protect Against Theft: ‘This Is Noted In The Terms And Conditions’",
+    "category": "Tech Business & Markets",
+    "summary": "Gamescom organizers are facing backlash after multiple indie developers reported equipment thefts at the 2026 event in Cologne, prompting a controversial response regarding exhibitor security responsibilities.\n\n### Key Points\n- Indie developers, including Ryan Laley, iam8bit, and Tessera Studios, reported stolen laptops and hardware from their booths during the August 2026 event.\n- Gamescom organizers issued a statement citing terms and conditions that advise exhibitors to purchase individual stand security and theft insurance.\n- The event organizers noted that while uniformed guards patrol the venue, they cannot prevent all theft at an event of this scale.\n- Exhibitors pay significant fees to participate, with basic booth space starting at approximately €2,100 before additional costs for security or travel.\n- Reports of theft have surfaced from previous years, leading to increased criticism regarding the adequacy of current security measures for smaller studios.\n\n### Why it Matters\nThe incident highlights a growing tension between large-scale trade show organizers and the financial risks faced by independent developers who invest heavily to showcase their work. This PR crisis may force event organizers to reevaluate their security protocols and liability policies to maintain trust within the gaming industry.",
+    "url": "https://kotaku.com/gamescom-says-stolen-laptops-make-us-very-sad-but-says-exhibitors-have-to-protect-against-theft-this-is-noted-in-the-terms-and-conditions-2000729563",
+    "author": "Lewis Parker",
+    "source": "Kotaku",
+    "processed_at": "2026-08-30T22:13:24.621919"
+  },
+  {
+    "title": "Top Stories: Apple's 'Surprise and Shine' Event, Plus New Mac mini and Mac Studio",
+    "category": "Phones, Laptops, and Gadgets",
+    "summary": "Apple has announced a September 9 event to unveil the iPhone 18 Pro and its first foldable smartphone, alongside updates to the Mac mini and Mac Studio hardware.\n\n### Key Points\n- Apple’s \"Surprise and Shine\" event takes place September 9 at 10:00 a.m. PT at Apple Park in Cupertino.\n- The new Mac mini features the M6 chip, offering 40% faster CPU performance and significantly improved AI task processing.\n- Updated Mac Studio models now include M5 Max and M5 Ultra chips, Thunderbolt 5 support, and Wi-Fi 7 connectivity.\n- Early reports suggest the foldable \"iPhone Ultra\" features a durable hinge and optimized app layouts, though it lacks a telephoto lens.\n- Apple TV monthly subscription prices increased by $2 in the U.S., with corresponding hikes for the Apple One Individual bundle.\n\n### Why it Matters\nThese hardware updates and the upcoming foldable iPhone launch signal Apple's aggressive push to maintain its premium market position through significant performance gains and new form factors. Meanwhile, the recurring price increases for Apple TV reflect a broader industry trend of streaming services raising costs to improve profitability and offset content production expenses.",
+    "url": "https://www.macrumors.com/2026/08/29/top-stories-apple-surprise-and-shine-event-invites/",
+    "author": "MacRumors Staff",
+    "source": "MacRumors",
+    "processed_at": "2026-08-30T22:13:42.381412"
+  },
+  {
+    "title": "I tested the Google Pixel 11, and it's a fun blend of social media and AI magic",
+    "category": "Phones, Laptops, and Gadgets",
+    "summary": "The Google Pixel 11 introduces enhanced AI capabilities and social media integration, retailing for $899 with improved base storage, faster Qi2 wireless charging, and the new Tensor G6 processor.\n\n### Key Points\n- The Pixel 11 features a $100 price increase over the previous model but includes higher base storage and 25W Qi2 wireless charging.\n- New software tools include Magic Capture for automated photo selection and Pause Point, a Digital Wellbeing feature designed to reduce social media distraction.\n- The device is powered by the Tensor G6 chip, which prioritizes AI tasks like the Daily Brief and Rambler voice-to-text transcription.\n- Hardware design remains thick at 8.6mm, and the device lacks a vapor chamber, leading to noticeable heat during intensive gaming sessions.\n- Camera performance is largely consistent with the Pixel 10, though images exhibit a warmer color profile compared to the Pixel 11 Pro.\n\n### Why it Matters\nThe Pixel 11 highlights Google's strategic shift toward integrating AI directly into daily social media workflows and personal productivity tasks. By balancing flagship-level software features with a more accessible price point than the Pro model, Google aims to maintain its competitive edge in the crowded smartphone market.",
+    "url": "https://www.androidcentral.com/phones/google-pixel/google-pixel-11-review",
+    "author": "derrek.lee@futurenet.com (Derrek Lee) , Derrek Lee",
+    "source": "Android Central",
+    "processed_at": "2026-08-30T22:13:58.291448"
+  },
+  {
+    "title": "POWBlock is a universal bot/DDoS defense primitive for any server",
+    "category": "Cybersecurity",
+    "summary": "POWBlock is a high-performance, C-based proof-of-work gateway designed to protect web servers from automated bot traffic and DDoS attacks by requiring clients to solve cryptographic challenges.\n\n### Key Points\n- POWBlock functions as a lightweight, ~1MB standalone binary that integrates with existing reverse proxies like Varnish, Nginx, and HAProxy.\n- The software forces clients to perform SHA-256 or SHA-512 hashing before granting access, effectively filtering out automated scrapers and request-flood attacks.\n- It is hardware-optimized to fit within CPU L3 caches, enabling it to handle over 250,000 requests per second with minimal system resource consumption.\n- The tool has been battle-tested in production environments since early 2025, reportedly blocking 99% of automated spam for a high-traffic origin server.\n- It is distributed as shareware, offering core features for free while requiring a $50 lifetime license for enterprise-level or commercial use.\n\n### Why it Matters\nBy providing a modular, low-overhead defense mechanism, POWBlock allows administrators to secure their infrastructure without the performance penalties associated with monolithic security suites. This approach empowers developers to maintain control over their own traffic stacks while effectively mitigating sophisticated bot-driven threats.",
+    "url": "https://github.com/8Protons/POWBlock",
+    "author": "8Protons",
+    "source": "Github.com",
+    "processed_at": "2026-08-30T22:14:31.618215"
+  },
+  {
+    "title": "AI and the Brand You Didn't Build",
+    "category": "Artificial Intelligence",
+    "summary": "Artificial intelligence is fundamentally changing brand management by creating an inferred identity that often diverges from the deliberate image crafted by individuals, corporations, and professional organizations.\n\n### Key Points\n- The \"inference gap\" represents the distance between a brand's intended identity and the probabilistic portrait constructed by large language models.\n- AI synthesizes diverse data points, including journalism, social commentary, and historical records, to form conclusions that may contradict a brand's official messaging.\n- The INFER framework—Identity, Narrative, Fidelity, Evidence, and Resilience—provides a structured method for organizations to audit and manage their AI-generated reputations.\n- Unlike traditional search engine optimization, generative engine optimization focuses on how AI interprets and summarizes information rather than simply surfacing links.\n- The shift toward AI-generated answers means that machines are increasingly acting as the primary interpreters of professional and corporate reputations for the public.\n\n### Why it Matters\nAs AI becomes the primary interface for information retrieval, the gap between an expressed brand and an inferred brand can significantly impact public perception and professional credibility. Organizations must now actively manage their digital footprint to ensure that machine-generated summaries accurately reflect their intended identity rather than outdated or incomplete data.",
+    "url": "https://www.psychologytoday.com/us/blog/the-digital-self/202608/ai-and-the-brand-you-didnt-build",
+    "author": "John Nosta",
+    "source": "Psychology Today",
+    "processed_at": "2026-08-30T22:14:46.467956"
+  },
+  {
+    "title": "What new Google Messages features are rolling out [August 2026]",
+    "category": "Phones, Laptops, and Gadgets",
+    "summary": "Google is actively testing and rolling out several new features for the Messages for Android app, including updated read receipts, customizable chat themes, and improved cross-platform RCS functionality.\n\n### Key Points\n- Google is testing a new read receipt design that uses swipe gestures to reveal timestamps and encryption details.\n- Users can now customize conversations with new \"Chat themes,\" offering nine color options and various background wallpaper collections.\n- Upcoming iOS 27 integration will bring inline replies and emoji-based photo reactions to Android-iPhone RCS conversations.\n- Samsung is transitioning US users to Google Messages, which will automatically replace the default messaging app on Android 14 devices.\n- The \"Tap to draft\" feature allows users to edit Smart Replies in the text field before sending to prevent accidental messages.\n- Google is phasing out QR code pairing for Messages for web in favor of mandatory Google Account sign-in.\n\n### Why it Matters\nThese updates reflect Google's ongoing effort to modernize the Android messaging experience and achieve feature parity with competitors like iMessage. By standardizing RCS protocols and enhancing customization, Google aims to increase user retention and streamline communication across different mobile platforms.",
+    "url": "http://9to5google.com/2026/08/29/new-google-messages-features/",
+    "author": "Abner Li",
+    "source": "9to5google.com",
+    "processed_at": "2026-08-30T22:15:16.134476"
+  },
+  {
+    "title": "AI Labs Look To Space For Their Data Center Needs",
+    "category": "Artificial Intelligence",
+    "summary": "As public opposition to land-based data centers grows, major tech companies and startups are seeking regulatory approval to launch massive satellite constellations for orbital artificial intelligence computing.\n\n### Key Points\n- SpaceX, in partnership with Nvidia, plans to launch space-optimized AI chips into orbit starting in late 2027.\n- The FCC is currently reviewing applications for hundreds of thousands of data center satellites from companies including Amazon, Starcloud, and Cowboy Space.\n- Google’s Project Suncatcher aims to deploy solar-powered satellite constellations, with prototype launches scheduled for early 2027.\n- China has already begun deploying its own 2,800-satellite network, prompting concerns from the European Space Policy Institute regarding global competitiveness.\n- Technical challenges for orbital infrastructure include managing extreme heat in a vacuum, protecting hardware from space radiation, and addressing limited power capacity.\n\n### Why it Matters\nMoving data centers to orbit offers a potential solution to local zoning resistance and land-use conflicts in the United States. However, the transition faces significant engineering hurdles and economic questions regarding the long-term viability of deploying expensive, short-lived hardware in space.",
+    "url": "https://dailycaller.com/2026/08/29/data-centers-space-artificial-intelligence",
+    "author": "Sean Moran",
+    "source": "The Daily Caller",
+    "processed_at": "2026-08-30T22:15:31.059155"
+  },
+  {
+    "title": "UAE “Spy Sheikh” Behind Trump Crypto Bank: 49% Ownership, $500M and Questions MAGA Can’t Avoid",
+    "category": "Tech Business & Markets",
+    "summary": "Investors linked to UAE national security adviser Sheikh Tahnoon bin Zayed al Nahyan hold a 49% stake in the holding company for Donald Trump’s planned crypto banking venture.\n\n### Key Points\n- Sheikh Tahnoon bin Zayed al Nahyan and his co-investors are the largest shareholders in the holding company behind World Liberty Financial’s proposed national trust bank.\n- The Office of the Comptroller of the Currency granted preliminary conditional approval for the bank to issue, redeem, and safeguard the USD1 stablecoin.\n- This ownership stake follows a previous $500 million investment by Tahnoon-linked entities into the broader World Liberty Financial business.\n- Sheikh Tahnoon oversees a financial empire managing over $1.3 trillion in personal and state-controlled assets.\n- Specific details regarding the bank's board composition, governance rights, and potential veto powers remain undisclosed.\n\n### Why it Matters\nThis partnership highlights a significant financial intersection between a Trump-backed enterprise and a senior foreign government official. The involvement of a major sovereign wealth figure in a federally chartered U.S. banking project raises questions regarding transparency and the influence of foreign capital in domestic financial infrastructure.",
+    "url": "https://cryptonews.com/news/world-liberty-financial-trump-crypto-bank/",
+    "author": "Ahmed Barakat",
+    "source": "Cryptonews",
+    "processed_at": "2026-08-30T22:15:47.185325"
+  },
+  {
     "author": "Fabiane Nardon",
     "title": "Presentation: Architecting the Data Layer for AI Agents: From Transactional Systems to MCP and Semantic Models",
     "source": "InfoQ.com",

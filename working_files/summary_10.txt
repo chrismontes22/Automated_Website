@@ -1,19 +1,21 @@
-9to5Mac Daily: August 28, 2026 – Foldable iPhone expectations, more
+Presentation: Architecting the Data Layer for AI Agents: From Transactional Systems to MCP and Semantic Models
 ============================================================
 
-The latest 9to5Mac Daily podcast episode covers industry projections for foldable iPhones, new state-level support for Apple Wallet driver’s licenses, and potential hardware upgrades for future iPhone models.
+TOTVS, a major Brazilian enterprise software provider, is optimizing its data architecture to support enterprise-grade AI agents by balancing deterministic software models with probabilistic generative AI reasoning.
 
 ### Key Points
-- IDC analysts released new shipment expectations regarding Apple’s potential entry into the foldable smartphone market.
-- Apple Wallet has officially expanded its digital driver’s license support to include an additional U.S. state.
-- Reports detail five specific features that are reportedly excluded from the rumored iPhone Ultra development plans.
-- New technical insights reveal two potential pathways for significant performance upgrades in the upcoming iPhone 18 Pro.
+- TOTVS manages systems processing approximately 25% of Brazil's GDP, requiring high-precision, enterprise-grade AI agent integration.
+- The company utilizes a "data mesh" architecture where data products are treated as microservices with stable interfaces and clear ownership.
+- A multi-layered data platform provides low-latency access via Postgres and DuckDB, alongside high-latency batch processing for historical data.
+- Semantic Web standards, including RDF and ontologies, are used to reduce ambiguity and improve LLM response precision by up to 40%.
+- To manage token costs and context limits, TOTVS implemented "MCP Fabric" and dynamic tool searching to inject only relevant tools into agent contexts.
+- Security is maintained through identity propagation, ensuring agents only access data authorized for the specific user via OAuth tokens.
 
 ### Why it Matters
-These updates highlight Apple's ongoing efforts to integrate government-issued identification into its digital ecosystem while managing hardware expectations for future flagship devices. Tracking these developments provides insight into the company's long-term strategy for mobile innovation and consumer service expansion.
+Integrating AI agents into legacy transactional systems requires a strategic division between deterministic code and non-deterministic AI models to ensure security, precision, and cost-efficiency. By adopting standardized data governance and semantic layers, enterprises can scale AI capabilities without sacrificing the reliability expected in mission-critical business environments.
 
 ============================================================
-Author:   Seth Kurkowski
-Source:   9to5Mac
-URL:      https://9to5mac.com/2026/08/28/9to5mac-daily-august-28-2026-foldable-iphone-expectations-more/
-Category: Phones, Laptops, and Gadgets
+Author:   Fabiane Nardon
+Source:   InfoQ.com
+URL:      https://www.infoq.com/presentations/enterprise-data-architecture-ai-agents/
+Category: Artificial Intelligence
