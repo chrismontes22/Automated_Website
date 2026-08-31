@@ -1,20 +1,21 @@
-UAE “Spy Sheikh” Behind Trump Crypto Bank: 49% Ownership, $500M and Questions MAGA Can’t Avoid
+monty-go: Pure-Go wrapper for Pydantic's Monty Python Interpreter
 ============================================================
 
-Investors linked to UAE national security adviser Sheikh Tahnoon bin Zayed al Nahyan hold a 49% stake in the holding company for Donald Trump’s planned crypto banking venture.
+The new monty-go library provides a secure, pure-Go wrapper for the Monty Python interpreter, enabling developers to execute sandboxed Python code within Go applications using WebAssembly.
 
 ### Key Points
-- Sheikh Tahnoon bin Zayed al Nahyan and his co-investors are the largest shareholders in the holding company behind World Liberty Financial’s proposed national trust bank.
-- The Office of the Comptroller of the Currency granted preliminary conditional approval for the bank to issue, redeem, and safeguard the USD1 stablecoin.
-- This ownership stake follows a previous $500 million investment by Tahnoon-linked entities into the broader World Liberty Financial business.
-- Sheikh Tahnoon oversees a financial empire managing over $1.3 trillion in personal and state-controlled assets.
-- Specific details regarding the bank's board composition, governance rights, and potential veto powers remain undisclosed.
+- Eliminates the need for CGO, external containers, or subprocesses by using a 2.9MB embedded WebAssembly binary.
+- Allows LLMs to perform complex logic in a single round-trip by writing Python code that calls Go functions.
+- Includes configurable resource limits for memory, execution time, recursion depth, and allocations to prevent runaway code.
+- Supports seamless data exchange between Go and Python using JSON-based mapping for types like lists, dictionaries, and primitives.
+- Integrates directly with the Gollem agent framework to enable advanced "code-mode" capabilities for AI agents.
+- Built on the Monty interpreter, a secure Rust-based Python implementation developed by the Pydantic team.
 
 ### Why it Matters
-This partnership highlights a significant financial intersection between a Trump-backed enterprise and a senior foreign government official. The involvement of a major sovereign wealth figure in a federally chartered U.S. banking project raises questions regarding transparency and the influence of foreign capital in domestic financial infrastructure.
+By allowing LLMs to execute Python code directly within a Go binary, this tool significantly reduces the latency and costs associated with sequential tool calling. It provides a high-performance, secure alternative to traditional containerized execution environments, making it easier for developers to build sophisticated, logic-heavy AI agents.
 
 ============================================================
-Author:   Ahmed Barakat
-Source:   Cryptonews
-URL:      https://cryptonews.com/news/world-liberty-financial-trump-crypto-bank/
-Category: Tech Business & Markets
+Author:   fugue-labs
+Source:   Github.com
+URL:      https://github.com/fugue-labs/monty-go
+Category: Artificial Intelligence

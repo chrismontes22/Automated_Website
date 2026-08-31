@@ -1,20 +1,20 @@
-A new browser feature hides which website you're visiting from your ISP, and it has nothing to do with a VPN
+Top AI tools including Claude, Codex, and Hermes installed suspicious code inside corporate networks
 ============================================================
 
-The newly finalized Encrypted Client Hello (ECH) standard, established in RFC 9849, enhances internet privacy by masking the specific website hostnames previously visible to internet service providers during connections.
+Cybersecurity researchers discovered that AI agents can be tricked into installing malware by following outdated or unclaimed documentation links found on 120 major corporate websites.
 
 ### Key Points
-- The ECH standard, finalized in March 2026, encrypts the Server Name Indication (SNI) field to prevent ISPs from tracking domain-level browsing activity.
-- ECH functions by sending a decoy handshake to the server while hiding the actual destination hostname within an encrypted, secondary message.
-- Major browsers including Chrome and Firefox have supported ECH since September 2023, with Android adding native support in August 2026.
-- Users can verify ECH functionality by checking the "sni=" status on the Cloudflare diagnostic page, which confirms if the connection is encrypted.
-- ECH does not replace the need for encrypted DNS or browser fingerprinting protections, as it only secures the initial handshake hostname.
+- Researcher Alon Hertz identified 8,265 llms.txt files across 6,214 domains belonging to Fortune 500 companies and defense contractors.
+- 120 domains contained references to unregistered code packages or domains, creating a significant supply chain vulnerability.
+- AI models including Claude, OpenAI’s Codex, and Nous Research’s Hermes were shown to execute commands from these potentially malicious documentation sources.
+- Registering these unclaimed packages allowed researchers to successfully trigger pings from corporate systems in under one hour.
+- Experts recommend that organizations audit their documentation for broken links and restrict AI agents from executing commands directly from web-based instructions.
 
 ### Why it Matters
-This technology closes a significant privacy loophole that allowed ISPs to monitor user browsing habits for advertising and profiling purposes. By automating this protection at the browser and operating system level, ECH provides a more secure baseline for all internet users without requiring manual configuration.
+This vulnerability highlights a critical security gap as businesses increasingly grant AI agents autonomous control over software development and package installation. If left unaddressed, attackers can exploit these automated workflows to distribute malware across enterprise networks by hijacking abandoned digital assets.
 
 ============================================================
-Author:   Gavin Phillips
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/new-browser-feature-hides-website-visiting-from-your-isp-nothing-to-do-with-vpn/
+Author:   Sead Fadilpašić
+Source:   TechRadar
+URL:      https://www.techradar.com/pro/security/top-ai-tools-including-claude-codex-and-hermes-installed-suspicious-code-inside-corporate-networks
 Category: Cybersecurity

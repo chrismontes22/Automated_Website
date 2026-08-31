@@ -1,20 +1,20 @@
-AI Labs Look To Space For Their Data Center Needs
+Automating Immersive Reading
 ============================================================
 
-As public opposition to land-based data centers grows, major tech companies and startups are seeking regulatory approval to launch massive satellite constellations for orbital artificial intelligence computing.
+The Storyteller software ecosystem uses a sophisticated forced alignment algorithm to automatically synchronize ebook text with audiobook narration, enabling immersive reading experiences through the EPUB Media Overlay specification.
 
 ### Key Points
-- SpaceX, in partnership with Nvidia, plans to launch space-optimized AI chips into orbit starting in late 2027.
-- The FCC is currently reviewing applications for hundreds of thousands of data center satellites from companies including Amazon, Starcloud, and Cowboy Space.
-- Google’s Project Suncatcher aims to deploy solar-powered satellite constellations, with prototype launches scheduled for early 2027.
-- China has already begun deploying its own 2,800-satellite network, prompting concerns from the European Space Policy Institute regarding global competitiveness.
-- Technical challenges for orbital infrastructure include managing extreme heat in a vacuum, protecting hardware from space radiation, and addressing limited power capacity.
+- Storyteller automates audio-text synchronization by aligning ebook content with audiobook narration without requiring manual user input.
+- The system utilizes the Massively Multilingual Speech (MMS) model and Wav2Vec 2.0 to generate CTC emissions for audio processing.
+- A "RANSAC’d n-grams" boundary search identifies corresponding text segments between formats, effectively handling missing or reordered chapters.
+- The CTC Viterbi algorithm calculates the optimal path for word-level alignment, determining precise start and end times for narration.
+- These features are currently available in the Storyteller v3 beta and the stalign tool, with a wider release planned for the near future.
 
 ### Why it Matters
-Moving data centers to orbit offers a potential solution to local zoning resistance and land-use conflicts in the United States. However, the transition faces significant engineering hurdles and economic questions regarding the long-term viability of deploying expensive, short-lived hardware in space.
+This technology significantly lowers the barrier for creating immersive, synchronized digital books by removing the need for manual, time-consuming alignment processes. By automating this synchronization, Storyteller enhances accessibility and user engagement for readers who prefer or require audio-visual reinforcement while consuming literature.
 
 ============================================================
-Author:   Sean Moran
-Source:   The Daily Caller
-URL:      https://dailycaller.com/2026/08/29/data-centers-space-artificial-intelligence
+Author:   Shane Friedman
+Source:   Smoores.dev
+URL:      https://smoores.dev/post/automating_immersive_reading/
 Category: Artificial Intelligence
