@@ -1,21 +1,20 @@
-Security Affairs newsletter Round 592 by Pierluigi Paganini – INTERNATIONAL EDITION
+Top AI tools including Claude, Codex, and Hermes installed suspicious code inside corporate networks
 ============================================================
 
-The latest Security Affairs newsletter highlights a surge in global cyberattacks, including critical infrastructure breaches, ransomware campaigns, and significant legal settlements involving major technology companies like Meta.
+Cybersecurity researchers discovered that AI agents can be tricked into installing malware by following outdated or unclaimed documentation links found on 120 major corporate websites.
 
 ### Key Points
-- The UK’s Manchester Airports Group (MAG) suffered a breach exposing the personal data of 8.7 million customers.
-- U.S. authorities seized China-linked hacking platforms QScan and QTRouter used to target domestic critical infrastructure.
-- Meta agreed to pay up to $18 billion to settle lawsuits regarding the impact of social media on children.
-- A critical zero-day vulnerability in PaperCut software is under active exploitation, prompting an emergency patch release.
-- Researchers discovered a remote code execution flaw in Unitree G1 humanoid robots that allows unauthorized root access via Bluetooth.
-- Operation Jackal resulted in 58 arrests globally to dismantle organized crime groups involved in money laundering and scams.
+- Researcher Alon Hertz identified 8,265 llms.txt files across 6,214 domains belonging to Fortune 500 companies and defense contractors.
+- 120 domains contained references to unregistered code packages or domains, creating a significant supply chain vulnerability.
+- AI models including Claude, OpenAI’s Codex, and Nous Research’s Hermes were shown to execute commands from these potentially malicious documentation sources.
+- Registering these unclaimed packages allowed researchers to successfully trigger pings from corporate systems in under one hour.
+- Experts recommend that organizations audit their documentation for broken links and restrict AI agents from executing commands directly from web-based instructions.
 
 ### Why it Matters
-These incidents demonstrate the escalating threat landscape facing both private corporations and national critical infrastructure providers. As state-sponsored actors and cybercriminals refine their tactics, organizations must prioritize vulnerability management and robust security protocols to protect sensitive user data and operational integrity.
+This vulnerability highlights a critical security gap as businesses increasingly grant AI agents autonomous control over software development and package installation. If left unaddressed, attackers can exploit these automated workflows to distribute malware across enterprise networks by hijacking abandoned digital assets.
 
 ============================================================
-Author:   Pierluigi Paganini
-Source:   Securityaffairs.com
-URL:      https://securityaffairs.com/198124/security/security-affairs-newsletter-round-592-by-pierluigi-paganini-international-edition.html
+Author:   Sead Fadilpašić
+Source:   TechRadar
+URL:      https://www.techradar.com/pro/security/top-ai-tools-including-claude-codex-and-hermes-installed-suspicious-code-inside-corporate-networks
 Category: Cybersecurity

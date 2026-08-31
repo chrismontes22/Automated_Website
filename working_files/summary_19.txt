@@ -1,20 +1,20 @@
-Automating Immersive Reading
+This open-source Google app turned my phone into a fully local AI lab
 ============================================================
 
-The Storyteller software ecosystem uses a sophisticated forced alignment algorithm to automatically synchronize ebook text with audiobook narration, enabling immersive reading experiences through the EPUB Media Overlay specification.
+Google’s AI Edge Gallery app enables users to run powerful, offline Gemma-based large language models directly on mobile devices to perform assistant tasks and local data processing.
 
 ### Key Points
-- Storyteller automates audio-text synchronization by aligning ebook content with audiobook narration without requiring manual user input.
-- The system utilizes the Massively Multilingual Speech (MMS) model and Wav2Vec 2.0 to generate CTC emissions for audio processing.
-- A "RANSAC’d n-grams" boundary search identifies corresponding text segments between formats, effectively handling missing or reordered chapters.
-- The CTC Viterbi algorithm calculates the optimal path for word-level alignment, determining precise start and end times for narration.
-- These features are currently available in the Storyteller v3 beta and the stalign tool, with a wider release planned for the near future.
+- The app utilizes Google’s Gemma 4 E2B and E4B models, which support multimodal inputs and context windows of up to 32k tokens.
+- Agent Skills allow for offline calendar management, notification scheduling, and image identification without requiring an internet connection.
+- FunctionGemma 270M powers specific mobile actions, such as controlling device hardware like the flashlight or volume via natural language commands.
+- Users can monitor step-by-step reasoning through a "Thinking Mode" and perform device-specific performance benchmarking for tokens-per-second metrics.
+- The platform supports sideloading custom .litertlm files and Hugging Face imports for users who wish to run models outside the standard Gemma catalog.
 
 ### Why it Matters
-This technology significantly lowers the barrier for creating immersive, synchronized digital books by removing the need for manual, time-consuming alignment processes. By automating this synchronization, Storyteller enhances accessibility and user engagement for readers who prefer or require audio-visual reinforcement while consuming literature.
+This development signals a significant shift toward privacy-focused, offline AI utility that reduces reliance on cloud-based processing for everyday smartphone tasks. By bringing sophisticated model performance to mobile hardware, Google is lowering the barrier for users to integrate local LLMs into their daily workflows.
 
 ============================================================
-Author:   Shane Friedman
-Source:   Smoores.dev
-URL:      https://smoores.dev/post/automating_immersive_reading/
+Author:   Nolen Jonker
+Source:   XDA Developers
+URL:      https://www.xda-developers.com/this-google-app-turned-my-phone-into-fully-local-ai-lab/
 Category: Artificial Intelligence

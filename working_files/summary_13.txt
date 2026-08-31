@@ -1,20 +1,21 @@
-Apple weekend deals: M6 Mac mini, AirPods Pro 3, AirTag 2, iPhone 17 Pro, more [Updated]
+monty-go: Pure-Go wrapper for Pydantic's Monty Python Interpreter
 ============================================================
 
-The Amazon 2026 Labor Day sale features significant price drops on Apple hardware, including the iPhone 17 Pro, M6 Mac mini, and various smart home accessories and charging gear.
+The new monty-go library provides a secure, pure-Go wrapper for the Monty Python interpreter, enabling developers to execute sandboxed Python code within Go applications using WebAssembly.
 
 ### Key Points
-- AirPods Pro 3 are discounted to $200, while the Apple Watch SE 3 has reached a new all-time low starting at $190.
-- Renewed Premium iPhone 17 Pro models are available for up to $290 off, including a one-year guarantee and verified battery health.
-- The new M6 Mac mini and M5 Pro Mac mini models are seeing their first public discounts since launch.
-- LG evo AI 4K C6 Series Smart TVs are on sale, with the 65-inch model including a $150 Amazon credit.
-- Anker charging solutions, including the 250W Prime Charging Station, are marked down alongside ecobee smart home security and thermostat bundles.
+- Eliminates the need for CGO, external containers, or subprocesses by using a 2.9MB embedded WebAssembly binary.
+- Allows LLMs to perform complex logic in a single round-trip by writing Python code that calls Go functions.
+- Includes configurable resource limits for memory, execution time, recursion depth, and allocations to prevent runaway code.
+- Supports seamless data exchange between Go and Python using JSON-based mapping for types like lists, dictionaries, and primitives.
+- Integrates directly with the Gollem agent framework to enable advanced "code-mode" capabilities for AI agents.
+- Built on the Monty interpreter, a secure Rust-based Python implementation developed by the Pydantic team.
 
 ### Why it Matters
-These holiday promotions provide consumers with rare opportunities to purchase the latest Apple and smart home technology at record-low prices. The inclusion of Amazon Renewed options and bundled credits offers additional value for shoppers looking to upgrade their electronics during the Labor Day weekend.
+By allowing LLMs to execute Python code directly within a Go binary, this tool significantly reduces the latency and costs associated with sequential tool calling. It provides a high-performance, secure alternative to traditional containerized execution environments, making it easier for developers to build sophisticated, logic-heavy AI agents.
 
 ============================================================
-Author:   Justin Kahn
-Source:   9to5Mac
-URL:      https://9to5mac.com/2026/08/30/apple-weekend-deals-m6-mac-mini-airpods-airtag-2/
-Category: Phones, Laptops, and Gadgets
+Author:   fugue-labs
+Source:   Github.com
+URL:      https://github.com/fugue-labs/monty-go
+Category: Artificial Intelligence
