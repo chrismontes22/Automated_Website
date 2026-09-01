@@ -1,20 +1,20 @@
-Extortion Group FulcrumSec Claims 86GB Manchester Airports Group Data Theft
+Halo-record: Open-source audit trails for AI agents
 ============================================================
 
-Manchester Airports Group confirmed a data breach affecting 8.7 million customers across three major UK airports, while an extortion group claims to have stolen significantly more sensitive information.
+Brian Kuan has released Halo-record, an open-source Python package that creates tamper-evident, hash-chained audit trails for AI agents to provide verifiable logs of their actions and data access.
 
 ### Key Points
-- The breach impacts customers of Manchester, London Stansted, and East Midlands airports who used parking, lounge, or WiFi services.
-- Manchester Airports Group (MAG) states exposed data includes email addresses, phone numbers, vehicle registrations, and postcodes.
-- The extortion group FulcrumSec claims to have stolen 86GB of data, including detailed travel itineraries and booking history.
-- Attackers allegedly accessed the system by exploiting Iterable API credentials left exposed within the website's client-side JavaScript code.
-- Reports indicate approximately 200,000 records contain specific travel dates and times for trips scheduled through the end of 2026.
+- Halo-record uses hash-chaining to ensure that any modification to an AI agent's log file breaks the sequence, making unauthorized edits immediately detectable.
+- The tool integrates with existing frameworks like LangChain, OpenTelemetry, and MCP servers to capture tool calls, model interactions, and data access.
+- To protect sensitive information, the package automatically redacts raw arguments and stores hashed summaries instead of plain-text data.
+- The project aims to address security requirements from standards like the EU AI Act and the Cloud Security Alliance’s AARM model.
+- Kuan plans to offer a hosted witness service to verify that no log entries were deleted, addressing the limitation that hash-chaining alone cannot prove completeness.
 
 ### Why it Matters
-This incident highlights the significant security risks associated with relying on third-party platforms and the dangers of exposing sensitive API credentials in client-side code. The combination of precise UK postcode data and specific travel itineraries creates a high risk for sophisticated, targeted phishing attacks against affected passengers.
+This tool provides a standardized, verifiable way for vendors to prove AI agent behavior during security audits, replacing subjective self-reporting with objective evidence. By enabling independent verification, it helps companies meet emerging regulatory mandates and insurance requirements while accelerating the enterprise sales process.
 
 ============================================================
-Author:   Pierluigi Paganini
-Source:   Securityaffairs.com
-URL:      https://securityaffairs.com/198143/cyber-crime/extortion-group-fulcrumsec-claims-86gb-manchester-airports-group-data-theft.html
-Category: Cybersecurity
+Author:   Mirko Zorz
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/08/31/halo-record-open-source-ai-agent-audit-trail/
+Category: Artificial Intelligence

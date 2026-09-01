@@ -1,20 +1,20 @@
-Amazon just gave Kindle owners two new reasons to look at Kobo
+Praetorian – Offensive Security Tools Built Around Portable Go Workflows
 ============================================================
 
-Amazon has implemented stricter DRM encryption across its Kindle lineup and closed a popular Libby library loan loophole, prompting frustration among users and potential shifts toward competitor platforms.
+Praetorian has released a collection of open-source Go-based security tools, including Titus and Brutus, designed to streamline offensive security assessments through modular integration and shared development frameworks.
 
 ### Key Points
-- Amazon updated Kindle Oasis software version 5.18.2.1.1, making ebooks on the device resistant to most third-party DRM-removal tools.
-- The company has been rolling out this hardened encryption across its device lineup since 2025, affecting older models and recent releases.
-- A long-standing workaround allowing users to extend Libby library loans by keeping Kindles in Airplane Mode no longer functions on newer hardware.
-- Affected devices include the Kindle Paperwhite 11th and 12th generations, as well as the Colorsoft Signature Edition.
-- Neither Amazon nor OverDrive has officially confirmed the changes, despite widespread reports from users on platforms like Reddit.
+- Praetorian’s security suite includes tools for secrets scanning, service fingerprinting, credential testing, and Bluetooth Low Energy assessment.
+- The Titus secrets scanner features 487 detection rules and supports multiple interfaces, including a command-line tool, Go library, and browser extensions.
+- The Nerva and Brutus tools form a documented pipeline that automates the transition from network service identification to credential testing.
+- Caeruleus consolidates fragmented Bluetooth Low Energy workflows into a single Linux binary to reduce setup complexity during engagements.
+- A shared Go-based "capability-sdk" provides a common architecture for data types, though not all tools in the collection currently utilize it.
 
 ### Why it Matters
-These updates significantly restrict user control over digital content and limit the flexibility previously enjoyed by Kindle owners. By tightening these restrictions, Amazon effectively deepens its ecosystem lock-in, potentially driving frustrated customers toward alternative eReader brands like Kobo.
+This collection represents a shift toward modular, interoperable security tooling that reduces operational friction by automating data handoffs between assessment stages. By standardizing these workflows in Go, Praetorian provides security professionals with portable, high-performance alternatives to legacy scripts and fragmented utility sets.
 
 ============================================================
-Author:   Oliver Haslam
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/amazon-just-gave-kindle-owners-two-new-reasons-to-look-at-kobo/
-Category: Phones, Laptops, and Gadgets
+Author:   Darknet
+Source:   Darknet.org.uk
+URL:      https://www.darknet.org.uk/2026/08/praetorian-offensive-security-go-tools/
+Category: Cybersecurity

@@ -1,20 +1,20 @@
-3 AI Infrastructure Stocks to Watch Beyond NVIDIA
+How to build a diffusion language model
 ============================================================
 
-Investors are expanding their focus beyond NVIDIA to secondary AI infrastructure providers like Broadcom, Arista Networks, and Vertiv, which manage essential data center networking, power, and cooling systems.
+Diffusion language models are emerging as a high-performance alternative to autoregressive architectures, offering faster parallel generation and improved controllability for complex tasks in both linguistics and biological sciences.
 
 ### Key Points
-- Broadcom designs custom AI accelerators and networking silicon to connect thousands of processors within large-scale data centers.
-- Arista Networks provides high-speed Ethernet switching and network fabric, enabling massive clusters of AI chips to communicate without performance bottlenecks.
-- Vertiv supplies critical power distribution and thermal management systems required to support the high energy density of modern AI hardware.
-- All three companies are experiencing significant revenue growth as hyperscalers increase capital expenditures to build out AI-ready infrastructure.
-- Each firm represents a distinct physical or technical bottleneck in the AI supply chain, rather than a direct competitor to GPU manufacturers.
+- Diffusion models generate entire sequences iteratively by denoising, contrasting with the traditional left-to-right, token-by-token approach used by standard autoregressive models.
+- Masked Diffusion Language Models (MDLM) utilize bidirectional transformers to fill in masked tokens, effectively functioning as generative versions of the BERT architecture.
+- Leading industry models like Mercury 2, LLaDA, and NVIDIA’s Nemotron Diffusion demonstrate that these systems can achieve 5–10x faster inference speeds on standard GPUs.
+- Scientific applications, including the Nucleotide Transformer v3 (NT-v3) and ESM3, leverage diffusion to model complex biological sequences like DNA and proteins with high precision.
+- Advanced techniques such as classifier-free guidance (CFG) and remasking allow these models to perform iterative error correction and target specific properties during generation.
 
 ### Why it Matters
-These companies represent the "second layer" of the AI trade, providing the essential physical and networking foundation required for high-performance computing to function at scale. As data centers face increasing power and connectivity constraints, these infrastructure providers offer a way to invest in the broader AI buildout beyond chip-specific demand.
+By enabling parallel inference, diffusion models overcome the sequential bottlenecks that currently limit the scaling of post-training and inference-time compute in traditional language models. This shift could mirror the impact of the transformer architecture, potentially unlocking a new era of intelligence gains by maximizing hardware utilization and computational efficiency.
 
 ============================================================
-Author:   Chris Markoch, MarketBeat
-Source:   MarketBeat
-URL:      https://www.marketbeat.com/articles/3-ai-infrastructure-stocks-to-watch-beyond-nvidia/?utm_source=yahoofinance&amp;utm_medium=yahoofinance
-Category: Tech Business & Markets
+Author:   Volodymyr Kuleshov
+Source:   Github.io
+URL:      https://kuleshov-group.github.io/blog/blog/2026/how-to-build-a-diffusion-language-model/
+Category: Artificial Intelligence
