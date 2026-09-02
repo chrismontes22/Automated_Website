@@ -1,20 +1,20 @@
-The feds seized a stake in Anthropic from Sam Bankman-Fried's friends. What happened to the shares?
+Attackers Exploit Critical Langflow and Rails Flaws in Credential-Probing and C2 Activity
 ============================================================
 
-The federal government seized and sold Anthropic shares formerly owned by Sam Bankman-Fried’s associates, raising questions about whether the proceeds will compensate victims of the FTX fraud.
+Threat actors are actively exploiting critical vulnerabilities in Langflow and Ruby on Rails, leading to unauthorized remote code execution and the theft of sensitive cloud and database credentials.
 
 ### Key Points
-- Federal authorities seized Anthropic equity from Caroline Ellison and Nishad Singh following their roles in the collapse of the cryptocurrency exchange FTX.
-- The U.S. Marshals Service sold these shares to existing Anthropic investors in 2025, though the specific sale price and buyers remain undisclosed.
-- Estimates suggest the forfeited shares could be worth between $250 million and $1.1 billion, depending on the timing of the government's sale.
-- While the Justice Department claims to prioritize victim compensation, it retains legal discretion over whether to distribute these specific funds to FTX creditors.
-- As of mid-2026, bankruptcy court filings indicate these specific proceeds have not yet been transferred to the FTX estate for victim restitution.
+- CVE-2026-0768 allows unauthenticated attackers to execute arbitrary Python code as root within Langflow environments.
+- CVE-2026-66066, dubbed KindaRails2Shell, enables file reading and credential theft in Ruby on Rails via malicious image uploads.
+- VulnCheck recorded over 360 exploitation attempts targeting canary systems across the U.K., Singapore, and Israel since August 30, 2026.
+- Attackers are harvesting environment variables, including AWS keys and OpenAI API tokens, to facilitate further system compromise.
+- Security researchers warn that even patched Ruby on Rails servers may remain susceptible to remote code execution via deserialization gadgets.
 
 ### Why it Matters
-The lack of transparency regarding these assets highlights the opaque nature of federal criminal forfeiture processes in high-profile financial fraud cases. Whether these funds reach defrauded FTX customers or remain with the government could set a significant precedent for how authorities handle the rapidly appreciating assets of convicted white-collar criminals.
+These vulnerabilities pose a significant risk to organizations using AI development platforms and web frameworks by providing attackers with direct access to cloud infrastructure and sensitive secrets. The rapid weaponization of these flaws highlights a growing trend of threat actors targeting development environments to facilitate credential harvesting and large-scale botnet operations.
 
 ============================================================
-Author:   Jacob Shamsian
-Source:   Business Insider
-URL:      https://www.businessinsider.com/sam-bankman-fried-anthropic-ftx-caroline-ellison-nishad-singh-doj-2026-8#article
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/09/attackers-exploit-critical-langflow-and.html
+Category: Cybersecurity

@@ -1,20 +1,20 @@
-Shadow AI is a security problem, but the EU AI Act makes it a legal one
+New ClickFix campaign can deploy powerful multi-stage malware directly through Windows Terminal and PowerShell
 ============================================================
 
-**Shadow AI usage by employees creates significant security vulnerabilities and regulatory risks for enterprises as the EU AI Act imposes strict compliance requirements on all AI deployments.**
+Microsoft security researchers have identified a new campaign called TerminalFix that uses fake Cloudflare CAPTCHAs to trick users into executing malicious PowerShell commands and installing network backdoors.
 
 ### Key Points
-- Nearly 50% of enterprise employees regularly input corporate data into unauthorized AI tools, often bypassing sanctioned alternatives.
-- The EU AI Act mandates strict data governance, audit logging, and transparency, with penalties reaching up to €15 million or 3% of global turnover.
-- Conventional security tools like CASBs and API gateways often fail to detect sensitive data flowing to consumer-grade AI platforms via encrypted web sessions.
-- Compliance requires endpoint-native detection to monitor data movement and generate the interaction logs necessary for regulatory audits.
-- Organizations must implement continuous AI discovery and literacy programs to address governance gaps across managed and unmanaged devices.
+- Attackers compromise websites to display fake CAPTCHA overlays that instruct users to copy and run malicious PowerShell scripts.
+- The scripts sideload a malicious DLL to deploy a Python-based implant named "client.py" on the victim's machine.
+- The implant establishes an encrypted WebSocket connection, providing attackers with SOCKS5-style proxy access to internal networks.
+- This technique allows attackers to bypass traditional security measures by leveraging Windows Terminal or PowerShell for complex script execution.
+- Microsoft warns that the campaign enables lateral movement, reconnaissance, and potential privilege escalation within corporate environments.
 
 ### Why it Matters
-Shadow AI has evolved from a minor productivity concern into a critical board-level risk that threatens both data security and legal standing. Organizations must now bridge the visibility gap between employee behavior and regulatory mandates to avoid severe financial penalties and potential data exposure.
+This campaign represents a significant escalation in social engineering tactics by providing attackers with persistent, remote access to internal network infrastructure. Organizations must treat compromised devices as critical security risks, as this level of access often serves as a precursor to data exfiltration or ransomware deployment.
 
 ============================================================
-Author:   Darren Williams
+Author:   Sead Fadilpašić
 Source:   TechRadar
-URL:      https://www.techradar.com/pro/shadow-ai-is-a-security-problem-but-the-eu-ai-act-makes-it-a-legal-one
+URL:      https://www.techradar.com/pro/security/new-clickfix-campaign-can-deploy-powerful-multi-stage-malware-directly-through-windows-terminal-and-powershell
 Category: Cybersecurity

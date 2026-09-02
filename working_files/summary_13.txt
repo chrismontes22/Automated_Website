@@ -1,20 +1,20 @@
-Want NSE shares before the IPO? Here’s how the unlisted market works
+[Sponsor] WorkOS: How to Give an Agent a Task Instead of a Token
 ============================================================
 
-The Securities and Exchange Board of India is nearing approval for the National Stock Exchange’s draft prospectus, paving the way for a major initial public offering this September.
+AI agents that handle third-party API tokens are vulnerable to credential theft because they process untrusted input, making it necessary to adopt proxy-based authentication to secure user data.
 
 ### Key Points
-- SEBI chairman Tuhin Kanta Pandey confirmed the regulator is close to clearing the National Stock Exchange (NSE) draft red herring prospectus.
-- The upcoming IPO will consist entirely of an offer for sale, allowing existing shareholders to reduce their stakes in the exchange.
-- NSE’s valuation is estimated at approximately Rs 5.26 lakh crore, potentially ranking it as the world's sixth-largest exchange operator by market capitalization.
-- The IPO timeline was delayed by three weeks following updates to the roster of selling shareholders, which now includes SBI Capital Markets.
-- Investors currently trade NSE shares in the unlisted, over-the-counter market through private negotiations facilitated by registered brokers and specialized platforms.
+- AI agents often leak OAuth tokens through logs, error reports, context windows, and tool call arguments during normal operation.
+- Prompt injection attacks can trick agents into exfiltrating these tokens to unauthorized third-party servers.
+- Traditional mitigations like scope narrowing and token rotation fail to address the fundamental risk of storing credentials in agent runtimes.
+- Credential proxying services, such as WorkOS Relay, allow agents to perform actions without ever holding the actual access tokens.
+- Proxying restricts agent capabilities to allowlisted hosts and prevents the permanent theft of bearer credentials.
 
 ### Why it Matters
-The NSE IPO represents a significant milestone for the Indian capital markets, potentially creating one of the world's most valuable exchange operators. A successful public listing will provide a transparent price discovery mechanism for the company, offering a major new investment opportunity for both retail and institutional participants.
+Moving sensitive credentials out of the agent runtime significantly reduces the blast radius of a potential security breach. By centralizing authentication through a proxy, organizations can ensure that even a compromised agent cannot permanently exfiltrate user access tokens.
 
 ============================================================
-Author:   Kumar Gaurav
-Source:   The Times of India
-URL:      https://economictimes.indiatimes.com/markets/ipos/fpos/want-nse-shares-before-the-ipo-heres-how-the-unlisted-market-works/articleshow/133656338.cms
-Category: Tech Business & Markets
+Author:   Daring Fireball Department of Commerce
+Source:   Workos.com
+URL:      https://workos.com/blog/delegated-access-for-ai-agents
+Category: Cybersecurity
