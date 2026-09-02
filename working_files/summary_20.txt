@@ -1,20 +1,20 @@
-New ClickFix campaign can deploy powerful multi-stage malware directly through Windows Terminal and PowerShell
+Wells, BofA, Citi back upcoming stablecoin
 ============================================================
 
-Microsoft security researchers have identified a new campaign called TerminalFix that uses fake Cloudflare CAPTCHAs to trick users into executing malicious PowerShell commands and installing network backdoors.
+Twenty-one global financial institutions, including Bank of America, Citi, and Goldman Sachs, have announced plans to launch a new company supporting a regulated U.S. dollar-denominated stablecoin by 2027.
 
 ### Key Points
-- Attackers compromise websites to display fake CAPTCHA overlays that instruct users to copy and run malicious PowerShell scripts.
-- The scripts sideload a malicious DLL to deploy a Python-based implant named "client.py" on the victim's machine.
-- The implant establishes an encrypted WebSocket connection, providing attackers with SOCKS5-style proxy access to internal networks.
-- This technique allows attackers to bypass traditional security measures by leveraging Windows Terminal or PowerShell for complex script execution.
-- Microsoft warns that the campaign enables lateral movement, reconnaissance, and potential privilege escalation within corporate environments.
+- The consortium includes major banks such as Capital One, Wells Fargo, UBS, Deutsche Bank, and Santander.
+- The initiative aims to launch a U.S. dollar-denominated stablecoin by early 2027, with future plans to expand into other G7 currencies like the euro.
+- The project focuses on providing a secure, compliant digital money solution for wholesale, institutional, and retail cross-border payments and asset settlements.
+- The new entity will be established by the end of 2024, positioning it ahead of the January 2025 effective date for the Genius Act digital-asset regulations.
+- JPMorgan Chase is notably absent from the project, continuing its independent strategy involving its proprietary JPM Coin and blockchain technology.
 
 ### Why it Matters
-This campaign represents a significant escalation in social engineering tactics by providing attackers with persistent, remote access to internal network infrastructure. Organizations must treat compromised devices as critical security risks, as this level of access often serves as a precursor to data exfiltration or ransomware deployment.
+This initiative represents a significant shift as traditional banks move to capture the growing market for digital assets and prevent the migration of commercial deposits into private stablecoins. By establishing a bank-governed alternative, these institutions aim to maintain their influence over global payment systems while leveraging blockchain technology for more efficient cross-border settlements.
 
 ============================================================
-Author:   Sead Fadilpašić
-Source:   TechRadar
-URL:      https://www.techradar.com/pro/security/new-clickfix-campaign-can-deploy-powerful-multi-stage-malware-directly-through-windows-terminal-and-powershell
-Category: Cybersecurity
+Author:   Dan Ennis
+Source:   Bankingdive.com
+URL:      https://www.bankingdive.com/news/bofa-wells-fargo-citi-back-upcoming-stablecoin-goldman-pnc-capital-one/829318/
+Category: Tech Business & Markets

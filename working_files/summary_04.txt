@@ -1,21 +1,20 @@
-Tim Cook’s Apple: his 10 biggest wins and misses
+13 Malicious Packagist Packages Target Unpatched iPhones to Steal Crypto Wallet Seeds
 ============================================================
 
-After 15 years as CEO, Tim Cook is stepping down from Apple, leaving behind a legacy defined by massive financial growth, hardware innovation, and several high-profile product challenges.
+Cybersecurity researchers identified 13 malicious Composer theme packages on Packagist that inject JavaScript into Vietnamese streaming sites to deploy spyware and steal data from unpatched iOS devices.
 
 ### Key Points
-- Tim Cook is being succeeded as CEO by John Ternus, the company’s former hardware leader.
-- Under Cook, Apple became the first U.S. company to reach a $1 trillion market cap, eventually surpassing $4 trillion.
-- Major successes included the expansion of the services division, the transition to custom Apple silicon, and the launch of the Apple Watch and AirPods.
-- Significant setbacks included the cancellation of the $10 billion "Project Titan" car initiative and the underwhelming market performance of the Vision Pro headset.
-- The company faced ongoing regulatory scrutiny regarding App Store policies and struggled with the delayed rollout of AI-enhanced Siri features.
-- Cook maintained a strong stance on user privacy, notably refusing to build backdoors into encrypted devices for government agencies.
+- Malicious packages target OphimCMS and KKPhim themes, enabling ad fraud, gambling redirects, and sophisticated iOS spyware deployment.
+- The exploit chain weaponizes WebKit vulnerabilities CVE-2025-31277 and CVE-2025-43529 to bypass sandbox protections and gain kernel-level access.
+- Attackers exfiltrate sensitive data including keychain databases, Wi-Fi passwords, SMS history, photos, and cryptocurrency wallet seeds.
+- The campaign specifically targets iOS versions 18.4 through 18.6.x, affecting devices ranging from iPhone XS to iPhone 16.
+- Infrastructure used in the attacks is linked to Funnull, an entity previously sanctioned by the U.S. for facilitating large-scale cryptocurrency scams.
 
 ### Why it Matters
-Cook’s tenure transformed Apple from a hardware-focused company into a diversified services and health-tech powerhouse that dominates global market valuations. His departure marks a pivotal transition for the tech giant as it navigates increasing regulatory pressure and the need to successfully integrate artificial intelligence into its core product ecosystem.
+This campaign demonstrates a significant supply chain risk where compromised website themes turn legitimate streaming platforms into vectors for high-stakes mobile espionage and financial theft. By exploiting unpatched iOS vulnerabilities, attackers can silently harvest personal data and cryptocurrency assets from unsuspecting site visitors.
 
 ============================================================
-Author:   Emma Roth
-Source:   The Verge
-URL:      https://www.theverge.com/tech/987043/tim-cook-biggest-wins-misses
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/09/13-malicious-packagist-packages-target.html
+Category: Cybersecurity

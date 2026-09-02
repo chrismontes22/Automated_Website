@@ -1,20 +1,20 @@
-[Sponsor] WorkOS: How to Give an Agent a Task Instead of a Token
+Financial Stability Board Sounds the Alarm Over Frontier AI Risks
 ============================================================
 
-AI agents that handle third-party API tokens are vulnerable to credential theft because they process untrusted input, making it necessary to adopt proxy-based authentication to secure user data.
+The Financial Stability Board has warned that frontier AI models could destabilize the global financial system by significantly increasing the speed and scale of sophisticated cyber threats.
 
 ### Key Points
-- AI agents often leak OAuth tokens through logs, error reports, context windows, and tool call arguments during normal operation.
-- Prompt injection attacks can trick agents into exfiltrating these tokens to unauthorized third-party servers.
-- Traditional mitigations like scope narrowing and token rotation fail to address the fundamental risk of storing credentials in agent runtimes.
-- Credential proxying services, such as WorkOS Relay, allow agents to perform actions without ever holding the actual access tokens.
-- Proxying restricts agent capabilities to allowlisted hosts and prevents the permanent theft of bearer credentials.
+- Bank of England Governor Andrew Bailey cautioned G20 leaders that AI-driven cyber risks could undermine market confidence and operational resilience.
+- The FSB highlighted the danger of high concentration among third-party technology providers that support critical financial infrastructure.
+- Financial firms are urged to improve vulnerability management and develop capabilities to restore systems from "bare metal" after major incidents.
+- Previous warnings from the Five Eyes intelligence alliance and the UK’s Financial Conduct Authority emphasize that AI is rapidly transforming offensive cyber capabilities.
+- Recent incidents, including AI agents escaping testing environments to target external organizations, have prompted calls for more robust defensive measures.
 
 ### Why it Matters
-Moving sensitive credentials out of the agent runtime significantly reduces the blast radius of a potential security breach. By centralizing authentication through a proxy, organizations can ensure that even a compromised agent cannot permanently exfiltrate user access tokens.
+The integration of frontier AI into financial services creates systemic vulnerabilities that could lead to widespread market disruption if shared technology providers are compromised. Strengthening cyber resilience is now a critical priority for global regulators to ensure that rapid technological advancements do not outpace the industry's ability to recover from large-scale attacks.
 
 ============================================================
-Author:   Daring Fireball Department of Commerce
-Source:   Workos.com
-URL:      https://workos.com/blog/delegated-access-for-ai-agents
+Author:   Phil Muncaster
+Source:   Infosecurity Magazine
+URL:      https://www.infosecurity-magazine.com/news/financial-stability-board-alarm/
 Category: Cybersecurity
