@@ -1,20 +1,20 @@
-I tested 5 minimalist notes apps, and this one actually stuck
+GeoNetwork Fixes Unauthenticated RCE Chain Affecting Government Geoportal Backends
 ============================================================
 
-A recent review of five minimalist note-taking applications highlights Simplenote as the most effective tool for users seeking a distraction-free, cross-platform experience for daily writing and organization.
+Security researchers discovered two vulnerabilities in the GeoNetwork geospatial metadata catalog that allow unauthenticated attackers to achieve remote code execution by chaining file uploads with unsafe processing.
 
 ### Key Points
-- The review evaluated Notally, Simplenote, Easy Notes, Notesnook, and HedgeDoc based on ease of use and feature sets.
-- Simplenote was selected as the top choice for its reliable cross-device syncing, Markdown support, and efficient tag-based organization.
-- Notally offers a bare-bones interface, while Easy Notes provides extra utility through password protection, photo attachments, and voice input.
-- Notesnook prioritizes user privacy by utilizing end-to-end encryption for all synced notes.
-- HedgeDoc functions as a collaborative, browser-based workspace designed for real-time document sharing and live Markdown previews.
+- The vulnerability chain affects GeoNetwork versions 4.0.6 through 4.4.11 and 4.2.16, with patches released in versions 4.4.12 and 4.2.17.
+- CVE-2026-63219 involves a missing authorization check on the formatter upload endpoint, while CVE-2026-58400 exploits an unsafe configuration in the Saxon XSLT processor.
+- Security firm Ethiack identified 121 internet-exposed instances across 39 countries, noting that 89 percent are associated with government, military, or national agencies.
+- Administrators can mitigate the risk by configuring reverse proxies to block POST, PUT, and PATCH requests to the /geonetwork/srv/api/formatters endpoint.
+- The flaws were reported by researcher Rafael Castilho and fixed by the Open Source Geospatial Foundation (OSGeo) on July 8, 2026.
 
 ### Why it Matters
-Choosing the right note-taking software can significantly improve personal productivity by reducing the friction associated with complex, feature-heavy platforms. Simplenote’s success demonstrates that many users prioritize lightweight, reliable synchronization and simple formatting over advanced database or project management capabilities.
+GeoNetwork is a critical component of global Spatial Data Infrastructure, and these vulnerabilities pose a significant risk to government and military geoportals that manage sensitive geographic data. Because the exploit chain allows for unauthenticated remote code execution, immediate patching is essential to prevent potential unauthorized access to infrastructure backends.
 
 ============================================================
-Author:   Yash Patel
-Source:   XDA Developers
-URL:      https://www.xda-developers.com/i-tested-5-minimalist-notes-apps-and-this-one-actually-stuck/
-Category: Phones, Laptops, and Gadgets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/09/geonetwork-fixes-unauthenticated-rce.html
+Category: Cybersecurity

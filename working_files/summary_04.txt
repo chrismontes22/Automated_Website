@@ -1,20 +1,20 @@
-Acer’s IFA 2026 Spans Paper-Like Monitors to a Rubber Duck Projector
+WhatsApp has a major new Android bug that can expose all your private photos — check this permission now
 ============================================================
 
-Acer unveiled a diverse lineup of seven new devices at IFA 2026, focusing on flexible productivity and entertainment tools ranging from ePaper monitors to AI-integrated portable projectors.
+Security researcher Jose Rodriguez has identified a WhatsApp exploit on certain Android devices that allows unauthorized users to bypass lock screens and access private photo galleries during calls.
 
 ### Key Points
-- The EP130K ePaper monitor features a 3200×2400 resolution display and bi-stable technology, launching in North America in Q1 2027 for $749.
-- The PD163Q P3 triple-screen extender offers three 15.6-inch FHD panels for $349, designed to simplify mobile workstations via a single USB-C connection.
-- The C350e portable projector includes an AI-powered detachable badge for interactive widgets and is priced at approximately $215 for EMEA markets.
-- Acer introduced four Iconia tablets, split between premium OLED X-series and entry-level IPS A-series models, all featuring integrated tripod kickstands.
-- The entire product suite emphasizes modularity and portability, aiming to adapt to various user environments from home offices to outdoor spaces.
+- The exploit requires physical access to an Android smartphone and involves interacting with Meta AI features during an incoming WhatsApp video call.
+- Affected devices include the Oppo K13 and Pixel 6, while models like the Samsung Galaxy S25 Ultra and Razr Fold appear to be immune.
+- Apple devices remain unaffected because iOS uses the CallKit framework to route VoIP calls through a secure, native interface.
+- Users can mitigate the risk by navigating to app settings and restricting WhatsApp’s access to photos and camera permissions.
+- Neither Google nor Android manufacturers have issued an official patch or formal statement regarding the vulnerability at this time.
 
 ### Why it Matters
-These product launches signal a strategic shift toward prioritizing hardware flexibility and ergonomic utility over raw technical specifications. By offering affordable, multi-functional tools, Acer is positioning itself to capture the growing market of hybrid workers and consumers who require adaptable technology for diverse daily environments.
+This vulnerability highlights a significant security gap in how third-party applications interact with system-level permissions on specific Android configurations. Users should restrict app permissions to protect sensitive data until manufacturers release official software updates to address the flaw.
 
 ============================================================
-Author:   JC Torres
-Source:   Yanko Design
-URL:      https://www.yankodesign.com/2026/09/02/acers-ifa-2026-spans-paper-like-monitors-to-a-rubber-duck-projector/
-Category: Phones, Laptops, and Gadgets
+Author:   Will McCurdy
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/whatsapp-major-new-android-bug-can-expose-all-private-photos-check-permission-now/
+Category: Cybersecurity

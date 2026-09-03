@@ -1,20 +1,20 @@
-Your Business Doesn’t Need More Ideas — It Needs Intrapreneurs to Execute Them
+Dropbox breach seemingly caused by egregious authentication failure [U]
 ============================================================
 
-Intrapreneurs are high-performing employees who apply entrepreneurial skills within established organizations to drive innovation, manage complex projects, and help business owners scale their operations effectively.
+Dropbox has confirmed a security breach affecting approximately 5,000 user accounts, caused by a flaw in the single sign-on integration process between the cloud provider and Lenovo.
 
 ### Key Points
-- Intrapreneurs exhibit core entrepreneurial traits including vision, risk tolerance, resourcefulness, and a strong sense of ownership.
-- These individuals allow business owners to delegate critical tasks like identifying new revenue streams and leading digital transformation initiatives.
-- Effective intrapreneurs navigate corporate bureaucracy to launch new products and enter emerging markets using company resources.
-- Business owners can incentivize these high-performers through rewards like phantom stock to foster long-term commitment and growth.
-- While intrapreneurs are essential for organizational agility, they may not always be prepared to assume the personal financial risks required for full business ownership.
+- Unauthorized access occurred between August 4 and August 21, 2026, with files downloaded from roughly 1,500 accounts.
+- The vulnerability stemmed from a Lenovo email verification process that allowed attackers to register accounts using victims' email addresses.
+- Dropbox failed to require secondary authentication or user consent when linking new Lenovo IDs to existing Dropbox accounts.
+- The company has since patched the security flaw and terminated all active sessions authenticated through the compromised Lenovo ID integration.
+- Users are strongly encouraged to enable two-factor authentication to protect their accounts from future unauthorized access attempts.
 
 ### Why it Matters
-Integrating intrapreneurs into a workforce allows business owners to distribute the heavy burden of innovation and strategic decision-making. This collaborative approach helps companies remain competitive in rapidly changing industries while preventing founder burnout.
+This incident highlights the significant security risks associated with federated identity systems when platforms fail to implement rigorous account-linking protocols. It serves as a critical reminder for users to maintain multi-factor authentication, as even trusted third-party integrations can become vectors for unauthorized data access.
 
 ============================================================
-Author:   Cynthia Kay
-Source:   Entrepreneur
-URL:      https://www.entrepreneur.com/building-a-business/your-business-doesnt-need-more-ideas-it-needs-intrapreneurs-to-execute-them
-Category: Tech Business & Markets
+Author:   Ben Lovejoy
+Source:   9to5Mac
+URL:      https://9to5mac.com/2026/09/02/dropbox-login-breach-seemingly-caused-by-egregious-authentication-failure/
+Category: Cybersecurity
