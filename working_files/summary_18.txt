@@ -1,20 +1,19 @@
-Dropbox breach seemingly caused by egregious authentication failure [U]
+International Operation Disrupts Sality P2P Botnet
 ============================================================
 
-Dropbox has confirmed a security breach affecting approximately 5,000 user accounts, caused by a flaw in the single sign-on integration process between the cloud provider and Lenovo.
+A US-led international law enforcement operation successfully disrupted the long-running Sality peer-to-peer botnet, which has infected millions of devices globally over the past two decades.
 
 ### Key Points
-- Unauthorized access occurred between August 4 and August 21, 2026, with files downloaded from roughly 1,500 accounts.
-- The vulnerability stemmed from a Lenovo email verification process that allowed attackers to register accounts using victims' email addresses.
-- Dropbox failed to require secondary authentication or user consent when linking new Lenovo IDs to existing Dropbox accounts.
-- The company has since patched the security flaw and terminated all active sessions authenticated through the compromised Lenovo ID integration.
-- Users are strongly encouraged to enable two-factor authentication to protect their accounts from future unauthorized access attempts.
+- The August 31 operation involved authorities from the US, Bulgaria, Hungary, and Romania, supported by Europol, CrowdStrike, and the Shadowserver Foundation.
+- Sality has operated for over 20 years, impacting more than 11 million unique IP addresses through malicious activities like crypto-theft, spam, and DDoS attacks.
+- Investigators utilized "sinkholing" to redirect traffic from infected machines, effectively isolating them from the botnet's decentralized command infrastructure.
+- Security experts exploited the botnet's peer-verification protocol to remove malicious nodes and replace them with sinkhole entries for victim notification and remediation.
 
 ### Why it Matters
-This incident highlights the significant security risks associated with federated identity systems when platforms fail to implement rigorous account-linking protocols. It serves as a critical reminder for users to maintain multi-factor authentication, as even trusted third-party integrations can become vectors for unauthorized data access.
+This operation marks a significant blow to a persistent cyber threat that has facilitated widespread credential theft and network exploitation for two decades. By dismantling such a resilient, decentralized infrastructure, law enforcement demonstrates an increasing ability to coordinate complex, multi-jurisdictional responses against long-standing criminal botnets.
 
 ============================================================
-Author:   Ben Lovejoy
-Source:   9to5Mac
-URL:      https://9to5mac.com/2026/09/02/dropbox-login-breach-seemingly-caused-by-egregious-authentication-failure/
+Author:   Phil Muncaster
+Source:   Infosecurity Magazine
+URL:      https://www.infosecurity-magazine.com/news/international-operation-disrupts/
 Category: Cybersecurity
