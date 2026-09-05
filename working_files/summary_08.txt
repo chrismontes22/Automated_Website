@@ -1,20 +1,20 @@
-Dyson CameraJet Toothbrush
+Plex Urges Immediate Updates After Patching Multiple Undisclosed Security Flaws
 ============================================================
 
-Dyson has unveiled a high-tech toothbrush featuring an integrated 100,000-pixel camera and AI-driven targeting to automatically spray mouthrinse into gaps between teeth during a standard brushing session.
+Plex has released critical security updates for Plex Media Server and Plex Desktop, urging all users to install the latest versions immediately to patch multiple undisclosed software vulnerabilities.
 
 ### Key Points
-- The device uses Gap Optical Targeting to detect interdental spaces and fire a precision mouthrinse jet within 100 milliseconds.
-- A specialized anti-gravity pump ensures consistent fluid delivery regardless of the brush's orientation during use.
-- Brush heads feature dual-density bristles that oscillate at high speeds to remove surface stains and clean along the gumline.
-- Dyson developed the spray technology in collaboration with the National University of Singapore’s dental faculty using custom "proxy plaque" testing.
-- The companion app provides a real-time live feed of the user's mouth without recording or storing any personal image data.
+- Users should update to Plex Media Server version 1.43.3 and Plex Desktop version 1.115.0 to secure their installations.
+- Plex has requested CVE identifiers for the newly discovered flaws but has not yet disclosed specific technical details regarding the vulnerabilities.
+- Owners running Plex on NAS devices may need to perform manual installations if the update is not yet available in their specific package manager.
+- Censys data indicates over 360,000 Plex Media Server web interfaces are currently exposed to the public internet.
+- Previous Plex vulnerabilities have been linked to significant security incidents, including the 2022 LastPass data breach.
 
 ### Why it Matters
-This innovation represents a significant shift in oral hygiene technology by combining real-time visual feedback with automated, precision-targeted cleaning. By integrating professional-grade imaging into a consumer device, Dyson aims to improve dental health outcomes through enhanced visibility and more effective plaque removal.
+Promptly patching these vulnerabilities is essential to prevent unauthorized access to personal media infrastructure and sensitive account information. Given the history of attackers exploiting Plex flaws to facilitate broader cyberattacks, maintaining updated software is a critical defense for all server administrators.
 
 ============================================================
-Author:   Uncrate
-Source:   Uncrate.com
-URL:      https://uncrate.com/dyson-camerajet-toothbrush/
-Category: Phones, Laptops, and Gadgets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/09/plex-urges-immediate-updates-after.html
+Category: Cybersecurity
