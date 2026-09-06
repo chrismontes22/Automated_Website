@@ -1,20 +1,20 @@
-Can Trump Save Public Perception of Data Centers?
+Attackers Exploit PaperCut Flaws to Steal Credentials From Schools and Universities
 ============================================================
 
-Despite President Donald Trump’s vocal support for data center expansion, public opposition remains high as critics argue that Big Tech companies must improve their local community engagement strategies.
+Cybersecurity researchers at Arctic Wolf report that threat actors are actively exploiting critical PaperCut vulnerabilities to steal credentials and compromise educational institutions across the United States and Europe.
 
 ### Key Points
-- A May 13 Gallup poll indicates that 70% of Americans oppose the construction of data centers within their local communities.
-- Former White House strategist Steve Bannon and Treasury Secretary Scott Bessent argue that tech companies have failed to justify the local economic and utility impacts of these facilities.
-- In July, 23 governors signed the Ratepayer Protection Pledge, which aims to shield residents from increased energy costs caused by data center operations.
-- Vice President JD Vance noted that public backlash often stems from concerns that data centers increase utility bills rather than contributing power back to the grid.
-- Proponents cite Quincy, Washington, as a success story where data center tax contributions helped reduce the local poverty rate from 29% to 6%.
+- Attackers are chaining CVE-2026-81578 and CVE-2026-82078 to bypass authentication and execute remote code on vulnerable PaperCut servers.
+- Malicious activity includes creating privileged accounts, deploying credential-harvesting tools like lsa_collect.exe, and extracting sensitive system registry data.
+- Researchers identified malicious traffic originating from IP addresses 45.142.193.132 and 194.180.48.134 to facilitate data exfiltration and establish Meterpreter sessions.
+- Compromised systems are being searched for configuration files containing passwords, LDAP credentials, and security tokens.
+- Security teams are advised to restrict internet exposure for PaperCut servers and monitor for suspicious command-line activity originating from the pc-app.exe process.
 
 ### Why it Matters
-The tension between national AI infrastructure goals and local community resistance highlights a significant public relations challenge for the technology industry. If companies fail to demonstrate tangible local benefits, they risk continued political friction and potential regulatory hurdles that could impede the broader expansion of AI-related infrastructure.
+These exploits pose a significant risk to educational organizations by providing attackers with a gateway to broader network infiltration through stolen administrative credentials. Securing these servers is essential to prevent unauthorized access to sensitive institutional data and the potential escalation of attacks into critical infrastructure.
 
 ============================================================
-Author:   Elizabeth Mitchell
-Source:   Daily Signal
-URL:      https://www.dailysignal.com/2026/09/04/trump-perception-data-centers/
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/09/attackers-exploit-papercut-flaws-to.html
+Category: Cybersecurity
