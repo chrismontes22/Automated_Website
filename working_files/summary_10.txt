@@ -1,20 +1,20 @@
-WordPress Security Plugins: How to Choose the Right One
+Running Generative AI on an RP2350
 ============================================================
 
-WordPress security plugins provide essential hardening, malware detection, and activity monitoring, but they should be used alongside external firewalls and off-server backups to ensure comprehensive site protection.
+A developer named Tim has successfully implemented an image generation diffusion model capable of running locally on a compact Waveshare RP2350 microcontroller with limited hardware resources.
 
 ### Key Points
-- WordPress security plugins function inside the application, meaning they only activate after PHP and WordPress have loaded.
-- Core security features include hardening settings, malware scanning, file integrity monitoring, activity logging, and application-level traffic filtering.
-- A "defense in depth" strategy requires combining a plugin for internal visibility with a cloud-based Web Application Firewall (WAF) for upstream traffic filtering.
-- Site owners should prioritize account audits, two-factor authentication, regular software updates, and testing off-server backups over relying solely on plugin settings.
-- Running multiple security suites simultaneously can cause performance issues, conflicting rules, and duplicate alerts, so one well-integrated plugin is recommended.
+- The model generates 128×128 resolution images of human faces in approximately 20 seconds.
+- It utilizes a latent flow diffusion transformer and a variational auto-encoder decoder to process images.
+- The system runs on a Waveshare RP2350 development board and outputs data via USB or VGA.
+- Both the inference program and two quantized 8-bit integer models fit within 4 MB of flash memory.
+- Users can provide input classes to guide the generator, such as requesting a smiling facial expression.
 
 ### Why it Matters
-Relying on a single security plugin often leaves critical gaps in protection, particularly against automated attacks that target vulnerabilities before they reach the WordPress environment. Implementing a layered security approach ensures that even if one defense layer is bypassed or disabled, other measures remain in place to protect site data and maintain uptime.
+This project demonstrates the feasibility of running complex generative AI models on extremely low-power, inexpensive hardware. It highlights the potential for edge computing to provide private, localized AI capabilities without requiring cloud-based processing or high-end GPUs.
 
 ============================================================
-Author:   Sucuri
-Source:   Sucuri.net
-URL:      https://blog.sucuri.net/2026/09/wordpress-security-plugins-how-to-choose-the-right-one.html
-Category: Cybersecurity
+Author:   Aaron Beckendorf
+Source:   Hackaday
+URL:      https://hackaday.com/2026/09/05/running-generative-ai-on-an-rp2350/
+Category: Artificial Intelligence
