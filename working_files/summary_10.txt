@@ -1,20 +1,20 @@
-Running Generative AI on an RP2350
+Delete Someone From a Group Photo Without Ever Opening Photoshop
 ============================================================
 
-A developer named Tim has successfully implemented an image generation diffusion model capable of running locally on a compact Waveshare RP2350 microcontroller with limited hardware resources.
+Adobe Lightroom users can now remove unwanted individuals from group photos by leveraging Adobe Firefly’s generative AI models to close gaps without requiring complex Photoshop masking skills.
 
 ### Key Points
-- The model generates 128×128 resolution images of human faces in approximately 20 seconds.
-- It utilizes a latent flow diffusion transformer and a variational auto-encoder decoder to process images.
-- The system runs on a Waveshare RP2350 development board and outputs data via USB or VGA.
-- Both the inference program and two quantized 8-bit integer models fit within 4 MB of flash memory.
-- Users can provide input classes to guide the generator, such as requesting a smiling facial expression.
+- Adobe Lightroom now integrates with Adobe Firefly, allowing users to export images for generative editing directly from the software's photo menu.
+- Users can select from multiple AI models, including Adobe Firefly Image 5, ChatGPT, and Google Gemini 3.1, to perform complex object removal and repositioning.
+- Specific text prompts are required to maintain consistency in facial features, hair, clothing, and background details during the generative process.
+- Generative edits consume varying amounts of credit, with high-quality outputs from third-party models like ChatGPT costing up to 80 credits per edit.
+- Regenerated images often require manual upscaling after download, as the output resolution may be lower than the original camera file.
 
 ### Why it Matters
-This project demonstrates the feasibility of running complex generative AI models on extremely low-power, inexpensive hardware. It highlights the potential for edge computing to provide private, localized AI capabilities without requiring cloud-based processing or high-end GPUs.
+This workflow demonstrates a significant shift in Adobe’s strategy to democratize advanced generative editing tools by moving them outside the professional-grade Photoshop environment. It provides casual photographers with a practical, accessible method to refine personal images while highlighting the growing trend of model-agnostic AI integration in creative software.
 
 ============================================================
-Author:   Aaron Beckendorf
-Source:   Hackaday
-URL:      https://hackaday.com/2026/09/05/running-generative-ai-on-an-rp2350/
+Author:   Alex Cooke
+Source:   Fstoppers
+URL:      https://fstoppers.com/education/delete-someone-group-photo-without-ever-opening-photoshop-904484
 Category: Artificial Intelligence
