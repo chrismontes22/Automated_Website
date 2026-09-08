@@ -1,20 +1,20 @@
-Roku's 24/7 AI Slop Channel Is Even Worse Than Expected
+Rogue ScreenConnect Clients Spread Four-Stage VBScript Chain to Newly Connected Hosts
 ============================================================
 
-Fairground AI Creator TV has launched a 24-hour ad-supported streaming channel on Roku featuring films produced using generative artificial intelligence tools by over 100 independent creators.
+Cybersecurity researchers at Huntress have identified a worm-like campaign abusing ConnectWise ScreenConnect to deploy malicious VBScript payloads and secondary tools across compromised remote access support systems.
 
 ### Key Points
-- The channel, titled Fairground AI Creator TV, offers free, ad-supported programming consisting entirely of content created with generative AI tools.
-- Creators like Frank Houbre use AI for animation, voice synthesis, and music, while maintaining traditional roles in screenwriting and narrative development.
-- The platform features contributions from more than 100 independent creators, many of whom were sourced through social media platforms.
-- Early critical reception has been largely negative, with outlets like The Guardian and The Verge describing the content as low-quality and disjointed.
-- Programming lacks a consistent schedule, featuring a wide variety of genres ranging from anime to historical shorts.
+- Attackers utilize social engineering, phishing, and fake refund forms to install rogue ScreenConnect clients on victim machines.
+- A four-stage VBScript chain profiles host systems, checks for security software, and downloads secondary payloads from Dropbox.
+- Depending on system state, payloads include user-level backdoors, privilege escalation tools, or XMRig cryptocurrency miners.
+- The malware exhibits worm-like behavior by propagating malicious scripts to new hosts that connect to an already infected ScreenConnect client.
+- ConnectWise has acknowledged the vulnerability and recommends that administrators temporarily disable file transfer permissions to mitigate unauthorized script execution.
 
 ### Why it Matters
-The launch of this channel highlights the ongoing debate regarding the quality and consumer demand for AI-generated entertainment in the streaming market. It serves as a test case for whether platforms can successfully monetize experimental AI content despite significant criticism from professional reviewers and audiences.
+This campaign highlights the significant security risks posed by compromised remote monitoring and management tools, which can be weaponized to facilitate lateral movement across networks. Organizations should prioritize disabling unnecessary file transfer capabilities and consider re-imaging systems that have been exposed to these malicious scripts.
 
 ============================================================
-Author:   EditorDavid
-Source:   Slashdot.org
-URL:      https://entertainment.slashdot.org/story/26/09/06/0633216/rokus-247-ai-slop-channel-is-even-worse-than-expected
-Category: Artificial Intelligence
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/09/rogue-screenconnect-clients-spread-four.html
+Category: Cybersecurity

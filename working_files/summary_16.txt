@@ -1,20 +1,19 @@
-Attackers spread malware through ScreenConnect file transfers
+The Onion’s Exclusive Interview With Larry Ellison
 ============================================================
 
-ConnectWise is addressing a critical file transfer vulnerability in its ScreenConnect remote access software that researchers warn could be exploited to spread malware across connected IT systems.
+Oracle co-founder and Paramount Skydance shareholder Larry Ellison discussed his business ventures, personal wealth, and corporate strategies in a satirical interview with the publication The Onion.
 
 ### Key Points
-- ConnectWise confirmed a file transfer flaw affecting both Cloud and On-Premise ScreenConnect deployments, with an official security patch expected within the week.
-- Cybersecurity firm Huntress identified a campaign using rogue ScreenConnect clients to deploy malicious VBScripts and facilitate worm-like propagation across connected endpoints.
-- Attackers utilized the rogue instances to perform system discovery, establish persistence, and install additional payloads including cryptocurrency miners and tunneling tools.
-- Administrators are advised to immediately disable file transfer permissions within the ScreenConnect role settings to mitigate potential unauthorized activity.
-- Security teams should audit ScreenConnect logs for suspicious RunFiles entries and reimage any machines showing signs of compromise from verified, clean media.
+- Larry Ellison currently serves as the executive chairman of Oracle and holds the position of largest shareholder at the Paramount Skydance Corporation.
+- The billionaire addressed his recent decline in global wealth rankings, moving from the second to the eighth-richest person over a two-month period.
+- Ellison commented on the ongoing merger negotiations between Paramount and Warner Bros. Discovery, citing complex corporate challenges.
+- The executive joked about his personal life, his physical appearance, and his long-term ambitions regarding land ownership in Hawaii.
 
 ### Why it Matters
-This vulnerability poses a significant risk to managed service providers and IT departments that rely on ScreenConnect for remote infrastructure management. If left unaddressed, the flaw could allow attackers to gain persistent access to sensitive networks and deploy malicious payloads across an entire organization's fleet.
+This interview highlights the intersection of high-stakes corporate consolidation and the public persona of one of the world's wealthiest technology executives. It underscores the growing influence of major shareholders in the entertainment industry as they navigate complex antitrust concerns and media mergers.
 
 ============================================================
-Author:   Sinisa Markovic
-Source:   Help Net Security
-URL:      https://www.helpnetsecurity.com/2026/09/07/connectwise-screenconnect-file-transfer-flaw/
-Category: Cybersecurity
+Author:   John Gruber
+Source:   Theonion.com
+URL:      https://theonion.com/the-onions-exclusive-interview-with-larry-ellison/
+Category: Tech Business & Markets
