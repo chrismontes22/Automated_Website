@@ -1,20 +1,20 @@
-Ahead of Market: 10 things that will decide stock market action on Monday
+Bot Detection Without JavaScript: What My Blog Measured
 ============================================================
 
-Indian equities closed higher on Friday as the Sensex rose 363 points to 76,515, while investors remained cautious ahead of critical US employment and inflation data releases.
+A blog owner implemented new Cloudflare Worker request-header and network rules to filter bot traffic, successfully reclassifying 74.5% of browser-User-Agent requests as non-human traffic.
 
 ### Key Points
-- The Sensex climbed to 76,515, while the Nifty 50 ended the session slightly below the 23,898 mark.
-- Market sentiment was bolstered by resilient domestic economic growth and strong earnings momentum despite persistent geopolitical tensions in the Middle East.
-- Vodafone Idea led volume-based trading with 52.55 crore shares, while Swiggy recorded the highest turnover at Rs 5,089 crore.
-- The broader market showed mixed results, with Nifty Smallcap 100 indices reaching fresh intraday lifetime highs while Nifty Midcap 100 declined.
-- European markets saw modest gains, with the STOXX 600 rising 0.1% as Volkswagen shares surged 5.9% following a new turnaround plan.
+- The analysis compared 372 browser-User-Agent requests against 14 Cloudflare Web Analytics page loads over two days.
+- New classification rules utilize network metadata, Fetch Metadata headers, and browser version thresholds to identify automated traffic.
+- Repairs were made to address defects in HTML-acceptance checks and missing network-provenance markers in database logs.
+- The study distinguishes between verified bot signatures, such as those from Ahrefs or DuckAssist, and unidentified automated requests.
+- The author emphasizes that browser-based analytics often conflate automated scripts with human readers, requiring more granular evidence for accurate measurement.
 
 ### Why it Matters
-Global market participants are closely monitoring US economic data to gauge the Federal Reserve's future interest rate trajectory and potential policy shifts. This uncertainty continues to influence investor behavior, keeping trading volumes volatile as markets balance domestic growth against international inflationary pressures.
+Distinguishing between human readers and automated bots is a significant challenge for website owners relying on standard analytics tools. By documenting these classification methods, the author provides a framework for improving data transparency and reducing the misinterpretation of traffic metrics.
 
 ============================================================
-Author:   Debaroti Adhikary
-Source:   The Times of India
-URL:      https://economictimes.indiatimes.com/markets/stocks/news/ahead-of-market-10-things-that-will-decide-stock-market-action-on-monday/articleshow/133834844.cms
-Category: Tech Business & Markets
+Author:   Goga Koreli
+Source:   Gkoreli.com
+URL:      https://gkoreli.com/how-i-separate-readers-from-bots-without-javascript
+Category: Cybersecurity

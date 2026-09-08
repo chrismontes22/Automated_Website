@@ -1,20 +1,20 @@
-Your Windows 11 default hibernation file is quietly eating 32GB of SSD write cycles, and here is the one-command fix
+Asia Fintech Forum 2026 to Convene Regulators, Bankers and Fintech Leaders in Kuala Lumpur on 2 October
 ============================================================
 
-Windows 11 users can reclaim significant storage space and extend SSD lifespan by disabling the legacy hiberfil.sys file, which unnecessarily consumes gigabytes of capacity on modern desktop systems.
+The Responsible Fintech Institute will host the inaugural Asia Fintech Forum on October 2, 2026, in Kuala Lumpur to address regional digital finance, AI, and cross-border regulatory interoperability.
 
 ### Key Points
-- The hiberfil.sys file reserves 40% to 100% of installed system RAM, often locking away 16GB to 50GB of SSD storage.
-- Windows 11 uses this file for "Fast Startup" by default, triggering large, repetitive write cycles that contribute to SSD NAND flash wear.
-- Running `powercfg.exe /hibernate off` in an administrative terminal deletes the file entirely, instantly freeing up disk space.
-- Users can alternatively run `powercfg /type reduced` to shrink the file size by 60% while maintaining Fast Startup functionality.
-- Modern NVMe drives are fast enough that the performance benefits of Fast Startup are negligible for most desktop and workstation users.
+- The one-day summit takes place at the World Trade Centre Kuala Lumpur and expects 1,000 delegates and 40 speakers.
+- Remi Technology serves as the title sponsor, focusing on stablecoin clearing and settlement infrastructure for financial institutions.
+- Key agenda topics include the ASEAN Digital Economy Framework Agreement (DEFA), agentic AI, Islamic fintech, and real-world asset (RWA) tokenization.
+- Confirmed speakers include executives from Aeon Bank, Luno Malaysia, Webull Malaysia, and the Labuan Financial Services Authority.
+- The event aims to bridge the gap between national rulemaking and regional regulatory alignment across the ASEAN market.
 
 ### Why it Matters
-Disabling hibernation prevents unnecessary write cycles, which helps preserve the finite endurance of high-speed NVMe SSDs over time. Reclaiming this reserved space also improves drive performance by providing more room for essential SLC caching and background garbage collection processes.
+The forum addresses the critical challenge of regulatory fragmentation as Asian nations develop disparate rules for digital assets and banking. By convening regulators and industry leaders, the event seeks to establish the cross-border standards necessary for scaling institutional fintech and digital capital markets.
 
 ============================================================
-Author:   Jasmine Mannan
-Source:   XDA Developers
-URL:      https://www.xda-developers.com/windows-11-default-hibernation-file-ieating-32gb-ssd-write-cycles-one-fix/
-Category: Phones, Laptops, and Gadgets
+Author:   cuelive
+Source:   BusinessLine
+URL:      https://www.thehindubusinessline.com/brandhub/pr-release/asia-fintech-forum-2026-to-convene-regulators-bankers-and-fintech-leaders-in-kuala-lumpur-on-2-october/article71437282.ece
+Category: Tech Business & Markets

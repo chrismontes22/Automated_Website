@@ -1,19 +1,20 @@
-Billionaires Pouring Money Into Ads About How AI Data Centers Are Actually Good
+Researcher Publishes CrowdStrike Privilege Escalation Zero Day
 ============================================================
 
-The advocacy group Build American AI is launching a multi-million dollar advertising campaign in Ohio, Wisconsin, and Kansas to promote the development of new artificial intelligence data centers.
+A security researcher known as Nightmare Eclipse has disclosed a zero-day privilege escalation exploit named FalconFlank affecting the CrowdStrike Falcon Sensor on fully updated Windows systems.
 
 ### Key Points
-- The campaign is funded by prominent tech figures, including venture capitalists Marc Andreessen and Ben Horowitz, and OpenAI president Greg Brockman.
-- OpenAI’s super PAC, Leading the Future, is reportedly providing financial backing for the publicity effort.
-- The initiative aims to counter growing public opposition to the construction of large-scale data infrastructure in local communities.
-- An August survey from the University of Pennsylvania found that 61 percent of American adults now oppose the construction of new data centers in their neighborhoods.
+- The exploit, dubbed FalconFlank, targets the Microsoft Office malicious macro remediation feature within the CrowdStrike Falcon Sensor.
+- Security researcher Kevin Beaumont confirmed the vulnerability, which currently affects Windows 11 25H2 and Windows Server 2025.
+- CrowdStrike has advised customers to temporarily disable the Microsoft Office File Suspicious Macro Removal policy while an investigation is underway.
+- No CVE identifier has been assigned to the vulnerability, and technical details were published to GitHub on September 3.
+- The researcher, Nightmare Eclipse, has previously released proof-of-concept exploits for other major security products, including Kaspersky and Avast.
 
 ### Why it Matters
-This campaign highlights a growing friction between the tech industry’s infrastructure requirements and increasing public resistance to data center expansion. The outcome of this messaging battle could influence future regulatory environments and the speed at which companies can scale AI-related physical assets.
+This incident highlights the inherent risks posed when security software itself contains vulnerabilities that can be leveraged by attackers to gain elevated system access. It underscores the ongoing challenge for organizations to balance the deployment of protective tools with the potential for those same products to become new vectors for cyberattacks.
 
 ============================================================
-Author:   Joe Wilkins
-Source:   Futurism
-URL:      https://futurism.com/future-society/billionaires-tech-executives-ai-data-centers-ad-blitz
-Category: Tech Business & Markets
+Author:   Phil Muncaster
+Source:   Infosecurity Magazine
+URL:      https://www.infosecurity-magazine.com/news/crowdstrike-privilege-escalation/
+Category: Cybersecurity

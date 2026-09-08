@@ -1,20 +1,21 @@
-PyBLE: A Bluetooth LE MicroPython IDE for ESP32
+Hard-Chat – A serverless, RAM-only P2P terminal chat
 ============================================================
 
-PyBLE is a new open-source IDE that enables wireless MicroPython development on tablets by using a custom Bluetooth LE protocol to communicate with ESP32-based microcontroller boards.
+Zero-Trace Terminal is a browser-based, peer-to-peer messaging tool that provides end-to-end encrypted communication without requiring user accounts, central servers, or persistent data storage for sensitive conversations.
 
 ### Key Points
-- PyBLE utilizes the PBLE/1 protocol, featuring a 247-byte MTU and 243-byte maximum payload per packet.
-- The system uses a GATT service with the base UUID 7079626c for reliable, wire-free communication.
-- Data integrity is maintained through IEEE CRC32 checks on every frame, with support for message fragmentation and interrupted transfer resumption.
-- The IDE supports essential development functions including code execution, file management, and console interaction via dedicated opcodes.
-- Compatible hardware includes low-cost, Bluetooth-enabled boards such as the ESP32-C3, ESP32-S3, and the Arduino NANO ESP32.
+- Uses AES-GCM 256-bit encryption for message content and PBKDF2 for key derivation.
+- Employs WebRTC for direct peer-to-peer data transfer, bypassing central message storage.
+- Features a "Panic Purge" button to instantly wipe all keys, connection states, and chat history.
+- Requires a 100-character shared Room Key to establish connections between two browser sessions.
+- Configured with 18 STUN/TURN server fallbacks to ensure connectivity through restrictive firewalls and NATs.
+- Operates as a static web application on GitHub Pages, requiring no proprietary backend or cookies.
 
 ### Why it Matters
-This project removes the need for traditional PC-based setups and USB cables, significantly lowering the barrier to entry for embedded programming in classrooms and field environments. By enabling direct tablet-to-hardware interaction, it offers a flexible, portable solution for managing robotics and IoT devices in hard-to-reach locations.
+This tool offers a privacy-focused alternative for users needing ephemeral, secure communication without the metadata risks associated with traditional centralized messaging platforms. While it protects message content, users must still employ a VPN to prevent IP-based deanonymization by third-party signaling and relay services.
 
 ============================================================
-Author:   Boris Landoni
-Source:   Open-electronics.org
-URL:      https://www.open-electronics.org/pyble-a-bluetooth-le-micropython-ide-for-esp32/
-Category: Phones, Laptops, and Gadgets
+Author:   mrhardlint
+Source:   Github.com
+URL:      https://github.com/mrhardlint/Hard-Chat
+Category: Cybersecurity

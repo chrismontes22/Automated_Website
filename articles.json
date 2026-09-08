@@ -1,5 +1,185 @@
 [
   {
+    "category": "Cybersecurity",
+    "title": "JSCeal Malware Can Bypass Google Authentication Using Stolen Session Cookies",
+    "url": "https://thehackernews.com/2026/09/jsceal-malware-can-bypass-google.html",
+    "processed_at": "2026-09-08T11:59:24.328177",
+    "source": "Internet",
+    "summary": "Cybersecurity researchers have identified JSCeal, a sophisticated JavaScript-based malware targeting cryptocurrency investors through malicious advertisements and fake trading platforms to steal sensitive browser data and credentials.\n\n### Key Points\n- JSCeal uses advanced obfuscation techniques, including control-flow flattening and RC4-protected strings, to evade detection and complicate reverse-engineering efforts.\n- The malware is distributed via malvertising campaigns on platforms like Facebook and Google, often masquerading as legitimate TradingView installers.\n- Once active, the malware extracts cookies, passwords, and OAuth tokens from various Chromium-based browsers, including Chrome, Edge, and Brave.\n- JSCeal features surveillance capabilities, such as keystroke logging and screenshot capture, alongside a local proxy to intercept and modify web traffic.\n- The malware specifically targets cryptocurrency users by monitoring account balances and modifying requests for platforms like Binance, Bybit, and Ledger.\n\n### Why it Matters\nThis campaign highlights a growing trend of highly evasive malware that utilizes memory-based assembly and complex obfuscation to bypass traditional security analysis. By targeting retail traders and cryptocurrency investors, these attacks pose a significant risk to financial assets and personal account security across global markets.",
+    "author": "info@thehackernews.com (The Hacker News)"
+  },
+  {
+    "category": "Cybersecurity",
+    "title": "Hard-Chat – A serverless, RAM-only P2P terminal chat",
+    "url": "https://github.com/mrhardlint/Hard-Chat",
+    "processed_at": "2026-09-08T11:59:34.310542",
+    "source": "Github.com",
+    "summary": "Zero-Trace Terminal is a browser-based, peer-to-peer messaging tool that provides end-to-end encrypted communication without requiring user accounts, central servers, or persistent data storage for sensitive conversations.\n\n### Key Points\n- Uses AES-GCM 256-bit encryption for message content and PBKDF2 for key derivation.\n- Employs WebRTC for direct peer-to-peer data transfer, bypassing central message storage.\n- Features a \"Panic Purge\" button to instantly wipe all keys, connection states, and chat history.\n- Requires a 100-character shared Room Key to establish connections between two browser sessions.\n- Configured with 18 STUN/TURN server fallbacks to ensure connectivity through restrictive firewalls and NATs.\n- Operates as a static web application on GitHub Pages, requiring no proprietary backend or cookies.\n\n### Why it Matters\nThis tool offers a privacy-focused alternative for users needing ephemeral, secure communication without the metadata risks associated with traditional centralized messaging platforms. While it protects message content, users must still employ a VPN to prevent IP-based deanonymization by third-party signaling and relay services.",
+    "author": "mrhardlint"
+  },
+  {
+    "category": "Tech Business & Markets",
+    "title": "AI and the ghosts of tech booms past",
+    "url": "https://www.techradar.com/pro/ai-and-the-ghosts-of-tech-booms-past",
+    "processed_at": "2026-09-08T11:59:45.336666",
+    "source": "TechRadar",
+    "summary": "The Bank of England warns that a potential AI market correction could trigger a UK recession, highlighting the need for businesses to balance innovation with disciplined operational risk management.\n\n### Key Points\n- The Bank of England estimates that a significant price correction in AI stocks could lead to a 2.2 percent decline in UK GDP.\n- Historical precedents like Y2K, the dotcom bubble, and the crypto market demonstrate that transformative technologies often coexist with speculative hype and irrational valuations.\n- Business leaders are advised to treat AI as a portfolio of bets rather than a singular strategy, focusing on cybersecurity, data governance, and clear use cases.\n- Organizations should prioritize operational discipline by auditing AI access, data inputs, and accountability frameworks to mitigate potential system failures.\n\n### Why it Matters\nThis analysis suggests that AI represents both a genuine technological revolution and a potential financial bubble, requiring leaders to move beyond hype-driven decision-making. By focusing on practical integration and risk mitigation, companies can build resilient strategies that remain viable regardless of future market volatility.",
+    "author": "Colin Selfridge"
+  },
+  {
+    "category": "Tech Business & Markets",
+    "title": "Italian hosting collective Autistici/Inventati is shutting down after a US terrorist designation",
+    "url": "https://thenextweb.com/news/autistici-inventati-shutdown-us-terrorist-designation",
+    "processed_at": "2026-09-08T12:00:02.336138",
+    "source": "The Next Web",
+    "summary": "The Italian nonprofit Autistici/Inventati is shutting down all digital services after the United States government designated the collective as a Specially Designated Global Terrorist entity in August.\n\n### Key Points\n- The U.S. State Department and Treasury added Autistici/Inventati to the Specially Designated Nationals list on 26 August under Executive Order 13224.\n- Washington alleges the collective provided digital infrastructure to extremist groups, including Rose City Antifa, the Informal Anarchist Federation, and the PKK.\n- The nonprofit, which hosted 16,000 mailboxes and 10,000 blogs, denies the allegations and maintains its mission was providing digital self-defense tools for activists.\n- Following the designation, the organization faced service disruptions from its domain registrar, PayPal, and its bank, Banca Etica, due to secondary sanctions risks.\n- The collective is currently facilitating data retrieval for users before the wind-down period concludes on 25 September.\n\n### Why it Matters\nThis closure highlights the significant reach of U.S. secondary sanctions, which can compel foreign banks and service providers to cut ties with entities even without local legal mandates. It demonstrates how American financial and administrative leverage can effectively dismantle digital infrastructure globally, raising critical questions about tech sovereignty and the vulnerability of non-commercial internet services.",
+    "author": "Ana-Maria Stanciuc"
+  },
+  {
+    "category": "Tech Business & Markets",
+    "title": "China’s export shock is pushing the global economy to a breaking point, and the U.S. may have to clean up the mess, former trade official says",
+    "url": "https://finance.yahoo.com/economy/policy/articles/china-export-shock-pushing-global-230453384.html",
+    "processed_at": "2026-09-08T12:00:13.397108",
+    "source": "Yahoo Entertainment",
+    "summary": "Former U.S. Trade Representative Michael Froman warns that China’s record-breaking export surplus and industrial overcapacity are destabilizing the global economy, forcing nations to adopt increasingly protectionist trade policies.\n\n### Key Points\n- China recorded a historic $1.2 trillion trade surplus in 2025, with growth outpacing global goods trade by three times.\n- State subsidies and undervalued currency allow Chinese firms to price products up to 30% lower than international competitors.\n- Nearly one-third of Chinese industrial firms are currently operating at a loss due to intense domestic price wars and overproduction.\n- The European Union and the United States have implemented new trade barriers to counter the influx of cheap Chinese imports.\n- Beijing faces pressure to rebalance its economy toward consumer spending, though the export-led model remains a core political strategy.\n\n### Why it Matters\nThe global economy faces a potential crisis as international markets reach their limit for absorbing Chinese industrial overcapacity. This shift toward protectionism threatens to disrupt established supply chains and could force a significant restructuring of global trade relations.",
+    "author": "Jason Ma"
+  },
+  {
+    "category": "Artificial Intelligence",
+    "title": "Seattle Times and Newsday sue OpenAI and Microsoft for infringement",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/990932/seattle-times-newsday-lawsuit-openai-microsoft",
+    "processed_at": "2026-09-08T12:00:28.584538",
+    "source": "The Verge",
+    "summary": "The Seattle Times and Newsday have filed a copyright infringement lawsuit against OpenAI and Microsoft, alleging their journalism was used to train AI models without proper authorization.\n\n### Key Points\n- The plaintiffs allege that OpenAI and Microsoft used their copyrighted reporting to train AI models without permission or compensation.\n- The lawsuit seeks the destruction of all AI models and training datasets that incorporate the publishers' proprietary journalistic content.\n- Microsoft is named as a defendant because its Copilot service utilizes OpenAI’s underlying technology to generate responses.\n- The publishers claim that AI chatbots reduce website traffic and subscription revenue by providing answers directly to users.\n- This legal action joins a growing list of nearly 400 local newspapers currently suing the two tech companies over intellectual property concerns.\n\n### Why it Matters\nThis litigation highlights the escalating conflict between major media organizations and AI developers regarding the unauthorized use of intellectual property for machine learning. The outcome could force a fundamental shift in how AI companies source training data and potentially establish new legal precedents for digital copyright protections.",
+    "author": "Terrence O’Brien"
+  },
+  {
+    "category": "Artificial Intelligence",
+    "title": "An A16z partner says Silicon Valley’s fears of an AI 'permanent underclass’ is a ‘dark fantasy’",
+    "url": "https://www.businessinsider.com/a16z-anish-acharya-ai-permanent-underclass-dark-fantasy-2026-9#article",
+    "processed_at": "2026-09-08T12:00:50.255630",
+    "source": "Business Insider",
+    "summary": "Andreessen Horowitz partner Anish Acharya dismisses concerns regarding a permanent AI-driven underclass, arguing that the current technological landscape is decentralized and offers widespread opportunities across multiple industry sectors.\n\n### Key Points\n- Anish Acharya, a partner at Andreessen Horowitz, rejected the \"permanent underclass\" theory during a recent appearance on Lenny's Podcast.\n- Acharya cited the presence of approximately 20 competitive players across the AI tech stack as evidence against market centralization.\n- Successful coding tools like Claude Code, Codex, Lovable, Replit, and Wabi demonstrate a diverse and thriving ecosystem rather than a \"winner-takes-all\" market.\n- Data from non-tech sectors, such as radiology, shows that job listings remain stable despite rapid advancements in artificial intelligence.\n- OpenAI CEO Sam Altman has previously expressed similar skepticism regarding the inevitability of a permanent underclass created by AI.\n\n### Why it Matters\nThis perspective challenges the prevailing narrative that AI development will lead to extreme economic stratification and limited career mobility. By highlighting a decentralized market, the analysis suggests that the AI boom may provide broader professional opportunities than previous technological shifts.",
+    "author": "Aditi Bharade"
+  },
+  {
+    "category": "Phones, Laptops, and Gadgets",
+    "title": "How Xiaomi made connected living feel more believable at IFA Berlin 2026",
+    "url": "https://www.yankodesign.com/2026/09/07/how-xiaomi-made-connected-living-feel-more-believable-at-ifa-berlin-2026/",
+    "processed_at": "2026-09-08T12:01:01.171663",
+    "source": "Yanko Design",
+    "summary": "At IFA Berlin 2026, Xiaomi showcased its \"Human x Car x Home\" ecosystem, demonstrating how integrated smart appliances and vehicles can automate daily routines for European consumers.\n\n### Key Points\n- Xiaomi debuted its \"Human x Car x Home\" ecosystem, connecting smartphones, home appliances, and vehicles into a unified, automated smart network.\n- The company announced that Xiaomi Auto will officially enter Germany and other European markets starting in 2027.\n- Practical demonstrations included car-to-home connectivity, such as automatic TV shut-offs and synchronized kitchen appliance tasks.\n- New hardware featured a three-section washing machine, a zero-degree fresh-keeping refrigerator, and an air conditioner with motion-tracking airflow.\n- The product design emphasizes a \"quiet\" aesthetic intended to blend into domestic environments rather than appearing overly clinical or futuristic.\n\n### Why it Matters\nXiaomi is attempting to pivot its global brand identity from a smartphone manufacturer to a comprehensive provider of integrated smart living and mobility solutions. By expanding into the European automotive market, the company aims to challenge established tech and car brands with a seamless, friction-reducing ecosystem.",
+    "author": "Aki Ukita"
+  },
+  {
+    "category": "Phones, Laptops, and Gadgets",
+    "title": "TourBox NEO review: Customisable and comprehensive without breaking the bank",
+    "url": "https://www.creativebloq.com/tech/tourbox-neo-review-customisable-and-comprehensive-without-breaking-the-bank",
+    "processed_at": "2026-09-08T12:01:10.829489",
+    "source": "Creative Bloq",
+    "summary": "The TourBox NEO editing console offers photographers and videographers extensive customization and workflow efficiency for $169, providing a wired, high-performance alternative to more expensive wireless editing hardware.\n\n### Key Points\n- The TourBox NEO features over 150 button combinations and 400 assignable functions compatible with software like Photoshop, Premiere, and DaVinci Resolve.\n- Priced at $169, the device utilizes a wired-only connection and lacks both Bluetooth connectivity and haptic feedback found in premium models.\n- The console is constructed with a tactile, rubberized finish and includes a variety of physical dials, knobs, and wheels for precise control.\n- It is designed exclusively for laptop and desktop workstations and is not compatible with tablets.\n- The unit competes directly with the Logitech MX Creative Console and XPPen Pilot Pro, offering superior functional depth at a similar price point.\n\n### Why it Matters\nThe TourBox NEO provides a cost-effective solution for creative professionals seeking to optimize their editing speed without paying for premium wireless features. By prioritizing extensive control mapping over connectivity, it serves as a powerful tool for stationary workstation users looking to streamline complex software workflows.",
+    "author": "paulo.n.hatton@gmail.com (Paul Hatton) , Paul Hatton"
+  },
+  {
+    "category": "Phones, Laptops, and Gadgets",
+    "title": "Ray-Ban Meta glasses update makes them more useful on the go",
+    "url": "https://www.androidcentral.com/apps-software/meta/ray-ban-meta-glasses-update-makes-them-more-useful-on-the-go",
+    "processed_at": "2026-09-08T12:05:31.431945",
+    "source": "Android Central",
+    "summary": "Meta has released the v28 firmware update for Ray-Ban Meta smart glasses, introducing hands-free pedestrian navigation, immersive Spatial Audio, and expanded language support for Mandarin Chinese users.\n\n### Key Points\n- Pedestrian navigation allows users to request walking directions via voice commands or by sharing locations from mobile mapping apps.\n- Spatial Audio is now available for music and podcasts on second-generation Ray-Ban Meta glasses to provide a more immersive listening experience.\n- The update adds full support for Mandarin Chinese across device controls, messaging, media capture, and Meta AI features.\n- Navigation services are currently available in the United States, Puerto Rico, Canada, and select international cities.\n- Firmware v28 includes security enhancements designed to improve camera anti-tampering protections on the wearable devices.\n\n### Why it Matters\nThese updates signal Meta's commitment to evolving its smart eyewear into a more practical, daily-use navigation and audio tool. By integrating hands-free mapping and broader language support, the company is positioning its hardware as a viable alternative to traditional smartphone-based navigation.",
+    "author": "techkritiko@gmail.com (Jay Bonggolto) , Jay Bonggolto"
+  },
+  {
+    "category": "Artificial Intelligence",
+    "title": "Roku's 24/7 AI Slop Channel Is Even Worse Than Expected",
+    "url": "https://entertainment.slashdot.org/story/26/09/06/0633216/rokus-247-ai-slop-channel-is-even-worse-than-expected",
+    "processed_at": "2026-09-08T12:05:41.479841",
+    "source": "Slashdot.org",
+    "summary": "Fairground AI Creator TV has launched a 24-hour ad-supported streaming channel on Roku featuring films produced using generative artificial intelligence tools by over 100 independent creators.\n\n### Key Points\n- The channel, titled Fairground AI Creator TV, offers free, ad-supported programming consisting entirely of content created with generative AI tools.\n- Creators like Frank Houbre use AI for animation, voice synthesis, and music, while maintaining traditional roles in screenwriting and narrative development.\n- The platform features contributions from more than 100 independent creators, many of whom were sourced through social media platforms.\n- Early critical reception has been largely negative, with outlets like The Guardian and The Verge describing the content as low-quality and disjointed.\n- Programming lacks a consistent schedule, featuring a wide variety of genres ranging from anime to historical shorts.\n\n### Why it Matters\nThe launch of this channel highlights the ongoing debate regarding the quality and consumer demand for AI-generated entertainment in the streaming market. It serves as a test case for whether platforms can successfully monetize experimental AI content despite significant criticism from professional reviewers and audiences.",
+    "author": "EditorDavid"
+  },
+  {
+    "category": "Cybersecurity",
+    "title": "Researcher Publishes CrowdStrike Privilege Escalation Zero Day",
+    "url": "https://www.infosecurity-magazine.com/news/crowdstrike-privilege-escalation/",
+    "processed_at": "2026-09-08T12:05:52.726064",
+    "source": "Infosecurity Magazine",
+    "summary": "A security researcher known as Nightmare Eclipse has disclosed a zero-day privilege escalation exploit named FalconFlank affecting the CrowdStrike Falcon Sensor on fully updated Windows systems.\n\n### Key Points\n- The exploit, dubbed FalconFlank, targets the Microsoft Office malicious macro remediation feature within the CrowdStrike Falcon Sensor.\n- Security researcher Kevin Beaumont confirmed the vulnerability, which currently affects Windows 11 25H2 and Windows Server 2025.\n- CrowdStrike has advised customers to temporarily disable the Microsoft Office File Suspicious Macro Removal policy while an investigation is underway.\n- No CVE identifier has been assigned to the vulnerability, and technical details were published to GitHub on September 3.\n- The researcher, Nightmare Eclipse, has previously released proof-of-concept exploits for other major security products, including Kaspersky and Avast.\n\n### Why it Matters\nThis incident highlights the inherent risks posed when security software itself contains vulnerabilities that can be leveraged by attackers to gain elevated system access. It underscores the ongoing challenge for organizations to balance the deployment of protective tools with the potential for those same products to become new vectors for cyberattacks.",
+    "author": "Phil Muncaster"
+  },
+  {
+    "category": "Artificial Intelligence",
+    "title": "Has the A.I. Job Apocalypse Been Postponed?",
+    "url": "https://www.newyorker.com/news/the-financial-page/has-the-ai-job-apocalypse-been-postponed",
+    "processed_at": "2026-09-08T12:06:12.738469",
+    "source": "The New Yorker",
+    "summary": "Despite early predictions from tech leaders that artificial intelligence would cause mass unemployment, current labor market data shows little evidence of widespread job displacement across the U.S. economy.\n\n### Key Points\n- U.S. unemployment remains low at 4.1%, with the economy adding 162,000 jobs in August, consistent with historical trends.\n- A McKinsey survey found that while 40% of businesses deploy AI agents, only 14% reported actual AI-related job reductions.\n- Joblessness among recent college graduates has risen to 5.7%, though researchers attribute this partly to remote work trends and hiring shifts.\n- Professions involving complex human interaction, such as radiology and manual labor, remain largely resistant to AI-driven displacement.\n- The labor share of national income has fallen to a historic low of 52.8%, raising concerns about the long-term impact of automation on wages.\n\n### Why it Matters\nThe slower-than-expected integration of AI into the workforce provides a critical window for policymakers to implement guardrails that prioritize human-complementary technology. Without proactive intervention, the shift from labor-based wages to capital-based profits could exacerbate economic inequality as AI adoption matures.",
+    "author": "John Cassidy"
+  },
+  {
+    "category": "Phones, Laptops, and Gadgets",
+    "title": "Daily Deals Drop: Lightsaber Lighter, $1.27 USB C 60W Cable, Anker SOLIX 2,010Wh Power Station, and MORE!",
+    "url": "https://www.geeksaresexy.net/2026/09/07/daily-deals-drop-lightsaber-lighter-1-27-usb-c-60w-cable-anker-solix-2010wh-power-station-and-more/",
+    "processed_at": "2026-09-08T12:06:21.962520",
+    "source": "Geeksaresexy.net",
+    "summary": "Today’s September 7, 2026, daily deals roundup features significant discounts on tech gadgets, home appliances, software licenses, and gaming accessories from various major online retailers and brands.\n\n### Key Points\n- The Anker SOLIX S2000 portable power station is discounted to $649.99, offering a 2,010Wh capacity and 1,500W output.\n- Shark Matrix Clean robot vacuums are marked down to $299.99, featuring LiDAR navigation and a self-emptying base.\n- Microsoft Office Professional 2024 is available for a one-time purchase price of $49.97, representing an 80% discount.\n- Nothing Ear (a) wireless earbuds are reduced to $59.00, featuring 45dB hybrid noise cancellation and 42.5 hours of total playtime.\n- A lifetime subscription to Headway Premium, providing access to over 2,000 book summaries, is currently priced at $49.97.\n\n### Why it Matters\nThese deals highlight a shift toward high-value, one-time purchase software and essential home technology at reduced price points. Consumers can leverage these discounts to upgrade their home office setups and power infrastructure while avoiding recurring subscription costs.",
+    "author": "Geeks are Sexy"
+  },
+  {
+    "category": "Artificial Intelligence",
+    "title": "AI chatbots talked 57.5% of AI users out of buying",
+    "url": "https://www.semrush.com/blog/ai-chatbots-talk-ai-users-out-of-buying/",
+    "processed_at": "2026-09-08T12:10:44.599816",
+    "source": "Semrush.com",
+    "summary": "AI chatbots are increasingly influencing consumer purchasing decisions, forcing marketers to prioritize Generative Engine Optimization (GEO) to ensure brand visibility and prevent potential sales from being intercepted by AI.\n\n### Key Points\n- A survey of 2,338 U.S. consumers reveals that 65% of AI users have partially replaced Google searches with chatbot queries for product research.\n- Over 40% of consumers have made purchases based on AI recommendations, while 57% have abandoned potential buys due to negative AI-provided information.\n- Nearly 60% of AI users have discovered new brands through chatbot interactions, highlighting the technology's role as a primary discovery tool.\n- Consumer sentiment toward chatbot advertisements is largely skeptical, with many users reporting that ads decrease their trust in the integrity of AI responses.\n- Data indicates that organic AI mentions are more effective than paid chatbot ads, which can sometimes negatively impact brand perception.\n\n### Why it Matters\nAs AI chatbots become a standard part of the consumer research journey, businesses must treat Generative Engine Optimization as a critical component of their digital strategy. Failing to manage how AI represents a brand can lead to lost sales and diminished reputation, making proactive monitoring of AI-generated recommendations essential for long-term market competitiveness.",
+    "author": "Carlos Silva"
+  },
+  {
+    "category": "Cybersecurity",
+    "title": "Attackers spread malware through ScreenConnect file transfers",
+    "url": "https://www.helpnetsecurity.com/2026/09/07/connectwise-screenconnect-file-transfer-flaw/",
+    "processed_at": "2026-09-08T12:11:09.520791",
+    "source": "Help Net Security",
+    "summary": "ConnectWise is addressing a critical file transfer vulnerability in its ScreenConnect remote access software that researchers warn could be exploited to spread malware across connected IT systems.\n\n### Key Points\n- ConnectWise confirmed a file transfer flaw affecting both Cloud and On-Premise ScreenConnect deployments, with an official security patch expected within the week.\n- Cybersecurity firm Huntress identified a campaign using rogue ScreenConnect clients to deploy malicious VBScripts and facilitate worm-like propagation across connected endpoints.\n- Attackers utilized the rogue instances to perform system discovery, establish persistence, and install additional payloads including cryptocurrency miners and tunneling tools.\n- Administrators are advised to immediately disable file transfer permissions within the ScreenConnect role settings to mitigate potential unauthorized activity.\n- Security teams should audit ScreenConnect logs for suspicious RunFiles entries and reimage any machines showing signs of compromise from verified, clean media.\n\n### Why it Matters\nThis vulnerability poses a significant risk to managed service providers and IT departments that rely on ScreenConnect for remote infrastructure management. If left unaddressed, the flaw could allow attackers to gain persistent access to sensitive networks and deploy malicious payloads across an entire organization's fleet.",
+    "author": "Sinisa Markovic"
+  },
+  {
+    "category": "Artificial Intelligence",
+    "title": "How To Disable Gemini On Your Android Phone",
+    "url": "https://www.bgr.com/2249690/how-to-disable-gemini-android-phone/",
+    "processed_at": "2026-09-08T12:19:37.984739",
+    "source": "BGR",
+    "summary": "Android users can revert from the Gemini chatbot to the classic Google Assistant by adjusting the Digital assistants from Google settings within the main Google app menu.\n\n### Key Points\n- Navigate to Google app settings, select Google Assistant, and choose Digital assistants from Google to toggle back to the original assistant.\n- Gemini is designed for complex generative tasks, while Google Assistant remains optimized for speed and simple, rules-based commands.\n- Users can disable Gemini’s data collection by turning off Gemini Apps Activity in the app settings menu.\n- The Gemini app can be removed from the app drawer via the phone's main Apps settings menu.\n- Samsung Galaxy users can reconfigure the side button to trigger the power-off menu instead of the AI assistant.\n\n### Why it Matters\nThis transition highlights a growing consumer preference for simple, low-latency tools over resource-heavy generative AI for routine smartphone tasks. Providing users with the ability to revert ensures that individuals can prioritize functional efficiency and privacy over the advanced capabilities of large language models.",
+    "author": "staff@bgr.com (Suzanne Bonnett)"
+  },
+  {
+    "category": "Cybersecurity",
+    "title": "Bot Detection Without JavaScript: What My Blog Measured",
+    "url": "https://gkoreli.com/how-i-separate-readers-from-bots-without-javascript",
+    "processed_at": "2026-09-08T12:19:47.843758",
+    "source": "Gkoreli.com",
+    "summary": "A blog owner implemented new Cloudflare Worker request-header and network rules to filter bot traffic, successfully reclassifying 74.5% of browser-User-Agent requests as non-human traffic.\n\n### Key Points\n- The analysis compared 372 browser-User-Agent requests against 14 Cloudflare Web Analytics page loads over two days.\n- New classification rules utilize network metadata, Fetch Metadata headers, and browser version thresholds to identify automated traffic.\n- Repairs were made to address defects in HTML-acceptance checks and missing network-provenance markers in database logs.\n- The study distinguishes between verified bot signatures, such as those from Ahrefs or DuckAssist, and unidentified automated requests.\n- The author emphasizes that browser-based analytics often conflate automated scripts with human readers, requiring more granular evidence for accurate measurement.\n\n### Why it Matters\nDistinguishing between human readers and automated bots is a significant challenge for website owners relying on standard analytics tools. By documenting these classification methods, the author provides a framework for improving data transparency and reducing the misinterpretation of traffic metrics.",
+    "author": "Goga Koreli"
+  },
+  {
+    "category": "Tech Business & Markets",
+    "title": "Asia Fintech Forum 2026 to Convene Regulators, Bankers and Fintech Leaders in Kuala Lumpur on 2 October",
+    "url": "https://www.thehindubusinessline.com/brandhub/pr-release/asia-fintech-forum-2026-to-convene-regulators-bankers-and-fintech-leaders-in-kuala-lumpur-on-2-october/article71437282.ece",
+    "processed_at": "2026-09-08T12:24:19.047729",
+    "source": "BusinessLine",
+    "summary": "The Responsible Fintech Institute will host the inaugural Asia Fintech Forum on October 2, 2026, in Kuala Lumpur to address regional digital finance, AI, and cross-border regulatory interoperability.\n\n### Key Points\n- The one-day summit takes place at the World Trade Centre Kuala Lumpur and expects 1,000 delegates and 40 speakers.\n- Remi Technology serves as the title sponsor, focusing on stablecoin clearing and settlement infrastructure for financial institutions.\n- Key agenda topics include the ASEAN Digital Economy Framework Agreement (DEFA), agentic AI, Islamic fintech, and real-world asset (RWA) tokenization.\n- Confirmed speakers include executives from Aeon Bank, Luno Malaysia, Webull Malaysia, and the Labuan Financial Services Authority.\n- The event aims to bridge the gap between national rulemaking and regional regulatory alignment across the ASEAN market.\n\n### Why it Matters\nThe forum addresses the critical challenge of regulatory fragmentation as Asian nations develop disparate rules for digital assets and banking. By convening regulators and industry leaders, the event seeks to establish the cross-border standards necessary for scaling institutional fintech and digital capital markets.",
+    "author": "cuelive"
+  },
+  {
+    "category": "Tech Business & Markets",
+    "title": "Niko Partners: Chinese games market surpasses $50bn for the first time in 2025",
+    "url": "https://www.gamesindustry.biz/niko-partners-chinese-games-market-surpasses-50bn-for-the-first-time-in-2025",
+    "processed_at": "2026-09-08T12:25:06.283812",
+    "source": "GamesIndustry.biz",
+    "summary": "China’s video game market exceeded $51.8 billion in 2025, marking a 5.4% annual increase as the industry prepares for sustained growth through 2030 under new national economic plans.\n\n### Key Points\n- The Chinese games market reached $51.8 billion in 2025 and is projected to grow to $59.8 billion by 2030.\n- The national player base is expected to expand to 769 million people, with average weekly playtime increasing to 15.8 hours.\n- Mini-games have emerged as a primary growth driver, accounting for nearly 20% of total mobile game spending.\n- Approximately 66% of players utilize tools like VPNs, gaming accelerators, or global servers to bypass domestic internet censorship.\n- The Chinese government officially integrated video games into its 15th Five-Year Plan for National Economic and Social Development.\n- Developers are increasingly adopting generative AI to streamline production pipelines and enhance user-generated content platforms.\n\n### Why it Matters\nThis growth signals a maturing digital economy where regulatory inclusion and technological innovation, particularly in AI, are stabilizing the sector's long-term outlook. As the market shifts toward premium PC and console titles, global developers must navigate unique discovery channels like short video apps to reach the world's largest gaming population.",
+    "author": "Sophie McEvoy"
+  },
+  {
     "category": "Artificial Intelligence",
     "source": "Business Insider",
     "author": "Truman Dickerson",

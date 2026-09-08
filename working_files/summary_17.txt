@@ -1,20 +1,20 @@
-OpenPetya v2.0.0
+How To Disable Gemini On Your Android Phone
 ============================================================
 
-The developer has released OpenPetya v2.0.0, an educational proof-of-concept project designed to demonstrate the internal mechanics of bootkits, UEFI applications, and low-level disk encryption workflows.
+Android users can revert from the Gemini chatbot to the classic Google Assistant by adjusting the Digital assistants from Google settings within the main Google app menu.
 
 ### Key Points
-- OpenPetya v2.0.0 provides a research-focused implementation of MBR bootloading and UEFI chainloading written in Assembly, C, and C++.
-- The project simulates core ransomware features, including Salsa20-based cryptography and NTFS Master File Table (MFT) encryption, for study purposes.
-- Version 2.0.0 intentionally excludes MFT encryption in its UEFI component to prevent potential abuse against modern Windows operating systems.
-- The tool includes a user-mode controller, OpenPetya.exe, which manages drive selection, installation, and system reboot triggering.
-- The software is strictly intended for use in virtualized environments to analyze operating system internals and bootloader architecture.
+- Navigate to Google app settings, select Google Assistant, and choose Digital assistants from Google to toggle back to the original assistant.
+- Gemini is designed for complex generative tasks, while Google Assistant remains optimized for speed and simple, rules-based commands.
+- Users can disable Gemini’s data collection by turning off Gemini Apps Activity in the app settings menu.
+- The Gemini app can be removed from the app drawer via the phone's main Apps settings menu.
+- Samsung Galaxy users can reconfigure the side button to trigger the power-off menu instead of the AI assistant.
 
 ### Why it Matters
-This project provides a transparent, open-source resource for security researchers to understand the low-level operations of bootkits that are often obscured in real-world malware. By documenting these mechanisms, it helps developers and security professionals build more resilient systems against unauthorized boot-level modifications.
+This transition highlights a growing consumer preference for simple, low-latency tools over resource-heavy generative AI for routine smartphone tasks. Providing users with the ability to revert ensures that individuals can prioritize functional efficiency and privacy over the advanced capabilities of large language models.
 
 ============================================================
-Author:   Kitploit
-Source:   Kitploit.com
-URL:      https://kitploit.com/en/posts/github-iss4cf0ng-openpetya-v200
-Category: Cybersecurity
+Author:   staff@bgr.com (Suzanne Bonnett)
+Source:   BGR
+URL:      https://www.bgr.com/2249690/how-to-disable-gemini-android-phone/
+Category: Artificial Intelligence
