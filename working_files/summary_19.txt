@@ -1,19 +1,20 @@
-Old iPad Keyboard Makes For a Modern Netbook
+Mathspace breach exposes data on over a million students and parents
 ============================================================
 
-Maker bob-foss has revived the portable netbook concept by combining a high-end Lenovo gaming tablet with a modified iPad Mini keyboard case using a custom 3D-printed mount.
+Mathspace has confirmed a data breach affecting over one million users in Australia and New Zealand after attackers exploited an unpatched vulnerability in its internal reporting software.
 
 ### Key Points
-- Enthusiast bob-foss created a compact laptop by repurposing a hinged keyboard case originally designed for an iPad Mini.
-- The project utilizes a 3D-printed adapter to securely integrate a high-performance Lenovo gaming tablet into the legacy hardware.
-- This build avoids the performance limitations and poor specifications that historically plagued the netbook category during its peak popularity.
-- The resulting device offers a functional, professional-grade form factor suitable for mobile productivity without the clutter of traditional DIY cyberdeck projects.
+- Attackers accessed the Mathspace reporting system between August 10 and August 27, 2026, by exploiting a known vulnerability in a self-hosted Metabase instance.
+- The breach exposed the personal information of 1,079,819 students, parents, and school staff, including names, email addresses, and account activity timestamps.
+- Mathspace stated that no passwords, academic records, or authentication tokens were compromised during the unauthorized access.
+- The company has taken the affected reporting system offline and confirmed that no evidence currently suggests the stolen data has been sold or misused.
+- Similar Metabase-related security incidents were reported by companies including Framework, Tally, and Kilo Code throughout August 2026.
 
 ### Why it Matters
-This project demonstrates how modern high-performance tablets can be paired with legacy accessories to create functional, ultra-portable computing solutions. It highlights a continued consumer interest in small form factor devices that prioritize portability and build quality over the compromised hardware typical of the original netbook era.
+This incident highlights the significant security risks associated with unpatched third-party business intelligence tools integrated into educational platforms. While sensitive academic records remain secure, the exposure of contact information increases the risk of targeted phishing attacks against students and their families.
 
 ============================================================
-Author:   Jenny List
-Source:   Hackaday
-URL:      https://hackaday.com/2026/09/08/old-ipad-keyboard-makes-for-a-modern-netbook/
-Category: Phones, Laptops, and Gadgets
+Author:   Sinisa Markovic
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/09/08/mathspace-data-breach-metabase-vulnerability/
+Category: Cybersecurity

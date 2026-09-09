@@ -1,20 +1,20 @@
-Secure temporary file sharing for AI agents and humans
+Adobe Patches Magento Zero-Day Exploited to Deploy Rust Backdoor and PHP Web Shell
 ============================================================
 
-Aispace.sh provides an open-source, scriptable command-line interface designed for secure, temporary file sharing between AI agents and human users through automated, machine-readable workflows and encrypted storage.
+Adobe has released critical security patches for Adobe Commerce and Magento Open Source to address a maximum-severity zero-day vulnerability currently being exploited by attackers to execute arbitrary code.
 
 ### Key Points
-- Supports automated file uploads via CLI with stable JSON output, streaming, and predictable exit codes for integration into agent scripts.
-- Features configurable security controls including file expiration, download caps, and optional local-only encryption using the age X25519 protocol.
-- Offers specialized commands for sealed transfers, device pairing, and authenticated handoffs between specific agent identities.
-- Provides cross-platform support for macOS, Linux, and Windows via binary releases, Homebrew, npm, and Go installation methods.
-- Operates as a client-side tool that keeps master encryption keys local, ensuring the hosted service does not access private file content.
+- The vulnerability, tracked as CVE-2026-75650 and codenamed StyleSmuggler, carries a maximum CVSS score of 10.0.
+- Attackers are exploiting the flaw via PHP code injection in Magento’s template system to deploy Rust-based backdoors and web shells.
+- Active exploitation was first identified on September 4, 2026, prompting CISA to add the flaw to its Known Exploited Vulnerabilities catalog.
+- Affected users must apply the VULN-39341 patch and rotate encryption keys to secure their installations against unauthorized remote code execution.
+- Adobe also issued patches for over 170 other vulnerabilities, including critical flaws in Campaign Classic and ColdFusion.
 
 ### Why it Matters
-This tool addresses the growing need for reliable data exchange between autonomous AI agents and human-managed systems by providing a standardized, bot-friendly interface. By automating the secure transfer of large or temporary artifacts, it enables more complex agent workflows while maintaining strict privacy and data lifecycle management.
+This vulnerability poses a severe risk to e-commerce merchants by allowing unauthenticated attackers to gain full control over compromised web servers. Businesses using affected versions of Adobe Commerce or Magento must prioritize these updates immediately to prevent data theft and the installation of persistent backdoors.
 
 ============================================================
-Author:   aispace-sh
-Source:   Github.com
-URL:      https://github.com/aispace-sh/aispace-client
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/09/adobe-patches-magento-zero-day.html
 Category: Cybersecurity

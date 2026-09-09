@@ -1,20 +1,20 @@
-IT Help Desk Impersonation Lets Hackers Bypass MFA
+North Korea-linked Hackers Hide a Backdoor Inside HAProxy
 ============================================================
 
-The threat cluster PREY-0058 is bypassing endpoint security by using social engineering and phone-based impersonation to steal Microsoft 365 credentials and session tokens from corporate executives.
+North Korean-linked hackers are compromising South Korean automotive and media firms by embedding a sophisticated "ted backdoor" directly into the source code of HAProxy load balancing software.
 
 ### Key Points
-- Attackers pose as internal IT help desk staff to direct victims toward rogue authentication portals designed to intercept multi-factor authentication.
-- The group uses residential proxy networks like NodeMaven to replay stolen session tokens from the victim's geographic location, effectively bypassing impossible travel alerts.
-- Once inside, intruders perform discovery on SharePoint and Entra ID to map sensitive repositories and exfiltrate data from OneDrive, Exchange, and Box.
-- Arctic Wolf researchers identified that these attacks specifically target high-level personnel, including Directors and Vice Presidents.
-- Security teams are advised to monitor for unusual SearchQueryPerformed events and block access from known proxy or hosting networks.
+- Researchers at Rapid7 identified a Linux toolkit that integrates malicious code into HAProxy version 2.8.12 using its native filter API.
+- The backdoor intercepts HTTP traffic and executes remote commands by triggering a hidden mode via requests for a specific fake image file.
+- Malicious activity is erased from internal logs and statistics, allowing the malware to perform credential harvesting and surveillance without leaving a trace.
+- The campaign also deploys trojanized versions of standard Linux daemons, including crond, agetty, and sshd, to maintain persistence and log administrator passwords.
+- Evidence, including infrastructure and encryption methods, suggests the involvement of North Korean state-sponsored actors, potentially linked to APT37 or the Lazarus Group.
 
 ### Why it Matters
-These attacks demonstrate a shift toward human-centric exploitation that renders traditional endpoint security and standard multi-factor authentication ineffective. By bypassing technical safeguards, this method forces organizations to rethink their reliance on legacy authentication and prioritize phishing-resistant measures like FIDO2 keys.
+This attack demonstrates a shift toward deep-level infrastructure compromise where malicious code is woven into essential network components rather than running as separate processes. Organizations must now implement independent binary integrity checks and memory behavioral analysis, as relying on standard application logs is no longer sufficient to detect sophisticated edge-based threats.
 
 ============================================================
 Author:   Pierluigi Paganini
 Source:   Securityaffairs.com
-URL:      https://securityaffairs.com/198634/cyber-crime/it-help-desk-impersonation-lets-hackers-bypass-mfa.html
+URL:      https://securityaffairs.com/198656/apt/north-korea-linked-hackers-hide-a-backdoor-inside-haproxy.html
 Category: Cybersecurity
