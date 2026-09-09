@@ -1,5 +1,185 @@
 [
   {
+    "author": "info@thehackernews.com (The Hacker News)",
+    "processed_at": "2026-09-09T12:09:51.865533",
+    "category": "Cybersecurity",
+    "url": "https://thehackernews.com/2026/09/bengalseo-poisons-bing-search-results.html",
+    "source": "Internet",
+    "summary": "The BengalSEO campaign, operated by Indian firms WeConnect Solutions and Garage2Global, uses sophisticated black hat SEO poisoning to distribute MayaBot malware and facilitate widespread tech support scams.\n\n### Key Points\n- The BengalSEO operation has been active since at least 2015, utilizing advanced SEO techniques to manipulate Microsoft Bing search rankings.\n- Attackers deploy MayaBot malware for system monitoring and cryptocurrency mining, or redirect victims to fraudulent call centers.\n- The group leverages legitimate platforms like GitHub, ReadTheDocs, and Google Sites to host malicious lure pages and bypass security filters.\n- A custom traffic distribution system uses Matomo analytics and CAPTCHA challenges to fingerprint victims and screen out automated security scanners.\n- Researchers identified 84 active GitHub accounts linked to the campaign, with infrastructure heavily reliant on Cloudflare for proxying malicious traffic.\n\n### Why it Matters\nThis campaign demonstrates how threat actors weaponize the high reputation of trusted web platforms to deceive users and manipulate search engine algorithms at scale. By blending malicious payloads with legitimate-looking support portals, these groups pose a significant risk to both individual security and the integrity of online search results.",
+    "title": "BengalSEO Poisons Bing Search Results to Deliver MayaBot and Tech Support Scams"
+  },
+  {
+    "author": "aispace-sh",
+    "processed_at": "2026-09-09T12:10:01.851791",
+    "category": "Cybersecurity",
+    "url": "https://github.com/aispace-sh/aispace-client",
+    "source": "Github.com",
+    "summary": "Aispace.sh provides an open-source, scriptable command-line interface designed for secure, temporary file sharing between AI agents and human users through automated, machine-readable workflows and encrypted storage.\n\n### Key Points\n- Supports automated file uploads via CLI with stable JSON output, streaming, and predictable exit codes for integration into agent scripts.\n- Features configurable security controls including file expiration, download caps, and optional local-only encryption using the age X25519 protocol.\n- Offers specialized commands for sealed transfers, device pairing, and authenticated handoffs between specific agent identities.\n- Provides cross-platform support for macOS, Linux, and Windows via binary releases, Homebrew, npm, and Go installation methods.\n- Operates as a client-side tool that keeps master encryption keys local, ensuring the hosted service does not access private file content.\n\n### Why it Matters\nThis tool addresses the growing need for reliable data exchange between autonomous AI agents and human-managed systems by providing a standardized, bot-friendly interface. By automating the secure transfer of large or temporary artifacts, it enables more complex agent workflows while maintaining strict privacy and data lifecycle management.",
+    "title": "Secure temporary file sharing for AI agents and humans"
+  },
+  {
+    "author": "Melia Robinson",
+    "processed_at": "2026-09-09T12:10:21.943363",
+    "category": "Tech Business & Markets",
+    "url": "https://www.businessinsider.com/lawyers-back-new-vc-firm-gcvc-legal-tech-investing-2026-9#article",
+    "source": "Business Insider",
+    "summary": "General counsels have launched GCVC, a new venture capital fund backed by over 50 legal executives and law firm Wilson Sonsini to invest in legal technology startups.\n\n### Key Points\n- GCVC was founded by Matt Holbreich and Erick Rabin to provide legal industry expertise to early-stage software companies.\n- The fund is backed by general counsels from major companies including Salesforce, ElevenLabs, Whatnot, Circle, and Rippling.\n- Legal tech startups attracted $2 billion in venture capital funding during the first half of 2024.\n- The fund has already invested in startups such as Stilta and Sandstone, providing founders with direct feedback on product utility and market positioning.\n- GCVC operates similarly to industry-specific funds like Stage 2 Capital and Cyberstarts by leveraging the professional networks of its limited partners.\n\n### Why it Matters\nThis fund bridges the gap between legal software developers and the corporate counsels who ultimately purchase and use these tools. By involving industry insiders in the investment process, GCVC aims to accelerate the adoption of technology that automates administrative legal tasks and improves professional efficiency.",
+    "title": "Legal tech is booming. A new VC firm wants lawyers in on the action."
+  },
+  {
+    "author": "Tom Warren",
+    "processed_at": "2026-09-09T12:10:34.673312",
+    "category": "Cybersecurity",
+    "url": "https://www.theverge.com/tech/991178/microsoft-patch-tuesday-record-breaking-ai-notepad",
+    "source": "The Verge",
+    "summary": "Microsoft is setting a new monthly record for Windows security patches as AI-driven vulnerability discovery tools significantly increase the volume of software flaws requiring urgent remediation by engineers.\n\n### Key Points\n- Microsoft’s September patch cycle includes over 650 security fixes for Windows, a sixfold increase compared to pre-AI levels.\n- The surge in vulnerabilities is driven by AI models like Anthropic’s Mythos and OpenAI’s cybersecurity tools, which identify flaws at an accelerated pace.\n- Monthly patch counts have climbed steadily, rising from approximately 200 fixes in June to 570 in July and over 650 in September.\n- The rapid discovery of vulnerabilities creates a \"patch gap,\" forcing businesses to accelerate testing and deployment to prevent exploitation by malicious actors.\n\n### Why it Matters\nThe massive increase in security patches places significant operational pressure on IT departments that must test and deploy updates without disrupting critical business applications. As AI tools enable faster exploit development, the window for organizations to secure their systems against potential breaches is shrinking rapidly.",
+    "title": "Microsoft breaks another patch Tuesday record"
+  },
+  {
+    "author": "Fiona Craig",
+    "processed_at": "2026-09-09T12:10:46.730804",
+    "category": "Tech Business & Markets",
+    "url": "https://investorshub.advfn.com/market-news/article/35783/oil-nears-100-as-markets-assess-fed-rate-expectations-and-iran-tensions-dow-jones-sp-nasdaq-wall-street-futures",
+    "source": "Advfn.com",
+    "summary": "U.S. stock futures traded lower on Tuesday as investors weighed rising oil prices, climbing bond yields, and geopolitical tensions following the recent August U.S. employment report.\n\n### Key Points\n- Dow Jones Futures fell 0.8%, while S&P 500 Futures declined 0.3% as markets returned from the Labor Day holiday.\n- Brent crude reached a six-week high near $99 per barrel amid concerns over Middle East shipping routes and potential energy supply disruptions.\n- U.S. national debt has surpassed $40 trillion, contributing to selling pressure in global bond markets and rising government borrowing costs.\n- Former President Donald Trump called for an end to Bombardier sales in the U.S., a market that accounts for over half of the company's revenue.\n- Investors are awaiting the ADP Employment Change report and results from a U.S. Treasury auction of three-year notes to gauge economic health.\n\n### Why it Matters\nThe combination of rising energy costs and higher bond yields complicates the Federal Reserve's path for future interest rate adjustments. These factors influence broader borrowing costs for consumers and corporations, potentially impacting equity valuations and overall economic growth.",
+    "title": "Oil Nears $100 as Markets Assess Fed Rate Expectations and Iran Tensions: Dow Jones, S&P, Nasdaq, Wall Street Futures"
+  },
+  {
+    "author": "Cristian Dina",
+    "processed_at": "2026-09-09T12:11:01.998607",
+    "category": "Tech Business & Markets",
+    "url": "https://thenextweb.com/news/stoke-space-1bn-series-e-fully-reusable-nova",
+    "source": "The Next Web",
+    "summary": "Washington-based aerospace startup Stoke Space has secured $1 billion in Series E funding to develop its fully reusable Nova rocket, bringing its total capital raised to $2.3 billion.\n\n### Key Points\n- The funding round was co-led by Point72 Ventures and Spark Capital, with participation from Y Combinator and several other investment firms.\n- Stoke Space is developing the Nova launch vehicle, which aims for full reusability of both stages to reduce costs and increase flight frequency.\n- The company plans to launch its Nova Pathfinder vehicle in early 2027, followed by a larger Nova Block 2 vehicle in 2029.\n- Despite having no orbital flight history, the company has received development support from NASA, the U.S. Space Force, and the Defense Innovation Unit.\n- The capital will be used to build necessary infrastructure, including factories, test stands, and recovery facilities for high-cadence operations.\n\n### Why it Matters\nThis massive investment highlights the intense market demand for reliable, low-cost launch capacity as an alternative to SpaceX’s dominance. By backing unproven technology, investors are betting that the aerospace industry requires multiple providers to ensure national security and commercial access to orbit.",
+    "title": "Stoke Space raises $1bn for a rocket that has never flown"
+  },
+  {
+    "author": "derrek.lee@futurenet.com (Derrek Lee) , Derrek Lee",
+    "processed_at": "2026-09-09T12:11:12.734654",
+    "category": "Phones, Laptops, and Gadgets",
+    "url": "https://www.androidcentral.com/phones/xiaomi/xiaomi-18-fold-hands-on",
+    "source": "Android Central",
+    "summary": "Xiaomi unveiled the 18 Fold at IFA 2026, featuring a 7.5-inch display, a 200MP camera system, and the new in-house 3nm XRING 03 chipset for high-performance mobile computing.\n\n### Key Points\n- The Xiaomi 18 Fold features a 5.4-inch cover screen and a 7.5-inch internal display with a √2:1 aspect ratio.\n- It is powered by the 10-core XRING 03 processor, which claims 60% higher performance than its predecessor.\n- The device includes a 6,000mAh silicon-carbon battery supporting 67W wired and 50W wireless charging.\n- Camera hardware consists of a 200MP primary sensor and a 50MP periscope telephoto lens powered by Leica.\n- Pricing starts at 10,999 yuan, with the device currently limited to a China-only release.\n\n### Why it Matters\nThe Xiaomi 18 Fold represents a significant competitive challenge to established foldable leaders like the Galaxy Z Fold 8 by integrating advanced battery and camera specifications. Its reliance on the proprietary XRING 03 chip marks a critical test for Xiaomi’s ability to compete with industry-standard silicon in the premium smartphone market.",
+    "title": "Forget the iPhone Ultra — I went hands-on with the Xiaomi 18 Fold, and it might be the best mid-size foldable you can't buy"
+  },
+  {
+    "author": "David Gilbert",
+    "processed_at": "2026-09-09T12:11:32.873885",
+    "category": "Artificial Intelligence",
+    "url": "https://www.wired.com/story/gen-ai-tools-are-now-being-used-to-push-slop-jihad/",
+    "source": "Wired",
+    "summary": "A new report from the Institute of Strategic Dialogue reveals that extremist groups are using generative AI to create cartoons and memes to radicalize younger online audiences.\n\n### Key Points\n- The \"Slop Jihad\" trend uses AI to transform violent propaganda into stylized content, such as SpongeBob SquarePants-themed videos depicting executions.\n- Researchers identified 150 such videos across 71 TikTok accounts, collectively garnering over 5.4 million views.\n- Extremist groups like ISIS and al-Qaeda are leveraging AI to produce anime-style edits and virtual news anchors to disseminate content quickly and cheaply.\n- TikTok removed the specific videos identified in the report, though experts note that many accounts maintain backup profiles to evade moderation efforts.\n- The Institute of Strategic Dialogue warns that this shift represents a fundamental transformation in how jihadist propaganda is aestheticized to bypass traditional detection methods.\n\n### Why it Matters\nThis trend highlights how generative AI lowers the barrier for extremist groups to create and distribute engaging, algorithm-friendly content that targets younger demographics. By masking violent ideologies within popular entertainment formats, these groups can exploit social media recommendation engines to reach users who might otherwise avoid overt propaganda.",
+    "title": "Gen AI Tools Are Now Being Used to Push ‘Slop Jihad’"
+  },
+  {
+    "author": "Anamarija Pogorelec",
+    "processed_at": "2026-09-09T12:11:44.074214",
+    "category": "Cybersecurity",
+    "url": "https://www.helpnetsecurity.com/2026/09/08/cybersecurity-jobs-available-right-now-september-8-2026/",
+    "source": "Help Net Security",
+    "summary": "Major global organizations including AudioCodes, Johns Hopkins, and Scotiabank are actively recruiting for diverse cybersecurity roles ranging from CISO leadership positions to specialized cloud and network security engineering.\n\n### Key Points\n- AudioCodes is seeking a CISO in Israel, while Johns Hopkins APL is hiring a Combat Systems Cyber Engineer for U.S. Navy projects.\n- Garmin and Rolls-Royce have openings for cloud and network security engineers, with remote options available for the latter.\n- Scotiabank is recruiting an IAM Architect in Canada to design enterprise authentication solutions using ForgeRock and Ping.\n- Spektrum is hiring a Penetration Tester in Belgium to support NATO security exercises and red/blue team activities.\n- Additional roles include a SOC Analyst at Orro Group in Australia and a Security Operations Analyst at Subway in the USA.\n\n### Why it Matters\nThe high volume of specialized cybersecurity vacancies across defense, finance, and retail sectors highlights the critical global demand for professionals capable of managing complex threat landscapes. These roles reflect a growing industry focus on cloud-native security, identity management, and automated incident response to combat evolving digital risks.",
+    "title": "Cybersecurity jobs available right now: September 8, 2026"
+  },
+  {
+    "author": "Mallika Mitra",
+    "processed_at": "2026-09-09T12:16:03.436785",
+    "category": "Tech Business & Markets",
+    "url": "https://www.thedailyupside.com/finance/markets/earnings-outlook-after-a-strong-season-the-bar-is-high/",
+    "source": "Thedailyupside.com",
+    "summary": "S&P 500 companies reported a 53% surge in second-quarter earnings per share, driven largely by massive artificial intelligence investments and resilient consumer spending across major industrial sectors.\n\n### Key Points\n- S&P 500 earnings grew 53% year-over-year in the second quarter, with sales increasing by nearly 16% according to LSEG data.\n- Alphabet, Amazon, Micron Technology, and NVIDIA were identified as top contributors to recent earnings growth by FactSet.\n- Capital expenditures for the largest technology companies are projected to exceed $1 trillion next year as firms expand data centers and power infrastructure.\n- Analysts estimate third-quarter earnings growth for the S&P 500 will reach 28.5%, marking a potential third consecutive quarter of growth above 25%.\n- Risks to future performance include persistent inflation, rising bond yields, and the need for companies to demonstrate clear returns on AI investments.\n\n### Why it Matters\nThe current earnings boom highlights a critical transition period where investors are shifting focus from initial AI spending to the long-term profitability of these massive capital investments. Sustained market growth now depends on whether corporations can maintain pricing power and productivity gains while navigating the pressures of higher interest rates and potential economic volatility.",
+    "title": "How Much Longer Can Blue-Chip Companies Keep Up High Performance?"
+  },
+  {
+    "author": "Phil Muncaster",
+    "processed_at": "2026-09-09T12:16:15.250290",
+    "category": "Cybersecurity",
+    "url": "https://www.infosecurity-magazine.com/news/trezor-supply-chain-breach-impacts/",
+    "source": "Infosecurity Magazine",
+    "summary": "Hardware wallet manufacturer Trezor confirmed that a data breach at its shipping partner, ShipMonk, exposed the personal information of 67,000 additional customers, significantly exceeding initial incident estimates.\n\n### Key Points\n- The breach exposed names, email addresses, phone numbers, shipping addresses, and order details for customers between November 2019 and August 2021.\n- The updated victim count represents a 479% increase over the 14,000 individuals originally reported by the company on August 13.\n- Trezor stated that ShipMonk failed to delete customer data as required by their contract and data minimization policies.\n- The company is currently evaluating potential legal action against the logistics provider following the security failure.\n- Trezor is accelerating plans for anonymous delivery options and advises customers to use parcel lockers or PO boxes to protect their privacy.\n\n### Why it Matters\nThis incident highlights the significant security risks posed by third-party logistics providers when handling sensitive customer data. It serves as a reminder that even companies with strong internal security can be compromised through supply chain vulnerabilities, potentially exposing users to targeted phishing and physical security threats.",
+    "title": "Trezor Supply Chain Breach Now Impacts 81,000 Customers"
+  },
+  {
+    "author": "By Yukun Zhang and Liz Lee",
+    "processed_at": "2026-09-09T12:16:24.537434",
+    "category": "Tech Business & Markets",
+    "url": "https://finance.yahoo.com/economy/articles/chinas-exports-25-y-y-024544006.html",
+    "source": "Yahoo Entertainment",
+    "summary": "China’s export growth accelerated to 25% in August, driven by robust international demand for high-tech goods and AI-related products despite ongoing domestic economic challenges and weak consumer spending.\n\n### Key Points\n- China’s exports rose 25% year-on-year in August, while imports increased by 28.2% during the same period.\n- High-tech product exports grew 42.9% in the first eight months of the year, with semiconductor values more than doubling.\n- Car exports surged by over 50% in both volume and value, supported by strong demand for electric vehicles and lithium-ion batteries.\n- The national trade surplus reached $119.09 billion in August, keeping the country on track for an annual surplus exceeding $1 trillion.\n- Companies are accelerating shipments to the United States to preempt potential tariff increases amid ongoing global trade tensions.\n\n### Why it Matters\nThis reliance on foreign demand highlights a significant imbalance as Beijing struggles to stimulate domestic consumption to meet its annual GDP growth targets. The heavy dependence on tech exports exposes the Chinese economy to potential trade curbs from the U.S. and the European Union.",
+    "title": "China's exports surge as demand for high-tech, AI help prop up economic growth"
+  },
+  {
+    "author": "Tyler Lacoma",
+    "processed_at": "2026-09-09T12:16:34.862059",
+    "category": "Phones, Laptops, and Gadgets",
+    "url": "https://www.cnet.com/tech/the-weirdest-and-wackiest-tech-we-found-at-ifa-2026-2/",
+    "source": "CNET",
+    "summary": "IFA 2026 showcased a wide array of unconventional consumer technology, ranging from practical smart home innovations to bizarre gadgets like pet smartphones and solar-powered rugged laptops.\n\n### Key Points\n- Govee introduced a mood-responsive ceiling light that uses AI to adjust color schemes based on user input.\n- The Nuvell kitchen appliance is a dedicated tofu maker capable of producing vegan protein blocks in 30 minutes.\n- Dyson’s $500 Camerajet toothbrush features a built-in camera and AI to help users target interdental gaps during cleaning.\n- Creatulize debuted the X1 Pro, a compact robot vacuum specifically designed to clean dust and mites from mattresses.\n- SwitchBot launched the MindClip, a wearable AI device that records and summarizes conversations within a 3-meter radius.\n- Oukitel unveiled the RG14-P, an 8-pound rugged laptop featuring solar panels on the display lid for off-grid battery charging.\n\n### Why it Matters\nThese experimental products highlight how manufacturers are increasingly integrating AI and niche sensors into everyday household items to differentiate themselves in a crowded market. While some of these gadgets offer genuine utility for specific use cases, others demonstrate the challenges companies face when pushing the boundaries of consumer technology.",
+    "title": "We Rated the Weird Tech at IFA 2026 to Find the Wackiest Products"
+  },
+  {
+    "author": "Cointelegraph by Zoltan Vardai",
+    "processed_at": "2026-09-09T12:16:47.086489",
+    "category": "Tech Business & Markets",
+    "url": "https://cointelegraph.com/news/robinhood-chain-160m-annual-fees-2028-bernstein",
+    "source": "Cointelegraph",
+    "summary": "Bernstein analysts project that Robinhood’s blockchain network could generate $160 million in annual fees by 2028, driven primarily by rising demand for tokenized stock trading on the platform.\n\n### Key Points\n- Bernstein forecasts the Robinhood chain will reach $160 million in annual fee revenue within four years.\n- Tokenized stocks now represent 27% of the network's total trading volume, while memecoin activity has declined to 36%.\n- The network recently generated $2.13 million in daily fees, positioning it as a leading blockchain by revenue.\n- Automated market-making pools on Uniswap are fueling demand by pairing memecoins with stock tokens.\n- AMC Entertainment CEO Adam Aron has criticized the tokenized offerings, citing a lack of official affiliation with his company.\n\n### Why it Matters\nThis growth highlights a significant shift toward tokenized equities as a viable revenue stream for major trading platforms. However, the emergence of these products faces regulatory and corporate scrutiny, which could impact the long-term adoption of blockchain-based stock trading.",
+    "title": "Robinhood chain to generate $160M in annual fees by 2028: Bernstein"
+  },
+  {
+    "author": "EditorDavid",
+    "processed_at": "2026-09-09T12:21:10.717538",
+    "category": "Tech Business & Markets",
+    "url": "https://yro.slashdot.org/story/26/09/07/0128205/switzerlands-federal-government-tests-open-source-alternatives-to-microsoft-on-3000-computers",
+    "source": "Slashdot.org",
+    "summary": "The Swiss federal government has launched a pilot program to transition 3,000 workstations to the open-source openDesk suite, aiming to reduce reliance on Microsoft 365 by late 2027.\n\n### Key Points\n- The pilot program follows a successful proof-of-concept involving 172 employees testing the German-developed openDesk collaboration platform.\n- Switzerland’s Cyber Command plans to fully replace Microsoft 365 with openDesk across its systems by October 2026 to enhance data security.\n- Officials cite concerns over US cloud legislation, operational dependency on foreign vendors, and rising proprietary software licensing costs as primary drivers for the shift.\n- If the current pilot proves successful, the government may expand the migration to cover all 54,000 federal administration workstations.\n- During the testing phase, the open-source software is running in parallel with existing Microsoft applications to ensure service continuity.\n\n### Why it Matters\nThis transition highlights a growing trend among European governments to prioritize digital sovereignty and reduce reliance on major US-based technology providers. By moving to open-source alternatives, Switzerland aims to mitigate risks related to foreign data access and long-term software cost volatility.",
+    "title": "Switzerland's Federal Government Tests Open-Source Alternatives to Microsoft on 3,000 Computers"
+  },
+  {
+    "author": "Pierluigi Paganini",
+    "processed_at": "2026-09-09T12:21:21.162959",
+    "category": "Cybersecurity",
+    "url": "https://securityaffairs.com/198634/cyber-crime/it-help-desk-impersonation-lets-hackers-bypass-mfa.html",
+    "source": "Securityaffairs.com",
+    "summary": "The threat cluster PREY-0058 is bypassing endpoint security by using social engineering and phone-based impersonation to steal Microsoft 365 credentials and session tokens from corporate executives.\n\n### Key Points\n- Attackers pose as internal IT help desk staff to direct victims toward rogue authentication portals designed to intercept multi-factor authentication.\n- The group uses residential proxy networks like NodeMaven to replay stolen session tokens from the victim's geographic location, effectively bypassing impossible travel alerts.\n- Once inside, intruders perform discovery on SharePoint and Entra ID to map sensitive repositories and exfiltrate data from OneDrive, Exchange, and Box.\n- Arctic Wolf researchers identified that these attacks specifically target high-level personnel, including Directors and Vice Presidents.\n- Security teams are advised to monitor for unusual SearchQueryPerformed events and block access from known proxy or hosting networks.\n\n### Why it Matters\nThese attacks demonstrate a shift toward human-centric exploitation that renders traditional endpoint security and standard multi-factor authentication ineffective. By bypassing technical safeguards, this method forces organizations to rethink their reliance on legacy authentication and prioritize phishing-resistant measures like FIDO2 keys.",
+    "title": "IT Help Desk Impersonation Lets Hackers Bypass MFA"
+  },
+  {
+    "author": "Sterling Ashworth",
+    "processed_at": "2026-09-09T12:21:35.667975",
+    "category": "Cybersecurity",
+    "url": "https://www.naturalnews.com/2026-09-08-liquid-network-targeted-alleged-white-hat-hackers.html",
+    "source": "Naturalnews.com",
+    "summary": "The Liquid Network, a Bitcoin sidechain developed by Blockstream, has paused operations after hackers exploited a consensus bug to withdraw approximately 4,019 BTC worth $320 million.\n\n### Key Points\n- Hackers exploited an inflation bug on the L-BTC sidechain to create unauthorized tokens and redeem them for 4,019.4 BTC on the main chain.\n- The unauthorized transaction bypassed security safeguards by appearing valid under compromised consensus rules, leading federation members to sign the withdrawal.\n- Blockstream disabled bridge nodes and paused the sidechain, leaving only 207 BTC in the treasury compared to the original 4,200 BTC.\n- The attackers left messages in the transaction data claiming to be \"whitehats\" and provided contact information for potential negotiations.\n- Exchanges and wallet providers have suspended L-BTC deposits and withdrawals, causing significant service disruptions for users.\n\n### Why it Matters\nThis incident highlights the inherent risks of federated sidechains that rely on trusted intermediaries rather than the trustless, transparent model of the main Bitcoin blockchain. The breach raises serious concerns regarding the security of custodial systems and the potential for permanent loss of funds when consensus mechanisms are compromised.",
+    "title": "Liquid Network Sidechain Targeted By Alleged White-Hat Hackers"
+  },
+  {
+    "author": "Yves Smith",
+    "processed_at": "2026-09-09T12:23:29.098403",
+    "category": "Tech Business & Markets",
+    "url": "https://www.nakedcapitalism.com/2026/09/links-9-8-2026.html",
+    "source": "Nakedcapitalism.com",
+    "summary": "Canada has implemented new tariffs on U.S. goods, escalating a bilateral trade war that threatens to disrupt supply chains and impact industries ranging from aviation to honey production.\n\n### Key Points\n- Canada initiated retaliatory tariffs against U.S. imports following ongoing trade disputes between the two nations.\n- The U.S. government has threatened to block sales of Bombardier aircraft unless the planes are manufactured domestically.\n- The trade conflict is negatively impacting the Canadian honey industry, which is already struggling with a poor production year.\n- Major corporations, including Jaguar Land Rover, are cutting thousands of jobs as trade tensions and falling sales pressure the automotive sector.\n\n### Why it Matters\nThis escalating trade war signals a significant shift in North American economic relations, potentially leading to higher consumer prices and supply chain instability. The conflict forces businesses to navigate complex new regulatory hurdles, which may stifle cross-border investment and long-term industrial growth.",
+    "title": "Links 9/8/2026"
+  },
+  {
+    "author": "Jenny List",
+    "processed_at": "2026-09-09T12:23:48.933159",
+    "category": "Phones, Laptops, and Gadgets",
+    "url": "https://hackaday.com/2026/09/08/old-ipad-keyboard-makes-for-a-modern-netbook/",
+    "source": "Hackaday",
+    "summary": "Maker bob-foss has revived the portable netbook concept by combining a high-end Lenovo gaming tablet with a modified iPad Mini keyboard case using a custom 3D-printed mount.\n\n### Key Points\n- Enthusiast bob-foss created a compact laptop by repurposing a hinged keyboard case originally designed for an iPad Mini.\n- The project utilizes a 3D-printed adapter to securely integrate a high-performance Lenovo gaming tablet into the legacy hardware.\n- This build avoids the performance limitations and poor specifications that historically plagued the netbook category during its peak popularity.\n- The resulting device offers a functional, professional-grade form factor suitable for mobile productivity without the clutter of traditional DIY cyberdeck projects.\n\n### Why it Matters\nThis project demonstrates how modern high-performance tablets can be paired with legacy accessories to create functional, ultra-portable computing solutions. It highlights a continued consumer interest in small form factor devices that prioritize portability and build quality over the compromised hardware typical of the original netbook era.",
+    "title": "Old iPad Keyboard Makes For a Modern Netbook"
+  },
+  {
+    "author": "jyn",
+    "processed_at": "2026-09-09T12:24:02.891314",
+    "category": "Cybersecurity",
+    "url": "https://jyn.dev/a-year-to-fix-security/",
+    "source": "Jyn.dev",
+    "summary": "The release of the open-weight GLM 5.3-flash model enables individuals to perform automated, large-scale cyberattacks, necessitating urgent industry-wide improvements to software security patching and infrastructure defense strategies.\n\n### Key Points\n- GLM 5.3-flash is an open-weight AI model from Z.ai Co. that can be run locally on consumer hardware for malicious tasks.\n- Third-party \"abliterated\" versions of the model have had safety guardrails removed, allowing them to assist in cybercrime and illegal activities.\n- Benchmarks like CyberGym and ExploitBench indicate that modern AI models are increasingly capable of identifying and exploiting real-world security vulnerabilities.\n- Security initiatives like Project Glasswing and Daybreak are currently using frontier LLMs to help organizations identify and patch vulnerabilities before they are exploited.\n- Experts recommend prioritizing the deployment of security patches, increasing penetration testing frequency, and adopting memory-safe programming languages.\n\n### Why it Matters\nThe accessibility of high-performance AI models significantly lowers the barrier for bad actors to execute sophisticated, automated cyberattacks against critical infrastructure. Organizations must shift focus from merely identifying vulnerabilities to accelerating the deployment of patches and hardening systems to prevent catastrophic failures.",
+    "title": "We have a year to fix security everywhere"
+  },
+  {
     "author": "ben.wilson@windowscentral.com (Ben Wilson) , Ben Wilson",
     "processed_at": "2026-09-08T21:35:40.348860",
     "category": "Tech Business & Markets",

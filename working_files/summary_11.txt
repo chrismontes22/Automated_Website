@@ -1,20 +1,20 @@
-Rogue ScreenConnect Clients Spread Four-Stage VBScript Chain to Newly Connected Hosts
+Trezor Supply Chain Breach Now Impacts 81,000 Customers
 ============================================================
 
-Cybersecurity researchers at Huntress have identified a worm-like campaign abusing ConnectWise ScreenConnect to deploy malicious VBScript payloads and secondary tools across compromised remote access support systems.
+Hardware wallet manufacturer Trezor confirmed that a data breach at its shipping partner, ShipMonk, exposed the personal information of 67,000 additional customers, significantly exceeding initial incident estimates.
 
 ### Key Points
-- Attackers utilize social engineering, phishing, and fake refund forms to install rogue ScreenConnect clients on victim machines.
-- A four-stage VBScript chain profiles host systems, checks for security software, and downloads secondary payloads from Dropbox.
-- Depending on system state, payloads include user-level backdoors, privilege escalation tools, or XMRig cryptocurrency miners.
-- The malware exhibits worm-like behavior by propagating malicious scripts to new hosts that connect to an already infected ScreenConnect client.
-- ConnectWise has acknowledged the vulnerability and recommends that administrators temporarily disable file transfer permissions to mitigate unauthorized script execution.
+- The breach exposed names, email addresses, phone numbers, shipping addresses, and order details for customers between November 2019 and August 2021.
+- The updated victim count represents a 479% increase over the 14,000 individuals originally reported by the company on August 13.
+- Trezor stated that ShipMonk failed to delete customer data as required by their contract and data minimization policies.
+- The company is currently evaluating potential legal action against the logistics provider following the security failure.
+- Trezor is accelerating plans for anonymous delivery options and advises customers to use parcel lockers or PO boxes to protect their privacy.
 
 ### Why it Matters
-This campaign highlights the significant security risks posed by compromised remote monitoring and management tools, which can be weaponized to facilitate lateral movement across networks. Organizations should prioritize disabling unnecessary file transfer capabilities and consider re-imaging systems that have been exposed to these malicious scripts.
+This incident highlights the significant security risks posed by third-party logistics providers when handling sensitive customer data. It serves as a reminder that even companies with strong internal security can be compromised through supply chain vulnerabilities, potentially exposing users to targeted phishing and physical security threats.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/09/rogue-screenconnect-clients-spread-four.html
+Author:   Phil Muncaster
+Source:   Infosecurity Magazine
+URL:      https://www.infosecurity-magazine.com/news/trezor-supply-chain-breach-impacts/
 Category: Cybersecurity

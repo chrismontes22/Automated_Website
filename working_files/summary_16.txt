@@ -1,19 +1,20 @@
-The Onion’s Exclusive Interview With Larry Ellison
+IT Help Desk Impersonation Lets Hackers Bypass MFA
 ============================================================
 
-Oracle co-founder and Paramount Skydance shareholder Larry Ellison discussed his business ventures, personal wealth, and corporate strategies in a satirical interview with the publication The Onion.
+The threat cluster PREY-0058 is bypassing endpoint security by using social engineering and phone-based impersonation to steal Microsoft 365 credentials and session tokens from corporate executives.
 
 ### Key Points
-- Larry Ellison currently serves as the executive chairman of Oracle and holds the position of largest shareholder at the Paramount Skydance Corporation.
-- The billionaire addressed his recent decline in global wealth rankings, moving from the second to the eighth-richest person over a two-month period.
-- Ellison commented on the ongoing merger negotiations between Paramount and Warner Bros. Discovery, citing complex corporate challenges.
-- The executive joked about his personal life, his physical appearance, and his long-term ambitions regarding land ownership in Hawaii.
+- Attackers pose as internal IT help desk staff to direct victims toward rogue authentication portals designed to intercept multi-factor authentication.
+- The group uses residential proxy networks like NodeMaven to replay stolen session tokens from the victim's geographic location, effectively bypassing impossible travel alerts.
+- Once inside, intruders perform discovery on SharePoint and Entra ID to map sensitive repositories and exfiltrate data from OneDrive, Exchange, and Box.
+- Arctic Wolf researchers identified that these attacks specifically target high-level personnel, including Directors and Vice Presidents.
+- Security teams are advised to monitor for unusual SearchQueryPerformed events and block access from known proxy or hosting networks.
 
 ### Why it Matters
-This interview highlights the intersection of high-stakes corporate consolidation and the public persona of one of the world's wealthiest technology executives. It underscores the growing influence of major shareholders in the entertainment industry as they navigate complex antitrust concerns and media mergers.
+These attacks demonstrate a shift toward human-centric exploitation that renders traditional endpoint security and standard multi-factor authentication ineffective. By bypassing technical safeguards, this method forces organizations to rethink their reliance on legacy authentication and prioritize phishing-resistant measures like FIDO2 keys.
 
 ============================================================
-Author:   John Gruber
-Source:   Theonion.com
-URL:      https://theonion.com/the-onions-exclusive-interview-with-larry-ellison/
-Category: Tech Business & Markets
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/198634/cyber-crime/it-help-desk-impersonation-lets-hackers-bypass-mfa.html
+Category: Cybersecurity

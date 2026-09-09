@@ -1,19 +1,20 @@
-AI and the ghosts of tech booms past
+Secure temporary file sharing for AI agents and humans
 ============================================================
 
-The Bank of England warns that a potential AI market correction could trigger a UK recession, highlighting the need for businesses to balance innovation with disciplined operational risk management.
+Aispace.sh provides an open-source, scriptable command-line interface designed for secure, temporary file sharing between AI agents and human users through automated, machine-readable workflows and encrypted storage.
 
 ### Key Points
-- The Bank of England estimates that a significant price correction in AI stocks could lead to a 2.2 percent decline in UK GDP.
-- Historical precedents like Y2K, the dotcom bubble, and the crypto market demonstrate that transformative technologies often coexist with speculative hype and irrational valuations.
-- Business leaders are advised to treat AI as a portfolio of bets rather than a singular strategy, focusing on cybersecurity, data governance, and clear use cases.
-- Organizations should prioritize operational discipline by auditing AI access, data inputs, and accountability frameworks to mitigate potential system failures.
+- Supports automated file uploads via CLI with stable JSON output, streaming, and predictable exit codes for integration into agent scripts.
+- Features configurable security controls including file expiration, download caps, and optional local-only encryption using the age X25519 protocol.
+- Offers specialized commands for sealed transfers, device pairing, and authenticated handoffs between specific agent identities.
+- Provides cross-platform support for macOS, Linux, and Windows via binary releases, Homebrew, npm, and Go installation methods.
+- Operates as a client-side tool that keeps master encryption keys local, ensuring the hosted service does not access private file content.
 
 ### Why it Matters
-This analysis suggests that AI represents both a genuine technological revolution and a potential financial bubble, requiring leaders to move beyond hype-driven decision-making. By focusing on practical integration and risk mitigation, companies can build resilient strategies that remain viable regardless of future market volatility.
+This tool addresses the growing need for reliable data exchange between autonomous AI agents and human-managed systems by providing a standardized, bot-friendly interface. By automating the secure transfer of large or temporary artifacts, it enables more complex agent workflows while maintaining strict privacy and data lifecycle management.
 
 ============================================================
-Author:   Colin Selfridge
-Source:   TechRadar
-URL:      https://www.techradar.com/pro/ai-and-the-ghosts-of-tech-booms-past
-Category: Tech Business & Markets
+Author:   aispace-sh
+Source:   Github.com
+URL:      https://github.com/aispace-sh/aispace-client
+Category: Cybersecurity
