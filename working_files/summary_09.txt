@@ -1,20 +1,19 @@
-AI Is Producing More Software. Why Isn’t It Being Used?
+Researcher Drops New Microsoft Defender PoC Showing ShieldBreak Patch Can Be Bypassed
 ============================================================
 
-A new study from Wharton and MIT researchers reveals that while AI coding tools significantly boost developer productivity, human bottlenecks in review and integration limit finished software output.
+Security researcher Chaotic Eclipse has released a proof-of-concept exploit for a new zero-day vulnerability in Microsoft Defender that bypasses a recent patch for the ShieldBreak security flaw.
 
 ### Key Points
-- Researchers analyzed over 100,000 GitHub developers using AI coding tools between 2022 and 2026.
-- AI coding agents increased individual coding activity by up to 180%, yet software releases only rose by 30%.
-- The study identified post-coding tasks like reviewing, integrating, and distributing software as the primary production constraints.
-- Data from the Apple App Store, Google Play, Chrome Web Store, and SourceForge shows a surge in new applications since 2025 without a corresponding increase in user adoption.
-- Monthly new releases on the Apple App Store climbed from 30,000 to 100,000 by April 2026, while total app usage remained flat or declined.
+- The vulnerability, dubbed ShieldCrash, allows for arbitrary file reads with SYSTEM-level privileges on all supported versions of Windows.
+- It functions as a bypass for CVE-2026-69414, a previously identified flaw that Microsoft attempted to fix in Malware Protection Engine version 1.1.26080.3.
+- Microsoft maintains that automatic updates for the Malware Protection Engine are the primary defense against such threats for both enterprise and individual users.
+- Chaotic Eclipse has recently disclosed similar proof-of-concept exploits for security software from CrowdStrike, Kaspersky, Avast, and NVIDIA.
 
 ### Why it Matters
-These findings suggest that current AI productivity gains are hitting a ceiling because they fail to address the complex, non-coding stages of the software development lifecycle. Businesses must recognize that simply accelerating code generation will not automatically translate into higher-quality software or increased market success.
+This discovery highlights the ongoing challenge of ensuring complete remediation when security vendors issue patches for complex software vulnerabilities. Users and enterprises must rely on automated update mechanisms to mitigate these risks, as incomplete fixes can leave systems exposed to persistent exploitation.
 
 ============================================================
-Author:   Gloria Yuen
-Source:   Upenn.edu
-URL:      https://knowledge.wharton.upenn.edu/article/ai-is-producing-more-software-why-isnt-it-being-used/
-Category: Artificial Intelligence
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/09/researcher-drops-new-microsoft-defender.html
+Category: Cybersecurity
