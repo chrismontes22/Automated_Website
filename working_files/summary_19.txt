@@ -1,21 +1,20 @@
-Microsoft breaks Patch Tuesday record with 974-CVE deluge
+Mullvad is shutting down its own DNS service because it thinks this free one is better
 ============================================================
 
-Recent developments in the technology sector highlight significant shifts in AI infrastructure, cybersecurity vulnerabilities, and the growing movement toward open-source alternatives to major proprietary software platforms.
+Privacy-focused VPN provider Mullvad is shutting down its public encrypted DNS servers by November 2, 2026, shifting its financial support to the nonprofit organization Quad9 instead.
 
 ### Key Points
-- Samsung has partnered with OpenAI to strengthen semiconductor supply chains, providing critical compute and memory resources.
-- Google DeepMind released a comprehensive genome atlas, showcasing new applications for artificial intelligence in biological research.
-- Microsoft is currently addressing a zero-day vulnerability in on-premises SharePoint after initial security patches failed to resolve the issue.
-- EQT acquired a majority stake in the Swiss cybersecurity firm Acronis, valuing the company at over $3.5 billion.
-- The Swiss military is actively testing open-source software alternatives to replace its reliance on Microsoft 365 cloud applications.
-- DEF CON has expanded its Franklin project to enlist hackers in hardening critical national infrastructure against emerging cyber threats.
+- Mullvad will discontinue its public DNS-over-HTTPS servers to avoid duplicating infrastructure efforts.
+- Users with manual DNS configurations must switch to alternative providers before the November 2, 2026, deadline.
+- Mullvad VPN users remain unaffected as their traffic is routed through internal, encrypted DNS tunnels.
+- Default Mullvad Browser settings will automatically migrate to Quad9, which provides encrypted lookups and threat blocking.
+- Quad9 is a nonprofit that blocks domains associated with malware, phishing, and spyware without logging user IP addresses.
 
 ### Why it Matters
-These developments reflect a broader industry trend where organizations are prioritizing supply chain resilience and exploring open-source software to reduce dependence on major tech providers. As security threats evolve, the collaboration between government entities and the cybersecurity community becomes increasingly vital for protecting essential infrastructure.
+This transition consolidates resources toward a specialized nonprofit, ensuring users continue to receive robust, privacy-focused DNS protection without redundant service maintenance. By offloading this infrastructure, Mullvad reinforces the industry trend of prioritizing dedicated security experts over proprietary, general-purpose alternatives.
 
 ============================================================
-Author:   Jessica Lyons
-Source:   Theregister.com
-URL:      https://www.theregister.com/security/2026/09/09/microsoft-breaks-patch-tuesday-record-with-974-cve-deluge/5295160
+Author:   Hamed Paydarfar
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/mullvad-replaces-dns-service-with-free-alternative/
 Category: Cybersecurity
