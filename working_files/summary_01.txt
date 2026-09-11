@@ -1,20 +1,20 @@
-This VC used AI to try to snag a restaurant reservation. Resy wasn't having it
+Microsoft patches a record 974 flaws, and two are already under attack
 ============================================================
 
-An AI agent named Instinct caused a venture capitalist to be banned from the reservation platform Resy after the tool triggered spam filters with excessive automated API requests.
+Microsoft’s September Patch Tuesday addresses a record-breaking 974 security vulnerabilities, including two actively exploited zero-day flaws that allow attackers to gain elevated privileges on Windows systems.
 
 ### Key Points
-- JC Bahr-de Stefano, a principal at Better Tomorrow Ventures, used the AI tool Instinct to attempt to secure a reservation at 4 Charles Prime Rib.
-- The AI agent sent approximately 200 API requests per hour to Resy, including checks every 0.4 seconds during peak reservation windows.
-- Resy, owned by American Express, temporarily suspended Bahr-de Stefano’s account for violating terms of service regarding unapproved automated activity.
-- The platform reinstated the account but issued a formal warning that repeat violations could result in a permanent ban from both Resy and American Express services.
-- Resy currently prohibits third-party bots but supports official integrations with AI services like OpenAI’s ChatGPT and Anthropic’s Claude.
+- Microsoft released fixes for 974 vulnerabilities, with over 110 classified as critical severity.
+- Two zero-day flaws (CVE-2026-81963 and CVE-2026-85880) are currently being exploited in the wild to escalate user privileges.
+- Security experts identified 20 "wormable" bugs that can spread automatically across networks without requiring user interaction.
+- A critical vulnerability in Exchange Server (CVE-2026-55007) allows remote code execution via a malicious email attachment.
+- The surge in reported flaws is attributed to AI-assisted vulnerability discovery tools, which are identifying bugs at an unprecedented rate.
 
 ### Why it Matters
-This incident highlights the growing friction between autonomous AI agents and existing web security protocols designed to prevent bot-driven abuse. As users increasingly delegate tasks to AI, platforms must navigate the challenge of distinguishing between helpful personal assistants and malicious automated traffic.
+The record volume of patches highlights a growing security challenge as AI-driven tools accelerate both the discovery of software flaws and the potential for automated exploitation. Organizations must prioritize rapid deployment of these updates to mitigate risks from wormable threats and zero-day attacks that could lead to widespread system compromise.
 
 ============================================================
-Author:   Alex Bitter
-Source:   Business Insider
-URL:      https://www.businessinsider.com/resy-suspends-vcs-account-ai-agent-reservation-attempt-2026-9#article
-Category: Artificial Intelligence
+Author:   Ana Maria Constantin
+Source:   The Next Web
+URL:      https://thenextweb.com/news/microsoft-september-patch-tuesday-974-flaws-two-zero-days
+Category: Cybersecurity
