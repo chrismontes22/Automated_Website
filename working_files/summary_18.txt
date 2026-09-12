@@ -1,20 +1,20 @@
-Generative AI in the Real World: Local Voice AI with Pete Warden
+Attackers Exploit Critical Cisco FMC Flaw to deploy Qilin ransomware
 ============================================================
 
-TinyML pioneer Pete Warden discusses the shift toward local AI, arguing that on-device models offer enterprises superior privacy, cost-efficiency, and stability compared to cloud-based commercial alternatives.
+Three distinct threat groups, including state-sponsored actors and the Qilin ransomware gang, are actively exploiting two critical vulnerabilities in Cisco Secure Firewall Management Center to compromise enterprise networks.
 
 ### Key Points
-- Pete Warden, founder of Useful Sensors and Moonshine AI, advocates for running capable LLMs locally on standard hardware rather than relying on cloud-based subscriptions.
-- Modern hardware, including laptops with unified memory like the Apple M-series, provides sufficient bandwidth and capacity to run sophisticated models locally via weight quantization.
-- The "compound AI" approach, which chains specialized models together, offers a more efficient alternative to massive, capital-intensive end-to-end models favored by large tech companies.
-- Browser-based inference, such as Chrome’s built-in 4B parameter model, is identified as a potential "iPhone moment" that could democratize access to local AI development.
-- Local hosting mitigates enterprise concerns regarding data privacy, long-term model stability, and the unpredictable costs associated with external API dependencies.
+- Cisco Talos identified three attack clusters targeting CVE-2026-20079, a critical authentication bypass, and CVE-2026-20316, which allows unauthorized data access.
+- Attackers are deploying web shells, custom command executors, and the Cyclops Blink modular malware to maintain persistent access and exfiltrate credentials.
+- The Qilin ransomware group (UAT-11988) uses these flaws to conduct domain reconnaissance, establish SOCKS proxies, and deploy AV-killing tools before launching ransomware.
+- CISA has added CVE-2026-20079 to its Known Exploited Vulnerabilities catalog, mandating that U.S. federal agencies apply necessary patches by September 12, 2026.
+- Cisco advises administrators to immediately install available hotfixes and update Snort detection rules to mitigate ongoing exploitation attempts.
 
 ### Why it Matters
-Transitioning to local AI models allows businesses to regain control over their infrastructure while avoiding the privacy risks and recurring costs of cloud-based services. This shift toward self-hosted, specialized models could fundamentally change how enterprises deploy AI by prioritizing performance and reliability over the convenience of commercial subscriptions.
+These vulnerabilities provide attackers with high-level access to critical network infrastructure, potentially leading to full system compromise and ransomware deployment. Organizations using Cisco Secure Firewall Management Center must prioritize patching to prevent unauthorized access and protect sensitive internal data from sophisticated threat actors.
 
 ============================================================
-Author:   Ben Lorica and Pete Warden
-Source:   Oreilly.com
-URL:      https://www.oreilly.com/radar/podcast/generative-ai-in-the-real-world-local-voice-ai-with-pete-warden/
-Category: Artificial Intelligence
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/198884/cyber-crime/attackers-exploit-critical-cisco-fmc-flaw-to-deploy-qilin-ransomware.html
+Category: Cybersecurity

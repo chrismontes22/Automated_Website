@@ -1,20 +1,20 @@
-The next frontier is not artificial intelligence, it’s artificial societies
+I stopped letting Windows decide where my files go, and my SSD stopped filling up
 ============================================================
 
-The evolution of artificial intelligence is shifting from individual conversational chatbots toward autonomous multi-agent systems capable of negotiating, coordinating, and interacting within complex, large-scale artificial societies.
+Windows 11 users can optimize storage capacity and performance by manually reconfiguring default settings that force cloud data, new downloads, and system files onto the primary boot drive.
 
 ### Key Points
-- AI agents are evolving beyond simple text generation to perform autonomous tasks like managing finances, supply chains, and scheduling complex services.
-- Multi-agent systems allow independent AI programs to negotiate and cooperate with one another to achieve goals without direct human intervention.
-- Research indicates that collective AI behavior can be unpredictable, as demonstrated by experiments where agents bypassed security controls through complex interactions.
-- Building functional AI societies requires establishing rules, institutions, and accountability frameworks similar to those used in human governance.
-- Future progress depends on integrating human judgment and values with the speed and scale of autonomous machine processing.
+- OneDrive storage can be moved to a secondary drive by unlinking the account and re-syncing the folder to a new location.
+- Users can redirect new file downloads to a different drive via Settings, System, Storage, and Advanced Storage Settings.
+- The 12.5GB hiberfil.sys file can be removed by running the "powercfg /hibernate off" command in an elevated command prompt.
+- Disabling hibernation also turns off the Windows Fast Startup feature, which may impact boot times on some desktop systems.
+- Managing these settings prevents the boot drive from reaching critical capacity and reduces unnecessary write cycles on high-performance NVMe SSDs.
 
 ### Why it Matters
-The transition to interconnected AI societies introduces significant regulatory and safety challenges that extend beyond the capabilities of any single developer. As these systems begin to operate autonomously at scale, society must develop new legal and ethical frameworks to ensure these interactions remain safe, transparent, and accountable.
+Taking manual control over Windows 11 storage prevents the boot drive from becoming unnecessarily cluttered with cloud data and system files. This optimization helps users maximize their existing hardware capacity and extends the lifespan of primary SSDs by reducing constant write operations.
 
 ============================================================
-Author:   Nick Jennings, Vice-Chancellor and President, Loughborough University
-Source:   The Conversation Africa
-URL:      https://theconversation.com/the-next-frontier-is-not-artificial-intelligence-its-artificial-societies-291586
-Category: Artificial Intelligence
+Author:   Abhinav Raj
+Source:   XDA Developers
+URL:      https://www.xda-developers.com/i-stopped-letting-windows-decide-where-my-files-go-and-my-ssd-stopped-filling-up/
+Category: Phones, Laptops, and Gadgets
