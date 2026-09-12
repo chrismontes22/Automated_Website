@@ -1,21 +1,20 @@
-RGB Laser TV throws super bright, super snappy big-screen visuals
+Stop saving passwords in your browser, use this free tool instead
 ============================================================
 
-AWOL Vision has unveiled the LuxVision, a high-end 4K ultra-short-throw projector featuring a 120Hz refresh rate, 6,000 ISO lumens of brightness, and innovative one-touch optical lens shift technology.
+Chromium-based browsers store login credentials in vulnerable local databases, leaving users susceptible to credential-stealing malware that can easily bypass operating system protections to extract sensitive account information.
 
 ### Key Points
-- The LuxVision delivers 4K resolution at 120Hz with a 0.18:1 throw ratio, capable of projecting images up to 200 inches.
-- It features 6,000 ISO lumens of brightness and 110% Rec.2020 color coverage for high-performance viewing in ambient light.
-- Advanced gaming specifications include one-millisecond input lag, three HDMI 2.1 ports, and support for 4-channel multiview.
-- The unit includes Anti-RBE algorithms to reduce rainbow effects and a motorized lens cover to prevent dust accumulation.
-- Connectivity options include Wi-Fi 7, Google TV, and integration with major smart home platforms like Control4 and Apple HomeKit.
-- The projector is scheduled for launch within the next month at a suggested retail price of $6,499.
+- Chromium browsers store passwords in a local SQLite database that is automatically decrypted by the operating system whenever a user is logged into their desktop session.
+- Credential-stealing malware, such as Lumma and RedLine, successfully extracted 1.8 billion logins globally during the first half of 2025 by exploiting this lack of application-level isolation.
+- Built-in browser autofill features can inadvertently expose credentials to malicious scripts by populating hidden form fields on compromised or deceptive websites.
+- Dedicated password managers like Bitwarden provide superior security by requiring a master password and utilizing AES-256 encryption that remains inaccessible to background malware.
+- Users can mitigate these risks by exporting browser-stored credentials to a secure vault and disabling native browser password saving features to eliminate local vulnerabilities.
 
 ### Why it Matters
-The LuxVision represents a significant advancement in the ultra-short-throw market by combining high-brightness laser output with professional-grade installation features like motorized lens shift. This release intensifies competition among premium home theater brands as they race to standardize 4K/120Hz performance for both cinema enthusiasts and gamers.
+Relying on browser-based password storage creates a significant security gap because the software responsible for navigating the open web also holds the keys to your digital identity. Transitioning to a dedicated, encrypted vault ensures that your credentials remain protected even if your device or browser session is compromised by malicious software.
 
 ============================================================
-Author:   Paul Ridden
-Source:   New Atlas
-URL:      https://newatlas.com/home-entertainment/awol-luxvision-rgb-laser-ust-projector-4k120hz-optical-shift/
-Category: Phones, Laptops, and Gadgets
+Author:   Digvijay Kumar
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/stop-saving-passwords-in-your-browser-use-this-free-tool-instead/
+Category: Cybersecurity

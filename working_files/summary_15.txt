@@ -1,20 +1,20 @@
-I stopped letting Windows decide where my files go, and my SSD stopped filling up
+Storage infrastructure will underpin post-quantum security
 ============================================================
 
-Windows 11 users can optimize storage capacity and performance by manually reconfiguring default settings that force cloud data, new downloads, and system files onto the primary boot drive.
+Western Digital is integrating post-quantum cryptography into enterprise hard drives to protect long-term data assets against future quantum computing threats and evolving cyber security risks in AI workflows.
 
 ### Key Points
-- OneDrive storage can be moved to a secondary drive by unlinking the account and re-syncing the folder to a new location.
-- Users can redirect new file downloads to a different drive via Settings, System, Storage, and Advanced Storage Settings.
-- The 12.5GB hiberfil.sys file can be removed by running the "powercfg /hibernate off" command in an elevated command prompt.
-- Disabling hibernation also turns off the Windows Fast Startup feature, which may impact boot times on some desktop systems.
-- Managing these settings prevents the boot drive from reaching critical capacity and reduces unnecessary write cycles on high-performance NVMe SSDs.
+- Enterprise data growth driven by AI requires long-term storage solutions that prioritize both massive capacity and advanced cyber resilience.
+- The "harvest now, decrypt later" threat model involves attackers collecting encrypted data today to decrypt it once quantum computing capabilities mature.
+- Western Digital is embedding post-quantum cryptography (PQC) into hardware to secure firmware authentication, key establishment, and diagnostic tools.
+- New PQC implementations align with NIST standards, utilizing hybrid approaches that combine classical encryption with quantum-resistant algorithms.
+- Hard drives are being engineered to maintain trust architectures throughout their five-year operational lifecycles, protecting data against both current and future threats.
 
 ### Why it Matters
-Taking manual control over Windows 11 storage prevents the boot drive from becoming unnecessarily cluttered with cloud data and system files. This optimization helps users maximize their existing hardware capacity and extends the lifespan of primary SSDs by reducing constant write operations.
+As AI transforms data into a long-term strategic asset, organizations must ensure their storage infrastructure remains secure against future technological shifts. Integrating quantum-resistant defenses at the hardware level prevents sensitive intellectual property from becoming a long-term regulatory or operational liability.
 
 ============================================================
-Author:   Abhinav Raj
-Source:   XDA Developers
-URL:      https://www.xda-developers.com/i-stopped-letting-windows-decide-where-my-files-go-and-my-ssd-stopped-filling-up/
-Category: Phones, Laptops, and Gadgets
+Author:   Uwe Kemmer
+Source:   TechRadar
+URL:      https://www.techradar.com/pro/storage-infrastructure-will-underpin-post-quantum-security
+Category: Cybersecurity
