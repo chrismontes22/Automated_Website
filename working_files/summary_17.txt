@@ -1,20 +1,20 @@
-5 things Android should steal from the iPhone Duo and iPhone 18 Pro
+Apple researchers unveil SimpleDesign, a new AI model for protein design
 ============================================================
 
-**Apple has officially entered the foldable market with the launch of the iPhone Duo, alongside the new iPhone 18 Pro and iPhone 18 Pro Max flagship smartphones.**
+Apple researchers have introduced SimpleDesign, a streamlined AI model that simplifies protein engineering by generating amino acid sequences and 3D structures simultaneously through an end-to-end training process.
 
 ### Key Points
-- The iPhone Duo features a matte, nano-texture display coating designed to reduce glare, fingerprints, and the visibility of the central screen crease.
-- The device includes an under-display camera capable of 1080p video recording at 30 or 60 FPS for improved video calls.
-- The iPhone 18 Pro models introduce a variable aperture primary camera, utilizing six laser-cut blades to adjust between f/1.8 and f/4.0.
-- Apple introduced iPhone Handoff, a T-Mobile-exclusive service allowing users to share a single phone line across two different iPhones via eSIM.
-- The iPhone Duo supports IP68 water resistance, Qi2 wireless charging, and Apple Pencil input, consolidating features previously scattered across various Android foldables.
+- SimpleDesign eliminates the need for multi-stage training by learning directly from raw protein data rather than using intermediate latent representations or tokenization.
+- The model was trained on over 2 million protein sequence-and-structure pairs, primarily sourced from the AFESM dataset.
+- By masking both sequences and structures during training, the model effectively learns to perform protein folding, inverse folding, and joint co-design tasks.
+- The architecture utilizes flow-matching techniques and general-purpose Transformer blocks to reduce computational complexity compared to traditional protein-folding models.
+- Benchmarks indicate that SimpleDesign achieves competitive performance in structure and sequence generation, though results remain limited to computational evaluations without experimental biological testing.
 
 ### Why it Matters
-The release of the iPhone Duo represents a significant shift in the foldable market by integrating high-end hardware features that were previously fragmented across competing Android devices. By setting a new standard for display durability and camera versatility, Apple is pressuring Android manufacturers to refine their own foldable offerings to remain competitive.
+This development signals a shift toward more efficient, unified AI architectures in biotechnology that reduce the computational overhead required for complex protein design. By simplifying the training pipeline, Apple’s approach could accelerate the discovery of new proteins for medical and industrial applications.
 
 ============================================================
-Author:   bradypsnyder@gmail.com (Brady Snyder) , Brady Snyder
-Source:   Android Central
-URL:      https://www.androidcentral.com/phones/apple-iphone/5-things-android-steal-from-iphone-duo-18
-Category: Phones, Laptops, and Gadgets
+Author:   Marcus Mendes
+Source:   9to5Mac
+URL:      https://9to5mac.com/2026/09/11/apple-researchers-unveil-simpledesign-a-new-ai-model-for-protein-design/
+Category: Artificial Intelligence
