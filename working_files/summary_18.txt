@@ -1,20 +1,20 @@
-Users in Houthi-Held Yemen Tried to Develop Advanced Weapons With AI, Anthropic Says
+Tourmaline
 ============================================================
 
-Anthropic reported that users in Houthi-controlled northern Yemen utilized its Claude AI model to attempt the development of advanced missile systems, including hypersonic and guided rocket technology.
+Researchers have identified Tourmaline, a sophisticated Windows infostealer distributed via ClickFix campaigns that utilizes blockchain-based command-and-control infrastructure and DNS tunneling to evade traditional network security detection methods.
 
 ### Key Points
-- Anthropic blocked accounts in northern Yemen after discovering users were leveraging Claude Code to develop guidance, navigation, and control software for missiles.
-- The users attempted to build a multi-variant missile capable of hypersonic speeds and a warhead utilizing mobile phone hardware for mid-course maneuvering.
-- While the actors failed to field an operational device, they successfully conducted a test of a guided rocket and returned to the chatbot to troubleshoot failures.
-- The findings were detailed in Anthropic’s third report on AI misuse, which also covered state-sponsored propaganda and research into biological weapons.
-- Weapons analysts noted that while the Houthis lack the industrial capacity to build hypersonic missiles, the attempt signals a push for greater military self-reliance.
+- Tourmaline is a multi-stage Python-based backdoor delivered through fake Cloudflare "Verify you are human" browser popups.
+- The malware uses an Ethereum Sepolia testnet smart contract to dynamically retrieve its command-and-control (C2) server IP address.
+- Communication is disguised as legitimate Windows telemetry by tunneling traffic through custom UDP DNS queries directed at microsoft.com.
+- The installer employs a time-lock XOR loader to delay execution, specifically designed to bypass automated sandbox analysis environments.
+- Persistence is maintained through Windows Task Scheduler and registry modifications under the guise of a "Hardware monitoring service."
 
 ### Why it Matters
-This incident highlights the growing security risks associated with the accessibility of advanced generative AI tools in conflict zones. It underscores the urgent need for AI developers to implement robust safeguards to prevent non-state actors from accelerating the development of sophisticated weaponry.
+The use of blockchain dead-drops for C2 resolution renders traditional IP-based blocklists ineffective, as attackers can update the infrastructure address in real-time. This sophisticated delivery and communication strategy highlights an increasing trend in malware authors leveraging decentralized networks to maintain persistent, stealthy control over compromised systems.
 
 ============================================================
-Author:   Associated Press
-Source:   Securityweek.com
-URL:      https://www.securityweek.com/users-in-houthi-held-yemen-tried-to-develop-advanced-weapons-with-ai-anthropic-says/
-Category: Artificial Intelligence
+Author:   Kitploit
+Source:   Kitploit.com
+URL:      https://kitploit.com/en/tools/github/v-pun215/tourmaline/
+Category: Cybersecurity

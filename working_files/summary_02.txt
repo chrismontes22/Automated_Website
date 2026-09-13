@@ -1,20 +1,20 @@
-A veteran economist tells us why he sees a recession and a stock crash by the end of 2027
+I set up a self-destruct password on my Galaxy Note, and it exposed why GrapheneOS keeps it locked to their OS
 ============================================================
 
-Danish economist Henrik Zeberg warns that a K-shaped economy and an AI-driven bubble could trigger a massive stock market crash by late 2026, mirroring the 2000 dot-com collapse.
+DuressKeyboard is an open-source Android application designed to trigger a factory reset upon entering a specific password, though testing reveals it lacks the reliability of native OS-level features.
 
 ### Key Points
-- Henrik Zeberg forecasts the Nasdaq 100 could reach 39,000 before plummeting 72% to 10,600 by 2027.
-- The labor market shows underlying weakness, with long-term unemployment at 27% and a 50-year low in labor force participation.
-- Existing home sales dropped 2% in August as high mortgage rates and prices continue to suppress the housing sector.
-- Consumer financial health is declining, with the personal savings rate falling to 3% in July compared to 9.5% in 2021.
-- Zeberg’s model suggests a four-phase market cycle, culminating in a potential "Black Swan" event driven by high leverage and AI-sector instability.
+- DuressKeyboard 7.0 allows users to set a "wipe password" that initiates a factory reset when entered on the lock screen.
+- The app requires Device Administrator privileges and must be set as the default keyboard to monitor login attempts.
+- Additional triggers include USB connections, screen-off states, and a "dead hand" mode for lost mobile signal.
+- Testing on a Samsung Note 20 running ArtisanROM showed the app could trigger a reboot, but failed to successfully wipe the device's data.
+- Unlike GrapheneOS, which destroys encryption keys at the system level, DuressKeyboard relies on the Android Device Policy Manager to request a reset from recovery.
 
 ### Why it Matters
-This forecast highlights a growing disconnect between headline economic data and the financial stability of lower- to middle-income households. If these projections hold, investors may face significant volatility as the market shifts from an AI-fueled rally to a potential systemic recession.
+Relying on third-party apps for emergency data destruction can provide a false sense of security, as performance varies significantly based on the device's specific recovery environment. Furthermore, users should be aware that intentionally destroying data to prevent government seizure can lead to federal criminal charges under 18 U.S.C. § 2232(a).
 
 ============================================================
-Author:   Jennifer Sor
-Source:   Business Insider
-URL:      https://www.businessinsider.com/stock-market-crash-ai-bubble-recession-us-economy-outlook-2026-9
-Category: Tech Business & Markets
+Author:   Gregory Gibson
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/self-destruct-galaxy-note-graphene-os/
+Category: Cybersecurity
