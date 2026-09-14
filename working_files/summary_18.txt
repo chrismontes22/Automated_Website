@@ -1,20 +1,20 @@
-Tourmaline
+Rusting an E-scooter (In a Good Way)
 ============================================================
 
-Researchers have identified Tourmaline, a sophisticated Windows infostealer distributed via ClickFix campaigns that utilizes blockchain-based command-and-control infrastructure and DNS tunneling to evade traditional network security detection methods.
+Security researcher Ben reverse-engineered the Egret GT E-scooter firmware to address critical security vulnerabilities, including a bypass that allowed users to operate the vehicle without a PIN.
 
 ### Key Points
-- Tourmaline is a multi-stage Python-based backdoor delivered through fake Cloudflare "Verify you are human" browser popups.
-- The malware uses an Ethereum Sepolia testnet smart contract to dynamically retrieve its command-and-control (C2) server IP address.
-- Communication is disguised as legitimate Windows telemetry by tunneling traffic through custom UDP DNS queries directed at microsoft.com.
-- The installer employs a time-lock XOR loader to delay execution, specifically designed to bypass automated sandbox analysis environments.
-- Persistence is maintained through Windows Task Scheduler and registry modifications under the guise of a "Hardware monitoring service."
+- The Egret GT E-scooter contained a security flaw allowing users to bypass the PIN requirement by entering firmware update mode.
+- Ben reverse-engineered the scooter’s proprietary protocol and successfully rewrote the device firmware using the Rust programming language.
+- Analysis revealed that the scooter transmits telemetry data tagged with a unique device ID to a remote server via a mobile application.
+- The scooter utilizes a CAN Bus for internal communication, which is unexpectedly accessible through the data pins of the USB-C charging port.
+- The project involved reverse-engineering three distinct firmware components: the display, the input panel, and the main controller.
 
 ### Why it Matters
-The use of blockchain dead-drops for C2 resolution renders traditional IP-based blocklists ineffective, as attackers can update the infrastructure address in real-time. This sophisticated delivery and communication strategy highlights an increasing trend in malware authors leveraging decentralized networks to maintain persistent, stealthy control over compromised systems.
+This project highlights significant security and privacy risks inherent in consumer IoT devices that lack robust firmware encryption and data protection. It serves as a practical case study for hardware enthusiasts on how to identify and mitigate vulnerabilities in embedded systems.
 
 ============================================================
-Author:   Kitploit
-Source:   Kitploit.com
-URL:      https://kitploit.com/en/tools/github/v-pun215/tourmaline/
+Author:   Al Williams
+Source:   Hackaday
+URL:      https://hackaday.com/2026/09/13/rusting-an-e-scooter-in-a-good-way/
 Category: Cybersecurity

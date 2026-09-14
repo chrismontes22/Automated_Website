@@ -1,20 +1,20 @@
-When the Whole Company Adopts AI: What It Does to Your SOC
+Revolut handed customer passports to scammers using a real government email domain
 ============================================================
 
-Enterprise security teams are facing a surge in AI-related alerts, which grew 685% between February and June 2026, though most remain benign noise rather than actual security breaches.
+Revolut inadvertently disclosed sensitive customer data to criminals after attackers used a legitimate government email domain to submit fraudulent information requests, bypassing standard security verification protocols.
 
 ### Key Points
-- AI-related activity currently accounts for 0.43% of all security operations center (SOC) alerts.
-- Analysis shows 94.1% of AI-generated alerts are noise, 5.8% represent genuine security risks, and only 0.02% are confirmed attacks.
-- Common security risks include coding agents running with permission-bypass flags, unauthorized reverse tunnels, and excessive credential access.
-- Phishing campaigns are increasingly weaponizing trusted AI brand names to deceive employees into clicking malicious links.
-- Automated triage systems currently suppress 81.7% of AI-related alerts, with only 5.4% requiring human analyst intervention.
+- Attackers obtained personal data including dates of birth, postal addresses, phone numbers, and identity documents like passports and driving licenses.
+- Revolut confirmed the breach involved a sophisticated impersonation scam but stated that internal systems and customer funds remain secure.
+- The incident was first identified by crypto investigator ZachXBT, who noted that the fraudulent requests specifically targeted high-net-worth individuals.
+- Revolut has blocked the compromised email address, notified affected customers, and alerted relevant law enforcement and financial regulators.
+- The company has not disclosed the specific government agency involved, the number of affected users, or the duration of the unauthorized access.
 
 ### Why it Matters
-The rapid rise of AI-generated alerts threatens to overwhelm security teams with false positives, potentially masking critical exposures like unauthorized data access or credential dumping. Organizations must tune legacy detection systems and isolate AI tools in restricted environments to distinguish between routine developer activity and genuine security threats.
+This incident highlights a critical vulnerability in how financial institutions process urgent data requests from government agencies, as attackers can exploit inherent trust in official domains. Because the exposed data includes permanent identity documents, affected customers face a long-term risk of sophisticated identity theft that cannot be mitigated by simply changing passwords.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/09/when-whole-company-adopts-ai-what-it.html
+Author:   Ana-Maria Stanciuc
+Source:   The Next Web
+URL:      https://thenextweb.com/news/revolut-data-breach-fake-government-requests-passports
 Category: Cybersecurity

@@ -1,20 +1,20 @@
-Compiler Can Undo Your Security Checks
+Google illegally retains customer data,and I am taking legal action against them
 ============================================================
 
-Security researcher Chris Domas explains how compiler optimizations can inadvertently introduce critical vulnerabilities into C code, even when developers follow established best practices for writing secure software.
+A user is initiating legal action against Google, alleging that the company intentionally retains AI Studio prompt data on its servers despite claims that it is permanently deleted.
 
 ### Key Points
-- Compilers may remove security protections or memory-clearing operations during the optimization process, rendering seemingly secure source code vulnerable.
-- Data structure layout, register pressure, and specific data sizes can unpredictably influence whether a compiled binary contains exploitable security flaws.
-- AI-driven analysis of 500 million lines of open-source code successfully identified 300 potentially dangerous patterns caused by compiler transformations.
-- Developers are advised to enable compiler warnings, utilize sanitizers, and perform rigorous testing on the final optimized binaries intended for production.
-- Switching between common compilers like GCC and Clang does not inherently resolve these optimization-related security risks.
+- The user claims Google AI Studio only deletes a JSON "pointer" file in Google Drive rather than the actual prompt data stored on backend servers.
+- Evidence provided includes the ability to restore deleted chats using a Google Drive recovery tool, which re-links to the original, un-deleted server-side session.
+- The user argues that Google’s interface labels, such as "Your prompt will be permanently deleted after 30 days," are intentionally deceptive.
+- Forum discussions from 2025, including comments from a Google developer, suggest that chat metadata and server-side prompts may persist even when the UI indicates deletion.
+- The user has documented these findings through video evidence and correspondence sent to Google’s corporate offices.
 
 ### Why it Matters
-These findings highlight a significant disconnect between secure source code and the final executable binary produced by modern compilers. Understanding these risks is essential for developers to prevent silent security regressions that occur during the build process.
+This dispute highlights significant concerns regarding data privacy and the transparency of deletion processes in generative AI platforms. If proven, the intentional retention of user data despite explicit deletion promises could lead to serious legal and regulatory consequences for Google.
 
 ============================================================
-Author:   Davidbombal, Davidb_Admin
-Source:   Davidbombal.com
-URL:      https://davidbombal.com/your-compiler-can-undo-your-security-checks/
-Category: Cybersecurity
+Author:   Istokovicsgyorgy
+Source:   Medium
+URL:      https://medium.com/@istokovicsgyorgy79/google-illegally-retains-customer-data-and-i-am-taking-legal-action-against-them-7da0cf95941c
+Category: Artificial Intelligence
