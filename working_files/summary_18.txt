@@ -1,20 +1,20 @@
-Rusting an E-scooter (In a Good Way)
+Digital rights advocates urge EU to step in and save encryption from Canada's Bill C-22
 ============================================================
 
-Security researcher Ben reverse-engineered the Egret GT E-scooter firmware to address critical security vulnerabilities, including a bypass that allowed users to operate the vehicle without a PIN.
+A coalition of privacy advocates is urging the European Union to intervene against Canada’s Bill C-22, which could force international tech companies to weaken encryption and retain data.
 
 ### Key Points
-- The Egret GT E-scooter contained a security flaw allowing users to bypass the PIN requirement by entering firmware update mode.
-- Ben reverse-engineered the scooter’s proprietary protocol and successfully rewrote the device firmware using the Rust programming language.
-- Analysis revealed that the scooter transmits telemetry data tagged with a unique device ID to a remote server via a mobile application.
-- The scooter utilizes a CAN Bus for internal communication, which is unexpectedly accessible through the data pins of the USB-C charging port.
-- The project involved reverse-engineering three distinct firmware components: the display, the input panel, and the main controller.
+- Access Now and other civil society groups sent an open letter to European Commission President Ursula von der Leyen opposing the legislation.
+- Bill C-22, also known as the Lawful Access Act, would grant Canadian authorities power to compel companies to build surveillance backdoors into digital products.
+- The bill’s extraterritorial reach could force European-based firms to comply with data demands even if they have no direct operations in Canada.
+- Major tech companies, including Google, Apple, and various VPN providers, have warned that the law would fundamentally compromise global end-to-end encryption standards.
+- The Canadian Senate is expected to conclude its study of the proposed legislation by October 2026.
 
 ### Why it Matters
-This project highlights significant security and privacy risks inherent in consumer IoT devices that lack robust firmware encryption and data protection. It serves as a practical case study for hardware enthusiasts on how to identify and mitigate vulnerabilities in embedded systems.
+The legislation threatens to set a global precedent by forcing international companies to prioritize surveillance over user privacy and cybersecurity. If enacted, these mandates could create systemic vulnerabilities that undermine the security of digital platforms for users worldwide.
 
 ============================================================
-Author:   Al Williams
-Source:   Hackaday
-URL:      https://hackaday.com/2026/09/13/rusting-an-e-scooter-in-a-good-way/
+Author:   Rene Millman
+Source:   TechRadar
+URL:      https://www.techradar.com/vpn/vpn-privacy-security/digital-rights-advocates-urge-eu-to-step-in-and-save-encryption-from-canadas-bill-c-22
 Category: Cybersecurity

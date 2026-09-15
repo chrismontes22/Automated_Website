@@ -1,20 +1,20 @@
-Attackers Use Passkey Phishing to Hijack Microsoft Cloud Accounts and Exfiltrate Data
+whitelist-bypass – WebRTC Tunnels Through Video-Calling Platforms
 ============================================================
 
-Microsoft has identified two sophisticated cyberattack campaigns involving generative AI-driven financial fraud and passkey-themed social engineering tactics designed to compromise enterprise cloud environments and bypass multi-factor authentication.
+The whitelist-bypass project enables internet access in restricted environments by tunneling traffic through commercial video-calling platforms like VK Call and Yandex Telemost to evade strict domain-based network filtering.
 
 ### Key Points
-- Threat actors sent over one million scam emails in August 2026, impersonating CEOs to trick finance departments into making fraudulent Automated Clearing House (ACH) transfers.
-- Attackers utilized generative AI to create convincing email templates, fabricated invoices, and forged internal communication threads to reduce recipient skepticism.
-- A separate campaign targeting cloud identities uses voice phishing and counterfeit websites to trick employees into updating passkeys or multi-factor authentication settings.
-- Once access is gained, attackers register their own authentication methods to maintain persistent control and use the Microsoft Graph API to exfiltrate data from SharePoint and OneDrive.
-- Microsoft attributes these activities to various threat actors, including groups designated as Storm-3121 and Storm-3032, which show operational overlaps with the cybercrime collective UNC6671.
+- The tool uses the Pion WebRTC stack to route SOCKS5 traffic through either WebRTC data channels or encoded VP8 video tracks.
+- It supports multiple platforms including VK, Yandex Telemost, WB Stream, and Dion, operating as a headless Go application.
+- Traffic is secured with XChaCha20-Poly1305 encryption, using a secret derived from the call’s join link to ensure independent privacy.
+- The software is available for Android, iOS, Linux, macOS, and Windows, with Android support functioning as a system-wide VPN.
+- As of September 2026, the project has reached version 0.3.8 with active development and over 1,600 stars on GitHub.
 
 ### Why it Matters
-These campaigns demonstrate a significant evolution in social engineering, where attackers combine AI-generated content with sophisticated infrastructure to bypass traditional security safeguards. Organizations must move beyond simple credential protection and adopt holistic behavioral monitoring to detect anomalous API activity and unauthorized authentication changes.
+This tool represents a strategic shift in censorship circumvention by leveraging essential commercial services that authorities are hesitant to block. Its reliance on specific whitelisted platforms creates a fragile but effective cat-and-mouse game that forces censors to choose between allowing traffic or disrupting popular communication tools.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/09/attackers-use-passkey-phishing-to.html
+Author:   Darknet
+Source:   Darknet.org.uk
+URL:      https://www.darknet.org.uk/2026/09/whitelist-bypass-webrtc-tunnels-through-video-calling-platforms/
 Category: Cybersecurity

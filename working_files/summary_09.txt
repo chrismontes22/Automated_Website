@@ -1,20 +1,20 @@
-Anthropic CEO Says ‘We Owe It To Humanity To Try’ To Prevent An AI Swarm From Taking Over The Internet
+Red Heron Exploits Gitea RCE to Compromise 13 Organizations Across Six Countries
 ============================================================
 
-Anthropic CEO Dario Amodei has proposed a three-step plan urging governments and tech companies to slow AI development to prevent potential cybersecurity threats and recursive self-improvement risks.
+A China-linked threat actor known as Red Heron is exploiting a critical Gitea vulnerability to compromise government, defense, and research organizations across seven countries through automated attacks.
 
 ### Key Points
-- Anthropic CEO Dario Amodei published an essay titled "We Must Pace the Frontier" on September 12, 2026.
-- Amodei warns that AI could develop persistent botnets capable of causing hundreds of billions of dollars in damage within 6 to 12 months.
-- The proposal advocates for embedding third-party evaluators within AI companies and establishing international safety standards among democratic nations.
-- The plan calls for strict export controls on powerful AI chips and semiconductor manufacturing equipment to prevent access by the Chinese Communist Party.
-- OpenAI CEO Sam Altman and Grok’s Elon Musk have publicly expressed support for Amodei’s call to pace AI development.
+- Red Heron weaponized the CVE-2026-60004 remote code execution vulnerability to scan 1,386 Gitea instances globally.
+- The campaign utilizes a custom C++ Linux implant called JITTERLY and a stealthy rootkit named SIXZUT to maintain persistent access.
+- Confirmed compromises include targets in the United States, Taiwan, Canada, Argentina, Qatar, and Sri Lanka.
+- Attackers successfully moved laterally from compromised Gitea servers to gain root-level administrative access on a three-node Proxmox cluster.
+- Stolen data includes source code, SSH keys, configuration secrets, and internal tokens from sectors including energy, aerospace, and telecommunications.
 
 ### Why it Matters
-This proposal marks a significant shift as industry leaders acknowledge the existential risks posed by rapid, unchecked AI advancement. Implementing these measures could fundamentally alter the global semiconductor supply chain and redefine how governments regulate the competitive race for artificial intelligence dominance.
+This campaign highlights the extreme speed at which threat actors can weaponize N-day vulnerabilities in self-hosted development platforms to gain deep network access. Organizations relying on Gitea or similar infrastructure must prioritize rapid patching to prevent attackers from stealing sensitive intellectual property and establishing long-term persistence.
 
 ============================================================
-Author:   Lewis Parker
-Source:   Kotaku
-URL:      https://kotaku.com/anthropic-ceo-says-we-owe-it-to-humanity-to-try-to-prevent-an-ai-swarm-from-taking-over-the-internet-2000733980
-Category: Artificial Intelligence
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/09/red-heron-exploits-gitea-rce-to.html
+Category: Cybersecurity
