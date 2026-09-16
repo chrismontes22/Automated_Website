@@ -1,20 +1,20 @@
-whitelist-bypass – WebRTC Tunnels Through Video-Calling Platforms
+Sennheiser launch the Spectera SKM handheld
 ============================================================
 
-The whitelist-bypass project enables internet access in restricted environments by tunneling traffic through commercial video-calling platforms like VK Call and Yandex Telemost to evade strict domain-based network filtering.
+Sennheiser has officially launched the Spectera SKM handheld transmitter, completing its bidirectional wideband wireless ecosystem designed for professional broadcast, theater, and live sound production environments.
 
 ### Key Points
-- The tool uses the Pion WebRTC stack to route SOCKS5 traffic through either WebRTC data channels or encoded VP8 video tracks.
-- It supports multiple platforms including VK, Yandex Telemost, WB Stream, and Dion, operating as a headless Go application.
-- Traffic is secured with XChaCha20-Poly1305 encryption, using a secret derived from the call’s join link to ensure independent privacy.
-- The software is available for Android, iOS, Linux, macOS, and Windows, with Android support functioning as a system-wide VPN.
-- As of September 2026, the project has reached version 0.3.8 with active development and over 1,600 stars on GitHub.
+- The Spectera SKM utilizes Sennheiser’s WMAS technology to deliver ultra-low-latency wireless audio at 1ms.
+- The system operates on a single RF wideband channel, eliminating the need for separate wireless control networks.
+- Engineers can remotely monitor battery life, signal strength, and audio levels while adjusting gain and low-cut settings in real time.
+- The transmitter is compatible with a wide range of Sennheiser and Neumann microphone capsules and features AES-256 encryption.
+- Available now for $1,999, the device is offered in both UHF and 1.4GHz frequency variants.
 
 ### Why it Matters
-This tool represents a strategic shift in censorship circumvention by leveraging essential commercial services that authorities are hesitant to block. Its reliance on specific whitelisted platforms creates a fragile but effective cat-and-mouse game that forces censors to choose between allowing traffic or disrupting popular communication tools.
+This release completes the core Spectera ecosystem, offering professional users a streamlined workflow that reduces the complexity of frequency coordination. By integrating control data directly into the wideband audio channel, the system provides greater operational visibility and efficiency for large-scale productions.
 
 ============================================================
-Author:   Darknet
-Source:   Darknet.org.uk
-URL:      https://www.darknet.org.uk/2026/09/whitelist-bypass-webrtc-tunnels-through-video-calling-platforms/
-Category: Cybersecurity
+Author:   Luke Wood SOS News Editor
+Source:   Soundonsound.com
+URL:      https://www.soundonsound.com/news/sennheiser-launch-spectera-skm-handheld
+Category: Phones, Laptops, and Gadgets
