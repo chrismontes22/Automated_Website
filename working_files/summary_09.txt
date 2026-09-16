@@ -1,20 +1,20 @@
-Attackers hijack HBO Max’s Reddit account for 48-hour malvertising blitz
+I prefer Proxmox to VMware, but this open-source hypervisor made me reconsider both
 ============================================================
 
-Cybercriminals hijacked the verified HBO Max Reddit account to launch a 48-hour malvertising campaign, tricking users into installing information-stealing malware via deceptive ClickFix social engineering tactics.
+A tech enthusiast successfully installed the XCP-ng hypervisor on a low-power Zotac ZBOX Mini PC, evaluating its performance and management capabilities compared to industry alternatives like Proxmox and VMware.
 
 ### Key Points
-- Attackers used the compromised u/hbomax account to push 108 malicious ads over two days, targeting both macOS and Windows users.
-- The campaign, dubbed PasteSwitch, utilized fake lures for HBO Max, OpenAI Codex, and various developer tools to distribute infostealers.
-- Victims were prompted to run malicious commands that installed payloads like MacSync, AMOS, and Amatera to harvest credentials and cryptocurrency.
-- The operation employed blockchain-hosted smart contracts on the Binance Smart Chain to dynamically rotate command-and-control infrastructure and evade detection.
-- Security researchers at Hudson Rock and ADAMnetworks identified that the delivery system also mimicked legitimate software like Homebrew, GitHub, and various crypto wallets.
+- The Zotac ZBOX CI325 Nano features an Intel Celeron N3160 processor, 8GB of DDR3L RAM, and a 120GB SSD.
+- XCP-ng 8.3 was installed via a bootable USB, requiring manual configuration for ISO storage repositories due to the lightweight interface.
+- The XO Lite management dashboard allowed for basic VM creation, while the full Xen Orchestra appliance provided advanced features like snapshots and backups.
+- The system successfully hosted a responsive Lubuntu Linux virtual machine despite the hardware's limited processing power and memory constraints.
+- The project demonstrated that while XCP-ng is efficient, its management architecture is better suited for multi-host environments than single-node homelabs.
 
 ### Why it Matters
-This incident highlights the growing risk of "trusted" advertising channels being weaponized to bypass traditional security filters and user skepticism. By compromising verified accounts, attackers can effectively distribute malware to a broad audience, demonstrating the need for more robust account security and stricter verification processes on social media platforms.
+- This experiment highlights the trade-offs between lightweight, centralized hypervisors and all-in-one solutions like Proxmox for small-scale home server projects. It provides a practical look at how enterprise-grade virtualization software performs on entry-level hardware, helping users choose the right platform for their specific infrastructure needs.
 
 ============================================================
-Author:   Sinisa Markovic
-Source:   Help Net Security
-URL:      https://www.helpnetsecurity.com/2026/09/15/hbo-max-reddit-account-clickfix-infostealer-malware/
-Category: Cybersecurity
+Author:   Gregory Gibson
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/i-prefer-proxmox-to-vmware-but-this-hypervisor-made-me-reconsider-both/
+Category: Phones, Laptops, and Gadgets
