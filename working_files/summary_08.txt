@@ -1,20 +1,20 @@
-Samsung Goes to Couples Therapy to Unpack iPhone-to-Android Tension
+Three Threat Groups Target Russian Enterprises With Backdoors, Ransomware, and Wipers
 ============================================================
 
-Samsung has launched its "Switchers" advertising campaign, featuring psychologist Orna Guralnik, to help iPhone users overcome the emotional and technical anxieties associated with transitioning to Galaxy smartphones.
+Kaspersky researchers have identified three distinct threat clusters—NightEagle, Hacking Cat, and Toy Ghouls—actively targeting Russian enterprises with sophisticated backdoors, ransomware, and advanced lateral movement techniques.
 
 ### Key Points
-- The campaign features celebrity pairs, including Ciara Miller, Dylan Efron, and NFL players Nick Foles and Clay Matthews, in therapy-style sessions.
-- Ads highlight Samsung features like Smart Switch for data migration, Quick Share for cross-platform file transfers, and RCS to resolve messaging friction.
-- Samsung reported that 30% of Galaxy Z Flip 8 buyers and significant portions of Z Fold 8 and Fold 8 Ultra buyers switched from competing brands.
-- The campaign directly addresses the psychological attachment to Apple’s ecosystem while promoting the Galaxy Z and S series devices.
-- The initiative follows the recent market entry of the Apple iPhone Duo, intensifying competition in the foldable smartphone sector.
+- NightEagle (APT-Q-95) utilizes the GhostContainer modular backdoor to gain persistent access to Microsoft Exchange Servers and exploit Active Directory vulnerabilities.
+- Hacking Cat, a pro-Ukrainian hacktivist group, has pivoted from website defacement to deploying Gorilla RAT and various Monkey ransomware strains across Windows and Linux systems.
+- Toy Ghouls has transitioned from using leaked ransomware builders to deploying a custom "Bird Agent" backdoor that leverages MQTT brokers and Matrix-based messaging for command-and-control.
+- Attackers are increasingly using legitimate tools like Cloudflare WARP tunnels, Microsoft dev tunnels, and open-source utilities to evade detection and maintain network persistence.
+- The campaigns involve complex infection chains, including the exploitation of known vulnerabilities like BlueKeep (CVE-2019-0708) and various Microsoft Exchange flaws.
 
 ### Why it Matters
-This campaign signals a strategic shift toward emotional marketing to lower the high barrier of entry for consumers locked into the Apple ecosystem. By addressing technical pain points like data migration and messaging compatibility, Samsung aims to capture a larger share of the competitive foldable device market.
+These coordinated campaigns demonstrate a significant escalation in the sophistication of cyberattacks targeting Russian infrastructure, shifting from simple hacktivism to persistent, multi-stage espionage and destructive operations. The reliance on custom backdoors and unconventional communication channels highlights a growing trend of threat actors evolving their toolkits to bypass traditional security defenses.
 
 ============================================================
-Author:   Anna Gragert
-Source:   CNET
-URL:      https://www.cnet.com/tech/mobile/samsung-goes-couples-therapy-unpack-iphone-android-tension/
-Category: Phones, Laptops, and Gadgets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/09/three-threat-groups-target-russian.html
+Category: Cybersecurity
