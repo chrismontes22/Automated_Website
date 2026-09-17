@@ -1,20 +1,20 @@
-Some prop firms profit from failure
+A 32-Year-Old Bug Walks into a Telnet Server
 ============================================================
 
-Proprietary trading firms are shifting away from high-fee evaluation models toward pay-after-you-pass structures to better align firm incentives with the long-term success of retail traders.
+Researchers have identified a decades-old, critical buffer overflow vulnerability, CVE-2026-32746, affecting the Telnet protocol's LINEMODE negotiation handler across numerous Linux distributions and various legacy network-connected systems.
 
 ### Key Points
-- Data from FPFX Tech shows only 14% of traders pass evaluation challenges, with the average user spending $800 on multiple attempts.
-- Traditional prop firms often generate significant revenue from upfront fees paid by unsuccessful applicants rather than from successful trading performance.
-- New models, such as the Turbo Trade system from LEVERAGED, allow traders to begin evaluations for under $9, deferring larger costs until after passing.
-- Emerging industry standards emphasize trader education, including coaching and AI-driven tools, to foster long-term profitability for both the firm and the trader.
-- The shift aims to reduce the financial risk for aspiring traders while ensuring firms prioritize identifying genuine talent over collecting recurring application fees.
+- The vulnerability, discovered by the DREAM Security Research Team, has existed in Telnetd implementations since 1994.
+- It is a BSS-based buffer overflow located in the LINEMODE SLC (Set Linemode Characters) negotiation handler.
+- Affected systems include Debian, Ubuntu, FreeBSD, NetBSD, Citrix NetScaler, and various embedded devices.
+- Exploitation is highly complex and environment-dependent, requiring custom tailoring to specific memory layouts and compiler configurations.
+- The vulnerability remains unpatched in many official repositories, including the latest inetutils-telnetd version 2.7.
 
 ### Why it Matters
-This transition addresses a fundamental conflict of interest where firms profit more from trader failure than from successful capital management. By aligning business models with trader success, the industry may move toward a more sustainable and transparent framework for retail market participation.
+This discovery highlights the persistent security risks posed by legacy protocols like Telnet, which remain in use on critical infrastructure and industrial hardware despite being inherently insecure. Because the vulnerability is embedded in widely copied code, it creates a vast, fragmented attack surface that is difficult for organizations to identify and remediate effectively.
 
 ============================================================
-Author:   Ishan Pandey
-Source:   The Next Web
-URL:      https://thenextweb.com/news/prop-firms-profit-from-failure-pay-after-you-pass
-Category: Tech Business & Markets
+Author:   McCaulay Hudson
+Source:   Watchtowr.com
+URL:      https://labs.watchtowr.com/a-32-year-old-bug-walks-into-a-telnet-server-gnu-inetutils-telnetd-cve-2026-32746/
+Category: Cybersecurity
