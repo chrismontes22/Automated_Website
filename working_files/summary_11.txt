@@ -1,19 +1,20 @@
-A Cheap and Easy Control Screen For Home Assistant
+Fake AI trading agent steals crypto wallet passwords
 ============================================================
 
-Developer Max Gramser has released a customizable firmware project that transforms affordable ESP32-based touchscreen hardware into a dedicated, wall-mounted control interface for Home Assistant smart home systems.
+Cybercriminals are deploying a sophisticated malware campaign using fake AI trading agents to install the Needle Stealer, which compromises browser-based cryptocurrency wallets and harvests sensitive user passwords.
 
 ### Key Points
-- The project supports the Cheap Yellow Display (ILI9341) and the Guition ESP32-S3-4848S040 (ST7701S) hardware.
-- Users can configure the interface to display weather, time, and date widgets alongside custom controls.
-- The system allows for direct management of smart lights, household appliances, and compatible robot vacuums.
-- This DIY solution provides a low-cost alternative to commercial smart home wall panels by utilizing open-source firmware.
+- HP researchers identified a campaign between April and June 2026 that uses malicious AI trading agent websites to distribute the Needle Stealer malware.
+- The malware targets seven popular browser wallet extensions, including MetaMask, Coinbase Wallet, and Phantom, by replacing them with malicious copies to capture passwords.
+- Attackers utilize DLL side-loading and process hollowing, leveraging legitimate Microsoft-signed software to bypass Windows SmartScreen security checks.
+- Additional campaigns employ "quishing" (QR code phishing) to redirect mobile users to credential-harvesting sites and use steganography to hide loaders within images.
+- HP discovered approximately 400 distinct images linked to various credential-stealing campaigns, including those distributing XWorm, PureLogs Stealer, and Formbook.
 
 ### Why it Matters
-This project lowers the barrier to entry for users seeking a permanent, dedicated control panel for their home automation ecosystem. By leveraging inexpensive ESP32 hardware, it offers a highly customizable and accessible way to modernize smart home management without expensive proprietary equipment.
+This campaign highlights how attackers are exploiting the growing popularity of AI tools to bypass traditional security defenses and target digital assets. By compromising browser extensions and mobile devices, these threats demonstrate the need for a zero-trust security approach that isolates untrusted downloads and cross-device interactions.
 
 ============================================================
-Author:   Zoe Skyforest
-Source:   Hackaday
-URL:      https://hackaday.com/2026/09/16/a-cheap-and-easy-control-screen-for-home-assistant/
-Category: Phones, Laptops, and Gadgets
+Author:   Anamarija Pogorelec
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/09/17/fake-ai-trading-agent-research/
+Category: Cybersecurity

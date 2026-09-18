@@ -1,20 +1,20 @@
-Three Threat Groups Target Russian Enterprises With Backdoors, Ransomware, and Wipers
+Google Home Stuns by Announcing AI Support for Claude and OpenClaw
 ============================================================
 
-Kaspersky researchers have identified three distinct threat clusters—NightEagle, Hacking Cat, and Toy Ghouls—actively targeting Russian enterprises with sophisticated backdoors, ransomware, and advanced lateral movement techniques.
+Google is expanding its smart home ecosystem by allowing third-party AI agents, including Anthropic’s Claude, to control devices through the Model Context Protocol technology for premium subscribers.
 
 ### Key Points
-- NightEagle (APT-Q-95) utilizes the GhostContainer modular backdoor to gain persistent access to Microsoft Exchange Servers and exploit Active Directory vulnerabilities.
-- Hacking Cat, a pro-Ukrainian hacktivist group, has pivoted from website defacement to deploying Gorilla RAT and various Monkey ransomware strains across Windows and Linux systems.
-- Toy Ghouls has transitioned from using leaked ransomware builders to deploying a custom "Bird Agent" backdoor that leverages MQTT brokers and Matrix-based messaging for command-and-control.
-- Attackers are increasingly using legitimate tools like Cloudflare WARP tunnels, Microsoft dev tunnels, and open-source utilities to evade detection and maintain network persistence.
-- The campaigns involve complex infection chains, including the exploitation of known vulnerabilities like BlueKeep (CVE-2019-0708) and various Microsoft Exchange flaws.
+- Google Home now supports third-party AI agents like Claude, OpenClaw, and Hermes via the Model Context Protocol.
+- The integration allows external AIs to manage smart devices, perform complex tasks, and generate security camera summaries.
+- Early access is currently limited to Google Home Premium Advanced subscribers in the United States.
+- Users can create custom dashboards and advanced automations that may exceed the capabilities of the native Gemini for Home assistant.
+- Google warns that integrating third-party agents introduces potential security risks, such as prompt injection vulnerabilities.
 
 ### Why it Matters
-These coordinated campaigns demonstrate a significant escalation in the sophistication of cyberattacks targeting Russian infrastructure, shifting from simple hacktivism to persistent, multi-stage espionage and destructive operations. The reliance on custom backdoors and unconventional communication channels highlights a growing trend of threat actors evolving their toolkits to bypass traditional security defenses.
+This update marks the first time a major smart home platform has opened its ecosystem to third-party AI, signaling a shift toward more customizable, interoperable home automation. While it offers users greater flexibility, it also forces consumers to weigh the benefits of advanced AI control against potential security and privacy vulnerabilities.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/09/three-threat-groups-target-russian.html
-Category: Cybersecurity
+Author:   Tyler Lacoma
+Source:   CNET
+URL:      https://www.cnet.com/tech/services-and-software/google-home-stuns-by-announcing-ai-support-for-claude-and-openclaw/
+Category: Artificial Intelligence

@@ -1,20 +1,20 @@
-Microsoft is finally letting Windows 11 users take back the keyboard keys Copilot stole
+Announcing RustFS 1.0.0 GA: Production-Ready, Open Source, S3-Compatible Object Storage
 ============================================================
 
-Microsoft is introducing a new Windows 11 feature that allows users to remap the dedicated Copilot keyboard key to the Right Ctrl or Context Menu functions.
+**The distributed object storage platform RustFS has officially reached its 1.0.0 general availability milestone, signaling that the software is now stable and ready for enterprise production workloads.**
 
 ### Key Points
-- Users can reconfigure the Copilot key via Settings under the Bluetooth & Devices menu.
-- The update is currently available in Windows 11 Insider and preview builds for testing.
-- Certain keyboard shortcuts involving the Right Ctrl key may remain incompatible after remapping.
-- Microsoft is gradually reducing deep Copilot integration as part of its broader K2 operating system improvements.
-- The change provides more flexibility for laptop users who prefer traditional keyboard layouts over the dedicated AI button.
+- RustFS 1.0.0 is a production-ready distributed object storage system written in Rust and released under the Apache 2.0 license.
+- The platform has achieved significant adoption with over 2.7 million instances deployed worldwide and 32,000 stars on GitHub.
+- Core features include Amazon S3-compatible APIs, erasure coding, data tiering, multi-tenancy support, and integrated security features like IAM and KMS.
+- Development began in February 2024, with the project gaining 160 global contributors and joining the NVIDIA Inception Program.
+- The software supports deployment across Linux, Windows, and macOS via Docker, Kubernetes, or binary installations.
 
 ### Why it Matters
-This update signals a shift in Microsoft's strategy to prioritize user customization over mandatory AI hardware integration. By allowing users to reclaim keyboard space, the company is addressing long-standing feedback regarding the forced placement of the Copilot key on modern laptops.
+The transition to general availability marks a critical shift for RustFS from an emerging open-source project to a viable alternative for enterprise-grade data storage. By providing a stable, high-performance storage kernel with native support for modern protocols, the platform offers organizations a robust tool for managing large-scale, cloud-native data environments.
 
 ============================================================
-Author:   Patrick O'Rourke
-Source:   XDA Developers
-URL:      https://www.xda-developers.com/microsoft-finally-letting-windows-11-users-take-back-keyboard-keys-copilot-stole/
-Category: Phones, Laptops, and Gadgets
+Author:   RustFS, RustFS Team
+Source:   Rustfs.com
+URL:      https://rustfs.com/blog/announcing-rustfs-1-0-0-ga/
+Category: Tech Business & Markets
