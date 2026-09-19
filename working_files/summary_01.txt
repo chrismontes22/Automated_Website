@@ -1,20 +1,20 @@
-4 security subscriptions you're wasting money on, and what to use instead
+Claimed Bug Bounty Hunter Likely Used LLM to Build PhantomRaven npm Stealer
 ============================================================
 
-**A tech user reduced recurring software costs by replacing paid subscriptions for antivirus, password management, VPN services, and cloud backups with free, open-source, and built-in alternatives.**
+A financially motivated threat actor is distributing the PhantomRaven information stealer via malicious npm packages to compromise developer environments and exploit corporate bug bounty programs for illicit gain.
 
 ### Key Points
-- Microsoft Defender Antivirus provides sufficient malware protection for Windows 11, rendering third-party subscriptions like Norton 360 redundant for many users.
-- KeePassXC offers a free, open-source, and locally controlled alternative to subscription-based password managers like 1Password.
-- WireGuard allows users to securely access their home networks for free, eliminating the need for commercial VPN subscriptions when global exit servers are not required.
-- Restic enables users to manage encrypted backups independently, decoupling backup software from expensive, bundled cloud storage services like Backblaze.
-- These transitions require users to take greater responsibility for configuration, maintenance, and data verification compared to fully managed commercial services.
+- CrowdStrike identified PhantomRaven, a JavaScript-based malware likely generated using large language models, distributed through over 100 typosquatted npm packages.
+- The malware targets authentication tokens, CI/CD secrets, and GitHub credentials from developers' machines to gain unauthorized access to corporate systems.
+- The operator, active since November 2022, uses compromised data to identify and report vulnerabilities, claiming rewards from at least nine technology and retail bug bounty programs.
+- Attackers utilized remote dynamic dependencies to bypass security detection tools while harvesting system fingerprints, environment variables, and Git configurations.
+- Evidence suggests the threat actor has expanded operations to the Python Package Index (PyPI) using similar malicious code patterns.
 
 ### Why it Matters
-Transitioning to self-managed tools can significantly reduce annual software expenditures by eliminating unnecessary bundled features. While these alternatives require more technical effort, they provide users with greater control over their data and infrastructure.
+This campaign demonstrates a sophisticated shift where attackers use proprietary malware to gain leverage for fraudulent bug bounty claims rather than selling stolen data on illicit markets. It highlights the growing risk of supply chain attacks and the increasing efficiency of threat actors who leverage generative AI to automate malicious code development.
 
 ============================================================
-Author:   Afam Onyimadu
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/security-subscriptions-youre-wasting-money-on-and-what-to-use-instead/
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/09/claimed-bug-bounty-hunter-likely-used.html
 Category: Cybersecurity

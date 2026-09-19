@@ -1,19 +1,20 @@
-‘I don’t remember the case number leave me alone': US cops ignore Flock camera oversight, probing nationwide surveillance network with bogus reasoning
+Brevo Supply Chain Attack Injects Malware Into 100,000 Websites
 ============================================================
 
-An investigation by the Electronic Frontier Foundation reveals that police are abusing the Flock automated license plate reader network by providing spurious justifications for tracking citizens.
+Customer engagement platform Brevo suffered a significant supply chain attack that injected malicious scripts into over 100,000 websites, exposing users to sophisticated social engineering and potential backdoor installations.
 
 ### Key Points
-- The Electronic Frontier Foundation found police officers using nonsensical or profane justifications, such as "LMAO" or "idiot," to search the 82,413-camera network.
-- Hackers successfully compromised a single Flock camera, extracting 1.6 million images and 27,000 video clips over a 21-day period using a stolen encryption key.
-- Despite documented misuse, police departments have largely avoided disciplining officers, opting instead for informal counseling or failing to meet investigation deadlines.
-- Public opposition is growing, with nearly half of Americans opposing the network and cities like Columbus, Ohio, pausing their use of the technology.
+- Attackers exploited a SAML SSO vulnerability on September 10 to access 138 Brevo accounts, including those belonging to Trezor.
+- A compromised Cloudflare API key allowed hackers to deploy a malicious worker on September 14 for approximately five and a half hours.
+- The injected script utilized a "ClickFix" social engineering technique to trick visitors into running malicious commands on their personal computers.
+- WordPress sites using Brevo widgets were specifically targeted with attempts to install unauthorized administrative plugins.
+- Cybersecurity firm Sansec estimates that more than 100,000 websites were impacted by the malicious code injection.
 
 ### Why it Matters
-The widespread misuse of the Flock system highlights significant gaps in oversight and data security for mass domestic surveillance tools. These vulnerabilities raise urgent questions regarding the balance between public safety initiatives and the protection of individual civil liberties.
+This incident highlights the severe risks posed by supply chain attacks where third-party service providers become vectors for widespread malware distribution. Businesses relying on embedded widgets must now conduct thorough security audits to ensure their platforms remain free of unauthorized backdoors and compromised administrative access.
 
 ============================================================
-Author:   benedict.collins@futurenet.com (Benedict Collins) , Benedict Collins
-Source:   TechRadar
-URL:      https://www.techradar.com/pro/security/i-dont-remember-the-case-number-leave-me-alone-us-cops-ignore-flock-camera-oversight-probing-nationwide-surveillance-network-with-bogus-reasoning
+Author:   Ionut Arghire
+Source:   Securityweek.com
+URL:      https://www.securityweek.com/brevo-supply-chain-attack-injects-malware-into-100000-websites/
 Category: Cybersecurity

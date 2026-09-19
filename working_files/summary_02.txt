@@ -1,20 +1,20 @@
-AI Server Stocks Rally as the Hardware Bid Broadens: Hewlett Packard Enterprise Jumps 9%, Super Micro Climbs 6%, Dell Rises 3%
+ZCode, the GLM coding agent, silently uploads your Git history
 ============================================================
 
-Hewlett Packard Enterprise, Super Micro Computer, and Dell Technologies shares surged on Thursday as investor interest in artificial intelligence hardware expanded from chipmakers to server assembly companies.
+A security researcher discovered that the ZCode AI coding app silently encrypts and uploads entire user workspaces, including sensitive Git history, to Alibaba Cloud servers without user consent.
 
 ### Key Points
-- Hewlett Packard Enterprise led the sector with a 9.02% gain, followed by Super Micro Computer at 6.08% and Dell Technologies at 3.36%.
-- The rally occurred without company-specific news, signaling a broader rotation into AI hardware assemblers rather than individual stock-driven growth.
-- Market performance for these server makers significantly outpaced the iShares U.S. Technology ETF, which rose 1.83% during the same period.
-- Rising memory costs, which benefit chip suppliers, create potential margin pressure for server assemblers like Super Micro Computer.
-- Investors are monitoring whether server companies can successfully pass increased component costs on to their customers.
+- The ZCode app, developed by Z.ai, captures and archives local workspaces, including .git histories, LFS caches, and configuration files.
+- Data is encrypted using a server-side RSA key, ensuring that only Z.ai can decrypt and access the uploaded archives.
+- Forensic analysis confirms that UI settings labeled "Optimize Experience" and "Repo Snapshot Indexing" do not stop the background data exfiltration.
+- The application persistently attempts to upload data even after users delete local archives, with one test logging 564 failed upload attempts.
+- Users can block the exfiltration by setting the application's checkpoint directory to read-only at the kernel level using `chattr` or `chflags`.
 
 ### Why it Matters
-This rally highlights a shift in investor focus toward the "picks-and-shovels" infrastructure companies supporting the AI buildout. While the sector is benefiting from strong demand, the rising cost of memory components creates a complex environment where stock prices are climbing despite potential margin compression for hardware assemblers.
+This incident highlights a critical security distinction between open-weight models and the closed-source harnesses used to run them. It demonstrates that even when AI models run locally, the surrounding software can act as a sophisticated exfiltration tool, undermining the privacy benefits of local computing.
 
 ============================================================
-Author:   David Moadel
-Source:   24/7 Wall St.
-URL:      https://247wallst.com/investing/2026/09/17/ai-server-stocks-rally-as-the-hardware-bid-broadens-hewlett-packard-enterprise-jumps-9-super-micro-climbs-6-dell-rises-3/
-Category: Tech Business & Markets
+Author:   Tokenstead
+Source:   Tokenstead.ai
+URL:      https://tokenstead.ai/guides/zcode-silent-git-history-upload
+Category: Cybersecurity
