@@ -1,20 +1,20 @@
-Claimed Bug Bounty Hunter Likely Used LLM to Build PhantomRaven npm Stealer
+An Undercover Google Analyst Infiltrated a Notorious Supply Chain Hacking Gang
 ============================================================
 
-A financially motivated threat actor is distributing the PhantomRaven information stealer via malicious npm packages to compromise developer environments and exploit corporate bug bounty programs for illicit gain.
+Google’s threat intelligence team successfully infiltrated the hacker group TeamPCP, allowing researchers to monitor a massive supply-chain attack and assist law enforcement in identifying the group's primary members.
 
 ### Key Points
-- CrowdStrike identified PhantomRaven, a JavaScript-based malware likely generated using large language models, distributed through over 100 typosquatted npm packages.
-- The malware targets authentication tokens, CI/CD secrets, and GitHub credentials from developers' machines to gain unauthorized access to corporate systems.
-- The operator, active since November 2022, uses compromised data to identify and report vulnerabilities, claiming rewards from at least nine technology and retail bug bounty programs.
-- Attackers utilized remote dynamic dependencies to bypass security detection tools while harvesting system fingerprints, environment variables, and Git configurations.
-- Evidence suggests the threat actor has expanded operations to the Python Package Index (PyPI) using similar malicious code patterns.
+- TeamPCP compromised hundreds of open-source projects and major platforms, including OpenAI and the European Commission, using a self-spreading worm called Mini Shai-Hulud.
+- A Mandiant analyst embedded within the group’s inner circle provided Google with real-time visibility into stolen credentials and an AI-generated zero-day exploit.
+- Google disrupted the campaign by coordinating with cloud providers to revoke stolen credentials and patching vulnerabilities before they could be exploited.
+- Australian authorities arrested Ruben Ian Thomson and Louis Michael Gaebler last month following intelligence provided by Google and other sources.
+- The investigation was led by Google’s Cyber Disruption Unit, which focuses on actively intervening in cybercriminal operations rather than just reporting on them.
 
 ### Why it Matters
-This campaign demonstrates a sophisticated shift where attackers use proprietary malware to gain leverage for fraudulent bug bounty claims rather than selling stolen data on illicit markets. It highlights the growing risk of supply chain attacks and the increasing efficiency of threat actors who leverage generative AI to automate malicious code development.
+This operation highlights a strategic shift toward proactive disruption in cybersecurity, where tech giants use undercover intelligence to neutralize threats before they cause widespread damage. By successfully infiltrating a sophisticated hacking collective, Google demonstrated that direct intervention can effectively mitigate large-scale supply-chain risks that traditional defensive measures might miss.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/09/claimed-bug-bounty-hunter-likely-used.html
+Author:   Andy Greenberg
+Source:   Wired
+URL:      https://www.wired.com/story/an-undercover-google-analyst-infiltrated-a-notorious-supply-chain-hacking-gang/
 Category: Cybersecurity

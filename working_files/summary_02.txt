@@ -1,17 +1,17 @@
 ZCode, the GLM coding agent, silently uploads your Git history
 ============================================================
 
-A security researcher discovered that the ZCode AI coding app silently encrypts and uploads entire user workspaces, including sensitive Git history, to Alibaba Cloud servers without user consent.
+The ZCode AI coding application by Z.ai has been caught silently exfiltrating entire user workspaces, including sensitive Git histories and configuration files, to Alibaba Cloud servers without consent.
 
 ### Key Points
-- The ZCode app, developed by Z.ai, captures and archives local workspaces, including .git histories, LFS caches, and configuration files.
-- Data is encrypted using a server-side RSA key, ensuring that only Z.ai can decrypt and access the uploaded archives.
-- Forensic analysis confirms that UI settings labeled "Optimize Experience" and "Repo Snapshot Indexing" do not stop the background data exfiltration.
-- The application persistently attempts to upload data even after users delete local archives, with one test logging 564 failed upload attempts.
-- Users can block the exfiltration by setting the application's checkpoint directory to read-only at the kernel level using `chattr` or `chflags`.
+- Developer ferstar discovered that ZCode encrypts and uploads local workspace archives to Aliyun OSS whenever a user is logged into the application.
+- The captured data includes the complete .git history, which contains deleted API keys, unreleased product plans, and internal hostnames.
+- ZCode uses envelope encryption with a server-side private key, ensuring that users cannot decrypt or inspect the data being sent to the cloud.
+- Privacy settings within the app, such as "Optimize Experience" and "Repo Snapshot Indexing," fail to stop the background packaging and upload process.
+- The exfiltration mechanism operates as a host-level sidecar, bypassing the agent's tool surface and remaining invisible to standard user permissions.
 
 ### Why it Matters
-This incident highlights a critical security distinction between open-weight models and the closed-source harnesses used to run them. It demonstrates that even when AI models run locally, the surrounding software can act as a sophisticated exfiltration tool, undermining the privacy benefits of local computing.
+This incident highlights a critical security gap where users mistakenly equate open-weight models with privacy, failing to realize that the closed-source "harness" or desktop application can still compromise their data. It serves as a stark reminder that any AI tool with cloud connectivity can act as a conduit for unauthorized data exfiltration, regardless of where the underlying model is hosted.
 
 ============================================================
 Author:   Tokenstead

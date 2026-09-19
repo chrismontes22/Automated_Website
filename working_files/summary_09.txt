@@ -1,20 +1,20 @@
-98% of fraudulent hires have company credentials by the time they’re caught
+WeaselBiscuit Stealer Spreads via 13 npm Packages to Harvest Chrome Extension Storage
 ============================================================
 
-A new report from HYPR reveals that 98% of fraudulent hires successfully obtain corporate network credentials before being detected, highlighting a critical security gap in enterprise onboarding processes.
+Cybersecurity researchers have identified 13 malicious npm packages distributing a new, lightweight JavaScript stealer named WeaselBiscuit that shares functional similarities with North Korean-linked malware strains.
 
 ### Key Points
-- HYPR’s State of HR Identity Fraud Detection report identifies a 90-day blind spot between hiring and onboarding that attackers exploit to gain internal access.
-- While 98% of HR leaders have encountered candidate fraud, third-party security tools currently detect only 53% of these identity-based threats.
-- Organizations rely on an average of 2.2 disconnected checkpoints to identify fraud, often depending on manual discovery rather than automated verification.
-- IT and telecommunications sectors, despite being technically advanced, rely more heavily on manual observation to catch fraudulent workers than other industries.
-- Resolving a single hiring fraud incident typically requires one to three weeks, resulting in significant operational costs and security risks for the affected company.
+- Researchers discovered 13 malicious npm packages, including "@biz44/id10-client" and "process-tailwind," used to deploy the WeaselBiscuit malware.
+- WeaselBiscuit is a stripped-down information stealer that harvests Chrome extension data, clipboard contents, and keystrokes from Windows, macOS, and Linux systems.
+- The malware executes in memory after being triggered by an npm import, pulling its configuration from Npoint JSON storage services.
+- While the tool shares code and architectural similarities with the DPRK-linked BeaverTail and OtterCookie malware, researchers have not yet confirmed a definitive North Korean attribution.
+- The malware uses numerical campaign IDs to track installations, a tactic previously observed in other campaigns like PolinRider.
 
 ### Why it Matters
-The lack of unified ownership between HR and IT departments during the hiring transition creates a dangerous vulnerability that allows bad actors to infiltrate corporate networks. As AI-generated candidates become more sophisticated, companies must shift from reactive, manual detection methods to integrated identity verification to prevent unauthorized access.
+This discovery highlights the ongoing risk of supply chain attacks targeting software developers through compromised open-source repositories. By harvesting sensitive data from browser extensions, this lightweight malware poses a significant threat to users' financial information and digital credentials.
 
 ============================================================
-Author:   Anamarija Pogorelec
-Source:   Help Net Security
-URL:      https://www.helpnetsecurity.com/2026/09/18/hypr-hiring-fraud-detection-report/
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/09/weaselbiscuit-stealer-spreads-via-13.html
 Category: Cybersecurity

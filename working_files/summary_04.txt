@@ -1,20 +1,20 @@
-Journalist Calls Out 'Collective Amnesia' of Schools' Romance With Big Tech Over AI
+This Week in Security: Flock Cameras Are Old, Microsoft Patches Patches, and Researchers attack SSH
 ============================================================
 
-New York Times reporter Natasha Singer examines how Big Tech companies influence American public education in her new book, Coding Kids: Big Tech's Battle to Remake Public Schools.
+Security researchers have exposed critical vulnerabilities in Flock surveillance cameras, revealing outdated software, hard-coded API credentials, and the unauthorized collection of personal data from unsuspecting citizens.
 
 ### Key Points
-- Natasha Singer’s book investigates how major technology firms have historically shaped and captured computer science and AI curricula in U.S. public schools.
-- The narrative highlights the role of Code.org and its leader, Hadi Partovi, in promoting tech-focused education over the past thirteen years.
-- Major corporations including Microsoft, OpenAI, Anthropic, and Google are currently competing to integrate AI tools and software licenses into school districts nationwide.
-- Singer argues that society suffers from "collective amnesia" regarding the recurring cycles of tech industry promises to revolutionize education through various digital tools.
-- The book cites research contributions from long-time Slashdot user "theodp" and consumer advocate Ralph Nader.
+- Flock cameras run on an obsolete Android 8.1 version with unpatched kernel vulnerabilities dating back to 2018.
+- Analysis shows the devices store API keys and decryption keys in plain text, allowing unauthorized access to captured video.
+- Evidence suggests the cameras capture video of people and vehicles, contradicting company claims that they only record license plates.
+- A single camera captured 1.6 million photos of 50,000 vehicles in just 21 days, highlighting extensive data collection.
+- Flock has dismissed these findings, stating they cannot perform a security assessment based on incomplete reports from third parties.
 
 ### Why it Matters
-This investigation highlights the ongoing tension between corporate interests and public education as schools increasingly adopt AI tools despite growing parental distrust of Big Tech. It challenges stakeholders to critically evaluate whether these recurring technological integrations truly benefit students or primarily serve the strategic expansion of tech companies.
+These findings highlight the significant privacy and security risks posed by the widespread deployment of internet-connected surveillance hardware with poor maintenance standards. When manufacturers fail to patch known vulnerabilities or secure sensitive data, they create permanent backdoors that can be exploited to monitor public spaces and compromise personal information.
 
 ============================================================
-Author:   EditorDavid
-Source:   Slashdot.org
-URL:      https://news.slashdot.org/story/26/09/15/0346259/journalist-calls-out-collective-amnesia-of-schools-romance-with-big-tech-over-ai
-Category: Artificial Intelligence
+Author:   Mike Kershaw
+Source:   Hackaday
+URL:      https://hackaday.com/2026/09/18/this-week-in-security-flock-cameras-are-old-microsoft-patches-patches-and-researchers-attack-ssh/
+Category: Cybersecurity
