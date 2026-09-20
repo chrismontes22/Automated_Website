@@ -1,20 +1,20 @@
-GPT-6 Astra Solves a WWI German Radio Cipher
+I captured 72 hours of idle Android packets behind pfSense
 ============================================================
 
-The AI model GPT-6 Astra has successfully decoded a previously unsolved World War I German ADFGVX radio message transmitted on November 27, 1918, regarding naval movements in Sevastopol.
+A new study by PraveenTechWorld reveals that a factory-default Google Pixel 8 smartphone transmits data to Alphabet servers over 8,000 times daily, even while locked and completely idle.
 
 ### Key Points
-- The decrypted message confirms an English cruiser arrived in Sevastopol on November 24, 1918, followed by an Allied squadron on November 26.
-- The cipher was solved using the keyword "TRUPPENVERSCHIEBUNG," a key previously thought to have been implemented by the German military starting in December 1918.
-- The ADFGVX method utilizes a complex grid-based substitution and transposition system to secure military communications.
-- This specific message was part of a collection of 50 unsolved ciphers hosted on the German science portal Scienceblogs.de.
-- Historical logs from the HMS Canterbury corroborate the intelligence contained within the decoded transmission.
+- Researchers used an external hardware wiretap to monitor three Google Pixel 8 devices over 72 hours of continuous, undisturbed idle time.
+- Stock Android devices averaged 348 background telemetry pings per hour, totaling approximately 8,300 transmissions every 24 hours.
+- Data sent includes nearby Wi-Fi router MAC addresses for location triangulation, hardware serial numbers, and search query prefetching.
+- Installing GrapheneOS reduced background connections by 96.5%, while a fully de-Googled installation resulted in zero background data transmissions.
+- The study provides a comprehensive dataset and a 42-endpoint blocklist for users to mitigate tracking via tools like Pi-hole or AdGuard.
 
 ### Why it Matters
-This breakthrough demonstrates the growing capability of large language models to perform complex cryptanalysis on historical documents that have long eluded human experts. By successfully applying specific military encryption keys to archival data, AI tools provide new methods for historians to verify and contextualize events from the First World War.
+This research highlights the significant volume of passive data collection occurring on modern mobile devices without direct user interaction. These findings provide critical transparency for privacy-conscious consumers and system administrators looking to audit or restrict background telemetry on their personal networks.
 
 ============================================================
-Author:   prinz
-Source:   Prinzai.com
-URL:      https://www.prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio
-Category: Artificial Intelligence
+Author:   Praveen
+Source:   Praveentechworld.com
+URL:      https://www.praveentechworld.com/research/degoogle-telemetry-2026
+Category: Cybersecurity

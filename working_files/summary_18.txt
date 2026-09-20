@@ -1,20 +1,20 @@
-dev7 gang attack
+Researchers found a way to eavesdrop on headphones from 30 meters away, and encryption can't stop it
 ============================================================
 
-A Farbar Recovery Scan Tool (FRST) report provides a comprehensive diagnostic overview of a Windows 10 system, detailing active processes, registry configurations, and installed software.
+Researchers at Hong Kong universities have developed InjectEave, a technique using radio signals to extract audio and data from common electronic devices through their vulnerable analog hardware components.
 
 ### Key Points
-- The system is running Windows 10 Pro (Version 22H2) on an ASUS ROG STRIX B560-A motherboard with an Intel Core i7-11700F processor.
-- Diagnostic logs identify multiple missing drivers (Code 28) and recurring DCOM server launch errors related to Microsoft Copilot.
-- Security software, including Windows Defender, shows recent update failures due to network resolution issues (Error 0x80072ee7).
-- The report lists extensive background services for gaming-related software, including Razer Chroma, ASUS Armoury Crate, SteelSeries GG, and Riot Vanguard.
-- Code integrity logs indicate that several Nahimic and Sonic Studio audio modules failed to meet Microsoft signing requirements during loading.
+- The InjectEave method forces analog components like amplifiers and converters to leak signals by injecting electromagnetic waves between 0 MHz and 9 MHz.
+- Researchers successfully recovered audio from devices including Sony, Apple, HP, and Philips products at distances of up to 30 meters, even through walls.
+- The attack was tested on 11 commercial products, including wired headphones, VoIP phones, and smart-home appliances like fans and lamps.
+- Equipment used in the study included a USRP B210 software-defined radio, a spectrum analyzer, and an RF power amplifier to extend the signal range.
+- The technique bypasses standard digital security measures like encryption because the vulnerability exists within the physical analog hardware path.
 
 ### Why it Matters
-This diagnostic data is essential for identifying software conflicts, missing hardware drivers, and system service errors that may impact PC performance or stability. By reviewing these logs, users and technicians can pinpoint specific application failures or security update issues that require manual intervention or driver updates.
+This research highlights a significant security vulnerability in everyday consumer electronics that cannot be patched through software updates or encryption. Because the flaw resides in the physical hardware, manufacturers may need to implement better shielding or filtering to prevent unauthorized data extraction.
 
 ============================================================
-Author:   TMS0514
-Source:   BleepingComputer
-URL:      https://www.bleepingcomputer.com/forums/t/818733/dev7-gang-attack/
+Author:   Skye Jacobs
+Source:   TechSpot
+URL:      https://www.techspot.com/news/113907-researchers-found-way-eavesdrop-headphones-30-meters-away.html
 Category: Cybersecurity
