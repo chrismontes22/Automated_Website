@@ -1,20 +1,20 @@
-WeaselBiscuit Stealer Spreads via 13 npm Packages to Harvest Chrome Extension Storage
+assemblyline 4.7.5.dev121
 ============================================================
 
-Cybersecurity researchers have identified 13 malicious npm packages distributing a new, lightweight JavaScript stealer named WeaselBiscuit that shares functional similarities with North Korean-linked malware strains.
+The Assemblyline 4 framework update introduces essential libraries and data management components, requiring Python 3.11 and Linux-based environments for optimal performance and system compatibility across all deployments.
 
 ### Key Points
-- Researchers discovered 13 malicious npm packages, including "@biz44/id10-client" and "process-tailwind," used to deploy the WeaselBiscuit malware.
-- WeaselBiscuit is a stripped-down information stealer that harvests Chrome extension data, clipboard contents, and keystrokes from Windows, macOS, and Linux systems.
-- The malware executes in memory after being triggered by an npm import, pulling its configuration from Npoint JSON storage services.
-- While the tool shares code and architectural similarities with the DPRK-linked BeaverTail and OtterCookie malware, researchers have not yet confirmed a definitive North Korean attribution.
-- The malware uses numerical campaign IDs to track installations, a tactic previously observed in other campaigns like PolinRider.
+- Assemblyline 4 requires Python 3.11 and is officially tested exclusively on Linux operating systems.
+- The repository provides core infrastructure components including cachestore, datastore, filestore, ODM, and remote data types.
+- Required Linux dependencies include libffi8, libfuzzy2, libmagic1, and python3.11-dev for manual installations.
+- Users can bypass manual library installation by utilizing the official cccs/assemblyline container image.
+- Version 4.7.5.dev121 is now available as a source distribution package with a file size of 851.0 kB.
 
 ### Why it Matters
-This discovery highlights the ongoing risk of supply chain attacks targeting software developers through compromised open-source repositories. By harvesting sensitive data from browser extensions, this lightweight malware poses a significant threat to users' financial information and digital credentials.
+- These updates ensure that developers maintain a stable and secure environment for the Assemblyline malware analysis platform. By standardizing on Python 3.11 and containerized deployments, the team simplifies dependency management and improves cross-system reliability.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/09/weaselbiscuit-stealer-spreads-via-13.html
+Author:   assemblyline@cyber.gc.ca
+Source:   Pypi.org
+URL:      https://pypi.org/project/assemblyline/4.7.5.dev121/
 Category: Cybersecurity

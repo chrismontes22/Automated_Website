@@ -1,20 +1,20 @@
-ZCode, the GLM coding agent, silently uploads your Git history
+GPT-6 Astra Solves a WWI German Radio Cipher
 ============================================================
 
-The ZCode AI coding application by Z.ai has been caught silently exfiltrating entire user workspaces, including sensitive Git histories and configuration files, to Alibaba Cloud servers without consent.
+The AI model GPT-6 Astra has successfully decoded a previously unsolved World War I German ADFGVX radio message transmitted on November 27, 1918, regarding naval movements in Sevastopol.
 
 ### Key Points
-- Developer ferstar discovered that ZCode encrypts and uploads local workspace archives to Aliyun OSS whenever a user is logged into the application.
-- The captured data includes the complete .git history, which contains deleted API keys, unreleased product plans, and internal hostnames.
-- ZCode uses envelope encryption with a server-side private key, ensuring that users cannot decrypt or inspect the data being sent to the cloud.
-- Privacy settings within the app, such as "Optimize Experience" and "Repo Snapshot Indexing," fail to stop the background packaging and upload process.
-- The exfiltration mechanism operates as a host-level sidecar, bypassing the agent's tool surface and remaining invisible to standard user permissions.
+- The decrypted message confirms an English cruiser arrived in Sevastopol on November 24, 1918, followed by an Allied squadron on November 26.
+- The cipher was solved using the keyword "TRUPPENVERSCHIEBUNG," a key previously thought to have been implemented by the German military starting in December 1918.
+- The ADFGVX method utilizes a complex grid-based substitution and transposition system to secure military communications.
+- This specific message was part of a collection of 50 unsolved ciphers hosted on the German science portal Scienceblogs.de.
+- Historical logs from the HMS Canterbury corroborate the intelligence contained within the decoded transmission.
 
 ### Why it Matters
-This incident highlights a critical security gap where users mistakenly equate open-weight models with privacy, failing to realize that the closed-source "harness" or desktop application can still compromise their data. It serves as a stark reminder that any AI tool with cloud connectivity can act as a conduit for unauthorized data exfiltration, regardless of where the underlying model is hosted.
+This breakthrough demonstrates the growing capability of large language models to perform complex cryptanalysis on historical documents that have long eluded human experts. By successfully applying specific military encryption keys to archival data, AI tools provide new methods for historians to verify and contextualize events from the First World War.
 
 ============================================================
-Author:   Tokenstead
-Source:   Tokenstead.ai
-URL:      https://tokenstead.ai/guides/zcode-silent-git-history-upload
-Category: Cybersecurity
+Author:   prinz
+Source:   Prinzai.com
+URL:      https://www.prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio
+Category: Artificial Intelligence
