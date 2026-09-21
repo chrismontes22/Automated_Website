@@ -1,21 +1,20 @@
-North Korean WaterPlum hackers infected 30,000 devices worldwide
+I made one perfect Windows install, and now I clone it whenever I need a fresh PC
 ============================================================
 
-A joint international advisory reports that the North Korean hacking group WaterPlum compromised 30,000 devices globally, stealing over $10.7 million in cryptocurrency to fund state weapons programs.
+By utilizing VMware Workstation’s linked clone technology, users can deploy multiple independent Windows 11 virtual machines from a single golden image, significantly reducing total disk space consumption and setup time.
 
 ### Key Points
-- WaterPlum targeted job seekers through the "Contagious Interview" campaign, using malicious npm packages and fake coding tests to infect devices.
-- The group successfully exfiltrated funds or credentials from more than 7,000 cryptocurrency wallets across 100 countries between December 2025 and July 2026.
-- Identified malware families used in the attacks include BeaverTail, InvisibleFerret, OtterCookie, OtterCandy, and StoatWaffle.
-- Attackers utilized AI face-swapping software during interviews to impersonate legitimate candidates and gain access to corporate networks.
-- Japanese authorities recently dismantled a North Korean "laptop farm" used to facilitate these fraudulent IT worker operations and financial transfers.
-- The FBI and international partners link WaterPlum to North Korea's 313 General Bureau, which supports the regime's weapons research and production.
+- Linked clones function by reading unchanged data from a parent snapshot while writing new information to a separate "delta disk."
+- The author saved approximately 85 GB of storage by using linked clones instead of full copies for five distinct virtual machines.
+- Creating a golden image requires removing virtual TPM and encryption, as VMware restricts linked cloning on encrypted virtual machines.
+- Each clone automatically receives a unique MAC address and UUID, though the computer name must be updated manually after the first boot.
+- Disposable test environments can be reset instantly by deleting a corrupted clone and deploying a fresh instance from the parent image.
 
 ### Why it Matters
-These attacks demonstrate how state-sponsored actors leverage recruitment platforms and remote work trends to infiltrate corporate networks and steal sensitive intellectual property. The integration of stolen identities and AI-driven deception poses a significant threat to global cybersecurity, requiring companies to implement stricter verification processes for all new hires.
+This approach offers a highly efficient workflow for developers, testers, and power users who need multiple isolated environments without the overhead of massive storage requirements. While the dependency on a parent image creates a single point of failure, the ability to rapidly spin up or discard virtual machines provides unmatched flexibility for experimental computing.
 
 ============================================================
-Author:   Bill Toulas
-Source:   BleepingComputer
-URL:      https://www.bleepingcomputer.com/news/security/north-korean-waterplum-hackers-infected-30-000-devices-worldwide/
-Category: Cybersecurity
+Author:   Gregory Gibson
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/perfect-windows-install-and-now-i-clone-it-whenever-i-need-a-fresh-pc/
+Category: Phones, Laptops, and Gadgets

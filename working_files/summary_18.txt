@@ -1,20 +1,20 @@
-Researchers found a way to eavesdrop on headphones from 30 meters away, and encryption can't stop it
+uBlock v1.75.1b0
 ============================================================
 
-Researchers at Hong Kong universities have developed InjectEave, a technique using radio signals to extract audio and data from common electronic devices through their vulnerable analog hardware components.
+uBlock Origin faces significant operational changes as Google Chrome and Microsoft Edge prepare to phase out Manifest V2 extensions by late 2026, impacting future content blocker compatibility.
 
 ### Key Points
-- The InjectEave method forces analog components like amplifiers and converters to leak signals by injecting electromagnetic waves between 0 MHz and 9 MHz.
-- Researchers successfully recovered audio from devices including Sony, Apple, HP, and Philips products at distances of up to 30 meters, even through walls.
-- The attack was tested on 11 commercial products, including wired headphones, VoIP phones, and smart-home appliances like fans and lamps.
-- Equipment used in the study included a USRP B210 software-defined radio, a spectrum analyzer, and an RF power amplifier to extend the signal range.
-- The technique bypasses standard digital security measures like encryption because the vulnerability exists within the physical analog hardware path.
+- Google Chrome will remove all remaining Manifest V2 extensions from its Web Store by August 31, 2026.
+- Microsoft Edge plans to complete its transition from Manifest V2 to Manifest V3 extensions by the end of 2026.
+- uBlock Origin remains fully supported on Firefox, which continues to offer the most stable environment for the extension.
+- Users of Chromium-based browsers and Thunderbird may face manual update requirements or limited functionality as official store support declines.
+- The developer advises against using uBlock Origin alongside other content blockers to ensure optimal privacy and anti-malware performance.
 
 ### Why it Matters
-This research highlights a significant security vulnerability in everyday consumer electronics that cannot be patched through software updates or encryption. Because the flaw resides in the physical hardware, manufacturers may need to implement better shielding or filtering to prevent unauthorized data extraction.
+The shift toward Manifest V3 forces a major architectural change for ad-blocking software, potentially limiting the effectiveness of traditional tools like uBlock Origin on Chromium browsers. Users may need to transition to alternative versions or different browsers to maintain their current level of privacy and ad-blocking capabilities.
 
 ============================================================
-Author:   Skye Jacobs
-Source:   TechSpot
-URL:      https://www.techspot.com/news/113907-researchers-found-way-eavesdrop-headphones-30-meters-away.html
+Author:   Kitploit
+Source:   Kitploit.com
+URL:      https://kitploit.com/en/posts/github-gorhill-ublock-1751b0
 Category: Cybersecurity

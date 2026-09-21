@@ -1,20 +1,20 @@
-Identity Visibility in 2026: The Foundation of Identity Security
+Say Hello to RatHat, a New AI-Powered Malware Invading the Android Ecosystem
 ============================================================
 
-Identity visibility provides a continuous, comprehensive view of all human and machine credentials, enabling organizations to detect unauthorized access and secure complex, multicloud identity environments against modern threats.
+Security researchers have identified RatHat, a sophisticated AI-powered malware targeting Android devices that gains administrative control by tricking users into granting excessive accessibility permissions through fake app downloads.
 
 ### Key Points
-- Identity visibility combines inventory, entitlement mapping, and behavioral telemetry to distinguish between intended access policies and actual runtime execution.
-- "Identity dark matter"—including local application accounts, embedded service credentials, and legacy authentication flows—often bypasses centralized identity providers and governance platforms.
-- Modern attack surfaces are increasingly exploited through compromised legitimate credentials, making it critical to monitor non-human identities like API keys and autonomous AI agents.
-- Effective visibility requires normalizing identity models across diverse platforms, such as AWS, Azure, Google Cloud, and various SaaS applications.
-- Identity Visibility and Intelligence Platforms (IVIP) like Orchid Security, Veza, and SailPoint help bridge the gap between IAM configuration and actual infrastructure usage.
+- Zimperium discovered RatHat, which mimics the Google Play Store to trick users into downloading malicious versions of legitimate apps like Google Chrome.
+- The malware exploits Android accessibility permissions to enable Wireless Debugging and grant itself admin-level ADB Shell access.
+- Attackers use an AI-assisted agent to steal sensitive data, including usernames, passwords, two-factor authentication codes, and touchscreen input.
+- Researchers have identified 162 infected apps linked to attackers in China, primarily targeting financial platforms like WeChat Pay and Alipay.
+- Because the malware installs hidden secondary files, a full factory reset is the only reliable method to completely remove the infection from a device.
 
 ### Why it Matters
-Organizations often suffer from a widening gap between documented access and real-world permissions, which attackers exploit to move laterally through cloud environments. Implementing continuous identity visibility transforms security from static, manual governance into a proactive, data-driven defense that aligns with zero-trust principles.
+This threat highlights the critical danger of granting broad accessibility permissions to untrusted applications, which can bypass standard Android security protections. Users must remain vigilant against phishing attempts and avoid downloading apps from unofficial websites to prevent total device compromise.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/09/identity-visibility-in-2026-foundation.html
+Author:   Joe Hindy
+Source:   CNET
+URL:      https://www.cnet.com/tech/services-and-software/rathat-malware-attacks-android-phones/
 Category: Cybersecurity
