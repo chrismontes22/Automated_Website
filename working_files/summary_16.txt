@@ -1,20 +1,21 @@
-Vance’s “Frankenstein” AI defense is a blueprint for 2028
+Gopass: Open-source command-line password manager for teams
 ============================================================
 
-Vice President JD Vance has expressed skepticism toward artificial intelligence companies seeking government regulation, marking a subtle shift in tone from President Donald Trump’s enthusiastic support for development.
+Gopass is an open-source, command-line password manager designed for teams that utilizes GPG encryption and Git repositories to securely store and synchronize credentials across multiple operating systems.
 
 ### Key Points
-- JD Vance described AI industry requests for government oversight as a potential "Trojan Horse" and compared tech leaders like Sam Altman to Victor Frankenstein.
-- President Trump maintains that AI requires no guardrails beyond a strong president, viewing development as essential to compete with China.
-- Reports indicate White House advisers are encouraging Trump to adopt a more cautious stance regarding AI safety and data center expansion.
-- Senator Ted Cruz and other Republican figures are similarly balancing market-friendly policies with public concerns over AI-related risks and corporate accountability.
-- Despite the rhetorical shift, current policy remains focused on maintaining an unregulated environment for AI investment and data center growth.
+- Gopass functions as a drop-in replacement for the standard Unix password manager, pass.
+- Secrets are encrypted using GnuPG, ensuring private keys remain locally stored on the user's machine.
+- The tool supports Git for version control and synchronization, with optional support for age encryption and fossil storage.
+- It operates without a network connection, making it suitable for use on air-gapped systems.
+- The software is cross-platform, with official support for Linux, macOS, Windows, and BSD systems.
+- Installation is available through various package managers including Homebrew, WinGet, Chocolatey, and several Linux distribution repositories.
 
 ### Why it Matters
-This emerging skepticism suggests a strategic effort by Republican leaders to distance themselves from the administration's blanket tech optimism without alienating the party's base. By questioning the motives of AI executives, these politicians are attempting to address growing public unease regarding technology while preserving the flow of Silicon Valley capital.
+This tool provides teams with a transparent, self-hosted alternative to proprietary password management solutions by leveraging established open-source security standards. Its ability to function offline while maintaining version history offers a robust security model for organizations prioritizing data sovereignty and auditability.
 
 ============================================================
-Author:   Alex Galbraith
-Source:   Salon
-URL:      https://www.salon.com/2026/09/20/vances-frankenstein-ai-defense-is-a-blueprint-for-2028/
-Category: Artificial Intelligence
+Author:   Anamarija Pogorelec
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/09/21/gopass-open-source-password-manager/
+Category: Cybersecurity

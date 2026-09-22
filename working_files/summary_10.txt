@@ -1,20 +1,20 @@
-I made one perfect Windows install, and now I clone it whenever I need a fresh PC
+UN says AI safeguards can’t wait for certainty
 ============================================================
 
-By utilizing VMware Workstation’s linked clone technology, users can deploy multiple independent Windows 11 virtual machines from a single golden image, significantly reducing total disk space consumption and setup time.
+A new United Nations scientific panel report urges global governments to implement immediate AI safety safeguards, citing the potential for catastrophic risks despite ongoing scientific uncertainty regarding technology.
 
 ### Key Points
-- Linked clones function by reading unchanged data from a parent snapshot while writing new information to a separate "delta disk."
-- The author saved approximately 85 GB of storage by using linked clones instead of full copies for five distinct virtual machines.
-- Creating a golden image requires removing virtual TPM and encryption, as VMware restricts linked cloning on encrypted virtual machines.
-- Each clone automatically receives a unique MAC address and UUID, though the computer name must be updated manually after the first boot.
-- Disposable test environments can be reset instantly by deleting a corrupted clone and deploying a fresh instance from the parent image.
+- The Independent International Scientific Panel on AI released its first thematic brief calling for stronger international coordination on safety and accountability.
+- The report emphasizes the precautionary principle, arguing that governments should act against irreversible AI risks even before their exact causes are fully understood.
+- Recent security incidents have impacted major AI firms, including OpenAI, Anthropic, Google, and Meta, highlighting vulnerabilities in current systems.
+- The findings arrive as world leaders convene for the UN General Assembly in New York to discuss global AI governance and diplomatic cooperation.
+- US and Chinese officials are scheduled to hold bilateral talks regarding AI safety and policy during the current diplomatic summit.
 
 ### Why it Matters
-This approach offers a highly efficient workflow for developers, testers, and power users who need multiple isolated environments without the overhead of massive storage requirements. While the dependency on a parent image creates a single point of failure, the ability to rapidly spin up or discard virtual machines provides unmatched flexibility for experimental computing.
+This report elevates AI safety to a top priority for international diplomacy, signaling a shift toward proactive global regulation rather than reactive policy. By framing AI risks under the precautionary principle, the UN is pushing for standardized safety measures that could significantly influence future legal frameworks and corporate development standards worldwide.
 
 ============================================================
-Author:   Gregory Gibson
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/perfect-windows-install-and-now-i-clone-it-whenever-i-need-a-fresh-pc/
-Category: Phones, Laptops, and Gadgets
+Author:   Robert Hart
+Source:   The Verge
+URL:      https://www.theverge.com/ai-artificial-intelligence/998090/un-ai-panel-hugging-face-hack-precautionary-principle
+Category: Artificial Intelligence

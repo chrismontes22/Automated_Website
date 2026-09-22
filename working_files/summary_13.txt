@@ -1,20 +1,20 @@
-Malicious npm packages evade install-script defenses at runtime
+Here’s What to Expect From AI’s Two Biggest 2026 Spenders in 2027
 ============================================================
 
-A sophisticated npm malware campaign using the malicious indexed-btree package bypasses security defenses by executing hidden code during runtime rather than through traditional installation scripts.
+Amazon and Alphabet are investing nearly $400 billion in AI infrastructure during 2026, shifting the industry focus toward which company will generate durable free cash flow by 2027.
 
 ### Key Points
-- The indexed-btree package, which mimics the legitimate sorted-btree library, has reached 2 million weekly downloads.
-- Attackers hide malicious loaders within the BTree.prototype.set() method to evade npm v12 security measures and static analysis tools.
-- Once active, the malware exfiltrates system data via Slack and Telegram and retrieves command-and-control instructions from an Ethereum smart contract.
-- Checkmarx identified nine additional malicious packages, including btree-core, which collectively amassed millions of downloads before being removed.
-- Researchers linked the operation to a cryptocurrency wallet containing 109 ETH, though the source of these funds remains unconfirmed.
+- Amazon and Alphabet are on track to spend approximately $200 billion and $180 billion respectively on capital expenditures throughout 2026.
+- AWS reported 37% year-over-year revenue growth, while Google Cloud experienced an 82% increase during the same period.
+- Amazon’s strategy centers on a "bring-your-own-model" approach via Bedrock, whereas Alphabet utilizes a vertically integrated model featuring proprietary TPUs and Gemini AI.
+- Alphabet’s long-term debt rose to $98.2 billion as it funded infrastructure expansion, leading to a temporary suspension of share buybacks.
+- Amazon CEO Andy Jassy noted that data-center servers typically require nearly three years to reach a break-even point.
 
 ### Why it Matters
-This campaign demonstrates a critical shift in supply chain attacks where malicious actors bypass automated installation-time security by embedding threats within standard application runtime behavior. Developers must move beyond static scanning and implement robust runtime behavioral analysis to protect their environments from these sophisticated, stealthy threats.
+The massive capital expenditure cycle highlights a critical divergence in business models between the two tech giants as they race to monetize AI infrastructure. Investors are now closely monitoring whether Amazon’s flexible cloud ecosystem or Alphabet’s vertically integrated stack will prove more efficient at converting heavy spending into long-term profitability.
 
 ============================================================
-Author:   Bill Toulas
-Source:   BleepingComputer
-URL:      https://www.bleepingcomputer.com/news/security/malicious-npm-packages-evade-install-script-defenses-at-runtime/
-Category: Cybersecurity
+Author:   Alex Sirois
+Source:   24/7 Wall St.
+URL:      https://247wallst.com/investing/2026/09/21/heres-what-to-expect-from-ais-two-biggest-2026-spenders-in-2027/
+Category: Tech Business & Markets

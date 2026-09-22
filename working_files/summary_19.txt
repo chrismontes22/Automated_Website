@@ -1,20 +1,21 @@
-Paradex facilitates record $16M ETH options trade at lower cost than Deribit
+The Post-training Process OpenAI Used for ChatGPT
 ============================================================
 
-Decentralized exchange Paradex has executed a record $15.76 million Ethereum options trade, demonstrating that on-chain platforms can offer more competitive pricing than centralized incumbents like Deribit.
+Post-training processes like reinforcement learning from human feedback transform raw, pretrained language models into conversational, safe, and highly capable assistants through structured, multi-stage alignment and optimization pipelines.
 
 ### Key Points
-- Paradex processed the $15.76 million ETH options trade using Paradigm’s request-for-quote (RFQ) liquidity network.
-- The trade incurred a premium of $45,220, which the platform reports is cheaper than equivalent execution costs on Deribit.
-- Following the RFQ integration on September 15, 2026, Paradex saw open interest surge 2.6 times to reach $202 million.
-- The platform utilizes Starknet’s ZK-based encryption to ensure trade privacy and offers zero fees for retail participants.
-- New European-style ETH options on the exchange feature cash settlement via time-weighted average price to mitigate potential market manipulation.
+- Post-training enables essential capabilities including conversational fluency, safety alignment, tool use, and complex multistep reasoning.
+- The foundational InstructGPT pipeline consists of three stages: supervised fine-tuning, reward model training, and reinforcement learning with human feedback (RLHF).
+- Reward models are trained on human preference rankings to grade model outputs, which are then used to optimize the policy model via the PPO algorithm.
+- KL divergence penalties are applied during training to prevent "reward hacking" and ensure the model does not drift too far from its original behavior.
+- Reasoning models, such as OpenAI’s o1, utilize significant inference-time compute to generate internal chains of thought, drastically improving performance on complex logic tasks.
+- RLHF is highly efficient, allowing smaller models to outperform significantly larger ones by prioritizing high-quality, human-aligned training data.
 
 ### Why it Matters
-This trade serves as a proof of concept that institutional investors will utilize decentralized infrastructure if execution quality and costs remain competitive with centralized alternatives. By leveraging established off-chain liquidity networks, Paradex effectively bypasses the liquidity hurdles that have historically hindered the growth of decentralized derivatives protocols.
+These post-training techniques are the primary drivers behind the practical utility and safety of modern frontier AI models. By refining how models interact with users and external tools, these methods allow developers to balance helpfulness with strict safety constraints, ultimately determining how effectively AI can be integrated into professional and daily workflows.
 
 ============================================================
-Author:   Editorial Team
-Source:   Crypto Briefing
-URL:      https://cryptobriefing.com/paradex-record-eth-options-trade-deribit/
-Category: Tech Business & Markets
+Author:   Sharon Zhou
+Source:   Oreilly.com
+URL:      https://www.oreilly.com/radar/the-post-training-process-openai-used-for-chatgpt/#BlogPosting
+Category: Artificial Intelligence

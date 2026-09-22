@@ -1,20 +1,20 @@
-You Can Soon Get Pre-IPO Exposure on Binance Wallet, But There's A Catch
+Group Policy hijacked: PAYLOAD ransomware weaponizes Active Directory GPO
 ============================================================
 
-Binance Wallet and PancakeSwap have launched Pre-Access campaigns allowing users to purchase tokenized exposure to private companies before they undergo an initial public offering on traditional stock exchanges.
+A Middle Eastern manufacturing firm suffered a major security breach in April 2026 where attackers weaponized Active Directory Group Policy Objects to disrupt operations without using traditional ransomware encryption.
 
 ### Key Points
-- The new Pre-Access campaigns determine token allocations based on Alpha Points, bStocks on-chain tiers, and Trencher Badge ownership.
-- Tokenized holders receive no voting rights, dividends, or formal shareholder protections, and Binance warns of significant risks regarding liquidity and valuation.
-- This initiative follows Binance’s recent expansion into traditional assets, including the launch of US equities trading and pre-IPO perpetual futures.
-- Data from RWA.xyz shows record demand for tokenized stocks, with 3.7 million holders and over $3 billion in distributed value as of September 19.
-- The first private company featured in the Pre-Access program has not yet been publicly identified by the exchange.
+- Threat actors gained domain admin-equivalent access and deployed a malicious Group Policy Object (GPO) named "PAYLOAD" at the domain root.
+- The attack disabled local administrator accounts, altered desktop wallpapers, and enforced ransom banners across all domain-joined Windows workstations.
+- No malicious binaries or encryption processes were detected on endpoints, allowing the attack to bypass standard file-based security and EDR detection tools.
+- Data exfiltration occurred from file servers, with stolen information subsequently published on the dark web.
+- The attack remained dormant for one day after GPO creation, detonating only when endpoints rebooted and applied the new policy configurations.
 
 ### Why it Matters
-This expansion reflects a growing market trend where crypto exchanges bridge the gap between decentralized finance and traditional private equity markets. While these products offer retail investors early access to high-profile companies, the lack of standard shareholder rights highlights the speculative nature of these digital assets.
+This incident highlights a growing trend of "encryptionless extortion," where attackers leverage trusted administrative infrastructure to cause operational chaos rather than relying on file-locking malware. Because the attack lives entirely within Active Directory, traditional endpoint security solutions remain blind to the threat, necessitating a shift toward directory service auditing and strict privileged access governance.
 
 ============================================================
-Author:   Kamina Bashir
-Source:   BeInCrypto
-URL:      https://beincrypto.com/binance-wallet-pre-ipo-tokens-pancakeswap/
-Category: Tech Business & Markets
+Author:   Ahmad Zaidi Said, Elsayed Elrefaei
+Source:   Securelist.com
+URL:      https://securelist.com/tr/payload-ransomware-via-group-policy/121335/
+Category: Cybersecurity
