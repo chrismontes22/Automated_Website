@@ -1,20 +1,20 @@
-Five makers, one laptop: Googlebook pre-orders open from $899
+Meta patches Muse exploit that let attackers control the AI agent
 ============================================================
 
-Google has opened pre-orders for its new Googlebook laptop series, starting at $899, with initial shipments arriving in the United States on October 4 and international markets following.
+Meta has released a security patch for its Muse macOS application after researcher Patrick Wardle discovered a zero-day vulnerability that allowed attackers to hijack the AI agent.
 
 ### Key Points
-- The Googlebook series features five distinct models from manufacturers Acer, ASUS, Lenovo, Dell, and HP.
-- Hardware specifications include Intel Core Ultra Series 3 or Qualcomm Snapdragon X Elite processors, 16GB to 32GB of RAM, and 2.8K OLED touchscreens.
-- The operating system integrates Android app support with ChromeOS desktop functionality and a secure, walled-off Linux environment via a Level 5 security-certified pKVM hypervisor.
-- Every purchase includes a 12-month subscription to Google AI Pro, providing 5TB of storage and access to Gemini Advanced tools.
-- Devices feature premium builds using aluminum, magnesium alloy, or carbon fiber, alongside customizable "Glowbar" LED lighting for developers.
+- Security researcher Patrick Wardle identified a flaw allowing attackers to redirect transcription processing to unauthorized endpoints.
+- The exploit enabled attackers to execute malicious code, capture photos, and write files to a user's disk without triggering alerts.
+- Meta issued a hotfix shortly after the vulnerability was reported, characterizing the risk as low due to the requirement for local access.
+- The vulnerability stemmed from design choices, including cloud-based dictation and unrestricted access to undocumented application settings.
+- Despite security concerns, the Muse mobile app has seen rapid adoption, with initial download rates reportedly outpacing the debut of ChatGPT.
 
 ### Why it Matters
-This launch represents a significant strategic shift for Google by merging the Android and ChromeOS ecosystems into a unified hardware platform for both consumers and developers. By offering high-end security features and native support for professional creative software, Google is positioning the Googlebook as a direct competitor to established premium laptop brands.
+This incident highlights the significant security risks associated with integrating AI agents into local operating systems without robust permission frameworks. As Meta competes for market share in the AI sector, the company faces increased scrutiny regarding the privacy and safety standards of its rapidly deployed software products.
 
 ============================================================
-Author:   Ana Maria Constantin
-Source:   The Next Web
-URL:      https://thenextweb.com/news/googlebook-preorder-price-october-release
-Category: Phones, Laptops, and Gadgets
+Author:   Jess Weatherbed
+Source:   The Verge
+URL:      https://www.theverge.com/tech/998679/meta-muse-patch-zero-day-exploit-ai-agent
+Category: Cybersecurity

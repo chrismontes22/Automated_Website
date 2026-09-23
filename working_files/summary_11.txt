@@ -1,20 +1,20 @@
-Cyber insurance gap leaves UK property businesses dangerously exposed: GlobalData
+Security Bite: The last 24 hours at Meta were “not-a-musing”
 ============================================================
 
-UK property and real estate businesses face growing cyber threats, yet insurance adoption remains significantly lower than the broader SME market, leaving many firms financially vulnerable to attacks.
+Security researcher Patrick Wardle discovered a critical zero-day vulnerability in Meta’s new Muse AI agent for macOS that allows attackers to hijack user accounts and access sensitive data.
 
 ### Key Points
-- Cyberattacks against UK property services companies rose by 17% in 2025, reaching 208 reported incidents.
-- Cyber insurance penetration in the real estate sector lags behind the wider SME market across all business sizes.
-- Conveyancing fraud resulted in £11.7 million in losses between April 2024 and March 2025, with 143 recorded cases.
-- Property firms are high-value targets due to the sensitive financial and personal data they store for transactions.
-- Medium-sized property businesses report a 55% insurance uptake, while sole traders remain the least protected at 7.7%.
+- The vulnerability allows local apps or Terminal commands to modify undocumented Muse settings without requiring special macOS permissions.
+- Attackers can redirect dictated voice prompts to unauthorized servers, enabling the theft of authentication tokens to control the AI agent.
+- Exploitation can lead to malicious file creation, unauthorized camera access, and the retrieval of location data from linked iPhones.
+- The flaw stems from Meta’s decision to process voice data on external servers rather than using Apple’s secure on-device dictation tools.
+- Meta has reportedly released a software update to address the security gap, and users are urged to install the latest version immediately.
 
 ### Why it Matters
-- The widening protection gap leaves many property firms exposed to significant financial losses from data breaches and payment redirection fraud. Insurers have a clear opportunity to capture this underserved market by simplifying coverage and better educating small business owners on digital risks.
+This incident highlights the significant security risks associated with granting AI agents deep integration into personal accounts and system-level functions. It serves as a reminder that even software marketed with robust privacy features can contain critical flaws when developers bypass established platform-native security standards.
 
 ============================================================
-Author:   Douglas Blakey
-Source:   Lifeinsuranceinternational.com
-URL:      https://www.lifeinsuranceinternational.com/news/cyber-insurance-gap-leaves-uk-property-businesses-dangerously-exposed/
+Author:   Arin Waichulis
+Source:   9to5Mac
+URL:      https://9to5mac.com/2026/09/22/security-bite-the-last-24-hours-at-meta-were-not-a-musing/
 Category: Cybersecurity

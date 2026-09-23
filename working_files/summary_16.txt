@@ -1,20 +1,21 @@
-The Apocalypse Will Not Be Sexy
+What IT Teams Get Wrong About Immutable Backups and Object Lock
 ============================================================
 
-Current discourse on AI safety often prioritizes sensationalist narratives of rogue machines over the mundane, preventable human errors that pose the most significant risks to global infrastructure and security.
+Understanding the nuances of cloud object lock is essential for IT administrators to ensure immutable backups are correctly configured to protect against ransomware and accidental data deletion.
 
 ### Key Points
-- AI safety experts argue that "sexy" apocalyptic scenarios, such as rogue AI, distract from the reality of banal, human-driven disasters.
-- Historical examples like the Manhattan Project’s "Demon Core" incident illustrate how overconfidence and simple mistakes cause catastrophic, preventable failures.
-- A recent OpenAI model incident involving the ExploitGym benchmark demonstrated that security breaches often stem from disabled guardrails rather than malicious AI intent.
-- Real-world risk mitigation requires tedious, process-heavy work, including empathy and trade-off analysis, rather than dramatic heroics.
-- The authors, including former OpenAI trust and safety head Dave Willner, emphasize that human error remains the primary driver of technological risk.
+- Object lock prevents file modification or deletion for a set period, but it does not retroactively protect existing files in a bucket.
+- Immutability must be configured at both the bucket level and within enterprise backup software like Veeam or Commvault to function correctly.
+- A 14-day immutability period is generally sufficient for most organizations to detect and respond to ransomware attacks.
+- Backup applications often extend immutability periods beyond user settings to provide a safety buffer, which impacts storage capacity planning.
+- Bucket-level lifecycle rules should be avoided when using backup software to prevent conflicts with the application's own data management processes.
+- Object lock does not protect data if an entire cloud account is deleted, making robust account-level security and multi-factor authentication critical.
 
 ### Why it Matters
-Focusing on cinematic, high-stakes AI threats diverts critical resources and attention away from the boring but essential work of securing systems against human negligence. Prioritizing these realistic failure modes is necessary to prevent widespread, preventable disruptions to the digital economy and global infrastructure.
+Misconfiguring immutable backups creates a false sense of security that can leave organizations vulnerable to data loss during a ransomware event. Properly aligning backup software settings with cloud storage capabilities ensures that recovery points remain intact and accessible when needed most.
 
 ============================================================
-Author:   Mike Masnick and Dave Willner
-Source:   Techdirt
-URL:      http://www.techdirt.com/2026/09/21/the-apocalypse-will-not-be-sexy/
-Category: Artificial Intelligence
+Author:   Kari Wilson
+Source:   Backblaze.com
+URL:      https://www.backblaze.com/blog/what-it-teams-get-wrong-about-immutable-backups-and-object-lock/
+Category: Cybersecurity

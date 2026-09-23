@@ -1,5 +1,185 @@
 [
   {
+    "author": "Jess Weatherbed",
+    "title": "Meta patches Muse exploit that let attackers control the AI agent",
+    "processed_at": "2026-09-23T21:41:11.560064",
+    "summary": "Meta has released a security patch for its Muse macOS application after researcher Patrick Wardle discovered a zero-day vulnerability that allowed attackers to hijack the AI agent.\n\n### Key Points\n- Security researcher Patrick Wardle identified a flaw allowing attackers to redirect transcription processing to unauthorized endpoints.\n- The exploit enabled attackers to execute malicious code, capture photos, and write files to a user's disk without triggering alerts.\n- Meta issued a hotfix shortly after the vulnerability was reported, characterizing the risk as low due to the requirement for local access.\n- The vulnerability stemmed from design choices, including cloud-based dictation and unrestricted access to undocumented application settings.\n- Despite security concerns, the Muse mobile app has seen rapid adoption, with initial download rates reportedly outpacing the debut of ChatGPT.\n\n### Why it Matters\nThis incident highlights the significant security risks associated with integrating AI agents into local operating systems without robust permission frameworks. As Meta competes for market share in the AI sector, the company faces increased scrutiny regarding the privacy and safety standards of its rapidly deployed software products.",
+    "url": "https://www.theverge.com/tech/998679/meta-muse-patch-zero-day-exploit-ai-agent",
+    "source": "The Verge",
+    "category": "Cybersecurity"
+  },
+  {
+    "author": "Manon Bischoff",
+    "title": "Why mathematicians are hiding research results in zero-knowledge proofs",
+    "processed_at": "2026-09-23T21:41:38.252064",
+    "summary": "Google researchers claimed in March 2026 that quantum computers could soon break common encryption, attempting to prove the finding using a controversial, secret-keeping zero-knowledge proof method.\n\n### Key Points\n- Google researchers asserted that 1,175 logical qubits and two million Toffoli gates could compromise current elliptic curve cryptography.\n- The company utilized a \"zero-knowledge proof\" to claim the discovery without revealing the underlying algorithm, citing security risks.\n- Independent cryptologist André Schrottenloher successfully reproduced and improved upon Google’s quantum algorithm within 63 days.\n- An online community using AI-based systems further optimized the process, nearly halving the required number of Toffoli gates.\n- Google’s initial zero-knowledge proof was found to be flawed, allowing for the validation of false claims before a correction was issued.\n\n### Why it Matters\nThis event highlights the tension between corporate secrecy and the open-source nature of scientific progress in the field of quantum computing. The failure of Google's obfuscation strategy suggests that transparency remains the most effective way to verify and advance critical breakthroughs in digital security.",
+    "url": "https://www.scientificamerican.com/article/why-mathematicians-are-hiding-research-results-in-zero-knowledge-proofs/",
+    "source": "Scientific American",
+    "category": "Cybersecurity"
+  },
+  {
+    "author": "Lauren Goode",
+    "title": "AI Models Built From Rat Brains Just Got Closer to Reality",
+    "processed_at": "2026-09-23T21:46:23.117291",
+    "summary": "Amazon Web Services has launched a limited preview of The Biological Computing Company’s AI model, which utilizes neural patterns from rat brain cells to enhance video generation efficiency.\n\n### Key Points\n- The Biological Computing Company (TBC) uses rat brain cells and human stem cells on 3Brain silicon arrays to derive computational patterns for software.\n- TBC claims its technology can generate video up to five times faster than standard open-source models while reducing inference costs.\n- Founded in Baltimore, the startup has raised over $50 million in total funding, including a recent $25 million round.\n- Select AWS enterprise customers can now access the technology, which aims to improve the efficiency of existing generative AI video models.\n- The company maintains research and development laboratories in San Francisco, employing approximately 35 staff members.\n\n### Why it Matters\nThis integration signals a growing interest in biological computing as a viable method to improve the efficiency and performance of resource-heavy generative AI models. If successful at scale, this approach could provide a sustainable alternative to traditional math-based algorithms by leveraging the natural processing capabilities of living neural networks.",
+    "url": "https://www.wired.com/story/ai-models-built-from-rat-brains-are-about-to-become-a-reality/",
+    "source": "Wired",
+    "category": "Artificial Intelligence"
+  },
+  {
+    "author": "Ana Maria Constantin",
+    "title": "Anthropic’s cheaper Opus arrives weeks before its IPO",
+    "processed_at": "2026-09-23T21:46:34.613724",
+    "summary": "Anthropic has launched the Claude Opus 5.5 AI model, offering performance comparable to the premium Fable 5.1 at a significantly reduced price point for enterprise users.\n\n### Key Points\n- Claude Opus 5.5 is priced at $4 per million input tokens and $20 per million output, marking the first price reduction for the Opus series.\n- The model features a one-million-token context window and is designed specifically for complex agentic coding and knowledge-based tasks.\n- Third-party organizations METR and Frontier Design conducted safety evaluations on the model prior to its public release.\n- New safety features include a biology classifier and cybersecurity safeguards, aligning with Article 55 of the European Union's AI Act.\n- Anthropic plans to release updated Sonnet and Haiku versions of the model in the coming weeks.\n\n### Why it Matters\nThis release signals a strategic shift toward aggressive pricing to retain enterprise customers who are increasingly seeking cost-effective alternatives to premium AI models. By balancing lower costs with mandatory third-party safety testing, Anthropic is positioning itself to meet both market demand and evolving regulatory requirements ahead of its upcoming Nasdaq listing.",
+    "url": "https://thenextweb.com/news/anthropic-opus-5-5-price-cut",
+    "source": "The Next Web",
+    "category": "Artificial Intelligence"
+  },
+  {
+    "author": "Joe Rossignol",
+    "title": "Apple Will Soon Announce an All-New Operating System",
+    "processed_at": "2026-09-23T21:46:45.653674",
+    "summary": "Apple is developing a new operating system, potentially named homeOS, to power a forthcoming smart home hub featuring a square display and advanced facial recognition technology.\n\n### Key Points\n- The new operating system integrates elements from tvOS, watchOS, and iOS to support a grid-based interface with widgets and customizable clock faces.\n- The hardware will feature a 6-inch or 7-inch square display, combining a HomePod-style speaker with integrated FaceTime, HomeKit management, and security monitoring.\n- Built-in facial recognition allows the device to identify users and adjust interface elements or display personalized information based on proximity.\n- Preinstalled applications include Apple Music, Calendar, Notes, and a dedicated Siri app powered by the company's latest artificial intelligence.\n- Apple may officially unveil the smart home hub as early as October, potentially expanding its software ecosystem alongside iOS, macOS, and visionOS.\n\n### Why it Matters\nThis device represents a strategic push by Apple to centralize smart home control through a dedicated, AI-driven interface. By integrating multi-user support and personalized displays, the company aims to compete more effectively in the growing market for connected home hardware.",
+    "url": "https://www.macrumors.com/2026/09/22/apple-working-on-an-all-new-operating-system/",
+    "source": "MacRumors",
+    "category": "Phones, Laptops, and Gadgets"
+  },
+  {
+    "author": "Connor Jones",
+    "title": "Well-done hack flames 3.2M Burger King Russia users",
+    "processed_at": "2026-09-23T21:47:54.393345",
+    "summary": "The Swiss military is actively testing a transition from Microsoft 365 to open-source software alternatives to reduce reliance on American cloud-based applications and enhance digital sovereignty.\n\n### Key Points\n- The Swiss Army is spearheading a strategic initiative to replace proprietary Microsoft 365 tools with free and open-source software (FOSS).\n- This move aims to mitigate risks associated with foreign cloud dependencies and improve long-term data control for national defense operations.\n- The project reflects a broader trend of European organizations seeking independent, locally managed digital infrastructure to ensure operational security.\n- Switzerland’s shift follows ongoing global discussions regarding the privacy implications of hosting sensitive government data on US-based cloud platforms.\n\n### Why it Matters\nThis transition highlights a growing movement among government entities to prioritize digital sovereignty over the convenience of established commercial ecosystems. If successful, the Swiss model could serve as a blueprint for other nations looking to reduce their dependence on major American technology providers.",
+    "url": "https://www.theregister.com/cyber-crime/2026/09/22/well-done-hack-flames-32m-burger-king-russia-users/5298114",
+    "source": "Theregister.com",
+    "category": "Cybersecurity"
+  },
+  {
+    "author": "Jude Chukwuemeka",
+    "title": "ASUS Ascent QN10 Debuts as First Agentic AI Mini PC With an 80 TOPS NPU",
+    "processed_at": "2026-09-23T21:52:40.251918",
+    "summary": "ASUS has launched the Ascent QN10, a compact mini PC featuring Qualcomm’s Snapdragon X2 Elite platform and an 80 TOPS NPU designed to accelerate on-device agentic artificial intelligence workloads.\n\n### Key Points\n- The Ascent QN10 measures less than 0.7 liters, offering an 86% smaller footprint than standard 5-liter desktop systems.\n- It is powered by an 18-core Qualcomm Oryon CPU and an integrated Adreno GPU, which provides 2.3 times the graphics performance of previous generations.\n- The integrated Qualcomm Hexagon NPU delivers 80 TOPS of processing power to support local AI tasks, enhancing privacy and reducing latency.\n- Security features include firmware-based TPM 2.0 and Microsoft’s Pluton security processor for hardware-level data protection.\n- The device supports Wi-Fi 7 and Bluetooth 6.0 for high-speed connectivity in professional and enterprise environments.\n- Available in the U.S. starting September 17, 2026, the PC is priced at $1,349 for the 16GB model and $1,699 for the 32GB version.\n\n### Why it Matters\n- This release signals a shift toward integrating high-performance, agentic AI capabilities directly into compact desktop hardware for professional and enterprise use. By balancing local processing with cloud connectivity, the device offers a flexible solution for users who require both data privacy and the computational power needed for modern AI workflows.",
+    "url": "https://androidguys.com/news/asus-ascent-qn10-debuts-as-first-agentic-ai-mini-pc-with-an-80-tops-npu/",
+    "source": "AndroidGuys",
+    "category": "Artificial Intelligence"
+  },
+  {
+    "author": "jsor@businessinsider.com (Jennifer Sor)",
+    "title": "These are the stock market's winners and losers in the AI agent economy",
+    "processed_at": "2026-09-23T21:57:48.346761",
+    "summary": "Meta’s Muse AI app has triggered a significant stock market rally, highlighting a shift toward autonomous agentic systems that could reshape industries, corporate infrastructure, and consumer spending habits.\n\n### Key Points\n- Meta’s Muse app became the most-downloaded free tool on the App Store, driving an 11% surge in Meta stock and record highs for the Nasdaq.\n- Chipmakers saw major gains, with Intel rising 12%, AMD up 10%, and Qualcomm up 9% as investors pivoted toward CPU suppliers.\n- Shopify shares climbed 14% over two days following a partnership allowing Muse AI agents to make purchases via the Shop Pay service.\n- Analysts identify hyperscalers, hardware manufacturers, and industrial firms as potential winners, while software-as-a-service companies and online marketplaces face disruption.\n- Sectors reliant on entry-level labor, such as finance and customer service, may see cost-cutting through AI-driven headcount reductions.\n\n### Why it Matters\nThe rise of autonomous AI agents signals a transition from simple generative tools to systems capable of executing complex tasks like shopping and administrative work. This shift forces investors to re-evaluate the long-term viability of traditional software models and transactional middlemen that may be bypassed by direct AI-to-vendor interactions.",
+    "url": "https://www.businessinsider.com/ai-stocks-winners-losers-agent-economy-meta-muse-chips-consumers-2026-9#article",
+    "source": "Business Insider",
+    "category": "Tech Business & Markets"
+  },
+  {
+    "author": "John Carlsen",
+    "title": "I Tried Breville’s $300 Slot Toaster That Watches Bread So It Doesn’t Burn",
+    "processed_at": "2026-09-23T21:59:28.471928",
+    "summary": "The new $300 Breville Eye Q 850 Auto Toaster utilizes an internal optical sensor to monitor bread color and automatically stop the toasting cycle once perfection is reached.\n\n### Key Points\n- The Eye Q features an Optic Sensor in the left slot that monitors visual doneness rather than relying solely on traditional time and temperature settings.\n- The unit includes a motorized lift, adjustable chimes, and dedicated modes for sourdough, bagels, English muffins, and toaster pastries.\n- A built-in safety feature prevents the toaster from operating unless bread is detected inside the slot.\n- The device includes a removable crumb tray and a convenient power cord storage compartment located on the bottom of the unit.\n- Performance testing showed consistent results for white and sourdough breads, though darker breads required manual monitoring to prevent over-toasting.\n\n### Why it Matters\nThis premium appliance represents a shift toward sensor-based automation in small kitchen electronics, aiming to eliminate the guesswork of manual toasting. While the high price point limits its appeal to luxury consumers, it offers a sophisticated alternative to standard models for those who prioritize consistent results in daily use.",
+    "url": "https://www.cnet.com/home/kitchen-and-household/i-tried-brevilles-300-toaster-that-watches-your-bread-so-it-doesnt-burn/",
+    "source": "CNET",
+    "category": "Phones, Laptops, and Gadgets"
+  },
+  {
+    "author": "techkritiko@gmail.com (Jay Bonggolto) , Jay Bonggolto",
+    "title": "Snapdragon 8 Elite Extreme Gen 6 is coming for the top Android phones",
+    "processed_at": "2026-09-23T22:00:04.287663",
+    "summary": "Qualcomm has unveiled its new Snapdragon 8 Elite Extreme Gen 6 and Snapdragon 8 Elite Gen 6 mobile platforms, featuring 2nm architecture designed to enhance on-device AI capabilities.\n\n### Key Points\n- Both chipsets utilize custom Oryon CPUs, redesigned Adreno GPUs, and Hexagon NPUs to support local, context-aware AI assistants.\n- The 2nm platforms introduce Adreno Neural Fusion technology to improve gaming visuals and extend battery life during intensive sessions.\n- New camera features include Advanced Professional Video (APV) support and Intelligent Pixel Control for more natural image processing.\n- The Snapdragon 8 Elite Extreme Gen 6 is expected to power upcoming flagship devices like the Samsung Galaxy S27 series and Motorola Signature 27.\n\n### Why it Matters\nThese new processors signal a strategic shift toward integrating complex AI agents directly into the hardware of premium Android smartphones. By prioritizing local processing, Qualcomm aims to improve device responsiveness and privacy while setting a new performance standard for the next generation of mobile flagship devices.",
+    "url": "https://www.androidcentral.com/phones/qualcomm/snapdragon-8-elite-extreme-gen-6-is-coming-for-the-top-android-phones",
+    "source": "Android Central",
+    "category": "Phones, Laptops, and Gadgets"
+  },
+  {
+    "author": "Arin Waichulis",
+    "title": "Security Bite: The last 24 hours at Meta were “not-a-musing”",
+    "processed_at": "2026-09-23T22:00:17.327074",
+    "summary": "Security researcher Patrick Wardle discovered a critical zero-day vulnerability in Meta’s new Muse AI agent for macOS that allows attackers to hijack user accounts and access sensitive data.\n\n### Key Points\n- The vulnerability allows local apps or Terminal commands to modify undocumented Muse settings without requiring special macOS permissions.\n- Attackers can redirect dictated voice prompts to unauthorized servers, enabling the theft of authentication tokens to control the AI agent.\n- Exploitation can lead to malicious file creation, unauthorized camera access, and the retrieval of location data from linked iPhones.\n- The flaw stems from Meta’s decision to process voice data on external servers rather than using Apple’s secure on-device dictation tools.\n- Meta has reportedly released a software update to address the security gap, and users are urged to install the latest version immediately.\n\n### Why it Matters\nThis incident highlights the significant security risks associated with granting AI agents deep integration into personal accounts and system-level functions. It serves as a reminder that even software marketed with robust privacy features can contain critical flaws when developers bypass established platform-native security standards.",
+    "url": "https://9to5mac.com/2026/09/22/security-bite-the-last-24-hours-at-meta-were-not-a-musing/",
+    "source": "9to5Mac",
+    "category": "Cybersecurity"
+  },
+  {
+    "author": "Dusan Belic",
+    "title": "Oppo’s AI Heart Ball is a tiny wearable that listens to your life and judges your decisions",
+    "processed_at": "2026-09-23T22:00:41.855887",
+    "summary": "Oppo has launched the AI Heart Ball, a 9.8-gram wearable device designed to act as an AI growth coach by monitoring daily conversations and providing behavioral feedback.\n\n### Key Points\n- The device is available for trial in China for 499 yuan, approximately $75, with user sign-ups currently open.\n- It features a 24-hour battery life and a microphone capable of capturing audio from up to 5 meters away.\n- The wearable utilizes the PersonaX Memory Symbiosis Engine and O-Mind algorithms to analyze habits and offer actionable suggestions.\n- Oppo is opening the device's MCP ecosystem to third-party developers to expand its functionality beyond initial capabilities.\n- Privacy protections include end-to-end encryption and a policy stating that the company does not retain raw user recordings.\n\n### Why it Matters\nThis launch signals Oppo’s strategic entry into the competitive AI wearable market by focusing on behavioral coaching rather than smartphone replacement. The device’s success will likely depend on whether consumers trust its privacy claims while integrating an always-listening assistant into their daily routines.",
+    "url": "https://www.intomobile.com/2026/09/22/oppos-ai-heart-ball-is-a-tiny-wearable-that-listens-to-your-life-and-judges-your-decisions/",
+    "source": "Intomobile.com",
+    "category": "Artificial Intelligence"
+  },
+  {
+    "author": "Jamie Crawley",
+    "title": "Animoca Brands delays IPO plans, suspends merger talks with Currenc",
+    "processed_at": "2026-09-23T22:02:05.946024",
+    "summary": "Animoca Brands has officially suspended merger negotiations with Currenc Group, effectively delaying the digital asset investment firm's plans to secure a public listing on the Nasdaq exchange.\n\n### Key Points\n- Animoca Brands and Currenc Group ended merger talks due to incompatible timelines for finalizing the transaction.\n- The proposed deal would have granted Hong Kong-based Animoca a 95% stake in the combined entity.\n- Animoca co-founder Yat Siu confirmed the company remains committed to pursuing a public listing on a major exchange.\n- Currenc Group shares experienced a 0.93% decline in after-hours trading following the announcement on Monday.\n- Animoca’s diverse portfolio includes investments in decentralized finance, artificial intelligence, non-fungible tokens, and gaming.\n\n### Why it Matters\nThe collapse of this deal forces Animoca Brands to seek alternative strategies for entering public markets as it continues to expand its influence in the digital asset sector. This development highlights the ongoing challenges firms face when attempting to navigate complex regulatory and timeline requirements for public listings.",
+    "url": "https://www.coindesk.com/business/2026/09/22/animoca-brands-delays-ipo-plans-suspends-merger-talks-with-currenc",
+    "source": "CoinDesk",
+    "category": "Tech Business & Markets"
+  },
+  {
+    "author": "Sead Fadilpašić",
+    "title": "BigCommerce warns customers of potential data leaks following cyber incident",
+    "processed_at": "2026-09-23T22:02:33.029272",
+    "summary": "BigCommerce confirmed a supply-chain breach involving the third-party Ribon application, which allowed unauthorized access to customer data across multiple merchant storefronts between September 13 and 17, 2026.\n\n### Key Points\n- Attackers compromised credentials for the Ribon and Ribon 1.5 applications, owned by Fastr company \"Be A Part Of.\"\n- Malicious scripts were injected into merchant storefronts, exposing customer names, email addresses, phone numbers, and physical addresses.\n- The spirits retailer Master of Malt confirmed its customers were affected and reported the incident to the UK Information Commissioner’s Office.\n- BigCommerce revoked access to the compromised application on September 17, 2026, to prevent further unauthorized data exposure.\n- Law firm Emery Reddy is investigating potential claims, warning that affected customers face an increased risk of phishing and scam attempts.\n\n### Why it Matters\nThis incident highlights the significant security risks posed by third-party integrations within ecommerce platforms, where a single compromised application key can impact hundreds of independent retailers. It serves as a reminder for businesses to rigorously vet third-party software and for consumers to remain vigilant against targeted phishing attacks following data breaches.",
+    "url": "https://www.techradar.com/pro/security/bigcommerce-warns-customers-of-potential-data-leaks-following-cyber-incident",
+    "source": "TechRadar",
+    "category": "Cybersecurity"
+  },
+  {
+    "author": "Pankil Shah",
+    "title": "I tested 8.8.8.8 and 1.1.1.1 head-to-head, and Google won on speed but lost on everything else",
+    "processed_at": "2026-09-23T22:03:01.258013",
+    "summary": "Google’s 8.8.8.8 and Cloudflare’s 1.1.1.1 are the leading public DNS resolvers, offering users faster and more private alternatives to the default settings provided by most internet service providers.\n\n### Key Points\n- Google DNS (8.8.8.8) demonstrated slightly faster response times in speed tests, though the difference of approximately 0.3ms is generally imperceptible to users.\n- Cloudflare (1.1.1.1) maintains a stricter privacy policy, deleting most query data within 24 hours and explicitly excluding browsing data from advertising profiles.\n- Google retains DNS query data for up to 48 hours, including domain names and request types, though it does not link this information to personal Google accounts.\n- Cloudflare provides specialized resolvers, such as 1.1.1.2 for malware blocking and 1.1.1.3 for adult content filtering, which are not available through Google.\n- Cloudflare offers a dedicated mobile and desktop application that allows users to toggle DNS settings without manually configuring network parameters.\n\n### Why it Matters\nSwitching to a third-party DNS provider can improve browsing security and privacy by bypassing ISP-level tracking and filtering. While both services offer reliable performance, the choice between them depends on whether a user prioritizes marginal speed gains or enhanced privacy controls and content filtering features.",
+    "url": "https://www.makeuseof.com/google-8888-vs-cloudflare-1111-dns/",
+    "source": "MakeUseOf",
+    "category": "Cybersecurity"
+  },
+  {
+    "author": "Kari Wilson",
+    "title": "What IT Teams Get Wrong About Immutable Backups and Object Lock",
+    "processed_at": "2026-09-23T22:03:26.636188",
+    "summary": "Understanding the nuances of cloud object lock is essential for IT administrators to ensure immutable backups are correctly configured to protect against ransomware and accidental data deletion.\n\n### Key Points\n- Object lock prevents file modification or deletion for a set period, but it does not retroactively protect existing files in a bucket.\n- Immutability must be configured at both the bucket level and within enterprise backup software like Veeam or Commvault to function correctly.\n- A 14-day immutability period is generally sufficient for most organizations to detect and respond to ransomware attacks.\n- Backup applications often extend immutability periods beyond user settings to provide a safety buffer, which impacts storage capacity planning.\n- Bucket-level lifecycle rules should be avoided when using backup software to prevent conflicts with the application's own data management processes.\n- Object lock does not protect data if an entire cloud account is deleted, making robust account-level security and multi-factor authentication critical.\n\n### Why it Matters\nMisconfiguring immutable backups creates a false sense of security that can leave organizations vulnerable to data loss during a ransomware event. Properly aligning backup software settings with cloud storage capabilities ensures that recovery points remain intact and accessible when needed most.",
+    "url": "https://www.backblaze.com/blog/what-it-teams-get-wrong-about-immutable-backups-and-object-lock/",
+    "source": "Backblaze.com",
+    "category": "Cybersecurity"
+  },
+  {
+    "author": "Daragh Thomas",
+    "title": "EXCLUSIVE: Small AI Model Matches GPT-4.1 at Forecasting as Olas Founding Member Says Frontier Models Face ‘Increasing Economic Pressure’",
+    "processed_at": "2026-09-23T22:03:39.195262",
+    "summary": "Olas has released a new specialized AI model, Olas-Predict-R1-14B, which matches the performance of GPT-4.1 in forecasting real-world events while operating on significantly less computing power.\n\n### Key Points\n- Olas-Predict-R1-14B achieved 75.8% accuracy across 2,628 prediction markets, outperforming the 75.4% accuracy of GPT-4.1.\n- The model was trained on 214,529 forecasts from 5,116 resolved markets to improve predictive probability and reduce confident errors.\n- The system is designed to run on a single GPU, offering a cost-effective alternative to large-scale, closed-source general-purpose AI models.\n- Weights for the new model are publicly available on Hugging Face, allowing developers to host the technology independently.\n- Thomson Reuters is pursuing a similar strategy by investing $40 million into proprietary, specialized AI models to control costs and data privacy.\n\n### Why it Matters\nThe emergence of high-performing, specialized models challenges the industry assumption that superior AI results require increasingly massive and expensive general-purpose systems. If smaller models can handle complex workloads efficiently, it may disrupt the current capital-intensive infrastructure boom driven by major cloud providers and hardware manufacturers.",
+    "url": "https://www.benzinga.com/markets/prediction-markets/26/09/61927022/small-ai-model-gpt-4-1-forecasting-olas?utm_source=yahooFinance&amp;utm_campaign=partner_feed&amp;utm_medium=referral",
+    "source": "Benzinga",
+    "category": "Artificial Intelligence"
+  },
+  {
+    "author": "info@thehackernews.com (The Hacker News)",
+    "title": "Malicious npm Package indexed-btree Hid Its Loader in Runtime Code Before Removal",
+    "processed_at": "2026-09-23T22:04:01.198640",
+    "summary": "The malicious npm package indexed-btree has bypassed new security controls by executing obfuscated code at runtime rather than during installation, resulting in significant illicit cryptocurrency profits for attackers.\n\n### Key Points\n- The indexed-btree package, which mimicked a legitimate utility, generated approximately €230,933 in Ethereum by exploiting runtime execution.\n- Attackers shifted tactics after npm version 12 restricted automatic lifecycle script execution, moving malicious payloads directly into application code methods.\n- The malware used the EtherHiding technique to retrieve encrypted payloads from a smart contract on the Sepolia testnet.\n- Checkmarx identified ten additional malicious packages linked to the same operation, all of which have been removed from the npm registry.\n- A separate campaign, PolinRider, is currently compromising developer accounts on Packagist to inject malicious code into legitimate software repositories.\n\n### Why it Matters\nThis shift demonstrates that attackers are rapidly evolving their methods to circumvent supply chain security improvements by moving malicious activity from installation hooks to runtime execution. Organizations must now implement layered defense strategies, including runtime behavior analysis, to detect threats that bypass traditional static installation-time security controls.",
+    "url": "https://thehackernews.com/2026/09/malicious-npm-package-indexed-btree-hid.html",
+    "source": "Internet",
+    "category": "Cybersecurity"
+  },
+  {
+    "author": "Barry Ritholtz",
+    "title": "Transcript: Glen Kacher, CIO of Light Street Capital",
+    "processed_at": "2026-09-23T22:04:26.711258",
+    "summary": "**Light Street Capital founder Glen Kacher discusses the long-term investment potential of artificial intelligence and the critical role of semiconductor infrastructure in the evolving technology landscape.**\n\n### Key Points\n- Glen Kacher, CIO of Light Street Capital, emphasizes that AI is in the early stages of a 10-to-15-year infrastructure and application development cycle.\n- The firm’s portfolio maintains a heavy concentration in key semiconductor players, including Nvidia, AMD, Broadcom, and TSMC, to capture growth in AI compute.\n- Kacher identifies \"agentic AI\"—autonomous systems capable of executing complex tasks—as the next major driver of productivity and market demand.\n- Despite concerns regarding energy consumption and data center bottlenecks, Kacher views these as manageable education and infrastructure challenges rather than existential threats to the industry.\n- The firm utilizes a \"long the disruptor, short the incumbent\" strategy, leveraging insights from private venture investments to inform public market positions.\n\n### Why it Matters\nUnderstanding the shift toward agentic AI and the massive capital expenditure in hardware provides a clearer picture of how the technology sector will evolve over the next decade. By focusing on the foundational \"picks and shovels\" of the AI revolution, investors can better navigate the volatility inherent in disruptive innovation cycles.",
+    "url": "https://ritholtz.com/2026/09/transcript-glen-kacher/",
+    "source": "Ritholtz.com",
+    "category": "Tech Business & Markets"
+  },
+  {
+    "author": "Chabeli Carrazana",
+    "title": "You'll do anything for your baby. The algorithm knows how to exploit that.",
+    "processed_at": "2026-09-23T22:04:37.871419",
+    "summary": "New parents in the United States are increasingly targeted by a $60 billion baby product industry that leverages social media algorithms to exploit parental exhaustion and insecurities.\n\n### Key Points\n- The U.S. baby product market is projected to grow 40% by 2033, driven largely by online sales and premium, tech-focused items.\n- Targeted advertising often begins during pregnancy, with companies using data tracking to deliver personalized ads for sleep aids, monitors, and courses.\n- Many parents report feeling pressured to purchase expensive items like the $1,995 Snoo bassinet or $179 sleep courses to achieve \"perfect\" parenting outcomes.\n- The lack of federal paid family leave in the U.S. leaves many mothers isolated and sleep-deprived, making them more susceptible to digital marketing promises.\n- Several major baby websites, including Babylist, have faced legal scrutiny over allegations of sharing user data with third-party advertisers without consent.\n\n### Why it Matters\nThe aggressive marketing of baby products capitalizes on the lack of community support and the intense pressure for parents to optimize their children's development. This cycle of consumption often creates unnecessary financial and emotional strain, despite expert consensus that most purchased gadgets have little impact on long-term child outcomes.",
+    "url": "https://www.yahoo.com/news/us/articles/ll-anything-baby-algorithm-knows-100000387.html",
+    "source": "Yahoo Entertainment",
+    "category": "Tech Business & Markets"
+  },
+  {
     "summary": "Google has opened pre-orders for its new Googlebook laptop series, starting at $899, with initial shipments arriving in the United States on October 4 and international markets following.\n\n### Key Points\n- The Googlebook series features five distinct models from manufacturers Acer, ASUS, Lenovo, Dell, and HP.\n- Hardware specifications include Intel Core Ultra Series 3 or Qualcomm Snapdragon X Elite processors, 16GB to 32GB of RAM, and 2.8K OLED touchscreens.\n- The operating system integrates Android app support with ChromeOS desktop functionality and a secure, walled-off Linux environment via a Level 5 security-certified pKVM hypervisor.\n- Every purchase includes a 12-month subscription to Google AI Pro, providing 5TB of storage and access to Gemini Advanced tools.\n- Devices feature premium builds using aluminum, magnesium alloy, or carbon fiber, alongside customizable \"Glowbar\" LED lighting for developers.\n\n### Why it Matters\nThis launch represents a significant strategic shift for Google by merging the Android and ChromeOS ecosystems into a unified hardware platform for both consumers and developers. By offering high-end security features and native support for professional creative software, Google is positioning the Googlebook as a direct competitor to established premium laptop brands.",
     "author": "Ana Maria Constantin",
     "url": "https://thenextweb.com/news/googlebook-preorder-price-october-release",
