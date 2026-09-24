@@ -1,21 +1,20 @@
-ASUS Ascent QN10 Debuts as First Agentic AI Mini PC With an 80 TOPS NPU
+Your motherboard still has a reset button for a password almost nobody sets anymore
 ============================================================
 
-ASUS has launched the Ascent QN10, a compact mini PC featuring Qualcomm’s Snapdragon X2 Elite platform and an 80 TOPS NPU designed to accelerate on-device agentic artificial intelligence workloads.
+Modern motherboards retain the CLR_CMOS jumper functionality, allowing users to reset BIOS or UEFI settings and bypass supervisor passwords by physically shorting specific pins on the hardware.
 
 ### Key Points
-- The Ascent QN10 measures less than 0.7 liters, offering an 86% smaller footprint than standard 5-liter desktop systems.
-- It is powered by an 18-core Qualcomm Oryon CPU and an integrated Adreno GPU, which provides 2.3 times the graphics performance of previous generations.
-- The integrated Qualcomm Hexagon NPU delivers 80 TOPS of processing power to support local AI tasks, enhancing privacy and reducing latency.
-- Security features include firmware-based TPM 2.0 and Microsoft’s Pluton security processor for hardware-level data protection.
-- The device supports Wi-Fi 7 and Bluetooth 6.0 for high-speed connectivity in professional and enterprise environments.
-- Available in the U.S. starting September 17, 2026, the PC is priced at $1,349 for the 16GB model and $1,699 for the 32GB version.
+- The CLR_CMOS jumper, often labeled as JBAT or CLRTC, resets firmware to factory defaults when bridged for 10 to 15 seconds.
+- This physical reset method remains essential for troubleshooting boot loops, unstable overclocks, and system configuration errors.
+- While common on desktop motherboards, this method is ineffective on laptops and enterprise servers that store passwords in non-volatile memory or TPM chips.
+- IT administrators and users of older hardware rely on these jumpers to regain access to systems locked by forgotten supervisor passwords.
+- Modern security standards for business hardware utilize EEPROM or flash memory to prevent unauthorized firmware access via simple physical resets.
 
 ### Why it Matters
-- This release signals a shift toward integrating high-performance, agentic AI capabilities directly into compact desktop hardware for professional and enterprise use. By balancing local processing with cloud connectivity, the device offers a flexible solution for users who require both data privacy and the computational power needed for modern AI workflows.
+The persistence of the CLR_CMOS jumper highlights a necessary trade-off between physical security and system maintainability for home PC users. While it creates a vulnerability for those relying on BIOS passwords, it remains a critical tool for recovering systems from technical failures without requiring professional repair.
 
 ============================================================
-Author:   Jude Chukwuemeka
-Source:   AndroidGuys
-URL:      https://androidguys.com/news/asus-ascent-qn10-debuts-as-first-agentic-ai-mini-pc-with-an-80-tops-npu/
-Category: Artificial Intelligence
+Author:   Tanveer Singh
+Source:   XDA Developers
+URL:      https://www.xda-developers.com/motherboard-still-reset-button-password-nobody-sets-anymore/
+Category: Phones, Laptops, and Gadgets

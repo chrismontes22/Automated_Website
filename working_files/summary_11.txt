@@ -1,20 +1,20 @@
-Security Bite: The last 24 hours at Meta were “not-a-musing”
+"This one is especially bad": Steam game about mistreating ragdolls suffers second bout of mod-based malware this year
 ============================================================
 
-Security researcher Patrick Wardle discovered a critical zero-day vulnerability in Meta’s new Muse AI agent for macOS that allows attackers to hijack user accounts and access sensitive data.
+Developer Mestiez has disabled the Steam Workshop for the sandbox game People Playground following the discovery of a malicious mod capable of compromising user data and system files.
 
 ### Key Points
-- The vulnerability allows local apps or Terminal commands to modify undocumented Muse settings without requiring special macOS permissions.
-- Attackers can redirect dictated voice prompts to unauthorized servers, enabling the theft of authentication tokens to control the AI agent.
-- Exploitation can lead to malicious file creation, unauthorized camera access, and the retrieval of location data from linked iPhones.
-- The flaw stems from Meta’s decision to process voice data on external servers rather than using Apple’s secure on-device dictation tools.
-- Meta has reportedly released a software update to address the security gap, and users are urged to install the latest version immediately.
+- The developer identified a severe malware threat distributed through a mod on September 21 between 6PM and 8PM CEST.
+- Affected users are advised to run anti-virus scans, delete all local mods, and change passwords for important accounts.
+- The malware can potentially wipe personal data, vandalize Steam configuration files, and leak Discord information.
+- This incident marks the second time this year that People Playground has faced a security breach via the Steam Workshop.
+- Mestiez has instructed players to keep the game closed until an official safety announcement is posted on Steam.
 
 ### Why it Matters
-This incident highlights the significant security risks associated with granting AI agents deep integration into personal accounts and system-level functions. It serves as a reminder that even software marketed with robust privacy features can contain critical flaws when developers bypass established platform-native security standards.
+This incident highlights the ongoing security risks associated with user-generated content platforms and the potential for malicious actors to exploit game modding ecosystems. It serves as a critical reminder for players to exercise caution when downloading community mods and underscores the challenges developers face in maintaining platform safety.
 
 ============================================================
-Author:   Arin Waichulis
-Source:   9to5Mac
-URL:      https://9to5mac.com/2026/09/22/security-bite-the-last-24-hours-at-meta-were-not-a-musing/
+Author:   Mark Warren
+Source:   Rock Paper Shotgun
+URL:      https://www.rockpapershotgun.com/this-one-is-especially-bad-steam-game-about-mistreating-ragdolls-suffers-second-bout-of-mod-based-malware-this-year
 Category: Cybersecurity

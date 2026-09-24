@@ -1,20 +1,20 @@
-Meta patches Muse exploit that let attackers control the AI agent
+Meta’s Muse AI Agent Has Been Downloaded Half a Million Times — With a Serious Bug
 ============================================================
 
-Meta has released a security patch for its Muse macOS application after researcher Patrick Wardle discovered a zero-day vulnerability that allowed attackers to hijack the AI agent.
+Meta has released a security patch for its new Muse AI agent on MacOS after cybersecurity researcher Patrick Wardle identified a critical zero-day vulnerability in the software.
 
 ### Key Points
-- Security researcher Patrick Wardle identified a flaw allowing attackers to redirect transcription processing to unauthorized endpoints.
-- The exploit enabled attackers to execute malicious code, capture photos, and write files to a user's disk without triggering alerts.
-- Meta issued a hotfix shortly after the vulnerability was reported, characterizing the risk as low due to the requirement for local access.
-- The vulnerability stemmed from design choices, including cloud-based dictation and unrestricted access to undocumented application settings.
-- Despite security concerns, the Muse mobile app has seen rapid adoption, with initial download rates reportedly outpacing the debut of ChatGPT.
+- Cybersecurity researcher Patrick Wardle discovered a flaw allowing attackers to intercept Muse audio captures and access tokens.
+- Meta’s David Singleton confirmed the patch, though he disputed the researcher's claim that the exploit could be triggered remotely.
+- The Muse MacOS application reached over 500,000 downloads during its first week of availability.
+- Users are advised to update their Muse application immediately to ensure the latest security protections are active.
+- The incident occurred shortly before Meta Connect, where CEO Mark Zuckerberg is expected to discuss future AI hardware developments.
 
 ### Why it Matters
-This incident highlights the significant security risks associated with integrating AI agents into local operating systems without robust permission frameworks. As Meta competes for market share in the AI sector, the company faces increased scrutiny regarding the privacy and safety standards of its rapidly deployed software products.
+This vulnerability highlights the significant security risks associated with granting AI agents deep access to personal data and system functions. As Meta expands its agentic AI ecosystem, the company faces ongoing pressure to prove it can protect user privacy and maintain digital security.
 
 ============================================================
-Author:   Jess Weatherbed
-Source:   The Verge
-URL:      https://www.theverge.com/tech/998679/meta-muse-patch-zero-day-exploit-ai-agent
+Author:   Katelyn Chedraoui
+Source:   CNET
+URL:      https://www.cnet.com/tech/services-and-software/metas-muse-ai-agent-zero-day-cybersecurity-bug-patched/
 Category: Cybersecurity

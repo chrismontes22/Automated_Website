@@ -1,20 +1,20 @@
-Malicious npm Package indexed-btree Hid Its Loader in Runtime Code Before Removal
+This Windows Malware is Built to Let Up to Four AI Models Vote on Its Next Move
 ============================================================
 
-The malicious npm package indexed-btree has bypassed new security controls by executing obfuscated code at runtime rather than during installation, resulting in significant illicit cryptocurrency profits for attackers.
+Cisco Talos researchers have identified CLOSEDQUORUM, a novel Windows malware that automates malicious decision-making by polling multiple commercial AI models to determine its next operational steps on infected systems.
 
 ### Key Points
-- The indexed-btree package, which mimicked a legitimate utility, generated approximately €230,933 in Ethereum by exploiting runtime execution.
-- Attackers shifted tactics after npm version 12 restricted automatic lifecycle script execution, moving malicious payloads directly into application code methods.
-- The malware used the EtherHiding technique to retrieve encrypted payloads from a smart contract on the Sepolia testnet.
-- Checkmarx identified ten additional malicious packages linked to the same operation, all of which have been removed from the npm registry.
-- A separate campaign, PolinRider, is currently compromising developer accounts on Packagist to inject malicious code into legitimate software repositories.
+- The malware uses a voting system involving DeepSeek, Qwen, Mistral, and Google Gemini to choose between stealing data, injecting code, or establishing persistence.
+- Stolen credentials, browser passwords, and cryptocurrency wallet data are exfiltrated to the attacker via Discord webhooks.
+- Persistence is maintained through Registry keys, scheduled tasks, and WMI event subscriptions disguised as legitimate Windows Update processes.
+- Talos discovered the threat using CAIRN, an open-source tool designed to detect malware that leverages AI services for command-and-control operations.
+- While the current public version is non-functional due to missing API keys, the code has been in development since at least June 2026.
 
 ### Why it Matters
-This shift demonstrates that attackers are rapidly evolving their methods to circumvent supply chain security improvements by moving malicious activity from installation hooks to runtime execution. Organizations must now implement layered defense strategies, including runtime behavior analysis, to detect threats that bypass traditional static installation-time security controls.
+This development marks a significant shift in cyberattack methodology by decentralizing command-and-control logic through third-party AI services. It forces security teams to monitor for unusual AI-service traffic patterns rather than relying solely on traditional server-based threat detection.
 
 ============================================================
 Author:   info@thehackernews.com (The Hacker News)
 Source:   Internet
-URL:      https://thehackernews.com/2026/09/malicious-npm-package-indexed-btree-hid.html
+URL:      https://thehackernews.com/2026/09/windows-malware-is-built-to-let-up-to.html
 Category: Cybersecurity
