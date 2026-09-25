@@ -1,21 +1,20 @@
-New Android malware RemControl steals banking PINs and blocks removal attempts
+Now in beta: Import and convert your PowerPoint files to client-side encrypted Slides
 ============================================================
 
-A new Android banking trojan called RemControl is targeting customers of over 30 international banks by using fake IPTV apps to steal sensitive PINs and remote device control.
+Google Workspace has launched a beta program allowing eligible enterprise and education customers to import and convert PowerPoint files into client-side encrypted Google Slides for secure editing.
 
 ### Key Points
-- RemControl malware impersonates the TVTap IPTV application to trick users into granting Accessibility Service permissions.
-- The trojan targets banking customers in Italy, France, Spain, Poland, Portugal, Canada, and several Gulf states.
-- Attackers use a VPN service to block Google Play Protect from scanning the device during the malicious installation process.
-- The malware can capture lock screen patterns, record keystrokes, and prevent users from uninstalling the application.
-- Operators utilize AI-assisted development to build backend infrastructure and phishing overlays for this malware-as-a-service platform.
-- Command and control server addresses are hidden within public Telegram channels to allow for rapid infrastructure updates.
+- The CSE Office Interop beta enables high-fidelity conversion of encrypted .pptx files into Google Slides.
+- Data is encrypted on the client side before being imported into the Google Workspace environment.
+- Eligible editions include Enterprise Plus, Education Standard, Education Plus, Frontline Plus, and Assured Controls.
+- Workspace administrators must apply for the beta program to enable these features across their domains.
+- The update improves interoperability between Microsoft Office formats and Google’s secure document ecosystem.
 
 ### Why it Matters
-This campaign highlights the growing sophistication of mobile threats that leverage AI to automate malicious infrastructure and evade traditional security detection. Users are at increased risk of financial theft as attackers continue to exploit third-party app distribution channels to bypass standard mobile operating system protections.
+This update bridges a critical security gap for organizations that rely on both Microsoft Office and Google Workspace for sensitive document management. By enabling secure file conversion, businesses can maintain strict data privacy standards without sacrificing the ability to collaborate on presentations across different software platforms.
 
 ============================================================
-Author:   Sinisa Markovic
-Source:   Help Net Security
-URL:      https://www.helpnetsecurity.com/2026/09/24/remcontrol-android-banking-trojan-fake-tv-app/
+Author:   Paul Jiménez Vela
+Source:   Googleblog.com
+URL:      https://workspaceupdates.googleblog.com/2026/09/now-in-beta-import-and-convert-your.html
 Category: Cybersecurity

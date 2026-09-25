@@ -1,21 +1,20 @@
-58% of ad execs expect agentic buying to hit scale within a year, according to IAB Europe research
+Looks promising for document editing with your agent
 ============================================================
 
-European advertising executives are increasingly adopting agentic ad buying, with 58% of surveyed leaders expecting these AI-driven systems to reach operational scale within the next twelve months.
+Paper Office is a new suite of Python packages designed to improve AI agent performance when editing Word, PowerPoint, and Excel files by ensuring document integrity and correctness.
 
 ### Key Points
-- A survey of 50 European ad executives found that 86% of large organizations with over 500 employees already utilize advanced agentic systems.
-- Adoption remains uneven, as only 48% of companies with 500 or fewer staff have integrated similar collaborative AI-human workflows.
-- Major industry players including WPP, Omnicom, CNN, and News U.K. are actively developing proprietary buyer and seller agents.
-- Current AI implementation focuses on low-risk tasks, with 76% of respondents prioritizing reporting, analysis, and dashboard management.
-- Security and privacy concerns remain the primary barriers to wider adoption, leading many firms to maintain strict human oversight of automated processes.
-- Investment in AI marketing technology is rising, with 59% of organizations planning to increase their budgets in 2026 compared to 2025.
+- Paper Office extends legacy libraries like python-docx, python-pptx, and openpyxl to support complex agent-first workflows.
+- The suite achieved a 92.5% success rate across 61 tasks, significantly outperforming standard libraries and Anthropic’s existing office skills.
+- New features include cross-run text search, relationship-safe slide cloning, formula-aware spreadsheet edits, and native Word redlining.
+- The tools automatically handle internal OOXML bookkeeping, reducing the need for agents to write risky, low-level code to manipulate file internals.
+- Paper Office includes validation mechanisms that refuse unsafe operations, preventing silent regressions in document formatting, comments, and formulas.
 
 ### Why it Matters
-The shift toward agentic advertising signals a fundamental change in how media is bought and sold, moving from manual execution to automated, data-driven workflows. As firms increase investment to improve efficiency and measurement, the industry faces a critical transition period where proving return on investment will determine the long-term viability of these AI tools.
+By addressing the "uncanny valley" of AI-generated documents, these tools enable agents to perform professional-grade edits that are actually fit for client consumption. This development highlights how specialized software infrastructure can significantly boost agent reliability in high-stakes fields like law, banking, and consulting.
 
 ============================================================
-Author:   Seb Joseph
-Source:   Digiday
-URL:      http://digiday.com/media-buying/58-of-ad-execs-expect-agentic-buying-to-hit-scale-within-a-year-according-to-iab-europe-research/
+Author:   Daanish Khazi, Gavin Bains, Joey Besgen
+Source:   Paperinstruments.com
+URL:      https://www.paperinstruments.com/blog/introducing-paper-office
 Category: Artificial Intelligence
