@@ -1,19 +1,20 @@
-Hackers hit the FBI — ShinyHunters say they have stolen 2TB of employee data, but the attack isn't looking for money, just an apology
+Looks promising for document editing with your agent
 ============================================================
 
-The hacking group ShinyHunters defaced the FBI’s jobs website, claiming they exploited an Oracle PeopleSoft zero-day vulnerability to steal two terabytes of sensitive employee and applicant data.
+Paper Office is a new suite of Python packages designed to improve AI agent performance when editing Word, PowerPoint, and Excel files by ensuring document integrity and correctness.
 
 ### Key Points
-- ShinyHunters claims the breach was a retaliatory act against an FBI public service announcement from May that accused the group of using harassment and swatting tactics.
-- The hackers allege they accessed 2TB of data, including personal information of FBI employees, spouses, and applicants from HR, MedLink, and Criminal Justice Information Services systems.
-- Security experts warn that the alleged PeopleSoft zero-day exploit is highly valuable and poses a significant risk to any organization currently running the software.
-- The FBI has reclaimed its website, which is currently offline for maintenance, while an investigation into the validity of the breach claims remains ongoing.
+- Paper Office extends legacy libraries like python-docx, python-pptx, and openpyxl to support complex agent-first workflows.
+- The suite achieved a 92.5% success rate across 61 tasks, significantly outperforming standard libraries and Anthropic’s existing office skills.
+- New features include cross-run text search, relationship-safe slide cloning, formula-aware spreadsheet edits, and native Word redlining.
+- The tools automatically handle internal OOXML bookkeeping, reducing the need for agents to write risky, low-level code to manipulate file internals.
+- Paper Office includes validation mechanisms that refuse unsafe operations, preventing silent regressions in document formatting, comments, and formulas.
 
 ### Why it Matters
-This incident highlights the severe risks posed by zero-day vulnerabilities in widely used enterprise software like Oracle PeopleSoft. If confirmed, the theft of sensitive government personnel data could have long-term national security implications and demonstrates a shift in tactics for extortion groups moving beyond simple financial gain.
+By addressing the "uncanny valley" of AI-generated documents, these tools enable agents to perform professional-grade edits that are actually fit for client consumption. This development highlights how specialized software infrastructure can significantly boost agent reliability in high-stakes fields like law, banking, and consulting.
 
 ============================================================
-Author:   Sead Fadilpašić
-Source:   TechRadar
-URL:      https://www.techradar.com/pro/security/hackers-hit-the-fbi-shinyhunters-say-they-have-stolen-2tb-of-employee-data-but-the-attack-isnt-looking-for-money-just-an-apology
-Category: Cybersecurity
+Author:   Daanish Khazi, Gavin Bains, Joey Besgen
+Source:   Paperinstruments.com
+URL:      https://www.paperinstruments.com/blog/introducing-paper-office
+Category: Artificial Intelligence

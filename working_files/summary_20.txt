@@ -1,20 +1,20 @@
-Here’s everything new for Apple Calendar in iOS 27
+Want to try Ubuntu’s AI dictation feature? Here’s how
 ============================================================
 
-Apple has introduced significant updates to the Calendar app in iOS 27, featuring AI-powered natural language input, redesigned event interfaces, and expanded widget support for iPhone users.
+Canonical has released early testing versions of Myna, a new local AI-powered dictation tool for Ubuntu that enables offline speech-to-text transcription using models like Whisper and Parakeet.
 
 ### Key Points
-- Smart Event Details uses Apple Intelligence to automatically populate event titles, times, and locations from natural language input.
-- The Calendar app features a refreshed design with reorganized event details and new icons for improved navigation.
-- iCloud calendars now support the "Busy/Free" status option, aligning functionality with Google and other third-party providers.
-- Users can now utilize new extra-large Home Screen widgets for "List" and "Up Next" views to display more information.
-- Siri gains enhanced onscreen awareness and a visual intelligence feature that creates calendar events by scanning flyers via the Camera app.
+- Myna components, including the orchestrator snap and desktop settings app, are available for Ubuntu 26.04 LTS and 26.10.
+- Users can choose between AI models like OpenAI’s Whisper or NVIDIA’s Parakeet, which require 1-2GB of disk space each.
+- The tool operates entirely offline, ensuring that audio data remains on the user's device without cloud processing.
+- Ubuntu 26.10 includes a preinstalled GNOME Shell extension that provides an on-screen heads-up display (HUD) for transcription status.
+- The software is currently in an experimental state, requiring manual installation via command-line snaps and PPA repositories.
 
 ### Why it Matters
-These updates streamline personal scheduling by reducing manual data entry and improving the integration between Apple’s ecosystem and third-party calendar services. By leveraging AI and expanded interface options, Apple is positioning its native app as a more competitive and efficient tool for professional and personal time management.
+Myna represents a significant step forward for Ubuntu’s accessibility features by providing high-quality, privacy-focused speech recognition that functions without an internet connection. By developing this as desktop-agnostic technology, Canonical is exploring new ways to integrate local AI into the Linux desktop experience for long-form text entry.
 
 ============================================================
-Author:   Ryan Christoffel
-Source:   9to5Mac
-URL:      https://9to5mac.com/2026/09/23/heres-everything-new-for-apple-calendar-in-ios-27/
-Category: Phones, Laptops, and Gadgets
+Author:   Joey Sneddon
+Source:   Omgubuntu.co.uk
+URL:      https://www.omgubuntu.co.uk/2026/09/ubuntu-myna-ai-install
+Category: Artificial Intelligence

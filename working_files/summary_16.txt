@@ -1,20 +1,21 @@
-iPhone Air vs. iPhone 18 Pro Buyer's Guide: Which Should You Buy?
+New Android malware RemControl steals banking PINs and blocks removal attempts
 ============================================================
 
-The iPhone Air and iPhone 18 Pro offer distinct trade-offs between ultra-thin portability and high-end performance, with a $100 price difference influencing the decision for most potential Apple customers.
+A new Android banking trojan called RemControl is targeting customers of over 30 international banks by using fake IPTV apps to steal sensitive PINs and remote device control.
 
 ### Key Points
-- The iPhone Air features a 6.5-inch display in a lightweight, 5.64mm-thin titanium body, while the iPhone 18 Pro provides a more robust camera system and faster A20 Pro chip.
-- iPhone 18 Pro models include advanced features like variable-aperture cameras, 120 fps 4K video, stereo speakers, and significantly longer battery life compared to the Air.
-- Pricing for the 256GB models starts at $1,099 for the iPhone Air and $1,199 for the iPhone 18 Pro, though retail discounts can widen this gap.
-- The iPhone 18 Pro supports faster wired charging, USB 3 data speeds, and advanced connectivity options like mmWave 5G on U.S. models.
-- Future iterations of the iPhone Air are expected by spring 2027, with potential upgrades including improved battery capacity and enhanced camera hardware.
+- RemControl malware impersonates the TVTap IPTV application to trick users into granting Accessibility Service permissions.
+- The trojan targets banking customers in Italy, France, Spain, Poland, Portugal, Canada, and several Gulf states.
+- Attackers use a VPN service to block Google Play Protect from scanning the device during the malicious installation process.
+- The malware can capture lock screen patterns, record keystrokes, and prevent users from uninstalling the application.
+- Operators utilize AI-assisted development to build backend infrastructure and phishing overlays for this malware-as-a-service platform.
+- Command and control server addresses are hidden within public Telegram channels to allow for rapid infrastructure updates.
 
 ### Why it Matters
-Choosing between these models requires balancing the aesthetic and ergonomic benefits of the ultra-thin iPhone Air against the superior technical capabilities of the Pro series. While the Pro offers better value for power users, the Air remains a compelling choice for those prioritizing physical design and weight over advanced photography and processing features.
+This campaign highlights the growing sophistication of mobile threats that leverage AI to automate malicious infrastructure and evade traditional security detection. Users are at increased risk of financial theft as attackers continue to exploit third-party app distribution channels to bypass standard mobile operating system protections.
 
 ============================================================
-Author:   Hartley Charlton
-Source:   MacRumors
-URL:      https://www.macrumors.com/guide/iphone-air-vs-18-pro/
-Category: Phones, Laptops, and Gadgets
+Author:   Sinisa Markovic
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/09/24/remcontrol-android-banking-trojan-fake-tv-app/
+Category: Cybersecurity
