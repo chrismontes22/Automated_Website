@@ -1,20 +1,20 @@
-RemControl Banking Trojan Gives Attackers Remote Control of Android Devices
+Quantitative Event-Driven Modeling: BTC Balance Sheet Shocks with SEC EDGAR Filings in R
 ============================================================
 
-Researchers at Group-IB have identified a new Android banking trojan called RemControl that exploits Accessibility Services to steal sensitive financial credentials from users across six different countries.
+A new quantitative analysis framework demonstrates that MicroStrategy’s equity valuation is primarily driven by spot Bitcoin price movements and structural changes in its corporate treasury balance sheet holdings.
 
 ### Key Points
-- RemControl targets retail banking customers in Western Europe, the Middle East, and Canada, impacting over 30 financial institutions.
-- The malware developer, tracked as UNKK, reportedly used an AI assistant to build the command and control infrastructure by disguising the project as a parental monitoring app.
-- Attackers distribute the trojan via fake Google Play Store pages that impersonate the TVTap IPTV application to lure victims into downloading the malicious payload.
-- The malware employs a local VPN to suppress Google Play Protect and uses the Android Keystore to sign payloads, effectively evading standard security detection.
-- Once granted Accessibility Service permissions, the trojan captures PINs, banking codes, and screen data while preventing users from uninstalling the application or performing factory resets.
+- The model utilizes the R programming language and the `tidymodels` framework to analyze MicroStrategy (MSTR) stock performance.
+- Automated SEC EDGAR parsing via the `secfile` package extracts real-time digital asset holdings directly from XBRL financial filings.
+- The structural model achieved an 82.08% out-of-sample R-Squared, significantly outperforming a naive baseline benchmark of 4.12%.
+- The pipeline incorporates a "Balance Sheet Shock" metric to quantify the impact of debt-funded Bitcoin acquisitions on daily equity returns.
+- Interactive visualizations provide dynamic price projections and 2-sigma volatility bands to identify potential overbought or oversold market conditions.
 
 ### Why it Matters
-This campaign highlights a growing trend of cybercriminals leveraging AI tools to accelerate the development of sophisticated, multi-language banking fraud platforms. The use of advanced evasion techniques, such as VPN-based suppression of security software, poses a significant risk to mobile banking users globally.
+This research highlights that traditional corporate finance metrics are insufficient for evaluating MicroStrategy, which now functions primarily as a Bitcoin treasury vehicle. By automating the ingestion of regulatory filings, investors can better model the relationship between corporate capital allocation and digital asset market volatility.
 
 ============================================================
-Author:   James Coker
-Source:   Infosecurity Magazine
-URL:      https://www.infosecurity-magazine.com/news/banking-trojan-remote-control/
-Category: Cybersecurity
+Author:   Selcuk Disci
+Source:   R-bloggers.com
+URL:      https://www.r-bloggers.com/2026/09/quantitative-event-driven-modeling-btc-balance-sheet-shocks-with-sec-edgar-filings-in-r/
+Category: Tech Business & Markets

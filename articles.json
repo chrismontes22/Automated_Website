@@ -1,5 +1,149 @@
 [
   {
+    "author": "Mike Kershaw",
+    "summary": "The cybercriminal group ShinyHunters has compromised the FBI’s jobs website via an Oracle PeopleSoft vulnerability, exfiltrating 2 TB of sensitive data from AWS GovCloud instances in the process.\n\n### Key Points\n- ShinyHunters exploited a zero-day vulnerability in Oracle PeopleSoft to breach the FBI’s recruitment portal and AWS GovCloud.\n- Meta’s Muse agent for macOS contains a critical flaw allowing attackers to hijack microphone, screen recording, and authentication tokens via malicious terminal commands.\n- North Korean state-linked hackers are targeting Rust language maintainers with sophisticated phishing lures to facilitate supply chain attacks on the Cargo repository.\n- The hacker known as NightmareEclipse released \"BigDiskBuster,\" a proof-of-concept exploit that disables Windows Defender updates.\n- Researchers identified a new attack method against RSA encryption that significantly reduces the computational difficulty required to break 1024-bit, 2048-bit, and 4096-bit keys.\n\n### Why it Matters\nThese incidents highlight a growing trend of high-stakes vulnerabilities affecting both government infrastructure and widely used consumer software. As attackers refine methods like \"ClickFix\" and supply chain poisoning, organizations and individual users face increased risks of data theft and system compromise.",
+    "title": "This Week in Security: FBI Gets Hacked, Muse Vulnerable to ClickFix, Popular Rust Developers at Risk, and New Attacks Against RSA",
+    "category": "Cybersecurity",
+    "processed_at": "2026-09-26T21:51:32.944790",
+    "url": "https://hackaday.com/2026/09/25/this-week-in-security-fbi-gets-hacked-muse-vulnerable-to-clickfix-popular-rust-developers-at-risk-and-new-attacks-against-rsa/",
+    "source": "Hackaday"
+  },
+  {
+    "author": "Ana-Maria Stanciuc",
+    "summary": "London-based Nscale has secured $3.36 billion in a pre-IPO convertible note round led by Third Point, with significant backing from Nvidia ahead of its New York Stock Exchange listing.\n\n### Key Points\n- The funding round includes a $2.36 billion tranche and a $1 billion commitment from Nvidia expected in mid-November.\n- Investors in the round include Apollo, Citadel, Hudson Bay Capital, the Abu Dhabi Investment Council, and 8090 Industries.\n- Nscale reported $140.6 million in revenue for the first half of 2024, alongside a net loss of $1.02 billion.\n- The company’s contracted backlog has grown to $103.4 billion, up from $38 billion at the end of 2023.\n- The firm, which features Sheryl Sandberg and Nick Clegg on its board, filed to list on the NYSE under the ticker NSCL.\n\n### Why it Matters\nThis massive capital injection highlights the intense investor demand for infrastructure companies supporting the artificial intelligence sector. By securing Nvidia as a major stakeholder, Nscale strengthens its market position while providing the chipmaker with further influence over its primary hardware customers.",
+    "title": "Nscale closed a $3.36B pre-IPO round led by Third Point, with $1B from Nvidia still to come",
+    "category": "Tech Business & Markets",
+    "processed_at": "2026-09-26T21:51:49.452551",
+    "url": "https://thenextweb.com/news/nscale-3-36bn-pre-ipo-round",
+    "source": "The Next Web"
+  },
+  {
+    "author": "Isabella Ward",
+    "summary": "The United States government has filed a legal application to support Elon Musk’s challenge against a €120 million fine imposed on X by the European Commission.\n\n### Key Points\n- The U.S. Department of Justice and Department of State are seeking to intervene in the European General Court to contest the Digital Services Act penalty.\n- The European Commission issued the fine in December, citing deceptive verification practices and failures in X’s advertising repository and researcher data access.\n- X and Elon Musk filed appeals in February, characterizing the EU investigation as superficial and biased while disputing the interpretation of transparency obligations.\n- The U.S. government argues the fine represents regulatory overreach that threatens American innovation and economic interests.\n- The Digital Services Act mandates that large online platforms implement stricter measures to mitigate illegal content and improve transparency.\n\n### Why it Matters\nThis intervention signals a significant escalation in geopolitical tension regarding the regulation of American technology companies operating within the European Union. The outcome of this case could establish a legal precedent for how international authorities balance national sovereignty against the enforcement of foreign digital safety laws.",
+    "title": "The Trump Administration Is Trying to Get Musk and X out of a $137 Million EU Fine",
+    "category": "Tech Business & Markets",
+    "processed_at": "2026-09-26T21:51:57.800514",
+    "url": "https://www.wired.com/story/trump-administration-is-trying-to-get-musk-and-x-out-of-a-dollar137-million-eu-fine/",
+    "source": "Wired"
+  },
+  {
+    "author": "Andrew Liszewski",
+    "summary": "Apple’s native iOS camera app restricts the iPhone 18 Pro’s variable aperture to four settings, but third-party applications now offer more granular control for professional photography enthusiasts.\n\n### Key Points\n- The native iOS camera app limits the iPhone 18 Pro’s variable aperture to f/1.48, f/1.8, f/2.8, and f/4.\n- Blackmagic Camera version 3.5.1 provides 10 aperture presets, offering more precise control than the default Apple software.\n- Moment Pro Camera II has updated its $12.99 app to support 1/3 stop aperture increments between f/1.48 and f/4.0.\n- Third-party developers utilize Apple’s SDK to bypass hardware-level restrictions, mimicking the manual control found on traditional digital cameras.\n\n### Why it Matters\nThese third-party updates empower photographers to utilize the full potential of the iPhone 18 Pro’s hardware beyond Apple's simplified software constraints. While the small sensor size may limit visible depth-of-field changes, this increased control allows for more precise exposure management in varied lighting conditions.",
+    "title": "These camera apps give you more control over the iPhone 18 Pro’s aperture",
+    "category": "Phones, Laptops, and Gadgets",
+    "processed_at": "2026-09-26T21:56:24.193132",
+    "url": "https://www.theverge.com/tech/1000729/moment-pro-blackmagic-camera-ii-ios-app-iphone-18-pro-max-aperature-camera",
+    "source": "The Verge"
+  },
+  {
+    "author": "Boing Boing's Shop",
+    "summary": "Internxt is offering a 10TB lifetime cloud storage subscription for a one-time payment of $269.97, providing new users with significant savings compared to the original $2,900 retail price.\n\n### Key Points\n- The promotional price of $269.97 is available through September 29 as part of a September Flash Sale.\n- The plan provides 10TB of encrypted storage accessible across unlimited devices, including Windows, macOS, Linux, Android, and iOS.\n- Internxt utilizes end-to-end, zero-knowledge, and post-quantum encryption to ensure user privacy and data security.\n- The service is open-source, GDPR compliant, and has undergone an independent security audit by Securitum.\n- This offer is restricted to new users and excludes additional features like file versioning, antivirus, and advanced sharing tools.\n\n### Why it Matters\nThis lifetime subscription model offers a cost-effective alternative to recurring monthly cloud storage fees for users requiring large-scale data capacity. By prioritizing zero-knowledge encryption and open-source transparency, the service appeals to privacy-conscious consumers looking for a secure, long-term digital storage solution.",
+    "title": "Pay once, store a ridiculous amount while Internxt's 10TB plan is just $269.97",
+    "category": "Phones, Laptops, and Gadgets",
+    "processed_at": "2026-09-26T22:00:42.249559",
+    "url": "https://boingboing.net/2026/09/25/pay-once-store-a-ridiculous-amount-while-internxts-10tb-plan-is-just-269-97.html",
+    "source": "Boing Boing"
+  },
+  {
+    "author": "Tim Ferriss",
+    "summary": "Kevin Ryan, a prominent New York-based entrepreneur and investor, shares his strategic approach to identifying long-term market trends and building successful, high-growth technology companies over his multi-decade career.\n\n### Key Points\n- Kevin Ryan founded AlleyCorp, a venture capital firm that incubates and invests in sectors including healthcare, AI, deep tech, and consumer software.\n- His track record includes co-founding major companies such as MongoDB, Business Insider, Gilt Groupe, Zola, and Transcend Therapeutics.\n- Ryan previously served as CEO of DoubleClick, scaling the startup from 20 employees to a publicly traded company before its $1.1 billion acquisition.\n- His investment philosophy prioritizes 10-year trends, such as nuclear energy and psychedelics, over short-term market hype.\n- AlleyCorp’s recent initiatives include a $335 million fund and a commitment to donate 10% of gains from Transcend Therapeutics to psychedelic research and mental health causes.\n\n### Why it Matters\nRyan’s career offers a blueprint for how institutional-scale success is achieved through disciplined trend analysis and the systematic incubation of companies. His focus on long-term, defensible moats provides a practical framework for investors and founders navigating the rapidly evolving landscapes of AI, healthcare, and deep tech.",
+    "title": "The Tim Ferriss Show Transcripts: How to Spot 10-Year Trends and Build Billion-Dollar Companies — Kevin Ryan of DoubleClick, MongoDB, Business Insider, and Many More (#884)",
+    "category": "Tech Business & Markets",
+    "processed_at": "2026-09-26T22:00:51.820918",
+    "url": "https://tim.blog/2026/09/25/kevin-ryan-transcript/",
+    "source": "Tim.blog"
+  },
+  {
+    "author": "info@thehackernews.com (The Hacker News)",
+    "summary": "Cybersecurity researchers at Jamf Threat Labs have identified a sophisticated new version of the PamStealer malware that uses server-side decryption to evade static analysis on macOS systems.\n\n### Key Points\n- The updated PamStealer malware now uses a server-side decryption chain, requiring a live key exchange to unwrap the malicious payload.\n- Attackers are distributing the malware via a fake cryptocurrency wallet website, \"wavel[.]app,\" which prompts users to download a malicious disk image.\n- The malware employs multiple persistence mechanisms, including LaunchAgents and Git hooks, to ensure the infection remains active across sessions.\n- The final stealer component is written in Swift and targets credentials from a wide range of browsers, including Chrome, Firefox, Arc, and Zen.\n- A new \"pkgunpack\" utility manages the decryption process, making it impossible for security analysts to recover the payload without an active command-and-control connection.\n\n### Why it Matters\nThis evolution in PamStealer demonstrates a significant shift toward infrastructure-dependent malware that complicates traditional security analysis. By tying payload decryption to server availability, attackers can effectively hide their malicious code from researchers and maintain tighter control over their operations.",
+    "title": "PamStealer macOS Malware Adds Live C2 Payload Decryption and Multi-Layer Persistence",
+    "category": "Cybersecurity",
+    "processed_at": "2026-09-26T22:01:00.110790",
+    "url": "https://thehackernews.com/2026/09/pamstealer-macos-malware-adds-live-c2.html",
+    "source": "Internet"
+  },
+  {
+    "author": "EditorDavid",
+    "summary": "Raspberry Pi Holdings shares surged over 30% following a 90% revenue increase to $256.9 million, driven by strong OEM adoption and robust demand in the smart home and aerospace sectors.\n\n### Key Points\n- Revenue reached $256.9 million for the six months ending June 30, with profit before tax rising 216% to $19.6 million.\n- Total unit shipments climbed 17% to 4.2 million, while the customer order backlog doubled to 2.6 million units.\n- The company is expanding production capacity at its Pencoed, Wales facility to address supply chain constraints and rising global demand.\n- Raspberry Pi introduced the AI HAT+ 2 for the Raspberry Pi 5 to expand its edge-AI product offerings.\n- New bootloader updates now restrict RAM upgrades on Pi 4 and Pi 5 models to prevent unauthorized hardware modifications by third-party resellers.\n\n### Why it Matters\nThe company's financial performance highlights a successful shift toward industrial and OEM markets, where supply chain reliability has become a critical competitive advantage. While recent bootloader restrictions have sparked debate among hobbyists, the move aims to protect the brand's integrity and ensure revenue is reinvested into future research and development.",
+    "title": "Raspberry Pi Stock Jumps 30% as Demand Surges. (And Boards Now Locked to Their Original RAM Size)",
+    "category": "Tech Business & Markets",
+    "processed_at": "2026-09-26T22:01:09.065472",
+    "url": "https://hardware.slashdot.org/story/26/09/25/0554208/raspberry-pi-stock-jumps-30-as-demand-surges-and-boards-now-locked-to-their-original-ram-size",
+    "source": "Slashdot.org"
+  },
+  {
+    "author": "nickodiaz@sbcglobal.net (Nickolas Diaz) , Nickolas Diaz",
+    "summary": "Google has released Android 17 QPR2 Beta 6 for Pixel devices, delivering critical stability fixes for camera-related reboots and system kernel crashes ahead of the final software launch.\n\n### Key Points\n- The update, build vCP41.260831.007, is available for Pixel models ranging from the 6a through the 10 series.\n- A primary fix addresses unexpected reboots on the Pixel 9 Pro Fold triggered by third-party camera viewfinder initialization.\n- Developers resolved a system kernel crash occurring when apps requested simultaneous camera and microphone access during biometric verification.\n- The release includes patches for visual regressions in the status bar, screensaver blanking issues, and gesture navigation failures in the Recents menu.\n- Google temporarily removed the lock screen blur effect to address underlying software bugs identified during the beta testing phase.\n\n### Why it Matters\nThis update marks a significant step toward the final release of Android 17 QPR2, ensuring core system stability for a wide range of Pixel hardware. By addressing critical kernel and camera-related crashes, Google is refining the user experience for beta testers before the software reaches the general public.",
+    "title": "Android 17 QPR2 Beta 6 is rolling out: unexpected reboots and kernel crash fixes lead the way",
+    "category": "Phones, Laptops, and Gadgets",
+    "processed_at": "2026-09-26T22:01:17.407582",
+    "url": "https://www.androidcentral.com/apps-software/android-os/android-17-qpr2-beta-6-is-rolling-out-unexpected-reboots-and-kernel-crash-fixes-lead-the-way",
+    "source": "Android Central"
+  },
+  {
+    "author": "Sherin Shibu",
+    "summary": "Airbnb CEO Brian Chesky has successfully reduced his meeting schedule by utilizing a custom AI intelligence corpus trained on thousands of internal company documents and presentations.\n\n### Key Points\n- Brian Chesky developed an AI \"brain\" using 18,000 Keynote presentations and 50,000 Google Docs to monitor company operations.\n- The implementation of these AI tools allowed the CEO to cut his total meeting time in half.\n- Airbnb has deployed AI to handle nearly 50% of customer service tickets across 50 different languages.\n- Operational efficiency gains from AI helped Airbnb reduce support costs per booking by 16% year over year.\n- The company plans to launch a sophisticated AI agent in 2027 that offers a richer interface than standard chatbots.\n\n### Why it Matters\nThis shift demonstrates how corporate leaders are using generative AI to bypass traditional management bottlenecks and gain real-time operational oversight. By automating internal information gathering and customer support, companies can significantly reduce overhead costs while accelerating the pace of product development.",
+    "title": "Airbnb’s CEO Was Drowning in Meetings. Then He Built an AI ‘Brain’ That Cut Them in Half.",
+    "category": "Artificial Intelligence",
+    "processed_at": "2026-09-26T22:01:35.969768",
+    "url": "https://www.entrepreneur.com/business-news/how-airbnb-ceo-brian-chesky-created-ai-brain-cut-meetings-in-half",
+    "source": "Entrepreneur"
+  },
+  {
+    "author": "Rebekah Valentine",
+    "summary": "Nippon Ichi Software CEO Kenzo Saruhashi confirmed the company is currently researching generative AI for localization and development but remains focused on prioritizing product quality over production speed.\n\n### Key Points\n- CEO Kenzo Saruhashi stated that Nippon Ichi Software is not currently using generative AI for game localization or development.\n- The company is researching AI technology to determine if it can genuinely improve the quality of its final products.\n- Saruhashi emphasized that the studio’s primary goal is maintaining high standards for fans rather than using AI solely for efficiency.\n- The publisher aims to unify its Japanese and Western branches to facilitate simultaneous worldwide game releases.\n- Leadership expressed caution regarding AI, noting the industry-wide pressure to adopt the technology while acknowledging potential risks to creative output.\n\n### Why it Matters\nThis cautious approach highlights a growing divide in the gaming industry between companies prioritizing rapid AI-driven production and those concerned with maintaining creative quality. By focusing on quality over speed, Nippon Ichi Software’s stance provides insight into how traditional developers are navigating the pressure to integrate emerging technologies.",
+    "title": "Nippon Ichi, NIS America Head Says Company Is ‘Researching’ AI But Personally Doesn’t Think It Will Make Development Faster",
+    "category": "Artificial Intelligence",
+    "processed_at": "2026-09-26T22:02:10.112792",
+    "url": "https://kotaku.com/nippon-ichi-nis-america-head-company-researching-ai-2000737211",
+    "source": "Kotaku"
+  },
+  {
+    "author": "Nolen Jonker",
+    "summary": "The Excalidraw plugin for Obsidian offers a versatile, local-first whiteboarding solution that bridges the gap between brainstorming sketches and structured note-taking for improved design and research workflows.\n\n### Key Points\n- The Excalidraw plugin, developed by Zsolt Viczian, integrates a hand-drawn style whiteboard directly into the Obsidian note-taking environment.\n- Unlike cloud-based tools like Figma or Miro, Excalidraw files are stored locally as Markdown and JSON, allowing for seamless linking and embedding of research notes.\n- The tool supports advanced features including Mermaid-to-Excalidraw conversion, custom shape libraries, and optional AI integration with providers like OpenAI, Claude, and Gemini.\n- Drawings function as standard Markdown files, enabling users to add frontmatter, tags, and text transclusion while maintaining visibility in the Obsidian graph view.\n- The plugin is designed for early-stage ideation, such as lo-fi wireframing, mind mapping, and affinity diagramming, rather than high-fidelity team collaboration.\n\n### Why it Matters\nIntegrating whiteboarding directly into a personal knowledge base allows users to maintain context between rough brainstorming sessions and final project documentation. This local-first approach eliminates the friction of exporting files between disparate apps, ensuring that research notes and visual diagrams remain interconnected and accessible to AI-driven analysis tools.",
+    "title": "Forget Figma and Miro: I turned my Obsidian vault into a whiteboard with one plugin",
+    "category": "Phones, Laptops, and Gadgets",
+    "processed_at": "2026-09-26T22:02:18.848891",
+    "url": "https://www.xda-developers.com/forget-figma-and-miro-turned-obsidian-vault-into-whiteboard-with-one-plugin/",
+    "source": "XDA Developers"
+  },
+  {
+    "author": "Jon Lafayette",
+    "summary": "Sports technology firm Nomadar is expanding its global soccer ecosystem by acquiring Fox Soccer Academy for $2 million to capitalize on the growing popularity of the sport in America.\n\n### Key Points\n- Nomadar is acquiring Fox Soccer Academy for an initial $2 million, with additional payments and earnouts potentially totaling over $8 million.\n- Fox Soccer Academy currently serves 2,100 youth players across facilities in the United States, the United Kingdom, and Austria.\n- Nomadar is majority-owned by the Spanish professional soccer club Cadiz FC, with a pending reverse spinoff set to make Nomadar the team's majority shareholder.\n- The company is developing a multi-use event center in Cadiz, Spain, featuring a 35,000-seat venue, hotel, and convention space scheduled for completion in 2030.\n- Nomadar reported a net loss of $459,941 in the second quarter despite doubling its revenue to $669,571.\n\n### Why it Matters\nThis acquisition highlights a growing trend of investors integrating professional sports clubs with youth training academies and real estate development to create diversified, global revenue streams. By connecting digital products and physical training facilities to a professional team, Nomadar aims to build a scalable ecosystem that captures value from the rising interest in soccer.",
+    "title": "Investing in the Next Generation of Soccer Stars",
+    "category": "Tech Business & Markets",
+    "processed_at": "2026-09-26T22:06:55.611850",
+    "url": "https://www.thewrap.com/industry-news/business/nomadar-buys-fox-soccer-academy/",
+    "source": "TheWrap"
+  },
+  {
+    "author": "Greg Jarboe",
+    "summary": "AI agents are transforming marketing by scaling audience research, but experts warn that high-quality data remains the critical factor for driving actual conversions rather than just visibility.\n\n### Key Points\n- AI agents process thousands of behavioral and intent signals simultaneously, far exceeding the speed and capacity of human research teams.\n- Skydeo creative director Mallory Gray notes that increased AI citation frequency does not automatically correlate with higher qualified traffic or sales.\n- Relying solely on AI-generated targeting without human oversight can lead to automated blind spots and stagnant conversion rates.\n- Brands are cautioned against prioritizing volume-based AI visibility, which can mask ineffective strategies and poor audience alignment.\n- Effective AI strategy requires auditing data sources to distinguish between declared customer information, observed behaviors, and model-based inferences.\n\n### Why it Matters\nThe shift toward AI-driven marketing risks prioritizing superficial metrics like citation counts over the underlying data quality that actually drives business growth. Companies that fail to maintain human oversight of their targeting logic risk scaling ineffective campaigns that prioritize automated output over meaningful customer engagement.",
+    "title": "AI Agents Won’t Fix Bad Audience Data, They’ll Amplify It via @sejournal, @gregjarboe",
+    "category": "Artificial Intelligence",
+    "processed_at": "2026-09-26T22:11:31.121433",
+    "url": "https://www.searchenginejournal.com/ai-agents-wont-fix-bad-audience-data-theyll-amplify-it/589792/",
+    "source": "Search Engine Journal"
+  },
+  {
+    "author": "daniel@windowscentral.com (Daniel Rubino) , Daniel Rubino",
+    "summary": "Microsoft has unveiled a major evolution for Copilot, transforming it into a unified workspace within Microsoft 365 that integrates documents, tasks, and automation across the entire productivity suite.\n\n### Key Points\n- Microsoft introduced three new Copilot experiences: Home for dashboard-style task management, Code for non-developer app creation, and Autopilot for autonomous project management.\n- The platform is powered by Microsoft IQ, a unified intelligence layer that connects data from Dynamics 365, Power Platform, and other business systems.\n- Copilot Home features a \"Today\" command center to track missed emails, meetings, and upcoming tasks, entering private preview in October.\n- The new \"Code\" feature allows users to build lightweight apps and workflows using plain language, with integration into the GitHub Copilot ecosystem.\n- Microsoft is implementing \"FinOps for AI\" to help organizations manage costs through flexible billing options and automated task optimization.\n\n### Why it Matters\nThis update signals a strategic shift where Microsoft positions Copilot as the central operating layer for all professional productivity rather than just an add-on tool. By embedding AI directly into the workflow, the company aims to reduce app-switching and automate routine logistics, fundamentally changing how businesses manage knowledge and human expertise.",
+    "title": "Microsoft’s new Copilot signals a shift in their AI strategy for Windows & enterprise. Are we past the gimmick phase?",
+    "category": "Artificial Intelligence",
+    "processed_at": "2026-09-26T22:12:16.582374",
+    "url": "https://www.windowscentral.com/artificial-intelligence/microsoft-copilot/microsoft-just-rethought-its-entire-ai-strategy-new-copilot",
+    "source": "Windows Central"
+  },
+  {
+    "author": "Bradley C",
+    "summary": "ULTRALOQ has introduced the Bolt Mission smart lock, which utilizes ultra-wideband technology to provide precise, hands-free door unlocking without relying on GPS or cloud-based location tracking.\n\n### Key Points\n- The Bolt Mission uses ultra-wideband, Bluetooth Low Energy, and radar-based sensing to detect a user's precise distance and direction.\n- Intent detection logic runs locally between the lock and an iPhone, eliminating the need for a home hub or cloud connection.\n- ULTRALOQ also launched the Aliro-certified Bolt Pro and Latch 5 Pro, which support tap-to-unlock via Apple Wallet and Samsung Wallet.\n- All three new lock models are Matter-certified for compatibility with Apple Home, Google Home, and Amazon Alexa.\n- The Bolt Pro and Latch 5 Pro offer multiple entry methods, including fingerprint scanning, PIN codes, app control, and physical keys.\n\n### Why it Matters\nThis release represents a significant shift toward more reliable, localized smart home security by moving away from inconsistent GPS-based auto-unlocking. By adopting ultra-wideband and the cross-platform Aliro standard, these locks offer consumers more versatile and accurate entry options that function independently of specific ecosystem limitations.",
+    "title": "HomeKit Weekly: ULTRALOQ releases its first UWB smart lock that works with Apple Home",
+    "category": "Phones, Laptops, and Gadgets",
+    "processed_at": "2026-09-26T22:12:24.413832",
+    "url": "https://9to5mac.com/2026/09/25/ultraloq-bolt-mission/",
+    "source": "9to5Mac"
+  },
+  {
     "url": "https://www.makeuseof.com/your-pc-shipped-with-vt-x-disabled-and-thats-costing-you-real-performance/",
     "title": "Your PC shipped with VT-x disabled, and that's costing you real performance",
     "category": "Phones, Laptops, and Gadgets",

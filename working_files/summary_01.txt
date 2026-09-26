@@ -1,20 +1,20 @@
-Your PC shipped with VT-x disabled, and that's costing you real performance
+This Week in Security: FBI Gets Hacked, Muse Vulnerable to ClickFix, Popular Rust Developers at Risk, and New Attacks Against RSA
 ============================================================
 
-Enabling hardware virtualization through BIOS settings allows users to run multiple isolated operating systems or virtual machines simultaneously, significantly improving performance for emulators, development tools, and security features.
+The cybercriminal group ShinyHunters has compromised the FBI’s jobs website via an Oracle PeopleSoft vulnerability, exfiltrating 2 TB of sensitive data from AWS GovCloud instances in the process.
 
 ### Key Points
-- Virtualization uses hypervisors to create software-based simulations, allowing multiple operating systems to run concurrently on a single physical machine.
-- Type 1 hypervisors, such as Microsoft Hyper-V, run directly on hardware, while Type 2 hypervisors like VMware Workstation operate as applications within an existing OS.
-- Enabling VT-x or AMD-V in the BIOS is essential for optimizing Android emulators like BlueStacks and running development environments like WSL 2.
-- Windows Security utilizes virtualization-based security (VBS) and Memory Integrity to isolate the kernel and verify drivers against malware threats.
-- Users can verify their current virtualization status by checking the Performance tab within the Windows Task Manager.
+- ShinyHunters exploited a zero-day vulnerability in Oracle PeopleSoft to breach the FBI’s recruitment portal and AWS GovCloud.
+- Meta’s Muse agent for macOS contains a critical flaw allowing attackers to hijack microphone, screen recording, and authentication tokens via malicious terminal commands.
+- North Korean state-linked hackers are targeting Rust language maintainers with sophisticated phishing lures to facilitate supply chain attacks on the Cargo repository.
+- The hacker known as NightmareEclipse released "BigDiskBuster," a proof-of-concept exploit that disables Windows Defender updates.
+- Researchers identified a new attack method against RSA encryption that significantly reduces the computational difficulty required to break 1024-bit, 2048-bit, and 4096-bit keys.
 
 ### Why it Matters
-Virtualization is increasingly critical for modern computing, serving as the backbone for software development, secure sandboxing, and cross-platform compatibility. While it provides essential security and testing capabilities, users should be aware that enabling these features can introduce performance overhead on lower-end hardware.
+These incidents highlight a growing trend of high-stakes vulnerabilities affecting both government infrastructure and widely used consumer software. As attackers refine methods like "ClickFix" and supply chain poisoning, organizations and individual users face increased risks of data theft and system compromise.
 
 ============================================================
-Author:   Shaheer Khan
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/your-pc-shipped-with-vt-x-disabled-and-thats-costing-you-real-performance/
-Category: Phones, Laptops, and Gadgets
+Author:   Mike Kershaw
+Source:   Hackaday
+URL:      https://hackaday.com/2026/09/25/this-week-in-security-fbi-gets-hacked-muse-vulnerable-to-clickfix-popular-rust-developers-at-risk-and-new-attacks-against-rsa/
+Category: Cybersecurity

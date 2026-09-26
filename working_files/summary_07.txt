@@ -1,20 +1,20 @@
-Flock Wants The Most Detailed Map of Its Surveillance Cameras Taken Offline
+PamStealer macOS Malware Adds Live C2 Payload Decryption and Multi-Layer Persistence
 ============================================================
 
-A new cybersecurity map reveals that Flock Safety operates over 300,000 surveillance devices nationwide, significantly exceeding the 120,000 cameras the company previously reported to the public this summer.
+Cybersecurity researchers at Jamf Threat Labs have identified a sophisticated new version of the PamStealer malware that uses server-side decryption to evade static analysis on macOS systems.
 
 ### Key Points
-- Cybersecurity researcher Joshua Michael identified 300,000 Flock devices, including cameras, acoustic sensors, and networking equipment, using data leaked from the company's own servers.
-- The dataset includes specific locations for sensitive sites, such as an "FBI Pilot Camera" at the FBI headquarters and various devices inside detention centers.
-- Michael discovered a vulnerability in November 2025 that allowed unauthenticated access to Flock’s ArcGIS geographic data, which the company allegedly failed to disclose as a breach.
-- Flock Safety has publicly denied experiencing any data breaches, despite evidence that its internal device database was accessible and exfiltrated by researchers.
-- The company has recently attempted to suppress the map by filing a trademark infringement complaint through a third-party firm.
+- The updated PamStealer malware now uses a server-side decryption chain, requiring a live key exchange to unwrap the malicious payload.
+- Attackers are distributing the malware via a fake cryptocurrency wallet website, "wavel[.]app," which prompts users to download a malicious disk image.
+- The malware employs multiple persistence mechanisms, including LaunchAgents and Git hooks, to ensure the infection remains active across sessions.
+- The final stealer component is written in Swift and targets credentials from a wide range of browsers, including Chrome, Firefox, Arc, and Zen.
+- A new "pkgunpack" utility manages the decryption process, making it impossible for security analysts to recover the payload without an active command-and-control connection.
 
 ### Why it Matters
-The discrepancy between Flock’s public statements and the actual scale of its surveillance network raises significant concerns regarding corporate transparency and national security. This expansive infrastructure, which tracks the movements of federal agents and citizens alike, highlights the potential risks of private companies managing vast, sensitive datasets without adequate oversight.
+This evolution in PamStealer demonstrates a significant shift toward infrastructure-dependent malware that complicates traditional security analysis. By tying payload decryption to server availability, attackers can effectively hide their malicious code from researchers and maintain tighter control over their operations.
 
 ============================================================
-Author:   Nikita Mazurov
-Source:   The Intercept
-URL:      https://theintercept.com/2026/09/24/how-many-flock-devices-in-united-states-300000/
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/09/pamstealer-macos-malware-adds-live-c2.html
 Category: Cybersecurity
