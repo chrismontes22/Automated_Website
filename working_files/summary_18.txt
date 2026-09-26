@@ -1,19 +1,21 @@
-Apple has three products launching soon that we’ve waited a long time for
+MacSync info-stealing malware hides malicious commands in an iCloud calendar
 ============================================================
 
-Apple is reportedly preparing to launch several new hardware products in October, including a redesigned MacBook Pro, an updated Apple TV 4K, and a smart display device.
+A new variant of the MacSync infostealer is targeting macOS users by hiding malicious commands within public iCloud calendars to deliver persistent backdoors and steal sensitive data.
 
 ### Key Points
-- The upcoming MacBook Pro will feature a significant industrial redesign, including a touchscreen, an OLED display, and a potential C2 cellular modem.
-- A new Apple TV 4K is expected to debut with an A19 or A19 Pro chip and integrated Siri AI capabilities.
-- The rumored "HomePad" smart display will combine speaker functionality with a camera and a new operating system featuring customizable widgets.
-- The HomePad OS will incorporate elements from iOS, tvOS, and watchOS to support native applications like Photos, Notes, and Music.
+- Kaspersky researchers discovered the malware spreading through a fake cryptocurrency wallet application named Toria, promoted via X and Telegram.
+- The malware uses advanced techniques, including binary droppers and loaders written in Swift and Objective-C, to bypass traditional security measures.
+- Attackers utilize public iCloud calendar events to host malicious commands that download secondary payloads onto the victim's device.
+- The stealer harvests browser data, crypto wallet information, Keychain files, and configuration files for development tools like AWS, Kubernetes, and Git.
+- A persistent backdoor disguised as the macOS Finder process allows attackers to execute remote commands and potentially intercept browser traffic.
+- The malware employs the Pluggable Authentication Modules (PAM) API to capture administrator passwords, a technique rarely seen in previous macOS threats.
 
 ### Why it Matters
-These product updates represent a strategic expansion of Apple’s ecosystem into the smart home market and a major shift in its long-standing laptop design philosophy. By integrating advanced AI and touchscreen technology, the company aims to maintain its competitive edge against rivals in both the personal computing and home automation sectors.
+This sophisticated campaign highlights an evolving threat landscape where attackers leverage legitimate cloud infrastructure to bypass security filters and maintain persistence. By specifically targeting developers and cryptocurrency users, the MacSync malware poses a significant risk to both individual assets and broader corporate supply chain security.
 
 ============================================================
-Author:   Ryan Christoffel
-Source:   9to5Mac
-URL:      https://9to5mac.com/2026/09/24/apple-has-three-products-launching-soon-that-weve-waited-a-long-time-for/
-Category: Phones, Laptops, and Gadgets
+Author:   Sinisa Markovic
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/09/25/macsync-info-stealing-malware-for-macos/
+Category: Cybersecurity

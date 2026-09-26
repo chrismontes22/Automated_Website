@@ -1,5 +1,185 @@
 [
   {
+    "url": "https://www.makeuseof.com/your-pc-shipped-with-vt-x-disabled-and-thats-costing-you-real-performance/",
+    "title": "Your PC shipped with VT-x disabled, and that's costing you real performance",
+    "category": "Phones, Laptops, and Gadgets",
+    "author": "Shaheer Khan",
+    "summary": "Enabling hardware virtualization through BIOS settings allows users to run multiple isolated operating systems or virtual machines simultaneously, significantly improving performance for emulators, development tools, and security features.\n\n### Key Points\n- Virtualization uses hypervisors to create software-based simulations, allowing multiple operating systems to run concurrently on a single physical machine.\n- Type 1 hypervisors, such as Microsoft Hyper-V, run directly on hardware, while Type 2 hypervisors like VMware Workstation operate as applications within an existing OS.\n- Enabling VT-x or AMD-V in the BIOS is essential for optimizing Android emulators like BlueStacks and running development environments like WSL 2.\n- Windows Security utilizes virtualization-based security (VBS) and Memory Integrity to isolate the kernel and verify drivers against malware threats.\n- Users can verify their current virtualization status by checking the Performance tab within the Windows Task Manager.\n\n### Why it Matters\nVirtualization is increasingly critical for modern computing, serving as the backbone for software development, secure sandboxing, and cross-platform compatibility. While it provides essential security and testing capabilities, users should be aware that enabling these features can introduce performance overhead on lower-end hardware.",
+    "source": "MakeUseOf",
+    "processed_at": "2026-09-26T12:03:55.012556"
+  },
+  {
+    "url": "https://www.techradar.com/vpn/vpn-privacy-security/canadas-bill-c-22-vpn-and-tech-firms-urge-the-government-to-fix-the-bill-before-it-becomes-law",
+    "title": "Canada's Bill C-22: VPN and tech firms urge the government to 'fix' the bill before it becomes law",
+    "category": "Cybersecurity",
+    "author": "Rene Millman",
+    "summary": "Major privacy providers including Windscribe, NordVPN, and ExpressVPN are threatening to exit Canada if the government passes Bill C-22, which mandates weakened encryption and increased user metadata retention.\n\n### Key Points\n- A coalition of tech firms and civil liberties groups signed an open letter demanding significant amendments to the proposed Lawful Access Act.\n- Bill C-22 would require digital service providers to create backdoors into encrypted systems and store user metadata for up to six months.\n- Cybersecurity experts warn that mandated backdoors create systemic vulnerabilities that could be exploited by criminal actors and foreign adversaries.\n- Windscribe CEO Yegor Sak stated that the legislation makes Canada an untenable operating environment, prompting the company to consider relocating its headquarters.\n- Major tech entities, including Google, have joined the opposition, arguing the bill establishes a dangerous surveillance infrastructure that threatens global digital security.\n\n### Why it Matters\nThe potential exodus of top-tier privacy providers could leave Canadian consumers with limited access to secure digital tools and encrypted communication services. This standoff highlights a growing global conflict between government surveillance mandates and the fundamental right to private, secure online infrastructure.",
+    "source": "TechRadar",
+    "processed_at": "2026-09-26T12:04:03.043480"
+  },
+  {
+    "url": "https://www.r-bloggers.com/2026/09/quantitative-event-driven-modeling-btc-balance-sheet-shocks-with-sec-edgar-filings-in-r/",
+    "title": "Quantitative Event-Driven Modeling: BTC Balance Sheet Shocks with SEC EDGAR Filings in R",
+    "category": "Tech Business & Markets",
+    "author": "Selcuk Disci",
+    "summary": "A new quantitative analysis framework demonstrates that MicroStrategy’s equity valuation is primarily driven by spot Bitcoin price movements and structural changes in its corporate treasury balance sheet holdings.\n\n### Key Points\n- The model utilizes the R programming language and the `tidymodels` framework to analyze MicroStrategy (MSTR) stock performance.\n- Automated SEC EDGAR parsing via the `secfile` package extracts real-time digital asset holdings directly from XBRL financial filings.\n- The structural model achieved an 82.08% out-of-sample R-Squared, significantly outperforming a naive baseline benchmark of 4.12%.\n- The pipeline incorporates a \"Balance Sheet Shock\" metric to quantify the impact of debt-funded Bitcoin acquisitions on daily equity returns.\n- Interactive visualizations provide dynamic price projections and 2-sigma volatility bands to identify potential overbought or oversold market conditions.\n\n### Why it Matters\nThis research highlights that traditional corporate finance metrics are insufficient for evaluating MicroStrategy, which now functions primarily as a Bitcoin treasury vehicle. By automating the ingestion of regulatory filings, investors can better model the relationship between corporate capital allocation and digital asset market volatility.",
+    "source": "R-bloggers.com",
+    "processed_at": "2026-09-26T12:04:19.592377"
+  },
+  {
+    "url": "https://www.bbc.co.uk/news/articles/cq0m373ee0v0o",
+    "title": "US backs Elon Musk's bid to overturn €120m EU fine against X",
+    "category": "Tech Business & Markets",
+    "author": "https://www.facebook.com/bbcnews",
+    "summary": "The United States Department of Justice has formally intervened in Elon Musk’s legal challenge against a €120 million European Union fine imposed on X for deceptive verification practices.\n\n### Key Points\n- The European Commission fined X €120 million in December 2025 for allegedly deceiving users through its paid blue tick verification system.\n- The US Department of Justice filed an application with the EU’s General Court to support X, citing concerns over international territorial jurisdiction.\n- US officials, including Secretary of State Marco Rubio, argue the fine represents an overreach by foreign regulators against American technology companies.\n- The European Commission maintains the fine is a necessary enforcement of the Digital Services Act to protect digital standards and user rights.\n- X faces additional EU investigations regarding its AI assistant, Grok, and concerns over transparency in advertising and data access for researchers.\n\n### Why it Matters\nThis intervention signals a significant escalation in the regulatory conflict between the United States and the European Union regarding the oversight of American digital platforms. The outcome of this case could establish a critical legal precedent for how international law applies to the extraterritorial enforcement of the EU's Digital Services Act.",
+    "source": "BBC News",
+    "processed_at": "2026-09-26T12:04:27.531370"
+  },
+  {
+    "url": "https://www.cnet.com/tech/services-and-software/googles-ai-wants-to-call-stores-for-you-here-are-the-problems-with-that/",
+    "title": "Google’s AI Wants to Call Stores for You — Here Are the Problems With That",
+    "category": "Artificial Intelligence",
+    "author": "Tyler Lacoma",
+    "summary": "Google has introduced a new agentic feature for Gemini on Pixel devices that allows the AI to make routine phone calls to businesses on behalf of users.\n\n### Key Points\n- Users can trigger the feature using the \"@Call for me\" prompt to verify business hours, check product availability, or request service pricing.\n- The tool is currently restricted to users over 18 in the United States with a Pixel 11 or later and a paid Google AI subscription.\n- Gemini is programmed to disclose its identity as an AI to the recipient before initiating the conversation.\n- Security protocols prevent the AI from sharing sensitive information like credit card numbers, passwords, or Social Security numbers.\n- The feature is currently in public beta and requires the latest versions of the Gemini and Phone by Google applications.\n- Google has implemented daily usage limits to prevent potential abuse and manage the energy demands of the AI processing.\n\n### Why it Matters\nThis development signals a shift toward autonomous AI agents capable of performing real-world tasks, though its utility remains constrained by security safeguards and potential business resistance. The success of this technology depends on how effectively companies adapt their operations to handle high volumes of automated, AI-generated inquiries.",
+    "source": "CNET",
+    "processed_at": "2026-09-26T12:04:36.875058"
+  },
+  {
+    "url": "https://www.androidcentral.com/accessories/power-charging/these-are-the-smallest-65w-gan-chargers-ive-used-yet",
+    "title": "These are the smallest 65W GaN chargers I've used yet",
+    "category": "Phones, Laptops, and Gadgets",
+    "author": "harish.jonnalagadda@futurenet.com (Harish Jonnalagadda) , Harish Jonnalagadda",
+    "summary": "The UGREEN Nexode Air 65W and Rolling Square 65W chargers offer compact, high-performance GaN technology, providing efficient power delivery for smartphones, tablets, and laptops in a portable form factor.\n\n### Key Points\n- The UGREEN Nexode Air 65W is currently priced at $24, significantly lower than the $49 Rolling Square 65W alternative.\n- Both chargers utilize Gallium Nitride (GaN) technology to achieve a size roughly half that of traditional chargers while maintaining 65W power output.\n- The Rolling Square model features a textured side design for improved grip, while the Nexode Air is available in four distinct color options.\n- Both devices support USB PD 3.0 power profiles and PPS, ensuring compatibility with a wide range of devices including Samsung phones and iPhones.\n- The Nexode Air includes a trickle-charging feature for overnight use, while the Rolling Square emphasizes a cooling-focused design.\n\n### Why it Matters\nThese compact GaN chargers represent a shift toward highly portable, universal power solutions that replace bulky traditional power bricks for mobile professionals. Choosing between these models allows consumers to balance budget-friendly pricing against specific design preferences like tactile grip or aesthetic color matching.",
+    "source": "Android Central",
+    "processed_at": "2026-09-26T12:04:45.220393"
+  },
+  {
+    "url": "https://theintercept.com/2026/09/24/how-many-flock-devices-in-united-states-300000/",
+    "title": "Flock Wants The Most Detailed Map of Its Surveillance Cameras Taken Offline",
+    "category": "Cybersecurity",
+    "author": "Nikita Mazurov",
+    "summary": "A new cybersecurity map reveals that Flock Safety operates over 300,000 surveillance devices nationwide, significantly exceeding the 120,000 cameras the company previously reported to the public this summer.\n\n### Key Points\n- Cybersecurity researcher Joshua Michael identified 300,000 Flock devices, including cameras, acoustic sensors, and networking equipment, using data leaked from the company's own servers.\n- The dataset includes specific locations for sensitive sites, such as an \"FBI Pilot Camera\" at the FBI headquarters and various devices inside detention centers.\n- Michael discovered a vulnerability in November 2025 that allowed unauthenticated access to Flock’s ArcGIS geographic data, which the company allegedly failed to disclose as a breach.\n- Flock Safety has publicly denied experiencing any data breaches, despite evidence that its internal device database was accessible and exfiltrated by researchers.\n- The company has recently attempted to suppress the map by filing a trademark infringement complaint through a third-party firm.\n\n### Why it Matters\nThe discrepancy between Flock’s public statements and the actual scale of its surveillance network raises significant concerns regarding corporate transparency and national security. This expansive infrastructure, which tracks the movements of federal agents and citizens alike, highlights the potential risks of private companies managing vast, sensitive datasets without adequate oversight.",
+    "source": "The Intercept",
+    "processed_at": "2026-09-26T12:04:53.659824"
+  },
+  {
+    "url": "https://thenextweb.com/news/trump-johnson-tech-ceos-ai-meeting",
+    "title": "Trump and House Speaker Mike Johnson will reportedly meet tech CEOs on AI on 29 September",
+    "category": "Artificial Intelligence",
+    "author": "Alina Maria Stan",
+    "summary": "President Donald Trump and House Speaker Mike Johnson are reportedly planning a meeting with technology executives on September 29 to discuss the future of artificial intelligence development.\n\n### Key Points\n- Reports from Axios, Reuters, and ABC News indicate the meeting will address AI safety and industry responsibility.\n- House Speaker Mike Johnson has advocated for a summit between government leaders and major AI laboratory heads for several weeks.\n- President Trump recently proposed establishing an \"AI Force\" and appointing an AI czar to oversee national policy.\n- The president has publicly dismissed calls from companies like OpenAI and Anthropic to slow development, labeling such warnings as a hoax.\n- No official agenda or list of participating technology companies has been released by the White House or congressional offices.\n\n### Why it Matters\nThis meeting highlights the growing tension between federal policymakers and private tech firms regarding the regulation and safety of emerging artificial intelligence. The outcome could signal a shift in U.S. policy as the government balances the need for technological innovation against increasing pressure to implement formal safety safeguards.",
+    "source": "The Next Web",
+    "processed_at": "2026-09-26T12:09:11.353778"
+  },
+  {
+    "url": "https://blog.glyph.im/2026/09/who-is-open-source-about.html",
+    "title": "Glyph Lefkowitz: Who Is Open Source About?",
+    "category": "Tech Business & Markets",
+    "author": "Glyph Lefkowitz",
+    "summary": "Open source maintainers must move beyond the \"gift economy\" narrative to acknowledge the implicit, long-term ethical obligations and complex power dynamics they share with their project users.\n\n### Key Points\n- Maintainers often release software for self-interested reasons, including reputation, professional influence, skill development, and shared maintenance burdens.\n- The relationship between maintainers and users creates an implicit trust, requiring developers to avoid malicious code and maintain operational security.\n- Users rely on software for their livelihoods, creating a moral expectation that maintainers will communicate changes and avoid breaking critical functionality.\n- Current accounting practices often fail to recognize the business value of open source, leading to underfunded maintenance and project instability.\n- The rise of AI-generated code has intensified user-maintainer friction, highlighting the urgent need for better community management and feedback infrastructure.\n\n### Why it Matters\nRedefining the open source relationship as a nuanced, two-way exchange rather than a one-sided gift helps maintainers set clearer boundaries and manage user expectations. By formalizing these implicit obligations, the software ecosystem can reduce toxic interactions and build more sustainable, long-term project governance.",
+    "source": "Glyph.im",
+    "processed_at": "2026-09-26T12:09:20.224698"
+  },
+  {
+    "url": "https://cointelegraph.com/magazine/asia-dominates-crypto-adoption-index-bitgets-356m-hack-asia-express",
+    "title": "Asia dominates Crypto Adoption Index, Bitget’s $351M hack: Asia Express",
+    "category": "Cybersecurity",
+    "author": "Cointelegraph by Andrew Fenton",
+    "summary": "The Asia-Pacific region leads global cryptocurrency adoption as Bitget reports a $352 million security breach and various nations advance digital asset infrastructure and regulatory frameworks across the continent.\n\n### Key Points\n- Nine of the top 20 nations in the 2026 Global Crypto Adoption Index are located in the Asia-Pacific region.\n- Crypto exchange Bitget suspended withdrawals following a $351.6 million security breach, though the firm maintains a $464 million protection fund.\n- The Bank of Korea launched a 24-hour won settlement pilot program involving four major domestic lenders to facilitate international transactions.\n- Binance invested $100 million in stablecoin issuer Circle to expand USDC promotion and integration across its global trading platform.\n- Saudi Arabia withdrew from the China-backed mBridge central bank digital currency project after completing a proof-of-concept phase.\n- North Korean cyber group WaterPlum infected 30,000 devices globally through fake job recruitment schemes, resulting in $10.7 million in stolen cryptocurrency.\n\n### Why it Matters\nThe concentration of crypto adoption and infrastructure development in Asia highlights the region's growing influence over global digital finance and stablecoin settlement trends. These developments, ranging from institutional blockchain adoption to significant security challenges, underscore the complex regulatory and technical landscape facing international investors and financial institutions.",
+    "source": "Cointelegraph",
+    "processed_at": "2026-09-26T12:09:37.770726"
+  },
+  {
+    "url": "https://news.slashdot.org/story/26/09/25/0344225/f-droid-20-foss-android-appstore-continues-updating-despite-googles-pending-developer-verification-plan",
+    "title": "F-Droid 2.0: FOSS Android Appstore Continues Updating Despite Google's Pending 'Developer Verification' Plan",
+    "category": "Phones, Laptops, and Gadgets",
+    "author": "EditorDavid",
+    "summary": "F-Droid has released version 2.0 of its open-source Android app repository, featuring a complete interface redesign and improved installation capabilities despite looming regulatory challenges from Google’s platform policies.\n\n### Key Points\n- The F-Droid 2.0 client was rebuilt from scratch using Kotlin Compose to improve responsiveness and support modern Android Material theming.\n- New features include automatic app updates by default and a unified installation service that allows users to approve downloads before they finish.\n- Enhanced search functionality now indexes app descriptions, and the interface includes expanded categories for specialized software like VPNs and password managers.\n- The update follows 14 test releases and aims to lower the barrier for new contributors to the open-source project.\n- Future operations face uncertainty due to Google’s pending requirements for developers to verify identities and pay fees for broad app distribution.\n\n### Why it Matters\nThis update significantly improves the user experience for those seeking alternatives to the Google Play Store by aligning F-Droid's performance with modern Android standards. However, the project's long-term viability remains at risk as Google moves to tighten control over third-party app distribution through mandatory developer registration and identity verification.",
+    "source": "Slashdot.org",
+    "processed_at": "2026-09-26T12:09:54.549204"
+  },
+  {
+    "url": "https://fstoppers.com/photoshop/classic-photoshop-workflow-versus-adobes-new-ai-tools-904779",
+    "title": "A Classic Photoshop Workflow Versus Adobe's New AI Tools",
+    "category": "Artificial Intelligence",
+    "author": "Alex Cooke",
+    "summary": "Adobe Photoshop’s recent integration of AI-driven features and updated adjustment layers has introduced workflow inconsistencies, prompting professional photographers to seek more reliable, manual editing alternatives for complex projects.\n\n### Key Points\n- Photoshop’s new AI-assisted editor creates flattened document copies and can result in reduced image sharpness compared to traditional editing methods.\n- The new \"Light\" adjustment layer replaces legacy Brightness/Contrast tools, creating potential compatibility issues when reopening older files or maintaining consistent tonal values.\n- Adobe’s generative AI features utilize a credit-based system, with costs ranging from one credit for Firefly fills to 40 credits for partner models like Google’s Gemini.\n- Professional workflows remain more stable by using stamped layers converted to smart objects, which allow for non-destructive editing via the Camera Raw Filter.\n- Users can disable the AI-assisted editor interface through the Preferences menu if they prefer to maintain a traditional, layer-based Photoshop workflow.\n\n### Why it Matters\nThese changes highlight a growing tension between Adobe’s push for automated, AI-first tools and the precision requirements of professional photography workflows. Relying on proprietary AI models can introduce hidden costs and unpredictable results, making manual, non-destructive techniques essential for maintaining long-term project consistency.",
+    "source": "Fstoppers",
+    "processed_at": "2026-09-26T12:10:05.354186"
+  },
+  {
+    "url": "https://abcnews.com/Politics/trump-house-speaker-johnson-expected-meet-tech-ceos/story?id=136742304",
+    "title": "Trump, House Speaker Johnson expected to meet with tech CEOs on AI next week: Sources",
+    "category": "Artificial Intelligence",
+    "author": "Lauren Peller, Katherine Faulders",
+    "summary": "President Donald Trump and House Speaker Mike Johnson are scheduled to meet with prominent technology executives on September 29 to discuss the future of artificial intelligence regulation.\n\n### Key Points\n- The meeting aims to address industry concerns regarding AI safety and potential government oversight of the rapidly evolving technology sector.\n- Leaders from major firms, including OpenAI and Anthropic, have recently advocated for slowing development to mitigate existential risks posed by advanced AI systems.\n- President Trump has publicly dismissed warnings about AI-driven threats as a hoax while simultaneously proposing the creation of an \"AI Force\" and a new AI czar.\n- Speaker Mike Johnson supports the dialogue to determine the appropriate balance between corporate responsibility and federal legislative action.\n- The House of Representatives is currently in recess until after the midterm elections, complicating immediate legislative efforts to regulate the industry.\n\n### Why it Matters\nThis meeting highlights a significant ideological divide between industry leaders seeking safety guardrails and political leadership skeptical of the necessity for strict government intervention. The outcome could shape the future of federal AI policy and influence how the United States balances technological innovation with national security concerns.",
+    "source": "Abcnews.com",
+    "processed_at": "2026-09-26T12:10:14.308578"
+  },
+  {
+    "url": "https://www.infosecurity-magazine.com/news/banking-trojan-remote-control/",
+    "title": "RemControl Banking Trojan Gives Attackers Remote Control of Android Devices",
+    "category": "Cybersecurity",
+    "author": "James Coker",
+    "summary": "Researchers at Group-IB have identified a new Android banking trojan called RemControl that exploits Accessibility Services to steal sensitive financial credentials from users across six different countries.\n\n### Key Points\n- RemControl targets retail banking customers in Western Europe, the Middle East, and Canada, impacting over 30 financial institutions.\n- The malware developer, tracked as UNKK, reportedly used an AI assistant to build the command and control infrastructure by disguising the project as a parental monitoring app.\n- Attackers distribute the trojan via fake Google Play Store pages that impersonate the TVTap IPTV application to lure victims into downloading the malicious payload.\n- The malware employs a local VPN to suppress Google Play Protect and uses the Android Keystore to sign payloads, effectively evading standard security detection.\n- Once granted Accessibility Service permissions, the trojan captures PINs, banking codes, and screen data while preventing users from uninstalling the application or performing factory resets.\n\n### Why it Matters\nThis campaign highlights a growing trend of cybercriminals leveraging AI tools to accelerate the development of sophisticated, multi-language banking fraud platforms. The use of advanced evasion techniques, such as VPN-based suppression of security software, poses a significant risk to mobile banking users globally.",
+    "source": "Infosecurity Magazine",
+    "processed_at": "2026-09-26T12:10:22.458430"
+  },
+  {
+    "url": "https://fortune.com/2026/09/25/aj-scaramuccis-solari-capital-ipo-private-collectibles/",
+    "title": "AJ Scaramucci’s Solari Capital emerges from stealth with $350 million deployed and a case that companies stay private too long",
+    "category": "Tech Business & Markets",
+    "author": "Amanda Gerut",
+    "summary": "AJ Scaramucci’s new venture firm, Solari Capital, has emerged from stealth with $350 million to invest in \"programmable reality\" startups while addressing the growing scarcity of public market access.\n\n### Key Points\n- Solari Capital launched with $350 million in deployed capital, backed by prominent investors including Eric Schmidt, Jim Breyer, and Ron Conway.\n- The firm focuses on \"programmable reality\" companies, with a portfolio including xAI, Suno, Tessera Therapeutics, Varda Space, and Northwood Space.\n- Data from University of Florida professor Jay Ritter shows the median age of VC-backed tech companies at IPO has risen from roughly 6–9 years in the 1990s to 13.5 years in 2024.\n- Solari aims to bridge the liquidity gap for ordinary investors by utilizing tokenization and secondary market platforms to provide exposure to private assets.\n- The firm’s strategy includes incubating companies like Radial Health and supporting infrastructure projects like Fission Labs and Architect Financial.\n\n### Why it Matters\nThe extended timeline for startups to reach an IPO has increasingly locked retail investors out of early-stage value creation, which now largely remains within private portfolios. By leveraging tokenization and alternative assets, Solari Capital seeks to democratize access to high-growth private markets that were previously reserved for institutional players.",
+    "source": "Fortune",
+    "processed_at": "2026-09-26T12:14:59.009596"
+  },
+  {
+    "url": "https://www.theregister.com/ai-and-ml/2026/09/25/partner-content-huawei-cloud-rolls-out-enterprise-ai-products-across-the-board-building-an-open-agentic-cloud/5298765",
+    "title": "Huawei Cloud Rolls Out Enterprise AI Products Across the Board, Building an Open Agentic Cloud",
+    "category": "Artificial Intelligence",
+    "author": "Huawei",
+    "summary": "Huawei Cloud unveiled its new Agentic Cloud strategy at HUAWEI CONNECT 2026, introducing advanced AI cluster services and enterprise-grade agent platforms to accelerate global industrial AI adoption.\n\n### Key Points\n- Huawei Cloud launched the AI Cluster Service (AICS), featuring 20% higher token throughput and 10-minute fault recovery, available globally by November 30, 2026.\n- The new Context Memory Storage (CMS) solution provides petabyte-scale capacity with 50% faster read performance than current industry standards.\n- The AgentArts enterprise platform, which supports over 100 customers, will expand to international markets on December 30, 2026.\n- The Industry AI Foundry added Smart Government and AI Hardware zones, bringing the total to seven specialized sectors with over 1,000 deployed projects.\n- The openJiuwen open-source community has reached 3.29 million downloads, supporting developers with over 6,000 general and industry-specific Model Context Protocol assets.\n\n### Why it Matters\nThese developments signal a shift toward \"Agentic Infra,\" where cloud infrastructure is specifically optimized to manage autonomous AI agents within complex production environments. By standardizing these tools, Huawei Cloud aims to lower the barrier for enterprises to integrate large-scale AI into government, manufacturing, and office software workflows.",
+    "source": "Theregister.com",
+    "processed_at": "2026-09-26T12:15:07.647288"
+  },
+  {
+    "url": "https://9to5mac.com/2026/09/24/rare-antennagate-press-conference-qa-video-surfaces-online/",
+    "title": "Rare ‘Antennagate’ press conference Q&A video surfaces online",
+    "category": "Phones, Laptops, and Gadgets",
+    "author": "Marcus Mendes",
+    "summary": "A previously unreleased 47-minute video recording of the 2010 iPhone 4 \"Antennagate\" press conference Q&A session has surfaced online, offering a rare look at Apple's historical crisis management.\n\n### Key Points\n- The footage features Steve Jobs, Tim Cook, and Bob Mansfield addressing signal reception issues following the iPhone 4 launch.\n- The video was published by the YouTube channel Sir Mix-A-Lot Rare Music, though the source of the recording remains unknown.\n- During the event, Apple offered customers free protective cases or full refunds to resolve the antenna design controversy.\n- The Q&A session includes the moment executives famously produced their own caseless iPhones to demonstrate the signal drop issue to the press.\n\n### Why it Matters\nThis footage provides a rare, unfiltered look at how Apple leadership navigated one of the company's most significant public relations crises. It serves as a historical case study in corporate transparency and crisis communication that continues to influence how tech companies manage product defects today.",
+    "source": "9to5Mac",
+    "processed_at": "2026-09-26T12:15:15.305138"
+  },
+  {
+    "url": "https://www.helpnetsecurity.com/2026/09/25/macsync-info-stealing-malware-for-macos/",
+    "title": "MacSync info-stealing malware hides malicious commands in an iCloud calendar",
+    "category": "Cybersecurity",
+    "author": "Sinisa Markovic",
+    "summary": "A new variant of the MacSync infostealer is targeting macOS users by hiding malicious commands within public iCloud calendars to deliver persistent backdoors and steal sensitive data.\n\n### Key Points\n- Kaspersky researchers discovered the malware spreading through a fake cryptocurrency wallet application named Toria, promoted via X and Telegram.\n- The malware uses advanced techniques, including binary droppers and loaders written in Swift and Objective-C, to bypass traditional security measures.\n- Attackers utilize public iCloud calendar events to host malicious commands that download secondary payloads onto the victim's device.\n- The stealer harvests browser data, crypto wallet information, Keychain files, and configuration files for development tools like AWS, Kubernetes, and Git.\n- A persistent backdoor disguised as the macOS Finder process allows attackers to execute remote commands and potentially intercept browser traffic.\n- The malware employs the Pluggable Authentication Modules (PAM) API to capture administrator passwords, a technique rarely seen in previous macOS threats.\n\n### Why it Matters\nThis sophisticated campaign highlights an evolving threat landscape where attackers leverage legitimate cloud infrastructure to bypass security filters and maintain persistence. By specifically targeting developers and cryptocurrency users, the MacSync malware poses a significant risk to both individual assets and broader corporate supply chain security.",
+    "source": "Help Net Security",
+    "processed_at": "2026-09-26T12:15:23.417296"
+  },
+  {
+    "url": "https://www.livemint.com/opinion/online-views/amazon-doesn-t-want-meta-s-ai-agent-to-shop-on-its-site-where-does-that-leave-users-of-personal-bots-11790330261899.html",
+    "title": "Amazon doesn’t want Meta’s AI agent to shop on its site—where does that leave users of personal bots?",
+    "category": "Tech Business & Markets",
+    "author": "mint",
+    "summary": "Meta’s new AI agent, Muse, has gained significant popularity, but Amazon is blocking the tool from its platform, highlighting growing industry tensions over AI interoperability and market dominance.\n\n### Key Points\n- Meta’s Muse AI agent reached 900,000 downloads in its first six days, prompting Jefferies analysts to raise Meta’s stock price target to $875.\n- Amazon has blocked Muse from accessing its store, citing security and data privacy concerns while protecting its own AI shopping initiatives.\n- Shopify has officially partnered with Muse, signaling a potential shift as companies seek to bypass Amazon’s restrictions through alternative retail integrations.\n- Experts suggest that blocking AI agents to maintain market dominance could trigger antitrust scrutiny and legal challenges under US competition laws.\n- Meta plans to monetize Muse through a subscription model, charging users between $16 and $80 per month depending on usage levels.\n\n### Why it Matters\nThe conflict between Meta and Amazon illustrates a broader struggle for control as tech giants attempt to protect their ecosystems from autonomous AI agents. If companies fail to establish interoperability standards, consumers may be forced to juggle multiple, incompatible bots, potentially stifling the widespread adoption and utility of AI technology.",
+    "source": "Livemint",
+    "processed_at": "2026-09-26T12:15:32.340538"
+  },
+  {
+    "url": "https://www.coindesk.com/markets/2026/09/25/live-updates-bitcoin-steadies-near-usd84-000-as-the-bond-selloff-pauses",
+    "title": "Live updates: Bitcoin steadies near $84,000 as the bond selloff pauses",
+    "category": "Tech Business & Markets",
+    "author": "Shaurya Malwa",
+    "summary": "Former hedge fund manager Hugh Hendry suggests the Federal Reserve’s recent interest rate hike may inadvertently trigger future rate cuts by suppressing consumer demand alongside rising energy costs.\n\n### Key Points\n- Hugh Hendry argues that the Federal Reserve’s latest rate hike acts as a monetary brake that compounds the economic pressure caused by high oil prices.\n- The strategy potentially creates a \"Warsh mandate,\" providing the central bank political cover to lower rates later without appearing influenced by the White House.\n- Hendry describes the policy as a gun firing backwards, where the recoil from fighting inflation creates the very conditions necessary for future monetary easing.\n- Rising oil prices are identified as a dual threat that simultaneously increases headline inflation and reduces overall household spending power.\n\n### Why it Matters\nThis analysis highlights a growing concern that aggressive monetary tightening could trigger an economic downturn by over-correcting for inflation. If the Federal Reserve is forced to pivot to rate cuts, it could signal significant volatility for financial markets and broader economic stability.",
+    "source": "CoinDesk",
+    "processed_at": "2026-09-26T12:15:40.843816"
+  },
+  {
     "url": "https://www.theverge.com/report/1000180/muse-openclaw-instinct-lookalike",
     "summary": "Meta’s new AI agent Muse and the platform Instinct are gaining significant traction, sparking industry debate over their design similarities to the open-source project OpenClaw.\n\n### Key Points\n- Meta’s Muse app has reached 600,000 daily active users in the U.S. shortly after its release.\n- Critics allege Muse shares core file names and personality documentation with the open-source project OpenClaw.\n- Meta’s Nat Friedman denies copying OpenClaw but acknowledges the product was heavily inspired by its design.\n- The AI agent platform Instinct is currently fundraising at a $2.5 billion valuation.\n- Security researchers have identified potential vulnerabilities in Muse, including a zero-day exploit that allows unauthorized agent hijacking.\n\n### Why it Matters\nThe rapid rise of Muse and Instinct highlights how Big Tech is aggressively adopting and commercializing grassroots innovations to capture the growing consumer AI agent market. While these corporate versions offer improved accessibility and ease of use, they raise significant questions regarding user privacy, data security, and the future of open-source influence in the industry.",
     "title": "Muse sure looks a lot like OpenClaw",

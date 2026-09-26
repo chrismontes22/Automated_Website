@@ -1,19 +1,20 @@
-Qualcomm Announces Renewed Agreement With Apple
+RemControl Banking Trojan Gives Attackers Remote Control of Android Devices
 ============================================================
 
-Qualcomm has officially renewed its global patent licensing agreement with Apple, extending the long-standing partnership between the two technology giants beyond the current March 2027 expiration date.
+Researchers at Group-IB have identified a new Android banking trojan called RemControl that exploits Accessibility Services to steal sensitive financial credentials from users across six different countries.
 
 ### Key Points
-- The renewed patent licensing agreement between Qualcomm and Apple is scheduled to take effect on April 1, 2027.
-- This patent deal remains distinct from the separate supply agreement for cellular modems, which is currently slated to conclude in 2026.
-- Apple is actively transitioning to its own custom-designed hardware, utilizing the C2 modem in most iPhone 18 models and the C1X in recent iPad devices.
-- Only the U.S. version of the iPhone 18 Pro Max currently retains a Qualcomm cellular modem as Apple shifts toward internal component production.
+- RemControl targets retail banking customers in Western Europe, the Middle East, and Canada, impacting over 30 financial institutions.
+- The malware developer, tracked as UNKK, reportedly used an AI assistant to build the command and control infrastructure by disguising the project as a parental monitoring app.
+- Attackers distribute the trojan via fake Google Play Store pages that impersonate the TVTap IPTV application to lure victims into downloading the malicious payload.
+- The malware employs a local VPN to suppress Google Play Protect and uses the Android Keystore to sign payloads, effectively evading standard security detection.
+- Once granted Accessibility Service permissions, the trojan captures PINs, banking codes, and screen data while preventing users from uninstalling the application or performing factory resets.
 
 ### Why it Matters
-This extension ensures continued legal stability for Apple’s hardware ecosystem while the company works to reduce its reliance on third-party modem suppliers. It highlights the ongoing shift in the mobile industry as Apple prioritizes the integration of its proprietary silicon across its global product lineup.
+This campaign highlights a growing trend of cybercriminals leveraging AI tools to accelerate the development of sophisticated, multi-language banking fraud platforms. The use of advanced evasion techniques, such as VPN-based suppression of security software, poses a significant risk to mobile banking users globally.
 
 ============================================================
-Author:   Joe Rossignol
-Source:   MacRumors
-URL:      https://www.macrumors.com/2026/09/24/qualcomm-apple-renewed-agreement/
-Category: Tech Business & Markets
+Author:   James Coker
+Source:   Infosecurity Magazine
+URL:      https://www.infosecurity-magazine.com/news/banking-trojan-remote-control/
+Category: Cybersecurity
