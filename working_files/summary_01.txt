@@ -1,20 +1,20 @@
-R2Socks
+Lunex Stealer Abuses AMD Driver to Disable Security Monitoring and Steal Browser Credentials
 ============================================================
 
-A new SOCKS5 proxy tool leverages Cloudflare R2 object storage to tunnel TCP traffic, enabling covert network communication through encrypted binary packets stored as temporary bucket objects.
+The Lunex malware-as-a-service platform is actively targeting Ukrainian users with the Psychedelic Stealer, utilizing sophisticated ClickFix lures and vulnerable drivers to bypass Windows security and exfiltrate data.
 
 ### Key Points
-- The tool uses Python for the proxy and offers both Python and dependency-free C++ agents for Windows-based target systems.
-- Communication relies on polling R2 buckets, where connection requests and data are serialized into binary packets and stored as objects.
-- It supports optional AES-256-GCM encryption for payloads, utilizing PBKDF2-SHA256 key derivation with 600,000 iterations.
-- The system employs adaptive sleep intervals and batching to balance network responsiveness with API call volume and efficiency.
-- The C++ agent is built using native Windows APIs, including WinHTTP, bcrypt, and Winsock2, requiring no external library dependencies.
+- The attack chain uses fake Cloudflare CAPTCHA pages and MSI installers to deploy the LunexLoader, which facilitates credential and cryptocurrency theft.
+- Attackers exploit a vulnerable AMD Radeon driver (CVE-2023-20598) to disable security software while keeping processes running to avoid detection.
+- The malware targets seven Chromium-based browsers and multiple desktop and extension-based cryptocurrency wallets to harvest sensitive user information.
+- Persistence is maintained through Registry keys, scheduled tasks, and a PowerShell-based Native Messaging Host that survives system reboots.
+- Researchers identified 28 active command-and-control panels across 13 countries, indicating a rapid expansion of the platform since June 2026.
 
 ### Why it Matters
-This technique demonstrates how cloud storage services can be repurposed as covert command-and-control channels to bypass traditional network security perimeters. Security teams should monitor for unusual traffic patterns or high-frequency object creation within R2 buckets that may indicate unauthorized data exfiltration or proxy activity.
+This campaign demonstrates a significant evolution in malware-as-a-service operations by combining advanced kernel-level evasion with persistent browser-based data theft. The ability to bypass standard security blocklists highlights a critical vulnerability in how enterprise environments manage and validate third-party drivers.
 
 ============================================================
-Author:   Kitploit
-Source:   Kitploit.com
-URL:      https://kitploit.com/en/tools/github/ivancabrera02/r2socks/
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/09/lunex-stealer-abuses-amd-driver-to.html
 Category: Cybersecurity

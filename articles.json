@@ -1,5 +1,140 @@
 [
   {
+    "title": "Lunex Stealer Abuses AMD Driver to Disable Security Monitoring and Steal Browser Credentials",
+    "summary": "The Lunex malware-as-a-service platform is actively targeting Ukrainian users with the Psychedelic Stealer, utilizing sophisticated ClickFix lures and vulnerable drivers to bypass Windows security and exfiltrate data.\n\n### Key Points\n- The attack chain uses fake Cloudflare CAPTCHA pages and MSI installers to deploy the LunexLoader, which facilitates credential and cryptocurrency theft.\n- Attackers exploit a vulnerable AMD Radeon driver (CVE-2023-20598) to disable security software while keeping processes running to avoid detection.\n- The malware targets seven Chromium-based browsers and multiple desktop and extension-based cryptocurrency wallets to harvest sensitive user information.\n- Persistence is maintained through Registry keys, scheduled tasks, and a PowerShell-based Native Messaging Host that survives system reboots.\n- Researchers identified 28 active command-and-control panels across 13 countries, indicating a rapid expansion of the platform since June 2026.\n\n### Why it Matters\nThis campaign demonstrates a significant evolution in malware-as-a-service operations by combining advanced kernel-level evasion with persistent browser-based data theft. The ability to bypass standard security blocklists highlights a critical vulnerability in how enterprise environments manage and validate third-party drivers.",
+    "category": "Cybersecurity",
+    "url": "https://thehackernews.com/2026/09/lunex-stealer-abuses-amd-driver-to.html",
+    "source": "Internet",
+    "processed_at": "2026-09-27T21:51:03.210502",
+    "author": "info@thehackernews.com (The Hacker News)"
+  },
+  {
+    "title": "From tunnel to connectivity layer: What GnuVPN says about where VPNs are heading",
+    "summary": "Consumer VPN providers are evolving beyond basic encryption by integrating protocol flexibility, cross-platform support, and travel-focused eSIM services to maintain stable connectivity across increasingly fragmented network environments.\n\n### Key Points\n- Modern VPNs are shifting focus from simple server counts to network resilience, utilizing multiple protocols like WireGuard, OpenVPN, and AmneziaWG to maintain stable connections.\n- Services like GnuVPN are expanding cross-platform compatibility to include Windows, macOS, Linux, and mobile app stores like Huawei AppGallery and Xiaomi GetApps.\n- The integration of eSIM technology allows users to combine mobile data access with privacy tools, streamlining the experience for international travelers.\n- According to the GSMA Intelligence 2025 Global Consumer Survey, 12% of international travelers utilized eSIMs, highlighting a growing market for integrated connectivity solutions.\n- The industry is moving toward \"invisible\" security, where software automatically adapts to changing network conditions without requiring manual user intervention.\n\n### Why it Matters\nThe convergence of connectivity and privacy tools reflects a fundamental shift in how consumers expect digital security to function in a mobile-first world. By bundling services like eSIMs with VPNs, providers are positioning themselves as essential infrastructure for seamless, secure internet access rather than just standalone privacy utilities.",
+    "category": "Cybersecurity",
+    "url": "https://thenextweb.com/news/gnuvpn-vpns-connectivity-layer-esim",
+    "source": "The Next Web",
+    "processed_at": "2026-09-27T21:51:11.808802",
+    "author": "Will Jones"
+  },
+  {
+    "title": "I wasn't sure about Googlebooks, but after playing with two Snapdragon-powered laptops, I'm actually considering switching",
+    "summary": "Google is transitioning from traditional Chromebooks to premium Googlebooks, a new laptop category powered by Android and Snapdragon X Elite chips that integrates advanced AI and smartphone connectivity.\n\n### Key Points\n- Googlebooks feature a premium design with starting prices between $999 and $1,299, positioning them as high-end alternatives to budget-friendly Chromebooks.\n- Initial models include the HP Googlebook 14 and Dell XPS Googlebook, both equipped with 16GB of RAM and 512GB of storage.\n- The operating system integrates Android-based features like widgets, app folders, and a familiar quick settings panel similar to Pixel devices.\n- AI-driven tools include Rambler for natural language dictation, Magic Pointer for screen-based Gemini searches, and a custom AI widget creator.\n- Devices support seamless smartphone integration, allowing users to cast apps, swap files, and continue tasks between their phone and laptop.\n\n### Why it Matters\nThis shift represents Google's attempt to redefine its computing ecosystem by merging the productivity of laptops with the familiar, app-rich environment of Android. By targeting a premium market segment, Google aims to establish a high-performance foundation before eventually introducing more affordable models to replace legacy Chromebooks.",
+    "category": "Phones, Laptops, and Gadgets",
+    "url": "https://www.androidcentral.com/chromebooks-laptops/googlebook-snapdragon-summit-hands-on",
+    "source": "Android Central",
+    "processed_at": "2026-09-27T21:51:54.697402",
+    "author": "derrek.lee@futurenet.com (Derrek Lee) , Derrek Lee"
+  },
+  {
+    "title": "Top Stories: Apple Leaks, Siri AI Settlement, and More",
+    "summary": "Apple is preparing to launch new iPad mini, HomePod mini, and Apple TV models this October while addressing a $250 million class action settlement regarding Siri AI.\n\n### Key Points\n- Apple plans an October launch for a new iPad mini with an A20 Pro chip, refreshed HomePod mini colors, and a fourth-generation Apple TV 4K.\n- Eligible iPhone owners can now file claims for a $250 million class action settlement regarding Siri AI delays through December 21.\n- The iPhone 18 Pro Max requires a \"Prepare to Ship\" firmware feature to discharge its battery below 20Wh for safe transport.\n- Apple’s new $349.99 Beats 360 headphones feature a revamped acoustic architecture and swappable, customizable ear and headband cushions.\n- Leaked specifications suggest the 2027 iPhone 20 Pro lineup will feature slightly larger display sizes compared to the current iPhone 18 Pro models.\n\n### Why it Matters\nThese updates highlight Apple's ongoing efforts to balance hardware innovation with legal and logistical challenges across its diverse product ecosystem. Managing consumer expectations for foldable technology and battery safety remains critical as the company prepares for its next major product cycle.",
+    "category": "Phones, Laptops, and Gadgets",
+    "url": "https://www.macrumors.com/2026/09/26/top-stories-apple-leaks-siri-ai-settlement/",
+    "source": "MacRumors",
+    "processed_at": "2026-09-27T21:52:03.352185",
+    "author": "MacRumors Staff"
+  },
+  {
+    "title": "GitHub Actions re-enabled with Mini Shai-Hulud payload still active",
+    "summary": "Two compromised GitHub Actions linked to the Mini Shai-Hulud supply-chain attack were inadvertently re-enabled by their maintainer, exposing thousands of downstream repositories to malicious code for over a week.\n\n### Key Points\n- Security researchers at Socket discovered that two GitHub Actions, actions-cool/issues-helper and actions-cool/maintain-one-comment, were re-enabled on September 16.\n- The re-enabled actions still pointed to malicious payloads from a May 18 supply-chain attack, which targeted developer credentials and CI/CD secrets.\n- Approximately 15,000 repositories depend on the affected actions, which were finally disabled again by GitHub on September 25.\n- The original Mini Shai-Hulud campaign compromised 323 packages and 639 versions on the npm registry.\n- Socket recommends that developers rotate potentially exposed secrets and pin dependencies to verified, clean commits to prevent future unauthorized code execution.\n\n### Why it Matters\nThis incident highlights the significant risks associated with using mutable tags in software supply chains, as automated workflows can silently pull malicious updates without developer intervention. Organizations must implement stricter dependency management practices to ensure that compromised third-party tools do not provide attackers with persistent access to sensitive CI/CD environments.",
+    "category": "Cybersecurity",
+    "url": "https://www.bleepingcomputer.com/news/security/github-actions-re-enabled-with-mini-shai-hulud-payload-still-active/",
+    "source": "BleepingComputer",
+    "processed_at": "2026-09-27T21:56:36.340954",
+    "author": "Bill Toulas"
+  },
+  {
+    "title": "Novel attack slashes computing power needed to crack textbook RSA cryptography",
+    "summary": "Researchers from UC San Diego and Inria Nancy have developed a new method to crack RSA encryption, potentially making it feasible to decrypt secure traffic using significant computing resources.\n\n### Key Points\n- The research demonstrates a new factoring attack that significantly reduces the number of operations required to break 1024-bit, 2048-bit, 3072-bit, and 4096-bit RSA keys.\n- The attack specifically targets the \"textbook\" or \"raw\" variant of RSA, which is utilized in services like Cloudflare Privacy Pass, Apple iCloud Private Relay, and various hardware security modules.\n- Successful exploitation requires an attacker to perform billions of queries against a target key, which could be mitigated by standard network security measures like IP rate-limiting.\n- The researchers successfully tested the attack against Thales Luna hardware security modules, proving the vulnerability exists in both physical and online service implementations.\n- Future optimizations, including the use of GPUs and AI tools, could further decrease the computational effort required to execute this decryption method.\n\n### Why it Matters\nThis discovery highlights a critical vulnerability in widely used encryption standards that were previously considered secure against factoring attacks. While the practical barriers to execution remain high, the research suggests that sensitive data intercepted today could become vulnerable to decryption as computational power and optimization techniques continue to advance.",
+    "category": "Cybersecurity",
+    "url": "https://www.tomshardware.com/tech-industry/cyber-security/novel-attack-on-rsa-cryptography-might-bring-computation-requirements-for-cracking-down-to-manageable-levels",
+    "source": "Tom's Hardware UK",
+    "processed_at": "2026-09-27T21:56:44.692464",
+    "author": "editors@tomshardware.com (Bruno Ferreira) , Bruno Ferreira"
+  },
+  {
+    "title": "These 5 changes took only a few minutes and made my smart TV feel brand new",
+    "summary": "Optimizing your smart TV settings, managing storage, and performing regular software updates can significantly extend the lifespan of your device while improving overall picture quality and system performance.\n\n### Key Points\n- Reduce the backlight or brightness settings on LCD-based TVs, such as LED, QLED, and Mini-LED models, to prevent premature component wear.\n- Use Filmmaker Mode selectively for movies to maintain director intent while reducing unnecessary thermal stress and power consumption on your display.\n- Delete unused streaming or gaming apps to free up storage space and ensure the TV processor operates at optimal speeds.\n- Clear app caches regularly through the Device Care or Support menu to improve loading times without losing your login credentials.\n- Enable automatic firmware updates to patch security vulnerabilities and ensure your TV maintains a stable, protected network connection.\n\n### Why it Matters\nProper maintenance of smart TVs protects your hardware investment and prevents common performance issues like sluggish interfaces or premature backlight failure. By adjusting settings and managing software, users can ensure their devices remain functional and efficient for a longer period.",
+    "category": "Phones, Laptops, and Gadgets",
+    "url": "https://www.makeuseof.com/these-changes-made-my-smart-tv-feel-brand-new/",
+    "source": "MakeUseOf",
+    "processed_at": "2026-09-27T21:57:20.772390",
+    "author": "Chris Hachey"
+  },
+  {
+    "title": "The Marxist Case for the Technofeudal Hypothesis (*) – Jacobin",
+    "summary": "Economist Yanis Varoufakis argues that modern Big Tech platforms have evolved into \"cloud fiefs,\" creating a new socioeconomic mode called technofeudalism that replaces traditional markets with algorithmic behavioral modification.\n\n### Key Points\n- Varoufakis defines \"cloud capital\" as machines that generate rent-extractive power by modifying user behavior rather than producing commodities for market exchange.\n- Major platforms like Amazon, Google, and Uber are characterized as \"cloud fiefs\" that function as centrally planned allocation systems rather than competitive capitalist marketplaces.\n- The \"Technofeudal Hypothesis\" posits that unpaid user labor—such as posting videos or providing ratings—collectively augments the power of cloud capital owners.\n- AI integration is described as an accelerator that deepens emotional dependence on platforms and creates \"Artificial Social Relations of Consumption.\"\n- The author contends that this system leads to a long-term decline in both profit rates and rent extraction, potentially resulting in systemic economic failure.\n\n### Why it Matters\nThis analysis challenges traditional economic views by suggesting that Big Tech has fundamentally altered the nature of capital, rendering standard market regulations ineffective. Understanding this shift is critical for policymakers and labor advocates as they navigate the growing influence of platform monopolies on global economic stability and social autonomy.",
+    "category": "Tech Business & Markets",
+    "url": "https://www.yanisvaroufakis.eu/2026/09/26/the-marxist-case-for-the-technofeudal-hypothesis-jacobin/",
+    "source": "Yanisvaroufakis.eu",
+    "processed_at": "2026-09-27T21:57:32.606642",
+    "author": "Yanis Varoufakis"
+  },
+  {
+    "title": "Best Buy launches a surprise weekend flash sale with up to 50% off — I've found the 18 best deals on TVs, laptops, appliances, headphones, and more",
+    "summary": "Best Buy has launched a surprise weekend flash sale featuring significant discounts on electronics, appliances, and home goods, with most promotional offers expiring at the end of Sunday.\n\n### Key Points\n- The sale includes deep discounts on major brands like Apple, Samsung, Sony, Dyson, and LG.\n- Notable deals feature an $1,100 price reduction on the 65-inch LG C6 OLED TV and up to $1,200 off select iPhone and Samsung smartphone models.\n- Consumers can find savings of up to 50% on kitchen appliances from Ninja and Bella, as well as 65% off smart home devices from Ring and Blink.\n- Additional offers include laptops starting at $179, gaming titles from $19.99, and various discounts on cameras, tablets, and audio equipment.\n- All promotional pricing is strictly limited and scheduled to conclude by the end of the day on Sunday.\n\n### Why it Matters\nThis flash sale provides consumers with an opportunity to secure holiday-level discounts ahead of major retail events like Amazon's Prime Big Deal Days. By offering aggressive pricing on high-end electronics, Best Buy aims to capture early consumer spending as the fall shopping season begins.",
+    "category": "Phones, Laptops, and Gadgets",
+    "url": "https://www.techradar.com/seasonal-sales/best-buy-launches-a-surprise-weekend-flash-sale-with-up-to-50-percent-off-ive-found-the-18-best-deals-on-tvs-laptops-appliances-headphones-and-more",
+    "source": "TechRadar",
+    "processed_at": "2026-09-27T21:57:53.368384",
+    "author": "james.pickard@futurenet.com (James Pickard) , James Pickard"
+  },
+  {
+    "title": "Apple’s Other Recent ‘Duo’",
+    "summary": "The Apple MagSafe Duo Charger enables simultaneous wireless charging for iPhone 12, 13, and 14 models alongside all Apple Watch versions using a compatible USB-C power adapter.\n\n### Key Points\n- Requires a 20W or greater USB-C power adapter to achieve peak wireless charging speeds of up to 14W for compatible iPhones.\n- Supports all Apple Watch models, though it does not provide fast charging for Series 7, Series 8, or Apple Watch Ultra.\n- Users must plug the charger into a power source before placing devices on the pad to ensure maximum power delivery.\n- The charger is compatible with Qi-certified devices, though charging speeds may be slower than with dedicated MagSafe-optimized hardware.\n- Large Apple Watch models, such as the 49mm Ultra, may require band removal or position adjustments to align correctly with the magnets.\n\n### Why it Matters\nUsing the correct power adapter is essential for optimizing charging efficiency and ensuring the device functions as intended. Understanding these hardware requirements helps users avoid slower charge times and potential compatibility issues with newer Apple Watch models.",
+    "category": "Phones, Laptops, and Gadgets",
+    "url": "https://support.apple.com/en-us/111812",
+    "source": "Apple Newsroom",
+    "processed_at": "2026-09-27T21:58:08.736994",
+    "author": "John Gruber"
+  },
+  {
+    "title": "Refrigerators: The Next National Security Frontier?",
+    "summary": "Recent refrigeration failures at U.S. military commissaries, including at Fort Huachuca, have prompted concerns regarding the vulnerability of operational technology to potential foreign cyber interference and infrastructure disruption.\n\n### Key Points\n- Multiple U.S. military commissaries recently experienced unexplained refrigeration system failures, raising questions about potential cybersecurity risks.\n- Intelligence agencies have warned that Chinese state-sponsored actors, such as Volt Typhoon, are actively infiltrating American critical infrastructure.\n- Military installations rely on networked operational technology, including HVAC, water, and power systems, which expand the potential attack surface for adversaries.\n- Experts suggest these incidents could be used by foreign powers to test U.S. response times and communication protocols during a crisis.\n- Congress is being urged to prioritize the security of installation infrastructure within upcoming defense authorization and appropriations legislation.\n\n### Why it Matters\nThese incidents highlight a critical blind spot in national security as adversaries increasingly target the mundane infrastructure that supports sophisticated military operations. By disrupting non-combat systems, foreign actors could create logistical confusion and delay, potentially undermining U.S. readiness during a major conflict.",
+    "category": "Cybersecurity",
+    "url": "https://www.dailysignal.com/2026/09/26/refrigerators-national-security/",
+    "source": "Daily Signal",
+    "processed_at": "2026-09-27T21:58:29.534701",
+    "author": "Olivia Burdo"
+  },
+  {
+    "title": "China says it agrees to a $30B tariff cut and trade council with the U.S.",
+    "summary": "The United States and China have agreed to reduce tariffs on $30 billion worth of goods and establish a formal dialogue to address the risks of artificial intelligence.\n\n### Key Points\n- The tariff reductions cover $30 billion of non-sensitive goods in each direction, including agricultural products, cosmetics, toys, and small appliances.\n- President Xi Jinping and President Donald Trump agreed to establish a new trade council to facilitate ongoing economic negotiations.\n- Both nations will launch a formal dialogue on artificial intelligence in November to discuss technology risks and establish an incident communication channel.\n- Officials agreed to adopt the term \"super intelligence\" to describe advanced AI technologies during future bilateral discussions.\n- The two countries extended their existing trade truce by two months to allow additional time for negotiating a more comprehensive trade agreement.\n\n### Why it Matters\nThis agreement signals a period of relative stability between the world's two largest economies as they attempt to de-escalate trade tensions. By formalizing communication channels for emerging technologies like AI, both nations are setting a precedent for managing global security risks associated with rapid digital innovation.",
+    "category": "Tech Business & Markets",
+    "url": "https://www.yahoo.com/news/articles/china-us-agree-30-billion-083836628.html",
+    "source": "Yahoo Entertainment",
+    "processed_at": "2026-09-27T21:58:38.886430",
+    "author": "Reuters"
+  },
+  {
+    "title": "Hackers hijack AI accounts and servers to fuel a booming cyber crime economy",
+    "summary": "Cybercriminals are increasingly targeting corporate AI accounts through \"LLMjacking,\" using stolen API keys and session tokens to exploit expensive compute resources for illicit, large-scale operations.\n\n### Key Points\n- Hackers use infostealer malware to siphon credentials, allowing them to resell access to major AI platforms like OpenAI, Anthropic, and Google at significant discounts.\n- CrowdStrike reported an 89% increase in AI-related adversary activity between July 2025 and June 2026.\n- A September 2026 analysis by Okta identified hundreds of unexpired AI service tokens within a single 7 GB dump of stolen logs.\n- Autonomous AI-agent campaigns compromised infrastructure across 395 organizations in 48 countries during September 2026.\n- Attackers often evade detection by throttling usage to mimic legitimate traffic patterns, making unauthorized activity difficult for traditional security systems to identify.\n\n### Why it Matters\nThis trend forces companies to face massive, unauthorized compute bills while risking the exposure of sensitive data processed through hijacked AI models. As these attacks become more sophisticated, organizations must adopt more rigorous credential management and monitoring to protect their infrastructure from evolving cyber threats.",
+    "category": "Cybersecurity",
+    "url": "https://cryptobriefing.com/hackers-hijack-ai-accounts-cyber-crime/",
+    "source": "Crypto Briefing",
+    "processed_at": "2026-09-27T21:58:50.825249",
+    "author": "Diego Almada Lopez"
+  },
+  {
+    "title": "Big Tech can cut methane … cheaply!",
+    "summary": "As artificial intelligence data centers drive a massive surge in natural gas demand, major technology companies face increasing pressure to mandate ultra-low methane emissions from their energy suppliers.\n\n### Key Points\n- Data center power demand is projected to skyrocket from 7 gigawatts in 2024 to 189 gigawatts, significantly increasing reliance on natural gas.\n- Methane is 80 times more potent than carbon dioxide at trapping heat, making its reduction the fastest method to limit near-term global temperature increases.\n- Industry experts state that half of all methane leaks can be eliminated at no net cost by replacing outdated equipment and stopping gas venting.\n- Major tech firms, including Amazon, Microsoft, Google, Meta, xAI, and OpenAI, have yet to commit to sourcing ultra-low methane “differentiated gas” for their operations.\n- New satellite technology is currently exposing large-scale methane leaks, particularly within the Permian gas basin in Texas.\n\n### Why it Matters\nThe rapid expansion of AI infrastructure threatens to accelerate climate change unless technology giants leverage their massive purchasing power to force cleaner energy standards. By requiring utilities to provide ultra-low methane gas, these companies could effectively decarbonize a significant portion of the U.S. energy sector at a minimal cost.",
+    "category": "Tech Business & Markets",
+    "url": "https://www.wnd.com/2026/09/big-tech-can-cut-methane-cheaply/",
+    "source": "Wnd.com",
+    "processed_at": "2026-09-27T21:59:03.219056",
+    "author": "RealClearWire"
+  },
+  {
+    "title": "The Gold Coast is done with being 'the Glitter Strip', so what's next?",
+    "summary": "The Gold Coast is looking to Austin, Texas, as a model for economic reinvention, aiming to move beyond its \"Glitter Strip\" tourism reputation toward a sophisticated, creative-led economy.\n\n### Key Points\n- Brand Gold Coast is leading a strategic effort to shift the city's identity from a cheap tourism destination to a hub for business, technology, and film.\n- Austin successfully transformed into \"Silicon Hills\" by leveraging its \"Keep Austin Weird\" culture to attract major tech firms like Apple, Google, and Tesla.\n- The Gold Coast’s film industry currently generates $420 million annually, producing blockbusters such as *Thor*, *Aquaman*, and *Elvis*.\n- Local officials aim to transition from hosting international productions to developing domestic intellectual property to ensure long-term economic sustainability.\n- Gold Coast median house prices have risen over 80% since 2020, reaching $1.2 million, raising concerns about affordability and displacement similar to Austin's experience.\n\n### Why it Matters\nThis transition represents a critical attempt to diversify the Gold Coast's economy and attract high-value investment beyond traditional tourism. However, the city faces the challenge of fostering growth while managing the risks of gentrification and rising living costs that often accompany rapid urban development.",
+    "category": "Tech Business & Markets",
+    "url": "https://www.abc.net.au/news/2026-09-27/inside-the-gold-coasts-identity-overhaul/107129144",
+    "source": "ABC News (AU)",
+    "processed_at": "2026-09-27T21:59:21.320306",
+    "author": "Dominic Cansdale"
+  },
+  {
     "processed_at": "2026-09-27T12:47:30.256608",
     "summary": "A new SOCKS5 proxy tool leverages Cloudflare R2 object storage to tunnel TCP traffic, enabling covert network communication through encrypted binary packets stored as temporary bucket objects.\n\n### Key Points\n- The tool uses Python for the proxy and offers both Python and dependency-free C++ agents for Windows-based target systems.\n- Communication relies on polling R2 buckets, where connection requests and data are serialized into binary packets and stored as objects.\n- It supports optional AES-256-GCM encryption for payloads, utilizing PBKDF2-SHA256 key derivation with 600,000 iterations.\n- The system employs adaptive sleep intervals and batching to balance network responsiveness with API call volume and efficiency.\n- The C++ agent is built using native Windows APIs, including WinHTTP, bcrypt, and Winsock2, requiring no external library dependencies.\n\n### Why it Matters\nThis technique demonstrates how cloud storage services can be repurposed as covert command-and-control channels to bypass traditional network security perimeters. Security teams should monitor for unusual traffic patterns or high-frequency object creation within R2 buckets that may indicate unauthorized data exfiltration or proxy activity.",
     "title": "R2Socks",

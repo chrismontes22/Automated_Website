@@ -1,21 +1,20 @@
-watchOS 27: 12 New Things To Check Out on Your Apple Watch
+GitHub Actions re-enabled with Mini Shai-Hulud payload still active
 ============================================================
 
-Apple released watchOS 27 on September 14, introducing a dedicated Siri app, a redesigned dynamic app grid, enhanced fitness tracking capabilities, and significant changes to navigation gestures.
+Two compromised GitHub Actions linked to the Mini Shai-Hulud supply-chain attack were inadvertently re-enabled by their maintainer, exposing thousands of downstream repositories to malicious code for over a week.
 
 ### Key Points
-- The new Siri app enables cross-device conversation syncing via iCloud and features a contextual Siri Modular watch face.
-- A new "Tap" gesture allows users to open Smart Stack widgets, while the Walkie-Talkie app has been permanently removed.
-- The Find My app now consolidates device, item, and people tracking into a single, map-centric interface.
-- Workout Buddy no longer requires an iPhone connection, and indoor treadmill distance tracking now utilizes improved machine learning algorithms.
-- Cycle Tracking now includes notifications for patterns suggestive of perimenopause for users aged 40 and older.
-- Apple Watch Series 12 and Ultra 4 models receive exclusive features, including a real-time steps complication and the upcoming Live Rewind transcription tool.
+- Security researchers at Socket discovered that two GitHub Actions, actions-cool/issues-helper and actions-cool/maintain-one-comment, were re-enabled on September 16.
+- The re-enabled actions still pointed to malicious payloads from a May 18 supply-chain attack, which targeted developer credentials and CI/CD secrets.
+- Approximately 15,000 repositories depend on the affected actions, which were finally disabled again by GitHub on September 25.
+- The original Mini Shai-Hulud campaign compromised 323 packages and 639 versions on the npm registry.
+- Socket recommends that developers rotate potentially exposed secrets and pin dependencies to verified, clean commits to prevent future unauthorized code execution.
 
 ### Why it Matters
-These updates represent a significant shift in how users interact with their Apple Watch by prioritizing AI-driven contextual information and streamlining navigation. The removal of legacy features alongside new health and fitness capabilities signals Apple's ongoing effort to position the device as a standalone health-monitoring tool.
+This incident highlights the significant risks associated with using mutable tags in software supply chains, as automated workflows can silently pull malicious updates without developer intervention. Organizations must implement stricter dependency management practices to ensure that compromised third-party tools do not provide attackers with persistent access to sensitive CI/CD environments.
 
 ============================================================
-Author:   Tim Hardwick
-Source:   MacRumors
-URL:      https://www.macrumors.com/guide/watchos-27-new-things-apple-watch/
-Category: Phones, Laptops, and Gadgets
+Author:   Bill Toulas
+Source:   BleepingComputer
+URL:      https://www.bleepingcomputer.com/news/security/github-actions-re-enabled-with-mini-shai-hulud-payload-still-active/
+Category: Cybersecurity

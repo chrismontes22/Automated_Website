@@ -1,20 +1,20 @@
-Google Photos causes headaches: users say editing pictures makes the app 'unresponsive'
+Novel attack slashes computing power needed to crack textbook RSA cryptography
 ============================================================
 
-Google Pixel users are reporting that the Google Photos app becomes unresponsive after editing images, rendering essential navigation buttons and features unusable without displaying any error messages.
+Researchers from UC San Diego and Inria Nancy have developed a new method to crack RSA encryption, potentially making it feasible to decrypt secure traffic using significant computing resources.
 
 ### Key Points
-- Pixel 9, 10, and 11 series users report the app freezes immediately after performing edits like cropping.
-- Affected users cannot access core functions such as sharing, deleting, or further editing once the app becomes unresponsive.
-- Google support has acknowledged the reports but suggested troubleshooting steps have failed to resolve the issue.
-- The glitch emerged following a major app update that introduced Gemini Spark integration and new "Moods" photo styles.
-- Users have been advised to submit official bug reports to help Google engineers identify the root cause of the software failure.
+- The research demonstrates a new factoring attack that significantly reduces the number of operations required to break 1024-bit, 2048-bit, 3072-bit, and 4096-bit RSA keys.
+- The attack specifically targets the "textbook" or "raw" variant of RSA, which is utilized in services like Cloudflare Privacy Pass, Apple iCloud Private Relay, and various hardware security modules.
+- Successful exploitation requires an attacker to perform billions of queries against a target key, which could be mitigated by standard network security measures like IP rate-limiting.
+- The researchers successfully tested the attack against Thales Luna hardware security modules, proving the vulnerability exists in both physical and online service implementations.
+- Future optimizations, including the use of GPUs and AI tools, could further decrease the computational effort required to execute this decryption method.
 
 ### Why it Matters
-This technical issue disrupts a primary utility for Pixel owners, potentially impacting the reliability of Google's flagship photo management software. If the bug remains unpatched, it could hinder the adoption of recently launched AI-powered editing features and frustrate users who rely on the platform for daily image processing.
+This discovery highlights a critical vulnerability in widely used encryption standards that were previously considered secure against factoring attacks. While the practical barriers to execution remain high, the research suggests that sensitive data intercepted today could become vulnerable to decryption as computational power and optimization techniques continue to advance.
 
 ============================================================
-Author:   nickodiaz@sbcglobal.net (Nickolas Diaz) , Nickolas Diaz
-Source:   Android Central
-URL:      https://www.androidcentral.com/apps-software/google-photos-causes-headaches-users-say-editing-pictures-makes-the-app-unresponsive
-Category: Phones, Laptops, and Gadgets
+Author:   editors@tomshardware.com (Bruno Ferreira) , Bruno Ferreira
+Source:   Tom's Hardware UK
+URL:      https://www.tomshardware.com/tech-industry/cyber-security/novel-attack-on-rsa-cryptography-might-bring-computation-requirements-for-cracking-down-to-manageable-levels
+Category: Cybersecurity
