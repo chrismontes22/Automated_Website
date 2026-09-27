@@ -1,20 +1,19 @@
-PamStealer macOS Malware Adds Live C2 Payload Decryption and Multi-Layer Persistence
+Meta Made 43M Misleading Statements, New Mexico Jury Finds, Including on Its Cambridge Analytica Response
 ============================================================
 
-Cybersecurity researchers at Jamf Threat Labs have identified a sophisticated new version of the PamStealer malware that uses server-side decryption to evade static analysis on macOS systems.
+A New Mexico jury found Facebook liable for over 43 million violations of the state's Unfair Practices Act regarding deceptive privacy protections and the Cambridge Analytica data scandal.
 
 ### Key Points
-- The updated PamStealer malware now uses a server-side decryption chain, requiring a live key exchange to unwrap the malicious payload.
-- Attackers are distributing the malware via a fake cryptocurrency wallet website, "wavel[.]app," which prompts users to download a malicious disk image.
-- The malware employs multiple persistence mechanisms, including LaunchAgents and Git hooks, to ensure the infection remains active across sessions.
-- The final stealer component is written in Swift and targets credentials from a wide range of browsers, including Chrome, Firefox, Arc, and Zen.
-- A new "pkgunpack" utility manages the decryption process, making it impossible for security analysts to recover the payload without an active command-and-control connection.
+- A jury determined Facebook made 26 misleading statements to consumers regarding how their personal information was handled and shared with third parties.
+- The verdict follows a 2021 lawsuit filed by New Mexico Attorney General Raúl Torrez concerning the 2013 Cambridge Analytica data breach.
+- The state is seeking the maximum civil penalty of $5,000 per violation, which could result in billions of dollars in total fines.
+- Judge Francis Mathew will determine the final financial penalties and potential court-ordered mandates for Meta to audit its data management practices.
 
 ### Why it Matters
-This evolution in PamStealer demonstrates a significant shift toward infrastructure-dependent malware that complicates traditional security analysis. By tying payload decryption to server availability, attackers can effectively hide their malicious code from researchers and maintain tighter control over their operations.
+This verdict represents a significant legal escalation in state-level oversight of how major technology companies handle user privacy and data security. The potential for multi-billion dollar penalties sets a major precedent for future consumer protection litigation against social media platforms.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/09/pamstealer-macos-malware-adds-live-c2.html
-Category: Cybersecurity
+Author:   EditorDavid
+Source:   Slashdot.org
+URL:      https://tech.slashdot.org/story/26/09/26/0042239/meta-made-43m-misleading-statements-new-mexico-jury-finds-including-on-its-cambridge-analytica-response
+Category: Tech Business & Markets

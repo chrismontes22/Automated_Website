@@ -1,20 +1,20 @@
-Quantitative Event-Driven Modeling: BTC Balance Sheet Shocks with SEC EDGAR Filings in R
+SharePoint RCE and MikroTik RouterOS Flaws Actively Exploited in the Wild
 ============================================================
 
-A new quantitative analysis framework demonstrates that MicroStrategy’s equity valuation is primarily driven by spot Bitcoin price movements and structural changes in its corporate treasury balance sheet holdings.
+The U.S. Cybersecurity and Infrastructure Security Agency has added critical vulnerabilities in Microsoft SharePoint and Mikrotik RouterOS to its catalog following reports of active exploitation in the wild.
 
 ### Key Points
-- The model utilizes the R programming language and the `tidymodels` framework to analyze MicroStrategy (MSTR) stock performance.
-- Automated SEC EDGAR parsing via the `secfile` package extracts real-time digital asset holdings directly from XBRL financial filings.
-- The structural model achieved an 82.08% out-of-sample R-Squared, significantly outperforming a naive baseline benchmark of 4.12%.
-- The pipeline incorporates a "Balance Sheet Shock" metric to quantify the impact of debt-funded Bitcoin acquisitions on daily equity returns.
-- Interactive visualizations provide dynamic price projections and 2-sigma volatility bands to identify potential overbought or oversold market conditions.
+- CISA added CVE-2026-65660, a code injection flaw in Microsoft SharePoint, to its Known Exploited Vulnerabilities catalog after confirming active attacks.
+- Microsoft updated its advisory for CVE-2026-65660, confirming the vulnerability allows for remote code execution rather than simple spoofing.
+- Mikrotik RouterOS vulnerability CVE-2026-67279 was added to the catalog for its role in the "MikroTrick" exploit chain.
+- The MikroTrick exploit combines two flaws to grant unauthenticated attackers full administrative control over internet-exposed Mikrotik routers.
+- Federal Civilian Executive Branch agencies must apply necessary security patches by the September 28, 2026, deadline.
 
 ### Why it Matters
-This research highlights that traditional corporate finance metrics are insufficient for evaluating MicroStrategy, which now functions primarily as a Bitcoin treasury vehicle. By automating the ingestion of regulatory filings, investors can better model the relationship between corporate capital allocation and digital asset market volatility.
+These vulnerabilities represent significant security risks because they allow unauthorized actors to gain remote code execution or full administrative control over critical infrastructure. Organizations must prioritize patching these systems immediately to prevent potential data breaches or unauthorized network access.
 
 ============================================================
-Author:   Selcuk Disci
-Source:   R-bloggers.com
-URL:      https://www.r-bloggers.com/2026/09/quantitative-event-driven-modeling-btc-balance-sheet-shocks-with-sec-edgar-filings-in-r/
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/09/sharepoint-rce-and-mikrotik-routeros.html
+Category: Cybersecurity
