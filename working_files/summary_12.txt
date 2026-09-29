@@ -1,20 +1,20 @@
-These 5 changes took only a few minutes and made my smart TV feel brand new
+Flock seeks to have security researchers' map of Flock cameras taken down
 ============================================================
 
-Optimizing your smart TV settings, managing storage, and performing regular software updates can significantly extend the lifespan of your device while improving overall picture quality and system performance.
+Security researcher Joshua Michael created a public map of 335,701 Flock surveillance cameras after exploiting an unauthenticated API vulnerability to exfiltrate the company's device location database.
 
 ### Key Points
-- Reduce the backlight or brightness settings on LCD-based TVs, such as LED, QLED, and Mini-LED models, to prevent premature component wear.
-- Use Filmmaker Mode selectively for movies to maintain director intent while reducing unnecessary thermal stress and power consumption on your display.
-- Delete unused streaming or gaming apps to free up storage space and ensure the TV processor operates at optimal speeds.
-- Clear app caches regularly through the Device Care or Support menu to improve loading times without losing your login credentials.
-- Enable automatic firmware updates to patch security vulnerabilities and ensure your TV maintains a stable, protected network connection.
+- Researcher Joshua Michael accessed Flock’s device database in November 2025 by querying an unauthenticated ArcGIS endpoint.
+- The resulting "Flock Surveillance Map" website currently lists the precise locations of 335,701 cameras.
+- Flock fixed the underlying security vulnerability in January 2026 after Michael publicly disclosed his findings.
+- The surveillance network covers sensitive areas, including the Pentagon, CIA Headquarters, and FBI Headquarters, with high recording probabilities for nearby residents.
+- Flock has issued a trademark infringement complaint against the map website, demanding its removal rather than addressing the data exfiltration.
 
 ### Why it Matters
-Proper maintenance of smart TVs protects your hardware investment and prevents common performance issues like sluggish interfaces or premature backlight failure. By adjusting settings and managing software, users can ensure their devices remain functional and efficient for a longer period.
+This incident highlights significant privacy and national security concerns regarding the widespread deployment of private surveillance networks near sensitive government facilities. It also raises questions about corporate transparency, as the company’s legal response focuses on trademark claims rather than the potential exposure of its massive device database.
 
 ============================================================
-Author:   Chris Hachey
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/these-changes-made-my-smart-tv-feel-brand-new/
-Category: Phones, Laptops, and Gadgets
+Author:   editors@tomshardware.com (Jowi Morales) , Jowi Morales
+Source:   Tom's Hardware UK
+URL:      https://www.tomshardware.com/tech-industry/cyber-security/flock-seeks-to-have-security-researchers-map-of-flock-cameras-taken-down-unauthenticated-flaw-exposed-335-701-camera-locations-nationwide
+Category: Cybersecurity

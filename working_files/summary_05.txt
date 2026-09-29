@@ -1,20 +1,21 @@
-Enshittification Has a New Mascot, and He’s Teaming Up With Death in a Hilarious Ad Campaign
+A barely working Android phone screen didn't stop me from building a functional home server
 ============================================================
 
-The Norwegian Consumer Council has launched a satirical video campaign featuring the character Enshittificator to highlight how corporations deliberately degrade digital products and services to maximize short-term profits.
+Repurposing an old Android smartphone with a damaged display into a functional home server is possible by utilizing ADB tools and virtualization software to bypass hardware limitations.
 
 ### Key Points
-- The campaign, titled "Breaking Free," uses dark humor to critique planned obsolescence, subscription-based features, and the removal of essential product functionality.
-- Author Cory Doctorow, who popularized the term "enshittification" in 2022, collaborated with the nonprofit to help expose corporate practices that prioritize revenue over consumer rights.
-- The videos reference real-world examples, including Google Photos' storage caps, BMW’s subscription-based heated seats, and Apple’s "batterygate" settlement.
-- The Norwegian Consumer Council advocates for policy reforms centered on interoperability, data portability, and the decentralization of social media to reduce Big Tech's market power.
-- Legislative efforts like the EU’s Digital Markets Act are cited as necessary steps to force platforms to support third-party integration and open competition.
+- Use the scrcpy tool to mirror a damaged Android screen to a PC, allowing for navigation via mouse and keyboard.
+- Enable USB debugging immediately if a phone screen shows signs of failure to ensure future access to the device.
+- Utilize the Universal Android Debloater to remove unnecessary apps and free up storage space for server tasks.
+- Deploy Podroid to run an Alpine Linux virtual machine and Docker containers, which is more efficient than standard Termux setups.
+- Allocate specific hardware resources, such as 2GB of RAM and 4 CPU cores, to maintain system stability on older devices.
+- Run lightweight, client-side applications like BentoPDF and OmniTools to maximize the limited processing power of repurposed hardware.
 
 ### Why it Matters
-This campaign highlights a growing consumer movement against business models that prioritize corporate lock-in and planned obsolescence over product quality and longevity. By framing these practices as systemic issues rather than isolated incidents, the initiative pressures regulators to adopt policies that protect consumer autonomy in an increasingly digital economy.
+Converting discarded smartphones into home servers reduces electronic waste while providing a cost-effective way to host lightweight applications. This process demonstrates how specialized software tools can extend the lifecycle of hardware that would otherwise be considered unusable due to physical damage.
 
 ============================================================
-Author:   Joe Hindy
-Source:   CNET
-URL:      https://www.cnet.com/tech/services-and-software/enshittification-humor-video-brings-awareness/
-Category: Tech Business & Markets
+Author:   Abhishek Kumar Mishra
+Source:   XDA Developers
+URL:      https://www.xda-developers.com/turn-a-barely-working-phone-screen-into-home-server/
+Category: Phones, Laptops, and Gadgets
