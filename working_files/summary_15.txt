@@ -1,20 +1,21 @@
-http-terminator – AI-Assisted HTTP Request-Smuggling Discovery
+Firefox 157 released with ‘biggest visual refresh in years’
 ============================================================
 
-PortSwigger has released http-terminator, an open-source research pipeline that utilizes large language models to analyze HTTP specifications and automatically generate test cases for identifying request-smuggling vulnerabilities.
+Mozilla has released Firefox 157, featuring the new Nova theme, which introduces a modernized visual interface with rounded UI elements and improved customization options for desktop browser users.
 
 ### Key Points
-- The pipeline consists of four distinct stages: seeker, flamer, validator, and investigator.
-- seeker and flamer use Anthropic’s Claude model to extract desync vectors from documentation and convert them into malformed HTTP test cases.
-- The validator stage functions as a Burp Suite extension to test targets, while the investigator stage uses Claude Code to replicate and document findings.
-- The repository serves as a reference design for document-driven security testing rather than a standalone, turn-key product.
-- Full implementation requires external dependencies, including Burp Suite, specific Java and Python environments, and an Anthropic API key.
+- The Nova theme updates core UI elements like tabs, menus, and address bars with a rounder, more colorful aesthetic across Windows, macOS, and Linux.
+- A new official compact mode reduces spacing in toolbars and menus, providing more screen real estate for web content on smaller displays.
+- Firefox Suggests is now available in several European countries, displaying sponsored content and search suggestions directly within the address bar.
+- Amazon has been removed as a built-in search engine, and the browser now supports hardware AV1 decoding for WebRTC video calls.
+- Users can disable the Nova theme by toggling the `browser.nova.enabled` setting in the `about:config` menu.
+- The update includes various security vulnerability patches and a permanent "+" icon on the New Tab page for easier shortcut management.
 
 ### Why it Matters
-This project demonstrates a novel, specification-first approach to automating the discovery of complex HTTP desync vulnerabilities. By providing an inspectable framework, PortSwigger offers security researchers a blueprint for integrating generative AI into specialized vulnerability research pipelines.
+This visual refresh represents Mozilla's most significant design overhaul in years, signaling a shift toward a more modern, cohesive aesthetic for the Firefox ecosystem. By balancing these design changes with functional updates like hardware AV1 decoding and security patches, Mozilla aims to maintain browser performance while adapting to evolving user interface standards.
 
 ============================================================
-Author:   Darknet
-Source:   Darknet.org.uk
-URL:      https://www.darknet.org.uk/2026/09/http-terminator-ai-request-smuggling-discovery/
-Category: Cybersecurity
+Author:   Joey Sneddon
+Source:   Omgubuntu.co.uk
+URL:      https://www.omgubuntu.co.uk/2026/09/firefox-157-released-nova-theme
+Category: Phones, Laptops, and Gadgets

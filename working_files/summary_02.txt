@@ -1,20 +1,20 @@
-Parley: Federated, decentralised chat that speaks plain IRC
+Coding Is Not Solved – Alex Ewerlöf Notes
 ============================================================
 
-The Fastidious chat platform has released a fix for a bug that allowed users to join invalid channels, preventing persistent connection errors and unauthorized room creation.
+Software engineering remains a complex discipline requiring human accountability, as current AI models struggle with logic, reliability, and the non-functional requirements essential for production-grade software systems.
 
 ### Key Points
-- The update prevents users from joining channels that lack the required `#` or `&` prefixes, returning a 403 error instead.
-- Previously, invalid channel joins created global rooms that caused repeated federation errors and prevented proper direct messaging.
-- The patch automatically cleans up existing invalid memberships from `members.json` upon system restart.
-- New automated tests, including `TestJoinRefusesANameThatIsNotAChannel`, ensure that invalid join attempts are rejected before any data is stored.
-- Documentation in `PROTOCOL.md` has been updated to clarify channel naming requirements for the platform.
+- AI models are stochastic and lack the accountability required for critical sectors like healthcare, finance, and defense.
+- Coding is not a "solved" problem because maintenance, security, and scalability represent the majority of software development costs.
+- LLMs often exhibit "jagged intelligence," making them inconsistent and difficult to debug compared to deterministic code.
+- Over-reliance on AI for code generation can lead to "AI overdose," where developers lose the ability to reason about system behavior.
+- Effective engineering requires deep understanding and ownership, which cannot be fully offloaded to automated tools without risking service degradation.
 
 ### Why it Matters
-This fix improves network stability by eliminating unnecessary federation traffic caused by persistent, invalid join requests. It also ensures a more consistent user experience by preventing the creation of broken, non-functional chat rooms.
+The push to replace human engineering with AI-generated code risks prioritizing short-term velocity over long-term system reliability and security. Businesses that fail to maintain human oversight and accountability may face significant technical debt and operational failures when automated systems inevitably encounter logical errors.
 
 ============================================================
-Author:   prologic
-Source:   Mills.io
-URL:      https://git.mills.io/prologic/parley
-Category: Cybersecurity
+Author:   Alex Ewerlöf
+Source:   Alexewerlof.com
+URL:      https://blog.alexewerlof.com/p/coding-is-not-solved
+Category: Artificial Intelligence

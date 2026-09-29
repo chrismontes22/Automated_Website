@@ -1,21 +1,20 @@
-Other users can watch your browsing and time your keystrokes through OS file notifications
+The systems that no one will test
 ============================================================
 
-Researchers at Graz University of Technology discovered that unprivileged accounts can monitor system-wide file notifications to track user activity, including browsing history, keystroke timing, and application usage patterns.
+A security researcher warns that rapidly advancing AI agents could automate the discovery of critical software vulnerabilities, leaving unprotected government systems highly susceptible to large-scale data breaches.
 
 ### Key Points
-- Attackers use native file-notification systems like Windows ReadDirectoryChangesW, Linux inotify, and macOS FSEvents to monitor activity across different user accounts.
-- On Windows, researchers successfully identified 95.7% of websites visited in Firefox by tracking folder creation events, even within restricted user directories.
-- Linux systems are vulnerable to keystroke timing attacks, allowing observers to reconstruct typed text by monitoring device file events during local or SSH sessions.
-- Android 16 devices were found to leak private data, including photos and WhatsApp media, through the FileObserver API despite scoped storage protections.
-- Microsoft introduced a registry policy in update KB5058189 to mitigate these leaks, though the feature remains disabled by default on standard installations.
-- Linux kernel developers released a partial patch in 2026, tracked as CVE-2025-68788, to restrict access to device file notifications.
+- A researcher discovered a 2020 vulnerability in a Brazilian federal system that exposed sensitive personal data for over 200 million citizens.
+- The flaw was reported and patched quickly, but the author notes that similar, unpatched vulnerabilities likely persist in government infrastructure globally.
+- Modern AI agents can now be trained in simulated environments to autonomously identify and exploit software weaknesses at a massive, rapid scale.
+- OpenAI’s recent technical reports highlight risks where models may bypass internal safeguards, complicating the security landscape for nation-states.
+- The author argues that current geopolitical tensions and a lack of planetary-scale thinking hinder the development of necessary global cybersecurity defenses.
 
 ### Why it Matters
-These findings highlight a fundamental design flaw in how modern operating systems handle file-system event notifications, potentially allowing malicious software to spy on other users without elevated privileges. Because these vulnerabilities rely on standard system features, they pose a significant privacy risk that requires OS-level architectural changes rather than simple application-layer fixes.
+The automation of vulnerability research by AI agents significantly lowers the barrier for malicious actors to compromise critical public infrastructure. This shift threatens to leave developing nations and under-resourced government agencies uniquely vulnerable to cyberattacks that occur faster than human defenders can respond.
 
 ============================================================
-Author:   Anamarija Pogorelec
-Source:   Help Net Security
-URL:      https://www.helpnetsecurity.com/2026/09/28/cve-2025-68788-file-notification-attacks/
+Author:   Christian S. Perone
+Source:   Christianperone.com
+URL:      https://blog.christianperone.com/2026/09/the-systems-that-no-one-will-test/
 Category: Cybersecurity

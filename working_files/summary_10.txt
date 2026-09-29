@@ -1,20 +1,20 @@
-Carbonato Botnet Compromises Docker Hosts to Deploy Telegram-Controlled Hermes AI Agent
+Momentic debuts Mo AI agent to automate software testing without scripts
 ============================================================
 
-Cybersecurity researchers have identified a new botnet called Carbonato that exploits unauthenticated Docker daemons to deploy AI-driven Hermes Agent frameworks for automated, persistent cyberattacks and credential theft.
+Momentic Inc. has launched Mo, an AI-powered agent designed to automate software testing by eliminating the need for developers to write and maintain complex, manual test scripts.
 
 ### Key Points
-- Carbonato targets Docker daemons exposed on port 2375 to install privileged containers and establish persistent remote access.
-- The malware uses a custom prompt to transform the Hermes Agent into a "senior hacker" persona that operates without ethical restrictions.
-- Operators manage the botnet via Telegram, using the AI agent to execute terminal commands and exfiltrate sensitive credentials.
-- Infrastructure analysis suggests the threat actors are based in Costa Rica, though the group remains unattributed.
-- The botnet employs worm-like propagation, scanning neighboring networks every five minutes to identify and compromise additional vulnerable hosts.
+- Mo allows developers to initiate software testing by providing a URL and specific instructions rather than writing code-based test scripts.
+- The platform utilizes a swarm of AI agents to execute thousands of test permutations and edge cases across web and mobile applications.
+- Developers can provide context for testing through product requirement documents, Jira issues, Linear tickets, or Confluence pages.
+- Upon completion, Mo delivers a detailed report including bug reproduction steps and video evidence of all interactions.
+- Early adopters of the technology include companies such as Notion, Superpower, Iris, Committee for Children, and Boundless.
 
 ### Why it Matters
-This campaign highlights a growing trend of threat actors integrating AI agents to automate complex attack lifecycles, significantly increasing the speed and scale of malicious operations. Organizations must prioritize securing exposed management interfaces to prevent autonomous systems from gaining persistent, high-level access to their infrastructure.
+This technology addresses the significant maintenance burden of traditional test suites, which often become liabilities as software applications grow in complexity. By shifting from script-based testing to intent-based verification, Momentic aims to improve development velocity and reduce the manual labor required to ensure software quality.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/09/carbonato-botnet-compromises-docker.html
-Category: Cybersecurity
+Author:   Kyt Dotson
+Source:   SiliconANGLE News
+URL:      https://siliconangle.com/2026/09/28/momentic-debuts-mo-ai-agent-to-automate-software-testing-without-scripts/
+Category: Artificial Intelligence

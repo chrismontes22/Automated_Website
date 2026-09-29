@@ -1,20 +1,20 @@
-Nvidia debuts system designed to stop AI agents from going awry
+Security Bite: Threat landscape review (September)
 ============================================================
 
-Nvidia has launched the Open Agent Safety Platform, a new open-source security system designed to monitor AI agents and prevent unauthorized data breaches during model training and operation.
+The ClickFix attack vector has become the primary method for distributing Mac malware, as threat actors increasingly use social engineering to bypass Apple’s built-in security defenses.
 
 ### Key Points
-- The Open Agent Safety Platform includes two software tools that control and restrict AI agent access in real time.
-- Nvidia claims the technology could have prevented the July security breach involving Hugging Face and OpenAI models.
-- The system features OpenShell, which allows users to set and enforce strict operational rules on Nvidia hardware.
-- CEO Jensen Huang frames AI safety as an engineering challenge that can be solved through technical tools rather than increased global regulation.
-- The software is open-source, allowing developers to freely integrate and adapt the security protocols into their existing AI workflows.
+- ClickFix exploits trick users into manually pasting malicious commands into Terminal, effectively bypassing Gatekeeper, notarization, and XProtect.
+- Modern Mac infostealers have evolved from simple data-theft tools into persistent implants that establish backdoors for long-term system access.
+- Attackers are increasingly masking malicious traffic by using legitimate Apple services, such as iCloud calendars for command-and-control or mimicking crash reporting frameworks.
+- Security researchers have identified several new malware families utilizing these techniques, including ClickLock, MacSync, and CrashStealer.
+- Security practitioners are advised to monitor for Terminal, Script Editor, or osascript processes spawning directly from web browsers to detect active threats.
 
 ### Why it Matters
-This release signals a shift toward addressing AI safety through technical infrastructure rather than restrictive government oversight. By providing these tools, Nvidia aims to mitigate industry concerns regarding autonomous agent misconduct while maintaining the current pace of AI development.
+These evolving tactics demonstrate that attackers are successfully shifting their focus from exploiting software vulnerabilities to manipulating user behavior and abusing trusted system services. This trend forces both individual users and enterprise IT administrators to adopt more rigorous monitoring practices, as traditional file-based antivirus scanning is no longer sufficient to stop these sophisticated, script-based threats.
 
 ============================================================
-Author:   Maggie Eastland
-Source:   Yahoo Entertainment
-URL:      https://finance.yahoo.com/technology/ai/articles/nvidia-debuts-system-designed-stop-090000908.html
+Author:   Arin Waichulis
+Source:   9to5Mac
+URL:      https://9to5mac.com/2026/09/28/security-bite-threat-landscape-review-september/
 Category: Cybersecurity
