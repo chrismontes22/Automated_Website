@@ -1,20 +1,19 @@
-I did everything to hide my browsing from my ISP, and it could still see most of where I went
+Growing AI energy demands, the search for subatomic particles and the hottest amoeba
 ============================================================
 
-Internet service providers can still track user activity through DNS lookups, Server Name Indication fields, and destination IP addresses, even when standard privacy settings and encryption are enabled.
+Artificial intelligence data centers are projected to consume 3% of global electricity by 2030, raising significant concerns regarding environmental sustainability, water usage, and regional power grid strain.
 
 ### Key Points
-- Internet Service Providers (ISPs) can monitor unencrypted DNS lookups and identify websites via Server Name Indication (SNI) during the initial TLS handshake.
-- A 2023 research paper demonstrated that website fingerprinting can identify user activity with 95% accuracy by analyzing the first 50 packets of encrypted DNS traffic.
-- Encrypted Client Hello (ECH), standardized in March 2026, mitigates privacy leaks by using decoy messages to hide hostnames from network observers.
-- Browser-based HTTPS-only modes and encrypted DNS providers like Cloudflare or Quad9 provide essential, though incomplete, layers of protection against ISP tracking.
-- Virtual Private Networks (VPNs) remain the most effective method for obscuring traffic, as they route DNS, SNI, and destination data through an encrypted tunnel.
+- AI data centers could reach 945 terawatt-hours of annual electricity consumption by 2030, tripling current usage levels.
+- Six major tech companies—Microsoft, Google, Meta, Oracle, Amazon, and Apple—will account for approximately two-thirds of this total energy demand.
+- Large data centers can consume up to 5 million gallons of water daily for cooling, impacting local resources in states like Virginia and Arizona.
+- Infrastructure operations contribute to noise pollution and air quality issues through the use of backup diesel generators and industrial cooling fans.
 
 ### Why it Matters
-While individual privacy settings improve security, they cannot fully prevent ISPs from observing metadata and destination traffic patterns. Relying on a VPN is currently the only way to comprehensively mask online activity from service providers.
+The rapid expansion of generative AI infrastructure creates a massive, localized environmental burden that challenges current energy and water management policies. As these facilities cluster in specific regions, they risk overwhelming local utility grids and natural resources, necessitating more sustainable infrastructure planning.
 
 ============================================================
-Author:   Gavin Phillips
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/i-did-everything-to-hide-my-browsing-from-my-isp-and-it-could-still-see-most-of-where-i-went/
-Category: Cybersecurity
+Author:   Rachel Feltman, Andrea Gawrylewski, Alli Rodgers, Alex Sugiura
+Source:   Scientific American
+URL:      https://www.scientificamerican.com/podcast/episode/growing-ai-energy-demands-the-search-for-subatomic-particles-and-the-hottest-amoeba/
+Category: Artificial Intelligence

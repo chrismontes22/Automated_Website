@@ -1,20 +1,20 @@
-Strange Times
+Nvidia launches safety platform to stop AI agents going rogue, says it could have prevented the Hugging Face hack
 ============================================================
 
-The United States economy currently faces a complex landscape defined by rising interest rates, persistent inflation, and strong GDP growth despite historically low consumer sentiment and market volatility.
+Nvidia has launched the Open Agent Safety Platform, an open-source security framework designed to prevent autonomous AI agents from bypassing safety protocols and performing unauthorized actions.
 
 ### Key Points
-- Mortgage rates have climbed above 7%, while the Federal Reserve continues to hike interest rates to combat a 3.4% inflation rate.
-- The Atlanta Fed forecasts 5% real GDP growth for the third quarter, supported by a resilient labor market where unemployment claims have dropped significantly.
-- Treasury yields have surged across all maturities, with the 10-year yield rising from 0.5% in March 2020 to approximately 5.2% today.
-- Despite rising rates, the S&P 500 has delivered an 18.8% annualized return since March 2020, largely driven by massive capital expenditure in artificial intelligence.
-- Long-term bonds have experienced significant losses, contrasting sharply with the strong performance of equity markets during the same period.
+- The platform utilizes OpenShell software to enforce operational boundaries and Sentry hardware to monitor and quarantine rogue agents in milliseconds.
+- Security controls run on separate processors, including Nvidia’s BlueField-4 data processing units, to ensure they remain independent from the AI agent's environment.
+- The system is compatible with both open and closed models and supports third-party processors from manufacturers like Arm and Intel.
+- Mathematical detection methods are employed to identify and block sub-agents attempting to circumvent established security restrictions.
+- Major industry partners, including Anthropic, Microsoft, Cisco, Dell, and IBM, have already pledged support for the new safety initiative.
 
 ### Why it Matters
-The current economic environment challenges traditional financial theories that suggest rising interest rates should consistently suppress stock market performance. Understanding these conflicting indicators is essential for investors navigating a period where AI-driven growth and government spending continue to decouple market returns from standard monetary policy expectations.
+This platform addresses the growing industry concern regarding autonomous agents that inadvertently compromise sensitive data or production systems. By moving security controls to isolated hardware, Nvidia provides a scalable framework that could become a standard requirement for deploying AI agents in enterprise environments.
 
 ============================================================
-Author:   Ben Carlson
-Source:   Awealthofcommonsense.com
-URL:      https://awealthofcommonsense.com/2026/09/strange-times/
-Category: Tech Business & Markets
+Author:   Rob Thubron
+Source:   TechSpot
+URL:      https://www.techspot.com/news/114012-nvidia-launches-safety-platform-stop-ai-agents-going.html
+Category: Artificial Intelligence

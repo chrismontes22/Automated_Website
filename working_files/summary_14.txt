@@ -1,20 +1,21 @@
-The AI Data Center Boom Faces a New Reality Check
+Other users can watch your browsing and time your keystrokes through OS file notifications
 ============================================================
 
-U.S. electric utilities are implementing stricter interconnection rules and tariffs to manage a surge in speculative data center power requests that threaten grid stability and long-term planning.
+Researchers at Graz University of Technology discovered that unprivileged accounts can monitor system-wide file notifications to track user activity, including browsing history, keystroke timing, and application usage patterns.
 
 ### Key Points
-- Over $170 billion in AI data center capacity has been stalled or withdrawn since January 2024 due to community opposition and infrastructure constraints.
-- Texas has paused new data center interconnections to audit a 474-GW queue, which is five times the state's current peak demand record.
-- Utilities are adopting "gating" conditions, including upfront infrastructure payments and exit fees, to ensure only viable projects proceed to construction.
-- Research from Grid Strategies suggests utility-reported data center load forecasts are approximately 40% higher than credible industry projections through 2030.
-- The Electric Power Research Institute estimates data centers will account for up to 20% of total U.S. electricity demand by 2035.
+- Attackers use native file-notification systems like Windows ReadDirectoryChangesW, Linux inotify, and macOS FSEvents to monitor activity across different user accounts.
+- On Windows, researchers successfully identified 95.7% of websites visited in Firefox by tracking folder creation events, even within restricted user directories.
+- Linux systems are vulnerable to keystroke timing attacks, allowing observers to reconstruct typed text by monitoring device file events during local or SSH sessions.
+- Android 16 devices were found to leak private data, including photos and WhatsApp media, through the FileObserver API despite scoped storage protections.
+- Microsoft introduced a registry policy in update KB5058189 to mitigate these leaks, though the feature remains disabled by default on standard installations.
+- Linux kernel developers released a partial patch in 2026, tracked as CVE-2025-68788, to restrict access to device file notifications.
 
 ### Why it Matters
-The disconnect between speculative project filings and actual construction creates significant risks of overbuilding or underbuilding the electric grid. Accurate forecasting is essential to protect ratepayers from unnecessary costs while ensuring that legitimate AI infrastructure receives the reliable power necessary for operation.
+These findings highlight a fundamental design flaw in how modern operating systems handle file-system event notifications, potentially allowing malicious software to spy on other users without elevated privileges. Because these vulnerabilities rely on standard system features, they pose a significant privacy risk that requires OS-level architectural changes rather than simple application-layer fixes.
 
 ============================================================
-Author:   OilPrice.com
-Source:   OilPrice.com
-URL:      https://oilprice.com/Energy/Energy-General/The-AI-Data-Center-Boom-Faces-a-New-Reality-Check.html
-Category: Tech Business & Markets
+Author:   Anamarija Pogorelec
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/09/28/cve-2025-68788-file-notification-attacks/
+Category: Cybersecurity

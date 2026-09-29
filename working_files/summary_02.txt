@@ -1,20 +1,20 @@
-A data centre that does not hog land or water
+Parley: Federated, decentralised chat that speaks plain IRC
 ============================================================
 
-Bengaluru-based startup TakeMe2Space is developing India’s first orbital data-center network to process satellite imagery and store critical information directly in low-earth orbit for various industrial clients.
+The Fastidious chat platform has released a fix for a bug that allowed users to join invalid channels, preventing persistent connection errors and unauthorized room creation.
 
 ### Key Points
-- TakeMe2Space aims to reduce data transmission costs by processing earth-observation imagery in orbit rather than sending raw data to terrestrial servers.
-- The company utilizes a modular architecture based on 1.3-kilowatt "hexes" and is developing radiation shielding to lower hardware costs.
-- Current compute pricing is $2 per minute, with a long-term goal to reduce operational costs from $10 million to $100,000 per kilowatt by 2029.
-- The startup plans to launch two satellites this year, followed by additional deployments in 2027 and 2028, culminating in a 1,500-kg satellite launch in 2029.
-- TakeMe2Space reported ₹5 crore in revenue for FY26 and is currently seeking Series A funding to secure necessary launch capacity.
+- The update prevents users from joining channels that lack the required `#` or `&` prefixes, returning a 403 error instead.
+- Previously, invalid channel joins created global rooms that caused repeated federation errors and prevented proper direct messaging.
+- The patch automatically cleans up existing invalid memberships from `members.json` upon system restart.
+- New automated tests, including `TestJoinRefusesANameThatIsNotAChannel`, ensure that invalid join attempts are rejected before any data is stored.
+- Documentation in `PROTOCOL.md` has been updated to clarify channel naming requirements for the platform.
 
 ### Why it Matters
-This initiative represents a shift toward edge computing in space, potentially transforming how industries like mining, agriculture, and defense manage massive satellite data volumes. If the company successfully lowers its operational costs, it could establish a viable commercial alternative to traditional terrestrial cloud infrastructure for space-based assets.
+This fix improves network stability by eliminating unnecessary federation traffic caused by persistent, invalid join requests. It also ensures a more consistent user experience by preventing the creation of broken, non-functional chat rooms.
 
 ============================================================
-Author:   Aishwarya  Kumar
-Source:   BusinessLine
-URL:      https://www.thehindubusinessline.com/specials/emerging-entrepreneurs/a-data-centre-that-does-not-hog-land-or-water/article71517164.ece
-Category: Tech Business & Markets
+Author:   prologic
+Source:   Mills.io
+URL:      https://git.mills.io/prologic/parley
+Category: Cybersecurity

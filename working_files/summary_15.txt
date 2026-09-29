@@ -1,20 +1,20 @@
-Zcash (ZEC) To Hit $5,000 By The End Of 2026: Co-founder
+http-terminator – AI-Assisted HTTP Request-Smuggling Discovery
 ============================================================
 
-Zcash co-founder Eli Ben-Sasson projects that the privacy-focused cryptocurrency ZEC could reach a valuation of $5,000 by the end of 2026 following recent record-breaking market performance.
+PortSwigger has released http-terminator, an open-source research pipeline that utilizes large language models to analyze HTTP specifications and automatically generate test cases for identifying request-smuggling vulnerabilities.
 
 ### Key Points
-- ZEC recently hit an all-time high of $1,680, pushing its market capitalization to a peak of $27 billion.
-- Eli Ben-Sasson, who currently leads StarkWare, previously predicted ZEC would exceed $1,200 by September 25, 2026.
-- Large-scale investors are withdrawing significant amounts of ZEC from major exchanges like Binance, OKX, and Kraken, creating a supply shock.
-- The Zcash core team is actively integrating quantum-proofing standards to enhance the long-term security of the network.
-- Privacy coins have shown resilience following the recent failure of the CLARITY Act in the United States Senate.
+- The pipeline consists of four distinct stages: seeker, flamer, validator, and investigator.
+- seeker and flamer use Anthropic’s Claude model to extract desync vectors from documentation and convert them into malformed HTTP test cases.
+- The validator stage functions as a Burp Suite extension to test targets, while the investigator stage uses Claude Code to replicate and document findings.
+- The repository serves as a reference design for document-driven security testing rather than a standalone, turn-key product.
+- Full implementation requires external dependencies, including Burp Suite, specific Java and Python environments, and an Anthropic API key.
 
 ### Why it Matters
-This price surge highlights the growing market demand for privacy-focused digital assets despite ongoing regulatory scrutiny and historical volatility. Investors are closely monitoring these developments as the asset's performance increasingly influences its standing among the top ten global cryptocurrencies.
+This project demonstrates a novel, specification-first approach to automating the discovery of complex HTTP desync vulnerabilities. By providing an inspectable framework, PortSwigger offers security researchers a blueprint for integrating generative AI into specialized vulnerability research pipelines.
 
 ============================================================
-Author:   Talha Arshad
-Source:   ZyCrypto
-URL:      https://zycrypto.com/zcash-zec-to-hit-5000-by-the-end-of-2026-co-founder/
-Category: Tech Business & Markets
+Author:   Darknet
+Source:   Darknet.org.uk
+URL:      https://www.darknet.org.uk/2026/09/http-terminator-ai-request-smuggling-discovery/
+Category: Cybersecurity

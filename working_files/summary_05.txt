@@ -1,21 +1,20 @@
-A barely working Android phone screen didn't stop me from building a functional home server
+Welcome to the 'Wild West' of AI in schools: Research is scarce, but experiments abound
 ============================================================
 
-Repurposing an old Android smartphone with a damaged display into a functional home server is possible by utilizing ADB tools and virtualization software to bypass hardware limitations.
+Dayton Public Schools and other districts are increasingly deploying AI chatbots and robots in classrooms despite limited research, clear federal guidance, or standardized metrics for measuring student outcomes.
 
 ### Key Points
-- Use the scrcpy tool to mirror a damaged Android screen to a PC, allowing for navigation via mouse and keyboard.
-- Enable USB debugging immediately if a phone screen shows signs of failure to ensure future access to the device.
-- Utilize the Universal Android Debloater to remove unnecessary apps and free up storage space for server tasks.
-- Deploy Podroid to run an Alpine Linux virtual machine and Docker containers, which is more efficient than standard Termux setups.
-- Allocate specific hardware resources, such as 2GB of RAM and 4 CPU cores, to maintain system stability on older devices.
-- Run lightweight, client-side applications like BentoPDF and OmniTools to maximize the limited processing power of repurposed hardware.
+- Dayton Public Schools paid SchoolAI $72,600 to pilot "Jordan," a social-emotional learning chatbot designed to engage students at an alternative school.
+- A Stanford University review of over 800 academic papers found that research on the efficacy and potential harms of AI in K-12 education remains extremely limited.
+- The Salamanca City Central School District paused plans to use a $58,000 humanoid robot named "Sally" following community concerns regarding data privacy and student interaction.
+- Major districts, including New York City and Los Angeles, have implemented bans or strict limitations on student-facing AI tools to mitigate potential risks.
+- Experts suggest that while AI could transform education, there is an urgent need for state and federal leadership to establish safety and evaluation standards.
 
 ### Why it Matters
-Converting discarded smartphones into home servers reduces electronic waste while providing a cost-effective way to host lightweight applications. This process demonstrates how specialized software tools can extend the lifecycle of hardware that would otherwise be considered unusable due to physical damage.
+The rapid, decentralized adoption of AI in schools creates a "Wild West" environment where vulnerable students are often the subjects of unproven technological experiments. Without standardized metrics or federal oversight, districts struggle to balance the necessity of preparing students for an AI-driven future against the risks of cognitive stunting and data privacy breaches.
 
 ============================================================
-Author:   Abhishek Kumar Mishra
-Source:   XDA Developers
-URL:      https://www.xda-developers.com/turn-a-barely-working-phone-screen-into-home-server/
-Category: Phones, Laptops, and Gadgets
+Author:   Lee V. Gaines
+Source:   NPR
+URL:      https://www.npr.org/2026/09/28/nx-s1-5759718/ai-schools-experiment-research
+Category: Artificial Intelligence
