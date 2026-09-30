@@ -1,20 +1,20 @@
-Uncensored and Offensive Security AI Models Benchmark
+101 Malicious npm Packages Add Developers' WhatsApp Accounts to Groups Without Consent
 ============================================================
 
-A curated list of open-weight, uncensored large language models provides security professionals with specialized tools for authorized red teaming, penetration testing, and advanced vulnerability research as of September 2026.
+Cybersecurity researchers at OX Security have identified 101 malicious npm packages that exploit the Baileys library to force developers into unauthorized WhatsApp group subscriptions and advertising campaigns.
 
 ### Key Points
-- The collection features 27 models, including specialized agents like RavenX-CyberAgent and DeepHat V2, trained on extensive security datasets such as CVE writeups and bug bounty reports.
-- Technical methods for removing alignment constraints include abliteration, supervised fine-tuning (SFT), and data filtering to ensure models remain responsive to offensive security queries.
-- Deployment options range from consumer-grade hardware using Ollama and GGUF formats to high-performance datacenter setups utilizing vLLM and multi-GPU configurations.
-- Specialized architectures like Mixture of Experts (MoE) and models with native tool-calling capabilities support complex workflows, including automated exploit generation and threat intelligence analysis.
-- Platforms such as OrcaRouter and Featherless AI offer managed inference, while local tools like LM Studio provide accessible interfaces for security researchers.
+- Researchers discovered 101 malicious npm packages that have been downloaded approximately 490,000 times, with 116,000 downloads occurring in the last month.
+- The malware abuses the open-source Baileys WhatsApp project to stealthily add victim accounts to attacker-controlled groups and channels without consent.
+- Three distinct variants of the malware were identified, utilizing different methods such as fetching channel IDs from GitHub or using obfuscated code to hide subscription routines.
+- The campaign primarily targets Indonesian markets, promoting services for mobile games like Mobile Legends: Bang Bang, TikTok, and various bot-building scripts.
+- Developers are urged to audit their dependencies, block identified malicious packages, and avoid connecting personal WhatsApp accounts to unverified third-party libraries.
 
 ### Why it Matters
-These uncensored models remove the restrictive safety guardrails found in commercial AI, allowing security researchers to simulate real-world attack vectors and automate complex defensive tasks. By providing specialized, open-weight alternatives, this resource enables more effective vulnerability discovery and threat modeling within authorized professional environments.
+This campaign highlights the ongoing risk of supply chain attacks within the npm ecosystem, where malicious actors leverage popular open-source tools to compromise developer environments. By hijacking WhatsApp sessions, attackers gain access to social proof and advertising channels that can be used to facilitate further fraud or illicit digital commerce.
 
 ============================================================
-Author:   JoasASantos
-Source:   Github.com
-URL:      https://github.com/JoasASantos/Offensive-Security-AI-Models
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/09/101-malicious-npm-packages-add.html
 Category: Cybersecurity
