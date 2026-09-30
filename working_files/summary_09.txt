@@ -1,20 +1,20 @@
-Parley: Federated, decentralised chat that speaks plain IRC
+Here are the tasks that execs from Anduril to Zendesk are giving their personal agents
 ============================================================
 
-The Fastidious chat platform has released a fix for a bug that allowed users to join invalid channels, preventing persistent connection errors and unauthorized room creation.
+Business leaders from companies like Adobe, KPMG, and Anduril are increasingly adopting personal AI agents to automate daily tasks, manage finances, and streamline complex administrative workflows.
 
 ### Key Points
-- The update prevents users from joining channels that lack the required `#` or `&` prefixes, returning a 403 error instead.
-- Previously, invalid channel joins created global rooms that caused repeated federation errors and prevented proper direct messaging.
-- The patch automatically cleans up existing invalid memberships from `members.json` upon system restart.
-- New automated tests, including `TestJoinRefusesANameThatIsNotAChannel`, ensure that invalid join attempts are rejected before any data is stored.
-- Documentation in `PROTOCOL.md` has been updated to clarify channel naming requirements for the platform.
+- Executives are utilizing AI tools like Meta’s Muse and ChatGPT to handle expense reports, negotiate insurance rates, and manage household logistics.
+- Zendesk CEO Tom Eggemeier reported saving approximately $2,000 annually by using AI agents to renegotiate personal phone and internet service plans.
+- Adobe’s Eric Snowden uses AI to proactively monitor communications, such as flagging urgent contractor documents during home renovations.
+- Uniphore CEO Umesh Sachdev integrates AI agents with social media platforms to synthesize real-time news and industry discourse.
+- Despite the automation benefits, leaders maintain a "human-in-the-loop" approach, requiring final approval before agents execute financial transactions or send communications.
 
 ### Why it Matters
-This fix improves network stability by eliminating unnecessary federation traffic caused by persistent, invalid join requests. It also ensures a more consistent user experience by preventing the creation of broken, non-functional chat rooms.
+The widespread adoption of personal AI by high-level executives signals a shift toward autonomous digital assistants becoming standard tools for productivity and household management. As these agents gain access to sensitive personal data, the emphasis on human oversight highlights the ongoing tension between convenience and the need for security.
 
 ============================================================
-Author:   prologic
-Source:   Mills.io
-URL:      https://git.mills.io/prologic/parley
-Category: Cybersecurity
+Author:   Hugh Langley,Polly Thompson
+Source:   Business Insider
+URL:      https://www.businessinsider.com/execs-personal-ai-agent-usecases-advice-muse-2026-9#article
+Category: Artificial Intelligence

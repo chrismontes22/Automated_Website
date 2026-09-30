@@ -1,20 +1,19 @@
-Coding Is Not Solved – Alex Ewerlöf Notes
+Using Device Linking to Eavesdrop on WhatsApp and Signal
 ============================================================
 
-Software engineering remains a complex discipline requiring human accountability, as current AI models struggle with logic, reliability, and the non-functional requirements essential for production-grade software systems.
+German law enforcement agencies are bypassing end-to-end encryption on WhatsApp and Signal by linking suspect accounts to police-controlled desktop computers through physical access or intercepted verification codes.
 
 ### Key Points
-- AI models are stochastic and lack the accountability required for critical sectors like healthcare, finance, and defense.
-- Coding is not a "solved" problem because maintenance, security, and scalability represent the majority of software development costs.
-- LLMs often exhibit "jagged intelligence," making them inconsistent and difficult to debug compared to deterministic code.
-- Over-reliance on AI for code generation can lead to "AI overdose," where developers lose the ability to reason about system behavior.
-- Effective engineering requires deep understanding and ownership, which cannot be fully offloaded to automated tools without risking service degradation.
+- German Customs officials exploit the "device linking" feature in messaging apps to mirror account activity on police-controlled hardware.
+- This method avoids the need to break encryption protocols because messages are delivered directly to the linked device.
+- Authorities gain access by physically handling a suspect's phone or intercepting SMS verification codes through phishing or telecommunications surveillance.
+- Security experts advocate for improved user interfaces that clearly display all active linked devices to help users detect unauthorized account access.
 
 ### Why it Matters
-The push to replace human engineering with AI-generated code risks prioritizing short-term velocity over long-term system reliability and security. Businesses that fail to maintain human oversight and accountability may face significant technical debt and operational failures when automated systems inevitably encounter logical errors.
+This surveillance technique highlights a significant vulnerability in how messaging apps manage multi-device synchronization. It demonstrates that even robust end-to-end encryption can be circumvented if an attacker gains the ability to authorize a new, trusted device on an existing account.
 
 ============================================================
-Author:   Alex Ewerlöf
-Source:   Alexewerlof.com
-URL:      https://blog.alexewerlof.com/p/coding-is-not-solved
-Category: Artificial Intelligence
+Author:   Bruce Schneier
+Source:   Schneier.com
+URL:      https://www.schneier.com/blog/archives/2026/09/using-device-linking-to-eavesdrop-on-whatsapp-and-signal.html
+Category: Cybersecurity
