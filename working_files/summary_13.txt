@@ -1,20 +1,20 @@
-Poclink Motion Ultra is a modern walkie-talkie with LTE, GPS, SOS, and Zero Monthly Fees
+Attackers Abuse ChatGPT Custom GPTs to Deliver RAT via ClickFix Lures
 ============================================================
 
-The Poclink Motion Ultra is a wearable hybrid communication device that combines 4G LTE connectivity with analog radio to provide reliable, off-grid messaging for outdoor enthusiasts and professionals.
+Threat actors are exploiting ChatGPT’s Custom GPT feature to distribute remote access trojans by redirecting users to malicious Google Sites pages that employ deceptive ClickFix installation lures.
 
 ### Key Points
-- The device features dual push-to-talk buttons for seamless switching between unlimited-range LTE and analog radio with up to 20 miles of reach.
-- It includes a lifetime global SIM card covering over 60 countries with no recurring monthly subscription fees.
-- The hardware is IP67 waterproof, cold-rated to -20°C, weighs 100g, and supports group sizes of up to 1,000 members.
-- Integrated safety features include one-touch SOS, real-time GPS location sharing, geofencing, and AES-256 encryption.
-- The Motion Ultra supports regional protocols including GMRS in the US, PMR446 in Europe, and UHF CB in Australia.
+- Researchers at Huntress identified a campaign where attackers created "Plus 5.6" Custom GPTs to trick at least 40 users into downloading malicious MSI installers.
+- The attack chain utilizes DLL sideloading via a legitimate Canon-signed binary to execute shellcode hidden within a .WAV audio file.
+- Victims are coerced into executing malicious PowerShell commands through fake Cloudflare CAPTCHA prompts, a technique known as ClickFix.
+- The deployed remote access trojan (RAT) can capture camera and microphone input, steal browser data, and bypass security software like Microsoft Defender.
+- Command-and-control communication is masked using DNS-over-HTTPS, allowing the malware to evade detection by standard network monitoring tools.
 
 ### Why it Matters
-This hybrid approach eliminates the trade-off between the limited range of traditional walkie-talkies and the subscription-heavy, fragile nature of satellite communicators or smartphones. By removing recurring costs and providing rugged, tactile controls, the device offers a more sustainable and reliable communication solution for remote field operations.
+This campaign demonstrates how cybercriminals are increasingly weaponizing trusted AI platforms and legitimate hosting services to bypass traditional security filters. As these social engineering tactics evolve, users and organizations must remain vigilant against deceptive prompts that encourage manual execution of scripts or installers.
 
 ============================================================
-Author:   Sarang Sheth
-Source:   Yanko Design
-URL:      https://www.yankodesign.com/2026/09/29/poclink-motion-ultra-is-a-modern-walkie-talkie-with-lte-gps-sos-and-zero-monthly-fees/
-Category: Phones, Laptops, and Gadgets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/09/attackers-abuse-chatgpt-custom-gpts-to.html
+Category: Cybersecurity
