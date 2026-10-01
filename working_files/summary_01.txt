@@ -1,20 +1,19 @@
-101 Malicious npm Packages Add Developers' WhatsApp Accounts to Groups Without Consent
+Android's biggest open-source app store is officially refusing Google
 ============================================================
 
-Cybersecurity researchers at OX Security have identified 101 malicious npm packages that exploit the Baileys library to force developers into unauthorized WhatsApp group subscriptions and advertising campaigns.
+Google has launched a mandatory developer verification program in four countries, requiring identity documentation and registration fees for Android app distribution ahead of a planned 2027 global rollout.
 
 ### Key Points
-- Researchers discovered 101 malicious npm packages that have been downloaded approximately 490,000 times, with 116,000 downloads occurring in the last month.
-- The malware abuses the open-source Baileys WhatsApp project to stealthily add victim accounts to attacker-controlled groups and channels without consent.
-- Three distinct variants of the malware were identified, utilizing different methods such as fetching channel IDs from GitHub or using obfuscated code to hide subscription routines.
-- The campaign primarily targets Indonesian markets, promoting services for mobile games like Mobile Legends: Bang Bang, TikTok, and various bot-building scripts.
-- Developers are urged to audit their dependencies, block identified malicious packages, and avoid connecting personal WhatsApp accounts to unverified third-party libraries.
+- The program is currently active in Brazil, Indonesia, Singapore, and Thailand, with a full global expansion scheduled for 2027.
+- Developers must provide government-issued photo IDs, proof of address, or organizational documentation to maintain full app distribution capabilities.
+- Apps from unverified developers will be blocked by default, requiring users to complete a complex "advanced flow" process to bypass restrictions.
+- Open-source platforms F-Droid and NewPipe have rejected the requirements, citing concerns over user privacy and the potential loss of Android's open ecosystem.
 
 ### Why it Matters
-This campaign highlights the ongoing risk of supply chain attacks within the npm ecosystem, where malicious actors leverage popular open-source tools to compromise developer environments. By hijacking WhatsApp sessions, attackers gain access to social proof and advertising channels that can be used to facilitate further fraud or illicit digital commerce.
+This policy shift signals a significant move toward a more controlled Android environment, potentially limiting the reach of independent developers and alternative app stores. By centralizing distribution authority, Google aims to curb malware, but critics argue the move compromises software freedom and forces developers to sacrifice anonymity.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/09/101-malicious-npm-packages-add.html
-Category: Cybersecurity
+Author:   Hamed Paydarfar
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/androids-biggest-open-source-app-store-is-officially-refusing-google/
+Category: Phones, Laptops, and Gadgets

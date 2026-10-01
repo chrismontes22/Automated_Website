@@ -1,20 +1,20 @@
-Fake iPhone Duo preorder scam triggers DarkSword attack
+Attackers Combine ChatGPT Feature Abuse With ClickFix to Deliver Trojan Malware
 ============================================================
 
-Scammers are using a sophisticated fake iPhone Duo preorder website to launch the DarkSword exploit chain, which can compromise unpatched iPhones simply by visiting the malicious page.
+Cybersecurity researchers at Huntress have identified a malicious campaign using fake ChatGPT CustomGPTs and ClickFix social engineering tactics to infect user devices with remote access trojan malware.
 
 ### Key Points
-- The fraudulent site mimics Apple’s design to lure users with a fake $500 voucher for the upcoming iPhone Duo.
-- Opening the page triggers the DarkSword exploit chain, which attempts to bypass iOS security without requiring any user interaction or form submission.
-- If successful, the malware targets cryptocurrency wallets, saved keychain credentials, Apple Notes, and personal communication data.
-- The exploit specifically targets older, unpatched versions of iOS, though it may attempt to load on any device using the Safari browser.
-- Apple has previously released security patches for the vulnerabilities used in the DarkSword chain, making software updates the primary defense against this attack.
+- Attackers created a fraudulent CustomGPT named "Plus 5.6" that appeared in sponsored Google search results to impersonate legitimate ChatGPT services.
+- The campaign utilizes a "ClickFix" attack, tricking users into pasting malicious commands into their systems under the guise of a Cloudflare CAPTCHA verification.
+- Victims are prompted to download a malicious Microsoft Software Installer that sideloads code through a legitimate, Canon-signed application.
+- The deployed remote access trojan allows attackers to monitor systems, capture audio and video, and exfiltrate sensitive data to external servers.
+- Huntress confirmed at least 40 infections and reported the activity to OpenAI, which removed the initial malicious CustomGPT on September 25.
 
 ### Why it Matters
-This attack highlights a significant shift in mobile threats where merely visiting a website can lead to a full device compromise without any user input. Users should prioritize installing the latest iOS updates and avoid clicking on unsolicited preorder links to protect their sensitive financial and personal data.
+This campaign highlights a growing trend of cybercriminals weaponizing trusted AI platforms and brand names to bypass traditional security defenses. Users should remain vigilant, as no legitimate website will ever require manual command execution to verify human identity.
 
 ============================================================
-Author:   Stefan Dasic
-Source:   Malwarebytes.com
-URL:      https://www.malwarebytes.com/blog/threat-intel/2026/09/fake-iphone-duo-preorder-scam-triggers-darksword-attack
+Author:   Danny  Palmer
+Source:   Infosecurity Magazine
+URL:      https://www.infosecurity-magazine.com/news/chatgpt-feature-abuse-to-deliver/
 Category: Cybersecurity

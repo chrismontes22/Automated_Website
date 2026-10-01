@@ -1,20 +1,20 @@
-AI has made borrowing more expensive – an expert explains how bond markets are changing
+WHIPSHOT and SLAPSHOT: the tools behind an active Citrix NetScaler campaign
 ============================================================
 
-Global bond markets are experiencing increased instability as rising government debt and intense competition for capital from the AI sector drive borrowing costs to multi-decade highs.
+Google and Mandiant have identified active exploitation of two critical zero-day vulnerabilities in Citrix NetScaler ADC and Gateway appliances, allowing attackers to gain root-level access to internal networks.
 
 ### Key Points
-- US ten-year government bond yields have reached 5%, marking the highest level observed in nearly 20 years.
-- Borrowing costs in the UK and France have climbed to their highest points since the 2008 global financial crisis.
-- Massive corporate investment in AI infrastructure is creating a supply-demand imbalance, forcing governments to compete for limited capital.
-- US Treasury Secretary Scott Bessent announced a US$6 billion bond buyback program to stabilize costs, though analysts view this as insufficient against US$40 trillion in total debt.
-- Rising interest payments are increasingly diverting public funds away from essential services like healthcare and education.
+- CVE-2026-88772, a memory overflow vulnerability with a 9.5 CVSS score, enables remote code execution without requiring authentication.
+- Attackers are deploying custom malware, specifically the WHIPSHOT web shell and SLAPSHOT proxy tool, to maintain persistence and move laterally.
+- The exploit targets the DTLS handshake process, affecting government, financial, educational, and legal organizations across North America and Europe.
+- Indicators of compromise include specific SSL handshake failure logs and unusual delays in server responses when requesting hidden files.
+- Mandiant advises immediate patching and rotating all credentials handled by the appliances, as they must be assumed compromised.
 
 ### Why it Matters
-Higher bond yields increase the cost of servicing national debt, which forces governments to choose between raising taxes, cutting public spending, or risking fiscal instability. This shift signals an end to the era of cheap government borrowing as private sector demand for capital continues to grow.
+These vulnerabilities highlight the persistent risk posed by internet-facing edge devices, which often bypass standard endpoint security protections. Because these appliances frequently store sensitive credentials, a successful breach provides attackers with a direct, high-privilege gateway into an organization's internal network.
 
 ============================================================
-Author:   Alex Dryden, PhD Candidate in Economics, SOAS, University of London
-Source:   The Conversation Africa
-URL:      https://theconversation.com/ai-has-made-borrowing-more-expensive-an-expert-explains-how-bond-markets-are-changing-292033
-Category: Tech Business & Markets
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/200046/security/whipshot-and-slapshot-the-tools-behind-an-active-citrix-netscaler-campaign.html
+Category: Cybersecurity
