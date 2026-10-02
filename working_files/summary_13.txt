@@ -1,20 +1,20 @@
-Attackers Abuse ChatGPT Custom GPTs to Deliver RAT via ClickFix Lures
+Product showcase: Proton Drive end-to-end encrypted cloud storage
 ============================================================
 
-Threat actors are exploiting ChatGPT’s Custom GPT feature to distribute remote access trojans by redirecting users to malicious Google Sites pages that employ deceptive ClickFix installation lures.
+Proton Drive provides a secure, end-to-end encrypted cloud storage platform that enables users to synchronize, back up, and collaborate on files across web, desktop, and mobile operating systems.
 
 ### Key Points
-- Researchers at Huntress identified a campaign where attackers created "Plus 5.6" Custom GPTs to trick at least 40 users into downloading malicious MSI installers.
-- The attack chain utilizes DLL sideloading via a legitimate Canon-signed binary to execute shellcode hidden within a .WAV audio file.
-- Victims are coerced into executing malicious PowerShell commands through fake Cloudflare CAPTCHA prompts, a technique known as ClickFix.
-- The deployed remote access trojan (RAT) can capture camera and microphone input, steal browser data, and bypass security software like Microsoft Defender.
-- Command-and-control communication is masked using DNS-over-HTTPS, allowing the malware to evade detection by standard network monitoring tools.
+- Proton Drive features integrated tools for document and spreadsheet creation, including Proton Docs and Proton Sheets.
+- The service is compatible with Windows, macOS, Linux, iOS, and Android, featuring native Finder integration on Mac devices.
+- Files are encrypted locally on the user's device before upload, ensuring that Proton cannot access stored content.
+- Security measures include cryptographic signatures, open-source application code, and independent third-party audits.
+- Sharing features allow users to set password protection, expiration dates, and specific access permissions for individual files or folders.
 
 ### Why it Matters
-This campaign demonstrates how cybercriminals are increasingly weaponizing trusted AI platforms and legitimate hosting services to bypass traditional security filters. As these social engineering tactics evolve, users and organizations must remain vigilant against deceptive prompts that encourage manual execution of scripts or installers.
+This service offers a privacy-focused alternative to mainstream cloud providers by ensuring that user data remains inaccessible to the service provider. Its cross-platform functionality and document collaboration tools provide a comprehensive ecosystem for users prioritizing data security in their digital workflows.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/09/attackers-abuse-chatgpt-custom-gpts-to.html
+Author:   Anamarija Pogorelec
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/10/01/product-showcase-proton-drive/
 Category: Cybersecurity
