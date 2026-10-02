@@ -1,20 +1,20 @@
-Nothing Is On Fire At Google via @sejournal, @pedrodias
+OpenAI Disrupts Reasoning Extraction Campaign Linked to Moonshot AI Associates
 ============================================================
 
-Google’s dominance in the AI sector faces scrutiny as internal resource allocation and a focus on protecting search revenue potentially hinder the development of disruptive, autonomous assistant technologies.
+OpenAI has disrupted a coordinated campaign by Beijing-based Moonshot AI that attempted to illicitly extract protected reasoning from its artificial intelligence models through adversarial distillation techniques.
 
 ### Key Points
-- Google has delayed the release of Gemini 3.5 Pro, missing its original June target while prioritizing cloud revenue and existing search-based AI features.
-- Internal competition for limited compute resources between Google Cloud and the Gemini development team has reportedly hampered progress in key areas like coding.
-- Despite strong consumer adoption of Gemini, enterprise data shows competitors like Anthropic and OpenAI currently lead in professional API spending and coding tasks.
-- High-profile talent departures, including co-lead Noam Shazeer, suggest a shift in researcher sentiment toward companies where AI innovation is the primary business focus.
-- Google’s search revenue grew 17% in Q2, reinforcing a corporate strategy that favors incremental improvements over radical disruption of its core advertising business.
+- OpenAI identified and blocked a campaign that used over 15,000 user accounts to extract model reasoning between July 1 and July 28, 2026.
+- The activity involved manipulating model interactions to reproduce protected reasoning, violating OpenAI’s terms of service.
+- Researchers from MATS Research and the ELLIS Institute identified an architectural vulnerability allowing encrypted reasoning traces to be decrypted across different sessions.
+- OpenAI implemented new mitigations and closed security pathways to prevent the replay of encrypted reasoning data.
+- Moonshot AI previously faced similar accusations from Anthropic regarding the unauthorized use of Claude’s outputs to train its own models.
 
 ### Why it Matters
-Google’s current strategy mirrors Microsoft’s historical approach of prioritizing existing, profitable business lines over the development of potentially cannibalistic, next-generation technologies. This cautious pace may leave the company vulnerable to competitors who are willing to build autonomous agents that bypass traditional search interfaces entirely.
+Adversarial distillation allows competitors to replicate advanced AI capabilities and safety protocols without the significant investment required for original model development. This practice poses serious national security risks by potentially bypassing safety guardrails and exposing sensitive data embedded within the reasoning process.
 
 ============================================================
-Author:   Pedro Dias
-Source:   Theinference.io
-URL:      https://theinference.io/p/nothing-is-on-fire-at-google
-Category: Artificial Intelligence
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/10/openai-disrupts-reasoning-extraction.html
+Category: Cybersecurity
