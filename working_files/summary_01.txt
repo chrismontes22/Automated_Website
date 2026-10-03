@@ -1,20 +1,20 @@
-Personal Computing 2.0: It's time for a personal computing revolution
+Antino Backdoor Uses Outlook and OneDrive for C2 in China-Nexus Espionage Campaign
 ============================================================
 
-The proposed Personal Computing 2.0 paradigm seeks to shift digital power back to individual users by prioritizing data ownership, local control, and interoperability over centralized Big Tech ecosystems.
+A China-nexus threat actor identified as UAT-11587 is deploying a sophisticated Rust-based backdoor called Antino to target government and policy organizations across Asia and the Middle East.
 
 ### Key Points
-- Personal Computing 2.0 advocates for storing data locally rather than in the cloud to prevent vendor lock-in and subscription-based access restrictions.
-- The model promotes cross-platform compatibility, allowing users to integrate various AI agents and software tools regardless of the underlying hardware or provider.
-- By leveraging open-weight AI models, users can run powerful intelligence locally on personal devices like laptops or Raspberry Pis.
-- The framework aims to solve modern privacy concerns by returning to the foundational principle that a user’s data should reside entirely under their own control.
-- Advanced serverless computing and AI-driven interfaces are intended to make complex programming and data management accessible to non-engineers.
+- Cisco Talos identified the UAT-11587 cluster, which has compromised 16 entities across eight countries, including Taiwan, India, and the Philippines.
+- The Antino backdoor uses Microsoft 365 services, specifically Outlook and OneDrive, as a command-and-control channel to evade traditional network detection.
+- Attackers utilize highly tailored spear-phishing emails that spoof Gmail attachment previews to bypass security filters and deceive high-profile targets.
+- The malware employs DLL sideloading via a legitimate Microsoft-signed binary, "GatherOsState.exe," to maintain persistence on infected Windows systems.
+- Evidence linking the campaign to China includes Simplified Chinese metadata, specific Cargo registry paths, and targeting themes consistent with regional geopolitical interests.
 
 ### Why it Matters
-This shift represents a direct challenge to the current "closed" AI and SaaS-dominated landscape that has increasingly restricted user autonomy. By reclaiming data sovereignty, individuals can potentially mitigate the risks of platform dependency and foster a more creative, personalized digital environment.
+This campaign highlights a growing trend of threat actors abusing legitimate cloud infrastructure to conduct stealthy, long-term espionage against government and diplomatic entities. By leveraging trusted platforms like Microsoft 365, attackers significantly complicate detection efforts for security teams relying on traditional traffic monitoring.
 
 ============================================================
-Author:   Josh Albrecht
-Source:   Imbue.com
-URL:      https://ideas.imbue.com/p/personal-computing-20
-Category: Phones, Laptops, and Gadgets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/10/antino-backdoor-uses-outlook-and.html
+Category: Cybersecurity
