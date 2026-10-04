@@ -1,20 +1,20 @@
-Antino Backdoor Lets China-Linked UAT-11587 Turn Microsoft 365 Into a C2 Channel
+Trump Accord Enshrines Light-Touch Regulation of AI
 ============================================================
 
-Cisco Talos researchers have identified a China-nexus espionage group, UAT-11587, using a novel Rust-based backdoor called Antino to target government and policy organizations across eight Asian countries.
+President Trump signed the voluntary White House Accord on Super Intelligence, establishing a framework for tech companies to implement internal safety controls and undergo independent external audits.
 
 ### Key Points
-- The UAT-11587 campaign has compromised at least 350 endpoints across 16 organizations since September 2025.
-- The Antino backdoor uses Microsoft 365, specifically Outlook and OneDrive via Microsoft Graph, to execute commands and exfiltrate stolen data.
-- Attackers utilize highly targeted phishing emails featuring spoofed domains and pixel-perfect recreations of Gmail attachment previews to deceive victims.
-- The malware delivery chain leverages legitimate cloud services like Cloudflare Pages and Amazon CloudFront to blend malicious traffic with standard HTTPS activity.
-- Forensic evidence, including Simplified Chinese metadata and mainland-specific Rust package mirrors, links the activity to China-based threat actors.
+- The accord requires participating AI companies to implement internal safety controls and partner with independent auditors to verify their effectiveness.
+- President Trump plans to appoint an AI czar within the next week and is considering a 10-person committee to oversee the industry.
+- Executives from Nvidia, Anthropic, and AMD publicly supported the agreement, emphasizing the industry's responsibility to develop technology safely.
+- Critics, including the Future of Life Institute, argue that voluntary self-regulation is insufficient to address risks like cyberattacks and hacking incidents.
+- The Federal Trade Commission is separately pursuing documentation and testimony from AI firms regarding potential safety dangers posed by their models.
 
 ### Why it Matters
-This campaign demonstrates how sophisticated actors can bypass traditional security filters by abusing trusted enterprise platforms and legitimate diagnostic binaries. By operating entirely within the Microsoft 365 ecosystem, the Antino backdoor effectively evades detection, highlighting a critical need for organizations to monitor internal cloud service traffic for anomalous behavior.
+This agreement signals a shift toward a light-touch regulatory environment that prioritizes industry-led safety standards over mandatory federal legislation. By formalizing these voluntary commitments, the administration aims to maintain American competitiveness in artificial intelligence while addressing growing public and political concerns regarding safety and oversight.
 
 ============================================================
-Author:   Pierluigi Paganini
-Source:   Securityaffairs.com
-URL:      https://securityaffairs.com/200264/apt/antino-backdoor-uses-your-inbox-as-its-control-panel.html
-Category: Cybersecurity
+Author:   Sean Moran
+Source:   The Daily Caller
+URL:      https://dailycaller.com/2026/10/03/trump-accord-enshrines-light-tough-regulation-ai
+Category: Artificial Intelligence

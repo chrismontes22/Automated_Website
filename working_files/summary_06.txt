@@ -1,20 +1,20 @@
-I filled my home with Amazon Echo devices, but these are the only ones I'd buy again
+The 3-2-1 backup rule everyone repeats is missing a step, and I found out the hard way
 ============================================================
 
-Amazon’s Echo product lineup offers specialized devices for different smart home needs, with the Echo Dot, Echo Hub, and Echo Show 15 providing the most practical daily utility.
+The traditional 3-2-1 backup rule is increasingly viewed as insufficient, prompting experts to recommend the 3-2-1-1-0 strategy to ensure data integrity and protection against modern ransomware threats.
 
 ### Key Points
-- The 5th-gen Echo Dot ($40) provides essential voice control and includes a built-in temperature sensor for optimizing HVAC zones.
-- The Echo Hub ($180) features an 8-inch touchscreen and acts as a central controller for Zigbee, Thread, and Matter smart home devices.
-- The Echo Show 15 ($300) serves as a large-format family command center for calendars, doorbell feeds, and streaming media in high-traffic areas.
-- Smaller Echo Show models often lack a distinct purpose, frequently serving only as clocks rather than functional smart home interfaces.
-- Proper placement and setup, such as wall-mounting the Echo Hub, significantly improve the usability of Amazon’s smart home ecosystem for all household members.
+- The original 3-2-1 rule suggests keeping three data copies on two media types, with one stored offsite, but fails to account for file corruption or restoration failures.
+- A 2024 Backblaze survey found that while 84% of US adults back up data, only 15% feel certain their files are securely recoverable.
+- The updated 3-2-1-1-0 rule adds an immutable or air-gapped copy to prevent ransomware from deleting backups and mandates zero errors through regular testing.
+- Cybersecurity agencies like CISA warn that organizations often discover backup failures only during critical incidents, highlighting the necessity of periodic restore verification.
+- Tools such as FreeFileSync can assist in creating disconnected, air-gapped backups to ensure at least one copy remains unreachable by network-based attacks.
 
 ### Why it Matters
-Selecting the right hardware for specific rooms prevents unnecessary spending on devices that offer redundant features or limited utility. By matching Echo devices to their intended roles, users can create a more responsive and intuitive smart home environment that benefits the entire household.
+Relying solely on the quantity of backup copies creates a false sense of security that can lead to permanent data loss during a system failure or cyberattack. Implementing verification and immutable storage transforms a passive backup habit into a reliable recovery strategy, ensuring that data is not only saved but actually usable when needed.
 
 ============================================================
-Author:   Jonathon Jachura
+Author:   Tashreef Shareef
 Source:   MakeUseOf
-URL:      https://www.makeuseof.com/only-echo-devices-i-would-buy-again/
-Category: Phones, Laptops, and Gadgets
+URL:      https://www.makeuseof.com/3-2-1-backup-rule-missing-step/
+Category: Cybersecurity
