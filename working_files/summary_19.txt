@@ -1,20 +1,20 @@
-Hedge funds quietly placing short bets as midterms loom — here’s who they’re targeting
+Antino Backdoor Lets China-Linked UAT-11587 Turn Microsoft 365 Into a C2 Channel
 ============================================================
 
-Hedge funds are shorting companies perceived as having close ties to the Trump administration in anticipation of potential Democratic gains during the upcoming midterm elections.
+Cisco Talos researchers have identified a China-nexus espionage group, UAT-11587, using a novel Rust-based backdoor called Antino to target government and policy organizations across eight Asian countries.
 
 ### Key Points
-- Hedge funds are betting against stocks of companies that have aligned themselves with the Trump administration, according to the Bear Traps Report.
-- Short sellers are targeting firms that contributed to the White House ballroom renovation and those represented at recent administration-led AI summits.
-- The strategy anticipates that a Democratic-controlled Congress would launch aggressive investigations into companies with strong ties to the current White House.
-- Analysts note that the cryptocurrency sector is also under scrutiny due to the Trump family's recent expansion into digital assets.
-- Larry McDonald, who runs the Bear Traps Report, suggests the market has not yet fully priced in the potential for significant political shifts in Congress.
+- The UAT-11587 campaign has compromised at least 350 endpoints across 16 organizations since September 2025.
+- The Antino backdoor uses Microsoft 365, specifically Outlook and OneDrive via Microsoft Graph, to execute commands and exfiltrate stolen data.
+- Attackers utilize highly targeted phishing emails featuring spoofed domains and pixel-perfect recreations of Gmail attachment previews to deceive victims.
+- The malware delivery chain leverages legitimate cloud services like Cloudflare Pages and Amazon CloudFront to blend malicious traffic with standard HTTPS activity.
+- Forensic evidence, including Simplified Chinese metadata and mainland-specific Rust package mirrors, links the activity to China-based threat actors.
 
 ### Why it Matters
-This trend highlights how political volatility can directly influence market strategies and stock valuations as investors hedge against potential legislative changes. It underscores a growing intersection between partisan politics and financial risk management, where corporate associations with government officials become a factor in investment performance.
+This campaign demonstrates how sophisticated actors can bypass traditional security filters by abusing trusted enterprise platforms and legitimate diagnostic binaries. By operating entirely within the Microsoft 365 ecosystem, the Antino backdoor effectively evades detection, highlighting a critical need for organizations to monitor internal cloud service traffic for anomalous behavior.
 
 ============================================================
-Author:   Charles Gasparino
-Source:   New York Post
-URL:      https://nypost.com/2026/10/02/business/hedge-funds-placing-short-bets-as-midterms-loom-whore-they-targeting/
-Category: Tech Business & Markets
+Author:   Pierluigi Paganini
+Source:   Securityaffairs.com
+URL:      https://securityaffairs.com/200264/apt/antino-backdoor-uses-your-inbox-as-its-control-panel.html
+Category: Cybersecurity

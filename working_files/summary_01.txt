@@ -1,20 +1,20 @@
-Antino Backdoor Uses Outlook and OneDrive for C2 in China-Nexus Espionage Campaign
+We View Consumer Data as Toxic Waste
 ============================================================
 
-A China-nexus threat actor identified as UAT-11587 is deploying a sophisticated Rust-based backdoor called Antino to target government and policy organizations across Asia and the Middle East.
+Obscura VPN introduces a two-party relay system that splits traffic between its own servers and Mullvad to eliminate the need for users to trust a single provider's privacy policy.
 
 ### Key Points
-- Cisco Talos identified the UAT-11587 cluster, which has compromised 16 entities across eight countries, including Taiwan, India, and the Philippines.
-- The Antino backdoor uses Microsoft 365 services, specifically Outlook and OneDrive, as a command-and-control channel to evade traditional network detection.
-- Attackers utilize highly tailored spear-phishing emails that spoof Gmail attachment previews to bypass security filters and deceive high-profile targets.
-- The malware employs DLL sideloading via a legitimate Microsoft-signed binary, "GatherOsState.exe," to maintain persistence on infected Windows systems.
-- Evidence linking the campaign to China includes Simplified Chinese metadata, specific Cargo registry paths, and targeting themes consistent with regional geopolitical interests.
+- Obscura uses a two-hop architecture where the first hop handles identity and the second hop, managed by Mullvad, handles encrypted traffic.
+- The service utilizes the QUIC protocol to mimic HTTP/3 traffic, making it more resilient against deep packet inspection and internet censorship.
+- Founder Carl Dong, a former Bitcoin Core contributor, emphasizes "trust minimization" by open-sourcing the client and supporting reproducible builds.
+- The platform requires no email for registration and accepts anonymous payments via Monero and Bitcoin over the Lightning Network.
+- Obscura operates as a small, independent team of six, avoiding venture capital influence to maintain a subscription-based business model.
 
 ### Why it Matters
-This campaign highlights a growing trend of threat actors abusing legitimate cloud infrastructure to conduct stealthy, long-term espionage against government and diplomatic entities. By leveraging trusted platforms like Microsoft 365, attackers significantly complicate detection efforts for security teams relying on traditional traffic monitoring.
+This model challenges the traditional "no-logs" promise by ensuring that no single entity can correlate a user's identity with their browsing activity. By decentralizing trust, Obscura provides a technical alternative for users concerned about the risks of data breaches or legal subpoenas inherent in centralized VPN services.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/10/antino-backdoor-uses-outlook-and.html
+Author:   Abhishek Prakash
+Source:   Itsfoss.com
+URL:      https://itsfoss.com/interview/obscura-carl-dong/
 Category: Cybersecurity
