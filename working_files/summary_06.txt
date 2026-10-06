@@ -1,17 +1,17 @@
 The Credential Layer Is Expanding Faster Than Security Teams Can See It
 ============================================================
 
-GitGuardian highlights the urgent need for enterprises to map their expanding "credential layer" as rapid software production and AI agent adoption increase the risk of exposed secrets.
+GitGuardian highlights the urgent need for enterprises to map their expanding credential layer as rapid software production and AI agent adoption increase the risk of secret exposure.
 
 ### Key Points
 - GitGuardian reports that 28.65 million new hardcoded secrets were detected in public GitHub commits in 2025, a 34% year-over-year increase.
-- Research indicates that 22% of initial breach access stems from compromised credentials, often found on unmanaged developer endpoints or collaboration systems.
-- Infostealer malware, such as Shai-Hulud and S1ingularity, frequently targets developer laptops, where researchers found an average of nearly five secrets per compromised machine.
-- AI coding agents introduce new security vulnerabilities, with over 2,000 valid secrets identified in public Model Context Protocol configuration files during 2025.
-- Effective security requires a "Detect, Remediate, and Prevent" strategy that inventories credentials across repositories, endpoints, and cloud environments to provide necessary context.
+- Research indicates that 44% of compromised developer machines contain more than 10 unique secrets, creating significant entry points for supply-chain attacks.
+- Modern security threats, such as infostealer malware, can extract credentials from browser data, local files, and application storage on developer endpoints.
+- Effective credential management requires visibility across repositories, collaboration tools, and developer laptops to identify ownership, validity, and permission scopes.
+- GitHub projects an infrastructure scale increase of 30x to accommodate the growth of agentic development and automated code production.
 
 ### Why it Matters
-As software development scales toward a 30x increase in volume, traditional security perimeters are failing to contain the proliferation of plaintext credentials. Organizations must gain full visibility into their credential layer to prevent attackers from exploiting the gap between managed vaults and unmonitored developer environments.
+As software production accelerates, the "credential layer" has expanded beyond traditional security perimeters, leaving organizations vulnerable to automated attacks that exploit unmanaged secrets. Establishing a comprehensive, context-aware inventory is now essential for security teams to prevent breaches before attackers can leverage exposed credentials for lateral movement.
 
 ============================================================
 Author:   info@thehackernews.com (The Hacker News)
