@@ -1,20 +1,20 @@
-Fake Zoom installer hides macOS backdoor CloudSyncD
+American investors are touring China’s robot factories to size up the competition
 ============================================================
 
-Jamf Threat Labs discovered a new macOS malware called CloudSyncD, which disguises itself as a Zoom installer to steal user passwords and establish a persistent backdoor for attackers.
+Silicon Valley venture capitalists are increasingly traveling to China to evaluate the country's advanced robotics and hardware capabilities, aiming to assess competitive threats to their own domestic portfolio companies.
 
 ### Key Points
-- The malware uses a fake Zoom installer that prompts users to bypass macOS Gatekeeper security settings.
-- It captures user passwords, obfuscating them within a JSON file using hidden Unicode characters to evade detection.
-- CloudSyncD attempts to execute payloads directly from memory to avoid disk writes, falling back to temporary files if blocked by System Integrity Protection.
-- Once active, the implant communicates with command-and-control servers every 8 to 16 seconds to receive and execute arbitrary programs.
-- Researchers identified the malware in mid-September, noting it was actively communicating with two live domains protected by Cloudflare.
+- Chinese firms Unitree and AgiBot accounted for 71% of global humanoid robot shipments last year.
+- China controls 63% of the global supply chain for essential humanoid-robot components.
+- Silicon Valley firms including Eclipse, G2 Venture Partners, and Founders Fund have sent delegations to tour Chinese factories and tech hubs.
+- Investors are paying up to $10,000 for curated tours that provide access to Chinese robotics manufacturers, EV makers, and AI developers.
+- The Chinese government has established a national policy to deploy humanoid robots across its economy by 2027.
 
 ### Why it Matters
-This discovery highlights the evolving sophistication of macOS threats that leverage social engineering to bypass native security protections. By combining credential theft with a modular backdoor, attackers can maintain long-term access to compromised systems while remaining difficult for standard security tools to detect.
+These excursions signal a shift in how American investors perceive China's technological maturity, moving from dismissal to urgent competitive analysis. By witnessing China's manufacturing scale and data-collection infrastructure firsthand, venture capitalists are now integrating geopolitical risk and supply chain dependency into their long-term investment strategies.
 
 ============================================================
-Author:   Pierluigi Paganini
-Source:   Securityaffairs.com
-URL:      https://securityaffairs.com/200293/malware/fake-zoom-installer-hides-macos-backdoor-cloudsyncd.html
-Category: Cybersecurity
+Author:   Rya Jetha
+Source:   Business Insider
+URL:      https://www.businessinsider.com/why-silicon-valley-investors-are-touring-chinas-robot-factories-2026-10#article
+Category: Tech Business & Markets
