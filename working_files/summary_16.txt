@@ -1,20 +1,20 @@
-Here’s What Capcom Said About Using Generative AI In The RE Engine: ‘AI Is Not A Replacement For Humans’
+System-level ad-blocking in Android
 ============================================================
 
-Capcom detailed its REX Initiative at an October 2 engineering conference, outlining plans to integrate AI into development workflows while maintaining a strict policy against AI-generated game assets.
+Android users in 2026 can mitigate intrusive advertising by implementing system-level DNS blocking, which redirects ad-server requests to prevent content from loading across all installed mobile applications.
 
 ### Key Points
-- Capcom is evolving its proprietary RE Engine under the REX Initiative to improve code efficiency and error reporting.
-- The company released its RE:Dox and RE:Log tools as open-source software on GitHub to facilitate AI-assisted development.
-- AI agents will be utilized to perform automated playtesting, identify bugs, and suggest performance fixes for human developers to implement.
-- Capcom explicitly stated that AI is intended to reduce repetitive tasks rather than replace human creative roles in game development.
-- The initiative aims to ensure the RE Engine remains scalable across diverse hardware platforms, ranging from PCs to the Nintendo Switch.
+- System-level ad-blocking functions by overriding DNS lookups to map known advertising hostnames to bogus IP addresses.
+- Users can employ commercial DNS services, VPNs with ad-blocking features, or open-source apps like AdAway to manage network traffic.
+- Rooted devices offer the most efficient blocking by modifying the system hosts file, often using Magisk modules for "systemless" implementation.
+- Non-rooted devices typically rely on local VPN-based apps to intercept DNS requests, though Google increasingly restricts these installation methods.
+- DNS-based blocking is not foolproof, as some apps may bypass DNS by using direct IP connections or embedding ads directly within the application code.
 
 ### Why it Matters
-This strategy highlights a growing industry trend where major studios leverage AI for backend technical optimization while distancing themselves from controversial generative content. By automating bug detection and code maintenance, Capcom aims to increase development efficiency and allow human staff to prioritize creative design.
+System-level ad-blocking provides a comprehensive privacy tool that protects users from trackers and malware across their entire device rather than just within a web browser. While Google continues to tighten Android's security to limit these workarounds, these methods remain essential for users seeking to reclaim control over their mobile experience and data usage.
 
 ============================================================
-Author:   Alicia Haddick
-Source:   Kotaku
-URL:      https://kotaku.com/heres-what-capcom-said-about-using-generative-ai-in-the-re-engine-2000739690
-Category: Artificial Intelligence
+Author:   Kevin Boone
+Source:   Kevinboone.me
+URL:      https://kevinboone.me/adblock.html
+Category: Phones, Laptops, and Gadgets

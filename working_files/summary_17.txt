@@ -1,20 +1,21 @@
-Proposed anti-Flock bills could spell trouble for license plate readers
+I've used Bitwarden for years and didn't know about these 6 hidden settings that boost your security
 ============================================================
 
-US lawmakers have introduced bipartisan legislation to restrict automated license plate reader networks amid growing concerns over data privacy, system inaccuracies, and the potential for government surveillance.
+Bitwarden users can enhance their account security by auditing specific settings, including master password re-prompts, clipboard behavior, and advanced encryption standards like Argon2id for better vault protection.
 
 ### Key Points
-- Automated license plate readers (ALPRs) capture vehicle location and time data, creating searchable records of individual travel patterns.
-- The proposed "Stop Flock Abuse Act" mandates data encryption, ten-day retention limits, and strict oversight for government agencies using ALPR technology.
-- The "Ban Flock Act" seeks to prohibit federal agencies from using ALPR systems and would withhold federal funding from local governments that utilize them.
-- Concerns regarding system accuracy were highlighted by a case where a Florida resident was wrongfully arrested for 13 days due to an ALPR data error.
-- Flock Safety, a major industry supplier, currently operates approximately 120,000 cameras across the United States.
+- Enable "Master password re-prompt" on sensitive items to require authentication before autofilling specific credentials.
+- Disable "Copy TOTP automatically" in the Autofill settings to prevent authenticator codes from being stored on the system clipboard.
+- Audit "Autofill on page load" to ensure it is disabled, preventing potential exploitation by compromised or untrusted websites.
+- Adjust "Default URI match detection" to "Host" or "Exact" to restrict where credentials are offered, rather than relying on broad base-domain matching.
+- Use the "Blocked domains" feature to prevent Bitwarden from offering autofill, passkey prompts, or save prompts on specific websites.
+- Switch the Key Derivation Function (KDF) to Argon2id in web vault settings to make offline brute-force attacks significantly more computationally expensive.
 
 ### Why it Matters
-These legislative proposals signal a shift in the national debate regarding the balance between public safety technology and individual civil liberties. The outcome could fundamentally change how law enforcement agencies collect, store, and share location data on private citizens.
+Regularly auditing password manager configurations ensures that default settings align with a user's specific security requirements and risk tolerance. These adjustments provide additional layers of defense against unauthorized access and potential data exposure without sacrificing the core functionality of the service.
 
 ============================================================
-Author:   Pieter Arntz
-Source:   Malwarebytes.com
-URL:      https://www.malwarebytes.com/blog/news/2026/10/proposed-anti-flock-bills-could-spell-trouble-for-license-plate-readers
+Author:   Afam Onyimadu
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/ive-used-bitwarden-for-years-didnt-know-about-these-hidden-settings-boost-your-security/
 Category: Cybersecurity
