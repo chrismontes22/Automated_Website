@@ -1,20 +1,20 @@
-System-level ad-blocking in Android
+Anthropic loosens Claude’s cyber restrictions for verified defenders
 ============================================================
 
-Android users in 2026 can mitigate intrusive advertising by implementing system-level DNS blocking, which redirects ad-server requests to prevent content from loading across all installed mobile applications.
+Anthropic has expanded its Cyber Verification Program to grant verified security professionals access to advanced Claude models with fewer restrictions for defensive tasks and authorized penetration testing.
 
 ### Key Points
-- System-level ad-blocking functions by overriding DNS lookups to map known advertising hostnames to bogus IP addresses.
-- Users can employ commercial DNS services, VPNs with ad-blocking features, or open-source apps like AdAway to manage network traffic.
-- Rooted devices offer the most efficient blocking by modifying the system hosts file, often using Magisk modules for "systemless" implementation.
-- Non-rooted devices typically rely on local VPN-based apps to intercept DNS requests, though Google increasingly restricts these installation methods.
-- DNS-based blocking is not foolproof, as some apps may bypass DNS by using direct IP connections or embedding ads directly within the application code.
+- The program features three tiers—Defense Access, Red Team Access, and Specialized Access—tailored to specific cybersecurity workflows and risk levels.
+- Eligible participants include security teams at businesses, government agencies, and critical infrastructure operators, with verification required for higher-tier access.
+- Anthropic tested Claude Opus 5.5 using CyScenarioBench, finding that Red Team Access allowed the model to complete 34 of 50 multistage cyber operation trials.
+- Project Glasswing partners utilized Claude Mythos models to identify over 129,000 verified software vulnerabilities between April and July 2026.
+- The program is available via the Claude Platform, Google Cloud Vertex AI, and Microsoft Foundry, with Amazon Bedrock access limited to specific enterprise customers.
 
 ### Why it Matters
-System-level ad-blocking provides a comprehensive privacy tool that protects users from trackers and malware across their entire device rather than just within a web browser. While Google continues to tighten Android's security to limit these workarounds, these methods remain essential for users seeking to reclaim control over their mobile experience and data usage.
+This initiative balances the need for powerful AI tools in cybersecurity with strict safety guardrails to prevent the misuse of models for malicious activities. By formalizing access for verified professionals, Anthropic enables more efficient vulnerability detection while maintaining oversight of high-risk operations.
 
 ============================================================
-Author:   Kevin Boone
-Source:   Kevinboone.me
-URL:      https://kevinboone.me/adblock.html
-Category: Phones, Laptops, and Gadgets
+Author:   Anamarija Pogorelec
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/10/07/anthropic-expands-cyber-verification-program/
+Category: Cybersecurity

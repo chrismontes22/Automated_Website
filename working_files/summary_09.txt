@@ -1,20 +1,20 @@
-Android 17 is here for the Moto Razr Ultra 2026: this is what you should know
+Attackers Hide AI Prompt Injections Inside Phishing Emails
 ============================================================
 
-Motorola has begun rolling out the Android 17 update to the Razr Ultra 2026 in the United States, introducing significant interface changes and new AI-powered productivity features.
+Cybersecurity researchers at Barracuda have identified a new phishing tactic that uses hidden prompt injections to manipulate AI email assistants while simultaneously targeting human users with traditional malware.
 
 ### Key Points
-- The Android 17 update, version vA171WLH.38-19-5, is a 4.1GB download currently reaching U.S. users.
-- New features include a customizable AI Key, Notification Summaries, and a Dynamic Island-style Live Updates interface.
-- The update introduces Pause Point to help users manage distractions and new HDR display settings for improved color and brightness.
-- System enhancements include revamped icons, a redesigned Settings page, and improved haptic feedback for notifications.
-- Motorola plans to expand this rollout to additional devices, including the Razr Ultra 2025 and Razr 70 Ultra, throughout the week.
+- Barracuda researchers discovered phishing emails containing hidden instructions designed to deceive AI summarization tools alongside conventional social engineering lures.
+- Attackers use techniques like HTML comments, invisible CSS-styled text, Base64 encoding, and zero-width characters to conceal malicious prompts from human readers.
+- Injected instructions can force AI assistants to prioritize fake invoices, alter vendor payment details, or misrepresent the urgency of malicious emails.
+- The campaign successfully bypassed reputation-based filters by utilizing trusted public-sector domains and matching sender and recipient addresses.
+- Recommended defenses include stripping hidden content before AI processing, implementing output validation, and requiring human approval for sensitive financial transactions.
 
 ### Why it Matters
-This update represents a significant shift in Motorola's software strategy by integrating more aggressive AI tools and UI elements inspired by competitors. These changes aim to improve user productivity and device customization, signaling a broader effort to modernize the foldable experience for current Motorola customers.
+This dual-threat approach exploits the growing reliance on AI assistants to summarize and prioritize daily communications, creating a new vector for credential theft and financial fraud. Organizations must now implement layered security strategies that treat external content as untrusted data to prevent AI systems from being weaponized against their users.
 
 ============================================================
-Author:   nickodiaz@sbcglobal.net (Nickolas Diaz) , Nickolas Diaz
-Source:   Android Central
-URL:      https://www.androidcentral.com/phones/motorola/android-17-is-here-for-the-moto-razr-ultra-2026-this-is-what-you-should-know
-Category: Phones, Laptops, and Gadgets
+Author:   Alessandro  Mascellino
+Source:   Infosecurity Magazine
+URL:      https://www.infosecurity-magazine.com/news/attackers-hide-ai-prompt/
+Category: Cybersecurity
