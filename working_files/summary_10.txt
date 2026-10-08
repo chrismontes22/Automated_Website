@@ -1,20 +1,20 @@
-S&P 500 Hits Record High as Tech Gains Mask Broad Market Weakness
+Eight Malicious npm Packages Downloaded 40,767 Times Deliver Overlord RAT and Stealer
 ============================================================
 
-The S&P 500 reached a record high of 7,819.04 as a narrow rally in megacap technology stocks offset broader market declines and rising Treasury yields.
+Cybersecurity researchers from CloudSEK and Checkmarx have identified a malicious npm supply chain campaign dubbed MALFEX that distributes information stealers and remote access trojans to Windows systems.
 
 ### Key Points
-- The S&P 500 rose 0.6% to a record 7,819.04, while the Nasdaq composite also hit a new high.
-- Market gains were driven by the "Magnificent Seven" tech companies, which reached a combined market capitalization of approximately $25 trillion.
-- Meta Platforms has gained 24% since August 13, and Nvidia shares climbed 4.5% over the past week to reach an all-time high.
-- Fewer than half of the stocks in the S&P 500 are currently trading above their 200-day moving average, signaling narrowing market breadth.
-- The 10-year Treasury yield settled at 5.270% following a period of volatility that saw yields reach multi-decade highs.
+- The MALFEX campaign has utilized 12 npm packages since August 2023, resulting in over 40,000 total downloads.
+- Malicious packages include "function-flag," "function-color," and "cdn-img-fetch," which use postinstall hooks to download and execute hidden payloads.
+- The campaign deploys the Overlord RAT, which uses Solana blockchain transactions to retrieve command-and-control server addresses.
+- Attackers use the "movinlike" Node.js stealer to harvest sensitive data from Discord, web browsers, Telegram, and cryptocurrency wallets.
+- Attribution analysis suggests the threat actor is a Portuguese-speaking individual, likely based in Brazil, operating independently of larger state-sponsored groups.
 
 ### Why it Matters
-The heavy reliance on a small group of technology stocks creates potential instability if AI-driven growth expectations fail to materialize. Investors remain divided on whether this concentration reflects sustainable sector leadership or a risky departure from broader market health.
+This campaign highlights the ongoing vulnerability of open-source software repositories to supply chain attacks that target developers and end-users alike. Organizations must implement stricter dependency auditing to prevent malicious packages from compromising sensitive credentials and system integrity.
 
 ============================================================
-Author:   Chase Codewell
-Source:   Naturalnews.com
-URL:      https://www.naturalnews.com/2026-10-07-sp-500-hits-record-high-despite-weakness.html
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/10/eight-malicious-npm-packages-downloaded.html
+Category: Cybersecurity

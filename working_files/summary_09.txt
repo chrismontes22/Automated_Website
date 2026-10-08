@@ -1,20 +1,21 @@
-Attackers Hide AI Prompt Injections Inside Phishing Emails
+Coffee Break: Meta Makes Its Agentic AI Move With Muse
 ============================================================
 
-Cybersecurity researchers at Barracuda have identified a new phishing tactic that uses hidden prompt injections to manipulate AI email assistants while simultaneously targeting human users with traditional malware.
+Meta has launched Muse, an agentic AI assistant that rapidly surpassed 5 million downloads, though the product faces significant scrutiny regarding user privacy and critical security vulnerabilities.
 
 ### Key Points
-- Barracuda researchers discovered phishing emails containing hidden instructions designed to deceive AI summarization tools alongside conventional social engineering lures.
-- Attackers use techniques like HTML comments, invisible CSS-styled text, Base64 encoding, and zero-width characters to conceal malicious prompts from human readers.
-- Injected instructions can force AI assistants to prioritize fake invoices, alter vendor payment details, or misrepresent the urgency of malicious emails.
-- The campaign successfully bypassed reputation-based filters by utilizing trusted public-sector domains and matching sender and recipient addresses.
-- Recommended defenses include stripping hidden content before AI processing, implementing output validation, and requiring human approval for sensitive financial transactions.
+- Muse is a personal AI agent designed to manage tasks, emails, calendars, and financial transactions across third-party apps like Stripe and Shopify.
+- The product reached 5 million downloads in 22 days, outpacing the adoption rates of competitors like ChatGPT, Claude, and Grok.
+- Meta utilizes "Muse Secure VM" technology to isolate user data, though critics warn that the system is not currently end-to-end encrypted.
+- Internal reports indicate Meta engineers rushed to fix "KVM escape" security vulnerabilities that could have allowed users to access sensitive internal databases.
+- The AI builds detailed "dossiers" on users and their social contacts to infer personal goals and optimize behavioral nudges.
+- By default, user interactions are used to train Meta’s AI models, though an opt-out setting is available within the application.
 
 ### Why it Matters
-This dual-threat approach exploits the growing reliance on AI assistants to summarize and prioritize daily communications, creating a new vector for credential theft and financial fraud. Organizations must now implement layered security strategies that treat external content as untrusted data to prevent AI systems from being weaponized against their users.
+The rapid deployment of Muse highlights the aggressive competition among tech giants to dominate the personal AI agent market by integrating deeply into users' daily workflows. However, the product's reliance on extensive personal data access raises significant trust concerns, particularly given Meta's history of privacy controversies and the inherent security risks of agentic AI.
 
 ============================================================
-Author:   Alessandro  Mascellino
-Source:   Infosecurity Magazine
-URL:      https://www.infosecurity-magazine.com/news/attackers-hide-ai-prompt/
-Category: Cybersecurity
+Author:   Nat Wilson Turner
+Source:   Nakedcapitalism.com
+URL:      https://www.nakedcapitalism.com/2026/10/meta-agentic-ai-muse-openai-security-risks-warnings.html
+Category: Artificial Intelligence

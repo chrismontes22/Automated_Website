@@ -1,19 +1,20 @@
-Dalio Says We're Nearing Point Where AI Bubble May Burst...
+Ubuntu 26.10 drops Btrfs, XFS & ZFS /boot with Secure Boot
 ============================================================
 
-Bridgewater founder Ray Dalio warns that the current artificial intelligence boom is a classic market bubble nearing a collapse due to rising interest rates and debt-fueled infrastructure spending.
+Canonical has restricted supported filesystems for the GRUB bootloader in Ubuntu 26.10 when Secure Boot is enabled to minimize potential security vulnerabilities within the system's boot chain.
 
 ### Key Points
-- Ray Dalio identified the AI sector as a bubble during the Forbes Global CEO Conference in Singapore.
-- High interest rates are increasing the cost of debt used by technology giants to finance massive AI infrastructure projects.
-- Market gains remain concentrated in a small number of stocks despite record highs for the S&P 500 and Nasdaq 100.
-- Potential triggers for a market correction include wealth taxes and the practical difficulty of converting unrealized asset gains into cash.
+- Ubuntu 26.10 limits Secure Boot compatibility to ext4, FAT, ISO9660, and squashfs filesystems.
+- Support for Btrfs, XFS, ZFS, LVM, LUKS, and RAID (excluding RAID1) is removed from the signed GRUB build.
+- Canonical removed HFS+, Apple partition table support, and image loading to reduce the boot process attack surface.
+- Users requiring complex boot configurations can continue using Ubuntu 26.04 LTS, which remains supported for several years.
+- The changes only impact the boot path; these filesystems remain fully functional once the operating system has loaded.
 
 ### Why it Matters
-This warning highlights the growing tension between record-breaking equity valuations and the rising cost of capital in the global economy. If the AI bubble bursts, it could significantly impact the technology sector and broader market stability as companies struggle to service debt-funded investments.
+This update prioritizes system security by reducing the number of parsers active during the early boot phase, which have historically been targets for bypass vulnerabilities. While most standard installations remain unaffected, users with custom partition layouts must verify their configurations to avoid boot failures after upgrading.
 
 ============================================================
-Author:   David Ramli and Rthvika Suvarna
-Source:   Yahoo Entertainment
-URL:      https://finance.yahoo.com/technology/ai/articles/dalio-says-nearing-point-where-040523378.html
-Category: Tech Business & Markets
+Author:   Joey Sneddon
+Source:   Omgubuntu.co.uk
+URL:      https://www.omgubuntu.co.uk/2026/10/ubuntu-2610-secure-boot-grub-change
+Category: Cybersecurity
