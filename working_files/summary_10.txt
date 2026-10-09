@@ -1,20 +1,20 @@
-Eight Malicious npm Packages Downloaded 40,767 Times Deliver Overlord RAT and Stealer
+16 Malicious Firefox Extensions Pose as Rabby and OKX Wallets to Steal Recovery Phrases
 ============================================================
 
-Cybersecurity researchers from CloudSEK and Checkmarx have identified a malicious npm supply chain campaign dubbed MALFEX that distributes information stealers and remote access trojans to Windows systems.
+Cybersecurity researchers identified 16 malicious Mozilla Firefox extensions designed to steal cryptocurrency wallet recovery phrases and private keys by masquerading as legitimate wallet portals and desktop utilities.
 
 ### Key Points
-- The MALFEX campaign has utilized 12 npm packages since August 2023, resulting in over 40,000 total downloads.
-- Malicious packages include "function-flag," "function-color," and "cdn-img-fetch," which use postinstall hooks to download and execute hidden payloads.
-- The campaign deploys the Overlord RAT, which uses Solana blockchain transactions to retrieve command-and-control server addresses.
-- Attackers use the "movinlike" Node.js stealer to harvest sensitive data from Discord, web browsers, Telegram, and cryptocurrency wallets.
-- Attribution analysis suggests the threat actor is a Portuguese-speaking individual, likely based in Brazil, operating independently of larger state-sponsored groups.
+- Researchers discovered 16 malicious Firefox extensions that intercept and exfiltrate sensitive cryptocurrency credentials to attacker-controlled Cloudflare Workers.
+- The extensions impersonate popular services, including clones of Rabby Wallet and OKX Wallet, to deceive users during wallet import processes.
+- All identified malicious add-ons were removed from the Mozilla Firefox ecosystem as of October 5, 2026.
+- Affected users are advised to immediately create new wallets on clean systems and transfer their assets to prevent further unauthorized access.
+- This campaign is part of a broader trend of malicious browser extensions targeting Chrome, Edge, and Firefox to harvest data or redirect traffic.
 
 ### Why it Matters
-This campaign highlights the ongoing vulnerability of open-source software repositories to supply chain attacks that target developers and end-users alike. Organizations must implement stricter dependency auditing to prevent malicious packages from compromising sensitive credentials and system integrity.
+These findings highlight a persistent security risk where threat actors continuously rotate malicious infrastructure to bypass browser protections and compromise digital assets. Users and organizations must regularly audit installed extensions and adopt behavior-based monitoring to mitigate the risk of credential theft and unauthorized data exfiltration.
 
 ============================================================
 Author:   info@thehackernews.com (The Hacker News)
 Source:   Internet
-URL:      https://thehackernews.com/2026/10/eight-malicious-npm-packages-downloaded.html
+URL:      https://thehackernews.com/2026/10/16-malicious-firefox-extensions-pose-as.html
 Category: Cybersecurity

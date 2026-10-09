@@ -1,20 +1,20 @@
-These Founders Are Betting Your Bed Will Diagnose You Before Your Doctor Does
+What is MATCHBOIL? The Russia-aligned malware that installs a spying backdoor
 ============================================================
 
-Eight Sleep, a health-tech company co-founded by Alexandra Zatarain and Matteo Franceschetti, is transforming the mattress industry by utilizing biometric data to optimize sleep and provide medical diagnostics.
+Researchers at ESET have identified MATCHBOIL, a sophisticated downloader used by the Russia-aligned group UAC-0099 to deploy espionage backdoors against critical infrastructure organizations throughout Ukraine.
 
 ### Key Points
-- Eight Sleep reached a $1.5 billion valuation in March 2026 following a $50 million funding round led by Tether Investments.
-- The company has achieved profitability with cumulative Pod sales approaching $1 billion across 37 countries.
-- The newly launched Pod 6 features nine times more sensors than previous models and offers faster temperature regulation.
-- The firm is currently pursuing FDA clearance to use its technology to detect and mitigate sleep apnea.
-- Specialized software modes, including Pregnancy Mode and Hot Flash Mode, are designed to address specific hormonal and physiological sleep disruptions.
+- The UAC-0099 group uses spear-phishing emails to deliver MATCHBOIL, which subsequently installs a C# backdoor known as MATCHWOK for desktop surveillance and command execution.
+- Victims identified by ESET include Ukrainian transportation, manufacturing, and energy companies targeted between July 2025 and June 2026.
+- MATCHBOIL employs advanced evasion techniques, including sandbox detection based on system uptime and OS installation age, alongside commercial code obfuscation via Eziriz .NET Reactor.
+- The malware maintains persistence on Windows systems by creating scheduled tasks or registry keys, often masquerading as legitimate-sounding applications like SMTPClient.
+- UAC-0099 functions as an initial access broker, potentially providing network footholds to other advanced persistent threat actors such as the Russia-aligned group Sandworm.
 
 ### Why it Matters
-By shifting the focus from traditional furniture to "sleep fitness" and medical intervention, Eight Sleep is positioning the bed as a critical diagnostic tool for preventative healthcare. This evolution from a consumer product to a data-driven health device signals a significant shift in how wearable technology and home infrastructure can integrate to monitor long-term wellness.
+The expansion of UAC-0099’s targeting into critical infrastructure sectors suggests a strategic effort to maximize disruption within Ukraine. By acting as an access broker, this group increases the risk to organizations by facilitating follow-on attacks from more sophisticated state-sponsored threat actors.
 
 ============================================================
-Author:   Elisette Carlson
-Source:   Entrepreneur
-URL:      https://www.entrepreneur.com/business-news/these-founders-are-betting-your-bed-will-diagnose-you-before-your-doctor-does
-Category: Tech Business & Markets
+Author:   Mirko Zorz
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/10/08/matchboil-malware-uac-0099/
+Category: Cybersecurity

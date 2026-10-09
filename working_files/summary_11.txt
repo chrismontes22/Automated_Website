@@ -1,20 +1,20 @@
-Ubuntu 26.10 drops Btrfs, XFS & ZFS /boot with Secure Boot
+Michael Hudson: The AI Crash Is Coming, And You Will Pay For It
 ============================================================
 
-Canonical has restricted supported filesystems for the GRUB bootloader in Ubuntu 26.10 when Secure Boot is enabled to minimize potential security vulnerabilities within the system's boot chain.
+Economists Michael Hudson and Radhika Desai analyze the financial risks and geopolitical implications of artificial intelligence, contrasting American proprietary models with China’s more efficient, open-source implementation strategies.
 
 ### Key Points
-- Ubuntu 26.10 limits Secure Boot compatibility to ext4, FAT, ISO9660, and squashfs filesystems.
-- Support for Btrfs, XFS, ZFS, LVM, LUKS, and RAID (excluding RAID1) is removed from the signed GRUB build.
-- Canonical removed HFS+, Apple partition table support, and image loading to reduce the boot process attack surface.
-- Users requiring complex boot configurations can continue using Ubuntu 26.04 LTS, which remains supported for several years.
-- The changes only impact the boot path; these filesystems remain fully functional once the operating system has loaded.
+- The U.S. AI sector faces a potential bubble, with companies borrowing trillions to fund research while struggling to generate sustainable profits.
+- China focuses on "automatic intelligence" to solve finite, practical tasks, whereas U.S. firms prioritize monopoly rent-seeking and speculative "superintelligence" claims.
+- Massive energy and water consumption by AI data centers is driving up utility costs and sparking local opposition in the United States.
+- Experts warn that the inevitable AI market crash may lead to significant taxpayer-funded bailouts, mirroring past financial crises.
+- Legal and ethical concerns persist regarding AI surveillance, data privacy, and the lack of accountability for automated decision-making errors.
 
 ### Why it Matters
-This update prioritizes system security by reducing the number of parsers active during the early boot phase, which have historically been targets for bypass vulnerabilities. While most standard installations remain unaffected, users with custom partition layouts must verify their configurations to avoid boot failures after upgrading.
+The current trajectory of AI development in the West risks creating a fragile, debt-fueled monopoly that prioritizes rent extraction over genuine technological or social utility. If these speculative investments fail, the resulting economic fallout could force governments to prioritize corporate bailouts over essential public infrastructure and environmental stability.
 
 ============================================================
-Author:   Joey Sneddon
-Source:   Omgubuntu.co.uk
-URL:      https://www.omgubuntu.co.uk/2026/10/ubuntu-2610-secure-boot-grub-change
-Category: Cybersecurity
+Author:   Yves Smith
+Source:   Nakedcapitalism.com
+URL:      https://www.nakedcapitalism.com/2026/10/michael-hudson-the-ai-crash-is-coming-and-you-will-pay-for-it.html
+Category: Tech Business & Markets
