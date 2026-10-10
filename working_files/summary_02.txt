@@ -1,20 +1,19 @@
-'Nine out of ten people prefer our version of the internet over Google's' — Proton Founder Andy Yen on age verification, Big Tech, AI, and the future of digital privacy
+This Week in Security: New Spectre Attacks, Crushing Quantity of Linux Vulns, Google Gets Too Much AI, and Hacking Lawnmowers
 ============================================================
 
-Proton CEO Andy Yen is scaling the privacy-focused company into a comprehensive ecosystem of 11 products to challenge Google and Silicon Valley’s model of surveillance-based digital services.
+New research reveals that JIT compilers can be exploited to bypass existing Spectre-v2 mitigations, potentially exposing sensitive data by tricking processors into executing cached, vulnerable instruction sets.
 
 ### Key Points
-- Proton, founded in 2014, now offers a suite of privacy-first tools including encrypted email, VPN, and the Lumo AI chatbot.
-- The company operates under a non-profit-owned structure, which Yen claims aligns financial incentives with user privacy rather than data monetization.
-- To mitigate regulatory risks, Proton has diversified its operations, including basing its Lumo AI development in Germany.
-- Yen argues that age verification mandates threaten digital anonymity and should only be implemented via device-side processing if required by law.
-- The company aims to replace Big Tech dominance by providing an integrated, open-source alternative that avoids the surveillance capitalism business model.
+- Researchers successfully tested the JIT-based Spectre-v2 attack against Firefox’s SpiderMonkey, the Linux kernel’s eBPF, and Python’s GraalVM.
+- The attack uses self-modifying code to force CPUs to execute cached instructions, effectively bypassing kernel-level security patches designed to stop branch prediction manipulation.
+- High-security environments, such as iOS and macOS, already mitigate similar risks by disabling JIT compilation entirely.
+- While the attack is currently a research-level proof of concept, it highlights the evolving nature of speculative execution vulnerabilities in modern computing.
 
 ### Why it Matters
-Proton’s expansion represents a significant test of whether a privacy-first business model can achieve the scale necessary to compete with established tech giants. By building an ecosystem rather than standalone tools, the company is attempting to shift market standards toward user-centric data protection and away from ad-driven surveillance.
+This discovery demonstrates that even well-patched systems remain vulnerable to sophisticated side-channel attacks that target the fundamental way processors handle speculative execution. It underscores the ongoing tension between the performance benefits of JIT compilation and the security risks inherent in complex, high-speed computing architectures.
 
 ============================================================
-Author:   chiara.castro@futurenet.com (Chiara Castro) , Chiara Castro
-Source:   TechRadar
-URL:      https://www.techradar.com/vpn/vpn-privacy-security/nine-out-of-ten-people-prefer-our-version-of-the-internet-over-googles-proton-founder-andy-yen-on-age-verification-big-tech-ai-and-the-future-of-digital-privacy
-Category: Tech Business & Markets
+Author:   Mike Kershaw
+Source:   Hackaday
+URL:      https://hackaday.com/2026/10/09/this-week-in-security-new-spectre-attacks-crushing-quantity-of-linux-vulns-google-gets-too-much-ai-and-hacking-lawnmowers/
+Category: Cybersecurity

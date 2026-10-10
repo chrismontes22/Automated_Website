@@ -1,19 +1,20 @@
-Thin friction and thicker walls
+Credential-Stealing GitHub Actions Workflows Planted in Tens of Thousands of Repositories
 ============================================================
 
-The proliferation of AI agents and automated bots is eroding the social norms and interpersonal friction that have historically supported human connection, cultural exchange, and public discourse.
+The GhostAction supply chain campaign has compromised high-profile GitHub maintainer accounts to inject malicious workflows, resulting in the theft of thousands of sensitive credentials from numerous repositories.
 
 ### Key Points
-- Automated bots and AI agents are increasingly capable of generating high volumes of content without regard for social reputation or community standards.
-- The decline of traditional social friction threatens the open, permeable interactions that have long served as foundations for scientific and cultural progress.
-- Digital environments are shifting toward restricted access models where users must be pre-verified or invited to participate in online spaces.
-- The rise of interchangeable digital identities makes it difficult to distinguish between authentic human communication and synthetic, automated interactions.
+- Attackers compromised accounts belonging to Takashi Kitao and Henry Wu to push malicious "security-audit.yml" workflows into over 340 repositories.
+- The campaign has impacted 817 repositories and 327 GitHub users, leading to the exfiltration of 3,325 secrets including AWS, OpenAI, and npm tokens.
+- Malicious workflows scan entire git histories and working trees for 13 credential patterns, exfiltrating data to a hard-coded IP address via plain HTTP.
+- Security researchers identified over 500 GitHub accounts involved in the campaign, which has been active since September 2025.
+- Developers are urged to rotate all credentials, delete malicious workflow files from all branches, and audit downstream forks for potential exposure.
 
 ### Why it Matters
-The erosion of these social norms suggests a future where digital spaces become increasingly siloed and inaccessible to the general public. This shift could fundamentally limit the collaborative potential of the internet by replacing open discourse with gated, filtered environments.
+This campaign highlights a critical vulnerability in the software supply chain where compromised maintainer credentials can be leveraged to automate large-scale data theft across thousands of projects. Organizations must prioritize rotating secrets and auditing CI/CD workflows to prevent unauthorized access to cloud, AI, and SaaS infrastructure.
 
 ============================================================
-Author:   Seth Godin
-Source:   Seths.blog
-URL:      https://seths.blog/2026/10/thin-friction-and-thicker-walls/
-Category: Artificial Intelligence
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/10/credential-stealing-github-actions.html
+Category: Cybersecurity

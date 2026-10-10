@@ -1,5 +1,140 @@
 [
   {
+    "url": "https://hackaday.com/2026/10/09/this-week-in-security-new-spectre-attacks-crushing-quantity-of-linux-vulns-google-gets-too-much-ai-and-hacking-lawnmowers/",
+    "summary": "New research reveals that JIT compilers can be exploited to bypass existing Spectre-v2 mitigations, potentially exposing sensitive data by tricking processors into executing cached, vulnerable instruction sets.\n\n### Key Points\n- Researchers successfully tested the JIT-based Spectre-v2 attack against Firefox’s SpiderMonkey, the Linux kernel’s eBPF, and Python’s GraalVM.\n- The attack uses self-modifying code to force CPUs to execute cached instructions, effectively bypassing kernel-level security patches designed to stop branch prediction manipulation.\n- High-security environments, such as iOS and macOS, already mitigate similar risks by disabling JIT compilation entirely.\n- While the attack is currently a research-level proof of concept, it highlights the evolving nature of speculative execution vulnerabilities in modern computing.\n\n### Why it Matters\nThis discovery demonstrates that even well-patched systems remain vulnerable to sophisticated side-channel attacks that target the fundamental way processors handle speculative execution. It underscores the ongoing tension between the performance benefits of JIT compilation and the security risks inherent in complex, high-speed computing architectures.",
+    "category": "Cybersecurity",
+    "processed_at": "2026-10-10T22:14:08.561750",
+    "source": "Hackaday",
+    "author": "Mike Kershaw",
+    "title": "This Week in Security: New Spectre Attacks, Crushing Quantity of Linux Vulns, Google Gets Too Much AI, and Hacking Lawnmowers"
+  },
+  {
+    "url": "https://readwrite.com/cftc-staffing-cuts-oversight/",
+    "summary": "The Commodity Futures Trading Commission faces significant oversight challenges as staffing levels drop and enforcement actions decline despite the rapid expansion of cryptocurrency and prediction markets.\n\n### Key Points\n- CFTC staffing levels fell 21% by the end of 2025 compared to the previous decade's average, with a 22% decline occurring between January 2024 and January 2025.\n- Enforcement actions in 2025 dropped nearly 80% below the annual average recorded over the prior decade.\n- The agency has recently rolled back or closed cases against crypto entities including Gemini, Celsius, FTX, and WorldWideMarkets Inc.\n- Chairman Michael Selig is currently the sole member of the five-person commission, complicating the development of new rules for digital assets.\n- The Government Accountability Office plans to launch an investigation into the agency's workforce reductions and enforcement capacity in December 2026.\n- The CFTC aims to hire approximately 100 employees in mission-critical roles by the end of 2026 to address its growing regulatory responsibilities.\n\n### Why it Matters\nReduced regulatory oversight in the rapidly growing crypto and prediction-market sectors creates uncertainty regarding market integrity and consumer protection. The agency's ability to effectively police these high-volume financial environments remains a critical concern for lawmakers and market participants alike.",
+    "category": "Tech Business & Markets",
+    "processed_at": "2026-10-10T22:14:17.629630",
+    "source": "ReadWrite",
+    "author": "ReadWrite",
+    "title": "CFTC staffing cuts test regulator as crypto markets expand"
+  },
+  {
+    "url": "https://finance.yahoo.com/personal-finance/banking/article/cash-app-settlement-payments-of-up-to-2500-are-landing-heres-who-gets-paid-171151977.html",
+    "summary": "Cash App and its parent company, Block Inc., are currently distributing payments to approved claimants following a $15 million class action settlement regarding platform security and data breaches.\n\n### Key Points\n- The $15 million settlement compensates users for out-of-pocket losses and lost time resulting from security breaches occurring between August 2018 and August 2024.\n- Approximately 40,380 claims were approved for payment, with individual payouts averaging roughly $139.\n- A separate $175 million settlement, mandated by the Consumer Financial Protection Bureau in June, addressed allegations of inadequate fraud protection.\n- Payments for the class action lawsuit are being issued throughout October 2025 via check, prepaid card, Venmo, or Zelle.\n- The deadline to file claims for these settlements has passed, and any current offers to file late claims are likely fraudulent.\n\n### Why it Matters\nThese settlements highlight ongoing regulatory and legal scrutiny regarding the security protocols and customer support standards of major peer-to-peer payment platforms. The payouts serve as a reminder for users to remain vigilant against potential scams that often emerge following high-profile legal resolutions.",
+    "category": "Tech Business & Markets",
+    "processed_at": "2026-10-10T22:18:43.356909",
+    "source": "Yahoo Entertainment",
+    "author": "Hal Bundrick, CFP®",
+    "title": "Cash App is paying up to $2,500 in a settlement, but most will get far less"
+  },
+  {
+    "url": "https://www.businessinsider.com/google-employees-test-new-gemini-4-model-argon-barium-carbon-2026-10#article",
+    "summary": "Google is internally testing a new Gemini 4 model codenamed Carbon, aiming to improve its coding capabilities and compete more effectively with rivals like Anthropic and OpenAI.\n\n### Key Points\n- Google employees are testing an internal model called Carbon, which some staff compare to Anthropic’s high-performing Claude Opus 5.5 for coding tasks.\n- Carbon is part of the broader Gemini 4 family, which includes other internal iterations such as Argon and Barium.\n- The upcoming Gemini 4 \"Argon\" model is designed for frontier performance in legal, finance, and defensive cybersecurity sectors.\n- Google plans to release Argon to partners in its Fairwind Program for vulnerability testing before a wider public rollout.\n- The company is accelerating development to maintain its competitive standing in the rapidly evolving market for AI-powered coding agents.\n\n### Why it Matters\nThis development highlights Google's aggressive push to close the performance gap with industry leaders in the specialized field of agentic coding assistants. Success in this area is critical for Google as it seeks to maintain its influence among developers and enterprise users in an increasingly crowded AI market.",
+    "category": "Artificial Intelligence",
+    "processed_at": "2026-10-10T22:18:59.304773",
+    "source": "Business Insider",
+    "author": "Hugh Langley",
+    "title": "Google is about to roll out a new AI model. Employees say they're testing another that's way better."
+  },
+  {
+    "url": "https://codeberg.org/ethical-foss/open-slopware",
+    "summary": "The Open Slopware project maintains a comprehensive, community-driven list of free and open-source software projects that have integrated artificial intelligence or large language models into their development.\n\n### Key Points\n- The repository categorizes software as \"tainted\" if it utilizes AI for code generation, automated reviews, art, or data processing.\n- It provides documentation for the \"last untainted commit\" of various projects, allowing users to fork software before AI integration.\n- Merit badges, such as \"Slop-Free Fork\" and \"Proof of Heart,\" are awarded to alternatives that maintain strict \"No AI\" policies.\n- The project defines \"vibecoding\" as the practice of relying on AI-generated code without thorough human review.\n- Users are encouraged to submit evidence-based pull requests to update the status of projects or suggest AI-free alternatives.\n\n### Why it Matters\nThis resource serves as a critical tool for developers and organizations seeking to maintain software integrity and avoid the potential legal or ethical risks associated with AI-generated code. By providing a clear path to untainted versions and verified alternatives, it empowers users to uphold strict development standards in an increasingly automated landscape.",
+    "category": "Artificial Intelligence",
+    "processed_at": "2026-10-10T22:19:11.412511",
+    "source": "Codeberg.org",
+    "author": "ethical-foss",
+    "title": "open-slopware – Alternatives to FOSS projects choosing to use LLMs/AI"
+  },
+  {
+    "url": "https://thehackernews.com/2026/10/credential-stealing-github-actions.html",
+    "summary": "The GhostAction supply chain campaign has compromised high-profile GitHub maintainer accounts to inject malicious workflows, resulting in the theft of thousands of sensitive credentials from numerous repositories.\n\n### Key Points\n- Attackers compromised accounts belonging to Takashi Kitao and Henry Wu to push malicious \"security-audit.yml\" workflows into over 340 repositories.\n- The campaign has impacted 817 repositories and 327 GitHub users, leading to the exfiltration of 3,325 secrets including AWS, OpenAI, and npm tokens.\n- Malicious workflows scan entire git histories and working trees for 13 credential patterns, exfiltrating data to a hard-coded IP address via plain HTTP.\n- Security researchers identified over 500 GitHub accounts involved in the campaign, which has been active since September 2025.\n- Developers are urged to rotate all credentials, delete malicious workflow files from all branches, and audit downstream forks for potential exposure.\n\n### Why it Matters\nThis campaign highlights a critical vulnerability in the software supply chain where compromised maintainer credentials can be leveraged to automate large-scale data theft across thousands of projects. Organizations must prioritize rotating secrets and auditing CI/CD workflows to prevent unauthorized access to cloud, AI, and SaaS infrastructure.",
+    "category": "Cybersecurity",
+    "processed_at": "2026-10-10T22:19:27.318412",
+    "source": "Internet",
+    "author": "info@thehackernews.com (The Hacker News)",
+    "title": "Credential-Stealing GitHub Actions Workflows Planted in Tens of Thousands of Repositories"
+  },
+  {
+    "url": "https://cointelegraph.com/news/hsbc-ant-digital-test-ai-agent-payments-using-tokenized-deposits",
+    "summary": "HSBC and Ant Digital Technologies have successfully completed a technical trial enabling AI agents to perform real-time micropayments using tokenized bank deposits on a blockchain testnet.\n\n### Key Points\n- The trial integrated HSBC’s Tokenised Deposit Service with Ant Digital’s Anvita Flow network and the Jovay Testnet.\n- AI agents demonstrated the ability to autonomously discover digital services and execute payments typically valued at less than $2.\n- HSBC provided the necessary settlement infrastructure and real-time risk assessment protocols for the automated transactions.\n- The demonstration was limited to technical verification and does not currently represent a live commercial product for bank customers.\n- Other major financial institutions, including Santander, Sygnum, and CaixaBank, are also actively testing AI-agent-initiated payment systems.\n\n### Why it Matters\nThis collaboration highlights a growing industry shift toward integrating programmable financial infrastructure to support autonomous AI-driven commerce. As AI agents increasingly operate 24/7, traditional banking systems may require blockchain-based solutions to facilitate the high-frequency, automated transactions that legacy platforms were not originally designed to handle.",
+    "category": "Artificial Intelligence",
+    "processed_at": "2026-10-10T22:19:43.380224",
+    "source": "Cointelegraph",
+    "author": "Cointelegraph by Nate Kostar",
+    "title": "HSBC, Ant Digital test AI-agent payments using tokenized deposits"
+  },
+  {
+    "url": "https://www.entrepreneur.com/business-news/founders-are-told-to-chase-easy-markets-after-20-years-in-healthcare-i-think-that-advice-is-backwards",
+    "summary": "Founders entering complex industries like healthcare should prioritize deep market understanding over rapid sales cycles to build durable competitive advantages that protect against future market commoditization.\n\n### Key Points\n- Markets with high barriers to entry, such as healthcare and defense, offer long-term protection against competitors once a company successfully navigates procurement and regulatory requirements.\n- HIMSS data indicates that nearly 60% of healthcare technology purchases involve five or more stakeholders, requiring tailored value propositions for clinicians, finance leads, and payers.\n- A 2026 B2B Go-to-Market report found that 24% of commercial spending is not linked to revenue, highlighting a widespread lack of strategic discipline among competitors.\n- Successful market entry requires mapping every stakeholder’s incentives, specifically identifying what actions will lead to their professional promotion or blame within their organization.\n- Companies should treat compliance reviews and committee approvals as formal stages of the sales process rather than afterthoughts to avoid stalled momentum.\n\n### Why it Matters\nPrioritizing speed often leads to rapid commoditization, as easy-to-enter markets allow competitors to replicate features and drive down prices quickly. By mastering the complexities of difficult industries, companies create a defensible \"moat\" that rewards patient, well-informed strategies over short-term revenue gains.",
+    "category": "Tech Business & Markets",
+    "processed_at": "2026-10-10T22:19:51.603294",
+    "source": "Entrepreneur",
+    "author": "Saul Marquez",
+    "title": "Founders Are Told to Chase Easy Markets. After 20 Years in Healthcare, I Think That Advice Is Backwards."
+  },
+  {
+    "url": "https://www.androidcentral.com/streaming-tv/chromecast/next-gen-google-tv-streamer-leaked",
+    "summary": "Google is reportedly developing a next-generation TV Streamer featuring far-field microphones for hands-free Gemini interaction, a faster processor, increased storage, and a redesigned remote with additional shortcut buttons.\n\n### Key Points\n- The upcoming device will feature a narrower, more compact design while retaining the aesthetic of the current Google TV Streamer.\n- Built-in far-field microphones will allow users to trigger voice commands and interact with Gemini without using the remote.\n- New presence-sensing technology will enable the device to automatically wake the TV and display information when it detects someone in the room.\n- Hardware upgrades include a faster processor, expanded storage capacity, and a remote with dedicated buttons for YouTube and Netflix.\n- The redesigned remote will include a dedicated \"Find My Remote\" button to help users locate the device.\n\n### Why it Matters\nThese hardware and software enhancements signal Google's intent to deepen the integration of Gemini AI into the living room experience. By prioritizing hands-free interaction and presence-sensing, the company aims to position its streaming hardware as a central hub for smart home automation and personalized content delivery.",
+    "category": "Phones, Laptops, and Gadgets",
+    "processed_at": "2026-10-10T22:19:59.484700",
+    "source": "Android Central",
+    "author": "sanujb6@gmail.com (Sanuj Bhatia) , Sanuj Bhatia",
+    "title": "Google's next TV Streamer sounds like a massive upgrade — Apple should be worried"
+  },
+  {
+    "url": "https://www.macrumors.com/2026/10/09/apple-cuts-iphone-18-pro-orders-price-demand/",
+    "summary": "Apple has reduced component orders for its iPhone 18 Pro models by at least 15 percent following lower-than-expected consumer demand and rising memory chip costs.\n\n### Key Points\n- Apple cut October component orders for the iPhone 18 Pro series by 15 percent compared to initial projections.\n- The iPhone 18 Pro and Pro Max models launched at $1,199 and $1,299, representing a $100 price increase over previous versions.\n- Rising costs for memory chips, attributed to AI-driven demand, have impacted pricing across Apple’s iPhone, MacBook, and iPad lineups.\n- Apple is shifting to a split launch strategy, with the standard iPhone 18, iPhone 18e, and iPhone Air 2 expected to debut in spring 2027.\n- The iPhone 18 Pro models include 12GB of RAM, despite internal rumors that Apple considered upgrading the lineup to 16GB.\n\n### Why it Matters\nThis production adjustment highlights how rising component costs and aggressive pricing strategies are beginning to dampen consumer demand for Apple's flagship hardware. The shift toward a split launch schedule suggests the company is attempting to manage supply chain pressures while diversifying its release cycle to maintain market relevance.",
+    "category": "Tech Business & Markets",
+    "processed_at": "2026-10-10T22:20:07.405318",
+    "source": "MacRumors",
+    "author": "Tim Hardwick",
+    "title": "Apple Reportedly Cuts iPhone 18 Pro Orders After Price Hike Dampens Demand"
+  },
+  {
+    "url": "https://abcnews.com/Politics/suspect-arrested-fbi-hack-exposed-employee-information/story?id=137134928",
+    "summary": "The FBI has arrested a suspected co-conspirator of the ShinyHunters hacking group following a significant data breach that exposed the personal information of thousands of bureau employees.\n\n### Key Points\n- FBI Director Kash Patel confirmed the arrest of a suspect linked to the ShinyHunters group, which targeted the unclassified FBIJobs.gov platform.\n- The breach, discovered in late September, compromised sensitive data including Social Security numbers, home addresses, and emergency contact information for thousands of employees.\n- FBI Cyber Assistant Director Brett Leatherman stated the incident resulted from a third-party contractor failing to implement a required security patch.\n- The FBI has terminated its contract with the responsible vendor and is providing internal briefings to affected staff members.\n- Although the hackers initially threatened to leak the stolen data, they later recanted the claim.\n\n### Why it Matters\nThis incident highlights the significant security risks posed by third-party vendors managing government infrastructure and sensitive personnel data. The breach underscores the critical importance of rigorous patch management protocols to prevent large-scale exposure of federal employee information.",
+    "category": "Cybersecurity",
+    "processed_at": "2026-10-10T22:20:15.258403",
+    "source": "Abcnews.com",
+    "author": "Luke Barr",
+    "title": "Suspect arrested in FBI hack that exposed employee information"
+  },
+  {
+    "url": "https://www.techradar.com/vpn/vpn-services/nba-legend-shaquille-oneal-teams-up-with-nordvpn-taking-over-nyc-to-raise-awareness-of-digital-threats",
+    "summary": "NordVPN partnered with NBA legend Shaquille O’Neal at a Times Square event to promote digital security awareness and highlight the company's transition into a comprehensive cybersecurity suite.\n\n### Key Points\n- Shaquille O’Neal has served as the official brand ambassador for NordVPN since September to help educate the public on digital threats.\n- The company’s Next Gen Antivirus technology scans 12 million URLs daily and blocks approximately 130,000 malicious pages.\n- NordVPN reported blocking nearly 5 million malware attempts in the United States during the first few months of 2026.\n- Recent research indicates that 74% of Americans cannot identify fake URLs, and 73% have already fallen victim to online scams.\n- Over half of surveyed users continue to reuse passwords across multiple accounts, despite the rising sophistication of phishing and malware attacks.\n\n### Why it Matters\nThis campaign highlights a significant gap between consumer confidence in digital literacy and the actual prevalence of cyber threats. By leveraging high-profile partnerships, NordVPN aims to shift market perception from simple VPN services toward integrated security tools that mitigate risks for vulnerable users.",
+    "category": "Cybersecurity",
+    "processed_at": "2026-10-10T22:20:23.322832",
+    "source": "TechRadar",
+    "author": "Silvia Iacovcich",
+    "title": "NBA legend Shaquille O’Neal teams up with NordVPN, taking over NYC to raise awareness of digital threats"
+  },
+  {
+    "url": "https://www.makeuseof.com/i-cant-stop-writing-in-this-gorgeous-open-source-notes-app/",
+    "summary": "Anytype is a versatile, privacy-focused note-taking application that utilizes an object-based system to help users organize ideas, manage tasks, and collaborate across desktop and mobile platforms.\n\n### Key Points\n- Anytype supports Mac, Windows, Linux, iOS, Android, and includes a Chrome extension.\n- The platform uses an object-oriented architecture where notes, tasks, and files are interconnected rather than stored in rigid folders.\n- All data is encrypted and private by default, utilizing a unique security key system instead of traditional passwords.\n- Users can publish individual objects as standalone web pages, with premium plans offering custom subdomains.\n- The free tier allows for up to ten distinct workspaces, known as Spaces, for personal or collaborative use.\n\n### Why it Matters\nAnytype offers a compelling alternative to mainstream note-taking apps by prioritizing user data sovereignty through local-first encryption. Its flexible, object-based design provides a powerful tool for knowledge management that appeals to users seeking both aesthetic appeal and long-term privacy.",
+    "category": "Phones, Laptops, and Gadgets",
+    "processed_at": "2026-10-10T22:20:31.417518",
+    "source": "MakeUseOf",
+    "author": "Adaeze Uche",
+    "title": "I can’t stop writing in this gorgeous open-source notes app"
+  },
+  {
+    "url": "https://www.cnet.com/uncategorized/the-brand-new-apple-watch-ultra-4-is-already-99-off-a-new-low-for-this-model/",
+    "summary": "The Apple Watch Ultra 4 is currently available for a record-low price of $700, marking a $99 discount on the premium wearable just weeks after its initial market release.\n\n### Key Points\n- The $99 discount applies to the black titanium model featuring a burgundy trail loop.\n- The 49mm device offers an extended battery life exceeding two days on a single charge.\n- New hardware features include upgraded heart rate sensors and integrated Siri AI capabilities.\n- The watch includes built-in cellular connectivity for independent use without an iPhone.\n- The previous-generation Apple Watch Ultra 3 is also discounted to $649 for budget-conscious consumers.\n\n### Why it Matters\nThis significant early price reduction makes Apple’s latest high-end wearable more accessible to consumers seeking advanced health tracking and extended battery performance. The aggressive discounting of both the current and previous models suggests a competitive push to capture market share in the premium smartwatch segment.",
+    "category": "Phones, Laptops, and Gadgets",
+    "processed_at": "2026-10-10T22:20:46.963294",
+    "source": "CNET",
+    "author": "Oliver Haslam",
+    "title": "The Brand-New Apple Watch Ultra 4 Is Already $99 Off, A New Low for This Model"
+  },
+  {
+    "url": "https://www.cbsnews.com/news/fbi-shinyhunters-arrest-jobs-website-hack/",
+    "summary": "The FBI has arrested a Canadian citizen in Pennsylvania suspected of involvement with the ShinyHunters cybercriminal group following a significant data breach of the bureau's jobs website.\n\n### Key Points\n- The suspect is accused of participating in the theft of 2 to 3 terabytes of FBI employee data via an Oracle PeopleSoft vulnerability.\n- FBI officials confirmed the breach occurred because a contractor failed to implement a necessary security patch on the targeted system.\n- The bureau has terminated its relationship with the responsible contractor, identified in reports as an employee of Accenture.\n- This arrest follows the recent detention of suspected ShinyHunters members Saif al-Din Khader in Jordan and Pepijn van der Stap in Amsterdam.\n- The FBI continues to investigate the network, which is responsible for a series of high-profile data breaches targeting government and corporate systems.\n\n### Why it Matters\nThis breach represents one of the most significant compromises of federal personnel data since the 2015 Office of Personnel Management hack. The incident highlights critical vulnerabilities in third-party contractor security protocols and underscores the ongoing challenges federal agencies face in protecting sensitive employee information from sophisticated cybercriminal syndicates.",
+    "category": "Cybersecurity",
+    "processed_at": "2026-10-10T22:20:54.663056",
+    "source": "CBS News",
+    "author": "Sarah N. Lynch, Nicole  Sganga, Pat  Milton",
+    "title": "FBI arrests suspected member of ShinyHunters in connection with jobs site hack"
+  },
+  {
     "url": "https://thenextweb.com/news/zuckerberg-muse-launch-safety-concerns-nyt",
     "processed_at": "2026-10-10T13:18:13.988040",
     "category": "Artificial Intelligence",
