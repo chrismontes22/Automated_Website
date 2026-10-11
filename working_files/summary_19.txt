@@ -1,20 +1,21 @@
-As AI mass-produces historical dramas in China, where are the boundaries?
+Homelabs After VMware: Containers Are Growing, but VMs Are Not Going Away
 ============================================================
 
-China’s AI-generated historical drama market is experiencing rapid growth, reaching 22 billion RMB in early 2026 while raising significant concerns regarding historical accuracy and content verification standards.
+Modern homelab architecture requires a strategic balance between containers and virtual machines, as each technology serves distinct operational needs rather than acting as a universal replacement.
 
 ### Key Points
-- China’s AI drama and animation market reached 22 billion RMB ($3.29 billion) in the first five months of 2026, with projections hitting 40 billion RMB by year-end.
-- Over 221,000 new AI short dramas were released in the first half of 2026, accumulating more than 515 billion total views.
-- The National Radio and Television Administration implemented new administrative measures on September 1, 2026, requiring stricter filing, review, and disclosure labels for AI content.
-- Popular AI-generated series like *Wielding Weapons in the Song Dynasty* and *The Later Journey to the West* have demonstrated the commercial viability of long-form AI storytelling.
-- Generative tools allow smaller production teams to create complex historical scenes, such as ancient architecture and battlefields, at significantly lower costs.
+- Containers like Docker Compose offer efficient, lightweight deployment for single-application services such as media servers or password managers.
+- Virtual machines remain essential for workloads requiring kernel isolation, different operating systems, or testing enterprise-grade platforms like VMware vSphere.
+- Proxmox VE serves as a versatile foundation by managing both Linux containers and virtual machines within a single, unified environment.
+- Lightweight Kubernetes distributions like k3s are ideal for learning platform engineering but may introduce unnecessary complexity for simple, single-node setups.
+- Broadcom continues to offer a free version of ESXi 8.0 for home users, maintaining its relevance for those studying professional virtualization stacks.
+- Effective data protection requires dedicated backup procedures for persistent volumes, as filesystem snapshots do not replace comprehensive disaster recovery strategies.
 
 ### Why it Matters
-The rapid proliferation of AI-generated historical content risks blurring the line between creative artistic interpretation and the distortion of factual history. As production barriers fall, the industry must balance technological efficiency with rigorous fact-checking to ensure that realistic visuals do not mislead audiences or erode historical understanding.
+Choosing the right deployment layer prevents overengineering and ensures that homelab infrastructure aligns with specific learning or service goals. By matching the tool to the objective, users can maintain stable, manageable environments that leverage the unique strengths of both containerization and virtualization.
 
 ============================================================
-Author:   Jessie Wu
-Source:   TechNode
-URL:      https://technode.com/2026/10/10/as-ai-mass-produces-historical-dramas-in-china-where-are-the-boundaries/
-Category: Artificial Intelligence
+Author:   esloof@ntpro.nl (Eric Sloof)
+Source:   Ntpro.nl
+URL:      https://www.ntpro.nl/blog/archives/3894-Homelabs-After-VMware-Containers-Are-Growing,-but-VMs-Are-Not-Going-Away.html
+Category: Phones, Laptops, and Gadgets
