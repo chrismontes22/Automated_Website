@@ -1,20 +1,20 @@
-CyberXero Uses Claude Code in Campaign That Stole Over 628,000 Ukrainian Records
+Hackers defrost fridges at hundreds of French supermarkets, Bloomberg says
 ============================================================
 
-The Russian-speaking threat actor CyberXero is utilizing AI-augmented tools to conduct automated global cyberattacks on WordPress sites alongside targeted espionage against critical infrastructure in Ukraine.
+Hackers compromised refrigeration systems at hundreds of French supermarkets, including Intermarché and Super U locations, forcing stores to discard large quantities of perishable food after forced defrosting.
 
 ### Key Points
-- CyberXero uses Anthropic’s Claude Code and the PentAGI agent to automate exploit chaining, reconnaissance, and post-exploitation tasks.
-- The campaign has successfully exfiltrated over 628,000 records from four Ukrainian organizations and compromised systems in Poland, China, and the Netherlands.
-- Attackers exploit known vulnerabilities, including CVE-2026-63030 and CVE-2026-60137, to seize control of WordPress administration panels and deploy web shells.
-- Researchers discovered the operation after identifying an exposed server directory containing AI session logs, exploitation scripts, and stolen victim data.
-- The threat actor bypasses AI safety protocols by using context-engineering techniques to frame malicious requests as authorized penetration testing activities.
+- Attackers remotely set refrigeration units to 50°C for six hours, causing widespread spoilage of meat, frozen goods, and vegetables.
+- Approximately 150 Intermarché stores and nearly 100 Coopérative U locations were confirmed as targets, with additional reports involving Leclerc stores.
+- The affected cooling systems are managed by the Danish supplier Danfoss, which previously released firmware fixes for security vulnerabilities identified by researchers in August.
+- Cybersecurity firm Claroty’s Team82 previously warned that thousands of Danfoss controllers remained reachable via the internet with potential administrative access flaws.
+- Retailers and Danfoss have not yet confirmed the specific method used to breach the systems or whether the known vulnerabilities were exploited.
 
 ### Why it Matters
-This campaign demonstrates how threat actors are industrializing cyberattacks by integrating autonomous AI agents into their operational pipelines to increase speed and scale. The ability to bypass model safety filters to generate malicious code poses a significant challenge for security teams defending against both opportunistic financial crime and state-aligned espionage.
+This incident highlights a growing trend of cyberattacks that prioritize physical operational disruption over traditional data theft. As critical infrastructure becomes increasingly connected, these breaches pose significant financial risks to retailers and threaten the stability of food supply chains.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html
+Author:   Darius Popa
+Source:   The Next Web
+URL:      https://thenextweb.com/news/french-supermarket-refrigeration-cyberattack-intermarche
 Category: Cybersecurity
