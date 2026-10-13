@@ -1,21 +1,20 @@
-Homelabs After VMware: Containers Are Growing, but VMs Are Not Going Away
+Lenovo's tiny AI PC ditches the box, and it's the smartest form factor I've seen in years
 ============================================================
 
-Modern homelab architecture requires a strategic balance between containers and virtual machines, as each technology serves distinct operational needs rather than acting as a universal replacement.
+The Lenovo Yoga Mini PC features a unique, puck-shaped design and powerful Intel Core Ultra processors, offering a stylish, compact Windows alternative for users prioritizing desk aesthetics and performance.
 
 ### Key Points
-- Containers like Docker Compose offer efficient, lightweight deployment for single-application services such as media servers or password managers.
-- Virtual machines remain essential for workloads requiring kernel isolation, different operating systems, or testing enterprise-grade platforms like VMware vSphere.
-- Proxmox VE serves as a versatile foundation by managing both Linux containers and virtual machines within a single, unified environment.
-- Lightweight Kubernetes distributions like k3s are ideal for learning platform engineering but may introduce unnecessary complexity for simple, single-node setups.
-- Broadcom continues to offer a free version of ESXi 8.0 for home users, maintaining its relevance for those studying professional virtualization stacks.
-- Effective data protection requires dedicated backup procedures for persistent volumes, as filesystem snapshots do not replace comprehensive disaster recovery strategies.
+- Available with Intel Core Ultra 5 325 or Ultra X7 358H processors and up to 32GB of soldered LPDDR5X RAM.
+- Features a distinctive circular chassis measuring 130 x 130 x 48.6 mm with an integrated fingerprint scanner and dual microphones.
+- Includes a robust port selection featuring two Thunderbolt 4 ports, HDMI 2.1, 2.5 GbE Ethernet, and multiple USB-C and USB-A connections.
+- Pricing starts at $700 for the base model, with higher-end configurations reaching $1,712.
+- Offers limited internal upgradeability, requiring a suction cup to access the SSD, while RAM remains non-upgradable.
 
 ### Why it Matters
-Choosing the right deployment layer prevents overengineering and ensures that homelab infrastructure aligns with specific learning or service goals. By matching the tool to the objective, users can maintain stable, manageable environments that leverage the unique strengths of both containerization and virtualization.
+The Lenovo Yoga Mini PC challenges the traditional "box" aesthetic of small-form-factor computers by prioritizing a premium, display-worthy design. While its price point competes with high-end laptops, it provides a unique, space-saving solution for Windows users who value both desk ergonomics and capable processing power.
 
 ============================================================
-Author:   esloof@ntpro.nl (Eric Sloof)
-Source:   Ntpro.nl
-URL:      https://www.ntpro.nl/blog/archives/3894-Homelabs-After-VMware-Containers-Are-Growing,-but-VMs-Are-Not-Going-Away.html
+Author:   Joe Rice-Jones
+Source:   XDA Developers
+URL:      https://www.xda-developers.com/lenovo-yoga-mini-pc-review/
 Category: Phones, Laptops, and Gadgets
