@@ -1,20 +1,20 @@
-Presentation: You Can't Trust Your AI Bill. And Neither Can I
+Attackers Heat French Supermarket Fridges Up to 50°C by Hijacking Danfoss Controllers
 ============================================================
 
-CloudZero founder Erik Peterson warns that uncontrolled AI spending is creating a financial crisis, as businesses struggle to manage rising costs and lack of visibility into token consumption.
+Cyberattackers gained remote control of refrigeration systems across hundreds of French supermarkets on October 11, forcing retailers to discard food after disabling temperature controls on Danfoss units.
 
 ### Key Points
-- Enterprise AI spending has surged by 222% despite a 1,000% decrease in individual token costs, a phenomenon Peterson describes as an inversion of traditional efficiency.
-- CloudZero data shows a 14-fold increase in generative AI spending over a five-month period, with 80% of costs attributed to overhead, R&D, and inefficient system loops.
-- The "cost to build" has eclipsed the "cost to serve," as companies prioritize rapid AI adoption over tracking the business outcomes of their investments.
-- Lack of standardized billing and "invisible" costs make it difficult for organizations to audit AI expenses, leading to potential "Denial-of-Wallet" security risks.
-- Peterson predicts that by 2028, autonomous AI systems will handle the majority of code writing, deployment, and management, necessitating a shift toward unit-economic metrics.
+- Major retailers including Intermarché, Carrefour, Coopérative U, Monoprix, and E.Leclerc reported unauthorized access to their refrigeration management systems.
+- The breach targeted Danfoss AK-SM and AK-SC series controllers, many of which are older models that no longer receive security updates.
+- France’s cybersecurity agency, ANSSI, and the response team CERT-FR issued urgent warnings to disconnect these controllers from the internet or restrict access.
+- The Paris prosecutor’s office has launched a formal cybercrime investigation into the incident, which reportedly caused millions of euros in food waste.
+- While the exact entry method remains under investigation, security experts noted that thousands of these management interfaces were previously found exposed to the public internet.
 
 ### Why it Matters
-The rapid, top-down adoption of AI is forcing a shift in corporate financial responsibility from engineering teams to the CFO’s office. Companies that fail to connect AI spending to measurable business outcomes risk significant financial instability and operational inefficiency as autonomous systems begin to dominate infrastructure.
+This incident highlights the significant security risks associated with connecting legacy industrial control systems to the internet without proper network segmentation or firewall protection. The resulting food spoilage and financial losses demonstrate how vulnerabilities in critical infrastructure can cause immediate, large-scale disruption to essential supply chains.
 
 ============================================================
-Author:   Erik Peterson
-Source:   InfoQ.com
-URL:      https://www.infoq.com/presentations/ai-cloud-cost-economics/
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/10/attackers-heat-french-supermarket.html
+Category: Cybersecurity
