@@ -1,20 +1,20 @@
-Privacy's Defenders Podcast: No Privacy Without Encryption
+Attackers chained three Ivanti zero-days to gain root on fully patched VPN appliances
 ============================================================
 
-The landmark legal case Bernstein v. Department of Justice established that computer code is protected speech, fundamentally shaping modern internet privacy and the widespread use of digital encryption.
+A threat actor identified as UTA0576 is exploiting a chain of three zero-day vulnerabilities in Ivanti Connect Secure VPN appliances to gain root access and compromise internal networks.
 
 ### Key Points
-- The 1995 lawsuit challenged federal regulations that classified encryption software as a restricted war munition.
-- Plaintiff Dan Bernstein, a UC Berkeley graduate student, sued after being barred from publishing his "Snuffle" encryption algorithm.
-- Attorney Cindy Cohn represented Bernstein on behalf of the Electronic Frontier Foundation (EFF) to defend First Amendment rights.
-- The court ruling successfully prevented the government from requiring licenses for the publication of cryptographic code.
-- The case is the subject of the second episode of the "Privacy’s Defenders" podcast, hosted by Cindy Cohn.
+- Researchers at Volexity discovered the exploit chain in early October 2026, affecting fully patched Ivanti Connect Secure version 22.8R2.4.
+- The attack combines an authentication bypass, a file write vulnerability, and a privilege escalation flaw to execute commands with root-level permissions.
+- Compromised appliances allowed attackers to steal credentials, exfiltrate Active Directory metadata, and capture LDAP traffic while modifying logs to hide their activity.
+- Ivanti has released a patch for CVE-2026-104935 and is working on additional fixes, while CISA has ordered federal agencies to perform forensic triage by October 16.
+- The standard Integrity Checker Tool may fail to detect this breach because the exploit operates primarily in memory, necessitating manual forensic investigation.
 
 ### Why it Matters
-This legal precedent ensures that developers can create and share encryption tools without government censorship, which remains the foundation for secure global communication. Without this ruling, the digital privacy standards currently protecting personal data and international commerce would be legally prohibited.
+This incident highlights the significant risk posed by chained vulnerabilities that bypass standard security patches and automated detection tools. Organizations relying on VPN appliances must prioritize forensic monitoring, as these sophisticated attacks can facilitate lateral movement and long-term network compromise.
 
 ============================================================
-Author:   Josh Richman
-Source:   EFF
-URL:      https://www.eff.org/deeplinks/2026/10/privacys-defenders-podcast-no-privacy-without-encryption
+Author:   Zeljka Zorz
+Source:   Help Net Security
+URL:      https://www.helpnetsecurity.com/2026/10/14/ivanti-zero-days-gain-root-patched-vpn-appliances/
 Category: Cybersecurity

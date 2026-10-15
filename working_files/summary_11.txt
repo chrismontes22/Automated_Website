@@ -1,19 +1,20 @@
-KuCoin Nigeria gains conditional approval from Nigeria’s SEC
+Hirudo Android Trojan Uses Patched Banking Apps to Bypass Their Built-In Security Checks
 ============================================================
 
-KuCoin Nigeria Limited has secured conditional Approval-in-Principle from the Securities and Exchange Commission of Nigeria to join the regulator's Accelerated Regulatory Incubation Programme for digital asset exchanges.
+Cybersecurity researchers at ThreatFabric have identified a new Android banking trojan called Hirudo that replaces legitimate banking applications with tampered versions to bypass critical security and integrity checks.
 
 ### Key Points
-- The Approval-in-Principle is a preliminary step and does not grant KuCoin authorization to onboard customers or provide services in Nigeria.
-- KuCoin submitted a comprehensive operational framework covering governance, risk management, and fiat on- and off-ramp procedures for regulatory review.
-- Nigeria currently ranks third globally in cryptocurrency adoption, trailing only Brazil and the United States, according to the 2026 Chainalysis index.
-- The company is pursuing this regulatory path as part of a broader international strategy to align with local compliance standards in various jurisdictions.
+- Hirudo targets banking apps in Indonesia, China, India, Mexico, Morocco, and Thailand by replacing them with malicious, patched copies.
+- The malware is distributed through dropper apps disguised as shopping, entertainment, or adult video platforms, often promoted via social media ads.
+- Once installed, the trojan uses a hooking engine to manipulate app signatures, accessibility services, and Play Integrity verdicts to evade detection.
+- Attackers gain full remote control of infected devices, allowing them to steal credentials, capture screens, and intercept SMS messages.
+- The malware employs a non-functional VPN connection during installation to hinder cloud-based security checks by services like Google Play Protect.
 
 ### Why it Matters
-This development highlights the increasing efforts by global cryptocurrency exchanges to formalize their operations within Nigeria’s rapidly growing digital asset market. Successfully navigating the regulatory incubation process is essential for companies seeking to provide legal, secure, and sustainable financial services to the country's large user base.
+This development represents a significant escalation in mobile fraud by shifting the focus from device-level attacks to compromising the integrity of individual banking applications. Financial institutions must now treat locally produced security signals from their apps as potentially untrustworthy and implement more robust server-side verification to protect users.
 
 ============================================================
-Author:   Ishan Pandey
-Source:   The Next Web
-URL:      https://thenextweb.com/news/kucoin-nigeria-sec-conditional-approval-arip
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/10/hirudo-android-trojan-uses-patched.html
+Category: Cybersecurity

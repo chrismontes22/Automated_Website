@@ -1,20 +1,21 @@
-The new ESP32 put Wi-Fi 6 and gigabit ethernet on a chip that used to blink LEDs
+Microsoft Breaks Patch Tuesday Record Again with 1400+ CVEs
 ============================================================
 
-Espressif Systems has unveiled the ESP32-S31, a powerful new microcontroller featuring dual 320 MHz RISC-V cores, Wi-Fi 6, Bluetooth 5.4, and gigabit Ethernet support for advanced IoT applications.
+Microsoft released a record-breaking 1,411 security patches in October 2026, driven by AI-powered vulnerability scanning, including three critical zero-day flaws requiring immediate attention from system administrators.
 
 ### Key Points
-- The chip utilizes two 320 MHz RISC-V high-performance cores and a dedicated 40 MHz low-power core for background tasks.
-- Wireless capabilities include Wi-Fi 6 (2.4 GHz), Bluetooth 5.4, and 802.15.4 support for Thread, Zigbee, and Matter protocols.
-- Integrated hardware includes a gigabit Ethernet MAC, USB 2.0 High-Speed OTG, and a hardware JPEG codec for imaging and display tasks.
-- The S31 provides 60 programmable GPIOs and supports up to 32 MB of external octal PSRAM for memory-intensive projects.
-- Enhanced security features include secure boot, flash encryption, and hardware accelerators for AES, RSA, and ECC cryptographic operations.
+- Microsoft’s October 2026 Patch Tuesday update addressed 1,411 vulnerabilities, surpassing the total number of patches released throughout the entirety of 2025.
+- The surge in security updates is attributed to the company's use of the multi-model agentic scanning harness (MDASH) technology.
+- CVE-2026-96951, a Windows Shell vulnerability with a CVSS score of 8.8, is currently being actively exploited in the wild.
+- Two additional zero-day vulnerabilities, CVE-2026-108398 and CVE-2026-92707, were publicly disclosed, with the former posing significant risks to system integrity.
+- The update includes 70 critical vulnerabilities, notably a 9.8-rated remote code execution flaw in Outlook that triggers via the Reading Pane without user interaction.
+- Research from Socura indicates that 22% of UK CISOs have taken leave to manage the mounting pressure of these frequent, high-volume security updates.
 
 ### Why it Matters
-The ESP32-S31 significantly expands the capabilities of the popular ESP32 platform, allowing developers to consolidate complex networking, multimedia, and industrial tasks onto a single, cost-effective chip. This shift enables more sophisticated smart-home hubs and edge-AI devices while maintaining the accessibility that made the original series a staple for hobbyists and engineers alike.
+The record volume of patches highlights a shift in cybersecurity where AI-driven detection significantly accelerates the identification of vulnerabilities, placing immense operational strain on IT and security teams. Organizations must now prioritize rapid deployment strategies to mitigate risks from actively exploited zero-day flaws that could lead to widespread system compromise.
 
 ============================================================
-Author:   Yadullah Abidi
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/new-esp32-wi-fi-6-gigabit-ethernet-chip-blink-leds/
-Category: Phones, Laptops, and Gadgets
+Author:   Phil Muncaster
+Source:   Infosecurity Magazine
+URL:      https://www.infosecurity-magazine.com/news/microsoft-patch-tuesday-record-1/
+Category: Cybersecurity
