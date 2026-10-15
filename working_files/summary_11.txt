@@ -1,20 +1,20 @@
-Hirudo Android Trojan Uses Patched Banking Apps to Bypass Their Built-In Security Checks
+This is the one CAPTCHA you should never complete
 ============================================================
 
-Cybersecurity researchers at ThreatFabric have identified a new Android banking trojan called Hirudo that replaces legitimate banking applications with tampered versions to bypass critical security and integrity checks.
+Cybersecurity researchers have identified a sophisticated phishing campaign that uses fake Cloudflare CAPTCHA prompts to trick users into executing malicious commands and installing malware on their personal computers.
 
 ### Key Points
-- Hirudo targets banking apps in Indonesia, China, India, Mexico, Morocco, and Thailand by replacing them with malicious, patched copies.
-- The malware is distributed through dropper apps disguised as shopping, entertainment, or adult video platforms, often promoted via social media ads.
-- Once installed, the trojan uses a hooking engine to manipulate app signatures, accessibility services, and Play Integrity verdicts to evade detection.
-- Attackers gain full remote control of infected devices, allowing them to steal credentials, capture screens, and intercept SMS messages.
-- The malware employs a non-functional VPN connection during installation to hinder cloud-based security checks by services like Google Play Protect.
+- Attackers send deceptive emails claiming a news article about the recipient exists to lure victims to a compromised website.
+- The malicious site displays a fake Cloudflare CAPTCHA that instructs users to copy and paste a command into their system's Command Prompt.
+- Executing the copied command downloads malware designed to steal browser passwords, cryptocurrency, and other sensitive user data.
+- The attack leverages obfuscated code to hide the malicious payload within the clipboard data, making the command appear harmless to unsuspecting users.
+- Security experts advise never running unknown commands from websites, as legitimate verification processes never require manual input into a computer's terminal.
 
 ### Why it Matters
-This development represents a significant escalation in mobile fraud by shifting the focus from device-level attacks to compromising the integrity of individual banking applications. Financial institutions must now treat locally produced security signals from their apps as potentially untrustworthy and implement more robust server-side verification to protect users.
+This attack highlights a dangerous evolution in phishing tactics that bypass traditional security software by manipulating users into manually executing malicious code. By exploiting the familiarity of CAPTCHA prompts, cybercriminals can compromise systems and steal sensitive financial and personal information from unsuspecting individuals.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/10/hirudo-android-trojan-uses-patched.html
+Author:   Ben Stegner
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/the-one-captcha-you-should-never-complete/
 Category: Cybersecurity

@@ -1,20 +1,20 @@
-Attackers chained three Ivanti zero-days to gain root on fully patched VPN appliances
+Cisco Warns of Active Attacks Exploiting New Critical Secure Email Gateway Vulnerability
 ============================================================
 
-A threat actor identified as UTA0576 is exploiting a chain of three zero-day vulnerabilities in Ivanti Connect Secure VPN appliances to gain root access and compromise internal networks.
+Cisco has issued an advisory regarding a critical vulnerability in its Secure Email Gateway that allows unauthenticated attackers to execute commands as root via malicious email attachments.
 
 ### Key Points
-- Researchers at Volexity discovered the exploit chain in early October 2026, affecting fully patched Ivanti Connect Secure version 22.8R2.4.
-- The attack combines an authentication bypass, a file write vulnerability, and a privilege escalation flaw to execute commands with root-level permissions.
-- Compromised appliances allowed attackers to steal credentials, exfiltrate Active Directory metadata, and capture LDAP traffic while modifying logs to hide their activity.
-- Ivanti has released a patch for CVE-2026-104935 and is working on additional fixes, while CISA has ordered federal agencies to perform forensic triage by October 16.
-- The standard Integrity Checker Tool may fail to detect this breach because the exploit operates primarily in memory, necessitating manual forensic investigation.
+- The vulnerability, tracked as CVE-2026-76519, carries a critical CVSS score of 9.8.
+- Affected appliances must have the File Reputation service enabled and Content Scanner Tools version older than 25.3.0.5525.
+- Administrators can remediate the flaw by updating to Content Scanner Tools version 25.3.0.5525 or installing AsyncOS releases 15.5.5-014 or 16.5.0-780.
+- Cisco has confirmed active exploitation of the flaw and is currently assisting compromised customers with remediation and recovery efforts.
+- Users can check for potential compromise by running the "grep 'System Security' system_logs" command via the appliance's command-line interface.
 
 ### Why it Matters
-This incident highlights the significant risk posed by chained vulnerabilities that bypass standard security patches and automated detection tools. Organizations relying on VPN appliances must prioritize forensic monitoring, as these sophisticated attacks can facilitate lateral movement and long-term network compromise.
+This flaw represents the third root-level vulnerability in Cisco Secure Email Gateways to be exploited in the wild since December, highlighting a persistent security risk for enterprise email infrastructure. Because successful exploitation grants attackers full control over the appliance, organizations must prioritize immediate patching to prevent unauthorized access and potential data breaches.
 
 ============================================================
-Author:   Zeljka Zorz
-Source:   Help Net Security
-URL:      https://www.helpnetsecurity.com/2026/10/14/ivanti-zero-days-gain-root-patched-vpn-appliances/
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html
 Category: Cybersecurity
