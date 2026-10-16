@@ -1,20 +1,20 @@
-More Nothing smart glasses rumors suggest we might see two variations
+AhsayCBS Flaws Exploited to Deploy Web Shells Get New Fixes After Incomplete Patches
 ============================================================
 
-Nothing is reportedly developing two variations of AI-powered smart glasses, including one model featuring a camera and another focused on audio, with a potential market release in 2027.
+Ahsay Backup has released critical security hotfixes for its AhsayCBS software to address two vulnerabilities actively exploited by threat actors to deploy web shells and cryptocurrency miners.
 
 ### Key Points
-- Tipster Roland Quandt reports that Nothing is developing two smart glasses models, one featuring a camera and one focused on audio capabilities.
-- The audio-only version is expected to include auto-tinting photochromic lenses, call functionality, and deep integration with smartphone AI assistants.
-- The camera-equipped model may offer advanced features such as real-time translation and integration with ChatGPT.
-- Development efforts are reportedly led by CEO Carl Pei, with previous reports suggesting the hardware will rely on smartphones for cloud-based AI processing.
-- The company is targeting a potential product launch in 2027, marking a significant expansion beyond its current portfolio of Android phones and audio accessories.
+- The vulnerabilities, tracked as CVE-2026-105133 and CVE-2026-105134, allow unauthenticated remote code execution when chained together.
+- Threat actors have used these flaws to install XMRig cryptocurrency miners and malicious web shells on exposed systems.
+- Ahsay released updated hotfixes for versions 10.3.4.45 and 9.15.2.70 after initial patches failed to fully remediate the security risks.
+- The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added these flaws to its Known Exploited Vulnerabilities catalog.
+- Federal agencies are mandated to apply the necessary patches by the October 17, 2026, deadline.
 
 ### Why it Matters
-Expanding into smart eyewear allows Nothing to compete in the emerging wearable AI market by leveraging its distinct design language and software ecosystem. However, the inclusion of a camera model may present significant privacy challenges and regulatory hurdles similar to those faced by other tech companies in the smart glasses space.
+These vulnerabilities pose a significant risk to data integrity and system security for organizations relying on AhsayCBS for backup management. Promptly applying these hotfixes is essential to prevent unauthorized access and the potential deployment of malicious software within corporate networks.
 
 ============================================================
-Author:   nickodiaz@sbcglobal.net (Nickolas Diaz) , Nickolas Diaz
-Source:   Android Central
-URL:      https://www.androidcentral.com/gaming/virtual-reality/more-nothing-smart-glasses-rumors-suggest-we-might-see-two-variations
-Category: Phones, Laptops, and Gadgets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/10/ahsaycbs-flaws-exploited-to-deploy-web.html
+Category: Cybersecurity
