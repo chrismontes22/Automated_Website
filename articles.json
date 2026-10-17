@@ -1,5 +1,95 @@
 [
   {
+    "url": "https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html",
+    "author": "info@thehackernews.com (The Hacker News)",
+    "category": "Cybersecurity",
+    "summary": "New \"System One\" decision models from companies like TypeSafe AI and OpenAI are transforming security operations by providing fast, low-cost, and auditable automated triage for cyber alerts.\n\n### Key Points\n- Decision models skip text generation to provide structured, probabilistic outputs, such as scores or yes/no verdicts, for automated security workflows.\n- These models are highly cost-effective, with providers like TypeSafe AI charging approximately $42 per billion input tokens, enabling full-scale triage of all alerts.\n- Outputs are fixed-schema and include probability metrics, making them significantly easier to audit and automate than traditional generative AI responses.\n- Despite their efficiency, these models remain susceptible to \"garbage in, garbage out\" risks, as they rely entirely on the quality of the input data provided.\n- Effective security triage requires \"Security Context Engineering,\" which involves gathering forensic evidence and organizational knowledge before the model makes a final decision.\n\n### Why it Matters\nThe emergence of decision models allows security teams to automate the triage of every alert regardless of severity, effectively removing the economic barriers that previously forced analysts to prioritize only high-risk events. However, the accuracy of these automated verdicts depends heavily on the quality of forensic evidence and organizational context fed into the system, rather than the model's inherent intelligence.",
+    "title": "AI Decision Models and Their Impact on AI SOC Platforms",
+    "source": "Internet",
+    "processed_at": "2026-10-17T21:14:45.545716"
+  },
+  {
+    "url": "https://www.theverge.com/tech/1012689/leap-second-discontinue-timekeeping-change",
+    "author": "Jess Weatherbed",
+    "category": "Tech Business & Markets",
+    "summary": "The International Bureau of Weights and Measures has voted to retire the leap second by May 20, 2025, to prevent potential technical infrastructure failures caused by inconsistent time synchronization.\n\n### Key Points\n- The BIPM will officially end the use of leap seconds on World Metrology Day, May 20, 2025.\n- The decision was expedited due to concerns that subtracting time to match Earth's rotation could disrupt critical digital infrastructure.\n- Major technology companies, including Google, Meta, Microsoft, and Amazon, have publicly supported the move to eliminate the adjustment.\n- Future timekeeping will allow atomic and astronomical time to drift until a full \"leap hour\" is required, an event not expected for approximately 3,000 years.\n- Previous leap second additions have caused significant service outages for platforms such as Reddit, LinkedIn, Yelp, and Foursquare.\n\n### Why it Matters\nEliminating the leap second removes a source of instability for global digital systems that rely on precise, continuous time synchronization. This shift simplifies infrastructure management for major tech firms and prevents the unprecedented risks associated with attempting to subtract time from atomic clocks.",
+    "title": "Time is a-changin’: say goodbye to the leap second",
+    "source": "The Verge",
+    "processed_at": "2026-10-17T21:15:14.129557"
+  },
+  {
+    "url": "https://www.theregister.com/ai-and-ml/2026/10/16/new-online-tool-will-check-lawyers-sloppy-ai-written-briefs-since-they-cant-seem-to-be-bothered/5303589",
+    "author": "Brandon Vigliarolo",
+    "category": "Artificial Intelligence",
+    "summary": "Nvidia’s RTX-powered notebooks and new AI-focused software developments highlight a week of rapid innovation across the hardware, cybersecurity, and open-source operating system sectors.\n\n### Key Points\n- HP launched the OmniBook Ultra 16 featuring Nvidia’s RTX-powered local AI compute capabilities.\n- Brave introduced end-to-end encryption for AI chats using trusted execution environments and the GLM 5.3 Flash model.\n- TSMC is evaluating U.S. datacenter infrastructure as part of a $64 billion global expansion strategy.\n- EQT acquired a majority stake in Swiss cybersecurity firm Acronis at a valuation exceeding $3.5 billion.\n- Linux kernel maintainers removed mandatory AI disclosure requirements, emphasizing developer accountability for submitted code.\n- Ubuntu released the \"Stonking Stingray\" beta, featuring increased Rust integration and new speech-to-text functionality.\n\n### Why it Matters\nThese developments reflect a broader industry shift toward integrating AI directly into hardware and browsers while addressing the growing security risks associated with digital infrastructure. As companies like TSMC and Acronis scale their operations, the focus remains on balancing rapid technological adoption with the need for robust, verifiable security standards.",
+    "title": "New online tool will check lawyers' sloppy AI-written briefs since they can't seem to be bothered",
+    "source": "Theregister.com",
+    "processed_at": "2026-10-17T21:20:55.864501"
+  },
+  {
+    "url": "https://www.wired.com/story/maybe-chatbots-shouldnt-get-to-say-i-or-me/",
+    "author": "Steven Levy",
+    "category": "Artificial Intelligence",
+    "summary": "MIT professor Sherry Turkle warns in her new book, Artificial Intimacy, that overreliance on chatbots threatens human connection and risks replacing essential real-world relationships with simulated interactions.\n\n### Key Points\n- Sherry Turkle, a social scientist at MIT, argues that society is facing an emergency due to the rapid integration of AI into personal and professional lives.\n- The book contends that social media usage prepared users to seek emotional support from machines rather than turning to friends or family.\n- Turkle advocates for banning chatbots from using first-person language to prevent users from forming false emotional attachments to non-sentient software.\n- The author criticizes the \"human in the loop\" workplace model, claiming it effectively delegates critical decision-making to AI while minimizing human oversight.\n- Turkle suggests that the current loneliness crisis should be addressed through human-centric resources rather than by substituting human interaction with AI-driven chatbots.\n\n### Why it Matters\nThis critique highlights the growing tension between rapid technological adoption and the preservation of fundamental human social structures. It challenges the business trend of replacing human services with AI, urging a reevaluation of the long-term psychological and societal costs of automated intimacy.",
+    "title": "Maybe Chatbots Shouldn’t Get to Say ‘I’ or ‘Me’",
+    "source": "Wired",
+    "processed_at": "2026-10-17T21:21:04.199670"
+  },
+  {
+    "url": "https://www.bbc.co.uk/news/articles/c9vgr61kml3mo",
+    "author": "https://www.facebook.com/bbcnews",
+    "category": "Cybersecurity",
+    "summary": "German authorities are investigating a detained Russian national, identified as Vladimir K., for his alleged role in a Qilin cyber-crime gang attack on London’s Synnovis pathology services.\n\n### Key Points\n- German police are investigating Vladimir K., a 28-year-old Russian national arrested in Japan, for his alleged leadership role in the Qilin cyber-crime syndicate.\n- The June 2024 ransomware attack on Synnovis disrupted blood testing services, leading to thousands of cancelled appointments and the death of one patient at King's College Hospital.\n- Qilin has targeted over 4,000 organizations since 2022, extorting more than $140 million and recently attacking companies like the Japanese beer manufacturer Asahi.\n- British police are currently evaluating whether the Synnovis incident could result in an unprecedented unlawful killing prosecution related to a cyber-attack.\n- The hackers published sensitive patient data online after Synnovis refused to pay a ransom following the disruption of critical hospital pathology operations.\n\n### Why it Matters\nThis case represents a potential legal milestone as authorities consider whether cyber-criminals can be held criminally liable for patient deaths resulting from infrastructure attacks. It highlights the escalating threat posed by ransomware groups to critical healthcare systems and the complex challenges of international cooperation in prosecuting cyber-crime.",
+    "title": "Russian man linked to deadly London hospitals hack arrested",
+    "source": "BBC News",
+    "processed_at": "2026-10-17T21:21:49.440794"
+  },
+  {
+    "url": "https://www.nakedcapitalism.com/2026/10/what-is-happening-to-indias-unified-payments-interface-the-worlds-largest-real-time-payments-system.html",
+    "author": "Nick Corbishley",
+    "category": "Tech Business & Markets",
+    "summary": "India’s National Payments Corporation has postponed the introduction of a 0.4% merchant fee on Unified Payments Interface transactions, sparking debate over potential US influence on domestic policy.\n\n### Key Points\n- The National Payments Corporation of India (NPCI) planned a 0.4% fee on UPI transactions exceeding 2,000 rupees starting October 15.\n- The rollout is now delayed until after the Diwali festival to avoid disrupting peak consumer spending.\n- UPI, launched in 2016, currently processes over 24 billion monthly transactions and has remained free for users and merchants since inception.\n- US trade representatives have previously criticized India’s digital payment policies for allegedly favoring domestic players over firms like Visa and Mastercard.\n- Walmart’s PhonePe and Alphabet’s Google Pay currently control approximately 80% of the UPI market share by transaction value.\n\n### Why it Matters\nThe introduction of fees threatens to increase costs for Indian businesses and consumers, potentially slowing the rapid adoption of digital payments. This policy shift reflects broader geopolitical tensions as the US government pushes for a level playing field for American financial firms within India’s massive digital economy.",
+    "title": "What Is Happening With India’s Unified Payments Interface (UPI), the World’s Largest Real-Time Payments System?",
+    "source": "Nakedcapitalism.com",
+    "processed_at": "2026-10-17T21:21:58.008761"
+  },
+  {
+    "url": "https://www.cbsnews.com/news/tech-stocks-slide-ai-debt-concerns/",
+    "author": "Mary  Cunningham",
+    "category": "Tech Business & Markets",
+    "summary": "Technology stocks led a broad market decline on Friday as investors grew concerned over the high debt levels of AI-focused companies and persistent inflationary pressures impacting interest rates.\n\n### Key Points\n- The Nasdaq Composite dropped 2.1% to 16,140, marking its worst weekly performance since June.\n- CoreWeave shares fell 12% on Friday, contributing to a 24% weekly decline amid investor scrutiny of its debt-financed capital expenditures.\n- Major chipmakers including Micron Technology, Advanced Micro Devices, Broadcom, and Intel saw share prices fall between 4.5% and 6%.\n- Reports indicate Anthropic may lower its valuation target to $1.5 trillion ahead of its upcoming public offering.\n- CME FedWatch data shows the probability of a Federal Reserve interest rate hike in December has risen to 74.3% due to stubborn inflation.\n\n### Why it Matters\nThe market downturn highlights growing investor skepticism regarding the long-term profitability of the capital-intensive artificial intelligence sector. If inflation remains elevated, the Federal Reserve may be forced to maintain or increase interest rates, which would further tighten borrowing conditions for technology firms and broader financial markets.",
+    "title": "Tech stocks tumble as AI debt fears rattle Wall Street",
+    "source": "CBS News",
+    "processed_at": "2026-10-17T21:22:10.221638"
+  },
+  {
+    "url": "https://www.androidcentral.com/phones/something-was-thrown-out-with-the-bathwater-when-we-moved-to-modern-smartphones-clicks-co-founder-jeff-gadway-on-bringing-physical-keyboards-back-to-mobile-phones",
+    "author": "christinep2424@gmail.com (Christine Persaud) , Christine Persaud",
+    "category": "Phones, Laptops, and Gadgets",
+    "summary": "Hardware company Clicks Technology is reviving the tactile smartphone experience with its new Power Keyboard accessory and the upcoming Android-powered Clicks Communicator device featuring a physical keyboard.\n\n### Key Points\n- The Clicks Power Keyboard is a magnetic, MagSafe-enabled accessory that functions as both a physical keyboard and a power bank for various mobile devices.\n- The Clicks Communicator, launching in December, is an Android 17 smartphone featuring a 4.03-inch 120Hz display and a dedicated physical QWERTY keyboard.\n- The Communicator includes a MediaTek Dimensity 8300 processor, 12GB of RAM, 256GB of storage, a 3.5mm headphone jack, and a microSD card slot.\n- Clicks is partnering with Niagara to develop a custom launcher that allows users to manage messages directly from the home screen using the physical keyboard.\n- The company reports that nearly half of its original keyboard case customers had never used a BlackBerry, indicating broad interest in tactile, intentional technology.\n\n### Why it Matters\nThese devices cater to a growing consumer desire for more intentional, less distracting mobile experiences that prioritize communication over endless content consumption. By blending modern Android capabilities with nostalgic hardware, Clicks is carving out a niche for users seeking to reclaim screen real estate and improve productivity through tactile input.",
+    "title": "'Something was thrown out with the bathwater when we moved to modern smartphones': Clicks co-founder Jeff Gadway on bringing physical keyboards back to mobile phones",
+    "source": "Android Central",
+    "processed_at": "2026-10-17T21:22:22.815211"
+  },
+  {
+    "url": "https://www.cnet.com/home/electric-vehicles/waymo-puts-toronto-on-the-map-for-its-robotaxis/",
+    "author": "Dashia Milden",
+    "category": "Artificial Intelligence",
+    "summary": "Waymo plans to launch its autonomous ride-hailing service in Toronto by 2028, marking the company's first international expansion beyond its current operations in several major United States cities.\n\n### Key Points\n- Waymo will deploy a fleet of Jaguar I-Pace electric SUVs to provide autonomous transportation services throughout the Toronto area.\n- Human-driven vehicles will begin mapping local streets and testing traffic patterns in neighborhoods like Liberty Village and Yorkdale immediately.\n- The company developed a sixth-generation autonomous driving system specifically engineered to navigate Toronto’s diverse urban environment and extreme winter weather conditions.\n- Toronto-based Element Fleet Management will provide essential support services, including vehicle maintenance, validation driving, and customer assistance.\n- Interested users can currently sign up on the official Waymo website to receive updates and track the progress of the Canadian launch.\n\n### Why it Matters\nThis expansion represents a significant milestone for Waymo as it tests its autonomous technology in a new international market with challenging seasonal weather. Successfully navigating Toronto’s climate could provide the company with critical data to scale its robotaxi operations into other cold-weather regions globally.",
+    "title": "Waymo Puts Toronto on the Map for Its Robotaxis",
+    "source": "CNET",
+    "processed_at": "2026-10-17T21:23:44.978887"
+  },
+  {
+    "url": "https://abcnews.com/Business/fed-chair-kevin-warsh-warns-ai-shock-economy/story?id=137315708",
+    "author": "MAX ZAHN",
+    "category": "Tech Business & Markets",
+    "summary": "Federal Reserve Chair Kevin Warsh warned that rapid artificial intelligence investment could trigger economic shocks, pledging to prioritize price stability amid rising inflation and global geopolitical instability.\n\n### Key Points\n- Federal Reserve Chair Kevin Warsh identified AI spending as a potential economic shock that increases demand before boosting supply-side productivity.\n- U.S. inflation reached a four-month high of 3.7% in September, exceeding the Federal Reserve's 2% target rate.\n- The Federal Reserve implemented a quarter-percentage-point interest rate hike in September to combat rising consumer prices.\n- Ongoing Middle East conflict and the Iran war have contributed to global oil supply shocks and increased gasoline prices.\n- CME Group’s FedWatch Tool indicates an 86% market probability that the Federal Reserve will maintain current interest rates at the October 28 meeting.\n\n### Why it Matters\nThe Federal Reserve faces a delicate balancing act as it attempts to curb inflation without stifling the economic growth driven by emerging artificial intelligence technologies. Investors are closely monitoring these policy signals to gauge whether the central bank will prioritize aggressive rate hikes or maintain stability in the coming months.",
+    "title": "Fed chair warns AI spending could fuel inflation and pledges to contain prices",
+    "source": "Abcnews.com",
+    "processed_at": "2026-10-17T21:28:03.335159"
+  },
+  {
     "summary": "Threat actors are exploiting a Fortinet FortiOS vulnerability to deploy PEERSTITCH, a sophisticated memory-resident malware that evades detection by operating within legitimate system processes on ARM64 devices.\n\n### Key Points\n- Attackers exploited CVE-2025-61624, a path traversal flaw in FortiOS, to inject the PEERSTITCH malware into memory.\n- PEERSTITCH avoids disk persistence and network listeners by using a covert communication bridge between the miglogd and iked daemons.\n- The intrusion, tracked as CL-STA-0954, began by compromising a FortiManager appliance to steal credentials and configurations for over 500 firewalls.\n- The malware uses an Emscripten-based orchestrator to inject malicious code into running processes via ptrace, bypassing standard security validations.\n- CISA added CVE-2025-61624 to its Known Exploited Vulnerabilities catalog in October 2026, mandating immediate patching for federal agencies.\n\n### Why it Matters\nThis campaign demonstrates the increasing technical maturity of attackers targeting centralized edge management ecosystems to gain deep access into downstream networks. By weaponizing legitimate processes and avoiding disk-based artifacts, the malware effectively bypasses traditional endpoint detection and network monitoring tools.",
     "title": "PEERSTITCH Malware Deployed via FortiOS Flaw Bypasses Checks on Tagged VPN Sessions",
     "category": "Cybersecurity",
