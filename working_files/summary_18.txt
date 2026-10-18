@@ -1,20 +1,20 @@
-Waymo Puts Toronto on the Map for Its Robotaxis
+Israeli Ad Firm Doubled as Candiru’s Zero-Click Spyware Delivery Channel
 ============================================================
 
-Waymo plans to launch its autonomous ride-hailing service in Toronto by 2028, marking the company's first international expansion beyond its current operations in several major United States cities.
+Citizen Lab reports that the Israeli firm Discover-Tech used malicious advertisements to deploy Candiru spyware against Al Jazeera staff, infecting at least 45 devices via zero-click attacks.
 
 ### Key Points
-- Waymo will deploy a fleet of Jaguar I-Pace electric SUVs to provide autonomous transportation services throughout the Toronto area.
-- Human-driven vehicles will begin mapping local streets and testing traffic patterns in neighborhoods like Liberty Village and Yorkdale immediately.
-- The company developed a sixth-generation autonomous driving system specifically engineered to navigate Toronto’s diverse urban environment and extreme winter weather conditions.
-- Toronto-based Element Fleet Management will provide essential support services, including vehicle maintenance, validation driving, and customer assistance.
-- Interested users can currently sign up on the official Waymo website to receive updates and track the progress of the Canadian launch.
+- Citizen Lab identified the "AdFection" campaign, which utilized Discover-Tech’s Controlium platform to de-anonymize and infect users through real-time bidding ad auctions.
+- Between 2024 and 2025, at least 45 devices belonging to Al Jazeera employees were compromised by Candiru spyware.
+- Discover-Tech’s infrastructure exposed four billion ad bid records, showing its ads appeared on nearly 200,000 websites and mobile applications.
+- Google, IAB Europe, Beeswax, and Eskimi removed Discover-Tech from their ad vendor registries in October following the discovery of these surveillance activities.
+- Researchers also linked Discover-Tech to "Dark Cartographer," a group mass-de-anonymizing users by connecting mobile advertising identifiers to private phone numbers.
 
 ### Why it Matters
-This expansion represents a significant milestone for Waymo as it tests its autonomous technology in a new international market with challenging seasonal weather. Successfully navigating Toronto’s climate could provide the company with critical data to scale its robotaxi operations into other cold-weather regions globally.
+This operation highlights a critical security vulnerability within the global real-time bidding advertising ecosystem, where legitimate ad exchanges can be weaponized to deliver sophisticated spyware. The incident demonstrates how mercenary vendors can bypass traditional defenses to target specific individuals, prompting experts to recommend blocking targeted ads at the network gateway to ensure user safety.
 
 ============================================================
-Author:   Dashia Milden
-Source:   CNET
-URL:      https://www.cnet.com/home/electric-vehicles/waymo-puts-toronto-on-the-map-for-its-robotaxis/
-Category: Artificial Intelligence
+Author:   Ionut Arghire
+Source:   Securityweek.com
+URL:      https://www.securityweek.com/israeli-ad-firm-doubled-as-candirus-zero-click-spyware-delivery-channel/
+Category: Cybersecurity

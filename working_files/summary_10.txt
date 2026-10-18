@@ -1,20 +1,19 @@
-How many jobs is your state losing to AI? This dashboard tracks the cuts – and the cost
+AI Can Write the Code. Who Verifies It?
 ============================================================
 
-The Center for AI Safety’s new Wage Loss Dashboard estimates that AI-driven layoffs have caused $8.5 billion in annual wage losses across the United States throughout 2026.
+Rising AI adoption in software development has increased engineering throughput but also led to higher bug rates and production incidents, necessitating robust automated verification and agentic review workflows.
 
 ### Key Points
-- The dashboard tracks over 117,000 job cuts explicitly attributed to AI by companies since January 2026.
-- California faces the highest economic impact, with an estimated $56 in annual wage loss per person due to a high concentration of tech-sector layoffs.
-- Data is compiled using reports from Challenger, Gray, and Christmas, Bureau of Labor Statistics wage data, and US Census Bureau population estimates.
-- The Remote Labor Index shows AI agents can now complete 15.8% of professional freelance tasks, a figure that is doubling every 3.7 months.
-- The tracker excludes potential economic benefits like job creation or productivity gains, focusing solely on the monetary impact of workforce displacement.
+- A 2026 Faros study of 22,000 developers found that high AI adoption correlates with 54% more bugs and a fivefold increase in median pull request review times.
+- Frameworks like Superpowers and RoboRev, alongside tools from Anthropic, OpenAI, GitHub, and Cursor, provide automated, agent-based code review to catch logic errors and security vulnerabilities.
+- Effective verification pipelines now integrate deterministic checks—such as linters, unit tests, and SAST—with nondeterministic AI agent reviews to ensure code quality.
+- Mature "AI-native software factories" at companies like Uber and Shopify utilize automated pipelines to manage governance, testing, and final human-led gatekeeping before production deployment.
 
 ### Why it Matters
-Quantifying the financial impact of AI-related layoffs helps policymakers and communities move beyond speculation to understand the tangible economic consequences of automation. By visualizing these losses, the dashboard highlights how AI adoption creates uneven regional impacts that ripple through local businesses and household stability.
+As AI-generated code becomes standard, the speed of development risks outpacing traditional quality assurance and security oversight. Implementing automated verification layers is essential for maintaining software reliability and preventing the accumulation of technical debt and production incidents.
 
 ============================================================
-Author:   Radhika Rajkumar
-Source:   ZDNet
-URL:      https://www.zdnet.com/innovation/ai-job-cuts-wage-loss-by-state-tracker/
+Author:   Mihai Avram
+Source:   Mihaisplace.com
+URL:      https://mihaisplace.com/blog/ai-can-write-the-code-who-verifies-it
 Category: Artificial Intelligence

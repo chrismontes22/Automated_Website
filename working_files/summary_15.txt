@@ -1,20 +1,20 @@
-Why education IT teams must protect both human and machine identities
+SolidCraft is Parametric, Automation-friendly CAD for Desktop and Browser
 ============================================================
 
-UK educational institutions face heightened cybersecurity risks during the back-to-school season as AI-enhanced phishing and unmanaged machine identities expand the attack surface for hackers targeting sensitive data.
+SolidCraft is a new open-source 3D modeling CAD suite written in Rust that features a parametric timeline and built-in support for AI agent integration via MCP.
 
 ### Key Points
-- UK government data shows 27% of higher education institutions experience weekly cyberattacks, significantly higher than the 14% reported by primary schools.
-- AI-driven phishing campaigns now mimic official communications from IT helpdesks and student funding offices, making them increasingly difficult for staff and students to identify.
-- Non-Human Identities (NHIs), including API keys, service accounts, and AI agents, often lack proper oversight, creating hidden vulnerabilities in modern EdTech environments.
-- Only 45% of higher education institutions currently comply with all 10 steps of the UK government’s cyber security guidance.
-- Security experts recommend enforcing multi-factor authentication, auditing privileged access, and maintaining a comprehensive inventory of all machine identities to mitigate these risks.
+- SolidCraft supports essential CAD functions including sketches, solid modeling, constraints, and a parametric feature timeline.
+- The software is built entirely in Rust and functions as both a desktop application and a browser-based web app.
+- Every user action is executed as a command with JSON parameters, enabling a headless command-line interface.
+- The platform includes a Model Context Protocol (MCP) server designed to allow AI agents to interact with the software.
+- The project is currently in early development, with a live online demo available for users to test features.
 
 ### Why it Matters
-The education sector remains a primary target for ransomware and data theft due to its vast stores of personal information and often underfunded IT infrastructure. By failing to secure both human and non-human digital identities, institutions risk significant operational disruption and the compromise of sensitive research and financial data.
+This software represents a modern approach to CAD by prioritizing automation and interoperability with AI-driven workflows. Its browser-based architecture and command-driven design could lower barriers for developers looking to integrate 3D modeling into broader automated engineering pipelines.
 
 ============================================================
-Author:   Anne Cutler
-Source:   TechRadar
-URL:      https://www.techradar.com/pro/why-education-it-teams-must-protect-both-human-and-machine-identities
-Category: Cybersecurity
+Author:   Donald Papp
+Source:   Hackaday
+URL:      https://hackaday.com/2026/10/17/solidcraft-is-parametric-automation-friendly-cad-for-desktop-and-browser/
+Category: Artificial Intelligence

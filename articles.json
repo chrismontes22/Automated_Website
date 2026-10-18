@@ -1,5 +1,185 @@
 [
   {
+    "author": "Yadullah Abidi",
+    "processed_at": "2026-10-18T21:16:26.520994",
+    "url": "https://www.makeuseof.com/smart-home-own-dns-stopped-privacy-settings-breaking/",
+    "summary": "Implementing separate DNS policies for smart home devices and personal computers allows users to maintain aggressive privacy protections while preventing IoT connectivity issues caused by over-blocking.\n\n### Key Points\n- Network administrators can use Pi-hole or AdGuard Home to assign distinct DNS filtering policies to specific device groups or isolated 2.4 GHz IoT networks.\n- Creating a dedicated IoT DNS lane prevents smart devices from losing connectivity due to blocked telemetry or authentication endpoints required for basic functionality.\n- Using local DNS records, such as the RFC 8375-compliant .home.arpa suffix, simplifies internal network management by replacing hard-coded IP addresses with human-readable hostnames.\n- Analyzing query logs for a specific device class makes it easier to identify and whitelist necessary domains without compromising the security of the broader network.\n- Maintaining a secondary resolver and implementing firewall rules for port 53 ensures consistent policy enforcement and prevents devices from bypassing local DNS settings.\n\n### Why it Matters\nSegmenting network traffic by device type balances the need for robust privacy with the operational requirements of cloud-dependent smart home hardware. This architectural approach reduces maintenance overhead by eliminating the need to constantly adjust global blocklists when individual appliances fail.",
+    "title": "I gave my smart home its own DNS and finally stopped my privacy settings from breaking it",
+    "source": "MakeUseOf",
+    "category": "Cybersecurity"
+  },
+  {
+    "author": "Alyson Shontell",
+    "processed_at": "2026-10-18T21:16:36.289481",
+    "url": "https://fortune.com/2026/10/17/ruth-porat-jefferies-chris-wood-ai-buildout-capital-destruction-chinese-open-source-models-differentiation/",
+    "summary": "Alphabet, Amazon, Microsoft, and Meta are projected to spend over $720 billion on AI infrastructure this year, fueling a massive industry-wide capital expenditure surge for long-term growth.\n\n### Key Points\n- Alphabet expects 2026 capital expenditures between $195 billion and $205 billion, more than double its 2025 spending.\n- Private credit firms like Blue Owl, Apollo, and KKR have provided over $200 billion in loans to support AI-related companies and neocloud operators.\n- Alphabet reported negative free cash flow in Q2 2026 for the first time since its 2004 IPO to prioritize AI investment.\n- Analysts warn that the rise of cheaper, open-weight models from China could commoditize the AI market and lead to significant capital destruction.\n- Alphabet President Ruth Porat maintains that heavy investment is necessary to avoid competitive disadvantages and capture long-term economic value.\n\n### Why it Matters\nThe massive capital outlay highlights a high-stakes gamble on AI's future profitability despite growing concerns regarding market overcapacity and economic risk. Companies that fail to integrate AI-driven innovation risk long-term obsolescence, forcing firms to balance aggressive infrastructure spending against potential financial instability.",
+    "title": "Alphabet’s chief investment officer responds to Jefferies warning that the most likely outcome of the AI boom is massive U.S. capital destruction",
+    "source": "Fortune",
+    "category": "Tech Business & Markets"
+  },
+  {
+    "author": "Lauren Edmonds",
+    "processed_at": "2026-10-18T21:17:27.826141",
+    "url": "https://www.businessinsider.com/mapquest-flock-surveillance-cameras-license-plate-readers-2026-10#article",
+    "summary": "MapQuest has introduced a new mobile app feature that allows users to identify the locations of automated license plate readers along their planned driving routes for increased privacy.\n\n### Key Points\n- The new \"surveillance layer\" identifies cameras manufactured by companies including Flock Safety, Axon Enterprise, Motorola Solutions, and PlateSmart.\n- Automated license plate readers capture vehicle data such as license plate numbers, make, model, and color using machine learning technology.\n- MapQuest added the feature in response to user demand, citing it as one of the top three requests from their driver base.\n- Public backlash against surveillance technology has led some municipalities, such as Tempe, Arizona, to terminate contracts with camera providers like Flock Safety.\n- Flock Safety has responded to privacy concerns by reducing data retention periods from 30 days to 7 days and clarifying that their systems do not use facial recognition.\n\n### Why it Matters\nThis feature highlights the growing public tension regarding the widespread use of surveillance technology in public and private spaces. By providing transparency into camera locations, MapQuest is positioning itself as a privacy-conscious alternative in a competitive mapping market.",
+    "title": "MapQuest now shows you Flock and other license plate reader cameras on your route",
+    "source": "Business Insider",
+    "category": "Phones, Laptops, and Gadgets"
+  },
+  {
+    "author": "Tyler Lacoma",
+    "processed_at": "2026-10-18T21:21:47.068960",
+    "url": "https://www.cnet.com/home/security/devices-i-rely-on-for-porch-security/",
+    "summary": "Homeowners can significantly improve front door security and deter package theft by installing DIY-friendly smart locks, video doorbells, secure delivery boxes, and automated smart lighting systems.\n\n### Key Points\n- Smart locks enable remote access control, temporary guest passes, and auto-locking features to replace or augment traditional deadbolts.\n- Video doorbells provide two-way audio and object recognition to alert users about package deliveries or suspicious activity on the porch.\n- Secure delivery boxes protect parcels from both theft and weather conditions using specialized locking mechanisms and weighted designs.\n- Smart LED bulbs allow for remote brightness, color, and schedule adjustments, which can be linked to other security devices for automated lighting.\n- Recommended hardware includes Google Nest, Tapo, and Blink doorbells, alongside GE Cync and Wiz smart lighting solutions.\n\n### Why it Matters\nUpgrading entryways with these connected devices provides a cost-effective, DIY alternative to expensive, subscription-based home security systems. These tools offer homeowners greater peace of mind and practical protection against porch piracy and unauthorized access during the busy holiday season.",
+    "title": "I Test Home Security Tech. Here Are 4 Devices I Rely on to Guard My Porch",
+    "source": "CNET",
+    "category": "Phones, Laptops, and Gadgets"
+  },
+  {
+    "author": "EditorDavid",
+    "processed_at": "2026-10-18T21:21:57.795486",
+    "url": "https://news.slashdot.org/story/26/10/17/0618213/personal-data-for-millions-of-california-students-stolen-in-massive-breach",
+    "summary": "Millions of current and former California public school students have had their personal data compromised following a significant security breach at the Educational Testing Service.\n\n### Key Points\n- The breach exposed sensitive information including names, dates of birth, and addresses for students who took state-mandated standardized tests.\n- Compromised records date back to 2006, affecting both current students and those who have since left the California public school system.\n- Unauthorized access occurred between May 22 and September 18, 2026, via a single compromised login credential used to copy files.\n- Educational Testing Service (ETS) has implemented strengthened access controls and enhanced monitoring to prevent future unauthorized data access.\n- Affected individuals are eligible for 24 months of free identity-protection services and identity-restoration assistance.\n\n### Why it Matters\nThis incident highlights the systemic risks associated with outsourcing sensitive student data to third-party vendors that manage large-scale information repositories. The breach underscores the critical need for robust authentication and monitoring safeguards to prevent single points of failure from impacting millions of individuals.",
+    "title": "Personal Data for Millions of California Students Stolen in Massive Breach",
+    "source": "Slashdot.org",
+    "category": "Cybersecurity"
+  },
+  {
+    "author": "Matt G. Southern",
+    "processed_at": "2026-10-18T21:26:16.357265",
+    "url": "https://www.searchenginejournal.com/seo-pulse-rank-tracker-data-chatgpt-tags-ai-search-links/593171/",
+    "summary": "Recent fluctuations in search rankings and referral data highlight the importance of verifying analytics, as Google and OpenAI implement significant changes to AI-driven search and traffic tracking.\n\n### Key Points\n- Rank-tracking firm Nozzle reported that 8% of Google search results pages were missing usual sites between September 13 and October 9, likely due to AI scraping responses.\n- A bug in ChatGPT’s link tracking caused a 45% drop in attributed sessions in Google Analytics 4, which OpenAI began fixing on October 15.\n- Google is increasing the visibility of inline links in AI Overviews and testing new \"Preferred Sources\" carousels to highlight specific publishers.\n- Microsoft introduced the \"Topics Portfolio\" beta in Bing Webmaster Tools, allowing site owners to identify citation gaps and opportunity queries in AI search results.\n- Recent Google job listings indicate the company is actively hiring to develop AI-generated content and \"proactive\" recommendation features for the Discover feed.\n\n### Why it Matters\nThese technical shifts demonstrate that search and referral data can be volatile due to platform-side bugs or algorithmic testing. Marketing teams should cross-reference third-party tracking tools with Google Search Console to ensure reporting remains accurate and reflects actual user behavior.",
+    "title": "Rank Tracker Data, ChatGPT Tags & AI Search Links – SEO Pulse via @sejournal, @MattGSouthern",
+    "source": "Search Engine Journal",
+    "category": "Artificial Intelligence"
+  },
+  {
+    "author": "Bitcoinist Editorial Team",
+    "processed_at": "2026-10-18T21:26:24.981624",
+    "url": "https://bitcoinist.com/pirate-chain-exploit-creates-39-8-million-unauthorized-tokens-in-major/",
+    "summary": "Pirate Chain developers have identified a critical validation flaw that allowed for the unauthorized creation of approximately 39.8 million ARRR tokens, raising significant concerns regarding network supply integrity.\n\n### Key Points\n- Developers discovered a vulnerability that enabled the unauthorized minting of 39.8 million ARRR tokens.\n- The flaw stemmed from implementation and validation errors rather than a failure of the underlying zero-knowledge encryption.\n- Privacy-focused shielded transaction pools have complicated efforts to track the movement of the illicitly created assets.\n- Exchanges and network participants implemented precautionary restrictions following the mid-October disclosure of the security incident.\n- The project team is currently evaluating recovery measures to address the impact on the total circulating supply.\n\n### Why it Matters\nThis incident highlights the inherent difficulty of auditing and remediating security breaches within privacy-centric blockchain networks where transaction data remains obscured. The challenge of restoring investor confidence underscores the tension between maintaining absolute user anonymity and ensuring the long-term stability of a digital currency's monetary policy.",
+    "title": "Pirate Chain Exploit Creates 39.8 Million Unauthorized Tokens In Major Security Breach",
+    "source": "Bitcoinist",
+    "category": "Cybersecurity"
+  },
+  {
+    "author": "Dave Vellante",
+    "processed_at": "2026-10-18T21:26:33.491504",
+    "url": "https://siliconangle.com/2026/10/17/servicenow-ai-control-tower-selling-a-penthouse-while-building-the-frame/",
+    "summary": "ServiceNow’s AI Control Tower aims to govern enterprise artificial intelligence by leveraging the company’s existing workflow and operational data to manage AI assets, accountability, and remediation processes.\n\n### Key Points\n- ServiceNow reports over 500 customers are using AI Control Tower, contributing to an AI annual contract value exceeding $1 billion as of Q2.\n- A field study of 15 large enterprises found that while ServiceNow excels at governance workflows, 14 respondents rely on external tools for runtime enforcement.\n- The platform’s primary strength lies in its ability to connect AI risks to existing CMDB assets, business owners, and ITSM remediation processes.\n- Customers frequently encounter technical gaps regarding model-specific evidence, such as lineage, bias, and performance history, which are often generated by third-party tools.\n- Implementation of the platform often involves significant friction, with seven of eight surveyed customers reporting costs exceeding their initial expectations.\n\n### Why it Matters\nServiceNow is positioning itself as the central \"system of action\" for AI governance, but its ability to serve as a universal technical control plane remains unproven at scale. Organizations should treat the platform as a powerful orchestration layer while maintaining independent security and validation tools to ensure comprehensive enterprise coverage.",
+    "title": "ServiceNow AI Control Tower: Selling a penthouse while building the frame",
+    "source": "SiliconANGLE News",
+    "category": "Artificial Intelligence"
+  },
+  {
+    "author": "alekshamcloughlin@outlook.com (Aleksha McLoughlin) , Aleksha McLoughlin",
+    "processed_at": "2026-10-18T21:26:51.992119",
+    "url": "https://www.techradar.com/computing/gaming-pcs/ram-crisis-getting-you-down-heres-how-to-upgrade-your-gaming-pc-without-going-broke",
+    "summary": "As high demand for data center components drives up PC hardware prices through 2030, gamers can optimize their existing setups using strategic upgrades and software-based performance enhancements.\n\n### Key Points\n- Global supply shortages for RAM and graphics cards have caused significant price inflation, making new high-end PC builds prohibitively expensive for many consumers.\n- Gamers can boost performance on existing hardware by enabling AMD EXPO or Intel XMP in the BIOS to unlock higher RAM speeds.\n- AI-powered upscaling technologies like Nvidia DLSS, AMD FSR, and Intel XeSS allow older GPUs to maintain playable framerates in modern, demanding titles.\n- Peripherals like mice and keyboards have seen significant innovation, with new magnetic sensor technology offering improved durability and responsiveness.\n- Affordable monitor upgrades, including 1440p panels and OLED displays, provide a cost-effective way to enhance visual quality without replacing core internal components.\n\n### Why it Matters\nThese strategies allow PC gamers to maintain a high-quality experience despite the current market volatility and inflated component costs. By focusing on peripherals, software optimization, and existing game libraries, users can avoid overpaying for hardware while waiting for supply chains to stabilize.",
+    "title": "Nevermind the RAM crisis, these are the 5 things you can do for the best PC gaming experience without overpaying for parts",
+    "source": "TechRadar",
+    "category": "Phones, Laptops, and Gadgets"
+  },
+  {
+    "author": "Mihai Avram",
+    "processed_at": "2026-10-18T21:27:00.346618",
+    "url": "https://mihaisplace.com/blog/ai-can-write-the-code-who-verifies-it",
+    "summary": "Rising AI adoption in software development has increased engineering throughput but also led to higher bug rates and production incidents, necessitating robust automated verification and agentic review workflows.\n\n### Key Points\n- A 2026 Faros study of 22,000 developers found that high AI adoption correlates with 54% more bugs and a fivefold increase in median pull request review times.\n- Frameworks like Superpowers and RoboRev, alongside tools from Anthropic, OpenAI, GitHub, and Cursor, provide automated, agent-based code review to catch logic errors and security vulnerabilities.\n- Effective verification pipelines now integrate deterministic checks—such as linters, unit tests, and SAST—with nondeterministic AI agent reviews to ensure code quality.\n- Mature \"AI-native software factories\" at companies like Uber and Shopify utilize automated pipelines to manage governance, testing, and final human-led gatekeeping before production deployment.\n\n### Why it Matters\nAs AI-generated code becomes standard, the speed of development risks outpacing traditional quality assurance and security oversight. Implementing automated verification layers is essential for maintaining software reliability and preventing the accumulation of technical debt and production incidents.",
+    "title": "AI Can Write the Code. Who Verifies It?",
+    "source": "Mihaisplace.com",
+    "category": "Artificial Intelligence"
+  },
+  {
+    "author": "Tony, creator of Contexte Tech",
+    "processed_at": "2026-10-18T21:27:15.697435",
+    "url": "https://contextetech.com/en/articles/mcp-protocol-smart-decentralised-search",
+    "summary": "The Model Context Protocol (MCP) is transforming AI search by enabling assistants to query live data sources directly, ensuring verifiable, up-to-date information without relying on static training memory.\n\n### Key Points\n- Launched by Anthropic in 2024, the open-source MCP protocol was transferred to the Linux Foundation’s Agentic AI Foundation in December 2025.\n- MCP allows AI assistants to fetch real-time data from external servers, providing users with clear citations, licensing information, and source attribution.\n- The protocol decentralizes search by allowing publishers to maintain control over their data rather than relying on centralized search engine indexing.\n- Current development focuses on improving citation standards, establishing content trust, and implementing privacy-friendly traffic measurement for publishers.\n\n### Why it Matters\nBy shifting from centralized indexing to direct, real-time queries, MCP addresses critical issues regarding AI hallucinations and outdated information. This transition empowers content creators to maintain ownership of their data while ensuring that AI-generated answers remain transparent, accurate, and legally compliant.",
+    "title": "Is MCP becoming the common foundation of smart, decentralised search?",
+    "source": "Contextetech.com",
+    "category": "Artificial Intelligence"
+  },
+  {
+    "author": "sean.endicott@futurenet.com (Sean Endicott) , Sean Endicott",
+    "processed_at": "2026-10-18T21:27:25.342455",
+    "url": "https://www.windowscentral.com/hardware/nvidia/rtx-spark-laptops-are-being-hailed-as-true-macbook-pro-competitors-with-reviewers-praising-their-ai-power-and-creator-focused-performance",
+    "summary": "The first wave of NVIDIA RTX Spark-powered laptops from manufacturers including Microsoft, ASUS, and HP has officially launched, targeting high-end creative professionals and AI development workflows.\n\n### Key Points\n- Seven major laptop models from ASUS, Dell, HP, Lenovo, Microsoft, and MSI now feature the NVIDIA RTX Spark platform and N1X processor.\n- The Microsoft Surface Laptop Ultra, starting at $2,599.99, is positioned as a premium MacBook Pro competitor for Windows users.\n- ASUS introduced the ProArt P14 and P16, emphasizing portability and creator-focused OLED displays with shipping beginning October 16, 2026.\n- Pricing for the new hardware ranges from $2,599.99 to $3,799.99, with most units shipping throughout October and early November 2026.\n- Reviews highlight the platform's strong performance for local AI tasks and content creation, though battery life remains a point of contention for some models.\n\n### Why it Matters\nThese devices represent a significant attempt by NVIDIA and its partners to establish a high-performance Windows alternative to the MacBook Pro for professional creators. By focusing on local AI capabilities and unified memory, the RTX Spark platform aims to redefine the standard for premium Windows laptops in the enterprise and creative markets.",
+    "title": "Reviewers say RTX Spark laptops deliver the AI power creators want",
+    "source": "Windows Central",
+    "category": "Phones, Laptops, and Gadgets"
+  },
+  {
+    "author": "John Gruber",
+    "processed_at": "2026-10-18T21:27:35.097583",
+    "url": "https://daringfireball.net/2026/10/homeview_thoughts_and_observations",
+    "summary": "Apple has introduced the HomeView, a new smart home device featuring a square display, though critics question its practical utility compared to existing smartphones and standard HomePods.\n\n### Key Points\n- The Apple HomeView is priced at $300 and features a compact, square-shaped display designed for glanceable information.\n- Marketing materials depict the device on a kitchen island, requiring a power cable that critics note is often hidden or requires permanent countertop modifications.\n- Wall-mounted installation options are available, but require additional mounting hardware costing between $60 and $130.\n- The device is primarily intended for status updates and smart home control rather than video consumption, given its non-widescreen aspect ratio.\n- Skeptics argue the device lacks a clear use case, as most tasks can be performed more conveniently on an iPhone or a screenless HomePod.\n\n### Why it Matters\nThe HomeView represents Apple's attempt to establish a new category of \"status board\" devices for the smart home market. Its success depends on whether consumers find value in a dedicated, always-on screen that competes with the ubiquity of smartphones and existing voice-controlled speakers.",
+    "title": "★ HomeView Thoughts and Observations",
+    "source": "Daringfireball.net",
+    "category": "Phones, Laptops, and Gadgets"
+  },
+  {
+    "author": "Ionut Ilascu",
+    "processed_at": "2026-10-18T21:27:44.190730",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/",
+    "summary": "ConnectWise has suspended its Cloud Backup service after hackers exploited application identities to gain unauthorized access to numerous Microsoft 365 tenants, prompting an urgent security investigation.\n\n### Key Points\n- ConnectWise disabled seven application identities after identifying unauthorized access to its Cloud Backup service starting October 15.\n- Cybersecurity firms Huntress and Todyl confirmed at least 162 compromised Microsoft 365 tenants linked to a single malicious IP address.\n- Attackers abused existing service principal permissions to perform reconnaissance, escalate privileges, and establish persistence within customer environments.\n- The breach bypassed multi-factor authentication because the attackers used automated scripts to authenticate directly as the backup application.\n- ConnectWise maintains that stored backup archives remain encrypted and isolated, with no current evidence of data compromise.\n\n### Why it Matters\nThis incident highlights the significant risks associated with supply-chain attacks where third-party software providers serve as a gateway into highly privileged customer environments. Because these applications often hold broad permissions, a single compromise can allow attackers to bypass standard security measures like multi-factor authentication and gain deep access to sensitive corporate data.",
+    "title": "Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack",
+    "source": "BleepingComputer",
+    "category": "Cybersecurity"
+  },
+  {
+    "author": "Donald Papp",
+    "processed_at": "2026-10-18T21:27:52.652097",
+    "url": "https://hackaday.com/2026/10/17/solidcraft-is-parametric-automation-friendly-cad-for-desktop-and-browser/",
+    "summary": "SolidCraft is a new open-source 3D modeling CAD suite written in Rust that features a parametric timeline and built-in support for AI agent integration via MCP.\n\n### Key Points\n- SolidCraft supports essential CAD functions including sketches, solid modeling, constraints, and a parametric feature timeline.\n- The software is built entirely in Rust and functions as both a desktop application and a browser-based web app.\n- Every user action is executed as a command with JSON parameters, enabling a headless command-line interface.\n- The platform includes a Model Context Protocol (MCP) server designed to allow AI agents to interact with the software.\n- The project is currently in early development, with a live online demo available for users to test features.\n\n### Why it Matters\nThis software represents a modern approach to CAD by prioritizing automation and interoperability with AI-driven workflows. Its browser-based architecture and command-driven design could lower barriers for developers looking to integrate 3D modeling into broader automated engineering pipelines.",
+    "title": "SolidCraft is Parametric, Automation-friendly CAD for Desktop and Browser",
+    "source": "Hackaday",
+    "category": "Artificial Intelligence"
+  },
+  {
+    "author": "Vikki Blake",
+    "processed_at": "2026-10-18T21:28:03.253997",
+    "url": "https://www.eurogamer.net/total-war-shogun-2-complete-edition-pulled-from-sale",
+    "summary": "Sega and Creative Assembly have temporarily pulled Total War: Shogun 2 - Complete Edition from digital storefronts following widespread player criticism regarding the game's quality and technical performance.\n\n### Key Points\n- The Complete Edition was removed from sale shortly after its October 13 launch due to negative player feedback.\n- Steam user reviews for the title plummeted to \"overwhelmingly negative,\" with only 15 percent of over 4,000 reviews being positive.\n- Players have specifically criticized the game for poor upscaling and the suspected use of generative AI tools.\n- Existing owners retain access to the game, and the original version is being reinstated on the Steam store.\n- Sega and Creative Assembly are currently working with development partners to address technical issues and improve quality standards.\n\n### Why it Matters\nThis incident highlights the growing tension between game developers and players regarding the implementation of generative AI in software development. It serves as a cautionary example for the industry as major publishers continue to integrate new technologies into their established franchises.",
+    "title": "Sega pulls Total War: Shogun 2 - Complete Edition from sale amid AI accusations, admitting it has \"fallen short\"",
+    "source": "Eurogamer.net",
+    "category": "Artificial Intelligence"
+  },
+  {
+    "author": "Miriam Waldvogel, (c) 2026 , The Washington Post",
+    "processed_at": "2026-10-18T21:28:26.283499",
+    "url": "https://www.yahoo.com/news/us/articles/online-campaign-unmask-cornell-rape-090000333.html",
+    "summary": "Social media platforms are struggling to contain the spread of doxing attempts against a Cornell University rape victim, with X’s AI chatbot Grok actively circulating unverified identities.\n\n### Key Points\n- Posts attempting to identify a Jane Doe in a Cornell University rape case received over 87 million views on X within two weeks.\n- X’s AI chatbot, Grok, shared the alleged name of the victim in replies to users at least 300 times.\n- Meta and TikTok implemented search blocks for the alleged name, though researchers noted these measures are easily bypassed by users.\n- The victim’s lawyer reported that she has faced severe harassment, including doxing and a swatting incident at her parents' home.\n- A judge has ordered key court documents to be sealed to protect the victim from further online harassment and identification.\n\n### Why it Matters\nThe incident highlights the significant challenges social media platforms face in moderating viral doxing campaigns and preventing AI tools from amplifying harmful, unverified information. It raises critical questions about the responsibility of tech companies to protect the privacy and safety of individuals involved in sensitive legal proceedings.",
+    "title": "The online campaign to share the Cornell rape accuser's identity reached millions",
+    "source": "Yahoo Entertainment",
+    "category": "Artificial Intelligence"
+  },
+  {
+    "author": "Ionut Arghire",
+    "processed_at": "2026-10-18T21:28:34.555477",
+    "url": "https://www.securityweek.com/israeli-ad-firm-doubled-as-candirus-zero-click-spyware-delivery-channel/",
+    "summary": "Citizen Lab reports that the Israeli firm Discover-Tech used malicious advertisements to deploy Candiru spyware against Al Jazeera staff, infecting at least 45 devices via zero-click attacks.\n\n### Key Points\n- Citizen Lab identified the \"AdFection\" campaign, which utilized Discover-Tech’s Controlium platform to de-anonymize and infect users through real-time bidding ad auctions.\n- Between 2024 and 2025, at least 45 devices belonging to Al Jazeera employees were compromised by Candiru spyware.\n- Discover-Tech’s infrastructure exposed four billion ad bid records, showing its ads appeared on nearly 200,000 websites and mobile applications.\n- Google, IAB Europe, Beeswax, and Eskimi removed Discover-Tech from their ad vendor registries in October following the discovery of these surveillance activities.\n- Researchers also linked Discover-Tech to \"Dark Cartographer,\" a group mass-de-anonymizing users by connecting mobile advertising identifiers to private phone numbers.\n\n### Why it Matters\nThis operation highlights a critical security vulnerability within the global real-time bidding advertising ecosystem, where legitimate ad exchanges can be weaponized to deliver sophisticated spyware. The incident demonstrates how mercenary vendors can bypass traditional defenses to target specific individuals, prompting experts to recommend blocking targeted ads at the network gateway to ensure user safety.",
+    "title": "Israeli Ad Firm Doubled as Candiru’s Zero-Click Spyware Delivery Channel",
+    "source": "Securityweek.com",
+    "category": "Cybersecurity"
+  },
+  {
+    "author": "Pierluigi Paganini",
+    "processed_at": "2026-10-18T21:28:43.205929",
+    "url": "https://securityaffairs.com/201193/intelligence/north-korean-it-workers-used-stolen-us-identities-to-earn-3-million.html",
+    "summary": "The U.S. Department of Justice has charged 14 individuals and seized 187 devices in a crackdown on a North Korean scheme placing fake IT workers into American companies.\n\n### Key Points\n- Operation Lonestar Roundup involved FBI searches of over 40 Texas residences used as \"laptop farms\" to facilitate remote work for North Korean intelligence agents.\n- The scheme targeted more than 70 U.S. companies across 17 states, including firms in the healthcare, cybersecurity, and manufacturing sectors.\n- North Korean operatives generated approximately $3 million in illicit revenue, which was funneled back to sanctioned entities controlled by the regime.\n- The threat group, tracked by CrowdStrike as Famous Chollima, increasingly recruits U.S. facilitators to bypass security measures and subcontract tasks to third-party foreign nationals.\n- The DOJ has released specific email indicators and hiring red flags to help employers identify and mitigate the risk of North Korean insider threats.\n\n### Why it Matters\nThis operation highlights a significant national security risk where foreign intelligence agents exploit remote hiring practices to infiltrate Western corporate networks and siphon funds. Companies must now implement more rigorous identity verification and background screening to prevent state-sponsored actors from gaining persistent access to sensitive intellectual property and internal systems.",
+    "title": "North Korean IT Workers Used Stolen US Identities to Earn $3 Million",
+    "source": "Securityaffairs.com",
+    "category": "Cybersecurity"
+  },
+  {
+    "author": "Harvard Gazette",
+    "processed_at": "2026-10-18T21:28:54.642495",
+    "url": "https://goodmenproject.com/featured-content/why-ai-hasnt-triggered-mass-layoffs-yet/",
+    "summary": "Harvard University experts analyze the long-term labor market impact of artificial intelligence, noting that while current job disruption remains limited, significant workforce displacement may occur within decades.\n\n### Key Points\n- Harvard economists estimate AI could eventually displace 3 million workers, potentially exceeding the impact of the early 2000s \"China shock\" on the U.S. labor market.\n- Research from Harvard Business School and Accenture indicates that while 41% of work tasks are currently automatable, only one-third of corporate AI experiments succeed.\n- Experts warn that companies often fail to provide formal training, leading employees to use AI tools inefficiently rather than boosting actual productivity.\n- Economists suggest that policymakers should prepare for potential labor shifts by reforming tax schemes, unemployment insurance, and worker retraining programs.\n- Business leaders are encouraged to view human capital as a strategic asset, as employees possess tacit knowledge that AI cannot currently replicate.\n\n### Why it Matters\nThe transition toward AI-integrated workflows presents a fundamental challenge to traditional entry-level hiring and long-term workforce development. While companies currently struggle with implementation, the eventual adoption of specialized AI agents may force a significant restructuring of the labor market that requires proactive government intervention.",
+    "title": "Why AI Hasn’t Triggered Mass Layoffs — Yet",
+    "source": "The Good Men Project",
+    "category": "Artificial Intelligence"
+  },
+  {
     "url": "https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html",
     "author": "info@thehackernews.com (The Hacker News)",
     "category": "Cybersecurity",

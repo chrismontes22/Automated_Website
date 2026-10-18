@@ -1,20 +1,20 @@
-AI Decision Models and Their Impact on AI SOC Platforms
+I gave my smart home its own DNS and finally stopped my privacy settings from breaking it
 ============================================================
 
-New "System One" decision models from companies like TypeSafe AI and OpenAI are transforming security operations by providing fast, low-cost, and auditable automated triage for cyber alerts.
+Implementing separate DNS policies for smart home devices and personal computers allows users to maintain aggressive privacy protections while preventing IoT connectivity issues caused by over-blocking.
 
 ### Key Points
-- Decision models skip text generation to provide structured, probabilistic outputs, such as scores or yes/no verdicts, for automated security workflows.
-- These models are highly cost-effective, with providers like TypeSafe AI charging approximately $42 per billion input tokens, enabling full-scale triage of all alerts.
-- Outputs are fixed-schema and include probability metrics, making them significantly easier to audit and automate than traditional generative AI responses.
-- Despite their efficiency, these models remain susceptible to "garbage in, garbage out" risks, as they rely entirely on the quality of the input data provided.
-- Effective security triage requires "Security Context Engineering," which involves gathering forensic evidence and organizational knowledge before the model makes a final decision.
+- Network administrators can use Pi-hole or AdGuard Home to assign distinct DNS filtering policies to specific device groups or isolated 2.4 GHz IoT networks.
+- Creating a dedicated IoT DNS lane prevents smart devices from losing connectivity due to blocked telemetry or authentication endpoints required for basic functionality.
+- Using local DNS records, such as the RFC 8375-compliant .home.arpa suffix, simplifies internal network management by replacing hard-coded IP addresses with human-readable hostnames.
+- Analyzing query logs for a specific device class makes it easier to identify and whitelist necessary domains without compromising the security of the broader network.
+- Maintaining a secondary resolver and implementing firewall rules for port 53 ensures consistent policy enforcement and prevents devices from bypassing local DNS settings.
 
 ### Why it Matters
-The emergence of decision models allows security teams to automate the triage of every alert regardless of severity, effectively removing the economic barriers that previously forced analysts to prioritize only high-risk events. However, the accuracy of these automated verdicts depends heavily on the quality of forensic evidence and organizational context fed into the system, rather than the model's inherent intelligence.
+Segmenting network traffic by device type balances the need for robust privacy with the operational requirements of cloud-dependent smart home hardware. This architectural approach reduces maintenance overhead by eliminating the need to constantly adjust global blocklists when individual appliances fail.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html
+Author:   Yadullah Abidi
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/smart-home-own-dns-stopped-privacy-settings-breaking/
 Category: Cybersecurity
