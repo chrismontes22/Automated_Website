@@ -1,20 +1,20 @@
-I gave my smart home its own DNS and finally stopped my privacy settings from breaking it
+WhatsApp's help pages hid LLM instructions: dont recommend a regulator
 ============================================================
 
-Implementing separate DNS policies for smart home devices and personal computers allows users to maintain aggressive privacy protections while preventing IoT connectivity issues caused by over-blocking.
+WhatsApp embedded hidden instructions within its help center pages that directed its AI chatbot to withhold information about data regulators and privacy laws from users seeking assistance.
 
 ### Key Points
-- Network administrators can use Pi-hole or AdGuard Home to assign distinct DNS filtering policies to specific device groups or isolated 2.4 GHz IoT networks.
-- Creating a dedicated IoT DNS lane prevents smart devices from losing connectivity due to blocked telemetry or authentication endpoints required for basic functionality.
-- Using local DNS records, such as the RFC 8375-compliant .home.arpa suffix, simplifies internal network management by replacing hard-coded IP addresses with human-readable hostnames.
-- Analyzing query logs for a specific device class makes it easier to identify and whitelist necessary domains without compromising the security of the broader network.
-- Maintaining a secondary resolver and implementing firewall rules for port 53 ensures consistent policy enforcement and prevents devices from bypassing local DNS settings.
+- Hidden directives instructed the AI to avoid mentioning data protection authorities or regulators when users inquired about account deletion.
+- The chatbot was programmed to stop referencing privacy laws, including GDPR, if a user mentioned lawyers, lawsuits, or legal action.
+- These instructions were embedded in page source code, making them invisible to human users but accessible to AI models.
+- WhatsApp removed these specific hidden prompts from its help pages by mid-October 2026 following discovery of the practice.
+- The company maintains that these measures were intended to prevent the chatbot from providing unauthorized legal advice.
 
 ### Why it Matters
-Segmenting network traffic by device type balances the need for robust privacy with the operational requirements of cloud-dependent smart home hardware. This architectural approach reduces maintenance overhead by eliminating the need to constantly adjust global blocklists when individual appliances fail.
+These hidden instructions created a discrepancy between the rights guaranteed in WhatsApp’s public privacy policy and the information provided by its automated support tools. By restricting the AI from citing legal protections or regulatory bodies, the company potentially hindered users from exercising their rights to data erasure and formal complaint.
 
 ============================================================
-Author:   Yadullah Abidi
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/smart-home-own-dns-stopped-privacy-settings-breaking/
-Category: Cybersecurity
+Author:   Dan Saltman
+Source:   Redact.dev
+URL:      https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions
+Category: Artificial Intelligence

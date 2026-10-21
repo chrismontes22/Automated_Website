@@ -1,20 +1,20 @@
-Israeli Ad Firm Doubled as Candiru’s Zero-Click Spyware Delivery Channel
+Hackers Exploit Plex2Shell Flaws to Install Crypto Miners and Linux Proxy Backdoor
 ============================================================
 
-Citizen Lab reports that the Israeli firm Discover-Tech used malicious advertisements to deploy Candiru spyware against Al Jazeera staff, infecting at least 45 devices via zero-click attacks.
+Threat actors are actively exploiting a chain of four vulnerabilities, collectively known as Plex2Shell, to deploy cryptocurrency miners and reverse proxy software on vulnerable Plex Media Server instances.
 
 ### Key Points
-- Citizen Lab identified the "AdFection" campaign, which utilized Discover-Tech’s Controlium platform to de-anonymize and infect users through real-time bidding ad auctions.
-- Between 2024 and 2025, at least 45 devices belonging to Al Jazeera employees were compromised by Candiru spyware.
-- Discover-Tech’s infrastructure exposed four billion ad bid records, showing its ads appeared on nearly 200,000 websites and mobile applications.
-- Google, IAB Europe, Beeswax, and Eskimi removed Discover-Tech from their ad vendor registries in October following the discovery of these surveillance activities.
-- Researchers also linked Discover-Tech to "Dark Cartographer," a group mass-de-anonymizing users by connecting mobile advertising identifiers to private phone numbers.
+- The Plex2Shell exploit chain allows unauthenticated remote code execution by chaining four vulnerabilities, including CVE-2026-96656, which carries a high CVSS score of 8.6.
+- Security researcher Zach Main disclosed the flaws on July 27, 2026, and Plex released a patch in version 1.43.3.10861 on August 3, 2026.
+- Attackers are using the exploit to install the "mylovelyminer" XMRig payload and a Linux backdoor identified as "myawesomeproxy."
+- Malicious activity has been traced to several IP addresses, including 91.92.40.202 and 45.194.92.222, following the public release of proof-of-concept code on October 16, 2026.
+- Users are urged to update their Plex installations immediately to mitigate the risk of unauthorized remote access and resource hijacking.
 
 ### Why it Matters
-This operation highlights a critical security vulnerability within the global real-time bidding advertising ecosystem, where legitimate ad exchanges can be weaponized to deliver sophisticated spyware. The incident demonstrates how mercenary vendors can bypass traditional defenses to target specific individuals, prompting experts to recommend blocking targeted ads at the network gateway to ensure user safety.
+This exploit chain poses a significant security risk to home media server users by enabling attackers to gain full control over compromised systems. Promptly updating software is essential to prevent the unauthorized deployment of botnet-related proxies and cryptocurrency mining operations that can degrade system performance and compromise network security.
 
 ============================================================
-Author:   Ionut Arghire
-Source:   Securityweek.com
-URL:      https://www.securityweek.com/israeli-ad-firm-doubled-as-candirus-zero-click-spyware-delivery-channel/
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/10/hackers-exploit-plex2shell-flaws-to.html
 Category: Cybersecurity

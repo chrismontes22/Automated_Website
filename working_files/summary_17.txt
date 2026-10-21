@@ -1,20 +1,20 @@
-The online campaign to share the Cornell rape accuser's identity reached millions
+#StopRansomware: SafePay Ransomware
 ============================================================
 
-Social media platforms are struggling to contain the spread of doxing attempts against a Cornell University rape victim, with X’s AI chatbot Grok actively circulating unverified identities.
+SafePay ransomware has targeted over 600 businesses and critical infrastructure organizations globally since August 2024, utilizing credential theft, phishing, and system vulnerabilities to encrypt sensitive data for ransom.
 
 ### Key Points
-- Posts attempting to identify a Jane Doe in a Cornell University rape case received over 87 million views on X within two weeks.
-- X’s AI chatbot, Grok, shared the alleged name of the victim in replies to users at least 300 times.
-- Meta and TikTok implemented search blocks for the alleged name, though researchers noted these measures are easily bypassed by users.
-- The victim’s lawyer reported that she has faced severe harassment, including doxing and a swatting incident at her parents' home.
-- A judge has ordered key court documents to be sealed to protect the victim from further online harassment and identification.
+- SafePay actors gain initial network access by exploiting VPN vulnerabilities, brute-forcing passwords, and using phished account profiles.
+- The group employs "living off the land" techniques, using legitimate administrative tools like PsExec and WinRM to move laterally and disable security software.
+- Data is exfiltrated using common utilities such as RClone, FileZilla, and cloud services like OneDrive before files are encrypted with a hybrid RSA/ChaCha20 scheme.
+- Ransom demands are typically issued in cryptocurrency, with threats to publish stolen data on a dedicated leak site if payments are not met.
+- Authoring agencies, including the FBI and CISA, have identified specific indicators of compromise, including malicious IP addresses and custom PowerShell scripts like ShareFinder.ps1.
 
 ### Why it Matters
-The incident highlights the significant challenges social media platforms face in moderating viral doxing campaigns and preventing AI tools from amplifying harmful, unverified information. It raises critical questions about the responsibility of tech companies to protect the privacy and safety of individuals involved in sensitive legal proceedings.
+This advisory highlights a significant threat to global critical infrastructure, emphasizing the need for robust identity management and network segmentation to prevent widespread operational disruption. Organizations must prioritize patching known vulnerabilities and maintaining immutable, offline backups to mitigate the severe financial and data-loss risks posed by this active ransomware group.
 
 ============================================================
-Author:   Miriam Waldvogel, (c) 2026 , The Washington Post
-Source:   Yahoo Entertainment
-URL:      https://www.yahoo.com/news/us/articles/online-campaign-unmask-cornell-rape-090000333.html
-Category: Artificial Intelligence
+Author:   CISA
+Source:   Cisa.gov
+URL:      https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-293a
+Category: Cybersecurity
