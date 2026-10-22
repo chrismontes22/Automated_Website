@@ -1,20 +1,19 @@
-SafePay Has Compromised 600 Critical Infrastructure Victims Worldwide, CISA Warns
+Your WordPress.com Site is Protected Against the Recent Critical PHP Vulnerabilities
 ============================================================
 
-A joint international advisory warns that the SafePay ransomware group has compromised over 600 critical infrastructure organizations across multiple continents since emerging in August 2024.
+The PHP project has released critical security patches for two vulnerabilities that could allow unauthenticated remote code execution, prompting urgent update requirements for self-hosted server administrators worldwide.
 
 ### Key Points
-- Government agencies from the US, UK, and Germany identified SafePay as a top-tier threat, noting 70 attacks in May 2026 alone.
-- The group likely represents a rebrand of established ransomware actors, including LockBit, ALPHV/BlackCat, and INC Ransomware.
-- Attackers utilize "living off the land" techniques, exploiting VPNs and edge device vulnerabilities to gain administrative network access.
-- SafePay employs a double extortion model, demanding cryptocurrency payments and pressuring victims via direct phone calls.
-- Conduent settled a class-action lawsuit for $80 million in October 2026 following a 2024 data breach attributed to the group.
+- The PHP project issued patches to address two critical vulnerabilities capable of enabling remote code execution.
+- Automattic confirmed that all sites hosted on WordPress.com, WordPress VIP, WP Cloud, Pressable, and Tumblr are already protected.
+- Administrators managing their own servers must manually update their PHP installations to mitigate these security risks.
+- Managed hosting platforms handle infrastructure-level patching, whereas self-hosted users remain responsible for software maintenance and security updates.
 
 ### Why it Matters
-The rapid rise of SafePay highlights a significant escalation in the sophistication and frequency of global ransomware operations targeting critical infrastructure. Organizations must prioritize robust identity management and network segmentation to mitigate the severe financial and data-privacy risks posed by these evolving extortion tactics.
+These vulnerabilities pose a significant threat to the vast portion of the web that relies on PHP, potentially allowing attackers to gain unauthorized control over servers. While managed hosting providers can mitigate these risks automatically, individual site owners must remain vigilant to ensure their infrastructure remains secure against evolving cyber threats.
 
 ============================================================
-Author:   James Coker
-Source:   Infosecurity Magazine
-URL:      https://www.infosecurity-magazine.com/news/safepay-compromised-critical/
+Author:   Ian Stewart
+Source:   Wordpress.com
+URL:      https://wordpress.com/blog/2026/10/21/php2shell-vulnerabilities/
 Category: Cybersecurity

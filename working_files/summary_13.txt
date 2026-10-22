@@ -1,20 +1,20 @@
-Eight Bits of Trust; eMudhra's CA keys cracked in milliseconds
+Azoma wants to help brands win the AI shopping race. See the pitch deck that helped it raise $11.2 million.
 ============================================================
 
-Security researchers discovered that eight eMudhra certificate authority private keys were generated with extremely weak values, allowing anyone to easily compromise encrypted traffic across various software platforms.
+AI commerce startup Azoma has secured $11.2 million in Series A funding to help consumer brands optimize their product visibility across emerging generative AI shopping assistants and platforms.
 
 ### Key Points
-- Eight eMudhra intermediate certificates, created in April 2025, used trivial private keys that could be brute-forced in milliseconds.
-- The affected certificates include six TLS issuing CAs and two code-signing CAs, all of which were cross-signed by Sectigo.
-- Major browsers like Chrome and Firefox have already blocked the compromised certificates, but non-browser TLS clients remain vulnerable.
-- Many automated systems, including CI/CD pipelines, IoT devices, and command-line tools like curl, do not check revocation or Certificate Transparency logs.
-- The vulnerability stems from a human error during the key generation ceremony, where a script mistakenly used weak keys instead of secure ones.
+- Azoma raised $11.2 million in a funding round led by Puma Growth Partners, with participation from Dunnhumby Ventures and others.
+- The company provides "agentic commerce optimization" to help brands like Unilever, L'Oréal, and Mars appear in results from ChatGPT, Gemini, and Alexa.
+- Azoma utilizes "digital twin" technology to simulate how AI agents present products to specific consumer demographics.
+- The startup plans to double its headcount to 100 employees and expand its tracking capabilities to include platforms like TikTok’s Shopping Assistant.
+- Morgan Stanley projects that AI-powered shopping assistants could influence up to $385 billion in U.S. e-commerce sales by 2030.
 
 ### Why it Matters
-This incident exposes a critical flaw in the global trust ecosystem, as non-browser software often lacks the automated security updates required to mitigate such widespread certificate compromises. Because many embedded devices and legacy systems cannot be easily patched, they remain susceptible to traffic interception and malicious code execution until the certificates expire in 2039.
+As consumers increasingly rely on AI agents for product discovery, brands face a shrinking window of opportunity to influence purchasing decisions. Azoma’s technology addresses this shift by ensuring products remain discoverable in a landscape where generative AI is rapidly replacing traditional search engines.
 
 ============================================================
-Author:   Scott Helme
-Source:   Scotthelme.co.uk
-URL:      https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/
-Category: Cybersecurity
+Author:   Lara O'Reilly
+Source:   Business Insider
+URL:      https://www.businessinsider.com/azoma-raises-millions-optimize-brands-ai-shopping-agents-2026-10#article
+Category: Artificial Intelligence

@@ -1,20 +1,20 @@
-Dell's XPS 13 redefined entry level laptops, and this deal for 16GB RAM is even better
+FADU puts the filesystem inside the SSD's flash to bypass host CPUs
 ============================================================
 
-The 2026 Dell XPS 13 laptop is currently available at Best Buy for $799.99, offering a 20% discount on a device praised for its portability and entry-level performance.
+FADU has unveiled its File-Semantic SSD (FS-SSD) technology, which integrates file system operations directly into the drive to enable host-free data access for GPUs and accelerators.
 
 ### Key Points
-- The Dell XPS 13 features a 13.4-inch 3K touchscreen with a 120Hz refresh rate and weighs 2.2 pounds.
-- Internal hardware includes an Intel Core 5 Series 3 320 CPU, 16GB of soldered RAM, and support for up to 4TB of SSD storage.
-- The device offers nearly 15 hours of battery life, Wi-Fi 7 connectivity, and dual Thunderbolt 4 ports.
-- Best Buy has reduced the price from the standard $999.99 to $799.99 for a limited time.
-- The laptop is positioned as a direct competitor to the MacBook Neo, targeting students and mainstream PC users.
+- The FS-SSD architecture offloads file system, block layer, and CPU tasks to the drive, potentially reducing CPU cycle consumption by 30%.
+- FADU utilizes the NFSv3 protocol to handle path lookups, access control, and file-to-flash mapping within standard NVMe commands.
+- Preliminary testing shows the technology maintains high throughput even when server resources are significantly reduced, outperforming traditional Linux NFS-over-RDMA.
+- The design reduces write amplification by 63% by eliminating the "double garbage collection" conflict between host file systems and SSD firmware.
+- FADU expects to provide partner samples by Q3 2027, with a hostless JBoF reference design planned for the end of 2027.
 
 ### Why it Matters
-This discount provides a high-quality, portable computing option for budget-conscious consumers amid rising hardware costs caused by the ongoing RAM supply crisis. Securing the device at this price point may be more advantageous than waiting for future sales, as market volatility could offset potential Black Friday savings.
+By moving file management directly onto the storage controller, this technology could significantly lower latency and power consumption for data-intensive AI and high-performance computing workloads. This approach allows GPUs and DPUs to access data without relying on a traditional host CPU, potentially reshaping the efficiency and cost structure of large-scale storage infrastructure.
 
 ============================================================
-Author:   Alexander Cope
-Source:   Windows Central
-URL:      https://www.windowscentral.com/hardware/laptops/dell-xps-13-early-black-friday-discount
+Author:   Shane Downing
+Source:   Tom's Hardware UK
+URL:      https://www.tomshardware.com/pc-components/ssds/fadu-puts-the-filesystem-inside-the-ssds-flash-to-bypass-host-cpus-file-semantic-pcie-6-0-ssd-delivers-460-000-ops-s-to-gpus-and-dpus-samples-due-by-q3-2027
 Category: Phones, Laptops, and Gadgets

@@ -1,20 +1,21 @@
-Building India’s deep-tech enterprise pipeline: from IP to IPO
+Critical PHP Core Security Flaws Affect Websites, Including WordPress via @sejournal, @vahandev
 ============================================================
 
-India’s startup ecosystem must shift its focus from counting patent filings to commercializing intellectual property and building globally competitive, institutionally mature deeptech enterprises to ensure long-term economic sovereignty.
+The PHP security team released emergency patches on October 21, 2026, to address two critical vulnerabilities that allow unauthorized remote code execution on vulnerable web servers.
 
 ### Key Points
-- India has recognized over 223,000 startups, but the focus is moving toward converting laboratory research into commercialized, defensible intellectual property assets.
-- Deeptech sectors, including semiconductors, biotech, and quantum computing, require patient capital and long-term institutional support rather than rapid, software-style revenue growth.
-- The government has introduced the ₹1 trillion Research, Development and Innovation (RDI) Scheme and a ₹10,000 crore Fund of Funds to support long-duration, high-risk technology development.
-- Successful commercialization requires a robust bridge between research labs, technology-transfer offices, industrial partners, and domestic certification bodies to reduce reliance on foreign regulatory standards.
-- Companies like Nayam, Pandorum, and Peptris exemplify the shift toward IP-led value creation, aiming to solve complex problems in drug discovery and advanced manufacturing.
+- PHP versions 8.5.12, 8.4.27, 8.3.36, and 8.2.35 contain the necessary security fixes for these critical flaws.
+- Apache servers utilizing mod_php are at the highest risk, as attackers can execute code before the website's own scripts load.
+- Website owners must contact their hosting providers to verify or install the updates, as updating WordPress or plugins does not patch the underlying PHP.
+- PHP 8.1 and older versions are end-of-life, though limited source-code fixes are available for versions 7.4, 8.0, and 8.1.
+- Several government and university websites in the Netherlands and Finland were taken offline as a precautionary measure prior to the patch release.
+- Security experts recommend auditing sites for existing compromises, such as web shells, because patching does not remove unauthorized access already gained by attackers.
 
 ### Why it Matters
-Transitioning from a startup-count model to an IP-driven economy is essential for India to capture the value of its own scientific breakthroughs and reduce dependence on foreign technology. By fostering institutions that support long-term research and commercialization, India can build globally significant enterprises that secure its economic future and industrial independence.
+These vulnerabilities pose a severe threat to website integrity and user data, as they allow attackers to bypass authentication and execute arbitrary code. Because exploit tools are already circulating, immediate action is required to prevent potential breaches that could lead to long-term damage to site security and search engine visibility.
 
 ============================================================
-Author:   mint
-Source:   Livemint
-URL:      https://www.livemint.com/opinion/online-views/building-india-s-deep-tech-enterprise-pipeline-from-ip-to-ipo-11792426643662.html
-Category: Tech Business & Markets
+Author:   Vahan Petrosyan
+Source:   Search Engine Journal
+URL:      https://www.searchenginejournal.com/critical-php-core-security-flaws-affect-websites-including-wordpress/593812/
+Category: Cybersecurity

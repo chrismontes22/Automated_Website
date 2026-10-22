@@ -1,20 +1,20 @@
-GitHub package firewall
+PHP: The three letters that shut down sites all over the internet today
 ============================================================
 
-GitHub has launched a new package firewall in public preview to protect enterprise CI runners and coding agents from malicious software during the automated dependency installation process.
+Critical vulnerabilities discovered in the PHP programming language have forced major websites, government agencies, and gaming services offline as experts warn of potential unauthenticated remote code execution.
 
 ### Key Points
-- The firewall acts as a policy gate, inspecting metadata and package downloads for malicious activity before they reach internal systems.
-- Administrators can configure security controls, including cooldown periods, GitHub Advisory Database checks, and supply-chain attestation verification.
-- The service is currently available to all GitHub Enterprise Cloud customers at no cost during the public preview period.
-- Initial support is limited exclusively to npm packages, with plans to scale infrastructure and features based on user demand.
-- Blocked packages can be appealed through an exception request workflow similar to existing GitHub Advanced Security features.
+- OpenAI and security firm Wiz identified two critical PHP vulnerabilities, designated CVE-2026-109618 and CVE-2026-109619, using advanced AI models.
+- The flaws allow attackers to execute unauthorized code, access sensitive databases, and gain full control over servers without requiring administrator credentials.
+- Affected platforms include Wikipedia, DeviantArt, 4chan, and various government portals in the Netherlands and Finland, alongside services like Pokémon Home.
+- PHP powers approximately 69.3% of all websites, making the potential attack surface for these vulnerabilities exceptionally large across the global internet.
+- Security agencies, including the NSA and the UK’s National Cyber Security Center, have advised organizations to take vulnerable systems offline if immediate patching is not possible.
 
 ### Why it Matters
-This security layer addresses critical vulnerabilities in automated build environments where human oversight is often absent during dependency installation. By centralizing policy enforcement, organizations can significantly reduce the risk of supply-chain attacks infiltrating their development pipelines.
+These vulnerabilities represent a significant shift in cybersecurity, as AI-assisted research has successfully uncovered complex, long-standing flaws that were previously considered too difficult to exploit. Because PHP underpins a vast majority of the web, the risk of widespread data breaches and server hijacking remains high until hosting providers and site administrators apply necessary security updates.
 
 ============================================================
-Author:   Allison
-Source:   Github.blog
-URL:      https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview/
+Author:   Terrence O’Brien, Jay Peters
+Source:   The Verge
+URL:      https://www.theverge.com/tech/1015906/php2shell-vulnerability-october-2026
 Category: Cybersecurity

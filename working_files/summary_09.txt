@@ -1,20 +1,20 @@
-Hackers Hid Vasilek Backdoor in VMware Tools During 2-Year Russian Healthcare Intrusion
+Has Windscribe quietly completed the first-ever AI VPN audit?
 ============================================================
 
-The Belarus-aligned hacktivist group Cyber Partisans maintained a long-term, stealthy presence within a Russian healthcare organization’s network to facilitate potential espionage and future supply chain attacks.
+VPN provider Windscribe has integrated Anthropic’s Fable 5 AI model into its development process to identify and patch complex security vulnerabilities across its Windows, macOS, and Linux applications.
 
 ### Key Points
-- Cybersecurity firm Solar identified the intrusion, which began in early 2024 and remained undetected until December 2025.
-- The attackers used a custom backdoor called Vasilek, which leverages Telegram for command-and-control and data exfiltration.
-- Persistence was maintained by masquerading malicious files as legitimate VMware Tools components to evade security detection.
-- Unlike previous destructive campaigns by the group, this operation prioritized long-term access over immediate system disruption.
-- The threat actors utilized various tools, including DNSCat2 and the Evlx utility, to manage infected hosts and clear Windows event logs.
+- Windscribe’s July 6, 2026, update (version 2.32.11) incorporates security fixes identified by the Fable 5 AI engine.
+- The AI audit addressed critical issues including WireGuard key validation, API key log redaction, and IPC exposure hardening.
+- Developers used the AI tool to specifically review desktop application components that operate with administrative privileges.
+- The update also resolved a DLL planting vulnerability on Windows and a local privilege escalation flaw on Linux.
+- Windscribe maintains that AI-assisted reviews supplement, rather than replace, human engineering and independent third-party security audits.
 
 ### Why it Matters
-This incident highlights a strategic shift by hacktivist groups toward long-term espionage within critical infrastructure rather than immediate sabotage. By compromising a healthcare entity with extensive trusted relationships, the attackers gained a high-value foothold that could be leveraged to infiltrate secondary medical institutions.
+This development marks the first instance of a commercial VPN provider utilizing a large language model to enhance its internal software security and code-quality protocols. While AI offers rapid analysis of complex codebases, the industry continues to rely on human-led, third-party audits to ensure the external accountability and adversarial testing necessary for user privacy.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/10/hackers-hid-vasilek-backdoor-in-vmware.html
+Author:   Rene Millman
+Source:   TechRadar
+URL:      https://www.techradar.com/vpn/vpn-services/has-windscribe-quietly-completed-the-first-ever-ai-vpn-audit
 Category: Cybersecurity
