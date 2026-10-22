@@ -1,20 +1,20 @@
-Samsung could double the phones in the Galaxy Z series: 'Galaxy Z Slide' rumored
+GitHub package firewall
 ============================================================
 
-Samsung is reportedly planning to expand its foldable smartphone lineup to six models by 2027, potentially introducing new TriFold and slidable device designs to the consumer market.
+GitHub has launched a new package firewall in public preview to protect enterprise CI runners and coding agents from malicious software during the automated dependency installation process.
 
 ### Key Points
-- Rumors suggest Samsung will launch six foldable devices in 2027, including a Galaxy Z TriFold 2 and a Galaxy Z Fold 9 Pro.
-- The company is allegedly developing a "Galaxy Z Slide" device, building on slidable display prototypes showcased at CES 2025.
-- Samsung Display previously demonstrated Slidable Flex Duet and Solo concepts that expand screen sizes up to 17.3 inches.
-- The proposed Galaxy Z TriFold 2 may feature a thinner, more durable design with an estimated retail price of $2,800.
-- Current foldable offerings include the Galaxy Z Fold 8, Fold 8 Ultra, and Flip 8 models.
+- The firewall acts as a policy gate, inspecting metadata and package downloads for malicious activity before they reach internal systems.
+- Administrators can configure security controls, including cooldown periods, GitHub Advisory Database checks, and supply-chain attestation verification.
+- The service is currently available to all GitHub Enterprise Cloud customers at no cost during the public preview period.
+- Initial support is limited exclusively to npm packages, with plans to scale infrastructure and features based on user demand.
+- Blocked packages can be appealed through an exception request workflow similar to existing GitHub Advanced Security features.
 
 ### Why it Matters
-Expanding the foldable portfolio signals Samsung's intent to maintain its market dominance by diversifying form factors beyond traditional book-style and clamshell designs. This strategy could push mobile hardware boundaries, though the high price points and technical complexity of these devices may challenge mass-market adoption.
+This security layer addresses critical vulnerabilities in automated build environments where human oversight is often absent during dependency installation. By centralizing policy enforcement, organizations can significantly reduce the risk of supply-chain attacks infiltrating their development pipelines.
 
 ============================================================
-Author:   nickodiaz@sbcglobal.net (Nickolas Diaz) , Nickolas Diaz
-Source:   Android Central
-URL:      https://www.androidcentral.com/phones/samsung-galaxy/samsung-could-double-the-phones-in-the-galaxy-z-series-galaxy-z-slide-rumored
-Category: Phones, Laptops, and Gadgets
+Author:   Allison
+Source:   Github.blog
+URL:      https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview/
+Category: Cybersecurity

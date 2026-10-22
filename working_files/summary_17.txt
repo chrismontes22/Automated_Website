@@ -1,20 +1,20 @@
-#StopRansomware: SafePay Ransomware
+Germany’s most popular party targeted by unknown hackers
 ============================================================
 
-SafePay ransomware has targeted over 600 businesses and critical infrastructure organizations globally since August 2024, utilizing credential theft, phishing, and system vulnerabilities to encrypt sensitive data for ransom.
+Unknown hackers have leaked over 420,000 internal emails from Germany’s Alternative for Germany (AfD) party, exposing sensitive personal documents and private correspondence of senior party leadership figures.
 
 ### Key Points
-- SafePay actors gain initial network access by exploiting VPN vulnerabilities, brute-forcing passwords, and using phished account profiles.
-- The group employs "living off the land" techniques, using legitimate administrative tools like PsExec and WinRM to move laterally and disable security software.
-- Data is exfiltrated using common utilities such as RClone, FileZilla, and cloud services like OneDrive before files are encrypted with a hybrid RSA/ChaCha20 scheme.
-- Ransom demands are typically issued in cryptocurrency, with threats to publish stolen data on a dedicated leak site if payments are not met.
-- Authoring agencies, including the FBI and CISA, have identified specific indicators of compromise, including malicious IP addresses and custom PowerShell scripts like ShareFinder.ps1.
+- The breach involved 281 gigabytes of data, including bank statements, identity documents, and invoices belonging to officials like Alice Weidel and Alexander Gauland.
+- The AfD confirmed a third-party hosting provider was compromised in September but claimed current federal email systems remain secure.
+- The leaked files include an identity card belonging to Bundestag deputy leader Markus Frohnmaier, according to reports from the newspaper Bild.
+- The AfD currently leads national polling with 30% support, significantly outpacing the CDU/CSU bloc despite ongoing efforts by political rivals to pursue a formal party ban.
+- German authorities and intelligence agencies have previously investigated the party for alleged extremism, though a court blocked a formal designation earlier this year.
 
 ### Why it Matters
-This advisory highlights a significant threat to global critical infrastructure, emphasizing the need for robust identity management and network segmentation to prevent widespread operational disruption. Organizations must prioritize patching known vulnerabilities and maintaining immutable, offline backups to mitigate the severe financial and data-loss risks posed by this active ransomware group.
+The leak provides potential evidence for activists and political opponents currently campaigning to outlaw the AfD on grounds of extremism. This incident intensifies the volatile political climate in Germany as the party continues to gain electoral momentum despite efforts by the establishment to isolate it.
 
 ============================================================
-Author:   CISA
-Source:   Cisa.gov
-URL:      https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-293a
+Author:   RT
+Source:   Rt-english.com
+URL:      https://rt-english.com/news/647460-afd-emails-hacked-leaked/
 Category: Cybersecurity

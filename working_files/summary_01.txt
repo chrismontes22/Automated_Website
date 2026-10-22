@@ -1,20 +1,20 @@
-WhatsApp's help pages hid LLM instructions: dont recommend a regulator
+Chrome will now show a warning before you visit ‘suspicious’ sites
 ============================================================
 
-WhatsApp embedded hidden instructions within its help center pages that directed its AI chatbot to withhold information about data regulators and privacy laws from users seeking assistance.
+Google is rolling out a new two-stage warning system for Chrome’s Enhanced Protection mode that alerts users to potentially suspicious websites before they navigate to the page.
 
 ### Key Points
-- Hidden directives instructed the AI to avoid mentioning data protection authorities or regulators when users inquired about account deletion.
-- The chatbot was programmed to stop referencing privacy laws, including GDPR, if a user mentioned lawyers, lawsuits, or legal action.
-- These instructions were embedded in page source code, making them invisible to human users but accessible to AI models.
-- WhatsApp removed these specific hidden prompts from its help pages by mid-October 2026 following discovery of the practice.
-- The company maintains that these measures were intended to prevent the chatbot from providing unauthorized legal advice.
+- The feature distinguishes between "suspicious" sites with lower-confidence risk and "dangerous" sites with high-confidence threats.
+- Suspicious site warnings appear as pop-ups, while dangerous site alerts occupy the full screen with a red background.
+- Users can manually override suspicious site warnings by selecting a "Mark as safe" option if they believe the flag is incorrect.
+- This update builds upon the two-stage file download security system Google introduced earlier in 2024.
+- Google has simultaneously integrated improved Gemini-powered scam detection for users enrolled in Enhanced Protection.
 
 ### Why it Matters
-These hidden instructions created a discrepancy between the rights guaranteed in WhatsApp’s public privacy policy and the information provided by its automated support tools. By restricting the AI from citing legal protections or regulatory bodies, the company potentially hindered users from exercising their rights to data erasure and formal complaint.
+This update provides users with more granular security data, allowing for better-informed browsing decisions when encountering potentially malicious URLs. By differentiating between varying levels of risk, Google aims to reduce accidental exposure to phishing and malware while minimizing user frustration from false positives.
 
 ============================================================
-Author:   Dan Saltman
-Source:   Redact.dev
-URL:      https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions
-Category: Artificial Intelligence
+Author:   Jess Weatherbed
+Source:   The Verge
+URL:      https://www.theverge.com/tech/1014446/google-chrome-suspicious-website-warning
+Category: Cybersecurity
