@@ -1,21 +1,20 @@
-7 Best Virtualization Platforms for Hybrid Cloud Environments
+Android 17 beta tackles a security loophole thieves could exploit
 ============================================================
 
-Enterprises are reevaluating their virtualization strategies following Broadcom’s VMware acquisition, with seven key platforms emerging as top contenders for managing modern hybrid cloud and on-premises infrastructure workloads.
+Google’s Android 17 QPR3 Beta 2 introduces a security feature requiring biometric or PIN authentication to toggle connectivity settings like Wi-Fi and mobile data from a locked screen.
 
 ### Key Points
-- Sangfor aSV offers a KVM-based alternative that bundles networking, storage, and security to compete with VMware’s modular pricing.
-- VMware remains the industry leader for ecosystem depth, though recent licensing changes have prompted many organizations to model total costs more aggressively.
-- Nutanix provides a highly-rated, integrated hyper-converged infrastructure (HCI) platform that includes the AHV hypervisor at no additional license cost.
-- Proxmox serves as a cost-effective, open-source option for teams comfortable with manual configuration and self-managed infrastructure.
-- Red Hat OpenShift Virtualization is optimized for organizations prioritizing container modernization and Kubernetes-native workflows.
-- Microsoft Hyper-V and Oracle Cloud Infrastructure (OCI) offer specialized advantages for teams already heavily invested in Windows or Oracle-specific application stacks.
+- Users can now restrict access to Airplane Mode, Wi-Fi, Bluetooth, and Mobile Data tiles on the lock screen.
+- Non-security features like Flashlight, Auto-rotate, and Battery Saver remain accessible without requiring device authentication.
+- The update, released October 20 with build number DP11.261002.005, addresses system crashes, random reboots, and Bluetooth pairing failures.
+- Fixes are included for high idle battery drain caused by motion sensors and connectivity issues on specific networks like Dish, IT&E, and OXIO.
+- The feature is available for eligible Pixel devices enrolled in the Android Beta Program via the Security & privacy or Lock screen settings menus.
 
 ### Why it Matters
-Selecting the right virtualization platform is a critical architectural decision that dictates long-term operational costs and technical flexibility. Choosing a platform that aligns with existing infrastructure and future modernization goals prevents costly rework and ensures seamless workload portability across hybrid environments.
+This update provides a critical security layer that prevents thieves from disabling network connectivity on stolen devices, which often hinders remote tracking capabilities. By requiring authentication for sensitive toggles, Google makes it significantly harder for unauthorized users to isolate a phone from the network.
 
 ============================================================
-Author:   Ryan Kh
-Source:   Smartdatacollective.com
-URL:      https://www.smartdatacollective.com/virtualization-platforms-hybrid-cloud/
-Category: Tech Business & Markets
+Author:   techkritiko@gmail.com (Jay Bonggolto) , Jay Bonggolto
+Source:   Android Central
+URL:      https://www.androidcentral.com/apps-software/android-os/android-17-beta-tackles-a-security-loophole-thieves-could-exploit
+Category: Cybersecurity

@@ -1,20 +1,20 @@
-Chrome will now show a warning before you visit ‘suspicious’ sites
+GitHub package firewall
 ============================================================
 
-Google is rolling out a new two-stage warning system for Chrome’s Enhanced Protection mode that alerts users to potentially suspicious websites before they navigate to the page.
+GitHub has launched a new package firewall in public preview to protect enterprise CI runners and coding agents from malicious software during the automated dependency installation process.
 
 ### Key Points
-- The feature distinguishes between "suspicious" sites with lower-confidence risk and "dangerous" sites with high-confidence threats.
-- Suspicious site warnings appear as pop-ups, while dangerous site alerts occupy the full screen with a red background.
-- Users can manually override suspicious site warnings by selecting a "Mark as safe" option if they believe the flag is incorrect.
-- This update builds upon the two-stage file download security system Google introduced earlier in 2024.
-- Google has simultaneously integrated improved Gemini-powered scam detection for users enrolled in Enhanced Protection.
+- The firewall acts as a policy gate, inspecting metadata and package downloads for malicious activity before they reach internal systems.
+- Administrators can configure security controls, including cooldown periods, GitHub Advisory Database checks, and supply-chain attestation verification.
+- The service is currently available to all GitHub Enterprise Cloud customers at no cost during the public preview period.
+- Initial support is limited exclusively to npm packages, with plans to scale infrastructure and features based on user demand.
+- Blocked packages can be appealed through an exception request workflow similar to existing GitHub Advanced Security features.
 
 ### Why it Matters
-This update provides users with more granular security data, allowing for better-informed browsing decisions when encountering potentially malicious URLs. By differentiating between varying levels of risk, Google aims to reduce accidental exposure to phishing and malware while minimizing user frustration from false positives.
+This security layer addresses critical vulnerabilities in automated build environments where human oversight is often absent during dependency installation. By centralizing policy enforcement, organizations can significantly reduce the risk of supply-chain attacks infiltrating their development pipelines.
 
 ============================================================
-Author:   Jess Weatherbed
-Source:   The Verge
-URL:      https://www.theverge.com/tech/1014446/google-chrome-suspicious-website-warning
+Author:   Allison
+Source:   Github.blog
+URL:      https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview/
 Category: Cybersecurity

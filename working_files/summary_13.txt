@@ -1,20 +1,20 @@
-Your car’s smartest features are opening doors for hackers
+Eight Bits of Trust; eMudhra's CA keys cracked in milliseconds
 ============================================================
 
-Researchers from the University of Gothenburg and Chalmers University of Technology report that modern connected vehicles face increasing cybersecurity threats from external software, cloud services, and third-party applications.
+Security researchers discovered that eight eMudhra certificate authority private keys were generated with extremely weak values, allowing anyone to easily compromise encrypted traffic across various software platforms.
 
 ### Key Points
-- Researchers analyzed 413 software vulnerabilities in connected vehicles identified between January 2022 and September 2024.
-- External applications, including websites and cloud services, now account for over one-third of all identified automotive security weaknesses.
-- Approximately 61% of documented vulnerabilities are classified as high or critical severity, a significant increase from historical data.
-- A December 2024 incident exposed the GPS locations and personal data of 800,000 Volkswagen Group vehicles due to unsecured third-party cloud credentials.
-- Security flaws often originate in third-party software libraries integrated into vehicles during the manufacturing process.
+- Eight eMudhra intermediate certificates, created in April 2025, used trivial private keys that could be brute-forced in milliseconds.
+- The affected certificates include six TLS issuing CAs and two code-signing CAs, all of which were cross-signed by Sectigo.
+- Major browsers like Chrome and Firefox have already blocked the compromised certificates, but non-browser TLS clients remain vulnerable.
+- Many automated systems, including CI/CD pipelines, IoT devices, and command-line tools like curl, do not check revocation or Certificate Transparency logs.
+- The vulnerability stems from a human error during the key generation ceremony, where a script mistakenly used weak keys instead of secure ones.
 
 ### Why it Matters
-The shift toward remote, software-based vulnerabilities transforms vehicle security from a simple theft-prevention issue into a critical matter of driver safety and personal privacy. As cars become increasingly connected, manufacturers must prioritize cybersecurity throughout the entire development lifecycle to prevent potential exploitation of safety-critical systems.
+This incident exposes a critical flaw in the global trust ecosystem, as non-browser software often lacks the automated security updates required to mitigate such widespread certificate compromises. Because many embedded devices and legacy systems cannot be easily patched, they remain susceptible to traffic interception and malicious code execution until the certificates expire in 2039.
 
 ============================================================
-Author:   Mike McRae
-Source:   New Atlas
-URL:      https://newatlas.com/technology/cars-weakest-security-points/
+Author:   Scott Helme
+Source:   Scotthelme.co.uk
+URL:      https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/
 Category: Cybersecurity
