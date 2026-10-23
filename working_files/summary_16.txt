@@ -1,20 +1,20 @@
-Google’s Illyes: Robots.txt Covers Crawling, Not AI Training via @sejournal, @MattGSouthern
+Race to update services' computer systems after cyber-security flaw found
 ============================================================
 
-Google’s Gary Illyes clarified that the robots.txt protocol only governs URL access and cannot restrict how AI models use data once it has been successfully crawled.
+Global organizations are scrambling to patch critical security vulnerabilities in the PHP programming language, which powers approximately 70% of websites, to prevent potential remote code execution attacks.
 
 ### Key Points
-- The RFC 9309 standard defines robots.txt as an access preference protocol, not a tool for controlling post-crawl data usage by AI systems.
-- To block specific AI crawlers, website owners must explicitly target the crawler’s unique user-agent token within their robots.txt file.
-- Google-Extended is a specific token used to manage whether Google crawls content for training Gemini models or for grounding in Vertex AI.
-- An IETF Internet-Draft co-authored by Illyes proposes a new "Content-Usage" rule, though it is not yet an official standard and lacks industry consensus.
-- Cherry Prommawin recommends using percent-encoded paths for non-English characters in robots.txt to ensure compatibility with older or non-Google web crawlers.
+- The "php2shell" vulnerability allows unauthenticated attackers to remotely execute code on servers running affected versions of the PHP language.
+- Cloudflare reported a surge in exploitation attempts, rising from thousands to millions within hours of the vulnerability being publicly disclosed.
+- The UK government took 32 services offline as a precautionary measure, while other entities like Wikipedia and Orange also experienced temporary disruptions.
+- PHP is a foundational web development language used by major platforms including WordPress, Drupal, and Laravel.
+- Cybersecurity experts from the NCSC and NCC Group warn that the window for organizations to apply patches has shrunk to hours or days.
 
 ### Why it Matters
-Website owners currently lack a universal standard to prevent AI training while still allowing search engine indexing, forcing them to rely on specific bot-by-bot exclusions. This technical limitation highlights the growing gap between existing web protocols and the complex data-usage requirements of modern generative artificial intelligence.
+Because PHP underpins a vast majority of the internet, these vulnerabilities pose a systemic risk to global digital infrastructure and business continuity. Organizations must prioritize rapid patching to mitigate the threat of remote exploitation, as the speed at which attackers weaponize such flaws continues to accelerate.
 
 ============================================================
-Author:   Matt G. Southern
-Source:   Search Engine Journal
-URL:      https://www.searchenginejournal.com/google-illyes-robots-txt-crawling-ai-training/593957/
-Category: Artificial Intelligence
+Author:   https://www.facebook.com/bbcnews
+Source:   BBC News
+URL:      https://www.bbc.co.uk/news/articles/c9j34zgmkxx1o
+Category: Cybersecurity
