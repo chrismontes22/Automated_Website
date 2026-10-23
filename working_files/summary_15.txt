@@ -1,20 +1,20 @@
-FADU puts the filesystem inside the SSD's flash to bypass host CPUs
+UK working to identify exposure after global cyber-security warning
 ============================================================
 
-FADU has unveiled its File-Semantic SSD (FS-SSD) technology, which integrates file system operations directly into the drive to enable host-free data access for GPUs and accelerators.
+The UK government and global organizations are rushing to patch critical security flaws in the PHP programming language that potentially expose millions of websites to malicious cyberattacks.
 
 ### Key Points
-- The FS-SSD architecture offloads file system, block layer, and CPU tasks to the drive, potentially reducing CPU cycle consumption by 30%.
-- FADU utilizes the NFSv3 protocol to handle path lookups, access control, and file-to-flash mapping within standard NVMe commands.
-- Preliminary testing shows the technology maintains high throughput even when server resources are significantly reduced, outperforming traditional Linux NFS-over-RDMA.
-- The design reduces write amplification by 63% by eliminating the "double garbage collection" conflict between host file systems and SSD firmware.
-- FADU expects to provide partner samples by Q3 2027, with a hostless JBoF reference design planned for the end of 2027.
+- Researcher Ryan Austin discovered the critical PHP vulnerability, which had remained undetected for at least a decade.
+- The flaw allows attackers to execute unauthorized code, steal sensitive data, or plant backdoors on affected web servers.
+- Amazon reported detecting and blocking multiple "PHP2Shell" exploitation attempts targeting its systems following a premature leak of the vulnerability details.
+- Government agencies in the UK, EU, Australia, and Finland have advised organizations to apply patches immediately or take vulnerable systems offline.
+- Estimates suggest the vulnerability impacts a significant portion of the internet, including major platforms like Wikipedia and WordPress.
 
 ### Why it Matters
-By moving file management directly onto the storage controller, this technology could significantly lower latency and power consumption for data-intensive AI and high-performance computing workloads. This approach allows GPUs and DPUs to access data without relying on a traditional host CPU, potentially reshaping the efficiency and cost structure of large-scale storage infrastructure.
+This incident highlights the growing role of artificial intelligence in both discovering complex software vulnerabilities and enabling attackers to exploit them rapidly. Because PHP underpins a vast segment of the global web infrastructure, these flaws pose a systemic risk to data security and service availability for both public and private sectors.
 
 ============================================================
-Author:   Shane Downing
-Source:   Tom's Hardware UK
-URL:      https://www.tomshardware.com/pc-components/ssds/fadu-puts-the-filesystem-inside-the-ssds-flash-to-bypass-host-cpus-file-semantic-pcie-6-0-ssd-delivers-460-000-ops-s-to-gpus-and-dpus-samples-due-by-q3-2027
-Category: Phones, Laptops, and Gadgets
+Author:   https://www.facebook.com/bbcnews
+Source:   BBC News
+URL:      https://www.bbc.co.uk/news/articles/cmx23d0k57d3o
+Category: Cybersecurity

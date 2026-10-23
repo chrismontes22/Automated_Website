@@ -1,20 +1,20 @@
-Presented by Stripe
+Railway Says Intruder May Have Accessed Customer Secrets, Urges Credential Rotation
 ============================================================
 
-Stratechery founder Ben Thompson has announced a new exclusive sponsorship deal with Stripe, marking a shift toward a hybrid business model combining paid subscriptions with integrated advertising.
+Platform-as-a-Service provider Railway disclosed a security breach involving unauthorized access to encrypted customer environment variables, prompting urgent warnings for users to rotate sensitive API keys and credentials.
 
 ### Key Points
-- Stratechery will feature "Presented by Stripe" branding across its website, email newsletters, and podcasts starting in October 2026.
-- Thompson has updated his ethics policy to mandate disclosure of the Stripe relationship in any content where a conflict of interest may be relevant.
-- The agreement guarantees total editorial independence, ensuring Stripe has no control over the publication's content or editorial direction.
-- Revenue from the sponsorship will fund new product development, including a transition to in-person, video-based episodes for the *Sharp Tech* podcast.
-- Existing subscribers will continue to receive all content, though the ad-supported model will apply to all readers regardless of subscription status.
+- Railway confirmed that unauthorized third parties accessed and potentially decrypted sensitive environment variables, including API keys and database credentials.
+- Security researcher Taylor Monahan reported that attackers used stolen private keys to drain cryptocurrency wallets associated with the compromised accounts.
+- The company has invalidated all Railway API tokens and rotated bucket credentials to mitigate further unauthorized access.
+- Railway is currently restoring build services across all workspace tiers, though new user signups remain temporarily paused during the recovery process.
+- This incident aligns with a broader trend of "LLMjacking," where attackers hijack cloud environments to run expensive AI inference workloads at the victim's expense.
 
 ### Why it Matters
-This partnership signals a strategic pivot for independent media creators who are increasingly adopting hybrid revenue models to scale operations. By formalizing a long-standing professional relationship, the move highlights the growing trend of niche publishers leveraging high-value audiences to secure long-term corporate sponsorships.
+This breach highlights the significant risks associated with storing sensitive credentials in cloud-based environment variables, which are increasingly targeted by attackers seeking free compute power. As threat actors shift toward hijacking AI infrastructure, businesses must prioritize robust credential management and proactive rotation to prevent unauthorized resource exploitation and financial loss.
 
 ============================================================
-Author:   Ben Thompson
-Source:   Stratechery.com
-URL:      https://stratechery.com/2026/presented-by-stripe/
-Category: Tech Business & Markets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/10/railway-says-intruder-may-have-accessed.html
+Category: Cybersecurity

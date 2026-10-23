@@ -1,20 +1,20 @@
-Optable’s Agentic Marketplace Bets That AI Agents Can Return More Dollars To Working Media
+Google’s Illyes: Robots.txt Covers Crawling, Not AI Training via @sejournal, @MattGSouthern
 ============================================================
 
-Optable unveiled its new Agentic Marketplace on October 8, 2026, using AI agents to automate direct advertising deals and reduce reliance on costly, complex programmatic supply chain intermediaries.
+Google’s Gary Illyes clarified that the robots.txt protocol only governs URL access and cannot restrict how AI models use data once it has been successfully crawled.
 
 ### Key Points
-- The Agentic Marketplace enables buyer and seller AI agents to automate the discovery, packaging, and purchasing of publisher inventory.
-- Optable aims to reduce the "ad tech tax," noting that approximately 41% of U.S. real-time bidding display spending currently goes toward intermediary fees.
-- The platform allows publishers to maintain control over pricing and buyer eligibility while scaling customized deals that were previously too manual to execute.
-- Goodway Group reported that the technology reduced the time required to move a campaign from initial briefing to quality assurance to just 30 minutes.
-- Emarketer projects the agentic media buying market will grow from $100 million in 2026 to $29.5 billion by 2028.
+- The RFC 9309 standard defines robots.txt as an access preference protocol, not a tool for controlling post-crawl data usage by AI systems.
+- To block specific AI crawlers, website owners must explicitly target the crawler’s unique user-agent token within their robots.txt file.
+- Google-Extended is a specific token used to manage whether Google crawls content for training Gemini models or for grounding in Vertex AI.
+- An IETF Internet-Draft co-authored by Illyes proposes a new "Content-Usage" rule, though it is not yet an official standard and lacks industry consensus.
+- Cherry Prommawin recommends using percent-encoded paths for non-English characters in robots.txt to ensure compatibility with older or non-Google web crawlers.
 
 ### Why it Matters
-This shift toward agentic advertising seeks to restore the value of direct publisher-advertiser relationships by removing the manual labor that historically limited customized media deals. By prioritizing software-based service fees over percentage-based transaction taxes, the model could significantly increase the portion of advertising budgets that reach actual working media.
+Website owners currently lack a universal standard to prevent AI training while still allowing search engine indexing, forcing them to rely on specific bot-by-bot exclusions. This technical limitation highlights the growing gap between existing web protocols and the complex data-usage requirements of modern generative artificial intelligence.
 
 ============================================================
-Author:   AdExchanger Content Studio
-Source:   AdExchanger
-URL:      http://www.adexchanger.com/content-studio/optables-agentic-marketplace-bets-that-ai-agents-can-return-more-dollars-to-working-media/
+Author:   Matt G. Southern
+Source:   Search Engine Journal
+URL:      https://www.searchenginejournal.com/google-illyes-robots-txt-crawling-ai-training/593957/
 Category: Artificial Intelligence
