@@ -1,20 +1,20 @@
-LiteLLM Compromised in Fresh Supply Chain Attack
+Beyond the Review: Inside the Onyx RCR 80V E-Bike
 ============================================================
 
-LiteLLM suffered a supply chain attack on October 21, resulting in over 49,000 downloads of a malicious version containing information-stealing malware and remote access trojan capabilities.
+The Onyx RCR 80V is a high-performance electric motorbike that blends BMX-inspired maneuverability with modern features like Apple CarPlay, offering a customizable platform for urban commuters and enthusiasts.
 
 ### Key Points
-- Attackers compromised LiteLLM version 1.107.0 by hijacking GitHub CLI OAuth tokens to publish poisoned packages to PyPI and Docker Hub.
-- The malicious code remained active for approximately three hours before being removed, with enterprise customers using private repositories remaining unaffected.
-- The malware harvests sensitive data, including cloud secrets, SSH keys, browser credentials, and API keys for AI services like OpenAI and Anthropic.
-- Cybersecurity firm Wiz reported that attackers used stolen AWS credentials to perform LLMjacking by querying Amazon Bedrock models.
-- Users who installed the compromised version are advised to immediately rotate all credentials and scan their systems for persistent malware.
+- The RCR 80V features an 8kW nominal rear hub motor, a removable 3.6kWh battery, and a claimed top speed of 65–75 mph.
+- Performance metrics include a 0–30 mph acceleration time of 1.7 seconds and a claimed maximum range of 140 miles under optimal conditions.
+- The bike weighs approximately 155 pounds and is available in Street and Dual Sport configurations, differing primarily in tire tread and fender inclusion.
+- Integrated technology includes a TFT touchscreen, cruise control, regenerative braking, and Apple CarPlay/Android Auto connectivity.
+- Onyx emphasizes long-term repairability and aftermarket compatibility, aiming to avoid the "disposable" product cycle common in consumer electronics.
 
 ### Why it Matters
-This incident highlights the significant risks posed by supply chain attacks on open-source tools that manage sensitive developer credentials and cloud infrastructure. The compromise demonstrates how easily attackers can leverage leaked tokens to gain lateral access and exfiltrate high-value data from development environments.
+The Onyx RCR 80V represents a shift toward durable, modular electric mobility that prioritizes owner customization and long-term maintenance over planned obsolescence. For consumers, this approach offers a compelling alternative to disposable tech, though potential buyers must carefully navigate the complex legal and registration requirements associated with its high-performance capabilities.
 
 ============================================================
-Author:   Ionut Arghire
-Source:   Securityweek.com
-URL:      https://www.securityweek.com/litellm-compromised-in-fresh-supply-chain-attack/
-Category: Cybersecurity
+Author:   Joseph Kaminski
+Source:   CNET
+URL:      https://www.cnet.com/roadshow/personal-mobility/onyx-rcr-80v-review/
+Category: Phones, Laptops, and Gadgets

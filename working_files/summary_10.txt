@@ -1,20 +1,21 @@
-U.S. warns of active Chinese cyber probes on power grids and water systems using AI-generated attack tools
+Hackers Breach Enterprise Firewalls and VPNs, Exposing Over 70,000 Credentials
 ============================================================
 
-U.S. intelligence agencies have confirmed that state-sponsored adversaries are actively using artificial intelligence to develop custom code for scanning and exploiting sensitive industrial control systems across critical infrastructure.
+Cybersecurity researchers have identified a widespread campaign by the threat actor k0t targeting exposed network edge devices, including Fortinet and Palo Alto Networks firewalls, to facilitate data exfiltration.
 
 ### Key Points
-- A joint August 19 advisory warns that state-sponsored actors are using AI to create scripts that mimic legitimate monitoring tools to probe industrial installations.
-- Threat actors are leveraging open-source libraries like snap7.dll to gain unauthorized read/write access to Siemens S7 Series programmable logic controllers.
-- The FBI has identified Integrity Technology Group as a key enabler of these activities, noting its ties to the Chinese government and use of large-scale botnets.
-- Adversaries are targeting six critical infrastructure sectors, including power, water, and manufacturing, to potentially disrupt essential services and cause equipment damage.
-- The NSA recommends that organizations immediately patch known vulnerabilities, disable external management for internet-exposed controllers, and implement strict network segmentation.
+- Threat actor k0t, also known as CryptoFeel, has compromised global organizations by exploiting vulnerabilities like CVE-2025-64446 and CVE-2026-0257.
+- The campaign utilizes reconnaissance tools like FOFA and ZoomEye to identify vulnerable VPN and firewall appliances for initial access.
+- Attackers establish persistence using legitimate remote management software such as MeshCentral, Atera, and the AdaptixC2 framework.
+- Stolen data is exfiltrated to Wasabi S3 buckets and MEGA cloud drives, with over 70,000 credentials identified in connection with the activity.
+- Victims are geographically diverse, with the highest concentrations located in the Asia Pacific region at 38% and Latin America at 31.9%.
+- The actor maintains suspected ties to ransomware groups Qilin and The Gentlemen, likely acting as an initial access broker.
 
 ### Why it Matters
-The integration of AI into cyber warfare significantly lowers the technical barrier for adversaries to disrupt the foundational systems that power modern society. This shift creates an unprecedented threat environment where critical infrastructure, such as power grids and water treatment facilities, faces a heightened risk of systemic failure.
+This campaign highlights the significant risk posed by internet-facing network appliances that remain unpatched or improperly secured against known vulnerabilities. By acting as an initial access broker for ransomware gangs, these attackers provide a critical entry point that can lead to widespread corporate data breaches and operational disruption.
 
 ============================================================
-Author:   Willow Tohi
-Source:   Naturalnews.com
-URL:      https://www.naturalnews.com/2026-10-23-us-warns-of-active-chinese-cyber-probes.html
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html
 Category: Cybersecurity

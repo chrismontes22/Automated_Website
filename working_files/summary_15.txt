@@ -1,20 +1,20 @@
-U-KNOCK 2026 Brings Korean Content Companies To Hollywood For Investment & Global Partnerships
+Bringing post-quantum cryptography to geographically fenced key management
 ============================================================
 
-The U-KNOCK 2026 event will bring South Korean content and technology firms to The Biltmore Los Angeles from November 4–6 to foster partnerships with U.S. investors.
+Cloudflare has launched a post-quantum GeoKey Manager in closed beta to help customers enforce data sovereignty by restricting decryption key access to specific geographic regions.
 
 ### Key Points
-- The Korea Creative Content Agency is hosting the three-day event to facilitate deal-making between Korean media companies and Hollywood studios.
-- The International Content Investment Forum on November 5 will feature leaders from firms like The Raine Group, J.P. Morgan, and Amblin Entertainment.
-- Five companies, including Modhaus and YN Culture & Space, will present business models during a dedicated showcase focused on North American expansion.
-- A total of 12 Korean companies specializing in IP, generative AI, and fan platforms will participate in one-on-one meetings on November 6.
-- Participating Korean firms include CJ ENM, YLAB, IPX, and various startups focused on webtoons, virtual production, and interactive digital humans.
+- The system uses hybrid ML-KEM-768 and X25519 cryptography to protect against "harvest now, decrypt later" quantum computing threats.
+- Decryption keys are wrapped so they can only be unwrapped by Cloudflare edge servers physically located within a customer's designated region.
+- The architecture utilizes Trusted Platform Module (TPM) hardware identity and server inventory data to authorize edge servers for specific regional root keys.
+- Keys are stored in volatile memory within the Linux kernel keyring to prevent persistent storage and reduce potential attack vectors.
+- General availability for the new GeoKey Manager is currently scheduled for Q1 2027.
 
 ### Why it Matters
-This event serves as a strategic bridge for Korean media companies seeking to monetize intellectual property and secure capital within the competitive U.S. entertainment market. By connecting local creators with major financial institutions and production studios, the program aims to transform cultural content into sustainable, long-term global franchises.
+This technology allows organizations with strict regulatory requirements to maintain high-performance global operations while ensuring sensitive data remains decrypted only within authorized borders. By integrating post-quantum security, Cloudflare provides a future-proof solution for enterprises concerned about long-term data exposure to emerging quantum decryption capabilities.
 
 ============================================================
-Author:   Dianalodderhose
-Source:   Deadline
-URL:      http://deadline.com/2026/10/u-knock-2026-korean-content-hollywood-partner-content-1237170508/
-Category: Tech Business & Markets
+Author:   Chetan Agrawal, Arka Nayan, Erik Engstrom
+Source:   Cloudflare.com
+URL:      https://blog.cloudflare.com/post-quantum-geo-key-manager/
+Category: Cybersecurity

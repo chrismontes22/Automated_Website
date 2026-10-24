@@ -1,20 +1,21 @@
-Don't leave AI to tech bros and oligarchs, UK's AI minister says
+Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks
 ============================================================
 
-UK AI Minister Kanishka Narayan has warned that the government must assert democratic control over artificial intelligence to prevent the technology from being dominated by private tech interests.
+The October 21, 2026, release of LiteLLM version 1.107.0 was compromised to include malicious code that automatically executes upon Python interpreter initialization, threatening developer and cloud environments.
 
 ### Key Points
-- Kanishka Narayan, the UK's first cabinet minister for AI, stated that the nation must build domestic technological capacity rather than relying solely on foreign-developed systems.
-- The minister compared the current AI shift to the Industrial Revolution, emphasizing the need to manage the transition to avoid widespread social and economic hardship.
-- Government officials recently utilized frontier AI models to identify 500 novel cybersecurity vulnerabilities within the public sector at a cost of £13,000.
-- Narayan highlighted the UK's influence in AI safety, noting that major US laboratories are seeking testing services from the British AI Security Institute.
-- The comments follow Barclays' recent announcement of 5,000 job cuts driven by an AI-led efficiency strategy.
+- Attackers compromised the LiteLLM 1.107.0 release on PyPI by hijacking developer GitHub credentials to redirect the workflow to a malicious repository.
+- The malicious package uses Python startup hooks, such as `.pth` and `sitecustomize.py` files, to execute a credential collector without requiring the application to be imported.
+- The payload targets sensitive data including cloud credentials, SSH keys, browser history, environment variables, and AI-related configuration files.
+- Collected data is encrypted using AES-256-CBC and RSA, then exfiltrated to an attacker-controlled domain via HTTP POST requests.
+- Unix-based systems were also exposed to a secondary loader capable of retrieving and executing additional remote Python code.
+- Microsoft advises organizations to rotate all potentially exposed credentials and rebuild environments from verified, clean artifacts rather than simply deleting the package.
 
 ### Why it Matters
-This policy shift signals a move toward greater state intervention in the development and deployment of emerging technologies to protect national security and labor markets. By prioritizing domestic capability, the government aims to reduce reliance on international tech giants and ensure that AI integration does not destabilize the broader economy.
+This incident highlights a critical supply chain vulnerability where malicious code executes automatically during standard Python environment initialization, bypassing typical application-level security controls. Because the payload targets high-value credentials across developer workstations and CI/CD pipelines, organizations must treat all systems that installed the affected package as potentially compromised.
 
 ============================================================
-Author:   https://www.facebook.com/bbcnews
-Source:   BBC News
-URL:      https://www.bbc.co.uk/news/articles/ck7vp8g38y7vo
-Category: Artificial Intelligence
+Author:   Microsoft Security Research, Mahesh Mandava, Srinivasan Govindarajan, Sagar Patil and Suriyaraj Natarajan
+Source:   Microsoft.com
+URL:      https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/
+Category: Cybersecurity
