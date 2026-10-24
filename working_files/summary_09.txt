@@ -1,20 +1,20 @@
-Bitcoin falls below $82,000 as investors retreat from risk assets
+LiteLLM Compromised in Fresh Supply Chain Attack
 ============================================================
 
-Bitcoin dropped below $82,000 on Thursday as a broader market sell-off, driven by rising geopolitical tensions and declining tech stocks, impacted major digital assets and investor sentiment.
+LiteLLM suffered a supply chain attack on October 21, resulting in over 49,000 downloads of a malicious version containing information-stealing malware and remote access trojan capabilities.
 
 ### Key Points
-- Bitcoin fell over 3% to approximately $81,600, contributing to a 1.4% decline in the total cryptocurrency market capitalization.
-- Data from CoinGlass indicates that traders experienced roughly $400 million in liquidations during the 24-hour period.
-- Rising Middle East tensions pushed Brent crude oil prices above $112 per barrel, the highest level recorded since May.
-- Major US stock indexes trended lower following a mixed reception to recent earnings reports from prominent technology companies.
-- Fundstrat strategist Sean Farrell noted that volatility in US Treasury markets continues to constrain liquidity and weigh on risk appetite for digital assets.
+- Attackers compromised LiteLLM version 1.107.0 by hijacking GitHub CLI OAuth tokens to publish poisoned packages to PyPI and Docker Hub.
+- The malicious code remained active for approximately three hours before being removed, with enterprise customers using private repositories remaining unaffected.
+- The malware harvests sensitive data, including cloud secrets, SSH keys, browser credentials, and API keys for AI services like OpenAI and Anthropic.
+- Cybersecurity firm Wiz reported that attackers used stolen AWS credentials to perform LLMjacking by querying Amazon Bedrock models.
+- Users who installed the compromised version are advised to immediately rotate all credentials and scan their systems for persistent malware.
 
 ### Why it Matters
-The decline highlights the ongoing sensitivity of the cryptocurrency market to macroeconomic instability and geopolitical conflicts. As investors retreat from riskier assets, the volatility underscores the challenges bitcoin faces in maintaining a sustained recovery despite improving credit conditions.
+This incident highlights the significant risks posed by supply chain attacks on open-source tools that manage sensitive developer credentials and cloud infrastructure. The compromise demonstrates how easily attackers can leverage leaked tokens to gain lateral access and exfiltrate high-value data from development environments.
 
 ============================================================
-Author:   David Hollerith
-Source:   Yahoo Entertainment
-URL:      https://finance.yahoo.com/markets/article/bitcoin-falls-below-82000-as-investors-retreat-from-risk-assets-153142669.html
-Category: Tech Business & Markets
+Author:   Ionut Arghire
+Source:   Securityweek.com
+URL:      https://www.securityweek.com/litellm-compromised-in-fresh-supply-chain-attack/
+Category: Cybersecurity
