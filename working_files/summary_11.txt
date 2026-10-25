@@ -1,21 +1,19 @@
-Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks
+PHP is in the foundation of 70% of websites – here’s what it is and why a flaw in the software is a major hacking threat
 ============================================================
 
-The October 21, 2026, release of LiteLLM version 1.107.0 was compromised to include malicious code that automatically executes upon Python interpreter initialization, threatening developer and cloud environments.
+Global organizations are rushing to patch a critical vulnerability in the PHP programming language after hackers began exploiting the flaw to gain unauthorized control over web servers.
 
 ### Key Points
-- Attackers compromised the LiteLLM 1.107.0 release on PyPI by hijacking developer GitHub credentials to redirect the workflow to a malicious repository.
-- The malicious package uses Python startup hooks, such as `.pth` and `sitecustomize.py` files, to execute a credential collector without requiring the application to be imported.
-- The payload targets sensitive data including cloud credentials, SSH keys, browser history, environment variables, and AI-related configuration files.
-- Collected data is encrypted using AES-256-CBC and RSA, then exfiltrated to an attacker-controlled domain via HTTP POST requests.
-- Unix-based systems were also exposed to a secondary loader capable of retrieving and executing additional remote Python code.
-- Microsoft advises organizations to rotate all potentially exposed credentials and rebuild environments from verified, clean artifacts rather than simply deleting the package.
+- The vulnerability, discovered in August 2026 using an OpenAI model, affects the core PHP system that powers approximately 70% of all websites.
+- Hackers are actively using an exploit tool called PHP2Shell to gain direct command-line access to servers and steal sensitive data.
+- The U.S. National Security Agency and various cybersecurity vendors issued urgent warnings after news of the flaw leaked before official patches were released.
+- While everyday internet users do not need to take action, website administrators and hosting providers must update their PHP software immediately to secure their systems.
 
 ### Why it Matters
-This incident highlights a critical supply chain vulnerability where malicious code executes automatically during standard Python environment initialization, bypassing typical application-level security controls. Because the payload targets high-value credentials across developer workstations and CI/CD pipelines, organizations must treat all systems that installed the affected package as potentially compromised.
+This incident highlights the dual-use nature of artificial intelligence, which can accelerate both the discovery of critical software flaws and the development of malicious exploits. Because PHP serves as a foundational component of the modern web, the rapid patching of these systems is essential to prevent widespread data breaches and operational disruptions.
 
 ============================================================
-Author:   Microsoft Security Research, Mahesh Mandava, Srinivasan Govindarajan, Sagar Patil and Suriyaraj Natarajan
-Source:   Microsoft.com
-URL:      https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/
+Author:   Geeks are Sexy
+Source:   Geeksaresexy.net
+URL:      https://www.geeksaresexy.net/2026/10/24/php-is-in-the-foundation-of-70-of-websites-heres-what-it-is-and-why-a-flaw-in-the-software-is-a-major-hacking-threat/
 Category: Cybersecurity

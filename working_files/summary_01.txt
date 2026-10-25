@@ -1,20 +1,20 @@
-Abandoned Popcorn Time apps had to be disabled to prevent a zombie army
+Researchers Push Over 2 Million Updates to Remotely Disable Popcorn Time Updater That Could Fuel a Botnet
 ============================================================
 
-Security researchers have neutralized a massive botnet risk by hijacking abandoned domains associated with the pirated streaming application Popcorn Time to remotely disable the software’s vulnerable update mechanism.
+Dutch security firm Eye Security disabled a dangerous background updater in the abandoned Time4Popcorn app by pushing over 2 million remote updates to vulnerable Windows and Mac computers.
 
 ### Key Points
-- Eye Security discovered that the "Time4Popcorn" fork remained active on millions of Windows, macOS, and Android devices worldwide.
-- The software’s unencrypted update process allowed attackers to execute arbitrary code with full system privileges on infected machines.
-- Researchers registered abandoned domains to push a benign update that disabled the insecure service on Windows and macOS systems.
-- Over 2 million update downloads were distributed by March before the domains were transferred to the non-profit Shadowserver Foundation.
-- The security team bypassed potential malware flags from antivirus software to ensure the disabling script could reach affected devices.
+- Eye Security identified a critical vulnerability, tracked as CVE-2026-30612, in the abandoned Popcorn Time fork known as Time4Popcorn.
+- The flaw allowed the software to install unauthorized code at the highest system privilege level via unencrypted connections to expired web domains.
+- Between November 2025 and March 2026, Eye Security pushed updates to disable the vulnerable updater on millions of affected devices globally.
+- The U.S. Cybersecurity and Infrastructure Security Agency (CISA) assigned the vulnerability a high severity score of 9.8 out of 10.
+- Eye Security transferred control of the hijacked domains to the non-profit Shadowserver Foundation in March 2026 to prevent future exploitation.
 
 ### Why it Matters
-This incident highlights the significant security risks posed by abandoned software that continues to communicate with expired or hijacked web domains. Users should audit their devices for legacy applications to prevent them from being exploited as part of a global botnet or surveillance network.
+This operation highlights the significant security risks posed by abandoned software that maintains persistent, high-privilege background processes. While Eye Security successfully mitigated the immediate threat, users remain vulnerable if they continue to run the outdated application, which lacks modern security protections.
 
 ============================================================
-Author:   Stevie Bonifield
-Source:   The Verge
-URL:      https://www.theverge.com/tech/1017914/popcorn-time-piracy-botnet-avoided
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html
 Category: Cybersecurity

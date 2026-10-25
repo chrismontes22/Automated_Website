@@ -1,20 +1,20 @@
-Elon Musk's power now extends far beyond Tesla, and Ukraine shows why
+SudoStamp
 ============================================================
 
-Elon Musk has emerged as a uniquely powerful non-governmental actor, wielding significant influence over global communications, military operations, and space access through his leadership of Tesla and SpaceX.
+A new authentication tool allows Linux users to approve sudo commands by using their Android phone's fingerprint sensor to sign requests securely over a local area network.
 
 ### Key Points
-- SpaceX currently manages approximately 90% of all mass launched into Earth's orbit, establishing Musk as a dominant force in global space infrastructure.
-- The Pentagon serves as the primary customer for Starshield, a military-grade satellite communications network developed by SpaceX for national security applications.
-- Recent disruptions to Starlink services in Ukraine highlighted the growing reliance of sovereign nations on private-sector technology for critical battlefield communications and drone operations.
-- Countries including the Philippines, Argentina, and Indonesia utilize Starlink technology to support national communications and emergency service infrastructure.
-- Experts from the Harvard Kennedy School and the Brookings Institution suggest Musk’s resources and control over essential technology exceed those of many sovereign governments.
+- The system utilizes the Android TEE or StrongBox to ensure biometric data and private keys never leave the mobile device.
+- Authentication is handled via the pam_rssh module, which communicates with the phone over a local network using the ssh-agent protocol.
+- If the phone is unavailable, denied, or times out after 60 seconds, the system automatically reverts to a standard password prompt.
+- The solution requires Android 11 or higher with a Class 3 "strong" biometric sensor and supports major Linux distributions including Arch, Debian, Ubuntu, and Fedora.
+- Security is maintained by requiring a fresh biometric signature for every request, preventing malware from signing without physical user interaction.
 
 ### Why it Matters
-The concentration of such critical infrastructure under a single private individual creates unprecedented challenges for international relations and national security. This shift forces governments to navigate a new reality where private corporate decisions can directly impact the success of military operations and global connectivity.
+This integration offers a more convenient and secure alternative to traditional password-based sudo authentication by leveraging hardware-backed mobile biometrics. By keeping all sensitive operations local and offline, it provides a robust security layer that enhances workflow efficiency without introducing cloud-based vulnerabilities.
 
 ============================================================
-Author:   Jake Conley
-Source:   Yahoo Entertainment
-URL:      https://finance.yahoo.com/technology/article/how-elon-musk-went-from-tesla-ceo-to-the-most-powerful-civilian-non-governmental-actor-in-history-100000227.html
-Category: Tech Business & Markets
+Author:   Kitploit
+Source:   Kitploit.com
+URL:      https://kitploit.com/en/tools/gitlab/ritwick7/sudostamp
+Category: Cybersecurity

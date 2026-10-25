@@ -1,20 +1,20 @@
-Bringing post-quantum cryptography to geographically fenced key management
+Node2Shell evolves to HTTP2Shell, blast radius affects many HTTP libs and apps
 ============================================================
 
-Cloudflare has launched a post-quantum GeoKey Manager in closed beta to help customers enforce data sovereignty by restricting decryption key access to specific geographic regions.
+A critical security vulnerability, CVE-2026-111497, in the Google Brotli compression library allows remote attackers to execute arbitrary code or leak memory across multiple programming languages and applications.
 
 ### Key Points
-- The system uses hybrid ML-KEM-768 and X25519 cryptography to protect against "harvest now, decrypt later" quantum computing threats.
-- Decryption keys are wrapped so they can only be unwrapped by Cloudflare edge servers physically located within a customer's designated region.
-- The architecture utilizes Trusted Platform Module (TPM) hardware identity and server inventory data to authorize edge servers for specific regional root keys.
-- Keys are stored in volatile memory within the Linux kernel keyring to prevent persistent storage and reduce potential attack vectors.
-- General availability for the new GeoKey Manager is currently scheduled for Q1 2027.
+- The flaw, dubbed "node2shell," is an out-of-bounds write vulnerability affecting Brotli versions 1.0.3 through 1.2.0.
+- It carries a critical CVSS v4.0 score of 9.2, enabling unauthenticated remote code execution via crafted Brotli-compressed data.
+- Major affected ecosystems include Node.js, Python, Bun, Envoy, and Istio, requiring immediate updates to patched versions like Brotli 1.2.1.
+- Vulnerable Python packages include `Brotli` and `brotlicffi`, which are often loaded automatically by popular HTTP clients like `requests` and `httpx`.
+- Automated security tools may not yet flag this CVE, necessitating manual dependency audits and container image rebuilds.
 
 ### Why it Matters
-This technology allows organizations with strict regulatory requirements to maintain high-performance global operations while ensuring sensitive data remains decrypted only within authorized borders. By integrating post-quantum security, Cloudflare provides a future-proof solution for enterprises concerned about long-term data exposure to emerging quantum decryption capabilities.
+This vulnerability poses a significant risk because Brotli is a ubiquitous compression standard that is often bundled as a hidden dependency in web applications. Because the flaw can be triggered by both inbound requests and outbound data fetches, unpatched systems remain exposed to potential remote takeovers by malicious actors.
 
 ============================================================
-Author:   Chetan Agrawal, Arka Nayan, Erik Engstrom
-Source:   Cloudflare.com
-URL:      https://blog.cloudflare.com/post-quantum-geo-key-manager/
+Author:   Dania Durnas
+Source:   Aikido.dev
+URL:      https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497
 Category: Cybersecurity
