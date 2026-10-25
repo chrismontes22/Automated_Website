@@ -1,20 +1,20 @@
-Fabio Alessandro Locati: SOPS for Ansible
+I spent $200 on thrifted 4K Blu-rays instead of digital rentals, and my local Plex library paid for itself in months
 ============================================================
 
-The CNCF project SOPS offers a more flexible alternative to Ansible Vault for managing secrets by enabling asymmetric encryption and maintaining readable YAML keys within configuration files.
+Building a personal media server using thrifted 4K Blu-rays and software like MakeMKV offers superior video quality and permanent ownership compared to expensive, compressed commercial streaming service rentals.
 
 ### Key Points
-- SOPS encrypts specific YAML values while keeping keys visible, unlike Ansible Vault’s full-file encryption.
-- The tool supports asymmetric encryption through providers like GPG and Age, eliminating the need for shared symmetric master keys.
-- Users can define encryption rules in a `.sops.yaml` file to automatically secure specific fields like passwords, tokens, and keys.
-- Integration requires enabling the `community.sops` collection in `ansible.cfg` and installing it via `ansible-galaxy`.
-- Data integrity is maintained by SOPS, requiring the use of the `sops edit` command for any subsequent file modifications.
+- Commercial streaming services compress 4K video to 15Mbps–25Mbps, while 4K Blu-ray discs provide higher bitrates ranging from 60Mbps to over 100Mbps.
+- Secondhand 4K discs can be sourced from thrift stores, pawn shops, and online marketplaces for $5 to $8, significantly undercutting the cost of digital rentals.
+- Users can utilize MakeMKV software to rip uncompressed movie files from physical discs for integration into a personal Plex media server.
+- Building a high-quality library requires an Ultra HD-friendly Blu-ray drive, which typically costs around $100 as a one-time hardware investment.
+- Physical media provides permanent access to content, avoiding the recurring fees and library rotations associated with subscription-based streaming platforms.
 
 ### Why it Matters
-Adopting SOPS improves developer experience by allowing teams to track encrypted secrets in version control without obscuring the structure of configuration files. This approach reduces the operational risks associated with managing symmetric master keys while maintaining compatibility with existing Ansible workflows.
+This approach allows consumers to bypass the limitations of digital rental models, which often restrict access and provide lower-quality, compressed video files. By investing in physical media and local hosting, users gain long-term ownership of their content while achieving reference-grade audio and visual performance.
 
 ============================================================
-Author:   fale
-Source:   Fale.io
-URL:      https://fale.io/blog/2026/10/24/sops-for-ansible
-Category: Cybersecurity
+Author:   Jasmine Mannan
+Source:   XDA Developers
+URL:      https://www.xda-developers.com/i-spent-200-on-thrifted-4k-blu-rays-instead-of-digital-rentals-my-local-plex-library-paid-for-itself/
+Category: Phones, Laptops, and Gadgets

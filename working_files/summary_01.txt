@@ -1,20 +1,20 @@
-Researchers Push Over 2 Million Updates to Remotely Disable Popcorn Time Updater That Could Fuel a Botnet
+Why I changed my smart TV DNS settings (and how to do it)
 ============================================================
 
-Dutch security firm Eye Security disabled a dangerous background updater in the abandoned Time4Popcorn app by pushing over 2 million remote updates to vulnerable Windows and Mac computers.
+Updating your smart TV's DNS settings to a third-party provider like Cloudflare can significantly reduce buffering and improve streaming speeds by bypassing slower, default internet service provider servers.
 
 ### Key Points
-- Eye Security identified a critical vulnerability, tracked as CVE-2026-30612, in the abandoned Popcorn Time fork known as Time4Popcorn.
-- The flaw allowed the software to install unauthorized code at the highest system privilege level via unencrypted connections to expired web domains.
-- Between November 2025 and March 2026, Eye Security pushed updates to disable the vulnerable updater on millions of affected devices globally.
-- The U.S. Cybersecurity and Infrastructure Security Agency (CISA) assigned the vulnerability a high severity score of 9.8 out of 10.
-- Eye Security transferred control of the hijacked domains to the non-profit Shadowserver Foundation in March 2026 to prevent future exploitation.
+- Changing DNS settings from automatic to static allows users to manually input faster, more reliable servers like Cloudflare’s 1.1.1.1.
+- Testing shows that switching to Cloudflare can reduce DNS response times from 88 milliseconds to 28 milliseconds.
+- Public DNS services often provide enhanced security features, such as automatic protection against phishing and malware-infected websites.
+- The configuration process involves accessing the network settings menu on a smart TV and updating the DNS server fields manually.
+- Users can revert to default settings at any time by switching the network configuration back to automatic or DHCP mode.
 
 ### Why it Matters
-This operation highlights the significant security risks posed by abandoned software that maintains persistent, high-privilege background processes. While Eye Security successfully mitigated the immediate threat, users remain vulnerable if they continue to run the outdated application, which lacks modern security protections.
+Optimizing DNS settings is a cost-effective way to enhance home entertainment performance without requiring expensive hardware upgrades or higher-tier internet plans. This simple technical adjustment can resolve persistent streaming bottlenecks and provide users with a more secure, private browsing experience.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html
-Category: Cybersecurity
+Author:   Jayric Maning
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/smart-tv-dns-settings/
+Category: Phones, Laptops, and Gadgets

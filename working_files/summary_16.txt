@@ -1,20 +1,20 @@
-Budget Android Phones Have A Storage Problem That You Might Not Have Noticed
+Researchers Push Over 2 Million Updates to Remotely Disable Popcorn Time Updater That Could Fuel a Botnet
 ============================================================
 
-Budget Android smartphone buyers should prioritize Universal Flash Storage (UFS) over older eMMC memory to ensure significantly faster read and write speeds for better device performance.
+Dutch security firm Eye Security disabled a dangerous background updater in the abandoned Time4Popcorn app by pushing over 2 million remote updates to vulnerable Windows and Mac computers.
 
 ### Key Points
-- UFS technology allows for simultaneous data reading and writing, offering roughly double the performance of older eMMC 5.1 storage standards.
-- Major manufacturers like Samsung and Motorola are increasingly adopting UFS 2.2 for budget models, such as the Galaxy A17 5G and Moto G Play 2026.
-- Older eMMC storage remains common in entry-level devices like the TCL Flip 4 5G and various budget-friendly Chromebook laptops.
-- Rising costs for NAND flash and DRAM chips, driven by high demand for artificial intelligence hardware, are forcing manufacturers to increase retail prices.
-- Samsung raised the U.S. price of the Galaxy A17 5G from $200 to $270 throughout 2026 due to these ongoing supply chain and component cost pressures.
+- Eye Security identified a critical vulnerability, tracked as CVE-2026-30612, in the abandoned Popcorn Time fork known as Time4Popcorn.
+- The flaw allowed the software to install unauthorized code at the highest system privilege level via unencrypted connections to expired web domains.
+- Between November 2025 and March 2026, Eye Security pushed updates to disable the vulnerable updater on millions of affected devices globally.
+- The U.S. Cybersecurity and Infrastructure Security Agency (CISA) assigned the vulnerability a high severity score of 9.8 out of 10.
+- Eye Security transferred control of the hijacked domains to the non-profit Shadowserver Foundation in March 2026 to prevent future exploitation.
 
 ### Why it Matters
-The shift toward faster storage standards is critical for maintaining device longevity and user experience as mobile applications become more resource-intensive. However, rising component costs threaten the viability of the budget smartphone market, potentially forcing consumers to pay higher prices for entry-level technology.
+This operation highlights the significant security risks posed by abandoned software that maintains persistent, high-privilege background processes. While Eye Security successfully mitigated the immediate threat, users remain vulnerable if they continue to run the outdated application, which lacks modern security protections.
 
 ============================================================
-Author:   staff@bgr.com (Jules Wang)
-Source:   BGR
-URL:      https://www.bgr.com/2290320/budget-android-phone-performance-problem-storage/
-Category: Phones, Laptops, and Gadgets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html
+Category: Cybersecurity

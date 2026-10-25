@@ -1,20 +1,20 @@
-Node2Shell evolves to HTTP2Shell, blast radius affects many HTTP libs and apps
+Battery drain in One UI 9? Some Galaxy S24 users are having a rough time
 ============================================================
 
-A critical security vulnerability, CVE-2026-111497, in the Google Brotli compression library allows remote attackers to execute arbitrary code or leak memory across multiple programming languages and applications.
+Samsung Galaxy S24 and S25 users are reporting significant battery drain and software stability issues following the recent rollout of the One UI 9 operating system update.
 
 ### Key Points
-- The flaw, dubbed "node2shell," is an out-of-bounds write vulnerability affecting Brotli versions 1.0.3 through 1.2.0.
-- It carries a critical CVSS v4.0 score of 9.2, enabling unauthenticated remote code execution via crafted Brotli-compressed data.
-- Major affected ecosystems include Node.js, Python, Bun, Envoy, and Istio, requiring immediate updates to patched versions like Brotli 1.2.1.
-- Vulnerable Python packages include `Brotli` and `brotlicffi`, which are often loaded automatically by popular HTTP clients like `requests` and `httpx`.
-- Automated security tools may not yet flag this CVE, necessitating manual dependency audits and container image rebuilds.
+- Galaxy S24 Ultra users report severe battery depletion, with one device losing 95% charge in just over five hours of usage.
+- Some Galaxy S25 owners report excessive idle battery drain, requiring multiple charges throughout the day to maintain functionality.
+- A Korean user reported a "webpage unavailable" bug preventing access to home screens after updating to the Android 17-based software.
+- Samsung has advised users experiencing setup errors to update their browser and ensure a stable Wi-Fi connection during the installation process.
+- Reports of these performance issues remain inconsistent, appearing to affect specific devices rather than the entire user base.
 
 ### Why it Matters
-This vulnerability poses a significant risk because Brotli is a ubiquitous compression standard that is often bundled as a hidden dependency in web applications. Because the flaw can be triggered by both inbound requests and outbound data fetches, unpatched systems remain exposed to potential remote takeovers by malicious actors.
+These performance inconsistencies create uncertainty for Samsung customers relying on the latest software updates for daily device stability. If these reports indicate a widespread firmware defect, Samsung may need to issue a formal patch to maintain consumer trust in its flagship smartphone series.
 
 ============================================================
-Author:   Dania Durnas
-Source:   Aikido.dev
-URL:      https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497
-Category: Cybersecurity
+Author:   nickodiaz@sbcglobal.net (Nickolas Diaz) , Nickolas Diaz
+Source:   Android Central
+URL:      https://www.androidcentral.com/phones/samsung-galaxy/battery-drain-in-one-ui-9-some-galaxy-s24-users-are-having-a-rough-time
+Category: Phones, Laptops, and Gadgets
