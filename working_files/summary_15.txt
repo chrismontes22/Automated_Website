@@ -1,20 +1,20 @@
-OpenSSL 4.1.0: What’s new, what’s removed, and what’s still broken
+I didn't need a Kindle to get the reading experience I wanted
 ============================================================
 
-The OpenSSL project has released version 4.1.0, introducing support for DTLS 1.3 while simultaneously documenting four known bugs and removing several legacy build configurations and platform targets.
+Users can bypass the limitations of dedicated Kindle hardware by combining the official Amazon Kindle app with the open-source KOReader software on existing Android mobile devices.
 
 ### Key Points
-- OpenSSL 4.1.0 adds support for DTLS 1.3, though the project warns of four specific bugs affecting connection states, handshakes, and session ticket retransmissions.
-- The release removes the no-ecdsa and no-ecdh build flags, requiring users to utilize no-ec to disable elliptic curve support entirely.
-- Support for Windows-on-Itanium and Windows CE build targets has been dropped, and the tsget utility now requires the Net::Curl::Easy Perl module.
-- Performance optimizations include faster post-quantum algorithms like ML-KEM and ML-DSA, alongside AVX-512 and VAES improvements for AES-CBC decryption on x86_64.
-- New features include RFC 8701 GREASE support, an IKEv2 key derivation function, and initial compatibility for the Elbrus2000 architecture.
+- The Kindle app maintains access to Amazon’s ecosystem, while KOReader supports diverse file formats including EPUB, PDF, CBZ, and Markdown.
+- KOReader is an open-source project with nearly 30,000 GitHub stars, featuring advanced typography controls, PDF reflow, and automated highlight exports to note-taking apps.
+- Users can install KOReader via GitHub or F-Droid, though the process requires sideloading and manual configuration of cloud storage or Calibre for file syncing.
+- Amazon hardware restrictions, such as the removal of USB transfer options and lack of native EPUB support, have prompted users to seek more flexible alternatives.
+- KOReader does not support DRM-protected content, meaning library books and protected purchases must still be managed through official Amazon or Libby applications.
 
 ### Why it Matters
-These updates introduce critical security and performance enhancements, but the documented DTLS 1.3 bugs pose significant risks for developers building network applications. Organizations must carefully evaluate these changes to avoid connection failures and ensure their infrastructure remains compatible with the updated build requirements.
+This approach allows readers to consolidate their digital libraries on a single device while avoiding the restrictive "walled garden" of proprietary e-reader hardware. By leveraging open-source tools, users gain greater control over document formatting and file management without the recurring cost of purchasing new dedicated hardware.
 
 ============================================================
-Author:   Anamarija Pogorelec
-Source:   Help Net Security
-URL:      https://www.helpnetsecurity.com/2026/10/26/openssl-4-1-0-released/
-Category: Cybersecurity
+Author:   Rob LeFebvre
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/i-didnt-need-a-kindle-to-get-the-reading-experience-i-wanted/
+Category: Phones, Laptops, and Gadgets

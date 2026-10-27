@@ -1,5 +1,158 @@
 [
   {
+    "url": "https://hackaday.com/2026/10/26/hiding-virtualization-from-other-software/",
+    "title": "Hiding Virtualization From Other Software",
+    "summary": "The new vfio-native tool modifies Linux Kernel-based Virtual Machine environments to mimic bare-metal hardware, significantly reducing the ability of software to detect that it is running inside a virtual machine.\n\n### Key Points\n- The vfio-native tool applies kernel patches to obscure virtual machine signatures and force CPU behavior to match physical hardware.\n- Standard KVM virtual machines score 10/85 on detection tests, while systems using vfio-native achieve a score of 1/85.\n- The software is currently available for users to install via the Arch User Repository (AUR).\n- Security researchers use the tool to observe malware behavior that might otherwise remain dormant when detecting a virtualized environment.\n- The tool helps run legacy industrial software that often fails to operate when it identifies a virtual machine host.\n\n### Why it Matters\nThis development provides a critical solution for researchers and engineers who need to bypass restrictive hardware-detection checks in legacy or security-sensitive applications. By masking virtualization, it ensures that software functions consistently across both physical and virtualized infrastructure.",
+    "category": "Cybersecurity",
+    "author": "Bryan Cockfield",
+    "source": "Hackaday",
+    "processed_at": "2026-10-27T12:59:26.874523"
+  },
+  {
+    "url": "https://www.pcworld.com/article/3268907/windows-11-pro-is-just-10-so-why-arent-you-using-it.html",
+    "title": "Windows 11 Pro is just $10, so why aren’t you using it?",
+    "summary": "A lifetime license for Microsoft Windows 11 Pro is currently available for $9.97, offering users a significant discount from the standard retail price of $199 for the software.\n\n### Key Points\n- The license provides a one-time purchase option with no recurring subscription fees for the Windows 11 Pro operating system.\n- Professional-grade features included are BitLocker full-disk encryption, Hyper-V virtualization, and Windows Sandbox for secure application testing.\n- The software supports business-focused tools such as Azure AD integration for identity management and network access.\n- Users gain access to advanced multitasking capabilities, including Snap layouts, and integrated AI features like Copilot.\n- Compatibility should be verified using the Microsoft PC Health Check app before purchase, as the license is valid for one PC.\n\n### Why it Matters\nThis offer provides a cost-effective upgrade path for users currently running Windows 10 or those requiring the advanced security and virtualization tools missing from the Home edition. By securing a lifetime license at this price point, individuals and small businesses can access enterprise-level management features without the burden of ongoing subscription costs.",
+    "category": "Phones, Laptops, and Gadgets",
+    "author": "DealPost Team",
+    "source": "PCWorld",
+    "processed_at": "2026-10-27T13:00:01.615055"
+  },
+  {
+    "url": "https://www.aljazeera.com/economy/2026/10/26/californias-billionaire-tax-faces-a-precarious-road-from-rich-opposition",
+    "title": "California’s billionaire tax faces a precarious road from rich opposition",
+    "summary": "California voters are deciding on a proposed five percent tax on billionaire assets, a ballot measure that has become the most expensive campaign in state history.\n\n### Key Points\n- Tech billionaires, including Sergey Brin and Tony Xu, have donated over $300 million to defeat the proposed tax on their assets.\n- Supporters of the measure have raised only $32 million, leading to a significant disparity in advertising and voter outreach efforts.\n- Meta founder Mark Zuckerberg reportedly considered moving out of California to avoid the tax, prompting the company to create a new share class.\n- Opponents have introduced competing ballot measures that could legally negate the billionaire tax if they receive more votes.\n- California Governor Gavin Newsom and other prominent Democrats oppose the measure, citing concerns that it is poorly written and could drive wealth out of the state.\n\n### Why it Matters\nThis campaign highlights a growing political divide between progressive and moderate factions within the Democratic Party regarding wealth taxation and corporate influence. The outcome serves as a high-stakes test for future economic policies and demonstrates how massive private spending can shape public perception of ballot initiatives.",
+    "category": "Tech Business & Markets",
+    "author": "Saumya Roy",
+    "source": "Al Jazeera English",
+    "processed_at": "2026-10-27T13:00:27.908665"
+  },
+  {
+    "url": "https://www.propublica.org/article/zohar-pinhasi-monstercloud-ransomware-indictment",
+    "title": "Cybersecurity CEO Indicted for Allegedly Scamming Millions From Ransomware Victims",
+    "summary": "Florida-based data recovery firm owner Zohar Pinhasi faces federal charges for allegedly defrauding clients by secretly paying ransoms to hackers while claiming to use proprietary decryption methods.\n\n### Key Points\n- Zohar Pinhasi, owner of MonsterCloud, was indicted for allegedly charging clients over $19 million while secretly paying $8 million in ransoms.\n- The indictment follows a 2019 ProPublica investigation that exposed the firm for misleading victims about its recovery processes.\n- Pinhasi faces up to 20 years in federal prison if convicted of the fraud charges.\n- Former FBI deputy director John Pistole previously appeared in promotional materials for MonsterCloud, though he is not named in the current indictment.\n- The Justice Department alleges Pinhasi exploited clients' crises for personal profit by falsely claiming he could bypass ransom payments.\n\n### Why it Matters\nThis case highlights the ethical and legal risks within the growing ransomware recovery industry, where service providers may prioritize profit over transparency. It serves as a warning to organizations that relying on third-party firms to handle cyber extortion can lead to further victimization and financial exploitation.",
+    "category": "Cybersecurity",
+    "author": "Renee Dudley",
+    "source": "ProPublica",
+    "processed_at": "2026-10-27T13:00:44.036317"
+  },
+  {
+    "url": "https://www.newyorker.com/culture/infinite-scroll/did-substack-fix-the-internet",
+    "title": "Did Substack Fix the Internet?",
+    "summary": "Substack co-founder Hamish McKenzie explores the platform's role in modern media in his new book, detailing how subscription-based models aim to empower writers and decentralize digital content distribution.\n\n### Key Points\n- Substack, launched in 2017 by Hamish McKenzie and Chris Best, allows creators to monetize content through direct reader subscriptions.\n- The platform takes a 10% revenue share while positioning itself as a neutral host, avoiding the editorial oversight common in traditional media.\n- High-profile writers like Bari Weiss and Matthew Yglesias have helped the platform gain significant cultural influence and financial success.\n- Critics, including professor Sarah Brouillette, argue that such platforms force writers to prioritize personal branding and content efficiency over traditional journalism.\n- Substack has expanded beyond text to include multimedia features like \"Notes,\" increasingly resembling the social media networks it originally sought to disrupt.\n\n### Why it Matters\nSubstack represents a significant shift in the creator economy by moving media power from centralized advertising-based platforms to individual, subscription-funded authors. While it provides a viable livelihood for many writers, it also risks homogenizing content as creators adapt their work to satisfy algorithmic demands and audience expectations.",
+    "category": "Tech Business & Markets",
+    "author": "Kyle Chayka",
+    "source": "The New Yorker",
+    "processed_at": "2026-10-27T13:01:51.830019"
+  },
+  {
+    "url": "https://www.androidcentral.com/phones/oppo-phones/oppo-find-x10-pro-max-review-mic-drop",
+    "title": "OPPO Find 10 Pro Max review: the best Android phone ever made",
+    "summary": "The Oppo Find X10 Pro Max launches globally as a premium Android flagship, featuring a versatile triple 200MP camera system, massive 8,000 mAh battery, and high-end MediaTek performance.\n\n### Key Points\n- The device features three 200MP sensors for the main, ultrawide, and telephoto cameras, supported by a Hasselblad-partnered imaging engine.\n- It is powered by the MediaTek Dimensity 9600 Pro processor with up to 16GB of RAM and 1TB of storage.\n- The global model includes an 8,000 mAh battery with 80W charging, though EU variants feature a smaller 7,150 mAh capacity.\n- The 6.78-inch QHD AMOLED display supports a 144Hz refresh rate and features ultra-thin 1.15mm bezels.\n- Software runs on ColorOS 17, which is guaranteed to receive five major Android version updates and six years of security patches.\n- Pricing starts at £1,499 in the UK and €1,799 in Europe, positioning it as a high-end competitor to the latest Samsung and Apple flagships.\n\n### Why it Matters\nThe Find X10 Pro Max represents a significant push by Oppo to capture the global premium smartphone market by offering a \"no-compromise\" hardware experience. Its success challenges established market leaders like Samsung and Apple by proving that a comprehensive, feature-rich device can effectively compete at the highest price points.",
+    "category": "Phones, Laptops, and Gadgets",
+    "author": "nirave@hot.tech (Nirave Gondhia) , Nirave Gondhia",
+    "source": "Android Central",
+    "processed_at": "2026-10-27T13:02:48.236301"
+  },
+  {
+    "url": "https://www.macrumors.com/2026/10/26/oled-macbook-pro-could-spell-trouble-for-mini-led/",
+    "title": "MacBook Pro's Switch to OLED Could Spell Trouble for Mini-LED Industry",
+    "summary": "Apple is expected to transition its MacBook Pro lineup to OLED display technology, a shift projected to cause a 75% decline in mini-LED laptop panel shipments by 2027.\n\n### Key Points\n- Counterpoint Research forecasts mini-LED notebook panel shipments will drop 38% in 2026 and 60% in 2027 as OLED adoption accelerates.\n- Notebook OLED panel shipments are projected to grow 86% by 2025, driven by demand for premium AI PCs and Apple's new hardware.\n- Samsung Display will reportedly serve as the exclusive supplier for the new 14-inch and 16-inch OLED touch panels produced in Asan, South Korea.\n- Apple plans to unveil the new MacBook Pro models on October 28, featuring a lighter design and the replacement of the display notch with Dynamic Island.\n- The new OLED laptops may launch with starting prices up to $500 higher than current mini-LED models, which Apple intends to phase out over time.\n\n### Why it Matters\nThis transition signals a major shift in display manufacturing standards as OLED becomes the preferred choice for premium laptops due to its superior image quality and thinner profile. The move could influence broader industry pricing and force competitors to accelerate their own adoption of OLED technology to remain relevant in the high-end PC market.",
+    "category": "Phones, Laptops, and Gadgets",
+    "author": "Hartley Charlton",
+    "source": "MacRumors",
+    "processed_at": "2026-10-27T13:03:41.623991"
+  },
+  {
+    "url": "https://www.techradar.com/pro/it-and-security-leaders-of-the-ai-era-must-go-back-to-basics-and-beware-the-hype",
+    "title": "IT and security leaders of the AI era must go back to basics and beware the hype",
+    "summary": "Information security leaders should prioritize fundamental identity management and governance over AI hype to prevent unauthorized access and mitigate risks posed by autonomous agentic AI systems.\n\n### Key Points\n- Identity management remains the primary defense against breaches, as unmanaged credentials and permissions often facilitate lateral movement after an initial vulnerability is exploited.\n- The 2024 Hugging Face breach demonstrated how over-privileged, unmonitored non-human identities (NHIs) can provide attackers with cluster-admin access across multiple environments.\n- Verizon’s 2026 Data Breach Investigations Report identifies vulnerabilities as the top initial access vector, but highlights that identity failures convert minor footholds into major catastrophes.\n- Organizations must implement rigorous least-privilege access, just-in-time provisioning, and clear ownership of non-human identities to secure modern, AI-driven software development environments.\n- Lessons from the 2019 Capital One cloud breach underscore the necessity of entitlement governance to prevent the sprawl of excessive permissions in new technology waves.\n\n### Why it Matters\nFocusing on identity hygiene provides a proven, actionable framework to contain security threats regardless of how rapidly AI technology evolves. By mastering these foundational principles, enterprises can prevent catastrophic data breaches that occur when autonomous agents exploit unmonitored or over-permissioned access points.",
+    "category": "Cybersecurity",
+    "author": "Henrique Bernardes Teixeira",
+    "source": "TechRadar",
+    "processed_at": "2026-10-27T13:08:03.293548"
+  },
+  {
+    "url": "https://www.wired.com/story/ai-agents-are-trying-to-be-journalists-now/",
+    "title": "Meet the AI Agents Trying to Be Real-Life Journalists",
+    "summary": "Autonomous AI agents are increasingly flooding media outlets with unsolicited story pitches, though editors remain steadfast in their refusal to publish content generated by these automated systems.\n\n### Key Points\n- Media outlets including Defector, Offrange, and The Food Section report receiving a high volume of pitches from self-identified AI agents.\n- Many of these bots originate from iLands, a platform where users create autonomous agents that attempt to earn money to cover their operational token costs.\n- Editors have rejected all AI-generated pitches, citing concerns over quality, trust, and the high labor cost required to fact-check automated content.\n- Some developers, such as Adobe employee Marc Hamaker, are experimenting with autonomous agents for personal projects like podcasts rather than professional journalism.\n- Due to widespread rejection, some agents are shifting strategies from cold-pitching to publishing work samples online to attract inbound clients.\n\n### Why it Matters\nThe rise of autonomous agents attempting to secure professional bylines highlights a growing friction between AI developers and the publishing industry. This trend forces editors to implement stricter communication protocols, such as requiring phone-based pitches, to maintain editorial integrity and manage inbox spam.",
+    "category": "Artificial Intelligence",
+    "author": "Kate Knibbs",
+    "source": "Wired",
+    "processed_at": "2026-10-27T13:12:23.437560"
+  },
+  {
+    "url": "https://www.businessinsider.com/hollywood-villains-holmes-musk-zuckerberg-cupertino-cbs-2026-10#article",
+    "title": "The 'Big Bad Theory'",
+    "summary": "Hollywood is increasingly casting Silicon Valley tech billionaires as the primary villains in film and television, reflecting a growing societal \"techlash\" against the industry's immense power.\n\n### Key Points\n- Recent productions like \"Cupertino,\" \"The Social Reckoning,\" and \"The Dropout\" depict tech founders as megalomaniacal antagonists rather than faceless corporate entities.\n- The CBS legal procedural \"Cupertino\" has gained significant viewership by focusing on the conflict between everyday citizens and powerful Silicon Valley giants.\n- Scholars note that these narratives mirror Cold War-era fears, replacing external threats with tech leaders who prioritize financial gain over ethical or human concerns.\n- Unlike historical \"mad scientist\" tropes, modern tech villains are often modeled after real-world figures like Elon Musk, Sam Altman, and Elizabeth Holmes.\n- Data suggests that audiences, including older demographics, are increasingly receptive to stories that portray tech executives as the source of modern societal inconveniences.\n\n### Why it Matters\nThis shift in storytelling signals a broader cultural reckoning with the ubiquity of Big Tech and the perceived arrogance of its leadership. By humanizing the \"villain\" as a recognizable tech mogul, these narratives tap into widespread class rage and provide a cathartic outlet for public frustration with the digital economy.",
+    "category": "Tech Business & Markets",
+    "author": "Adam Rogers",
+    "source": "Business Insider",
+    "processed_at": "2026-10-27T13:13:09.605651"
+  },
+  {
+    "url": "https://thehackernews.com/2026/10/gheist-uses-stolen-github-tokens-to.html",
+    "title": "Gheist Uses Stolen GitHub Tokens to Steal Private Repository Secrets via Actions Logs",
+    "summary": "The Gheist campaign is using stolen GitHub tokens to plant malicious workflows that exfiltrate repository secrets, impacting both private repositories and GitHub Enterprise environments since mid-September.\n\n### Key Points\n- Attackers use stolen tokens to create branches named \"ci-sync-\" and inject workflows that print repository secrets in base32 format to bypass GitHub's automated masking.\n- Security firm Wiz has identified over 13,500 malicious branches across 850 compromised accounts, noting that the campaign deletes logs immediately after exfiltration.\n- The Gheist tool targets various credentials, including production environment secrets and, in some cases, attempts to harvest tokens from self-hosted runner machines.\n- While GitHub’s automated safeguards block malicious runs in public repositories, these protections do not currently extend to private repositories or GitHub Enterprise Server.\n- Wiz recommends that affected organizations rotate all repository secrets, revoke compromised tokens, and audit cloud logs for unauthorized role assumptions.\n\n### Why it Matters\nThis campaign highlights a significant vulnerability in how automated workflows handle sensitive environment secrets, as stolen tokens can bypass standard security controls in private and enterprise environments. Organizations must treat any repository with a \"ci-sync-\" branch as fully compromised and rotate all associated credentials to prevent further unauthorized access to cloud infrastructure.",
+    "category": "Cybersecurity",
+    "author": "info@thehackernews.com (The Hacker News)",
+    "source": "Internet",
+    "processed_at": "2026-10-27T13:17:28.710375"
+  },
+  {
+    "url": "https://www.yankodesign.com/2026/10/26/the-lamp-that-refuses-to-need-an-outlet-or-a-charger/",
+    "title": "The Lamp That Refuses to Need an Outlet or a Charger",
+    "summary": "The Anywhere-Use Lamp offers a portable, battery-powered lighting solution featuring a minimalist, modular design that provides warm, ambient illumination for both indoor and outdoor environments without requiring cables.\n\n### Key Points\n- The lamp features a mushroom-inspired, pack-flat design that allows for easy disassembly and transport in a bag.\n- It utilizes six high-CRI LEDs to produce a soft, warm glow rather than harsh task lighting.\n- Users adjust brightness levels by pressing the lamp cap, which provides haptic feedback for each setting.\n- The device is powered by AA batteries, eliminating the need for charging cables, Wi-Fi connectivity, or smart home apps.\n- Priced at $149, the lamp serves as a simplified, analog alternative to smart portable lights like the $179.99 Philips Hue Go.\n\n### Why it Matters\nThis product highlights a growing consumer preference for \"dumb\" hardware that prioritizes reliability and simplicity over complex smart-home integration. By removing the need for charging bases and app connectivity, the lamp offers a dependable lighting alternative for travelers and readers who prioritize portability and ease of use.",
+    "category": "Phones, Laptops, and Gadgets",
+    "author": "Ida Torres",
+    "source": "Yanko Design",
+    "processed_at": "2026-10-27T13:21:47.973726"
+  },
+  {
+    "url": "https://www.makeuseof.com/i-didnt-need-a-kindle-to-get-the-reading-experience-i-wanted/",
+    "title": "I didn't need a Kindle to get the reading experience I wanted",
+    "summary": "Users can bypass the limitations of dedicated Kindle hardware by combining the official Amazon Kindle app with the open-source KOReader software on existing Android mobile devices.\n\n### Key Points\n- The Kindle app maintains access to Amazon’s ecosystem, while KOReader supports diverse file formats including EPUB, PDF, CBZ, and Markdown.\n- KOReader is an open-source project with nearly 30,000 GitHub stars, featuring advanced typography controls, PDF reflow, and automated highlight exports to note-taking apps.\n- Users can install KOReader via GitHub or F-Droid, though the process requires sideloading and manual configuration of cloud storage or Calibre for file syncing.\n- Amazon hardware restrictions, such as the removal of USB transfer options and lack of native EPUB support, have prompted users to seek more flexible alternatives.\n- KOReader does not support DRM-protected content, meaning library books and protected purchases must still be managed through official Amazon or Libby applications.\n\n### Why it Matters\nThis approach allows readers to consolidate their digital libraries on a single device while avoiding the restrictive \"walled garden\" of proprietary e-reader hardware. By leveraging open-source tools, users gain greater control over document formatting and file management without the recurring cost of purchasing new dedicated hardware.",
+    "category": "Phones, Laptops, and Gadgets",
+    "author": "Rob LeFebvre",
+    "source": "MakeUseOf",
+    "processed_at": "2026-10-27T13:22:19.642726"
+  },
+  {
+    "url": "https://www.theregister.com/columnists/2026/10/26/php2shell-is-a-warning-shot-for-vulnerability-disclosure/5304918",
+    "title": "PHP2Shell is a warning shot for vulnerability disclosure",
+    "summary": "UK government officials prioritized meetings with AI datacenter executives over environmental groups while industry leaders and security experts navigate a rapidly evolving landscape of infrastructure and cyber threats.\n\n### Key Points\n- UK ministers faced criticism for excluding environmental advocates from discussions regarding the development of designated AI Growth Zones.\n- Anthropic executives argued that global investment in AI infrastructure must reach $800 billion to sustain future technological progress.\n- Apollo Global Management reported that AI-driven financial gains remain concentrated within the \"Magnificent Seven\" tech companies rather than the broader market.\n- Microsoft issued emergency guidance after failing to fully patch a zero-day vulnerability currently targeting on-premises SharePoint servers.\n- Private equity firm EQT acquired a majority stake in Swiss cybersecurity company Acronis at a valuation exceeding $3.5 billion.\n- The DEF CON security conference expanded its Franklin project to include hackers focused on hardening critical national infrastructure.\n\n### Why it Matters\nThe concentration of AI influence among a few major corporations and the persistent vulnerability of critical infrastructure highlight significant risks for global markets and digital security. These developments suggest that while AI investment is accelerating, the benefits and security burdens remain unevenly distributed across the technology sector.",
+    "category": "Tech Business & Markets",
+    "author": "Rupert Goodwins",
+    "source": "Theregister.com",
+    "processed_at": "2026-10-27T13:22:30.332646"
+  },
+  {
+    "url": "https://typemill.net/knowledge-hub/tasks-as-code",
+    "title": "Tasks as Code: Move Your Tickets into the Repository",
+    "summary": "Storing development tasks as Markdown files within Git repositories allows AI coding agents to access requirements, code, and documentation in one unified, version-controlled, and reviewable workflow.\n\n### Key Points\n- Moving tasks into Git repositories enables AI agents to read requirements, plan implementations, and record results directly within the codebase.\n- The \"Tasks as Code\" approach mirrors \"Docs as Code\" by treating specifications and task descriptions as versioned files rather than external ticket entries.\n- A five-step workflow includes task description, requirement analysis, AI-generated implementation plans, human review, and automated reporting.\n- Developers can maintain privacy by using separate Git repositories for sensitive tasks while keeping them accessible to local AI coding assistants.\n- Tools like Typemill can provide browser-based interfaces for non-technical stakeholders to manage these Git-backed files without requiring command-line access.\n\n### Why it Matters\nThis shift reduces reliance on external project management tools by centralizing the source of truth within the version control system. By integrating tasks directly into the development environment, teams can improve AI agent performance and ensure that documentation and requirements evolve alongside the codebase.",
+    "category": "Artificial Intelligence",
+    "author": "Sebastian Schürmanns",
+    "source": "Typemill.net",
+    "processed_at": "2026-10-27T13:22:40.987117"
+  },
+  {
+    "url": "http://deadline.com/2026/10/legacy-ip-value-mipcom-acf-deadline-1237172952/",
+    "title": "Hiding In Plain Sight: Top Execs On Unlocking The Value In Legacy IP",
+    "summary": "Industry leaders at MIPCOM discussed how revitalizing legacy intellectual property serves as a strategic engine for global content hits, offering proven audience demand and significant revenue potential.\n\n### Key Points\n- Data from Parrot Analytics shows TV shows based on existing IP generate three-and-a-half times the demand of original content.\n- Producers are increasingly using a \"B2C2B\" strategy, building massive audiences on platforms like YouTube before selling content to traditional broadcasters.\n- Companies like Banijay and WildBrain focus on managing \"superbrands\" and evergreen franchises to ensure long-term relevance across merchandising and live events.\n- Financial firms like Easttree Media are helping rights holders unlock immediate capital by purchasing passive profit participations in long-running film and TV catalogs.\n- Versos AI is enabling studios to monetize dormant library assets by licensing raw video footage for the training of artificial intelligence models.\n\n### Why it Matters\nLegacy IP provides a safer investment for studios facing budget constraints by offering a built-in audience and established brand recognition. By leveraging data analytics and new monetization channels like AI training, rights holders can transform stagnant library assets into consistent, high-value revenue streams.",
+    "category": "Tech Business & Markets",
+    "author": "Stewart Clarke",
+    "source": "Deadline",
+    "processed_at": "2026-10-27T13:22:50.676902"
+  },
+  {
+    "url": "https://cointelegraph.com/markets/btc-price-risks-80k-loss-into-fomc-earnings-three-things-to-know-in-bitcoin-this-week",
+    "title": "BTC price risks $80K loss into FOMC, earnings: Three things to know in Bitcoin this week",
+    "summary": "**Bitcoin struggles to maintain the $80,000 support level as investors brace for a critical week of US Federal Reserve interest rate decisions and major corporate earnings reports.**\n\n### Key Points\n- Bitcoin is currently down 4% for October, failing to meet historical \"Uptober\" performance trends as it tests the $80,000 psychological support level.\n- The Federal Open Market Committee (FOMC) meets Wednesday, with markets pricing a 90% probability that interest rates will remain in the 3.75-4% range.\n- Major US tech companies, including Microsoft, Alphabet, Amazon, and Intel, are scheduled to release their third-quarter earnings reports later this week.\n- South Korea’s KOSPI index fell 1.5% on Monday, reflecting broader investor anxiety regarding the sustainability of capital expenditure in the artificial intelligence sector.\n- The US will release its preferred inflation gauge, the Personal Consumption Expenditures (PCE) index, and third-quarter GDP data on Thursday.\n\n### Why it Matters\nThe convergence of macroeconomic policy decisions and high-stakes corporate earnings creates significant volatility for both digital assets and traditional equity markets. Investors are closely monitoring these indicators to determine if current market valuations, particularly in the tech sector, can be sustained amid tightening financial conditions.",
+    "category": "Tech Business & Markets",
+    "author": "Cointelegraph by William Suberg",
+    "source": "Cointelegraph",
+    "processed_at": "2026-10-27T13:23:35.957249"
+  },
+  {
     "summary": "The Gheist campaign is actively exploiting compromised GitHub tokens to inject malicious workflows into repositories, aiming to exfiltrate sensitive secrets and credentials from private and enterprise environments.\n\n### Key Points\n- Since September 15, 2026, attackers have used the \"gheist\" user agent to plant automated \"sync-check\" workflows in over 850 compromised GitHub accounts.\n- The malicious workflows bypass standard security by printing secrets to logs, which are then exfiltrated via the GitHub API to avoid external network detection.\n- While GitHub’s approval requirements block these attacks in public repositories, private repositories and enterprise environments remain vulnerable to unauthorized workflow execution.\n- Advanced variants of the tool attempt to compromise self-hosted runners by searching for private keys, cloud credentials, and tokens for AI providers like Anthropic and NVIDIA.\n- The campaign overlaps with other malicious activities, including cryptomining, malware distribution, and the use of infostealers to harvest initial access credentials.\n\n### Why it Matters\nThis campaign highlights a significant security risk for organizations relying on GitHub Actions, as attackers can leverage stolen tokens to pivot from code repositories into cloud infrastructure. Because the attack uses legitimate API channels to exfiltrate data, security teams must prioritize rotating secrets and hardening OIDC trust policies to prevent unauthorized role assumptions.",
     "url": "https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles",
     "title": "Gheist campaign plants secret-dumping workflows using stolen GitHub tokens",

@@ -1,20 +1,20 @@
-Gheist campaign plants secret-dumping workflows using stolen GitHub tokens
+Hiding Virtualization From Other Software
 ============================================================
 
-The Gheist campaign is actively exploiting compromised GitHub tokens to inject malicious workflows into repositories, aiming to exfiltrate sensitive secrets and credentials from private and enterprise environments.
+The new vfio-native tool modifies Linux Kernel-based Virtual Machine environments to mimic bare-metal hardware, significantly reducing the ability of software to detect that it is running inside a virtual machine.
 
 ### Key Points
-- Since September 15, 2026, attackers have used the "gheist" user agent to plant automated "sync-check" workflows in over 850 compromised GitHub accounts.
-- The malicious workflows bypass standard security by printing secrets to logs, which are then exfiltrated via the GitHub API to avoid external network detection.
-- While GitHub’s approval requirements block these attacks in public repositories, private repositories and enterprise environments remain vulnerable to unauthorized workflow execution.
-- Advanced variants of the tool attempt to compromise self-hosted runners by searching for private keys, cloud credentials, and tokens for AI providers like Anthropic and NVIDIA.
-- The campaign overlaps with other malicious activities, including cryptomining, malware distribution, and the use of infostealers to harvest initial access credentials.
+- The vfio-native tool applies kernel patches to obscure virtual machine signatures and force CPU behavior to match physical hardware.
+- Standard KVM virtual machines score 10/85 on detection tests, while systems using vfio-native achieve a score of 1/85.
+- The software is currently available for users to install via the Arch User Repository (AUR).
+- Security researchers use the tool to observe malware behavior that might otherwise remain dormant when detecting a virtualized environment.
+- The tool helps run legacy industrial software that often fails to operate when it identifies a virtual machine host.
 
 ### Why it Matters
-This campaign highlights a significant security risk for organizations relying on GitHub Actions, as attackers can leverage stolen tokens to pivot from code repositories into cloud infrastructure. Because the attack uses legitimate API channels to exfiltrate data, security teams must prioritize rotating secrets and hardening OIDC trust policies to prevent unauthorized role assumptions.
+This development provides a critical solution for researchers and engineers who need to bypass restrictive hardware-detection checks in legacy or security-sensitive applications. By masking virtualization, it ensures that software functions consistently across both physical and virtualized infrastructure.
 
 ============================================================
-Author:   Rami McCarthy, Hila Ramati
-Source:   Www.wiz.io
-URL:      https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles
+Author:   Bryan Cockfield
+Source:   Hackaday
+URL:      https://hackaday.com/2026/10/26/hiding-virtualization-from-other-software/
 Category: Cybersecurity
