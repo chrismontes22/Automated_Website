@@ -1,20 +1,21 @@
-Gheist Uses Stolen GitHub Tokens to Steal Private Repository Secrets via Actions Logs
+Trump administration pushes for food assistance card upgrade to fight fraud
 ============================================================
 
-The Gheist campaign is using stolen GitHub tokens to plant malicious workflows that exfiltrate repository secrets, impacting both private repositories and GitHub Enterprise environments since mid-September.
+The Trump administration has proposed a new rule requiring states to transition to chip-enabled EBT cards to combat widespread electronic skimming and theft within the SNAP program.
 
 ### Key Points
-- Attackers use stolen tokens to create branches named "ci-sync-" and inject workflows that print repository secrets in base32 format to bypass GitHub's automated masking.
-- Security firm Wiz has identified over 13,500 malicious branches across 850 compromised accounts, noting that the campaign deletes logs immediately after exfiltration.
-- The Gheist tool targets various credentials, including production environment secrets and, in some cases, attempts to harvest tokens from self-hosted runner machines.
-- While GitHub’s automated safeguards block malicious runs in public repositories, these protections do not currently extend to private repositories or GitHub Enterprise Server.
-- Wiz recommends that affected organizations rotate all repository secrets, revoke compromised tokens, and audit cloud logs for unauthorized role assumptions.
+- The USDA proposal mandates that all states adopt chip-enabled EBT cards and requires retailers to upgrade payment terminals to support tap-to-pay technology.
+- Electronic skimming of SNAP benefits resulted in an estimated $470 million in losses last year, according to data from the app Propel.
+- The USDA Office of Inspector General projects that SNAP theft could reach $233 million between 2025 and 2026 without improved security measures.
+- Currently, fewer than one-third of U.S. states have transitioned to more secure card technology, largely due to the high production costs of chip-enabled cards.
+- The USDA estimates that implementing these security upgrades will prevent at least $1.5 billion in benefit theft over the next decade.
+- The public has 60 days to submit comments on the proposal, with the government considering a two-year implementation deadline for states.
 
 ### Why it Matters
-This campaign highlights a significant vulnerability in how automated workflows handle sensitive environment secrets, as stolen tokens can bypass standard security controls in private and enterprise environments. Organizations must treat any repository with a "ci-sync-" branch as fully compromised and rotate all associated credentials to prevent further unauthorized access to cloud infrastructure.
+This initiative aims to modernize outdated payment infrastructure to protect vulnerable households from losing essential food assistance to criminal activity. While the transition imposes significant administrative costs on states, the federal government views the investment as a necessary step to safeguard taxpayer-funded benefits from ongoing fraud.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/10/gheist-uses-stolen-github-tokens-to.html
+Author:   Juliana Kim
+Source:   NPR
+URL:      https://www.npr.org/2026/10/26/nx-s1-6017810/snap-benefits-ebt-card-chip-usda-rule
 Category: Cybersecurity

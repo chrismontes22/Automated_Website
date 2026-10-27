@@ -1,20 +1,21 @@
-Windows 11 Pro is just $10, so why aren’t you using it?
+⚡ Weekly Recap: This2Shell, That2Shell, Everything's an RCE? Rogue AI, Supply Chain Chaos and More
 ============================================================
 
-A lifetime license for Microsoft Windows 11 Pro is currently available for $9.97, offering users a significant discount from the standard retail price of $199 for the software.
+A surge of critical remote code execution vulnerabilities, including the widespread PHP2Shell flaws, has triggered global security alerts and forced organizations to prioritize urgent patching and system hardening.
 
 ### Key Points
-- The license provides a one-time purchase option with no recurring subscription fees for the Windows 11 Pro operating system.
-- Professional-grade features included are BitLocker full-disk encryption, Hyper-V virtualization, and Windows Sandbox for secure application testing.
-- The software supports business-focused tools such as Azure AD integration for identity management and network access.
-- Users gain access to advanced multitasking capabilities, including Snap layouts, and integrated AI features like Copilot.
-- Compatibility should be verified using the Microsoft PC Health Check app before purchase, as the license is valid for one PC.
+- The PHP Foundation released patches for two critical PHP2Shell vulnerabilities (CVE-2026-109618 and CVE-2026-109619) that saw millions of exploitation attempts.
+- Google’s Brotli decoder library and several dependent tools were patched against a severe remote code execution flaw dubbed Node2Shell.
+- eMudhra exited the TLS certificate market after major browsers blocked its certificates due to the use of weak private keys.
+- LiteLLM suffered a supply chain attack after a leaked master key allowed attackers to inject malicious code into a popular Python package.
+- Plex Media Server vulnerabilities are being actively exploited in the wild to deploy cryptocurrency miners and proxy software.
+- Rapid7 reports that the average time between a high-severity vulnerability disclosure and active exploitation has shrunk to just three days.
 
 ### Why it Matters
-This offer provides a cost-effective upgrade path for users currently running Windows 10 or those requiring the advanced security and virtualization tools missing from the Home edition. By securing a lifetime license at this price point, individuals and small businesses can access enterprise-level management features without the burden of ongoing subscription costs.
+The rapid weaponization of newly disclosed vulnerabilities and the compromise of trusted software supply chains demonstrate that traditional patching cycles are no longer sufficient. Organizations must adopt proactive threat intelligence and rigorous exposure management to defend against attackers who are increasingly leveraging AI to accelerate their exploitation efforts.
 
 ============================================================
-Author:   DealPost Team
-Source:   PCWorld
-URL:      https://www.pcworld.com/article/3268907/windows-11-pro-is-just-10-so-why-arent-you-using-it.html
-Category: Phones, Laptops, and Gadgets
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/10/weekly-recap-this2shell-that2shell.html
+Category: Cybersecurity
