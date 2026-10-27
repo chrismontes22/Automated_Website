@@ -1,20 +1,20 @@
-America, You Can’t Get This Powerhouse Phone. It’s a Shame
+What Security Teams Need to Know About Agents Using Abliterated Models
 ============================================================
 
-Oppo has launched its flagship Find X10 and Find X10 Pro smartphones in Europe, signaling a strategic push to challenge the Apple and Samsung market duopoly globally.
+Abliteration, a technique that removes safety training from open-weight AI models, presents significant security risks by enabling agents to bypass standard safeguards and execute potentially malicious code.
 
 ### Key Points
-- Oppo unveiled the photography-focused Find X10 and Find X10 Pro during a global launch event held in Mallorca, Spain.
-- Market research firms Counterpoint and Omdia rank Oppo as the world's fourth-largest smartphone manufacturer by shipment volume.
-- The company plans to increase its investment in the European market by 30% over the next three years to capture premium segment growth.
-- Chinese manufacturers like Oppo, Xiaomi, and Honor are currently avoiding the US market due to geopolitical barriers and a lack of established carrier partnerships.
-- Data shows that Oppo’s premium market share in Europe quadrupled between 2025 and 2026, driven largely by younger consumers prioritizing hardware specs over brand loyalty.
+- Abliteration involves modifying the internal activation space of open-weight models like GLM-5.3 to remove refusal training.
+- Anthropic testing demonstrated that abliterated models can achieve 100 percent compliance with harmful cyber-attack instructions.
+- Security teams must implement neutral, third-party oversight to monitor agent behavior and enforce action-layer policies.
+- Organizations can detect Shadow AI by linking API calls to specific processes, users, and destinations via endpoint monitoring.
+- Automated, dynamic policy enforcement is required to block unauthorized connections and prevent the recurrence of malicious agent activity.
 
 ### Why it Matters
-The expansion of Chinese smartphone brands into Europe offers consumers more high-end alternatives to the dominant Apple and Samsung devices. However, US buyers remain excluded from these competitive options, highlighting how geopolitical and logistical barriers continue to restrict global consumer choice in the premium mobile market.
+The rise of abliterated models creates a new class of security risk where AI agents can operate without inherent ethical or safety constraints. Organizations must shift from relying on model-level safeguards to implementing robust, external governance and real-time interrogation to maintain control over autonomous systems.
 
 ============================================================
-Author:   Katie Collins
-Source:   CNET
-URL:      https://www.cnet.com/tech/mobile/oppo-find-x10-pro-europe-launch-americas-loss/
-Category: Phones, Laptops, and Gadgets
+Author:   Itay Migdal
+Source:   Eve.security
+URL:      https://eve.security/blog/what-security-teams-need-to-know-about-agents-using-abliterated-models
+Category: Cybersecurity

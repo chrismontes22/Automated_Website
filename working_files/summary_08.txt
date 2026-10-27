@@ -1,20 +1,20 @@
-GitHub CLI's New Expiring Tokens Still Leave Your Refresh Token Exposed to Malware
+iFixit’s look inside the iPhone Duo may explain those broken screens and hinges
 ============================================================
 
-GitHub CLI has introduced short-lived access tokens to improve security, but the tool ghtkn offers enhanced protection by securing refresh tokens within an encrypted, passphrase-protected local daemon.
+iFixit’s teardown of the new iPhone Duo reveals a complex hinge design and specialized display technology, earning the foldable device a 5/10 repairability score from the firm.
 
 ### Key Points
-- GitHub CLI (gh) now uses short-lived access tokens that automatically refresh, though refresh tokens remain stored in the OS keyring.
-- The ghtkn CLI utilizes a local agent backend that encrypts refresh tokens with a user-defined passphrase, preventing unauthorized access by other processes.
-- Unlike the GitHub CLI, ghtkn allows users to restrict token access to specific organizations and repositories using GitHub App user access tokens.
-- The ghtkn agent can be manually locked to prevent token generation, and it provides alerts if a refresh token is potentially compromised.
-- ghtkn supports switching between multiple GitHub Apps with varying permission levels, reducing the risk associated with overly privileged tokens.
+- The iPhone Duo received a 5/10 repairability score, marking the highest rating iFixit has awarded to a foldable smartphone to date.
+- Apple utilizes a matte nano-texture screen cover and angled oval-shaped subpixels to minimize the visibility of the display's central crease.
+- The device showed improved dust resistance in the hinge and ports compared to the Samsung Z Fold8 and Google Pixel 11 Pro Fold.
+- Analysts suspect that a complex hinge mechanism and an internal accordion cable may be concentrating pressure, potentially causing reported screen and hinge cracks.
+- While the outer nano-texture layer is replaceable, repairing the underlying OLED display remains a difficult and costly process for users.
 
 ### Why it Matters
-While GitHub's move to short-lived tokens reduces the window of opportunity for attackers, storing refresh tokens in the OS keyring leaves them vulnerable to malware. The ghtkn tool provides a more robust security architecture for developers who require granular control over token permissions and protection against unauthorized credential extraction.
+This teardown highlights the ongoing engineering challenges manufacturers face when balancing foldable screen durability with internal component accessibility. As foldables gain market share, these repairability insights provide consumers and technicians with a clearer understanding of the long-term maintenance costs associated with complex hinge and display technologies.
 
 ============================================================
-Author:   Shunsuke Suzuki
-Source:   Hashnode.dev
-URL:      https://suzuki-shunsuke.hashnode.dev/github-cli-s-new-expiring-tokens-still-leave-your-refresh-token-exposed-to-malware
-Category: Cybersecurity
+Author:   Terrence O’Brien
+Source:   The Verge
+URL:      https://www.theverge.com/tech/1018233/ifixit-iphone-duo-teardown-repairability-hinge
+Category: Phones, Laptops, and Gadgets

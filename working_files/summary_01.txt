@@ -1,20 +1,20 @@
-Why I changed my smart TV DNS settings (and how to do it)
+Gheist campaign plants secret-dumping workflows using stolen GitHub tokens
 ============================================================
 
-Updating your smart TV's DNS settings to a third-party provider like Cloudflare can significantly reduce buffering and improve streaming speeds by bypassing slower, default internet service provider servers.
+The Gheist campaign is actively exploiting compromised GitHub tokens to inject malicious workflows into repositories, aiming to exfiltrate sensitive secrets and credentials from private and enterprise environments.
 
 ### Key Points
-- Changing DNS settings from automatic to static allows users to manually input faster, more reliable servers like Cloudflare’s 1.1.1.1.
-- Testing shows that switching to Cloudflare can reduce DNS response times from 88 milliseconds to 28 milliseconds.
-- Public DNS services often provide enhanced security features, such as automatic protection against phishing and malware-infected websites.
-- The configuration process involves accessing the network settings menu on a smart TV and updating the DNS server fields manually.
-- Users can revert to default settings at any time by switching the network configuration back to automatic or DHCP mode.
+- Since September 15, 2026, attackers have used the "gheist" user agent to plant automated "sync-check" workflows in over 850 compromised GitHub accounts.
+- The malicious workflows bypass standard security by printing secrets to logs, which are then exfiltrated via the GitHub API to avoid external network detection.
+- While GitHub’s approval requirements block these attacks in public repositories, private repositories and enterprise environments remain vulnerable to unauthorized workflow execution.
+- Advanced variants of the tool attempt to compromise self-hosted runners by searching for private keys, cloud credentials, and tokens for AI providers like Anthropic and NVIDIA.
+- The campaign overlaps with other malicious activities, including cryptomining, malware distribution, and the use of infostealers to harvest initial access credentials.
 
 ### Why it Matters
-Optimizing DNS settings is a cost-effective way to enhance home entertainment performance without requiring expensive hardware upgrades or higher-tier internet plans. This simple technical adjustment can resolve persistent streaming bottlenecks and provide users with a more secure, private browsing experience.
+This campaign highlights a significant security risk for organizations relying on GitHub Actions, as attackers can leverage stolen tokens to pivot from code repositories into cloud infrastructure. Because the attack uses legitimate API channels to exfiltrate data, security teams must prioritize rotating secrets and hardening OIDC trust policies to prevent unauthorized role assumptions.
 
 ============================================================
-Author:   Jayric Maning
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/smart-tv-dns-settings/
-Category: Phones, Laptops, and Gadgets
+Author:   Rami McCarthy, Hila Ramati
+Source:   Www.wiz.io
+URL:      https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles
+Category: Cybersecurity
