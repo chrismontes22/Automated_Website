@@ -1,20 +1,20 @@
-I turned on system DoH and my browser ignored it completely
+CyberStrikeAI Uses 44 AI Agents to Automate Hacking Operations Against Japan Targets
 ============================================================
 
-Windows 11’s built-in DNS over HTTPS (DoH) setting provides encryption for system-level requests, but many applications and web browsers bypass these configurations to manage their own DNS traffic.
+Cybersecurity researchers have identified three distinct cyberattack campaigns targeting Japanese organizations that utilize artificial intelligence to automate reconnaissance, vulnerability exploitation, and data exfiltration processes.
 
 ### Key Points
-- Windows 11 allows users to enable DoH via Network & internet settings by manually configuring DNS servers like Cloudflare’s 1.1.1.1.
-- Browsers including Chrome and Edge often ignore system-wide DNS settings, opting to use their own internal secure DNS configurations instead.
-- Chromium-based desktop applications, such as Slack, may leak unencrypted DNS queries even when the Windows "fallback to plaintext" feature is disabled.
-- Firefox typically defaults to using the Windows system resolver unless a custom DNS provider is manually selected within the browser settings.
-- Packet monitoring reveals that some initial DNS lookups occur in plain text before a secure connection is established by individual applications.
+- TrendAI identified three separate attack environments in Japan, ranging from human-led operations assisted by large language models to fully autonomous AI-agent platforms.
+- One campaign utilized the open-source tool CyberStrikeAI to automate the entire attack lifecycle, targeting at least 19 organizations within a short period in October 2026.
+- Attackers are increasingly using AI to generate localized content, such as fake Japanese-language login pages, to increase the effectiveness of social engineering efforts.
+- Other global campaigns have integrated agentic AI to hijack cloud infrastructure, steal API keys, and deploy cryptocurrency miners across thousands of exposed hosts.
+- Microsoft reports that AI has reduced the median time from vulnerability discovery to weaponization to less than 24 hours, significantly increasing operational speed for threat actors.
 
 ### Why it Matters
-Relying solely on the Windows 11 DNS privacy toggle provides a false sense of security, as it does not guarantee that all network traffic remains encrypted. Users must verify settings within each individual browser and application to ensure their DNS requests are not leaking or bypassing system-level privacy protections.
+The integration of AI into offensive security workflows allows threat actors to industrialize cyberattacks by removing the need for manual labor and enabling operations at unprecedented scale. This shift forces organizations to defend against automated, fatigue-free adversaries that can exploit vulnerabilities and adapt to new environments faster than traditional security measures can respond.
 
 ============================================================
-Author:   Yasir Mahmood
-Source:   MakeUseOf
-URL:      https://www.makeuseof.com/i-turned-on-system-doh-and-my-browser-ignored-it-completely/
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/10/cyberstrikeai-uses-44-ai-agents-to.html
 Category: Cybersecurity
