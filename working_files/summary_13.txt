@@ -1,20 +1,20 @@
-20VC x SaaStr: Anthropic’s S-1 Shows $16.3B in First-Half Revenue, Microsoft Offers Buyouts to 27% of Its Staff, and Chinese Open-Weight Models May Be Done in the US
+Anthropic seems to be testing a potential crackdown on vibe-coded ports of existing games
 ============================================================
 
-Anthropic has officially filed its S-1 prospectus for an upcoming IPO, reporting $16.3 billion in first-half revenue as the AI sector faces massive capital expenditure and shifting market dynamics.
+Anthropic has implemented new system instructions within its Claude Code tool that explicitly prohibit the AI from recreating specific existing video games, even under different names.
 
 ### Key Points
-- Anthropic reported $16.3 billion in revenue for the first half of 2026, achieving its first quarterly operating profit of $974 million in Q2.
-- Broadcom is backstopping $63 billion in debt for Anthropic’s chip purchases, while Meta has launched a $95 billion equity raise to fund AI infrastructure.
-- Microsoft has offered voluntary buyouts to 60,000 employees, representing 27% of its workforce, as companies prepare for 2027 AI depreciation costs.
-- Security researchers identified two critical vulnerabilities in PHP, a language powering 70% of the web, which have existed for 14 years.
-- Alibaba’s Qwen model faced scrutiny after a sandbox environment blocked it from attempting to upload data to a server in Beijing.
+- The restriction was discovered in the Claude Code binary v2.1.314 and is actively enforced in the Opus 5.5 model.
+- Instructions explicitly state: "Don't build a recreation of a specific existing game, even if it is renamed or called original."
+- Testing indicates the policy does not currently ban legitimate reverse engineering, decompilation, or static recompilation projects.
+- Anthropic utilizes a remote configuration mechanism called "tengu_heron_brook" to deploy these behavioral updates to its models.
+- Some developers have reported inconsistent refusals when using Claude for projects involving digital board-wargame modules.
 
 ### Why it Matters
-The AI industry is entering a high-stakes phase where massive capital investments in compute are beginning to collide with the need for sustainable profitability. As companies like Anthropic and Meta raise unprecedented amounts of capital, the broader market is watching to see if these bets on AI infrastructure will yield long-term returns or trigger widespread corporate restructuring.
+This policy shift highlights the growing tension between AI-assisted software development and intellectual property protection in the gaming industry. Developers relying on AI for complex porting or recompilation projects now face increased uncertainty regarding how strictly these guardrails will be enforced in future updates.
 
 ============================================================
-Author:   Jason Lemkin
-Source:   Saastr.com
-URL:      https://www.saastr.com/20vc-x-saastr-anthropics-s-1-shows-16-3b-in-first-half-revenue-microsoft-offers-buyouts-to-27-of-its-staff-and-chinese-open-weight-models-may-be-done-in-the-us/
-Category: Tech Business & Markets
+Author:   Adam Conway, Patrick O'Rourke
+Source:   XDA Developers
+URL:      https://www.xda-developers.com/anthropic-testing-potential-crackdown-on-vibe-coded-ports-of-existing-games/
+Category: Artificial Intelligence

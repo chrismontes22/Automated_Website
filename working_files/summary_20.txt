@@ -1,20 +1,20 @@
-(PR) Sandisk Reports Fiscal First Quarter 2027 Financial Results
+Amazon MSK now supports TLS 1.3 for data in transit
 ============================================================
 
-Sandisk Corporation reported strong fiscal first-quarter 2027 financial results driven by robust data center demand and announced an eight-for-one forward stock split to increase share accessibility.
+Amazon MSK now supports the TLS 1.3 protocol for Provisioned clusters, enabling faster, more secure data encryption and helping organizations meet evolving enterprise compliance and post-quantum security standards.
 
 ### Key Points
-- Sandisk reported strong fiscal first-quarter 2027 results, highlighted by significant growth within its data center business segment.
-- The company announced an eight-for-one forward stock split to make shares more accessible to employees and individual investors.
-- Stockholders of record as of November 9, 2026, will receive seven additional shares for every single share held.
-- The additional shares will be issued after market close on November 19, 2026, with post-split trading beginning November 20, 2026.
-- CEO David Goeckeler attributed the performance to technology leadership, strategic customer partnerships, and disciplined financial management.
+- Amazon MSK Provisioned clusters now support TLS 1.3 through configurable encryption policies.
+- Customers can select named security policies to enforce specific TLS versions and cipher suites.
+- The update allows for a phased migration by supporting both TLS 1.2 and 1.3 simultaneously.
+- Stricter policies can be applied to restrict connections exclusively to TLS 1.3 for enhanced security.
+- This feature is available at no additional cost across all AWS Regions where Amazon MSK Provisioned is offered.
 
 ### Why it Matters
-The stock split aims to lower the per-share price, potentially increasing liquidity and making the company's equity more attractive to a broader base of retail investors. This move reflects management's confidence in the company's long-term growth trajectory and its commitment to maintaining durable free cash flow.
+Adopting TLS 1.3 provides stronger protection against modern cyber threats and ensures data remains secure against future decryption attempts by quantum computers. This update simplifies compliance management for enterprises by allowing them to align their streaming infrastructure with rigorous security standards at their own pace.
 
 ============================================================
-Author:   Nomad76
-Source:   Techpowerup.com
-URL:      https://www.techpowerup.com/354293/sandisk-reports-fiscal-first-quarter-2027-financial-results
-Category: Tech Business & Markets
+Author:   aws@amazon.com
+Source:   Amazon.com
+URL:      https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-msk-tls/
+Category: Cybersecurity
