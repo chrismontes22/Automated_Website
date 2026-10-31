@@ -1,20 +1,20 @@
-14 New Things Your iPhone Can Do in iOS 27.2
+This tiny Android browser punches way above its weight
 ============================================================
 
-Apple released iOS 27.2 on October 26, introducing significant Siri AI enhancements, new messaging suggestions, and expanded media features for iPhone users across several hardware models.
+The new open-source Eddy browser for Android offers a lightweight, privacy-focused alternative to mainstream apps by utilizing the system WebView to maintain a minimal 3.5MB installation size.
 
 ### Key Points
-- Siri AI now recalls past conversations and accesses personal context from voicemails, photos, and calendar events on iPhone 15 Pro and newer models.
-- New language support for Siri includes French, Japanese, Korean, Portuguese, and Spanish, though availability remains restricted in the EU and mainland China.
-- The Messages app now provides contextual suggestions for calendar invites and reminders, while Photos adds SynthID watermarking to identify AI-generated images.
-- Apple TV app updates include Multiview for watching four simultaneous sports streams and new household profile management for iPhone and iPad.
-- FaceTime introduces Dual Capture for streaming from front and rear cameras, while the iPhone Duo gains Apple Pencil USB-C and Edge Light support.
+- Eddy is built with Kotlin and Jetpack Compose, featuring a Material 3 Expressive interface designed for one-handed navigation.
+- The browser maintains a small footprint by leveraging Android’s system WebView rather than shipping a standalone rendering engine.
+- Privacy features include host-based ad blocking, an encrypted AES-256-GCM password manager, and a secure incognito mode using separate WebView profiles.
+- Memory management is optimized by limiting active tabs to four, automatically saving and rebuilding older tabs to preserve system resources.
+- The application is currently in beta, free to use, and does not track user data or display advertisements.
 
 ### Why it Matters
-These updates deepen the integration of generative AI across the Apple ecosystem, providing users with more personalized and context-aware device interactions. By expanding features like Multiview and Dual Capture, Apple continues to prioritize high-end media consumption and communication tools to maintain its competitive edge in the smartphone market.
+Eddy demonstrates how modern development tools can create highly efficient, privacy-centric alternatives to bloated mobile browsers. Its success highlights a growing market demand for lightweight software that prioritizes user control and hardware performance over data-heavy features.
 
 ============================================================
-Author:   Tim Hardwick
-Source:   MacRumors
-URL:      https://www.macrumors.com/2026/10/30/new-things-iphone-can-do-ios-27-2/
+Author:   Sagar Naresh
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/eddy-tiny-open-source-android-browser-and-it-has-no-business-being-this-polished/
 Category: Phones, Laptops, and Gadgets

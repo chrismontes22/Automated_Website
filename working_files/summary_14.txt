@@ -1,20 +1,20 @@
-Open Channels FM: Who Controls Our Software, Open Channels News Week in Review
+Anthropic seems to be testing a potential crackdown on vibe-coded ports of existing games
 ============================================================
 
-The r/OpenSource subreddit bans AI-generated content, highlighting a broader industry debate over software control, infrastructure sustainability, and the shifting landscape of the open-source ecosystem this week.
+Anthropic has implemented new system instructions within its Claude Code tool that explicitly prohibit the AI from recreating specific existing video games, even under different names.
 
 ### Key Points
-- The r/OpenSource subreddit implemented a ban on AI-assisted projects, prompting some users to migrate to the new r/TrueOpenSource community.
-- Tesco is reportedly considering a migration from VMware to the open-source Proxmox platform following a 175% price increase dispute with Broadcom.
-- Linux Foundation research indicates that while AI can reduce coding time by 52%, it also introduces a significant volume of low-quality pull requests.
-- Mistral AI previewed "LeChonk," a trillion-parameter open-weight model designed for specialized sectors like cyber defense, finance, and engineering.
-- A Danish government pilot program to replace Microsoft Office with Collabora ended after six months due to persistent formatting and interoperability issues.
+- The restriction was discovered in the Claude Code binary v2.1.314 and is actively enforced in the Opus 5.5 model.
+- Instructions explicitly state: "Don't build a recreation of a specific existing game, even if it is renamed or called original."
+- Testing indicates the policy does not currently ban legitimate reverse engineering, decompilation, or static recompilation projects.
+- Anthropic utilizes a remote configuration mechanism called "tengu_heron_brook" to deploy these behavioral updates to its models.
+- Some developers have reported inconsistent refusals when using Claude for projects involving digital board-wargame modules.
 
 ### Why it Matters
-These developments underscore a growing tension between corporate software control and the demand for independent, sustainable infrastructure. As organizations and users prioritize autonomy, the ability to inspect and modify technology is becoming a critical factor in long-term digital strategy.
+This policy shift highlights the growing tension between AI-assisted software development and intellectual property protection in the gaming industry. Developers relying on AI for complex porting or recompilation projects now face increased uncertainty regarding how strictly these guardrails will be enforced in future updates.
 
 ============================================================
-Author:   Open Channels FM
-Source:   Openchannels.fm
-URL:      https://openchannels.fm/who-controls-our-software-open-channels-news-week-in-review/
+Author:   Adam Conway, Patrick O'Rourke
+Source:   XDA Developers
+URL:      https://www.xda-developers.com/anthropic-testing-potential-crackdown-on-vibe-coded-ports-of-existing-games/
 Category: Artificial Intelligence

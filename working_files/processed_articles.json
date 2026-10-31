@@ -1,24 +1,24 @@
 {
   "status": "ok",
-  "total_processed": 26,
+  "total_processed": 27,
   "total_successful": 20,
   "success_goal": 20,
-  "completed_at": "2026-10-31T21:59:46.439763",
+  "completed_at": "2026-10-31T23:04:19.254378",
   "articles": [
     {
       "index": 1,
-      "url": "https://www.techradar.com/pro/security/massive-govtech-breach-leaks-42-million-documents-including-thousands-packed-with-personal-information",
-      "title": "Massive GovTech breach leaks 42 million documents \u2014 including thousands packed with personal information",
-      "source": "TechRadar",
-      "author": "Sead Fadilpa\u0161i\u0107",
+      "url": "https://www.firezone.dev/blog/introducing-sanstun",
+      "title": "Sanstun: A sans-IO, parallel-friendly WireGuard implementation in Rust",
+      "source": "Firezone.dev",
+      "author": "Thomas Eizinger",
       "success": true,
       "category": "Cybersecurity",
-      "content": "- Researcher finds exposed database containing 42 million documents and hundreds of thousands of records with personal data\n- The CitySourced-linked repository exposed names, contact details, complaint reports, and internal records for years\n- Database was secured after disclosure, highlighting ongoing risks from misconfigured cloud storage\nMillions of documents, many exposing personally identifiable information (PII), were sitting online, in an open database accessible to anyone with a browser and the knowledge of where to look. The database belonged to a GovTech company called CitySourced, and has since been locked down.\nCybersecurity researcher Jeremiah Fowler reported finding a database contained roughly 42 million documents and 450,000 JSON files containing PII in plaintext.\nThe exposed records consisted primarily of images of complaints or code violation reports, but after analyzing a limited sample, Fowler found the database held people\u2019s names, postal addresses, email addresses, phone numbers, and \u201cthousands of internal records dating from 2016 to 2026\u201d.\nThis kind of information is a gold mine for cybercriminals. By knowing private information about their targets, they can create custom, personalized phishing messages, increasing their chances of success. Data like this is frequently shared and sold on the dark web, and is often used as leverage in ransomware negotiations.\nCitySourced reacts\nThe exposed repository contained different top-level application directories, Fowler explained, listing names such as Api, Content, Customers, Data, Developers, FileStorage, json, Product, Public, Support, Widget, temp, Logs, and others. Apparently, the archive also contained multiple .sdk and .exe files - which are quite out of place and could indicate that someone tried to plant malware.\nThe name of the database and files inside led Fowler to conclude they belonged to a US company called CitySourced. This is a US civic technology company (GovTech) that develops software that residents can use to report local issues such as potholes or malfunctioning streetlights to municipal authorities. It was founded in 2009 and merged with Rock Solid Technologies in 2019. Three years later, the company was acquired by government technology provider Granicus.\nWhen reporting on these databases, Fowler usually stresses that owning and operating are two different things, and that he could not determine if a third-party contractor managed it or not. Still, after reaching out to CitySourced, the company locked the database down and thanked Fowler for his efforts:\nSign up to the TechRadar Pro newsletter to get all the top news, opinion, features and guidance your business needs to succeed!\n\"Thank you again for the responsible disclosure and for following up,\u201d CitySourced said. \u201cGranicus has reviewed the information you provided, investigated the matter internally, and is taking action to address the issue.\"\nHow to secure a database\nMisconfigured databases continue to be one of the leading causes of data leaks. Some businesses don\u2019t know they are responsible for the security of the data they create and instead believe it\u2019s the responsibility of their cloud provider. Others are simply unaware of the misconfiguration, leaving data widely available and risking reputational damage and even class-action lawsuits.\nFowler says businesses can secure their infrastructure by segmenting customer environments and internal data.\nThere is no reason for all eggs to be in one basket, so in case of a compromise, configuration error, or unauthorized access involving one tenant, information belonging to other organizations remains secure.\n\u201cStorage systems, backups, and sensitive data should be encrypted and protected against unauthorized access,\u201d he added. \u201cTenant isolation, access controls, and encryption provide a good first layer of defense that could limit the overall impact of a data security incident.\u201d\nIndividuals should assume that cybercriminals already know something about them. There were so many breaches over the years that it\u2019s almost impossible anyone\u2019s data remained entirely private - at least things like names and emails. Therefore, they should always approach incoming email with skepsis, especially unsolicited ones, and those carrying links, attachments, or messages of utmost urgency.\nFollow TechRadar on Google News and add us as a preferred source to get our expert news, reviews, and opinion in your feeds.\nSead is a seasoned freelance journalist based in Sarajevo, Bosnia and Herzegovina. He writes about IT (cloud, IoT, 5G, VPN) and cybersecurity (ransomware, data breaches, laws and regulations). In his career, spanning more than a decade, he\u2019s written for numerous media outlets, including Al Jazeera Balkans. He\u2019s also held several modules on content writing for Represent Communications.\nYou must confirm your public display name before commenting\nPlease logout and then login again, you will then be prompted to enter your display name.",
-      "summary": "A misconfigured database linked to GovTech firm CitySourced exposed 42 million documents and 450,000 files containing sensitive personal information, including names, contact details, and internal municipal complaint records.\n\n### Key Points\n- Cybersecurity researcher Jeremiah Fowler discovered the exposed database, which contained records dating from 2016 to 2026.\n- The repository included 450,000 JSON files containing personally identifiable information (PII) such as email addresses, phone numbers, and postal addresses.\n- CitySourced, a company acquired by Granicus in 2022, secured the database following the disclosure.\n- The exposed data included images of code violation reports and internal logs, alongside potentially malicious .exe and .sdk files.\n- Experts recommend that organizations implement tenant isolation, encryption, and strict access controls to prevent similar cloud storage misconfigurations.\n\n### Why it Matters\nThis incident highlights the persistent risk of data exposure caused by misconfigured cloud storage within the government technology sector. Such leaks provide cybercriminals with the necessary information to conduct targeted phishing attacks, potentially leading to identity theft or further security compromises for affected residents.",
+      "content": "Today, we are announcing sanstun: a sans-IO Rust implementation of the WireGuard\u00ae state machine, optimized for ease of use, security and performance through a parallel-friendly and idiomatic API.\nsans-IO is the idea that you design your system such that IO and side-effects are cleanly separated from the state and \"business logic\". The IO in sans-IO doesn't just mean file or network IO. It also includes things like time and randomness!\nDue to their lack of side-effects, sans-IO components compose very well and are relatively easy to test. The design also avoids problems like function coloring and plays well with Rust's ownership rules.\nThe code examples and references in this post are in Rust but sans-IO isn't Rust-specific at all. Its patterns and ideas can be applied in any language. For a more in-depth explanation, our sans-IO post is a good place to start.\nWhen we first built Firezone, we reached for boringtun as our WireGuard implementation.\nboringtun more or less did what we wanted, but over time, we found ourselves patching our fork over and over with bug fixes as well as API additions.\nThe goal was to allow these patches to still be upstreamed, so we always kept the existing API working the way it was.\nWhat we found was that retaining 100% API compatibility with upstream was increasingly difficult as our product requirements evolved.\nOne of the first big changes we made to boringtun was to make it fully sans-IO with regard to time handling (firezone/boringtun#5).\nThis meant adding new APIs for everything with a _at suffix that would take an Instant.\nsans-IO time handling is very important if you want to accurately simulate an entire system.\nSee this blog post to learn more about how we do that.\nAnother thing we feature-flagged was internal buffering.\nAt first, it seems convenient that boringtun establishes a session automatically if you don't have one yet (or anymore) and you are trying to send a packet.\nInternal buffering, however, comes with several problems:\n- At some point, the buffer needs to be drained.\nboringtun solves this by requiring you to call decapsulate with a zero-length datagram.\nRather unintuitive.\n- It incurs additional allocations (at least in the way it was implemented in boringtun).\n- Buffer sizes should be configurable / tunable.\nAll of these problems point at the same solution: Just don't buffer in the library. It simplifies the interface and the implementation on both sides.\nThe full list of patches and fixes is pretty long. Even excluding dependency bumps, that is more than 70 PRs. Several of them are fixes for edge-cases we discovered. Others add new APIs or make certain aspects configurable.\nAfter more than 2 years of using and patching boringtun, we had a pretty good idea of what the overall API of a userspace WireGuard implementation should be.\nNow it exists as sanstun.\nThe core building blocks of the sans-IO API are now:\n- Handling inbound packets:\n  - Tunnel::handle_handshake_initiation\n  - Tunnel::handle_handshake_response\n  - Tunnel::handle_cookie_reply\n  - Tunnel::begin_decapsulate & Tunnel::commit_decapsulate\n- Handling outbound packets: Tunnel::begin_encapsulate\n- Handling timer updates: Tunnel::handle_timeout & Tunnel::poll_timeout\n- Handling events: Tunnel::poll_event\nWithout internal buffering, there is no API contract that requires you to call certain APIs in a loop, which fits much better into the overall sans-IO model.\nTo send a packet, you call Tunnel::begin_encapsulate.\nIt is up to you to buffer the packet if you don't have a session yet.\nCreating a new session means sending a handshake.\nYou can initiate a new handshake at any point with Tunnel::initiate_handshake.\nThe design of these APIs is very deliberate and will make more sense if we quickly recap the WireGuard protocol.\nWireGuard's message format supports 4 types of messages: handshake init, handshake response, cookie reply and encrypted data.\nEvery WireGuard session starts with a Diffie-Hellman key exchange which is a moderately expensive operation. WireGuard's design ensures that exposing an endpoint doesn't open up a DoS opportunity.\nAnyone who knows the endpoint's public key can easily create bogus handshake initiations and forge the source IP of the incoming UDP packet. The receiving WireGuard implementation has to run its half of the DH operations before it can tell that the supplied handshake data is bogus. But at that point, the CPU resources have already been spent. Send enough handshake initiations and the receiving end will spend all its CPU cycles on handling irrelevant handshakes.\nTo prevent this, WireGuard specifies a cookie mechanism that forces the remote to prove ownership of its claimed source IP, which in turn allows rate-limiting handshakes per source IP.\nThese rate limits apply to an entire WireGuard interface and not just to a single tunnel.\nOnce a handshake has been completed, both peers can exchange encrypted data packets with a symmetric cipher. As part of the handshake, the peers also exchange their locally-chosen session indices. These indices enable de-multiplexing of tunnels as well as multiple sessions within a tunnel.\nIf you are working in a language like Rust, chances are you enjoy using types. And using types well means enforcing invariants at compile-time such that you can't even ship a certain bug in the first place. For example, forgetting to apply the rate limiter to a message would be pretty bad because it doesn't show up under normal operation. Similarly, routing an incoming packet to the wrong tunnel is something that will only show up in production.\nA good API design makes it impossible to build things that are broken and also guides you along in understanding how the protocol works.\nA WireGuard interface is identified by a single key and a tunnel is a connection between two interfaces. Any time we want to send a packet, we therefore need to specify which tunnel it should be sent on and when we receive a packet, we need to figure out which tunnel it belongs to.\nIn sanstun, these concepts directly map to the Interface and Tunnel types.\nAll inbound packets go through Interface::receive.\nThat is the only public API that parses a raw datagram.\nIt parses the packet, applies rate limits and hands you back a ReceivedMessage with one enum variant per WireGuard message type, or a cookie reply to send back if the interface is under load.\nThese then map directly to the corresponding functions on a Tunnel: Tunnel::handle_handshake_initiation, etc.\nHandshake initiations are routed by the initiator's static public key.\nAll other messages expose which Tunnel they should be dispatched to, identified by a TunnelId.\nUnder the hood, sanstun does a lot of things for you here.\nIt parses the tunnel index and extracts the upper 24 bits, it applies rate limits, generates cookie replies and validates handshake messages.\nCrucially, the constructors for types like HandshakeInitiation are all crate-private.\nEven though Tunnel exposes a public handle_handshake_initiation function, the only way to call that is by going through Interface::receive first to obtain such a type.\nAnd Interface::receive protects your application by applying the rate limiter, all without you having to think about it.\nOne of the best features of sanstun is its parallel-friendly API for encrypting and decrypting packets.\nOn a protocol level, WireGuard doesn't share any state between tunnels. Therefore, parallelizing a WireGuard implementation across peers is very easy.\nBut what about parallelizing work within a single tunnel? WireGuard operates on layer 3, and thus a single session with another peer carries the traffic of many individual network flows. Even if we handle tunnels to different peers on different threads, all network flows (i.e., unique 5-tuples) toward the same host or subnet will be processed sequentially, effectively bounded by how fast the CPU is at ChaCha20-Poly1305, WireGuard's cipher for data packets. To protect against replay by malicious on-path observers, WireGuard data packets have a monotonically increasing packet counter. This counter is scoped to a single session and therefore would require synchronization if we were to access this state from multiple threads simultaneously.\nTo avoid this, sanstun separates the bookkeeping from the actual encryption and decryption.\nCalling Tunnel::begin_encapsulate doesn't in fact encrypt anything.\nIt checks for the current session, reserves a packet counter, advances timer state and then hands you a PendingEncapsulate:\nimpl PendingEncapsulate {\n    pub fn encrypt<'a>(self, plaintext: &[u8], dst: &'a mut [u8]) -> Result<DataMessage<'a>, Error> {\n        // ...\n    }\n}\nPendingEncapsulate implements Send and can thus be transferred to another thread to perform the bulk of the work.\nRunning cargo bench data_path in the sanstun repository showcases the effect of this split:\ndata_path/64B/begin_encapsulate\n                        time:   [20.785 ns 20.828 ns 20.869 ns]\ndata_path/64B/encrypt   time:   [226.15 ns 226.22 ns 226.29 ns]\ndata_path/64B/begin_decapsulate\n                        time:   [37.600 ns 37.675 ns 37.744 ns]\ndata_path/64B/decrypt   time:   [205.78 ns 205.83 ns 205.87 ns]\ndata_path/64B/commit_decapsulate\n                        time:   [17.486 ns 17.529 ns 17.575 ns]\ndata_path/1280B/begin_encapsulate\n                        time:   [20.785 ns 20.828 ns 20.869 ns]\ndata_path/1280B/encrypt time:   [933.49 ns 933.54 ns 933.59 ns]\ndata_path/1280B/begin_decapsulate\n                        time:   [37.606 ns 37.681 ns 37.751 ns]\ndata_path/1280B/decrypt time:   [914.81 ns 914.89 ns 914.97 ns]\ndata_path/1280B/commit_decapsulate\n                        time:   [17.657 ns 17.707 ns 17.764 ns]\nAs expected, the bookkeeping parts (begin_encapsulate, begin_decapsulate and commit_decapsulate) do not scale with packet size.\nWhat does scale with packet size are the encrypt and decrypt functions.\nAt a packet size of 1280 bytes, the bookkeeping part of encrypting a new packet is only 2%.\nIf we move the actual encryption to another thread, this hints at a potential speedup of more than 45x!\nAn effective speedup of 45x is hard to achieve in practice because it ignores the cost of passing PendingEncapsulate to another thread and assumes no other overhead is introduced.\nNevertheless, being able to offload the crypto to worker threads allows for some great throughput improvements.\nBeing a sans-IO library, sanstun doesn't concern itself with how exactly you want to parallelize your crypto.\nIf you want to keep it simple, you can also just call encrypt and decrypt inline and not bother with parallelization at all.\nThe key thing we wanted to achieve with sanstun's API design was to enable parallel crypto while keeping everything around Interface single-threaded.\nThis lets the internal rate limiter work without locks or atomic counters and take advantage of Rust's borrow checker, all while combining state from multiple tunnels.\nWith sanstun, our fork at firezone/boringtun is now deprecated.\nIf you are building on top of WireGuard, whether that's a VPN, a mesh network or something else entirely, we hope sanstun makes your life a little easier.\nIt is available on crates.io.\nsanstun is open source under the Apache 2.0 license.\nCheck it out on GitHub; issues and pull requests are welcome!",
+      "summary": "Firezone has released sanstun, a new sans-IO Rust implementation of the WireGuard state machine designed to improve performance and security through a parallel-friendly, idiomatic API.\n\n### Key Points\n- sanstun separates IO and side effects from business logic, allowing for easier testing and better integration with Rust's ownership rules.\n- The library removes internal buffering to simplify the interface and eliminate unnecessary memory allocations found in previous implementations.\n- A core feature is the separation of bookkeeping from encryption, enabling developers to offload cryptographic operations to worker threads for higher throughput.\n- The API enforces security invariants at compile-time, such as mandatory rate-limiting for incoming packets via the `Interface::receive` function.\n- sanstun is available on crates.io and is released as open-source software under the Apache 2.0 license.\n\n### Why it Matters\nBy decoupling state management from heavy cryptographic tasks, sanstun allows developers to scale WireGuard performance across multiple CPU cores without complex locking mechanisms. This modular design provides a more flexible and robust foundation for building VPNs, mesh networks, and other secure communication tools.",
       "scrape_error": null,
       "summary_error": null,
       "classify_error": null,
-      "processed_at": "2026-10-31T21:45:50.251888"
+      "processed_at": "2026-10-31T22:43:57.253256"
     },
     {
       "index": 2,
@@ -33,7 +33,7 @@
       "scrape_error": null,
       "summary_error": null,
       "classify_error": null,
-      "processed_at": "2026-10-31T21:45:58.610329"
+      "processed_at": "2026-10-31T22:44:05.896706"
     },
     {
       "index": 3,
@@ -48,7 +48,7 @@
       "scrape_error": null,
       "summary_error": null,
       "classify_error": null,
-      "processed_at": "2026-10-31T21:46:06.425642"
+      "processed_at": "2026-10-31T22:44:14.250572"
     },
     {
       "index": 4,
@@ -63,25 +63,10 @@
       "scrape_error": null,
       "summary_error": null,
       "classify_error": null,
-      "processed_at": "2026-10-31T21:46:28.320605"
+      "processed_at": "2026-10-31T22:44:22.639049"
     },
     {
       "index": 5,
-      "url": "https://www.wired.com/story/gifts-for-friends/",
-      "title": "Gift Ideas for Friends (2026): Wellness Tech, Kitchen Essentials",
-      "source": "Wired",
-      "author": "Molly Higgins",
-      "success": true,
-      "category": "Phones, Laptops, and Gadgets",
-      "content": "In writing this guide on gift ideas for friends, I learned that there really is no catch-all gift that will please everyone. Choosing these gifts, I thought back to some of the best self-care products and tech I\u2019ve tested recently. I included the gadgets I reach for regularly, as well as those I\u2019ve bought for family and friends after testing and loving them. So please use this guide as a starting point, keeping your friend\u2019s personality, needs, and hobbies in mind as you shop for the right gifts.\nAfter testing hundreds of products during my years on the WIRED Reviews team, these are the items I\u2019d recommend to the friends on my own list. I\u2019ve included self-care gifts like massagers, cozy gifts like an ultra-soft throw blanket, kitchen staples like a chef\u2019s knife, and everything in between. There are many gifts at different price points, and they\u2019re also categorized by gift type below. Be sure to check back often, as I will be updating this guide with versatile new picks as we get closer to gifting season.\nLooking for more gift ideas? Don\u2019t miss our other awesome gift guides as the holiday season ramps up.\nFeatured in This Gift Guide\nBest Tech Gifts\nIt's my belief that everyone could use a small, portable Bluetooth speaker. Whether you want to sing along to your favorite tunes in the shower or get the party going around a campfire, having a compact, Bluetooth-enabled speaker at the ready makes you everyone\u2019s favorite party guest. At less than $60, I promise this li\u2019l guy will be a hit as a gift (without breaking the bank). Plus, you can fully customize the design with images, text, and stickers if you want to make it more personalized for the giftee.\nBest Self-Care Gifts\nThis nifty gadget from wellness tech company Chirp is a godsend for anyone who\u2019s always on their feet. It has two sides: One features a textured surface that targets pressure points, and the other has a heated, centralized oval that acts like a hot stone for targeted arch relief. The end has a USB-C charging port and buttons to adjust heat, vibration, and preset recovery programs, which use different heat and massage patterns for relief. I use this gadget almost daily, especially if I\u2019ve been on my feet a lot that day. This is the perfect gift for someone who\u2019s always asking for a foot massage.\nAs someone who suffers from persistent razor burn and red bumps, especially in sensitive areas like my bikini line, I\u2019m always asking my friends what they recommend. I tested this set from Dollar Shave Club, and I haven\u2019t looked back\u2014and I keep giving it to my friends who want a better way to shave. The set pictured above is for women and includes one grippy, ergonomic razor handle, six cartridges with six blades each, a razor hanger for your shower wall, an amazing sugar scrub that exfoliates dead skin before shaving, and a silky-smooth shave oil to moisturize and soften hair before shaving. If you want to be extra generous, you can opt for the subscription plan on behalf of your friend, which sends new replacement blades, the scrub, and the shave oil every two months for half price. I haven\u2019t tested the men\u2019s set yet, but it includes two six-blade razors, a diamond-grip handle, shave butter, prep scrub, post-shave dew, a razor cover, and a travel case. The subscription plan works the same as the women\u2019s set.\nBest Cozy Gifts\nWIRED reviewer Boutayna Chokrane was sold on Hatch\u2019s newest sunrise alarm clock, which also doubles as a sleep tracker. If your giftee doesn\u2019t want to sleep with a wearable to get their sleep stats, this device uses motion-based tracking to provide passive sleep monitoring from their nightstand. It functions as a sunrise clock, a dimmable bedside light, and a sound machine, and it now captures data like sleep duration and stages, presented in interactive visuals. Boutayna loved the refreshing minimalist design, with no cameras or microphones watching you sleep. Best of all, your data is not locked behind a Hatch+ membership. If you have a friend who struggles with sleep or waking up, consider joining in the sunrise alarm clock trend and getting them this aesthetic bedside machine.\nBest Kitchen Gifts\nEveryone\u2014I mean every single person\u2014needs at least one great chef\u2019s knife. This is probably the most important multipurpose kitchen tool\u2014it can slice, dice, and chop ingredients with speed and precision. Your friend most likely could use a better knife for everyday cooking. Great chef\u2019s knives range from less than $100 to several hundred dollars, but I really like this mid-range, 8-inch knife from Material. It\u2019s made from luxe Japanese high-carbon, stainless steel for extra durability, with a matte, stain-resistant composite handle. Plus, if you buy from Material\u2019s site, you can personalize it with an engraved message for a fun, more personal touch.\nPower up with unlimited access to WIRED. Get best-in-class reporting and exclusive subscriber content that's too important to ignore. Subscribe Today.",
-      "summary": "The WIRED Reviews team has curated a comprehensive gift guide featuring expert-tested tech, self-care gadgets, and kitchen essentials designed to suit a variety of personalities and budgets.\n\n### Key Points\n- The guide includes a customizable Bluetooth speaker priced under $60 for portable audio needs.\n- Chirp offers a wellness device featuring heat, vibration, and pressure-point targeting for foot relief.\n- Dollar Shave Club provides comprehensive shaving sets for men and women, including subscription options for recurring blade and skincare deliveries.\n- The Hatch sunrise alarm clock provides non-wearable, motion-based sleep tracking alongside sound machine and bedside lighting features.\n- Material\u2019s 8-inch Japanese high-carbon stainless steel chef\u2019s knife serves as a durable, customizable kitchen staple for home cooks.\n\n### Why it Matters\nCurated gift guides help consumers navigate the overwhelming volume of retail options by highlighting products that have undergone professional performance testing. These recommendations provide reliable, high-quality gift ideas that prioritize utility and personalization for the upcoming holiday season.",
-      "scrape_error": null,
-      "summary_error": null,
-      "classify_error": null,
-      "processed_at": "2026-10-31T21:46:36.546695"
-    },
-    {
-      "index": 6,
       "url": "https://www.androidcentral.com/phones/nothing-phones/phone-3a-phone-4a-series-its-your-turn-to-receive-nothing-os-5-0-android-17",
       "title": "Phone 3a, Phone 4a series\u2014it's your turn to receive Nothing OS 5.0 (Android 17)",
       "source": "Android Central",
@@ -93,10 +78,10 @@
       "scrape_error": null,
       "summary_error": null,
       "classify_error": null,
-      "processed_at": "2026-10-31T21:46:44.733488"
+      "processed_at": "2026-10-31T22:44:30.601063"
     },
     {
-      "index": 7,
+      "index": 6,
       "url": "https://www.cnet.com/tech/services-and-software/hackers-stole-billions-crypto-binance-polymarket/",
       "title": "\u2018Largest Crypto Hack in History\u2019: Binance Loses More Than $6B",
       "source": "CNET",
@@ -108,10 +93,10 @@
       "scrape_error": null,
       "summary_error": null,
       "classify_error": null,
-      "processed_at": "2026-10-31T21:46:53.757155"
+      "processed_at": "2026-10-31T22:44:57.156931"
     },
     {
-      "index": 8,
+      "index": 7,
       "url": "https://www.macrumors.com/2026/10/30/new-things-iphone-can-do-ios-27-2/",
       "title": "14 New Things Your iPhone Can Do in iOS 27.2",
       "source": "MacRumors",
@@ -123,10 +108,40 @@
       "scrape_error": null,
       "summary_error": null,
       "classify_error": null,
-      "processed_at": "2026-10-31T21:47:06.434597"
+      "processed_at": "2026-10-31T22:45:21.134087"
+    },
+    {
+      "index": 9,
+      "url": "https://www.makeuseof.com/eddy-tiny-open-source-android-browser-and-it-has-no-business-being-this-polished/",
+      "title": "This tiny Android browser punches way above its weight",
+      "source": "MakeUseOf",
+      "author": "Sagar Naresh",
+      "success": true,
+      "category": "Phones, Laptops, and Gadgets",
+      "content": "Most Android browsers are either bloated or boring. While Samsung Browser is my go-to on my Samsung Galaxy S24 Ultra, I recently came across a new browser called Eddy. It's an open-source browser that is still in beta, and its release build is only about 3.5MB. Eddy browser has no ads and no data sharing, yet when you use it, it feels as if a big team spent a year on it. If you\u2019ve been hunting for a Chrome alternative on Android, or you\u2019re curious about Android System WebView, this one deserves your attention.\nEddy is ...nice\nA tiny browser with a big browser look\nEddy is a fast, lightweight, privacy-focused browser. It is written in Kotlin with Jetpack Compose, and its interface follows Google\u2019s Material 3 Expressive style. This means rounded, bouncy shapes and springy animations, similar to other Google apps you're familiar with.\nThe size of the app is what stands out here. When I looked at the GitHub repo, with a few stars, I expected something rough and half-finished. However, to my surprise, the first screen I saw looked like a browser from a much bigger company.\nEddy doesn\u2019t ship its own rendering engine but uses Android\u2019s system WebView, which is the same component many apps use to show web pages themselves. Notably, WebView only shows a page by default. Things like an address bar and navigation controls are left out for the browser to manage. So a browser built on it has to add those itself. This is one of the big reasons Eddy stays so small.\nEddy\n- OS\n- Android\n- Price model\n- Free\nEddy is a lightweight Android WebView browser designed to provide a simple, fast, and streamlined web browsing experience. Its open-source design focuses on essential browsing functionality with a minimal footprint, making it suitable for users who prefer a straightforward and efficient mobile browser.\n- Open-Source?\n- Yes\nThe design is where Eddy surprises you\nOne-handed browsing that actually makes sense\nWe all know how big modern phones have become. To fix this, Eddy uses floating controls that sit near your thumb, with a single bottom bar while you browse. The browser has expressive shapes and a calm start page. You\u2019ll notice this most on a big phone, as I did on my Galaxy S24 Ultra.\nThe best part is that you don\u2019t need to stretch up or do hand gymnastics to reach the top of the screen just to switch tabs or type a new address. While this hasn't been an issue for me since I've been using the Samsung Browser, those still using the likes of Chrome, etc., would understand the pain. Upon launching Eddy Browser for the first time, you are given a five-step tour. Here\u2019s the neat part: you can choose the theme, colors, search engine, and toolbar position, and whatever you pick during the tour applies to the real settings live.\nHere are some of the features that won me over and made me use Eddy browser more:\n- Privacy features: Eddy blocks third-party requests using host-based lists. You get a per-site switch, support for custom lists, and a daily background refresh. But blocking is domain-based only, so you\u2019ll still see some empty ad spaces on certain pages.\n- Incognito mode that actually works: Plenty of browsers treat incognito mode as a cosmetic change, where no history is saved. Eddy\u2019s version uses a separate WebView profile, where cookies and storage get deleted when you close the last incognito tab.\n- A password manager with encryption: Eddy only saves a password after you\u2019ve signed in successfully. Passwords are encrypted with AES-256-GCM using an Android Keystore key. It lets you import and export passwords as a Chrome-style CSV file.\nThe repository also says that Eddy Browser doesn't show you any ads or share data.\nEveryday features that keep up\nIt has good memory management\nEddy keeps at most four live tabs at a time. Older tabs get saved with their full back-and-forward history and rebuilt when you open them. This helps save memory, since Eddy drops everything except the tab you\u2019re looking at. This means you can continue opening a pile of tabs without the browser slowing down your Android phone. When you tap on the tabs, you can pick up from where you left off.\nThis browser also comes with its own download engine. It lets you pause, resume, and retry, shows speed, and saves your files inside the Downloads folder. During my time with Eddy Browser, aside from a few glitches, I did not come across anything major. Every function worked perfectly, and I was impressed with the tab management.\nWith that being said, it is still important to note that this browser is still in beta. You may see issues that I may not have come across. So, you can share those in the comments below. If you are not ready to switch, you can still opt for some popular names.\nGood for tinkerers\nIf you're someone like me who loves trying new apps, I would recommend you try Eddy Browser once. It is free, open-source, and does what it says. It is one good example of what one good developer can do with modern tools. The best part, the Android world is full of such interesting apps. If the Eddy browser is not your cup of tea, you can try out a bunch of lesser-known Android browsers that do more than what Chrome can do.",
+      "summary": "The new open-source Eddy browser for Android offers a lightweight, privacy-focused alternative to mainstream apps by utilizing the system WebView to maintain a minimal 3.5MB installation size.\n\n### Key Points\n- Eddy is built with Kotlin and Jetpack Compose, featuring a Material 3 Expressive interface designed for one-handed navigation.\n- The browser maintains a small footprint by leveraging Android\u2019s system WebView rather than shipping a standalone rendering engine.\n- Privacy features include host-based ad blocking, an encrypted AES-256-GCM password manager, and a secure incognito mode using separate WebView profiles.\n- Memory management is optimized by limiting active tabs to four, automatically saving and rebuilding older tabs to preserve system resources.\n- The application is currently in beta, free to use, and does not track user data or display advertisements.\n\n### Why it Matters\nEddy demonstrates how modern development tools can create highly efficient, privacy-centric alternatives to bloated mobile browsers. Its success highlights a growing market demand for lightweight software that prioritizes user control and hardware performance over data-heavy features.",
+      "scrape_error": null,
+      "summary_error": null,
+      "classify_error": null,
+      "processed_at": "2026-10-31T22:49:38.749515"
     },
     {
       "index": 10,
+      "url": "https://www.techradar.com/pro/oracle-co-founder-larry-ellison-thinks-ai-could-make-us-all-rich-through-a-universal-high-income-but-governments-will-need-to-change",
+      "title": "Oracle co-founder Larry Ellison thinks AI could make us all rich through a universal high income \u2013 but governments will need to change",
+      "source": "TechRadar",
+      "author": "Craig Hale",
+      "success": true,
+      "category": "Artificial Intelligence",
+      "content": "Speaking on-stage at the company's recent AI World conference, Oracle co-founder Larry Ellison declared AI could eventually make everyone \"healthier and wealthier\".\nApparently unfazed by the technology's impacts on humanity, Ellison does acknowledge that governments need to have a shift in mindset to adapt to this new future.\nIn a Q&A during the conference's hotly anticipated final keynote, Ellison outlined a future where AI systems and robots could dramatically reduce the cost of goods and services. But rather than accepting the suggestion that AI would end up replacing us all, he argued that the technology would ultimately serve to make us more productive, allowing workers to achieve things that simply weren't possible before.\nAI won't replace us, but it will change the economics of work in a lasting way\n\"I think that's kind of nonsensical,\" Ellison said about predictions that AI will eventually replace everyone.\nThe multi-billionaire accepted AI and automation will inevitably displace some jobs, pointing toward rideshare services in a hint to ongoing approval of driverless cars in Las Vegas and other cities.\nBut he also stressed not all jobs would be impacted equally, revealing his pilot qualifications on-stage and stressing that autopilot hasn't replaced human pilots despite being a decades-old technology.\nAlthough humans will continue to play supervisory roles in many industries (we're already seeing human knowledge worker roles evolve into AI agent managers in some cases), Ellison argued that the overall benefits would be positive, providing governments get involved to support the humans they represent.\nSign up to the TechRadar Pro newsletter to get all the top news, opinion, features and guidance your business needs to succeed!\nPainting a picture of what he meant, he described a hypothetical house being constructed entirely by robots in a scenario where automation had replaced human labor. Whereas human labor would have accounted for, say, 80% of the cost of a house before, four-fifths of the house instantly becomes cheaper because of the impact of automation.\nHe used this example to set the foundation for the idea of 'universal high income' \u2013 a concept already floated by other tech billionaires, including Elon Musk.\nTaxation needs to change to enable the provision of a universal income\n\"We need to change from taxing human labor to taxing value added,\" he said. \"So when the robots add value, all that value that the robots add is taxed, and we could have universal high income.\"\nUniversal high income is an evolution of the universal basic income concept, which provides citizens with a regular payment that covers essential living costs. Instead, he suggested that the enormous productivity gains that AI could eventually unlock could create enough wealth to support much higher incomes, despite declining human work activity.\nHe referenced economist Milton Friedman's negative income tax proposal, describing it as a \"reverse income tax\" that could help distribute some of the wealth generated by AI.\n\"The robots are adding value. The government's taxing the value... We all become wealthy as a result.\"\nHowever, Ellison's vision is a wildly ambitious one that would require a colossal change to today's systems. It would take more than a decade, he admitted. While a future of AI-induced human wealth with less work might sound far-fetched at best in today's economy, Ellison's optimism remains on track.\n\"All of that is doable,\" he concluded.\nlayoffs.fyi has tracked over 135,000 layoffs in the tech sector alone in 2026 to date, including around 21,000 Oracle workers in the 12 months between June 2025 and June 2026, and likely thousands more in September 2026.\nFollow TechRadar on Google News and add us as a preferred source to get our expert news, reviews, and opinion in your feeds.\nWith several years\u2019 experience freelancing in tech and automotive circles, Craig\u2019s specific interests lie in technology that is designed to better our lives, including AI and ML, productivity aids, and smart fitness. He is also passionate about cars and the decarbonisation of personal transportation. As an avid bargain-hunter, you can be sure that any deal Craig finds is top value!\nYou must confirm your public display name before commenting\nPlease logout and then login again, you will then be prompted to enter your display name.",
+      "summary": "Oracle co-founder Larry Ellison envisions a future where AI and robotics drive significant productivity gains, potentially enabling a \"universal high income\" model through new taxation on automated value.\n\n### Key Points\n- Larry Ellison proposed shifting government taxation from human labor to the value generated by robots and AI systems.\n- The Oracle co-founder argued that AI will increase productivity and lower the cost of goods rather than simply replacing human workers.\n- Ellison suggested adopting a \"universal high income\" model, inspired by economist Milton Friedman\u2019s negative income tax, to distribute AI-generated wealth.\n- The executive acknowledged that while automation will displace some jobs, humans will transition into supervisory roles, similar to pilots using autopilot.\n- Oracle has faced significant workforce reductions, with reports indicating approximately 21,000 layoffs between June 2025 and June 2026.\n\n### Why it Matters\nThis vision highlights a growing debate among tech leaders regarding the long-term economic consequences of widespread automation and job displacement. Implementing such a system would require a fundamental restructuring of global tax policies and social safety nets over the coming decade.",
+      "scrape_error": null,
+      "summary_error": null,
+      "classify_error": null,
+      "processed_at": "2026-10-31T22:49:50.428492"
+    },
+    {
+      "index": 11,
       "url": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo",
       "title": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
       "source": "BBC News",
@@ -138,10 +153,10 @@
       "scrape_error": null,
       "summary_error": null,
       "classify_error": null,
-      "processed_at": "2026-10-31T21:51:34.116560"
+      "processed_at": "2026-10-31T22:50:03.390901"
     },
     {
-      "index": 11,
+      "index": 12,
       "url": "https://theintercept.com/2026/10/30/aipac-ai-spending-midterm-election/",
       "title": "How AIPAC and AI Spent Their Money This Midterm Election",
       "source": "The Intercept",
@@ -153,10 +168,10 @@
       "scrape_error": null,
       "summary_error": null,
       "classify_error": null,
-      "processed_at": "2026-10-31T21:51:50.110969"
+      "processed_at": "2026-10-31T22:50:11.441620"
     },
     {
-      "index": 12,
+      "index": 13,
       "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-amazon-intel-ai-sell-off-191429143.html",
       "title": "Stocks plunge as Amazon, Intel and Alphabet fuel a broad tech sell-off",
       "source": "Yahoo Entertainment",
@@ -168,10 +183,10 @@
       "scrape_error": null,
       "summary_error": null,
       "classify_error": null,
-      "processed_at": "2026-10-31T21:52:19.929219"
+      "processed_at": "2026-10-31T22:50:19.850622"
     },
     {
-      "index": 14,
+      "index": 15,
       "url": "https://kotaku.com/no-thank-you-roblox-i-do-not-want-an-ai-driven-explosion-of-content-2000751567",
       "title": "No Thank You, Roblox, I Do Not Want An AI-Driven \u2018Explosion Of Content\u2019",
       "source": "Kotaku",
@@ -183,10 +198,10 @@
       "scrape_error": null,
       "summary_error": null,
       "classify_error": null,
-      "processed_at": "2026-10-31T21:56:38.401985"
+      "processed_at": "2026-10-31T22:54:37.279420"
     },
     {
-      "index": 15,
+      "index": 16,
       "url": "https://www.xda-developers.com/anthropic-testing-potential-crackdown-on-vibe-coded-ports-of-existing-games/",
       "title": "Anthropic seems to be testing a potential crackdown on vibe-coded ports of existing games",
       "source": "XDA Developers",
@@ -198,10 +213,10 @@
       "scrape_error": null,
       "summary_error": null,
       "classify_error": null,
-      "processed_at": "2026-10-31T21:56:46.746600"
+      "processed_at": "2026-10-31T22:54:45.433187"
     },
     {
-      "index": 17,
+      "index": 18,
       "url": "https://openchannels.fm/who-controls-our-software-open-channels-news-week-in-review/",
       "title": "Open Channels FM: Who Controls Our Software, Open Channels News Week in Review",
       "source": "Openchannels.fm",
@@ -213,10 +228,10 @@
       "scrape_error": null,
       "summary_error": null,
       "classify_error": null,
-      "processed_at": "2026-10-31T21:57:25.294763"
+      "processed_at": "2026-10-31T22:55:01.076184"
     },
     {
-      "index": 18,
+      "index": 19,
       "url": "https://www.nakedcapitalism.com/2026/10/links-10-30-2026.html",
       "title": "Links 10/30/2026",
       "source": "Nakedcapitalism.com",
@@ -228,10 +243,10 @@
       "scrape_error": null,
       "summary_error": null,
       "classify_error": null,
-      "processed_at": "2026-10-31T21:58:31.296746"
+      "processed_at": "2026-10-31T22:55:09.633888"
     },
     {
-      "index": 20,
+      "index": 21,
       "url": "https://www.ign.com/articles/vrchat-devs-spark-outrage-after-refusing-to-include-ai-label-despite-95-of-fans-asking-for-it",
       "title": "VRChat Devs Spark Outrage After Refusing to Include AI Label Despite 95% of Fans Asking for It",
       "source": "IGN",
@@ -243,7 +258,7 @@
       "scrape_error": null,
       "summary_error": null,
       "classify_error": null,
-      "processed_at": "2026-10-31T21:58:57.406685"
+      "processed_at": "2026-10-31T22:55:25.742710"
     },
     {
       "index": 22,
@@ -258,7 +273,7 @@
       "scrape_error": null,
       "summary_error": null,
       "classify_error": null,
-      "processed_at": "2026-10-31T21:59:19.972598"
+      "processed_at": "2026-10-31T22:55:33.732687"
     },
     {
       "index": 23,
@@ -273,10 +288,10 @@
       "scrape_error": null,
       "summary_error": null,
       "classify_error": null,
-      "processed_at": "2026-10-31T21:59:29.863276"
+      "processed_at": "2026-10-31T22:55:50.935782"
     },
     {
-      "index": 24,
+      "index": 26,
       "url": "https://www.windowscentral.com/artificial-intelligence/you-dont-hate-him-enough-openai-sociopath-sam-altman-says-its-terrible-that-your-pc-xbox-etc-have-ram-that-could-be-used-for-ai",
       "title": "OpenAI sociopath Sam Altman says it's \"terrible\" that your PC, Xbox, etc. have RAM that could be used for his AI",
       "source": "Windows Central",
@@ -288,22 +303,7 @@
       "scrape_error": null,
       "summary_error": null,
       "classify_error": null,
-      "processed_at": "2026-10-31T21:59:37.913524"
-    },
-    {
-      "index": 25,
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-msk-tls/",
-      "title": "Amazon MSK now supports TLS 1.3 for data in transit",
-      "source": "Amazon.com",
-      "author": "aws@amazon.com",
-      "success": true,
-      "category": "Cybersecurity",
-      "content": "Amazon MSK now supports TLS 1.3 for data in transit\nAmazon MSK now supports version 1.3 of Transport Layer Security (TLS) protocol for MSK Provisioned clusters through encryption policies. TLS 1.3 delivers faster, more secure encryption for streaming data and is increasingly required by compliance frameworks and enterprise security standards. It is also one of the prerequisites for post-quantum cryptography for protecting data against attacks that collect encrypted traffic now with the intent to decrypt it later.\nCustomers can opt in to TLS 1.3 by selecting a named security policy in their MSK cluster configuration, with no change to existing clusters until a policy is applied. A named security policy defines which TLS version and cipher suites a cluster can accept. With this launch, Amazon MSK provides a set of policies customers can select and any connection that does not meet the selected policy requirements is rejected. This allows customers to stay in control of their security and compliance posture. Policies that support both TLS 1.2 and TLS 1.3 allow connections to negotiate the highest version the client supports allowing clients that support TLS 1.3 to connect on it immediately while clients on TLS 1.2 continue to connect on TLS 1.2. This lets customers upgrade their clients at their pace before applying a stricter policy. Customers can also select stricter policies that align closer with their compliance requirements to restrict connections to TLS 1.3 only.\nThis capability is available at no additional cost in all AWS Regions where Amazon MSK Provisioned is available. To learn more, see the Amazon MSK documentation.",
-      "summary": "Amazon MSK now supports the TLS 1.3 protocol for Provisioned clusters, enabling faster, more secure data encryption and helping organizations meet evolving enterprise compliance and post-quantum security standards.\n\n### Key Points\n- Amazon MSK Provisioned clusters now support TLS 1.3 through configurable encryption policies.\n- Customers can select named security policies to enforce specific TLS versions and cipher suites.\n- The update allows for a phased migration by supporting both TLS 1.2 and 1.3 simultaneously.\n- Stricter policies can be applied to restrict connections exclusively to TLS 1.3 for enhanced security.\n- This feature is available at no additional cost across all AWS Regions where Amazon MSK Provisioned is offered.\n\n### Why it Matters\nAdopting TLS 1.3 provides stronger protection against modern cyber threats and ensures data remains secure against future decryption attempts by quantum computers. This update simplifies compliance management for enterprises by allowing them to align their streaming infrastructure with rigorous security standards at their own pace.",
-      "scrape_error": null,
-      "summary_error": null,
-      "classify_error": null,
-      "processed_at": "2026-10-31T21:59:45.438792"
+      "processed_at": "2026-10-31T23:04:18.252665"
     }
   ]
 }

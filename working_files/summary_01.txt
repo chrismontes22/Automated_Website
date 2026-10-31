@@ -1,20 +1,20 @@
-Massive GovTech breach leaks 42 million documents — including thousands packed with personal information
+Sanstun: A sans-IO, parallel-friendly WireGuard implementation in Rust
 ============================================================
 
-A misconfigured database linked to GovTech firm CitySourced exposed 42 million documents and 450,000 files containing sensitive personal information, including names, contact details, and internal municipal complaint records.
+Firezone has released sanstun, a new sans-IO Rust implementation of the WireGuard state machine designed to improve performance and security through a parallel-friendly, idiomatic API.
 
 ### Key Points
-- Cybersecurity researcher Jeremiah Fowler discovered the exposed database, which contained records dating from 2016 to 2026.
-- The repository included 450,000 JSON files containing personally identifiable information (PII) such as email addresses, phone numbers, and postal addresses.
-- CitySourced, a company acquired by Granicus in 2022, secured the database following the disclosure.
-- The exposed data included images of code violation reports and internal logs, alongside potentially malicious .exe and .sdk files.
-- Experts recommend that organizations implement tenant isolation, encryption, and strict access controls to prevent similar cloud storage misconfigurations.
+- sanstun separates IO and side effects from business logic, allowing for easier testing and better integration with Rust's ownership rules.
+- The library removes internal buffering to simplify the interface and eliminate unnecessary memory allocations found in previous implementations.
+- A core feature is the separation of bookkeeping from encryption, enabling developers to offload cryptographic operations to worker threads for higher throughput.
+- The API enforces security invariants at compile-time, such as mandatory rate-limiting for incoming packets via the `Interface::receive` function.
+- sanstun is available on crates.io and is released as open-source software under the Apache 2.0 license.
 
 ### Why it Matters
-This incident highlights the persistent risk of data exposure caused by misconfigured cloud storage within the government technology sector. Such leaks provide cybercriminals with the necessary information to conduct targeted phishing attacks, potentially leading to identity theft or further security compromises for affected residents.
+By decoupling state management from heavy cryptographic tasks, sanstun allows developers to scale WireGuard performance across multiple CPU cores without complex locking mechanisms. This modular design provides a more flexible and robust foundation for building VPNs, mesh networks, and other secure communication tools.
 
 ============================================================
-Author:   Sead Fadilpašić
-Source:   TechRadar
-URL:      https://www.techradar.com/pro/security/massive-govtech-breach-leaks-42-million-documents-including-thousands-packed-with-personal-information
+Author:   Thomas Eizinger
+Source:   Firezone.dev
+URL:      https://www.firezone.dev/blog/introducing-sanstun
 Category: Cybersecurity
