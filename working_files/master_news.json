@@ -4,146 +4,42 @@
   "articles": [
     {
       "source": {
-        "id": "fox-news",
-        "name": "Fox News"
+        "id": "fortune",
+        "name": "Fortune"
       },
-      "author": null,
-      "title": "AI-powered cyberattacks fuel 'Black October' fears",
-      "description": "A startup founder woke to $449 in unexpected OpenAI and Anthropic charges after stolen API keys were exploited during the \"Black October\" cyber wave.",
-      "url": "https://www.foxnews.com/tech/ai-powered-cyberattacks-fuel-black-october-fears",
-      "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2026/10/cybersecurity-cyber-defense-center.jpg",
-      "publishedAt": "2026-10-30T14:20:43Z",
-      "content": "Startup founder Colin Parsons woke up to roughly 50 billing notifications he never expected. He reported that his OpenAI and Anthropic accounts had racked up $449 in charges he didn't recognize. It w\u2026 [+18849 chars]"
+      "author": "Miriam Vogel",
+      "title": "EqualAI CEO: Your AI assistant is acting in your name. Who signed off?",
+      "description": "AI agents need permission rules before they act.",
+      "url": "https://fortune.com/2026/10/31/personal-ai-assistant-agents-authorization-liability-equalai/",
+      "urlToImage": "https://fortune.com/img-assets/wp-content/uploads/2026/10/miriam-vogel.jpg?resize=1200,600",
+      "publishedAt": "2026-10-31T12:00:00Z",
+      "content": "This summer, investor Katie Jacobs Stanton said her AI assistant, Instinct, sent an email on her behalf without consulting her first, according to TechCrunch. She described the email as innocuous. Th\u2026 [+5507 chars]"
     },
     {
       "source": {
         "id": null,
-        "name": "Firezone.dev"
+        "name": "Talosintelligence.com"
       },
-      "author": "Thomas Eizinger",
-      "title": "Sanstun: A sans-IO, parallel-friendly WireGuard implementation in Rust",
-      "description": "Our sans-IO WireGuard implementation in Rust, optimized for ease of use, security and performance through a parallel-friendly and idiomatic API.",
-      "url": "https://www.firezone.dev/blog/introducing-sanstun",
-      "urlToImage": "https://www.firezone.dev/blog/opengraph-image?dc0a4d310bb2b9d5",
-      "publishedAt": "2026-10-30T21:30:00Z",
-      "content": "Today, we are announcing sanstun: a sans-IO Rust implementation of the WireGuard\u00ae state machine, optimized for ease of use, security and performance through a parallel-friendly and idiomatic API.\r\nsa\u2026 [+11352 chars]"
+      "author": "Ryan Fetterman",
+      "title": "Appraisal by AI: Model-driven victim prioritization in the VOLTA infostealer",
+      "description": "The self-deleting VOLTA infostealer steals credentials, sessions, and cryptocurrency wallets. Then, it uses LLMs to profile victims and rank their most valuable assets.",
+      "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
+      "urlToImage": "https://storage.ghost.io/c/af/a0/afa04ee3-414f-4481-8d23-7e7c146f192e/content/images/size/w1200/2026/10/VOLTA.jpg",
+      "publishedAt": "2026-10-31T12:00:00Z",
+      "content": "<ul><li>VOLTA is a mature stealer implant with an optional AI-integration layer. After stealing credentials, sessions, and cryptocurrency wallets, VOLTA sends a structured evidence bundle to an LLM t\u2026 [+10218 chars]"
     },
     {
       "source": {
         "id": null,
-        "name": "NPR"
+        "name": "Nakedcapitalism.com"
       },
-      "author": "Cooper Katz McKim",
-      "title": "The two most interesting risks to Anthropic",
-      "description": "Anthropic gave a 94-page list of risk factors in its S-1 this week. Two of them stood out.",
-      "url": "https://www.npr.org/sections/planet-money/2026/10/30/nx-s1-6022515/the-two-most-interesting-risks-to-anthropic",
-      "urlToImage": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3570x2008+0+186/resize/1400/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F3b%2F89%2F92378da44357a819ff50b276fab3%2Fgettyimages-2297777280.jpg",
-      "publishedAt": "2026-10-30T11:00:00Z",
-      "content": "You're reading a newsletter from\u00a0The Indicator from Planet Money.\u00a0Once a week, we curate our favorite stories and insights on business, finance, economics and why they matter.\u00a0Subscribe here\u00a0to get i\u2026 [+6932 chars]"
-    },
-    {
-      "source": {
-        "id": "the-verge",
-        "name": "The Verge"
-      },
-      "author": "Jess Weatherbed",
-      "title": "Binance hackers stole $6.3 billion in record-breaking crypto heist",
-      "description": "Binance has disclosed that $6.3 billion worth of crypto funds have been stolen from the platform, in what's believed to be the biggest cryptocurrency hack on record. In a series of updates posted to X, the crypto exchange said that user funds are safe, and th\u2026",
-      "url": "https://www.theverge.com/tech/1023021/binance-hack-billions-biggest-crypto-heist",
-      "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/05/STK428_CRYPTO_D.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-      "publishedAt": "2026-10-30T11:44:53Z",
-      "content": "<ul><li></li><li></li><li></li></ul>\r\n$3 billion of stolen assets have been frozen so far, and Binance has promised to cover all losses.\r\n$3 billion of stolen assets have been frozen so far, and Bina\u2026 [+4180 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Slashdot.org"
-      },
-      "author": "BeauHD",
-      "title": "US Tech Stocks See Sharp Falls As AI Spending Nears $1 Trillion",
-      "description": "U.S. technology stocks plunged for a second consecutive day on Friday as investors grew increasingly concerned about the enormous cost of artificial intelligence development and whether those investments will pay off. The Nasdaq fell more than 3.5%, while Int\u2026",
-      "url": "https://news.slashdot.org/story/26/10/30/1843213/us-tech-stocks-see-sharp-falls-as-ai-spending-nears-1-trillion",
-      "urlToImage": "https://a.fsdn.com/sd/topics/usa_64.png",
-      "publishedAt": "2026-10-30T19:00:00Z",
-      "content": "Chris Low, from investment management firm FHN Financial, said the bulk of what was happening in the stock market was in reaction to some of the biggest tech players such as Amazon and Google. He tol\u2026 [+852 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Android Central"
-      },
-      "author": "nickodiaz@sbcglobal.net (Nickolas Diaz) , Nickolas Diaz",
-      "title": "Phone 3a, Phone 4a series\u2014it's your turn to receive Nothing OS 5.0 (Android 17)",
-      "description": "Nothing OS 5.0 (Android 17) is rolling out for Phone 3a and Phone 4a series users as planned late in October.",
-      "url": "https://www.androidcentral.com/phones/nothing-phones/phone-3a-phone-4a-series-its-your-turn-to-receive-nothing-os-5-0-android-17",
-      "urlToImage": "https://cdn.mos.cms.futurecdn.net/JQB5Zxhd7WzXFWHgJj4SPo-2048-80.jpg",
-      "publishedAt": "2026-10-30T15:53:32Z",
-      "content": "What you need to know\r\n<ul><li>Nothing announced that its OS 5.0 update (Android 17) is rolling out today (Oct. 30) for the Phone 3a and Phone 4a series.</li><li>The update brings a hefty changelog o\u2026 [+2771 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "CNET"
-      },
-      "author": "Katelyn Chedraoui",
-      "title": "\u2018Largest Crypto Hack in History\u2019: Binance Loses More Than $6B",
-      "description": "It\u2019s a bad week to own crypto.",
-      "url": "https://www.cnet.com/tech/services-and-software/hackers-stole-billions-crypto-binance-polymarket/",
-      "urlToImage": "https://www.cnet.com/wp-content/uploads/sites/2/AdobeStock_442310888_Editorial_Use_Only.jpeg",
-      "publishedAt": "2026-10-30T15:04:43Z",
-      "content": "The popular cryptocurrency exchange Binance was hit by hackers this week. The company confirmed on Thursday that attackers gained access to its servers and stole $6.3 billion, with analysts calling i\u2026 [+2640 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "MacRumors"
-      },
-      "author": "Tim Hardwick",
-      "title": "14 New Things Your iPhone Can Do in iOS 27.2",
-      "description": "Apple released iOS 27.2 on October 26, bringing enhancements to Siri AI, adding Suggestions in Messages, and sneaking in a string of smaller additions across Photos, Podcasts, Games, Apple TV, and FaceTime. \n\n\n\n\n\niOS 27.2 is available to download to your devi\u2026",
-      "url": "https://www.macrumors.com/2026/10/30/new-things-iphone-can-do-ios-27-2/",
-      "urlToImage": "https://images.macrumors.com/t/1HlvuYEOvRIba8bEUxG7179mPiU=/2500x/article-new/2026/10/Everything-New-Your-iPhone-Can-Do-on-iOS-27.2-Feature-1.jpg",
-      "publishedAt": "2026-10-30T19:42:54Z",
-      "content": "Apple released iOS 27.2 on October 26, bringing enhancements to Siri AI, adding Suggestions in Messages, and sneaking in a string of smaller additions across Photos, Podcasts, Games, Apple TV, and Fa\u2026 [+4369 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Doublepulsar.com"
-      },
-      "author": "Kevin Beaumont",
-      "title": "Anthropic hacked to deliver remote access trojan",
-      "description": "Yesterday, Anthropic were compromised and used to stage a global supply chain attack.",
-      "url": "https://doublepulsar.com/anthropic-hacked-to-deliver-remote-access-trojan-to-claude-developer-laptops-worldwide-1148a92baae2",
-      "urlToImage": "https://miro.medium.com/v2/resize:fit:1200/0*_23N459qQLUZcQJ7.jpeg",
-      "publishedAt": "2026-10-30T10:22:51Z",
-      "content": "Yesterday, Anthropic were compromised and a Visual Studio Code and Cursor extension used by tens of millions of developers for Claude access was delivering a remote access trojan via an SSH reverse b\u2026 [+2209 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "MakeUseOf"
-      },
-      "author": "Sagar Naresh",
-      "title": "This tiny Android browser punches way above its weight",
-      "description": "I tried an obscure Android browser and found something surprisingly refreshing.",
-      "url": "https://www.makeuseof.com/eddy-tiny-open-source-android-browser-and-it-has-no-business-being-this-polished/",
-      "urlToImage": "https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/10/eddy-hero.jpg?w=1200&h=675&fit=crop",
-      "publishedAt": "2026-10-30T21:01:17Z",
-      "content": "Most Android browsers are either bloated or boring. While Samsung Browser is my go-to on my Samsung Galaxy S24 Ultra, I recently came across a new browser called Eddy. It's an open-source browser tha\u2026 [+4800 chars]"
-    },
-    {
-      "source": {
-        "id": "techradar",
-        "name": "TechRadar"
-      },
-      "author": "Craig Hale",
-      "title": "Oracle co-founder Larry Ellison thinks AI could make us all rich through a universal high income \u2013 but governments will need to change",
-      "description": "The world's eighth-richest person says everyone could become \"wealthier,\" earning a new universal high income from AI.",
-      "url": "https://www.techradar.com/pro/oracle-co-founder-larry-ellison-thinks-ai-could-make-us-all-rich-through-a-universal-high-income-but-governments-will-need-to-change",
-      "urlToImage": "https://cdn.mos.cms.futurecdn.net/XHdEm9qRB7Cg2Zk7U8V369-2560-80.png",
-      "publishedAt": "2026-10-30T19:15:00Z",
-      "content": "Speaking on-stage at the company's recent AI World conference, Oracle co-founder Larry Ellison declared AI could eventually make everyone \"healthier and wealthier\".\r\nApparently unfazed by the technol\u2026 [+3813 chars]"
+      "author": "Yves Smith",
+      "title": "Links 10/31/2026",
+      "description": "Our vivacious daily links: scary music, US measles spike, far north landslides, Trump Iran island attacks? G20 snubs Lavrov, Thailand v. Chabad abuses, midterm races move more Dem, Eurozone property slump, ICE deaths, Iran mines debate, Americans borrow to ea\u2026",
+      "url": "https://www.nakedcapitalism.com/2026/10/links-10-31-2026.html",
+      "urlToImage": "https://www.nakedcapitalism.com/wp-content/uploads/2026/10/Screenshot-2026-10-31-at-1.32.07\u202fPM.png",
+      "publishedAt": "2026-10-31T10:55:41Z",
+      "content": "10 Metal Albums That Are Actually Scary-Sounding Metal Injection (Michael T)\r\nMental Hospitals at the Movies JSTOR (Micael T)\r\nLife is mostly status competition Aporia (Micael T)\r\nHow dangerous is al\u2026 [+9923 chars]"
     },
     {
       "source": {
@@ -151,259 +47,207 @@
         "name": "BBC News"
       },
       "author": "https://www.facebook.com/bbcnews",
-      "title": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
-      "description": "The cyber-attack, which the company describes as complex, is believed to be the largest ever of its kind.",
-      "url": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo",
-      "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/a084/live/e6590860-d476-11f1-9dda-1ba6fcc7d159.jpg",
-      "publishedAt": "2026-10-30T16:48:12Z",
-      "content": "Binance, which was founded in China in 2017, allows users to trade digital assets and is estimated to have more than 300 million registered users worldwide.\r\nThe company said in 2024 that it had more\u2026 [+1681 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "The Intercept"
-      },
-      "author": "The Intercept Briefing",
-      "title": "How AIPAC and AI Spent Their Money This Midterm Election",
-      "description": "Intercept staff take stock of the big spenders this election cycle.\nThe post How AIPAC and AI Spent Their Money This Midterm Election appeared first on The Intercept.",
-      "url": "https://theintercept.com/2026/10/30/aipac-ai-spending-midterm-election/",
-      "urlToImage": "https://theintercept.com/wp-content/uploads/2026/10/TIB-Midterm-Spending-WEB.jpg?fit=2000%2C1000&w=1200&h=800",
-      "publishedAt": "2026-10-30T10:00:00Z",
-      "content": "Its a superlative achieved again and again: The current election cycle is the most expensive on record, according to AdImpact, likely to be surpassed only by the next one. North of $16 billion have b\u2026 [+26634 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Yahoo Entertainment"
-      },
-      "author": "Grace O'Donnell, David Hollerith, Ines Ferr\u00e9",
-      "title": "Stocks plunge as Amazon, Intel and Alphabet fuel a broad tech sell-off",
-      "description": "US stocks plunged in the final trading day of the month as earnings from Amazon (AMZN) and Alphabet (GOOG, GOOGL) this week rekindled concerns about the amount of money Big Tech is spending on its AI ambitions.The Nasdaq Composite (^IXIC) tumbled 3.3% as a te\u2026",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-amazon-intel-ai-sell-off-191429143.html",
-      "urlToImage": "https://s.yimg.com/lo/mysterio/api/abd6d02b3b18cceff8bea46f331b48f5f577e795a06d9ebd0ad62d06faaf5195/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F30c37b1b-860e-46e4-95a2-6e33368a9f3f",
-      "publishedAt": "2026-10-30T19:14:29Z",
-      "content": "US stocks plunged in the final trading day of the month as earnings from Amazon (AMZN) and Alphabet (GOOG, GOOGL) this week rekindled concerns about the amount of money Big Tech is spending on its AI\u2026 [+14374 chars]"
+      "title": "The Papers: 'Rush to recover stolen $6bn' and 'War on wind farms'",
+      "description": "The theft of billions of dollars from Binance, the world's largest cryptocurrency exchange, makes Saturday's front pages.",
+      "url": "https://www.bbc.co.uk/news/articles/c3qjnp91pzv8o",
+      "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/24d3/live/ec860280-d4c4-11f1-93e1-3b657b665bcf.jpg",
+      "publishedAt": "2026-10-31T01:54:31Z",
+      "content": "Image caption, In what it bills as a \"royal exclusive\", the Daily Mail centres its front page on a story about Zara Tindall, the King's niece and \"eco campaigner\", \"flogging pink diamonds from a mine\u2026 [+39 chars]"
     },
     {
       "source": {
         "id": null,
         "name": "Gizmodo.com"
       },
-      "author": "Kyle Barr",
-      "title": "Intel Admits It\u2019s Ignored \u2018High-End Desktop Chips.\u2019 That May Soon Change",
-      "description": "Intel wants to fight AMD by getting hard into gaming-ready desktop chips.",
-      "url": "https://gizmodo.com/intel-nova-lake-high-end-chips-2000833244",
-      "urlToImage": "https://gizmodo.com/app/uploads/2026/10/iBuyPower-Element-Pulse-X-8-1200x675.jpg",
-      "publishedAt": "2026-10-30T18:55:23Z",
-      "content": "The last few years of Intels desktop chips have not hit close to what PC owners have wanted. However, based on Intel execs latest fireside chats, the company could be ready to provide its best love l\u2026 [+4002 chars]"
+      "author": "Matthew Wille",
+      "title": "The Best Gadgets of October 2026",
+      "description": "Techtober is over, and boy, did it bring tons of new gadgets.",
+      "url": "https://gizmodo.com/best-gadgets-october-2026-2000833002",
+      "urlToImage": "https://gizmodo.com/app/uploads/2026/10/Gizmodo_BestGadgets_OCT2026-1-1200x675.jpg",
+      "publishedAt": "2026-10-31T11:00:23Z",
+      "content": "Just when we thought the busiest tech announcement time of the year was drawing to a close, pretty much every major tech company decided to spend October adding even more to the market. Is the parade\u2026 [+6161 chars]"
     },
     {
       "source": {
         "id": null,
-        "name": "Kotaku"
+        "name": "CNET"
       },
-      "author": "Rebekah Valentine",
-      "title": "No Thank You, Roblox, I Do Not Want An AI-Driven \u2018Explosion Of Content\u2019",
-      "description": "Roblox is proud of its firehose of AI-assisted games, and it's hoping to turn that blast onto the rest of the industry",
-      "url": "https://kotaku.com/no-thank-you-roblox-i-do-not-want-an-ai-driven-explosion-of-content-2000751567",
-      "urlToImage": "https://kotaku.com/app/uploads/2021/11/1de509f343bb8c9590f25aa2a014218a.jpg",
-      "publishedAt": "2026-10-30T17:30:07Z",
-      "content": "Roblox is really, really proud of how much AI its players are using. So, so much AI.\r\nDuring the last three months, we have witnessed an inflection point in AI adoption and content generation in the \u2026 [+5479 chars]"
+      "author": "Abrar Al-Heeti",
+      "title": "Will the iPhone Duo Fit in Your Pocket? Here\u2019s How It Compares to Other iPhone Sizes",
+      "description": "The iPhone Duo has a palm-size build, but how does that measure up against Apple\u2019s other current phones?",
+      "url": "https://www.cnet.com/tech/mobile/iphone-duo-size-comparison/",
+      "urlToImage": "https://www.cnet.com/wp-content/uploads/sites/2/P1001564.jpg",
+      "publishedAt": "2026-10-31T12:00:18Z",
+      "content": "The iPhone Duo is designed to be compact, but that hasnt stopped some from wondering how its size compares with other iPhone models.\r\nFortunately, we have all the current iPhone devices on hand to sh\u2026 [+2952 chars]"
     },
     {
       "source": {
         "id": null,
-        "name": "XDA Developers"
+        "name": "Retractionwatch.com"
       },
-      "author": "Adam Conway, Patrick O'Rourke",
-      "title": "Anthropic seems to be testing a potential crackdown on vibe-coded ports of existing games",
-      "description": "It's unclear if the AI giant is just A/B testing a potential new guardrail or if it will be more widely implemented.",
-      "url": "https://www.xda-developers.com/anthropic-testing-potential-crackdown-on-vibe-coded-ports-of-existing-games/",
-      "urlToImage": "https://static0.xdaimages.com/wordpress/wp-content/uploads/wm/2026/05/rog-xbox-ally-x-wind-waker-hd.jpg?w=1600&h=900&fit=crop",
-      "publishedAt": "2026-10-30T19:22:10Z",
-      "content": "Summary\r\n<ul><li>\r\n Anthropic has introduced an instruction telling Claude not to recreate specific existing games, even if they're renamed.\r\n </li><li>\r\n XDA independently found the instruction in C\u2026 [+7500 chars]"
+      "author": "Retraction Watch Staff",
+      "title": "Weekend reads: Mega-journal on hold at PubMed; 1,400 retractions in one day; \u2018I Used AI to Fake a Scientific Paper\u2019",
+      "description": "If your week flew by \u2014 we know ours did \u2014 catch up here with what you might have missed. The week at Retraction Watch featured: In case you missed the news, the Hijacked Journal Checker now has more than 450 entries. The Retraction Watch Database has over 68,\u2026",
+      "url": "https://retractionwatch.com/2026/10/31/weekend-reads-mega-journal-on-hold-at-pubmed-1-billion-lawsuit-against-elsevier-tossed-i-used-ai-to-fake-a-scientific-paper/",
+      "urlToImage": "https://retractionwatch.com/wp-content/uploads/2024/01/rw.jpeg",
+      "publishedAt": "2026-10-31T10:00:00Z",
+      "content": "If your week flew by we know ours did catch up here with what you might have missed.\r\nThe week at Retraction Watch featured:\r\nIn case you missed the news, the Hijacked Journal Checker now has more th\u2026 [+4124 chars]"
+    },
+    {
+      "source": {
+        "id": "wired",
+        "name": "Wired"
+      },
+      "author": "Paresh Dave",
+      "title": "Meta\u2019s Muse Could Upend All Kinds of Businesses. It Hasn\u2019t Yet",
+      "description": "Companies have spent the past several weeks trying to reassure investors that Muse and other AI agents pose more of an opportunity than a threat.",
+      "url": "https://www.wired.com/story/metas-muse-could-upend-all-kinds-of-businesses-it-hasnt-yet/",
+      "urlToImage": "https://media.wired.com/photos/6ae513e3393ae92e17e66a04/191:100/w_1280,c_limit/Business_Everyone%E2%80%99s%20Questioning%20Meta%E2%80%99s%20Hype%20About%20Muse%20Meta%20Says%20Muse%20Is%20Already%20a%20Big%20Shopper_v1.jpg",
+      "publishedAt": "2026-10-31T10:30:00Z",
+      "content": "Metas Muse was among the hottest topics on corporate earnings calls in recent weeks. Meta has claimed that the agentic AI tool, which lets users automate various online tasks, is becoming a major for\u2026 [+2591 chars]"
     },
     {
       "source": {
         "id": null,
-        "name": "Omgubuntu.co.uk"
+        "name": "Nature.com"
       },
-      "author": "Joey Sneddon",
-      "title": "Ubuntu 27.04 \u2018Tenacious T-Rex\u2019 opens for development",
-      "description": "Development on Ubuntu 27.04, codenamed \u2018Tenacious T-Rex\u2019, has officially begun. The tenacious archive is now open (30 October 2026), with auto-sync from Debian set to pull in a tranche of updated packages since the Ubuntu 26.10 release. Over the course of the\u2026",
-      "url": "https://www.omgubuntu.co.uk/2026/10/ubuntu-2704-opens-for-development",
-      "urlToImage": "https://www.omgubuntu.co.uk/wp-content/uploads/2026/10/ubuntu-tenacious-t-rex.webp",
-      "publishedAt": "2026-10-30T21:15:12Z",
-      "content": "Development on Ubuntu 27.04, codenamed \u2018Tenacious T-Rex\u2019, has officially begun.\r\nThe tenaciousarchive is now open (30 October 2026), with auto-sync from Debian set to pull in a tranche of updated pac\u2026 [+1632 chars]"
+      "author": null,
+      "title": "One-minute frequency disturbances from synchronization in power systems",
+      "description": "Power grids on five continents show frequency oscillations with a period of exactly 1\u2009min. The authors trace this to clock-synchronized software in devices such as uninterruptible power supplies that creates coherent, repeating demand peaks.",
+      "url": "https://www.nature.com/articles/s41560-026-02144-0",
+      "urlToImage": "https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41560-026-02144-0/MediaObjects/41560_2026_2144_Fig1_HTML.png",
+      "publishedAt": "2026-10-31T10:14:08Z",
+      "content": "<li>Denholm, P. et al. The challenges of achieving a 100% renewable electricity system in the United States. Joule5, 13311352 (2021).\r\nArticle\u00a0\r\nGoogle Scholar\u00a0\r\n</li><li>Marot, A. et al. Perspective\u2026 [+12850 chars]"
     },
     {
       "source": {
         "id": null,
-        "name": "Openchannels.fm"
+        "name": "NPR"
       },
-      "author": "Open Channels FM",
-      "title": "Open Channels FM: Who Controls Our Software, Open Channels News Week in Review",
-      "description": "This week's Open Channels News highlights tensions over AI in open source, new tools like GridCraft, corporate shifts towards open infrastructure, and the need for sustainable, user-driven technology.",
-      "url": "https://openchannels.fm/who-controls-our-software-open-channels-news-week-in-review/",
-      "urlToImage": "https://i0.wp.com/openchannels.fm/wp-content/uploads/2026/10/Open-Channels-News-Week-in-Review.jpg?fit=1200%2C675&quality=89&ssl=1",
-      "publishedAt": "2026-10-30T12:31:00Z",
-      "content": "Each episode of Open Channels News brings coverage and analysis of the biggest stories. Here\u2019s a roundup of this week\u2019s news:\r\n<ul><li>r/OpenSource Draws a Line Against AIModerators of the r/OpenSour\u2026 [+4906 chars]"
+      "author": "Scott Neuman",
+      "title": "Plans for a data center threaten scenic wilderness and dark skies in West Virginia",
+      "description": "Residents are fighting back against plans for a project that would span thousands of acres near the Monongahela National Forest and popular outdoor recreation, ski areas and dark sky sites.",
+      "url": "https://www.npr.org/2026/10/31/nx-s1-5992790/data-centers-west-virginia-skiing-dark-skies",
+      "urlToImage": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4500x2531+0+234/resize/1400/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ffb%2F84%2F866bc8f646f18463e046f53cc35c%2Fwvdatacenter-15.jpg",
+      "publishedAt": "2026-10-31T09:00:00Z",
+      "content": "DAVIS, W.Va. Stretching nearly a million acres through the rugged mountains of eastern West Virginia, the Monongahela National Forest links some of the state's best known natural attractions. The vas\u2026 [+14145 chars]"
     },
     {
       "source": {
         "id": null,
-        "name": "Nakedcapitalism.com"
+        "name": "Blogdoandroid.com"
       },
-      "author": "Conor Gallagher",
-      "title": "Links 10/30/2026",
-      "description": "Our 'maxxing' daily links: tech crashing, oil rising as war looms, crypto heists and polymarket hacks, Lagarde exits, and screwworm spreads.",
-      "url": "https://www.nakedcapitalism.com/2026/10/links-10-30-2026.html",
-      "urlToImage": "https://www.nakedcapitalism.com/wp-content/uploads/2026/10/HRqIKVCbUAAmnf6-1024x683.jpeg",
-      "publishedAt": "2026-10-30T10:55:24Z",
-      "content": "Visions of Attention The Empty Cup\r\nThe phantom lighthouse: new research explains one of Australias strangest illusions The Conversation\r\nA New Kind of Chemistry Construction Physics\r\nShould Your Kid\u2026 [+5560 chars]"
+      "author": "edward",
+      "title": "Olymp Casino BD",
+      "description": "Olymp Casino BD is a name that has become synonymous with excitement, thrills, and entertainment. This online casino has been making waves in the gaming",
+      "url": "https://blogdoandroid.com/olymp-casino-bd/",
+      "urlToImage": null,
+      "publishedAt": "2026-10-31T08:05:22Z",
+      "content": "Olymp Casino BD is a name that has become synonymous with excitement, thrills, and entertainment. This online casino has been making waves in the gaming world, offering a unique and unparalleled gami\u2026 [+11377 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "One Mile at a Time"
+      },
+      "author": "Ben Schlappig",
+      "title": "Philippine Airlines Business Class Airbus A350 Review: Great Seats, With Missing Heart",
+      "description": "Philippine Airlines' new A350-1000 business class has excellent reverse herringbone seats and decent food, but broken Wi-Fi and a disinterested crew left the experience short of its potential.",
+      "url": "https://onemileatatime.com/reviews/philippine-airlines-business-class-a350/",
+      "urlToImage": "https://cdn.onemileatatime.com/wp-content/uploads/2026/10/Philippine-Airlines-Business-Class-A350-47.jpeg",
+      "publishedAt": "2026-10-31T07:56:48Z",
+      "content": "For the long haul segment of the return portion of my first class quest to Japan, I flew Philippine Airlines\u2019 Airbus A350-1000 business class on the 11hr55min flight from Manila (MNL) to San Francisc\u2026 [+23176 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Thefutoncritic.com"
+      },
+      "author": null,
+      "title": "USA Sports Delivers 1.5 Million Viewers for Valkyries-Dream Game 6 Thursday Matinee",
+      "description": "USA Sports' Game 6 coverage delivered the fifth most-watched WNBA Finals game on cable on record.",
+      "url": "http://www.thefutoncritic.com/ratings/2026/10/31/usa-sports-delivers-15-million-viewers-for-valkyries-dream-game-6-thursday-matinee-83210/20261031usa01/",
+      "urlToImage": null,
+      "publishedAt": "2026-10-31T10:48:00Z",
+      "content": "USA SPORTS DELIVERS 1.5 MILLION VIEWERS FOR VALKYRIES-DREAM GAME 6 THURSDAY MATINEE\r\nUSA Sports' WNBA Finals Game 6 Coverage on USA Network, E!, and SYFY, Plus Streaming Led by Peacock, Was UP vs. La\u2026 [+6174 chars]"
     },
     {
       "source": {
         "id": "business-insider",
         "name": "Business Insider"
       },
-      "author": "Ana Altchek",
-      "title": "Noa Argamani shares the philosophy she lives by",
-      "description": "At Business Insider's Long Play event, Noa Argamani described her optimistic outlook on life and her new career in venture capital.",
-      "url": "https://www.businessinsider.com/noa-argamani-shares-life-philosophy-vc-2026-10#article",
-      "urlToImage": "https://i.insider.com/6ae3c5a0911659c36c01b6ab?width=1200&format=jpeg",
-      "publishedAt": "2026-10-30T19:08:43Z",
-      "content": "Noa Argamani spoke to editor in chief Jamie Heller at Business Insider's Long Play event on Thursday.Carl Timpon/BFA\r\n<ul><li>At Business Insider's Long Play event, Noa Argamani described her optimis\u2026 [+2621 chars]"
-    },
-    {
-      "source": {
-        "id": "ign",
-        "name": "IGN"
-      },
-      "author": "Virginia Glaze",
-      "title": "VRChat Devs Spark Outrage After Refusing to Include AI Label Despite 95% of Fans Asking for It",
-      "description": "The developers of VRChat have created a rift in the virtual platform\u2019s user base after announcing that it would not include labels to categorize AI-generated content, despite around 95% of users asking for some sort of AI filter in a survey.",
-      "url": "https://www.ign.com/articles/vrchat-devs-spark-outrage-after-refusing-to-include-ai-label-despite-95-of-fans-asking-for-it",
-      "urlToImage": "https://assets-prd.ignimgs.com/2026/10/30/vrchat-devs-spark-outrage-over-ai-label-1793390533984.jpg?width=1280&format=jpg&auto=webp&quality=80",
-      "publishedAt": "2026-10-30T20:11:52Z",
-      "content": "The developers of VRChat have created a rift in the virtual platforms user base after announcing that it would not include labels to categorize AI-generated content, despite around 95% of users askin\u2026 [+2772 chars]"
+      "author": "Lloyd Lee",
+      "title": "Flying cars are coming. You\u2019ll need $300K and the space to fly it.",
+      "description": "Alef Aeronautics posted a video of its flying car hovering over Teslas. The CEO said he aims to deliver the first car in 2027.",
+      "url": "https://www.businessinsider.com/flying-cars-cost-timeline-tesla-roadster-alef-aeronautics-2026-10#article",
+      "urlToImage": "https://i.insider.com/6ae39b04120d8ce03d246480?width=1200&format=jpeg",
+      "publishedAt": "2026-10-31T09:49:01Z",
+      "content": "Alef Aeronautics CEO Jim Dukhovny said his company aims to make the first delivery of a flying car by 2027.Alef Aeronautics Inc.\r\n<ul><li>Companies like Tesla and Alef Aeronautics are building cars t\u2026 [+3847 chars]"
     },
     {
       "source": {
         "id": null,
-        "name": "Forrester.com"
+        "name": "GSMArena.com"
       },
-      "author": "Chuck Gahun",
-      "title": "Predictions 2027: Humans Reclaim Content Creation; Machines Dominate Content Consumption",
-      "description": "In 2027, humans will create more authentic content to help brands balance AI visibility with the risks of malicious, misleading content and consumer mistrust. AI visibility is a must. According to Forrester\u2019s Marketing Survey, 2026, executives or boards are q\u2026",
-      "url": "https://www.forrester.com/blogs/predictions-2027-humans-reclaim-content-creation-machines-dominate-content-consumption/",
-      "urlToImage": "https://go.forrester.com/wp-content/uploads/2022/03/FMK_FORR_GenericSocialImage_220314.jpg",
-      "publishedAt": "2026-10-30T12:01:06Z",
-      "content": "In 2027, humans will create more authentic content to help brands balance AI visibility with the risks of malicious, misleading content and consumer mistrust. AI visibility is a must. According to Fo\u2026 [+4127 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Equibles.com"
-      },
-      "author": "Equibles Research",
-      "title": "What happened to 145 Nasdaq companies after the $1 warning letter",
-      "description": "We followed 145 Nasdaq companies that disclosed their first minimum bid price notice in the first half of 2025. By October 2026, three in four were still listed and 59% had done a reverse split, but the typical stock still listed was down 47% from the day of \u2026",
-      "url": "https://equibles.com/research/nasdaqs-1-warning-most-companies-stay-listed-most-shares-fall",
-      "urlToImage": "https://equibles.com/images/2f4d7ec0-dfe1-4308-9247-2216cabbcd4b",
-      "publishedAt": "2026-10-30T18:50:25Z",
-      "content": "On May 28, 2025, Nasdaq told Opendoor (OPEN $1.90 -0.52%) that its shares had closed below $1.00 for 30 business days in a row. The company did what most companies in that position do: it called a sp\u2026 [+16301 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Atavist.com"
-      },
-      "author": "Evan Ratliff",
-      "title": "An Arrogant Way of Killing (2016)",
-      "description": "A journey to understand how a real-estate agent in the Philippines became the target of a criminal mastermind.",
-      "url": "https://magazine.atavist.com/2016/an-arrogant-way-of-killing",
-      "urlToImage": "https://magazine.atavist.com/wp-content/uploads/2016/03/scale2800x0-1478028603-76-7-scaled.jpg",
-      "publishedAt": "2026-10-30T20:08:52Z",
-      "content": "Joseph Hunter in the custody of Thai police. (AP/Sakchai Lalit)\r\nA journey to understand how a real-estate agent in the Philippines became the target of a criminal mastermind.\r\nBy Evan Ratliff\r\nJerem\u2026 [+36648 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "The Atlantic"
-      },
-      "author": "Shane Harris",
-      "title": "The Real Threat of Election Interference",
-      "description": "Experts worry that Donald Trump could use claims of foreign meddling as a pretext for seizing control.",
-      "url": "https://www.theatlantic.com/national-security/2026/10/election-interference-influence-midterms/689200/?utm_source=feed",
-      "urlToImage": null,
-      "publishedAt": "2026-10-30T11:00:00Z",
-      "content": "In a speech to the nation in July, Donald Trump said that reports from intelligence agencies showed that American elections were profoundly vulnerable to foreign interference. China had \u201cbought, stol\u2026 [+8474 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Windows Central"
-      },
-      "author": "jez@windowscentral.com (Jez Corden) , Jez Corden",
-      "title": "OpenAI sociopath Sam Altman says it's \"terrible\" that your PC, Xbox, etc. have RAM that could be used for his AI",
-      "description": "Altman once again makes himself look like a generational knob in this latest quip, where he doubles down on his aspiration to deprive you of ownership.",
-      "url": "https://www.windowscentral.com/artificial-intelligence/you-dont-hate-him-enough-openai-sociopath-sam-altman-says-its-terrible-that-your-pc-xbox-etc-have-ram-that-could-be-used-for-ai",
-      "urlToImage": "https://cdn.mos.cms.futurecdn.net/r6sWJXyoVp9EWPb7EWpj3d-2560-80.jpg",
-      "publishedAt": "2026-10-30T18:58:44Z",
-      "content": "You don't hate OpenAI and Sam Altman enough.\r\nSam Altman is among a variety of tech bros known for making absurd, often outright evil comments about the state of the world and the future of technolog\u2026 [+3473 chars]"
-    },
-    {
-      "source": {
-        "id": "fortune",
-        "name": "Fortune"
-      },
-      "author": "Steven John",
-      "title": "Microsoft\u2019s 60,000-person buyout offer hints at a future with fewer workers and more equipment",
-      "description": "The company says its new Voluntary Exit Offer is about putting \u201cthe right talent in the right places,\u201d not cutting headcount\u2014and outside economists largely agree.",
-      "url": "https://fortune.com/2026/10/30/microsoft-voluntary-exit-offer-buyout-60000-employees/",
-      "urlToImage": "https://fortune.com/img-assets/wp-content/uploads/2026/10/GettyImages-2300856092_3f9cc0.jpg?resize=1200,600",
-      "publishedAt": "2026-10-30T15:54:57Z",
-      "content": "In its 50-plus-year history, Microsoft has seen major workforce cuts. In July 2014, the company laid off some 18,000 employees; in January 2023, it cut 10,000 workers; and over the course of 2025, Mi\u2026 [+7613 chars]"
-    },
-    {
-      "source": {
-        "id": "cbc-news",
-        "name": "CBC News"
-      },
-      "author": null,
-      "title": "Tech sell-off deepens, sending Wall Street toward its worst day since June",
-      "description": "The tech-heavy Nasdaq shed about 3 per cent by mid afternoon. In Canada, the S&P/TSX composite index was down about 2.3 per cent. Worries are rising about whether the hundreds of billions of dollars invested in AI will produce enough profit and productivity t\u2026",
-      "url": "https://www.cbc.ca/news/business/tech-stocks-markets-oct-30-9.7403226",
-      "urlToImage": "https://i.cbc.ca/ais/c7ff0a99-cdbb-4fb5-b004-2fe92345ee64,1793385797997/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C263%2C5044%2C2837%29%3BResize%3D620",
-      "publishedAt": "2026-10-30T19:06:27Z",
-      "content": "A sell-off for tech stocks is getting worse Friday on worries that Wall Street's frenzy around AI sent prices too high.\r\nThe S&amp;P 500 dropped 1.9 per cent and was on track to erase its gain for Oc\u2026 [+4557 chars]"
+      "author": "Peter",
+      "title": "Deals: iPhone 17 series on sale, OLED-packing iPad mini and touch-enabled MacBook Pro launch",
+      "description": "Apple launched the iPhone Duo last week and unlike most of its releases, it hasn\u2019t been smooth sailing. So, let\u2019s look at the non-folding iPhones instead, plus the two new releases from this week \u2013 the theme this week was \u201cOLED\u201d.\n\nWe\u2019ll start with a nice midd\u2026",
+      "url": "https://www.gsmarena.com/deals_iphone_17_series_on_sale_oledpacking_ipad_mini_and_touchenabled_macbook_pro_launch-news-75286.php",
+      "urlToImage": "https://fdn.gsmarena.com/imgroot/news/26/10/deals-30/-952x498w6/gsmarena_de.jpg",
+      "publishedAt": "2026-10-31T06:31:02Z",
+      "content": "Apple launched the iPhone Duo last week and unlike most of its releases, it hasnt been smooth sailing. So, lets look at the non-folding iPhones instead, plus the two new releases from this week the t\u2026 [+3901 chars]"
     },
     {
       "source": {
         "id": null,
         "name": "9to5Mac"
       },
-      "author": "Bradley C",
-      "title": "HomeKit Weekly: SwitchBot\u2019s K11+ Pro packs strong suction and Apple Home support into a tiny robo vacuum",
-      "description": "The robot vacuums designed for large open floor plans often have big batteries but take up a ton of space. The SwitchBot K11+ Pro goes the other direction: a tiny vacuum, a small dock, and Matter support so it works with Apple Home.\n\n\n\n more\u2026",
-      "url": "https://9to5mac.com/2026/10/30/switchbot-k11-pro/",
-      "urlToImage": "https://9to5mac.com/wp-content/uploads/sites/6/2026/10/SwitchBot-K11-2.jpg?quality=82&strip=all&resize=1200,628",
-      "publishedAt": "2026-10-30T18:00:00Z",
-      "content": "The robot vacuums designed for large open floor plans often have big batteries but take up a ton of space. The SwitchBot K11+ Pro goes the other direction: a tiny vacuum, a small dock, and Matter sup\u2026 [+3716 chars]"
+      "author": "Marcus Mendes",
+      "title": "Download all 20 Apple HomeView wallpapers in light and dark mode here",
+      "description": "Apple tonight rolled out the HomeView 27.2 system update, ahead of the device\u2019s official launch on November 13. The update includes the device\u2019s default wallpapers, each available in light and dark variations, which you can download below.\n\n\n\n more\u2026",
+      "url": "https://9to5mac.com/2026/10/30/download-all-20-apple-homeview-wallpapers-in-light-and-dark-mode-here/",
+      "urlToImage": "https://9to5mac.com/wp-content/uploads/sites/6/2026/10/homeview.jpg?quality=82&strip=all&resize=1200,628",
+      "publishedAt": "2026-10-31T01:03:35Z",
+      "content": "Apple tonight rolled out the HomeView 27.2 system update, ahead of the devices official launch on November 13. The update includes the devices default wallpapers, each available in light and dark var\u2026 [+1215 chars]"
     },
     {
       "source": {
         "id": null,
-        "name": "Signoz.io"
+        "name": "Mental Floss"
       },
-      "author": "Elizabeth",
-      "title": "AI Isn't Replacing SREs. It's Deskilling Them",
-      "description": "When AI handles 95% of your incident response, do you get worse at handling the 5% that actually matters?",
-      "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
-      "urlToImage": "https://substackcdn.com/image/fetch/$s_!Hgvq!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F530d847f-26cb-4ddd-a6de-875cbbaf8fab_6233x4167.webp",
-      "publishedAt": "2026-10-30T15:52:18Z",
-      "content": "Hey there, its Elizabeth from SigNoz!\r\nThis newsletter is an honest attempt to talk about all things - observability, OpenTelemetry, open-source and the engineering in between! &amp;This piece took 6\u2026 [+10254 chars]"
+      "author": "Logan DeLoye",
+      "title": "Every Season of 'The Twilight Zone' Ranked From Best to Worst by Rotten Tomatoes",
+      "description": "There is a fifth dimension beyond that which is known to man, and it holds a ranking of every 'Twilight Zone' season.",
+      "url": "https://www.mentalfloss.com/entertainment/tv/every-season-the-twilight-zone-ranked-best-worst-rotten-tomatoes",
+      "urlToImage": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_1919,h_1079/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01m64aczc0wmgxeszc8m.jpg",
+      "publishedAt": "2026-10-31T12:00:04Z",
+      "content": "You unlock this door with the key of imagination; beyond it is another dimension where Rotten Tomatoes has ranked all five original Twilight Zone seasons.\r\nThe Twilight Zone took over television scre\u2026 [+4443 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Naturalnews.com"
+      },
+      "author": "Edison Reed",
+      "title": "Ex-DOGE Staffers\u2019 AI Startup Claims to Have Accessed Anthropic\u2019s Internal Systems in Under 12 Hours",
+      "description": "A months-old cybersecurity startup founded by former staffers of the Department of Government Efficiency (DOGE) says its AI agents found paths into internal systems at Anthropic, the company behind the Claude AI model, in less than 12 hours, according to a Wa\u2026",
+      "url": "https://www.naturalnews.com/2026-10-31-exdoge-staffers-ai-startup-accessed-anthropics-internal-systems.html",
+      "urlToImage": "https://www.naturalnews.com/wp-content/uploads/sites/91/2026/10/doge-staffers-anthropic-internal-systems-unauthorized-access-5823-906628f5-original.jpg",
+      "publishedAt": "2026-10-31T06:00:00Z",
+      "content": "A months-old cybersecurity startup founded by former staffers of the Department of Government Efficiency (DOGE) says its AI agents found paths into internal systems at Anthropic, the company behind t\u2026 [+7071 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BGR"
+      },
+      "author": "staff@bgr.com (Briley Kenney)",
+      "title": "Are Open Source Routers Safe To Use? Here's What You Need To Know",
+      "description": "Anyone can inspect the code behind open source router firmware. That includes people looking to exploit its weaknesses and people working to fix them.",
+      "url": "https://www.bgr.com/2297646/open-source-routers-safe/",
+      "urlToImage": "https://www.bgr.com/img/gallery/are-open-source-routers-safe-to-use-heres-what-you-need-to-know/l-intro-1793045945.jpg",
+      "publishedAt": "2026-10-31T03:32:00Z",
+      "content": "We may receive a commission on purchases made from links.\r\nWhile you can buy open source routers that come with relevant software out-of-the-box Cudy's AC3000 and GL.iNet's Flint 2 (GL-MT6000) are pr\u2026 [+1735 chars]"
     },
     {
       "source": {
@@ -411,250 +255,406 @@
         "name": "Search Engine Journal"
       },
       "author": "Matt G. Southern",
-      "title": "What Search Console Can Still Tell You When Indexing Data Lags via @sejournal, @MattGSouthern",
-      "description": "Search Console's Page indexing report has fallen behind before. Here's what Google has said and what each remaining check can show while the data lags.\nThe post What Search Console Can Still Tell You When Indexing Data Lags appeared first on Search Engine Jou\u2026",
-      "url": "https://www.searchenginejournal.com/what-search-console-can-still-tell-you-when-indexing-data-lags/595016/",
-      "urlToImage": "https://cdn.searchenginejournal.com/wp-content/uploads/2026/10/search-console-indexing-report-delay.jpg",
-      "publishedAt": "2026-10-30T14:00:00Z",
-      "content": "A Reddit post this month reported the Search Console Page indexing report had not been updated since Oct. 16. The person later stated that other properties, including established sites, were experien\u2026 [+9353 chars]"
+      "title": "Spam Guide Update, Restaurant Controls & AI Mode Revenue \u2013 SEO Pulse via @sejournal, @MattGSouthern",
+      "description": "Google's spam guide adds indexing advice for pages made for sharing. Other updates cover restaurant ordering controls, report dates and AI Mode revenue.\nThe post Spam Guide Update, Restaurant Controls & AI Mode Revenue \u2013 SEO Pulse appeared first on Search Eng\u2026",
+      "url": "https://www.searchenginejournal.com/seo-pulse-spam-guide-restaurant-controls-ai-mode-revenue/595031/",
+      "urlToImage": "https://cdn.searchenginejournal.com/wp-content/uploads/2026/10/seo-pulse-spam-guide-restaurant-controls-featured.jpg",
+      "publishedAt": "2026-10-31T12:00:00Z",
+      "content": "Welcome to the week\u2019s Pulse: updates have an impact on which user-created pages are meant for Search, who is able to turn off ordering links on restaurant profiles, and just how much to read into a p\u2026 [+7891 chars]"
     },
     {
       "source": {
         "id": null,
-        "name": "Hackaday"
+        "name": "Crypto Briefing"
       },
-      "author": "Tom Nardi",
-      "title": "The Sounds of the World, One Random Album at a Time",
-      "description": "In the streaming era it\u2019s easy to forget that there\u2019s still a lot of stuff being broadcast over the radio for anyone who cares enough to dial in their receiver. Give me an antenna big e\u2026",
-      "url": "https://hackaday.com/2026/10/30/the-sounds-of-the-world-one-random-album-at-a-time/",
-      "urlToImage": "https://hackaday.com/wp-content/uploads/2026/10/impermanence_feat.png",
-      "publishedAt": "2026-10-30T11:00:55Z",
-      "content": "In the streaming era it\u2019s easy to forget that there\u2019s still a lot of stuff being broadcast over the radio for anyone who cares enough to dial in their receiver. Give me an antenna big enough and a to\u2026 [+1649 chars]"
+      "author": "John Chen",
+      "title": "LaunchOnSF restores website as StepDrainer attack spreads to 10 more sites",
+      "description": "The attack highlights vulnerabilities in web trust systems, urging enhanced security measures to protect user interactions in DeFi platforms.\nThe post LaunchOnSF restores website as StepDrainer attack spreads to 10 more sites appeared first on Crypto Briefing.",
+      "url": "https://cryptobriefing.com/launchonsf-restores-website-stepdrainer-attack/",
+      "urlToImage": "https://static.cryptobriefing.com/wp-content/uploads/2026/10/31074631/library-launchonsf-restores-website-as-stepdrainer-attack-spread-800x450.png",
+      "publishedAt": "2026-10-31T11:46:36Z",
+      "content": "Blockaid flagged a frontend attack hitting at least 12 DeFi and token-launch websites, and StonkFun's operator says no user funds were lostLaunchOnSF, the team behind token-launch platform StonkFun, \u2026 [+2444 chars]"
     },
     {
       "source": {
         "id": null,
-        "name": "Learningjquery.com"
+        "name": "Kitploit.com"
       },
-      "author": "Dan Heberden",
-      "title": "Arena Casino login guide: unlock your gaming experience with ease",
-      "description": "In the ever-evolving world of online gaming, knowing how to navigate your preferred casino platform can significantly enhance your experience. Arena Casino stands out with its variety of games and exciting bonuses, especially for players in the Philippines, a\u2026",
-      "url": "https://learningjquery.com/2026/10/arena-casino-login-guide-unlock-your-gaming-experience-with-ease",
+      "author": "Kitploit",
+      "title": "Win11Debloat v2026.10.30",
+      "description": "A simple, lightweight PowerShell script that allows you to remove pre-installed apps, disable telemetry, as well as perform various other changes to declutter and customize your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.",
+      "url": "https://kitploit.com/en/posts/win11debloat-9fa369b921e00fcd",
+      "urlToImage": "https://assets.kitploit.com/production/public/tools/48596/2c05039021e5df4e988311c0ce6232bca2e798a670167f8290b2e0a048503f7e.png",
+      "publishedAt": "2026-10-31T10:55:40Z",
+      "content": "Win11Debloat is a lightweight, easy to use PowerShell script that allows you to quickly declutter and customize your Windows experience, no installation required! You can use it to remove pre-install\u2026 [+6492 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Deseret News"
+      },
+      "author": "Na'Andre Emerson",
+      "title": "How a 24-team College Football Playoff could change the Big 12",
+      "description": "A 24-team College Football Playoff could give the Big 12 more bids and opportunities, but Ben Portnoy explains the potential costs and risks.",
+      "url": "https://www.deseret.com/sports/2026/10/31/how-a-24-team-college-football-playoff-could-change-the-big-12/",
+      "urlToImage": "https://s.yimg.com/lo/mysterio/api/cfb500550fc490ace76d85baf016e32d7cbd5193c8f1d7c827ffb772a4d72fa5/lightyear_networkapi/resizefill_w800_h452%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fdeseret_news_992%2F0243ef1456ce60f714e5c1fe552e54ab.jpg",
+      "publishedAt": "2026-10-31T10:00:00Z",
+      "content": "The Big 12 Conference will have a lot to gain from the impending 24-team College Football Playoff. It'll also have a few things to lose.\r\nESPN and the CFP have reportedly agreed to a \"handshake agree\u2026 [+12595 chars]"
+    },
+    {
+      "source": {
+        "id": "techradar",
+        "name": "TechRadar"
+      },
+      "author": "David Nield",
+      "title": "The $6.3bn Binance hack explained \u2014 5 things you need to know",
+      "description": "How can $6.36 billion in currency be stolen in less than 20 minutes? Will any money be returned? We've got the answers.",
+      "url": "https://www.techradar.com/computing/blockchain-crypto/the-biggest-hack-in-history-5-things-you-need-to-know-about-the-usd6-3bn-binance-heist-even-if-you-dont-own-crypto",
+      "urlToImage": "https://cdn.mos.cms.futurecdn.net/VnoVVXTmAmxSBYBe4LUwVW-1919-80.jpg",
+      "publishedAt": "2026-10-31T09:00:00Z",
+      "content": "It's the largest cryptocurrency theft in history: hackers from North Korea allegedly swiped $6.36 billion in funds from Binance in the space of just 20 minutes, which has left customers reeling and t\u2026 [+7306 chars]"
+    },
+    {
+      "source": {
+        "id": "new-york-magazine",
+        "name": "New York Magazine"
+      },
+      "author": "John Herrman",
+      "title": "Down and Out in the App Store",
+      "description": "New casino-like apps promise to reward users simply for playing games or even watching TikTok. Is getting paid to scroll a symptom of the economy or its entire future?",
+      "url": "http://nymag.com/intelligencer/article/down-and-out-in-the-app-store.html",
+      "urlToImage": "https://pyxis.nymag.com/v1/imgs/957/7df/4b8de9e811df890e6bc621baf5814ec0b2-screentimelead-1029.1x.rsocial.w1200.jpg",
+      "publishedAt": "2026-10-31T09:00:22Z",
+      "content": "Last year, Jeremiahs TikTok started feeding him ads for a new way to make money. The clips some clearly made with AI, others featuring influencers promised a payday for playing mobile games or, in so\u2026 [+13150 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BusinessLine"
+      },
+      "author": "Bloomberg",
+      "title": "Nasdaq 100 Falls 3% as Earnings Stoke AI Reckoning: Markets Wrap",
+      "description": "The Nasdaq 100 fell about 3%. Intel Corp. sank 28% as its outlook missed estimates. Amazon.com Inc. dropped amid greater capital spending",
+      "url": "https://www.thehindubusinessline.com/markets/nasdaq-100-falls-3-as-earnings-stoke-ai-reckoning-markets-wrap/article71648204.ece",
+      "urlToImage": "https://bl-i.thgim.com/public/incoming/fo8c5r/article71648235.ece/alternates/LANDSCAPE_1200/iStock-1323542329%204.jpg",
+      "publishedAt": "2026-10-31T04:24:36Z",
+      "content": "A burst of heavy selling pummeled technology stocks and cryptocurrencies, curbing the appetite for riskier corners on Wall Street.\r\nAnother batch of disappointing tech results intensified the industr\u2026 [+3366 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Feld.com"
+      },
+      "author": "Brad Feld",
+      "title": "Life Imitates Art: The $6.3 Billion Binance Hack",
+      "description": "Someone stole $6.3 billion from Binance ten days after I published the last chapter of Zero Knowledge. Some of the coverage reads like chapters I already wrote.",
+      "url": "https://feld.com/archives/2026/10/life-imitates-art-binance-hack/",
+      "urlToImage": "https://feld.com/og-default.png",
+      "publishedAt": "2026-10-31T04:03:55Z",
+      "content": "The lock held. The money left through the side door.\r\nOn Thursday, someone stole $6.3 billion from Binance, the world\u2019s largest crypto exchange. Most of it left in about 20 minutes.\r\nIt\u2019s the largest\u2026 [+9339 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "MacRumors"
+      },
+      "author": "Hartley Charlton",
+      "title": "iPhone 18 Pro Sales Surge in China, Offsetting Decline in U.S. and Japan",
+      "description": "China is doing much of the heavy lifting for Apple's iPhone 18 Pro launch, with a 29% sales increase helping offset declines in the U.S. and Japan, according to Counterpoint Research.\n\n\n\n\n\nCombined global sales of the \u200ciPhone 18 Pro\u200c and \u200ciPhone 18 Pro\u200c Max r\u2026",
+      "url": "https://www.macrumors.com/2026/10/31/iphone-18-pro-sales-surge-in-china/",
+      "urlToImage": "https://images.macrumors.com/t/Sg2vdDJMB4y3OLAvktMmiqD1QAU=/2500x/article-new/2026/10/iPhone-18-Pro-Pre-Orders-Feature-Sans-Text.jpg",
+      "publishedAt": "2026-10-31T05:55:35Z",
+      "content": "China is doing much of the heavy lifting for Apple's iPhone 18 Pro launch, with a 29% sales increase helping offset declines in the U.S. and Japan, according to Counterpoint Research.\r\nCombined globa\u2026 [+996 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Whyevolutionistrue.com"
+      },
+      "author": "whyevolutionistrue",
+      "title": "Saturday: Hili dialogue",
+      "description": "Welcome to CaturSaturday, October 31, 2026: shabbos for Jewish cats, the last day of the month and Halloween! Here\u2019s a short Tik Tok video from The Quack House featuring ducks and an appropriately carved pumpkin: It\u2019s also Carve a Pumpkin Day, Girl Scout Foun\u2026",
+      "url": "https://whyevolutionistrue.com/2026/10/31/saturday-hili-dialogue-606/",
+      "urlToImage": "https://whyevolutionistrue.com/wp-content/uploads/2026/10/download-2.gif",
+      "publishedAt": "2026-10-31T11:45:14Z",
+      "content": "Welcome to \r\nCatur\r\nSaturday, October 31, 2026: shabbos for Jewish cats, the last day of the month and Halloween! Here\u2019s a short Tik Tok video from The Quack House featuring ducks and an appropriatel\u2026 [+22641 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Fstoppers"
+      },
+      "author": "Alex Cooke",
+      "title": "What Separates a Natural Wildlife Edit From an Overcooked One",
+      "description": "Wildlife files need more editing than most genres because they come from long lenses at high ISOs, subjects that won't pose, and backgrounds you couldn't choose. The edits that rescue those frames, such as cropping, noise reduction, and masked brightening, ar\u2026",
+      "url": "https://fstoppers.com/nature/what-separates-natural-wildlife-edit-overcooked-one-905317",
+      "urlToImage": "https://cdn.fstoppers.com/styles/large_16_9/s3/lead/2026/10/cover_118.jpg.webp?itok=3Q2cmbfN",
+      "publishedAt": "2026-10-31T09:03:01Z",
+      "content": "Wildlife files need more editing than most genres because they come from long lenses at high ISOs, subjects that won't pose, and backgrounds you couldn't choose. The edits that rescue those frames, s\u2026 [+3621 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Pypi.org"
+      },
+      "author": "ajin@opensecurity.in",
+      "title": "mobsf 4.6.4",
+      "description": "Mobile Security Framework (MobSF) is an automated, all-in-one mobile application (Android/iOS/Windows) pen-testing, malware analysis and security assessment framework capable of performing static and dynamic analysis.",
+      "url": "https://pypi.org/project/mobsf/4.6.4/",
       "urlToImage": null,
-      "publishedAt": "2026-10-30T10:54:56Z",
-      "content": "In the ever-evolving world of online gaming, knowing how to navigate your preferred casino platform can significantly enhance your experience. Arena Casino stands out with its variety of games and ex\u2026 [+6040 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "CNA"
-      },
-      "author": null,
-      "title": "Singapore firms eyeing China market should target smart tech, green economy: EnterpriseSG",
-      "description": "China's manufacturing network, technological capabilities and research and development offer Singapore firms opportunities to improve their products, lower costs and expand internationally.",
-      "url": "https://www.channelnewsasia.com/singapore/business-expansion-china-enterprisesg-smart-tech-manufacturing-sustainability-6506866",
-      "urlToImage": "https://dam.mediacorp.sg/image/upload/s--VVIzgOIF--/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/v1/mediacorp/cna/image/2026/10/30/china_robots.png?itok=Dz9JfKp1",
-      "publishedAt": "2026-10-30T12:14:48Z",
-      "content": "One company expanding in this space is SP Group, drawing on two decades of experience operating Singapore's Marina Bay district cooling system.\u00a0\r\nThe utilities provider is expanding its district cool\u2026 [+2374 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Dezeen"
-      },
-      "author": "Amy Peacock",
-      "title": "Apple takes \"monumental step forward\" with first touchscreen MacBook",
-      "description": "Apple has\u00a0revealed its latest MacBook Pro model, which features the technology brand's first laptop touchscreen and what it claims is \"the world\u2019s best laptop display\".\nThe post Apple takes \"monumental step forward\" with first touchscreen MacBook appeared fir\u2026",
-      "url": "https://www.dezeen.com/2026/10/30/macbook-pro-touchscreen-apple/",
-      "urlToImage": "https://static-2026.dezeen.com/uploads/2026/10/macbook-pro-touchscreen-apple-hero_dezeen_2364_col_0.jpg",
-      "publishedAt": "2026-10-30T10:50:00Z",
-      "content": "Apple has\u00a0revealed its latest MacBook Pro model, which features the technology brand\u2019s first laptop touchscreen and what it claims is \u201cthe worlds best laptop display\u201d.\r\nSixteen years after Steve Jobs\u2026 [+3613 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Flokinet.is"
-      },
-      "author": "Flokinet",
-      "title": "ICE wants its mask back, and hired a company to ask",
-      "description": "We receive takedown notices regularly. They come from individuals, lawyers, companies, and governments. This post is part of a series where we document how we \u2026",
-      "url": "https://blog.flokinet.is/2026/10/29/ice-wants-its-mask-back-and-hired-a-company-to-ask/",
-      "urlToImage": "https://blog.flokinet.is/wp-content/uploads/2026/10/Screenshot-2026-10-29-at-18-51-45-Starred-abuse@flokinet.is-Proton-Mail-1.png",
-      "publishedAt": "2026-10-30T15:26:58Z",
-      "content": "We receive takedown notices regularly. They come from individuals, lawyers, companies, and governments. This post is part of a series where we document how we handle them, both the routine cases and \u2026 [+5621 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Abcnews.com"
-      },
-      "author": "KATIE KINDELAN",
-      "title": "Nvidia denies report that its CEO was targeted in alleged Chinese spy plot",
-      "description": "Nvidia, a top chipmaker, is denying a report that its CEO, Jensen Huang, was allegedly targeted in a Chinese spy plot.\r\nAccording to a New York Times report published Thursday, U.S. intelligence officials allegedly determined that a top executive at a Singapo\u2026",
-      "url": "https://abcnews.com/US/nvidia-denies-report-ceo-allegedly-targeted-chinese-spy/story?id=137704250",
-      "urlToImage": "https://i.abcnewsfe.com/a/eb136db0-c5f9-4020-ae03-3789bb1b5481/Jensen-Huang-1-gty-gmh-261030_1793366457301_hpMain_16x9.jpg?w=1600",
-      "publishedAt": "2026-10-30T16:04:00Z",
-      "content": "Nvidia, a top chipmaker, is denying a report that its CEO, Jensen Huang, was allegedly targeted in a Chinese spy plot.\r\nAccording to a New York Times report published Thursday, U.S. intelligence offi\u2026 [+1708 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Help Net Security"
-      },
-      "author": "Sinisa Markovic",
-      "title": "Claude Code extension poisoned with persistent SSH backdoor",
-      "description": "A tampered build of Anthropic\u2019s Claude Code extension for VS Code-compatible editors planted an SSH backdoor on developers\u2019 machines, researchers at macOS security firm Phorion have found. The malicious package, version 2.1.313, was published on Open VSX, an \u2026",
-      "url": "https://www.helpnetsecurity.com/2026/10/30/claude-code-extension-ssh-backdoor/",
-      "urlToImage": "https://img.helpnetsecurity.com/wp-content/uploads/2026/06/30133249/door-lock-encryption.webp",
-      "publishedAt": "2026-10-30T11:15:26Z",
-      "content": "A tampered build of Anthropics Claude Code extension for VS Code-compatible editors planted an SSH backdoor on developers machines, researchers at macOS security firm Phorion have found.\r\nThe malicio\u2026 [+5289 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Percona.com"
-      },
-      "author": "Ivan Groenewold",
-      "title": "What\u2019s New in PSMDB Sandbox: Six Months of Updates",
-      "description": "Earlier this year, we introduced PSMDB Sandbox, a lightweight web UI that sits on top of our Terraform and Ansible automation for MongoDB. Since then, the project has changed a lot. It has a new name and repository, and it supports many more Percona products,\u2026",
-      "url": "https://www.percona.com/blog/whats-new-in-psmdb-sandbox-six-months-of-updates/",
-      "urlToImage": "https://www.percona.com/wp-content/uploads/2026/10/unnamed-3.png",
-      "publishedAt": "2026-10-30T11:14:05Z",
-      "content": "Earlier this year, we introduced PSMDB Sandbox, a lightweight web UI that sits on top of our Terraform and Ansible automation for MongoDB. Since then, the project has changed a lot. It has a new name\u2026 [+7015 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "SiliconANGLE News"
-      },
-      "author": "Jason Bloomberg",
-      "title": "The hidden threat in Anthropic\u2019s prospectus: diseconomies of scale",
-      "description": "As potentially the largest IPO in history, Anthropic PBC is breaking new ground. Its prospectus lists 88 risk factors covering 93 pages alone. From artificial intelligence posing an existential threat to humanity to the possibility AI will blackmail people, t\u2026",
-      "url": "https://siliconangle.com/2026/10/30/the-hidden-threat-in-anthropics-prospectus-diseconomies-of-scale/",
-      "urlToImage": "https://images.siliconangle.com/blogs.dir/1/files/2026/10/diseconomies.jpg",
-      "publishedAt": "2026-10-30T15:26:21Z",
-      "content": "As potentially the largest IPO in history, Anthropic PBC is breaking new ground. Its prospectus lists 88 risk factors covering 93 pages alone. From artificial intelligence posing an existential threa\u2026 [+8706 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Europa.eu"
-      },
-      "author": "European Central Bank",
-      "title": "Philip R. Lane: AI adoption in Europe",
-      "description": "The European Central Bank (ECB) is the central bank of the European Union countries which have adopted the euro. Our main task is to maintain price stability in the euro area and so preserve the purchasing power of the single currency.",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261030~08d9d540f0.en.html",
-      "urlToImage": "https://www.ecb.europa.eu/press/key/shared/img/socialmedia/social-default.jpg?0dbb2de262f4f1fcaeae410be132177a",
-      "publishedAt": "2026-10-30T16:10:00Z",
-      "content": "Keynote speech by Philip R. Lane, Member of the Executive Board of the ECB, at the Federal Reserve Bank of San Francisco Economic Research Symposium on AI and the economy\r\nSan Francisco, 30 October 2\u2026 [+61768 chars]"
+      "publishedAt": "2026-10-31T07:31:40Z",
+      "content": "A required part of this site couldnt load. This may be due to a browser\r\n extension, network issues, or browser settings. Please check your\r\n connection, disable any ad blockers, or try using a diffe\u2026 [+12 chars]"
     },
     {
       "source": {
         "id": "the-times-of-india",
         "name": "The Times of India"
       },
-      "author": "ETMarkets.com",
-      "title": "Intel stock plunges 30% as weak PC demand and AI costs trigger global chip selloff",
-      "description": "Intel shares plunged 30% after the chipmaker issued a weak fourth-quarter revenue forecast and warned of negative cash flow for the year. The warning triggered a global semiconductor selloff, with Nvidia, AMD and other chip stocks declining as weak PC demand \u2026",
-      "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/intel-plunges-25-as-weak-pc-demand-and-ai-costs-trigger-global-chip-selloff/articleshow/135371230.cms",
-      "urlToImage": "https://img.etimg.com/thumb/msid-135371339,width-1200,height-900,imgsize-213840,overlay-etmarkets/articleshow.jpg",
-      "publishedAt": "2026-10-30T17:07:17Z",
-      "content": "Intel shares tumbled 30% on Friday after the chipmaker issued a weaker than expected revenue outlook and warned that it would not generate positive cash flow this year. The warning added to concerns \u2026 [+2732 chars]"
+      "author": "Reuters",
+      "title": "October ends with a thud for Intel, Reddit, AI stalwarts",
+      "description": "A fresh test of this year's technology rally sent the Nasdaq composite on Friday to its biggest decline since June. Chipmaker Intel and social media firm Reddit fell 29% and Sandisk, a chipmaker that has been one of the great beneficiaries of the AI capital-s\u2026",
+      "url": "https://economictimes.indiatimes.com/tech/technology/october-ends-with-a-thud-for-intel-reddit-ai-stalwarts/articleshow/135385131.cms",
+      "urlToImage": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-1365238,resizemode-75,msid-135385131/tech/technology/october-ends-with-a-thud-for-intel-reddit-ai-stalwarts.jpg",
+      "publishedAt": "2026-10-31T02:42:25Z",
+      "content": "Monday will ring in a brand-new trading month, a prospect that appeals to many after a doozy of a last session in October.A fresh test of this year's technology rally sent the Nasdaq composite on Fri\u2026 [+2940 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Vanity Fair"
+      },
+      "author": "JAVI S\u00c1NCHEZ",
+      "title": "Is This the Last Dance for Spain\u2019s Prime Minister, Pedro S\u00e1nchez?",
+      "description": "At the end of November, after eight years in power, S\u00e1nchez\u2019s time as prime minister of Spain may draw to a close in elections that could be a major setback for social democracy in Europe. The charismatic figure, nicknamed Mr. Handsome, has long been a champi\u2026",
+      "url": "https://www.vanityfair.com/story/pedro-sanchez-last-dance",
+      "urlToImage": "https://media.vanityfair.com/photos/6adf0760011db1e5a270f5dc/16:9/w_1280,c_limit/GettyImages-2300629420.jpg",
+      "publishedAt": "2026-10-31T12:00:00Z",
+      "content": "On September 23, Maricarmen Abascal, a partially disabled 87-year-old woman, was evicted from the apartment she rented in Madrid, where she had lived her entire life. Suffering from exhaustion caused\u2026 [+4092 chars]"
+    },
+    {
+      "source": {
+        "id": "al-jazeera-english",
+        "name": "Al Jazeera English"
+      },
+      "author": "Priyanka Shankar",
+      "title": "Are Houthis using Russian satellites as Saudi Arabia fends off strikes?",
+      "description": "Analysts say the seizure of state arsenals, external backing and extensive military evolution has helped the Houthis.",
+      "url": "https://www.aljazeera.com/news/2026/10/31/are-houthis-using-russian-satellites-as-saudi-arabia-faces-hits",
+      "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/10/AFP__20261021__D3ZD9ZQ__v1__HighRes__YemenSaudiIranUsIsraelWar-1793111925.jpg?resize=1920%2C1440",
+      "publishedAt": "2026-10-31T08:08:30Z",
+      "content": "An investigation has revealed that Russian satellites are assisting the Iran-aligned Houthis to strike Saudi Arabias military and energy infrastructure, further upending global energy markets amid th\u2026 [+16022 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Intercept"
+      },
+      "author": "Steven W. Thrasher, Afeef Nessouli",
+      "title": "How Trump Destroyed South Africa\u2019s Effort to Slow HIV Transmission",
+      "description": "In South Africa, home to the world\u2019s largest population of people living with HIV, efforts to contain the virus have been upended.\nThe post How Trump Destroyed South Africa\u2019s Effort to Slow HIV Transmission appeared first on The Intercept.",
+      "url": "https://theintercept.com/2026/10/31/trump-south-africa-hiv-aids-funding-cuts/",
+      "urlToImage": "https://theintercept.com/wp-content/uploads/2026/10/GettyImages-2249366511.jpg?fit=6720%2C4480&w=1200&h=800",
+      "publishedAt": "2026-10-31T10:00:00Z",
+      "content": "This story was supported by the Pulitzer Center and the Fund for Investigative Journalism.\r\nJOHANNESBURG, SOUTH AFRICA When it opened in early 2024, Engage Mens Health Clinic served as a free, one-st\u2026 [+23039 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BleepingComputer"
+      },
+      "author": "Ax Sharma",
+      "title": "Chainalysis discloses data breach from \"offensive agentic techniques\"",
+      "description": "Blockchain analytics firm Chainalysis disclosed a data breach after attackers used \"offensive agentic techniques\" to access internal systems and tools, exposing customer names, email addresses, user IDs, and organizational roles. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/",
+      "urlToImage": "https://www.bleepstatic.com/content/hl-images/2025/03/18/Blockchain-2.jpg",
+      "publishedAt": "2026-10-31T12:50:09Z",
+      "content": "Blockchain intelligence firm Chainalysis has disclosed a security incident after attackers used what it describes as \"offensive agentic techniques\" to gain unauthorized access to its internal systems\u2026 [+4104 chars]"
+    },
+    {
+      "source": {
+        "id": "abc-news-au",
+        "name": "ABC News (AU)"
+      },
+      "author": null,
+      "title": "Canada expecting to seal EU 'associate member' deal by June",
+      "description": "Canadian Prime Minister Mark Carney says he expects to conclude negotiations on the unprecedented deal by June.",
+      "url": "https://www.abc.net.au/news/2026-10-31/canada-eyeing-eu-associate-membership-by-june/107332384",
+      "urlToImage": "https://live-production.wcms.abc-cdn.net.au/a24348cd9e1692e26a64240206a166db?impolicy=wcms_watermark_news&cropH=2178&cropW=3872&xPos=0&yPos=0&width=862&height=485&imformat=generic",
+      "publishedAt": "2026-10-31T12:05:54Z",
+      "content": "Canadian Prime Minister Mark Carney is hoping to wrap up an unprecedented deal with the European Union by June to make Canada the bloc's first \"associate member\".\r\nMr Carney and EU leaders launched w\u2026 [+4351 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Screen Rant"
+      },
+      "author": "Dhruv Sharma",
+      "title": "Netflix\u2019s 33-Episode Dystopian Sci-Fi Masters The Art Of Predicting Our Darkest Future",
+      "description": "One of Netflix\u2019s greatest dystopian science fiction TV shows seems to master the art of predicting humanity\u2019s darkest future in its 33-episode runtime",
+      "url": "https://screenrant.com/black-mirror-netflix-predict-darkest-future/",
+      "urlToImage": "https://static0.srcdn.com/wordpress/wp-content/uploads/2026/10/843308bd-fc61-4fc9-a586-48f3239ad546.jpeg?w=1600&h=900&fit=crop",
+      "publishedAt": "2026-10-31T06:00:19Z",
+      "content": "Dystopian sci-fi is not always as far removed from reality as it may seem. Often, some of the most disturbing stories in the sci-fi genre can seem incredibly relatable and reflective of the real worl\u2026 [+4279 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "New Zealand Herald"
+      },
+      "author": "Tim McCready",
+      "title": "New Zealand investment: Shortage of investment projects and talent holds back growth",
+      "description": "Just 32.5% of surveyed directors say their investment appetite has grown.",
+      "url": "https://www.nzherald.co.nz/business/business-reports/mood-of-the-boardroom/new-zealand-investment-shortage-of-investment-projects-and-talent-holds-back-growth/premium/UGFEGRD6UJH73CFOWDRXGCVACY/",
+      "urlToImage": "https://www.nzherald.co.nz/resizer/v2/3CAJP43JIZHTRP5UKGJPZ27AAI.jpg?auth=fe1082a71b1d929172f51fb4b2778769c54d769b4ab35b3a343b89f54218be5e&width=1200&height=675&quality=70&focal=1099%2C418&smart=false",
+      "publishedAt": "2026-10-31T02:00:00Z",
+      "content": "Robert Wall, chief executive of the year-old autonomous Crown entity Invest New Zealand, says genuine offshore interest is coming through in renewable energy, digital infrastructure and technology-le\u2026 [+13790 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Cointelegraph"
+      },
+      "author": "Cointelegraph by Michael Millard",
+      "title": "Blockchain investigator Chainalysis hit by cybersecurity incident",
+      "description": "Chainalysis has engaged world-class third-party experts to support a review of its security and strengthen its defenses.",
+      "url": "https://cointelegraph.com/news/blockchain-investigator-chainalysis-hit-by-cybersecurity-incident",
+      "urlToImage": "https://s3-images.ctmedia.io/media/article-covers/2026/10/01M68V2D1TX4051JHJ9QKN8R4P/hi-how-to-utilize-ai-agents-in-decentralized-finance-defi-platforms-chainalysis.jpg",
+      "publishedAt": "2026-10-31T11:22:49Z",
+      "content": "Blockchain analytics company Chainalysis said it was targeted in a cybersecurity incident, similar to those suffered recently by other platforms.\r\nBased on the investigation to date, we have found no\u2026 [+892 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Atlantic"
+      },
+      "author": "Gal Beckerman",
+      "title": "Tel Aviv\u2019s Last Stand",
+      "description": "The liberal, cosmopolitan side of Israel is facing a moment of truth.",
+      "url": "https://www.theatlantic.com/international/2026/10/tel-aviv-israel-democracy-liberal/689229/?utm_source=feed",
+      "urlToImage": null,
+      "publishedAt": "2026-10-31T11:00:00Z",
+      "content": "No one talks about the left in Israel anymore. The label itself is essentially a curse word, something spat out by an angry taxi driver after he\u2019s swerved around a guy on a scooter. A measly 12 to 15\u2026 [+26320 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Parameter.ai"
+      },
+      "author": "Mukul Goyal",
+      "title": "We Took over ChatGPT Accounts",
+      "description": "By bypassing ChatGPT's sandbox and content security policy, our research team was able to take over anyone's account simply by sending them a link.",
+      "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+      "urlToImage": "https://www.parameter.ai/opengraph-image.png",
+      "publishedAt": "2026-10-31T10:30:11Z",
+      "content": "In October 2026, we found a way to turn an ordinary public ChatGPT share into attacker-controlled JavaScript running inside the signed-in session of whoever opened it.\r\nAn attacker could create a mal\u2026 [+18583 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Science Daily"
+      },
+      "author": null,
+      "title": "A surprising vitamin A discovery is changing what scientists know about vision",
+      "description": "Scientists at Johns Hopkins University have uncovered a surprising process that helps humans develop sharp vision before birth, challenging decades of assumptions about how the eye forms. Using miniature human retinas grown in the lab, researchers discovered \u2026",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261028234813.htm",
+      "urlToImage": "https://www.sciencedaily.com/images/1920/light-blue-iris-eye-close-up.webp",
+      "publishedAt": "2026-10-31T04:31:41Z",
+      "content": "Scientists at Johns Hopkins University have uncovered a surprising role for a vitamin A derivative in the development of human vision. Their research reveals how this molecule works alongside thyroid\u2026 [+9145 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Securityaffairs.com"
+      },
+      "author": "Pierluigi Paganini",
+      "title": "Attackers Exploit Critical Drupal Commerce Core Vulnerability CVE-2026-118539",
+      "description": "Drupal warns that attackers are exploiting a critical authorization flaw in Commerce Core, putting vulnerable online stores at risk. Drupal warns that threat actors are exploiting a highly critical security flaw, tracked as CVE-2026-118539, in its Commerce Co\u2026",
+      "url": "https://securityaffairs.com/202162/security/attackers-exploit-critical-drupal-commerce-core-vulnerability-cve-2026-118539.html",
+      "urlToImage": "https://securityaffairs.com/wp-content/uploads/2014/10/drupal.jpg",
+      "publishedAt": "2026-10-31T09:08:58Z",
+      "content": "Attackers Exploit Critical Drupal Commerce Core Vulnerability CVE-2026-118539\r\nDrupal warns that threat actors are exploiting a highly critical security flaw, tracked as CVE-2026-118539, in its Comme\u2026 [+1774 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Thephoblographer.com"
+      },
+      "author": "Chris Gampat",
+      "title": "Lightcraft Review: It\u2019s Adobe Lightroom, Without Adobe",
+      "description": "The truth is that Lightcraft really is a free version of Adobe Lightroom -- and in some ways it's better but in other ways it's just nearly as frustrating. If you're aware of the odd headaches that you get sometimes when you're doing something new, then know \u2026",
+      "url": "https://www.thephoblographer.com/2026/10/31/lightcraft-review-its-adobe-lightroom-without-adobe/",
+      "urlToImage": "https://www.thephoblographer.com/wp-content/uploads/2026/10/Screenshot-2026-10-30-at-10.52.57-AM-2-770x433.png",
+      "publishedAt": "2026-10-31T09:00:00Z",
+      "content": "The truth is that Lightcraft really is a free version of Adobe Lightroom \u2014 and in some ways it\u2019s better but in other ways it\u2019s just nearly as frustrating. If you\u2019re aware of the odd headaches that yo\u2026 [+14451 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "New Atlas"
+      },
+      "author": "Etiido Uko",
+      "title": "Wearable touchscreen weaves its way into your garment fabric",
+      "description": "Screens have become indispensable in most of our daily lives. We have them on phones, billboards, tiny wearables, coffee makers, toilets, and everywhere else. Scientists have now figured out a way to integrate them into the very fabric of clothes.Continue Rea\u2026",
+      "url": "https://newatlas.com/wearables/wearable-touchscreen-fabric-garment/",
+      "urlToImage": "https://assets.newatlas.com/dims4/default/70309da/2147483647/strip/true/crop/6000x3150+0+425/resize/1200x630!/quality/90/?url=https%3A%2F%2Fnewatlas-brightspot.s3.ap-southeast-2.amazonaws.com%2F1e%2Fbc%2Fed5d07e54dca8543089136172186%2Fhoto204.JPG&na.image_optimisation=0",
+      "publishedAt": "2026-10-31T09:03:00Z",
+      "content": "Screens have become indispensable in most of our daily lives. We have them on phones, billboards, tiny wearables, coffee makers, toilets, and everywhere else. Scientists have now figured out a way to\u2026 [+6523 chars]"
     },
     {
       "source": {
         "id": null,
         "name": "Yanko Design"
       },
-      "author": "Srishti Mitra",
-      "title": "9 Useful Gifts Under $100 for Digital Nomads Who Already Have the Tech",
-      "description": "Buying a gift for someone who works from a backpack requires a little restraint. If their laptop, phone, and headphones are already sorted, another gadget can feel like an obligation to carry more. The better gift might be the thing that keeps a pen with a no\u2026",
-      "url": "https://www.yankodesign.com/2026/10/30/9-useful-gifts-under-100-for-digital-nomads-who-already-have-the-tech/",
-      "urlToImage": "https://www.yankodesign.com/images/design_news/2026/10/useful-gifts-under-100-for-digital-nomads-who-already-have-the-tech/9_best_gifts_digital_nomads_yanko_design_hero.jpg",
-      "publishedAt": "2026-10-30T11:40:19Z",
-      "content": "Buying a gift for someone who works from a backpack requires a little restraint. If their laptop, phone, and headphones are already sorted, another gadget can feel like an obligation to carry more. T\u2026 [+12781 chars]"
+      "author": "Sarang Sheth",
+      "title": "Scriben AI Ballpoint Pen Refuses To Act Like Other \u2018Unnecessary\u2019 AI Devices",
+      "description": "https://youtu.be/C5m3i7TEQyw Tech companies love inventing new objects for you to carry around. Smart glasses, AI pins, little pucks you clip to your shirt that light up when they're listening. Every year there's a new shape competing for a spot in your pocke\u2026",
+      "url": "https://www.yankodesign.com/2026/10/30/scriben-ai-ballpoint-pen-refuses-to-act-like-other-unnecessary-ai-devices/",
+      "urlToImage": "https://www.yankodesign.com/images/design_news/2026/10/scriben-ai-ballpoint-pen-refuses-to-act-like-other-unnecessary-ai-devices/Scriben_AI_Pen_recorder.jpg",
+      "publishedAt": "2026-10-31T01:45:28Z",
+      "content": "Tech companies love inventing new objects for you to carry around. Smart glasses, AI pins, little pucks you clip to your shirt that light up when they\u2019re listening. Every year there\u2019s a new shape com\u2026 [+5946 chars]"
     },
     {
       "source": {
         "id": null,
-        "name": "Psychology Today"
+        "name": "mindbodygreen.com"
       },
-      "author": "Michael Ungar Ph.D.",
-      "title": "Is AI Weakening Our Ability to Think for Ourselves?",
-      "description": "Reliance on AI tends to produce patterns of cognitive off-loading, making us believe the machine is more correct than it is.",
-      "url": "https://www.psychologytoday.com/us/blog/nurturing-resilience/202610/is-ai-weakening-our-ability-to-think-for-ourselves",
-      "urlToImage": "https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/teaser_image/blog_entry/2026-10/pexels-pavel-danilyuk-girl_and_robot.jpeg.jpg?h=152eab49&itok=_Q_XQLmw",
-      "publishedAt": "2026-10-30T16:13:03Z",
-      "content": "I admit Im angry. \r\nIm a professor at a major university teaching students to become the next generation of professional leaders. Yet instead of engaging with them as critical thinkers, it feels like\u2026 [+4163 chars]"
+      "author": "Braelyn Wood",
+      "title": "This Scale Is Like A Mini At-Home DEXA Scan (& It's 50% Off)",
+      "description": "And it only takes 90 seconds.",
+      "url": "https://www.mindbodygreen.com/articles/hume-body-pod-scale",
+      "urlToImage": "https://mindbodygreen-res.cloudinary.com/image/upload/c_fill,w_2000,h_1200,g_auto,fl_lossy,f_jpg/org/80rrmxsw6m0pmidjr.jpeg",
+      "publishedAt": "2026-10-31T09:00:00Z",
+      "content": "Step on a standard bathroom scale and you get one number: your weight. But when it comes to understanding your fitness progress, that number only scratches the surface. It doesn't tell you whether yo\u2026 [+6389 chars]"
     },
     {
       "source": {
         "id": null,
-        "name": "Microsoft.com"
+        "name": "Researchbuzz.me"
       },
-      "author": "Microsoft Security Research, Sagar Patil, Jesse Birch and Tal Tzhori",
-      "title": "From help desk impersonation to AD CS abuse: Investigating ESC1 and ESC8 intrusion paths",
-      "description": "Teams support impersonation led to remote access, malicious runtime execution, and Certificate Services abuse through authentication relay and Kerberos.\nThe post From help desk impersonation to AD CS abuse: Investigating ESC1 and ESC8 intrusion paths appeared\u2026",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/30/help-desk-impersonation-ad-cs-abuse-investigating-esc1-esc8-intrusion-paths/",
-      "urlToImage": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/04/MS_Actional-Insights_Access.png",
-      "publishedAt": "2026-10-30T16:11:44Z",
-      "content": "In this article\r\nMicrosoft Threat Intelligence investigated two human-operated intrusions in which threat actors used Microsoft Teams messages and calls to impersonate IT or help desk personnel and s\u2026 [+27367 chars]"
+      "author": "Tara Calishain",
+      "title": "North Dakota Legacy Fund, Michelle Handelman, Sixteen Colors, More: Late Friday Catching Up ResearchBuzz, October 30, 2026",
+      "description": "NEW RESOURCES North Dakota Monitor: New Legacy Fund website makes investments more accessible but transparency issue lingers. \u201cNorth Dakota has launched a new website aiming to make Legacy Fund investments more transparent [\u2026]",
+      "url": "https://researchbuzz.me/2026/10/30/north-dakota-legacy-fund-michelle-handelman-sixteen-colors-more-late-friday-catching-up-researchbuzz-october-30-2026/",
+      "urlToImage": "https://s0.wp.com/_si/?t=eyJpbWciOiJodHRwczpcL1wvczAud3AuY29tXC9pXC9ibGFuay5qcGciLCJ0eHQiOiJSZXNlYXJjaEJ1enoiLCJ0ZW1wbGF0ZSI6ImhpZ2h3YXkiLCJmb250IjoiIiwiYmxvZ19pZCI6NDMyODc1Nn0.BjdcPIDlw4ZG0Ki13B-quwxnrzAxn9iB5rJXagRMNlcMQ",
+      "publishedAt": "2026-10-31T03:47:57Z",
+      "content": "NEW RESOURCES \r\nNorth Dakota Monitor: New Legacy Fund website makes investments more accessible but transparency issue lingers. \u201cNorth Dakota has launched a new website aiming to make Legacy Fund inv\u2026 [+4757 chars]"
     },
     {
       "source": {
         "id": null,
-        "name": "Amazon.com"
+        "name": "MakeUseOf"
       },
-      "author": "aws@amazon.com",
-      "title": "Amazon MSK now supports TLS 1.3 for data in transit",
-      "description": "Amazon MSK now supports version 1.3 of Transport Layer Security (TLS) protocol for MSK Provisioned clusters through encryption policies. TLS 1.3 delivers faster, more secure encryption for streaming data and is increasingly required by compliance frameworks a\u2026",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-msk-tls/",
-      "urlToImage": null,
-      "publishedAt": "2026-10-30T17:00:00Z",
-      "content": "Amazon MSK now supports version 1.3 of Transport Layer Security (TLS) protocol for MSK Provisioned clusters through encryption policies. TLS 1.3 delivers faster, more secure encryption for streaming \u2026 [+1403 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Techfortravel.co.uk"
-      },
-      "author": "{Tech} for Travel",
-      "title": "A Mongolian Motif Shapes the KUJTEN x Globe-Trotter Collection",
-      "description": "The KUJTEN x Globe-Trotter Carry-On pairs British craftsmanship with a Mongolian-inspired bandana print in two refined colourways.\nThe post A Mongolian Motif Shapes the KUJTEN x Globe-Trotter Collection appeared first on Tech for Travel.",
-      "url": "https://techfortravel.co.uk/luggage-news-a-mongolian-motif-shapes-the-kujten-x-globe-trotter-collection/",
-      "urlToImage": "https://techfortravel.co.uk/wp-content/uploads/2026/10/KUJTEN-x-Globe-Trotter-Collection.webp",
-      "publishedAt": "2026-10-30T10:00:00Z",
-      "content": "The KUJTEN x Globe-Trotter Carry-On pairs British craftsmanship with a Mongolian-inspired bandana print in two refined colourways.\r\nCredit Globe Trotter\r\nGlobe-Trotter and KUJTEN have launched an exc\u2026 [+2077 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Scientific American"
-      },
-      "author": "Peter Hall",
-      "title": "An exclusive conversation with the developer of REA, the viral AI reverse engineering tool",
-      "description": "An AI tool called REA can take apart software that isn\u2019t meant to be opened in printers, smart TVs, cars, and more. Its pseudonymous creator wants everyone to get a peek",
-      "url": "https://www.scientificamerican.com/article/an-exclusive-conversation-with-the-developer-of-rea-the-viral-ai-reverse-engineering-tool/",
-      "urlToImage": "https://static.scientificamerican.com/dam/asset/0d00b657-4e17-4972-a4bf-a57cc0e4ca1b/reverseengineeredcomputer.jpg?m=1793285097.344&w=1200",
-      "publishedAt": "2026-10-30T11:30:00Z",
-      "content": "Buy a new car, and you\u2019re free to repaint the exterior or add new wheels. But you aren\u2019t supposed to edit the code controlling the dash display and other electronics. Once software is packaged up and\u2026 [+7099 chars]"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Tom's Hardware UK"
-      },
-      "author": "editors@tomshardware.com (Jhet Borja) , Jhet Borja",
-      "title": "Former esports commentator builds his own custom mouse shell generator for 3D printing that doesn\u2019t use AI \u2014 Mausstudio automatically detects buttons, screwholes, and sensor locations",
-      "description": "A Counter-Strike commentator just showed the demo of his customizable gaming mouse shell generator for 3D printing that detects key components like mouse buttons, the scroll wheel, and screw hole locations without using AI.",
-      "url": "https://www.tomshardware.com/peripherals/gaming-mice/esports-commentator-builds-his-own-custom-mouse-shell-generator-for-3d-printing-that-doesnt-use-ai-mausstudio-automatically-detects-buttons-screwholes-and-sensor-locations",
-      "urlToImage": "https://cdn.mos.cms.futurecdn.net/D9TMWCpeBeSwjcZHS3auQV-2560-80.jpg",
-      "publishedAt": "2026-10-30T11:20:00Z",
-      "content": "Bastian Recha, \u201cUnskilledcast,\u201d is a German former CS:GO commentator, tech reviewer, and 3D printing enthusiast. On October 28, he posted a demo of his \u201cMausstudio\u201d project on X that generates a cust\u2026 [+3360 chars]"
+      "author": "Digvijay Kumar",
+      "title": "Your Windows 11 PC is quietly recording what you type because of one default setting",
+      "description": "A default setting has been saving every unfamiliar word you type.",
+      "url": "https://www.makeuseof.com/windows-pc-quietly-recording-what-you-type-default-setting/",
+      "urlToImage": "https://static0.makeuseofimages.com/wordpress/wp-content/uploads/wm/2026/10/asus-laptop-showing-windows-privacy-options-1.jpg?w=1600&h=900&fit=crop",
+      "publishedAt": "2026-10-31T11:30:16Z",
+      "content": "Theres a setting in Windows 11 that has been quietly logging words it doesnt recognize since the day you set up your PC. Everything gets saved to a file on your hard drive, and nothing about it alert\u2026 [+4450 chars]"
     }
   ],
   "metadata": {
-    "created_at": "2026-10-31T22:43:49.173977",
+    "created_at": "2026-11-01T14:03:24.112848",
     "source_limit": 1,
     "candidate_goal": 50
   }
