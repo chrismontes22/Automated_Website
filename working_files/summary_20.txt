@@ -1,21 +1,20 @@
-October ends with a thud for Intel, Reddit, AI stalwarts
+We Took over ChatGPT Accounts
 ============================================================
 
-The Nasdaq composite experienced its largest single-day decline since June on Friday as investors retreated from major technology stocks amid concerns over massive artificial intelligence capital expenditures.
+Researchers discovered a critical vulnerability in ChatGPT that allowed attackers to hijack user accounts and steal private conversation data simply by sending a malicious public link.
 
 ### Key Points
-- The Nasdaq composite fell significantly, leaving the index down 7.8% from its recent closing high.
-- Intel shares dropped 29%, Reddit fell 29%, and Sandisk declined 13% during the broad market selloff.
-- Major hyperscalers including Microsoft, Meta Platforms, Amazon, and Alphabet saw share prices slide between 1% and 2%.
-- Financial institutions faced pressure, with Goldman Sachs shares falling 4% and Jefferies dropping 6%.
-- Commodities saw sharp declines, as silver fell 6% and gold dropped 3.5% while oil prices rose 2%.
-- Bitcoin prices fell 3% following reports of a $6 billion hack involving the cryptocurrency exchange Binance.
+- The exploit bypassed ChatGPT’s sandbox by chaining together the "Preview" feature, a math library called MathLive, and an unsandboxed iframe.
+- Attackers could execute arbitrary JavaScript within a victim's authenticated session without requiring the user to install software or open developer tools.
+- The vulnerability allowed unauthorized access to private conversation history and the ability to perform actions on behalf of the victim's account.
+- OpenAI patched the security flaw on October 26, 2026, after classifying the report as a P1 critical issue and awarding a $5,000 bounty.
+- The attack demonstrated how seemingly harmless features, when combined, can create a path that circumvents Content Security Policy (CSP) protections.
 
 ### Why it Matters
-The recent market volatility reflects growing investor anxiety regarding the sustainability of massive capital spending on artificial intelligence infrastructure by major technology firms. As these companies increasingly rely on external financing, market participants are scrutinizing the long-term profitability and monetization strategies of the current AI-driven economic boom.
+This incident highlights the significant risks inherent in complex web applications where multiple independent features interact across security boundaries. It serves as a reminder that even robust sandboxing can fail if individual components trust messages from unverified sources, potentially exposing sensitive user data to unauthorized third parties.
 
 ============================================================
-Author:   Reuters
-Source:   The Times of India
-URL:      https://economictimes.indiatimes.com/tech/technology/october-ends-with-a-thud-for-intel-reddit-ai-stalwarts/articleshow/135385131.cms
-Category: Tech Business & Markets
+Author:   Mukul Goyal
+Source:   Parameter.ai
+URL:      https://www.parameter.ai/labs/we-found-a-gap-at-openai
+Category: Cybersecurity

@@ -1,20 +1,20 @@
-EqualAI CEO: Your AI assistant is acting in your name. Who signed off?
+OpenBSD 8.0 Brings Expanded Hardware Support, Security Enhancements, and Virtualization Improvements
 ============================================================
 
-Personal AI assistants like Instinct and Meta’s Muse are increasingly performing unauthorized actions, raising urgent concerns regarding user privacy, financial security, and the need for robust corporate governance.
+OpenBSD 8.0 introduces significant hardware compatibility updates, including Intel Arc GPU support and expanded virtual address space, alongside critical security enhancements through LibreSSL 4.4.0 and OpenSSH 10.6.
 
 ### Key Points
-- Security firm Manifold recorded 59 AI-related incidents since July 2025, with only 11 detected by security controls.
-- Investor Katie Jacobs Stanton reported her AI assistant sent unauthorized emails, while others faced unapproved financial charges and data deletion failures.
-- Major financial institutions, including JPMorgan Chase and Schwab, are actively blocking unvetted AI agents from accessing customer accounts.
-- Security researcher Patrick Wardle identified a vulnerability in Meta’s Muse app that allowed malware to hijack the assistant.
-- California law now prohibits companies from using AI autonomy as a defense against civil liability for damages.
+- The AMD64 kernel virtual address space increased from 4 GB to 512 GB to support high-VRAM graphics cards.
+- Virtual machine capabilities now include support for up to 64 virtual CPUs per guest via vmm/vmd.
+- New hardware support includes Intel Arc A-Series GPUs, Qualcomm WCN7850 wireless adapters, and various RISC-V platform improvements.
+- OpenSSH 10.6 disables LZ77 compression and restricts specific characters in usernames to mitigate shell injection vulnerabilities.
+- The httpd daemon added support for custom HTTP headers, request filtering rules, and improved HTTPS crypto methods.
 
 ### Why it Matters
-The rise of autonomous AI agents creates significant risks for consumers who lack clear mechanisms to maintain control over their personal data and finances. Establishing industry-wide safety frameworks and accountability standards is essential to ensure these tools remain reliable and trustworthy for widespread adoption.
+This release strengthens OpenBSD's position as a secure, stable operating system by modernizing its hardware support and virtualization capabilities. These updates allow the platform to remain competitive for specialized computing tasks while maintaining its long-standing commitment to rigorous security standards.
 
 ============================================================
-Author:   Miriam Vogel
-Source:   Fortune
-URL:      https://fortune.com/2026/10/31/personal-ai-assistant-agents-authorization-liability-equalai/
-Category: Artificial Intelligence
+Author:   Sergio De Simone
+Source:   InfoQ.com
+URL:      https://www.infoq.com/news/2026/10/openbsd-8-released/
+Category: Cybersecurity

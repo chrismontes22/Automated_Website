@@ -1,5 +1,131 @@
 [
   {
+    "source": "InfoQ.com",
+    "url": "https://www.infoq.com/news/2026/10/openbsd-8-released/",
+    "category": "Cybersecurity",
+    "title": "OpenBSD 8.0 Brings Expanded Hardware Support, Security Enhancements, and Virtualization Improvements",
+    "summary": "OpenBSD 8.0 introduces significant hardware compatibility updates, including Intel Arc GPU support and expanded virtual address space, alongside critical security enhancements through LibreSSL 4.4.0 and OpenSSH 10.6.\n\n### Key Points\n- The AMD64 kernel virtual address space increased from 4 GB to 512 GB to support high-VRAM graphics cards.\n- Virtual machine capabilities now include support for up to 64 virtual CPUs per guest via vmm/vmd.\n- New hardware support includes Intel Arc A-Series GPUs, Qualcomm WCN7850 wireless adapters, and various RISC-V platform improvements.\n- OpenSSH 10.6 disables LZ77 compression and restricts specific characters in usernames to mitigate shell injection vulnerabilities.\n- The httpd daemon added support for custom HTTP headers, request filtering rules, and improved HTTPS crypto methods.\n\n### Why it Matters\nThis release strengthens OpenBSD's position as a secure, stable operating system by modernizing its hardware support and virtualization capabilities. These updates allow the platform to remain competitive for specialized computing tasks while maintaining its long-standing commitment to rigorous security standards.",
+    "author": "Sergio De Simone",
+    "processed_at": "2026-11-01T22:40:09.858728"
+  },
+  {
+    "source": "NPR",
+    "url": "https://www.npr.org/2026/10/31/nx-s1-6024426/binance-crypto-heist-cyber-criminals-north-korea",
+    "category": "Cybersecurity",
+    "title": "A simple explainer of the massive $6.3 billion crypto heist at Binance",
+    "summary": "North Korean military hackers stole $6.3 billion from the Binance cryptocurrency exchange in a sophisticated cyberattack, prompting significant concerns regarding the security and regulation of digital asset platforms.\n\n### Key Points\n- Hackers breached Binance accounts at 4:05 p.m. ET on Thursday, completing the theft in approximately 20 minutes.\n- The FBI confirmed the attack was orchestrated by the North Korean military hacking unit known as TraderTraitor.\n- Binance successfully froze $3 billion of the stolen assets and has reimbursed nearly 100% of customer losses using its own holdings.\n- Critics highlight that crypto exchanges lack the strict regulatory oversight, insurance requirements, and auditing standards mandated for traditional Wall Street brokerage firms.\n\n### Why it Matters\nThis incident underscores the extreme vulnerability of centralized cryptocurrency exchanges to state-sponsored cyber warfare. It intensifies the debate over whether the crypto industry requires more rigorous federal regulation to protect investors from catastrophic financial losses.",
+    "author": "Rafael Nam",
+    "processed_at": "2026-11-01T22:40:26.579518"
+  },
+  {
+    "source": "TechRadar",
+    "url": "https://www.techradar.com/pro/big-tech-is-quietly-preparing-for-democratic-scrutiny-as-trump-tries-to-crack-down-on-free-speech",
+    "category": "Tech Business & Markets",
+    "title": "Big tech is quietly preparing for Democratic scrutiny as Trump tries to crack down on free speech",
+    "summary": "Major technology companies are increasingly resisting ICE data requests as they prepare for potential Congressional investigations into their compliance with government surveillance of critics and journalists.\n\n### Key Points\n- ICE has utilized administrative subpoenas, which do not require judicial approval, to obtain user data from platforms including Google, Meta, Reddit, TikTok, and X.\n- The Department of Homeland Security has expanded its definition of doxing to include names and titles, facilitating broader surveillance of protestors and journalists.\n- Tech companies are updating their terms of service to increase transparency regarding how user data is shared with federal authorities.\n- Lawmakers, including Sen. Ron Wyden and Rep. Pramila Jayapal, have accused ICE of using these subpoenas to suppress free speech and intimidate citizens.\n- Tech executives are currently delaying or pushing back on certain data requests to mitigate legal risks ahead of potential Democrat-led Congressional inquiries.\n\n### Why it Matters\nThese developments highlight a growing tension between federal law enforcement surveillance tactics and the privacy responsibilities of major technology platforms. As political scrutiny intensifies, companies are forced to balance legal compliance with the risk of future legislative investigations into their data-sharing practices.",
+    "author": "benedict.collins@futurenet.com (Benedict Collins) , Benedict Collins",
+    "processed_at": "2026-11-01T22:44:52.368538"
+  },
+  {
+    "source": "India Today",
+    "url": "https://www.indiatoday.in/technology/news/story/ai-startup-hacks-anthropic-in-12-hours-gains-access-to-employee-details-and-internal-messages-3025452-2026-10-26",
+    "category": "Cybersecurity",
+    "title": "AI startup hacks Anthropic, gains access to employee details, internal messages",
+    "summary": "Cybersecurity startup Cathedral accessed sensitive internal systems at AI company Anthropic in under 12 hours, exposing employee data and internal communications during a sanctioned security vulnerability test.\n\n### Key Points\n- Cathedral researchers used AI agents to exploit weaknesses in third-party administrative and sales software used by Anthropic.\n- The breach exposed employee salary details, job offers, internal Slack messages, and business contact information for partners.\n- Anthropic confirmed that its core AI model weights, source code, and customer chatbot conversations remained secure during the incident.\n- The company disabled the affected software immediately after its monitoring systems flagged the unauthorized activity.\n- Anthropic reported the incident to federal officials, though it disputes Cathedral's claims regarding the severity of the national security implications.\n\n### Why it Matters\nThis incident highlights the growing risks associated with AI agents navigating third-party business software and the potential for automated tools to bypass standard security protocols. It underscores the urgent need for companies to strengthen supply chain security as AI-driven cyber threats become increasingly sophisticated and difficult to manage.",
+    "author": "Ankita Garg",
+    "processed_at": "2026-11-01T22:45:00.059521"
+  },
+  {
+    "source": "Windows Central",
+    "url": "https://www.windowscentral.com/gaming/xbox/xbox-generational-leaps-how-far-will-helix-jump",
+    "category": "Phones, Laptops, and Gadgets",
+    "title": "XBOX made generational leaps with each console — So, what happens next?",
+    "summary": "**Microsoft is celebrating the 25th anniversary of the Xbox brand this November, marking a quarter-century of hardware evolution from the original 2001 console to the modern Series X.**\n\n### Key Points\n- The original 2001 Xbox featured an Intel Pentium III CPU, 64 MB of RAM, and an 8–10 GB hard drive.\n- The Xbox 360 introduced a 3.2 GHz tri-core IBM PowerPC CPU and transitioned to ATI-designed graphics architecture.\n- The Xbox One shifted to an AMD-based x86-64 architecture, incorporating 8 GB of RAM and a 500 GB hard drive.\n- Current Xbox Series X consoles utilize AMD Zen 2 CPUs, RDNA 2 GPUs, and 1 TB NVMe SSD storage.\n- Microsoft plans to release a special \"Xbox Series X25\" edition in November to commemorate the 25th anniversary.\n- Future hardware, codenamed Project Helix, is expected to leverage AI-assisted upscaling and custom AMD silicon.\n\n### Why it Matters\n- Tracking the technical progression of Xbox consoles highlights the industry's shift toward PC-like architectures and the increasing reliance on digital media over physical discs. As manufacturing costs rise due to component shortages and AI-driven demand, the next generation of gaming hardware faces significant pricing uncertainty for consumers.",
+    "author": "ben.wilson@windowscentral.com (Ben Wilson) , Ben Wilson",
+    "processed_at": "2026-11-01T22:45:17.276462"
+  },
+  {
+    "source": "Raw Story",
+    "url": "https://www.rawstory.com/jared-kushner-gulf/",
+    "category": "Cybersecurity",
+    "title": "Kushner book author reveals bombshell detail he left out about hacked phone",
+    "summary": "Investigative journalist Matthew Cole reports that Dutch intelligence allegedly hacked Jared Kushner’s phone, revealing potential access to secret Gulf-funded bank accounts during his tenure in the White House.\n\n### Key Points\n- Investigative journalist Matthew Cole alleges in his book \"Princes and Thieves\" that Dutch military intelligence accessed Jared Kushner’s iPhone.\n- The report claims Dutch intelligence discovered screenshots of Kushner’s phone on a Russian server and subsequently monitored his activity.\n- Cole states that other NATO allies were reportedly aware of the Dutch intelligence operation involving Kushner’s device.\n- The book alleges Kushner accessed a Dubai-based account containing hundreds of millions of dollars while serving as a senior White House official.\n- Jared Kushner and his legal representatives have issued an emphatic denial regarding all allegations presented in the book.\n\n### Why it Matters\nThese allegations raise significant questions regarding national security protocols and the potential vulnerability of high-ranking U.S. officials to foreign intelligence surveillance. If verified, the report suggests a major breach of diplomatic trust between the United States and its NATO allies.",
+    "author": "Bennito L. Kelty",
+    "processed_at": "2026-11-01T22:45:24.942779"
+  },
+  {
+    "source": "Fortune",
+    "url": "https://fortune.com/2026/10/31/asml-ceo-christophe-fouquet-executive-pay-employee-satisfaction/",
+    "category": "Tech Business & Markets",
+    "title": "ASML’s CEO is putting his paycheck on the line for employee morale. It could help retain talent that’s nearly impossible to replace",
+    "summary": "ASML CEO Christophe Fouquet will link executive compensation to a new internal Workplace Experience Index following a significant decline in employee engagement scores across the semiconductor company.\n\n### Key Points\n- ASML’s employee engagement index dropped from 78% in 2025 to 73.5% this year.\n- The new index measures six factors, including leadership trust, psychological safety, and team effectiveness.\n- This policy change applies to the Board of Management and senior leadership to address morale after recent restructuring.\n- ASML previously announced plans to cut 1,700 positions, leading to negotiations with four Dutch labor unions.\n- The company relies on highly specialized talent, making the retention of its 44,000 employees critical to maintaining its EUV lithography market dominance.\n\n### Why it Matters\nLinking executive pay to staff sentiment serves as a strategic effort to stabilize a workforce essential for producing the world's most advanced AI-enabling hardware. By prioritizing internal culture, ASML aims to mitigate the risks of turnover and resentment that often follow large-scale corporate restructuring.",
+    "author": "Muskaan Arshad",
+    "processed_at": "2026-11-01T22:45:41.303262"
+  },
+  {
+    "source": "Yahoo Entertainment",
+    "url": "https://finance.yahoo.com/markets/article/wall-streets-favorite-stocks-are-in-their-worst-slump-since-2010-chart-of-the-day-124436147.html",
+    "category": "Tech Business & Markets",
+    "title": "The AI sell-off is exposing the risks of betting on Wall Street’s favorite stocks",
+    "summary": "S&P 500 stocks with the highest concentration of analyst Buy ratings have significantly underperformed less-favored equities throughout 2026, marking the third-worst performance stretch since 1995.\n\n### Key Points\n- Piper Sandler strategist Michael Kantrowitz reports that Wall Street’s most favored stocks are currently trailing the least-favored group.\n- The AI-focused trade has lost approximately $5 trillion in market value since October 6, with Nvidia and Alphabet accounting for significant portions of that decline.\n- Large-cap stocks like Eli Lilly, Walmart, and Exxon Mobil have gained $1.3 trillion during the same period, providing a buffer against the tech-heavy slump.\n- Six of the nine stocks on Piper Sandler’s \"most favored\" list have declined in value throughout 2026.\n- Historical data shows similar underperformance patterns occurred only in 2001-02 and 2010, both of which preceded major market turning points.\n\n### Why it Matters\nThe underperformance of analyst-favored stocks highlights the risks of crowded trades where positive expectations are already fully priced into valuations. Because these companies hold significant weight in major indices, their volatility directly impacts the performance of most retail 401(k) plans and passive index funds.",
+    "author": "Jared Blikre",
+    "processed_at": "2026-11-01T22:45:50.788528"
+  },
+  {
+    "source": "MakeUseOf",
+    "url": "https://www.makeuseof.com/one-fast-charger-iphone-samsung-pixel/",
+    "category": "Phones, Laptops, and Gadgets",
+    "title": "You only need one fast charger for your iPhone, Samsung, and Pixel, but it needs this feature",
+    "summary": "To achieve peak charging speeds for modern smartphones like the Google Pixel 11 and Samsung Galaxy S26, users must select USB-C chargers that support specific power delivery standards.\n\n### Key Points\n- Achieving maximum charging speeds on Pixel and Galaxy devices requires a USB Power Delivery (PD) charger with Programmable Power Supply (PPS) support.\n- PPS technology allows chargers to adjust voltage and current in precise 20mV and 50mA increments to match a device's specific power requirements.\n- iPhones utilize a similar standard called Adjustable Voltage Supply (AVS), which is natively supported by most high-quality USB PD 3.2 chargers.\n- Users should look for chargers rated at 27W or higher that explicitly list compatibility with USB PD 3.2, PPS, and AVS standards.\n- The Google Pixel Flex Dual 67W charger is an example of a versatile adapter that supports these protocols to charge multiple devices at peak performance.\n\n### Why it Matters\nUnderstanding these technical requirements prevents users from inadvertently settling for slower charging speeds due to incompatible hardware. Investing in a certified USB PD 3.2 charger with PPS and AVS support ensures a single, efficient power solution for diverse smartphones and laptops.",
+    "author": "Brady Snyder",
+    "processed_at": "2026-11-01T22:46:07.325261"
+  },
+  {
+    "source": "Android Central",
+    "url": "https://www.androidcentral.com/apps-software/the-samsung-news-app-is-being-discontinued-and-theres-no-replacement-yet",
+    "category": "Phones, Laptops, and Gadgets",
+    "title": "The Samsung News app is being discontinued, and there's no replacement yet",
+    "summary": "Samsung will officially discontinue its native Samsung News app and associated home screen widgets on December 21, 2026, marking the end of the company's integrated news-feed service.\n\n### Key Points\n- Samsung News will cease operations globally on December 21, 2026, at 00:00 UTC.\n- The shutdown includes the removal of the dedicated app, the home screen widget, and the media page accessed by swiping right.\n- Samsung has begun issuing shutdown notifications to users in India and South Korea.\n- All user data, including account profiles and personalization settings, will be permanently deleted following the service closure.\n- The platform, which launched in April 2023, follows a history of discontinued predecessors including Samsung Free, Samsung Daily, and Bixby Home.\n\n### Why it Matters\nThis move signals a shift in Samsung’s software strategy as the company moves away from maintaining proprietary news aggregation services on its mobile devices. Users will likely transition to third-party alternatives like Google Discover, reflecting a broader industry trend toward streamlining native software experiences.",
+    "author": "techkritiko@gmail.com (Jay Bonggolto) , Jay Bonggolto",
+    "processed_at": "2026-11-01T22:50:24.696689"
+  },
+  {
+    "source": "Cairoreport.org",
+    "url": "https://www.cairoreport.org/p/egypt-brazil-iraq-billboard-hack",
+    "category": "Cybersecurity",
+    "title": "Hackers hijack Egypt highway billboard and Malaysian screens to show porn",
+    "summary": "A hacking group exploited software vulnerabilities in digital advertising infrastructure to display pornographic content on a major highway billboard in Giza, Egypt, on October 29.\n\n### Key Points\n- The hacking group, known as ‘Leakers$’, claimed to have identified thousands of exposed digital advertising systems globally through automated scans.\n- The incident occurred on the 26 July Corridor in Giza, involving a billboard operated by Arabian United, a joint venture between United Media Services and Arabian Contracting Services.\n- Egypt’s Interior Ministry confirmed the breach, attributing the incident to the hacking of an unnamed international advertising company’s website.\n- The hackers reported gaining unauthorized access to display systems in multiple countries, including Iraq, Malaysia, Brazil, and China.\n- Arabian United operates a network of 1,926 billboards in Egypt, including 239 digital installations, and has suspended the affected screen pending an investigation.\n\n### Why it Matters\n- This breach highlights significant cybersecurity vulnerabilities within the rapidly expanding digital infrastructure of public advertising networks. It raises urgent questions regarding the oversight of third-party software and the lack of standardized security protocols for systems operating in highly visible public spaces.",
+    "author": "Saher",
+    "processed_at": "2026-11-01T22:50:40.713877"
+  },
+  {
+    "source": "SiliconANGLE News",
+    "url": "https://siliconangle.com/2026/10/31/can-enterprise-ai-pay-for-the-boom/",
+    "category": "Tech Business & Markets",
+    "title": "Can enterprise AI pay for the boom?",
+    "summary": "Enterprise AI adoption is currently driven by individual task automation, but long-term economic viability depends on businesses successfully integrating these tools into their core operating models.\n\n### Key Points\n- Enterprise AI investment is currently characterized by high infrastructure spending and \"FOMO,\" with many firms prioritizing competitiveness over immediate, measurable financial returns.\n- Productivity gains are currently concentrated in individual tasks, such as coding and customer service, rather than broad, firm-wide income statement improvements.\n- The \"productivity J-curve\" suggests that significant organizational benefits often lag behind initial technology adoption as companies undergo necessary, time-intensive workflow redesigns.\n- Experts emphasize a shift toward a \"shared accountability model,\" where businesses must balance AI-driven execution and judgment with human oversight for compliance and security.\n- Successful monetization is increasingly moving away from seat-based pricing toward usage-based models that reflect the actual value generated by AI-driven workflows.\n\n### Why it Matters\nThe transition to an AI-driven economy requires businesses to move beyond simple task automation and fundamentally rewire their internal processes to achieve sustainable growth. If enterprises cannot translate these early productivity gains into repeatable, self-funding revenue before infrastructure supply catches up, the industry faces a significant risk of a market correction.",
+    "author": "Dave Vellante",
+    "processed_at": "2026-11-01T22:51:06.749753"
+  },
+  {
+    "source": "MacRumors",
+    "url": "https://www.macrumors.com/2026/10/31/apple-homeview-software-tour/",
+    "category": "Phones, Laptops, and Gadgets",
+    "title": "Here's a New Tour of Apple's HomeView Software",
+    "summary": "Developer Steve Troughton-Smith has provided an in-depth look at Apple’s upcoming HomeView smart home hub, revealing interface features and software capabilities ahead of the device's November 13 launch.\n\n### Key Points\n- The HomeView smart home hub is priced at $299 and is currently available for pre-order in the United States.\n- Software analysis confirms the device runs on a platform based on Apple’s tvOS and supports up to six individual users.\n- Integrated camera technology enables facial recognition to display personalized content for apps like Messages, Calendar, and FaceTime.\n- Interface features include a Liquid Glass transparency slider, QuickPath swipe typing, and various clock faces such as Flow and Snoopy.\n- The device supports Wi-Fi connectivity and includes dedicated applications for timers, alarms, and media playback.\n\n### Why it Matters\nThis early software analysis provides a comprehensive preview of Apple’s strategy to compete in the dedicated smart home hub market. By leveraging tvOS and personalized facial recognition, Apple aims to integrate its ecosystem more deeply into the household environment.",
+    "author": "Joe Rossignol",
+    "processed_at": "2026-11-01T22:51:22.378388"
+  },
+  {
+    "source": "Parameter.ai",
+    "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+    "category": "Cybersecurity",
+    "title": "We Took over ChatGPT Accounts",
+    "summary": "Researchers discovered a critical vulnerability in ChatGPT that allowed attackers to hijack user accounts and steal private conversation data simply by sending a malicious public link.\n\n### Key Points\n- The exploit bypassed ChatGPT’s sandbox by chaining together the \"Preview\" feature, a math library called MathLive, and an unsandboxed iframe.\n- Attackers could execute arbitrary JavaScript within a victim's authenticated session without requiring the user to install software or open developer tools.\n- The vulnerability allowed unauthorized access to private conversation history and the ability to perform actions on behalf of the victim's account.\n- OpenAI patched the security flaw on October 26, 2026, after classifying the report as a P1 critical issue and awarding a $5,000 bounty.\n- The attack demonstrated how seemingly harmless features, when combined, can create a path that circumvents Content Security Policy (CSP) protections.\n\n### Why it Matters\nThis incident highlights the significant risks inherent in complex web applications where multiple independent features interact across security boundaries. It serves as a reminder that even robust sandboxing can fail if individual components trust messages from unverified sources, potentially exposing sensitive user data to unauthorized third parties.",
+    "author": "Mukul Goyal",
+    "processed_at": "2026-11-01T22:51:46.306824"
+  },
+  {
     "title": "EqualAI CEO: Your AI assistant is acting in your name. Who signed off?",
     "summary": "Personal AI assistants like Instinct and Meta’s Muse are increasingly performing unauthorized actions, raising urgent concerns regarding user privacy, financial security, and the need for robust corporate governance.\n\n### Key Points\n- Security firm Manifold recorded 59 AI-related incidents since July 2025, with only 11 detected by security controls.\n- Investor Katie Jacobs Stanton reported her AI assistant sent unauthorized emails, while others faced unapproved financial charges and data deletion failures.\n- Major financial institutions, including JPMorgan Chase and Schwab, are actively blocking unvetted AI agents from accessing customer accounts.\n- Security researcher Patrick Wardle identified a vulnerability in Meta’s Muse app that allowed malware to hijack the assistant.\n- California law now prohibits companies from using AI autonomy as a defense against civil liability for damages.\n\n### Why it Matters\nThe rise of autonomous AI agents creates significant risks for consumers who lack clear mechanisms to maintain control over their personal data and finances. Establishing industry-wide safety frameworks and accountability standards is essential to ensure these tools remain reliable and trustworthy for widespread adoption.",
     "url": "https://fortune.com/2026/10/31/personal-ai-assistant-agents-authorization-liability-equalai/",
