@@ -1,20 +1,20 @@
-Here's a New Tour of Apple's HomeView Software
+Canonical adds FIDO2 hardware key support to Launchpad
 ============================================================
 
-Developer Steve Troughton-Smith has provided an in-depth look at Apple’s upcoming HomeView smart home hub, revealing interface features and software capabilities ahead of the device's November 13 launch.
+Canonical has introduced hardware-bound FIDO2 security key support for Launchpad, allowing developers to secure API access and prevent unauthorized use of stolen login tokens for Ubuntu package management.
 
 ### Key Points
-- The HomeView smart home hub is priced at $299 and is currently available for pre-order in the United States.
-- Software analysis confirms the device runs on a platform based on Apple’s tvOS and supports up to six individual users.
-- Integrated camera technology enables facial recognition to display personalized content for apps like Messages, Calendar, and FaceTime.
-- Interface features include a Liquid Glass transparency slider, QuickPath swipe typing, and various clock faces such as Flow and Snoopy.
-- The device supports Wi-Fi connectivity and includes dedicated applications for timers, alarms, and media playback.
+- Launchpad now supports USB FIDO2 security keys to protect developer API access and prevent credential theft.
+- The new system replaces static stored tokens with long-lived OAuth refresh grants tied to physical hardware.
+- Users must touch their security key and enter a PIN to generate short-lived tokens for daily operations.
+- The feature currently supports only USB-based keys and requires the installation of the python3-fido2 package.
+- This security update specifically targets core distribution engineers and package uploaders who manage sensitive system infrastructure.
 
 ### Why it Matters
-This early software analysis provides a comprehensive preview of Apple’s strategy to compete in the dedicated smart home hub market. By leveraging tvOS and personalized facial recognition, Apple aims to integrate its ecosystem more deeply into the household environment.
+This update significantly hardens the security of the Ubuntu ecosystem by mitigating the risk of malware hijacking developer credentials. By requiring physical hardware authentication, Canonical reduces the potential for supply chain attacks that could compromise critical software packages.
 
 ============================================================
-Author:   Joe Rossignol
-Source:   MacRumors
-URL:      https://www.macrumors.com/2026/10/31/apple-homeview-software-tour/
-Category: Phones, Laptops, and Gadgets
+Author:   Joey Sneddon
+Source:   Omgubuntu.co.uk
+URL:      https://www.omgubuntu.co.uk/2026/11/launchpad-fido2-hardware-tokens
+Category: Cybersecurity

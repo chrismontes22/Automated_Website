@@ -1,20 +1,20 @@
-We Took over ChatGPT Accounts
+Very cold war: Who’s attacking Europe’s supermarket freezers?
 ============================================================
 
-Researchers discovered a critical vulnerability in ChatGPT that allowed attackers to hijack user accounts and steal private conversation data simply by sending a malicious public link.
+Cyberattacks targeting internet-connected refrigeration systems across Europe and the United States have caused widespread food spoilage and equipment damage, prompting investigations into potential efforts to disrupt food supplies.
 
 ### Key Points
-- The exploit bypassed ChatGPT’s sandbox by chaining together the "Preview" feature, a math library called MathLive, and an unsandboxed iframe.
-- Attackers could execute arbitrary JavaScript within a victim's authenticated session without requiring the user to install software or open developer tools.
-- The vulnerability allowed unauthorized access to private conversation history and the ability to perform actions on behalf of the victim's account.
-- OpenAI patched the security flaw on October 26, 2026, after classifying the report as a P1 critical issue and awarding a $5,000 bounty.
-- The attack demonstrated how seemingly harmless features, when combined, can create a path that circumvents Content Security Policy (CSP) protections.
+- Hackers are remotely accessing vulnerable refrigeration controllers to raise temperatures, causing food loss and, in some cases, fires in supermarket units.
+- Major retailers including Delhaize, Carrefour, Spar, Coop, IKEA, and SuperValu have reported incidents across Belgium, Luxembourg, France, Sweden, and Ireland.
+- U.S. military facilities, including bases in Arizona and Rhode Island, reported similar freezer malfunctions that the Pentagon suspects were deliberate cyberattacks.
+- Cybersecurity experts attribute the vulnerabilities to outdated software, lack of secure network management, and the use of easily guessable passwords on remote-access controllers.
+- Belgian authorities have launched a criminal investigation into the attacks, though no group has claimed responsibility for the disruptions.
 
 ### Why it Matters
-This incident highlights the significant risks inherent in complex web applications where multiple independent features interact across security boundaries. It serves as a reminder that even robust sandboxing can fail if individual components trust messages from unverified sources, potentially exposing sensitive user data to unauthorized third parties.
+These attacks highlight the growing vulnerability of critical infrastructure as essential systems like food refrigeration are increasingly digitized without adequate security protocols. The incidents threaten the stability of the food supply chain and demonstrate how cyber-physical attacks can cause significant financial losses and undermine public trust in essential services.
 
 ============================================================
-Author:   Mukul Goyal
-Source:   Parameter.ai
-URL:      https://www.parameter.ai/labs/we-found-a-gap-at-openai
+Author:   Edna Mohamed
+Source:   Al Jazeera English
+URL:      https://www.aljazeera.com/news/2026/11/3/very-cold-war-whos-attacking-europes-supermarket-freezers
 Category: Cybersecurity

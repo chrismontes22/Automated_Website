@@ -1,20 +1,20 @@
-OpenBSD 8.0 Brings Expanded Hardware Support, Security Enhancements, and Virtualization Improvements
+Google takes down a massive Android TV botnet, but infected devices remain dangerous
 ============================================================
 
-OpenBSD 8.0 introduces significant hardware compatibility updates, including Intel Arc GPU support and expanded virtual address space, alongside critical security enhancements through LibreSSL 4.4.0 and OpenSSH 10.6.
+Google has dismantled a massive malware operation involving Videostrong Technology that compromised over 1.3 million Android TV boxes by embedding a persistent backdoor directly into device firmware.
 
 ### Key Points
-- The AMD64 kernel virtual address space increased from 4 GB to 512 GB to support high-VRAM graphics cards.
-- Virtual machine capabilities now include support for up to 64 virtual CPUs per guest via vmm/vmd.
-- New hardware support includes Intel Arc A-Series GPUs, Qualcomm WCN7850 wireless adapters, and various RISC-V platform improvements.
-- OpenSSH 10.6 disables LZ77 compression and restricts specific characters in usernames to mitigate shell injection vulnerabilities.
-- The httpd daemon added support for custom HTTP headers, request filtering rules, and improved HTTPS crypto methods.
+- Google identified the XCPE malware, which grants attackers system-level privileges to install apps, capture keystrokes, and reroute internet traffic.
+- The malware was pre-installed by manufacturer Videostrong Technology on various Android-based devices, including TV boxes, karaoke machines, and digital signage.
+- Because the malicious code resides in a protected firmware partition, it automatically reinstalls itself upon device reboot, rendering standard app removal ineffective.
+- Google collaborated with international law enforcement and security firms to disable command-and-control servers, potentially impacting 10 million additional compromised devices.
+- Google has banned Videostrong from producing certified Android devices and implemented stricter firmware integrity checks for all manufacturers.
 
 ### Why it Matters
-This release strengthens OpenBSD's position as a secure, stable operating system by modernizing its hardware support and virtualization capabilities. These updates allow the platform to remain competitive for specialized computing tasks while maintaining its long-standing commitment to rigorous security standards.
+This incident highlights a significant supply chain vulnerability where hardware manufacturers intentionally embed malware at the firmware level. Consumers using affected devices may need to replace their hardware entirely, as the deep-seated nature of the infection makes standard security software unable to fully remediate the threat.
 
 ============================================================
-Author:   Sergio De Simone
-Source:   InfoQ.com
-URL:      https://www.infoq.com/news/2026/10/openbsd-8-released/
+Author:   techkritiko@gmail.com (Jay Bonggolto) , Jay Bonggolto
+Source:   Android Central
+URL:      https://www.androidcentral.com/streaming-tv/google-takes-down-a-massive-android-tv-botnet-but-infected-devices-remain-dangerous
 Category: Cybersecurity
