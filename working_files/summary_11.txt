@@ -1,20 +1,20 @@
-The 4 Elements of Exposure Prioritization and How to Operationalize Them
+Proton VPN 8.0 is coming to iPhone — and it could be the app's biggest upgrade in years
 ============================================================
 
-Gartner reports that organizations can reduce breach likelihood by 70% by shifting from CVSS-based vulnerability prioritization to a risk-based framework incorporating threat intelligence, asset context, and control validation.
+Proton VPN has released version 8.0.0 of its iOS application on GitHub, introducing a new Rust-based VPN engine designed to improve connection stability and enhance censorship resistance for users.
 
 ### Key Points
-- Gartner research indicates that fewer than 10% of all identified vulnerabilities are actually exploited by attackers.
-- Effective exposure management requires integrating threat intelligence, asset context, exploitability modeling, and security control validation.
-- Relying solely on CVSS severity scores often leads to remediation paralysis and the inefficient allocation of security resources.
-- The Picus Platform automates this four-pillar framework to help security teams identify and prioritize only the most critical, exploitable risks.
-- Organizations using evidence-based validation report up to a 92% reduction in missed remediation deadlines for high-risk vulnerabilities.
+- The update introduces "Proton protocols," a custom WireGuard implementation written in Rust to replace the previous wireguard-go code.
+- A new advanced kill switch feature will block all internet traffic unless the VPN is active, persisting even after device restarts.
+- Improved functionality allows users to access local network devices and use Apple CarPlay while the kill switch is enabled.
+- The new architecture provides a foundation for future features, including post-quantum encryption and better battery efficiency.
+- While the build is available on GitHub, the official App Store release is pending final review by Apple.
 
 ### Why it Matters
-Transitioning to a risk-based prioritization model allows security teams to move away from reactive, volume-based patching toward a proactive strategy that addresses actual business impact. By focusing resources on validated threats rather than hypothetical risks, organizations can significantly decrease their attack surface while reducing operational fatigue.
+This update represents a significant technical shift for Proton VPN by moving to a proprietary, Rust-based engine that simplifies development and debugging on iOS. By overcoming long-standing platform limitations regarding kill switches and network connectivity, the company is positioning its service as a more robust privacy tool for mobile users.
 
 ============================================================
-Author:   info@thehackernews.com (The Hacker News)
-Source:   Internet
-URL:      https://thehackernews.com/2026/11/the-4-elements-of-exposure.html
+Author:   monicajwrites@gmail.com (Monica J. White) , Monica J. White
+Source:   TechRadar
+URL:      https://www.techradar.com/vpn/vpn-services/proton-vpn-8-0-is-coming-to-iphone-and-it-could-be-the-apps-biggest-upgrade-in-years
 Category: Cybersecurity

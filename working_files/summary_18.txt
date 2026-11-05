@@ -1,20 +1,20 @@
-Canonical adds FIDO2 hardware key support to Launchpad
+Millions of Android TV boxes came with malware, and Google's certification missed it
 ============================================================
 
-Canonical has introduced hardware-bound FIDO2 security key support for Launchpad, allowing developers to secure API access and prevent unauthorized use of stolen login tokens for Ubuntu package management.
+Google has dismantled a massive botnet involving 1.3 million Android set-top boxes manufactured by Videostrong, which contained preinstalled XCPE malware designed to facilitate ad fraud and data theft.
 
 ### Key Points
-- Launchpad now supports USB FIDO2 security keys to protect developer API access and prevent credential theft.
-- The new system replaces static stored tokens with long-lived OAuth refresh grants tied to physical hardware.
-- Users must touch their security key and enter a PIN to generate short-lived tokens for daily operations.
-- The feature currently supports only USB-based keys and requires the installation of the python3-fido2 package.
-- This security update specifically targets core distribution engineers and package uploaders who manage sensitive system infrastructure.
+- The XCPE backdoor was embedded directly into the firmware of devices manufactured by Videostrong.
+- Infected set-top boxes were used to conduct ad fraud, steal data, and route unauthorized traffic through users' home networks.
+- Videostrong bypassed Google’s security certification by using obfuscation to trigger the malware only after the device's initial boot.
+- Google has officially terminated its partnership with Videostrong and banned the company from producing certified Android devices.
+- The tech giant has updated its security review processes to better detect malicious code hidden within device firmware.
 
 ### Why it Matters
-This update significantly hardens the security of the Ubuntu ecosystem by mitigating the risk of malware hijacking developer credentials. By requiring physical hardware authentication, Canonical reduces the potential for supply chain attacks that could compromise critical software packages.
+This incident highlights significant vulnerabilities in the supply chain for consumer electronics and raises concerns regarding the efficacy of Google’s hardware certification standards. It serves as a reminder that even officially certified devices can pose serious security risks, potentially compromising user privacy and home network integrity.
 
 ============================================================
-Author:   Joey Sneddon
-Source:   Omgubuntu.co.uk
-URL:      https://www.omgubuntu.co.uk/2026/11/launchpad-fido2-hardware-tokens
+Author:   Hamed Paydarfar
+Source:   MakeUseOf
+URL:      https://www.makeuseof.com/android-tv-boxes-came-with-malware-google-certification-missed/
 Category: Cybersecurity

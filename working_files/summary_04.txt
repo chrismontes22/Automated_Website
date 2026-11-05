@@ -1,20 +1,20 @@
-Is Your Echo Show Display Filling With AI Slop? I Found How to Turn It Off
+Google takes down a massive Android TV botnet, but infected devices remain dangerous
 ============================================================
 
-Amazon is introducing the new Echo Show 16 while users report frustration over intrusive, AI-generated advertisements appearing on their existing smart display devices across the Echo lineup.
+Google has dismantled a massive malware operation involving Videostrong Technology that compromised over 1.3 million Android TV boxes by embedding a persistent backdoor directly into device firmware.
 
 ### Key Points
-- Amazon recently announced the Echo Show 16 to compete with Apple’s upcoming HomeView smart display.
-- Users report that the "Created For You" feature is displaying irrelevant, AI-generated content and images on Echo Show devices.
-- Owners can provide feedback by tapping the three-dot menu on a slide and selecting the thumbs-down icon.
-- Content categories can be managed by navigating to Settings, then Display & Appearance, and finally Content Categories on the device.
-- Users can limit unwanted slides by enabling the "Rotate Once" setting or by configuring the display to show only personal photo albums.
+- Google identified the XCPE malware, which grants attackers system-level privileges to install apps, capture keystrokes, and reroute internet traffic.
+- The malware was pre-installed by manufacturer Videostrong Technology on various Android-based devices, including TV boxes, karaoke machines, and digital signage.
+- Because the malicious code resides in a protected firmware partition, it automatically reinstalls itself upon device reboot, rendering standard app removal ineffective.
+- Google collaborated with international law enforcement and security firms to disable command-and-control servers, potentially impacting 10 million additional compromised devices.
+- Google has banned Videostrong from producing certified Android devices and implemented stricter firmware integrity checks for all manufacturers.
 
 ### Why it Matters
-The rise of AI-generated content on smart home devices highlights a growing tension between platform monetization and user experience. As companies integrate generative tools into hardware, providing clear opt-out mechanisms is essential to maintaining consumer trust and device utility.
+This incident highlights a significant supply chain vulnerability where hardware manufacturers intentionally embed malware at the firmware level. Consumers using affected devices may need to replace their hardware entirely, as the deep-seated nature of the infection makes standard security software unable to fully remediate the threat.
 
 ============================================================
-Author:   Tyler Lacoma
-Source:   CNET
-URL:      https://www.cnet.com/home/smart-home/how-to-turn-off-ai-slop-on-your-echo-show-smart-display/
-Category: Phones, Laptops, and Gadgets
+Author:   techkritiko@gmail.com (Jay Bonggolto) , Jay Bonggolto
+Source:   Android Central
+URL:      https://www.androidcentral.com/streaming-tv/google-takes-down-a-massive-android-tv-botnet-but-infected-devices-remain-dangerous
+Category: Cybersecurity
