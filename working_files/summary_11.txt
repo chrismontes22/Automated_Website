@@ -1,20 +1,20 @@
-Software Developers Say AI Is Rotting Their Brains
+Proton VPN 8.0 is coming to iPhone — and it could be the app's biggest upgrade in years
 ============================================================
 
-Major technology companies including Google, Microsoft, and Meta are increasingly relying on AI to generate code, sparking internal debates regarding software quality, developer skill degradation, and widespread workforce layoffs.
+Proton VPN has released version 8.0.0 of its iOS application on GitHub, introducing a new Rust-based VPN engine designed to improve connection stability and enhance censorship resistance for users.
 
 ### Key Points
-- Google reported that 75% of its new code is AI-generated, while Microsoft projects 95% of its codebase will be AI-produced by 2030.
-- Developers report that AI-generated code often requires significant manual correction, leading to increased technical debt and frustration among engineering teams.
-- Tech executives are utilizing AI implementation as a primary justification for significant workforce reductions across the industry.
-- Recent layoffs include approximately 8,000 employees at Meta, 1,000 at Snapchat, and voluntary retirement offers for 7% of Microsoft’s American workforce.
-- Employees express concerns that mandatory AI adoption is causing professional de-skilling and creating security vulnerabilities within complex software architectures.
+- The update introduces "Proton protocols," a custom WireGuard implementation written in Rust to replace the previous wireguard-go code.
+- A new advanced kill switch feature will block all internet traffic unless the VPN is active, persisting even after device restarts.
+- Improved functionality allows users to access local network devices and use Apple CarPlay while the kill switch is enabled.
+- The new architecture provides a foundation for future features, including post-quantum encryption and better battery efficiency.
+- While the build is available on GitHub, the official App Store release is pending final review by Apple.
 
 ### Why it Matters
-The shift toward AI-generated code signals a fundamental change in software development that prioritizes corporate efficiency metrics over long-term product stability. This trend suggests that businesses across all sectors may soon face significant technical debt and reduced human expertise as AI tools replace traditional engineering workflows.
+This update represents a significant technical shift for Proton VPN by moving to a proprietary, Rust-based engine that simplifies development and debugging on iOS. By overcoming long-standing platform limitations regarding kill switches and network connectivity, the company is positioning its service as a more robust privacy tool for mobile users.
 
 ============================================================
-Author:   Emanuel Maiberg
-Source:   404media.co
-URL:      https://www.404media.co/software-developers-say-ai-is-rotting-their-brains/
-Category: Artificial Intelligence
+Author:   monicajwrites@gmail.com (Monica J. White) , Monica J. White
+Source:   TechRadar
+URL:      https://www.techradar.com/vpn/vpn-services/proton-vpn-8-0-is-coming-to-iphone-and-it-could-be-the-apps-biggest-upgrade-in-years
+Category: Cybersecurity
