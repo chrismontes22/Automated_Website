@@ -1,20 +1,20 @@
-Binance Says Hackers Used Well-Known Tricks to Carry Out a $6.34 Billion Heist
+China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor
 ============================================================
 
-Binance suffered a massive $6.34 billion cryptocurrency theft on October 29 after North Korean-linked hackers compromised internal systems through a sophisticated social engineering attack on company engineers.
+The China-aligned threat actor SlippyNunchucks is exploiting insecure HTTP communications in the Sogou Input Method to deploy the DarkVigil surveillance implant across multiple Asian and European nations.
 
 ### Key Points
-- Hackers gained network access by tricking a Binance engineer into downloading malicious software during a fake job interview process.
-- The attackers exploited an internal AI tool and a wallet signing service to bypass standard withdrawal procedures within 20 minutes.
-- The FBI and security experts attributed the breach to the North Korean-linked group TraderTraitor, which has been active since June.
-- Binance has pledged to cover user losses and has already rebuilt the internal systems compromised during the incident.
-- Industry partners successfully froze nearly half of the stolen funds, though the remaining billions are currently being laundered across multiple blockchains.
+- SlippyNunchucks has targeted organizations and individuals in Hong Kong, Thailand, Japan, Vietnam, Oman, and Sri Lanka since July 2026.
+- The attack uses DNS hijacking to intercept HTTP requests and deliver malicious configurations via the legitimate Sogou component SGTool.exe.
+- DarkVigil is a modular .NET framework that utilizes over 20 plugins and the Duplex Message Transport Protocol for command-and-control operations.
+- Other applications compromised by the group include QuickFox, QingTalk, MiYunChat, SoftCam, and tawk.to.
+- Tencent patched the underlying vulnerability, tracked as CVE-2026-120422, in version 16.10 of the Sogou Input Method on October 29, 2026.
 
 ### Why it Matters
-This record-breaking heist highlights the extreme vulnerability of centralized cryptocurrency exchanges to highly targeted, long-term social engineering campaigns. The potential conversion of these stolen assets into cash poses a significant global security risk, as experts believe the funds may be used to finance North Korea's nuclear and ballistic missile programs.
+This campaign highlights the significant risks posed by supply chain compromises that weaponize widely used, trusted software to bypass traditional security perimeters. By forcing a transition from insecure HTTP to encrypted HTTPS, the patch mitigates this specific vector, but the incident underscores the ongoing threat of nation-state actors targeting Chinese-speaking populations globally.
 
 ============================================================
-Author:   Matt Burgess
-Source:   Wired
-URL:      https://www.wired.com/story/binance-says-hackers-used-well-known-tricks-to-carry-out-a-dollar634-billion-heist/
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html
 Category: Cybersecurity

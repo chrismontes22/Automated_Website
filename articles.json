@@ -1,5 +1,185 @@
 [
   {
+    "source": "Internet",
+    "author": "info@thehackernews.com (The Hacker News)",
+    "summary": "The China-aligned threat actor SlippyNunchucks is exploiting insecure HTTP communications in the Sogou Input Method to deploy the DarkVigil surveillance implant across multiple Asian and European nations.\n\n### Key Points\n- SlippyNunchucks has targeted organizations and individuals in Hong Kong, Thailand, Japan, Vietnam, Oman, and Sri Lanka since July 2026.\n- The attack uses DNS hijacking to intercept HTTP requests and deliver malicious configurations via the legitimate Sogou component SGTool.exe.\n- DarkVigil is a modular .NET framework that utilizes over 20 plugins and the Duplex Message Transport Protocol for command-and-control operations.\n- Other applications compromised by the group include QuickFox, QingTalk, MiYunChat, SoftCam, and tawk.to.\n- Tencent patched the underlying vulnerability, tracked as CVE-2026-120422, in version 16.10 of the Sogou Input Method on October 29, 2026.\n\n### Why it Matters\nThis campaign highlights the significant risks posed by supply chain compromises that weaponize widely used, trusted software to bypass traditional security perimeters. By forcing a transition from insecure HTTP to encrypted HTTPS, the patch mitigates this specific vector, but the incident underscores the ongoing threat of nation-state actors targeting Chinese-speaking populations globally.",
+    "category": "Cybersecurity",
+    "url": "https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html",
+    "processed_at": "2026-11-05T15:11:03.588970",
+    "title": "China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor"
+  },
+  {
+    "source": "The Gadgeteer",
+    "author": "Allie Nguyen",
+    "summary": "SanDisk has launched its V3 series of portable solid-state drives, featuring the high-performance Extreme model with 2,000MB/s read speeds and a more affordable, lightweight standard Portable version.\n\n### Key Points\n- The SanDisk Extreme Portable SSD (V3) offers read speeds up to 2,000MB/s and write speeds up to 1,700MB/s using a USB 3.2 Gen 2x2 connection.\n- The Extreme (V3) features an IP65 rating for dust and water resistance, 3-meter drop protection, and 256-bit AES hardware encryption.\n- The standard SanDisk Portable SSD (V3) reaches read speeds of 1,000MB/s and includes a carabiner loop for portability.\n- The Extreme (V3) is available in capacities up to 4TB with a five-year warranty, while the Portable (V3) ranges from 500GB to 2TB with a three-year warranty.\n- Both drives are currently available for purchase through major US retailers, with the 1TB Extreme priced at $239.50 and the 1TB Portable at $159.99.\n\n### Why it Matters\nThese new drives provide significant performance upgrades for users needing faster data transfers for professional media workflows or reliable mobile backups. Choosing between the two models allows consumers to balance the need for rugged, high-speed hardware against the convenience of a lightweight, budget-friendly storage solution.",
+    "category": "Phones, Laptops, and Gadgets",
+    "url": "https://the-gadgeteer.com/2026/11/03/sandisks-extreme-portable-ssd-v3-hits-2000mb-s-as-the-v3-pair-rolls-out/",
+    "processed_at": "2026-11-05T15:11:16.169386",
+    "title": "SanDisk’s Extreme Portable SSD (V3) hits 2,000MB/s as the V3 pair rolls out"
+  },
+  {
+    "source": "Business Insider",
+    "author": "Ben Shimkus",
+    "summary": "Texas voters elected Democrats James Talarico and Gina Hinojosa to key state offices, marking a significant political shift that has sparked concern among prominent tech industry leaders.\n\n### Key Points\n- Democrats James Talarico and Gina Hinojosa won Senate and gubernatorial races, ending decades of Republican dominance in Texas statewide elections.\n- Elon Musk, Jason Calacanis, and other tech figures expressed frustration on X, citing concerns over the state's changing political landscape.\n- Chamath Palihapitiya warned that the shift could threaten the AI industry by impacting power infrastructure and data centers located in West Texas.\n- LinkedIn cofounder Reid Hoffman praised the election results as a significant political victory against Donald Trump and his allies.\n- This election marks the first time a Democrat has won a Texas Senate seat since 1988 and a gubernatorial race since 1990.\n\n### Why it Matters\nThe political shift in Texas challenges the state's reputation as a deregulated haven for tech companies seeking to escape California's legislative environment. This transition could influence future corporate investment strategies and the stability of critical infrastructure projects, such as AI-focused data centers, within the region.",
+    "category": "Tech Business & Markets",
+    "url": "https://www.businessinsider.com/texas-went-blue-tech-bros-democrats-2026-11#article",
+    "processed_at": "2026-11-05T15:11:50.621542",
+    "title": "Texas just went blue, and the tech bros are sad"
+  },
+  {
+    "source": "CNET",
+    "author": "Dashia Milden",
+    "summary": "Apple secured the top spot in CNET’s 2026 People’s Picks awards, outperforming competitors across eight categories including overall satisfaction, battery life, display quality, and hardware reliability.\n\n### Key Points\n- Apple achieved a 96.7% overall satisfaction rating, with 68% of MacBook owners stating they would purchase the same model again.\n- Survey data indicates 44.4% of MacBook users experience battery life of eight hours or more, significantly outpacing Lenovo, Dell, and HP.\n- Despite higher price points, 94.6% of Apple users reported that their laptops provide exceptional or fair value for the investment.\n- Asus earned recognition as a top midrange choice, while Acer was highlighted for budget-friendly value and Lenovo for hardware durability.\n- The survey, conducted by Alchemer, gathered insights from 1,003 U.S. adults between September and October 2026.\n\n### Why it Matters\nThese findings highlight a strong consumer preference for premium hardware and ecosystem integration, which continues to drive high brand loyalty for Apple despite the availability of cheaper alternatives. For shoppers, the data suggests that while non-Apple brands like Asus and Acer offer competitive value and specific performance strengths, Apple remains the market leader in long-term user satisfaction and reliability.",
+    "category": "Phones, Laptops, and Gadgets",
+    "url": "https://www.cnet.com/tech/computing/peoples-picks-2026-laptops/",
+    "processed_at": "2026-11-05T15:16:17.144060",
+    "title": "Apple Wins Big in CNET’s People’s Picks Awards for Its MacBooks"
+  },
+  {
+    "source": "Android Central",
+    "author": "sanujb6@gmail.com (Sanuj Bhatia) , Sanuj Bhatia",
+    "summary": "Google will disable Gemini and other AI tools by default for K-12 student accounts starting in 2027, forcing schools to choose between AI integration and Google Search access.\n\n### Key Points\n- Google is disabling Gemini, Gemini Notebook, and Gemini Classroom for K-12 accounts by default beginning in 2027.\n- Schools that choose to disable these AI features will also lose access to the standard Google Search engine.\n- Google is introducing \"Guided Learning\" tools that provide step-by-step problem solving rather than direct answers for students.\n- Administrators retain the authority to manually enable specific AI services for their student populations.\n- The policy change aims to provide schools with more control over AI usage within educational environments.\n\n### Why it Matters\nThis policy forces a difficult trade-off for educational institutions that rely on Google’s ecosystem but wish to limit AI exposure. By tethering Search access to AI features, Google effectively mandates the adoption of its generative tools for schools that require a functional search engine.",
+    "category": "Artificial Intelligence",
+    "url": "https://www.androidcentral.com/apps-software/school-google-and-ai",
+    "processed_at": "2026-11-05T15:16:25.184267",
+    "title": "Google will let schools turn off AI, but they'll have to give up Search too"
+  },
+  {
+    "source": "Rock Paper Shotgun",
+    "author": "Mark Warren",
+    "summary": "Nexus Mods has officially rejected an outright ban on AI-generated content, choosing instead to implement mandatory disclosure requirements and stricter moderation standards for all uploaded modding projects.\n\n### Key Points\n- Nexus Mods CEO Victor Folmann confirmed that AI-generated mods remain permitted provided they meet new transparency, permission, and presentation criteria.\n- Uploaders must now provide a public explanation detailing how and where AI tools were utilized in their modding process.\n- AI-related tags will be displayed more prominently on mod pages, appearing immediately after adult-content warnings for better visibility.\n- The platform is investing in specialized security staff and tools to detect potential malicious code generated by AI.\n- Mod authors have a 60-day grace period ending January 2, 2025, to update existing uploads to comply with the new disclosure rules.\n- Nexus Mods explicitly stated it will not use user-submitted content to train AI models or license such data to third-party developers.\n\n### Why it Matters\nThis policy shift highlights the ongoing challenge of balancing creative freedom with user transparency in the rapidly evolving landscape of generative AI. By prioritizing disclosure over prohibition, Nexus Mods aims to maintain platform control while allowing the community to make informed decisions about the content they download.",
+    "category": "Artificial Intelligence",
+    "url": "https://www.rockpapershotgun.com/nexus-mods-rule-out-barring-ai-generated-creations-from-their-site",
+    "processed_at": "2026-11-05T15:20:51.013654",
+    "title": "\"An outright ban will not eliminate AI from the modding process,\" Nexus Mods say as they rule out barring generated creations from their site"
+  },
+  {
+    "source": "Tom's Hardware UK",
+    "author": "editors@tomshardware.com (Jowi Morales) , Jowi Morales",
+    "summary": "Google has terminated its partnership with manufacturer Videostrong Technology after discovering the company embedded backdoors into 1.3 million Android TV set-top boxes to facilitate global cybercriminal activities.\n\n### Key Points\n- Videostrong Technology pre-installed malicious backdoors into 1.3 million Android TV devices to enable ad fraud and residential proxy networks.\n- The manufacturer sold access to these infected devices to criminal affiliates, allowing for the remote installation of additional malware.\n- Google confirmed the malicious software evolved into a complex, three-stage design throughout 2024 to evade detection.\n- Google has officially banned Videostrong from producing devices that include preloaded Google applications or services.\n- The compromised hardware was sold under various brands and models over several years, impacting a significant global user base.\n\n### Why it Matters\nThis incident highlights a critical vulnerability in the consumer electronics supply chain where manufacturers can compromise device security at the firmware level. It raises significant concerns regarding the integrity of pre-installed software and the long-term security risks posed by untrusted hardware partners in the Android ecosystem.",
+    "category": "Cybersecurity",
+    "url": "https://www.tomshardware.com/tech-industry/cyber-security/certified-android-tv-manufacturer-put-unauthorized-backdoor-in-set-top-boxes-google-reveals-oem-sold-access-to-criminal-affiliates-for-1-3-million-devices-used-massive-network-as-botnet-for-ad-fraud-residential-proxy",
+    "processed_at": "2026-11-05T15:21:07.362271",
+    "title": "Certified Android TV manufacturer put unauthorized backdoor in 1.3 million set-top boxes, Google reveals — OEM sold access to criminal affiliates, used massive network as botnet for ad fraud, residential proxy"
+  },
+  {
+    "source": "Paddle Your Own Kanoo",
+    "author": "Paddle Your Own Kanoo",
+    "summary": "A massive data breach at travel technology provider Amadeus has exposed the booking information of passengers across six major global airlines, including Singapore Airlines and Japan Airlines.\n\n### Key Points\n- The breach affected approximately 46,000 Singapore Airlines bookings, alongside records from Cathay Pacific, Japan Airlines, ANA All Nippon Airways, Korean Air, and Condor.\n- Compromised data includes passenger names, booking reference numbers, travel itineraries, and booking classes, though credit card information remains secure.\n- The unauthorized access occurred within the Amadeus Altéa platform, which supports booking and operations for roughly 130 airlines worldwide.\n- Security experts identified that the breach persisted for over three years, spanning from August 2023 until its discovery in September 2026.\n- Hackers reportedly gained access through social engineering tactics, tricking IT support staff into providing legitimate login credentials.\n\n### Why it Matters\nThis incident highlights the significant security risks posed by third-party vendors that manage critical infrastructure for the global aviation industry. Passengers should remain vigilant against sophisticated phishing attempts that leverage stolen booking details to distribute malware or harvest additional personal information.",
+    "category": "Cybersecurity",
+    "url": "https://www.paddleyourownkanoo.com/2026/11/04/singapore-airlines-is-latest-global-carrier-to-be-caught-up-in-massive-amadeus-data-breach/",
+    "processed_at": "2026-11-05T15:25:42.120694",
+    "title": "Singapore Airlines is Latest Global Carrier to Be Caught Up in Massive Amadeus Data Breach"
+  },
+  {
+    "source": "Cosmos-institute.org",
+    "author": "Cosmos Institute, Jessica Hullman",
+    "summary": "The rapid integration of artificial intelligence into scientific research risks prioritizing verified outputs over human understanding, potentially undermining the critical accountability and social processes that sustain scientific knowledge.\n\n### Key Points\n- Northwestern University professor Jessica Hullman argues that scientific progress requires human judgment, not just the automated verification of results.\n- The \"value-free ideal\" incorrectly suggests that scientific truth is purely procedural and independent of ethical or social context.\n- Mathematician Terry Tao and others warn that relying on AI-generated solutions without human comprehension creates risks if the underlying logic is flawed.\n- Scientific knowledge relies on transformative criticism, where researchers hold one another accountable for claims and methodologies.\n- Current AI models lack the persistence and identity required to act as truly accountable epistemic agents within the scientific community.\n\n### Why it Matters\nTreating scientific truth as a collection of verified facts rather than a social, value-driven practice threatens to erode the human expertise necessary to interpret and build upon new discoveries. If researchers lose the ability to critically engage with AI outputs, the scientific community risks losing the capacity to distinguish between meaningful knowledge and mere data.",
+    "category": "Artificial Intelligence",
+    "url": "https://blog.cosmos-institute.org/p/verification-is-not-knowledge",
+    "processed_at": "2026-11-05T15:25:50.539188",
+    "title": "Verification Is Not Knowledge: Science needs more than answers"
+  },
+  {
+    "source": "Infosecurity Magazine",
+    "author": "Phil Muncaster",
+    "summary": "Binance revealed that a sophisticated, months-long social engineering campaign targeting its software engineers resulted in a massive digital heist involving XRP, SOL, and OP cryptocurrency assets.\n\n### Key Points\n- Attackers used fake recruitment interviews and malicious code repositories to compromise the work computer of a Binance software engineer in September.\n- The breach utilized zero-day malware designed to evade endpoint security tools by replacing legitimate development components with malicious versions.\n- Hackers gained access to internal AI tools and stolen credentials to compromise additional employees, including Wallet DevOps and Software engineers.\n- On October 29, attackers triggered malicious scripts to drain 233.46 million XRP, 970,500 SOL, and 44.2 million OP from Binance hot wallets.\n- Binance has since rebuilt its wallet systems, decommissioned compromised credentials, and enhanced behavioral anomaly detection to prevent future unauthorized access.\n\n### Why it Matters\nThis incident highlights the severe risks posed by targeted social engineering against high-privilege employees, even within organizations with established security protocols. It underscores the critical need for companies to balance developer productivity with strict controls over software execution and internal access permissions.",
+    "category": "Cybersecurity",
+    "url": "https://www.infosecurity-magazine.com/news/fake-interview-software-engineer/",
+    "processed_at": "2026-11-05T15:26:08.687326",
+    "title": "Fake Interview of Software Engineer Led to Binance Mega-Heist"
+  },
+  {
+    "source": "TechNode",
+    "author": "TechNode Staff",
+    "summary": "The Tech Odyssey web series, produced by AICEP, highlights Portugal’s growing technology sector to foster international business partnerships and investment opportunities between Portuguese companies and the Chinese market.\n\n### Key Points\n- AICEP, Portugal’s trade and investment agency, produced the Tech Odyssey series to showcase the country's innovation ecosystem to global audiences.\n- The series highlights diverse sectors including health technology, biotechnology, spatial audio, and the blue economy.\n- Luís Costa, director of AICEP Shanghai, emphasizes Portugal's appeal through its renewable energy, strategic location, and openness to foreign investment.\n- The program aims to facilitate two-way growth by helping Portuguese startups expand into China while attracting Chinese companies to invest in Portugal.\n- The series is available on platforms like YouTube, LinkedIn, and Bilibili to serve as a long-term resource for international business development.\n\n### Why it Matters\nThis initiative demonstrates how digital media can effectively bridge geographical gaps to stimulate cross-border economic cooperation and foreign direct investment. By highlighting specific industrial strengths, AICEP provides a practical framework for companies to evaluate new markets and establish strategic international partnerships.",
+    "category": "Tech Business & Markets",
+    "url": "https://technode.com/2026/11/04/tech-odyssey-series-from-portugal-to-china-a-new-conversation-begins/",
+    "processed_at": "2026-11-05T15:26:21.683761",
+    "title": "Tech Odyssey Series: From Portugal to China, a New Conversation Begins"
+  },
+  {
+    "source": "MakeUseOf",
+    "author": "Hamed Paydarfar",
+    "summary": "Seeed Studio has launched the OpenDisplay e-paper smart home dashboard series, offering two pre-assembled models that provide long-lasting battery performance and native integration with Home Assistant platforms.\n\n### Key Points\n- The 4.26-inch monochrome model costs $39.90 and offers up to two years of battery life with 15-minute update intervals.\n- The 7.3-inch color model is priced at $75.90 and provides approximately one year of battery life with two-hour update intervals.\n- Both devices feature Bluetooth Low Energy connectivity and arrive fully assembled with an enclosure, stand, battery, and preinstalled firmware.\n- The monochrome unit utilizes an 800x400 e-paper panel powered by a 2,000 mAh battery and a Seeed XIAO EN05 board.\n- These displays support partial refreshes to optimize power consumption for data like weather, sensor readings, and calendar schedules.\n\n### Why it Matters\n- These low-power displays offer a practical, maintenance-free alternative to traditional tablets for monitoring smart home data without requiring constant power connections. By providing pre-assembled kits, Seeed Studio lowers the barrier to entry for users seeking to integrate e-paper technology into their home automation setups.",
+    "category": "Phones, Laptops, and Gadgets",
+    "url": "https://www.makeuseof.com/smart-home-display-promises-two-years-battery-life/",
+    "processed_at": "2026-11-05T15:26:44.046115",
+    "title": "This $40 smart home display promises up to two years of battery life"
+  },
+  {
+    "source": "Windows Central",
+    "author": "Alexander Cope",
+    "summary": "Best Buy is currently offering significant discounts on various LG Gram laptop models, featuring lightweight designs and high-performance processors, with these promotional deals running through November 14, 2026.\n\n### Key Points\n- The 17-inch LG Gram Max, featuring an Intel Core Ultra 7 processor, is discounted to $1,199.99 from its original $1,749.99 price.\n- A 15-inch LG Gram model with an Intel Core Ultra 5 CPU is available for under $600, offering high value for productivity tasks.\n- Select 14-inch models include built-in AI assistants and FHD IPS displays, with current pricing reduced to $729.99.\n- New hardware options include configurations with AMD Ryzen AI 7 processors and 1TB SSD storage for data-intensive workflows.\n- Recent Windows 11 26H2 updates have improved performance for laptops with 8GB of RAM, making them more viable for casual users.\n\n### Why it Matters\nThese discounts provide mobile professionals and students with affordable access to premium, lightweight hardware before the traditional Black Friday shopping season begins. The inclusion of advanced AI-ready processors ensures these devices remain relevant for evolving software requirements and modern productivity demands.",
+    "category": "Phones, Laptops, and Gadgets",
+    "url": "https://www.windowscentral.com/hardware/laptops/lg-gram-laptops-portability-without-compromise",
+    "processed_at": "2026-11-05T15:26:55.308102",
+    "title": "LG's Gram laptops prove you don't need a heavy PC to get serious productivity power"
+  },
+  {
+    "source": "BGR",
+    "author": "staff@bgr.com (Chifundo Kasiya)",
+    "summary": "iCloud Keychain provides robust security for Apple users through end-to-end encryption and hardware-based protection, though it lacks some advanced features found in dedicated third-party password management services.\n\n### Key Points\n- iCloud Keychain utilizes AES-256 encryption and stores decryption keys locally within the device's isolated Secure Enclave.\n- Data is protected by end-to-end encryption, ensuring that Apple cannot access user passwords or sensitive information synced to iCloud.\n- Authentication relies on biometric tools like Face ID and Touch ID, supplemented by mandatory two-factor authentication for Apple accounts.\n- Stolen Device Protection adds security by requiring biometrics for sensitive actions when the device is away from familiar locations.\n- Unlike competitors such as Bitwarden or NordPass, Keychain lacks comprehensive data breach monitoring for emails and credit cards.\n- Keychain exports data as unencrypted CSV files, whereas some third-party managers allow users to password-protect exported backups.\n\n### Why it Matters\nChoosing between built-in tools and dedicated password managers involves balancing Apple's seamless ecosystem integration against the advanced security features offered by specialized software. While Keychain is highly secure for general users, those requiring cross-platform compatibility or enhanced breach reporting may prefer third-party alternatives.",
+    "category": "Cybersecurity",
+    "url": "https://www.bgr.com/2300495/icloud-keychain-secure-compared-to-alternatives/",
+    "processed_at": "2026-11-05T15:27:09.583036",
+    "title": "How Secure Is iCloud Keychain Compared To The Alternatives?"
+  },
+  {
+    "source": "Skift",
+    "author": "Peden Doma Bhutia",
+    "summary": "Booking.com is positioning its platform as the primary destination for travelers to finalize reservations after using generative AI tools like ChatGPT and Gemini for initial trip planning.\n\n### Key Points\n- A Booking.com survey indicates that 64% of travelers in the Asia-Pacific region currently utilize AI tools to assist with their travel research and itinerary planning.\n- Booking Holdings reports that direct traffic referrals from large language models currently account for less than 1% of total room nights booked on the platform.\n- Vice President Laura Houldsworth notes that travelers frequently switch between multiple AI services, including Claude, ChatGPT, and Gemini, before visiting Booking.com to complete their transactions.\n- The company aims to capture consumer intent at the point of purchase, regardless of the fragmented research process used by travelers across various digital platforms.\n\n### Why it Matters\nThis strategy highlights the ongoing challenge for travel companies to maintain direct customer relationships as AI chatbots increasingly influence the early stages of the consumer journey. By focusing on the final booking phase, Booking.com seeks to remain a critical intermediary in a digital landscape where users rely on multiple AI tools for information.",
+    "category": "Artificial Intelligence",
+    "url": "https://skift.com/2026/11/03/booking-com-bets-travelers-will-research-with-ai-but-book-with-it/",
+    "processed_at": "2026-11-05T15:27:20.874326",
+    "title": "Booking.com Bets Travelers Will Research With AI but Book With It"
+  },
+  {
+    "source": "Help Net Security",
+    "author": "Mirko Zorz",
+    "summary": "Lindsay Kaye of HUMAN Security explains how AI-generated malware exhibits distinct characteristics like structured comments and professional logging, while significantly accelerating the speed and scale of cyberattacks.\n\n### Key Points\n- AI-generated scripts often feature uniform, well-structured comments and professional logging messages that are atypical for traditional malware authors.\n- Threat actors are using AI to rapidly scale advertising fraud, increasing the volume of malicious mobile apps and websites from dozens to hundreds.\n- AI tools assist criminals in processing large datasets to identify valuable information, such as session cookies and credentials, for further exploitation.\n- Automated agents are now being used to verify stolen credit card data, increasing the market value of compromised financial information.\n- Security teams face a shrinking patch window as AI enables attackers to develop and deploy exploits for newly disclosed vulnerabilities much faster than before.\n\n### Why it Matters\nThe integration of AI into the cybercrime ecosystem is forcing security professionals to rethink traditional defense strategies and incident response timelines. As attackers leverage automation to increase the speed and scale of their operations, organizations must prioritize human-led analysis to validate findings and mitigate risks effectively.",
+    "category": "Cybersecurity",
+    "url": "https://www.helpnetsecurity.com/2026/11/04/lindsay-kaye-human-security-ai-generated-malware/",
+    "processed_at": "2026-11-05T15:27:58.360042",
+    "title": "What AI-generated malware looks like under the microscope"
+  },
+  {
+    "source": "SiliconANGLE News",
+    "author": "Mike Wheatley",
+    "summary": "Autonomous site reliability engineering startup Traversal has secured $120 million in new funding, reaching a $1 billion valuation to expand its AI-driven infrastructure management and incident resolution platform.\n\n### Key Points\n- The $120 million funding round was led by Kleiner Perkins, Redpoint Ventures, and Khosla Ventures, with participation from Sequoia Capital, Battery Ventures, and Amex Ventures.\n- Traversal utilizes causal machine learning to diagnose and remediate IT infrastructure issues, aiming to reduce the high costs of enterprise downtime.\n- The company reports nine-fold revenue growth and a 20-fold increase in monthly active users over the past year.\n- Current enterprise customers include PepsiCo, DigitalOcean, Nubank, and Harvey AI.\n- CEO Anish Agarwal stated the capital will support accelerated hiring across engineering, research, and go-to-market teams.\n\n### Why it Matters\nAs AI-generated code increases the velocity of software development, infrastructure engineers face mounting pressure to maintain system stability. Traversal’s specialized approach addresses the limitations of general-purpose models, offering a scalable solution to manage the rising costs and complexity of global enterprise downtime.",
+    "category": "Tech Business & Markets",
+    "url": "https://siliconangle.com/2026/11/03/autonomous-site-reliability-engineering-startup-traversal-bags-120m-in-funding-at-a-1b-valuation/",
+    "processed_at": "2026-11-05T15:28:20.000852",
+    "title": "Autonomous site reliability engineering startup Traversal bags $120M in funding at a $1B valuation"
+  },
+  {
+    "source": "IGN",
+    "author": "Eric Song",
+    "summary": "Amazon is currently offering the Talix 20,000mAh 140W power bank for $29.99 using a specific discount code, providing a high-capacity charging solution for laptops and gaming handhelds.\n\n### Key Points\n- The Talix power bank features a 20,000mAh capacity and a 190W total maximum output.\n- Connectivity includes one integrated 140W USB-C cable, one 140W USB-C port, and one 18W USB-A port.\n- The device supports fast charging for the Apple MacBook Pro, Lenovo ThinkPad, Asus ROG Ally X, and Lenovo Legion Go S.\n- Users can apply the coupon code \"KCPDDRBM\" at Amazon to reduce the price to $29.99 with free shipping.\n- With a 74Whr rating, the power bank complies with TSA regulations for carry-on luggage on airplanes.\n\n### Why it Matters\nThis deal provides a cost-effective way for users to power high-demand electronics like gaming handhelds and professional laptops while traveling. The high-wattage output ensures compatibility with modern devices that require significant power delivery for efficient charging.",
+    "category": "Phones, Laptops, and Gadgets",
+    "url": "https://www.ign.com/articles/talix-20000mah-190w-power-bank-deal-november-2026",
+    "processed_at": "2026-11-05T15:29:07.209785",
+    "title": "The Talix 20,000mAh Power Bank With 190W of Total Power Output Drops to $29.99 Ahead of Black Friday"
+  },
+  {
+    "source": "newsBTC",
+    "author": "NewsBTC Editorial Team",
+    "summary": "Blockchain analytics firm Chainalysis confirmed a security incident on October 30 that exposed customer names, email addresses, and user role labels, though core investigative data remains secure.\n\n### Key Points\n- Chainalysis reported that a subset of customer-related information was accessed during a security incident on October 30.\n- Exposed data includes names, email addresses, and specific user or role labels associated with customer accounts.\n- The company stated there is no evidence that investigative graph data, user credentials, or active sessions were compromised.\n- Chainalysis clarified that this event is separate from its ongoing analysis of the Binance theft.\n- Users are advised to remain cautious of unsolicited reset links and rely only on verified official notices.\n\n### Why it Matters\nThis incident highlights the critical need for companies to maintain strict security boundaries between customer identity systems and sensitive investigative data. While the breach did not expose core blockchain intelligence, the leaked contact information increases the risk of targeted phishing and social engineering attacks against industry professionals.",
+    "category": "Cybersecurity",
+    "url": "https://www.newsbtc.com/news/chainalysis-discloses-separate-october-30-security-incident-involving-user-data/",
+    "processed_at": "2026-11-05T15:29:17.789375",
+    "title": "Chainalysis Discloses Separate October 30 Security Incident Involving User Data"
+  },
+  {
+    "source": "Defense One",
+    "author": "Lauren C. Williams",
+    "summary": "The Pentagon must upgrade its high-value systems to post-quantum cryptography by 2030 to defend sensitive data against future quantum computing threats and \"harvest now, decrypt later\" attacks.\n\n### Key Points\n- Executive Order 14412 mandates that federal agencies implement post-quantum cryptography for high-value assets by December 31, 2030.\n- Military branches must transition to digital signatures using post-quantum algorithms by 2031 to ensure long-term network security.\n- Experts emphasize that creating a comprehensive inventory of all IT assets, applications, and third-party dependencies is the critical first step toward compliance.\n- Rapid modernization is required to overcome shortened maintenance windows for mobile platforms like naval ships, which now often have only 45 days for upgrades.\n- Achieving \"cryptographic agility\" is essential for maintaining mission capabilities while transitioning to new, quantum-resistant security architectures.\n\n### Why it Matters\nThis transition is vital because adversaries are currently harvesting encrypted data to decrypt it once quantum technology matures, potentially exposing long-term national security secrets. Successfully meeting these deadlines requires a fundamental shift in how the military manages its IT supply chain and infrastructure modernization.",
+    "category": "Cybersecurity",
+    "url": "https://www.defenseone.com/technology/2026/11/unraveling-pentagons-quantum-problem/417029/",
+    "processed_at": "2026-11-05T15:33:48.074582",
+    "title": "Unraveling the Pentagon’s quantum problem"
+  },
+  {
     "title": "Binance Says Hackers Used Well-Known Tricks to Carry Out a $6.34 Billion Heist",
     "author": "Matt Burgess",
     "source": "Wired",
