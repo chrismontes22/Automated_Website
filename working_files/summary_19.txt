@@ -1,20 +1,20 @@
-Chainalysis Discloses Separate October 30 Security Incident Involving User Data
+Vercel rolls out new protection against stolen session cookie attacks
 ============================================================
 
-Blockchain analytics firm Chainalysis confirmed a security incident on October 30 that exposed customer names, email addresses, and user role labels, though core investigative data remains secure.
+Vercel is implementing Device Bound Session Credentials to prevent information-stealing malware from reusing stolen session cookies by binding user logins to specific hardware-based security keys on local devices.
 
 ### Key Points
-- Chainalysis reported that a subset of customer-related information was accessed during a security incident on October 30.
-- Exposed data includes names, email addresses, and specific user or role labels associated with customer accounts.
-- The company stated there is no evidence that investigative graph data, user credentials, or active sessions were compromised.
-- Chainalysis clarified that this event is separate from its ongoing analysis of the Binance theft.
-- Users are advised to remain cautious of unsolicited reset links and rely only on verified official notices.
+- Vercel is rolling out Device Bound Session Credentials (DBSC) to bind login sessions to a device's Trusted Platform Module (TPM).
+- The feature prevents stolen session cookies from being used on unauthorized devices, complementing Chrome’s existing App-Bound Encryption.
+- DBSC is currently available for Chrome users on macOS and Windows, with a gradual rollout to manage OAuth compatibility.
+- Vercel also introduced a Security Review feature in public beta that scans GitHub code pushes for authorization flaws and exposed secrets.
+- Security Review scans will remain free for Pro and Enterprise teams until November 10, 2026, with automated fixes billed separately.
 
 ### Why it Matters
-This incident highlights the critical need for companies to maintain strict security boundaries between customer identity systems and sensitive investigative data. While the breach did not expose core blockchain intelligence, the leaked contact information increases the risk of targeted phishing and social engineering attacks against industry professionals.
+These security enhancements represent a proactive effort by Vercel to protect developer environments following a significant data breach earlier this year. By adopting hardware-backed authentication and automated code scanning, the platform aims to mitigate risks posed by sophisticated malware and unauthorized access to sensitive project data.
 
 ============================================================
-Author:   NewsBTC Editorial Team
-Source:   newsBTC
-URL:      https://www.newsbtc.com/news/chainalysis-discloses-separate-october-30-security-incident-involving-user-data/
+Author:   Bill Toulas
+Source:   BleepingComputer
+URL:      https://www.bleepingcomputer.com/news/security/vercel-rolls-out-new-protection-against-stolen-session-cookie-attacks/
 Category: Cybersecurity

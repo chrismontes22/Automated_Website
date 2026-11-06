@@ -1,20 +1,20 @@
-Singapore Airlines is Latest Global Carrier to Be Caught Up in Massive Amadeus Data Breach
+China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor
 ============================================================
 
-A massive data breach at travel technology provider Amadeus has exposed the booking information of passengers across six major global airlines, including Singapore Airlines and Japan Airlines.
+The China-aligned threat actor SlippyNunchucks is exploiting insecure HTTP communications in the Sogou Input Method to deploy the DarkVigil surveillance implant across multiple Asian and European nations.
 
 ### Key Points
-- The breach affected approximately 46,000 Singapore Airlines bookings, alongside records from Cathay Pacific, Japan Airlines, ANA All Nippon Airways, Korean Air, and Condor.
-- Compromised data includes passenger names, booking reference numbers, travel itineraries, and booking classes, though credit card information remains secure.
-- The unauthorized access occurred within the Amadeus Altéa platform, which supports booking and operations for roughly 130 airlines worldwide.
-- Security experts identified that the breach persisted for over three years, spanning from August 2023 until its discovery in September 2026.
-- Hackers reportedly gained access through social engineering tactics, tricking IT support staff into providing legitimate login credentials.
+- SlippyNunchucks has targeted organizations and individuals in Hong Kong, Thailand, Japan, Vietnam, Oman, and Sri Lanka since July 2026.
+- The attack uses DNS hijacking to intercept HTTP requests and deliver malicious configurations via the legitimate Sogou component SGTool.exe.
+- DarkVigil is a modular .NET framework that utilizes over 20 plugins and the Duplex Message Transport Protocol for command-and-control operations.
+- Other applications compromised by the group include QuickFox, QingTalk, MiYunChat, SoftCam, and tawk.to.
+- Tencent patched the underlying vulnerability, tracked as CVE-2026-120422, in version 16.10 of the Sogou Input Method on October 29, 2026.
 
 ### Why it Matters
-This incident highlights the significant security risks posed by third-party vendors that manage critical infrastructure for the global aviation industry. Passengers should remain vigilant against sophisticated phishing attempts that leverage stolen booking details to distribute malware or harvest additional personal information.
+This campaign highlights the significant risks posed by supply chain compromises that weaponize widely used, trusted software to bypass traditional security perimeters. By forcing a transition from insecure HTTP to encrypted HTTPS, the patch mitigates this specific vector, but the incident underscores the ongoing threat of nation-state actors targeting Chinese-speaking populations globally.
 
 ============================================================
-Author:   Paddle Your Own Kanoo
-Source:   Paddle Your Own Kanoo
-URL:      https://www.paddleyourownkanoo.com/2026/11/04/singapore-airlines-is-latest-global-carrier-to-be-caught-up-in-massive-amadeus-data-breach/
+Author:   info@thehackernews.com (The Hacker News)
+Source:   Internet
+URL:      https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html
 Category: Cybersecurity
